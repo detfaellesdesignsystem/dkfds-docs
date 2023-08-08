@@ -1,14 +1,13 @@
 ---
 permalink: "/kode/browserunderstoettelse/"
-title: Browserunderstøttelse
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Browserunderstøttelse
+anchor: false
 description: Liste med browsers, som FDS understøtter
 tags: 
 ---
-
 
 Bemærk at nedenstående liste ikke er krav fra Det Fælles Designsystem, men blot oplysning til anvendere af designsystemet. Listen over styresystemer og browsers, som den enkelte løsning skal understøtte kan derfor afvige fra nedenstående liste.
 

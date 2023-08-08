@@ -2,15 +2,15 @@
 permalink: "/kode/komponenter/broedkrumme/"
 parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Brødkrumme
 category: Kode_category
 subcategory: Kode
+title: Brødkrumme
+component: "breadcrumbs"
+componentTitle: "Eksempel på brødkrumme komponent"
+anchor: false
 description: Dokumentation på implementering af brødkrumme.
-tags: 
-
+tags:
 ---
-{% include code/preview-box.html component="breadcrumbs" title="Eksempel på brødkrumme komponent" %}
 
 ## Eksempler og retningslinjer
 

@@ -1,11 +1,10 @@
 ---
 permalink: "/kode/ikoner/"
-title: Ikoner
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
-order: "25"
+title: Ikoner
+anchor: false
 description: Sådan bruger du ikoner med FDS.
 tags:
 - icon

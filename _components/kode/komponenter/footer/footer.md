@@ -1,15 +1,14 @@
 ---
 permalink: /kode/komponenter/footer/
+parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/footers/
-parentlink: /kode/komponenter/
-title: Footer
 layout: styleguide
-type: component
 category: Kode_category
-description: "Dokumentation på implementering af footer."
-tags:
 subcategory: Kode
+title: Footer
+previewimage: "footer-simple"
+previewimageTitle: "Eksempel på footer komponent"
 anchor: true
 subnav:
 - text: Tre kolonner
@@ -20,9 +19,9 @@ subnav:
   href: '#kompleks'
 - text: Logo
   href: '#logo'
+description: "Dokumentation på implementering af footer."
+tags:
 ---
-
-{% include code/preview-image.html component="footer-simple" alt="Billedet viser en simpel footer komponent på én række" title="Eksempel på footer komponent" %}
 
 ## Eksempler og retningslinjer
 

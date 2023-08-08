@@ -1,16 +1,18 @@
 ---
 permalink: /komponenter/search/
 layout: styleguide
-type: component
-title: Søgefelt
 category: Komponenter_category
 subcategory: Komponenter
+title: Søgefelt
+lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold på siden eller i løsningen.
+component: "search"
+componentTitle: "Eksempel på søgefelt"
+componentLink: true
+componentCode: "/kode/komponenter/search/"
+anchor: false
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:
-lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold på siden eller i løsningen.
 ---
-
-{% include code/preview-box.html component="search" title="Eksempel på søgefelt" link=true code="/kode/komponenter/search/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

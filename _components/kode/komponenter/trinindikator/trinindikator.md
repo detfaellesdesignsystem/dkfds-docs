@@ -1,15 +1,14 @@
 ---
 permalink: "/kode/komponenter/trinindikator/"
+parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/trinindikatorer/
-title: Trinindikator
-parentlink: /kode/komponenter/
 layout: styleguide
-type: component
 category: Kode_category
-description: "Dokumentation på implementering af trinindikator."
-tags:
 subcategory: Kode
+title: Trinindikator
+component: "tringuide-overflowmenu"
+componentTitle: "Eksempel på trinindikator i overflow menu"
 anchor: true
 subnav:
 - text: Alle trin synlige
@@ -22,9 +21,9 @@ subnav:
   href: "#ekstra-information"
 - text: Trinindikator med fejl
   href: "#med-fejl"
+description: "Dokumentation på implementering af trinindikator."
+tags:
 ---
-
-{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

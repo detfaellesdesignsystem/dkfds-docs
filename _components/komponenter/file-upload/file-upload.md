@@ -1,15 +1,17 @@
 ---
 permalink: /komponenter/fil-upload/
 layout: styleguide
-type: component
-title: Vedhæft fil
 category: Komponenter_category
 subcategory: Komponenter
+title: Vedhæft fil
+component: "file-input"
+componentTitle: "Eksempel på vedhæft fil"
+componentLink: true
+componentCode: "/kode/komponenter/fil-upload/"
+anchor: false
 description: "Brug fil upload til at lade brugeren vælge en fil fra sin egen computer, tablet eller mobil."
 tags:
 ---
-
-{% include code/preview-box.html component="file-input" title="Eksempel på vedhæft fil" link=true code="/kode/komponenter/fil-upload/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

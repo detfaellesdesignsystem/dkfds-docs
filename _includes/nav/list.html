@@ -25,12 +25,5 @@
         item=_uniqueid
         level=_level
       %}
-    {% else -%}
-      {% include nav/link-item.html
-        link=link
-        subnav_class=include.subnav_class
-        href_key=include.href_key
-        text_key=include.text_key
-      %}
     {% endif %}
 {% endfor %}

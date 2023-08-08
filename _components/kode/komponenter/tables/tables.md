@@ -3,12 +3,12 @@ permalink: /kode/komponenter/tables/
 parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/strukturerede-lister/
-title: Tabeller
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af tabeller."
+title: Tabeller
+component: "table"
+componentTitle: "Eksempel på tabel"
 anchor: true
 subnav:
 - text: Uden ramme
@@ -27,9 +27,9 @@ subnav:
   href: '#valgbare-raekker'
 - text: Strukturerede lister
   href: '#strukturerede-lister'
+description: "Dokumentation på implementering af tabeller."
+tags:
 ---
-
-{% include code/preview-box.html component="table" title="Eksempel på tabel" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

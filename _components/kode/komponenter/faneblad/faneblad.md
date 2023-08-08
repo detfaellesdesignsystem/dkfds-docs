@@ -3,16 +3,16 @@ permalink: /kode/komponenter/faneblade/
 parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/faneblad/
-title: Faneblade (Tabs)
 layout: styleguide
-type: component
 category: Kode_category
+subcategory: Kode
+title: Faneblade (Tabs)
+component: "tabnav"
+componentTitle: "Eksempel på faneblad"
+anchor: false
 description: "Dokumentation på implementering af faneblad."
 tags:
-subcategory: Kode
 ---
-
-{% include code/preview-box.html component="tabnav" title="Eksempel på faneblad" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

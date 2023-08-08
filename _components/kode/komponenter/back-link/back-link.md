@@ -1,16 +1,16 @@
 ---
-permalink: /kode/komponenter/tilbage-link/
-parentlink: /kode/komponenter/
+permalink: "/kode/komponenter/tilbage-link/"
+parentlink: "/kode/komponenter/"
 layout: styleguide
-type: element
-title: Tilbage-link
-description: "Dokumentation på implementering af tilbage-link."
-tags:
 category: Kode_category
 subcategory: Kode
+title: Tilbage-link
+component: "back-link"
+componentTitle: "Eksempel på tilbage-link komponent"
+anchor: false
+description: "Dokumentation på implementering af tilbage-link."
+tags:
 ---
-
-{% include code/preview-box.html component="back-link" title="Eksempel på tilbage-link komponent" %}
 
 ## Eksempler og retningslinjer
 

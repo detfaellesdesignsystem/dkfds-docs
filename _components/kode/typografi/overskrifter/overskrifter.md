@@ -1,11 +1,17 @@
 ---
 permalink: /kode/typografi/overskrifter/
-title: Overskrifter
 parentlink: /kode/typografi/
+layout: styleguide
 category: Kode_category
 subcategory: Kode
-type: component
-layout: styleguide
+title: Overskrifter
+component: "headings"
+componentTitle: "Eksempel på overskrifter"
+anchor: true
+subnav:
+- text: Subheading
+  href: "#subheading"
+description:
 tags:
 - "h1"
 - "h2"
@@ -13,14 +19,7 @@ tags:
 - "h4"
 - "h5"
 - "h6"
-description: ""
-anchor: true
-subnav:
-- text: Subheading
-  href: "#subheading"
 ---
-
-{% include code/preview-box.html component="headings" title="Eksempel på overskrifter" %}
 
 <a href="/design/typografi/overskrifter/#retningslinjer">Læs retningslinjerne for overskrifter</a>
 
@@ -36,5 +35,12 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 {% include code/syntax.html component="heading" link=true copybutton=true %}
 
+## Subheading
 
-{% include child-components.html parent='Overskrift-kode' %}
+{% include code/preview-box.html component="subheading" link=false title="Eksempel på subheading" %}
+
+<a href="/design/typografi/overskrifter/#subheading">Læs retningslinjer for subheadings</a>
+
+### HTML Struktur
+
+{% include code/syntax.html component="subheading" copybutton=true %}

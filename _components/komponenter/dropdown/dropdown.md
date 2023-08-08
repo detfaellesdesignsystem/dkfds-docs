@@ -3,15 +3,17 @@ permalink: /komponenter/dropdown/
 redirect_from:
 - /komponenter/drop-down/
 layout: styleguide
-type: component
-title: Dropdown
 category: Komponenter_category
 subcategory: Komponenter
+title: Dropdown
+component: "select"
+componentTitle: "Eksempel på dropdown"
+componentLink: true
+componentCode: "/kode/komponenter/dropdown/"
+anchor: false
 description: Dropdown kan bruges i tilfælde, hvor brugeren skal vælge mellem 7 og 15 værdier på en begrænset plads.
 tags:
 ---
-
-{% include code/preview-box.html component="select" title="Eksempel på dropdown" link=true code="/kode/komponenter/dropdown/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

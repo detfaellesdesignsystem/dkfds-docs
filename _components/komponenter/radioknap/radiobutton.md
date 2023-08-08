@@ -3,13 +3,14 @@ permalink: /komponenter/radioknap/
 redirect_from:
 - /komponenter/radiobutton/
 layout: styleguide
-type: component
-title: Radioknap (Radio button)
 category: Komponenter_category
 subcategory: Komponenter
+title: Radioknap (Radio button)
+component: "radiobutton"
+componentTitle: "Eksempel på radioknapper"
+componentLink: true
+componentCode: "/kode/komponenter/radioknap/"
 anchor: true
-description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste."
-tags:
 subnav:
 - text: Hjælpetekst
   href: '#hjaelpetekst'
@@ -17,9 +18,9 @@ subnav:
   href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
+description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste."
+tags:
 ---
-
-{% include code/preview-box.html component="radiobutton" title="Eksempel på radioknapper" link=true code="/kode/komponenter/radioknap/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

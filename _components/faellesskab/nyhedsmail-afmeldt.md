@@ -1,11 +1,10 @@
 ---
-permalink: /faellesskab/nyhedsmail/afmeldt/
-parentlink: /faellesskab/nyhedsmail/
+permalink: "/faellesskab/nyhedsmail/afmeldt/"
+parentlink: "/faellesskab/nyhedsmail/"
 layout: styleguide
-title: Nyhedsbrev afmeldt
 category: Faellesskab_category
 subcategory: Fællesskab
-tags:
+title: Nyhedsbrev afmeldt
 ---
 
 <div class="alert alert-success mt-5" id="newsletter-alert">

@@ -1,15 +1,18 @@
 ---
 permalink: /komponenter/tilbage-link/
 layout: styleguide
-type: element
-title: Tilbage-link
 category: Komponenter_category
-description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
-lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 subcategory: Komponenter
+title: Tilbage-link
+lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
+component: "back-link"
+componentTitle: "Eksempel på tilbage-link"
+componentLink: true
+componentCode: "/kode/komponenter/tilbage-link/"
+anchor: false
+description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
+tags:
 ---
-
-{% include code/preview-box.html component="back-link" title="Eksempel på tilbage-link" link=true code="/kode/komponenter/tilbage-link/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

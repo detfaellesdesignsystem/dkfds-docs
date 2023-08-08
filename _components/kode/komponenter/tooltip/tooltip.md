@@ -1,13 +1,12 @@
 ---
 permalink: /kode/komponenter/tooltip/
-title: Tooltip
 parentlink: /kode/komponenter/
 layout: styleguide
-type: component
-description: "Dokumentation på implementering af tooltip."
-tags:
 category: Kode_category
 subcategory: Kode
+title: Tooltip
+component: "tooltip-icon"
+componentTitle: "Eksempel på tooltip"
 anchor: true
 subnav:
 - text: Klikbart ikon
@@ -18,9 +17,9 @@ subnav:
   href: "#knap-med-tooltip"
 - text: Placering
   href: "#placering-af-tooltip"
+description: "Dokumentation på implementering af tooltip."
+tags:
 ---
-
-{% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

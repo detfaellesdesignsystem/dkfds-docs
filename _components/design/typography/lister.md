@@ -1,19 +1,20 @@
 ---
-permalink: /design/typografi/lister/
-title: Lister
-parentlink: /design/typografi/
+permalink: "/design/typografi/lister/"
+parentlink: "/design/typografi/"
+layout: styleguide
 category: Design_category
 subcategory: Design
-type: component
-layout: styleguide
+title: Lister
 lead: Lister bruges til at organisere information, så det giver brugeren overblik.
-description: Lister bruges til at organisere information, så det giver brugeren overblik.
-tags:
-component: lists
+component: "lists"
 componentTitle: "Eksempel på lister"
 componentLink: false
 componentCode: "/kode/typografi/lister/"
+anchor: false
+description: Lister bruges til at organisere information, så det giver brugeren overblik.
+tags:
 ---
+
 {:#retningslinjer}
 ## Retningslinjer
 

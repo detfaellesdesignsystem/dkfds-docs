@@ -2,15 +2,15 @@
 permalink: "/kode/komponenter/toggle/"
 parentlink: /kode/komponenter/
 layout: styleguide
-type: component
-title: Toggle switch
 category: Kode_category
 subcategory: Kode
+title: Toggle switch
+component: "toggle"
+componentTitle: "Eksempel på toggle komponent"
+anchor: false
 description: "Dokumentation på implementering af accordions."
 tags: 
 ---
-
-{% include code/preview-box.html component="toggle" title="Eksempel på toggle komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

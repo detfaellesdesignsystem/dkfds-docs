@@ -1,13 +1,13 @@
 ---
-permalink: /kode/komponenter/datovaelger/
-parentlink: /kode/komponenter/
-title: Datovælger
+permalink: "/kode/komponenter/datovaelger/"
+parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Datovælger
+component: "date-picker"
+componentTitle: "Eksempel på datovælger"
 anchor: true
-description: "Dokumentation på implementering af datovælger."
 subnav:
 - text: Begræns mulige datoer
   href: '#interval'
@@ -17,9 +17,9 @@ subnav:
   href: '#datoformat'
 - text: Fejlmeddelelse
   href: '#fejlmeddelelse'
+description: "Dokumentation på implementering af datovælger."
+tags:
 ---
-
-{% include code/preview-box.html component="date-picker" title="Eksempel på datovælger" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

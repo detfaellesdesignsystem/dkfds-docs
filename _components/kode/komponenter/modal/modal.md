@@ -2,10 +2,15 @@
 permalink: "/kode/komponenter/modal/"
 parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Modal
 category: Kode_category
 subcategory: Kode
+title: Modal
+component: "modal"
+componentTitle: "Eksempel på modal komponent"
+anchor: true
+subnav:
+- text: Modal som kræver handling
+  href: "#kraever-handling"
 description: Dokumentation på implementering af modal.
 tags:
 - besked
@@ -17,13 +22,7 @@ tags:
 - popup
 - pop up
 - vindue
-anchor: true
-subnav:
-- text: Modal som kræver handling
-  href: "#kraever-handling"
-
 ---
-{% include code/preview-box.html component="modal" title="Eksempel på modal komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

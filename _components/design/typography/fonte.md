@@ -1,12 +1,12 @@
 ---
 permalink: "/design/typografi/fonte/"
-title: Fonte
 parentlink: "/design/typografi/"
+layout: styleguide
 category: Design_category
 subcategory: Design
-type: component
-layout: styleguide
-description: ''
+title: Fonte
+anchor: false
+description:
 tags:
 - IBM Plex Sans
 - IBM

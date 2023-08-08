@@ -1,22 +1,12 @@
 ---
 permalink: "/design/typografi/overskrifter/"
-title: Overskrifter
 parentlink: "/design/typografi/"
-description: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og
-  skærmlæseren til at kunne overskue sidens logik og opbygning.
+layout: styleguide
+category: Design_category
+subcategory: Design
+title: Overskrifter
 lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren
   til at kunne overskue sidens logik og opbygning.
-tags:
-- h1
-- h2
-- h3
-- h4
-- h5
-- h6
-category: Design_category
-type: component
-subcategory: Design
-layout: styleguide
 anchor: true
 subnav:
 - text: Designværdier
@@ -31,7 +21,17 @@ subnav:
   href: "#loesnings-titel"
 - text: Subheading
   href: "#subheading"
+description: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og
+  skærmlæseren til at kunne overskue sidens logik og opbygning.
+tags:
+- h1
+- h2
+- h3
+- h4
+- h5
+- h6
 ---
+
 Overskriftstyperne har to formål:
 
 - De er sidens indholdsfortegnelse for skærmlæsere.

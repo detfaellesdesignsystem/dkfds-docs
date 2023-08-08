@@ -1,16 +1,16 @@
 ---
 permalink: /kode/komponenter/funktionslink/
 parentlink: /kode/komponenter/
-title: Funktionslink
 layout: styleguide
-type: component
 category: Kode_category
-description: "Dokumentation på implementering af funktions link."
 subcategory: Kode
+title: Funktionslink
+component: "function-link-print"
+componentTitle: "Eksempel på funktionslink"
+anchor: false
+description: "Dokumentation på implementering af funktionslink."
+tags:
 ---
-
-{% include code/preview-box.html component="function-link-print" title="Eksempel på funktionslink" %}
-
 
 ## Eksempler og retningslinjer
 

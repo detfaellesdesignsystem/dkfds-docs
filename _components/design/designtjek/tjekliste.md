@@ -1,15 +1,18 @@
 ---
-permalink: /design/designtjek/
+permalink: "/design/designtjek/"
 redirect_from:
-- /komigang/tildesignere/designtjekliste/
-- /komigang/tjekliste/
-- /krav/designtjek/
+- "/komigang/tildesignere/designtjekliste/"
+- "/komigang/tjekliste/"
+- "/krav/designtjek/"
 layout: styleguide
-title: "Designtjek"
-description: "En tjekliste med 10 punkter, der kan hjælpe dig med at leve op til FDS retningslinjer."
 category: Design_category
 subcategory: Design
+title: "Designtjek"
+anchor: false
+description: "En tjekliste med 10 punkter, der kan hjælpe dig med at leve op til FDS retningslinjer."
+tags:
 ---
+
 <h2 class="h5">1. Headeren skal indeholde de obligatoriske linjer og følge layoutreglerne</h2>
 
 Headerens to obligatoriske linjer - med portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt - skal altid være at finde i alle selvbetjeningsløsninger og <a href="/design/layout/#header">hele headeren skal følge retningslinjerne for layout</a>.

@@ -1,15 +1,17 @@
 ---
 permalink: "/krav/tilgaengelighed/"
+parentlink: "/krav/"
 redirect_from:
 - "/komigang/tilgaengelighed/"
 - "/design/tilgaengelighed/"
 layout: styleguide
-title: Tilgængelighed
 category: Krav_category
 subcategory: Krav
+title: Tilgængelighed
 lead: Webtilgængelighed handler om de principper og teknikker, du skal følge, for
   at alle kan anvende dine websteder og indholdet derpå, herunder også brugere med
   funktionsnedsættelser eller handicap.
+anchor: false
 description: Hjælp og værktøjer til at efterleve tilgængelighedskrav WCAG 2.1 level
   AA.
 tags:

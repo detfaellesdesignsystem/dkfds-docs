@@ -2,12 +2,12 @@
 permalink: /kode/print/
 redirect_from:
 - /design/print/
-title: Print
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Print
 lead: Sider kan struktureres, så de også fungerer godt ved print.
+anchor: false
 description: "FDS giver nogle værktøjer til at strukturere dine sider, så de også fungerer godt ved print."
 tags:
 ---

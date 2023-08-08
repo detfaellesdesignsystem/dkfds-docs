@@ -1,13 +1,14 @@
 ---
-permalink: /faellesskab/nyhedsmail/afmeld/
-parentlink: /faellesskab/nyhedsmail/
+permalink: "/faellesskab/nyhedsmail/afmeld/"
+parentlink: "/faellesskab/nyhedsmail/"
 redirect_from:
-- /omdesignsystemet/nyhedsmail/afmeld/
+- "/omdesignsystemet/nyhedsmail/afmeld/"
 layout: styleguide
-title: Afmeld nyhedsbrev
 category: Faellesskab_category
 subcategory: Fællesskab
-description: "Afmeld nyhedsbrev fra Det Fælles Designsystem"
+title: Afmeld nyhedsbrev
+anchor: false
+description: Afmeld nyhedsbrev fra Det Fælles Designsystem
 tags:
 ---
    

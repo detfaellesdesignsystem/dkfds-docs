@@ -1,20 +1,19 @@
 ---
-permalink: /kode/komponenter/cards/
-parentlink: /kode/komponenter/
+permalink: "/kode/komponenter/cards/"
+parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Cards
-description: "Dokumentation på implementering af cards."
-tags:
 category: Kode_category
 subcategory: Kode
+title: Cards
+component: "card"
+componentTitle: "Eksempel på card komponent"
 anchor: true
 subnav:
 - text: Samme højde
   href: '#samme-hoejde'
+description: "Dokumentation på implementering af cards."
+tags:
 ---
-
-{% include code/preview-box.html component="card" title="Eksempel på card komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

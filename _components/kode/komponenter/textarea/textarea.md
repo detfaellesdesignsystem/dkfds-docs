@@ -1,12 +1,15 @@
 ---
 permalink: /kode/komponenter/tekstomraade/
+parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/textarea/
-parentlink: /kode/komponenter/
-title: Tekstområde (Textarea)
 layout: styleguide
-type: component
 category: Kode_category
+subcategory: Kode
+title: Tekstområde (Textarea)
+component: "text-area"
+componentTitle: "Eksempel på tekstområde"
+anchor: false
 description: "Dokumentation på implementering af tekstområde."
 tags:
 - tekstområde
@@ -14,10 +17,7 @@ tags:
 - textarea
 - karakterbegrænsning
 - karakterbegraensning
-subcategory: Kode
 ---
-
-{% include code/preview-box.html component="text-area" title="Eksempel på tekstområde" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

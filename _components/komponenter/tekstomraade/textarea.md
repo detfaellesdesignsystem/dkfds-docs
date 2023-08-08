@@ -3,10 +3,17 @@ permalink: /komponenter/tekstomraade/
 redirect_from:
 - /komponenter/textarea/
 layout: styleguide
-type: component
-title: Tekstområde (Textarea)
 category: Komponenter_category
 subcategory: Komponenter
+title: Tekstområde (Textarea)
+component: "text-area"
+componentTitle: "Eksempel på tekstområde"
+componentLink: true
+componentCode: "/kode/komponenter/tekstomraade/"
+anchor: true
+subnav:
+- text: Karakterbegrænsning
+  href: "#karakterbegraensning"
 description: "Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge."
 tags:
 - tekstområde
@@ -14,13 +21,7 @@ tags:
 - textarea
 - karakterbegrænsning
 - karakterbegraensning
-anchor: true
-subnav:
-- text: Karakterbegrænsning
-  href: "#karakterbegraensning"
 ---
-
-{% include code/preview-box.html component="text-area" title="Eksempel på tekstområde" link=true code="/kode/komponenter/tekstomraade/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

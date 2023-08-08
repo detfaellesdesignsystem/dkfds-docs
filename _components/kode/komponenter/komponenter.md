@@ -1,10 +1,12 @@
 ---
 permalink: "/kode/komponenter/"
-title: Komponenter
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Komponenter
+anchor: false
+description:
+tags:
 ---
 
 Komponenterne i designsystemet er gennemarbejdet af FDS-teamet og brugerne af FDS.

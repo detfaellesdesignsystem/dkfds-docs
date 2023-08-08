@@ -4,10 +4,10 @@ redirect_from:
 - /eksempler/kvittering/
 - /eksempler/opsummeringsside/
 layout: styleguide
-title: Templates
 category: Eksempler_category
 subcategory: Eksempler
-description: Visning af sidetyper, der går igen på tværs af løsninger
+title: Templates
+lead: Templates er best practice designløsninger til specifikke sidetyper.
 anchor: true
 subnav:
 - text: 'Dashboard'
@@ -22,8 +22,9 @@ subnav:
   href: '#kvittering'
 - text: 'Fejl'
   href: '#formular-med-fejl'
+description: Visning af sidetyper, der går igen på tværs af løsninger
+tags:
 ---
-Templates er best practice designløsninger til specifikke sidetyper.
 
 {:#dashboard}
 ## Dashboard

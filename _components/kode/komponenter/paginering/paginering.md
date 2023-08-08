@@ -1,19 +1,19 @@
 ---
 permalink: /kode/komponenter/paginering/
 parentlink: /kode/komponenter/
-title: Paginering
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Paginering
+component: "pagination"
+componentTitle: "Eksempel på paginering"
+anchor: false
 description: "Dokumentation på implementering af paginering."
 tags:
 - paginering
 - pagination
 - sidevælger
 ---
-
-{% include code/preview-box.html component="pagination" title="Eksempel på paginering" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

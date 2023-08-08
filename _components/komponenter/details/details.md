@@ -3,19 +3,21 @@ permalink: "/komponenter/detaljer/"
 redirect_from:
 - "/komponenter/collapse/"
 layout: styleguide
-type: component
-title: Detaljer
 category: Komponenter_category
 subcategory: Komponenter
-description: Skjul og vis yderligere information eller en ekstra funktion relevant
-  for brugerens valg.
+title: Detaljer
 lead: Du kan bruge Detalje komponenten til at holde indhold skjult, indtil brugeren
   vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig
   ud, eller brugeren får fx mulighed for at læse teksten.
+component: "details"
+componentTitle: "Eksempel på skjul og vis af indhold"
+componentLink: true
+componentCode: "/kode/komponenter/detaljer/"
+anchor: false
+description: Skjul og vis yderligere information eller en ekstra funktion relevant
+  for brugerens valg.
 tags: 
 ---
-
-{% include code/preview-box.html component="details" title="Eksempel på skjul og vis af indhold" link=true code="/kode/komponenter/detaljer/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

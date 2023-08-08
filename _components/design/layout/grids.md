@@ -1,23 +1,23 @@
 ---
-permalink: /design/layout/grid/
+permalink: "/design/layout/grid/"
+parentlink: "/design/layout/"
 redirect_from:
 - "/grid/"
 - "/design/grid/"
 layout: styleguide
-type: component
-parentlink: /design/layout/
-title: Grid og baseline grid
 category: Design_category
+subcategory: Design
+title: Grid og baseline grid
+lead: Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.
+anchor: false
+description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
+  af siden i 12 lige brede kolonner.
 tags:
 - grid
 - grids
 - kolonner
 - opdeling
 - spalter
-subcategory: Design
-description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
-  af siden i 12 lige brede kolonner.
-lead: 'Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.'
 ---
 
 De fleste selvbetjeningsløsninger kan med fordel nøjes med at venstrestille alt indhold og dermed kun anvende cirka halvdelen af en desktop sides bredde. I sådanne tilfælde bruges til horisontale grid primært til at definere enkelte komponenters bredde.

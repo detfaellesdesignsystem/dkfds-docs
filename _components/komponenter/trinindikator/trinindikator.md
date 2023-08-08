@@ -3,13 +3,14 @@ permalink: "/komponenter/trinindikator/"
 redirect_from:
 - /komponenter/trinindikatorer/
 layout: styleguide
-type: component
-title: Trinindikator
 category: Komponenter_category
 subcategory: Komponenter
-description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
-tags:
+title: Trinindikator
 lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
+component: "tringuide-overflowmenu"
+componentTitle: "Eksempel på trinindikator i overflow menu"
+componentLink: true
+componentCode: "/kode/komponenter/trinindikator/"
 anchor: true
 subnav:
 - text: Alle trin synlige
@@ -22,9 +23,9 @@ subnav:
   href: "#ekstra-information"
 - text: Trinindikator med fejl
   href: "#med-fejl"
+description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
+tags:
 ---
-
-{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" link=true code="/kode/komponenter/trinindikator/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

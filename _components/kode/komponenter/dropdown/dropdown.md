@@ -1,18 +1,18 @@
 ---
-permalink: /kode/komponenter/dropdown/
-parentlink: /kode/komponenter/
+permalink: "/kode/komponenter/dropdown/"
+parentlink: "/kode/komponenter/"
 redirect_from:
-- /kode/komponenter/drop-down/
+- "/kode/komponenter/drop-down/"
 layout: styleguide
-type: component
-title: Dropdown
 category: Kode_category
+subcategory: Kode
+title: Dropdown
+component: "select"
+componentTitle: "Eksempel på dropdown"
+anchor: false
 description: "Dokumentation på implementering af dropdown."
 tags:
-subcategory: Kode
 ---
-
-{% include code/preview-box.html component="select" title="Eksempel på dropdown" %}
 
 ## Eksempler og retningslinjer
 

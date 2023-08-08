@@ -2,10 +2,13 @@
 permalink: "/design/datavisualisering-infografik/tilgaengelig-grafik/"
 parentlink: "/design/datavisualisering-infografik/"
 layout: styleguide
-title: Tilgængelig grafik
 category: Design_category
 subcategory: Design
-type: component
+title: Tilgængelig grafik
+lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det
+  er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
+  farveblinde brugere.
+anchor: false
 description: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal.
   Det er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
   farveblinde brugere.
@@ -17,10 +20,6 @@ tags:
 - diagram
 - graf
 - infografik
-lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det
-  er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
-  farveblinde brugere.
-
 ---
 
 ## Forenkl kompleksiteten

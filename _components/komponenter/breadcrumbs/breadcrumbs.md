@@ -1,15 +1,18 @@
 ---
 permalink: /komponenter/broedkrumme/
 layout: styleguide
-type: element
-title: Brødkrumme
 category: Komponenter_category
-description: ""
-lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder sig, samtidig med at den gør det muligt for brugerne at navigere tilbage igennem løsningens niveauer."
 subcategory: Komponenter
+title: Brødkrumme
+lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder sig, samtidig med at den gør det muligt for brugerne at navigere tilbage igennem løsningens niveauer."
+component: "breadcrumbs"
+componentTitle: "Eksempel på brødkrumme"
+componentLink: true
+componentCode: "/kode/komponenter/broedkrumme/"
+anchor: false
+description:
+tags:
 ---
-
-{% include code/preview-box.html component="breadcrumbs" title="Eksempel på brødkrumme" link=true code="/kode/komponenter/broedkrumme/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -4,10 +4,29 @@ parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/felter/
 - /kode/komponenter/tekstfelter/
-title: Inputfelter
 layout: styleguide
-type: component
 category: Kode_category
+subcategory: Kode
+title: Inputfelter
+component: "text-input"
+componentTitle: "Eksempel på inputfelt"
+anchor: true
+subnav:
+- text: Hjælpetekst
+  href: "#hjaelpetekst"
+- text: Obligatoriske og frivillige felter
+  href: "#obligatoriske-og-frivillige-felter"
+- text: Read-only
+  href: "#read-only"
+- text: Deaktiveret
+  href: "#deaktiveret"
+- text: Prefix og suffix
+  href: "#prefix-og-suffix"
+- text: Karakterbegrænsning
+  href: "#karakterbegraensning"
+- text: Feltbredde
+  href: "#feltbredde"
+description: "Dokumentation på implementering af inputfelter."
 tags:
 - tekstfelt
 - input
@@ -37,27 +56,7 @@ tags:
 - suffiks
 - sufix
 - sufiks
-subcategory: Kode
-description: "Dokumentation på implementering af inputfelter."
-anchor: true
-subnav:
-- text: Hjælpetekst
-  href: "#hjaelpetekst"
-- text: Obligatoriske og frivillige felter
-  href: "#obligatoriske-og-frivillige-felter"
-- text: Read-only
-  href: "#read-only"
-- text: Deaktiveret
-  href: "#deaktiveret"
-- text: Prefix og suffix
-  href: "#prefix-og-suffix"
-- text: Karakterbegrænsning
-  href: "#karakterbegraensning"
-- text: Feltbredde
-  href: "#feltbredde"
 ---
-
-{% include code/preview-box.html component="text-input" title="Eksempel på inputfelt" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

@@ -1,11 +1,10 @@
 ---
 permalink: /kode/typografi/links/
-title: Links
 parentlink: /kode/typografi/
+layout: styleguide
 category: Kode_category
 subcategory: Kode
-type: component
-layout: styleguide
+title: Links
 anchor: true
 subnav:
 - text: Eksternt link
@@ -14,7 +13,7 @@ subnav:
   href: "#sekundaere-links"
 - text: Billeder som links
   href: "#billeder-som-links"
-description: ""
+description:
 tags:
 - "ekstern"
 - "ekstern link"

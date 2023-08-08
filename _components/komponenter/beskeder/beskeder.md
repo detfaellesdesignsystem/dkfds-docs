@@ -1,13 +1,13 @@
 ---
 permalink: "/komponenter/beskeder/"
 layout: styleguide
-type: component
-title: Beskeder (Alerts)
 category: Komponenter_category
 subcategory: Komponenter
-description: Beskeder (Alerts) er farvede bokse, eventuelt tilknyttet et ikon, du kan
-  bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer,
-  o.l.
+title: Beskeder (Alerts)
+component: "alerts"
+componentTitle: "Eksempel på beskeder"
+componentLink: true
+componentCode: "/kode/komponenter/beskeder/"
 anchor: true
 subnav:
 - text: Beskeder med ikon
@@ -16,11 +16,12 @@ subnav:
   href: "#teksteksempler"
 - text: Besked med luk knap
   href: "#besked-med-luk-knap"
+description: Beskeder (Alerts) er farvede bokse, eventuelt tilknyttet et ikon, du kan
+  bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer,
+  o.l.
 tags:
 - fejlbesked
 ---
-
-{% include code/preview-box.html component="alerts" title="Eksempel på beskeder" link=true code="/kode/komponenter/beskeder/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -3,28 +3,27 @@ permalink: "/komponenter/venstremenu/"
 redirect_from:
 - "/komponenter/sidenav/"
 layout: styleguide
-type: component
-title: Venstremenu
 category: Komponenter_category
 subcategory: Komponenter
-description: Venstremenu giver brugerne overblik over struktur og indhold, så de kan
-  finde vej til det indhold, de leder efter.
-tags: 
+title: Venstremenu
 lead: Venstremenu giver brugerne overblik over struktur og indhold, så de kan finde
   vej til det indhold, de leder efter.
+component: "sidenav-normal-level1"
+componentTitle: "Eksempel på venstremenu med ét niveau"
+componentLink: true
+componentCode: "/kode/komponenter/venstremenu/"
 anchor: true
 subnav:
 - text: 2 niveauer
   href: "#2-niveauer"
 - text: 3 niveauer
   href: "#3-niveauer"
-- text: Aktivt link med anchor links
-  href: "#aktivt-link-med-anchor-links"
 - text: Ekstra information
   href: "#ekstra-information"
+description: Venstremenu giver brugerne overblik over struktur og indhold, så de kan
+  finde vej til det indhold, de leder efter.
+tags: 
 ---
-
-{% include code/preview-box.html component="sidenav-normal-level1" title="Eksempel på venstremenu med ét niveau" link=true code="/kode/komponenter/venstremenu/" %}
 
 {:#retningslinjer}
 ## Retningslinjer
@@ -68,11 +67,6 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 ### 3 niveauer
 
 {% include code/preview-box.html component="sidenav-normal-level3" title="Eksempel på venstremenu med tre niveauer" %}
-
-{:#aktivt-link-med-anchor-links}
-### Aktivt link med anchor links
-
-{% include code/preview-box.html component="sidenav-anchor" title="Eksempel på venstremenu med anchor links" %}
 
 {:#ekstra-information}
 ### Ekstra information

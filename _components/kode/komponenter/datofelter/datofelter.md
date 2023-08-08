@@ -1,17 +1,18 @@
 ---
-permalink: /kode/komponenter/datofelter/
-redirect_from:
-- /kode/komponenter/dato-felt/
+permalink: "/kode/komponenter/datofelter/"
 parentlink: /kode/komponenter/
-title: Datofelter
+redirect_from:
+- "/kode/komponenter/dato-felt/"
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Datofelter
+component: "date-input"
+componentTitle: "Eksempel på datofelter"
+anchor: false
 description: "Dokumentation på implementering af datofelter."
+tags:
 ---
-
-{% include code/preview-box.html component="date-input" title="Eksempel på datofelter" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

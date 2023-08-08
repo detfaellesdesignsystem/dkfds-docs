@@ -1,23 +1,24 @@
 ---
 permalink: /komponenter/paginering/
-title: Paginering
 layout: styleguide
-type: component
 category: Komponenter_category
 subcategory: Komponenter
+title: Paginering
 lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opdelt på flere sider. Brugeren navigerer ved at gå fra side til side, eller til første eller sidste side på listen.
+component: "pagination"
+componentTitle: "Eksempel på paginering"
+componentLink: true
+componentCode: "/kode/komponenter/paginering/"
+anchor: true
+subnav:
+- text: Eksempler på paginering
+  href: "#eksempler"
 description: Lad brugeren navigere mellem indhold der er opdelt på flere sider.
 tags:
 - paginering
 - pagination
 - sidevælger
-anchor: true
-subnav:
-- text: Eksempler på paginering
-  href: "#eksempler"
 ---
-
-{% include code/preview-box.html component="pagination" title="Eksempel på paginering" link=true code="/kode/komponenter/paginering/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

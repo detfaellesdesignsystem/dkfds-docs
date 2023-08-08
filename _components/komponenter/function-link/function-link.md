@@ -1,15 +1,18 @@
 ---
 permalink: "/komponenter/funktionslink/"
 layout: styleguide
-type: component
-title: Funktionslink
 category: Komponenter_category
 subcategory: Komponenter
+title: Funktionslink
+component: "function-link-print"
+componentTitle: "Eksempel på funktionslink"
+componentLink: true
+componentCode: "/kode/komponenter/funktionslink/"
+anchor: false
 description: Et link, der udfører en handling på siden - så som print. Der er gerne
   tilføjet et ikon, som underbygger handlingen.
+tags:
 ---
-
-{% include code/preview-box.html component="function-link-print" title="Eksempel på funktions link" link="true" code="/kode/komponenter/funktionslink/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -1,12 +1,13 @@
 ---
 permalink: /komponenter/cards/
 layout: styleguide
-type: component
-title: Cards
 category: Komponenter_category
 subcategory: Komponenter
-description: "Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold"
-tags:
+title: Cards
+component: "cards-full-width"
+componentTitle: "Eksempel på card"
+componentLink: true
+componentCode: "/kode/komponenter/cards/"
 anchor: true
 subnav:
 - text: Card med tredjedel bredde
@@ -15,9 +16,9 @@ subnav:
   href: '#card-med-halv-bredde'
 - text: Samme højde
   href: '#samme-hoejde'
+description: "Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold"
+tags:
 ---
-
-{% include code/preview-box.html component="cards-full-width" title="Eksempel på card" link=true code="/kode/komponenter/cards/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

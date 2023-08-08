@@ -4,8 +4,31 @@ redirect_from:
 - /komponenter/felter/
 - /komponenter/tekstfelter/
 layout: styleguide
-type: component
+category: Komponenter_category
+subcategory: Komponenter
 title: Inputfelter
+component: "text-input"
+componentTitle: "Eksempel på inputfelt"
+componentLink: true
+componentCode: "/kode/komponenter/inputfelter/"
+anchor: true
+subnav:
+- text: Hjælpetekst
+  href: "#hjaelpetekst"
+- text: Obligatoriske og frivillige felter
+  href: "#obligatoriske-og-frivillige-felter"
+- text: Read-only
+  href: "#read-only"
+- text: Deaktiveret
+  href: "#deaktiveret"
+- text: Prefix og suffix
+  href: "#prefix-og-suffix"
+- text: Karakterbegrænsning
+  href: "#karakterbegraensning"
+- text: Feltbredde
+  href: "#feltbredde"
+description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination
+  af begge.
 tags:
 - tekstfelt
 - input
@@ -35,29 +58,7 @@ tags:
 - suffiks
 - sufix
 - sufiks
-category: Komponenter_category
-description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination
-  af begge.
-subcategory: Komponenter
-anchor: true
-subnav:
-- text: Hjælpetekst
-  href: "#hjaelpetekst"
-- text: Obligatoriske og frivillige felter
-  href: "#obligatoriske-og-frivillige-felter"
-- text: Read-only
-  href: "#read-only"
-- text: Deaktiveret
-  href: "#deaktiveret"
-- text: Prefix og suffix
-  href: "#prefix-og-suffix"
-- text: Karakterbegrænsning
-  href: "#karakterbegraensning"
-- text: Feltbredde
-  href: "#feltbredde"
 ---
-
-{% include code/preview-box.html component="text-input" title="Eksempel på inputfelt" link=true code="/kode/komponenter/inputfelter/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

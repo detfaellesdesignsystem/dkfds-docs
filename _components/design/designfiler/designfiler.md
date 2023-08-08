@@ -1,15 +1,16 @@
 ---
-permalink: /design/designressourcer/
+permalink: "/design/designressourcer/"
 redirect_from:
-- /komigang/tildesignere/
-- /komigang/designfiler/
-- /komigang/tildesignere/design-selvbetjeningsloesninger/
+- "/komigang/tildesignere/"
+- "/komigang/designfiler/"
+- "/komigang/tildesignere/design-selvbetjeningsloesninger/"
 layout: styleguide
-title: Designressourcer
 category: Design_category
 subcategory: Design
-description: Information om Det Fælles Designsystem, der retter sig mod designere
+title: Designressourcer
 lead: Ved at følge designsystemet er du med til at skabe sammenhæng i og mellem de mange offentlige selvbetjeningsløsninger du ikke selv designer, til gavn for alle brugere.
+anchor: false
+description: Information om Det Fælles Designsystem, der retter sig mod designere
 tags:
 - figma
 - prototype

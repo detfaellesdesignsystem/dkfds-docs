@@ -1,16 +1,17 @@
 ---
 permalink: /kode/komponenter/skip-link/
 parentlink: /kode/komponenter/
-title: Gå til sidens indhold (Skip-link)
 layout: styleguide
-type: component
-description: "Dokumentation på implementering af skip-link."
-tags: 
 category: Kode_category
 subcategory: Kode
+title: Gå til sidens indhold (Skip-link)
+previewimage: "skip-link-eksempel"
+previewimageTitle: "Eksempel på skip-link"
+previewimageImage: "skiplink"
+anchor: false
+description: "Dokumentation på implementering af skip-link."
+tags: 
 ---
-
-{% include code/preview-image.html component="skip-link-eksempel" image="skiplink" %}
 
 ## Eksempler og retningslinjer
 

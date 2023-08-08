@@ -1,10 +1,11 @@
 ---
 permalink: "/design/datavisualisering-infografik/"
 layout: styleguide
-title: Datavisualisering og infografik
 category: Design_category
 subcategory: Design
-type: component
+title: Datavisualisering og infografik
+lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
+anchor: false
 description: Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
 tags:
 - data
@@ -14,7 +15,6 @@ tags:
 - diagram
 - graf
 - infografik
-lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
 ---
 
 Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 

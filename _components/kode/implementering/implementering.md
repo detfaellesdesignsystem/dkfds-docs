@@ -1,15 +1,16 @@
 ---
-permalink: /kode/implementering/
+permalink: "/kode/implementering/"
 redirect_from:
-- /komigang/tiludviklere/
+- "/komigang/tiludviklere/"
 layout: styleguide
-title: Implementering af DKFDS
-tags: 
-- "installation"
-- "implementering"
 category: Kode_category
 subcategory: Kode
-description: "Sådan kommer du i gang med FDS i dit projekt. Værd at læse for alle udviklere."
+title: Implementering af DKFDS
+anchor: false
+description: Sådan kommer du i gang med FDS i dit projekt. Værd at læse for alle udviklere.
+tags: 
+- installation
+- implementering
 ---
 
 DKFDS kan installeres ved brug af <a href="https://www.npmjs.com/package/dkfds" class="icon-link">npm pakken<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller du kan <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">download seneste version via Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.

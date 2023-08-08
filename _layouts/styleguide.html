@@ -3,123 +3,155 @@ layout: default
 ---
 
 <div class="container page-container">
-  <div class="row">
+    <div class="row">
 
-    <aside class="col-12 col-lg-3 sidebar-col">
-      <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
-        {% assign sidenavFromNavData = site.data.nav[page.category] %}
-        {% if sidenavFromNavData %}
-        <ul class="sidenav-list">
-          {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
-        </ul>
-        {% endif %}
-      </nav>
-    </aside>
+        <aside class="col-12 col-lg-3 sidebar-col">
+            <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
+                {% assign sidenavFromNavData = site.data.nav[page.category] %}
+                {% if sidenavFromNavData %}
+                <ul class="sidenav-list">
+                    {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
+                </ul>
+                {% endif %}
+            </nav>
+        </aside>
 
-    <main class="col-12 col-lg-9" id="main-content">
-      {% include theme-alert.html %}
-      <section id="section-{{page.id}}">
-          {% for alert in page.alerts %}
-          <div class="alert alert-{{ alert.type }} {% if alert.icon %}alert--show-icon{% endif %}" role="alert">
-              <div class="alert-body">
-                  {% if alert.header %}
-                  <h3 class="alert-heading">{{alert.header}}</h3>
-                  {% endif %}
-                  {% if alert.content  %}
-                  <p class="alert-text">
-                    {{alert.content}}
-                  </p>
-                  {% endif %}
-              </div>
-          </div>
-          {% endfor %}
-          {% if page.mailalert == true %}
-          <div class="alert alert-error mt-0 mb-8 d-none" role="alert" id="mail-error-summary">
-              <div class="alert-body">
-                  <h2 class="alert-heading">Der er problemer</h2>
-                  <ul class="alert-text nobullet-list"></ul>
-              </div>
-          </div>
-          {% endif %}
+        <main class="col-12 col-lg-9" id="main-content">
+            {% include theme-alert.html %}
+            <section id="section-{{page.id}}">
 
-          <div class="subheading">
-            {{ page.subcategory }}
-          </div>
-
-          {% if page.title == "Print" %}
-          <h1 id="printpage">{{ page.title }}</h1>
-          {% else %}
-          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-          {% endif %}
-
-          {% comment %}List of hash links/anchor links outputted for mobile overview and use{% endcomment %}
-          {% if page.subnav and page.anchor == true %}
-          <ul class="d-lg-none nobullet-list">
-          {% for subnavitem in page.subnav -%}
-          <li><a href="{{subnavitem.href}}">{{subnavitem.text}}</a></li>
-          {% endfor %}
-          </ul>
-          {% endif %}
-
-          {% if page.lead != null and page.lead != "" %}
-            <p class="font-lead">{{ page.lead }}</p>
-          {% endif %}
-
-          {% if page.component %}
-          {% include code/preview-box.html component=page.component title=page.componentTitle link=page.componentLink code=page.componentCode url=page.componentUrl %}
-          {% endif %}
-
-          {{ content }}
-
-          {% if page.category %}
-            {% assign _links = site.data.nav[page.category] %}
-            {% assign _isCurrentInList = false %}
-
-            {%- for link in _links -%}
-            {% comment %}found in list level {% endcomment %}
-              {% if link.href == page.permalink %}
-                {% unless link.overblik %}
-                  {% if link.categorynav %}
-                    {% assign _links = site.data.nav[link.categorynav] %}
-                    {% break %}
-                  {% endif %}
-                  {% assign _isCurrentInList = true %}
-                  {% break %}
-                {% endunless %}
-              {% endif %}
-
-              {% comment %}not found in level 1 - check all categorynav {% endcomment %}
-              {% if link.categorynav %}
-              {% assign _links_level_3 = site.data.nav[link.categorynav] %}
-                {% for link_3 in _links_level_3 %}
-                  {% if link_3.href == page.permalink %}
-                    {% unless link.overblik %}
-                      {% if link_3.categorynav %}
-                        {% assign _links = site.data.nav[link_3.categorynav] %}
-                        {% break %}
-                      {% endif %}
-                    {% endunless %}
-                    {% assign _isCurrentInList = true %}
-                    {% break %}
-                  {% endif %}
+                {% for alert in page.alerts %}
+                <div class="alert alert-{{ alert.type }} {% if alert.icon %}alert--show-icon{% endif %}" role="alert">
+                    <div class="alert-body">
+                        {% if alert.header %}
+                        <h3 class="alert-heading">{{alert.header}}</h3>
+                        {% endif %}
+                        {% if alert.content %}
+                        <p class="alert-text">
+                            {{alert.content}}
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
                 {% endfor %}
-              {% endif %}
-            {%- endfor -%}
-            {% if _links.size > 0 and _isCurrentInList == false %}
-            <h2 class="sr-only d-lg-none">Undersider</h2>
 
-            <ul class="d-lg-none nobullet-list">
-            {% for link in _links -%}
-            {% unless link.overblik %}
-              {%- assign _page = link.href | resolve_permalink -%}
-            <li><a href="{{link.href}}">{{_page.title}}</a></li>
-            {% endunless %}
-            {% endfor %}
-            </ul>
-            {% endif %}
-          {% endif %}
-      </section>
-    </main>
+                {% if page.mailalert == true %}
+                <div class="alert alert-error mt-0 mb-8 d-none" role="alert" id="mail-error-summary">
+                    <div class="alert-body">
+                        <h2 class="alert-heading">Der er problemer</h2>
+                        <ul class="alert-text nobullet-list"></ul>
+                    </div>
+                </div>
+                {% endif %}
 
-  </div>
+                <div class="subheading">
+                    {{ page.subcategory }}
+                </div>
+
+                {% comment %} There's an icon with id "print" so the print page needs another id {% endcomment %}
+                {% if page.title == "Print" %}
+                <h1 id="printpage">{{ page.title }}</h1>
+                {% else %}
+                <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+                {% endif %}
+
+                {% if page.lead != null and page.lead != "" %}
+                <p class="font-lead">{{ page.lead }}</p>
+                {% endif %}
+
+                {% if page.component %}
+                {% include code/preview-box.html 
+                    component=page.component 
+                    classes=page.componentClasses 
+                    title=page.componentTitle 
+                    link=page.componentLink 
+                    code=page.componentCode 
+                    url=page.componentUrl %}
+                {% endif %}
+
+                {% if page.componentdetails %}
+                {% include code/preview-box-details.html 
+                    component=page.componentdetails 
+                    classes=page.componentdetailsClasses 
+                    title=page.componentdetailsTitle 
+                    link=page.componentdetailsLink 
+                    code=page.componentdetailsCode 
+                    url=page.componentdetailsUrl
+                    detailsClass=page.componentdetailsClass
+                    detaillabel=page.componentdetailsLabel %}
+                {% endif %}
+
+                {% if page.previewimage %}
+                {% include code/preview-image.html 
+                    component=page.previewimage 
+                    classes=page.previewimageClasses 
+                    title=page.previewimageTitle 
+                    code=page.previewimageCode 
+                    image=page.previewimageImage %}
+                {% endif %}
+
+                {% if page.subnav and page.anchor == true %}
+                <nav class="anchorbox">
+                    <h2 class="anchortitle">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        {% for subnavitem in page.subnav -%}
+                        <li><a href="{{subnavitem.href}}">{{subnavitem.text}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                {% endif %}
+
+                {{ content }}
+
+                {% if page.category %}
+                    {% assign _links = site.data.nav[page.category] %}
+                    {% assign _isCurrentInList = false %}
+
+                    {%- for link in _links -%}
+                        {% comment %}found in list level {% endcomment %}
+                        {% if link.href == page.permalink %}
+                            {% unless link.overblik %}
+                            {% if link.categorynav %}
+                                {% assign _links = site.data.nav[link.categorynav] %}
+                                {% break %}
+                            {% endif %}
+                            {% assign _isCurrentInList = true %}
+                            {% break %}
+                            {% endunless %}
+                        {% endif %}
+
+                        {% comment %}not found in level 1 - check all categorynav {% endcomment %}
+                        {% if link.categorynav %}
+                            {% assign _links_level_3 = site.data.nav[link.categorynav] %}
+                            {% for link_3 in _links_level_3 %}
+                                {% if link_3.href == page.permalink %}
+                                    {% unless link.overblik %}
+                                    {% if link_3.categorynav %}
+                                        {% assign _links = site.data.nav[link_3.categorynav] %}
+                                        {% break %}
+                                    {% endif %}
+                                    {% endunless %}
+                                    {% assign _isCurrentInList = true %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {%- endfor -%}
+                    {% if _links.size > 0 and _isCurrentInList == false %}
+                    <h2 class="sr-only d-lg-none">Undersider</h2>
+
+                    <ul class="d-lg-none nobullet-list">
+                        {% for link in _links -%}
+                        {% unless link.overblik %}
+                        {%- assign _page = link.href | resolve_permalink -%}
+                        <li><a href="{{link.href}}">{{_page.title}}</a></li>
+                        {% endunless %}
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                {% endif %}
+            </section>
+        </main>
+
+    </div>
 </div>

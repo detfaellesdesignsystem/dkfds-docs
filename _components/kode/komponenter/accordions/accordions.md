@@ -1,13 +1,12 @@
 ---
 permalink: "/kode/komponenter/accordions/"
-parentlink: /kode/komponenter/
+parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Accordions
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af accordions."
-tags: 
+title: Accordions
+component: "accordion-simple"
+componentTitle: "Eksempel på accordion komponent"
 anchor: true
 subnav:
 - text: Åbn/luk alle
@@ -16,9 +15,9 @@ subnav:
   href: "#med-fejl"
 - text: Med succesbeskeder
   href: "#med-succesbeskeder"
+description: Dokumentation på implementering af accordions.
+tags: 
 ---
-
-{% include code/preview-box.html component="accordion-simple" title="Eksempel på accordion komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

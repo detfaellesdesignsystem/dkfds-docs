@@ -1,20 +1,21 @@
 ---
 permalink: /komponenter/overflowmenu/
 layout: styleguide
-type: component
-title: Overflow menu
 category: Komponenter_category
 subcategory: Komponenter
-description: "Du kan bruge overflow menuer til at vise eller skjule en liste af links."
-tags:
+title: Overflow menu
 lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links eller knapper. Når brugeren klikker på menulinjen, folder listen sig ud.
+component: "overflow-menu"
+componentTitle: "Eksempel på overflow menu"
+componentLink: true
+componentCode: "/kode/komponenter/overflowmenu/"
 anchor: true
 subnav:
 - text: Sortering
   href: '#sortering'
+description: "Du kan bruge overflow menuer til at vise eller skjule en liste af links."
+tags:
 ---
-
-{% include code/preview-box.html component="overflow-menu" title="Eksempel på overflow menu" link=true code="/kode/komponenter/overflowmenu/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -2,11 +2,11 @@
 permalink: "/kode/komponenter/fejlmeddelelser/"
 parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Fejlmeddelelser
 category: Kode_category
-description: Dokumentation på implementering af fejlmeddelelser.
 subcategory: Kode
+title: Fejlmeddelelser
+component: "error-message-name"
+componentTitle: "Eksempel på fejlmeddelelser"
 anchor: true
 subnav:
 - text: Accordions
@@ -27,9 +27,9 @@ subnav:
   href: "#tjekboks"
 - text: Vedhæft fil
   href: "#vedhaeft-fil"
+description: Dokumentation på implementering af fejlmeddelelser.
+tags:
 ---
-
-{% include code/preview-box.html component="error-message-name" title="Eksempel på fejlmeddelelser" %}
 
 ## Eksempler og retningslinjer
 

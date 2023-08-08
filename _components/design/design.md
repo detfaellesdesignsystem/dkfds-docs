@@ -1,11 +1,15 @@
 ---
 permalink: "/design/"
 layout: styleguide
-title: Design
 category: Design_category
+title: Design
 lead: Designet er målrettet selvbetjeningsløsninger der skal på borger.dk og Virk.
   Det visuelle udtryk skal understøtte brugervenlighed i selvbetjeningsløsninger.
+anchor: false
+description:
+tags:
 ---
+
 Hvis du anvender designsystemets kode følger designets styling automatisk med.
 
 Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbetjeningsløsning imiterer designet, så din selvbetjeningsløsning passer til borger.dk og Virk.

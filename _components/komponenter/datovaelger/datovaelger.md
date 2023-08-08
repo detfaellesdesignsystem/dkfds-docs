@@ -1,13 +1,14 @@
 ---
 permalink: "/komponenter/datovaelger/"
 layout: styleguide
-type: component
-title: Datovælger
 category: Komponenter_category
 subcategory: Komponenter
-description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
-tags: 
+title: Datovælger
 lead: Ét felt med knap, hvor man kan vælge en dato.
+component: "date-picker"
+componentTitle: "Eksempel på datovælger"
+componentLink: true
+componentCode: "/kode/komponenter/datovaelger/"
 anchor: true
 subnav:
 - text: Begræns mulige datoer
@@ -16,9 +17,9 @@ subnav:
   href: '#default'
 - text: Datoformat
   href: '#datoformat'
+description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
+tags:
 ---
-
-{% include code/preview-box.html component="date-picker" title="Eksempel på datovælger" link=true code="/kode/komponenter/datovaelger/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

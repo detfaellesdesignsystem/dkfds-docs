@@ -1,18 +1,19 @@
 ---
 permalink: "/komponenter/cookiemeddelelse/"
 layout: styleguide
-type: component
-title: Cookiemeddelelse
 category: Komponenter_category
 subcategory: Komponenter
+title: Cookiemeddelelse
+lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvendige
+  formål, skal brugeren vises en cookiemeddelelse.
+previewimage: "cookie-message"
+previewimageTitle: "Eksempel på cookiemeddelelse"
+previewimageCode: "/kode/komponenter/cookiemeddelelse/"
+anchor: false
 description: Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil man
   har taget stilling til brug af cookies.
 tags:
-lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvendige
-  formål, skal brugeren vises en cookiemeddelelse.
 ---
-
-{% include code/preview-image.html component="cookie-message" code="/kode/komponenter/cookiemeddelelse/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

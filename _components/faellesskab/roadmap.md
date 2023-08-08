@@ -1,10 +1,12 @@
 ---
-permalink: /faellesskab/roadmap/
+permalink: "/faellesskab/roadmap/"
 layout: styleguide
-title: Roadmap
 category: Faellesskab_category
 subcategory: Fællesskab
-description: ""
+title: Roadmap
+anchor: false
+description:
+tags:
 ---
 
 Det Fælles Designsystem er bygget på forskning og erfaring fra FDS-teamet, andre designsystemer (<a href="https://designsystem.digital.gov/" class="icon-link">US Web Design System<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://design-system.service.gov.uk/" class="icon-link">Gov.UK Design System<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>) samt input fra anvendere af FDS.

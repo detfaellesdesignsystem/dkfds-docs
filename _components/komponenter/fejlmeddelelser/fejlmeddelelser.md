@@ -1,25 +1,13 @@
 ---
 permalink: "/komponenter/fejlmeddelelser/"
 layout: styleguide
-type: component
-title: Fejlmeddelelser
 category: Komponenter_category
 subcategory: Komponenter
-description:
-tags:
-- fejlbesked
-- fejlmeddelelse
-- meddelelser
-- fejl
-- fejlmeddelelser
-- fejlbeskeder
-- fejlnotifikationer
-- medelelser
-- meddellelser
-- medellelser
-- fejlmedelelser
-- fejlmeddellelser
-- fejlmedellelser
+title: Fejlmeddelelser
+component: "error-message"
+componentTitle: "Eksempel på fejlmeddelelse"
+componentLink: true
+componentCode: "/kode/komponenter/fejlmeddelelser/"
 anchor: true
 subnav:
 - text: Accordions
@@ -40,9 +28,22 @@ subnav:
   href: "#tjekboks"
 - text: Vedhæft fil
   href: "#vedhaeft-fil"
+description:
+tags:
+- fejlbesked
+- fejlmeddelelse
+- meddelelser
+- fejl
+- fejlmeddelelser
+- fejlbeskeder
+- fejlnotifikationer
+- medelelser
+- meddellelser
+- medellelser
+- fejlmedelelser
+- fejlmeddellelser
+- fejlmedellelser
 ---
-
-{% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" link="true" code="/kode/komponenter/fejlmeddelelser/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

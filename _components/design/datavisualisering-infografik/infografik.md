@@ -2,16 +2,16 @@
 permalink: "/design/datavisualisering-infografik/infografik/"
 parentlink: "/design/datavisualisering-infografik/"
 layout: styleguide
-title: Infografik
 category: Design_category
 subcategory: Design
-type: component
+title: Infografik
+lead: Infografik kan indeholde datavisualiseringer, men kan også være en illustration af et fysisk objekt eller en proces.
+anchor: false
 description: Infografik kan indeholde datavisualiseringer, men kan også være en illustration af et fysisk objekt eller en proces. 
 tags:
 - grafik
 - billeder
 - infografik
-lead: Infografik kan indeholde datavisualiseringer, men kan også være en illustration af et fysisk objekt eller en proces. 
 ---
 
 ## Farver

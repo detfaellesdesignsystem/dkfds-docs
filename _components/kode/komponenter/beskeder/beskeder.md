@@ -1,13 +1,12 @@
 ---
-permalink: /kode/komponenter/beskeder/
-parentlink: /kode/komponenter/
+permalink: "/kode/komponenter/beskeder/"
+parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Beskeder (Alerts)
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af besked."
-tags:
+title: Beskeder (Alerts)
+component: "alert"
+componentTitle: "Eksempel på besked komponent"
 anchor: true
 subnav:
 - text: Farver
@@ -18,10 +17,9 @@ subnav:
   href: '#paragrafbredde'
 - text: Luk knap
   href: '#luk-knap'
+description: "Dokumentation på implementering af besked."
+tags:
 ---
-
-{% include code/preview-box.html component="alert" title="Eksempel på besked komponent" %}
-
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

@@ -3,12 +3,13 @@ permalink: /komponenter/footer/
 redirect_from:
 - /komponenter/footers/
 layout: styleguide
-title: Footer
 category: Komponenter_category
 subcategory: Komponenter
-description: "Du kan bruge en footer til at guide brugere, som når til sidens bund, videre."
-tags: 
+title: Footer
 lead: Du kan bruge en footer til at guide brugere, som når til sidens bund, videre.
+previewimage: "footer-simple"
+previewimageTitle: "Eksempel på footer"
+previewimageCode: "/kode/komponenter/footer/"
 anchor: true
 subnav:
 - text: Tre kolonner
@@ -19,9 +20,9 @@ subnav:
   href: '#kompleks'
 - text: Logo
   href: '#logo'
+description: "Du kan bruge en footer til at guide brugere, som når til sidens bund, videre."
+tags:
 ---
-
-{% include code/preview-image.html component="footer-simple" code="/kode/komponenter/footer/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -6,16 +6,16 @@ redirect_from:
 - /komigang/tiludviklere/anbefalinger-vaerktoejer/
 - /kode/anbefalinger-vaerktoejer/
 layout: styleguide
-title: Kode
 category: Kode_category
+title: Kode
+lead: I denne sektion findes al dokumentation henvendt specifikt til udvikling.
+anchor: false
 description: I denne sektion findes al dokumentation henvendt specifikt til udvikling.
 tags:
 - JavaScript
 - framework
 - frameworks
 - Vanilla
-lead: I denne sektion findes al dokumentation henvendt specifikt til udvikling.
-subcategory: ''
 ---
 
 ## JavaScript

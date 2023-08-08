@@ -1,13 +1,12 @@
 ---
 permalink: /kode/komponenter/radioknap/
 parentlink: /kode/komponenter/
-title: Radioknap (Radio button)
 layout: styleguide
-type: component
 category: Kode_category
-description: "Dokumentation på implementering af radioknapper."
-tags:
 subcategory: Kode
+title: Radioknap (Radio button)
+component: "radiobutton"
+componentTitle: "Eksempel på radioknap"
 anchor: true
 subnav:
 - text: Hjælpetekst
@@ -16,9 +15,9 @@ subnav:
   href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold'
+description: "Dokumentation på implementering af radioknapper."
+tags:
 ---
-
-{% include code/preview-box.html component="radiobutton" title="Eksempel på radioknap" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

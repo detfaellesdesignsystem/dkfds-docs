@@ -2,19 +2,24 @@
 permalink: "/komponenter/faneblade/"
 redirect_from:
 - "/komponenter/tabnav/"
-- /komponenter/faneblad/
+- "/komponenter/faneblad/"
 layout: styleguide
-type: component
-title: Faneblade (Tabs)
 category: Komponenter_category
 subcategory: Komponenter
-description: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
-  af indhold og kun få vist en sektion af gangen.
-tags:
+title: Faneblade (Tabs)
 lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere
   ser de skjulte sektioner, når du anvender faneblade.
+component: "tabnav"
+componentTitle: "Eksempel på faneblade"
+componentLink: true
+componentCode: "/kode/komponenter/faneblade/"
+anchor: false
+description: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
+  af indhold og kun få vist en sektion af gangen.
+tags:
 ---
+
 <div class="alert alert-warning" role="alert">
     <div class="alert-body">
         <h2 class="alert-heading">Eksperimentel</h2>
@@ -27,8 +32,6 @@ lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektio
         </ul>
     </div>
 </div>
-
-{% include code/preview-box.html component="tabnav" title="Eksempel på faneblade" link="true" code="/kode/komponenter/faneblade/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

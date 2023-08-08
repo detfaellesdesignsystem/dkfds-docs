@@ -1,20 +1,19 @@
 ---
-permalink: /kode/komponenter/badges/
-parentlink: /kode/komponenter/
+permalink: "/kode/komponenter/badges/"
+parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Badges
 category: Kode_category
 subcategory: Kode 
-description: "Dokumentation på implementering af badge."
-tags:
+title: Badges
+component: "badge"
+componentTitle: "Eksempel på badge komponent"
 anchor: true
 subnav:
 - text: Statusbadges
   href: "#statusbadges"
+description: "Dokumentation på implementering af badge."
+tags:
 ---
-
-{% include code/preview-box.html component="badge" title="Eksempel på badge komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

@@ -4,10 +4,17 @@ redirect_from:
 - "/udvidelser/micromodal/"
 - "/kode/plugins/micromodal/"
 layout: styleguide
-type: element
-title: Modal
 category: Komponenter_category
 subcategory: Komponenter
+title: Modal
+component: "modal"
+componentTitle: "Eksempel på modal"
+componentLink: true
+componentCode: "/kode/komponenter/modal/"
+anchor: true
+subnav:
+- text: Modal som kræver handling
+  href: "#kraever-handling"
 description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
 tags:
 - besked
@@ -19,13 +26,7 @@ tags:
 - popup
 - pop up
 - vindue
-anchor: true
-subnav:
-- text: Modal som kræver handling
-  href: "#kraever-handling"
 ---
-
-{% include code/preview-box.html component="modal" title="Eksempel på modal" link=true code="/kode/komponenter/modal/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

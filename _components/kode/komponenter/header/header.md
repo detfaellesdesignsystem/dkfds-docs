@@ -1,22 +1,23 @@
 ---
 permalink: /kode/komponenter/header/
+parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/headers/
-parentlink: /kode/komponenter/
-title: Header
 layout: styleguide
-type: component
 category: Kode_category
-description: "Dokumentation på implementering af header."
 subcategory: Kode
+title: Header
+previewimage: "header-full"
+previewimageTitle: "Eksempel på header komponent"
 anchor: true
 subnav:
 - text: Navigation
   href: '#navigation'
 - text: Ekstra rækker
   href: '#ekstra-raekker'
+description: "Dokumentation på implementering af header."
+tags:
 ---
-{% include code/preview-image.html component="header-full" alt="Billedet viser header komponent" title="Eksempel på header komponent" %}
 
 ## Installation
 

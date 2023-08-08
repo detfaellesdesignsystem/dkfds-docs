@@ -35,10 +35,9 @@ redirect_from:
 - /pages/eksempler/boernetilskud/boernetilskud-oversigt/
 - /pages/eksempler/boernetilskud/boernetilskud-oversigt-2/
 layout: styleguide
-title: Selvbetjeningsløsninger
 category: Eksempler_category
 subcategory: Eksempler
-description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem
+title: Selvbetjeningsløsninger
 anchor: true
 subnav:
 - text: 'Formular til kontaktoplysninger'
@@ -49,6 +48,8 @@ subnav:
   href: '#trinformularansoegning'
 - text: 'Sagsoversigt'
   href: '#sagsoversigt'
+description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem
+tags:
 ---
 
 <!-- Formular til kontaktoplysninger -->

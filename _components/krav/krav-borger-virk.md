@@ -1,12 +1,11 @@
 ---
-permalink: /krav/borgerdk-virk/
+permalink: "/krav/borgerdk-virk/"
+parentlink: "/krav/"
 layout: styleguide
-title: Når du skal på borger.dk og Virk
 category: Krav_category
 subcategory: Krav
-description: Din selvbetjeningsløsningen opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.
-tags: 
-lead: Din selvbetjeningsløsningen opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.
+title: Når du skal på borger.dk og Virk
+lead: Din selvbetjeningsløsning opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.
 anchor: true
 subnav:
 - text: Design til borger.dk og Virk
@@ -15,6 +14,8 @@ subnav:
   href: '#integration-paa-borgerdk'
 - text: Integration på Virk
   href: '#integration-paa-virk'
+description: Din selvbetjeningsløsning opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.
+tags: 
 ---
 
 Kravene til integration som borger.dk og Virk stiller, handler om tilslutningen af selvbetjeningsløsningen til den givne portal. Mens krav til designet af selvbetjeningsløsningen retter sig specifikt mod anvendelsen af det Fælles Designsystem. Designkravet handler således om fonte, former, farver og grundlæggende layout samt konsistens i brugen af komponenter.

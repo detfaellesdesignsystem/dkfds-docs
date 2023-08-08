@@ -3,12 +3,13 @@ permalink: /komponenter/header/
 redirect_from:
 - /komponenter/headers/
 layout: styleguide
-title: Header
 category: Komponenter_category
 subcategory: Komponenter
-description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
-tags: 
+title: Header
 lead: Headeren identificerer portalen, den ansvarlig myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
+previewimage: "header-simple"
+previewimageTitle: "Eksempel på header"
+previewimageCode: "/kode/komponenter/header/"
 anchor: true
 subnav:
 - text: Standard header
@@ -19,9 +20,9 @@ subnav:
   href: '#kompleks-header-med-alle-raekker'
 - text: Header med større logo og brugeroplysninger
   href: '#header-med-stoerre-logo-og-brugeroplysninger'
+description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
+tags: 
 ---
-
-{% include code/preview-image.html component="header-simple" code="/kode/komponenter/header/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

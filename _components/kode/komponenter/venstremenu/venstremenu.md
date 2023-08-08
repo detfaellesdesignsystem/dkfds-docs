@@ -3,16 +3,16 @@ permalink: /kode/komponenter/venstremenu/
 parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/sidenav/
-title: Venstremenu
 layout: styleguide
-type: component
-description: "Dokumentation på implementering af venstremenu."
-tags:
 category: Kode_category
 subcategory: Kode
+title: Venstremenu
+component: "sidenav-normal-level2"
+componentTitle: "Eksempel på søgefelt"
+anchor: false
+description: "Dokumentation på implementering af venstremenu."
+tags:
 ---
-
-{% include code/preview-box.html component="sidenav-normal-level2" title="Eksempel på søgefelt" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
@@ -31,11 +31,6 @@ subcategory: Kode
 - Aktive menupunkter skal have klassen `current`.
 - Kun det sidste aktive menupunkt skal have klassen `active`.
 - Hvis der kun er ét aktivt niveau sættes begge klasser.
-
-#### Anchor links
-Hvis en undermenu består af links til områder på den aktuelle side tilføjes klassen `has-anchor-links` på `<ul>` elementet.
-
-{% include code/syntax.html component="sidenav-anchor" link=true copybutton=true %}
 
 #### Tilføj ikon og information i venstremenu
 

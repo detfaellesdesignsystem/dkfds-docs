@@ -6,18 +6,20 @@ redirect_from:
 - /komponenter/formular/
 - /kode/komponenter/formular/
 layout: styleguide
-title: Formular
 category: Eksempler_category
 subcategory: Eksempler
-description: "Se eksempler på opsætning af en formular med forskellige felttyper."
-tags: 
+title: Formular
+componentdetails: "fieldset"
+componentdetailsTitle: "Eksempel på formularstruktur"
+componentdetailsLink: false
+componentdetailsLabel: "for eksempel på formularstruktur"
 anchor: true
 subnav:
 - text: Kompleks formular
   href: '#kompleks'
+description: "Se eksempler på opsætning af en formular med forskellige felttyper."
+tags: 
 ---
-
-{% include code/preview-box-details.html component="fieldset" title="Eksempel på formularstruktur" link=false detaillabel="for eksempel på formularstruktur" %}
 
 ## Vejledning
 

@@ -1,22 +1,21 @@
 ---
 permalink: "/kode/komponenter/sprogvaelger/"
+parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/sprogvaegler/
-parentlink: /kode/komponenter/
 layout: styleguide
-type: component
-title: Sprogvælger
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af sprogvælger."
-tags: 
+title: Sprogvælger
+previewimage: "language-switcher"
+previewimageTitle: "Eksempel på sprogvælger"
 anchor: true
 subnav:
 - text: Tooltip
   href: '#sprogvaelger-med-tooltip'
+description: "Dokumentation på implementering af sprogvælger."
+tags: 
 ---
-
-{% include code/preview-image.html component="language-switcher" alt="Billedet viser en sprogvælger" title="Eksempel på sprogvælger" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

@@ -1,19 +1,19 @@
 ---
 permalink: /kode/komponenter/overflowmenu/
 parentlink: /kode/komponenter/
-title: Overflow menu
 layout: styleguide
-type: component
 category: Kode_category
-description: "Dokumentation på implementering af overflow menu."
 subcategory: Kode
+title: Overflow menu
+component: "overflow-menu"
+componentTitle: "Eksempel på overflow menu komponent"
 anchor: true
 subnav:
 - text: Sortering
   href: '#sortering'
+description: "Dokumentation på implementering af overflow menu."
+tags:
 ---
-
-{% include code/preview-box.html component="overflow-menu" title="Eksempel på overflow menu komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

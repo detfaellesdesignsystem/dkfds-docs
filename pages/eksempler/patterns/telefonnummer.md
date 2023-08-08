@@ -2,11 +2,13 @@
 permalink: /eksempler/patterns/angivelse-af-telefonnummer/
 parentlink: "/eksempler/patterns/"
 layout: styleguide
-title: Angivelse af telefonnummer
 category: Eksempler_category
 subcategory: Eksempler
-description: Visning af felt for angivelse af telefonnummer
+title: Angivelse af telefonnummer
 lead: Måden at håndtere angivelsen af telefonnummer på bør afhænge af selvbetjeningsløsningens målgruppe.
+anchor: false
+description: Visning af felt for angivelse af telefonnummer
+tags:
 ---
 
 ## Vejledning

@@ -1,22 +1,21 @@
 ---
 permalink: /kode/komponenter/tjekboks/
-title: Tjekboks (Checkbox)
 parentlink: /kode/komponenter/
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af tjekbokse."
-tags:
+title: Tjekboks (Checkbox)
+component: "checkbox-large"
+componentTitle: "Eksempel på tjekboks"
 anchor: true
 subnav:
 - text: Lille tjekboks
   href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
+description: "Dokumentation på implementering af tjekbokse."
+tags:
 ---
-
-{% include code/preview-box.html component="checkbox-large" title="Eksempel på tjekboks" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
@@ -81,8 +80,6 @@ Vær opmærksom på, at vi anbefaler, at man bruger den store tjekboks.
 ### Skjult indhold (Collapse)
 
 {% include code/syntax.html component="checkbox-collapse" link=true copybutton=true %}
-
-<a href="/komponenter/tjekboks/#retningslinjer">Retningslinjer</a>
 
 For at initialisere collapse funktionaliteten på en checkbox skal `input[type=checkbox]` have følgende:
 

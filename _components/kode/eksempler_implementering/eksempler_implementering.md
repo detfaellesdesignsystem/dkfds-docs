@@ -1,17 +1,18 @@
 ---
-permalink: /kode/eksempler-implementering/
-parentlink: /kode/
+permalink: "/kode/eksempler-implementering/"
+parentlink: "/kode/"
 redirect_from:
-- /komigang/tiludviklere/eksempler-implementering/
+- "/komigang/tiludviklere/eksempler-implementering/"
 layout: styleguide
-title: Eksempler på implementering
 category: Kode_category
-description: Eksempler på implementering af DKFDS i forskellige typer af projekter
-tags: 
 subcategory: Kode
 alerts:
 - type: warning
   content: Eksemplerne på implementering af DKFDS på denne side er indsendt af brugere af Det Fælles designsystem. Det Fælles Designsystem supporterer ikke disse eksempler.
+title: Eksempler på implementering
+anchor: false
+description: Eksempler på implementering af DKFDS i forskellige typer af projekter
+tags:
 ---
 
 Nedenstående eksempler på implementering er indsendt af løsninger, som har implementeret FDS i deres framework. Vi gør opmærksom på, at FDS-teamet kan ikke tilbyde support af nedenstående frameworks.

@@ -1,11 +1,15 @@
 ---
 permalink: /komponenter/tilbage-til-top/
-title: Tilbage til toppen
 layout: styleguide
-type: component
 category: Komponenter_category
 subcategory: Komponenter
+title: Tilbage til toppen
 lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af en lang side på en let måde uden at miste overblikket. 
+component: "back-to-top"
+componentTitle: "Eksempel på tilbage til toppen"
+componentLink: true
+componentCode: "/kode/komponenter/tilbage-til-top/"
+anchor: false
 description: Lad brugeren navigere tilbage til toppen.
 tags:
 - back-to-top
@@ -14,8 +18,6 @@ tags:
 - til toppen
 - til-top
 ---
-
-{% include code/preview-box.html component="back-to-top" title="Eksempel på tilbage til toppen" link=true code="/kode/komponenter/tilbage-til-top/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

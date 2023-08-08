@@ -16,12 +16,5 @@
         alternative_text=link.alternative_text
         subnav_class=include.subnav_class
       %}
-    {% else -%}
-      {% include nav/sidenavigation/link-item.html
-        link=link
-        subnav_class=include.subnav_class
-        href_key=include.href_key
-        text_key=include.text_key
-      %}
     {% endif %}
 {% endfor %}

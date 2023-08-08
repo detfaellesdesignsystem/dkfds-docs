@@ -1,21 +1,22 @@
 ---
 permalink: /komponenter/tjekboks/
 layout: styleguide
-type: component
-title: Tjekboks (Checkbox)
 category: Komponenter_category
 subcategory: Komponenter
-description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."
-tags:
+title: Tjekboks (Checkbox)
+component: "checkbox-large"
+componentTitle: "Eksempel på tjekbokse"
+componentLink: true
+componentCode: "/kode/komponenter/tjekboks/"
 anchor: true
 subnav:
 - text: Lille tjekboks
   href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
+description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."
+tags:
 ---
-
-{% include code/preview-box.html component="checkbox-large" title="Eksempel på tjekbokse" link=true code="/kode/komponenter/tjekboks/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

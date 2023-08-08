@@ -1,79 +1,11 @@
 ---
 permalink: "/faellesskab/releases/"
-redirect_from: []
 layout: styleguide
-title: Release notes
 category: Faellesskab_category
 subcategory: Fællesskab
-description: Release notes for Det Fælles Designsystem
-tags:
-- changelog
-- releases
-- udgivelse
-- version
-- versioner
-- 2.1.2
-- 3
-- 3
-- 3.0.0
-- 3.0.1
-- 3.0.2
-- 3.0.3
-- 4.0.0
-- 4
-- 4
-- 4.0.1
-- 4.1.1
-- 4.1
-- 4.2.0
-- 4.2
-- 4.3.0
-- 4.3
-- 4.4.0
-- 4.4
-- 5.0.0
-- 5
-- 5
-- 5.1.0
-- 5.1
-- 5.2.0
-- 5.2
-- 5.3.0
-- 5.3
-- 6.0.0
-- 6
-- 6
-- 6.0.1
-- 6.1.0
-- 6.1
-- 6.1.1
-- 7.0.0
-- 7
-- 7
-- 7.1.0
-- 7.1
-- 7.1.1
-- 7.2.0
-- 7.2
-- 7.3.0
-- 7.3
-- 7.4.0
-- 7.4
-- 7.5.0
-- 7.5
-- 7.5.1
-- 7.5.2
-- 7.5.3
-- 8
-- 8.0
-- 8.0.0
-- 8.0.1
-- 8.1.0
-- 8.2.0
-- 8.2.1
-- 9.0.0
-- 9.0.1
-- 9.0.2
+title: Release notes
+lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
+  andre opdateringer.
 anchor: true
 subnav:
 - text: Version 10.0.0
@@ -96,12 +28,75 @@ subnav:
   href: "#version-8-0-0"
 - text: Version 7.5.3
   href: "#version-7-5-3"
-- text: Version 7.5.2
-  href: "#version-7-5-2"
 - text: Tidligere versioner
-  href: "#version-7-5-1"
-lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
-  andre opdateringer.
+  href: "#version-7-5-2"
+description: Release notes for Det Fælles Designsystem
+tags:
+- changelog
+- releases
+- udgivelse
+- version
+- versioner
+- 2.1.2
+- 3
+- 3.0.0
+- 3.0.1
+- 3.0.2
+- 3.0.3
+- 4.0.0
+- 4
+- 4.0.1
+- 4.1.1
+- 4.1
+- 4.2.0
+- 4.2
+- 4.3.0
+- 4.3
+- 4.4.0
+- 4.4
+- 5.0.0
+- 5
+- 5.1.0
+- 5.1
+- 5.2.0
+- 5.2
+- 5.3.0
+- 5.3
+- 6.0.0
+- 6
+- 6.0.1
+- 6.1.0
+- 6.1
+- 6.1.1
+- 7.0.0
+- 7
+- 7.1.0
+- 7.1
+- 7.1.1
+- 7.2.0
+- 7.2
+- 7.3.0
+- 7.3
+- 7.4.0
+- 7.4
+- 7.5.0
+- 7.5
+- 7.5.1
+- 7.5.2
+- 7.5.3
+- 8
+- 8.0
+- 8.0.0
+- 8.0.1
+- 8.1.0
+- 8.2.0
+- 8.2.1
+- 9
+- 9.0.0
+- 9.0.1
+- 9.0.2
+- 10
+- 10.0.0
 ---
 
 Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
@@ -132,6 +127,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) <a href="/komponenter/radioknap/">radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a>. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> og tjekbokse skal opdateres.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret `devDependencies` og `scripts` i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS (for eksempel Internet Explorer). Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt <a href="/kode/browserunderstoettelse/">browserunderstøttelse</a>).
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Anchorlinks er fjernet fra venstremenuen og har i stedet fået sin egen komponent.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2

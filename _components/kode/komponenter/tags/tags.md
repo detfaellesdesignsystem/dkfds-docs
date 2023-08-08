@@ -1,20 +1,19 @@
 ---
 permalink: /kode/komponenter/tags/
 parentlink: /kode/komponenter/
-title: Tags
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af tags."
-tags:
+title: Tags
+component: "tags"
+componentTitle: "Eksempel på tags"
 anchor: true
 subnav:
 - text: Tags med ikon
   href: '#tags-med-ikon'
+description: "Dokumentation på implementering af tags."
+tags:
 ---
-
-{% include code/preview-box.html component="tags" title="Eksempel på tags" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

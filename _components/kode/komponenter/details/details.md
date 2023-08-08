@@ -1,18 +1,18 @@
 ---
-permalink: /kode/komponenter/detaljer/
+permalink: "/kode/komponenter/detaljer/"
+parentlink: "/kode/komponenter/"
 redirect_from:
-- /kode/komponenter/collapse/
-parentlink: /kode/komponenter/
-title: Detaljer
+- "/kode/komponenter/collapse/"
 layout: styleguide
-type: component
 category: Kode_category
+subcategory: Kode
+title: Detaljer
+component: "details"
+componentTitle: "Eksempel på detaljer komponent"
+anchor: false
 description: "Dokumentation på implementering af Detaljer komponenten."
 tags:
-subcategory: Kode
 ---
-
-{% include code/preview-box.html component="details" title="Eksempel på detaljer komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

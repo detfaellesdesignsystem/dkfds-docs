@@ -3,21 +3,21 @@ permalink: "/komponenter/sprogvaelger/"
 redirect_from:
 - "/komponenter/sprogvaegler/"
 layout: styleguide
-type: component
-title: Sprogvælger
 category: Komponenter_category
 subcategory: Komponenter
-description: ''
-tags: 
+title: Sprogvælger
 lead: En sprogvælger bruges hvis løsningen udbydes på mere end et sprog. Den giver
   brugeren mulighed for at vælge et andet sprog end løsningens standardsprog.
+previewimage: "language-switcher"
+previewimageTitle: "Eksempel på sprogvælger"
+previewimageCode: "/kode/komponenter/sprogvaelger/"
 anchor: true
 subnav:
 - text: Sprogvælger med tooltip
   href: "#sprogvaelger-med-tooltip"
+description: ''
+tags: 
 ---
-
-{% include code/preview-image.html component="language-switcher" alt="Eksempel på sprogvælger" code="/kode/komponenter/sprogvaelger/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -1,16 +1,18 @@
 ---
 permalink: "/komponenter/fejlopsummering/"
 layout: styleguide
-type: component
-title: Fejlopsummering
 category: Komponenter_category
 subcategory: Komponenter
+title: Fejlopsummering
+lead: Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.
+component: "error-summary"
+componentTitle: "Eksempel på fejlopsummering"
+componentLink: true
+componentCode: "/kode/komponenter/fejlopsummering/"
+anchor: false
 description: 
 tags: 
-lead: Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.
 ---
-
-{% include code/preview-box.html component="error-summary" title="Eksempel på fejlopsummering" link="true" code="/kode/komponenter/fejlopsummering/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

@@ -2,16 +2,12 @@
 permalink: /kode/komponenter/knapper/
 parentlink: /kode/komponenter/
 layout: styleguide
-type: component
-title: Knapper (Buttons)
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af knapper."
+title: Knapper (Buttons)
+component: "button-primary"
+componentTitle: "Eksempel på knap"
 anchor: true
-tags:
-- "primærknap"
-- "sekundærknap"
-- "tertiærknap"
 subnav:
 - text: Primærknap
   href: '#primaerknap'
@@ -25,9 +21,12 @@ subnav:
   href: '#knap-med-ikon'
 - text: Klikbart ikon
   href: '#klikbart-ikon'
+description: "Dokumentation på implementering af knapper."
+tags:
+- "primærknap"
+- "sekundærknap"
+- "tertiærknap"
 ---
-
-{% include code/preview-box.html component="button-primary" title="Eksempel på knap" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

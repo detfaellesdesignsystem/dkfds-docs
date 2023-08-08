@@ -1,5 +1,6 @@
 ---
 permalink: "/kode/komponenter/toastbesked/"
+parentlink: /kode/komponenter/
 redirect_from:
 - /kode/komponenter/notifikation/
 - /eksempel/notification/
@@ -7,18 +8,12 @@ redirect_from:
 - /eksempel/notification-warning/
 - /eksempel/notification-error/
 - /eksempel/notification-info/
-parentlink: /kode/komponenter/
 layout: styleguide
-type: component
-title: Toastbesked
 category: Kode_category
 subcategory: Kode
-description: "Dokumentation på implementering af toastbesked."
-tags:
-- toast
-- toastbesked
-- notifikation
-- besked
+title: Toastbesked
+component: "toastbesked-info"
+componentTitle: "Eksempel på toastbesked komponent"
 anchor: true
 subnav:
 - text: Succes
@@ -29,9 +24,13 @@ subnav:
   href: "#fejl"
 - text: Information
   href: "#information"
+description: "Dokumentation på implementering af toastbesked."
+tags:
+- toast
+- toastbesked
+- notifikation
+- besked
 ---
-
-{% include code/preview-box.html component="toastbesked-info" title="Eksempel på toastbesked komponent" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

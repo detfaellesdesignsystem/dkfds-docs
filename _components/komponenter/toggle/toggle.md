@@ -1,17 +1,19 @@
 ---
 permalink: /komponenter/toggle/
 layout: styleguide
-type: component
-title: Toggle switch
 category: Komponenter_category
 subcategory: Komponenter
-description: ""
+title: Toggle switch
+lead: "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radioknap eller tjekboks træder valget i kraft i det øjeblik brugerne interagerer med komponenten."
+component: "toggle"
+componentTitle: "Eksempel på toggle"
+componentLink: true
+componentCode: "/kode/komponenter/toggle/"
+anchor: false
+description:
 tags:
 - "switch"
-lead: "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radioknap eller tjekboks træder valget i kraft i det øjeblik brugerne interagerer med komponenten."
 ---
-
-{% include code/preview-box.html component="toggle" title="Eksempel på toggle" link=true code="/kode/komponenter/toggle/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

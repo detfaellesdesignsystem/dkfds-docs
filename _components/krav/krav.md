@@ -1,13 +1,14 @@
 ---
 permalink: "/krav/"
 layout: styleguide
-title: Krav
 category: Krav_category
-description: Hvad er krav og hvad er anbefaling? Få et indblik i, hvilke krav din
-  løsning skal efterleve.
+title: Krav
 lead: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler,
   skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem
   og integrationsproces.
+anchor: false
+description: Hvad er krav og hvad er anbefaling? Få et indblik i, hvilke krav din
+  løsning skal efterleve.
 tags: 
 ---
 

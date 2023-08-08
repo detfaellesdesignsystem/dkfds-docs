@@ -1,12 +1,18 @@
 ---
-permalink: /faellesskab/nyhedsmail/
+permalink: "/faellesskab/nyhedsmail/"
 redirect_from:
-- /omdesignsystemet/nyhedsmail/
+- "/omdesignsystemet/nyhedsmail/"
 layout: styleguide
-title: Nyhedsbrev
 category: Faellesskab_category
 subcategory: Fællesskab
-description: "Tilmeld dig nyheder fra Det Fælles Designsystem"
+title: Nyhedsbrev
+anchor: false
+description: Tilmeld dig nyheder fra Det Fælles Designsystem
+tags:
+- nyhedsbrev
+- nyhedsmail
+- tilmeld
+- afmeld
 ---
 
 <div class="alert mt-5 mb-9" id="newsletter-alert" role="alert" hidden>

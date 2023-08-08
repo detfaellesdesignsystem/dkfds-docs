@@ -1,14 +1,16 @@
 ---
 permalink: "/krav/om-kravene/"
+parentlink: "/krav/"
 layout: styleguide
-title: Om kravene til selvbetjeningsløsninger
 category: Krav_category
 subcategory: Krav
+title: Om kravene til selvbetjeningsløsninger
+anchor: false
 description: Information om eksterne krav, fælles aftalte krav og krav til digitale
   løsninger der skal på borger.dk og Virk.
-parentlink: "/krav/"
-
+tags:
 ---
+
 <a href="https://arkitektur.digst.dk/node/697" class="icon-link">De fælles krav til digitale løsninger<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> består af tre forskellige typer af krav:
 
 * Eksterne krav: krav fra eksterne kilder som fx lovgivning og sikkerhedsstandarder.

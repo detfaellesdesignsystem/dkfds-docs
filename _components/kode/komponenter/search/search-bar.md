@@ -1,16 +1,16 @@
 ---
 permalink: /kode/komponenter/search/
 parentlink: /kode/komponenter/
-title: Søgefelt
 layout: styleguide
-type: component
 category: Kode_category
+subcategory: Kode
+title: Søgefelt
+component: "search"
+componentTitle: "Eksempel på søgefelt"
+anchor: false
 description: "Dokumentation på implementering af søgefelt."
 tags:
-subcategory: Kode
 ---
-
-{% include code/preview-box.html component="search" title="Eksempel på søgefelt" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

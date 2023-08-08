@@ -1,14 +1,14 @@
 ---
 permalink: "/komponenter/tooltip/"
 layout: styleguide
-type: element
-title: "Tooltip"
 category: Komponenter_category
 subcategory: Komponenter
-tippy: true
-description: "Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes."
+title: "Tooltip"
 lead: Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes.
-tags: 
+component: "tooltip-icon"
+componentTitle: "Eksempel på ikon med tooltip"
+componentLink: true
+componentCode: "/kode/komponenter/tooltip/"
 anchor: true
 subnav:
 - text: Klikbart ikon med tooltip
@@ -19,9 +19,9 @@ subnav:
   href: "#knap-med-tooltip"
 - text: Placering af tooltip
   href: "#placering-af-tooltip"
+description: "Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes."
+tags: 
 ---
-
-{% include code/preview-box.html component="tooltip-icon" title="Eksempel på ikon med tooltip" link=true code="/kode/komponenter/tooltip/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

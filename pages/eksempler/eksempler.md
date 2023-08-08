@@ -1,18 +1,15 @@
 ---
 permalink: "/eksempler/"
 layout: styleguide
-title: Eksempler
 category: Eksempler_category
-description: Eksempler på løsninger, der gør brug af Det Fælles Designsystem
-tags: []
+title: Eksempler
 lead: Eksemplerne viser hvordan forskellige typer af selvbetjeningsløsninger kan sættes
   op i layout og flow.
-redirect_from: []
-subcategory: ''
 anchor: false
-subnav: []
-
+description: Eksempler på løsninger, der gør brug af Det Fælles Designsystem
+tags:
 ---
+
 Du bør bestræbe dig på at følge standarderne for opsummerings- og kvitteringssider, så disse bliver konsistente på tværs af selvbetjeningsløsninger.
 
 ## Designsystemet er bygget med sig selv

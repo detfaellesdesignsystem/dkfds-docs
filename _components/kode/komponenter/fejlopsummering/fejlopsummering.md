@@ -2,18 +2,18 @@
 permalink: "/kode/komponenter/fejlopsummering/"
 parentlink: "/kode/komponenter/"
 layout: styleguide
-type: component
-title: Fejlopsummering
 category: Kode_category
-description: Dokumentation på implementering af fejlopsummering.
 subcategory: Kode
+title: Fejlopsummering
+component: "error-summary"
+componentTitle: "Eksempel på fejlopssumering"
 anchor: true
 subnav:
 - text: Placering
   href: '#placering'
+description: Dokumentation på implementering af fejlopsummering.
+tags:
 ---
-
-{% include code/preview-box.html component="error-summary" title="Eksempel på fejlopssumering" %}
 
 ## Eksempler og retningslinjer
 

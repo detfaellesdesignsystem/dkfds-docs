@@ -1,22 +1,23 @@
 ---
 permalink: "/komponenter/badges/"
 layout: styleguide
-type: component
-title: Badges
 category: Komponenter_category
 subcategory: Komponenter
-description: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
-  nyt eller vigtigt indhold.
-tags: 
+title: Badges
 lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller
   vigtigt indhold.
+component: "badges"
+componentTitle: "Eksempel på badges"
+componentLink: true
+componentCode: "/kode/komponenter/badges/"
 anchor: true
 subnav:
 - text: Statusbadges
   href: "#statusbadges"
+description: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
+  nyt eller vigtigt indhold.
+tags: 
 ---
-
-{% include code/preview-box.html component="badges" title="Eksempel på badges" link=true code="/kode/komponenter/badges/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

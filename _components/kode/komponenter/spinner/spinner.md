@@ -1,16 +1,16 @@
 ---
 permalink: /kode/komponenter/spinner/
 parentlink: /kode/komponenter/
-title: Loading spinner
 layout: styleguide
-type: component
 category: Kode_category
+subcategory: Kode
+title: Loading spinner
+component: "spinner"
+componentTitle: "Eksempel på spinner"
+anchor: false
 description: "Dokumentation på implementering af spinner."
 tags:
-subcategory: Kode
 ---
-
-{% include code/preview-box.html component="spinner" title="Eksempel på spinner" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

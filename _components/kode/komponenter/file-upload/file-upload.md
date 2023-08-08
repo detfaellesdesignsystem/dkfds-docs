@@ -1,16 +1,16 @@
 ---
 permalink: /kode/komponenter/fil-upload/
 parentlink: /kode/komponenter/
-title: Vedhæft fil
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Vedhæft fil
+component: "file-input"
+componentTitle: "Eksempel på fil upload"
+anchor: false
 description: "Dokumentation på implementering af fil upload felt."
 tags:
 ---
-
-{% include code/preview-box.html component="file-input" title="Eksempel på fil upload" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">

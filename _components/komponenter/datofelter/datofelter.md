@@ -3,16 +3,18 @@ permalink: "/komponenter/datofelter/"
 redirect_from:
 - /komponenter/dato-felt/
 layout: styleguide
-type: component
-title: Datofelter
 category: Komponenter_category
 subcategory: Komponenter
+title: Datofelter
+lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
+component: "date-input"
+componentTitle: "Eksempel på datofelter"
+componentLink: true
+componentCode: "/kode/komponenter/datofelter/"
+anchor: false
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
-lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 ---
-
-{% include code/preview-box.html component="date-input" title="Eksempel på datofelter" link=true code="/kode/komponenter/datofelter/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

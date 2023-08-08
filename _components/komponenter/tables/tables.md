@@ -4,13 +4,14 @@ redirect_from:
 - /tables/
 - /komponenter/strukturerede-lister/
 layout: styleguide
-type: component
-title: Tabeller
 category: Komponenter_category
 subcategory: Komponenter
-description: "Tabeller er en systematisk opstilling af data i kolonner og rækker."
-tags: 
+title: Tabeller
 lead: Tabeller er en systematisk opstilling af data i kolonner og rækker.
+component: "table"
+componentTitle: "Eksempel på tabel"
+componentLink: true
+componentCode: "/kode/komponenter/tables/"
 anchor: true
 subnav:
 - text: Uden ramme
@@ -31,9 +32,9 @@ subnav:
   href: '#strukturerede-lister'
 - text: Avancerede tabeller
   href: '#avancerede-tabeller'
+description: "Tabeller er en systematisk opstilling af data i kolonner og rækker."
+tags: 
 ---
-
-{% include code/preview-box.html component="table" title="Eksempel på tabel" link=true code="/kode/komponenter/tables/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

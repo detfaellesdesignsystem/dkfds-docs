@@ -1,18 +1,11 @@
 ---
-permalink: /design/typografi/links/
-title: Links
-description: ""
-parentlink: /design/typografi/
+permalink: "/design/typografi/links/"
+parentlink: "/design/typografi/"
+layout: styleguide
 category: Design_category
 subcategory: Design
-type: component
-layout: styleguide
+title: Links
 anchor: true
-tags:
-- "ekstern"
-- "ekstern link"
-- "footer link"
-- "footerlink"
 subnav:
 - text: Designværdier
   href: "#designvaerdier"
@@ -24,6 +17,12 @@ subnav:
   href: "#sekundaere-links"
 - text: Billeder som links
   href: "#billeder-som-links"
+description:
+tags:
+- "ekstern"
+- "ekstern link"
+- "footer link"
+- "footerlink"
 ---
 
 Se også vores <a href="/komponenter/skip-link/">Skip-link</a>, <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.

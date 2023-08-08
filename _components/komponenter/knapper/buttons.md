@@ -3,16 +3,13 @@ permalink: "/komponenter/knapper/"
 redirect_from:
 - "/komponenter/buttons/"
 layout: styleguide
-type: element
-title: Knapper (Buttons)
 category: Komponenter_category
 subcategory: Komponenter
-description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på
-  og dermed udløse en funktion eller handling.
-tags:
-- primærknap
-- sekundærknap
-- tertiærknap
+title: Knapper (Buttons)
+component: "button-primary"
+componentTitle: "Eksempel på primærknap"
+componentLink: true
+componentCode: "/kode/komponenter/knapper/"
 anchor: true
 subnav:
 - text: Primærknap
@@ -27,9 +24,13 @@ subnav:
   href: "#knap-med-ikon"
 - text: Klikbart ikon
   href: "#klikbart-ikon"
+description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på
+  og dermed udløse en funktion eller handling.
+tags:
+- primærknap
+- sekundærknap
+- tertiærknap
 ---
-
-{% include code/preview-box.html component="button-primary" title="Eksempel på primærknap" link=true code="/kode/komponenter/knapper/" %}
 
 {:#retningslinjer}
 ## Retningslinjer

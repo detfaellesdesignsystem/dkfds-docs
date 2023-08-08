@@ -1,13 +1,16 @@
 ---
 permalink: /kode/komponenter/tilbage-til-top/
 parentlink: /kode/komponenter/
-title: Tilbage til toppen
 layout: styleguide
-type: component
 category: Kode_category
 subcategory: Kode
+title: Tilbage til toppen
+component: "back-to-top"
+componentTitle: "Eksempel på tilbage til toppen-knap"
+anchor: false
+description:
+tags:
 ---
-{% include code/preview-box.html component="back-to-top" title="Eksempel på tilbage til toppen-knap" %}
 
 ## Eksempler og retningslinjer
 <ul class="nobullet-list">
