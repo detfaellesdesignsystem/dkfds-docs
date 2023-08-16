@@ -82,6 +82,13 @@ img.outer-border-box{
   }
 }
 
+// Max width for sidenavs
+
+.sidebar-col {
+  max-width: 30rem;
+}
+
+
 // Search
 
 a.search-link{
@@ -1092,7 +1099,7 @@ body[class*="page-grid"][class*="-html"]
   border-top: $details-panel-border-width solid color($details-panel-border-color);
 }
 .sidenav-border-example{
-  border-top: $sidenav-active-border-width solid color($sidenav-active-border-color);
+  border-top: $sidemenu-border-left-thickness solid color($sidenav-border-active-color);
 }
 .navigation-border-example{
   border-top: $navigation-link-default-border-width solid color($navigation-link-current-border-color);

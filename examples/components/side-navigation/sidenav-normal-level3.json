@@ -1,51 +1,44 @@
 {
-  "sidenavsNormal":
-  {
-    "subclass": "sidenav-sub_list",
-    "links": [
-      {
-        "text": "Hovedside"
-      },
-      {
-        "text": "Hovedside",
-        "current": true,
+    "sidenavsNormal": {
         "links": [
-          {
-            "text": "Underside"
-          },
-          {
-            "text": "Underside",
-            "current": true,
-            "links": [
-              {
-                "text": "Underside"
-              },
-              {
-                "text": "Underside"
-              },
-              {
-                "text": "Underside",
-                "active": true
-              },
-              {
-                "text": "Underside"
-              }
-            ]
-          },
-          {
-            "text": "Underside"
-          },
-          {
-            "text": "Underside"
-          },
-          {
-            "text": "Underside"
-          }
+            {
+                "text": "Side"
+            },
+            {
+                "text": "Side",
+                "links": [
+                    {
+                        "text": "Underside"
+                    },
+                    {
+                        "text": "Underside",
+                        "links": [
+                            {
+                                "text": "Underunderside"
+                            },
+                            {
+                                "text": "Underunderside"
+                            },
+                            {
+                                "text": "Underunderside",
+                                "current": true
+                            },
+                            {
+                                "text": "Underunderside"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Underside"
+                    },
+                    {
+                        "text": "Underside"
+                    }
+                ]
+            },
+            {
+                "text": "Side"
+            }
         ]
-      },
-      {
-        "text": "Hovedside"
-      }
-    ]
-  }
+    }
 }

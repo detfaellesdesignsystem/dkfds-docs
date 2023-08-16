@@ -1,19 +1,16 @@
 {
-  "sidenavsNormal":
-  {
-    "subclass": "sidenav-sub_list",
-    "links": [
-      {
-        "text": "Hovedside"
-      },
-      {
-        "text": "Hovedside",
-        "current": true,
-        "active": true
-      },
-      {
-        "text": "Hovedside"
-      }
-    ]
-  }
+    "sidenavsNormal": {
+        "links": [
+            {
+                "text": "Side"
+            },
+            {
+                "text": "Side",
+                "current": true
+            },
+            {
+                "text": "Side"
+            }
+        ]
+    }
 }

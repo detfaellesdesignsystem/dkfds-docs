@@ -5,12 +5,12 @@ layout: default
 <div class="container page-container">
     <div class="row">
 
-        <aside class="col-12 col-lg-3 sidebar-col">
+        <aside class="col-12 col-lg-3">
             <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
                 {% assign sidenavFromNavData = site.data.nav[page.category] %}
                 {% if sidenavFromNavData %}
-                <ul class="sidenav-list">
-                    {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
+                <ul class="sidemenu">
+                    {% include nav/sidenavigation/list.html links=sidenavFromNavData %}
                 </ul>
                 {% endif %}
             </nav>

@@ -1,20 +1,19 @@
 {% for link in include.links -%}
+
+  {% assign _page = nil %}
+
+  {% comment %} 
+  -------------------------------------------------------------------
+  | Get the page information for the link using resolve_permalink() |
+  -------------------------------------------------------------------
+  {% endcomment %}
+
   {% if link.href -%}
     {% assign _page = link.href | resolve_permalink %}
-  {% else -%}
-    {% assign _page = nil %}
   {% endif %}
-    {% if _page -%}
-      {%
-        include nav/sidenavigation/page-item.html
-        page=_page
-        rel=include.rel
-        flat=include.flat
-        links=link.links
-        use_alt_text=include.use_alt_text
-        categorynav=link.categorynav
-        alternative_text=link.alternative_text
-        subnav_class=include.subnav_class
-      %}
-    {% endif %}
+
+  {% if _page -%}
+    {% include nav/sidenavigation/page-item.html page=_page categorynav=link.categorynav %}
+  {% endif %}
+  
 {% endfor %}
