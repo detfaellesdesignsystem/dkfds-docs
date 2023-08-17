@@ -68,6 +68,7 @@ Kode_Typografi_category:
 #Left menu for komponent-category
 Komponenter_category:
   - href: /komponenter/accordions/
+  - href: /komponenter/anchorlinks/
   - href: /komponenter/badges/
   - href: /komponenter/beskeder/
   - href: /komponenter/broedkrumme/
@@ -123,6 +124,7 @@ Kode_category:
 #Left menu for komponent-category
 Kode_Komponenter_category:
   - href: /kode/komponenter/accordions/
+  - href: /kode/komponenter/anchorlinks/
   - href: /kode/komponenter/badges/
   - href: /kode/komponenter/beskeder/
   - href: /kode/komponenter/broedkrumme/
