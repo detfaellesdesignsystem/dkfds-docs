@@ -136,7 +136,7 @@ subnav:
 <section>
 
   <h2 id="skygger">Skygger</h2>
-  {% include code/preview-box.html component="borders" link=false %}
+  {% include code/preview-box.html component="shadows" link=false %}
 
   <h3>Designværdier</h3>
   <table class="table table--borderless table--responsive-headers">
