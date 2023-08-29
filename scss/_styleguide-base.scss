@@ -1102,7 +1102,7 @@ body[class*="page-grid"][class*="-html"]
   border-top: $sidemenu-border-left-thickness solid color($sidenav-border-active-color);
 }
 .navigation-border-example{
-  border-top: $navigation-link-default-border-width solid color($navigation-link-current-border-color);
+  border-top: $navigation-desktop-border-bottom-thickness solid color($navigation-link-current-border-color);
 }
 
 .screenshot-gallery .screenshot img {

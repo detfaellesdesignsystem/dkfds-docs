@@ -2,14 +2,8 @@
 
   {% assign _page = nil %}
 
-  {% comment %} 
-  -------------------------------------------------------------------
-  | Get the page information for the link using resolve_permalink() |
-  -------------------------------------------------------------------
-  {% endcomment %}
-
   {% if link.href -%}
-    {% assign _page = link.href | resolve_permalink %}
+    {% assign _page = link.href | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
   {% endif %}
 
   {% if _page -%}

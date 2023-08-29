@@ -26,17 +26,17 @@
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        <div class="navbar navbar-primary">
-            <div class="navbar-inner container">
-                <ul class="nav-primary">
+    <div class="nav-container">
+        <div class="container">
+            {{ menu_close_button() }}
+            <nav>
+                <ul class="mainmenu">
                     <li>
                         <a href="#" class="nav-link">
                             <span>Første menupunkt</span>
                         </a>
                     </li>
-                    <li class="current active">
+                    <li class="active current">
                         <a href="#" class="nav-link" aria-current="page">
                             <span>Andet menupunkt</span>
                         </a>
@@ -52,17 +52,9 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            {{ mobile_portal_header(portal_header_data) }}
+            {{ mobile_solution_header(solution_header_data) }}
         </div>
-        <div class="navbar">
-            <div class="navbar-inner container navbar-context-actions">
-                <div class="nav-actions">
-                    <a href="#" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
-                </div>
-            </div>
-        </div>
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-
-    </nav>
+    </div>
 </header>

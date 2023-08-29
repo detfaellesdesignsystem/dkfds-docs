@@ -26,123 +26,101 @@
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        <div class="navbar navbar-primary">
-        <div class="navbar-inner container">
-            <ul class="nav-primary">
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Første menupunkt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Andet menupunkt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Tredje menupunkt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Fjerde menupunkt</span>
-                    </a>
-                </li>
-                <li class="current">
-                    <div class="overflow-menu">
-                        <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
-                            <span>Femte menupunkt</span>
-                        </button>
-                        <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
-                            <ul class="overflow-list">
-                                <li class="active">
-                                    <a href="#" aria-current="page">Subsektion med en meget lang titel som går i flere linier</a>
-                                </li>
-                                <li>
-                                    <a href="#">Subsektiontitel</a>
-                                </li>
-                                <li>
-                                    <a href="#">Subsektiontitel</a>
-                                </li>
-                                <li>
-                                    <a href="#">Subsektiontitel som også er forholdsvis lang</a>
-                                </li>
-                            </ul>
+    <div class="nav-container">
+        <div class="container">
+            {{ menu_close_button() }}
+            <nav>
+                <ul class="mainmenu">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Første menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="submenu">
+                            <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                                <span>Andet menupunkt</span>
+                            </button>
+                            <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
+                                <ul class="overflow-list">
+                                    <li>
+                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                    </li>
+                                    <li>
+                                        <div class="submenu">
+                                            <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="subheaderoverflow1" aria-haspopup="true" aria-expanded="false">
+                                                <span>Subsektiontitelmedindholdttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</span>
+                                            </button>
+                                            <div class="overflow-menu-inner" id="subheaderoverflow1" aria-hidden="true">
+                                                <ul class="overflow-list">
+                                                    <li>
+                                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="nav-link"><span>Subsektiontitelmedindholdttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="unstyled-list nav-actions">
-            <li>
-                <div class="overflow-menu overflow-menu--open-left">
-                <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="false">
-                    Overflow menu
-                    {{ icon_svg({"name": 'arrow-drop-down'}) }}
-                </button>
-                <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
-                    <ul class="overflow-list">
-                        <li><a href="#">Menupunkt 1</a></li>
-                        <li><a href="#">Et menupunkt 2</a></li>
-                        <li><a href="#">Tredje menupunkt 3</a></li>
-                    </ul>
-                </div>
-                </div>
-            </li>
-            </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Tredje menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Fjerde menupunkt</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <div class="submenu">
+                            <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="false">
+                                <span>Femte menupunkt</span>
+                            </button>
+                            <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="true">
+                                <ul class="overflow-list">
+                                    <li class="active current">
+                                        <a href="#" class="nav-link" aria-current="page"><span>Subsektion med en meget lang titel som går i flere linier</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link"><span>Subsektiontitel som også er forholdsvis lang</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Sjette menupunkt</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            {{ mobile_portal_header(portal_header_data) }}
+            {{ mobile_solution_header(solution_header_data) }}    
         </div>
-        </div>
-
-        <div class="navbar">
-        <div class="navbar-inner container">
-            <div class="nav-secondary">
-            <p class="nav-secondary-heading">Ekstra menu- og funktionslinje</p>
-            <ul class="unstyled-list nav-actions">
-                <li>
-                <div class="overflow-menu overflow-menu--open-right">
-                    <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow3" aria-haspopup="true" aria-expanded="false">
-                    Overflow menu
-                    {{ icon_svg({"name": 'arrow-drop-down'}) }}
-                    </button>
-                    <div class="overflow-menu-inner" id="headeroverflow3" aria-hidden="true">
-                    <ul class="overflow-list">
-                        <li><a href="#">Menupunkt 1</a></li>
-                        <li><a href="#">Et menupunkt 2</a></li>
-                        <li><a href="#">Tredje menupunkt 3</a></li>
-                    </ul>
-                    </div>
-                </div>
-                </li>
-            </ul>
-            </div>
-
-            <ul class="unstyled-list nav-actions">
-            <li>
-                <a href="#" class="button button-tertiary">Tertiærknap</a>
-            </li>
-            <li>
-                <a href="#" class="button button-tertiary">Tertiærknap</a>
-            </li>
-            <li>
-                <a href="#" class="button button-tertiary">Tertiærknap</a>
-            </li>
-            </ul>
-        </div>
-        </div>
-        <div class="navbar">
-        <div class="navbar-inner container navbar-context-actions">
-            <div class="nav-actions">
-            <a href="" class="function-link">{{icon_svg({"name": "print"})}}Funktionsikon</a>
-            <a href="" class="function-link">{{icon_svg({"name": "save"})}}Funktionsikon</a>
-            </div>
-        </div>
-        </div>
-
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-
-    </nav>
+    </div>
 </header>

@@ -49,20 +49,20 @@
     </div>
 
     <div class="overlay"></div>
-    <nav class="nav">
+    <div class="nav-container">
+        <div class="container">
 
-        <button class="function-link button-menu-close js-menu-close"
-            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            <button class="function-link button-menu-close js-menu-close"
+                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
 
-        <div class="navbar navbar-primary">
-            <div class="navbar-inner container">
-                <ul class="nav-primary">
+            <nav>
+                <ul class="mainmenu">
                     <li>
                         <a href="#" class="nav-link">
                             <span>Første menupunkt</span>
                         </a>
                     </li>
-                    <li class="current active">
+                    <li class="active current">
                         <a href="#" class="nav-link" aria-current="page">
                             <span>Andet menupunkt</span>
                         </a>
@@ -78,41 +78,34 @@
                         </a>
                     </li>
                 </ul>
+            </nav>
+
+            <div class="portal-info-mobile">
+
+                <p class="user">
+
+                    <span class="username">Anders Andersen, Forsikringens
+                        Forsikringsfirma</span>
+
+                </p>
+
+                <button class="button button-secondary d-print-none mt-3">
+                    Log af
+                </button>
             </div>
-        </div>
-        <div class="navbar">
-            <div class="navbar-inner container navbar-context-actions">
-                <div class="nav-actions">
-                    <a href="#"
-                        class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>Funktionsikon</a>
-                </div>
+
+            <div class="solution-info-mobile">
+
+                <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
+
+                <p>Support: 12 34 56 78 <span
+                        class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
+                            class="d-none d-lg-inline-block mr-2">· </span><a href="#"
+                            class="icon-link function-link">Kontakt<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
+                </p>
+
             </div>
-        </div>
-
-        <div class="portal-info-mobile">
-
-            <p class="user">
-
-                <span class="username">Anders Andersen, Forsikringens Forsikringsfirma</span>
-
-            </p>
-
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
-        </div>
-
-        <div class="solution-info-mobile">
-
-            <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
-
-            <p>Support: 12 34 56 78 <span
-                    class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
-                        class="d-none d-lg-inline-block mr-2">· </span><a href="#"
-                        class="icon-link function-link">Kontakt<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
-            </p>
 
         </div>
-
-    </nav>
+    </div>
 </header>

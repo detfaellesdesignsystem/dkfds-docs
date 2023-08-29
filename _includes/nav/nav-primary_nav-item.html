@@ -35,8 +35,8 @@
   {% endif %}
 
   {% if _links -%}
-    <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-{{ titletext | slugify }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
+    <div class="submenu">
+      <button class="nav-link button-overflow-menu js-dropdown" data-js-target="#submenu-level1-{{ titletext | slugify }}" aria-haspopup="true" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
         <span>{{ titletext | smartify }}</span>
       </button>
       <div class="overflow-menu-inner" id="submenu-level1-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
@@ -63,8 +63,7 @@
       </div>
     </div>
   {% else -%}
-    <a href="{{ include.page.url | relative_url }}"
-      class="nav-link">
+    <a href="{{ include.page.url | relative_url }}" class="nav-link">
       <span>{{ titletext | smartify }}</span>
     </a>
   {% endif %}
