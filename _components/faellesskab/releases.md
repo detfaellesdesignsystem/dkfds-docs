@@ -73,8 +73,11 @@ tags:
 - 8.2.1
 - 9.0.0
 - 9.0.1
+- 9.0.2
 anchor: true
 subnav:
+- text: Version 9.0.2
+  href: "#version-9-0-2"
 - text: Version 9.0.1
   href: "#version-9-0-1"
 - text: Version 9.0.0
@@ -93,10 +96,8 @@ subnav:
   href: "#version-7-5-3"
 - text: Version 7.5.2
   href: "#version-7-5-2"
-- text: Version 7.5.1
-  href: "#version-7-5-1"
 - text: Tidligere versioner
-  href: "#version-7-5-0"
+  href: "#version-7-5-1"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 ---
@@ -120,6 +121,15 @@ Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-9-0-2 .mb-0}
+## Version 9.0.2
+
+<div><span class="small-text mt-0 d-block">30-08-2023</span></div>
+
+- Rettet fejl, hvor musemarkøren ikke blev vist korrekt på <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede felter</a>, når de var angivet som andet end `type="text"`.
+- Rettet fejl, hvor <a href="/komponenter/knapper/">knapper</a> ikke altid stod på linje, når de lå i samme række.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 {:#version-9-0-1 .mb-0}
 ## Version 9.0.1

@@ -14,6 +14,11 @@ lead: I forummet sparrer vi om Det Fælles Designsystem (FDS) og udviklingen fre
 Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsystemet. Myndigheder, som overvejer at anvende designsystemet er også velkomne til at deltage.
 
 ## Næste samarbejdsforum
-Næste samarbejdsforum er ikke planlagt endnu.
+
+Næste samarbejdsforum er planlagt til <strong>14. september 2023 kl. 09.15 til 10.00</strong>.
+
+Invitationer er sendt ud via vores nyhedsbrev. Hvis du gerne vil deltage og ikke har modtaget en invitation, kan du kontakte FDS-teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+<a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsbrevet</a> for at blive informeret om samarbejdsforum m.m. fremover.
 
 <a href="/faellesskab/governance/">Læs om governance af FDS</a>
