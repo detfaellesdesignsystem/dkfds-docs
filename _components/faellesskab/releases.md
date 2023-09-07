@@ -490,7 +490,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
-- Mere padding i toppen af <a href="/komponenter/header/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.
+- Mere padding i toppen af <a href="/komponenter/header/">navbar indeholdende funktionslink og overflow menu i header</a>.
 - Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
 - <a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.
 - Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/header/">header</a> samt <a href="/komponenter/venstremenu/">venstremenuen</a>.

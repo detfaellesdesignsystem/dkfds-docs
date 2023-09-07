@@ -19,6 +19,12 @@ var flatten = require('gulp-flatten');
 var distComponentCode = '_includes/code/components';
 var distJekyllComponentPreview = '_preview-components';
 
+var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
+var buildHeader = ['examples/components/header/*.njk'];
+var buildExamples = ['examples/examples/**/*.njk'];
+
+var activeBuild = buildAll;
+
 function getPath (dirname){
 
     var pathArray = dirname.split('\\');
@@ -66,7 +72,7 @@ title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
 }
 
 gulp.task('nunjucks', done => {
-    return gulp.src(['examples/**/**/*.njk', 'examples/**/**/**/*.njk'],
+    return gulp.src(activeBuild,
         {base: 'examples/'})
         .pipe(data(function(file) {
             //dutil.logMessage('nunjucks', file.path.toString());

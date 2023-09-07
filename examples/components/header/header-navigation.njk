@@ -3,19 +3,44 @@
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 {% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
 
+{% set portal_header_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_header_data = {
+    "lastHeader": false,
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "En langt langt længere løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+    }
+} %}
+
 <div class="overlay"></div>
-<nav class="nav">
-    {{ menu_close_button() }}
-    <div class="navbar navbar-primary">
-        <div class="navbar-inner container">
-            <ul class="nav-primary">
+<div class="navigation-header">
+    <div class="navigation-header-inner container">
+        {{ menu_close_button() }}
+        <nav>
+            <ul class="mainmenu">
                 <li>
                     <a href="#" class="nav-link">
                         <span>Første menupunkt</span>
                     </a>
                 </li>
-                <li class="current active">
-                    <a href="#" class="nav-link" aria-current="page">
+                <li>
+                    <a href="#" class="nav-link">
                         <span>Andet menupunkt</span>
                     </a>
                 </li>
@@ -24,30 +49,9 @@
                         <span>Tredje menupunkt</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Fjerde menupunkt</span>
-                    </a>
-                </li>
             </ul>
-        </div>
+        </nav>
+        {{ mobile_portal_header(portal_header_data) }}
+        {{ mobile_solution_header(solution_header_data) }}    
     </div>
-
-    {{ 
-        mobile_portal_header({
-            "compact": true,
-            "user": {
-                "name": "Anders Andersen, Forsikringens Forsikringsfirma"
-            }
-        }) 
-    }}
-    {{ 
-        mobile_solution_header({
-            "authority": {
-                "name": "Myndighedsnavn",
-                "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
-            }
-        }) 
-    }}
-
-</nav>
+</div>

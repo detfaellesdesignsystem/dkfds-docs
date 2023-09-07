@@ -23,9 +23,27 @@
 
     <div class="overlay"></div>
 
+    <!-- Mobile main menu-->
+    <div class="navigation-header-mobile">
+      <div class="navigation-header-inner container">
+        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
+            aria-hidden="true" focusable="false" tabindex="-1">
+            <use xlink:href="#close"></use>
+          </svg>Luk</button>
+        <nav>
+          <ul class="mainmenu">
+            {%
+            include nav/nav-mobile.html
+            links=site.data.nav.mobile
+            %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <!-- Desktop main menu-->
-    <div class="nav-container d-none d-lg-block">
-      <div class="container">
+    <div class="navigation-header d-none d-lg-block">
+      <div class="navigation-header-inner container">
         <nav>
           <ul class="mainmenu">
             {%
@@ -47,21 +65,4 @@
       </div>
     </div>
 
-    <!-- Mobile main menu-->
-    <div class="nav-container d-lg-none">
-      <div class="container">
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
-            aria-hidden="true" focusable="false" tabindex="-1">
-            <use xlink:href="#close"></use>
-          </svg>Luk</button>
-        <nav>
-          <ul class="mainmenu">
-            {%
-            include nav/nav-mobile.html
-            links=site.data.nav.mobile
-            %}
-          </ul>
-        </nav>
-      </div>
-    </div>
 </header>

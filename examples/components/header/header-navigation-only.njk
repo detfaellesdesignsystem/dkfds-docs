@@ -1,0 +1,44 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/menu-buttons.njk" import menu_open_button as menu_open_button %}
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
+<header class="header">
+    {{ skiplink() }}
+    {{- menu_open_button() }}
+    <div class="overlay"></div>
+    <div class="navigation-header">
+        <div class="navigation-header-inner container">
+            {{ menu_close_button() }}
+            <nav>
+                <ul class="mainmenu">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Første menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Andet menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Tredje menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Fjerde menupunkt</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>  
+        </div>
+    </div>
+</header>

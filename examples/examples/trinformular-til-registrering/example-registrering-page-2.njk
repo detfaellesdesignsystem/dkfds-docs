@@ -61,21 +61,14 @@
     {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
-
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-actions">
-                    <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
-                </div>
-            </div>
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
+            {{ menu_close_button() }}
+            {{ mobile_solution_header(solution_header_data) }}
+            {{ mobile_portal_header(portal_header_data) }}
         </div>
-    </nav>
+    </div>
 </header>
 {% endblock %}
 
@@ -86,8 +79,8 @@
             {{ overflow_stepguide(trinindikator_data) }}
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/" class="back-link">Tilbage</a>
-            </div>
+            <button class="function-link link-right d-flex w-percent-100 justify-content-end">{{icon_svg({"name": "save"})}}Gem kladde</button>
+            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/" class="back-link">Tilbage</a></div>
             <h1 class="mb-6">Vælg noget mere</h1>
             <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-3/">
                 <strong>Du må kun vælge det, som lever op til dit og dat.</strong>

@@ -60,11 +60,13 @@
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-    </nav>
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
+            {{ menu_close_button() }}
+            {{ mobile_solution_header(solution_header_data) }}
+            {{ mobile_portal_header(portal_header_data) }}
+        </div>
+    </div>
 </header>
 {% endblock %}
 

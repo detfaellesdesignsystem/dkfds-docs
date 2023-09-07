@@ -1,3 +1,4 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
 {% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
 
@@ -6,14 +7,26 @@
 {% from "components/header/header.njk" import solution_header as solution_header %}
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 
+{% set portal_header_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
 <header class="header">
     {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-    </nav>
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
+            {{ menu_close_button() }}
+            {{ mobile_portal_header(portal_header_data) }}
+        </div>
+    </div>
 </header>

@@ -1,15 +1,18 @@
 const puppeteer = require('puppeteer');
 
-//var root = "http://127.0.0.1:4000";
-var root = "https://develop.designsystem.dk/";
+var root = "http://127.0.0.1:4000";
+//var root = "https://develop.designsystem.dk/";
 var targetRootDir = "img/examples/";
 var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
-    {"url": "/eksempel/header-simple/", "filename": "header-simple.png", "width": 992, "height": 158 },
-    {"url": "/eksempel/header-large/", "filename": "header-large.png", "width": 992, "height": 158 },
-    {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
-    {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
+    {"url": "/eksempel/header-portal-only/", "filename": "header-portal-only.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-solution-only/", "filename": "header-solution-only.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-navigation-only/", "filename": "header-navigation-only.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-portal-and-solution/", "filename": "header-portal-and-solution.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-solution-and-navigation/", "filename": "header-solution-and-navigation.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-all-rows/", "filename": "header-all-rows.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-all-rows-dropdown/", "filename": "header-all-rows-dropdown.png", "width": 992, "height": 200 },
     {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 114 },
     {"url": "/eksempel/footer-simple-language/", "filename": "footer-simple-language.png", "width": 1017, "height": 213 },
     {"url": "/eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 80 },

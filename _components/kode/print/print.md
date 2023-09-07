@@ -95,9 +95,7 @@ Hvis du har kontaktinformationer stående både i headeren og footeren bør én 
 #### Eksempler
 
 {:.nobullet-list}
-- <a href="/eksempel/header-simple/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a>
-- <a href="/eksempel/header-medium/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header med topmenu">Standard header med topmenu</a>
-- <a href="/eksempel/header-full/?r={{page.permalink}}%23header-eksempelloesninger" title="Kompleks header">Kompleks header</a>
+- <a href="/eksempel/header-all-rows/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a>
 - <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
 

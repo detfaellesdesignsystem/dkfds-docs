@@ -7,12 +7,23 @@
 {% from "components/header/header.njk" import solution_header as solution_header %}
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 
+{% set portal_header_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
 {% set solution_header_data = {
-    "lastHeader": false,
     "hideOnPrint": false,
     "title": {
         "href": "#",
-        "text": "En længere løsningstitel"
+        "text": "En langt langt længere løsningstitel"
     },
     "authority": {
         "name": "Myndighedsnavn",
@@ -24,37 +35,12 @@
     {{ skiplink() }}
     {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
-
     <div class="overlay"></div>
-    <div class="nav-container">
-        <div class="container">
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
             {{ menu_close_button() }}
-            <nav>
-                <ul class="mainmenu">
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Første menupunkt</span>
-                        </a>
-                    </li>
-                    <li class="active current">
-                        <a href="#" class="nav-link" aria-current="page">
-                            <span>Andet menupunkt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Tredje menupunkt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Fjerde menupunkt</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            {{ mobile_portal_header(portal_header_data) }}
             {{ mobile_solution_header(solution_header_data) }}
+            {{ mobile_portal_header(portal_header_data) }}
         </div>
     </div>
 </header>

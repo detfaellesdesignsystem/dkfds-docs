@@ -1,3 +1,4 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
 {% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
 
@@ -6,15 +7,26 @@
 {% from "components/header/header.njk" import solution_header as solution_header %}
 {% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
 
+{% set solution_header_data = {
+    "hideOnPrint": false,
+    "menu": true,
+    "title": {
+        "href": "#",
+        "text": "En langt langt længere løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+    }
+} %}
+
 <header class="header">
     {{ skiplink() }}
-    {{ portal_header(portal_header_data) }}
     {{ solution_header(solution_header_data) }}
     <div class="overlay"></div>
-    <div class="nav-container">
-        <div class="container">
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
             {{ menu_close_button() }}
-            {{ mobile_portal_header(portal_header_data) }}
             {{ mobile_solution_header(solution_header_data) }}
         </div>
     </div>

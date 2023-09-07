@@ -64,12 +64,11 @@
     {{ solution_header(solution_header_data) }}
 
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-
-        <div class="navbar navbar-primary">
-            <div class="navbar-inner container">
-                <ul class="nav-primary">
+    <div class="navigation-header">
+        <div class="navigation-header-inner container">
+            {{ menu_close_button() }}
+            <nav>
+                <ul class="mainmenu">
                     <li class="current active">
                         <a href="#" class="nav-link" aria-current="page">
                             <span>Find sag</span>
@@ -86,54 +85,43 @@
                         </a>
                     </li>
                     <li>
-                        <div class="overflow-menu">
-                            <button class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
+                        <div class="submenu">
+                            <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
                                 <span>Udbetalinger</span>
                             </button>
                             <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
-                                <ul class="overflow-list" role="menu">
+                                <ul class="overflow-list">
                                     <li role="none">
-                                        <a href="#" role="menuitem">2022</a>
+                                        <a href="#" class="nav-link"><span>2022</span></a>
                                     </li>
                                     <li role="none">
-                                        <a href="#" role="menuitem">2021</a>
+                                        <a href="#" class="nav-link"><span>2021</span></a>
                                     </li>
                                     <li role="none">
-                                        <a href="#" role="menuitem">2020</a>
+                                        <a href="#" class="nav-link"><span>2020</span></a>
                                     </li>
                                     <li role="none">
-                                        <a href="#" role="menuitem">2019</a>
+                                        <a href="#" class="nav-link"><span>2019</span></a>
                                     </li>
                                     <li role="none">
-                                        <a href="#" role="menuitem">2018</a>
+                                        <a href="#" class="nav-link"><span>2018</span></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <div class="nav-secondary d-none d-lg-block">
-                </div>
-            </div>
+            </nav>
+            {{ mobile_portal_header(portal_header_data) }}
+            {{ mobile_solution_header(solution_header_data) }}
         </div>
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-secondary d-none d-lg-block">
-                    {{ breadcrumbs(breadcrumbs_data_desktop) }}
-                </div>
-            </div>
-        </div>
-    </nav>
+    </div>
 </header>
 {% endblock %}
-
 {{ breadcrumbs(breadcrumbs_data_mobile) }}
-
 {% block body %}
 <main class="container page-container" id="main-content">
+    
     {{ alert(alert_afslutning) }}
     <h1 class="mt-6">Sagsnr. 123456789</h1>
     {{ badge(badge_under_behandling) }}

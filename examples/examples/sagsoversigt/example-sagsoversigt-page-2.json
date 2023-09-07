@@ -162,7 +162,7 @@
         ]
     },
     "breadcrumbs_data_mobile": {
-        "classes": "container d-lg-none mt-3",
+        "classes": "container mt-3",
         "aria-label": "Brødkrumme",
         "items": [
             {
