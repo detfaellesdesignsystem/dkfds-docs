@@ -1,0 +1,32 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                button({
+                    "variant": "primary",
+                    "text": "Knap 1"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Knap 2"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "tertiary",
+                    "text": "Knap 3"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "quaternary",
+                    "text": "Knap 4"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

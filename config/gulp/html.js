@@ -20,10 +20,16 @@ var distComponentCode = '_includes/code/components';
 var distJekyllComponentPreview = '_preview-components';
 
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
+var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildHeader = ['examples/components/header/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
 
 var activeBuild = buildAll;
+
+var testfiles = [
+    "test-buttons-in-row",
+    "test-buttons-in-divs"
+];
 
 function getPath (dirname){
 
@@ -57,6 +63,24 @@ function createMarkdown(content, path, file) {
 permalink: /eksempel/` + fileName + `/
 layout: example 
 title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+---
+`
+    } else if(path.includes('test')) {
+        var index = testfiles.indexOf(fileName);
+        var previous = "";
+        var next = "";
+        if (index > 0) {
+            previous = "/eksempel/" + testfiles[index-1] + "/";
+        }
+        if (index < testfiles.length - 1) {
+            next = "/eksempel/" + testfiles[index + 1] + "/";
+        }
+        header = `--- 
+permalink: /eksempel/` + fileName + `/
+layout: test-example 
+title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+previoustest: ` + previous + `
+nexttest: ` + next + `
 ---
 `
     } else{
