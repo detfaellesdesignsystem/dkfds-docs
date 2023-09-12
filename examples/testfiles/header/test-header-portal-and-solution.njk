@@ -1,0 +1,42 @@
+{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
+{% from "components/header/header.njk" import solution_header as solution_header %}
+{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+
+{% set portal_header_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_header_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+<header class="header">
+    {{ portal_header(portal_header_data) }}
+    {{ solution_header(solution_header_data) }}
+    <div class="overlay"></div>
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
+            {{ menu_close_button() }}
+            {{ mobile_solution_header(solution_header_data) }}
+            {{ mobile_portal_header(portal_header_data) }}
+        </div>
+    </div>
+</header>

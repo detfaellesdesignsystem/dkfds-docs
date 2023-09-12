@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta name="robots" content="noindex" >
+    <meta name="robots" content="noindex">
     <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
@@ -17,8 +18,8 @@
 ================================================== -->
   
 
-<title>Test | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test | Det Fælles Designsystem">
+<title>Test-header-portal-and-solution | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-header-portal-and-solution | Det Fælles Designsystem">
 
 
 
@@ -64,7 +65,8 @@
 </noscript>
 
 </head>
-<body>
+
+<body class="layout-test-example">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -224,49 +226,92 @@
         <symbol id="zoom-out" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></symbol>
     </svg>
 </div>
-    <main class="container page-container" id="main-content">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="h2 mt-0">Testside</h1>
+    <header class="header">
 
-<h2 class="h3">Header</h2>
+    <div class="portal-header">
+        <div class="portal-header-inner container">
+            <a href="#" title="Gå til Portalnavns forside" aria-label="Portalnavn" class="logo">
+                <span>Portalnavn</span>
+            </a>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-<div class="mb-2">
-    <a href="/eksempel/test-header-portal-and-solution/" class="test-link" target="_blank">Portalrække og løsningsrække (test-header-portal-and-solution)</a>
-</div>
+            <div class="portal-info">
+                <p class="user">
+                    Anders Andersen, Forsikringens Forsikringsfirma
+                </p>
 
-<h2 class="h3">Knapper</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-in-row/" class="test-link" target="_blank">Knapper på én række (test-buttons-in-row)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-in-divs/" class="test-link" target="_blank">Knapper i hver sin række (test-buttons-in-divs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-next-to-text/" class="test-link" target="_blank">Knapper i tekstafsnit (test-buttons-next-to-text)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-button-long-text/" class="test-link" target="_blank">Knapper med lang tekst (test-button-long-text)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-button-break-word/" class="test-link" target="_blank">Knap med tekst der skal ombrydes (test-button-break-word)</a>
-</div>
-
-<h2 class="h3">Tjekbokse</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkbox-simple/" class="test-link" target="_blank">Simpel tjekboks (test-checkbox-simple)</a>
-</div>
-
+                <button class="button button-tertiary button-logout d-print-none">
+                    Log af
+                </button>
             </div>
         </div>
-    </main>
+    </div>
+
+    <div class="solution-header">
+        <div class="solution-header-inner container">
+            <div class="solution-heading">
+                <a href="#">Løsningstitel</a>
+            </div>
+
+            <div class="solution-info">
+
+                <p><strong class="authority-name">Myndighedsnavn</strong></p>
+
+                <p>Support: 12 34 56 78</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="navigation-header-mobile">
+        <div class="navigation-header-inner container">
+
+            <div class="menu-top">
+                <h2 class="menu-heading">Menu</h2>
+                <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            </div>
+
+            <div class="solution-info-mobile">
+
+                <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
+
+                <p>Support: 12 34 56 78</p>
+
+            </div>
+
+            <div class="portal-header-mobile">
+
+                <p class="user">
+
+                    <span>Anders Andersen</span>
+                    <span>Forsikringens Forsikringsfirma</span>
+
+                </p>
+
+                <button class="button button-tertiary button-logout d-print-none mt-3">
+                    Log af
+                </button>
+            </div>
+
+        </div>
+    </div>
+</header>
+
     <footer class="test-footer d-print-none">
+    
+    <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+        <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
+        </button>
+        <strong class="ml-0 ml-sm-8 mr-0 mr-sm-8">test-header-portal-and-solution</strong>
+        
+            
+            <a class="function-link" href="/eksempel/test-buttons-in-row/">Næste</a>
+        </div>
+        
+    </div>
     
     <div class="alert alert-warning test-warning small-text p-3 mb-0">
         <div class="alert-body small-text">
@@ -278,7 +323,6 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
-    <script src="/assets/js/languageswitcher.js"></script>
-    <script src="/assets/js/demo-return-to-prev-page.js"></script>
 </body>
+
 </html>

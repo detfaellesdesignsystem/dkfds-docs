@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta name="robots" content="noindex" >
+    <meta name="robots" content="noindex">
     <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
@@ -17,8 +18,8 @@
 ================================================== -->
   
 
-<title>Test | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test | Det Fælles Designsystem">
+<title>Test-checkbox-simple | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-checkbox-simple | Det Fælles Designsystem">
 
 
 
@@ -64,7 +65,8 @@
 </noscript>
 
 </head>
-<body>
+
+<body class="layout-test-example">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -225,48 +227,32 @@
     </svg>
 </div>
     <main class="container page-container" id="main-content">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="h2 mt-0">Testside</h1>
+    <div class="row">
+        <div class="col-12">
 
-<h2 class="h3">Header</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-portal-and-solution/" class="test-link" target="_blank">Portalrække og løsningsrække (test-header-portal-and-solution)</a>
-</div>
-
-<h2 class="h3">Knapper</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-in-row/" class="test-link" target="_blank">Knapper på én række (test-buttons-in-row)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-in-divs/" class="test-link" target="_blank">Knapper i hver sin række (test-buttons-in-divs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-next-to-text/" class="test-link" target="_blank">Knapper i tekstafsnit (test-buttons-next-to-text)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-button-long-text/" class="test-link" target="_blank">Knapper med lang tekst (test-button-long-text)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-button-break-word/" class="test-link" target="_blank">Knap med tekst der skal ombrydes (test-button-break-word)</a>
-</div>
-
-<h2 class="h3">Tjekbokse</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkbox-simple/" class="test-link" target="_blank">Simpel tjekboks (test-checkbox-simple)</a>
-</div>
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="checkbox" name="test" class="form-checkbox" value="true" />
+                <label class="form-label" for="checkbox">Label til tjekboks</label>
 
             </div>
+
         </div>
-    </main>
+    </div>
+</main>
+
     <footer class="test-footer d-print-none">
+    
+    <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+        <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
+        </button>
+        <strong class="ml-0 ml-sm-8 mr-0 mr-sm-8">test-checkbox-simple</strong>
+        
+        <div>
+            <a class="function-link mr-4" href="/eksempel/test-button-break-word/">Forrige</a>
+            
+            
+    </div>
     
     <div class="alert alert-warning test-warning small-text p-3 mb-0">
         <div class="alert-body small-text">
@@ -278,7 +264,6 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
-    <script src="/assets/js/languageswitcher.js"></script>
-    <script src="/assets/js/demo-return-to-prev-page.js"></script>
 </body>
+
 </html>

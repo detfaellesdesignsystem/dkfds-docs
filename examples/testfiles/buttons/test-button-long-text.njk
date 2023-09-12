@@ -1,0 +1,41 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis."
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-2">
+            {{ 
+                button({
+                    "variant": "primary",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis."
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            {{ 
+                button({
+                    "variant": "primary",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis.",
+                    "classes": { "button": "w-percent-30" }
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Knap"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

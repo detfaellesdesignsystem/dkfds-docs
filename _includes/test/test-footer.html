@@ -1,15 +1,17 @@
 <footer class="test-footer d-print-none">
     {% if include.navigation %}
-    <div class="test-footer-content d-flex align-items-center">
+    <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
         <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
                 <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
         </button>
-        <strong class="ml-8 mr-8">{{ include.title | slugify }}</strong>
+        <strong class="ml-0 ml-sm-8 mr-0 mr-sm-8">{{ include.title | slugify }}</strong>
         {% if include.previoustest and include.previoustest != '' %}
-        <a class="function-link ml-4" href="{{ include.previoustest }}">Forrige</a>
-        {% endif %}
-        {% if include.nexttest and include.nexttest != '' %}
-        <a class="function-link ml-4" href="{{ include.nexttest }}">Næste</a>
+        <div>
+            <a class="function-link mr-4" href="{{ include.previoustest }}">Forrige</a>
+            {% endif %}
+            {% if include.nexttest and include.nexttest != '' %}
+            <a class="function-link" href="{{ include.nexttest }}">Næste</a>
+        </div>
         {% endif %}
     </div>
     {% endif %}

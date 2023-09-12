@@ -896,6 +896,8 @@ code {
 
   .test-warning {
     margin-top: 0px;
+    max-height: units(9);
+    overflow-y: auto;
 
     .alert-heading {
       @include small-text();

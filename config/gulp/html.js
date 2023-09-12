@@ -27,8 +27,13 @@ var buildExamples = ['examples/examples/**/*.njk'];
 var activeBuild = buildAll;
 
 var testfiles = [
+    "test-header-portal-and-solution",
     "test-buttons-in-row",
-    "test-buttons-in-divs"
+    "test-buttons-in-divs",
+    "test-buttons-next-to-text",
+    "test-button-long-text",
+    "test-button-break-word",
+    "test-checkbox-simple"
 ];
 
 function getPath (dirname){
@@ -58,7 +63,7 @@ function isThisAComponentExample(file){
 function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop().replace('.html', '');
     var header = ``;
-    if(path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('toastbesked')) {
+    if((path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('toastbesked')) && !path.includes('test')) {
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example 
