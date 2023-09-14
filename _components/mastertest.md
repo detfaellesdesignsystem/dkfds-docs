@@ -11,6 +11,7 @@ title: Test
 ## Header
 
 {% include test/preview-test.html filename="test-header-portal-and-solution" description="Portalrække og løsningsrække" %}
+{% include test/preview-test.html filename="test-header-three-simple-rows" description="Portalrække, løsningsrække og simpel navigation" %}
 
 {:.h3}
 ## Knapper

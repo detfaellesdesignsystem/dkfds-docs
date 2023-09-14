@@ -226,40 +226,201 @@
     </svg>
 </div>
     <header class="header">
-  <div id="top"></div>
-  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-    <div class="solution-header">
-      <div class="solution-header-inner container">
-        <div class="solution-heading d-flex align-items-center">
-            <a href="/">Det Fælles Designsystem</a><strong class="badge badge-large badge-error ml-4">Develop</strong>
+    <div id="top"></div>
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+    <div class="solution-info">
+        <div class="solution-info-inner container">
+            <div class="solution-heading d-flex align-items-center">
+                <a href="/">Det Fælles Designsystem</a><strong
+                    class="badge badge-large badge-error ml-4">Develop</strong>
+            </div>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg
+                    class="icon-svg" focusable="false" aria-hidden="true">
+                    <use xlink:href="#menu"></use>
+                </svg>Menu</button>
         </div>
-        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
-      </div>
 
-      
-      <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-        <form method="get" action="/search/" id="mobileSearchForm" role="search">
-          <div class="form-group search">
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required aria-label="Søg">
-            <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
-          </div>
-        </form>
-      </div>
-      
+        
+        <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
+            <form method="get" action="/search/" id="mobileSearchForm" role="search">
+                <div class="form-group search">
+                    <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required
+                        aria-label="Søg">
+                    <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- Desktop main menu-->
+    <div class="navigation-menu">
+        <div class="navigation-menu-inner container">
+            <nav>
+                <ul class="mainmenu">
+                    
+    
+    
+
+    
+
+    
+
+        
+
+        
+
+        
+
+        <li>
+            <a href="/design/" class="nav-link">
+                <span>Design</span>
+            </a>
+        </li>
+
+    
+  
+
+    
+    
+
+    
+
+    
+
+        
+
+        
+
+        
+
+        <li>
+            <a href="/komponenter/" class="nav-link">
+                <span>Komponenter</span>
+            </a>
+        </li>
+
+    
+  
+
+    
+    
+
+    
+
+    
+
+        
+
+        
+
+        
+
+        <li>
+            <a href="/eksempler/" class="nav-link">
+                <span>Eksempler</span>
+            </a>
+        </li>
+
+    
+  
+
+    
+    
+
+    
+
+    
+
+        
+
+        
+
+        
+
+        <li class="active">
+            <a href="/kode/" class="nav-link">
+                <span>Kode</span>
+            </a>
+        </li>
+
+    
+  
+
+    
+    
+
+    
+
+    
+
+        
+
+        
+
+        
+
+        <li>
+            <a href="/krav/" class="nav-link">
+                <span>Krav</span>
+            </a>
+        </li>
+
+    
+  
+
+    
+    
+
+    
+
+    
+
+        
+
+        
+
+        
+
+        <li>
+            <a href="/faellesskab/" class="nav-link">
+                <span>Fællesskab</span>
+            </a>
+        </li>
+
+    
+  
+
+                </ul>
+            </nav>
+            
+            <div class="search-form">
+                <form method="get" action="/search/" id="menuSearchForm" role="search">
+                    <div class="form-group search">
+                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required
+                            aria-label="Søg">
+                        <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
     </div>
 
     <div class="overlay"></div>
 
     <!-- Mobile main menu-->
-    <div class="navigation-header-mobile">
-      <div class="navigation-header-inner container">
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
-            aria-hidden="true" focusable="false" tabindex="-1">
-            <use xlink:href="#close"></use>
-          </svg>Luk</button>
-        <nav>
-          <ul class="mainmenu">
-             
+    <div class="mobile-drawer">
+        <div class="menu-top">
+            <h2 class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
+                aria-hidden="true" focusable="false" tabindex="-1">
+                <use xlink:href="#close"></use>
+            </svg>Luk</button>
+        </div>
+        <nav class="navigation-menu-mobile">
+            <ul class="mainmenu">
+                 
         
         
 
@@ -3596,166 +3757,10 @@
     
 
 
-          </ul>
+            </ul>
         </nav>
-      </div>
     </div>
-
-    <!-- Desktop main menu-->
-    <div class="navigation-header d-none d-lg-block">
-      <div class="navigation-header-inner container">
-        <nav>
-          <ul class="mainmenu">
-            
-    
-    
-
-    
-
-    
-
-        
-
-        
-
-        
-
-        <li>
-            <a href="/design/" class="nav-link">
-                <span>Design</span>
-            </a>
-        </li>
-
-    
-  
-
-    
-    
-
-    
-
-    
-
-        
-
-        
-
-        
-
-        <li>
-            <a href="/komponenter/" class="nav-link">
-                <span>Komponenter</span>
-            </a>
-        </li>
-
-    
-  
-
-    
-    
-
-    
-
-    
-
-        
-
-        
-
-        
-
-        <li>
-            <a href="/eksempler/" class="nav-link">
-                <span>Eksempler</span>
-            </a>
-        </li>
-
-    
-  
-
-    
-    
-
-    
-
-    
-
-        
-
-        
-
-        
-
-        <li class="active">
-            <a href="/kode/" class="nav-link">
-                <span>Kode</span>
-            </a>
-        </li>
-
-    
-  
-
-    
-    
-
-    
-
-    
-
-        
-
-        
-
-        
-
-        <li>
-            <a href="/krav/" class="nav-link">
-                <span>Krav</span>
-            </a>
-        </li>
-
-    
-  
-
-    
-    
-
-    
-
-    
-
-        
-
-        
-
-        
-
-        <li>
-            <a href="/faellesskab/" class="nav-link">
-                <span>Fællesskab</span>
-            </a>
-        </li>
-
-    
-  
-
-          </ul>
-        </nav>
-        
-        <div class="search-form">
-          <form method="get" action="/search/" id="menuSearchForm" role="search">
-            <div class="form-group search">
-              <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
-              <button class="button button-search" type="submit" id="searchbtn">Søg</button>
-            </div>
-          </form>
-        </div>
-        
-      </div>
-    </div>
-
 </header>
-
 
 <div class="container page-container">
     <div class="row">
@@ -5197,17 +5202,16 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;header class=&quot;header&quot;&gt;
-    &lt;!-- ID til Tilbage til toppen-knap og Skip-link --&gt;
-    &lt;div class=&quot;portal-header&quot;&gt;...&lt;/div&gt;
-    &lt;div class=&quot;solution-header&quot;&gt;...&lt;/div&gt;
+    &lt;!-- Eventuelt ID til Tilbage til toppen-knap og Skip-link --&gt;
+    &lt;div class=&quot;portal-info&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;solution-info&quot;&gt;...&lt;/div&gt;
+    &lt;nav class=&quot;navigation-menu&quot;&gt;...&lt;/nav&gt;
     &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;navigation-header&quot;&gt;
-        &lt;div class=&quot;navigation-header-inner container&quot;&gt;
-            &lt;div class=&quot;menu-top&quot;&gt;...&lt;/div&gt;
-            &lt;nav&gt;...&lt;/nav&gt;
-            &lt;div class=&quot;solution-info-mobile&quot;&gt;...&lt;/div&gt;
-            &lt;div class=&quot;portal-header-mobile&quot;&gt;...&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&quot;mobile-drawer&quot;&gt;
+        &lt;div class=&quot;menu-top&quot;&gt;...&lt;/div&gt;
+        &lt;nav class=&quot;navigation-menu-mobile&quot;&gt;...&lt;/nav&gt;
+        &lt;div class=&quot;solution-info-mobile&quot;&gt;...&lt;/div&gt;
+        &lt;div class=&quot;portal-info-mobile&quot;&gt;...&lt;/div&gt;
     &lt;/div&gt;
 &lt;/header&gt;</code></pre></figure>
 
@@ -5233,20 +5237,20 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;portal-header&quot;&gt;
-    &lt;div class=&quot;portal-header-inner container&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;portal-info&quot;&gt;
+    &lt;div class=&quot;portal-info-inner container&quot;&gt;
         &lt;a href=&quot;#&quot; title=&quot;Gå til Portalnavns forside&quot; aria-label=&quot;Portalnavn&quot; class=&quot;logo&quot;&gt;
             &lt;span&gt;Portalnavn&lt;/span&gt;
         &lt;/a&gt;
         &lt;button class=&quot;function-link button-menu-open js-menu-open ml-auto d-print-none&quot;
             aria-haspopup=&quot;dialog&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#menu&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Menu&lt;/button&gt;
 
-        &lt;div class=&quot;portal-info&quot;&gt;
+        &lt;div class=&quot;portal-user&quot;&gt;
             &lt;p class=&quot;user&quot;&gt;
                 Anders Andersen, Forsikringens Forsikringsfirma
             &lt;/p&gt;
 
-            &lt;button class=&quot;button button-tertiary button-logout d-print-none&quot;&gt;
+            &lt;button class=&quot;button button-secondary d-print-none&quot;&gt;
                 Log af
             &lt;/button&gt;
         &lt;/div&gt;
@@ -5273,13 +5277,13 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;solution-header&quot;&gt;
-    &lt;div class=&quot;solution-header-inner container&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;solution-info&quot;&gt;
+    &lt;div class=&quot;solution-info-inner container&quot;&gt;
         &lt;div class=&quot;solution-heading&quot;&gt;
             &lt;a href=&quot;#&quot;&gt;En længere løsningstitel&lt;/a&gt;
         &lt;/div&gt;
 
-        &lt;div class=&quot;solution-info&quot;&gt;
+        &lt;div class=&quot;additional-info&quot;&gt;
 
             &lt;p&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
 
@@ -5320,61 +5324,7 @@
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;navigation-header&quot;&gt;
-    &lt;div class=&quot;navigation-header-inner container&quot;&gt;
-
-        &lt;div class=&quot;menu-top&quot;&gt;
-            &lt;h2 class=&quot;menu-heading&quot;&gt;Menu&lt;/h2&gt;
-            &lt;button class=&quot;function-link button-menu-close js-menu-close&quot;
-                aria-label=&quot;Luk menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
-        &lt;/div&gt;
-
-        &lt;nav&gt;
-            &lt;ul class=&quot;mainmenu&quot;&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                        &lt;span&gt;Første menupunkt&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                        &lt;span&gt;Andet menupunkt&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                        &lt;span&gt;Tredje menupunkt&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-
-        &lt;div class=&quot;portal-header-mobile&quot;&gt;
-
-            &lt;p class=&quot;user&quot;&gt;
-
-                &lt;span&gt;Anders Andersen&lt;/span&gt;
-                &lt;span&gt;Forsikringens Forsikringsfirma&lt;/span&gt;
-
-            &lt;/p&gt;
-
-            &lt;button class=&quot;button button-tertiary button-logout d-print-none mt-3&quot;&gt;
-                Log af
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;solution-info-mobile&quot;&gt;
-
-            &lt;p class=&quot;mb-2&quot;&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
-
-            &lt;p&gt;Support: 12 34 56 78 &lt;span
-                    class=&quot;d-block d-lg-inline-block d-print-none mt-2 mt-lg-0&quot;&gt;&lt;span
-                        class=&quot;d-none d-lg-inline-block mr-2&quot;&gt;· &lt;/span&gt;&lt;a href=&quot;#&quot;
-                        class=&quot;icon-link function-link&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;
-            &lt;/p&gt;
-
-        &lt;/div&gt;
-
-    &lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -5400,42 +5350,40 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;navigation-header-mobile&quot;&gt;
-    &lt;div class=&quot;navigation-header-inner container&quot;&gt;
+&lt;div class=&quot;mobile-drawer&quot;&gt;
 
-        &lt;div class=&quot;menu-top&quot;&gt;
-            &lt;h2 class=&quot;menu-heading&quot;&gt;Menu&lt;/h2&gt;
-            &lt;button class=&quot;function-link button-menu-close js-menu-close&quot;
-                aria-label=&quot;Luk menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
-        &lt;/div&gt;
+    &lt;div class=&quot;menu-top&quot;&gt;
+        &lt;h2 class=&quot;menu-heading&quot;&gt;Menu&lt;/h2&gt;
+        &lt;button class=&quot;function-link button-menu-close js-menu-close&quot;
+            aria-label=&quot;Luk menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
+    &lt;/div&gt;
 
-        &lt;div class=&quot;portal-header-mobile&quot;&gt;
+    &lt;div class=&quot;solution-info-mobile&quot;&gt;
 
-            &lt;p class=&quot;user&quot;&gt;
+        &lt;p class=&quot;mb-2&quot;&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
 
-                &lt;span&gt;Anders Andersen&lt;/span&gt;
-                &lt;span&gt;Forsikringens Forsikringsfirma&lt;/span&gt;
-
-            &lt;/p&gt;
-
-            &lt;button class=&quot;button button-tertiary button-logout d-print-none mt-3&quot;&gt;
-                Log af
-            &lt;/button&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&quot;solution-info-mobile&quot;&gt;
-
-            &lt;p class=&quot;mb-2&quot;&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
-
-            &lt;p&gt;Support: 12 34 56 78 &lt;span
-                    class=&quot;d-block d-lg-inline-block d-print-none mt-2 mt-lg-0&quot;&gt;&lt;span
-                        class=&quot;d-none d-lg-inline-block mr-2&quot;&gt;· &lt;/span&gt;&lt;a href=&quot;#&quot;
-                        class=&quot;icon-link function-link&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;
-            &lt;/p&gt;
-
-        &lt;/div&gt;
+        &lt;p&gt;Support: 12 34 56 78 &lt;span
+                class=&quot;d-block d-lg-inline-block d-print-none mt-2 mt-lg-0&quot;&gt;&lt;span
+                    class=&quot;d-none d-lg-inline-block mr-2&quot;&gt;· &lt;/span&gt;&lt;a href=&quot;#&quot;
+                    class=&quot;icon-link function-link&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;
+        &lt;/p&gt;
 
     &lt;/div&gt;
+
+    &lt;div class=&quot;portal-info-mobile&quot;&gt;
+
+        &lt;p class=&quot;user&quot;&gt;
+
+            &lt;span&gt;Anders Andersen&lt;/span&gt;
+            &lt;span&gt;Forsikringens Forsikringsfirma&lt;/span&gt;
+
+        &lt;/p&gt;
+
+        &lt;button class=&quot;button button-secondary d-print-none mt-3&quot;&gt;
+            Log af
+        &lt;/button&gt;
+    &lt;/div&gt;
+
 &lt;/div&gt;</code></pre></figure>
 
 

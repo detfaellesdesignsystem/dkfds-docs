@@ -28,6 +28,7 @@ var activeBuild = buildAll;
 
 var testfiles = [
     "test-header-portal-and-solution",
+    "test-header-three-simple-rows",
     "test-buttons-in-row",
     "test-buttons-in-divs",
     "test-buttons-next-to-text",

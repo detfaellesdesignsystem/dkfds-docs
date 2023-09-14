@@ -231,29 +231,29 @@
 
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <div class="portal-header">
-        <div class="portal-header-inner container">
+    <div class="portal-info">
+        <div class="portal-info-inner container">
             <a href="#" aria-label="Portalnavn" class="logo">
                 <span>Portalnavn</span>
             </a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <div class="portal-info">
-                <button class="button button-tertiary button-logout d-print-none">
+            <div class="portal-user">
+                <button class="button button-secondary d-print-none">
                     Log på
                 </button>
             </div>
         </div>
     </div>
 
-    <div class="solution-header">
-        <div class="solution-header-inner container">
+    <div class="solution-info">
+        <div class="solution-info-inner container">
             <div class="solution-heading">
                 <a href="#">Løsningstitel står her</a>
             </div>
 
-            <div class="solution-info">
+            <div class="additional-info">
 
                 <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -265,19 +265,12 @@
     </div>
 
     <div class="overlay"></div>
-    <nav class="nav">
+    <div class="mobile-drawer">
 
         <div class="menu-top">
             <h2 class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close"
                 aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-        </div>
-
-        <div class="portal-header-mobile">
-
-            <button class="button button-tertiary button-logout d-print-none mt-3">
-                Log på
-            </button>
         </div>
 
         <div class="solution-info-mobile">
@@ -288,7 +281,14 @@
 
         </div>
 
-    </nav>
+        <div class="portal-info-mobile">
+
+            <button class="button button-secondary d-print-none mt-3">
+                Log på
+            </button>
+        </div>
+
+    </div>
 </header>
 
 <main class="container page-container" id="main">

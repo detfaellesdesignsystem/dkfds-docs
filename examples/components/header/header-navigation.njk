@@ -1,7 +1,10 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% set portal_header_data = {
     "user": {
@@ -29,29 +32,6 @@
 } %}
 
 <div class="overlay"></div>
-<div class="navigation-header">
-    <div class="navigation-header-inner container">
-        {{ menu_close_button() }}
-        <nav>
-            <ul class="mainmenu">
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Første menupunkt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Andet menupunkt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Tredje menupunkt</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}    
+<div class="navigation-header"> 
     </div>
 </div>

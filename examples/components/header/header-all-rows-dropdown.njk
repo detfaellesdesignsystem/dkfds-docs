@@ -1,11 +1,10 @@
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
-
-{% from "components/header/header.njk" import portal_header as portal_header %}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{% from "components/header/header.njk" import solution_header as solution_header %}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% set portal_header_data = {
     "user": {
@@ -34,62 +33,109 @@
 
 <header class="header">
     {{ skiplink() }}
-    {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
-
-    <div class="overlay"></div>
-    <div class="navigation-header">
-        <div class="navigation-header-inner container">
-            {{ menu_close_button() }}
-            <nav>
-                <ul class="mainmenu">
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Første menupunkt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Andet menupunkt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Tredje menupunkt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">
-                            <span>Fjerde menupunkt</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <div class="submenu">
-                            <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="true">
-                                <span>Femte menupunkt</span>
-                            </button>
-                            <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="false">
-                                <ul class="overflow-list">
-                                    <li class="active current">
-                                        <a href="#" class="nav-link" aria-current="page"><span>Subsektion med en meget lang titel som går i flere linier</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link"><span>Subsektiontitel som også er forholdsvis lang</span></a>
-                                    </li>
-                                </ul>
-                            </div>
+    {{ portal_info(portal_header_data) }}
+    {{ solution_info(solution_header_data) }}
+    <nav class="navigation-menu">
+        <div class="navigation-menu-inner container">
+            <ul class="mainmenu">
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Første menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Andet menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Tredje menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Fjerde menupunkt</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <div class="submenu">
+                        <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="true">
+                            <span>Femte menupunkt</span>
+                        </button>
+                        <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="false">
+                            <ul class="overflow-list">
+                                <li class="active current">
+                                    <a href="#" class="nav-link" aria-current="page"><span>Subsektion med en meget lang titel som går i flere linier</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link"><span>Subsektiontitel som også er forholdsvis lang</span></a>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-            </nav>
-            {{ mobile_solution_header(solution_header_data) }}
-            {{ mobile_portal_header(portal_header_data) }}
+                    </div>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <div class="overlay"></div>
+    <div class="mobile-drawer">
+        {{ menu_top() }}
+        <nav class="navigation-menu-mobile">
+            <ul class="mainmenu">
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Første menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Andet menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Tredje menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Fjerde menupunkt</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <div class="submenu">
+                        <button class="nav-link button-overflow-menu js-dropdown js-dropdown--responsive-collapse" data-js-target="headeroverflow2" aria-haspopup="true" aria-expanded="true">
+                            <span>Femte menupunkt</span>
+                        </button>
+                        <div class="overflow-menu-inner" id="headeroverflow2" aria-hidden="false">
+                            <ul class="overflow-list">
+                                <li class="active current">
+                                    <a href="#" class="nav-link" aria-current="page"><span>Subsektion med en meget lang titel som går i flere linier</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link"><span>Subsektiontitel</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link"><span>Subsektiontitel som også er forholdsvis lang</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        {{ mobile_solution_info(solution_header_data) }}
+        {{ mobile_portal_info(portal_header_data) }}
     </div>
+
 </header>

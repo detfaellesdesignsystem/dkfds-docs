@@ -1,68 +1,74 @@
 <header class="header">
-  <div id="top"></div>
-  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-    <div class="solution-header">
-      <div class="solution-header-inner container">
-        <div class="solution-heading d-flex align-items-center">
-            <a href="/">Det Fælles Designsystem</a>{% if site.environment == "development" %}<strong class="badge badge-large badge-error ml-4">Develop</strong>{% endif %}
+    <div id="top"></div>
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+    <div class="solution-info">
+        <div class="solution-info-inner container">
+            <div class="solution-heading d-flex align-items-center">
+                <a href="/">Det Fælles Designsystem</a>{% if site.environment == "development" %}<strong
+                    class="badge badge-large badge-error ml-4">Develop</strong>{% endif %}
+            </div>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg
+                    class="icon-svg" focusable="false" aria-hidden="true">
+                    <use xlink:href="#menu"></use>
+                </svg>Menu</button>
         </div>
-        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
-      </div>
 
-      {% unless page.search %}
-      <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-        <form method="get" action="/search/" id="mobileSearchForm" role="search">
-          <div class="form-group search">
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required aria-label="Søg">
-            <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
-          </div>
-        </form>
-      </div>
-      {% endunless %}
+        {% unless page.search %}
+        <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
+            <form method="get" action="/search/" id="mobileSearchForm" role="search">
+                <div class="form-group search">
+                    <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required
+                        aria-label="Søg">
+                    <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
+                </div>
+            </form>
+        </div>
+        {% endunless %}
+    </div>
+
+    <!-- Desktop main menu-->
+    <div class="navigation-menu">
+        <div class="navigation-menu-inner container">
+            <nav>
+                <ul class="mainmenu">
+                    {%
+                    include nav/nav-desktop.html
+                    links=site.data.nav.mobile
+                    %}
+                </ul>
+            </nav>
+            {% unless page.search %}
+            <div class="search-form">
+                <form method="get" action="/search/" id="menuSearchForm" role="search">
+                    <div class="form-group search">
+                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required
+                            aria-label="Søg">
+                        <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+                    </div>
+                </form>
+            </div>
+            {% endunless %}
+        </div>
     </div>
 
     <div class="overlay"></div>
 
     <!-- Mobile main menu-->
-    <div class="navigation-header-mobile">
-      <div class="navigation-header-inner container">
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
-            aria-hidden="true" focusable="false" tabindex="-1">
-            <use xlink:href="#close"></use>
-          </svg>Luk</button>
-        <nav>
-          <ul class="mainmenu">
-            {%
-            include nav/nav-mobile.html
-            links=site.data.nav.mobile
-            %}
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <!-- Desktop main menu-->
-    <div class="navigation-header d-none d-lg-block">
-      <div class="navigation-header-inner container">
-        <nav>
-          <ul class="mainmenu">
-            {%
-              include nav/nav-desktop.html
-              links=site.data.nav.mobile
-            %}
-          </ul>
-        </nav>
-        {% unless page.search %}
-        <div class="search-form">
-          <form method="get" action="/search/" id="menuSearchForm" role="search">
-            <div class="form-group search">
-              <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
-              <button class="button button-search" type="submit" id="searchbtn">Søg</button>
-            </div>
-          </form>
+    <div class="mobile-drawer">
+        <div class="menu-top">
+            <h2 class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
+                aria-hidden="true" focusable="false" tabindex="-1">
+                <use xlink:href="#close"></use>
+            </svg>Luk</button>
         </div>
-        {% endunless %}
-      </div>
+        <nav class="navigation-menu-mobile">
+            <ul class="mainmenu">
+                {%
+                include nav/nav-mobile.html
+                links=site.data.nav.mobile
+                %}
+            </ul>
+        </nav>
     </div>
-
 </header>
