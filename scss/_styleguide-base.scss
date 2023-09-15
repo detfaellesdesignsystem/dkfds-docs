@@ -878,34 +878,50 @@ code {
   display: inline-block;
 }
 
+// Test pages
+
+body.layout-test-example,
+body.layout-mastertest {
+  margin-top: units(6, 'rem');
+  margin-bottom: units(9, 'rem');
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: units(6, 'rem');
+  }
+}
+
+.test-header {
+  background-color: color('black');
+  height: units(6, 'rem');
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+  .function-link {
+    color: color('white');
+  }
+}
+
 .test-footer {
   bottom: 0;
   position: fixed;
   width: 100%;
+  background-color: color('black');
+  height: units(9, 'rem');
+  z-index: 10000;
+
+  @include media-breakpoint-up(sm) {
+    height: units(6, 'rem');
+  }
 
   .test-footer-content {
-    background-color: color('black');
     color: color('white');
     padding: units(2);
     padding-left: units(4);
 
     .function-link {
       color: color('white');
-    }
-  }
-
-  .test-warning {
-    margin-top: 0px;
-    max-height: units(9);
-    overflow-y: auto;
-
-    .alert-heading {
-      @include small-text();
-      font-weight: font-weight("semibold");
-    }
-
-    .alert-text {
-      max-width: 100%;
     }
   }
 }
@@ -918,6 +934,10 @@ code {
     text-decoration: underline;
   }
 }
+
+
+
+
 
 .video-paragraph{
   max-width: $typography-text-max-width;

@@ -226,6 +226,30 @@
         <symbol id="zoom-out" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></symbol>
     </svg>
 </div>
+    <div class="test-header d-flex align-items-center">
+    <div class="container">
+        <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>Denne side er kun til test</button>
+    </div>
+</div>
+<div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="test-warning-heading">
+                Denne side er kun til test
+            </h2>
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        </div>
+        <div class="modal-body">
+            <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
+        </div>
+        <div class="modal-footer">
+            <button class="button button-secondary" data-modal-close>
+                Luk
+            </button>
+        </div>
+    </div>
+</div>
     <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-2">
@@ -250,27 +274,21 @@
     </div>
 </main>
 
-    <footer class="test-footer d-print-none">
-    
-    <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-        <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
-        </button>
-        <strong class="ml-0 ml-sm-8 mr-0 mr-sm-8">test-button-break-word</strong>
-        
-        <div>
-            <a class="function-link mr-4" href="/eksempel/test-button-long-text/">Forrige</a>
+    <footer class="test-footer d-flex align-items-center">
+    <div class="container">
+        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+            <button class="function-link mr-8" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
+            </button>
             
-            
-            <a class="function-link" href="/eksempel/test-checkbox-simple/">Næste</a>
-        </div>
-        
-    </div>
-    
-    <div class="alert alert-warning test-warning small-text p-3 mb-0">
-        <div class="alert-body small-text">
-            <h2 class="alert-heading">OBS: Dette er en testside</h2>
-            <p class="alert-text small-text">Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "Best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
+            <div>
+                
+                <a class="function-link mr-4" href="/eksempel/test-button-long-text/">Forrige</a>
+                
+                
+                <a class="function-link" href="/eksempel/test-back-to-top-long-page/">Næste</a>
+                
+            </div>
         </div>
     </div>
 </footer>

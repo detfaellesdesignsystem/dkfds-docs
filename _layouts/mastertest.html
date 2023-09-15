@@ -4,8 +4,9 @@
     <meta name="robots" content="noindex" >
     {% include head.html %}
 </head>
-<body>
+<body class="layout-{{ page.layout }}">
     {% include code/components/fds-base-svg.html %}
+    {% include test/test-header.html %}
     <main class="container page-container" id="main-content">
         <div class="row">
             <div class="col-12">
@@ -13,7 +14,6 @@
             </div>
         </div>
     </main>
-    {% include test/test-footer.html title=page.title navigation=false previoustest=page.previoustest nexttest=page.nexttest %}
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>

@@ -1,24 +1,18 @@
-<footer class="test-footer d-print-none">
-    {% if include.navigation %}
-    <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-        <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
-        </button>
-        <strong class="ml-0 ml-sm-8 mr-0 mr-sm-8">{{ include.title | slugify }}</strong>
-        {% if include.previoustest and include.previoustest != '' %}
-        <div>
-            <a class="function-link mr-4" href="{{ include.previoustest }}">Forrige</a>
-            {% endif %}
-            {% if include.nexttest and include.nexttest != '' %}
-            <a class="function-link" href="{{ include.nexttest }}">Næste</a>
-        </div>
-        {% endif %}
-    </div>
-    {% endif %}
-    <div class="alert alert-warning test-warning small-text p-3 mb-0">
-        <div class="alert-body small-text">
-            <h2 class="alert-heading">OBS: Dette er en testside</h2>
-            <p class="alert-text small-text">Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "Best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
+<footer class="test-footer d-flex align-items-center">
+    <div class="container">
+        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+            <button class="function-link mr-8" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
+            </button>
+            
+            <div>
+                {% if include.previoustest and include.previoustest != '' %}
+                <a class="function-link mr-4" href="{{ include.previoustest }}">Forrige</a>
+                {% endif %}
+                {% if include.nexttest and include.nexttest != '' %}
+                <a class="function-link" href="{{ include.nexttest }}">Næste</a>
+                {% endif %}
+            </div>
         </div>
     </div>
 </footer>

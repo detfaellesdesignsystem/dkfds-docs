@@ -34,6 +34,7 @@ var testfiles = [
     "test-buttons-next-to-text",
     "test-button-long-text",
     "test-button-break-word",
+    "test-back-to-top-long-page",
     "test-checkbox-simple"
 ];
 
