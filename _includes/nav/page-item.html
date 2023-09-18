@@ -24,7 +24,7 @@
 
       {% assign _parent = include.parent | append: "-" | append: include.item %}
       <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level{{include.level}}-{{ include.parent | slugify }}-{{ titletext | slugify }}" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
+        <button aria-haspopup="true" class="button-overflow-menu js-menudropdown" data-js-target="#submenu-level{{include.level}}-{{ include.parent | slugify }}-{{ titletext | slugify }}" {% if is_active == true -%}aria-expanded="true"{% else -%}aria-expanded="false"{% endif %}  >
           <span>{{ titletext | smartify }}</span>
         </button>
         <div class="overflow-menu-inner" id="submenu-level{{include.level}}-{{ include.parent | slugify }}-{{ titletext | slugify }}" {% if is_active == true -%}aria-hidden="false"{% else -%}aria-hidden="true"{% endif %}>
