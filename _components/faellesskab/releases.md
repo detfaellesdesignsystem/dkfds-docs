@@ -74,8 +74,11 @@ tags:
 - 9.0.0
 - 9.0.1
 - 9.0.2
+- 9.0.3
 anchor: true
 subnav:
+- text: Version 9.0.3
+  href: "#version-9-0-3"
 - text: Version 9.0.2
   href: "#version-9-0-2"
 - text: Version 9.0.1
@@ -94,10 +97,8 @@ subnav:
   href: "#version-8-0-0"
 - text: Version 7.5.3
   href: "#version-7-5-3"
-- text: Version 7.5.2
-  href: "#version-7-5-2"
 - text: Tidligere versioner
-  href: "#version-7-5-1"
+  href: "#version-7-5-2"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 ---
@@ -121,6 +122,13 @@ Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+
+{:#version-9-0-3 .mb-0}
+## Version 9.0.3
+
+<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+
+- Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2
