@@ -69,6 +69,7 @@ var pdfUrls = [
     "eksempler/patterns/",
     "eksempler/patterns/angivelse-af-telefonnummer/",
     "eksempler/patterns/formular/",
+    "eksempler/patterns/hentet-data/",
     "eksempler/patterns/session-udloeber/",
     "eksempler/templates/",
     "kode/",

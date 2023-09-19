@@ -129,6 +129,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 - Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
+- Øget tekststørrelsen på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a>.
+- Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2

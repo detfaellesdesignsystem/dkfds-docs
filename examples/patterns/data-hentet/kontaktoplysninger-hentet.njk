@@ -1,0 +1,13 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+
+<div class="form-group">
+    <label class="form-label" for="hentetdata-virksomhed">Virksomhedsnavn</label>
+
+    <span class="form-hint" id="hentetdata-virksomhed-hint">Data hentet fra CVR.dk</span>
+
+    <div class="d-flex flex-column flex-sm-row align-items-sm-center">
+        <input type="text" id="hentetdata-virksomhed" name="virksomhednavn" class="form-input input-width-s mr-3" value="Information som er hentet"             aria-describedby="hentetdata-virksomhed-hint" readonly>
+        <button type="button" class="function-link mt-2" id="hentetdata-rediger">{{ icon_svg({"name":'mode'})}}Rediger</button>
+    </div>
+</div>
+<!-- JavaScript til rediger-knappen følger ikke med -->
