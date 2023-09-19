@@ -15,10 +15,10 @@ Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsysteme
 
 ## Næste samarbejdsforum
 
-Næste samarbejdsforum er planlagt til <strong>14. september 2023 kl. 09.15 til 10.00</strong>.
+Næste samarbejdsforum er planlagt til 6. december 2023.
 
-Invitationer er sendt ud via vores nyhedsbrev. Hvis du gerne vil deltage og ikke har modtaget en invitation, kan du kontakte FDS-teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
+Invitationer sendes ud via nyhedsbrevet, når præcist tidspunkt er fastsat.
 
-<a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsbrevet</a> for at blive informeret om samarbejdsforum m.m. fremover.
+<a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsbrevet</a> for løbende at blive informeret om samarbejdsforum m.m.
 
 <a href="/faellesskab/governance/">Læs om governance af FDS</a>
