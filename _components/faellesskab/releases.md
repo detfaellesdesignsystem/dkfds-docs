@@ -95,8 +95,35 @@ tags:
 - 9.0.0
 - 9.0.1
 - 9.0.2
+- 9.0.3
 - 10
 - 10.0.0
+anchor: true
+subnav:
+- text: Version 10.0.0
+  href: "#version-10-0-0"
+- text: Version 9.0.3
+  href: "#version-9-0-3"
+- text: Version 9.0.2
+  href: "#version-9-0-2"
+- text: Version 9.0.1
+  href: "#version-9-0-1"
+- text: Version 9.0.0
+  href: "#version-9-0-0"
+- text: Version 8.2.1
+  href: "#version-8-2-1"
+- text: Version 8.2.0
+  href: "#version-8-2-0"
+- text: Version 8.1.0
+  href: "#version-8-1-0"
+- text: Version 8.0.1
+  href: "#version-8-0-1"
+- text: Version 8.0.0
+  href: "#version-8-0-0"
+- text: Tidligere versioner
+  href: "#version-7-5-3"
+lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
+  andre opdateringer.
 ---
 
 Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
@@ -129,6 +156,16 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt <a href="/kode/browserunderstoettelse/">browserunderstøttelse</a>).
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/anchorlinks/">Anchorlinks</a> er fjernet fra <a href="/komponenter/venstremenu/">venstremenuen</a> og har i stedet fået sin egen komponent.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Headerens række 4 og række 5 er fjernet, mens de øvrige rækker i headeren har fået opdateret design og forbedret tilgængelighed. Se flere detaljer på <a href="/komponenter/header/">headerkomponentens side</a>.
+
+{:#version-9-0-3 .mb-0}
+## Version 9.0.3
+
+<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+
+- Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
+- Øget tekststørrelsen på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a>.
+- Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
+- Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2
