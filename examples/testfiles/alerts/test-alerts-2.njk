@@ -1,0 +1,23 @@
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Alle muligheder</p>
+            {{ 
+                alert({
+                    "variant": "info",
+                    "heading": "Dette er titlen",
+                    "content": "Dette er indholdet i beskeden",
+                    "headingLevel": "h2",
+                    "classes": "alertclass",
+                    "closeButton": true,
+                    "attributes": "alertattr",
+                    "paragraph": true,
+                    "icon": true,
+                    "contentContainer": false
+                }) 
+            }}
+        </div>
+    </div>
+</main>

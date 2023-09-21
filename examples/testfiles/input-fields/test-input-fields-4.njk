@@ -1,0 +1,18 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Disabled og frivillig-label</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "E-mail",
+                    "disabled": true,
+                    "optionalLabel": true
+                })
+            }}
+        </div>
+    </div>
+</main>

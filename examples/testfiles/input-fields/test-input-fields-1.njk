@@ -1,0 +1,16 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Simpelt inputfelt</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "Inputfelt med label"
+                })
+            }}
+        </div>
+    </div>
+</main>

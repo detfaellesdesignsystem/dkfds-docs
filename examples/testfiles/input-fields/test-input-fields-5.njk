@@ -1,0 +1,64 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Standard (kun tal)</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "E-mail",
+                    "required": false,
+                    "type": "number",
+                    "suffix": "suf"
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet</p>
+            {{
+                textinput({
+                    "id": "input-text1",
+                    "name": "input-text1",
+                    "label": "E-mail",
+                    "requiredLabel": true,
+                    "type": "text",
+                    "suffix": "test"
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet</p>
+            {{
+                textinput({
+                    "id": "input-text2",
+                    "name": "input-text2",
+                    "label": "E-mail",
+                    "optionalLabel": true,
+                    "type": "text",
+                    "suffix": "test"
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Disabled</p>
+            {{
+                textinput({
+                    "id": "input-text3",
+                    "name": "input-text3",
+                    "label": "E-mail",
+                    "disabled": true,
+                    "type": "number",
+                    "suffix": "test"
+                })
+            }}
+        </div>
+    </div>
+</main>

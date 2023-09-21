@@ -1,0 +1,27 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Klasser, attributer og autocomplete</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "E-mail",
+                    "classes": {
+                        "formgroup": "formgroupclass",
+                        "label": "labelclass",
+                        "input": "inputclass"
+                    },
+                    "attributes": {
+                        "formgroup": "formgroupattr",
+                        "label": "labelattr",
+                        "input": "inputattr"
+                    },
+                    "autocomplete": "email"
+                })
+            }}
+        </div>
+    </div>
+</main>

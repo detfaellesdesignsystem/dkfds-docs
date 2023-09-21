@@ -1,0 +1,192 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Fejlbesked og påkrævet/ikke-påkrævet</p>
+
+            <div class="form-group form-error">
+                <fieldset aria-describedby="date-example-error ">
+                    <legend class="form-label">
+                        Indtast en dato
+                    </legend>
+
+                    <span class="form-error-message" id="date-example-error">
+                        <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                    </span>
+                    <div class="date-group js-calendar-group mt-3">
+
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-example-day">Dag</label>
+
+                            <input type="tel" id="date-example-day"
+                                class="form-input js-calendar-day-input" required data-min="1"
+                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast dag på måneden som tal">
+                        </div>
+
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-example-month">Måned</label>
+
+                            <input type="tel" id="date-example-month"
+                                class="form-input js-calendar-month-input" required
+                                data-min="1" data-max="12" maxlength="2"
+                                pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
+                        </div>
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-example-year">År</label>
+
+                            <input type="tel" id="date-example-year"
+                                class="form-input js-calendar-year-input" required
+                                data-min="1900" data-max="3000" maxlength="4"
+                                pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$"
+                                title="Indtast årstal">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <p>Required label true</p>
+
+            <div class="form-group form-error">
+                <fieldset aria-describedby="date-example2-error ">
+                    <legend class="form-label">
+                        Indtast en dato<span class="weight-normal"> (*skal udfyldes)</span>
+                    </legend>
+
+                    <span class="form-error-message" id="date-example2-error">
+                        <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                    </span>
+                    <div class="date-group js-calendar-group mt-3">
+
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-example2-day">Dag</label>
+
+                            <input type="tel" id="date-example2-day"
+                                class="form-input js-calendar-day-input" required data-min="1"
+                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast dag på måneden som tal">
+                        </div>
+
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-example2-month">Måned</label>
+
+                            <input type="tel" id="date-example2-month"
+                                class="form-input js-calendar-month-input" required
+                                data-min="1" data-max="12" maxlength="2"
+                                pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
+                        </div>
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-example2-year">År</label>
+
+                            <input type="tel" id="date-example2-year"
+                                class="form-input js-calendar-year-input" required
+                                data-min="1900" data-max="3000" maxlength="4"
+                                pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$"
+                                title="Indtast årstal">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <p>Optional label true</p>
+
+            <div class="form-group form-error">
+                <fieldset aria-describedby="date-example3-error ">
+                    <legend class="form-label">
+                        Indtast en dato<span class="weight-normal"> (frivilligt)</span>
+                    </legend>
+
+                    <span class="form-error-message" id="date-example3-error">
+                        <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                    </span>
+                    <div class="date-group js-calendar-group mt-3">
+
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-example3-day">Dag</label>
+
+                            <input type="tel" id="date-example3-day"
+                                class="form-input js-calendar-day-input" data-min="1"
+                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast dag på måneden som tal">
+                        </div>
+
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-example3-month">Måned</label>
+
+                            <input type="tel" id="date-example3-month"
+                                class="form-input js-calendar-month-input" data-min="1"
+                                data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
+                        </div>
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-example3-year">År</label>
+
+                            <input type="tel" id="date-example3-year"
+                                class="form-input js-calendar-year-input" data-min="1900"
+                                data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                                data-input-regex="^[0-9]{0,4}$" title="Indtast årstal">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+            <p>Disabled true</p>
+
+            <div class="form-group form-error">
+                <fieldset aria-describedby="date-example4-error " disabled="disabled">
+                    <legend class="form-label">
+                        Indtast en dato
+                    </legend>
+
+                    <span class="form-error-message" id="date-example4-error">
+                        <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                    </span>
+                    <div class="date-group js-calendar-group mt-3">
+
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-example4-day">Dag</label>
+
+                            <input type="tel" id="date-example4-day"
+                                class="form-input js-calendar-day-input" data-min="1"
+                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast dag på måneden som tal">
+                        </div>
+
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-example4-month">Måned</label>
+
+                            <input type="tel" id="date-example4-month"
+                                class="form-input js-calendar-month-input" data-min="1"
+                                data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
+                        </div>
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-example4-year">År</label>
+
+                            <input type="tel" id="date-example4-year"
+                                class="form-input js-calendar-year-input" data-min="1900"
+                                data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
+                                data-input-regex="^[0-9]{0,4}$" title="Indtast årstal">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+</main>

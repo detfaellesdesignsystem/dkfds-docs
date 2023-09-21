@@ -1,0 +1,29 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Valgt heading-niveau</p>
+            {{ 
+                accordion({
+                    "id": "myID",
+                    "headingLevel": "h2",
+                    "items": [
+                        {
+                            "title": "Accordion one",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Accordion two",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Accordion three",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

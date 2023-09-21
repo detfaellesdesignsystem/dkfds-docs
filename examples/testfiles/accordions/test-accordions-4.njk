@@ -1,0 +1,37 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Fejl og varianter</p>
+            {{ 
+                accordion({
+                    "id": "myID", 
+                    "items": [
+                        {
+                            "title": "Accordion one",
+                            "content": "<p>This is some accordion content.</p>",
+                            "errorMessage": "Der er opstået en fejl",
+                            "variant": "error"
+                        },
+                        {
+                            "title": "Accordion two",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "success"
+                        },
+                        {
+                            "title": "Accordion three",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "warning"
+                        },
+                        {
+                            "title": "Accordion four",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "info"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

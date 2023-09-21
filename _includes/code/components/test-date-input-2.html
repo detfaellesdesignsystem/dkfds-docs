@@ -1,0 +1,58 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip og hjælpetekst</p>
+
+            <div class="form-group">
+                <fieldset aria-describedby="date-example-hint ">
+                    <legend class="form-label">
+                        Indtast en dato
+                        <button class="button button-unstyled js-tooltip" type="button"
+                            data-tooltip="Se hjælpetekst for korrekt format"
+                            data-tooltip-trigger="click" data-tooltip-position="top">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+                            <span class="sr-only">Hvad betyder det?</span>
+                        </button>
+                    </legend>
+                    <span class="form-hint" id="date-example-hint">For eksempel 23 11
+                        2008</span>
+
+                    <div class="date-group js-calendar-group mt-3">
+
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-example-day">Dag</label>
+
+                            <input type="tel" id="date-example-day"
+                                class="form-input js-calendar-day-input" required data-min="1"
+                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast dag på måneden som tal">
+                        </div>
+
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-example-month">Måned</label>
+
+                            <input type="tel" id="date-example-month"
+                                class="form-input js-calendar-month-input" required
+                                data-min="1" data-max="12" maxlength="2"
+                                pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
+                        </div>
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-example-year">År</label>
+
+                            <input type="tel" id="date-example-year"
+                                class="form-input js-calendar-year-input" required
+                                data-min="1900" data-max="3000" maxlength="4"
+                                pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$"
+                                title="Indtast årstal">
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+</main>
