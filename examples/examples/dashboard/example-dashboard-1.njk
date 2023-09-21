@@ -3,6 +3,8 @@
 {% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
 {% from "components/header/header.njk" import solution_info as solution_info %}
 {% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
 {% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
@@ -60,80 +62,11 @@
     {{ skiplink() }}
     {{ portal_info(portal_header_data) }}
     {{ solution_info(solution_header_data) }}
-
-    <nav class="navigation-menu">
-        <div class="navigation-menu-inner container">
-            <ul class="mainmenu">
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Beskeder</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Udbetalinger</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Sager</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Ansøgninger</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Ændringer</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Dokumentation</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    {{ navigation_menu(navigation_menu_data) }}
     <div class="overlay"></div>
     <div class="mobile-drawer">
         {{ menu_top() }}
-        <nav class="navigation-menu-mobile">
-            <ul class="mainmenu">
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Beskeder</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Udbetalinger</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Sager</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Ansøgninger</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Ændringer</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Dokumentation</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        {{ mobile_navigation_menu(navigation_menu_data) }}
         {{ mobile_solution_info(solution_header_data) }}
         {{ mobile_portal_info(portal_header_data) }}
     </div>

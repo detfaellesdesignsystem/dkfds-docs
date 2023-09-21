@@ -3,6 +3,8 @@
 {% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
 {% from "components/header/header.njk" import solution_info as solution_info %}
 {% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
 {% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% from "components/search/search.njk" import search as search %}
@@ -65,101 +67,11 @@
     {{ skiplink() }}
     {{ portal_info(portal_header_data) }}
     {{ solution_info(solution_header_data) }}
-    <nav class="navigation-menu">
-        <div class="navigation-menu-inner container">
-            <ul class="mainmenu">
-                <li class="current active">
-                    <a href="#" class="nav-link" aria-current="page">
-                        <span>Find sag</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Ansøgninger</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Beskeder</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="submenu">
-                        <button class="nav-link button-overflow-menu js-dropdown" data-js-target="headeroverflow1" aria-haspopup="true" aria-expanded="false">
-                            <span>Udbetalinger</span>
-                        </button>
-                        <div class="overflow-menu-inner" id="headeroverflow1" aria-hidden="true">
-                            <ul class="overflow-list">
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2022</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2021</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2020</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2019</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2018</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    {{ navigation_menu(navigation_menu_data) }}
     <div class="overlay"></div>
     <div class="mobile-drawer">
         {{ menu_top() }}
-        <nav class="navigation-menu-mobile">
-            <ul class="mainmenu">
-                <li class="current active">
-                    <a href="#" class="nav-link" aria-current="page">
-                        <span>Find sag</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Ansøgninger</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>Beskeder</span>
-                    </a>
-                </li>
-                <li>
-                    <div class="submenu">
-                        <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="headeroverflow1-mobile" aria-haspopup="true" aria-expanded="false">
-                            <span>Udbetalinger</span>
-                        </button>
-                        <div class="overflow-menu-inner" id="headeroverflow1-mobile" aria-hidden="true">
-                            <ul class="overflow-list">
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2022</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2021</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2020</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2019</span></a>
-                                </li>
-                                <li role="none">
-                                    <a href="#" class="nav-link"><span>2018</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        {{ mobile_navigation_menu(navigation_menu_data) }}
         {{ mobile_solution_info(solution_header_data) }}
         {{ mobile_portal_info(portal_header_data) }}
     </div>
