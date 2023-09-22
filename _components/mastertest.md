@@ -57,6 +57,11 @@ title: Test
 {% include test/preview-test.html filename="test-dropdown-8" description="Dropdown 8" %}
 
 {:.h3}
+## Gå til sidens indhold (Skip-link)
+
+{% include test/preview-test.html filename="test-skip-link-1" description="Skip-link 1" %}
+
+{:.h3}
 ## Header
 
 {% include test/preview-test.html filename="test-header-portal-and-solution" description="Portalrække og løsningsrække" %}
@@ -93,6 +98,53 @@ title: Test
 {% include test/preview-test.html filename="test-modals-2" description="Modal 2" %}
 
 {:.h3}
+## Overflow menu
+
+{% include test/preview-test.html filename="test-overflow-menus-1" description="Overflow-menu 1" %}
+{% include test/preview-test.html filename="test-overflow-menus-2" description="Overflow-menu 2" %}
+
+{:.h3}
+## Radioknap (Radio button)
+
+{% include test/preview-test.html filename="test-radiobuttons-1" description="Radioknap 1" %}
+{% include test/preview-test.html filename="test-radiobuttons-2" description="Radioknap 2" %}
+{% include test/preview-test.html filename="test-radiobuttons-3" description="Radioknap 3" %}
+{% include test/preview-test.html filename="test-radiobuttons-4" description="Radioknap 4" %}
+{% include test/preview-test.html filename="test-radiobuttons-5" description="Radioknap 5" %}
+
+{:.h3}
+## Strukturerede lister
+
+{% include test/preview-test.html filename="test-structured-list-1" description="Strukturerede lister 1" %}
+{% include test/preview-test.html filename="test-structured-list-2" description="Strukturerede lister 2" %}
+{% include test/preview-test.html filename="test-structured-list-3" description="Strukturerede lister 3" %}
+{% include test/preview-test.html filename="test-structured-list-4" description="Strukturerede lister 4" %}
+{% include test/preview-test.html filename="test-structured-list-5" description="Strukturerede lister 5" %}
+
+{:.h3}
+## Tabeller
+
+{% include test/preview-test.html filename="test-tables-1" description="Tabeller 1" %}
+{% include test/preview-test.html filename="test-tables-2" description="Tabeller 2" %}
+{% include test/preview-test.html filename="test-tables-3" description="Tabeller 3" %}
+{% include test/preview-test.html filename="test-tables-4" description="Tabeller 4" %}
+{% include test/preview-test.html filename="test-tables-5" description="Tabeller 5" %}
+{% include test/preview-test.html filename="test-tables-6" description="Tabeller 6" %}
+{% include test/preview-test.html filename="test-tables-7" description="Tabeller 7" %}
+{% include test/preview-test.html filename="test-tables-8" description="Tabeller 8" %}
+
+{:.h3}
+## Tekstområde (Textarea)
+
+{% include test/preview-test.html filename="test-textarea-1" description="Tekstområde 1" %}
+{% include test/preview-test.html filename="test-textarea-2" description="Tekstområde 2" %}
+{% include test/preview-test.html filename="test-textarea-3" description="Tekstområde 3" %}
+{% include test/preview-test.html filename="test-textarea-4" description="Tekstområde 4" %}
+{% include test/preview-test.html filename="test-textarea-5" description="Tekstområde 5" %}
+{% include test/preview-test.html filename="test-textarea-6" description="Tekstområde 6" %}
+{% include test/preview-test.html filename="test-textarea-7" description="Tekstområde 7" %}
+
+{:.h3}
 ## Tilbage til toppen
 
 {% include test/preview-test.html filename="test-back-to-top-long-page" description="TO DO: Tilbage til toppen-knap på en lang side" %}
@@ -100,4 +152,24 @@ title: Test
 {:.h3}
 ## Tjekbokse
 
-{% include test/preview-test.html filename="test-checkbox-simple" description="Simpel tjekboks" %}
+{% include test/preview-test.html filename="test-checkbox-simple" description="TO DO: Simpel tjekboks" %}
+{% include test/preview-test.html filename="test-checkboxes-1" description="Tjekbokse 1" %}
+{% include test/preview-test.html filename="test-checkboxes-2" description="Tjekbokse 2" %}
+{% include test/preview-test.html filename="test-checkboxes-3" description="Tjekbokse 3" %}
+{% include test/preview-test.html filename="test-checkboxes-4" description="Tjekbokse 4" %}
+{% include test/preview-test.html filename="test-checkboxes-5" description="Tjekbokse 5" %}
+{% include test/preview-test.html filename="test-checkboxes-6" description="Tjekbokse 6" %}
+{% include test/preview-test.html filename="test-checkboxes-7" description="Tjekbokse 7" %}
+{% include test/preview-test.html filename="test-checkboxes-8" description="Tjekbokse 8" %}
+{% include test/preview-test.html filename="test-checkboxes-9" description="Tjekbokse 9" %}
+
+{:.h3}
+## Trinindikator
+
+{% include test/preview-test.html filename="test-step-guide-1" description="Trinindikator 1" %}
+{% include test/preview-test.html filename="test-step-guide-2" description="Trinindikator 2" %}
+{% include test/preview-test.html filename="test-step-guide-3" description="Trinindikator 3" %}
+{% include test/preview-test.html filename="test-step-guide-4" description="Trinindikator 4" %}
+{% include test/preview-test.html filename="test-step-guide-5" description="Trinindikator 5" %}
+{% include test/preview-test.html filename="test-step-guide-6" description="Trinindikator 6" %}
+{% include test/preview-test.html filename="test-step-guide-7" description="Trinindikator 7" %}

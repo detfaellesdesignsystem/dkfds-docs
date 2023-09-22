@@ -1,0 +1,68 @@
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Eksempel 1</p>
+            {{ 
+                checkbox({
+                    "id": "checkbox",
+                    "isStandalone": true,
+                    "name": "checkbox",
+                    "value": "1",
+                    "label": "Label til tjekboks",
+                    "required": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Eksempel 2</p>
+            {{ 
+                checkbox({
+                    "id": "checkbox2",
+                    "isStandalone": true,
+                    "name": "checkbox2",
+                    "value": "1",
+                    "label": "Label til tjekboks",
+                    "required": true,
+                    "requiredLabel": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Eksempel 3</p>
+            {{ 
+                checkbox({
+                    "id": "checkbox3",
+                    "isStandalone": true,
+                    "name": "checkbox3",
+                    "value": "1",
+                    "label": "Label til tjekboks",
+                    "required": true,
+                    "optionalLabel": true 
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Eksempel 4</p>
+            {{ 
+                checkbox({
+                    "id": "checkbox4",
+                    "isStandalone": true,
+                    "name": "checkbox4",
+                    "value": "1",
+                    "label": "Label til tjekboks",
+                    "required": true,
+                    "disabled": true 
+                }) 
+            }}
+        </div>
+    </div>
+</main>

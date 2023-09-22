@@ -1,0 +1,27 @@
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Klasser, attributer og rækker</p>
+            {{
+                textarea({
+                    "id": "input-textarea",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "classes": {
+                        "formgroup": "formgroupclass",
+                        "label": "labelclass",
+                        "textarea": "textareaclass"
+                    },
+                    "attributes": {
+                        "formgroup": "formgroupattr",
+                        "label": "labelattr",
+                        "textarea": "textareaattr"
+                    },
+                    "rows": 6
+                })
+            }}
+        </div>
+    </div>
+</main>

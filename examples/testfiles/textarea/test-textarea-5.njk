@@ -1,0 +1,59 @@
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Karakterbegrænsning</p>
+            {{
+                textarea({
+                    "id": "input-textarea",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "required": false,
+                    "characterLimit": 40
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet</p>
+            {{
+                textarea({
+                    "id": "input-textarea1",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "requiredlabel": true
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet</p>
+            {{
+                textarea({
+                    "id": "input-textarea2",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "required": false,
+                    "optionalLabel": true
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Disabled</p>
+            {{
+                textarea({
+                    "id": "input-textarea2",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "required": false,
+                    "disabled": true
+                })
+            }}
+        </div>
+    </div>
+</main>

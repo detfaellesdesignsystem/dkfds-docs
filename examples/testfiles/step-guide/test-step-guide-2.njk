@@ -1,0 +1,32 @@
+{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Ubegrænset bredde, aktivt trin og ikon</p>
+            <div>
+            {{ 
+                stepguide({
+                    "hasMaxWidth": false,
+                    "steps": [
+                        {
+                            "text": "Første trin",
+                            "href": "javascript:void(0);",
+                            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariaHidden": false}
+                        },
+                        {
+                            "text": "Andet trin",
+                            "href": "javascript:void(0);",
+                            "active": true
+                        },
+                        {
+                            "text": "Tredje trin",
+                            "href": "javascript:void(0);"
+                        }
+                    ]
+                }) 
+            }}    
+            </div>
+        </div>
+    </div>
+</main>

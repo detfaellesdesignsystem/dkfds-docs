@@ -1,0 +1,31 @@
+{% from "components/table/table.njk" import table as table %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Screen reader messages</p>
+            {{ 
+                table({
+                    "responsive": true,
+                    "thead": [
+                        { "headerContent": "This heading is not displayed on mobile", "classes": "sr-header" },
+                        { "headerContent": "Second column" },
+                        { "headerContent": "Third column" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "First row, first cell" },
+                            { "content": "First row, second cell" },
+                            { "content": "First row, third cell" }
+                        ],
+                        [
+                            { "content": "Second row, first cell" },
+                            { "content": "Second row, second cell" },
+                            { "content": "Second row, third cell" }
+                        ]
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

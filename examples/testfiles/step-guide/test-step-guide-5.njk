@@ -1,0 +1,32 @@
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Overflow</p>
+            <div>
+            {{ 
+                overflow_stepguide({
+                    "id": "trinindikator-overflow",
+                    "steps": [
+                        {
+                            "text": "Lorem ipsum",
+                            "href": "javascript:void(0);",
+                            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariaHidden": false}
+                        },
+                        {
+                            "text": "Dolor sit amet",
+                            "href": "javascript:void(0);",
+                            "active": true
+                        },
+                        {
+                            "text": "Consectetur adipiscing elit dolor sit amet",
+                            "href": "javascript:void(0);"
+                        }
+                    ]
+                }) 
+            }}
+            </div>
+        </div>
+    </div>
+</main>

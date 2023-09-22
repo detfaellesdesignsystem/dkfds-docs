@@ -1,0 +1,22 @@
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tjekboks skjult indhold</p>
+            {{ 
+                checkbox({
+                    "id": "checkbox",
+                    "isStandalone": true,
+                    "name": "checkbox",
+                    "value": "1",
+                    "label": "Label til tjekboks", 
+                    "srOnly": "Udfyld informationer herunder", 
+                    "hiddenContent": textinput({ "id": "mytext", "label": "Inputfelt", "name": "mytext" })
+                }) 
+            }}
+        </div>
+    </div>
+</main>
