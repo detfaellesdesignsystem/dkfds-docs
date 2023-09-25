@@ -8,6 +8,11 @@ title: Test
 # Testside
 
 {:.h3}
+## Ikoner
+
+{% include test/preview-test.html filename="test-icons-svg-and-class" description="Ikoner indsat som svg og klasse" %}
+
+{:.h3}
 ## Accordions
 
 {% include test/preview-test.html filename="test-accordions-1" description="Accordion 1" %}

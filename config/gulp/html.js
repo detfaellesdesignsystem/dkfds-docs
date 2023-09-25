@@ -27,6 +27,7 @@ var buildExamples = ['examples/examples/**/*.njk'];
 var activeBuild = buildAll;
 
 var testfiles = [
+    "test-icons-svg-and-class",
     "test-accordions-1",
     "test-accordions-2",
     "test-accordions-3",
