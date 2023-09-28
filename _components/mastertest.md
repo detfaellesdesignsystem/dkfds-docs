@@ -64,7 +64,7 @@ title: Test
 {:.h3}
 ## Gå til sidens indhold (Skip-link)
 
-{% include test/preview-test.html filename="test-skip-link-1" description="Skip-link 1" %}
+{% include test/preview-test.html filename="test-skip-link-default" description="Skip-link, default" %}
 
 {:.h3}
 ## Header

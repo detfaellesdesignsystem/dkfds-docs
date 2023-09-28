@@ -57,7 +57,7 @@ var testfiles = [
     "test-dropdown-6",
     "test-dropdown-7",
     "test-dropdown-8",
-    "test-skip-link-1",
+    "test-skip-link-default",
     "test-header-portal-and-solution",
     "test-header-solution-and-navigation",
     "test-header-three-simple-rows",

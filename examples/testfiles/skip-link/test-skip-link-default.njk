@@ -1,18 +1,13 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
 
+<header>
+    {{ skiplink() }}
+</header>
+
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
             <p>Skip link ('tab' for at vise)</p>
-
-            {{ skiplink() }}
-
-            {{ 
-                skiplink({
-                    "href": "#",
-                    "text": "Dette er et link"
-                }) 
-            }}   
         </div>
     </div>
 </main>
