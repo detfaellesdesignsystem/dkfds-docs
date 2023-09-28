@@ -229,32 +229,16 @@
     <div class="solution-info">
         <div class="solution-info-inner container">
             <div class="solution-heading d-flex align-items-center">
-                <a href="/">Det Fælles Designsystem</a><strong
-                    class="badge badge-large badge-error ml-4">Develop</strong>
+                <a href="/">Det Fælles Designsystem</a><strong class="badge badge-large badge-error ml-4">Develop</strong>
             </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg
-                    class="icon-svg" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                </svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
-
-        
-        <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-            <form method="get" action="/search/" id="mobileSearchForm" role="search">
-                <div class="form-group search">
-                    <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required
-                        aria-label="Søg">
-                    <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
-                </div>
-            </form>
-        </div>
-        
     </div>
 
     <!-- Desktop main menu-->
-    <div class="navigation-menu">
+    <div class="navigation-menu contains-search">
         <div class="navigation-menu-inner container">
-            <nav>
+            <nav class="nav">
                 <ul class="mainmenu">
                     
     
@@ -408,13 +392,10 @@
     <div class="overlay"></div>
 
     <!-- Mobile main menu-->
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
             <h2 class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
-                aria-hidden="true" focusable="false" tabindex="-1">
-                <use xlink:href="#close"></use>
-            </svg>Luk</button>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile">
             <ul class="mainmenu">

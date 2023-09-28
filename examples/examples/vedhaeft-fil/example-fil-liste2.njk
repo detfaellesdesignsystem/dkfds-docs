@@ -64,7 +64,7 @@
     {{ portal_info(portal_header_data) }}
     {{ solution_info(solution_header_data) }}
     <div class="overlay"></div>
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         {{ menu_top() }}
         {{ mobile_solution_info(solution_header_data) }}
         {{ mobile_portal_info(portal_header_data) }}

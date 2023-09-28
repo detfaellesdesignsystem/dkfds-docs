@@ -7,67 +7,83 @@ layout: styleguide
 category: Kode_category
 subcategory: Kode
 title: Header
-previewimage: "header-all-rows-dropdown"
+previewimage: "header-with-navigation"
 previewimageTitle: "Eksempel på header komponent"
-anchor: true
-subnav:
-- text: Navigation
-  href: '#navigation'
-- text: Ekstra rækker
-  href: '#ekstra-raekker'
+anchor: false
 description: "Dokumentation på implementering af header."
 tags:
 ---
+
+## Eksempler og retningslinjer
+
+{:.nobullet-list}
+- <a href="/komponenter/header/#retningslinjer">Retningslinjer</a>
+- <a href="/komponenter/header/">Eksempler</a>
 
 ## Installation
 
 ### HTML Struktur
 
-En header består grundlæggende af tre dele, der alle er nødvendige at inkludere: Info om portalen, info om løsningen og navigation. Nedenstående eksempel viser de tre deles overordnede struktur i `header`-elementet. De øvrige afsnit indeholder uddybende kodeeksempler.
+Nedenstående eksempel viser den overordnede struktur i `header`-elementet. De øvrige afsnit indeholder uddybende kodeeksempler.
 
+{:#html-struktur}
 {% include code/syntax.html component="header-overview" copybutton=true %}
 
-Placer `header`-elementet i din HTML-sides `body`-element.
+Placer `header`-elementet i din HTML-sides `body`-element. Du kan læse mere om <a href="/kode/komponenter/tilbage-til-top/">tilbage til toppen-knappen</a> og <a href="/kode/komponenter/skip-link/">skip-link</a> på disse komponenters sider.
 
-#### Portal (desktop)
+#### Overlay og mobilmenu
 
-Portalrækken indeholder portalens logo samt info om, hvem der er logget ind.
+Som standard ændres headeren til kun at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et overlay under menuen.
+
+{% include code/syntax.html component="header-menu-top" copybutton=true %}
+
+Det er muligt at ændre, hvornår headeren skal vise menuknappen, ved at bruge Sass-variablen `$nav-responsive-breakpoint` og derefter bygge CSS'en selv.
+
+#### Række 1
+
+Række 1 indeholder portal-logo, NemLog-in-oplysninger og “Log af” knap. Headeren skal altid indeholde denne række.
+
+Der er to dele, som skal indsættes i `<header>`-elementet. Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme.
 
 {% include code/syntax.html component="header-portal" copybutton=true %}
 
-#### Løsning (desktop)
+Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises på mindre skærme.
 
-Løsningsrækken indeholder løsningens titel samt info om, hvilken myndighed der står bag løsningen.
+{% include code/syntax.html component="header-portal-mobile" copybutton=true %}
+
+Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.
+
+#### Række 2
+
+Række 2 indeholder selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger. Headeren skal altid indeholde denne række.
+
+Der er to dele, som skal indsættes i `<header>`-elementet. Første del skal indsættes <em>efter</em> række 1 og indeholder koden, der vises på større skærme.
 
 {% include code/syntax.html component="header-solution" copybutton=true %}
 
-{:#navigation}
-#### Navigation
+Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder koden, der vises på mindre skærme.
 
-Navigationen indeholder sidens hovedmenu og menu på små skærme.
+{% include code/syntax.html component="header-solution-mobile" copybutton=true %}
 
-På større skærme vil brugeren kunne se en menurække med links til de forskellige sider i løsningen. På mindre skærme skjules denne menurække og erstattes af en menuknap, der ved klik åbner en menu med disse links. Denne menu indeholder også portal- og løsningsinfo, der ellers ikke ville være plads til på små skærme.
+Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.
 
-Som standard ændres menurækken til en menuknap, når skærmen er mindre end 992px bred. Dette er dog muligt at ændre ved at bruge variablen `$nav-responsive-breakpoint`.
+#### Række 3
+
+Række 3 indeholder topnavigation i løsningen og søgefelt. Det er valgfrit, om headeren skal indeholde denne række.
+
+Der er to dele, som skal indsættes i `<header>`-elementet. Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vises på større skærme. 
 
 {% include code/syntax.html component="header-navigation" copybutton=true %}
 
-{:#navigation-mobil}
-##### Når der ikke anvendes menurække i løsningen
+Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover. Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme.
 
-Hvis man har en header uden en menurække, skal man stadig tilføje navigationsdelen, da information om portal og løsning ellers bliver skjult på små skærme.
+{% include code/syntax.html component="header-navigation-mobile" copybutton=true %}
 
-I stedet for klassen `navigation-header` skal man anvende `navigation-header-mobile` og `nav`-elementet udelades.
+Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.
 
-{% include code/syntax.html component="header-navigation-mobil" copybutton=true %}
+#### Topnavigation og venstremenu
 
-##### Menurække og venstremenu
-
-Hvis løsningen anvender både en menurække med links til hovedsider og en venstremenu til at vise links til undersider, så bør navigationen på mindre skærme indeholde alle links fra begge menuer. Dette gøres ved at anvende to navigationsdele: En til større skærme og en til mindre skærme. Her er man dog selv ansvarlig for at sikre, at alle menuer vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kode/utilities/#display">hjælpeklasser for display</a>.
-
-Eksemplet nedenunder viser den grundlæggende struktur for headeren, når løsningen indeholder både menurække og venstremenu:
-
-{% include code/syntax.html component="header-navigation-sidemenu" copybutton=true %}
+Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kode/utilities/#display">hjælpeklasser for display</a>, samt at mobilmenuen indeholder de korrekte links.
 
 ### JavaScript
 

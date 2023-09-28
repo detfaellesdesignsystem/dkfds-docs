@@ -69,7 +69,7 @@
     {{ solution_info(solution_header_data) }}
     {{ navigation_menu(navigation_menu_data) }}
     <div class="overlay"></div>
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         {{ menu_top() }}
         {{ mobile_navigation_menu(navigation_menu_data) }}
         {{ mobile_solution_info(solution_header_data) }}

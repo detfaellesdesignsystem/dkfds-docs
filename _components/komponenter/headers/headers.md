@@ -7,7 +7,7 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
-previewimage: "header-all-rows-dropdown"
+previewimage: "header-with-navigation"
 previewimageTitle: "Eksempel på header"
 previewimageCode: "/kode/komponenter/header/"
 anchor: false
@@ -24,13 +24,13 @@ Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af
 
 Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed og evt. med kontaktoplysninger.
 
-En eventuel overordnet navigation (menurække) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.
+En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.
 
 ### Anvendes ikke til
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke menurækken som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
+Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
 
 ### Vejledning
 
@@ -38,9 +38,19 @@ Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsninger
 
 En header består af et antal rækker med forskelligt indhold.
 
-- Række 1 (portalrækken) med portal-logo, NemLog-in-oplysninger og ”Log af” knap.
-- Række 2 (løsningsrækken) med slvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontaktoplysninger.
-- Række 3 (menurække) med links til løsningens forskellige sider. Denne række kan undlades i simple løsninger.
+- Række 1 og række 2 er obligatoriske. Alle selvbetjeningsløsninger skal have portal-logo, login-info og løsningstitel som minimum.
+- Række 3 (topnavigation) kan anvendes hvis nødvendigt.
+
+#### Headerens rækker forklaret
+
+##### Række 1 (obligatorisk)
+Portal-logo, NemLog-in-oplysninger og “Log af” knap.
+
+##### Række 2 (obligatorisk)
+Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger.
+
+##### Række 3 (frivillig)
+Navigation (topnavigation) i løsningen og søgefelt.
 
 #### Referencer
 
@@ -48,18 +58,10 @@ En header består af et antal rækker med forskelligt indhold.
 
 ### Eksempler
 
-## Varianter
+#### Simpel header
 
-{% include code/preview-image.html component="header-portal-only" %}
+{% include code/preview-image.html component="header-simple" %}
 
-{% include code/preview-image.html component="header-solution-only" %}
+#### Header med navigation og søgefelt
 
-{% include code/preview-image.html component="header-navigation-only" %}
-
-{% include code/preview-image.html component="header-portal-and-solution" %}
-
-{% include code/preview-image.html component="header-solution-and-navigation" %}
-
-{% include code/preview-image.html component="header-all-rows" %}
-
-{% include code/preview-image.html component="header-all-rows-dropdown" %}
+{% include code/preview-image.html component="header-with-navigation" %}

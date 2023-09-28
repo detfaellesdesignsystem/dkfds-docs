@@ -97,23 +97,6 @@ a.search-link{
   }
 }
 
-header .navbar .search-form{
-  align-self: center;
-
-  #search-input{
-      width: 27ch;
-  }
-}
-
-header #search-form-mobile{
-  border-top: border(20);
-
-  #search-input-mobile{
-    width: 100%;
-    max-width: none;
-  }
-}
-
 .page-result {
   .h4 a.search-link {
     .page-category{

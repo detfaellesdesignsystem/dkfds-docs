@@ -32,8 +32,8 @@
 
 {% set navigation_menu_data = {
     "links": [
-        { "text": "1. menupunkt" },
-        { "text": "2. menupunkt",
+        { "text": "Første menupunkt" },
+        { "text": "Andet menupunkt",
           "links": [
               { "text": "Undermenu 2.1" },
               { "text": "Undermenu 2.2" },
@@ -41,9 +41,9 @@
               { "text": "Undermenu 2.4" }
           ]
         },
-        { "text": "3. menupunkt" },
-        { "text": "4. menupunkt" },
-        { "text": "5. menupunkt", "active": true,
+        { "text": "Tredje menupunkt" },
+        { "text": "Fjerde menupunkt" },
+        { "text": "Femte menupunkt", "active": true,
           "links": [
               { "text": "Undermenu 5.1" },
               { "text": "Undermenu 5.2", "current": true,
@@ -65,7 +65,7 @@
     {{ solution_info(solution_info_data) }}
     {{ navigation_menu(navigation_menu_data) }}
     <div class="overlay"></div>
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         {{ menu_top() }}
         {{ mobile_navigation_menu(navigation_menu_data) }}
         {{ mobile_solution_info(solution_info_data) }}

@@ -231,32 +231,16 @@
     <div class="solution-info">
         <div class="solution-info-inner container">
             <div class="solution-heading d-flex align-items-center">
-                <a href="/">Det Fælles Designsystem</a><strong
-                    class="badge badge-large badge-error ml-4">Develop</strong>
+                <a href="/">Det Fælles Designsystem</a><strong class="badge badge-large badge-error ml-4">Develop</strong>
             </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg
-                    class="icon-svg" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                </svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
-
-        
-        <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-            <form method="get" action="/search/" id="mobileSearchForm" role="search">
-                <div class="form-group search">
-                    <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required
-                        aria-label="Søg">
-                    <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
-                </div>
-            </form>
-        </div>
-        
     </div>
 
     <!-- Desktop main menu-->
-    <div class="navigation-menu">
+    <div class="navigation-menu contains-search">
         <div class="navigation-menu-inner container">
-            <nav>
+            <nav class="nav">
                 <ul class="mainmenu">
                     
     
@@ -410,13 +394,10 @@
     <div class="overlay"></div>
 
     <!-- Mobile main menu-->
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
             <h2 class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
-                aria-hidden="true" focusable="false" tabindex="-1">
-                <use xlink:href="#close"></use>
-            </svg>Luk</button>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile">
             <ul class="mainmenu">
@@ -5181,15 +5162,15 @@
 
                 
                 
-<div class="component-preview  component-preview-header-all-rows-dropdown">
+<div class="component-preview  component-preview-header-with-navigation">
     <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-all-rows-dropdown/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-all-rows-dropdown</span></a>
+        <a href="/eksempel/header-with-navigation/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-with-navigation</span></a>
     </div>
     
     <div class="sr-only">Eksempel på header komponent</div>
     
     <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-all-rows-dropdown/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-all-rows-dropdown" target="_blank" ></a>
+        <a href="/eksempel/header-with-navigation/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-with-navigation" target="_blank" ></a>
     </div>
     
 </div>
@@ -5197,23 +5178,21 @@
                 
 
                 
-                <nav class="anchorbox">
-                    <h2 class="anchortitle">Indhold på siden</h2>
-                    <ul class="anchorlist">
-                        <li><a href="#navigation">Navigation</a></li>
-                        <li><a href="#ekstra-raekker">Ekstra rækker</a></li>
-                        
-                    </ul>
-                </nav>
-                
 
-                <h2>Installation</h2>
+                <h2>Eksempler og retningslinjer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="/komponenter/header/#retningslinjer">Retningslinjer</a></li>
+  <li><a href="/komponenter/header/">Eksempler</a></li>
+</ul>
+
+<h2>Installation</h2>
 
 <h3>HTML Struktur</h3>
 
-<p>En header består grundlæggende af tre dele, der alle er nødvendige at inkludere: Info om portalen, info om løsningen og navigation. Nedenstående eksempel viser de tre deles overordnede struktur i <code>header</code>-elementet. De øvrige afsnit indeholder uddybende kodeeksempler.</p>
+<p>Nedenstående eksempel viser den overordnede struktur i <code>header</code>-elementet. De øvrige afsnit indeholder uddybende kodeeksempler.</p>
 
-<div class="component-preview component-preview-code  component-code-header-overview">
+<div class="component-preview component-preview-code  component-code-header-overview" id="html-struktur">
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -5229,9 +5208,9 @@
     &lt;!-- Eventuelt ID til Tilbage til toppen-knap og Skip-link --&gt;
     &lt;div class=&quot;portal-info&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;solution-info&quot;&gt;...&lt;/div&gt;
-    &lt;nav class=&quot;navigation-menu&quot;&gt;...&lt;/nav&gt;
+    &lt;div class=&quot;navigation-menu&quot;&gt;...&lt;/div&gt;
     &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;mobile-drawer&quot;&gt;
+    &lt;div class=&quot;mobile-drawer&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;menu-heading&quot;&gt;
         &lt;div class=&quot;menu-top&quot;&gt;...&lt;/div&gt;
         &lt;nav class=&quot;navigation-menu-mobile&quot;&gt;...&lt;/nav&gt;
         &lt;div class=&quot;solution-info-mobile&quot;&gt;...&lt;/div&gt;
@@ -5243,11 +5222,46 @@
     </div>
 </div>
 
-<p>Placer <code>header</code>-elementet i din HTML-sides <code>body</code>-element.</p>
+<p>Placer <code>header</code>-elementet i din HTML-sides <code>body</code>-element. Du kan læse mere om <a href="/kode/komponenter/tilbage-til-top/">tilbage til toppen-knappen</a> og <a href="/kode/komponenter/skip-link/">skip-link</a> på disse komponenters sider.</p>
 
-<h4>Portal (desktop)</h4>
+<h4>Overlay og mobilmenu</h4>
 
-<p>Portalrækken indeholder portalens logo samt info om, hvem der er logget ind.</p>
+<p>Som standard ændres headeren til kun at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et overlay under menuen.</p>
+
+<div class="component-preview component-preview-code  component-code-header-menu-top">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;mobile-drawer&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; aria-labelledby=&quot;menu-heading&quot;&gt;
+
+    &lt;div class=&quot;menu-top&quot;&gt;
+        &lt;h2 id=&quot;menu-heading&quot; class=&quot;menu-heading&quot;&gt;Menu&lt;/h2&gt;
+        &lt;button class=&quot;function-link button-menu-close js-menu-close&quot;
+            aria-label=&quot;Luk menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Det er muligt at ændre, hvornår headeren skal vise menuknappen, ved at bruge Sass-variablen <code>$nav-responsive-breakpoint</code> og derefter bygge CSS’en selv.</p>
+
+<h4>Række 1</h4>
+
+<p>Række 1 indeholder portal-logo, NemLog-in-oplysninger og “Log af” knap. Headeren skal altid indeholde denne række.</p>
+
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme.</p>
 
 <div class="component-preview component-preview-code  component-code-header-portal">
     
@@ -5285,9 +5299,45 @@
     </div>
 </div>
 
-<h4>Løsning (desktop)</h4>
+<p>Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises på mindre skærme.</p>
 
-<p>Løsningsrækken indeholder løsningens titel samt info om, hvilken myndighed der står bag løsningen.</p>
+<div class="component-preview component-preview-code  component-code-header-portal-mobile">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;portal-info-mobile&quot;&gt;
+
+    &lt;p class=&quot;user&quot;&gt;
+
+        &lt;span&gt;Anders Andersen&lt;/span&gt;
+        &lt;span&gt;Forsikringens Forsikringsfirma&lt;/span&gt;
+
+    &lt;/p&gt;
+
+    &lt;button class=&quot;button button-secondary d-print-none mt-3&quot;&gt;
+        Log af
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.</p>
+
+<h4>Række 2</h4>
+
+<p>Række 2 indeholder selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger. Headeren skal altid indeholde denne række.</p>
+
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes <em>efter</em> række 1 og indeholder koden, der vises på større skærme.</p>
 
 <div class="component-preview component-preview-code  component-code-header-solution">
     
@@ -5304,18 +5354,14 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;solution-info&quot;&gt;
     &lt;div class=&quot;solution-info-inner container&quot;&gt;
         &lt;div class=&quot;solution-heading&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;En længere løsningstitel&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;Løsningstitel&lt;/a&gt;
         &lt;/div&gt;
 
         &lt;div class=&quot;additional-info&quot;&gt;
 
             &lt;p&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
 
-            &lt;p&gt;Support: 12 34 56 78 &lt;span
-                    class=&quot;d-block d-lg-inline-block d-print-none mt-2 mt-lg-0&quot;&gt;&lt;span
-                        class=&quot;d-none d-lg-inline-block mr-2&quot;&gt;· &lt;/span&gt;&lt;a href=&quot;#&quot;
-                        class=&quot;icon-link function-link&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;
-            &lt;/p&gt;
+            &lt;p&gt;Support: 12 34 56 78&lt;/p&gt;
 
         &lt;/div&gt;
 
@@ -5326,13 +5372,39 @@
     </div>
 </div>
 
-<h4 id="navigation">Navigation</h4>
+<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder koden, der vises på mindre skærme.</p>
 
-<p>Navigationen indeholder sidens hovedmenu og menu på små skærme.</p>
+<div class="component-preview component-preview-code  component-code-header-solution-mobile">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;solution-info-mobile&quot;&gt;
 
-<p>På større skærme vil brugeren kunne se en menurække med links til de forskellige sider i løsningen. På mindre skærme skjules denne menurække og erstattes af en menuknap, der ved klik åbner en menu med disse links. Denne menu indeholder også portal- og løsningsinfo, der ellers ikke ville være plads til på små skærme.</p>
+    &lt;p class=&quot;mb-2&quot;&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
 
-<p>Som standard ændres menurækken til en menuknap, når skærmen er mindre end 992px bred. Dette er dog muligt at ændre ved at bruge variablen <code>$nav-responsive-breakpoint</code>.</p>
+    &lt;p&gt;Support: 12 34 56 78&lt;/p&gt;
+
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.</p>
+
+<h4>Række 3</h4>
+
+<p>Række 3 indeholder topnavigation i løsningen og søgefelt. Det er valgfrit, om headeren skal indeholde denne række.</p>
+
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vises på større skærme.</p>
 
 <div class="component-preview component-preview-code  component-code-header-navigation">
     
@@ -5346,143 +5418,47 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;navigation-header&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;navigation-menu contains-search&quot;&gt;
+    &lt;div class=&quot;navigation-menu-inner container&quot;&gt;
 
-
-    </div>
-</div>
-
-<h5 id="navigation-mobil">Når der ikke anvendes menurække i løsningen</h5>
-
-<p>Hvis man har en header uden en menurække, skal man stadig tilføje navigationsdelen, da information om portal og løsning ellers bliver skjult på små skærme.</p>
-
-<p>I stedet for klassen <code>navigation-header</code> skal man anvende <code>navigation-header-mobile</code> og <code>nav</code>-elementet udelades.</p>
-
-<div class="component-preview component-preview-code  component-code-header-navigation-mobil">
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;mobile-drawer&quot;&gt;
-
-    &lt;div class=&quot;menu-top&quot;&gt;
-        &lt;h2 class=&quot;menu-heading&quot;&gt;Menu&lt;/h2&gt;
-        &lt;button class=&quot;function-link button-menu-close js-menu-close&quot;
-            aria-label=&quot;Luk menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;solution-info-mobile&quot;&gt;
-
-        &lt;p class=&quot;mb-2&quot;&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;p&gt;Support: 12 34 56 78 &lt;span
-                class=&quot;d-block d-lg-inline-block d-print-none mt-2 mt-lg-0&quot;&gt;&lt;span
-                    class=&quot;d-none d-lg-inline-block mr-2&quot;&gt;· &lt;/span&gt;&lt;a href=&quot;#&quot;
-                    class=&quot;icon-link function-link&quot;&gt;Kontakt&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;
-        &lt;/p&gt;
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;portal-info-mobile&quot;&gt;
-
-        &lt;p class=&quot;user&quot;&gt;
-
-            &lt;span&gt;Anders Andersen&lt;/span&gt;
-            &lt;span&gt;Forsikringens Forsikringsfirma&lt;/span&gt;
-
-        &lt;/p&gt;
-
-        &lt;button class=&quot;button button-secondary d-print-none mt-3&quot;&gt;
-            Log af
-        &lt;/button&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-</div>
-
-<h5>Menurække og venstremenu</h5>
-
-<p>Hvis løsningen anvender både en menurække med links til hovedsider og en venstremenu til at vise links til undersider, så bør navigationen på mindre skærme indeholde alle links fra begge menuer. Dette gøres ved at anvende to navigationsdele: En til større skærme og en til mindre skærme. Her er man dog selv ansvarlig for at sikre, at alle menuer vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kode/utilities/#display">hjælpeklasser for display</a>.</p>
-
-<p>Eksemplet nedenunder viser den grundlæggende struktur for headeren, når løsningen indeholder både menurække og venstremenu:</p>
-
-<div class="component-preview component-preview-code  component-code-header-navigation-sidemenu">
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;navigation-header-mobile&quot;&gt;
-    &lt;div class=&quot;navigation-header-inner container&quot;&gt;
-
-        &lt;div class=&quot;menu-top&quot;&gt;
-            &lt;h2 class=&quot;menu-heading&quot;&gt;Menu&lt;/h2&gt;
-            &lt;button class=&quot;function-link button-menu-close js-menu-close&quot;
-                aria-label=&quot;Luk menu&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#close&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Luk&lt;/button&gt;
-        &lt;/div&gt;
-
-        &lt;nav&gt;
+        &lt;nav class=&quot;nav&quot;&gt;
             &lt;ul class=&quot;mainmenu&quot;&gt;
                 &lt;li&gt;
                     &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
                         &lt;span&gt;Første menupunkt&lt;/span&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
-                &lt;li&gt;
+                &lt;li class=&quot;active&quot;&gt;
+
                     &lt;div class=&quot;submenu&quot;&gt;
                         &lt;button class=&quot;nav-link button-overflow-menu js-dropdown&quot;
-                            data-js-target=&quot;subcategory&quot; aria-haspopup=&quot;true&quot;
-                            aria-expanded=&quot;true&quot;&gt;
+                            data-js-target=&quot;desktopmenu-2&quot; aria-haspopup=&quot;true&quot;
+                            aria-expanded=&quot;false&quot;&gt;
                             &lt;span&gt;Andet menupunkt&lt;/span&gt;
                         &lt;/button&gt;
-                        &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;subcategory&quot; aria-hidden=&quot;false&quot;&gt;
+                        &lt;div class=&quot;overflow-menu-inner collapsed&quot; id=&quot;desktopmenu-2&quot;
+                            aria-hidden=&quot;true&quot;&gt;
                             &lt;ul class=&quot;overflow-list&quot;&gt;
                                 &lt;li&gt;
                                     &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                                        &lt;span&gt;Andet menupunkt &lt;span
-                                                class=&quot;helptext&quot;&gt;(overblik)&lt;/span&gt;&lt;/span&gt;
+                                        &lt;span&gt;Endnu en undermenu&lt;/span&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;active current&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; aria-current=&quot;page&quot;&gt;
+                                        &lt;span&gt;Endnu en undermenu&lt;/span&gt;
                                     &lt;/a&gt;
                                 &lt;/li&gt;
                                 &lt;li&gt;
                                     &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                                        &lt;span&gt;Første undermenupunkt&lt;/span&gt;
+                                        &lt;span&gt;Endnu en undermenu&lt;/span&gt;
                                     &lt;/a&gt;
                                 &lt;/li&gt;
-                                &lt;li&gt;
-                                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                                        &lt;span&gt;Andet undermenupunkt&lt;/span&gt;
-                                    &lt;/a&gt;
-                                &lt;/li&gt;
-                                &lt;li&gt;
-                                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                                        &lt;span&gt;Tredje undermenupunkt&lt;/span&gt;
-                                    &lt;/a&gt;
-                                &lt;/li&gt;
+
                             &lt;/ul&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
+
                 &lt;/li&gt;
                 &lt;li&gt;
                     &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
@@ -5492,38 +5468,89 @@
             &lt;/ul&gt;
         &lt;/nav&gt;
 
-        &lt;div class=&quot;solution-info-mobile&quot;&gt;...&lt;/div&gt;
-        &lt;div class=&quot;portal-header-mobile&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+        &lt;div class=&quot;form-group search&quot;&gt;
+            &lt;label for=&quot;header-search&quot; class=&quot;sr-only&quot;&gt;Søg efter indhold&lt;/label&gt;
+            &lt;input class=&quot;form-input&quot; id=&quot;header-search&quot; name=&quot;header-search&quot; type=&quot;search&quot;&gt;
+            &lt;button class=&quot;button button-search&quot;&gt;
+                Søg
+            &lt;/button&gt;
+        &lt;/div&gt;
 
-&lt;div class=&quot;navigation-header d-none d-lg-block&quot;&gt;
-    &lt;div class=&quot;navigation-header-inner container&quot;&gt;
-        &lt;nav&gt;
-            &lt;ul class=&quot;mainmenu&quot;&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                        &lt;span&gt;Første menupunkt&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                        &lt;span&gt;Andet menupunkt&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
-                        &lt;span&gt;Tredje menupunkt&lt;/span&gt;
-                    &lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
     </div>
 </div>
+
+<p>Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover. Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme.</p>
+
+<div class="component-preview component-preview-code  component-code-header-navigation-mobile">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;navigation-menu-mobile&quot;&gt;
+    &lt;ul class=&quot;mainmenu&quot;&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+                &lt;span&gt;Første menupunkt&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;active&quot;&gt;
+
+            &lt;div class=&quot;submenu&quot;&gt;
+                &lt;button class=&quot;nav-link button-mobile-menu js-menudropdown&quot;
+                    data-js-target=&quot;mobilemenu-2&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+                    &lt;span&gt;Andet menupunkt&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;mobilemenu-2&quot; aria-hidden=&quot;false&quot;&gt;
+                    &lt;ul class=&quot;overflow-list&quot;&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+                                &lt;span&gt;Endnu en undermenu&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;active current&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; aria-current=&quot;page&quot;&gt;
+                                &lt;span&gt;Endnu en undermenu&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+                                &lt;span&gt;Endnu en undermenu&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+                &lt;span&gt;Tredje menupunkt&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.</p>
+
+<h4>Topnavigation og venstremenu</h4>
+
+<p>Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kode/utilities/#display">hjælpeklasser for display</a>, samt at mobilmenuen indeholder de korrekte links.</p>
 
 <h3>JavaScript</h3>
 

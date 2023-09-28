@@ -231,32 +231,16 @@
     <div class="solution-info">
         <div class="solution-info-inner container">
             <div class="solution-heading d-flex align-items-center">
-                <a href="/">Det Fælles Designsystem</a><strong
-                    class="badge badge-large badge-error ml-4">Develop</strong>
+                <a href="/">Det Fælles Designsystem</a><strong class="badge badge-large badge-error ml-4">Develop</strong>
             </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg
-                    class="icon-svg" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                </svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
-
-        
-        <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-            <form method="get" action="/search/" id="mobileSearchForm" role="search">
-                <div class="form-group search">
-                    <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required
-                        aria-label="Søg">
-                    <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
-                </div>
-            </form>
-        </div>
-        
     </div>
 
     <!-- Desktop main menu-->
-    <div class="navigation-menu">
+    <div class="navigation-menu contains-search">
         <div class="navigation-menu-inner container">
-            <nav>
+            <nav class="nav">
                 <ul class="mainmenu">
                     
     
@@ -410,13 +394,10 @@
     <div class="overlay"></div>
 
     <!-- Mobile main menu-->
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
             <h2 class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg"
-                aria-hidden="true" focusable="false" tabindex="-1">
-                <use xlink:href="#close"></use>
-            </svg>Luk</button>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile">
             <ul class="mainmenu">
@@ -4889,19 +4870,19 @@
 
                 
                 
-<div class="component-preview  component-preview-header-all-rows-dropdown">
+<div class="component-preview  component-preview-header-with-navigation">
     <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-all-rows-dropdown/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-all-rows-dropdown</span></a>
+        <a href="/eksempel/header-with-navigation/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-with-navigation</span></a>
     </div>
     
     <div class="sr-only">Eksempel på header</div>
     
     <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-all-rows-dropdown/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-all-rows-dropdown" target="_blank" ></a>
+        <a href="/eksempel/header-with-navigation/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-with-navigation" target="_blank" ></a>
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/kode/komponenter/header/" class="small-text">Gå til kodeafsnit<span class="sr-only">: header-all-rows-dropdown</span></a>
+        <a href="/kode/komponenter/header/" class="small-text">Gå til kodeafsnit<span class="sr-only">: header-with-navigation</span></a>
     </div>
     
 </div>
@@ -4918,13 +4899,13 @@
 
 <p>Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed og evt. med kontaktoplysninger.</p>
 
-<p>En eventuel overordnet navigation (menurække) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.</p>
+<p>En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.</p>
 
 <h3>Anvendes ikke til</h3>
 
 <p>Anvend ikke headeren andre steder i løsningen end i toppen af siden.</p>
 
-<p>Brug ikke menurækken som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>.</p>
+<p>Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>.</p>
 
 <h3>Vejledning</h3>
 
@@ -4933,10 +4914,20 @@
 <p>En header består af et antal rækker med forskelligt indhold.</p>
 
 <ul>
-  <li>Række 1 (portalrækken) med portal-logo, NemLog-in-oplysninger og ”Log af” knap.</li>
-  <li>Række 2 (løsningsrækken) med slvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontaktoplysninger.</li>
-  <li>Række 3 (menurække) med links til løsningens forskellige sider. Denne række kan undlades i simple løsninger.</li>
+  <li>Række 1 og række 2 er obligatoriske. Alle selvbetjeningsløsninger skal have portal-logo, login-info og løsningstitel som minimum.</li>
+  <li>Række 3 (topnavigation) kan anvendes hvis nødvendigt.</li>
 </ul>
+
+<h4>Headerens rækker forklaret</h4>
+
+<h5>Række 1 (obligatorisk)</h5>
+<p>Portal-logo, NemLog-in-oplysninger og “Log af” knap.</p>
+
+<h5>Række 2 (obligatorisk)</h5>
+<p>Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger.</p>
+
+<h5>Række 3 (frivillig)</h5>
+<p>Navigation (topnavigation) i løsningen og søgefelt.</p>
 
 <h4>Referencer</h4>
 
@@ -4944,98 +4935,36 @@
 
 <h3>Eksempler</h3>
 
-<h2>Varianter</h2>
+<h4>Simpel header</h4>
 
-<div class="component-preview  component-preview-header-portal-only">
+<div class="component-preview  component-preview-header-simple">
     <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-portal-only/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-portal-only</span></a>
+        <a href="/eksempel/header-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-simple</span></a>
     </div>
     
     <div class="sr-only">Eksempel</div>
     
     <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-portal-only/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-portal-only" target="_blank"></a>
+        <a href="/eksempel/header-simple/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-simple" target="_blank"></a>
     </div>
     
 </div>
 
-<div class="component-preview  component-preview-header-solution-only">
+<h4>Header med navigation og søgefelt</h4>
+
+<div class="component-preview  component-preview-header-with-navigation">
     <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-solution-only/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-solution-only</span></a>
+        <a href="/eksempel/header-with-navigation/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-with-navigation</span></a>
     </div>
     
     <div class="sr-only">Eksempel</div>
     
     <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-solution-only/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-solution-only" target="_blank"></a>
+        <a href="/eksempel/header-with-navigation/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-with-navigation" target="_blank"></a>
     </div>
     
 </div>
 
-<div class="component-preview  component-preview-header-navigation-only">
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-navigation-only/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-navigation-only</span></a>
-    </div>
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-navigation-only/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-navigation-only" target="_blank"></a>
-    </div>
-    
-</div>
-
-<div class="component-preview  component-preview-header-portal-and-solution">
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-portal-and-solution/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-portal-and-solution</span></a>
-    </div>
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-portal-and-solution/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-portal-and-solution" target="_blank"></a>
-    </div>
-    
-</div>
-
-<div class="component-preview  component-preview-header-solution-and-navigation">
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-solution-and-navigation/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-solution-and-navigation</span></a>
-    </div>
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-solution-and-navigation/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-solution-and-navigation" target="_blank"></a>
-    </div>
-    
-</div>
-
-<div class="component-preview  component-preview-header-all-rows">
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-all-rows/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-all-rows</span></a>
-    </div>
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-all-rows/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-all-rows" target="_blank"></a>
-    </div>
-    
-</div>
-
-<div class="component-preview  component-preview-header-all-rows-dropdown">
-    <div class="component-link px-4 py-4">
-        <a href="/eksempel/header-all-rows-dropdown/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: header-all-rows-dropdown</span></a>
-    </div>
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="component-example px-4 py-4">
-        <a href="/eksempel/header-all-rows-dropdown/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: header-all-rows-dropdown" target="_blank"></a>
-    </div>
-    
-</div>
 
 
                 

@@ -1,12 +1,12 @@
-{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
-{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
 {% from "components/header/header.njk" import portal_info as portal_info %}
 {% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
 {% from "components/header/header.njk" import solution_info as solution_info %}
 {% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
 {% from "components/header/header.njk" import menu_top as menu_top %}
 
-{% set portal_header_data = {
+{% set portal_info_data = {
     "user": {
         "name": "Anders Andersen",
         "info": "Forsikringens Forsikringsfirma"
@@ -18,27 +18,33 @@
     }
 } %}
 
-{% set solution_header_data = {
+{% set solution_info_data = {
     "hideOnPrint": false,
     "title": {
         "href": "#",
-        "text": "En langt langt længere løsningstitel"
+        "text": "Løsningstitel"
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="#" class="icon-link function-link">Kontakt' + icon_svg({"name": "open-in-new"}) + '</a></span>'
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+{% set navigation_menu_data = {
+    "search": {
+        "id": "header-search",
+        "name": "header-search"
     }
 } %}
 
 <header class="header">
-    <div id="top"></div>
-    {{ skiplink() }}
-    {{ portal_info(portal_header_data) }}
-    {{ solution_info(solution_header_data) }}
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    {{ navigation_menu(navigation_menu_data) }}
     <div class="overlay"></div>
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         {{ menu_top() }}
-        {{ mobile_solution_info(solution_header_data) }}
-        {{ mobile_portal_info(portal_header_data) }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
     </div>
 </header>

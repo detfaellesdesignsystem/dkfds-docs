@@ -288,96 +288,100 @@
         </div>
     </div>
 
-    <nav class="navigation-menu">
+    <div class="navigation-menu">
         <div class="navigation-menu-inner container">
-            <ul class="mainmenu">
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>1. menupunkt</span>
-                    </a>
-                </li>
-                <li>
 
-                    <div class="submenu">
-                        <button class="nav-link button-overflow-menu js-dropdown" data-js-target="desktopmenu-2" aria-haspopup="true" aria-expanded="false">
-                            <span>2. menupunkt</span>
-                        </button>
-                        <div class="overflow-menu-inner collapsed" id="desktopmenu-2" aria-hidden="true">
-                            <ul class="overflow-list">
-                                <li>
-                                    <a href="#" class="nav-link">
-                                        <span>Undermenu 2.1</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link">
-                                        <span>Undermenu 2.2</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link">
-                                        <span>Undermenu 2.3</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link">
-                                        <span>Undermenu 2.4</span>
-                                    </a>
-                                </li>
+            <nav class="nav">
+                <ul class="mainmenu">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Første menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
 
-                            </ul>
+                        <div class="submenu">
+                            <button class="nav-link button-overflow-menu js-dropdown" data-js-target="desktopmenu-2" aria-haspopup="true" aria-expanded="false">
+                                <span>Andet menupunkt</span>
+                            </button>
+                            <div class="overflow-menu-inner collapsed" id="desktopmenu-2" aria-hidden="true">
+                                <ul class="overflow-list">
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>Undermenu 2.1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>Undermenu 2.2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>Undermenu 2.3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>Undermenu 2.4</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>3. menupunkt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">
-                        <span>4. menupunkt</span>
-                    </a>
-                </li>
-                <li class="active">
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Tredje menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Fjerde menupunkt</span>
+                        </a>
+                    </li>
+                    <li class="active">
 
-                    <div class="submenu">
-                        <button class="nav-link button-overflow-menu js-dropdown" data-js-target="desktopmenu-5" aria-haspopup="true" aria-expanded="false">
-                            <span>5. menupunkt</span>
-                        </button>
-                        <div class="overflow-menu-inner collapsed" id="desktopmenu-5" aria-hidden="true">
-                            <ul class="overflow-list">
-                                <li>
-                                    <a href="#" class="nav-link">
-                                        <span>Undermenu 5.1</span>
-                                    </a>
-                                </li>
-                                <li class="active current">
-                                    <a href="#" class="nav-link" aria-current="page">
-                                        <span>Undermenu 5.2</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link">
-                                        <span>Undermenu 5.3</span>
-                                    </a>
-                                </li>
+                        <div class="submenu">
+                            <button class="nav-link button-overflow-menu js-dropdown" data-js-target="desktopmenu-5" aria-haspopup="true" aria-expanded="false">
+                                <span>Femte menupunkt</span>
+                            </button>
+                            <div class="overflow-menu-inner collapsed" id="desktopmenu-5" aria-hidden="true">
+                                <ul class="overflow-list">
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>Undermenu 5.1</span>
+                                        </a>
+                                    </li>
+                                    <li class="active current">
+                                        <a href="#" class="nav-link" aria-current="page">
+                                            <span>Undermenu 5.2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>Undermenu 5.3</span>
+                                        </a>
+                                    </li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
-    </nav>
+    </div>
 
     <div class="overlay"></div>
-    <div class="mobile-drawer">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
 
         <div class="menu-top">
-            <h2 class="menu-heading">Menu</h2>
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
 
@@ -385,14 +389,14 @@
             <ul class="mainmenu">
                 <li>
                     <a href="#" class="nav-link">
-                        <span>1. menupunkt</span>
+                        <span>Første menupunkt</span>
                     </a>
                 </li>
                 <li>
 
                     <div class="submenu">
                         <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="mobilemenu-2" aria-haspopup="true" aria-expanded="false">
-                            <span>2. menupunkt</span>
+                            <span>Andet menupunkt</span>
                         </button>
                         <div class="overflow-menu-inner" id="mobilemenu-2" aria-hidden="true">
                             <ul class="overflow-list">
@@ -424,19 +428,19 @@
                 </li>
                 <li>
                     <a href="#" class="nav-link">
-                        <span>3. menupunkt</span>
+                        <span>Tredje menupunkt</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link">
-                        <span>4. menupunkt</span>
+                        <span>Fjerde menupunkt</span>
                     </a>
                 </li>
                 <li class="active">
 
                     <div class="submenu">
                         <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="mobilemenu-5" aria-haspopup="true" aria-expanded="true">
-                            <span>5. menupunkt</span>
+                            <span>Femte menupunkt</span>
                         </button>
                         <div class="overflow-menu-inner" id="mobilemenu-5" aria-hidden="false">
                             <ul class="overflow-list">
@@ -527,7 +531,7 @@
             
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-header-three-simple-rows/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-header-navigation-with-searchfield/">Forrige</a>
                 
                 
                 <a class="function-link" href="/eksempel/test-input-fields-1/">Næste</a>
