@@ -112,6 +112,11 @@ title: Test
 {% include test/preview-test.html filename="test-overflow-menus-2" description="Overflow-menu 2" %}
 
 {:.h3}
+## Paginering
+
+{% include test/preview-test.html filename="test-pagination-basics" description="Paginering, basale funktioner" %}
+
+{:.h3}
 ## Radioknap (Radio button)
 
 {% include test/preview-test.html filename="test-radiobuttons-1" description="Radioknap 1" %}

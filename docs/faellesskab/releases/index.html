@@ -240,7 +240,7 @@
     <!-- Desktop main menu-->
     <div class="navigation-menu contains-search">
         <div class="navigation-menu-inner container">
-            <nav class="nav">
+            <nav class="nav" aria-label="Hovedmenu">
                 <ul class="mainmenu">
                     
     
@@ -399,7 +399,7 @@
             <h2 class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
-        <nav class="navigation-menu-mobile">
+        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
             <ul class="mainmenu">
                  
         
@@ -3980,7 +3980,7 @@
                 
 
                 
-                <nav class="anchorbox">
+                <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
                         <li><a href="#version-10-0-0">Version 10.0.0</a></li>
@@ -4031,6 +4031,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt <a href="/kode/browserunderstoettelse/">browserunderstøttelse</a>).</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/anchorlinks/">Anchorlinks</a> er fjernet fra <a href="/komponenter/venstremenu/">venstremenuen</a> og har i stedet fået sin egen komponent.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Headerens række 4 og række 5 er fjernet, mens de øvrige rækker i headeren har fået opdateret design og forbedret tilgængelighed. Se flere detaljer på <a href="/komponenter/header/">headerkomponentens side</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu, så de viser <code>aria-label</code> for <code>nav</code>-elementet.</li>
 </ul>
 
 <h2 id="version-9-0-3" class="mb-0">Version 9.0.3</h2>

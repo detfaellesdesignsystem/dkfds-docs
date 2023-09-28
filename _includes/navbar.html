@@ -13,7 +13,7 @@
     <!-- Desktop main menu-->
     <div class="navigation-menu{% unless page.search %} contains-search{% endunless %}">
         <div class="navigation-menu-inner container">
-            <nav class="nav">
+            <nav class="nav" aria-label="Hovedmenu">
                 <ul class="mainmenu">
                     {%
                     include nav/nav-desktop.html
@@ -43,7 +43,7 @@
             <h2 class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
-        <nav class="navigation-menu-mobile">
+        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
             <ul class="mainmenu">
                 {%
                 include nav/nav-mobile.html

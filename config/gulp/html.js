@@ -83,6 +83,7 @@ var testfiles = [
     "test-modals-2",
     "test-overflow-menus-1",
     "test-overflow-menus-2",
+    "test-pagination-basics",
     "test-radiobuttons-1",
     "test-radiobuttons-2",
     "test-radiobuttons-3",
