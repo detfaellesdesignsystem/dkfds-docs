@@ -69,12 +69,16 @@ title: Test
 {:.h3}
 ## Header
 
+{% include test/preview-test.html filename="test-header-portal-only" description="Portalrække" %}
+{% include test/preview-test.html filename="test-header-solution-only" description="Løsningsrække" %}
 {% include test/preview-test.html filename="test-header-portal-and-solution" description="Portalrække og løsningsrække" %}
 {% include test/preview-test.html filename="test-header-solution-and-navigation" description="Løsningsrække og navigation" %}
 {% include test/preview-test.html filename="test-header-three-simple-rows" description="Portalrække, løsningsrække og simpel navigation" %}
 {% include test/preview-test.html filename="test-header-navigation-with-only-searchfield" description="Ingen navigation, kun søgefelt" %}
 {% include test/preview-test.html filename="test-header-navigation-with-searchfield" description="Simpel navigation med søgefelt" %}
 {% include test/preview-test.html filename="test-header-dropdown-navigation" description="Navigation med flere dropdownmenuer" %}
+{% include test/preview-test.html filename="test-header-long-sentences" description="Header med mange ord" %}
+{% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
 
 {:.h3}
 ## Inputfelter
