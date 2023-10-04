@@ -1,6 +1,5 @@
 ---
 permalink: "/krav/"
-layout: styleguide
 category: Krav_category
 title: Krav
 lead: Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler,

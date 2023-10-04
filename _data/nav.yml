@@ -1,14 +1,5 @@
-#Primary menu on desktop:
+#Primary menu
 primary:
-  - href: /design/
-  - href: /komponenter/
-  - href: /eksempler/
-  - href: /kode/
-  - href: /krav/
-  - href: /faellesskab/
-
-#Primary menu on mobile:
-mobile:
   - href: /design/
     categorynav: 'Design_category'
   - href: /komponenter/

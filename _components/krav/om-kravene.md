@@ -1,7 +1,6 @@
 ---
 permalink: "/krav/om-kravene/"
 parentlink: "/krav/"
-layout: styleguide
 category: Krav_category
 subcategory: Krav
 title: Om kravene til selvbetjeningsløsninger

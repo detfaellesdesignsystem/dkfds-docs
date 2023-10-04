@@ -17,16 +17,16 @@ collections:
     output: true
     permalink: /:path/
 defaults:
-  - scope:
-      path: ''
-      type: components
+  - 
+    scope:
+      path: "pages/kravmotor/*.md"
     values:
-      layout: component
-  - scope:
-      path: ''
-      type: posts
+      layout: "requirements-tool"
+  - 
+    scope:
+      path: "_components/krav/*.md"
     values:
-      layout: post
+      layout: "styleguide"
 
 # Build settings
 highlighter: none

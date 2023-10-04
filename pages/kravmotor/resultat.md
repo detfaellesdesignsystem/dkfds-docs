@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/resultat/
-layout: requirements-tool
 title: Resultat
 description: 
 print: true

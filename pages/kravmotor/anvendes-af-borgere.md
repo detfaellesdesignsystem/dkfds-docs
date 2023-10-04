@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/anvendes-af-borgere/
-layout: requirements-tool
 title: Skal din løsning anvendes af borgere?
 description:
 backlink: true 

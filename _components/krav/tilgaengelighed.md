@@ -4,7 +4,6 @@ parentlink: "/krav/"
 redirect_from:
 - "/komigang/tilgaengelighed/"
 - "/design/tilgaengelighed/"
-layout: styleguide
 category: Krav_category
 subcategory: Krav
 title: Tilgængelighed

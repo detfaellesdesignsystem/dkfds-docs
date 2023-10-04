@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/bestaaet-faellesoffentlige-brugertest/
-layout: requirements-tool
 title: Har samme løsning allerede bestået den fællesoffentlige brugertest?
 description: 
 backlink: true

@@ -1,7 +1,6 @@
 ---
 permalink: "/krav/borgerdk-virk/"
 parentlink: "/krav/"
-layout: styleguide
 category: Krav_category
 subcategory: Krav
 title: Når du skal på borger.dk og Virk
