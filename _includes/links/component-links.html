@@ -1,0 +1,7 @@
+{%- if include.linktext == "radioknapper" -%}
+<a href="/komponenter/radioknap/">{{ include.linktext }}</a>
+{%- elsif include.linktext == "tjekbokse" -%}
+<a href="/komponenter/tjekboks/">{{ include.linktext }}</a>
+{%- else -%}
+{{ include.linktext }}
+{%- endif -%}

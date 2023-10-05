@@ -1,0 +1,7 @@
+{%- assign attributes = 'class="icon-link" target="_blank"' -%}
+{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>' -%}
+{%- if include.linktext == "package.json" -%}
+<a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+{%- else -%}
+{{ include.linktext }}
+{%- endif -%}
