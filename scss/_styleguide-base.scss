@@ -1,4 +1,12 @@
 @use 'sass:math';
+@use '../node_modules/dkfds/src/stylesheets/values/fds-values' as *;
+@use '../node_modules/dkfds/src/stylesheets/values/colors/theme-colors' as *;
+@use '../node_modules/dkfds/src/stylesheets/mixins/breakpoints' as *;
+@use '../node_modules/dkfds/src/stylesheets/mixins/typography-mixins' as *;
+@use '../node_modules/dkfds/src/stylesheets/mixins/mixins' as *;
+@use '../node_modules/dkfds/src/stylesheets/components/sidenav' as *;
+@use '../node_modules/dkfds/src/stylesheets/components/navigation' as *;
+@use 'variables' as *;
 
 /// theme alert
 #borgerdkThemeBtn{
@@ -69,15 +77,15 @@ img.outer-border-box{
     }
   }
   > div:first-of-type .separator {
-    svg{fill: color($theme-color-text-positive); }
+    svg{fill: color('text-positive'); }
     div{
-      background-color: color($theme-color-text-positive);
+      background-color: color('text-positive');
     }
   }
   > div:last-of-type .separator{
-    svg{fill: color($theme-color-text-negative);}
+    svg{fill: color('text-negative');}
     div{
-      background-color: color($theme-color-text-negative);
+      background-color: color('text-negative');
     }
   }
 }
@@ -205,10 +213,10 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
 }
 
 .color-text-positive {
-  background-color: color($theme-color-text-positive);
+  background-color: color('text-positive');
 }
 .color-text-negative {
-  background-color: color($theme-color-text-negative);
+  background-color: color('text-negative');
 }
 
 // Colors used for alert boxes
@@ -312,10 +320,10 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     background-color: $virk-dark;
   }
   &.color-positive {
-    background-color: color($theme-color-text-positive);
+    background-color: color('text-positive');
   }
   &.color-negative {
-    background-color: color($theme-color-text-negative);
+    background-color: color('text-negative');
   }
 }
 .color-container-medium {
@@ -424,11 +432,11 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     }
 
     .text-negative {
-      color:color($theme-color-text-negative);
+      color:color('text-negative');
     }
 
     .text-positive {
-      color:color($theme-color-text-positive);
+      color:color('text-positive');
     }
   }
 
@@ -1195,27 +1203,9 @@ body[class*="page-grid"][class*="-html"]
 
 // All colors as background classes
 
-@each $name, $bgcolor in $system-color-shortcodes {
+@each $name, $bgcolor in $all-colors {
   .background-#{$name} {
     background-color: color($name);
-  }
-}
-
-@each $typeName, $typeColor in $all-project-colors {
-  
-  @each $variantName, $variantColor in $typeColor {
-    @if $variantName == 'default'{
-      .background-#{$typeName} {
-          background-color: color($typeName);
-      }
-    }
-    @else {
-      .background-#{$typeName}-#{$variantName} {
-        @if $variantColor != false {
-          background-color: color($typeName+'-'+$variantName);
-        }
-      }
-    }
   }
 }
 
@@ -1257,10 +1247,10 @@ $extra-colors: (
   background-color: color($theme-color-link-visited);
 }
 .background-positive {
-  background-color: color($theme-color-text-positive);
+  background-color: color('text-positive');
 }
 .background-negative {
-  background-color: color($theme-color-text-negative);
+  background-color: color('text-negative');
 }
 
 /*

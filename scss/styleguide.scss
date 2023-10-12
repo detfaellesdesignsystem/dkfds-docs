@@ -2,10 +2,23 @@
 //---
 //Above dashes are used by Jekyll in main scss files (not needed in partials). DO NOT DELETE.
 
+
+//@import 'variables';
+/* @use '../node_modules/dkfds/src/stylesheets/values/variables' with (
+    $font-path:         '/assets/fonts/IBMPlexSans/',
+    $image-path:        '/assets/img',
+    $icons-folder-path: '/assets/svg'
+); */
+@use '../node_modules/dkfds/src/stylesheets/values/paths' with (
+    $font-path:         '/assets/fonts/IBMPlexSans/',
+    $image-path:        '/assets/img',
+    $icons-folder-path: '/assets/svg'
+);
+@use '../node_modules/dkfds/src/stylesheets/dkfds';
+@use 'styleguide-base';
+//@import '../node_modules/dkfds/src/stylesheets/dkfds';
+//@import 'styleguide-base';
+
 body {
     opacity: 1 !important;
 }
-
-@import 'variables';
-@import '../node_modules/dkfds/src/stylesheets/dkfds';
-@import 'styleguide-base';

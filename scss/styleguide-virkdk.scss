@@ -2,16 +2,30 @@
 //---
 //Above dashes are used by Jekyll in main scss files (not needed in partials). DO NOT DELETE.
 
-body {
-    opacity: 1 !important;
-}
 
 // sass-lint:disable-all
 // Imports
-@import 'variables';
-@import '../node_modules/dkfds/src/stylesheets/dkfds-virkdk';
-@import 'styleguide-base';
+//@import 'variables';
+//@import '../node_modules/dkfds/src/stylesheets/dkfds-virkdk';
+//@import 'styleguide-base';
+
+/* @use '../node_modules/dkfds/src/stylesheets/values/variables' with (
+    $font-path:         '/assets/fonts/IBMPlexSans/',
+    $image-path:        '/assets/img',
+    $icons-folder-path: '/assets/svg'
+); */
+@use '../node_modules/dkfds/src/stylesheets/values/paths' with (
+    $font-path:         '/assets/fonts/IBMPlexSans/',
+    $image-path:        '/assets/img',
+    $icons-folder-path: '/assets/svg'
+);
+@use '../node_modules/dkfds/src/stylesheets/dkfds-virkdk';
+@use 'styleguide-base';
 
 .is-neutral{ display:none }
 .is-virk { display:block }
 .is-borger{ display:none }
+
+body {
+    opacity: 1 !important;
+}
