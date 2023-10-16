@@ -1,8 +1,6 @@
 @use 'sass:math';
 @use '../node_modules/dkfds/src/stylesheets/values/fds-values' as *;
 @use '../node_modules/dkfds/src/stylesheets/values/colors/theme-colors' as *;
-@use '../node_modules/dkfds/src/stylesheets/mixins/breakpoints' as *;
-@use '../node_modules/dkfds/src/stylesheets/mixins/typography-mixins' as *;
 @use '../node_modules/dkfds/src/stylesheets/mixins/mixins' as *;
 @use '../node_modules/dkfds/src/stylesheets/components/sidenav' as *;
 @use '../node_modules/dkfds/src/stylesheets/components/navigation' as *;
