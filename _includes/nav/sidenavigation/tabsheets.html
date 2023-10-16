@@ -1,0 +1,49 @@
+{% comment %} 
+------------------------------------------------------------------------------------------
+| Navigating the link trees to setup the necessary tabsheets in every level of the tree  |
+------------------------------------------------------------------------------------------
+{% endcomment %}
+
+{% assign renderedTabLinks = "" | split: "," %}
+{% assign left_menu_links = site.data.nav[page.category] %}
+
+{%- for link in left_menu_links -%}
+    
+    {% if link.tabs %}                                                   {% comment %} The page exists in the sidemenu {% endcomment %}
+        {% assign tabLinks = site.data.nav[link.tabs] %}
+        {%- for link in tabLinks -%}
+            {% if link.href and link.href == page.permalink %}
+                {% assign renderedTabLinks = tabLinks %}
+            {% endif %}
+        {%- endfor -%}
+    {% endif %}
+    
+    {% if link.categorynav %}                                            {% comment %} The page exists in the submenu {% endcomment %}
+        {% assign sub_menu_links = site.data.nav[link.categorynav] %}
+        {%- for link in sub_menu_links -%}
+            {% if link.tabs %}
+                {% assign tabLinks = site.data.nav[link.tabs] %}
+                {%- for link in tabLinks -%}
+                    {% if link.href and link.href == page.permalink %}
+                        {% assign renderedTabLinks = tabLinks %}
+                    {% endif %}
+                {%- endfor -%}   
+            {% endif %}
+        {%- endfor -%}
+    {% endif %}
+
+{%- endfor -%}
+
+{% comment %} 
+----------------------------------------------
+| Inputting the values in the html link tag  |
+----------------------------------------------
+{% endcomment %}
+
+{%- for link in renderedTabLinks -%}
+    {% assign _current = false %}
+    {% if link.href == page.permalink %}
+        {% assign _current = true %}
+    {% endif %}
+    <a href="{{ link.href }}" class="{% if _current %}activeTab{% else %}inactiveTab{% endif %}" {% if _current %}aria-current="page"{% endif %}>{{link.tabName}}</a>
+{%- endfor -%}

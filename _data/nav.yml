@@ -1,3 +1,8 @@
+define: &retningslinjer 'Retningslinjer'
+define: &responsivBreakpoint 'Responsivitet & Breakpoints'
+define: &responsiv 'Responsivitet'
+define: &implementering 'Implementering'
+
 #Primary menu
 primary:
   - href: /design/
@@ -25,7 +30,7 @@ Design_category:
 - href: /design/typografi/
   categorynav: 'Typografi_category'
 - href: /design/borders/
-- href: /design/ikoner/
+- tabs: 'Ikoner'
 - href: /design/logoer/
 - href: /design/datavisualisering-infografik/
   categorynav: 'Datavisualisering_category'
@@ -106,7 +111,6 @@ Kode_category:
 - href: /kode/grid/
 - href: /kode/typografi/
   categorynav: 'Kode_Typografi_category'
-- href: /kode/ikoner/
 - href: /kode/utilities/
 - href: /kode/eksempler-implementering/
 - href: /kode/print/
@@ -205,3 +209,9 @@ Eksempelloesninger_category:
 - href: /pages/eksempler/kvittering/kvittering-2/
 - href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
 - href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/
+
+Ikoner:
+- href: /design/ikoner/guidelines/
+  tabName: *retningslinjer
+- href: /design/ikoner/implementering/
+  tabName: *implementering

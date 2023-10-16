@@ -1,6 +1,7 @@
 ---
-permalink: "/design/ikoner/"
+permalink: "/design/ikoner/guidelines/"
 redirect_from:
+- "/design/ikoner/"
 - "/design/ikoner/ikoner-og-deres-betydning/"
 layout: styleguide
 category: Design_category
@@ -9,14 +10,14 @@ title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 anchor: false
 description: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
+preview: ikoner
+previewcomponent: "icons--svg"
 tags:
 - icon
 - svg
 - svg use
 - inline svg
 ---
-
-{% include code/preview.html component="icons--svg" %}
 
 {:#retningslinjer}
 ## Anvendes til  
@@ -33,6 +34,7 @@ Brug ikke dekorative ikoner til at “pynte” med, da de oftere end ikke bliver
 
 Illustrative ikoner skal bruges med omtanke, hvis brugeren ikke forstår ikonet umiddelbart er det oftest bedre at bruge tekst uden ikon.
 
+{:#vejledning}
 ## Vejledning  
 
 Ikoner kan skabe klarhed ved at understøtte din kommunikation visuelt eller tilføre forvirring ved at forekomme arbitrært.

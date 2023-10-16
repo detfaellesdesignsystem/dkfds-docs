@@ -1,11 +1,17 @@
 ---
-permalink: "/kode/ikoner/"
+permalink: "/design/ikoner/implementering/"
+guidelinelink: "/design/ikoner/guidelines/"
+redirect_from:
+- "/kode/ikoner/"
 layout: styleguide
-category: Kode_category
-subcategory: Kode
+category: Design_category
+subcategory: Design
 title: Ikoner
+lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 anchor: false
 description: Sådan bruger du ikoner med FDS.
+preview: ikoner
+previewcomponent: "icons--svg"
 tags:
 - icon
 - svg

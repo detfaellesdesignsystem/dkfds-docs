@@ -90,6 +90,13 @@ layout: default
                     image=page.previewimageImage %}
                 {% endif %}
 
+                {% if page.preview %}
+                {% include code/preview.html
+                    component=page.previewcomponent %}
+                {% endif %}
+
+                {% include nav/sidenavigation/tabsheets.html %}
+
                 {% if page.subnav and page.anchor == true %}
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>

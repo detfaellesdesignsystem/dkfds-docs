@@ -16,7 +16,7 @@ tags:
 anchor: true 
 subnav:
 - text: Responsive hjælpeklasser
-  href: '#responsive-hjælpeklasser'
+  href: '#responsive-hjaelpeklasser'
 - text: Text align
   href: '#text-align'
 - text: Margin og padding
@@ -33,7 +33,7 @@ subnav:
   href: '#tilgængelighed'
 ---
 
-{:#responsive-hjælpeklasser}
+{:#responsive-hjaelpeklasser}
 ## Responsive hjælpeklasser
 
 Alle de klasser som bliver genereret af hjælpefunktionerne findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints som er defineret i scss-variablen `$grid-breakpoints`:
