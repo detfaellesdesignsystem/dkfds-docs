@@ -1,6 +1,5 @@
 @use 'sass:math';
 @use '../node_modules/dkfds/src/stylesheets/values/fds-values' as *;
-@use '../node_modules/dkfds/src/stylesheets/values/colors/theme-colors' as *;
 @use '../node_modules/dkfds/src/stylesheets/global' as *;
 @use '../node_modules/dkfds/src/stylesheets/components/sidenav' as *;
 @use '../node_modules/dkfds/src/stylesheets/components/navigation' as *;
@@ -186,28 +185,28 @@ a.search-link{
 
 // Links color
 .color-link {
-  background-color: color($theme-color-link);
+  background-color: color("link");
 }
 .color-link-hover {
-  background-color: color($theme-color-link-hover);
+  background-color: color("link-hover");
 }
 a.link-default, a.link-default:link, a.link-default:visited, a.link-default:hover, a.link-default:focus{
-  color: color($theme-color-link);
+  color: color("link");
 }
 a.link-hover, a.link-hover:link, a.link-hover:visited, a.link-hover:hover, a.link-hover:focus{
-  color: color($theme-color-link-hover);
+  color: color("link-hover");
 }
 a.link-visited, a.link-visited:link, a.link-visited:visited, a.link-focus:visited, a.link-focus:visited{
-  color: color($theme-color-link-visited);
+  color: color("link-visited");
 }
 a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.link-focus:focus{
-  color: color($theme-color-link-focus);
+  color: color("link-focus");
 }
 .color-focus {
-  background-color: color($theme-focus-color);
+  background-color: color("focus");
 }
 .color-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color("link-visited");
 }
 
 .color-text-positive {
@@ -1233,16 +1232,16 @@ $extra-colors: (
 }
 
 .background-focus {
-  background-color: color($theme-focus-color);
+  background-color: color("focus");
 }
 .background-link {
-  background-color: color($theme-color-link);
+  background-color: color("link");
 }
 .background-link-hover {
-  background-color: color($theme-color-link-hover);
+  background-color: color("link-hover");
 }
 .background-link-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color("link-visited");
 }
 .background-positive {
   background-color: color('text-positive');

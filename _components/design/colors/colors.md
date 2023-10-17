@@ -197,15 +197,15 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link"></div>
-    <div class="color-text-label"><span class="color-hex">#004D99</span><span>$theme-color-link</span></div>
+    <div class="color-text-label"><span class="color-hex">#004D99</span><span>'link'</span></div>
   </div>
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link-hover"></div>
-    <div class="color-text-label"><span class="color-hex">#000040</span><span>$theme-color-link-hover</span></div>
+    <div class="color-text-label"><span class="color-hex">#000040</span><span>'link-hover'</span></div>
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-link-visited"></div>
-    <div class="color-text-label"><span class="color-hex">#800080</span><span>$theme-color-link-visited</span></div>
+    <div class="color-text-label"><span class="color-hex">#800080</span><span>'link-visited'</span></div>
   </div>
 </div>
 
@@ -214,7 +214,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
-    <div class="color-text-label"><span class="color-hex">#747474</span><span>$theme-focus-color</span></div>
+    <div class="color-text-label"><span class="color-hex">#747474</span><span>'focus'</span></div>
   </div>
 </div>
 
@@ -241,11 +241,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
-    <div class="color-text-label"><span class="color-hex">#358000</span><span>$theme-color-text-positive</span></div>
+    <div class="color-text-label"><span class="color-hex">#358000</span><span>'text-positive'</span></div>
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-negative"></div>
-    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>$theme-color-text-negative</span></div>
+    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>'text-negative'</span></div>
   </div>
 </div>
 
