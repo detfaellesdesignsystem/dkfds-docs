@@ -1,8 +1,10 @@
 @use 'sass:math';
+@use '../node_modules/dkfds/src/stylesheets/themes/borgerdk/variables' as borger;
+@use '../node_modules/dkfds/src/stylesheets/themes/virkdk/variables' as virk;
 @use '../node_modules/dkfds/src/stylesheets/global' as *;
 @use '../node_modules/dkfds/src/stylesheets/components/sidenav' as *;
 @use '../node_modules/dkfds/src/stylesheets/components/navigation' as *;
-@use 'variables' as *;
+
 
 /// theme alert
 #borgerdkThemeBtn{
@@ -298,22 +300,22 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     background-color: color('info-light');
   }
   &.borger-primary {
-    background-color: $borger-primary;
+    background-color: borger.$borger-primary;
   }
   &.borger-medium {
-    background-color: $borger-medium;
+    background-color: borger.$borger-primary-dark;
   }
   &.borger-dark {
-    background-color: $borger-dark;
+    background-color: borger.$borger-primary-darker;
   }
   &.virk-primary {
-    background-color: $virk-primary;
+    background-color: virk.$virk-primary;
   }
   &.virk-medium {
-    background-color: $virk-medium;
+    background-color: virk.$virk-primary-dark;
   }
   &.virk-dark {
-    background-color: $virk-dark;
+    background-color: virk.$virk-primary-darker;
   }
   &.color-positive {
     background-color: color('text-positive');
