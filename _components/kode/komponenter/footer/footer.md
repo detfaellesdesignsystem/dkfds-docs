@@ -52,7 +52,7 @@ Man kan indsætte et <a href="/kode/grid/">grid</a> med 4 kolonner. Man behøver
 
 Links i footer defineres med klassen `function-link` på `<a>`.
 
-Hvis man ved tryk på et link i footeren forlader selvbetjeningsløsningen bør dette indikeres ved brug af et <a href="/design/typografi/links/#eksternt-link">eksternt link</a>.
+Hvis man ved tryk på et link i footeren forlader selvbetjeningsløsningen bør dette indikeres ved brug af et {% include links/internal-links.html linktext="eksternt link" %}.
 
 Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventuelt indtastet data kan blive tabt. Evt. ved brug af en almindelig JavaScript alert.
 

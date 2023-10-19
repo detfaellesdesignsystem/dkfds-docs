@@ -18,9 +18,9 @@ tags:
 - infografik
 ---
 
-Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed i forbindelse med grafik og visualisering</a>.
+Vær meget opmærksom på {% include links/internal-links.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %}.
 
-Vær opmærksom på, hvilke <a href="/design/farver/#datavisualiseringsfarver">farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering</a>.
+Vær opmærksom på, hvilke {% include links/internal-links.html linktext="farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering" %}.
 
 ## Cirkeldiagrammer (Kagediagram)
 Et cirkeldiagram består af en cirkel, som opdeles i områder, der svarer til de enkelte datas størrelse. Det bruges typisk, hvis data er en del af en samlet mængde.

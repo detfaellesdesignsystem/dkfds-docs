@@ -35,31 +35,22 @@ Design_category:
 - href: /design/datavisualisering-infografik/
   categorynav: 'Datavisualisering_category'
 - href: /design/layout/
-  categorynav: 'Layout_category'
+- tabs: 'Grids'
 - href: /design/designressourcer/
 - href: /design/designtjek/
 
 Datavisualisering_category:
   - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
   - href: /design/datavisualisering-infografik/datavisualisering/
-  - href: /design/datavisualisering-infografik/infografik/
-
-Layout_category:
-  - href: /design/layout/grid/
+  - href: /design/datavisualisering-infografik/infografik/  
 
 Typografi_category:
-  - href: /design/typografi/fonte/
-  - href: /design/typografi/overskrifter/
+  - tabs: 'Fonte'
+  - tabs: 'Overskrifter'
   - href: /design/typografi/felt-tabel-overskrifter/
-  - href: /design/typografi/tekst/
-  - href: /design/typografi/links/
-  - href: /design/typografi/lister/
-
-Kode_Typografi_category:
-- href: /kode/typografi/overskrifter/
-- href: /kode/typografi/tekst/
-- href: /kode/typografi/links/
-- href: /kode/typografi/lister/
+  - tabs: 'Tekst'
+  - tabs: 'Links'
+  - tabs: 'Lister'
 
 #Left menu for komponent-category
 Komponenter_category:
@@ -108,9 +99,6 @@ Kode_category:
 - href: /kode/komponenter/
   categorynav: 'Kode_Komponenter_category'
 - href: /kode/browserunderstoettelse/
-- href: /kode/grid/
-- href: /kode/typografi/
-  categorynav: 'Kode_Typografi_category'
 - href: /kode/utilities/
 - href: /kode/eksempler-implementering/
 - href: /kode/print/
@@ -214,4 +202,40 @@ Ikoner:
 - href: /design/ikoner/guidelines/
   tabName: *retningslinjer
 - href: /design/ikoner/implementering/
+  tabName: *implementering
+
+Fonte:
+- href: /design/typografi/fonte/guidelines/
+  tabName: *retningslinjer
+- href: /design/typografi/fonte/implementering/
+  tabName: *implementering
+
+Overskrifter:
+- href: /design/typografi/overskrifter/guidelines/
+  tabName: *retningslinjer
+- href: /design/typografi/overskrifter/implementering/
+  tabName: *implementering
+
+Tekst:
+- href: /design/typografi/tekst/guidelines/
+  tabName: *retningslinjer
+- href: /design/typografi/tekst/implementering/
+  tabName: *implementering
+
+Links:
+- href: /design/typografi/links/guidelines/
+  tabName: *retningslinjer
+- href: /design/typografi/links/implementering/
+  tabName: *implementering
+
+Lister:
+- href: /design/typografi/lister/guidelines/
+  tabName: *retningslinjer
+- href: /design/typografi/lister/implementering/
+  tabName: *implementering
+
+Grids:
+- href: /design/grid/guidelines/
+  tabName: *retningslinjer
+- href: /design/grid/implementering/
   tabName: *implementering

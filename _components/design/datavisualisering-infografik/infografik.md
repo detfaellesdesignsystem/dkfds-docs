@@ -24,7 +24,7 @@ Vær opmærksomhed på at farver der grænser op til hinanden normalt skal overh
 
 Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af diagrammet. Beskrivelsen kan eventuelt fungere som opsummering og kan hjælpe brugeren med at drage en konklusion.  
 
-Se flere generelle anbefalinger omkring <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed der gælder for grafik og visualisering</a>.
+Se flere generelle anbefalinger omkring {% include links/internal-links.html linktext="tilgængelighed der gælder for grafik og visualisering" %}.
 
 ## Responsiv infografik
 

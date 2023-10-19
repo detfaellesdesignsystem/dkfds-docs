@@ -38,7 +38,7 @@ På sider, der ikke har <a href="/komponenter/trinindikator/">trinindikator</a> 
 
 På sider med trinindikator eller venstremenu vises knappen, når sidste element i venstre side (af trinindikatoren eller venstremenuen) er ude af syne for brugeren eller hvis brugeren har scrollet 2 skærmsiders længde.
 
-Bemærk at placeringen af knappen i højre side afviger fra den generelle anbefaling om venstrestilling af indholdet i én kolonne (se <a href="/design/layout/">Layout</a>). Denne beslutning er baseret på etableret best practice vedrørende "til toppen"-knapper (Loranger, 2017). Dette gør yderligere risikoen for at overlappe andet indhold på siden mindre.
+Bemærk at placeringen af knappen i højre side afviger fra den generelle anbefaling om venstrestilling af indholdet i én kolonne (se {% include links/internal-links.html linktext="Layout" %}). Denne beslutning er baseret på etableret best practice vedrørende "til toppen"-knapper (Loranger, 2017). Dette gør yderligere risikoen for at overlappe andet indhold på siden mindre.
 
 Det anbefales at lave en scroll-animation til toppen, når der klikkes på knappen, da det understøtter brugerens fornemmelse af, hvor de er på siden.
 

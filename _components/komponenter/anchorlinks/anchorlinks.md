@@ -46,8 +46,8 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 #### Se komponenten på disse sider
 
 {:.nobullet-list}
-- <a href="/design/farver/">Farver</a>
-- <a href="/design/typografi/overskrifter/">Overskrifter</a>
+- {% include links/internal-links.html linktext="Farver" %}
+- {% include links/internal-links.html linktext="Overskrifter" %}
 - <a href="/komponenter/tables/">Tabeller</a>
 - <a href="/kode/komponenter/accordions/">Accordions</a>
 

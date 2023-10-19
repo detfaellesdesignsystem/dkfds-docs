@@ -186,7 +186,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.
 - Tilføjet tjek i JavaScript-koden for <a href="/komponenter/modal/">modaler</a>, så man ikke længere får en fejlbesked i browserens konsol, hvis man programmatisk forsøger at lukke en allerede lukket modal.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/210" class="icon-link" target="_blank">issue #210 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Rettet fejl i dokumentationen, hvor nogle <a href="/design/farver/">farver</a> stod angivet forkert.
+- Rettet fejl i dokumentationen, hvor nogle {% include links/internal-links.html linktext="farver" %} stod angivet forkert.
 
 {:#version-9-0-0 .mb-0}
 ## Version 9.0.0
@@ -269,7 +269,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">03-01-2023</span></div>
 
-- Tilføjet klassen `full-width-image`, der kan bruges til <a href="/design/typografi/links/#billeder-som-links">billeder anvendt som links</a>. 
+- Tilføjet klassen `full-width-image`, der kan bruges til {% include links/internal-links.html linktext="billeder anvendt som links" %}. 
 - Rettet fejl i <a href="/komponenter/modal/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.
 - Opdateret licensinformation og tilføjet licensfilen til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">zip-filen i GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
@@ -295,7 +295,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
 - Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/#kompleks-header-med-alle-r%C3%A6kker">headerens</a> række 3
 - Rettet fejl hvor <a href="/komponenter/skip-link/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren
-- Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3
+- Fjernet text-transform:uppercase på {% include links/internal-links.html linktext="subheading" %}, der ved en fejl var blevet genintroduceret efter version 7.5.3
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Negativ letter-spacing er fjernet fra al tekst - vær opmærksom på, at brødtekster og titler kan fylde mere end tidligere
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Begge knapper i <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a> har nu typen <a href="/komponenter/knapper/#sekundærknapper">sekundærknapper</a>
 - Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af (valgfri) properties
@@ -326,8 +326,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/design/ikoner/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS <a href="/design/farver/">farver</a>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye {% include links/internal-links.html linktext="datavisualiseringsfarver" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS {% include links/internal-links.html linktext="farver" %}
 - Erstattet brug af / ved division i scss med math.div
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer
@@ -361,7 +361,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">03-12-2021</span></div>
 
-- Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, så skærmlæsere læser teksten frem for at stave
+- Fjernet text-transform:uppercase på {% include links/internal-links.html linktext="subheading" %}, så skærmlæsere læser teksten frem for at stave
 
 {:#version-7-5-2 .mb-0}
 ## Version 7.5.2
@@ -420,7 +420,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modaler</a> kolliderer og lukker begge, når en overflow er inde i en modal
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- <a href="/design/borders/#streger">Facit streger</a>
+- {% include links/internal-links.html linktext="Facit streger" %}
 - Udvidelse af breakpoint for <a href="/kode/komponenter/tables/#responsiv">responsiv tabel</a>
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
@@ -435,8 +435,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/">accordions</a>
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt
-- Opdateret <a href="/design/typografi/">typografi</a>
-- Tilføjet styling af <a href="/design/typografi/tekst/#billedtekst">billedtekst (figcaption)</a>
+- Opdateret {% include links/internal-links.html linktext="typografi" %}
+- Tilføjet styling af {% include links/internal-links.html linktext="billedtekst (figcaption)" %}
 - <a href="/komponenter/accordions/#åbn-luk-alle">Åbn/luk alle accordions function</a>
 - <a href="/komponenter/accordions/">Accordion</a> knapper kan nu være i en overskrift
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
@@ -489,7 +489,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Ny komponent: <a href="/komponenter/broedkrumme/">Brødkrumme</a>
 - Mulighed for en mere kompakt <a href="/komponenter/header/">header</a> med brug af en <a href="/komponenter/knapper/#lille-knap">lille knap</a>
-- Linjehøjden for <a href="/design/typografi/tekst/">lille brødtekst</a> er ændret til 20px
+- Linjehøjden for {% include links/internal-links.html linktext="lille brødtekst" %} er ændret til 20px
 - Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>.
 - <a href="/komponenter/venstremenu/">Tilpasset alignment på venstremenu</a>
 
@@ -514,7 +514,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a> opdateret i udseende og HTML.
 - Rettet fejl med border i tabel.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Tilføjet mulighed for styling af <a href="/design/typografi/overskrifter/#overskrift-som-link">links i overskrifter</a>.
+- Tilføjet mulighed for styling af {% include links/internal-links.html linktext="links i overskrifter" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/" title="Læs mere om faneblade">Faneblade</a> er ændret i HTML og JavaScript.
 - Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a>
 - Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.
@@ -530,7 +530,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
 - Mere padding i toppen af <a href="/komponenter/header/">navbar indeholdende funktionslink og overflow menu i header</a>.
 - Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.
-- <a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.
+- {% include links/internal-links.html linktext="Lister" %} har fået nyt udtryk.
 - Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/header/">header</a> samt <a href="/komponenter/venstremenu/">venstremenuen</a>.
 - Tilføjet mulighed for <a href="/komponenter/radioknap/#hjaelpetekst">hjælpetekst på radioknap</a>.
 - Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.
@@ -589,7 +589,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
 - Information om <a href="/krav/">krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk. 
-- Tabellerne følger nu <a href="/design/layout/grid/">8point grid</a>
+- Tabellerne følger nu {% include links/internal-links.html linktext="8point grid" %}
 
 {:#version-4-4-0 .mb-0}
 ## Version 4.4.0

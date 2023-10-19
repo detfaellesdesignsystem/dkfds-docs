@@ -45,7 +45,7 @@ For at gøre det nemmere at komme i gang stiller vi ovenstående filer til rådi
 
 Følg allerede etablerede standarder og konventioner for placering og gruppering af komponenter og reproducer gængse interaktionsmønstre. Kig gerne vores vejledning til sideopbygning igennem.
 
-<a href="/design/layout/">Regler og principper for layout</a>
+{% include links/internal-links.html linktext="Regler og principper for layout" %}
 
 Hav forståelse for dit ansvar for sammenhængen imellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang.
 

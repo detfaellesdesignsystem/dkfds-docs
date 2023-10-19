@@ -1,5 +1,105 @@
 {%- if include.linktext == "browserunderstøttelse" -%}
 <a href="/kode/browserunderstoettelse/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "farver" or include.linktext == "Farver" or include.linktext == "bruge farverne som anvist" -%}
+<a href="/design/farver/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "fokusramme" -%}
+<a href="/design/farver/#fokusfarve">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering" or include.linktext == "datavisualiseringsfarver" -%}
+<a href="/design/farver/#datavisualiseringsfarver">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "angivne font" or include.linktext == "beskrevet i afsnittet om typografi" include.linktext == "typografi" -%}
+<a href="/design/typografi/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "retningslinjer" -%}
+<a href="/design/typografi/fonte/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Overskrifter" -%}
+<a href="/design/typografi/overskrifter/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjerne for overskrifter" -%}
+<a href="/design/typografi/overskrifter/guidelines/#retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjer for subheadings" or include.linktext == "subheading" -%}
+<a href="/design/typografi/overskrifter/guidelines/#subheading">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "links i overskrifter" -%}
+<a href="/design/typografi/overskrifter/guidelines/#overskrift-som-link">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "lille brødtekst" -%}
+<a href="/design/typografi/tekst/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "stor tekst" -%}
+<a href="/design/typografi/tekst/guidelines/#stor-tekst">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjerne for manchet tekst" -%}
+<a href="/design/typografi/tekst/guidelines/#manchet-tekst-retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjerne for brødtekst" -%}
+<a href="/design/typografi/tekst/guidelines/#broedtekst-retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjer for hjælpetekst og fejlmeddelelser" -%}
+<a href="/design/typografi/tekst/guidelines/#hjaelpetekst-retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "billedtekst (figcaption)" -%}
+<a href="/design/typografi/tekst/guidelines/#billedtekst">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjer for billedtekst" -%}
+<a href="/design/typografi/tekst/guidelines/#billedtekst-retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjerne for stor tekst" -%}
+<a href="/design/typografi/tekst/guidelines/#display-retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "standard links" -%}
+<a href="/design/typografi/links/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "billeder anvendt som links" -%}
+<a href="/design/typografi/links/guidelines/#billeder-som-links">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "eksternt link" -%}
+<a href="/design/typografi/links/guidelines/#eksternt-link">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "fremhæv særlige punkter med punktopstilling" or include.linktext == "Lister" -%}
+<a href="/design/typografi/lister/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs retningslinjerne for lister" -%}
+<a href="/design/typografi/lister/guidelines/#retningslinjer">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "findes i afsnittet om hjørner, streger og skygger" -%}
+<a href="/design/borders/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Facit streger" -%}
+<a href="/design/borders/#streger">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Se dokumentationen for implementering af ikoner" or include.linktext == "afsnittet om ikoner" -%}
+<a href="/design/ikoner/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Se flere betydninger i ikontaksonomien" or include.linktext == "ikontaksonomien" -%}
+<a href="/design/ikoner/guidelines/#betydning">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tilgængelighed i forbindelse med grafik og visualisering" or include.linktext == "tilgængelighed i forbindelse med grafik og visualisering" or include.linktext == "tilgængelighed der gælder for grafik og visualisering" -%}
+<a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs mere om datavisualisering" -%}
+<a href="/design/datavisualisering-infografik/datavisualisering/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs mere om infografik" -%}
+<a href="/design/datavisualisering-infografik/infografik/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Layout" or include.linktext == "Regler og principper for layout" -%}
+<a href="/design/layout/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "hele headeren skal følge retningslinjerne for layout" -%}
+<a href="/design/layout/#struktur-header">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Grid’et i designsystemet" or include.linktext == "8point grid" -%}
+<a href="/design/grid/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "reglerne for grid-systemet" -%}
+<a href="/design/grid/implementering/">{{ include.linktext }}</a>
+
 {%- else -%}
 {{include.linktext}}
 {%- endif -%}
