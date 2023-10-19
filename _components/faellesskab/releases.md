@@ -161,6 +161,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/199" class="icon-link" target="_blank">issue #199 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere har flere SASS-variable gjort det simpelt at ændre grundlæggende dele af designsystemets design og layout. Dette gjaldt også dele, det ikke var tiltænkt, at man skulle ændre. Flere SASS-variable er derfor blevet slettet, flyttet eller erstattet. De variable, som stadig anvendes, kan findes i mappen <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/stylesheets">variables</a>. Anvender man udelukkende de færdiggenererede CSS-filer, kan man se bort fra dette punkt. Bemærk, at der i kommende major releases kan blive fjernet yderligere variable.
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
+- Rettet ikonet "file-upload", der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.
 
 {:#version-9-0-3 .mb-0}
 ## Version 9.0.3
