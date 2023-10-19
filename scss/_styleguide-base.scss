@@ -1,22 +1,21 @@
 @use 'sass:math';
 @use '../node_modules/dkfds/src/stylesheets/themes/borgerdk/variables' as borger;
 @use '../node_modules/dkfds/src/stylesheets/themes/virkdk/variables' as virk;
+@use '../node_modules/dkfds/src/stylesheets/components/sidenav' as sidenav;
+@use '../node_modules/dkfds/src/stylesheets/components/navigation' as nav;
 @use '../node_modules/dkfds/src/stylesheets/global' as *;
-@use '../node_modules/dkfds/src/stylesheets/components/sidenav' as *;
-@use '../node_modules/dkfds/src/stylesheets/components/navigation' as *;
-
 
 /// theme alert
 #borgerdkThemeBtn{
-    color: #ffffff;
-    background-color: #44831E;
-    border-color: #3C5C22;
+    color: color('white');
+    background-color: borger.$borger-primary;
+    border-color: borger.$borger-primary-dark;
 }
 
 #virkThemeBtn{
-    color: #ffffff;
-    background-color: #0059B3;
-    border-color: #004993;
+    color: color('white');
+    background-color: virk.$virk-primary;
+    border-color: virk.$virk-primary-dark;
 }
   
 .fds-title {
@@ -1158,10 +1157,10 @@ body[class*="page-grid"][class*="-html"]
   border-top: $details-panel-border-width solid color($details-panel-border-color);
 }
 .sidenav-border-example{
-  border-top: $sidemenu-border-left-thickness solid color($sidenav-border-active-color);
+  border-top: sidenav.$sidemenu-border-left-thickness solid color($sidenav-border-active-color);
 }
 .navigation-border-example{
-  border-top: $navigation-desktop-border-bottom-thickness solid color($navigation-link-current-border-color);
+  border-top: nav.$navigation-desktop-border-bottom-thickness solid color($navigation-link-current-border-color);
 }
 
 .screenshot-gallery .screenshot img {
@@ -1209,17 +1208,17 @@ body[class*="page-grid"][class*="-html"]
 
 $extra-colors: (
     "borgerdk": (
-        100: #44831E,
-        200: #3C5C22,
-        300: #233614
+        100: borger.$borger-primary,
+        200: borger.$borger-primary-dark,
+        300: borger.$borger-primary-darker
     ),
     "borgerdk-gray": (
         100: #f1f1f1
     ),
     "virk": (
-        100: #0059B3,
-        200: #004993,
-        300: #003972
+        100: virk.$virk-primary,
+        200: virk.$virk-primary-dark,
+        300: virk.$virk-primary-darker
     )
 );
 @each $typeName, $typeColor in $extra-colors {
