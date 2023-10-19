@@ -74,11 +74,11 @@ tags:
 - 9.0.0
 - 9.0.1
 - 9.0.2
-- 9.0.3
+- 9.1.0
 anchor: true
 subnav:
-- text: Version 9.0.3
-  href: "#version-9-0-3"
+- text: Version 9.1.0
+  href: "#version-9-1-0"
 - text: Version 9.0.2
   href: "#version-9-0-2"
 - text: Version 9.0.1
@@ -123,8 +123,8 @@ Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.
 
-{:#version-9-0-3 .mb-0}
-## Version 9.0.3
+{:#version-9-1-0 .mb-0}
+## Version 9.1.0
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
@@ -132,6 +132,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Øget tekststørrelsen på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a>.
 - Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
 - Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
+- Rettet fejl, hvor visse typer af `id` kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2
