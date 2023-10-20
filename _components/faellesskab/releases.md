@@ -129,7 +129,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 - Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
-- Øget tekststørrelsen på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>.
 - Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
 - Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
 - Rettet fejl, hvor visse typer af `id` kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.

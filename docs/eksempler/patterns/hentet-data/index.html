@@ -16,8 +16,8 @@
 ================================================== -->
   
 
-<title>Inputfelter med hentet data - redigerbart | Det Fælles Designsystem</title>
-<meta property="og:title" content="Inputfelter med hentet data - redigerbart | Det Fælles Designsystem">
+<title>Inputfelter med hentet data | Det Fælles Designsystem</title>
+<meta property="og:title" content="Inputfelter med hentet data | Det Fælles Designsystem">
 
 <meta name="description" content="En formular med automatisk hentet data, hvor felterne kan redigeres.">
 <meta property="og:description" content="En formular med automatisk hentet data, hvor felterne kan redigeres.">
@@ -65,7 +65,7 @@
 </noscript>
 
   </head>
-  <body class="page-inputfelter-med-hentet-data-redigerbart layout-styleguide">
+  <body class="page-inputfelter-med-hentet-data layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -1942,7 +1942,7 @@
   
     
     <a href="/eksempler/patterns/hentet-data/" aria-current="page" class="nav-link">
-        Inputfelter med hentet data - redigerbart
+        Inputfelter med hentet data
       </a>
      
     
@@ -3569,7 +3569,7 @@
 
 <a href="/eksempler/patterns/hentet-data/" aria-current="page"
   class="nav-link">
-  Inputfelter med hentet data - redigerbart
+  Inputfelter med hentet data
 </a>
 
     
@@ -3651,14 +3651,14 @@
           </div>
 
           
-          <h1 id="inputfelter-med-hentet-data-redigerbart">Inputfelter med hentet data - redigerbart</h1>
+          <h1 id="inputfelter-med-hentet-data">Inputfelter med hentet data</h1>
           
 
           
           
 
           
-            <p class="font-lead">En formular med automatisk hentet data, hvor felterne kan redigeres.</p>
+            <p class="font-lead">En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres i.</p>
           
 
           
@@ -3672,16 +3672,23 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group">
-    <label class="form-label" for="hentetdata-virksomhed">Virksomhedsnavn</label>
+    <label class="form-label" for="hentetdata">Fornavn og efternavn</label>
 
-    <span class="form-hint" id="hentetdata-virksomhed-hint">Data hentet fra CVR.dk</span>
+    <span class="form-hint" id="hentetdata-hint">Data hentet fra CVR.dk</span>
+
+    <input type="text" id="hentetdata" name="navn" class="form-input" value="Keld Hedagaardsen" aria-describedby="hentetdata-hint " readonly="" />
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="hentetdata-redigerbar">Fornavn og efternavn</label>
+
+    <span class="form-hint" id="hentetdata-redigerbar-hint">Data hentet fra CVR.dk</span>
 
     <div class="d-block d-sm-flex flex-sm-row align-items-sm-center">
-        <input type="text" id="hentetdata-virksomhed" name="virksomhednavn" class="form-input input-width-s mr-3" value="Information som er hentet" aria-describedby="hentetdata-virksomhed-hint" readonly="" />
-        <button type="button" class="function-link mt-2" id="hentetdata-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger</button>
+        <input type="text" id="hentetdata-redigerbar" name="navn-redigerbar" class="form-input mr-sm-3" value="Keld Hedagaardsen" aria-describedby="hentetdata-redigerbar-hint " readonly="" />
+        <button type="button" class="function-link mt-3" id="hentetdata-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger</button>
     </div>
 </div>
-<!-- JavaScript til rediger-knappen følger ikke med -->
         
     </div>
     
@@ -3691,19 +3698,27 @@
     <div class="details-text">
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;hentetdata-virksomhed&quot;&gt;Virksomhedsnavn&lt;/label&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;hentetdata&quot;&gt;Fornavn og efternavn&lt;/label&gt;
 
-    &lt;span class=&quot;form-hint&quot; id=&quot;hentetdata-virksomhed-hint&quot;&gt;Data hentet fra CVR.dk&lt;/span&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;hentetdata-hint&quot;&gt;Data hentet fra CVR.dk&lt;/span&gt;
+
+    &lt;input type=&quot;text&quot; id=&quot;hentetdata&quot; name=&quot;navn&quot; class=&quot;form-input&quot;
+        value=&quot;Keld Hedagaardsen&quot; aria-describedby=&quot;hentetdata-hint &quot; readonly&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;hentetdata-redigerbar&quot;&gt;Fornavn og efternavn&lt;/label&gt;
+
+    &lt;span class=&quot;form-hint&quot; id=&quot;hentetdata-redigerbar-hint&quot;&gt;Data hentet fra CVR.dk&lt;/span&gt;
 
     &lt;div class=&quot;d-block d-sm-flex flex-sm-row align-items-sm-center&quot;&gt;
-        &lt;input type=&quot;text&quot; id=&quot;hentetdata-virksomhed&quot; name=&quot;virksomhednavn&quot;
-            class=&quot;form-input input-width-s mr-3&quot; value=&quot;Information som er hentet&quot;
-            aria-describedby=&quot;hentetdata-virksomhed-hint&quot; readonly&gt;
-        &lt;button type=&quot;button&quot; class=&quot;function-link mt-2&quot;
+        &lt;input type=&quot;text&quot; id=&quot;hentetdata-redigerbar&quot; name=&quot;navn-redigerbar&quot;
+            class=&quot;form-input mr-sm-3&quot; value=&quot;Keld Hedagaardsen&quot;
+            aria-describedby=&quot;hentetdata-redigerbar-hint &quot; readonly&gt;
+        &lt;button type=&quot;button&quot; class=&quot;function-link mt-3&quot;
             id=&quot;hentetdata-rediger&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#mode&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Rediger&lt;/button&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- JavaScript til rediger-knappen følger ikke med --&gt;</code></pre></figure>
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>
@@ -3711,25 +3726,166 @@
 
 <h2>Anvendes til</h2>
 
-<p>Til visning af data som er hentet automatisk ind i en formular og som også kan redigeres. Kan anvendes til data som f.eks. CVR-nummer, adresse, navn mv. som kan hentes automatisk for eksempel via NemLog-in.</p>
+<p>Dette pattern anvendes til visning af data, som er hentet automatisk ind i en formular. Det kan fx være data fra CVR- eller CPR-registreret data som derved er for udfyldt og letter udfyldelsen for brugeren, samtidig med at det giver brugeren mulighed for at rediger i den hentet data, hvis dette ønskes.</p>
+
+<h2>Anvendes ikke til</h2>
+
+<p>Anvendes ikke til visning af data, som brugeren selv har tastet ind. Anvend da i stedet almindelige inputfelter eller strukturerede lister, hvis der er tale om en opsummeringsside.</p>
 
 <h2>Vejledning</h2>
 
-<p>Efter hvert felt med hentet data som er redigerbart, placeres det viste ikon med funktionslink. Dette giver brugeren mulighed for nu at tilgå feltet som et almindeligt inputfelt, hvor teksten fra feltet før stadig optræder, men nu med mulighed for at slette og ændre i teksten.</p>
+<p>Den hentede data vises i et read-only felt med en hjælpetekst, som gør opmærksom på, at der er tale om automatisk indhentet data.</p>
 
-<p>Vælger brugeren at redigere et felt med hentet data, kan denne handling ikke ændres, dvs. det er ikke muligt at gå tilbage og få feltet til tilstanden før klik på “rediger”-knappen. 
-Det betyder dog ikke, at brugeren er nødsaget til at ændre i teksten. Hvis der ikke længere er et behov for at tilpasse teksten, kan feltet blot forblive urørt.</p>
+<p>Hvis brugeren har mulighed for at rette i data, placeres et funktionslink til redigering ved siden af feltet. Ved klik på funktionslinket bliver inputfeltet aktivt, og hjælpeteksten fjernes. Den hentede data forbliver i feltet, så brugeren kan slette og ændre i teksten. Bemærk, at man i koden selv står for at implementere denne funktionalitet.</p>
 
-<p>Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere eller ej.</p>
+<p>Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes som ethvert andet felt i formularen og hvordan det er specificeret i den validering, der ligger til grund for den selvbetjening, hvor det anvendes.</p>
 
-<p>I eksemplet ovenfor anvendes hjælpetekst til at hjælpe brugeren med at forstå, hvor den pågældende data kommer fra. Efter en bruger har redigeret dette felt, vil der ikke længere være et behov for at vise, hvor denne data stammer fra med brug af en hjælpetekst. Derfor anbefales det, at hvis man gør brug af en hjælpetekst til et lignende scenarie, så bør denne hjælpetekst forsvinde idet brugeren vælger at redigere feltet.</p>
+<h2>Eksempel på anvendelse af pattern</h2>
+
+<div class="component-preview  component-preview-virksomhedsoplysninger">
+    
+    
+    <div class="sr-only">Eksempel på formular med hentet data</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <h2>Virksomhedsoplysninger</h2>
+<form novalidate="">
+
+    <div class="form-group">
+        <label class="form-label" for="virksomhednavn">Virksomhednavn</label>
+
+        <span class="form-hint" id="virksomhednavn-hint">Data hentet fra CVR.dk</span>
+
+        <input type="text" id="virksomhednavn" name="virksomhednavn" class="form-input" value="Eksempelnavn" aria-describedby="virksomhednavn-hint " readonly="" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="cvr-nummer">CVR-nummer</label>
+
+        <span class="form-hint" id="cvr-nummer-hint">Data hentet fra CVR.dk</span>
+
+        <input type="text" id="cvr-nummer" name="cvr-nummer" class="form-input" value="12345678" aria-describedby="cvr-nummer-hint " readonly="" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="adresse">Adresse</label>
+
+        <span class="form-hint" id="adresse-hint">Data hentet fra CVR.dk</span>
+
+        <div class="d-block d-sm-flex flex-sm-row align-items-sm-center">
+            <input type="text" id="adresse" name="navn-redigerbar" class="form-input mr-sm-3" value="Mønstervej 23, 1234 Eksempelby" aria-describedby="adresse-hint " readonly="" />
+            <button type="button" class="function-link mt-3" id="adresse-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="telefon">Telefonnummer</label>
+
+        <input type="tel" id="telefon" name="telefon" class="form-input input-width-s" required="" />
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="email">E-mailadresse</label>
+
+        <input type="email" id="email" name="email" class="form-input" required="" />
+    </div>
+
+    <button class="button button-primary mt-9">
+        Fortsæt
+    </button>
+</form>
+        
+    </div>
+    
+</div>
+<details class="details ">
+    <summary class="details-summary">Vis HTML<span class="sr-only"> for eksempel på formular med hentet data</span></summary>
+    <div class="details-text">
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;h2&gt;Virksomhedsoplysninger&lt;/h2&gt;
+&lt;form novalidate&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;virksomhednavn&quot;&gt;Virksomhednavn&lt;/label&gt;
+
+        &lt;span class=&quot;form-hint&quot; id=&quot;virksomhednavn-hint&quot;&gt;Data hentet fra CVR.dk&lt;/span&gt;
+
+        &lt;input type=&quot;text&quot; id=&quot;virksomhednavn&quot; name=&quot;virksomhednavn&quot; class=&quot;form-input&quot;
+            value=&quot;Eksempelnavn&quot; aria-describedby=&quot;virksomhednavn-hint &quot; readonly&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;cvr-nummer&quot;&gt;CVR-nummer&lt;/label&gt;
+
+        &lt;span class=&quot;form-hint&quot; id=&quot;cvr-nummer-hint&quot;&gt;Data hentet fra CVR.dk&lt;/span&gt;
+
+        &lt;input type=&quot;text&quot; id=&quot;cvr-nummer&quot; name=&quot;cvr-nummer&quot; class=&quot;form-input&quot;
+            value=&quot;12345678&quot; aria-describedby=&quot;cvr-nummer-hint &quot; readonly&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;adresse&quot;&gt;Adresse&lt;/label&gt;
+
+        &lt;span class=&quot;form-hint&quot; id=&quot;adresse-hint&quot;&gt;Data hentet fra CVR.dk&lt;/span&gt;
+
+        &lt;div class=&quot;d-block d-sm-flex flex-sm-row align-items-sm-center&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;adresse&quot; name=&quot;navn-redigerbar&quot; class=&quot;form-input mr-sm-3&quot;
+                value=&quot;Mønstervej 23, 1234 Eksempelby&quot; aria-describedby=&quot;adresse-hint &quot;
+                readonly&gt;
+            &lt;button type=&quot;button&quot; class=&quot;function-link mt-3&quot;
+                id=&quot;adresse-rediger&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#mode&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Rediger&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;telefon&quot;&gt;Telefonnummer&lt;/label&gt;
+
+        &lt;input type=&quot;tel&quot; id=&quot;telefon&quot; name=&quot;telefon&quot; class=&quot;form-input input-width-s&quot;
+            required&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;email&quot;&gt;E-mailadresse&lt;/label&gt;
+
+        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required&gt;
+    &lt;/div&gt;
+
+    &lt;button class=&quot;button button-primary mt-9&quot;&gt;
+        Fortsæt
+    &lt;/button&gt;
+&lt;/form&gt;</code></pre></figure>
+
+
+    </div>
+</details>
+
+<h2>Referencer</h2>
+
+<p><a href="https://baseweb.design/components/input/">https://baseweb.design/components/input/</a>
+<a href="https://carbondesignsystem.com/patterns/read-only-states-pattern/">https://carbondesignsystem.com/patterns/read-only-states-pattern/</a>
+<a href="https://www.patternfly.org/components/inline-edit/design-guidelines/">https://www.patternfly.org/components/inline-edit/design-guidelines/</a>
+<a href="https://garden.zendesk.com/components/input">https://garden.zendesk.com/components/input</a></p>
 
 <script>
 let editButton = document.getElementById("hentetdata-rediger");
 
 editButton.addEventListener('click', function (e) {
-    let textfield = document.getElementById("hentetdata-virksomhed");
-    let hinttext = document.getElementById("hentetdata-virksomhed-hint");
+    let textfield = document.getElementById("hentetdata-redigerbar");
+    let hinttext = document.getElementById("hentetdata-redigerbar-hint");
+    this.setAttribute('hidden', '');
+    hinttext.setAttribute('hidden', '');
+    textfield.removeAttribute('readonly');
+    textfield.removeAttribute("aria-describedby");
+    textfield.setAttribute('required', '');
+    textfield.classList.remove('mr-3');
+});
+
+let editButtonExample = document.getElementById("adresse-rediger");
+
+editButtonExample.addEventListener('click', function (e) {
+    let textfield = document.getElementById("adresse");
+    let hinttext = document.getElementById("adresse-hint");
     this.setAttribute('hidden', '');
     hinttext.setAttribute('hidden', '');
     textfield.removeAttribute('readonly');

@@ -1,0 +1,52 @@
+<h2>Virksomhedsoplysninger</h2>
+<form novalidate>
+
+    <div class="form-group">
+        <label class="form-label" for="virksomhednavn">Virksomhednavn</label>
+
+        <span class="form-hint" id="virksomhednavn-hint">Data hentet fra CVR.dk</span>
+
+        <input type="text" id="virksomhednavn" name="virksomhednavn" class="form-input"
+            value="Eksempelnavn" aria-describedby="virksomhednavn-hint " readonly>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="cvr-nummer">CVR-nummer</label>
+
+        <span class="form-hint" id="cvr-nummer-hint">Data hentet fra CVR.dk</span>
+
+        <input type="text" id="cvr-nummer" name="cvr-nummer" class="form-input"
+            value="12345678" aria-describedby="cvr-nummer-hint " readonly>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="adresse">Adresse</label>
+
+        <span class="form-hint" id="adresse-hint">Data hentet fra CVR.dk</span>
+
+        <div class="d-block d-sm-flex flex-sm-row align-items-sm-center">
+            <input type="text" id="adresse" name="navn-redigerbar" class="form-input mr-sm-3"
+                value="Mønstervej 23, 1234 Eksempelby" aria-describedby="adresse-hint "
+                readonly>
+            <button type="button" class="function-link mt-3"
+                id="adresse-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="telefon">Telefonnummer</label>
+
+        <input type="tel" id="telefon" name="telefon" class="form-input input-width-s"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="email">E-mailadresse</label>
+
+        <input type="email" id="email" name="email" class="form-input" required>
+    </div>
+
+    <button class="button button-primary mt-9">
+        Fortsæt
+    </button>
+</form>
