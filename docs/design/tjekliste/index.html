@@ -16,11 +16,11 @@
 ================================================== -->
   
 
-<title>Tekstområde (Textarea) (Kode) | Det Fælles Designsystem</title>
-<meta property="og:title" content="Tekstområde (Textarea) (Kode) | Det Fælles Designsystem">
+<title>Tjekliste | Det Fælles Designsystem</title>
+<meta property="og:title" content="Tjekliste | Det Fælles Designsystem">
 
-<meta name="description" content="Dokumentation på implementering af tekstområde.">
-<meta property="og:description" content="Dokumentation på implementering af tekstområde.">
+<meta name="description" content="En tjekliste med 10 punkter, der kan hjælpe dig med at leve op til FDS retningslinjer.">
+<meta property="og:description" content="En tjekliste med 10 punkter, der kan hjælpe dig med at leve op til FDS retningslinjer.">
 
 
 
@@ -65,7 +65,7 @@
 </noscript>
 
   </head>
-  <body class="page-tekstområde-textarea layout-styleguide">
+  <body class="page-tjekliste layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -271,9 +271,9 @@
 
 
 
-<li class="">
+<li class="current">
 <!-- Do not render subnavs-->
-  <a href="/design/" 
+  <a href="/design/" aria-current="page"
     class="nav-link">
     <span>Design</span>
   </a>
@@ -334,9 +334,9 @@
 
 
 
-<li class="current">
+<li class="">
 <!-- Do not render subnavs-->
-  <a href="/kode/" aria-current="page"
+  <a href="/kode/" 
     class="nav-link">
     <span>Kode</span>
   </a>
@@ -426,7 +426,7 @@
 
 
 
-<li class="">
+<li class="current">
 <!--Do render subnavs-->
 
   
@@ -436,10 +436,10 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="false"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="true"  >
         <span>Design</span>
       </button>
-      <div class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="true">
+      <div class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="false">
         <ul class="overflow-list">
           
 
@@ -501,10 +501,10 @@
 
       
       <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="true"  >
           <span>Typografi</span>
         </button>
-        <div class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="true">
+        <div class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="false">
           <ul class="overflow-list">
             
 
@@ -736,10 +736,10 @@
 
       
       <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="true"  >
           <span>Datavisualisering og infografik</span>
         </button>
-        <div class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="true">
+        <div class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="false">
           <ul class="overflow-list">
             
 
@@ -851,10 +851,10 @@
 
       
       <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="false"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="true"  >
           <span>Layout</span>
         </button>
-        <div class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="true">
+        <div class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="false">
           <ul class="overflow-list">
             
 
@@ -933,14 +933,14 @@
     
 
 
-<li class="  ">
+<li class="current active ">
 
   
 
 
   
     
-    <a href="/design/tjekliste/"  class="nav-link">
+    <a href="/design/tjekliste/" aria-current="page" class="nav-link">
         Tjekliste
       </a>
      
@@ -2020,7 +2020,7 @@
 
 
 
-<li class="current">
+<li class="">
 <!--Do render subnavs-->
 
   
@@ -2030,10 +2030,10 @@
   
 
   <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="true"  >
+      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
         <span>Kode</span>
       </button>
-      <div class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="false">
+      <div class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
         <ul class="overflow-list">
           
 
@@ -2082,7 +2082,7 @@
     
 
 
-<li class="current  ">
+<li class="  ">
 
   
 
@@ -2095,22 +2095,22 @@
 
       
       <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="true"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
           <span>Komponenter</span>
         </button>
-        <div class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="false">
+        <div class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
           <ul class="overflow-list">
             
 
 
-<li class="current  ">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/" aria-current="true" class="nav-link">
+    <a href="/kode/komponenter/"  class="nav-link">
         Komponenter<span class="helptext"> (overblik)</span>
       </a>
      
@@ -2687,14 +2687,14 @@
     
 
 
-<li class="current active ">
+<li class="  ">
 
   
 
 
   
     
-    <a href="/kode/komponenter/tekstomraade/" aria-current="page" class="nav-link">
+    <a href="/kode/komponenter/tekstomraade/"  class="nav-link">
         Tekstområde (Textarea)
       </a>
      
@@ -2950,10 +2950,10 @@
 
       
       <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="true"  >
+        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
           <span>Typografi</span>
         </button>
-        <div class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="false">
+        <div class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
           <ul class="overflow-list">
             
 
@@ -3514,82 +3514,14 @@
           
     
 
-<li class="  ">
-
-
-  
-
-<a href="/kode/implementering/" 
-  class="nav-link">
-  Implementering af DKFDS
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="current  ">
-
-
-  
-
-<a href="/kode/komponenter/" 
-  class="nav-link">
-  Komponenter
-</a>
-
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-    
-
-    
-
-    <ul class="sidenav-sub_list">
-    
-
 <li class="  has-anchor-links">
 
 
   
 
-<a href="/kode/komponenter/accordions/" 
+<a href="/design/farver/" 
   class="nav-link">
-  Accordions
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/badges/" 
-  class="nav-link">
-  Badges
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/beskeder/" 
-  class="nav-link">
-  Beskeder (Alerts)
+  Farver
 </a>
 
 </li>
@@ -3603,617 +3535,7 @@
 
   
 
-<a href="/kode/komponenter/broedkrumme/" 
-  class="nav-link">
-  Brødkrumme
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/cards/" 
-  class="nav-link">
-  Cards
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/cookiemeddelelse/" 
-  class="nav-link">
-  Cookiemeddelelse
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/datofelter/" 
-  class="nav-link">
-  Datofelter
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/datovaelger/" 
-  class="nav-link">
-  Datovælger
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/detaljer/" 
-  class="nav-link">
-  Detaljer
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/dropdown/" 
-  class="nav-link">
-  Dropdown
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/faneblade/" 
-  class="nav-link">
-  Faneblade (Tabs)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/fejlmeddelelser/" 
-  class="nav-link">
-  Fejlmeddelelser
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/fejlopsummering/" 
-  class="nav-link">
-  Fejlopsummering
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/footer/" 
-  class="nav-link">
-  Footer
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/funktionslink/" 
-  class="nav-link">
-  Funktionslink
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/skip-link/" 
-  class="nav-link">
-  Gå til sidens indhold (Skip-link)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/header/" 
-  class="nav-link">
-  Header
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/inputfelter/" 
-  class="nav-link">
-  Inputfelter
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/knapper/" 
-  class="nav-link">
-  Knapper (Buttons)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/spinner/" 
-  class="nav-link">
-  Loading spinner
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/modal/" 
-  class="nav-link">
-  Modal
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/overflowmenu/" 
-  class="nav-link">
-  Overflow menu
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/paginering/" 
-  class="nav-link">
-  Paginering
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/radioknap/" 
-  class="nav-link">
-  Radioknap (Radio button)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/sprogvaelger/" 
-  class="nav-link">
-  Sprogvælger
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/search/" 
-  class="nav-link">
-  Søgefelt
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/tables/" 
-  class="nav-link">
-  Tabeller
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/tags/" 
-  class="nav-link">
-  Tags
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="current active ">
-
-
-  
-
-<a href="/kode/komponenter/tekstomraade/" aria-current="page"
-  class="nav-link">
-  Tekstområde (Textarea)
-</a>
-
-    
-    <!-- Uses page.subnav as navmenu-->
-    
-    
-
-    
-
-    
-  
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/tilbage-link/" 
-  class="nav-link">
-  Tilbage-link
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/tilbage-til-top/" 
-  class="nav-link">
-  Tilbage til toppen
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/tjekboks/" 
-  class="nav-link">
-  Tjekboks (Checkbox)
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/toastbesked/" 
-  class="nav-link">
-  Toastbesked
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/toggle/" 
-  class="nav-link">
-  Toggle switch
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/tooltip/" 
-  class="nav-link">
-  Tooltip
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/komponenter/trinindikator/" 
-  class="nav-link">
-  Trinindikator
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/fil-upload/" 
-  class="nav-link">
-  Vedhæft fil
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/komponenter/venstremenu/" 
-  class="nav-link">
-  Venstremenu
-</a>
-
-</li>
-
-    
-
-</ul>
-    
-  
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/browserunderstoettelse/" 
-  class="nav-link">
-  Browserunderstøttelse
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  has-anchor-links">
-
-
-  
-
-<a href="/kode/grid/" 
-  class="nav-link">
-  Grid
-</a>
-
-</li>
-
-    
-
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/kode/typografi/" 
+<a href="/design/typografi/" 
   class="nav-link">
   Typografi
 </a>
@@ -4224,12 +3546,28 @@
 
     
 
+<li class="  has-anchor-links">
+
+
+  
+
+<a href="/design/borders/" 
+  class="nav-link">
+  Hjørner, streger, skygger
+</a>
+
+</li>
+
+    
+
+    
+
 <li class="  ">
 
 
   
 
-<a href="/kode/ikoner/" 
+<a href="/design/ikoner/" 
   class="nav-link">
   Ikoner
 </a>
@@ -4245,9 +3583,9 @@
 
   
 
-<a href="/kode/utilities/" 
+<a href="/design/logoer/" 
   class="nav-link">
-  Hjælpeklasser (Utilities)
+  Logoer
 </a>
 
 </li>
@@ -4261,9 +3599,9 @@
 
   
 
-<a href="/kode/eksempler-implementering/" 
+<a href="/design/datavisualisering-infografik/" 
   class="nav-link">
-  Eksempler på implementering
+  Datavisualisering og infografik
 </a>
 
 </li>
@@ -4277,9 +3615,9 @@
 
   
 
-<a href="/kode/print/" 
+<a href="/design/layout/" 
   class="nav-link">
-  Print
+  Layout
 </a>
 
 </li>
@@ -4288,15 +3626,41 @@
 
     
 
-<li class="  ">
+<li class="  has-anchor-links">
 
 
   
 
-<a href="/kode/plugins/" 
+<a href="/design/designressourcer/" 
   class="nav-link">
-  Plugins
+  Designressourcer
 </a>
+
+</li>
+
+    
+
+    
+
+<li class="current active ">
+
+
+  
+
+<a href="/design/tjekliste/" aria-current="page"
+  class="nav-link">
+  Tjekliste
+</a>
+
+    
+    <!-- Uses page.subnav as navmenu-->
+    
+    
+
+    
+
+    
+  
 
 </li>
 
@@ -4318,180 +3682,98 @@
         </div>
     </div>
 
-      <section id="section-/kode/komponenter/textarea">
+      <section id="section-/design/tjekliste">
           
           
 
           <div class="subheading">
-            Kode
+            Design
           </div>
 
           
-          <h1 id="tekstområde-textarea">Tekstområde (Textarea)</h1>
+          <h1 id="tjekliste">Tjekliste</h1>
           
 
           
           
 
           
-
+            <p class="font-lead">Gå igennem tjeklisten for at sikre, at din løsning følger Det Fælles Designsystem.</p>
           
 
           
-<div class="component-preview  component-preview-text-area">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-area/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tekstområde</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group">
-    <label class="form-label" for="input-textarea">Tekstområde med label</label>
 
-    <textarea class="form-input" id="input-textarea" name="input-textarea" rows="5" required=""></textarea>
-
-</div>
-        
-    </div>
-    
-</div>
-
-<h2>Eksempler og retningslinjer</h2>
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tekstomraade/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tekstomraade/">Eksempler</a></li>
-</ul>
-
-<h2>Installation</h2>
-
-<h3>HTML Struktur</h3>
-
-<div class="component-preview component-preview-code  component-code-text-area">
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-textarea&quot;&gt;Tekstområde med label&lt;/label&gt;
-
-    &lt;textarea class=&quot;form-input&quot; id=&quot;input-textarea&quot; name=&quot;input-textarea&quot; rows=&quot;5&quot; required&gt;&lt;/textarea&gt;
-
-&lt;/div&gt;</code></pre></figure>
-
-
+          <div class="d-flex mt-6">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Layoutet skal være inddelt i en header, et indholdsområde og en footer på alle sider</h2>
+        <p>Hver side skal starte med en <a href="/komponenter/header/">header</a> bestående af portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt. Derefter følger indholdet såsom en formular. Slut din løsning af med en <a href="/komponenter/footer/">footer</a> og brug et af de anviste layouts til den.</p>
     </div>
 </div>
 
-<p>Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:</p>
-
-<ul>
-  <li><code>for</code></li>
-  <li><code>id</code></li>
-  <li><code>name</code></li>
-  <li><code>rows</code></li>
-</ul>
-
-<p>Sæt højden på et tekstområde ved brug af <code>rows</code> attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.</p>
-
-<h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
-<p><a href="/kode/komponenter/fejlmeddelelser/#tekstomraade">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>
-
-<p>Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
-
-<h2 id="karakterbegraensning">Karakterbegrænsning</h2>
-
-<div class="component-preview component-preview-code  component-code-text-area-character-limit">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-area-character-limit/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-area-character-limit</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;textarea-limit&quot;&gt;Tekstområde med karakterbegrænsning&lt;/label&gt;
-
-    &lt;textarea class=&quot;form-input&quot; id=&quot;textarea-limit&quot; name=&quot;textarea-limit&quot; rows=&quot;5&quot; required aria-describedby=&quot;textarea-limit-limit-message&quot;&gt;&lt;/textarea&gt;
-    &lt;span id=&quot;textarea-limit-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan indtaste op til 60
-        tegn&lt;/span&gt;
-    &lt;span class=&quot;form-hint character-limit&quot; aria-hidden=&quot;true&quot;&gt;Du har 60 tegn tilbage&lt;/span&gt;
-    &lt;span class=&quot;character-limit-sr-only sr-only&quot; aria-live=&quot;polite&quot;&gt;Du har 60 tegn
-        tilbage&lt;/span&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Anvend designsystemets farver, former og typografi</h2>
+        <p>Ved at bruge de visuelle designretningslinjer sikrer du et rent udtryk uden visuel støj. Læs mere om retningslinjerne for <a href="/design/typografi/">typografi</a>, designsystemets <a href="/design/farver/">farver</a> og vores <a href="/design/borders/">hjørner, streger og skygger</a>.</p>
     </div>
 </div>
 
-<p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
-
-<h3>Javascript</h3>
-<p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med <code>init()</code>.</p>
-
-<h4>Funktioner</h4>
-<div class="table--responsive-scroll">
-  <table class="table table--responsive-headers">
-    <thead>
-      <tr>
-        <th scope="col">Funktion</th>
-        <th scope="col">Beskrivelse</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>init()</td>
-        <td>Sørger for at beskederne med antal tegn tilbage opdateres.</td>
-      </tr>
-      <tr>
-        <td>charactersLeft()</td>
-        <td>Returnerer det antal tegn, der lige nu kan indtastes i inputfeltet. Tallet er negativt, hvis antallet af tegn er overskredet.</td>
-      </tr>
-      <tr>
-        <td>updateMessages()</td>
-        <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Udvalgte ikoner skal anvendes som angivet</h2>
+        <p>Følg vores ikontaksonomi, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra Material Design. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under <a href="/design/ikoner/">ikoner</a>.</p>
+    </div>
 </div>
 
-<p>Eksempel på anvendelse:</p>
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Løsningen skal være responsiv</h2>
+        <p>Løsningen skal kunne anvendes på tværs af platforme. Det Fælles Designsystem tager udgangspunkt i et <a href="/design/layout/grid/">12-kolonne grid</a> for at gøre det lettere for både designere og udviklere at bruge systemet. Det er dog tilladt rent teknisk at bruge andre metoder i udviklingen, så længe løsningen er responsiv.</p>
+    </div>
+</div>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">const form_limit = new DKFDS.CharacterLimit(document.getElementsByClassName(&#39;form-limit&#39;)[0]);
-form_limit.init();
-form_limit.charactersLeft();</code></pre></figure>
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Indholdet skal primært være venstrestillet i et én-kolonne-layout og have passende afstande</h2>
+        <p>Venstrestilling af indholdet på siden i en enkelt kolonne gør det lettere for brugeren at skimme indholdet. Hold designet let og luftigt (masser af white space) og brug afstande og luft i designet til at indikere sammenhænge og adskillelse. Læs mere om <a href="/design/layout/">Layout</a>.</p>
+    </div>
+</div>
 
-<h4>Sprog</h4>
-<p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres.</p>
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Del så vidt muligt komplekse selvbetjeningsløsninger op i mindre bidder</h2>
+        <p>Løsningen bliver lettere for brugeren at overskue, hvis den deles op i mindre bidder. Afhængigt af løsningens karakter kan det opnås ved hjælp af at dele indholdet op i undersider eller, hvis der er tale om en længere formular, med en <a href="/komponenter/trinindikator/">trinindikator</a>.</p>
+    </div>
+</div>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;), {
-  &quot;character_remaining&quot;: &quot;Du har {value} tegn tilbage&quot;,
-  &quot;characters_remaining&quot;: &quot;Du har {value} tegn tilbage&quot;,
-  &quot;character_too_many&quot;: &quot;Du har {value} tegn for meget&quot;,
-  &quot;characters_too_many&quot;: &quot;Du har {value} tegn for meget&quot;
-}).init();</code></pre></figure>
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">De komponenter, du bruger, skal fungere som beskrevet</h2>
+        <p>For at sikre en konsistent oplevelse på tværs af løsninger og portaler er det vigtigt, at de enkelte komponenter opfører sig ens. Brugeren skal ikke være nervøs for, om en ellers velkendt komponent pludselig opfører sig helt anderledes og dermed skaber utryghed. Reglerne for de enkelte komponenter er beskrevet i afsnittet <a href="/komponenter/">komponenter</a>.</p>
+    </div>
+</div>
+
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Plugins og andre tilføjelser skal passe visuelt ind i designet og være tilgængelige</h2>
+        <p>Hvis du er nødt til at tilføje en komponent, som ikke allerede findes i designsystemet,  skal den passe visuelt ind i designsystemet. Det vil sige, at du skal tilpasse din komponent og gøre brug af de eksisterende grafiske regler, former og farver som angivet i designsystemet. Du skal også sørge for, at de overholder kravene til tilgængelighed.</p>
+    </div>
+</div>
+
+<div class="d-flex">
+    <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
+    <div>
+        <h2 class="h5 checklist-heading">Løsningen skal være tilgængelig</h2>
+        <p>Designet (kontrastforhold m.m.) og koden skal være tilgængeligt efter <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" class="icon-link" target="_blank">EN 301 549 v.3.2.1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Læs mere om kravene for <a href="/krav/tilgaengelighed/">tilgængelighed</a>.</p>
+    </div>
+</div>
 
 
           
@@ -4519,79 +3801,6 @@ form_limit.charactersLeft();</code></pre></figure>
                 
                   
                 
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                    
-                      
-                    
-                    
-                    
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
               
               
 
@@ -4610,9 +3819,32 @@ form_limit.charactersLeft();</code></pre></figure>
               
               
               
+                
+                  
+                
+                  
+                
+                  
+                
+              
+              
 
               
               
+              
+                
+                  
+                
+              
+              
+
+              
+              
+              
+                
+                  
+                  
+                  
           
       </section>
     </main>

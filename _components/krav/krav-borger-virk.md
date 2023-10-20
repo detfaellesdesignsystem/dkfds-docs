@@ -31,7 +31,7 @@ Brug eller imiter det Fælles Designsystem.
 
 Det anbefales desuden, at løsningen har en <a href="/komponenter/footer/">footer</a>, der er bygget som anvist i designsystemet.
 
-<a href="/design/designtjek/">Designtjekliste</a>
+<a href="/design/tjekliste/">Tjekliste</a>
 
 {:#integration-paa-borgerdk}
 ## Integration på borger.dk

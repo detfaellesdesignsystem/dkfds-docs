@@ -28,7 +28,7 @@ Kravet om anvendelse af det Fælles Designsystem gælder for obligatorisk digita
 Følg retningslinjer og principperne for design og layout. Brug komponenterne og koden, så laver du effektivt simple brugervenlige og tilgængelige selvbetjeningsløsninger.
 
 {:.nobullet-list}
-* <a href="/design/designtjek/">Designtjek</a>
+* <a href="/design/tjekliste/">Tjekliste</a>
 * <a href="/krav/tilgaengelighed/">Tilgængelighed</a>
 
 ## Det Fælles Designsystem er del af den fællesoffentlige digitale arkitektur
