@@ -7,14 +7,16 @@
         textinput({
             "id": "simple-fnavn",
             "label": "Fornavn",
-            "name": "fnavn"
+            "name": "fnavn",
+            "attributes": { "input": "autocomplete='given-name'" }
         })
     }}
     {{
         textinput({
             "id": "simple-enavn", 
             "label": "Efternavn",
-            "name": "enavn"
+            "name": "enavn",
+            "attributes": { "input": "autocomplete='family-name'" }
         })
     }}
     {{
@@ -22,7 +24,8 @@
             "id": "simple-email", 
             "label": "E-mailadresse",
             "name": "email",
-            "type": "email"
+            "type": "email",
+            "attributes": { "input": "autocomplete='email'" }
         })
     }}
     {{
@@ -31,7 +34,8 @@
             "label": "Telefonnummer",
             "classes": { "input": "input-width-s" },
             "name": "telefon",
-            "type": "tel"
+            "type": "tel",
+            "attributes": { "input": "autocomplete='tel'" }
         })
     }}
     {{ 

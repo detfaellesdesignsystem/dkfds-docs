@@ -18,8 +18,8 @@
 ================================================== -->
   
 
-<title>Error-summary-page | Det Fælles Designsystem</title>
-<meta property="og:title" content="Error-summary-page | Det Fælles Designsystem">
+<title>Text-input-autocomplete | Det Fælles Designsystem</title>
+<meta property="og:title" content="Text-input-autocomplete | Det Fælles Designsystem">
 
 
 
@@ -66,7 +66,7 @@
 
 </head>
 
-<body class="page-error-summary-page layout-example-contained">
+<body class="page-text-input-autocomplete layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -231,102 +231,12 @@
     </header>
     <main class="container page-container" id="main-content">
         
-        <h1 id="example-heading-error-summary-page" class="sr-only">Error summary page</h1>
-        <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
-    <div class="alert-body">
-        <h2 class="alert-heading">Der er problemer</h2>
-        <ul class="alert-text nobullet-list">
-            <li><a class="function-link" href="#example-name-error">Skriv dit fulde navn, og
-                    adskil for- og efternavne med mellemrum, fx Anders Andersen</a></li>
-            <li><a class="function-link" href="#checkboxes-error-option1">Angiv om du er
-                    dansk, svensk eller anden nationalitet</a></li>
-            <li><a class="function-link" href="#date-input-error-day">Datoen kan ikke være i
-                    fremtiden</a></li>
-        </ul>
-    </div>
+        <h1 id="example-heading-text-input-autocomplete" class="sr-only">Text input autocomplete</h1>
+        <div class="form-group">
+    <label class="form-label" for="postnr">Postnummer</label>
+
+    <input type="text" id="postnr" name="postnr" class="form-input input-char-4" required="" autocomplete="postal-code" />
 </div>
-
-<h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
-<form novalidate="">
-
-    <div class="form-group form-error">
-        <label class="form-label" for="example-name-error">Hvad er dit fulde navn?</label>
-
-        <span class="form-error-message" id="example-name-error-error">
-            <span class="sr-only">Fejl: </span>Skriv dit fulde navn, og adskil for- og
-            efternavne med mellemrum, fx Anders Andersen
-        </span>
-
-        <input type="text" id="example-name-error" name="example-name-error" class="form-input" aria-invalid="true" aria-describedby="example-name-error-error " required="" autocomplete="name" />
-    </div>
-
-    <div class="form-group form-error">
-        <fieldset aria-describedby="checkboxes-error-error">
-            <legend class="form-label">
-                Hvad er din nationalitet?
-            </legend>
-
-            <span class="form-error-message" id="checkboxes-error-error">
-                <span class="sr-only">Fejl: </span>Angiv om du er dansk, svensk eller anden
-                nationalitet
-            </span>
-
-            <div class="form-group-checkbox">
-                <input type="checkbox" id="checkboxes-error-option1" name="nationalitet[]" class="form-checkbox checkbox-large" value="dansk" />
-                <label class="form-label" for="checkboxes-error-option1">Dansk</label>
-
-            </div>
-
-            <div class="form-group-checkbox">
-                <input type="checkbox" id="checkboxes-error-option2" name="nationalitet[]" class="form-checkbox checkbox-large" value="svensk" />
-                <label class="form-label" for="checkboxes-error-option2">Svensk</label>
-
-            </div>
-
-            <div class="form-group-checkbox">
-                <input type="checkbox" id="checkboxes-error-option3" name="nationalitet[]" class="form-checkbox checkbox-large" value="anden" />
-                <label class="form-label" for="checkboxes-error-option3">Anden
-                    nationalitet</label>
-
-            </div>
-
-        </fieldset>
-    </div>
-
-    <div class="form-group form-error">
-        <fieldset aria-describedby="date-input-error-hint date-input-error-error ">
-            <legend class="form-label">
-                Hvornår blev dit pas udstedt?
-            </legend>
-            <span class="form-hint" id="date-input-error-hint">For eksempel: 05 12 2018</span>
-            <span class="form-error-message" id="date-input-error-error">
-                <span class="sr-only">Fejl: </span>Datoen kan ikke være i fremtiden
-            </span>
-            <div class="date-group js-calendar-group mt-3">
-
-                <div class="form-group form-group-day">
-                    <label class="form-label" for="date-input-error-day">Dag</label>
-
-                    <input type="tel" id="date-input-error-day" class="form-input js-calendar-day-input" value="01" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
-                </div>
-
-                <div class="form-group form-group-month">
-                    <label class="form-label" for="date-input-error-month">Måned</label>
-
-                    <input type="tel" id="date-input-error-month" class="form-input js-calendar-month-input" value="12" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
-                </div>
-
-                <div class="form-group form-group-year">
-                    <label class="form-label" for="date-input-error-year">År</label>
-
-                    <input type="tel" id="date-input-error-year" class="form-input js-calendar-year-input" value="2076" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
-                </div>
-
-            </div>
-        </fieldset>
-    </div>
-
-</form>
 
         
     </main>

@@ -130,7 +130,8 @@
         "type": "email",
         "classes": {
             "input": "input-width-l"
-        }
+        },
+        "attributes": { "input": "autocomplete='email'" }
     },
     "input_telefonnummer": {
         "id": "input-telefonnummer",
@@ -142,7 +143,8 @@
             "input": "input-width-s"
         },
         "required": false,
-        "helptext": "Behandlingstiden kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af spørgsmål"
+        "helptext": "Behandlingstiden kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af spørgsmål",
+        "attributes": { "input": "autocomplete='tel'" }
     },
     "button_next": {
         "text": "Næste",

@@ -49,6 +49,7 @@ editButton.addEventListener('click', function (e) {
     textfield.removeAttribute('readonly');
     textfield.removeAttribute("aria-describedby");
     textfield.setAttribute('required', '');
+    textfield.setAttribute('autocomplete', 'name');
     textfield.classList.remove('mr-3');
 });
 
@@ -62,6 +63,7 @@ editButtonExample.addEventListener('click', function (e) {
     textfield.removeAttribute('readonly');
     textfield.removeAttribute("aria-describedby");
     textfield.setAttribute('required', '');
+    textfield.setAttribute('autocomplete', 'street-address');
     textfield.classList.remove('mr-3');
 });
 </script>

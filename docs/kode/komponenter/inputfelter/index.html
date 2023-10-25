@@ -4469,6 +4469,41 @@
     </div>
 </div>
 
+<h3>Brug attributten “autocomplete”</h3>
+
+<p>Brug <code>autocomplete</code> på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link" target="_blank">WCAG 2.1 AA Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>).</p>
+
+<p>Brug <code>autocomplete</code> på inputfelter til fx navn (<code>autocomplete='name'</code>), postnummer (<code>autocomplete='postal-code'</code>), telefonnummer (<code>autocomplete='tel'</code>) og e-mailadresse (<code>autocomplete='email'</code>), hvis en bruger skal indtaste disse oplysninger om sig selv i din formular.</p>
+
+<div class="component-preview component-preview-code  component-code-text-input-autocomplete">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-autocomplete/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-autocomplete</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;postnr&quot;&gt;Postnummer&lt;/label&gt;
+
+    &lt;input type=&quot;text&quot; id=&quot;postnr&quot; name=&quot;postnr&quot; class=&quot;form-input input-char-4&quot; required
+        autocomplete=&#39;postal-code&#39;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h2>Varianter</h2>
 
 <h3 id="hjaelpetekst">Hjælpetekst</h3>
