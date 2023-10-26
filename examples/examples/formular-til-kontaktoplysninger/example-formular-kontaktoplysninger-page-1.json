@@ -64,7 +64,7 @@
         "classes": {
             "input": "input-width-xl"
         },
-        "attributes": { "input": "autocomplete='name'" }
+        "autocomplete": "name"
     },
     "input_gade": {
         "id": "input-gade",
@@ -92,7 +92,7 @@
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
         },
-        "attributes": { "input": "autocomplete='postal-code'" }
+        "autocomplete": "postal-code"
     },
     "input_by": {
         "id": "input-by",
@@ -123,7 +123,7 @@
             "input": "input-width-s"
         },
         "required": false,
-        "attributes": { "input": "autocomplete='tel'" }
+        "autocomplete": "tel"
     },
     "input_email": {
         "id": "input-email",
@@ -133,7 +133,7 @@
         "classes": {
             "input": "input-width-xl"
         },
-        "attributes": { "input": "autocomplete='email'" }
+        "autocomplete": "email"
     },
     "radiobuttons_alder": {
         "id": "radiobuttons-alder",

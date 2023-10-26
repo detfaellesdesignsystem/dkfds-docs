@@ -13,7 +13,7 @@
         "name": "example-name-error",
         "label": "Hvad er dit fulde navn?",
         "errorMessage": "Skriv dit fulde navn, og adskil for- og efternavne med mellemrum, fx Anders Andersen",
-        "attributes": { "input": "autocomplete='name'" }
+        "autocomplete": "name"
     },
     "checkbox_error_example": {
         "id": "checkboxes-error",
