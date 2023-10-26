@@ -24,7 +24,7 @@ tags:
 
 {% include code/syntax.html component="back-to-top" copybutton=true %}
 
-Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-knappen kan linke til. Hvis siden indeholder et <a href="/komponenter/skip-link/">skip-link</a>, bør id'et ligge umiddelbart før dette.
+Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-knappen kan linke til. Hvis siden indeholder et {% include links/component-links.html linktext="skip-link" %}, bør id'et ligge umiddelbart før dette.
 
 Tilbage til toppen-knappen bør altid være det første element i en sides footer.
 

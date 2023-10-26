@@ -1,8 +1,9 @@
 ---
-permalink: /komponenter/inputfelter/
+permalink: "/komponenter/inputfelter/guidelines/"
 redirect_from:
-- /komponenter/felter/
-- /komponenter/tekstfelter/
+- "/komponenter/felter/"
+- "/komponenter/tekstfelter/"
+- "/komponenter/inputfelter/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +11,6 @@ title: Inputfelter
 component: "text-input"
 componentTitle: "Eksempel på inputfelt"
 componentLink: true
-componentCode: "/kode/komponenter/inputfelter/"
 anchor: true
 subnav:
 - text: Hjælpetekst
@@ -100,9 +100,9 @@ Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så b
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
 
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
 
@@ -129,7 +129,7 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsumme
 {:#hjaelpetekst}
 ### Hjælpetekst
 
-{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/kode/komponenter/inputfelter/#hjaelpetekst" %}
+{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/komponenter/inputfelter/implementering/#hjaelpetekst" %}
 
 {% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
 
@@ -167,12 +167,12 @@ Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, frem
 {:#read-only}
 ### Read-only
 
-{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/kode/komponenter/inputfelter/#read-only" %}
+{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/komponenter/inputfelter/implementering/#read-only" %}
 
 {:#deaktiveret}
 ### Deaktiveret
 
-{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/kode/komponenter/inputfelter/#deaktiveret" %}
+{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/komponenter/inputfelter/implementering/#deaktiveret" %}
 
 Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af <a href="#read-only">read-only</a>.
 
@@ -183,7 +183,7 @@ Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive be
 
 Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyldes, eftersom det ikke læses højt af skærmlæsere. Feltets label eller en hjælpetekst kan bruges til også at indikere dette.
 
-{% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/kode/komponenter/inputfelter/#prefix-og-suffix" %}
+{% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/komponenter/inputfelter/implementering/#prefix-og-suffix" %}
 
 {:#karakterbegraensning}
 ### Karakterbegrænsning
@@ -194,12 +194,12 @@ Vis altid antallet af tegn, der er til rådighed i inputfeltet, inden brugeren b
 
 Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.
 
-{% include code/preview-box.html component="text-input-character-limit" link=false title="Eksempel på felt med karakterbegrænsning" code="/kode/komponenter/inputfelter/#karakterbegraensning" %}
+{% include code/preview-box.html component="text-input-character-limit" link=false title="Eksempel på felt med karakterbegrænsning" code="/komponenter/inputfelter/implementering/#karakterbegraensning" %}
 
 {:#feltbredde}
 ### Feltbredde
 
-{% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/kode/komponenter/inputfelter/#feltbredde" %}
+{% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/komponenter/inputfelter/implementering/#feltbredde" %}
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
 

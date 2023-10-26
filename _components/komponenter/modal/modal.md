@@ -1,8 +1,9 @@
 ---
-permalink: "/komponenter/modal/"
+permalink: "/komponenter/modal/guidelines/"
 redirect_from:
 - "/udvidelser/micromodal/"
 - "/kode/plugins/micromodal/"
+- "/komponenter/modal/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +11,6 @@ title: Modal
 component: "modal"
 componentTitle: "Eksempel på modal"
 componentLink: true
-componentCode: "/kode/komponenter/modal/"
 anchor: true
 subnav:
 - text: Modal som kræver handling
@@ -55,7 +55,7 @@ Undgå at have flere åbne modaler på siden - det giver en dårligere brugeropl
 
 Modalen skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/">anbefalinger for knapper</a>.
+Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige {% include links/component-links.html linktext="anbefalinger for knapper" %}.
 
 Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 

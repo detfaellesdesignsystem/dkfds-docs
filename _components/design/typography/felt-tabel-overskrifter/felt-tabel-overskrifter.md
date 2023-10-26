@@ -21,7 +21,7 @@ tags:
 {% include code/preview.html component="labels" %}
 
 {:.nobullet-list}
-- <a href="/kode/komponenter/inputfelter/">Se dokumentationen om inputfelter til udviklere</a>
+- {% include links/component-links.html linktext="Se dokumentationen om inputfelter til udviklere" %}
 
 ### Designværdier
 
@@ -42,7 +42,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 - Feltoverskrifter placeres altid over feltet, som anvist under formularelementer.
 - Alle felter skal have en feltoverskrift.
 
-<a href="/komponenter/inputfelter/">Se eksempel på brug af feltoverskrift (label)</a>
+{% include links/component-links.html linktext="Se eksempel på brug af feltoverskrift (label)" %}
 
 {:#tabeloverskrifter}
 ## Tabeloverskrifter

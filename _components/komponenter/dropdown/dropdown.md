@@ -1,7 +1,7 @@
 ---
-permalink: /komponenter/dropdown/
+permalink: "/komponenter/dropdown/guidelines/"
 redirect_from:
-- /komponenter/drop-down/
+- "/komponenter/drop-down/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +9,6 @@ title: Dropdown
 component: "select"
 componentTitle: "Eksempel på dropdown"
 componentLink: true
-componentCode: "/kode/komponenter/dropdown/"
 anchor: false
 description: Dropdown kan bruges i tilfælde, hvor brugeren skal vælge mellem 7 og 15 værdier på en begrænset plads.
 tags:
@@ -45,9 +44,9 @@ Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så bruge
 {% include dos-donts-box.html component="dropdown-dos-donts" title="Dropdown do's and don'ts" %}
 
 #### Fejlmeddelelse
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 

@@ -120,7 +120,7 @@ Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv
 
 {:#soegning-i-tabeller}
 ### Søgning i tabeller
-Anvend <a href="/kode/komponenter/search/">søgefeltkomponenten</a> sammen med din tabel og tilføj `aria-live="polite"` til `<table>`. 
+Anvend {% include links/component-links.html linktext="søgefeltkomponenten" %} sammen med din tabel og tilføj `aria-live="polite"` til `<table>`. 
 
 Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
 

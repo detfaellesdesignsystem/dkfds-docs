@@ -1,7 +1,8 @@
 ---
-permalink: /komponenter/header/
+permalink: "/komponenter/header/guidelines/"
 redirect_from:
-- /komponenter/headers/
+- "/komponenter/headers/"
+- "/komponenter/header/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +10,6 @@ title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
 previewimage: "header-with-navigation"
 previewimageTitle: "Eksempel på header"
-previewimageCode: "/kode/komponenter/header/"
 anchor: false
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
 tags: 
@@ -30,7 +30,7 @@ En eventuel overordnet navigation (topnavigation) skal også placeres i headeren
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
+Brug ikke topnavigationen som faneblade, anvend da {% include links/component-links.html linktext="faneblade" %}. 
 
 ### Vejledning
 

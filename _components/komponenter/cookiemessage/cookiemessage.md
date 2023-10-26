@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/cookiemeddelelse/"
+permalink: "/komponenter/cookiemeddelelse/guidelines/"
+redirect_from:
+- "/komponenter/cookiemeddelelse/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvend
   formål, skal brugeren vises en cookiemeddelelse.
 previewimage: "cookie-message"
 previewimageTitle: "Eksempel på cookiemeddelelse"
-previewimageCode: "/kode/komponenter/cookiemeddelelse/"
 anchor: false
 description: Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil man
   har taget stilling til brug af cookies.

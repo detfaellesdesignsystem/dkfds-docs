@@ -27,7 +27,7 @@ tags:
 - "footerlink"
 ---
 
-Se også vores <a href="/komponenter/skip-link/">Skip-link</a>, <a href="/komponenter/funktionslink/">Funktionslink</a> og <a href="/komponenter/tilbage-link/">Tilbage link</a>.
+Se også vores {% include links/component-links.html linktext="Skip-link" %}, {% include links/component-links.html linktext="Funktionslink" %} og <a href="/komponenter/tilbage-link/">Tilbage link</a>.
 
 {% include code/preview-box.html component="links" link="false" %}
 
@@ -94,8 +94,8 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 ### Anvendes til
 
-- <a href="/komponenter/funktionslink/">Funktionslink</a>
-- <a href="/komponenter/broedkrumme/">Brødkrumme</a>
+- {% include links/component-links.html linktext="Funktionslink" %}
+- {% include links/component-links.html linktext="Brødkrumme" %}
 - <a href="/komponenter/footer/">Footer</a> links
 
 ### Anvendes ikke til

@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/detaljer/"
+permalink: "/komponenter/detaljer/guidelines/"
 redirect_from:
 - "/komponenter/collapse/"
+- "/komponenter/detaljer/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -12,7 +13,6 @@ lead: Du kan bruge Detalje komponenten til at holde indhold skjult, indtil bruge
 component: "details"
 componentTitle: "Eksempel på skjul og vis af indhold"
 componentLink: true
-componentCode: "/kode/komponenter/detaljer/"
 anchor: false
 description: Skjul og vis yderligere information eller en ekstra funktion relevant
   for brugerens valg.
@@ -34,7 +34,7 @@ Anvendes ikke til indhold, som de fleste brugere behøver at læse såsom sidens
 
 Anvendes ikke til at skjule navigationselementer såsom accordions, faneblade eller flere detaljer.
 
-Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul- og vis-komponenterne med <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
+Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul- og vis-komponenterne med {% include links/component-links.html linktext="radioknap" %} og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
 
 ### Vejledning
 

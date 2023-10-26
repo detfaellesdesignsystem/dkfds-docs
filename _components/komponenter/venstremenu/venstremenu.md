@@ -78,4 +78,4 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 {:#anchorlinks}
 ### Anchorlinks
 
-Fra <a href="/faellesskab/releases/#version-10-0-0">version 10.0.0</a> vises anchorlinks ikke længere i venstremenuen. Se <a href="/komponenter/anchorlinks/">anchorlinks-komponenten</a> for nye retningslinjer.
+Fra <a href="/faellesskab/releases/#version-10-0-0">version 10.0.0</a> vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-links.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.

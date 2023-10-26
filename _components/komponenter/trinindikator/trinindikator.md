@@ -118,6 +118,6 @@ Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte ti
 
 #### Opsummeringsside 
 
-Eventuelle fejl vises på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med henvisning til de specifikke trin som link i fejlopsummeringen. 
+Eventuelle fejl vises på opsummeringssiden i form af {% include links/component-links.html linktext="fejlopsummering" %} med henvisning til de specifikke trin som link i fejlopsummeringen. 
 
 <a href="/eksempler/templates/#formular-med-fejl">Se et eksempel på opsummeringssiden med fejl i trinindikatoren.</a>

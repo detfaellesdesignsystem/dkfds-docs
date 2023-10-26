@@ -42,7 +42,7 @@ Vær konsistent i brugen af tooltips, så brugeren ikke skal gætte sig til, om 
 
 Gør det let at se, hvilket element tooltippet hører til.
 
-Brug altid tooltips til <a href="/komponenter/knapper/#klikbart-ikon">klikbare ikoner</a> uden label.
+Brug altid tooltips til {% include links/component-links.html linktext="klikbare ikoner" %} uden label.
 
 Sørg for at tooltips er tydelige at se og læse.
 

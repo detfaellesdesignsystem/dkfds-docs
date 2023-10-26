@@ -31,7 +31,7 @@ tags:
 - besked
 ---
 
-Til forskel fra <a href="/komponenter/beskeder/">Beskeder (alerts)</a> som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
+Til forskel fra {% include links/component-links.html linktext="Beskeder (alerts)" %} som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
 Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
 
 {:#retningslinjer}
@@ -43,9 +43,9 @@ At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugere
 
 ### Anvendes ikke til
 
-Brug <a href="/komponenter/beskeder/">Beskeder (alerts)</a>, hvis en besked skal placeres som en del af indholdet på siden.
+Brug {% include links/component-links.html linktext="Beskeder (alerts)" %}, hvis en besked skal placeres som en del af indholdet på siden.
 
-Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> i stedet.
+Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da {% include links/component-links.html linktext="fejlmeddelelser" %} i stedet.
 
 Brug modal dialog – ikke toastbeskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 

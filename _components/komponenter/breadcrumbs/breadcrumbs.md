@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/broedkrumme/
+permalink: "/komponenter/broedkrumme/guidelines/"
+redirect_from:
+- "/komponenter/broedkrumme/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder
 component: "breadcrumbs"
 componentTitle: "Eksempel på brødkrumme"
 componentLink: true
-componentCode: "/kode/komponenter/broedkrumme/"
 anchor: false
 description:
 tags:

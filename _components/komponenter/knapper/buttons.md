@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/knapper/"
+permalink: "/komponenter/knapper/guidelines/"
 redirect_from:
 - "/komponenter/buttons/"
+- "/komponenter/knapper/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +10,6 @@ title: Knapper (Buttons)
 component: "button-primary"
 componentTitle: "Eksempel på primærknap"
 componentLink: true
-componentCode: "/kode/komponenter/knapper/"
 anchor: true
 subnav:
 - text: Primærknap
@@ -53,7 +53,7 @@ Brug også sekundære og tertiære knapper til at vægte vigtigheden af andre ti
 
 Undgå for mange knapbaserede funktioner på samme side.
 
-Funktioner af mindre vigtighed bør du style som et <a href="/komponenter/funktionslink/">funktionslink</a>.
+Funktioner af mindre vigtighed bør du style som et {% include links/component-links.html linktext="funktionslink" %}.
 
 Brug stort forbogstav og små bogstaver for resten af teksten på knappen.
 
@@ -123,6 +123,6 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 
 Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med [sorteringsikoner i tabeller](/komponenter/tables/) eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
  
-Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid [funktionslink](/komponenter/funktionslink/) i stedet for klikbare ikoner, når det er muligt.
+Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-links.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
 
 {% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" %}

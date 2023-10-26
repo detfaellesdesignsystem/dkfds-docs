@@ -1,7 +1,8 @@
 ---
-permalink: /komponenter/footer/
+permalink: "/komponenter/footer/guidelines/"
 redirect_from:
-- /komponenter/footers/
+- "/komponenter/footers/"
+- "/komponenter/footer/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +10,6 @@ title: Footer
 lead: Du kan bruge en footer til at guide brugere, som når til sidens bund, videre.
 previewimage: "footer-simple"
 previewimageTitle: "Eksempel på footer"
-previewimageCode: "/kode/komponenter/footer/"
 anchor: true
 subnav:
 - text: Tre kolonner

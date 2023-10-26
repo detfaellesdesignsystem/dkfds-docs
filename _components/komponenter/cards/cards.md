@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/cards/
+permalink: "/komponenter/cards/guidelines/"
+redirect_from:
+- "/komponenter/cards/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -7,7 +9,6 @@ title: Cards
 component: "cards-full-width"
 componentTitle: "Eksempel på card"
 componentLink: true
-componentCode: "/kode/komponenter/cards/"
 anchor: true
 subnav:
 - text: Card med tredjedel bredde

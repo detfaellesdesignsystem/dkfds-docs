@@ -42,7 +42,7 @@ Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget 
 
 Headeren er ens på tværs af trin og undersider i en given selvbetjeningsløsning. Den er således et “ankerpunkt”, som brugeren altid kan vende tilbage til og orientere sig ved.
 
-<a href="/komponenter/header/">Se header-komponenten</a>
+{% include links/component-links.html linktext="Se header-komponenten" %}
 
 En header består af et antal rækker, som vist nedenfor.
 
@@ -148,7 +148,7 @@ I footeren har du også mulighed for at sende brugere videre ved at linke ud af 
 
 Vi anbefaler, at du afslutter din selvbetjeningsløsning med en footer.
 
-Designsystemet giver mulighed for forskellige typer <a href="/komponenter/footer/">footer</a>, som dækker forskellige behov. En footer kan være placeret i en række eller i 4 blokke af 3 kolonner.
+Designsystemet giver mulighed for forskellige typer {% include links/component-links.html linktext="footer" %}, som dækker forskellige behov. En footer kan være placeret i en række eller i 4 blokke af 3 kolonner.
 
 <h3 class="h4">Footer på en række</h3>
 
@@ -163,5 +163,7 @@ Linjen skærer hele skærmens bredde og er af typen "ydre streg". Footeren place
 Under linjen er der 24 px til overskrifter og tekst. Overskrifter og tekst er 16px med linjehøjde 24px. Herunder er der endnu 24px, inden siden slutter.
 
 Footeren indeholder altid ansvarlig myndighed, tilgængelighedserklæring og cookieoplysning. Det er op til den enkelte myndighed at vælge en footer, som passer til den mængde indhold, der er rigtig for den konkrete selvbetjeningsløsning.
+
+{% include links/component-links.html linktext="Se footer komponenten" %}
 
 <a href="/komponenter/footer/">Se footer komponenten</a>

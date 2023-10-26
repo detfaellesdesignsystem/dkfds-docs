@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/fejlopsummering/"
+permalink: "/komponenter/fejlopsummering/guidelines/"
+redirect_from:
+- "/komponenter/fejlopsummering/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der
 component: "error-summary"
 componentTitle: "Eksempel på fejlopsummering"
 componentLink: true
-componentCode: "/kode/komponenter/fejlopsummering/"
 anchor: false
 description: 
 tags: 
@@ -23,7 +24,7 @@ Vis en fejlopsummering når der er fejl i noget af det brugeren har indtastet, o
 
 ### Vejledning
 
-Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.
+Opsummeringen vises øverst på siden/trinnet under headeren, men over sidens/trinnets øverste overskrift. Fejlopsummeringen indeholder alle de {% include links/component-links.html linktext="fejlmeddelelser" %}, der måtte være på siden/trinnet, således at brugeren kan navigere direkte til de fejl og mangler, der skal rettes.
 
 Der skal være links i fejlopsummeringen til de steder på siden, hvor fejlene er. Når der trykkes på et link i opsummeringen, skal fokus flyttes til det felt fejlmeddelelsen knytter sig til.
 
@@ -31,7 +32,7 @@ Sørg for at linkene i fejlopsummeringen er identiske med fejlmeddelelsen de lin
 
 For fejl i et enkeltstående felt, skal du linke direkte til feltet.
 
-Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelterne i <a href="/komponenter/datofelter/">datofelter</a>, skal du linke til det første felt, der indeholder en fejl.
+Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelterne i {% include links/component-links.html linktext="datofelter" %}, skal du linke til det første felt, der indeholder en fejl.
 
 Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det første felt i gruppen af felter.
 

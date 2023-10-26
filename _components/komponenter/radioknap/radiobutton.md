@@ -1,7 +1,8 @@
 ---
-permalink: /komponenter/radioknap/
+permalink: "/komponenter/radioknap/guidelines/"
 redirect_from:
-- /komponenter/radiobutton/
+- "/komponenter/radiobutton/"
+- "/komponenter/radioknap/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +10,6 @@ title: Radioknap (Radio button)
 component: "radiobutton"
 componentTitle: "Eksempel på radioknapper"
 componentLink: true
-componentCode: "/kode/komponenter/radioknap/"
 anchor: true
 subnav:
 - text: Hjælpetekst
@@ -60,9 +60,9 @@ Radioknapper bør altid kræve, at brugeren foretager et valg. I stedet for at l
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
 
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
 

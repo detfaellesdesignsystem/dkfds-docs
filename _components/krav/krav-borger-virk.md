@@ -25,7 +25,7 @@ Kravene til integration som borger.dk og Virk stiller, handler om tilslutningen 
 Brug eller imiter det Fælles Designsystem.
 
 - Løsningen skal tematiseres, så den passer visuelt ind på portalen den skal vises på
-- Der skal være en <a href="/komponenter/header/">header</a>, der er bygget op som anvist i designsystemet
+- Der skal være en {% include links/component-links.html linktext="header" %}, der er bygget op som anvist i designsystemet
 - Du skal anvende/efterligne <a href="/kode/implementering/">stylesheetet</a> som anvist i designsystemet
 - <a href="/komponenter/">Komponenter</a> og <a href="/kode/plugins/">plugins</a> skal være anvendt som anvist i designsystemet
 

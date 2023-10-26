@@ -54,33 +54,33 @@ Typografi_category:
 
 #Left menu for komponent-category
 Komponenter_category:
-  - href: /komponenter/accordions/
-  - href: /komponenter/anchorlinks/
-  - href: /komponenter/badges/
-  - href: /komponenter/beskeder/
-  - href: /komponenter/broedkrumme/
-  - href: /komponenter/cards/
-  - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/datofelter/
-  - href: /komponenter/datovaelger/
-  - href: /komponenter/detaljer/
-  - href: /komponenter/dropdown/
-  - href: /komponenter/faneblade/
-  - href: /komponenter/fejlmeddelelser/
-  - href: /komponenter/fejlopsummering/
-  - href: /komponenter/footer/
-  - href: /komponenter/funktionslink/
-  - href: /komponenter/skip-link/
-  - href: /komponenter/header/
-  - href: /komponenter/inputfelter/
-  - href: /komponenter/knapper/
-  - href: /komponenter/spinner/
-  - href: /komponenter/modal/
-  - href: /komponenter/overflowmenu/
-  - href: /komponenter/paginering/
-  - href: /komponenter/radioknap/
-  - href: /komponenter/sprogvaelger/
-  - href: /komponenter/search/
+  - tabs: 'Accordions'
+  - tabs: 'Anchorlinks'
+  - tabs: 'Badges'
+  - tabs: 'Beskeder'
+  - tabs: 'Broedkrumme'
+  - tabs: 'Cards'
+  - tabs: 'Cookiemessage'
+  - tabs: 'Datofelter'
+  - tabs: 'Datovaelger'
+  - tabs: 'Detaljer'
+  - tabs: 'Dropdown'
+  - tabs: 'Faneblad'
+  - tabs: 'Fejlmeddelelser'
+  - tabs: 'Fejlopsummering'
+  - tabs: 'Footer'
+  - tabs: 'Funktionslink'
+  - tabs: 'Skip-link'
+  - tabs: 'Header'
+  - tabs: 'Inputfelter'
+  - tabs: 'Knapper'
+  - tabs: 'Spinner'
+  - tabs: 'Modal'
+  - tabs: 'Overflowmenu'
+  - tabs: 'Paginering'
+  - tabs: 'Radioknap'
+  - tabs: 'Sprogvaelger'
+  - tabs: 'Search'
   - href: /komponenter/tables/
   - href: /komponenter/tags/
   - href: /komponenter/tekstomraade/
@@ -106,33 +106,6 @@ Kode_category:
 
 #Left menu for komponent-category
 Kode_Komponenter_category:
-  - href: /kode/komponenter/accordions/
-  - href: /kode/komponenter/anchorlinks/
-  - href: /kode/komponenter/badges/
-  - href: /kode/komponenter/beskeder/
-  - href: /kode/komponenter/broedkrumme/
-  - href: /kode/komponenter/cards/
-  - href: /kode/komponenter/cookiemeddelelse/
-  - href: /kode/komponenter/datofelter/
-  - href: /kode/komponenter/datovaelger/
-  - href: /kode/komponenter/detaljer/
-  - href: /kode/komponenter/dropdown/
-  - href: /kode/komponenter/faneblade/
-  - href: /kode/komponenter/fejlmeddelelser/
-  - href: /kode/komponenter/fejlopsummering/
-  - href: /kode/komponenter/footer/
-  - href: /kode/komponenter/funktionslink/
-  - href: /kode/komponenter/skip-link/
-  - href: /kode/komponenter/header/
-  - href: /kode/komponenter/inputfelter/
-  - href: /kode/komponenter/knapper/
-  - href: /kode/komponenter/spinner/
-  - href: /kode/komponenter/modal/
-  - href: /kode/komponenter/overflowmenu/
-  - href: /kode/komponenter/paginering/
-  - href: /kode/komponenter/radioknap/
-  - href: /kode/komponenter/sprogvaelger/
-  - href: /kode/komponenter/search/
   - href: /kode/komponenter/tables/
   - href: /kode/komponenter/tags/
   - href: /kode/komponenter/tekstomraade/
@@ -238,4 +211,166 @@ Grids:
 - href: /design/grid/guidelines/
   tabName: *retningslinjer
 - href: /design/grid/implementering/
+  tabName: *implementering
+
+Accordions:
+- href: /komponenter/accordions/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/accordions/implementering/
+  tabName: *implementering
+
+Anchorlinks:
+- href: /komponenter/anchorlinks/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/anchorlinks/implementering/
+  tabName: *implementering
+
+Badges:
+- href: /komponenter/badges/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/badges/implementering/
+  tabName: *implementering
+
+Beskeder:
+- href: /komponenter/beskeder/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/beskeder/implementering/
+  tabName: *implementering
+
+Broedkrumme:
+- href: /komponenter/broedkrumme/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/broedkrumme/implementering/
+  tabName: *implementering
+  
+Cards:
+- href: /komponenter/cards/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/cards/implementering/
+  tabName: *implementering
+
+Cookiemessage:
+- href: /komponenter/cookiemeddelelse/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/cookiemeddelelse/implementering/
+  tabName: *implementering
+
+Datofelter:
+- href: /komponenter/datofelter/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/datofelter/implementering/
+  tabName: *implementering
+
+Datovaelger:
+- href: /komponenter/datovaelger/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/datovaelger/implementering/
+  tabName: *implementering
+
+Detaljer:
+- href: /komponenter/detaljer/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/detaljer/implementering/
+  tabName: *implementering
+
+Dropdown:
+- href: /komponenter/dropdown/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/dropdown/implementering/
+  tabName: *implementering
+
+Faneblad:
+- href: /komponenter/faneblade/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/faneblade/implementering/
+  tabName: *implementering
+
+Fejlmeddelelser:
+- href: /komponenter/fejlmeddelelser/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/fejlmeddelelser/implementering/
+  tabName: *implementering
+
+Fejlopsummering:
+- href: /komponenter/fejlopsummering/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/fejlopsummering/implementering/
+  tabName: *implementering
+
+Footer:
+- href: /komponenter/footer/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/footer/implementering/
+  tabName: *implementering
+
+Funktionslink:
+- href: /komponenter/funktionslink/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/funktionslink/implementering/
+  tabName: *implementering
+
+Skip-link:
+- href: /komponenter/skip-link/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/skip-link/implementering/
+  tabName: *implementering
+
+Header:
+- href: /komponenter/header/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/header/implementering/
+  tabName: *implementering
+
+Inputfelter:
+- href: /komponenter/inputfelter/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/inputfelter/implementering/
+  tabName: *implementering
+
+Knapper:
+- href: /komponenter/knapper/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/knapper/implementering/
+  tabName: *implementering
+
+Spinner:
+- href: /komponenter/spinner/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/spinner/implementering/
+  tabName: *implementering
+
+Modal:
+- href: /komponenter/modal/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/modal/implementering/
+  tabName: *implementering
+
+Overflowmenu:
+- href: /komponenter/overflowmenu/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/overflowmenu/implementering/
+  tabName: *implementering
+
+Paginering:
+- href: /komponenter/paginering/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/paginering/implementering/
+  tabName: *implementering
+
+Radioknap:
+- href: /komponenter/radioknap/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/radioknap/implementering/
+  tabName: *implementering
+
+Sprogvaelger:
+- href: /komponenter/sprogvaelger/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/sprogvaelger/implementering/
+  tabName: *implementering
+
+Search:
+- href: /komponenter/search/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/search/implementering/
   tabName: *implementering

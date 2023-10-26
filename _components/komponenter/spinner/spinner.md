@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/spinner/
+permalink: "/komponenter/spinner/guidelines/"
+redirect_from:
+- "/komponenter/spinner/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at ind
 component: "spinner"
 componentTitle: "Eksempel på spinner komponent"
 componentLink: true
-componentCode: "/kode/komponenter/spinner/"
 anchor: false
 description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 tags:

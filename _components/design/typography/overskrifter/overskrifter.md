@@ -65,7 +65,7 @@ Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit in
 
 ### Hvornår skal du overveje anden formatering end overskrifter?
 
-Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx <a href="/komponenter/beskeder/">beskeder til information</a>, {% include links/internal-links.html linktext="fremhæv særlige punkter med punktopstilling" %} eller anvend {% include links/internal-links.html linktext="stor tekst" %} til at markere udvalgte dele af teksten.
+Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx {% include links/component-links.html linktext="beskeder til information" %}, {% include links/internal-links.html linktext="fremhæv særlige punkter med punktopstilling" %} eller anvend {% include links/internal-links.html linktext="stor tekst" %} til at markere udvalgte dele af teksten.
 
 ### Hvis du vil vide mere
 

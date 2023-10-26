@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/paginering/
+permalink: "/komponenter/paginering/guidelines/"
+redirect_from:
+- "/komponenter/paginering/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opd
 component: "pagination"
 componentTitle: "Eksempel på paginering"
 componentLink: true
-componentCode: "/kode/komponenter/paginering/"
 anchor: true
 subnav:
 - text: Eksempler på paginering

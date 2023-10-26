@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/badges/"
+permalink: "/komponenter/badges/guidelines/"
+redirect_from:
+- "/komponenter/badges/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +11,6 @@ lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
 component: "badges"
 componentTitle: "Eksempel på badges"
 componentLink: true
-componentCode: "/kode/komponenter/badges/"
 anchor: true
 subnav:
 - text: Statusbadges

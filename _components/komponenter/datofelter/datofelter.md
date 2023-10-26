@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/datofelter/"
+permalink: "/komponenter/datofelter/guidelines/"
 redirect_from:
-- /komponenter/dato-felt/
+- "/komponenter/dato-felt/"
+- "/komponenter/datofelter/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +11,6 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
 component: "date-input"
 componentTitle: "Eksempel på datofelter"
 componentLink: true
-componentCode: "/kode/komponenter/datofelter/"
 anchor: false
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
@@ -33,15 +33,15 @@ Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, det vi
 
 Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
-Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en <a href="/komponenter/datovaelger/">datovælger</a> (date picker) funktion.
+Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en {% include links/component-links.html linktext="datovælger" %} (date picker) funktion.
 
 {% include dos-donts-box.html component="date-dos-donts" title="Datofelter do's and don'ts" %}
 
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 

@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/accordions/"
+permalink: "/komponenter/accordions/guidelines/"
+redirect_from:
+- "/komponenter/accordions/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +12,6 @@ lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise
 component: "accordion"
 componentTitle: "Eksempel på accordion"
 componentLink: true
-componentCode: "/kode/komponenter/accordions/"
 anchor: true
 subnav:
 - text: Åbn/luk alle
@@ -54,9 +55,9 @@ Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere s
 {:#med-fejl}
 #### Fejlmeddelelse
 
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
 

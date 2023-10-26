@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/anchorlinks/"
+permalink: "/komponenter/anchorlinks/guidelines/"
+redirect_from:
+- "/komponenter/anchorlinks/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Anchorlinks linker til bestemte steder på samme side. De vises på den en
 component: "anchorlinks"
 componentTitle: "Eksempel på anchorlinks"
 componentLink: true
-componentCode: "/kode/komponenter/anchorlinks/"
 anchor: false
 description: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchettekst.
 tags:
@@ -49,7 +50,7 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 - {% include links/internal-links.html linktext="Farver" %}
 - {% include links/internal-links.html linktext="Overskrifter" %}
 - <a href="/komponenter/tables/">Tabeller</a>
-- <a href="/kode/komponenter/accordions/">Accordions</a>
+- {% include links/component-links.html linktext="Accordions" %}
 
 #### Referencer
 <a href="https://www.nngroup.com/articles/in-page-links/" class="icon-link" target="_blank">Amy Schade: Anchors OK? Re-Assessing In-Page Links (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

@@ -24,12 +24,12 @@ Sagerne kan være:
 
 ## Nye komponenter
 
-{% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/#prefix-og-suffix" %}
-{% include roadmap.html title="Karakterbegrænsning på inputfelt/tekstområde" status="Gennemført" link="/komponenter/inputfelter/#karakterbegraensning" %}
-{% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/#kraever-handling" %}
+{% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/guidelines/#prefix-og-suffix" %}
+{% include roadmap.html title="Karakterbegrænsning på inputfelt/tekstområde" status="Gennemført" link="/komponenter/inputfelter/guidelines/#karakterbegraensning" %}
+{% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/guidelines/#kraever-handling" %}
 {% include roadmap.html title="Multiselect dropdown" status="I gang" %}
 {% include roadmap.html title="Notifikationsprik" status="I gang" %}
-{% include roadmap.html title="Paginering" status="Gennemført" link="/komponenter/paginering/"%}
+{% include roadmap.html title="Paginering" status="Gennemført" link="/komponenter/paginering/guidelines/" %}
 {% include roadmap.html title="Processindikator" status="Foreslået" %}
 {% include roadmap.html title="Redigering af felter i tabeller" status="Foreslået" %}
 {% include roadmap.html title="Retningslinjer for validering" status="I gang" %}

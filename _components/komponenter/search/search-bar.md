@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/search/
+permalink: "/komponenter/search/guidelines/"
+redirect_from:
+- "/komponenter/search/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold 
 component: "search"
 componentTitle: "Eksempel på søgefelt"
 componentLink: true
-componentCode: "/kode/komponenter/search/"
 anchor: false
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:

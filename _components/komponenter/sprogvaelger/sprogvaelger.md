@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/sprogvaelger/"
+permalink: "/komponenter/sprogvaelger/guidelines/"
 redirect_from:
 - "/komponenter/sprogvaegler/"
+- "/komponenter/sprogvaelger/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +11,6 @@ lead: En sprogvælger bruges hvis løsningen udbydes på mere end et sprog. Den 
   brugeren mulighed for at vælge et andet sprog end løsningens standardsprog.
 previewimage: "language-switcher"
 previewimageTitle: "Eksempel på sprogvælger"
-previewimageCode: "/kode/komponenter/sprogvaelger/"
 anchor: true
 subnav:
 - text: Sprogvælger med tooltip

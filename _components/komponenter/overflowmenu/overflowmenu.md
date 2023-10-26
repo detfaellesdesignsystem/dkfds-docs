@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/overflowmenu/
+permalink: "/komponenter/overflowmenu/guidelines/"
+redirect_from:
+- "/komponenter/overflowmenu/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
 component: "overflow-menu"
 componentTitle: "Eksempel på overflow menu"
 componentLink: true
-componentCode: "/kode/komponenter/overflowmenu/"
 anchor: true
 subnav:
 - text: Sortering
@@ -54,7 +55,7 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 
 <p class="font-lead">Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.</p>
 
-{% include code/preview-box.html component="sort" title="Eksempel på sorteringsfunktion med overflow menu" link=true code="/kode/komponenter/overflowmenu/#sortering" %}
+{% include code/preview-box.html component="sort" title="Eksempel på sorteringsfunktion med overflow menu" link=true code="/komponenter/overflowmenu/implementering/#sortering" %}
 
 ### Anvendes til
 

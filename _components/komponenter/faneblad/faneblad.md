@@ -1,8 +1,9 @@
 ---
-permalink: "/komponenter/faneblade/"
+permalink: "/komponenter/faneblade/guidelines/"
 redirect_from:
 - "/komponenter/tabnav/"
 - "/komponenter/faneblad/"
+- "/komponenter/faneblade/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -13,7 +14,6 @@ lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektio
 component: "tabnav"
 componentTitle: "Eksempel på faneblade"
 componentLink: true
-componentCode: "/kode/komponenter/faneblade/"
 anchor: false
 description: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen.
