@@ -95,15 +95,15 @@ tags:
 - 9.0.0
 - 9.0.1
 - 9.0.2
-- 9.0.3
+- 9.1.0
 - 10
 - 10.0.0
 anchor: true
 subnav:
 - text: Version 10.0.0
   href: "#version-10-0-0"
-- text: Version 9.0.3
-  href: "#version-9-0-3"
+- text: Version 9.1.0
+  href: "#version-9-1-0"
 - text: Version 9.0.2
   href: "#version-9-0-2"
 - text: Version 9.0.1
@@ -163,15 +163,20 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
 - Rettet ikonet "file-upload", der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.
 
-{:#version-9-0-3 .mb-0}
-## Version 9.0.3
+{:#version-9-1-0 .mb-0}
+## Version 9.1.0
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
 - Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
-- Øget tekststørrelsen på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>.
 - Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
 - Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
+- Rettet fejl, hvor visse typer af `id` kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+- Tilføjet ny side til dokumentationen kaldet <a href="/faellesskab/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/design/designressourcer/">Designressourcer</a>, <a href="/design/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.
+- Tilføjet `inline` til <a href="/kode/utilities/#display">hjælpeklasser for display</a>.
+- Tilføjet `autocomplete`-attributter til flere eksempler samt tilføjet afsnit om `autocomplete` til <a href="/kode/komponenter/inputfelter/">inputfelter</a>.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2

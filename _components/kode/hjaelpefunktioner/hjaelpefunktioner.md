@@ -131,6 +131,7 @@ Format: `d-{display}` og `d-{breakpoint}-{display}`
 <h3 class="h5 mb-0">Display</h3>
 
 - `none`
+- `inline`
 - `inline-block`
 - `block`
 - `flex`

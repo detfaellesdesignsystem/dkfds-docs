@@ -1,0 +1,11 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+{{
+    textinput({
+        "id": "postnr",
+        "name": "postnr",
+        "label": "Postnummer",
+        "classes": { "input": "input-char-4" },
+        "attributes": { "input": "autocomplete='postal-code'" }
+    })
+}}

@@ -81,7 +81,8 @@
         "classes": {
             "formgroup": "mb-6",
             "input": "input-width-s"
-        }
+        },
+        "attributes": { "input": "autocomplete='tel'" }
     },
     "input_navn": {
         "id": "input-navn",

@@ -63,7 +63,8 @@
         "label": "Navn",
         "classes": {
             "input": "input-width-xl"
-        }
+        },
+        "attributes": { "input": "autocomplete='name'" }
     },
     "input_gade": {
         "id": "input-gade",
@@ -90,7 +91,8 @@
         "classes": {
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
-        }
+        },
+        "attributes": { "input": "autocomplete='postal-code'" }
     },
     "input_by": {
         "id": "input-by",
@@ -120,7 +122,8 @@
         "classes": {
             "input": "input-width-s"
         },
-        "required": false
+        "required": false,
+        "attributes": { "input": "autocomplete='tel'" }
     },
     "input_email": {
         "id": "input-email",
@@ -129,7 +132,8 @@
         "type": "email",
         "classes": {
             "input": "input-width-xl"
-        }
+        },
+        "attributes": { "input": "autocomplete='email'" }
     },
     "radiobuttons_alder": {
         "id": "radiobuttons-alder",

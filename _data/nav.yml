@@ -32,7 +32,7 @@ Design_category:
 - href: /design/layout/
   categorynav: 'Layout_category'
 - href: /design/designressourcer/
-- href: /design/designtjek/
+- href: /design/tjekliste/
 
 Datavisualisering_category:
   - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
@@ -173,6 +173,7 @@ Faellesskab_category:
 - href: /faellesskab/kontakt-support/
 - href: /faellesskab/roadmap/
 - href: /faellesskab/releases/
+- href: /faellesskab/faq/
 
 Eksempelloesninger_category:
 - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/
