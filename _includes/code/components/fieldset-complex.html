@@ -5,28 +5,28 @@
         <label class="form-label" for="fnavn-complex">Fornavn</label>
 
         <input type="text" id="fnavn-complex" name="fnavn-complex" class="form-input" required
-            autocomplete='given-name'>
+            autocomplete="given-name">
     </div>
 
     <div class="form-group">
         <label class="form-label" for="enavn-complex">Efternavn</label>
 
         <input type="text" id="enavn-complex" name="enavn-complex" class="form-input" required
-            autocomplete='family-name'>
+            autocomplete="family-name">
     </div>
 
     <div class="form-group">
         <label class="form-label" for="email-complex">E-mailadresse</label>
 
         <input type="email" id="email-complex" name="email-complex" class="form-input"
-            required autocomplete='email'>
+            required autocomplete="email">
     </div>
 
     <div class="form-group">
         <label class="form-label" for="telefon-complex">Telefonnummer</label>
 
         <input type="tel" id="telefon-complex" name="telefon-complex"
-            class="form-input input-width-s" required autocomplete='tel'>
+            class="form-input input-width-s" required autocomplete="tel">
     </div>
 
     <div class="form-group">
@@ -110,11 +110,11 @@
                                 for="date-input-birthday-day">Dag</label>
 
                             <input type="tel" id="date-input-birthday-day"
-                                class="form-input js-calendar-day-input" required data-min="1"
-                                data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
+                                class="form-input js-calendar-day-input" required
+                                autocomplete="bday-day" data-min="1" data-max="31"
+                                maxlength="2" pattern="^[0-9]{0,2}$"
                                 data-input-regex="^[0-9]{0,2}$"
-                                title="Indtast dag på måneden som tal"
-                                autocomplete="bday-day">
+                                title="Indtast dag på måneden som tal">
                         </div>
 
                         <div class="form-group form-group-month">
@@ -123,9 +123,10 @@
 
                             <input type="tel" id="date-input-birthday-month"
                                 class="form-input js-calendar-month-input" required
-                                data-min="1" data-max="12" maxlength="2"
-                                pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$"
-                                title="Indtast månedens nummer" autocomplete="bday-month">
+                                autocomplete="bday-month" data-min="1" data-max="12"
+                                maxlength="2" pattern="^[0-9]{0,2}$"
+                                data-input-regex="^[0-9]{0,2}$"
+                                title="Indtast månedens nummer">
                         </div>
 
                         <div class="form-group form-group-year">
@@ -134,9 +135,9 @@
 
                             <input type="tel" id="date-input-birthday-year"
                                 class="form-input js-calendar-year-input" required
-                                data-min="1900" data-max="3000" maxlength="4"
-                                pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$"
-                                title="Indtast årstal" autocomplete="bday-year">
+                                autocomplete="bday-year" data-min="1900" data-max="3000"
+                                maxlength="4" pattern="^[0-9]{0,4}$"
+                                data-input-regex="^[0-9]{0,4}$" title="Indtast årstal">
                         </div>
 
                     </div>

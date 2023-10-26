@@ -74,7 +74,7 @@
             "input": "input-width-xl"
         },
         "value": "Anders Andersen",
-        "attributes": { "input": "autocomplete='name'" }
+        "autocomplete": "name"
     },
     "input_gade": {
         "id": "input-gade",
@@ -105,7 +105,7 @@
             "input": "input-width-xs"
         },
         "value": "2300",
-        "attributes": { "input": "autocomplete='postal-code'" }
+        "autocomplete": "postal-code"
     },
     "input_by": {
         "id": "input-by",
@@ -137,7 +137,7 @@
             "input": "input-width-s"
         },
         "required": false,
-        "attributes": { "input": "autocomplete='tel'" }
+        "autocomplete": "tel"
     },
     "input_email": {
         "id": "input-email",
@@ -148,7 +148,7 @@
             "input": "input-width-xl"
         },
         "errorMessage": "Angiv din e-mail fx eksempel@mail.dk",
-        "attributes": { "input": "autocomplete='email'" }
+        "autocomplete": "email"
     },
     "radiobuttons_alder": {
         "id": "radiobuttons-alder",
