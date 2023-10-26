@@ -18,8 +18,8 @@
 ================================================== -->
   
 
-<title>Test-accordions-4 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-accordions-4 | Det Fælles Designsystem">
+<title>Test-accordion-open-close-button | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-accordion-open-close-button | Det Fælles Designsystem">
 
 
 
@@ -253,72 +253,127 @@
     <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <p>Fejl og varianter</p>
 
-            <ul class="accordion">
-                <li>
-                    <h3>
-                        <button class="accordion-button accordion-error " aria-expanded="false" aria-describedby="myID1-error" aria-controls="myID1">
-                            Accordion one
-                            <span class="accordion-icon">
-                                <span class="icon_text">Fejl</span>
-                                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
-                            </span>
-                        </button>
-                    </h3>
-                    <div id="myID1" aria-hidden="true" class="accordion-content">
-                        <div class="alert alert-error" role="alert" id="myID1-error">
-                            <div class="alert-body">
-                                <p class="alert-text">Der er opstået en fejl</p>
-                            </div>
+            <div>
+                <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn
+                    alle</button>
+                <ul class="accordion">
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="true" aria-controls="group-open1">
+                                Foldet ud
+                            </button>
+                        </h3>
+                        <div id="group-open1" aria-hidden="false" class="accordion-content">
+                            <p>This is some accordion content.</p>
                         </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="true" aria-controls="group-open2">
+                                Foldet ud
+                            </button>
+                        </h3>
+                        <div id="group-open2" aria-hidden="false" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="true" aria-controls="group-open3">
+                                Foldet ud
+                            </button>
+                        </h3>
+                        <div id="group-open3" aria-hidden="false" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-                        <p>This is some accordion content.</p>
-                    </div>
-                </li>
-                <li>
-                    <h3>
-                        <button class="accordion-button" aria-expanded="false" aria-controls="myID2">
-                            Accordion two
-                            <span class="accordion-icon">
-                                <span class="icon_text">Succes</span>
-                                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg>
-                            </span>
-                        </button>
-                    </h3>
-                    <div id="myID2" aria-hidden="true" class="accordion-content">
-                        <p>This is some accordion content.</p>
-                    </div>
-                </li>
-                <li>
-                    <h3>
-                        <button class="accordion-button" aria-expanded="false" aria-controls="myID3">
-                            Accordion three
-                            <span class="accordion-icon">
-                                <span class="icon_text">Advarsel</span>
-                                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#report-problem"></use></svg>
-                            </span>
-                        </button>
-                    </h3>
-                    <div id="myID3" aria-hidden="true" class="accordion-content">
-                        <p>This is some accordion content.</p>
-                    </div>
-                </li>
-                <li>
-                    <h3>
-                        <button class="accordion-button" aria-expanded="false" aria-controls="myID4">
-                            Accordion four
-                            <span class="accordion-icon">
-                                <span class="icon_text">Information</span>
-                                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>
-                            </span>
-                        </button>
-                    </h3>
-                    <div id="myID4" aria-hidden="true" class="accordion-content">
-                        <p>This is some accordion content.</p>
-                    </div>
-                </li>
-            </ul>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div>
+                <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn
+                    alle</button>
+                <ul class="accordion">
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="group-closed1">
+                                Foldet sammen
+                            </button>
+                        </h3>
+                        <div id="group-closed1" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="group-closed2">
+                                Foldet sammen
+                            </button>
+                        </h3>
+                        <div id="group-closed2" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="group-closed3">
+                                Foldet sammen
+                            </button>
+                        </h3>
+                        <div id="group-closed3" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div>
+                <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn
+                    alle</button>
+                <ul class="accordion">
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="group-mixed1">
+                                Foldet sammen
+                            </button>
+                        </h3>
+                        <div id="group-mixed1" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="true" aria-controls="group-mixed2">
+                                Foldet ud
+                            </button>
+                        </h3>
+                        <div id="group-mixed2" aria-hidden="false" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="group-mixed3">
+                                Foldet sammen
+                            </button>
+                        </h3>
+                        <div id="group-mixed3" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </div>
@@ -333,10 +388,10 @@
             
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-accordions-3/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-accordion-variants/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-accordions-5/">Næste</a>
+                <a class="function-link" href="/eksempel/test-accordion-long-text/">Næste</a>
                 
             </div>
         </div>

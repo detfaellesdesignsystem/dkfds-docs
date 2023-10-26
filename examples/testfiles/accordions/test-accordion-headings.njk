@@ -1,0 +1,115 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "headingLevel": "h1",
+                    "id": "accordionH1", 
+                    "items": [
+                        {
+                            "title": "Overskrift: h1",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "headingLevel": "h2",
+                    "id": "accordionH2", 
+                    "items": [
+                        {
+                            "title": "Overskrift: h2",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "headingLevel": "h3",
+                    "id": "accordionH3", 
+                    "items": [
+                        {
+                            "title": "Overskrift: h3",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "headingLevel": "h4",
+                    "id": "accordionH4", 
+                    "items": [
+                        {
+                            "title": "Overskrift: h4",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "headingLevel": "h5",
+                    "id": "accordionH5", 
+                    "items": [
+                        {
+                            "title": "Overskrift: h5",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "headingLevel": "h6",
+                    "id": "accordionH6", 
+                    "items": [
+                        {
+                            "title": "Overskrift: h6",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionDefault", 
+                    "items": [
+                        {
+                            "title": "Overskrift: default (h3)",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

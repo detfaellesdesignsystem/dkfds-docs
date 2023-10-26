@@ -28,11 +28,10 @@ var activeBuild = buildAll;
 
 var testfiles = [
     "test-icons-svg-and-class",
-    "test-accordions-1",
-    "test-accordions-2",
-    "test-accordions-3",
-    "test-accordions-4",
-    "test-accordions-5",
+    "test-accordion-headings",
+    "test-accordion-variants",
+    "test-accordion-open-close-button",
+    "test-accordion-long-text",
     "test-alerts-1",
     "test-alerts-2",
     "test-alerts-3",
