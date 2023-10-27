@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/tilbage-til-top/
+permalink: "/komponenter/tilbage-til-top/guidelines/"
+redirect_from:
+- "/komponenter/tilbage-til-top/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af
 component: "back-to-top"
 componentTitle: "Eksempel på tilbage til toppen"
 componentLink: true
-componentCode: "/kode/komponenter/tilbage-til-top/"
 anchor: false
 description: Lad brugeren navigere tilbage til toppen.
 tags:
@@ -34,7 +35,7 @@ Anvendes ikke som navigationsknap eller på anden vis til andet end at sende bru
 
 Tilbage til toppen-knappen placeres nederst til højre på siden. Knappen er "sticky", således at den altid er placeret det samme sted.
 
-På sider, der ikke har <a href="/komponenter/trinindikator/">trinindikator</a> eller <a href="/komponenter/venstremenu/">venstremenu</a>, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
+På sider, der ikke har {% include links/component-links.html linktext="trinindikator" %} eller {% include links/component-links.html linktext="venstremenu" %}, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
 
 På sider med trinindikator eller venstremenu vises knappen, når sidste element i venstre side (af trinindikatoren eller venstremenuen) er ude af syne for brugeren eller hvis brugeren har scrollet 2 skærmsiders længde.
 
@@ -46,7 +47,7 @@ Det anbefales at lave en scroll-animation til toppen, når der klikkes på knapp
 
 På mobil anvendes knappen uden tekst for at spare plads på skærmen. 
 
-{% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" code="/kode/komponenter/tilbage-til-top/" %}
+{% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" code="/komponenter/tilbage-til-top/implementering/" %}
 
 {:#eksempelloesninger}
 #### Se komponenten i eksempelløsninger

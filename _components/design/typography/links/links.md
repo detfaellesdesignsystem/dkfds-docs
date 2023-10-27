@@ -27,7 +27,7 @@ tags:
 - "footerlink"
 ---
 
-Se også vores {% include links/component-links.html linktext="Skip-link" %}, {% include links/component-links.html linktext="Funktionslink" %} og <a href="/komponenter/tilbage-link/">Tilbage link</a>.
+Se også vores {% include links/component-links.html linktext="Skip-link" %}, {% include links/component-links.html linktext="Funktionslink" %} og {% include links/component-links.html linktext="Tilbage link" %}.
 
 {% include code/preview-box.html component="links" link="false" %}
 

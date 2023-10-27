@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/venstremenu/"
+permalink: "/komponenter/venstremenu/guidelines/"
 redirect_from:
 - "/komponenter/sidenav/"
+- "/komponenter/venstremenu/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -11,7 +12,6 @@ lead: Venstremenu giver brugerne overblik over struktur og indhold, så de kan f
 component: "sidenav-normal-level1"
 componentTitle: "Eksempel på venstremenu med ét niveau"
 componentLink: true
-componentCode: "/kode/komponenter/venstremenu/"
 anchor: true
 subnav:
 - text: 2 niveauer

@@ -50,7 +50,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 {% include code/preview.html component="labels-table" %}
 
 {:.nobullet-list}
-- <a href="/kode/komponenter/tables/">Se dokumentationen om tabeller til udviklere</a>
+- {% include links/component-links.html linktext="Se dokumentationen om tabeller til udviklere" %}
 
 ### Designværdier
 
@@ -66,4 +66,4 @@ Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at s
 
 Tabeloverskrifter beskriver, hvad indholdet i en række eller kolonne angiver.
 
-<a href="/komponenter/tables/">Se eksempel på brug af tabeloverskrift (th)</a>
+{% include links/component-links.html linktext="Se eksempel på brug af tabeloverskrift (th)" %}

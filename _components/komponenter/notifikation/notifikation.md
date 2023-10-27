@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/toastbesked/"
+permalink: "/komponenter/toastbesked/guidelines/"
 redirect_from:
-- /komponenter/notifikation/
+- "/komponenter/notifikation/"
+- "/komponenter/toastbesked/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +11,6 @@ lead: Toastbeskeder bruges til at give brugeren vigtig og aktuel information om 
 component: "toastbesked"
 componentTitle: "Eksempel på toastbesked"
 componentLink: true
-componentCode: "/kode/komponenter/toastbesked/"
 anchor: true
 subnav:
 - text: Succes
@@ -22,7 +22,7 @@ subnav:
 - text: Information
   href: "#information"
 - text: Uden brødtekst
-  href: "#uden-brødtekst"
+  href: "#uden-broedtekst"
 description: 
 tags:
 - toast
@@ -89,7 +89,7 @@ Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist 
 
 {% include code/preview-box.html component="toastbesked-info" title="Eksempel på notifikation med infofarver" %}
 
-{:#uden-brødtekst}
+{:#uden-broedtekst}
 ### Uden brødtekst
 
 {% include code/preview-box.html component="toastbesked-onlyheading" title="Eksempel på notifikation uden brødtekst" %}

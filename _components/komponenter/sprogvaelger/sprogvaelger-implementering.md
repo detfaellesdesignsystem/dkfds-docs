@@ -51,4 +51,4 @@ Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal 
 
 {% include code/syntax.html component="language-switcher-tooltip" link=true copybutton=true %}
 
-<a href="/kode/komponenter/tooltip/">For mere info om implementering se tooltip komponenten</a>
+{% include links/component-links.html linktext="For mere info om implementering se tooltip komponenten" %}

@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/tags/"
+permalink: "/komponenter/tags/guidelines/"
+redirect_from:
+- "/komponenter/tags/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +12,6 @@ lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation o
 component: "tags"
 componentTitle: "Eksempel på tags"
 componentLink: true
-componentCode: "/kode/komponenter/tags/"
 anchor: true
 subnav:
 - text: Tags med luk-ikon

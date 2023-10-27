@@ -33,15 +33,15 @@ Sagerne kan være:
 {% include roadmap.html title="Processindikator" status="Foreslået" %}
 {% include roadmap.html title="Redigering af felter i tabeller" status="Foreslået" %}
 {% include roadmap.html title="Retningslinjer for validering" status="I gang" %}
-{% include roadmap.html title="Sortering i tabeller" status="Gennemført" link="/komponenter/tables/#sortering-i-tabeller" %}
-{% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/tables/#strukturerede-lister" %}
+{% include roadmap.html title="Sortering i tabeller" status="Gennemført" link="/komponenter/tables/guidelines/#sortering-i-tabeller" %}
+{% include roadmap.html title="Strukturerede lister" status="Gennemført" link="/komponenter/tables/guidelines/#strukturerede-lister" %}
 {% include roadmap.html title="Søgefelt med autoudfyldelse" status="Foreslået" %}
-{% include roadmap.html title="Søgning i tabeller" status="Gennemført" link="/komponenter/tables/#søgning-i-tabeller" %}
-{% include roadmap.html title="Tilbage til toppen" status="Gennemført" link="/komponenter/tilbage-til-top/" %}
+{% include roadmap.html title="Søgning i tabeller" status="Gennemført" link="/komponenter/tables/guidelines/#søgning-i-tabeller" %}
+{% include roadmap.html title="Tilbage til toppen" status="Gennemført" link="/komponenter/tilbage-til-top/guidelines/" %}
 {% include roadmap.html title="Tiles" status="Annulleret" %}
-{% include roadmap.html title="Toggle switch" status="Gennemført" link="/komponenter/toggle/" %}
-{% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/#med-fejl" %}
-{% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/#valgbare-rækker" %}
+{% include roadmap.html title="Toggle switch" status="Gennemført" link="/komponenter/toggle/guidelines/" %}
+{% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/guidelines/#med-fejl" %}
+{% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/guidelines/#valgbare-rækker" %}
 
 ## Eksempelløsninger
 

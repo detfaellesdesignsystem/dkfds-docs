@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/fil-upload/
+permalink: "/komponenter/fil-upload/guidelines/"
+redirect_from:
+- "/komponenter/fil-upload/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -7,7 +9,6 @@ title: Vedhæft fil
 component: "file-input"
 componentTitle: "Eksempel på vedhæft fil"
 componentLink: true
-componentCode: "/kode/komponenter/fil-upload/"
 anchor: false
 description: "Brug fil upload til at lade brugeren vælge en fil fra sin egen computer, tablet eller mobil."
 tags:

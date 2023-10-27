@@ -49,7 +49,7 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 {:.nobullet-list}
 - {% include links/internal-links.html linktext="Farver" %}
 - {% include links/internal-links.html linktext="Overskrifter" %}
-- <a href="/komponenter/tables/">Tabeller</a>
+- {% include links/component-links.html linktext="Tabeller" %}
 - {% include links/component-links.html linktext="Accordions" %}
 
 #### Referencer

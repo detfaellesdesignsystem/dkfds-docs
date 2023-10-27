@@ -73,11 +73,17 @@
 {%- elsif include.linktext == "Facit streger" -%}
 <a href="/design/borders/#streger">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Se dokumentationen for implementering af ikoner" or include.linktext == "afsnittet om ikoner" -%}
+{%- elsif include.linktext == "Se dokumentationen for implementering af ikoner" or include.linktext == "afsnittet om ikoner" or include.linktext == "ikonet" or include.linktext == "ikoner" or include.linktext == "Ikontaksonomi" -%}
 <a href="/design/ikoner/guidelines/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Se flere betydninger i ikontaksonomien" or include.linktext == "ikontaksonomien" -%}
 <a href="/design/ikoner/guidelines/#betydning">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "slet ikonet" -%}
+<a href="/design/ikoner/guidelines/?s=slet">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "ikoner til sortering i tabel" -%}
+<a href="/design/ikoner/guidelines/?s=sorter">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "tilgængelighed i forbindelse med grafik og visualisering" or include.linktext == "tilgængelighed i forbindelse med grafik og visualisering" or include.linktext == "tilgængelighed der gælder for grafik og visualisering" -%}
 <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">{{ include.linktext }}</a>

@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/tjekboks/
+permalink: "/komponenter/tjekboks/guidelines/"
+redirect_from:
+- "/komponenter/tjekboks/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -7,7 +9,6 @@ title: Tjekboks (Checkbox)
 component: "checkbox-large"
 componentTitle: "Eksempel på tjekbokse"
 componentLink: true
-componentCode: "/kode/komponenter/tjekboks/"
 anchor: true
 subnav:
 - text: Lille tjekboks

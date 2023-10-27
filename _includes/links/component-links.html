@@ -178,8 +178,89 @@
 {%- elsif include.linktext == "Sprogvælger" or include.linktext == "sprogvælgeren" -%}
 <a href="/komponenter/sprogvaelger/guidelines/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "tjekbokse" -%}
-<a href="/komponenter/tjekboks/">{{ include.linktext }}</a>
+{%- elsif include.linktext == "Se eksempel på brug af tabeloverskrift (th)" or include.linktext == "Tabeller" or include.linktext == "tabeller" or include.linktext == "sorteringsikoner i tabeller" -%}
+<a href="/komponenter/tables/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tabeller med valgbare rækker" or include.linktext == "Valgbare rækker i tabel" -%}
+<a href="/komponenter/tables/guidelines/#valgbare-raekker">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "strukturerede lister" or include.linktext == "Strukturerede lister" -%}
+<a href="/komponenter/tables/guidelines/#strukturerede-lister">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "søgning i tabeller" -%}
+<a href="/komponenter/tables/guidelines/#soegning-i-tabeller">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "sortering i tabeller" -%}
+<a href="/komponenter/tables/guidelines/#sortering-i-tabeller">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "en responsiv tabel" -%}
+<a href="/komponenter/tables/guidelines/#responsiv">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "avancerede tabeller" -%}
+<a href="/komponenter/tables/guidelines/#avancerede-tabeller">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Se dokumentationen om tabeller til udviklere" -%}
+<a href="/komponenter/tables/implementering/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "variant" -%}
+<a href="/komponenter/tables/implementering/#varianter">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "responsive klasser" or include.linktext == "responsiv tabel" or include.linktext == "responsiv" -%}
+<a href="/komponenter/tables/implementering/#responsiv">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "horisontalt scroll" -%}
+<a href="/komponenter/tables/implementering/#horisontalt-scroll">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tekstområder" -%}
+<a href="/komponenter/tekstomraade/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Tilbage link" or include.linktext == "tilbage-link" -%}
+<a href="/komponenter/tilbage-link/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tilbage til toppen" or include.linktext == "Tilbage til toppen" -%}
+<a href="/komponenter/tilbage-til-top/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tilbage til toppen-knappen" -%}
+<a href="/komponenter/tilbage-til-top/implementering/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tjekbokse" or include.linktext == "store tjekbokse" -%}
+<a href="/komponenter/tjekboks/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tjekboks" or include.linktext == "tjekboks med collapse funktion" -%}
+<a href="/komponenter/tjekboks/guidelines/#skjult-indhold-collapse">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Toastbeskeders" or include.linktext == "toastbeskeders" or include.linktext == "toastbesked" or include.linktext == "Notifikation (Toast) komponent" -%}
+<a href="/komponenter/toastbesked/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "toastbeskeder" -%}
+<a href="/komponenter/toastbesked/implementering/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Toggle switch komponent" -%}
+<a href="/komponenter/toggle/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "tooltip" or include.linktext == "tooltip komponenten" -%}
+<a href="/komponenter/tooltip/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "For mere info om implementering se tooltip komponenten" -%}
+<a href="/komponenter/tooltip/implementering/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "trinindikator" -%}
+<a href="/komponenter/trinindikator/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "fejl i et trin" -%}
+<a href="/komponenter/trinindikator/guidelines/#med-fejl">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "responsive trinindikatorers" or include.linktext == "responsiv trinindikator" -%}
+<a href="/komponenter/trinindikator/guidelines/#responsiv">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "trinindikator med ekstra information" -%}
+<a href="/komponenter/trinindikator/guidelines/#ekstra-information">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "venstremenuen" or include.linktext == "Venstremenu" or include.linktext == "venstremenu" or include.linktext == "Tilpasset alignment på venstremenu" or include.linktext == "Venstremenuen" or include.linktext == "venstremenu-komponenten" -%}
+<a href="/komponenter/venstremenu/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "venstremenu med ekstra information" -%}
+<a href="/komponenter/venstremenu/guidelines/#ekstra-information">{{ include.linktext }}</a>
 
 {%- else -%}
 {{ include.linktext }}

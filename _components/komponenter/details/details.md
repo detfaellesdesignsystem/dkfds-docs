@@ -34,7 +34,7 @@ Anvendes ikke til indhold, som de fleste brugere behøver at læse såsom sidens
 
 Anvendes ikke til at skjule navigationselementer såsom accordions, faneblade eller flere detaljer.
 
-Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul- og vis-komponenterne med {% include links/component-links.html linktext="radioknap" %} og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
+Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul- og vis-komponenterne med {% include links/component-links.html linktext="radioknap" %} og {% include links/component-links.html linktext="tjekboks" %}.
 
 ### Vejledning
 

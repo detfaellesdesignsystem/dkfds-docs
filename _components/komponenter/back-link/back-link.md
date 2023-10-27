@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/tilbage-link/
+permalink: "/komponenter/tilbage-link/guidelines/"
+redirect_from:
+- "/komponenter/tilbage-link/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin 
 component: "back-link"
 componentTitle: "Eksempel på tilbage-link"
 componentLink: true
-componentCode: "/kode/komponenter/tilbage-link/"
 anchor: false
 description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 tags:

@@ -1,7 +1,8 @@
 ---
-permalink: "/komponenter/trinindikator/"
+permalink: "/komponenter/trinindikator/guidelines/"
 redirect_from:
-- /komponenter/trinindikatorer/
+- "/komponenter/trinindikatorer/"
+- "/komponenter/trinindikator/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -10,7 +11,6 @@ lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsn
 component: "tringuide-overflowmenu"
 componentTitle: "Eksempel på trinindikator i overflow menu"
 componentLink: true
-componentCode: "/kode/komponenter/trinindikator/"
 anchor: true
 subnav:
 - text: Alle trin synlige

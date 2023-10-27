@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/tooltip/"
+permalink: "/komponenter/tooltip/guidelines/"
+redirect_from:
+- "/komponenter/tooltip/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,7 +10,6 @@ lead: Et tooltip kommer frem, når musen er over det element tooltippet henviser
 component: "tooltip-icon"
 componentTitle: "Eksempel på ikon med tooltip"
 componentLink: true
-componentCode: "/kode/komponenter/tooltip/"
 anchor: true
 subnav:
 - text: Klikbart ikon med tooltip

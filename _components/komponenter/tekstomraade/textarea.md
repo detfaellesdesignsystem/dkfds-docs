@@ -1,7 +1,8 @@
 ---
-permalink: /komponenter/tekstomraade/
+permalink: "/komponenter/tekstomraade/guidelines/"
 redirect_from:
-- /komponenter/textarea/
+- "/komponenter/textarea/"
+- "/komponenter/tekstomraade/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,7 +10,6 @@ title: Tekstområde (Textarea)
 component: "text-area"
 componentTitle: "Eksempel på tekstområde"
 componentLink: true
-componentCode: "/kode/komponenter/tekstomraade/"
 anchor: true
 subnav:
 - text: Karakterbegrænsning
@@ -81,4 +81,4 @@ Vis altid antallet af tegn, der er til rådighed i tekstområdet, inden brugeren
 
 Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.
 
-{% include code/preview-box.html component="text-area-character-limit" link=false title="Eksempel på tekstområde med karakterbegrænsning" code="/kode/komponenter/tekstomraade/" %}
+{% include code/preview-box.html component="text-area-character-limit" link=false title="Eksempel på tekstområde med karakterbegrænsning" code="/komponenter/tekstomraade/implementering/" %}

@@ -151,10 +151,10 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) {% include links/component-links.html linktext="radioknapper" %} og {% include links/component-links.html linktext="tjekbokse" %}. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> og tjekbokse skal opdateres.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) {% include links/component-links.html linktext="radioknapper" %} og {% include links/component-links.html linktext="tjekbokse" %}. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for {% include links/component-links.html linktext="tabeller med valgbare rækker" %} og tjekbokse skal opdateres.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret `devDependencies` og `scripts` i {% include links/external-links.html linktext="package.json" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt {% include links/internal-links.html linktext="browserunderstøttelse" %}).
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-links.html linktext="Anchorlinks" %} er fjernet fra <a href="/komponenter/venstremenu/">venstremenuen</a> og har i stedet fået sin egen komponent.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-links.html linktext="Anchorlinks" %} er fjernet fra {% include links/component-links.html linktext="venstremenuen" %} og har i stedet fået sin egen komponent.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Headerens række 4 og række 5 er fjernet, mens de øvrige rækker i headeren har fået opdateret design og forbedret tilgængelighed. Se flere detaljer på {% include links/component-links.html linktext="headerkomponentens side" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu, så de viser `aria-label` for `nav`-elementet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet {% include links/external-links.html linktext="@import" %} i alle SASS-filer med {% include links/external-links.html linktext="@use" %} og {% include links/external-links.html linktext="@forward" %}. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet. Anvender man udelukkende de færdiggenererede CSS-filer, kan man se bort fra dette punkt.
@@ -210,25 +210,25 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret inputfeltet, så datovælgeren accepterer flere måder at indtaste en dato på (uafhængigt af det valgte datoformat).
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-links.html linktext="Venstremenu" %} og {% include links/component-links.html linktext="trinindikator" %}</h3>
 </div>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor lange tekster blev ombrudt forkert (ændringen påvirker både venstremenu og trinindikator).
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er <a href="/komponenter/trinindikator/#med-fejl">fejl i et trin</a> i trinindikatoren.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er {% include links/component-links.html linktext="fejl i et trin" %} i trinindikatoren.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a> og <a href="/komponenter/tables/#strukturerede-lister">strukturerede lister</a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-links.html linktext="Tabeller" %} og {% include links/component-links.html linktext="strukturerede lister" %}</h3>
 </div>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `table--lines`, der var en forældet <a href="/kode/komponenter/tables/#varianter">variant</a>.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `table--lines`, der var en forældet {% include links/component-links.html linktext="variant" %}.
 - Rettet fejl relateret til margin og padding for tabeller.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `aria-label` fra `label`-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret teksten på søgeknappen ved {% include links/component-links.html linktext="søgning i tabeller" %}.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæserbeskederne til tjekboksene i {% include links/component-links.html linktext="tabeller med valgbare rækker" %} er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `aria-label` fra `label`-elementet for tjekbokse i {% include links/component-links.html linktext="tabeller med valgbare rækker" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/eksempler/templates/#opsummering">opsummeringssiderne</a> i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret `DKFDS.init()`, så kun tabeller markeret med <a href="/kode/komponenter/tables/#responsiv">responsive klasser</a> får indsat attributten `data-title`.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> <strong><a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a> er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret `DKFDS.init()`, så kun tabeller markeret med {% include links/component-links.html linktext="responsive klasser" %} får indsat attributten `data-title`.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> <strong>{% include links/component-links.html linktext="Strukturerede lister" %} er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-links.html linktext="Header" %}</h3>
@@ -250,18 +250,19 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.
 - Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML'en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller `<strong>`-element: {% include links/component-links.html linktext="Badges" %}, <a href="/kode/komponenter/beskeder/">beskeder</a>, {% include links/component-links.html linktext="cookiemeddelelser" %}, <a href="/kode/komponenter/footer/">footer</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML'en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller `<strong>`-element: {% include links/component-links.html linktext="Badges" %}, <a href="/kode/komponenter/beskeder/">beskeder</a>, {% include links/component-links.html linktext="cookiemeddelelser" %}, <a href="/kode/komponenter/footer/">footer</a> og {% include links/component-links.html linktext="toastbeskeder" %}.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> {% include links/component-links.html linktext="Toastbeskeders" %} aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret {% include links/component-links.html linktext="accordions" %}, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret {% include links/component-links.html linktext="fejlbeskeder i accordions" %}, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af {% include links/component-links.html linktext="tilbage til toppen" %}-knappen ikke blev læst korrekt op af skærmlæsere.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten `aria-selected` på {% include links/component-links.html linktext="sortering" %} er ændret til `aria-current` og flyttet fra `li`-elementet til `button`-elementet.
 - Rettet fejl, hvor {% include links/component-links.html linktext="søgefelter" %} blev grå i stedet for hvide på iPhones.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> {% include links/component-links.html linktext="Radioknapper" %} og <a href="/komponenter/tjekboks/">tjekbokse</a> er omskrevet, så de ikke længere indeholder listeelementerne `li` og `ul`.
-- Mindsket afstanden mellem label og hjælpetekst ved {% include links/component-links.html linktext="store radioknapper" %} og <a href="/komponenter/tjekboks/">store tjekbokse</a>.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> {% include links/component-links.html linktext="Radioknapper" %} og 
+{% include links/component-links.html linktext="tjekbokse" %} er omskrevet, så de ikke længere indeholder listeelementerne `li` og `ul`.
+- Mindsket afstanden mellem label og hjælpetekst ved {% include links/component-links.html linktext="store radioknapper" %} og {% include links/component-links.html linktext="store tjekbokse" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for {% include links/component-links.html linktext="karakterbegrænsning" %} og <a href="/kode/komponenter/accordions/">accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/kode/komponenter/datovaelger/">datovælgeren</a>, hvor dokumentationen er præciseret.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for {% include links/component-links.html linktext="karakterbegrænsning" %}. Funktionen `init` samt sprogskifte er uændrede.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/">ikonet</a> `delete`. Brug i stedet ikonet `trash-can`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet {% include links/internal-links.html linktext="ikonet" %} `delete`. Brug i stedet ikonet `trash-can`.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-links.html linktext="Klikbare ikoner" %} med klassen `button-unstyled` fylder ikke længere hele skærmbredden på mindre skærme og HTML'en er opdateret for alle eksempler.
 - Rettet fejl, hvor deaktiverede {% include links/component-links.html linktext="tertiærknapper" %} skiftede farve på hover.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes. 
@@ -283,29 +284,27 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, {% include links/component-links.html linktext="karakterbegrænsning" %} og <a href="/kode/komponenter/datovaelger/">datovælger</a>.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for {% include links/component-links.html linktext="toastbeskeder" %}, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.
-- Tilføjet `cursor:pointer` til <a href="/komponenter/toastbesked/">toastbeskeders</a> luk-knap.
+- Tilføjet `cursor:pointer` til {% include links/component-links.html linktext="toastbeskeders" %} luk-knap.
 - Opdateret {% include links/component-links.html linktext="dropdown" %}-komponentens background-image, så det sættes ved hjælp af ikonet `expand-more`.
-- Ændret stylingen på <a href="/komponenter/trinindikator/#responsiv">responsive trinindikatorers</a> top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.
-- Rettet en mindre fejl, hvor <a href="/komponenter/tooltip/">tooltip</a>-pilen kunne pege væk fra elementet.
+- Ændret stylingen på {% include links/component-links.html linktext="responsive trinindikatorers" %} top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.
+- Rettet en mindre fejl, hvor {% include links/component-links.html linktext="tooltip" %}-pilen kunne pege væk fra elementet.
 
 {:#version-8-1-0 .mb-0}
 ## Version 8.1.0
 
 <div><span class="small-text mt-0 d-block">28-09-2022</span></div>
 
-- <strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a>
-- <strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent: {% include links/component-links.html linktext="Tilbage til toppen" %}
+- <strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og {% include links/component-links.html linktext="tekstområder" %} 
 - Tilføjet manglende padding i venstre side af overflow-menupunkter i {% include links/component-links.html linktext="headerens" %} række 3
 - Rettet fejl hvor {% include links/component-links.html linktext="skip-links" %} ikke blev vist, når der var zoomet ca. 400% ind i browseren
 - Fjernet text-transform:uppercase på {% include links/internal-links.html linktext="subheading" %}, der ved en fejl var blevet genintroduceret efter version 7.5.3
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Negativ letter-spacing er fjernet fra al tekst - vær opmærksom på, at brødtekster og titler kan fylde mere end tidligere
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Begge knapper i {% include links/component-links.html linktext="cookiemeddelelse" %} har nu typen {% include links/component-links.html linktext="sekundærknapper" %}
 - Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af (valgfri) properties
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningsløsninger</a> og <a href="/eksempler/templates/">templates</a> er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, 'sidenavigation' er omdøbt til '<a href="/komponenter/venstremenu/">venstremenu</a>', 'felter' er omdøbt til '{% include links/component-links.html linktext="inputfelter" %}', 'notifikation' er omdøbt til '<a href="/komponenter/toastbesked/">toastbesked</a>', 'skip-link' er omdøbt til '{% include links/component-links.html linktext="gå til sidens indhold" %}' og 'spinner' er omdøbt til '{% include links/component-links.html linktext="loading spinner" %}'. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.
-
-
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningsløsninger</a> og <a href="/eksempler/templates/">templates</a> er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, 'sidenavigation' er omdøbt til '{% include links/component-links.html linktext="venstremenu" %}', 'felter' er omdøbt til '{% include links/component-links.html linktext="inputfelter" %}', 'notifikation' er omdøbt til '{% include links/component-links.html linktext="toastbesked" %}', 'skip-link' er omdøbt til '{% include links/component-links.html linktext="gå til sidens indhold" %}' og 'spinner' er omdøbt til '{% include links/component-links.html linktext="loading spinner" %}'. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.
 
 {:#version-8-0-1 .mb-0}
 ## Version 8.0.1
@@ -314,7 +313,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Rettet aria-labels i {% include links/component-links.html linktext="datovælgerens" %} tilbage/frem-knapper.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link" target="_blank">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Tilføjet `chevron-double-left` og `chevron-double-right` til <a href="/design/ikoner/">ikoner</a>, der manglede efter version 8.0.0.
+- Tilføjet `chevron-double-left` og `chevron-double-right` til {% include links/internal-links.html linktext="ikoner" %}, der manglede efter version 8.0.0.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.
 - Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
@@ -326,12 +325,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
 - Ny komponent: {% include links/component-links.html linktext="Paginering" %}
-- Ny komponent: <a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a>
-- Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/">trinindikator</a>
-- Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og {% include links/component-links.html linktext="radioknap med skjult indhold" %}
+- Ny komponent: {% include links/component-links.html linktext="Strukturerede lister" %}
+- Taget højde for alignment af lange trinnavne i {% include links/component-links.html linktext="trinindikator" %}
+- Tilpasset afstande ved {% include links/component-links.html linktext="tjekboks" %} og {% include links/component-links.html linktext="radioknap med skjult indhold" %}
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til {% include links/component-links.html linktext="fejlopsummeringskomponenten" %} så links sætter korrekt fokus i felter i Safari.
 - <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/design/ikoner/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret {% include links/internal-links.html linktext="slet ikonet" %}, da det gamle ikon ikke fungerede i brugertest.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye {% include links/internal-links.html linktext="datavisualiseringsfarver" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS {% include links/internal-links.html linktext="farver" %}
 - Erstattet brug af / ved division i scss med math.div
@@ -339,13 +338,13 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på {% include links/component-links.html linktext="detaljekomponenten" %}, da FDS ikke længere understøtter Internet Explorer
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for {% include links/component-links.html linktext="radioknap med skjult indhold" %}
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle <a href="/design/ikoner/">ikoner</a>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle {% include links/internal-links.html linktext="ikoner" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet {% include links/component-links.html linktext="JavaScript til luk knap i beskeder" %}
 - Tilføjet <a href="/komponenter/modal/#kraever-handling">modal</a> som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold. 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ved luk af {% include links/component-links.html linktext="modal" %} sættes fokus på element, som åbnede modalen
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Luk modal, hvis en ny {% include links/component-links.html linktext="modal" %} åbnes.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Forbedret {% include links/component-links.html linktext="headeren" %} på mobil.
-- Vis <a href="/komponenter/tjekboks/">tjekbokse</a> og {% include links/component-links.html linktext="radioknapper" %} ved print.
+- Vis {% include links/component-links.html linktext="tjekbokse" %} og {% include links/component-links.html linktext="radioknapper" %} ved print.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.
 - Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i {% include links/component-links.html linktext="datovælgeren" %}.
 - Opdateret breakpoints i {% include links/component-links.html linktext="knapper" %}, så knapperne ikke er helt så brede på mindre skærme.
@@ -357,9 +356,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fjernet styling på {% include links/component-links.html linktext="badges" %}, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.
 - Grå baggrundsfarve på {% include links/component-links.html linktext="dropdown" %} i Firefox er ændret til hvid.
 - {% include links/component-links.html linktext="Header komponent" %}: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.
-- Lille fejl i border på <a href="/komponenter/tables/">tabeller</a> er fikset.
+- Lille fejl i border på {% include links/component-links.html linktext="tabeller" %} er fikset.
 - Bredde på {% include links/component-links.html linktext="overflow menu" %} ændret til at fylde hele skærmens bredde på små skærme.
-- Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
+- Ændringer i opførelse af {% include links/component-links.html linktext="tooltip" %}, for at sikre teksten kan markeres.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet og ændret SASS variabler for bedre vedligehold og tematisering.
 - Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.
@@ -392,16 +391,16 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
-- <a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a>
+- {% include links/component-links.html linktext="Valgbare rækker i tabel" %}
 - {% include links/component-links.html linktext="Prefix og suffix på felter" %}
 - Småtilpasninger i designet på {% include links/component-links.html linktext="modaler" %}
 - Opdateret design på {% include links/component-links.html linktext="datovælger" %}
 - Tilføjet 72px i bunden af <a href="/komponenter/footer/">footer</a>
-- Tilføjet styling og retningslinjer for <a href="/komponenter/tables/#sortering-i-tabeller">sortering i tabeller</a>
-- Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/#søgning-i-tabeller">søgning i tabeller</a>
+- Tilføjet styling og retningslinjer for {% include links/component-links.html linktext="sortering i tabeller" %}
+- Tilføjet eksempel og retningslinjer på {% include links/component-links.html linktext="søgning i tabeller" %}
 - Tilføjet en tykkere border i bunden af {% include links/component-links.html linktext="knapper" %}
 - Opdateret {% include links/component-links.html linktext="retningslinjer for obligatoriske og frivillige felter" %}
-- Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a>
+- Tilføjet {% include links/internal-links.html linktext="ikoner til sortering i tabel" %}
 - Tilføjet variant til {% include links/component-links.html linktext="overflow menu til brug ved sortering" %}
 - Ændret ikon i {% include links/component-links.html linktext="detalje komponent" %}
 
@@ -410,9 +409,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">02-06-2021</span></div>
 
-- Ændringer i <a href="/komponenter/tooltip/">tooltip komponenten</a> - der er tilføjet delay og pil på tooltip
+- Ændringer i {% include links/component-links.html linktext="tooltip komponenten" %} - der er tilføjet delay og pil på tooltip
 - Links får nu automatisk sort farve i {% include links/component-links.html linktext="beskeder" %}
-- Ny komponent: <a href="/komponenter/toggle/">Toggle switch komponent</a>
+- Ny komponent: {% include links/component-links.html linktext="Toggle switch komponent" %}
 - Tilføjet status tekst i forbindelse med {% include links/component-links.html linktext="spinner komponenten" %}
 
 {:#version-7-3-0 .mb-0}
@@ -420,8 +419,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
-- <a href="/design/ikoner/">Ikontaksonomi</a>
-- Ny komponent: <a href="/komponenter/toastbesked/">Notifikation (Toast) komponent</a>
+- {% include links/internal-links.html linktext="Ikontaksonomi" %}
+- Ny komponent: {% include links/component-links.html linktext="Notifikation (Toast) komponent" %}
 - Fjernet unødvendige kald til fontfiler
 - Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer
 - Generel oprydning i dependencies
@@ -429,7 +428,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Håndtering af situation: Escape funktion på {% include links/component-links.html linktext="overflow menu" %} og {% include links/component-links.html linktext="modaler" %} kolliderer og lukker begge, når en overflow er inde i en modal
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - {% include links/internal-links.html linktext="Facit streger" %}
-- Udvidelse af breakpoint for <a href="/kode/komponenter/tables/#responsiv">responsiv tabel</a>
+- Udvidelse af breakpoint for {% include links/component-links.html linktext="responsiv tabel" %}
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
 {:#version-7-2-0 .mb-0}
@@ -460,7 +459,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Fikset fejl i Internet Explorer, hvor {% include links/component-links.html linktext="feltbredde i tekstfelter" %} er defineret ved antal karakterer bliver ignoreret.
 - Luk {% include links/component-links.html linktext="overflow menu" %} i {% include links/component-links.html linktext="header" %} ved klik uden for menuen.
-- Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/">trinindikator</a> for bedre tilgængelighed
+- Tilføjet ARIA attributter i {% include links/component-links.html linktext="trinindikator" %} for bedre tilgængelighed
 
 {:#version-7-1-0 .mb-0}
 ## Version 7.1.0
@@ -474,7 +473,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret fonten IBM Plex Sans til version 5.0.0
 <span class="form-hint mt-0">Hvis man preloader fonten - hvilket anbefales - så bør man tjekke om stien til fonten skal ændres, da mappestrukturen under fonts er ændret i dkfds</span>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter på <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter på {% include links/component-links.html linktext="tjekboks med collapse funktion" %}, så HTML nu er valid.
 - Tilføjet ny {% include links/component-links.html linktext="modal komponent" %}
 - Fikset fejl med fokus i header i Firefox
 - Tilføjet maks. bredde på tooltip
@@ -499,7 +498,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Mulighed for en mere kompakt {% include links/component-links.html linktext="header" %} med brug af en {% include links/component-links.html linktext="lille knap" %}
 - Linjehøjden for {% include links/internal-links.html linktext="lille brødtekst" %} er ændret til 20px
 - Tilføjet dokumentation og eksempler på {% include links/component-links.html linktext="fejlmeddelelser" %} og {% include links/component-links.html linktext="fejlopsummeringer" %}.
-- <a href="/komponenter/venstremenu/">Tilpasset alignment på venstremenu</a>
+- {% include links/component-links.html linktext="Tilpasset alignment på venstremenu" %}
 
 {:#version-6-0-1 .mb-0}
 ## Version 6.0.1
@@ -524,24 +523,22 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet mulighed for styling af {% include links/internal-links.html linktext="links i overskrifter" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/" title="Læs mere om faneblade">Faneblade</a> er ændret i HTML og JavaScript.
-- Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a>
-- Tilføjet retningslinjer for {% include links/component-links.html linktext="funktionslink" %}, <a href="/komponenter/tilbage-link/">tilbage-link</a> og {% include links/component-links.html linktext="cookiemeddelelse" %}.
+- Ændret aktive farve på undermenupunkt i {% include links/component-links.html linktext="venstremenu" %}
+- Tilføjet retningslinjer for {% include links/component-links.html linktext="funktionslink" %}, {% include links/component-links.html linktext="tilbage-link" %} og {% include links/component-links.html linktext="cookiemeddelelse" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/venstremenu/" title="Se koden til venstremenuen">venstremenuen</a>, <a href="/kode/komponenter/header/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.
-- Fikset fejl på <a href="/komponenter/trinindikator/#responsiv">responsiv trinindikator</a>.
+- Fikset fejl på {% include links/component-links.html linktext="responsiv trinindikator" %}.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-
-{% include links/component-links.html linktext="mobilmenu og headermenuen" %}
 
 {:#version-5-3-0 .mb-0}
 ## Version 5.3.0
 
 <div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
-- <a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.
+- {% include links/component-links.html linktext="Tilbage link" %} har fået større linje højde.
 - Mere padding i toppen af {% include links/component-links.html linktext="navbar indeholdende funktionslink og overflow menu i header" %}.
 - Ændret udseende af {% include links/component-links.html linktext="cookiemeddelelse komponenten" %}.
 - {% include links/internal-links.html linktext="Lister" %} har fået nyt udtryk.
-- Ændret farve og tykkelse på aktivt menupunkt i {% include links/component-links.html linktext="header" %} samt <a href="/komponenter/venstremenu/">venstremenuen</a>.
+- Ændret farve og tykkelse på aktivt menupunkt i {% include links/component-links.html linktext="header" %} samt {% include links/component-links.html linktext="venstremenuen" %}.
 - Tilføjet mulighed for {% include links/component-links.html linktext="hjælpetekst på radioknap" %}.
 - Tilpasset fokusramme om {% include links/component-links.html linktext="funktions link" %}.
 - Tilpasset retningslinjer for {% include links/component-links.html linktext="Skjul/vis med radioknapper" %}.
@@ -557,7 +554,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Teksten i {% include links/component-links.html linktext="cards med samme højde" %} placeres nu korrekt
 - Tilføjet mere afstand mellem links i footer
 - Overskriftstørrelser på mobil er blevet opdateret
-- Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/#ekstra-information">trinindikator med ekstra information</a>
+- Tilpasset farve på informationstekst på komponenterne {% include links/component-links.html linktext="venstremenu med ekstra information" %} og {% include links/component-links.html linktext="trinindikator med ekstra information" %}
 - Tilføjet eksempel på tabel i Datatable
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
 - Opdateret <a href="/kode/eksempler-implementering/">Eksempel på implementering i Angular</a>
@@ -568,8 +565,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">12-11-2019</span></div>
 
 - {% include links/component-links.html linktext="Cookiemeddelelse komponent" %} er tilføjet i kernen.
-- <a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
-<span class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for {% include links/component-links.html linktext="Tilbage knap" %}.</span>
+- {% include links/component-links.html linktext="Tilbage link" %} er tilføjet i kernen.
+<span class="form-hint mt-0">Bemærk, at {% include links/component-links.html linktext="Tilbage link" %} anbefales frem for {% include links/component-links.html linktext="Tilbage knap" %}.</span>
 - Fokuskant tilføjet på #main-content ved fokus fra {% include links/component-links.html linktext="Skip link" %}.
 - {% include links/component-links.html linktext="Statusbadges" %} er tilføjet i kernen.
 - Fejl i overflow menu brugt i header fikset.
@@ -588,15 +585,15 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/venstremenu/">Venstremenuen</a> har fået nyt design.
-<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/venstremenu/">venstremenu-komponenten</a>.</span>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-links.html linktext="Venstremenuen" %} har fået nyt design.
+<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under {% include links/component-links.html linktext="venstremenu-komponenten" %}.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-links.html linktext="Faneblade" %} er blevet redefineret.
 <span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under {% include links/component-links.html linktext="faneblade" %}.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Modal-komponenten er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
-- Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
+- Ny og simpel {% include links/component-links.html linktext="tooltip komponenten" %} er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
 - Information om <a href="/krav/">krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk. 
 - Tabellerne følger nu {% include links/internal-links.html linktext="8point grid" %}

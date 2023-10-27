@@ -81,43 +81,26 @@ Komponenter_category:
   - tabs: 'Radioknap'
   - tabs: 'Sprogvaelger'
   - tabs: 'Search'
-  - href: /komponenter/tables/
-  - href: /komponenter/tags/
-  - href: /komponenter/tekstomraade/
-  - href: /komponenter/tilbage-link/
-  - href: /komponenter/tilbage-til-top/
-  - href: /komponenter/tjekboks/
-  - href: /komponenter/toastbesked/
-  - href: /komponenter/toggle/
-  - href: /komponenter/tooltip/
-  - href: /komponenter/trinindikator/
-  - href: /komponenter/fil-upload/
-  - href: /komponenter/venstremenu/
+  - tabs: 'Tabeller'
+  - tabs: 'Tags'
+  - tabs: 'Tekstomraade'
+  - tabs: 'Tilbage-link'
+  - tabs: 'Tilbage-til-top'
+  - tabs: 'Tjekboks'
+  - tabs: 'Toastbesked'
+  - tabs: 'Toggle'
+  - tabs: 'Tooltip'
+  - tabs: 'Trinindikator'
+  - tabs: 'Fil-upload'
+  - tabs: 'Venstremenu'
 
 Kode_category:
 - href: /kode/implementering/
-- href: /kode/komponenter/
-  categorynav: 'Kode_Komponenter_category'
 - href: /kode/browserunderstoettelse/
 - href: /kode/utilities/
 - href: /kode/eksempler-implementering/
 - href: /kode/print/
 - href: /kode/plugins/
-
-#Left menu for komponent-category
-Kode_Komponenter_category:
-  - href: /kode/komponenter/tables/
-  - href: /kode/komponenter/tags/
-  - href: /kode/komponenter/tekstomraade/
-  - href: /kode/komponenter/tilbage-link/
-  - href: /kode/komponenter/tilbage-til-top/
-  - href: /kode/komponenter/tjekboks/
-  - href: /kode/komponenter/toastbesked/
-  - href: /kode/komponenter/toggle/
-  - href: /kode/komponenter/tooltip/
-  - href: /kode/komponenter/trinindikator/
-  - href: /kode/komponenter/fil-upload/
-  - href: /kode/komponenter/venstremenu/
 
 Eksempler_category:
 - href: /eksempler/selvbetjeningsloesninger/
@@ -373,4 +356,76 @@ Search:
 - href: /komponenter/search/guidelines/
   tabName: *retningslinjer
 - href: /komponenter/search/implementering/
+  tabName: *implementering
+
+Tabeller:
+- href: /komponenter/tables/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tables/implementering/
+  tabName: *implementering
+
+Tags:
+- href: /komponenter/tags/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tags/implementering/
+  tabName: *implementering
+
+Tekstomraade:
+- href: /komponenter/tekstomraade/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tekstomraade/implementering/
+  tabName: *implementering
+
+Tilbage-link:
+- href: /komponenter/tilbage-link/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tilbage-link/implementering/
+  tabName: *implementering
+
+Tilbage-til-top:
+- href: /komponenter/tilbage-til-top/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tilbage-til-top/implementering/
+  tabName: *implementering
+
+Tjekboks:
+- href: /komponenter/tjekboks/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tjekboks/implementering/
+  tabName: *implementering
+
+Toastbesked:
+- href: /komponenter/toastbesked/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/toastbesked/implementering/
+  tabName: *implementering
+
+Toggle:
+- href: /komponenter/toggle/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/toggle/implementering/
+  tabName: *implementering
+
+Tooltip:
+- href: /komponenter/tooltip/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/tooltip/implementering/
+  tabName: *implementering
+
+Trinindikator:
+- href: /komponenter/trinindikator/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/trinindikator/implementering/
+  tabName: *implementering
+
+Fil-upload:
+- href: /komponenter/fil-upload/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/fil-upload/implementering/
+  tabName: *implementering
+
+Venstremenu:
+- href: /komponenter/venstremenu/guidelines/
+  tabName: *retningslinjer
+- href: /komponenter/venstremenu/implementering/
   tabName: *implementering
