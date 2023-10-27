@@ -162,6 +162,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere har flere SASS-variable gjort det simpelt at ændre grundlæggende dele af designsystemets design og layout. Dette gjaldt også dele, det ikke var tiltænkt, at man skulle ændre. Flere SASS-variable er derfor blevet slettet, flyttet eller erstattet. De variable, som stadig anvendes, kan findes i mappen <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/stylesheets">variables</a>. Anvender man udelukkende de færdiggenererede CSS-filer, kan man se bort fra dette punkt. Bemærk, at der i kommende major releases kan blive fjernet yderligere variable.
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
 - Rettet ikonet "file-upload", der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.
 
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0

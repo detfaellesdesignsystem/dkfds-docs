@@ -17,6 +17,7 @@ title: Test
 
 {% include test/preview-test.html filename="test-accordion-headings" description="Overskriftstyper i accordions" %}
 {% include test/preview-test.html filename="test-accordion-variants" description="Accordion-varianter" %}
+{% include test/preview-test.html filename="test-accordion-classes" description="Accordion-klasser" %}
 {% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
 

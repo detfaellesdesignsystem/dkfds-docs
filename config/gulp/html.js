@@ -30,6 +30,7 @@ var testfiles = [
     "test-icons-svg-and-class",
     "test-accordion-headings",
     "test-accordion-variants",
+    "test-accordion-classes",
     "test-accordion-open-close-button",
     "test-accordion-long-text",
     "test-alerts-1",
