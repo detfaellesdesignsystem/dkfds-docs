@@ -59,7 +59,7 @@ Farverne i listerne nedenunder er angivet øverst med enten en HEX- eller RGBA-v
 
 {:#portalfarver-tema}
 ## Portalfarver (tema)
-Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af <a href="/kode/implementering/#temahaandtering">temahåndtering i koden</a>.
+Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af {% include links/internal-links.html linktext="temahåndtering i koden" %}.
 
 <!-- new setup start -->
 <h3>Primærfarver for borger.dk</h3>

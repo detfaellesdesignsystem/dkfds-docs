@@ -329,7 +329,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Taget højde for alignment af lange trinnavne i {% include links/component-links.html linktext="trinindikator" %}
 - Tilpasset afstande ved {% include links/component-links.html linktext="tjekboks" %} og {% include links/component-links.html linktext="radioknap med skjult indhold" %}
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til {% include links/component-links.html linktext="fejlopsummeringskomponenten" %} så links sætter korrekt fokus i felter i Safari.
-- <a href="/kode/implementering/#javascript">`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden</a>.
+- {% include links/internal-links.html linktext="`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret {% include links/internal-links.html linktext="slet ikonet" %}, da det gamle ikon ikke fungerede i brugertest.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye {% include links/internal-links.html linktext="datavisualiseringsfarver" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS {% include links/internal-links.html linktext="farver" %}
@@ -478,7 +478,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fikset fejl med fokus i header i Firefox
 - Tilføjet maks. bredde på tooltip
 - Fjernet dokumentation for brug af dkfds-plugins, da det fremover ikke vil blive vedligeholdt
-<span class="form-hint mt-0">Se mere under <a href="/kode/plugins/">Plugins i Kode sektionen</a></span>
+<span class="form-hint mt-0">Se mere under {% include links/internal-links.html linktext="Plugins i Kode sektionen" %}</span>
 - Fikset fejl, hvor valgt radioknap ikke blev vist ved print i Internet Explorer og Edge
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 
@@ -542,7 +542,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet mulighed for {% include links/component-links.html linktext="hjælpetekst på radioknap" %}.
 - Tilpasset fokusramme om {% include links/component-links.html linktext="funktions link" %}.
 - Tilpasset retningslinjer for {% include links/component-links.html linktext="Skjul/vis med radioknapper" %}.
-- Opdateret <a href="/design/designressourcer/">SVG filer</a>, samt tilføjet link til <a href="/design/designressourcer/">Figma komponent bibliotek</a>.
+- Opdateret {% include links/internal-links.html linktext="SVG filer" %}, samt tilføjet link til {% include links/internal-links.html linktext="SVG filer" %}.
 
 {:#version-5-2-0 .mb-0}
 ## Version 5.2.0
@@ -557,7 +557,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset farve på informationstekst på komponenterne {% include links/component-links.html linktext="venstremenu med ekstra information" %} og {% include links/component-links.html linktext="trinindikator med ekstra information" %}
 - Tilføjet eksempel på tabel i Datatable
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span>
-- Opdateret <a href="/kode/eksempler-implementering/">Eksempel på implementering i Angular</a>
+- Opdateret {% include links/internal-links.html linktext="Eksempel på implementering i Angular" %}
 
 {:#version-5-1-0 .mb-0}
 ## Version 5.1.0
@@ -573,8 +573,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Fikset print af modal fra iPhone.
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Opdateret beskrivelse af implementering af DKFDS under <a href="/kode/implementering/">Til udviklere</a>.
-<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/kode/implementering/#temahaandtering">temahåndtering</a>.</span>
+- Opdateret beskrivelse af implementering af DKFDS under {% include links/internal-links.html linktext="Til udviklere" %}.
+<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om {% include links/internal-links.html linktext="temahåndtering" %}.</span>
 
 {:#version-5-0-0 .mb-0}
 ## Version 5.0.0
@@ -582,7 +582,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">22-10-2019</span></div>
 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen `DKFDS.init()` på hver side.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om {% include links/internal-links.html linktext="implementering af DKFDS til udviklere" %}.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-links.html linktext="Venstremenuen" %} har fået nyt design.
@@ -595,7 +595,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
 - Ny og simpel {% include links/component-links.html linktext="tooltip komponenten" %} er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>. 
-- Information om <a href="/krav/">krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk. 
+- Information om {% include links/internal-links.html linktext="krav til selvbetjeningsløsninger" %} er nu tilføjet til designsystem.dk. 
 - Tabellerne følger nu {% include links/internal-links.html linktext="8point grid" %}
 
 {:#version-4-4-0 .mb-0}

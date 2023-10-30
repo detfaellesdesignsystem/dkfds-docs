@@ -1,5 +1,59 @@
-{%- if include.linktext == "browserunderstøttelse" -%}
-<a href="/kode/browserunderstoettelse/">{{ include.linktext }}</a>
+{% comment %} 
+    --------------------------
+    | "Kom i gang" sti links |
+    --------------------------
+{% endcomment %}
+
+{%- if include.linktext == "Implementering og kode" or include.linktext == "Til udviklere" or include.linktext == "implementering af DKFDS til udviklere" or include.linktext == "stylesheetet" -%}
+<a href="/kom-i-gang/implementering-kode/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "temahåndtering i koden" or include.linktext == "temahåndtering" -%}
+<a href="/kom-i-gang/implementering-kode/#temahaandtering">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden" -%}
+<a href="/kom-i-gang/implementering-kode/#javascript">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "hjælpeklasse" -%}
+<a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "browserunderstøttelse" -%}
+<a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Eksempel på implementering i Angular" -%}
+<a href="/kom-i-gang/implementering-kode/eksempler-implementering/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "plugins" or include.linktext == "Plugins i Kode sektionen" or include.linktext == "Vi peger på en række plugins og hvordan disse kan styles så de passer ind" -%}
+<a href="/kom-i-gang/implementering-kode/plugins/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Designprincipper" -%}
+<a href="/kom-i-gang/designprincipper/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Designtjekliste" or include.linktext == "Designtjek" -%}
+<a href="/kom-i-gang/designprincipper/tjekliste/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Designressourcer" or include.linktext == "SVG filer" or include.linktext == "Figma komponent bibliotek" -%}
+<a href="/kom-i-gang/designressourcer/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Krav" or include.linktext == "krav til selvbetjeningsløsninger" or include.linktext == "Se hvilke krav og anbefalinger, der gælder din løsning" -%}
+<a href="/kom-i-gang/krav/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Læs om kravene og se om du skal anvende designsystemet" or include.linktext == "Portalernes krav til integration (Når du skal på borger.dk og Virk)" -%}
+<a href="/kom-i-gang/krav/borgerdk-virk/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Om kravene til selvbetjeningsløsninger" -%}
+<a href="/kom-i-gang/krav/om-kravene/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Tilgængelighed" -%}
+<a href="/kom-i-gang/tilgaengelighed/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Print" -%}
+<a href="/kom-i-gang/print/">{{ include.linktext }}</a>
+
+{% comment %} 
+    ----------------------
+    | "Design" sti links |
+    ----------------------
+{% endcomment %}
 
 {%- elsif include.linktext == "farver" or include.linktext == "Farver" or include.linktext == "bruge farverne som anvist" -%}
 <a href="/design/farver/">{{ include.linktext }}</a>

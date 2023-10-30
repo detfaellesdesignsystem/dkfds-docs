@@ -2,7 +2,7 @@
 permalink: "/eksempler/"
 layout: styleguide
 category: Eksempler_category
-title: Eksempler
+title: Eksempelsider og patterns
 lead: Eksemplerne viser hvordan forskellige typer af selvbetjeningsløsninger kan sættes
   op i layout og flow.
 anchor: false
