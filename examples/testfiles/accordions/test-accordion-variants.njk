@@ -3,31 +3,39 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <p>Fejl og varianter</p>
             {{ 
                 accordion({
-                    "id": "myID", 
+                    "id": "accordionID", 
                     "items": [
                         {
-                            "title": "Accordion one",
+                            "title": "Variant: info",
                             "content": "<p>This is some accordion content.</p>",
-                            "errorMessage": "Der er opstået en fejl",
-                            "variant": "error"
+                            "variant": "info"
                         },
                         {
-                            "title": "Accordion two",
+                            "title": "Variant: success",
                             "content": "<p>This is some accordion content.</p>",
                             "variant": "success"
                         },
                         {
-                            "title": "Accordion three",
+                            "title": "Variant: warning",
                             "content": "<p>This is some accordion content.</p>",
                             "variant": "warning"
                         },
                         {
-                            "title": "Accordion four",
+                            "title": "Variant: error",
                             "content": "<p>This is some accordion content.</p>",
-                            "variant": "info"
+                            "variant": "error",
+                            "errorMessage": "Dette er en fejlmeddelelse."
+                        },
+                        {
+                            "title": "Variant: custom",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "custom",
+                            "custom": {
+                                "text": "Tilgængelighed",
+                                "icon": "accessibility-new"
+                            }
                         }
                     ]
                 })

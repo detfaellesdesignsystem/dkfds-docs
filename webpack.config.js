@@ -113,6 +113,7 @@ module.exports = function (outputPath, prod) {
         }
       ],
     },
+    //devtool: "source-map",
     output: {
       path: path.resolve(__dirname, 'assets'), //dist folder is /assets
       publicPath: "/assets/", // written in front of urls in scss

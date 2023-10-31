@@ -13,8 +13,6 @@ anchor: true
 subnav:
 - text: Hjælpetekst
   href: '#hjaelpetekst'
-- text: Lille radioknap
-  href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold'
 description: "Dokumentation på implementering af radioknapper."
@@ -61,10 +59,6 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 {:#hjaelpetekst}
 ### Hjælpetekst
 {% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true %}
-
-{:#lille-radioknap}
-### Lille radioknap
-{% include code/syntax.html component="radiobutton-small" link=true copybutton=true %}
 
 {:#skjult-indhold}
 ### Skjult indhold (Collapse)

@@ -372,7 +372,7 @@
     <!-- Mobile main menu-->
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
-            <h2 class="menu-heading">Menu</h2>
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
@@ -2705,7 +2705,7 @@
 
         
         <li>
-            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data - redigerbart</span></a>
+            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
         </li>
         
 
@@ -2981,6 +2981,34 @@
         
         <li>
             <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
+        </li>
+        
+
+    
+
+
+
+    
+
+     
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <li>
+            <a href="/faellesskab/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
         </li>
         
 
@@ -4153,7 +4181,7 @@
     <li>
         <h3>
             <button class="accordion-button accordion-error " aria-expanded="true" aria-describedby="error-example-accordion1-error" aria-controls="error-example-accordion1">
-                Lorem ipsum dolor sit amet
+                <span class="accordion-title">Lorem ipsum dolor sit amet</span>
                 <span class="accordion-icon">
                     <span class="icon_text">Fejl</span>
                     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg>
@@ -4323,7 +4351,7 @@
         med mellemrum, fx Anders Andersen
     </span>
 
-    <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="fullname-error-example-error " required="" />
+    <input type="text" id="fullname-error-example" name="fullname-error-example" class="form-input" aria-invalid="true" aria-describedby="fullname-error-example-error " required="" autocomplete="name" />
 </div>
         
     </div>

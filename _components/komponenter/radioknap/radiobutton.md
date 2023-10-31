@@ -14,8 +14,6 @@ anchor: true
 subnav:
 - text: Hjælpetekst
   href: '#hjaelpetekst'
-- text: Lille radioknap
-  href: '#lille-radioknap'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
 description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste."

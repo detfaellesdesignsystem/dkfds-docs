@@ -125,12 +125,13 @@ Patterns_category:
 
 #Left menu for Fællesskab-category
 Faellesskab_category:
-  - href: /faellesskab/samarbejdsforum/
-  - href: /faellesskab/governance/
-  - href: /faellesskab/nyhedsmail/
-  - href: /faellesskab/kontakt-support/
-  - href: /faellesskab/roadmap/
-  - href: /faellesskab/releases/
+- href: /faellesskab/samarbejdsforum/
+- href: /faellesskab/governance/
+- href: /faellesskab/nyhedsmail/
+- href: /faellesskab/kontakt-support/
+- href: /faellesskab/roadmap/
+- href: /faellesskab/releases/
+- href: /faellesskab/faq/
 
 Eksempelloesninger_category:
   - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/

@@ -15,11 +15,11 @@ title: Test
 {:.h3}
 ## Accordions
 
-{% include test/preview-test.html filename="test-accordions-1" description="Accordion 1" %}
-{% include test/preview-test.html filename="test-accordions-2" description="Accordion 2" %}
-{% include test/preview-test.html filename="test-accordions-3" description="Accordion 3" %}
-{% include test/preview-test.html filename="test-accordions-4" description="Accordion 4" %}
-{% include test/preview-test.html filename="test-accordions-5" description="Accordion 5" %}
+{% include test/preview-test.html filename="test-accordion-headings" description="Overskriftstyper i accordions" %}
+{% include test/preview-test.html filename="test-accordion-variants" description="Accordion-varianter" %}
+{% include test/preview-test.html filename="test-accordion-classes" description="Accordion-klasser" %}
+{% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
+{% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
 
 {:.h3}
 ## Beskeder (Alerts)

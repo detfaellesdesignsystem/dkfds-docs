@@ -374,7 +374,7 @@
     <!-- Mobile main menu-->
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
-            <h2 class="menu-heading">Menu</h2>
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
@@ -2707,7 +2707,7 @@
 
         
         <li>
-            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data - redigerbart</span></a>
+            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
         </li>
         
 
@@ -2983,6 +2983,34 @@
         
         <li>
             <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
+        </li>
+        
+
+    
+
+
+
+    
+
+     
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <li>
+            <a href="/faellesskab/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
         </li>
         
 
@@ -4039,6 +4067,41 @@
     </div>
 </div>
 
+<h3>Brug attributten “autocomplete”</h3>
+
+<p>Brug <code>autocomplete</code> på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link" target="_blank">WCAG 2.1 AA Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>).</p>
+
+<p>Brug <code>autocomplete</code> på inputfelter til fx navn (<code>autocomplete='name'</code>), postnummer (<code>autocomplete='postal-code'</code>), telefonnummer (<code>autocomplete='tel'</code>) og e-mailadresse (<code>autocomplete='email'</code>), hvis en bruger skal indtaste disse oplysninger om sig selv i din formular.</p>
+
+<div class="component-preview component-preview-code  component-code-text-input-autocomplete">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-autocomplete/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-autocomplete</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;postnr&quot;&gt;Postnummer&lt;/label&gt;
+
+    &lt;input type=&quot;text&quot; id=&quot;postnr&quot; name=&quot;postnr&quot; class=&quot;form-input input-char-4&quot; required
+        autocomplete=&quot;postal-code&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h2>Varianter</h2>
 
 <h3 id="hjaelpetekst">Hjælpetekst</h3>
@@ -4179,10 +4242,10 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-disabled&quot;&gt;Inputfelt som er låst&lt;/label&gt;
+    &lt;label class=&quot;form-label  disabled&quot; for=&quot;input-disabled&quot;&gt;Inputfelt som er låst&lt;/label&gt;
 
     &lt;input type=&quot;text&quot; id=&quot;input-disabled&quot; name=&quot;input-disabled&quot; class=&quot;form-input&quot;
-        disabled=&quot;disabled&quot;&gt;
+        value=&quot;Låst indhold&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;</code></pre></figure>
 
 

@@ -1305,3 +1305,12 @@ Design
 .nowrap {
   white-space: nowrap !important;
 }
+
+.checklist-heading {
+  margin-top: 0;
+  font-weight: font-weight('bold');
+}
+
+body.page-tjekliste svg {
+  flex-shrink: 0;
+}

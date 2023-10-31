@@ -141,6 +141,7 @@ var pdfUrls = [
     "faellesskab/kontakt-support/",
     "faellesskab/roadmap/",
     "faellesskab/releases/",
+    "faellesskab/faq/",
     "privatlivspolitik-cookies/"
 ]
 

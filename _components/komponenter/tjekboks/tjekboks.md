@@ -11,8 +11,6 @@ componentTitle: "Eksempel på tjekbokse"
 componentLink: true
 anchor: true
 subnav:
-- text: Lille tjekboks
-  href: '#lille-tjekboks'
 - text: Skjult indhold (Collapse)
   href: '#skjult-indhold-collapse'
 description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."

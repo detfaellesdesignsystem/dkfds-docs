@@ -305,12 +305,6 @@ let setScreenshots = function(){
             screenshots[i].innerHTML = image;
         }
     }
-
-    if (document.getElementsByTagName('body')[0].classList.contains('page-header')) {
-        let imageContainer = document.querySelectorAll('.header-rows-example');
-        let filename = getThemeCookie() + "-header-rows.png";
-        imageContainer[0].innerHTML = '<img src="/assets/img/headers/' + filename + '" class="w-percent-100 inner-border-box p-4" alt="De 5 foskellige rækker i headeren" />';
-    }
 };
 
 let setDoDontImages = function() {

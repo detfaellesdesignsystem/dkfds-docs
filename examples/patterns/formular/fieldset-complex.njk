@@ -10,14 +10,16 @@
         textinput({
             "id": "fnavn-complex",
             "label": "Fornavn",
-            "name": "fnavn-complex"
+            "name": "fnavn-complex",
+            "autocomplete": "given-name"
         })
     }}
     {{
         textinput({
             "id": "enavn-complex", 
             "label": "Efternavn",
-            "name": "enavn-complex"
+            "name": "enavn-complex",
+            "autocomplete": "family-name"
         })
     }}
     {{
@@ -25,7 +27,8 @@
             "id": "email-complex", 
             "label": "E-mailadresse",
             "name": "email-complex",
-            "type": "email"
+            "type": "email",
+            "autocomplete": "email"
         })
     }}
     {{
@@ -34,7 +37,8 @@
             "label": "Telefonnummer",
             "classes": { "input": "input-width-s" },
             "name": "telefon-complex",
-            "type": "tel"
+            "type": "tel",
+            "autocomplete": "tel"
         })
     }}
 
@@ -87,7 +91,12 @@
                     "id": "date-input-birthday",
                     "legend": "Fødselsdato",
                     "helptext": "For eksempel: 05 12 1987",
-                    "classes": "mt-0"
+                    "classes": "mt-0",
+                    "autocomplete": {
+                        "day": "bday-day",
+                        "month": "bday-month",
+                        "year": "bday-year"
+                    }
                 })
             }}
             {{ radiobuttons({

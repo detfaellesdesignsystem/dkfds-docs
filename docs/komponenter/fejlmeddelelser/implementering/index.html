@@ -374,7 +374,7 @@
     <!-- Mobile main menu-->
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
-            <h2 class="menu-heading">Menu</h2>
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
             <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
@@ -2707,7 +2707,7 @@
 
         
         <li>
-            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data - redigerbart</span></a>
+            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
         </li>
         
 
@@ -2983,6 +2983,34 @@
         
         <li>
             <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
+        </li>
+        
+
+    
+
+
+
+    
+
+     
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <li>
+            <a href="/faellesskab/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
         </li>
         
 
@@ -3967,7 +3995,7 @@
 
     <input type="text" id="fullname-error-example" name="fullname-error-example"
         class="form-input" aria-invalid="true"
-        aria-describedby="fullname-error-example-error " required>
+        aria-describedby="fullname-error-example-error " required autocomplete="name">
 </div>
         
     </div>
@@ -4049,7 +4077,7 @@
 
     &lt;input type=&quot;text&quot; id=&quot;fullname-error-example&quot; name=&quot;fullname-error-example&quot;
         class=&quot;form-input&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;fullname-error-example-error &quot; required&gt;
+        aria-describedby=&quot;fullname-error-example-error &quot; required autocomplete=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4089,7 +4117,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
             &lt;button class=&quot;accordion-button accordion-error &quot; aria-expanded=&quot;true&quot;
                 aria-describedby=&quot;error-example-accordion1-error&quot;
                 aria-controls=&quot;error-example-accordion1&quot;&gt;
-                Lorem ipsum dolor sit amet
+                &lt;span class=&quot;accordion-title&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
                 &lt;span class=&quot;accordion-icon&quot;&gt;
                     &lt;span class=&quot;icon_text&quot;&gt;Fejl&lt;/span&gt;
                     &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#highlight-off&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
@@ -4290,7 +4318,7 @@ Teksten er skjult i et <code>&lt;span&gt;</code> element med klassen <code>sr-on
 
     &lt;input type=&quot;text&quot; id=&quot;fullname-error-example&quot; name=&quot;fullname-error-example&quot;
         class=&quot;form-input&quot; aria-invalid=&quot;true&quot;
-        aria-describedby=&quot;fullname-error-example-error &quot; required&gt;
+        aria-describedby=&quot;fullname-error-example-error &quot; required autocomplete=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
