@@ -18,12 +18,6 @@ tags:
 - sidevælger
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/paginering/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/paginering/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

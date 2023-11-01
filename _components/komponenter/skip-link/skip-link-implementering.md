@@ -16,12 +16,6 @@ description: "Dokumentation på implementering af skip-link."
 tags: 
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/skip-link/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/skip-link/">Eksempler</a>
-
 ## Installation
 
 ### HTML Struktur

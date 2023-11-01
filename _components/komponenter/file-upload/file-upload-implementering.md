@@ -14,12 +14,6 @@ description: "Dokumentation på implementering af fil upload felt."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/fil-upload/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/fil-upload/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

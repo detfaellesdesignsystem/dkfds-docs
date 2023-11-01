@@ -59,12 +59,6 @@ tags:
 - sufiks
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/inputfelter/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/inputfelter/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

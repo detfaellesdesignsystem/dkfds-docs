@@ -1,4 +1,7 @@
-{%- if include.linktext == "accordions" or include.linktext == "Accordion" -%}
+{%- if include.linktext == "Komponenter" or include.linktext == "komponenter" -%}
+<a href="/komponenter/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "accordions" or include.linktext == "Accordion" -%}
 <a href="/komponenter/accordions/guidelines/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Accordions" -%}

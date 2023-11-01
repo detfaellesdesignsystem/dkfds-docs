@@ -34,12 +34,6 @@ tags:
 - besked
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/toastbesked/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/toastbesked/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

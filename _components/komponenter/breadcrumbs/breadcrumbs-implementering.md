@@ -15,13 +15,6 @@ description: Dokumentation på implementering af brødkrumme.
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-<ul class="nobullet-list">
-<li><a href="/komponenter/broedkrumme/#retningslinjer">Retningslinjer</a></li>
-<li><a href="/komponenter/broedkrumme/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

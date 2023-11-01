@@ -19,12 +19,6 @@ description: "Dokumentation på implementering af radioknapper."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/radioknap/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/radioknap/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

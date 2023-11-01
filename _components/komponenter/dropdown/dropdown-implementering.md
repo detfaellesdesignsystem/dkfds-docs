@@ -15,12 +15,6 @@ description: "Dokumentation på implementering af dropdown."
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/dropdown/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/dropdown/">Eksempler</a>
-
 ## Installation
 
 ### HTML Struktur

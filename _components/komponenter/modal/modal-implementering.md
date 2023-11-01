@@ -26,12 +26,6 @@ tags:
 - vindue
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/modal/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/modal/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

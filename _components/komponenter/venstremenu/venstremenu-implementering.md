@@ -17,12 +17,6 @@ description: "Dokumentation på implementering af venstremenu."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/venstremenu/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/venstremenu/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

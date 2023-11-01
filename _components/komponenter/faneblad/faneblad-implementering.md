@@ -18,12 +18,6 @@ description: "Dokumentation på implementering af faneblad."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/faneblade/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/faneblade/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

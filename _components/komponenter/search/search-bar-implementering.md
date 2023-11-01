@@ -15,12 +15,6 @@ description: "Dokumentation på implementering af søgefelt."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/search/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/search/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

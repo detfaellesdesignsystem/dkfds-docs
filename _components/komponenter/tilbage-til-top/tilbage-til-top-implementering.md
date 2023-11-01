@@ -15,12 +15,6 @@ description:
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tilbage-til-top/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tilbage-til-top/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

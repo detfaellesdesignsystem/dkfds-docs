@@ -24,12 +24,6 @@ description: "Dokumentation på implementering af datovælger."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/datovaelger/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/datovaelger/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

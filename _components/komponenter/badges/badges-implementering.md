@@ -19,12 +19,6 @@ description: "Dokumentation på implementering af badge."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/badges/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/badges/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

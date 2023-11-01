@@ -23,12 +23,6 @@ description: "Dokumentation på implementering af besked."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/beskeder/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/beskeder/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

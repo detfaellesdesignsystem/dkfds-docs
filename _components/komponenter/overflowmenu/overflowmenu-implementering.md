@@ -18,12 +18,6 @@ description: "Dokumentation på implementering af overflow menu."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/overflowmenu/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/overflowmenu/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

@@ -18,12 +18,6 @@ description: "Dokumentation på implementering af Detaljer komponenten."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/detaljer/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/detaljer/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

@@ -27,12 +27,6 @@ description: "Dokumentation på implementering af trinindikator."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/trinindikator/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/trinindikator/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

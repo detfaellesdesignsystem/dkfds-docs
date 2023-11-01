@@ -20,12 +20,6 @@ tags:
 - karakterbegraensning
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tekstomraade/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tekstomraade/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

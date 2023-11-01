@@ -20,13 +20,6 @@ tags:
 - subnav
 ---
 
-## Eksempler og retningslinjer
-
-<ul class="nobullet-list">
-    <li><a href="/komponenter/anchorlinks/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/anchorlinks/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

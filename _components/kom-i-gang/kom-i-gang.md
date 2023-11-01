@@ -32,3 +32,7 @@ Det grundlæggende, de skal gøre, for at lave en tilgængelig selvbetjeningslø
 {% include links/internal-links.html linktext="Print" %}
 
 Hjælp til at optimere dine løsninger til print.
+
+{% include links/internal-links.html linktext="Ofte stillede spørgsmål" %}
+
+Er du i tvivl om noget? Så kan du se, om dit spørgsmål er besvaret her, før du kontakter FDS-teamet.

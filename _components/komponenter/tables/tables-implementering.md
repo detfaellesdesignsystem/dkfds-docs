@@ -33,12 +33,6 @@ description: "Dokumentation på implementering af tabeller."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tables/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tables/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

@@ -18,24 +18,20 @@ tags:
 - svg
 ---
 
-For at gøre det nemmere at komme i gang stiller vi nedenstående filer til rådighed, men “source of truth”, vores fælles referencepunkt, er dokumentationssiden her og ikke filerne.
-
-## Figma og SVG
-
-Du er velkommen til at bidrage med flere designressourcer eller med opdateringer af eksisterende filer.
-
-<div class="alert alert-warning alert--paragraph" role="alert">
-    <div class="alert-body">
-        <p class="alert-text">Dokumentationssiden er “source of truth”, ikke designfilerne.</p>
-    </div>
-</div>
+Vi stiller nedenstående filer til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Vær dog opmærkesom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilerne.
 
 <h3 class="h4">Figma</h3>
+
+Designbiblioteket i Figma vedligeholdes løbende.
 
 <a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 <h3 class="h4">SVG</h3>
 
+Svg-filerne kan importeres i de fleste design-/prototypeprogrammer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
+
 <a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">Download svg-filer (version 7.0.0)</a>
 
-Svg-filerne kan importeres i de fleste design/prototype programmer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
+<h3 class="h4">Hjælp os med at blive bedre</h3>
+
+Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at <a href="mailto:FDS@erst.dk" class="icon-link">kontakte os<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>. 

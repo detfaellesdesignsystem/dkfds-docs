@@ -24,12 +24,6 @@ description: Dokumentation på implementering af accordions.
 tags: 
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/accordions/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/accordions/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

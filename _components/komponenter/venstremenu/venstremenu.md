@@ -15,9 +15,9 @@ componentLink: true
 anchor: true
 subnav:
 - text: 2 niveauer
-  href: "#2-niveauer"
+  href: "#to-niveauer"
 - text: 3 niveauer
-  href: "#3-niveauer"
+  href: "#tre-niveauer"
 - text: Ekstra information
   href: "#ekstra-information"
 - text: Anchorlinks
@@ -60,12 +60,12 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
 ## Varianter
 
-{:#2-niveauer}
+{:#to-niveauer}
 ### 2 niveauer
 
 {% include code/preview-box.html component="sidenav-normal-level2" title="Eksempel på venstremenu med to niveauer" %}
 
-{:#3-niveauer}
+{:#tre-niveauer}
 ### 3 niveauer
 
 {% include code/preview-box.html component="sidenav-normal-level3" title="Eksempel på venstremenu med tre niveauer" %}

@@ -27,6 +27,7 @@ Kom_i_gang_category:
     categorynav: 'Krav_category'
   - href: /kom-i-gang/tilgaengelighed/
   - href: /kom-i-gang/print/
+  - href: /kom-i-gang/faq/
 
 Implementering_kode_category:
   - href: /kom-i-gang/implementering-kode/hjaelpeklasser/
@@ -131,7 +132,6 @@ Faellesskab_category:
 - href: /faellesskab/kontakt-support/
 - href: /faellesskab/roadmap/
 - href: /faellesskab/releases/
-- href: /faellesskab/faq/
 
 Eksempelloesninger_category:
   - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/

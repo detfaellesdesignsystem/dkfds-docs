@@ -15,12 +15,6 @@ description: "Dokumentation på implementering af accordions."
 tags: 
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/toggle/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/toggle/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

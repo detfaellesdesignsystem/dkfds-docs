@@ -24,12 +24,6 @@ description: "Dokumentation på implementering af tooltip."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tooltip/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tooltip/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

@@ -30,12 +30,6 @@ tags:
 - "tertiærknap"
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/knapper/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/knapper/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

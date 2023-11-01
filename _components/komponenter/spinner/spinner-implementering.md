@@ -15,12 +15,6 @@ description: "Dokumentation på implementering af spinner."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/spinner/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/spinner/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

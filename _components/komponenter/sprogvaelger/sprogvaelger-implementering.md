@@ -20,12 +20,6 @@ description: "Dokumentation på implementering af sprogvælger."
 tags: 
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/sprogvaelger/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/sprogvaelger/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

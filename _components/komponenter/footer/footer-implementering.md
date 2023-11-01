@@ -25,12 +25,6 @@ description: "Dokumentation på implementering af footer."
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/footer/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/footer/">Eksempler</a>
-
 ## Installation
 
 ### HTML Struktur

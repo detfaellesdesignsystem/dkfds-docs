@@ -20,12 +20,6 @@ description: "Dokumentation på implementering af tags."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tags/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tags/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

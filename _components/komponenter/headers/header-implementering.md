@@ -16,13 +16,6 @@ description: "Dokumentation på implementering af header."
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/header/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/header/">Eksempler</a>
-
-
 ## Installation
 
 ### HTML Struktur

@@ -33,12 +33,6 @@ description: Dokumentation på implementering af fejlmeddelelser.
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/fejlmeddelelser/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/fejlmeddelelser/">Eksempler</a>
-
 ## Installation
 
 ### HTML Struktur

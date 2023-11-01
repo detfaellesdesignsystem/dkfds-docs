@@ -17,12 +17,6 @@ description: "Dokumentation på implementering af tjekbokse."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/tjekboks/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/tjekboks/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

@@ -18,12 +18,6 @@ description: "Dokumentation på implementering af cards."
 tags:
 ---
 
-## Eksempler og retningslinjer
-<ul class="nobullet-list">
-    <li><a href="/komponenter/cards/#retningslinjer">Retningslinjer</a></li>
-    <li><a href="/komponenter/cards/">Eksempler</a></li>
-</ul>
-
 ## Installation
 
 ### HTML Struktur

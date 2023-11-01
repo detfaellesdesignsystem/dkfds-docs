@@ -14,12 +14,6 @@ description: "Dokumentation på implementering af funktionslink."
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/funktionslink/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/funktionslink/">Eksempler</a>
-
 ## Installation
 
 ### HTML Struktur

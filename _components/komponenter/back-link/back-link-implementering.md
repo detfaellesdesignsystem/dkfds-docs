@@ -15,12 +15,6 @@ description: "Dokumentation på implementering af tilbage-link."
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/tilbage-link/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/tilbage-link/">Eksempler</a>
-
 ## Installation
 
 {:#html-struktur}

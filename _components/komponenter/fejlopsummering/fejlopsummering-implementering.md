@@ -18,12 +18,6 @@ description: Dokumentation på implementering af fejlopsummering.
 tags:
 ---
 
-## Eksempler og retningslinjer
-
-{:.nobullet-list}
-- <a href="/komponenter/fejlopsummering/#retningslinjer">Retningslinjer</a>
-- <a href="/komponenter/fejlopsummering/">Eksempler</a>
-
 ## Installation
 
 ### HTML Struktur

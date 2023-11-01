@@ -30,11 +30,11 @@ Brug eller imiter det Fælles Designsystem.
 - Løsningen skal tematiseres, så den passer visuelt ind på portalen den skal vises på
 - Der skal være en {% include links/component-links.html linktext="header" %}, der er bygget op som anvist i designsystemet
 - Du skal anvende/efterligne {% include links/internal-links.html linktext="stylesheetet" %} som anvist i designsystemet
-- <a href="/komponenter/">Komponenter</a> og {% include links/internal-links.html linktext="plugins" %} skal være anvendt som anvist i designsystemet
+- {% include links/component-links.html linktext="Komponenter" %} og {% include links/internal-links.html linktext="plugins" %} skal være anvendt som anvist i designsystemet
 
 Det anbefales desuden, at løsningen har en <a href="/komponenter/footer/">footer</a>, der er bygget som anvist i designsystemet.
 
-<a href="/design/tjekliste/">Tjekliste</a>
+{% include links/internal-links.html linktext="Tjekliste" %}
 
 {:#integration-paa-borgerdk}
 ## Integration på borger.dk
