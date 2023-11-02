@@ -163,6 +163,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
 - Rettet ikonet "file-upload", der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.
+- Rettet fejl, hvor fokusmarkeringen kunne mangle delvist i overflowmenuer.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at placere sprogvælgeren i headeren og mobilmenuen udover footeren.
 
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0

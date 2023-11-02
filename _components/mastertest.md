@@ -62,6 +62,10 @@ title: Test
 {% include test/preview-test.html filename="test-dropdown-8" description="Dropdown 8" %}
 
 {:.h3}
+## Funktionslink
+{% include test/preview-test.html filename="test-function-link" description="Funktionslink" %}
+
+{:.h3}
 ## Gå til sidens indhold (Skip-link)
 
 {% include test/preview-test.html filename="test-skip-link-default" description="Skip-link, default" %}
@@ -77,6 +81,7 @@ title: Test
 {% include test/preview-test.html filename="test-header-navigation-with-only-searchfield" description="Ingen navigation, kun søgefelt" %}
 {% include test/preview-test.html filename="test-header-navigation-with-searchfield" description="Simpel navigation med søgefelt" %}
 {% include test/preview-test.html filename="test-header-dropdown-navigation" description="Navigation med flere dropdownmenuer" %}
+{% include test/preview-test.html filename="test-header-language-switcher" description="Sprogvælger" %}
 {% include test/preview-test.html filename="test-header-long-sentences" description="Header med mange ord" %}
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
 
@@ -100,7 +105,6 @@ title: Test
 {% include test/preview-test.html filename="test-buttons-in-divs" description="Knapper i hver sin række" %}
 {% include test/preview-test.html filename="test-buttons-next-to-text" description="Knapper i tekstafsnit" %}
 {% include test/preview-test.html filename="test-button-long-text" description="Knapper med lang tekst" %}
-{% include test/preview-test.html filename="test-button-break-word" description="Knap med tekst der skal ombrydes" %}
 {% include test/preview-test.html filename="test-buttons-1" description="Knap 1" %}
 
 {:.h3}

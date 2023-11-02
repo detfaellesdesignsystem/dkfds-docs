@@ -264,9 +264,8 @@
                     Anders Andersen, Forsikringens Forsikringsfirma
                 </p>
 
-                <button class="button button-secondary d-print-none log-off">
-                    Log af
-                </button>
+                <button class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
@@ -498,6 +497,7 @@
         </nav>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -506,6 +506,7 @@
         </div>
 
         <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
 
             <p class="user">
 
@@ -514,13 +515,35 @@
 
             </p>
 
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
+            <p>
+                <button class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
         </div>
 
     </div>
 </header>
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="overflow-menu overflow-menu--open-right">
+                <button class="button-overflow-menu js-dropdown" data-js-target="overflow1" aria-haspopup="true" aria-expanded="false">
+                    Overflow menu
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+                </button>
+                <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><button>Mulighed 1</button></li>
+                        <li><button>Mulighed 2</button></li>
+                        <li><button>Mulighed 3</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
 
     <footer class="test-footer d-flex align-items-center">
     <div class="container">
@@ -534,7 +557,7 @@
                 <a class="function-link mr-4" href="/eksempel/test-header-navigation-with-searchfield/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-header-long-sentences/">Næste</a>
+                <a class="function-link" href="/eksempel/test-header-language-switcher/">Næste</a>
                 
             </div>
         </div>
