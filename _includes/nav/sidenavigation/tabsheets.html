@@ -40,15 +40,18 @@
 ----------------------------------------------
 {% endcomment %}
 
-{% if renderedTabLinks.size > 0 %}
-    <div class="tab-container">
-    {%- for link in renderedTabLinks -%}
-        {% assign _current = false %}
-        {% if link.href == page.permalink %}
-            {% assign _current = true %}
-        {% endif %}
-            <a href="{{ link.href }}" class="tab {% if _current %}active-tab{% endif %}" {% if _current %}aria-current="page"{% endif %}><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#{% if link.tabName == 'Retningslinjer' %}format-list-checks{% elsif link.tabName == 'Implementering' %}construction{% endif %}"></use></svg>{{link.tabName}}</a>
-    {%- endfor -%}
-    </div>
+{% if renderedTabLinks.size > 1 %}
+    <nav class="tab-container">
+        <ul>
+            {%- for link in renderedTabLinks -%}
+                {% assign _current = false %}
+                {% if link.href == page.permalink %}
+                    {% assign _current = true %}
+                {% endif %}
+                <li>
+                    <a href="{{ link.href }}" class="tab {% if _current %}active-tab{% endif %}" {% if _current %}aria-current="page"{% endif %}><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#{% if link.tabName == 'Retningslinjer' %}format-list-checks{% elsif link.tabName == 'Implementering' %}construction{% endif %}"></use></svg><span>{{link.tabName}}</span></a>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
 {% endif %}
-
