@@ -165,6 +165,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.
 - Rettet fejl, hvor fokusmarkeringen kunne mangle delvist i overflowmenuer.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at placere sprogvælgeren i headeren og mobilmenuen udover footeren.
+- Rettet fejl, hvor overflowmenuen kunne gå ud over skærmens kanter, når den åbnede.
 
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0

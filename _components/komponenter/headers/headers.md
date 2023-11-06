@@ -65,3 +65,9 @@ Navigation (topnavigation) i løsningen og søgefelt.
 #### Header med navigation og søgefelt
 
 {% include code/preview-image.html component="header-with-navigation" %}
+
+### Varianter
+
+Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog placeres sprogvælgeren både som overflowmenu øverst i række 1 og vist med alle sprogvarianter synlige på sidens footer. Se <a href="/komponenter/sprogvaelger/">sprogvælger</a>-komponenten. Nedenstående eksempel viser udelukkende placeringen i headeren uden footer-komponenten.
+
+{% include code/preview-image.html component="header-switch-language" %}
