@@ -82,6 +82,7 @@ title: Test
 {% include test/preview-test.html filename="test-header-navigation-with-only-searchfield" description="Ingen navigation, kun søgefelt" %}
 {% include test/preview-test.html filename="test-header-navigation-with-searchfield" description="Simpel navigation med søgefelt" %}
 {% include test/preview-test.html filename="test-header-dropdown-navigation" description="Navigation med flere dropdownmenuer" %}
+{% include test/preview-test.html filename="test-header-navigation-many-items" description="Navigation med mange elementer" %}
 {% include test/preview-test.html filename="test-header-language-switcher" description="Sprogvælger" %}
 {% include test/preview-test.html filename="test-header-long-sentences" description="Header med mange ord" %}
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}

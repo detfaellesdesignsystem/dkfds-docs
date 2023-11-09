@@ -68,6 +68,7 @@ var testfiles = [
     "test-header-navigation-with-only-searchfield",
     "test-header-navigation-with-searchfield",
     "test-header-dropdown-navigation",
+    "test-header-navigation-many-items",
     "test-header-language-switcher",
     "test-header-long-sentences",
     "test-header-long-strings",

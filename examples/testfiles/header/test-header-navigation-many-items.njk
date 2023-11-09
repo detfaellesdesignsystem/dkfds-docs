@@ -9,8 +9,7 @@
 
 {% set portal_info_data = {
     "user": {
-        "name": "Anders Andersen",
-        "info": "Forsikringens Forsikringsfirma"
+        "name": "Anders Andersen"
     },
     "logolink": {
         "label": "Portalnavn",
@@ -34,30 +33,25 @@
 {% set navigation_menu_data = {
     "ariaLabelMobile": "Hovedmenu og undermenuer",
     "links": [
-        { "text": "Første menupunkt" },
-        { "text": "Andet menupunkt",
+        { "text": "Første menupunkt der har en længere tekst end de andre punkter",
           "links": [
-              { "text": "Undermenu 2.1" },
-              { "text": "Undermenu 2.2" },
-              { "text": "Undermenu 2.3" },
-              { "text": "Undermenu 2.4" }
-          ]
+              { "text": "Undermenu" },
+              { "text": "Undermenu" }
+        ]
         },
-        { "text": "Tredje menupunkt" },
-        { "text": "Fjerde menupunkt" },
-        { "text": "Femte menupunkt", "active": true,
+        { "text": "Andet" },
+        { "text": "Tredje" },
+        { "text": "Fjerde" },
+        { "text": "Femte" },
+        { "text": "Sjette" },
+        { "text": "Syvende" },
+        { "text": "Ottende" },
+        { "text": "Niende" },
+        { "text": "Tiende", "active": true,
           "links": [
-              { "text": "Undermenu 5.1" },
-              { "text": "Undermenu 5.2 med flere undermenuer kun synlige på mobil", "current": true,
-                "links": [
-                    { "text": "Undermenu 5.2 med flere undermenuer kun synlige på mobil", "overview": true },
-                    { "text": "Undermenu 5.2.1" },
-                    { "text": "Undermenu 5.2.2" },
-                    { "text": "Undermenu 5.2.3" },
-                    { "text": "Undermenu 5.2.4" }
-                ] 
-              },
-              { "text": "Undermenu 5.3" }
+              { "text": "Undermenu" },
+              { "text": "Undermenu", "current": true },
+              { "text": "Undermenu" }
           ]
         }
     ]
@@ -75,22 +69,3 @@
         {{ mobile_portal_info(portal_info_data) }}
     </div>
 </header>
-<main class="container page-container" id="main-content">
-    <div class="row">
-        <div class="col-12">
-            {{
-                overflowmenu({
-                "button": {"text": "Overflow menu"},
-                "id": "overflow1",
-                "openRight": true,
-                "content": 
-                    "<ul class='overflow-list'>
-                        <li><button>Mulighed 1</button></li>
-                        <li><button>Mulighed 2</button></li>
-                        <li><button>Mulighed 3</button></li>
-                    </ul>"
-                }) 
-            }}
-        </div>
-    </div>
-</main>
