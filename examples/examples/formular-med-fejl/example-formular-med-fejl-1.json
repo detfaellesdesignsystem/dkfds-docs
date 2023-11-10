@@ -84,7 +84,8 @@
             "formgroup": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100",
             "input": "input-width-xl"
         },
-        "value": "Mønstergade"
+        "value": "Mønstergade",
+        "autocomplete": "on"
     },
     "input_husnummer": {
         "id": "input-husnummer",
@@ -93,7 +94,8 @@
         "classes": {
             "input": "input-width-xs"
         },
-        "value": "13"
+        "value": "13",
+        "autocomplete": "on"
     },
     "input_postnummer": {
         "id": "input-postnummer",
@@ -115,7 +117,8 @@
             "formgroup": "w-percent-sm-100",
             "input": "input-width-xl"
         },
-        "value": "København S"
+        "value": "København S",
+        "autocomplete": "address-line2"
     },
     "input_COadresse": {
         "id": "input-co-adresse",
