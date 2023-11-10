@@ -5250,7 +5250,7 @@
 
 <h4>Overlay og mobilmenu</h4>
 
-<p>Som standard ændres headeren til kun at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et overlay under menuen.</p>
+<p>Som standard ændres headeren til udelukkende at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et mørkt overlay oven på det øvrige sideindhold.</p>
 
 <div class="component-preview component-preview-code  component-code-header-menu-top">
     
@@ -5285,7 +5285,9 @@
 
 <p>Række 1 indeholder portal-logo, NemLog-in-oplysninger og “Log af” knap. Headeren skal altid indeholde denne række.</p>
 
-<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme.</p>
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-portal">
     
@@ -5323,7 +5325,7 @@
     </div>
 </div>
 
-<p>Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises på mindre skærme.</p>
+<p>Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises på mindre skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-portal-mobile">
     
@@ -5364,7 +5366,9 @@
 
 <p>Række 2 indeholder selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger. Headeren skal altid indeholde denne række.</p>
 
-<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes <em>efter</em> række 1 og indeholder koden, der vises på større skærme.</p>
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes <em>efter</em> række 1 og indeholder koden, der vises på større skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-solution">
     
@@ -5399,7 +5403,7 @@
     </div>
 </div>
 
-<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder koden, der vises på mindre skærme.</p>
+<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder koden, der vises på mindre skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-solution-mobile">
     
@@ -5432,7 +5436,9 @@
 
 <p>Række 3 indeholder topnavigation i løsningen og søgefelt. Det er valgfrit, om headeren skal indeholde denne række.</p>
 
-<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vises på større skærme.</p>
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vises på større skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-navigation">
     
@@ -5511,7 +5517,9 @@
     </div>
 </div>
 
-<p>Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover. Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme.</p>
+<p>Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover.</p>
+
+<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-navigation-mobile">
     
@@ -5580,11 +5588,86 @@
 
 <p>Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kode/utilities/#display">hjælpeklasser for display</a>, samt at mobilmenuen indeholder de korrekte links.</p>
 
+<h4>Sprogvælger</h4>
+
+<p>Hvis man anvender en sprogvælger i headeren, er der to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes <em>før</em> række 1 (portalinfo) og indeholder koden, der vises på større skærme:</p>
+
+<div class="component-preview component-preview-code  component-code-switch-language">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;language-switcher-header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;overflow-menu overflow-menu--open-right&quot;&gt;
+            &lt;button class=&quot;button-overflow-menu js-dropdown select-language-button&quot;
+                data-js-target=&quot;header-language&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#language&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk
+            &lt;/button&gt;
+            &lt;div class=&quot;overflow-menu-inner select-language-list&quot; id=&quot;header-language&quot;
+                aria-hidden=&quot;true&quot;&gt;
+                &lt;ul class=&#39;overflow-list&#39;&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot; aria-label=&quot;Valgt sprog: Dansk&quot;&gt;Dansk&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Anden del skal indsættes i mobilmenuen, igen <em>før</em> række 1 (portalinfo) og indeholder koden, der vises på mindre skærme:</p>
+
+<div class="component-preview component-preview-code  component-code-switch-language-mobile">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;language-switcher-mobile&quot;&gt;
+    &lt;h3&gt;Valgt sprog&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot;
+                aria-label=&quot;Valgt sprog: Dansk&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h3>JavaScript</h3>
 
 <p>Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Navigation().init();</code></pre></figure>
+
+<p>Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren.</p>
 
 
                 
