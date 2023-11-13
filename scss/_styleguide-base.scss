@@ -12,6 +12,10 @@
     background-color: #0059B3;
     border-color: #004993;
 }
+
+#changeTheme.button-tertiary {
+  width: auto;
+}
   
 .fds-title {
   font-size: font-size('4xl');
@@ -824,6 +828,7 @@ code {
   background-color: #000;
   bottom: 0;
   position: fixed;
+  z-index: 1;
   width: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
