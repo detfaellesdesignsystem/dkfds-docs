@@ -70,4 +70,4 @@ Svg-filerne kan importeres i de fleste design-/prototypeprogrammer og arbejdes v
 
 <h3 class="h4">Hjælp os med at blive bedre</h3>
 
-Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at <a href="mailto:FDS@erst.dk" class="icon-link">kontakte os<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>. 
+Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at <a href="/faellesskab/kontakt-support/">kontakte os</a>. 
