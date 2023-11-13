@@ -582,6 +582,10 @@ pre {
   code {
     background-color: transparent;
   }
+
+  &:focus {
+    @include focus;
+  }
 }
 
 *:not(.details-text) > figure.highlight > pre {
@@ -933,10 +937,16 @@ div.component-preview {
   padding-top: units(4);
   padding-left: units(4);
   padding-right: units(4);
-
+  
   @include media-breakpoint-up(sm) {
-    margin-bottom: -(units(3));
+    padding-bottom: units(2);
+
+    & + figure.highlight pre {
+      padding-top: units(2);
+    }
   }
+
+  
 }
 
 .preview-iframe {
