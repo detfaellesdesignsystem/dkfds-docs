@@ -33,7 +33,7 @@ subcategory: Design
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Udvalgte ikoner skal anvendes som angivet</h2>
-        <p>Følg vores ikontaksonomi, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra Material Design. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under <a href="/design/ikoner/">ikoner</a>.</p>
+        <p>Følg vores <a href="/design/ikoner/#betydning">ikontaksonomi</a>, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under <a href="/design/ikoner/">ikoner</a>.</p>
     </div>
 </div>
 
