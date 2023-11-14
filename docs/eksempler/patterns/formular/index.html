@@ -4358,19 +4358,19 @@
                         <div class="form-group form-group-day">
                             <label class="form-label" for="date-input-birthday-day">Dag</label>
 
-                            <input type="tel" id="date-input-birthday-day" class="form-input js-calendar-day-input" required="" autocomplete="bday-day" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+                            <input type="number" id="date-input-birthday-day" name="birthday-day" class="form-input" required="" autocomplete="bday-day" />
                         </div>
 
                         <div class="form-group form-group-month">
                             <label class="form-label" for="date-input-birthday-month">Måned</label>
 
-                            <input type="tel" id="date-input-birthday-month" class="form-input js-calendar-month-input" required="" autocomplete="bday-month" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+                            <input type="number" id="date-input-birthday-month" name="birthday-month" class="form-input" required="" autocomplete="bday-month" />
                         </div>
 
                         <div class="form-group form-group-year">
                             <label class="form-label" for="date-input-birthday-year">År</label>
 
-                            <input type="tel" id="date-input-birthday-year" class="form-input js-calendar-year-input" required="" autocomplete="bday-year" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+                            <input type="number" id="date-input-birthday-year" name="birthday-year" class="form-input" required="" autocomplete="bday-year" />
                         </div>
 
                     </div>
@@ -4523,35 +4523,27 @@
                             &lt;label class=&quot;form-label&quot;
                                 for=&quot;date-input-birthday-day&quot;&gt;Dag&lt;/label&gt;
 
-                            &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-day&quot;
-                                class=&quot;form-input js-calendar-day-input&quot; required
-                                autocomplete=&quot;bday-day&quot; data-min=&quot;1&quot; data-max=&quot;31&quot;
-                                maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
-                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                                title=&quot;Indtast dag på måneden som tal&quot;&gt;
+                            &lt;input type=&quot;number&quot; id=&quot;date-input-birthday-day&quot;
+                                name=&quot;birthday-day&quot; class=&quot;form-input&quot; required
+                                autocomplete=&quot;bday-day&quot;&gt;
                         &lt;/div&gt;
 
                         &lt;div class=&quot;form-group form-group-month&quot;&gt;
                             &lt;label class=&quot;form-label&quot;
                                 for=&quot;date-input-birthday-month&quot;&gt;Måned&lt;/label&gt;
 
-                            &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-month&quot;
-                                class=&quot;form-input js-calendar-month-input&quot; required
-                                autocomplete=&quot;bday-month&quot; data-min=&quot;1&quot; data-max=&quot;12&quot;
-                                maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
-                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
-                                title=&quot;Indtast månedens nummer&quot;&gt;
+                            &lt;input type=&quot;number&quot; id=&quot;date-input-birthday-month&quot;
+                                name=&quot;birthday-month&quot; class=&quot;form-input&quot; required
+                                autocomplete=&quot;bday-month&quot;&gt;
                         &lt;/div&gt;
 
                         &lt;div class=&quot;form-group form-group-year&quot;&gt;
                             &lt;label class=&quot;form-label&quot;
                                 for=&quot;date-input-birthday-year&quot;&gt;År&lt;/label&gt;
 
-                            &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-year&quot;
-                                class=&quot;form-input js-calendar-year-input&quot; required
-                                autocomplete=&quot;bday-year&quot; data-min=&quot;1900&quot; data-max=&quot;3000&quot;
-                                maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
-                                data-input-regex=&quot;^[0-9]{0,4}$&quot; title=&quot;Indtast årstal&quot;&gt;
+                            &lt;input type=&quot;number&quot; id=&quot;date-input-birthday-year&quot;
+                                name=&quot;birthday-year&quot; class=&quot;form-input&quot; required
+                                autocomplete=&quot;bday-year&quot;&gt;
                         &lt;/div&gt;
 
                     &lt;/div&gt;

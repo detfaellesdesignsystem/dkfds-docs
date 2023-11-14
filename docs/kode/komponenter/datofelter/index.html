@@ -5207,28 +5207,22 @@
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-input-example-day">Dag</label>
 
-                <input type="tel" id="date-input-example-day"
-                    class="form-input js-calendar-day-input" required data-min="1"
-                    data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
-                    data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal">
+                <input type="number" id="date-input-example-day" name="deadline-day"
+                    class="form-input" required>
             </div>
 
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-input-example-month">Måned</label>
 
-                <input type="tel" id="date-input-example-month"
-                    class="form-input js-calendar-month-input" required data-min="1"
-                    data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
-                    data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer">
+                <input type="number" id="date-input-example-month" name="deadline-month"
+                    class="form-input" required>
             </div>
 
             <div class="form-group form-group-year">
                 <label class="form-label" for="date-input-example-year">År</label>
 
-                <input type="tel" id="date-input-example-year"
-                    class="form-input js-calendar-year-input" required data-min="1900"
-                    data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
-                    data-input-regex="^[0-9]{0,4}$" title="Indtast årstal">
+                <input type="number" id="date-input-example-year" name="deadline-year"
+                    class="form-input" required>
             </div>
 
         </div>
@@ -5282,28 +5276,22 @@
             &lt;div class=&quot;form-group form-group-day&quot;&gt;
                 &lt;label class=&quot;form-label&quot; for=&quot;date-input-example-day&quot;&gt;Dag&lt;/label&gt;
 
-                &lt;input type=&quot;tel&quot; id=&quot;date-input-example-day&quot;
-                    class=&quot;form-input js-calendar-day-input&quot; required data-min=&quot;1&quot;
-                    data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
-                    data-input-regex=&quot;^[0-9]{0,2}$&quot; title=&quot;Indtast dag på måneden som tal&quot;&gt;
+                &lt;input type=&quot;number&quot; id=&quot;date-input-example-day&quot; name=&quot;deadline-day&quot;
+                    class=&quot;form-input&quot; required&gt;
             &lt;/div&gt;
 
             &lt;div class=&quot;form-group form-group-month&quot;&gt;
                 &lt;label class=&quot;form-label&quot; for=&quot;date-input-example-month&quot;&gt;Måned&lt;/label&gt;
 
-                &lt;input type=&quot;tel&quot; id=&quot;date-input-example-month&quot;
-                    class=&quot;form-input js-calendar-month-input&quot; required data-min=&quot;1&quot;
-                    data-max=&quot;12&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
-                    data-input-regex=&quot;^[0-9]{0,2}$&quot; title=&quot;Indtast månedens nummer&quot;&gt;
+                &lt;input type=&quot;number&quot; id=&quot;date-input-example-month&quot; name=&quot;deadline-month&quot;
+                    class=&quot;form-input&quot; required&gt;
             &lt;/div&gt;
 
             &lt;div class=&quot;form-group form-group-year&quot;&gt;
                 &lt;label class=&quot;form-label&quot; for=&quot;date-input-example-year&quot;&gt;År&lt;/label&gt;
 
-                &lt;input type=&quot;tel&quot; id=&quot;date-input-example-year&quot;
-                    class=&quot;form-input js-calendar-year-input&quot; required data-min=&quot;1900&quot;
-                    data-max=&quot;3000&quot; maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
-                    data-input-regex=&quot;^[0-9]{0,4}$&quot; title=&quot;Indtast årstal&quot;&gt;
+                &lt;input type=&quot;number&quot; id=&quot;date-input-example-year&quot; name=&quot;deadline-year&quot;
+                    class=&quot;form-input&quot; required&gt;
             &lt;/div&gt;
 
         &lt;/div&gt;
@@ -5317,23 +5305,7 @@
 <ul>
   <li>Anvend ikke JavaScript til automatisk at flytte fokus fra felt til felt, da det gør det svært for tastatur-brugere at navigere i formularen.</li>
   <li>Datofelter-komponenten består af 3 inputfelter.</li>
-  <li>Attributten <code>data-input-regex</code> håndteres af JavaScript via dkfds.js filen, som derfor bør importeres i projektet.
-Attributten forhindrer at brugeren kan indskrive tegn som ikke er tal, samt mere end 2 tal for dag og måned, og 4 tal i år-inputtet derudover  Eksempel for dag og måned: ` data-input-regex=”^[0-9]{0,2}$”`</li>
-  <li>For at initialisere dato-komponenten skal <code>.date-group</code>-elementet have klassen <code>.js-calendar-group</code>. Derudover skal de tre inputfelter have følgende klasser:
-    <ul>
-      <li>Dag input: <code>.js-calendar-day-input</code></li>
-      <li>Måned input: <code>.js-calendar-month-input</code></li>
-      <li>År input: <code>.js-calendar-year-input</code></li>
-    </ul>
-  </li>
 </ul>
-
-<h3>Javascript</h3>
-<p>Datofelterne kræver JavaScript for at maskerne virker. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new InputRegexMask(document.getElementById(&#39;DAY-INPUT-ID&#39;));
-new InputRegexMask(document.getElementById(&#39;MONTH-INPUT-ID&#39;));
-new InputRegexMask(document.getElementById(&#39;YEAR-INPUT-ID&#39;));</code></pre></figure>
 
 <h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
 <p><a href="/kode/komponenter/fejlmeddelelser/#datofelter">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a></p>

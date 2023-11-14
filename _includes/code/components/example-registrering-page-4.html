@@ -239,36 +239,24 @@
                                             <label class="form-label"
                                                 for="input-date-day">Dag</label>
 
-                                            <input type="tel" id="input-date-day"
-                                                class="form-input js-calendar-day-input"
-                                                required data-min="1" data-max="31"
-                                                maxlength="2" pattern="^[0-9]{0,2}$"
-                                                data-input-regex="^[0-9]{0,2}$"
-                                                title="Indtast dag på måneden som tal">
+                                            <input type="number" id="input-date-day"
+                                                name="date-day" class="form-input" required>
                                         </div>
 
                                         <div class="form-group form-group-month">
                                             <label class="form-label"
                                                 for="input-date-month">Måned</label>
 
-                                            <input type="tel" id="input-date-month"
-                                                class="form-input js-calendar-month-input"
-                                                required data-min="1" data-max="12"
-                                                maxlength="2" pattern="^[0-9]{0,2}$"
-                                                data-input-regex="^[0-9]{0,2}$"
-                                                title="Indtast månedens nummer">
+                                            <input type="number" id="input-date-month"
+                                                name="date-month" class="form-input" required>
                                         </div>
 
                                         <div class="form-group form-group-year">
                                             <label class="form-label"
                                                 for="input-date-year">År</label>
 
-                                            <input type="tel" id="input-date-year"
-                                                class="form-input js-calendar-year-input"
-                                                required data-min="1900" data-max="3000"
-                                                maxlength="4" pattern="^[0-9]{0,4}$"
-                                                data-input-regex="^[0-9]{0,4}$"
-                                                title="Indtast årstal">
+                                            <input type="number" id="input-date-year"
+                                                name="date-year" class="form-input" required>
                                         </div>
 
                                     </div>

@@ -130,7 +130,12 @@
     "dateinput_data": {
         "id": "input-date",
         "legend": "Dato for registreringen",
-        "helptext": "For eksempel: 01 12 2016"
+        "helptext": "For eksempel: 01 12 2016",
+        "name": {
+            "day": "date-day",
+            "month": "date-month",
+            "year": "date-year"
+        }
     },
     "button_next": {
         "text": "Næste",
