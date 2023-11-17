@@ -1,10 +1,17 @@
 <footer class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-            <button class="function-link mr-8" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                    <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
-            </button>
-            
+            <div class="d-flex mr-8">
+                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                </button>
+                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
+                </button>
+                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
+                </button>
+                <button id="theme-virk" class="function-link"><span>Virk</span>
+                </button>
+            </div>
             <div>
                 {% if include.previoustest and include.previoustest != '' %}
                 <a class="function-link mr-4" href="{{ include.previoustest }}">Forrige</a>
@@ -16,3 +23,60 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let createLink = function(style) {
+            var lnk = document.createElement('link');
+            lnk.type='text/css';
+            lnk.rel='stylesheet';
+            switch (style) {
+                case "neutral":
+                    lnk.href= '/assets/style/test_neutral.css';
+                    break;
+                case "borger":
+                    lnk.href= '/assets/style/test_borger.css';
+                    break;
+                case "virk":
+                    lnk.href= '/assets/style/test_virk.css';
+                    break;
+                case 'normalization':
+                    lnk.href= '/assets/style/test_normalization.css';
+                    break;
+            }
+            document.getElementsByTagName('head')[0].appendChild(lnk);
+        }
+
+        let setNeutralStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        };
+
+        let setBorgerStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        };
+
+        let setVirkStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        };
+
+        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
+        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
+        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
+
+        let normalize = false;
+        if (document.querySelectorAll('main h1').length > 0) {
+            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
+                normalize = true;
+                createLink("normalization");
+            }
+        }
+        if (document.cookie.includes('theme=borger') && !normalize) {
+            createLink("borger");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
+        }
+        else if (document.cookie.includes('theme=virk') && !normalize) {
+            createLink("virk");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
+        }
+    });
+</script>

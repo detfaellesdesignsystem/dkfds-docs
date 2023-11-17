@@ -109,19 +109,21 @@ let onBorgerdkThemeSelected = function(){
 };
 
 let setStylesheet = function(){
-    let themeChosen = getThemeCookie();
-    debug('stylesheet:', themeChosen);
-    if(themeChosen === null){
-        themeChosen = "virk";
+    if (!document.body.classList.contains('layout-test-example')) {
+        let themeChosen = getThemeCookie();
+        debug('stylesheet:', themeChosen);
+        if(themeChosen === null){
+            themeChosen = "virk";
+        }
+        const indexOfTheme = themes.indexOf(themeChosen);
+    
+        var lnk = document.createElement('link');
+        lnk.type='text/css';
+        lnk.rel='stylesheet';
+        lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
+    
+        document.getElementsByTagName('head')[0].appendChild(lnk);
     }
-    const indexOfTheme = themes.indexOf(themeChosen);
-
-    var lnk = document.createElement('link');
-    lnk.type='text/css';
-    lnk.rel='stylesheet';
-    lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
-
-    document.getElementsByTagName('head')[0].appendChild(lnk);
 };
 
 
