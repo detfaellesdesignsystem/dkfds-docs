@@ -40,7 +40,7 @@ Man kan indsætte en vandret liste, der er defineret med klasserne `unstyled-lis
 
 #### Kolonner
 
-Man kan indsætte et <a href="/kode/grid/">grid</a> med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
+Man kan indsætte et {% include links/internal-links.html linktext="grid" %} med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
 
 <a href="/komponenter/footer/#tre-kolonner">Se eksempler på forskellige sammensætninger</a>.
 

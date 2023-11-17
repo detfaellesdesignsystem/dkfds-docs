@@ -20,13 +20,11 @@ primary:
 Kom_i_gang_category:
   - href: /kom-i-gang/implementering-kode/
     categorynav: 'Implementering_kode_category'
-  - href: /kom-i-gang/designprincipper/
-    categorynav: 'Designprincipper_category'
   - href: /kom-i-gang/designressourcer/
+  - href: /kom-i-gang/tjekliste/
   - href: /kom-i-gang/krav/
     categorynav: 'Krav_category'
   - href: /kom-i-gang/tilgaengelighed/
-  - href: /kom-i-gang/print/
   - href: /kom-i-gang/faq/
 
 Implementering_kode_category:
@@ -34,10 +32,8 @@ Implementering_kode_category:
   - href: /kom-i-gang/implementering-kode/browserunderstøttelse/
   - href: /kom-i-gang/implementering-kode/eksempler-implementering/
   - href: /kom-i-gang/implementering-kode/plugins/
+  - href: /kom-i-gang/implementering-kode/print/
   - href: /kom-i-gang/implementering-kode/frameworks/
-
-Designprincipper_category:
-  - href: /kom-i-gang/designprincipper/tjekliste/
 
 Krav_category:
   - href: /kom-i-gang/krav/borgerdk-virk/

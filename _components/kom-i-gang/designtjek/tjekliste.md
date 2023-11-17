@@ -1,6 +1,5 @@
 ---
-permalink: "/kom-i-gang/designprincipper/tjekliste/"
-parentlink: "/kom-i-gang/designprincipper/"
+permalink: "/kom-i-gang/tjekliste/"
 redirect_from:
 - "/komigang/tildesignere/designtjekliste/"
 - "/komigang/tjekliste/"

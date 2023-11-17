@@ -28,7 +28,8 @@ module.exports = function (outputPath, prod) {
       "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
       "newsletter": ["./javascript/newsletter.js"],
       "pagination": ["./javascript/components/pagination.js"],
-      "session-timeout": ["./javascript/components/session-timeout.js"]
+      "session-timeout": ["./javascript/components/session-timeout.js"],
+      "url-tabs": ["./javascript/components/url-tabs.js"]
     },
     module: {
       rules: [

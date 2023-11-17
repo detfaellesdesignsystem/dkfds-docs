@@ -39,7 +39,7 @@ tags:
 
 {% include code/syntax.html component="table" copybutton=true %}
 
-Man kan gøre brug af hjælpeklassen for <a href="/kode/utilities/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner. 
+Man kan gøre brug af hjælpeklassen for {% include links/internal-links.html linktext="bredde i procent" %} til at definere bredde på kolonner. 
 
 Brug klassen `table-header-no-wrap` på `th`-elementet inde i `thead`, hvis du ikke ønsker, at en header skal kunne ombrydes til flere linjer.
 
@@ -63,7 +63,7 @@ Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`
 
 {:#responsiv}
 ### Responsiv tabel
-En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. 
+En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved {% include links/internal-links.html linktext="breakpoint" %} `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. 
 
 Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende {% include links/component-links.html linktext="horisontalt scroll" %} - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.
 

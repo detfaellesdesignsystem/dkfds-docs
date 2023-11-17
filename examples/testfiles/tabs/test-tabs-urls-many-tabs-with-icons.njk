@@ -1,0 +1,107 @@
+{% from "components/tabs/tabs.njk" import tabUrls as tabUrls %}
+
+{% set many_tabs_with_icons = {
+    "items": [
+        {
+            "current": true,
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 1",
+                "icon": "format-list-checks"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 2",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 3",
+                "icon": "format-list-checks"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 4",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 5",
+                "icon": "format-list-checks"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 6",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 7",
+                "icon": "format-list-checks"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 8",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 9",
+                "icon": "format-list-checks"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 10",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 11",
+                "icon": "format-list-checks"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 12",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "Indhold 13",
+                "icon": "format-list-checks"
+            }
+        }
+    ]
+} %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ tabUrls(many_tabs_with_icons) }}
+        </div>
+    </div>
+</main>
+

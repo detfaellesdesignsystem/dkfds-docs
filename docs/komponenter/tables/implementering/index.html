@@ -579,6 +579,34 @@
 
         
         <li>
+            <a href="/kom-i-gang/implementering-kode/print/" class="nav-link"><span>Print</span></a>
+        </li>
+        
+
+    
+
+
+
+    
+
+     
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <li>
             <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link"><span>Frameworks</span></a>
         </li>
         
@@ -614,51 +642,9 @@
 
         
 
-        <li>
-            <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="designprincipper_category" aria-haspopup="true" aria-expanded="false">
-                    <span>Designprincipper</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="designprincipper_category" aria-hidden="true">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/designprincipper/" class="nav-link">
-                                <span>Designprincipper <span class="helptext">(overblik)</span></span>
-                            </a>
-                        </li>
-                        
-
-    
-
-     
-        
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
         
         <li>
-            <a href="/kom-i-gang/designprincipper/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
-        </li>
-        
-
-    
-
-
-                    </ul>
-                </div>
-            </div>
+            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Design og ressourcer</span></a>
         </li>
         
 
@@ -686,7 +672,7 @@
 
         
         <li>
-            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Designressourcer</span></a>
+            <a href="/kom-i-gang/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
         </li>
         
 
@@ -813,34 +799,6 @@
         
         <li>
             <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
-        </li>
-        
-
-    
-
-
-
-    
-
-     
-        
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-        <li>
-            <a href="/kom-i-gang/print/" class="nav-link"><span>Print</span></a>
         </li>
         
 
@@ -1792,7 +1750,7 @@
 
         
         <li>
-            <a href="/komponenter/faneblade/guidelines/" class="nav-link"><span>Faneblade (Tabs)</span></a>
+            <a href="/komponenter/faneblade/guidelines/" class="nav-link"><span>Faneblade</span></a>
         </li>
         
 
@@ -3306,7 +3264,7 @@
 <li>
 
   <a href="/komponenter/faneblade/guidelines/" class="nav-link">
-    <span>Faneblade (Tabs)</span>
+    <span>Faneblade</span>
   </a>
 
   
@@ -4050,15 +4008,15 @@
 
 
 
-    <nav class="tab-container">
+    <nav class="tab-container" id="tab-component">
         <ul>
                 
                 <li>
-                    <a href="/komponenter/tables/guidelines/" class="tab " ><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg><span>Retningslinjer</span></a>
+                    <a href="/komponenter/tables/guidelines/#tab-component" class="tab-item" ><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg><span>Retningslinjer</span></a>
                 </li>
                 
                 <li>
-                    <a href="/komponenter/tables/implementering/" class="tab active-tab" aria-current="page"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Implementering</span></a>
+                    <a href="/komponenter/tables/implementering/#tab-component" class="tab-item" aria-current="page"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Implementering</span></a>
                 </li></ul>
     </nav>
 
@@ -4144,7 +4102,7 @@
     </div>
 </div>
 
-<p>Man kan gøre brug af hjælpeklassen for <a href="/kode/utilities/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner.</p>
+<p>Man kan gøre brug af hjælpeklassen for <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#bredde-i-procent">bredde i procent</a> til at definere bredde på kolonner.</p>
 
 <p>Brug klassen <code>table-header-no-wrap</code> på <code>th</code>-elementet inde i <code>thead</code>, hvis du ikke ønsker, at en header skal kunne ombrydes til flere linjer.</p>
 
@@ -4163,7 +4121,7 @@
 <p>Man kan sætte zebralinjer på en tabel med klassen <code>table--zebra</code> på <code>&lt;table&gt;</code>.</p>
 
 <h3 id="responsiv">Responsiv tabel</h3>
-<p>En tabel gøres responsiv ved at tilføje klassen <code>table--responsive-headers</code> til <code>&lt;table&gt;</code>. Responsive tabeller ændrer som standard udseende ved <a href="/kode/utilities/#responsive-hjælpeklasser">breakpoint</a> <code>sm</code>, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint.</p>
+<p>En tabel gøres responsiv ved at tilføje klassen <code>table--responsive-headers</code> til <code>&lt;table&gt;</code>. Responsive tabeller ændrer som standard udseende ved <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser">breakpoint</a> <code>sm</code>, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint.</p>
 
 <p>Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende <a href="/komponenter/tables/implementering/#horisontalt-scroll">horisontalt scroll</a> - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.</p>
 
@@ -5037,6 +4995,7 @@
 
 
 <script src="/assets/js/table.js"></script>
+
 
 
 

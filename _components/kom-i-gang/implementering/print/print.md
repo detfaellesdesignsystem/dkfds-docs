@@ -1,5 +1,6 @@
 ---
-permalink: "/kom-i-gang/print/"
+permalink: "/kom-i-gang/implementering-kode/print/"
+parentlink: "/kom-i-gang/implementering-kode/"
 redirect_from:
 - "/design/print/"
 - "/kode/print/"

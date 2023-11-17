@@ -11,15 +11,15 @@ tags:
 
 {% include links/internal-links.html linktext="Implementering og kode" %}
 
-Det grundlæggende, du skal vide for at anvende designsystemets kode samt information om browserunderstøttelse og plugins.
+Det grundlæggende, du skal vide, for at anvende designsystemets kode samt information om plugins og teknisk opsætning af sider til print.
 
-{% include links/internal-links.html linktext="Designprincipper" %}
+{% include links/internal-links.html linktext="Design og ressourcer" %}
 
-De overordnede principper for designsystemet samt en tjekliste.
+De overordnede principper for designsystemet samt link til designressourcer i Figma og som SVG.
 
-{% include links/internal-links.html linktext="Designressourcer" %}
+{% include links/internal-links.html linktext="Tjekliste" %}
 
-Link til komponentbiblioteket i Figma samt svg-filer til download.
+Det skal du huske, når du bygger en løsning med Det Fælles Designssystem.
 
 {% include links/internal-links.html linktext="Krav" %}
 
@@ -28,10 +28,6 @@ Krav og lovgivning for selvbetjeningsløsninger på borger.dk og Virk.
 {% include links/internal-links.html linktext="Tilgængelighed" %}
 
 Det grundlæggende, de skal gøre, for at lave en tilgængelig selvbetjeningsløsning.
-
-{% include links/internal-links.html linktext="Print" %}
-
-Hjælp til at optimere dine løsninger til print.
 
 {% include links/internal-links.html linktext="Ofte stillede spørgsmål" %}
 

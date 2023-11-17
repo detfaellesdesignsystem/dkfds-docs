@@ -175,8 +175,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
 - Rettet fejl, hvor visse typer af `id` kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Tilføjet ny side til dokumentationen kaldet <a href="/faellesskab/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/design/designressourcer/">Designressourcer</a>, <a href="/design/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.
-- Tilføjet `inline` til <a href="/kode/utilities/#display">hjælpeklasser for display</a>.
+- Tilføjet ny side til dokumentationen kaldet {% include links/internal-links.html linktext="Ofte stillede spørgsmål" %}, samt opdateret siderne {% include links/internal-links.html linktext="Designressourcer" %}, {% include links/internal-links.html linktext="Tjekliste" %} og <a href="/komponenter/">Komponenter</a>.
+- Tilføjet `inline` til {% include links/internal-links.html linktext="hjælpeklasser for display" %}.
 - Tilføjet `autocomplete`-attributter til flere eksempler samt tilføjet afsnit om `autocomplete` til <a href="/kode/komponenter/inputfelter/">inputfelter</a>.
 
 {:#version-9-0-2 .mb-0}
@@ -324,7 +324,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.
 - Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
-- Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender <a href="/kode/ikoner/">ikonsamlingen</a>.
+- Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender {% include links/internal-links.html linktext="ikonsamlingen" %}.
 
 {:#version-8-0-0 .mb-0}
 ## Version 8.0.0

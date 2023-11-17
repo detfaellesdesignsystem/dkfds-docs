@@ -16,8 +16,8 @@
 ================================================== -->
   
 
-<title>Faneblade (Tabs) | Det Fælles Designsystem</title>
-<meta property="og:title" content="Faneblade (Tabs) | Det Fælles Designsystem">
+<title>Faneblade | Det Fælles Designsystem</title>
+<meta property="og:title" content="Faneblade | Det Fælles Designsystem">
 
 <meta name="description" content="Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner af indhold og kun få vist en sektion af gangen.">
 <meta property="og:description" content="Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner af indhold og kun få vist en sektion af gangen.">
@@ -65,7 +65,7 @@
 </noscript>
 
   </head>
-  <body class="page-faneblade-tabs layout-styleguide">
+  <body class="page-faneblade layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -579,6 +579,34 @@
 
         
         <li>
+            <a href="/kom-i-gang/implementering-kode/print/" class="nav-link"><span>Print</span></a>
+        </li>
+        
+
+    
+
+
+
+    
+
+     
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <li>
             <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link"><span>Frameworks</span></a>
         </li>
         
@@ -614,51 +642,9 @@
 
         
 
-        <li>
-            <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="designprincipper_category" aria-haspopup="true" aria-expanded="false">
-                    <span>Designprincipper</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="designprincipper_category" aria-hidden="true">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/designprincipper/" class="nav-link">
-                                <span>Designprincipper <span class="helptext">(overblik)</span></span>
-                            </a>
-                        </li>
-                        
-
-    
-
-     
-        
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
         
         <li>
-            <a href="/kom-i-gang/designprincipper/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
-        </li>
-        
-
-    
-
-
-                    </ul>
-                </div>
-            </div>
+            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Design og ressourcer</span></a>
         </li>
         
 
@@ -686,7 +672,7 @@
 
         
         <li>
-            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Designressourcer</span></a>
+            <a href="/kom-i-gang/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
         </li>
         
 
@@ -813,34 +799,6 @@
         
         <li>
             <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
-        </li>
-        
-
-    
-
-
-
-    
-
-     
-        
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-        <li>
-            <a href="/kom-i-gang/print/" class="nav-link"><span>Print</span></a>
         </li>
         
 
@@ -1792,7 +1750,7 @@
 
         
         <li class="active current">
-            <a href="/komponenter/faneblade/guidelines/" class="nav-link"><span>Faneblade (Tabs)</span></a>
+            <a href="/komponenter/faneblade/guidelines/" class="nav-link"><span>Faneblade</span></a>
         </li>
         
 
@@ -3306,7 +3264,7 @@
 <li class="active current">
 
   <a href="/komponenter/faneblade/guidelines/" class="nav-link" aria-current="page">
-    <span>Faneblade (Tabs)</span>
+    <span>Faneblade</span>
   </a>
 
   
@@ -3965,7 +3923,7 @@
 
                 
                 
-                <h1 id="faneblade-tabs">Faneblade (Tabs)</h1>
+                <h1 id="faneblade">Faneblade</h1>
                 
 
                 
@@ -3974,11 +3932,11 @@
 
                 
                 
-<div class="component-preview  component-preview-tabnav">
+<div class="component-preview  component-preview-tabs-buttons">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tabnav/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tabnav</span></a>
+        <a href="/eksempel/tabs-buttons/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tabs-buttons</span></a>
         
     </div>
     
@@ -3987,99 +3945,70 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tabnav" role="tablist">
+        <div class="tab-container" role="tablist" aria-label="List of tabs">
+    <ul>
 
-    <button aria-controls="tabpanel1" id="tab1" class="tabnav-item" role="tab"
-        aria-selected="false">
-        <span>Fane 1</span>
-    </button>
-    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0"
-        id="tabpanel1" aria-labelledby="tab1">
-        <h2>Indhold 1</h2>
-        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.</p>
-    </section>
+        <li>
+            <button class="tab-item" role="tab" aria-controls="tabpanel1" aria-selected="true"
+                id="tab1"><span>Indhold 1</span>
+            </button>
+        </li>
 
-    <button aria-controls="tabpanel2" id="tab2" class="tabnav-item" role="tab"
-        aria-selected="true">
-        <span>Fane 2</span>
-    </button>
+        <li>
+            <button class="tab-item" role="tab" aria-controls="tabpanel2"
+                aria-selected="false" id="tab2"><span>Indhold 2</span>
+            </button>
+        </li>
 
-    <section class="tabnav-panel" aria-hidden="false" role="tabpanel" tabindex="0"
-        id="tabpanel2" aria-labelledby="tab2">
-        <h2>Indhold 2</h2>
-        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.</p>
-    </section>
+        <li>
+            <button class="tab-item" role="tab" aria-controls="tabpanel3"
+                aria-selected="false" id="tab3"><span>Indhold 3</span>
+            </button>
+        </li>
 
-    <button aria-controls="tabpanel3" id="tab3" class="tabnav-item" role="tab"
-        aria-selected="false">
-        <span>Fane 3</span>
-    </button>
-    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0"
-        id="tabpanel3" aria-labelledby="tab3">
-        <h2>Indhold 3</h2>
-        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.</p>
-    </section>
+        <li>
+            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
+                aria-labelledby="tab1" aria-hidden="false">
+                <h2>Indhold 1</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.</p>
+            </section>
+        </li>
 
-    <button aria-controls="tabpanel4" id="tab4" class="tabnav-item" role="tab"
-        aria-selected="false">
-        <span>Fane 4</span>
-    </button>
-    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0"
-        id="tabpanel4" aria-labelledby="tab4">
-        <h2>Indhold 4</h2>
-        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.</p>
-    </section>
+        <li>
+            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
+                aria-labelledby="tab2" aria-hidden="true">
+                <h2>Indhold 2</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.</p>
+            </section>
+        </li>
 
-    <button aria-controls="tabpanel5" id="tab5" class="tabnav-item" role="tab"
-        aria-selected="false">
-        <span>Fane 5</span>
-    </button>
-    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0"
-        id="tabpanel5" aria-labelledby="tab5">
-        <h2>Indhold 5</h2>
-        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.</p>
-    </section>
+        <li>
+            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
+                aria-labelledby="tab3" aria-hidden="true">
+                <h2>Indhold 3</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.</p>
+            </section>
+        </li>
 
-    <button aria-controls="tabpanel6" id="tab6" class="tabnav-item" role="tab"
-        aria-selected="false">
-        <span>Fane 6</span>
-    </button>
-    <section class="tabnav-panel" aria-hidden="true" role="tabpanel" tabindex="0"
-        id="tabpanel6" aria-labelledby="tab6">
-        <h2>Indhold 6</h2>
-        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.</p>
-    </section>
-
+    </ul>
 </div>
         
     </div>
@@ -4101,15 +4030,15 @@
 
 
 
-    <nav class="tab-container">
+    <nav class="tab-container" id="tab-component">
         <ul>
                 
                 <li>
-                    <a href="/komponenter/faneblade/guidelines/" class="tab active-tab" aria-current="page"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg><span>Retningslinjer</span></a>
+                    <a href="/komponenter/faneblade/guidelines/#tab-component" class="tab-item" aria-current="page"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg><span>Retningslinjer</span></a>
                 </li>
                 
                 <li>
-                    <a href="/komponenter/faneblade/implementering/" class="tab " ><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Implementering</span></a>
+                    <a href="/komponenter/faneblade/implementering/#tab-component" class="tab-item" ><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Implementering</span></a>
                 </li></ul>
     </nav>
 
@@ -4145,7 +4074,10 @@
 
 <h3>Vejledning</h3>
 
-<p>Vi anbefaler ikke, at du anvender faneblade i en generel løsning, da en stor del af brugerne ikke opdager indholdet på fanerne udover den aktive.</p>
+<p>Faneblade anvendes i afgrænsede sektioner. Indholdet vises indrammet, så brugeren ikke er i tvivl om hvor det starter og slutter. Det er muligt at anvende flere fanebladskomponenter på en side.</p>
+
+<p>Overvej om faneblade er den rette løsning. Vær opmærksom på, at brugeren kun kan se indholdet fra én fane ad gangen. Alternativer til faneblade kan være accordions eller detaljekomponenten, hvis du ønsker at indhold først bliver synligt når brugeren aktivt vælger det.
+Opdeling af indholdet på flere sider kan også være et alternativ. Faneblade bør kun anvendes hvis indholdet i de forskellige faneblade deler overordnet kontekst.</p>
 
 <p>Hvis du ønsker at anvende faner, bør det testes på din målgruppe før din løsning går i produktion.</p>
 
@@ -4170,6 +4102,110 @@
 </div>
 
     </div>
+</div>
+
+<h3>Faneblade med URL-skifte</h3>
+
+<p>Fanebladskomponenten kan anvendes til opdeling af en side i flere underafsnit. Hvert skifte vil kunne afspejles i sidens URL, og det vil være muligt at linke direkte til, og åbne, et faneblad.
+Ved denne brug bør sidens indhold, fra fanebladskomponenten og ned være knyttet til det åbne faneblad. I dette tilfælde må der kun anvendes én fanebladskomponent af denne type på hver side.
+Vær opmærksom på, af faneblade ikke skal anvendes i stedet for en undermenu. Indhold i faneblade skal stadig være relateret til hinanden.</p>
+
+<div class="component-preview  component-preview-tabs-urls">
+    <div class="component-link px-4 py-4">
+        <a href="/eksempel/tabs-urls/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tabs-urls</span></a>
+    </div>
+    
+    <div class="sr-only">Eksempel på faneblade med URL-skifte</div>
+    
+    <div class="component-example px-4 py-4">
+        <a href="/eksempel/tabs-urls/" class="screenshot d-block full-width-image" title="Åbn dette eksempel i et nyt vindue: tabs-urls" target="_blank"></a>
+    </div>
+    
+</div>
+
+<h3>Faneblade med ikoner</h3>
+
+<p>Faneblade kan vises med ikoner hvis disse understøtter de angivne sektioner visuelt. Vi anbefaler at være forsigtig med denne løsning, da et ikon der læses forkert eller misforståes kan forvirre brugeren mere end det hjælper. Så benyt kun ikoner hvis de er klare i budskabet og hjælper med at kommunikere det underliggende indhold.
+Ikoner skal altid understøttes af en label med fanebladets navn.</p>
+
+<div class="component-preview  component-preview-tabs-buttons-icons">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tabs-buttons-icons/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tabs-buttons-icons</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på faneblade med ikoner</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="tab-container" role="tablist" aria-label="List of tabs">
+    <ul>
+
+        <li>
+            <button class="tab-item" role="tab" aria-controls="tabpanel-1" aria-selected="false" id="tab-icon1"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Indhold
+                    1</span>
+            </button>
+        </li>
+
+        <li>
+            <button class="tab-item" role="tab" aria-controls="tabpanel-2" aria-selected="false" id="tab-icon2"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg><span>Indhold
+                    2</span>
+            </button>
+        </li>
+
+        <li>
+            <button class="tab-item" role="tab" aria-controls="tabpanel-3" aria-selected="false" id="tab-icon3"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Indhold
+                    3</span>
+            </button>
+        </li>
+
+        <li>
+            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel-1" aria-labelledby="tab-icon1" aria-hidden="true">
+                <h2>Indhold 1</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.</p>
+            </section>
+        </li>
+
+        <li>
+            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel-2" aria-labelledby="tab-icon2" aria-hidden="true">
+                <h2>Indhold 2</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.</p>
+            </section>
+        </li>
+
+        <li>
+            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel-3" aria-labelledby="tab-icon3" aria-hidden="true">
+                <h2>Indhold 3</h2>
+                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.</p>
+            </section>
+        </li>
+
+    </ul>
+</div>
+        
+    </div>
+    
 </div>
 
 <h4>Referencer</h4>
@@ -4476,6 +4512,7 @@
     <script src="/assets/js/theme.js"></script>
 <script src="/assets/js/styleguide.js"></script>
 <script src="/assets/js/vendor.js"></script>
+
 
 
 

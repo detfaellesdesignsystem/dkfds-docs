@@ -1,0 +1,30 @@
+{% from "components/tabs/tabs.njk" import tabUrls as tabUrls %}
+
+{% set tab_list_long_strings_icons = {
+    "items": [
+        {
+            "current": true,
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue",
+                "icon": "construction"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "name": "ametconsecteturadipiscingelitduistristiquesollicitudinnibhsitametcommodonullafacilisinullamvehiculaipsumaarcucursusvitaetempodeunislnuncmi ipsumfaucibusvitaeliquetnecullamcorpersitametrisusnullamgetfelisegetnunc",
+                "icon": "format-list-checks"
+            }
+        }
+    ]
+} %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ tabUrls(tab_list_long_strings_icons) }}
+        </div>
+    </div>
+</main>
+

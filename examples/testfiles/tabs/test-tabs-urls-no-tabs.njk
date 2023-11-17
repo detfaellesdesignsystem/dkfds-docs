@@ -1,0 +1,14 @@
+{% from "components/tabs/tabs.njk" import tabUrls as tabUrls %}
+
+{% set no_tabs = {
+    "items": []
+} %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ tabUrls(no_tabs) }}
+        </div>
+    </div>
+</main>
+

@@ -13,8 +13,14 @@
 {%- elsif include.linktext == "`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden" -%}
 <a href="/kom-i-gang/implementering-kode/#javascript">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "hjælpeklasse" -%}
+{%- elsif include.linktext == "hjælpeklasse" or include.linktext == "hjælpeklasser for display" -%}
 <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "bredde i procent" -%}
+<a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#bredde-i-procent">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "breakpoint" -%}
+<a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "browserunderstøttelse" -%}
 <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">{{ include.linktext }}</a>
@@ -31,11 +37,11 @@
 {%- elsif include.linktext == "Designprincipper" -%}
 <a href="/kom-i-gang/designprincipper/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Tjekliste" or include.linktext == "Designtjek" or include.linktext == "tjekliste" -%}
-<a href="/kom-i-gang/designprincipper/tjekliste/">{{ include.linktext }}</a>
-
-{%- elsif include.linktext == "Designressourcer" or include.linktext == "SVG filer" or include.linktext == "Figma komponent bibliotek" -%}
+{%- elsif include.linktext == "Designressourcer" or include.linktext == "SVG filer" or include.linktext == "Figma komponent bibliotek" or include.linktext == "Design og ressourcer" -%}
 <a href="/kom-i-gang/designressourcer/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Tjekliste" or include.linktext == "Designtjek" or include.linktext == "tjekliste" -%}
+<a href="/kom-i-gang/tjekliste/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Krav" or include.linktext == "krav" or include.linktext == "krav til selvbetjeningsløsninger" or include.linktext == "Se hvilke krav og anbefalinger, der gælder din løsning" -%}
 <a href="/kom-i-gang/krav/">{{ include.linktext }}</a>
@@ -48,9 +54,6 @@
 
 {%- elsif include.linktext == "Tilgængelighed" or include.linktext == "tilgængelighed" -%}
 <a href="/kom-i-gang/tilgaengelighed/">{{ include.linktext }}</a>
-
-{%- elsif include.linktext == "Print" -%}
-<a href="/kom-i-gang/print/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Ofte stillede spørgsmål" -%}
 <a href="/kom-i-gang/faq/">{{ include.linktext }}</a>
@@ -145,6 +148,9 @@
 {%- elsif include.linktext == "ikoner til sortering i tabel" -%}
 <a href="/design/ikoner/guidelines/?s=sorter">{{ include.linktext }}</a>
 
+{%- elsif include.linktext == "ikonsamlingen" -%}
+<a href="/design/ikoner/implementering/">{{ include.linktext }}</a>
+
 {%- elsif include.linktext == "tilgængelighed i forbindelse med grafik og visualisering" or include.linktext == "tilgængelighed der gælder for grafik og visualisering" -%}
 <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">{{ include.linktext }}</a>
 
@@ -163,7 +169,7 @@
 {%- elsif include.linktext == "Grid’et i designsystemet" or include.linktext == "8point grid" or include.linktext == "12-kolonne grid" -%}
 <a href="/design/grid/guidelines/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "reglerne for grid-systemet" -%}
+{%- elsif include.linktext == "reglerne for grid-systemet" or include.linktext == "grid" -%}
 <a href="/design/grid/implementering/">{{ include.linktext }}</a>
 
 {%- else -%}

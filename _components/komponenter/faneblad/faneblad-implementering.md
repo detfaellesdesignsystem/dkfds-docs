@@ -11,7 +11,7 @@ title: Faneblade (Tabs)
 lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere
   ser de skjulte sektioner, når du anvender faneblade.
-component: "tabnav"
+component: "tabs-buttons"
 componentTitle: "Eksempel på faneblad"
 anchor: false
 description: "Dokumentation på implementering af faneblad."
@@ -31,7 +31,7 @@ Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der 
 Hvis man står i denne situation kan man definere denne komponent i JavaScript således:
 
 {% highlight js %}
-new DKFDS.Tabnav(document.getElementById('TABNAV-ID')).init();
+new DKFDS.Tabs(document.getElementById('TABNAV-ID')).init();
 {% endhighlight %}
 
 Bemærk, at dette kun gælder fra version 5.0.0.

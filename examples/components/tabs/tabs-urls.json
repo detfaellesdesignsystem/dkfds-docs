@@ -1,0 +1,25 @@
+{
+    "tabUrlList": {
+        "items": [
+            {
+                "current": true,
+                "anchorlink": {
+                    "href": "javascript:void(0);",
+                    "name": "Indhold 1"
+                }
+            },
+            {
+                "anchorlink": {
+                    "href": "javascript:void(0);",
+                    "name": "Indhold 2"
+                }
+            },
+            {
+                "anchorlink": {
+                    "href": "javascript:void(0);",
+                    "name": "Indhold 3"
+                }
+            }
+        ]
+    }
+}
