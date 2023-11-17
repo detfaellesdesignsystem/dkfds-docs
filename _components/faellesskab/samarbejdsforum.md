@@ -16,9 +16,9 @@ Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsysteme
 
 ## Næste samarbejdsforum
 
-Næste samarbejdsforum er planlagt til 6. december 2023.
+Næste samarbejdsforum afholdes <strong>onsdag den 6. december 2023 kl. 10.30 til 11.00</strong>.
 
-Invitationer sendes ud via nyhedsbrevet, når præcist tidspunkt er fastsat.
+Invitationer sendes ud snarligt via nyhedsbrevet.
 
 <a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsbrevet</a> for løbende at blive informeret om samarbejdsforum m.m.
 

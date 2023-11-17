@@ -401,7 +401,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
                     <span>Kom i gang</span>
                 </button>
                 
@@ -434,7 +434,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
                     <span>Implementering og kode</span>
                 </button>
                 
@@ -700,7 +700,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="krav_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="krav_category" aria-haspopup="true" aria-expanded="false">
                     <span>Krav</span>
                 </button>
                 
@@ -863,7 +863,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="design_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="design_category" aria-haspopup="true" aria-expanded="false">
                     <span>Design</span>
                 </button>
                 
@@ -924,7 +924,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
                     <span>Typografi</span>
                 </button>
                 
@@ -1218,7 +1218,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
                     <span>Datavisualisering og infografik</span>
                 </button>
                 
@@ -1409,7 +1409,7 @@
 
         <li class="active">
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="true">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="true">
                     <span>Komponenter</span>
                 </button>
                 
@@ -2543,7 +2543,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
                     <span>Eksempelsider og patterns</span>
                 </button>
                 
@@ -2604,7 +2604,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
                     <span>Patterns</span>
                 </button>
                 
@@ -2795,7 +2795,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="false">
                     <span>Fællesskab</span>
                 </button>
                 
@@ -3952,33 +3952,27 @@
         </legend>
         <span class="form-hint" id="date-input-example-hint">For eksempel: 05 12 2018</span>
 
-        <div class="date-group js-calendar-group mt-3">
+        <div class="date-group mt-3">
 
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-input-example-day">Dag</label>
 
-                <input type="tel" id="date-input-example-day"
-                    class="form-input js-calendar-day-input" required data-min="1"
-                    data-max="31" maxlength="2" pattern="^[0-9]{0,2}$"
-                    data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal">
+                <input type="number" id="date-input-example-day" name="deadline-day"
+                    class="form-input" required>
             </div>
 
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-input-example-month">Måned</label>
 
-                <input type="tel" id="date-input-example-month"
-                    class="form-input js-calendar-month-input" required data-min="1"
-                    data-max="12" maxlength="2" pattern="^[0-9]{0,2}$"
-                    data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer">
+                <input type="number" id="date-input-example-month" name="deadline-month"
+                    class="form-input" required>
             </div>
 
             <div class="form-group form-group-year">
                 <label class="form-label" for="date-input-example-year">År</label>
 
-                <input type="tel" id="date-input-example-year"
-                    class="form-input js-calendar-year-input" required data-min="1900"
-                    data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$"
-                    data-input-regex="^[0-9]{0,4}$" title="Indtast årstal">
+                <input type="number" id="date-input-example-year" name="deadline-year"
+                    class="form-input" required>
             </div>
 
         </div>
@@ -4088,24 +4082,24 @@
         <span class="form-error-message" id="date-input-error-example-error">
             <span class="sr-only">Fejl: </span>Datoen kan ikke være i fremtiden
         </span>
-        <div class="date-group js-calendar-group mt-3">
+        <div class="date-group mt-3">
 
             <div class="form-group form-group-day">
                 <label class="form-label" for="date-input-error-example-day">Dag</label>
 
-                <input type="tel" id="date-input-error-example-day" class="form-input js-calendar-day-input" value="01" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+                <input type="number" id="date-input-error-example-day" name="date-day" class="form-input" value="01" required="" />
             </div>
 
             <div class="form-group form-group-month">
                 <label class="form-label" for="date-input-error-example-month">Måned</label>
 
-                <input type="tel" id="date-input-error-example-month" class="form-input js-calendar-month-input" value="12" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+                <input type="number" id="date-input-error-example-month" name="date-month" class="form-input" value="12" required="" />
             </div>
 
             <div class="form-group form-group-year">
                 <label class="form-label" for="date-input-error-example-year">År</label>
 
-                <input type="tel" id="date-input-error-example-year" class="form-input js-calendar-year-input" value="2076" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+                <input type="number" id="date-input-error-example-year" name="date-year" class="form-input" value="2076" required="" />
             </div>
 
         </div>
@@ -4398,8 +4392,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
-                        <h2 class="h5 mb-4">Digitaliseringsstyrelsen & Erhvervsstyrelsen</h2>
-                        <p><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></p>
+                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
+                        <p>Det Fælles Designsystem udvikles i fællesskab af<br>Digitaliseringsstyrelsen & Erhvervsstyrelsen</p>
                     </section>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
@@ -4408,7 +4402,7 @@
                         <ul class="nobullet-list mb-0">
                             <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
                             <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-                            <li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
+                            <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
                         </ul>
                     </section>
                 </div>

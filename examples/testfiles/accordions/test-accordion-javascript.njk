@@ -1,0 +1,41 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">JavaScript i accordions</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionID", 
+                    "items": [
+                        {
+                            "title": "Accordion 1",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Accordion 2",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let accordion1 = document.getElementsByClassName("accordion")[0].getElementsByClassName("accordion-button")[0];
+
+        accordion1.addEventListener("fds.accordion.open", function() {
+            console.log("Accordion 1 was opened");
+        });
+        accordion1.addEventListener("fds.accordion.close", function() {
+            console.log("Accordion 1 was closed");
+        });
+    });
+</script>

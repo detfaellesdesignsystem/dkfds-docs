@@ -13,7 +13,7 @@
 {% if page.url contains "toastbesked" %}
 <script src="{{ site.baseurl }}/assets/js/toast.js"></script>
 {% endif %}
-{% if page.url contains "language-switcher" %}
+{% if page.url contains "language-switcher" or page.url contains "header-switch-language" %}
 <script src="{{ site.baseurl }}/assets/js/languageswitcher.js"></script>
 {% endif %}
 {% if page.url contains "modal" %}

@@ -1,0 +1,71 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+{% set navigation_menu_data = {
+    "ariaLabelMobile": "Hovedmenu og undermenuer",
+    "links": [
+        { "text": "Første menupunkt der har en længere tekst end de andre punkter",
+          "links": [
+              { "text": "Undermenu" },
+              { "text": "Undermenu" }
+        ]
+        },
+        { "text": "Andet" },
+        { "text": "Tredje" },
+        { "text": "Fjerde" },
+        { "text": "Femte" },
+        { "text": "Sjette" },
+        { "text": "Syvende" },
+        { "text": "Ottende" },
+        { "text": "Niende" },
+        { "text": "Tiende", "active": true,
+          "links": [
+              { "text": "Undermenu" },
+              { "text": "Undermenu", "current": true },
+              { "text": "Undermenu" }
+          ]
+        }
+    ]
+} %}
+
+<header class="header">
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    {{ navigation_menu(navigation_menu_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_navigation_menu(navigation_menu_data) }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>

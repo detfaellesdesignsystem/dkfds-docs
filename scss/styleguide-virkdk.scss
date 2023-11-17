@@ -9,6 +9,7 @@
 );
 @use '../node_modules/dkfds/src/stylesheets/dkfds-virkdk';
 @use 'styleguide-base';
+@use 'test-base';
 
 .is-neutral{ display:none }
 .is-virk { display:block }

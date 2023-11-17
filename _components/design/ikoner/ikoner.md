@@ -51,12 +51,12 @@ Vi bruger Material Designs ikoner som udgangspunkt.
 Hvis du har brug for ikoner, der ikke findes i {% include links/internal-links.html linktext="ikontaksonomien" %} henviser vi til:
 
 {:nobullet-list}
-- <a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://materialdesignicons.com/" class="icon-link" target="_blank">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes.
 
-<a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+<a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link" target="_blank">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 ### Links
 

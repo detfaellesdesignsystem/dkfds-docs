@@ -2,21 +2,19 @@
 <html lang="da">
 
 <head>
-    <meta name="robots" content="noindex">
     <!-- Basic Page Needs
 ================================================== -->
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
 <!-- Mobile Specific Metas
 ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  
-  <meta name="robots" content="noindex">
-  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+
 <!-- Title and meta description
 ================================================== -->
-  
+
 
 <title>Test-header-navigation-with-searchfield | Det Fælles Designsystem</title>
 <meta property="og:title" content="Test-header-navigation-with-searchfield | Det Fælles Designsystem">
@@ -31,9 +29,9 @@
 
 <!-- Favicons
 ================================================== -->
-  <!-- 128x128 -->
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
-  <link rel="icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
+<!-- 128x128 -->
+<link rel="shortcut icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
+<link rel="icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
 
 <!-- CSS
 ================================================== -->
@@ -48,20 +46,19 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css" as="style">
+<link rel="preload" href="/assets/style/test_borger.css" as="style">
+<link rel="preload" href="/assets/style/test_virk.css" as="style">
+<link rel="preload" href="/assets/style/test_neutral.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
-  body {
-    opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
+    body {
+      opacity: 0; /*hide page until theme is downloaded by js.*/
+    }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css">
-
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css">
+  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
 </noscript>
 
 </head>
@@ -264,9 +261,8 @@
                     Anders Andersen, Forsikringens Forsikringsfirma
                 </p>
 
-                <button class="button button-secondary d-print-none log-off">
-                    Log af
-                </button>
+                <button class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
@@ -313,6 +309,16 @@
                             <span>Fjerde menupunkt</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Femte menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Sjette menupunkt</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -357,10 +363,21 @@
                         <span>Fjerde menupunkt</span>
                     </a>
                 </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Femte menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Sjette menupunkt</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -369,17 +386,19 @@
         </div>
 
         <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
 
             <p class="user">
 
-                <span>Anders Andersen</span>
+                <span class="mb-3">Anders Andersen</span>
                 <span>Forsikringens Forsikringsfirma</span>
 
             </p>
 
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
+            <p>
+                <button class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
         </div>
 
     </div>
@@ -388,10 +407,17 @@
     <footer class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-            <button class="function-link mr-8" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                    <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span>
-            </button>
-            
+            <div class="d-flex mr-8">
+                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use xlink:href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                </button>
+                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
+                </button>
+                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
+                </button>
+                <button id="theme-virk" class="function-link"><span>Virk</span>
+                </button>
+            </div>
             <div>
                 
                 <a class="function-link mr-4" href="/eksempel/test-header-navigation-with-only-searchfield/">Forrige</a>
@@ -403,6 +429,63 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let createLink = function(style) {
+            var lnk = document.createElement('link');
+            lnk.type='text/css';
+            lnk.rel='stylesheet';
+            switch (style) {
+                case "neutral":
+                    lnk.href= '/assets/style/test_neutral.css';
+                    break;
+                case "borger":
+                    lnk.href= '/assets/style/test_borger.css';
+                    break;
+                case "virk":
+                    lnk.href= '/assets/style/test_virk.css';
+                    break;
+                case 'normalization':
+                    lnk.href= '/assets/style/test_normalization.css';
+                    break;
+            }
+            document.getElementsByTagName('head')[0].appendChild(lnk);
+        }
+
+        let setNeutralStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        };
+
+        let setBorgerStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        };
+
+        let setVirkStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        };
+
+        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
+        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
+        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
+
+        let normalize = false;
+        if (document.querySelectorAll('main h1').length > 0) {
+            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
+                normalize = true;
+                createLink("normalization");
+            }
+        }
+        if (document.cookie.includes('theme=borger') && !normalize) {
+            createLink("borger");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
+        }
+        else if (document.cookie.includes('theme=virk') && !normalize) {
+            createLink("virk");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
+        }
+    });
+</script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>

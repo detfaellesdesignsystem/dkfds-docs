@@ -8,6 +8,11 @@ title: Test
 # Testside
 
 {:.h3}
+## HTML-elementer
+
+{% include test/preview-test.html filename="test-html-elements" description="HTML-elementer" %}
+
+{:.h3}
 ## Ikoner
 
 {% include test/preview-test.html filename="test-icons-svg-and-class" description="Ikoner indsat som svg og klasse" %}
@@ -20,6 +25,7 @@ title: Test
 {% include test/preview-test.html filename="test-accordion-classes" description="Accordion-klasser" %}
 {% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
+{% include test/preview-test.html filename="test-accordion-javascript" description="JavaScript i accordions" %}
 
 {:.h3}
 ## Beskeder (Alerts)
@@ -81,6 +87,9 @@ title: Test
 {% include test/preview-test.html filename="test-tabs-urls-no-active-tabs" description="Faneblade med URL-skifte, ingen aktive faneblade" %}
 {% include test/preview-test.html filename="test-tabs-urls-only-one-tab" description="Faneblade med URL-skifte, kun ét faneblad" %}
 
+## Funktionslink
+{% include test/preview-test.html filename="test-function-link" description="Funktionslink" %}
+
 {:.h3}
 ## Gå til sidens indhold (Skip-link)
 
@@ -97,6 +106,8 @@ title: Test
 {% include test/preview-test.html filename="test-header-navigation-with-only-searchfield" description="Ingen navigation, kun søgefelt" %}
 {% include test/preview-test.html filename="test-header-navigation-with-searchfield" description="Simpel navigation med søgefelt" %}
 {% include test/preview-test.html filename="test-header-dropdown-navigation" description="Navigation med flere dropdownmenuer" %}
+{% include test/preview-test.html filename="test-header-navigation-many-items" description="Navigation med mange elementer" %}
+{% include test/preview-test.html filename="test-header-language-switcher" description="Sprogvælger" %}
 {% include test/preview-test.html filename="test-header-long-sentences" description="Header med mange ord" %}
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
 
@@ -120,7 +131,6 @@ title: Test
 {% include test/preview-test.html filename="test-buttons-in-divs" description="Knapper i hver sin række" %}
 {% include test/preview-test.html filename="test-buttons-next-to-text" description="Knapper i tekstafsnit" %}
 {% include test/preview-test.html filename="test-button-long-text" description="Knapper med lang tekst" %}
-{% include test/preview-test.html filename="test-button-break-word" description="Knap med tekst der skal ombrydes" %}
 {% include test/preview-test.html filename="test-buttons-1" description="Knap 1" %}
 
 {:.h3}

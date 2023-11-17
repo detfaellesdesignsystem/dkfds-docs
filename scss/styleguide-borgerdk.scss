@@ -9,6 +9,7 @@
 );
 @use '../node_modules/dkfds/src/stylesheets/dkfds-borgerdk';
 @use 'styleguide-base';
+@use 'test-base';
 
 body {
     opacity: 1 !important;

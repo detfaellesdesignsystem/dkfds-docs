@@ -16,9 +16,9 @@
                     Anders Andersen
                 </p>
 
-                <button class="button button-secondary d-print-none log-off">
-                    Log af
-                </button>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
@@ -56,6 +56,7 @@
         </div>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -70,6 +71,7 @@
         </div>
 
         <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
 
             <p class="user">
 
@@ -77,9 +79,11 @@
 
             </p>
 
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
+            <p>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
         </div>
 
     </div>
@@ -108,14 +112,14 @@
                             <label class="form-label" for="input-gade">Gade/vej</label>
 
                             <input type="text" id="input-gade" name="gade"
-                                class="form-input input-width-xl" required>
+                                class="form-input input-width-xl" required autocomplete="on">
                         </div>
 
                         <div class="form-group">
                             <label class="form-label" for="input-husnummer">Husnummer</label>
 
                             <input type="text" id="input-husnummer" name="husnummer"
-                                class="form-input input-width-xs" required>
+                                class="form-input input-width-xs" required autocomplete="on">
                         </div>
 
                     </div>
@@ -134,7 +138,8 @@
                             <label class="form-label" for="input-by">By</label>
 
                             <input type="text" id="input-by" name="by"
-                                class="form-input input-width-xl" required>
+                                class="form-input input-width-xl" required
+                                autocomplete="address-line2">
                         </div>
 
                     </div>

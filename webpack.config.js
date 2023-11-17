@@ -2,6 +2,7 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 //const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const path = require('path');
 
@@ -18,6 +19,10 @@ module.exports = function (outputPath, prod) {
       styleguide_display: ["./scss/styleguide-display.scss"],
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
+      test_neutral: ["./scss/test-neutral.scss"],
+      test_borger: ["./scss/test-borger.scss"],
+      test_virk: ["./scss/test-virk.scss"],
+      test_normalization: ["./scss/test-normalization.scss"],
       "requirements-tool": ["./javascript/requirements-tool.js"],
       "search": ["./javascript/search.js"],
       "spinner": ["./javascript/components/spinner.js"],
@@ -133,6 +138,7 @@ module.exports = function (outputPath, prod) {
               ]
             }
           ),
+      new RemoveEmptyScriptsPlugin(),
       new MiniCssExtractPlugin(
         {
           filename: 'style/[name].css',

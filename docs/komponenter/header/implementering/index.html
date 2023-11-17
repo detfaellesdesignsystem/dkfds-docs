@@ -401,7 +401,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
                     <span>Kom i gang</span>
                 </button>
                 
@@ -434,7 +434,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
                     <span>Implementering og kode</span>
                 </button>
                 
@@ -700,7 +700,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="krav_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="krav_category" aria-haspopup="true" aria-expanded="false">
                     <span>Krav</span>
                 </button>
                 
@@ -863,7 +863,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="design_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="design_category" aria-haspopup="true" aria-expanded="false">
                     <span>Design</span>
                 </button>
                 
@@ -924,7 +924,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
                     <span>Typografi</span>
                 </button>
                 
@@ -1218,7 +1218,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
                     <span>Datavisualisering og infografik</span>
                 </button>
                 
@@ -1409,7 +1409,7 @@
 
         <li class="active">
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="true">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="true">
                     <span>Komponenter</span>
                 </button>
                 
@@ -2543,7 +2543,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
                     <span>Eksempelsider og patterns</span>
                 </button>
                 
@@ -2604,7 +2604,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
                     <span>Patterns</span>
                 </button>
                 
@@ -2795,7 +2795,7 @@
 
         <li>
             <div class="submenu">
-                <button class="nav-link button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="false">
                     <span>Fællesskab</span>
                 </button>
                 
@@ -4014,7 +4014,7 @@
 
 <h4>Overlay og mobilmenu</h4>
 
-<p>Som standard ændres headeren til kun at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et overlay under menuen.</p>
+<p>Som standard ændres headeren til udelukkende at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et mørkt overlay oven på det øvrige sideindhold.</p>
 
 <div class="component-preview component-preview-code  component-code-header-menu-top">
     
@@ -4049,7 +4049,9 @@
 
 <p>Række 1 indeholder portal-logo, NemLog-in-oplysninger og “Log af” knap. Headeren skal altid indeholde denne række.</p>
 
-<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme.</p>
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-portal">
     
@@ -4076,9 +4078,9 @@
                 Anders Andersen, Forsikringens Forsikringsfirma
             &lt;/p&gt;
 
-            &lt;button class=&quot;button button-secondary d-print-none log-off&quot;&gt;
-                Log af
-            &lt;/button&gt;
+            &lt;button
+                class=&quot;function-link d-print-none log-off&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#lock&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Log
+                af&lt;/button&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -4087,7 +4089,7 @@
     </div>
 </div>
 
-<p>Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises på mindre skærme.</p>
+<p>Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises på mindre skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-portal-mobile">
     
@@ -4102,17 +4104,20 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;portal-info-mobile&quot;&gt;
+    &lt;h3 class=&quot;sr-only&quot;&gt;Bruger&lt;/h3&gt;
 
     &lt;p class=&quot;user&quot;&gt;
 
-        &lt;span&gt;Anders Andersen&lt;/span&gt;
+        &lt;span class=&quot;mb-3&quot;&gt;Anders Andersen&lt;/span&gt;
         &lt;span&gt;Forsikringens Forsikringsfirma&lt;/span&gt;
 
     &lt;/p&gt;
 
-    &lt;button class=&quot;button button-secondary d-print-none mt-3&quot;&gt;
-        Log af
-    &lt;/button&gt;
+    &lt;p&gt;
+        &lt;button
+            class=&quot;function-link d-print-none log-off&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#lock&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Log
+            af&lt;/button&gt;
+    &lt;/p&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4125,7 +4130,9 @@
 
 <p>Række 2 indeholder selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger. Headeren skal altid indeholde denne række.</p>
 
-<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes <em>efter</em> række 1 og indeholder koden, der vises på større skærme.</p>
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes <em>efter</em> række 1 og indeholder koden, der vises på større skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-solution">
     
@@ -4160,7 +4167,7 @@
     </div>
 </div>
 
-<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder koden, der vises på mindre skærme.</p>
+<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder koden, der vises på mindre skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-solution-mobile">
     
@@ -4175,6 +4182,7 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;solution-info-mobile&quot;&gt;
+    &lt;h3 class=&quot;sr-only&quot;&gt;Myndighed&lt;/h3&gt;
 
     &lt;p class=&quot;mb-2&quot;&gt;&lt;strong class=&quot;authority-name&quot;&gt;Myndighedsnavn&lt;/strong&gt;&lt;/p&gt;
 
@@ -4192,7 +4200,9 @@
 
 <p>Række 3 indeholder topnavigation i løsningen og søgefelt. Det er valgfrit, om headeren skal indeholde denne række.</p>
 
-<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet. Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vises på større skærme.</p>
+<p>Der er to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vises på større skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-navigation">
     
@@ -4219,7 +4229,7 @@
                 &lt;li class=&quot;active&quot;&gt;
 
                     &lt;div class=&quot;submenu&quot;&gt;
-                        &lt;button class=&quot;nav-link button-overflow-menu js-dropdown&quot;
+                        &lt;button class=&quot;button-overflow-menu js-dropdown&quot;
                             data-js-target=&quot;desktopmenu-2&quot; aria-haspopup=&quot;true&quot;
                             aria-expanded=&quot;false&quot;&gt;
                             &lt;span&gt;Andet menupunkt&lt;/span&gt;
@@ -4271,7 +4281,9 @@
     </div>
 </div>
 
-<p>Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover. Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme.</p>
+<p>Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover.</p>
+
+<p>Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme:</p>
 
 <div class="component-preview component-preview-code  component-code-header-navigation-mobile">
     
@@ -4295,7 +4307,7 @@
         &lt;li class=&quot;active&quot;&gt;
 
             &lt;div class=&quot;submenu&quot;&gt;
-                &lt;button class=&quot;nav-link button-mobile-menu js-menudropdown&quot;
+                &lt;button class=&quot;button-mobile-menu js-menudropdown&quot;
                     data-js-target=&quot;mobilemenu-2&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
                     &lt;span&gt;Andet menupunkt&lt;/span&gt;
                 &lt;/button&gt;
@@ -4340,11 +4352,86 @@
 
 <p>Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">hjælpeklasser for display</a>, samt at mobilmenuen indeholder de korrekte links.</p>
 
+<h4>Sprogvælger</h4>
+
+<p>Hvis man anvender en sprogvælger i headeren, er der to dele, som skal indsættes i <code>&lt;header&gt;</code>-elementet.</p>
+
+<p>Første del skal indsættes <em>før</em> række 1 (portalinfo) og indeholder koden, der vises på større skærme:</p>
+
+<div class="component-preview component-preview-code  component-code-switch-language">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;language-switcher-header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;overflow-menu overflow-menu--open-right&quot;&gt;
+            &lt;button class=&quot;button-overflow-menu js-dropdown select-language-button&quot;
+                data-js-target=&quot;header-language&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#language&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk
+            &lt;/button&gt;
+            &lt;div class=&quot;overflow-menu-inner select-language-list&quot; id=&quot;header-language&quot;
+                aria-hidden=&quot;true&quot;&gt;
+                &lt;ul class=&#39;overflow-list&#39;&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot; aria-label=&quot;Valgt sprog: Dansk&quot;&gt;Dansk&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
+<p>Anden del skal indsættes i mobilmenuen, igen <em>før</em> række 1 (portalinfo) og indeholder koden, der vises på mindre skærme:</p>
+
+<div class="component-preview component-preview-code  component-code-switch-language-mobile">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;language-switcher-mobile&quot;&gt;
+    &lt;h3&gt;Valgt sprog&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=da&quot; lang=&quot;da&quot;
+                aria-label=&quot;Valgt sprog: Dansk&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#done&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=en-GB&quot; lang=&quot;en-GB&quot;&gt;English&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=de&quot; lang=&quot;de&quot;&gt;Deutsch&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;?lang=pl&quot; lang=&quot;pl&quot;&gt;Polski&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h3>JavaScript</h3>
 
 <p>Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Navigation().init();</code></pre></figure>
+
+<p>Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren.</p>
 
 
                 
@@ -4608,8 +4695,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
-                        <h2 class="h5 mb-4">Digitaliseringsstyrelsen & Erhvervsstyrelsen</h2>
-                        <p><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></p>
+                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
+                        <p>Det Fælles Designsystem udvikles i fællesskab af<br>Digitaliseringsstyrelsen & Erhvervsstyrelsen</p>
                     </section>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
@@ -4618,7 +4705,7 @@
                         <ul class="nobullet-list mb-0">
                             <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
                             <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-                            <li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
+                            <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
                         </ul>
                     </section>
                 </div>

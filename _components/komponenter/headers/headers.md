@@ -65,3 +65,19 @@ Navigation (topnavigation) i løsningen og søgefelt.
 #### Header med navigation og søgefelt
 
 {% include code/preview-image.html component="header-with-navigation" %}
+
+### Menupunkter med dropdown
+
+Menupunkter med dropdown-funktionalitet giver adgang til undermenupunkter, men er ikke et menupunkt i sig selv. Overvej om dropdown-menu er den rigtige løsning. Topnavigation kombineret med venstremenu giver større fleksibilitet og mulighed for flere niveauer i navigationen.
+
+### Responsivitet og breakpoints
+
+På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed og eventuelle menupunkter ind i en “mobil”-menu. Vi anbefaler, at løsningen kun anvender denne visning, når der ikke længere er plads til indholdet på sidens bredde.
+
+Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, der ved klik vises på samme måde som mobilmenuen.
+
+### Varianter
+
+Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se <a href="/komponenter/sprogvaelger/">sprogvælger</a>-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
+
+{% include code/preview-image.html component="header-switch-language" %}
