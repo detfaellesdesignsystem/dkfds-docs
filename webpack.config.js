@@ -2,6 +2,7 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 //const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const path = require('path');
 
@@ -136,6 +137,7 @@ module.exports = function (outputPath, prod) {
               ]
             }
           ),
+      new RemoveEmptyScriptsPlugin(),
       new MiniCssExtractPlugin(
         {
           filename: 'style/[name].css',
