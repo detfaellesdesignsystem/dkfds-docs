@@ -253,7 +253,93 @@
             <h1 class="h2 mt-0 mb-9">HTML-elementer</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>a</h2>
+            <a href="#">Et link</a>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>abbr</h2>
+            <p>Det Fælles Designsystem forkortes ofte til <abbr>FDS</abbr>.</p>
+            <p>Brug <abbr title="Det Fælles Designsystem">FDS</abbr> til
+                selvbetjeningsløsninger.</p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>b</h2>
+            <p><b>Fed tekst</b></p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>button(s)</h2>
+            <button type="button">Dette er en button</button>
+            <button type="reset">Dette er en reset button</button>
+            <button type="submit">Dette er en submit button</button>
+            <button>Dette er en submit button</button>
+            <input type="button" value="Dette er en button" />
+            <input type="reset" value="Dette er en reset button" />
+            <input type="submit" value="Dette er en submit button" />
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>code</h2>
+            <p>Dette eksempel tester <code>code</code>-elementet.</p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>details</h2>
+            <details>
+                <summary>Summary</summary>
+                Og dette er details.
+            </details>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>fieldset</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Dette er en legend</legend>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="placeholdertekst" required="" />
+                    </div>
+                    <div>
+                        <label for="age">Alder</label>
+                        <input type="number" id="age" name="age" min="0" max="130" />
+                    </div>
+                    <div>
+                        <label for="sometext">Textarea</label>
+                        <textarea id="sometext" name="sometext" rows="5" cols="30"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>file</h2>
+            <form>
+                <label for="upload">Upload</label>
+                <input type="file" id="upload" />
+            </form>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>h1 i et section tag</h2>
+            <section>
+                <h1>Denne overskrift ligger i en section</h1>
+            </section>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
         <div class="col-12">
             <h2>hr</h2>
             <p>Dette er et tekstafsnit.</p>
@@ -261,10 +347,35 @@
             <p>Dette er et andet tekstafsnit.</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>kbd</h2>
+            <p>Tryk på <kbd>Shift</kbd> + <kbd>Alt</kbd>.</p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>optgroup</h2>
+            <label for="farveroptgroup">Vælg en farve</label>
+            <select name="farveroptgroup" id="farveroptgroup">
+                <option value="">-- Vælg en farve --</option>
+                <optgroup label="Primærfarver">
+                    <option value="red">Rød</option>
+                    <option value="yellow">Gul</option>
+                    <option value="blue">Blå</option>
+                </optgroup>
+                <optgroup label="Sekundærfarver">
+                    <option value="green">Grøn</option>
+                    <option value="purple">Lilla</option>
+                    <option value="orange">Orange</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
         <div class="col-12">
             <h2>pre</h2>
-            <pre style="max-height: 200px; max-width: 200px;">
+            <pre style="max-height: 250px; max-width: 250px;">
        _________________________________________
       /                                         \
      /                                           \
@@ -272,7 +383,7 @@
    /                                               \
   /                                                 \
  /                                                   \
-/                                                     \
+/_____________________________________________________\
 \                                                     /
  \                                                   /
   \                                                 /
@@ -281,6 +392,83 @@
      \                                           /
       \_________________________________________/
             </pre>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>progress</h2>
+            <label for="progressbar">Progress element</label>
+            <progress id="progressbar" max="100" value="60">60%</progress>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>samp</h2>
+            <p>
+                <samp>Your PC ran into a problem and needs to restart. We're just <br />collecting some error info, and then we'll restart for you.</samp>
+            </p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>search</h2>
+            <label for="search-input">Search</label>
+            <input type="search" id="search-input" name="q" />
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>select</h2>
+            <label for="farver">Vælg en farve</label>
+            <select name="farver" id="farver">
+                <option value="">-- Vælg en farve --</option>
+                <option value="green">Grøn</option>
+                <option value="red">Rød</option>
+                <option value="yellow">Gul</option>
+                <option value="blue">Blå</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>small</h2>
+            <p>Nedenunder vises et 'side comment element'.</p>
+            <p><small>Denne tekst er normalt skrevet med en mindre fontstørrelse.</small></p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>strong</h2>
+            <p><strong>Fed tekst</strong></p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>sub</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend elit
+                id leo convallis, sagittis pellentesque ante tempus. Nunc ultrices justo quis
+                condimentum mattis. Suspendisse vitae lorem pretium ante aliquam efficitur
+                vitae ut justo. Vivamus eros libero, placerat at enim et, faucibus feugiat
+                felis. <sub>Denne tekst</sub> ligger lavere end denne tekst. Vestibulum nibh
+                purus, lobortis id mauris in, efficitur suscipit nibh. Aliquam facilisis lacus
+                sed sem tristique aliquam. Cras et placerat odio. Vestibulum a est ante. Etiam
+                eget enim eget libero sodales sodales. Nam ultricies arcu ultricies lectus
+                pretium pellentesque. </p>
+        </div>
+    </div>
+    <div class="row mt-0 mb-9 pb-9">
+        <div class="col-12">
+            <h2>sup</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend elit
+                id leo convallis, sagittis pellentesque ante tempus. Nunc ultrices justo quis
+                condimentum mattis. Suspendisse vitae lorem pretium ante aliquam efficitur
+                vitae ut justo. Vivamus eros libero, placerat at enim et, faucibus feugiat
+                felis. <sup>Denne tekst</sup> ligger højere end denne tekst. Vestibulum nibh
+                purus, lobortis id mauris in, efficitur suscipit nibh. Aliquam facilisis lacus
+                sed sem tristique aliquam. Cras et placerat odio. Vestibulum a est ante. Etiam
+                eget enim eget libero sodales sodales. Nam ultricies arcu ultricies lectus
+                pretium pellentesque. </p>
         </div>
     </div>
 </main>
@@ -302,7 +490,7 @@
             <div>
                 
                 
-                <a class="function-link" href="/eksempel/test-icons-svg-and-class/">Næste</a>
+                <a class="function-link" href="/eksempel/test-headings-no-sections/">Næste</a>
                 
             </div>
         </div>
