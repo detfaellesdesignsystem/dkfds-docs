@@ -7,7 +7,8 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Beskeder (Alerts)
-component: "alert"
+lead: Beskeder anvendes til at fremhæve aktuel information, som er vigtig for brugeren.
+component: "alerts"
 componentTitle: "Eksempel på besked komponent"
 anchor: true
 subnav:

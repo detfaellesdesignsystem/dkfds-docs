@@ -173,11 +173,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
-- Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>.
+- Tilføjet styling til `placeholder`-attributten for {% include links/component-links.html linktext="inputfelter" %}, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at {% include links/component-links.html linktext="hjælpetekster" %} fortsat er måden at give brugere hjælp til indtastning på.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på {% include links/component-links.html linktext="readonly-inputfelter" %} og {% include links/component-links.html linktext="deaktiverede inputfelter" %}.
 - Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
-- Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
-- Rettet fejl, hvor visse typer af `id` kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
+- Opdateret {% include links/component-links.html linktext="funktionslinks" %}, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
+- Rettet fejl, hvor visse typer af `id` kunne få {% include links/component-links.html linktext="overflowmenuen" %} til at fejle.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet ny side til dokumentationen kaldet {% include links/internal-links.html linktext="Ofte stillede spørgsmål" %}, samt opdateret siderne {% include links/internal-links.html linktext="Designressourcer" %}, {% include links/internal-links.html linktext="Tjekliste" %} og <a href="/komponenter/">Komponenter</a>.
 - Tilføjet `inline` til {% include links/internal-links.html linktext="hjælpeklasser for display" %}.
@@ -406,7 +406,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - {% include links/component-links.html linktext="Prefix og suffix på felter" %}
 - Småtilpasninger i designet på {% include links/component-links.html linktext="modaler" %}
 - Opdateret design på {% include links/component-links.html linktext="datovælger" %}
-- Tilføjet 72px i bunden af <a href="/komponenter/footer/">footer</a>
+- Tilføjet 72px i bunden af {% include links/component-links.html linktext="footer" %}
 - Tilføjet styling og retningslinjer for {% include links/component-links.html linktext="sortering i tabeller" %}
 - Tilføjet eksempel og retningslinjer på {% include links/component-links.html linktext="søgning i tabeller" %}
 - Tilføjet en tykkere border i bunden af {% include links/component-links.html linktext="knapper" %}

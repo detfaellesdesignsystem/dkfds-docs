@@ -6,7 +6,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: "Tooltip"
-lead: Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes.
+lead: Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltippet vises på hover eller ved klik på et tooltip-ikon.
 component: "tooltip-icon"
 componentTitle: "Eksempel på ikon med tooltip"
 componentLink: true

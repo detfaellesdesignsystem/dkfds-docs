@@ -2,8 +2,8 @@
 permalink: "/design/datavisualisering-infografik/datavisualisering/"
 parentlink: "/design/datavisualisering-infografik/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Datavisualisering
 lead: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
 anchor: false

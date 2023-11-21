@@ -7,6 +7,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Modal
+lead: Modaler tvinger brugeren til at fokusere på og tage stilling til afgørende indhold, mens den øvrige side er deaktiveret.
 component: "modal"
 componentTitle: "Eksempel på modal komponent"
 anchor: true

@@ -9,8 +9,8 @@ subcategory: Komponenter
 title: Badges
 lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller
   vigtigt indhold.
-component: "badge"
-componentTitle: "Eksempel på badge komponent"
+component: "badges"
+componentTitle: "Eksempel på badges"
 anchor: true
 subnav:
 - text: Statusbadges
@@ -23,7 +23,7 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="badge" copybutton=true %}
+{% include code/syntax.html component="badges" copybutton=true %}
 
 Alle badges skal have en `badge` klasse på `<span>`-elementet. 
 

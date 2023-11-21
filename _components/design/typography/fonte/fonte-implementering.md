@@ -5,8 +5,8 @@ parentlink: "/design/typografi/"
 redirect_from:
 - "/kode/typografi/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Fonte
 anchor: false
 description:

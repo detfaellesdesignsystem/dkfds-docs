@@ -70,6 +70,7 @@ title: Test
 {:.h3}
 ## Faneblade
 
+{% include test/preview-test.html filename="test-tabs-buttons-javascript" description="Javascript i faneblade" %}
 {% include test/preview-test.html filename="test-tabs-buttons-many-tabs" description="Mange faneblade" %}
 {% include test/preview-test.html filename="test-tabs-buttons-many-tabs-with-icons" description="Mange faneblade med ikoner" %}
 {% include test/preview-test.html filename="test-tabs-buttons-long-strings" description="Faneblade med lange tekststrenge" %}

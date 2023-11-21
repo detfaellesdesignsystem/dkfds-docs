@@ -32,7 +32,7 @@ Brug eller imiter det Fælles Designsystem.
 - Du skal anvende/efterligne {% include links/internal-links.html linktext="stylesheetet" %} som anvist i designsystemet
 - {% include links/component-links.html linktext="Komponenter" %} og {% include links/internal-links.html linktext="plugins" %} skal være anvendt som anvist i designsystemet
 
-Det anbefales desuden, at løsningen har en <a href="/komponenter/footer/">footer</a>, der er bygget som anvist i designsystemet.
+Det anbefales desuden, at løsningen har en {% include links/component-links.html linktext="footer" %}, der er bygget som anvist i designsystemet.
 
 {% include links/internal-links.html linktext="Tjekliste" %}
 

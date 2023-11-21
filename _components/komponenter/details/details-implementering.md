@@ -8,9 +8,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Detaljer
-lead: Du kan bruge Detalje komponenten til at holde indhold skjult, indtil brugeren
-  vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig
-  ud, eller brugeren får fx mulighed for at læse teksten.
+lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælge at folde det ud.
 component: "details"
 componentTitle: "Eksempel på detaljer komponent"
 anchor: false

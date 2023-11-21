@@ -7,6 +7,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Vedhæft fil
+lead: Komponenten lader brugeren tilføje og indsende en fil.
 component: "file-input"
 componentTitle: "Eksempel på fil upload"
 anchor: false

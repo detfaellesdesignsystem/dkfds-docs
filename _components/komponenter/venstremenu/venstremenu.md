@@ -7,9 +7,8 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Venstremenu
-lead: Venstremenu giver brugerne overblik over struktur og indhold, så de kan finde
-  vej til det indhold, de leder efter.
-component: "sidenav-normal-level1"
+lead: Venstremenuen strukturerer et navigationshierarki med op til tre niveauer i en vertikal liste.
+component: "sidenav-normal-level2"
 componentTitle: "Eksempel på venstremenu med ét niveau"
 componentLink: true
 anchor: true

@@ -16,8 +16,8 @@
 ================================================== -->
   
 
-<title>Faneblade (Tabs) | Det Fælles Designsystem</title>
-<meta property="og:title" content="Faneblade (Tabs) | Det Fælles Designsystem">
+<title>Faneblade | Det Fælles Designsystem</title>
+<meta property="og:title" content="Faneblade | Det Fælles Designsystem">
 
 <meta name="description" content="Dokumentation på implementering af faneblad.">
 <meta property="og:description" content="Dokumentation på implementering af faneblad.">
@@ -65,7 +65,7 @@
 </noscript>
 
   </head>
-  <body class="page-faneblade-tabs layout-styleguide">
+  <body class="page-faneblade layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -280,7 +280,7 @@
 
         <li>
             <a href="/design/" class="nav-link">
-                <span>Design</span>
+                <span>Styleguide</span>
             </a>
         </li>
 
@@ -863,15 +863,15 @@
 
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="design_category" aria-haspopup="true" aria-expanded="false">
-                    <span>Design</span>
+                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Styleguide</span>
                 </button>
                 
-                <div class="overflow-menu-inner" id="design_category" aria-hidden="true">
+                <div class="overflow-menu-inner" id="styleguide_category" aria-hidden="true">
                     <ul class="overflow-list">
                         <li>
                             <a href="/design/" class="nav-link">
-                                <span>Design <span class="helptext">(overblik)</span></span>
+                                <span>Styleguide <span class="helptext">(overblik)</span></span>
                             </a>
                         </li>
                         
@@ -3923,7 +3923,7 @@
 
                 
                 
-                <h1 id="faneblade-tabs">Faneblade (Tabs)</h1>
+                <h1 id="faneblade">Faneblade</h1>
                 
 
                 
@@ -3941,34 +3941,30 @@
     </div>
     
     
-    <div class="sr-only">Eksempel på faneblad</div>
+    <div class="sr-only">Eksempel på faneblade</div>
     
     <div class="component-example px-4 py-4">
         
         <div class="tab-container" role="tablist" aria-label="List of tabs">
     <ul>
-
         <li>
             <button class="tab-item" role="tab" aria-controls="tabpanel1" aria-selected="true"
                 id="tab1"><span>Indhold 1</span>
             </button>
         </li>
-
         <li>
             <button class="tab-item" role="tab" aria-controls="tabpanel2"
                 aria-selected="false" id="tab2"><span>Indhold 2</span>
             </button>
         </li>
-
         <li>
             <button class="tab-item" role="tab" aria-controls="tabpanel3"
                 aria-selected="false" id="tab3"><span>Indhold 3</span>
             </button>
         </li>
-
         <li>
             <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
-                aria-labelledby="tab1" aria-hidden="false">
+                aria-labelledby="tab1">
                 <h2>Indhold 1</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
                     lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
@@ -3979,10 +3975,9 @@
                     urna.</p>
             </section>
         </li>
-
         <li>
             <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
-                aria-labelledby="tab2" aria-hidden="true">
+                aria-labelledby="tab2" hidden>
                 <h2>Indhold 2</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
                     lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
@@ -3993,10 +3988,9 @@
                     urna.</p>
             </section>
         </li>
-
         <li>
             <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
-                aria-labelledby="tab3" aria-hidden="true">
+                aria-labelledby="tab3" hidden>
                 <h2>Indhold 3</h2>
                 <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
                     lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
@@ -4007,7 +4001,6 @@
                     urna.</p>
             </section>
         </li>
-
     </ul>
 </div>
         
@@ -4034,22 +4027,31 @@
         <ul>
                 
                 <li>
-                    <a href="/komponenter/faneblade/guidelines/#tab-component" class="tab-item" ><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#format-list-checks"></use></svg><span>Retningslinjer</span></a>
+                    <a href="/komponenter/faneblade/guidelines/#tab-component" class="tab-item" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"/></svg><span>Retningslinjer</span></a>
                 </li>
                 
                 <li>
-                    <a href="/komponenter/faneblade/implementering/#tab-component" class="tab-item" aria-current="page"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#construction"></use></svg><span>Implementering</span></a>
+                    <a href="/komponenter/faneblade/implementering/#tab-component" class="tab-item" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg><span>Kode</span></a>
                 </li></ul>
     </nav>
 
 
+                
+                <nav class="anchorbox" aria-label="Ankerlinks">
+                    <h2 class="anchortitle">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        <li><a href="#faneblad-URL-skift">Faneblad med URL-skifte</a></li>
+                        <li><a href="#faneblad-med-ikoner">Faneblad med ikoner</a></li>
+                        
+                    </ul>
+                </nav>
                 
 
                 <h2>Installation</h2>
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-tabnav">
+<div class="component-preview component-preview-code  component-code-tabs-buttons">
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -4061,99 +4063,188 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tabnav&quot; role=&quot;tablist&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot; role=&quot;tablist&quot; aria-label=&quot;List of tabs&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel1&quot; aria-selected=&quot;true&quot;
+                id=&quot;tab1&quot;&gt;&lt;span&gt;Indhold 1&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel2&quot;
+                aria-selected=&quot;false&quot; id=&quot;tab2&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel3&quot;
+                aria-selected=&quot;false&quot; id=&quot;tab3&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel1&quot;
+                aria-labelledby=&quot;tab1&quot;&gt;
+                &lt;h2&gt;Indhold 1&lt;/h2&gt;
+                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel2&quot;
+                aria-labelledby=&quot;tab2&quot; hidden&gt;
+                &lt;h2&gt;Indhold 2&lt;/h2&gt;
+                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel3&quot;
+                aria-labelledby=&quot;tab3&quot; hidden&gt;
+                &lt;h2&gt;Indhold 3&lt;/h2&gt;
+                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre></figure>
 
-    &lt;button aria-controls=&quot;tabpanel1&quot; id=&quot;tab1&quot; class=&quot;tabnav-item&quot; role=&quot;tab&quot;
-        aria-selected=&quot;false&quot;&gt;
-        &lt;span&gt;Fane 1&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;
-        id=&quot;tabpanel1&quot; aria-labelledby=&quot;tab1&quot;&gt;
-        &lt;h2&gt;Indhold 1&lt;/h2&gt;
-        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
 
-    &lt;button aria-controls=&quot;tabpanel2&quot; id=&quot;tab2&quot; class=&quot;tabnav-item&quot; role=&quot;tab&quot;
-        aria-selected=&quot;true&quot;&gt;
-        &lt;span&gt;Fane 2&lt;/span&gt;
-    &lt;/button&gt;
+    </div>
+</div>
 
-    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;false&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;
-        id=&quot;tabpanel2&quot; aria-labelledby=&quot;tab2&quot;&gt;
-        &lt;h2&gt;Indhold 2&lt;/h2&gt;
-        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+<p>Kopier det ovenstående kode for at indsætte en faneblads komponent. Hvis du ønsker et andet antal faneblade kan disse fjernes/tilføjes ved at slette/indsætte et <code>&lt;li&gt;</code> element som indkapsler et <code>&lt;button&gt;</code> tag samt at slette/indsætte det tilhørende <code>&lt;li&gt;</code> element som har et <code>&lt;section&gt;</code> tag.</p>
 
-    &lt;button aria-controls=&quot;tabpanel3&quot; id=&quot;tab3&quot; class=&quot;tabnav-item&quot; role=&quot;tab&quot;
-        aria-selected=&quot;false&quot;&gt;
-        &lt;span&gt;Fane 3&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;
-        id=&quot;tabpanel3&quot; aria-labelledby=&quot;tab3&quot;&gt;
-        &lt;h2&gt;Indhold 3&lt;/h2&gt;
-        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+<p>Husk at tilpasse koden så attributterne passer. Bemærk her især at <code>aria-controls</code> attributten for fanebladet skal matche panel <code>id'et</code> og at disse skal være unikke.</p>
 
-    &lt;button aria-controls=&quot;tabpanel4&quot; id=&quot;tab4&quot; class=&quot;tabnav-item&quot; role=&quot;tab&quot;
-        aria-selected=&quot;false&quot;&gt;
-        &lt;span&gt;Fane 4&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;
-        id=&quot;tabpanel4&quot; aria-labelledby=&quot;tab4&quot;&gt;
-        &lt;h2&gt;Indhold 4&lt;/h2&gt;
-        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+<h2>Tilgængelighed</h2>
+<p>Husk at bruge rollerne <code>tablist</code>, <code>tab</code> og <code>tab-panel</code> til at informere om hvad der er henholdsvis fanebladsbeholder, faneblad og faneblad indhold. Her er det vigtigt at benytte <code>aria-selected</code> attributten til at indikere hvilket faneblad er aktivt. Med <code>hidden</code> attributten skjules panelet visuelt, mens det også gemmes for hjælpeteknologier.</p>
 
-    &lt;button aria-controls=&quot;tabpanel5&quot; id=&quot;tab5&quot; class=&quot;tabnav-item&quot; role=&quot;tab&quot;
-        aria-selected=&quot;false&quot;&gt;
-        &lt;span&gt;Fane 5&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;
-        id=&quot;tabpanel5&quot; aria-labelledby=&quot;tab5&quot;&gt;
-        &lt;h2&gt;Indhold 5&lt;/h2&gt;
-        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+<h3 id="faneblad-URL-skift">Faneblad med URL-skifte</h3>
 
-    &lt;button aria-controls=&quot;tabpanel6&quot; id=&quot;tab6&quot; class=&quot;tabnav-item&quot; role=&quot;tab&quot;
-        aria-selected=&quot;false&quot;&gt;
-        &lt;span&gt;Fane 6&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;section class=&quot;tabnav-panel&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot;
-        id=&quot;tabpanel6&quot; aria-labelledby=&quot;tab6&quot;&gt;
-        &lt;h2&gt;Indhold 6&lt;/h2&gt;
-        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
-            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
-            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
-            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
-            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
-            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+<div class="component-preview component-preview-code  component-code-tabs-urls">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;tab-container&quot; id=&quot;tab-component&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-item&quot; aria-current=&quot;page&quot;&gt;&lt;span&gt;Indhold
+                    1&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-item&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-item&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
 
+
+    </div>
+</div>
+
+<p>Læg mærke til at der ved URL-skift faneblade istedet er anvendt <code>aria-current=page</code> for at indikere det aktive faneblad. Her skal man sikre sig at kun ét faneblad har denne attribut sat.</p>
+
+<h3 id="faneblad-med-ikoner">Faneblad med ikoner</h3>
+
+<div class="component-preview component-preview-code  component-code-tabs-buttons-icons">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot; role=&quot;tablist&quot; aria-label=&quot;List of tabs&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-1&quot;
+                aria-selected=&quot;false&quot;
+                id=&quot;tab-icon1&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#construction&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
+                    1&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-2&quot;
+                aria-selected=&quot;false&quot;
+                id=&quot;tab-icon2&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#format-list-checks&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
+                    2&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-3&quot;
+                aria-selected=&quot;false&quot;
+                id=&quot;tab-icon3&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#construction&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
+                    3&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-1&quot;
+                aria-labelledby=&quot;tab-icon1&quot; hidden&gt;
+                &lt;h2&gt;Indhold 1&lt;/h2&gt;
+                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-2&quot;
+                aria-labelledby=&quot;tab-icon2&quot; hidden&gt;
+                &lt;h2&gt;Indhold 2&lt;/h2&gt;
+                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-3&quot;
+                aria-labelledby=&quot;tab-icon3&quot; hidden&gt;
+                &lt;h2&gt;Indhold 3&lt;/h2&gt;
+                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
+                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
+                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
+                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
+                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
+                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
+                    urna.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4162,21 +4253,21 @@
 
 <h3>JavaScript</h3>
 
-<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat.</p>
-
-<p>Hvis man står i denne situation kan man definere denne komponent i JavaScript således:</p>
+<p>Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller manuelt initialisere komponenten således:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#39;TABNAV-ID&#39;)).init();</code></pre></figure>
+
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat. Hvis man står i denne situation skal man initialisere komponenten manuelt.</p>
 
 <p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
 
 <h4>Events</h4>
 
-<p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tabnav.changed</code> udløst på <code>.tabnav</code> elementet, som man kan koble sig på med en eventlistener.</p>
+<p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tab.changed</code> udløst på <code>.tab-container</code> elementet, som man kan koble sig på med en eventlistener.</p>
 
-<p>Når et faneblad åbnes, bliver eventet <code>fds.tabnav.open</code> udløst på det tilhørende <code>.tabnav-item</code> menu element, som man kan koble sig på med en eventlistener.</p>
+<p>Når et faneblad åbnes, bliver eventet <code>fds.tab.open</code> udløst på det tilhørende <code>.tab-item</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
 
-<p>Når et faneblad lukkes, bliver eventet <code>fds.tabnav.close</code> udløst på det tilhørende <code>.tabnav-item</code> menu element, som man kan koble sig på med en eventlistener.</p>
+<p>Når et faneblad lukkes, bliver eventet <code>fds.tab.close</code> udløst på det tilhørende <code>.tab-item</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
 
 
                 

@@ -7,8 +7,9 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Fejlmeddelelser
-component: "error-message-name"
-componentTitle: "Eksempel på fejlmeddelelser"
+lead: Fejlmeddelelser hjælper brugeren til at udfylde enkelte formularelementer korrekt.
+component: "error-message"
+componentTitle: "Eksempel på fejlmeddelelse"
 anchor: true
 subnav:
 - text: Accordions
@@ -37,7 +38,7 @@ tags:
 
 ### HTML Struktur
 
-{% include code/syntax.html component="error-message-name" copybutton=true %}
+{% include code/syntax.html component="error-message" copybutton=true %}
 
 For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.”
 Teksten er skjult i et `<span>` element med klassen `sr-only`.

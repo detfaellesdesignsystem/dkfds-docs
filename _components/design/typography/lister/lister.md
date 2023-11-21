@@ -4,8 +4,8 @@ parentlink: "/design/typografi/"
 redirect_from:
 - "/design/typografi/lister/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Lister
 lead: Lister bruges til at organisere information, så det giver brugeren overblik.
 component: "lists"

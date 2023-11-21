@@ -1,14 +1,14 @@
 define: &retningslinjer 'Retningslinjer'
 define: &responsivBreakpoint 'Responsivitet & Breakpoints'
 define: &responsiv 'Responsivitet'
-define: &implementering 'Implementering'
+define: &implementering 'Kode'
 
 #Primary menu
 primary:
   - href: /kom-i-gang/
     categorynav: 'Kom_i_gang_category'
   - href: /design/
-    categorynav: 'Design_category'
+    categorynav: 'Styleguide_category'
   - href: /komponenter/
     categorynav: 'Komponenter_category'
   - href: /eksempler/
@@ -40,7 +40,7 @@ Krav_category:
   - href: /kom-i-gang/krav/om-kravene/
 
 #Left menu for design-category
-Design_category:
+Styleguide_category:
   - href: /design/farver/
   - href: /design/typografi/
     categorynav: 'Typografi_category'

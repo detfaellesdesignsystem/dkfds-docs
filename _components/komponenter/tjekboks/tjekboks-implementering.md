@@ -7,6 +7,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tjekboks (Checkbox)
+lead: Tjekbokse lader brugeren vælge en eller flere muligheder.
 component: "checkbox-large"
 componentTitle: "Eksempel på tjekboks"
 anchor: true

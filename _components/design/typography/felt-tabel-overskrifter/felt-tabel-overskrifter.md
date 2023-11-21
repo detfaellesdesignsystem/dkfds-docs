@@ -2,8 +2,8 @@
 permalink: "/design/typografi/felt-tabel-overskrifter/"
 parentlink: "/design/typografi/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Felt- og tabeloverskrifter
 anchor: true
 subnav:

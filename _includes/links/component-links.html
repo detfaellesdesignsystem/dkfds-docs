@@ -73,8 +73,11 @@
 {%- elsif include.linktext == "fejlopsummeringskomponenten" or include.linktext == "fejlopsummeringer" or include.linktext == "fejlopsummering" or include.linktext == "fejlopsummeringen" -%}
 <a href="/komponenter/fejlopsummering/guidelines/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "brug et af de anviste layouts" or include.linktext == "footer" or include.linktext == "Se footer komponenten" -%}
+{%- elsif include.linktext == "brug et af de anviste layouts" or include.linktext == "footer" or include.linktext == "Se footer komponenten" or include.linktext == "Footer" -%}
 <a href="/komponenter/footer/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "footeren" -%}
+<a href="/komponenter/footer/guidelines/#footer-logo">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Funktionslink" or include.linktext == "funktionslinks" or include.linktext == "funktionslink" or include.linktext == "funktions link" -%}
 <a href="/komponenter/funktionslink/guidelines/">{{ include.linktext }}</a>
@@ -94,7 +97,7 @@
 {%- elsif include.linktext == "readonly-inputfelter" -%}
 <a href="/komponenter/inputfelter/guidelines/#read-only">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "deaktiverede felter" -%}
+{%- elsif include.linktext == "deaktiverede felter" or include.linktext == "deaktiverede inputfelter" -%}
 <a href="/komponenter/inputfelter/guidelines/#deaktiveret">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Prefix og suffix på felter" -%}
@@ -139,10 +142,13 @@
 {%- elsif include.linktext == "modaler" or include.linktext == "modal" or include.linktext == "modal komponent" -%}
 <a href="/komponenter/modal/guidelines/">{{ include.linktext }}</a>
 
+{%- elsif include.linktext == "Modalvindue, som kræver handling" -%}
+<a href="/komponenter/modal/guidelines/#kraever-handling">{{ include.linktext }}</a>
+
 {%- elsif include.linktext == "Modalkomponenten" -%}
 <a href="/komponenter/modal/implementering/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "overflow menuer" or include.linktext == "overflow menu" or include.linktext == "overflow menu komponent" -%}
+{%- elsif include.linktext == "overflow menuer" or include.linktext == "overflowmenuen" or include.linktext == "overflow menu" or include.linktext == "overflow menu komponent" -%}
 <a href="/komponenter/overflowmenu/guidelines/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "sortering" or include.linktext == "overflow menu til brug ved sortering" or include.linktext == "Sortering med overflow menu" -%}

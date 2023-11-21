@@ -32,7 +32,7 @@ subnav:
 description: "Dokumentation på implementering af tabeller."
 tags:
 ---
-
+{:#retningslinjer}
 ## Installation
 
 ### HTML Struktur

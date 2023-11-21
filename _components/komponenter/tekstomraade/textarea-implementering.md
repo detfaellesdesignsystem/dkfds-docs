@@ -8,6 +8,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tekstområde (Textarea)
+lead: Tekstområder lader brugeren indtaste en længere tekst på flere linjer.
 component: "text-area"
 componentTitle: "Eksempel på tekstområde"
 anchor: false

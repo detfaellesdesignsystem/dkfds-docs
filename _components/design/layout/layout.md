@@ -5,8 +5,8 @@ redirect_from:
 - "/komigang/tildesignere/sideopbygning/"
 - "/komigang/regler-principper-layout/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Layout
 lead: Et godt layout er harmonisk, ensartet, logisk opbygget og understøtter brugerens handlinger. Det er således både behageligt for øjet og let for brugeren at anvende.
 anchor: false
@@ -165,5 +165,3 @@ Under linjen er der 24 px til overskrifter og tekst. Overskrifter og tekst er 16
 Footeren indeholder altid ansvarlig myndighed, tilgængelighedserklæring og cookieoplysning. Det er op til den enkelte myndighed at vælge en footer, som passer til den mængde indhold, der er rigtig for den konkrete selvbetjeningsløsning.
 
 {% include links/component-links.html linktext="Se footer komponenten" %}
-
-<a href="/komponenter/footer/">Se footer komponenten</a>

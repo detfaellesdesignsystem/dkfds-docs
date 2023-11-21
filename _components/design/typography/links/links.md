@@ -4,8 +4,8 @@ parentlink: "/design/typografi/"
 redirect_from:
 - "/design/typografi/links/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Links
 anchor: true
 subnav:
@@ -96,7 +96,7 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 - {% include links/component-links.html linktext="Funktionslink" %}
 - {% include links/component-links.html linktext="Brødkrumme" %}
-- <a href="/komponenter/footer/">Footer</a> links
+- {% include links/component-links.html linktext="Footer" %} links
 
 ### Anvendes ikke til
 

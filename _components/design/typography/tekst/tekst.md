@@ -4,8 +4,8 @@ parentlink: "/design/typografi/"
 redirect_from:
 - "/design/typografi/tekst/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Tekst
 anchor: true
 subnav:

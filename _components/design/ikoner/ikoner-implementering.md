@@ -4,8 +4,8 @@ guidelinelink: "/design/ikoner/guidelines/"
 redirect_from:
 - "/kode/ikoner/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 anchor: false

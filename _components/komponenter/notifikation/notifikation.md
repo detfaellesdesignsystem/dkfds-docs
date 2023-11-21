@@ -7,7 +7,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Toastbesked
-lead: Toastbeskeder bruges til at give brugeren vigtig og aktuel information om fx status, generelle fejl, fejlopsummeringer, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l. 
+lead: Toastbeskeder viser aktuel information og dukker op på skærmen i det øjeblik, de bliver relevante. Toastbeskeder vises typisk som reaktion på brugerinteraktion.
 component: "toastbesked"
 componentTitle: "Eksempel på toastbesked"
 componentLink: true

@@ -5,8 +5,8 @@ redirect_from:
 - "/design/grid/"
 - "/design/layout/grid/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Grid og baseline grid
 lead: Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.
 anchor: false

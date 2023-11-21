@@ -7,6 +7,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Funktionslink
+lead: Funktionslink lader brugeren udføre forskellige systemfunktionaliteter.
 component: "function-link-print"
 componentTitle: "Eksempel på funktionslink"
 anchor: false

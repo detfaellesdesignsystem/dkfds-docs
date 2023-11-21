@@ -6,7 +6,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Søgefelt
-lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold på siden eller i løsningen.
+lead: Søgefeltet lader brugeren søge efter bestemt indhold på siden eller i løsningen.
 component: "search"
 componentTitle: "Eksempel på søgefelt"
 componentLink: true

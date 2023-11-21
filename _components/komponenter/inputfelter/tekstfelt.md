@@ -8,6 +8,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Inputfelter
+lead: Inputfelter lader brugeren indtaste kort information.
 component: "text-input"
 componentTitle: "Eksempel på inputfelt"
 componentLink: true

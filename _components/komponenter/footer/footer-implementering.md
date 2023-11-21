@@ -8,7 +8,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Footer
-lead: Du kan bruge en footer til at guide brugere, som når til sidens bund, videre.
+lead: Footeren markerer enden på siden og indeholder informationer, som guider brugeren videre.
 previewimage: "footer-simple"
 previewimageTitle: "Eksempel på footer komponent"
 anchor: true

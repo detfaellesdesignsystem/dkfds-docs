@@ -1,8 +1,8 @@
 ---
 permalink: "/design/logoer/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Logoer
 lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Virk, dette
   kommunikeres bl.a. via portalens logo i headeren.
@@ -85,7 +85,7 @@ Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: 
 
 ### Brugervenlighed
 
-- Logoet i <a href="/komponenter/footer/#footer-logo">footeren</a> går til myndighedens forside
+- Logoet i {% include links/component-links.html linktext="footeren" %} går til myndighedens forside
 - Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.
 - Myndighedens logo er kun at finde i footeren og der er kun et logo
 - Venstrestil altid logoet i footeren
