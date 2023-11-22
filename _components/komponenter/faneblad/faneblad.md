@@ -61,6 +61,8 @@ Ikoner skal altid understøttes af en label med fanebladets navn.
 
 {% include code/preview-box.html component="tabs-buttons-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/implementering/#faneblad-med-ikoner"%} 
 
+{% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
+
 #### Referencer
 
 {:.nobullet-list}

@@ -53,7 +53,7 @@ Læg mærke til at der ved URL-skift faneblade istedet er anvendt `aria-current=
 Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller manuelt initialisere komponenten således:
 
 {% highlight js %}
-new DKFDS.Tabs(document.getElementById('TABNAV-ID')).init();
+new DKFDS.Tabs(document.getElementById('TAB-ID')).init();
 {% endhighlight %}
 
 Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat. Hvis man står i denne situation skal man initialisere komponenten manuelt.

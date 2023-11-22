@@ -4186,7 +4186,7 @@
     &lt;ul&gt;
         &lt;li&gt;
             &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-1&quot;
-                aria-selected=&quot;false&quot;
+                aria-selected=&quot;true&quot;
                 id=&quot;tab-icon1&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#construction&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
                     1&lt;/span&gt;
             &lt;/button&gt;
@@ -4207,7 +4207,7 @@
         &lt;/li&gt;
         &lt;li&gt;
             &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-1&quot;
-                aria-labelledby=&quot;tab-icon1&quot; hidden&gt;
+                aria-labelledby=&quot;tab-icon1&quot;&gt;
                 &lt;h2&gt;Indhold 1&lt;/h2&gt;
                 &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
                     lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
@@ -4255,7 +4255,7 @@
 
 <p>Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller manuelt initialisere komponenten således:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#39;TABNAV-ID&#39;)).init();</code></pre></figure>
+<figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#39;TAB-ID&#39;)).init();</code></pre></figure>
 
 <p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat. Hvis man står i denne situation skal man initialisere komponenten manuelt.</p>
 
