@@ -135,7 +135,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
 - Tilføjet `inline` til <a href="/kode/utilities/#display">hjælpeklasser for display</a>.
 - Tilføjet `autocomplete`-attributter til flere eksempler, tilføjet afsnit om `autocomplete` til <a href="/kode/komponenter/inputfelter/">inputfelter</a> og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
-- Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
 - Tilføjet ny side til dokumentationen kaldet <a href="/faellesskab/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/design/designressourcer/">Designressourcer</a>, <a href="/design/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.
 
 {:#version-9-0-2 .mb-0}
