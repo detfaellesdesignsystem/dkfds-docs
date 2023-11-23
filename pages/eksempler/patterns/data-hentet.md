@@ -52,6 +52,7 @@ editButton.addEventListener('click', function (e) {
     textfield.setAttribute('required', '');
     textfield.setAttribute('autocomplete', 'name');
     textfield.classList.remove('mr-3');
+    textfield.focus();
 });
 
 let editButtonExample = document.getElementById("adresse-rediger");
@@ -66,5 +67,6 @@ editButtonExample.addEventListener('click', function (e) {
     textfield.setAttribute('required', '');
     textfield.setAttribute('autocomplete', 'street-address');
     textfield.classList.remove('mr-3');
+    textfield.focus();
 });
 </script>
