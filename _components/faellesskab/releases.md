@@ -126,7 +126,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0
 
-<div><span class="small-text mt-0 d-block">23-11-2023</span></div>
+<div><span class="small-text mt-0 d-block">24-11-2023</span></div>
 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>. Bemærk at deaktiverede inputfelter kræver en mindre opdatering af HTML'ens klasser.
 - Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
