@@ -70,7 +70,7 @@ I Det Fælles Designsystem går alle lodrette dimensioner, højder på komponent
 
 Gentagelsen af værdier skaber ro og balance på tværs af det visuelle layout og mellem sidens lodrette elementer. For tekst er det ikke tekstens størrelse, men linjehøjden, der skal gå op i en faktor 8.
 
-Du kan læse mere om baseline grid i artiklen <a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+Du kan læse mere om baseline grid i artiklen <a href="https://medium.com/built-to-adapt/8-point-grid-vertical-rhythm-90d05ad95032" class="icon-link">8-Point Grid: Vertical Rhythm<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
 
 ### 4 point
 Ikoner, typografi og nogle elementer i komponenter kan justeres til et 4px grid.

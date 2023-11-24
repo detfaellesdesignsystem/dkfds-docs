@@ -35,7 +35,7 @@ Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialog
 
 Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/">Se eksempel på, hvordan siden kan se ud med FDS</a>. Den kan ydermere informere brugeren om ekstra sikkerhed.
 
-Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold. Hvis din løsning bruger NemLogin, kan du <a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">læse mere om kravene på digitaliser.dk<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
+Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold.
 
 ### Ændringer er ikke gemt
 

@@ -16,7 +16,7 @@
     "deploy": "bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish"
   },
   "dependencies": {
-    "dkfds": "^9.0.0"
+    "dkfds": "^9.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.4",
