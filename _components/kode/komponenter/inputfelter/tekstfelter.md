@@ -71,6 +71,14 @@ subnav:
 
 {% include code/syntax.html component="text-input" copybutton=true %}
 
+### Brug attributten “autocomplete”
+
+Brug `autocomplete` på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link" target="_blank">WCAG 2.1 AA Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>).
+
+Brug `autocomplete` på inputfelter til fx navn (`autocomplete='name'`), postnummer (`autocomplete='postal-code'`), telefonnummer (`autocomplete='tel'`) og e-mailadresse (`autocomplete='email'`), hvis en bruger skal indtaste disse oplysninger om sig selv i din formular. 
+
+{% include code/syntax.html component="text-input-autocomplete" link=true copybutton=true %}
+
 ## Varianter
 
 {:#hjaelpetekst}

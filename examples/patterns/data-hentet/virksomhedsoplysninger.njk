@@ -1,0 +1,67 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+
+<h2>Virksomhedsoplysninger</h2>
+<form novalidate>
+    {{
+        textinput({
+            "id": "virksomhednavn",
+            "name": "virksomhednavn",
+            "label": "Virksomhednavn",
+            "helptext": "Data hentet fra CVR.dk",
+            "value": "Eksempelnavn",
+            "readonly": true,
+            "required": false
+        })
+    }}
+    {{
+        textinput({
+            "id": "cvr-nummer",
+            "name": "cvr-nummer",
+            "label": "CVR-nummer",
+            "helptext": "Data hentet fra CVR.dk",
+            "value": "12345678",
+            "readonly": true,
+            "required": false
+        })
+    }}
+    <div class="form-group">
+        <label class="form-label" for="adresse">Adresse</label>
+    
+        <span class="form-hint" id="adresse-hint">Data hentet fra CVR.dk</span>
+    
+        <div class="d-block d-sm-flex flex-sm-row align-items-sm-center">
+            <input type="text" id="adresse" name="navn-redigerbar"
+                class="form-input mr-sm-3" value="Mønstervej 23, 1234 Eksempelby"
+                aria-describedby="adresse-hint " readonly>
+            <button type="button" class="function-link mt-3" id="adresse-rediger">{{ icon_svg({"name":'mode'})}}Rediger<span class="sr-only"> adresse</span></button>
+        </div>
+    </div>
+    {{
+        textinput({
+            "id": "telefon",
+            "label": "Telefonnummer",
+            "classes": { "input": "input-width-s" },
+            "name": "telefon",
+            "type": "tel",
+            "autocomplete": "tel"
+        })
+    }}
+    {{
+        textinput({
+            "id": "emailinput", 
+            "label": "E-mailadresse",
+            "name": "email",
+            "type": "email",
+            "autocomplete": "email"
+        })
+    }}
+    {{ 
+        button({
+            "text":"Næste", 
+            "variant":"primary",
+            "classes": { "button": "mt-9" }
+        }) 
+    }}
+</form>

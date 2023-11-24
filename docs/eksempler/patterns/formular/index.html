@@ -911,7 +911,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -938,8 +938,8 @@
 
   
     
-    <a href="/design/designtjek/"  class="nav-link">
-        Designtjek
+    <a href="/design/tjekliste/"  class="nav-link">
+        Tjekliste
       </a>
      
     
@@ -1921,6 +1921,26 @@
     
     <a href="/eksempler/patterns/formular/" aria-current="page" class="nav-link">
         Formular
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  ">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/hentet-data/"  class="nav-link">
+        Inputfelter med hentet data
       </a>
      
     
@@ -3442,6 +3462,26 @@
 </li>
     
 
+  
+    
+
+
+<li class="  ">
+
+  
+
+
+  
+    
+    <a href="/faellesskab/faq/"  class="nav-link">
+        Ofte stillede spørgsmål
+      </a>
+     
+    
+  
+</li>
+    
+
 
         </ul>
       </div>
@@ -3566,6 +3606,22 @@
 
   
 
+<a href="/eksempler/patterns/hentet-data/" 
+  class="nav-link">
+  Inputfelter med hentet data
+</a>
+
+</li>
+
+    
+
+    
+
+<li class="  ">
+
+
+  
+
 <a href="/eksempler/patterns/session-udloeber/" 
   class="nav-link">
   Session udløber
@@ -3653,25 +3709,25 @@
     <div class="form-group">
         <label class="form-label" for="simple-fnavn">Fornavn</label>
 
-        <input type="text" id="simple-fnavn" name="fnavn" class="form-input" required="" />
+        <input type="text" id="simple-fnavn" name="fnavn" class="form-input" required="" autocomplete="given-name" />
     </div>
 
     <div class="form-group">
         <label class="form-label" for="simple-enavn">Efternavn</label>
 
-        <input type="text" id="simple-enavn" name="enavn" class="form-input" required="" />
+        <input type="text" id="simple-enavn" name="enavn" class="form-input" required="" autocomplete="family-name" />
     </div>
 
     <div class="form-group">
         <label class="form-label" for="simple-email">E-mailadresse</label>
 
-        <input type="email" id="simple-email" name="email" class="form-input" required="" />
+        <input type="email" id="simple-email" name="email" class="form-input" required="" autocomplete="email" />
     </div>
 
     <div class="form-group">
         <label class="form-label" for="simple-telefon">Telefonnummer</label>
 
-        <input type="tel" id="simple-telefon" name="telefon" class="form-input input-width-s" required="" />
+        <input type="tel" id="simple-telefon" name="telefon" class="form-input input-width-s" required="" autocomplete="tel" />
     </div>
 
     <button class="button button-primary mt-9">
@@ -3692,26 +3748,29 @@
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;simple-fnavn&quot;&gt;Fornavn&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;simple-fnavn&quot; name=&quot;fnavn&quot; class=&quot;form-input&quot; required&gt;
+        &lt;input type=&quot;text&quot; id=&quot;simple-fnavn&quot; name=&quot;fnavn&quot; class=&quot;form-input&quot; required
+            autocomplete=&quot;given-name&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;simple-enavn&quot;&gt;Efternavn&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;simple-enavn&quot; name=&quot;enavn&quot; class=&quot;form-input&quot; required&gt;
+        &lt;input type=&quot;text&quot; id=&quot;simple-enavn&quot; name=&quot;enavn&quot; class=&quot;form-input&quot; required
+            autocomplete=&quot;family-name&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;simple-email&quot;&gt;E-mailadresse&lt;/label&gt;
 
-        &lt;input type=&quot;email&quot; id=&quot;simple-email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required&gt;
+        &lt;input type=&quot;email&quot; id=&quot;simple-email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required
+            autocomplete=&quot;email&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;simple-telefon&quot;&gt;Telefonnummer&lt;/label&gt;
 
         &lt;input type=&quot;tel&quot; id=&quot;simple-telefon&quot; name=&quot;telefon&quot; class=&quot;form-input input-width-s&quot;
-            required&gt;
+            required autocomplete=&quot;tel&quot;&gt;
     &lt;/div&gt;
 
     &lt;button class=&quot;button button-primary mt-9&quot;&gt;
@@ -3842,25 +3901,25 @@
     <div class="form-group">
         <label class="form-label" for="fnavn-complex">Fornavn</label>
 
-        <input type="text" id="fnavn-complex" name="fnavn-complex" class="form-input" required="" />
+        <input type="text" id="fnavn-complex" name="fnavn-complex" class="form-input" required="" autocomplete="given-name" />
     </div>
 
     <div class="form-group">
         <label class="form-label" for="enavn-complex">Efternavn</label>
 
-        <input type="text" id="enavn-complex" name="enavn-complex" class="form-input" required="" />
+        <input type="text" id="enavn-complex" name="enavn-complex" class="form-input" required="" autocomplete="family-name" />
     </div>
 
     <div class="form-group">
         <label class="form-label" for="email-complex">E-mailadresse</label>
 
-        <input type="email" id="email-complex" name="email-complex" class="form-input" required="" />
+        <input type="email" id="email-complex" name="email-complex" class="form-input" required="" autocomplete="email" />
     </div>
 
     <div class="form-group">
         <label class="form-label" for="telefon-complex">Telefonnummer</label>
 
-        <input type="tel" id="telefon-complex" name="telefon-complex" class="form-input input-width-s" required="" />
+        <input type="tel" id="telefon-complex" name="telefon-complex" class="form-input input-width-s" required="" autocomplete="tel" />
     </div>
 
     <div class="form-group">
@@ -3936,19 +3995,19 @@
                         <div class="form-group form-group-day">
                             <label class="form-label" for="date-input-birthday-day">Dag</label>
 
-                            <input type="tel" id="date-input-birthday-day" class="form-input js-calendar-day-input" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+                            <input type="tel" id="date-input-birthday-day" class="form-input js-calendar-day-input" required="" autocomplete="bday-day" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
                         </div>
 
                         <div class="form-group form-group-month">
                             <label class="form-label" for="date-input-birthday-month">Måned</label>
 
-                            <input type="tel" id="date-input-birthday-month" class="form-input js-calendar-month-input" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+                            <input type="tel" id="date-input-birthday-month" class="form-input js-calendar-month-input" required="" autocomplete="bday-month" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
                         </div>
 
                         <div class="form-group form-group-year">
                             <label class="form-label" for="date-input-birthday-year">År</label>
 
-                            <input type="tel" id="date-input-birthday-year" class="form-input js-calendar-year-input" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+                            <input type="tel" id="date-input-birthday-year" class="form-input js-calendar-year-input" required="" autocomplete="bday-year" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
                         </div>
 
                     </div>
@@ -3996,29 +4055,29 @@
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;fnavn-complex&quot;&gt;Fornavn&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;fnavn-complex&quot; name=&quot;fnavn-complex&quot; class=&quot;form-input&quot;
-            required&gt;
+        &lt;input type=&quot;text&quot; id=&quot;fnavn-complex&quot; name=&quot;fnavn-complex&quot; class=&quot;form-input&quot; required
+            autocomplete=&quot;given-name&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;enavn-complex&quot;&gt;Efternavn&lt;/label&gt;
 
-        &lt;input type=&quot;text&quot; id=&quot;enavn-complex&quot; name=&quot;enavn-complex&quot; class=&quot;form-input&quot;
-            required&gt;
+        &lt;input type=&quot;text&quot; id=&quot;enavn-complex&quot; name=&quot;enavn-complex&quot; class=&quot;form-input&quot; required
+            autocomplete=&quot;family-name&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;email-complex&quot;&gt;E-mailadresse&lt;/label&gt;
 
         &lt;input type=&quot;email&quot; id=&quot;email-complex&quot; name=&quot;email-complex&quot; class=&quot;form-input&quot;
-            required&gt;
+            required autocomplete=&quot;email&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;telefon-complex&quot;&gt;Telefonnummer&lt;/label&gt;
 
         &lt;input type=&quot;tel&quot; id=&quot;telefon-complex&quot; name=&quot;telefon-complex&quot;
-            class=&quot;form-input input-width-s&quot; required&gt;
+            class=&quot;form-input input-width-s&quot; required autocomplete=&quot;tel&quot;&gt;
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
@@ -4102,8 +4161,9 @@
                                 for=&quot;date-input-birthday-day&quot;&gt;Dag&lt;/label&gt;
 
                             &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-day&quot;
-                                class=&quot;form-input js-calendar-day-input&quot; required data-min=&quot;1&quot;
-                                data-max=&quot;31&quot; maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
+                                class=&quot;form-input js-calendar-day-input&quot; required
+                                autocomplete=&quot;bday-day&quot; data-min=&quot;1&quot; data-max=&quot;31&quot;
+                                maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
                                 data-input-regex=&quot;^[0-9]{0,2}$&quot;
                                 title=&quot;Indtast dag på måneden som tal&quot;&gt;
                         &lt;/div&gt;
@@ -4114,8 +4174,9 @@
 
                             &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-month&quot;
                                 class=&quot;form-input js-calendar-month-input&quot; required
-                                data-min=&quot;1&quot; data-max=&quot;12&quot; maxlength=&quot;2&quot;
-                                pattern=&quot;^[0-9]{0,2}$&quot; data-input-regex=&quot;^[0-9]{0,2}$&quot;
+                                autocomplete=&quot;bday-month&quot; data-min=&quot;1&quot; data-max=&quot;12&quot;
+                                maxlength=&quot;2&quot; pattern=&quot;^[0-9]{0,2}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,2}$&quot;
                                 title=&quot;Indtast månedens nummer&quot;&gt;
                         &lt;/div&gt;
 
@@ -4125,9 +4186,9 @@
 
                             &lt;input type=&quot;tel&quot; id=&quot;date-input-birthday-year&quot;
                                 class=&quot;form-input js-calendar-year-input&quot; required
-                                data-min=&quot;1900&quot; data-max=&quot;3000&quot; maxlength=&quot;4&quot;
-                                pattern=&quot;^[0-9]{0,4}$&quot; data-input-regex=&quot;^[0-9]{0,4}$&quot;
-                                title=&quot;Indtast årstal&quot;&gt;
+                                autocomplete=&quot;bday-year&quot; data-min=&quot;1900&quot; data-max=&quot;3000&quot;
+                                maxlength=&quot;4&quot; pattern=&quot;^[0-9]{0,4}$&quot;
+                                data-input-regex=&quot;^[0-9]{0,4}$&quot; title=&quot;Indtast årstal&quot;&gt;
                         &lt;/div&gt;
 
                     &lt;/div&gt;
@@ -4215,8 +4276,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
-                        <h2 class="h5 mb-4">Digitaliseringsstyrelsen & Erhvervsstyrelsen</h2>
-                        <p><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></p>
+                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
+                        <p>Det Fælles Designsystem udvikles i fællesskab af<br>Digitaliseringsstyrelsen & Erhvervsstyrelsen</p>
                     </section>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
@@ -4225,7 +4286,7 @@
                         <ul class="nobullet-list mb-0">
                             <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
                             <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-                            <li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
+                            <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
                         </ul>
                     </section>
                 </div>

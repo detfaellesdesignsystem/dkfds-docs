@@ -10,77 +10,64 @@ category: Design_category
 subcategory: Design
 description: Information om Det Fælles Designsystem, der retter sig mod designere
 lead: Ved at følge designsystemet er du med til at skabe sammenhæng i og mellem de mange offentlige selvbetjeningsløsninger du ikke selv designer, til gavn for alle brugere.
+anchor: true
+subnav:
+- text: Grundprincipper
+  href: "#grundprincipper"
+- text: Dit ansvar som designer
+  href: "#dit-ansvar-som-designer"
+- text: Designressourcer
+  href: "#designressourcer-section"
 tags:
 - figma
 - prototype
 - svg
 ---
 
-Dit fokus, som designer af en selvbetjeningsløsning, bør være på brugervenlighed og brugernes effektivitet igennem selvbetjeningsløsningen, ikke på personligt at “shine” ved brug af “krom” og tidens trends.
+{:#grundprincipper}
+## Grundprincipper
 
-## Figma og SVG
+Dit fokus som designer af en selvbetjeningsløsning bør være på brugervenlighed og brugernes effektivitet igennem selvbetjeningsløsningen, ikke på personligt at “shine” ved brug af “krom” og tidens trends. Designsystemet følger nogle grundprincipper, som du bør kende.
 
-Du er velkommen til at bidrage med flere designressourcer eller med opdateringer af eksisterende filer.
+Principperne skal sikre, at designsystemets komponenter kan anvendes hver for sig og sammen i uendelige kombinationer i de mange forskellige selvbetjeningsløsninger, som kan tilgås fra borger.dk og Virk. Designet sikrer en brugervenlighed og ensretning på tværs af løsninger samtidig med, at det tager højde for både borger.dk og Virk med hver deres visuelle brand.
 
-<div class="alert alert-warning alert--paragraph" role="alert">
-    <div class="alert-body">
-        <p class="alert-text">Dokumentationssiden er “source of truth”, ikke designfilerne.</p>
-    </div>
-</div>
-
-<h3 class="h4">Figma</h3>
-
-<a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-<h3 class="h4">SVG</h3>
-
-<a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">Download svg-filer (version 7.0.0)</a>
-
-Svg-filerne kan importeres i de fleste design/prototype programmer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
-
-For at gøre det nemmere at komme i gang stiller vi ovenstående filer til rådighed, men “source of truth”, vores fælles referencepunkt, er dokumentationssiden her og ikke filerne.
-
-## Dit ansvar som designer
-
-Følg allerede etablerede standarder og konventioner for placering og gruppering af komponenter og reproducer gængse interaktionsmønstre. Kig gerne vores vejledning til sideopbygning igennem.
-
-<a href="/design/layout/">Regler og principper for layout</a>
-
-Hav forståelse for dit ansvar for sammenhængen imellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang.
-
-## 12 punkter til designeren
-
-Når du som designer skal sætte en selvbetjeningsløsning op, skal du være opmærksom på følgende:
-
-1. Designet (kontrastforhold mm.) skal være tilgængeligt på WCAG 2.1 AA niveau. Brug plugins til dit designprogram, for at efterleve <a href="https://www.w3.org/TR/WCAG21/" class="icon-link">WCAG 2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> AA eller brug online værktøjerne fra WebAIM.
-1. Anvend gerne et 12-grid layout, evt. med følgende breakpoints: 480px, 768px, 991px og 1200px.
-1. Anvend gerne et 8pt baseline grid.
-1. Layoutet er inddelt i en header, et indholdsområde og en footer på alle sider.
-1. Headeren skal følge den beskrevne struktur.
-1. Venstrestillet én-kolonne-layout er anbefalet.
-1. Knapper bør venstrestilles og primærknappen er altid til venstre.
-1. Anvend fonten “IBM Plex Sans” og følg de typografiske regler.
-1. Anvend ikoner fra eller baseret på Material Design, da de følger 8pt grid og skalerer godt.
-1. Anvend farver og former som beskrevet under “design”.
-1. Hold designet let og luftigt (masser af white space) og brug afstande og luft i designet til at indikere sammenhænge og adskillelse.
-1. Del selvbetjeningsløsningen op i små bidder (trin).
-
-### Grundprincipper
-
-Designsystemet følger nogle grundprincipper som du bør kende.
-
-Principperne skal sikre at designsystemets komponenter kan anvendes hver for sig og sammen i uendelige kombinationer i de mange forskellige selvbetjeningsløsninger, som kan tilgås fra borger.dk og Virk. Samtidig med at designet skal passe ind på portalerne, der er to selvstændige brands med hver deres visuelle design.
-
-Det visuelle design er:
+Designet er:
 
 - Neutralt
 - Simpelt
 - Målrettet til selvbetjeningsløsninger
 
-Frontenden-koden er:
+{:#dit-ansvar-som-designer}
+## Dit ansvar som designer
 
-- Minimal
-- Modulær
-- Skalerbar
+Følg allerede etablerede standarder og konventioner for placering og gruppering af komponenter og reproducer gængse interaktionsmønstre. 
 
-De to gange tre principper fungerer i tandem således at designsystemet er nemt og effektivt at anvende til at bygge simple og effektive selvbetjeningsløsninger med, der passer ind på både borger.dk og Virk.
+Hav forståelse for dit ansvar for sammenhængen i mellem og på tværs af de mange tusinde selvbetjeningsløsninger, der kan tilgås fra borger.dk og Virk. Ved at tage ansvar, er du med til at gøre brugerne mere effektive, så de ikke skal genlære alle offentlige brugergrænseflader forfra hver gang.
+
+Overvej følgende spørgsmål, før du designer nye funktioner til din løsning:
+
+- Er funktionen nødvendig?
+- Tilfører funktionen merværdi for brugeren?
+- Kan vi gøre funktionen tilgængelig?
+- Kan vi løse behovet med en mere simpel og gennemprøvet funktion?
+
+{:#designressourcer-section}
+## Designressourcer
+
+Vi stiller nedenstående filer til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Vær dog opmærkesom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilerne.
+
+<h3 class="h4">Figma</h3>
+
+Designbiblioteket i Figma vedligeholdes løbende.
+
+<a href="https://www.figma.com/community/file/1284147195952477019" class="icon-link" target="_blank">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+<h3 class="h4">SVG</h3>
+
+Svg-filerne kan importeres i de fleste design-/prototypeprogrammer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
+
+<a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">Download svg-filer (version 7.0.0)</a>
+
+<h3 class="h4">Hjælp os med at blive bedre</h3>
+
+Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at <a href="/faellesskab/kontakt-support/">kontakte os</a>. 

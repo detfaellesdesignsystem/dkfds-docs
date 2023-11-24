@@ -1,0 +1,23 @@
+<div class="form-group">
+    <label class="form-label" for="hentetdata">Fornavn og efternavn</label>
+
+    <span class="form-hint" id="hentetdata-hint">Data hentet fra CVR.dk</span>
+
+    <input type="text" id="hentetdata" name="navn" class="form-input"
+        value="Keld Hedagaardsen" aria-describedby="hentetdata-hint " readonly>
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="hentetdata-redigerbar">Fornavn og efternavn</label>
+
+    <span class="form-hint" id="hentetdata-redigerbar-hint">Data hentet fra CVR.dk</span>
+
+    <div class="d-block d-sm-flex flex-sm-row align-items-sm-center">
+        <input type="text" id="hentetdata-redigerbar" name="navn-redigerbar"
+            class="form-input mr-sm-3" value="Keld Hedagaardsen"
+            aria-describedby="hentetdata-redigerbar-hint " readonly>
+        <button type="button" class="function-link mt-3"
+            id="hentetdata-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger<span
+                class="sr-only"> fornavn og efternavn</span></button>
+    </div>
+</div>

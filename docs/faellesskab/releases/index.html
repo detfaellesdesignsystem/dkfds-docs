@@ -911,7 +911,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -938,8 +938,8 @@
 
   
     
-    <a href="/design/designtjek/"  class="nav-link">
-        Designtjek
+    <a href="/design/tjekliste/"  class="nav-link">
+        Tjekliste
       </a>
      
     
@@ -1921,6 +1921,26 @@
     
     <a href="/eksempler/patterns/formular/"  class="nav-link">
         Formular
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  ">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/hentet-data/"  class="nav-link">
+        Inputfelter med hentet data
       </a>
      
     
@@ -3442,6 +3462,26 @@
 </li>
     
 
+  
+    
+
+
+<li class="  ">
+
+  
+
+
+  
+    
+    <a href="/faellesskab/faq/"  class="nav-link">
+        Ofte stillede spørgsmål
+      </a>
+     
+    
+  
+</li>
+    
+
 
         </ul>
       </div>
@@ -3574,6 +3614,15 @@
 
 
 <li class=" ">
+<a href="#version-9-1-0" >Version 9.1.0</a>
+</li>
+
+    
+
+    
+
+
+<li class=" ">
 <a href="#version-9-0-2" >Version 9.0.2</a>
 </li>
 
@@ -3655,16 +3704,7 @@
 
 
 <li class=" ">
-<a href="#version-7-5-2" >Version 7.5.2</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-7-5-1" >Tidligere versioner</a>
+<a href="#version-7-5-2" >Tidligere versioner</a>
 </li>
 
     
@@ -3672,6 +3712,22 @@
 </ul>
     
   
+
+</li>
+
+    
+
+    
+
+<li class="  ">
+
+
+  
+
+<a href="/faellesskab/faq/" 
+  class="nav-link">
+  Ofte stillede spørgsmål
+</a>
 
 </li>
 
@@ -3708,6 +3764,7 @@
           
           
           <ul class="d-lg-none nobullet-list">
+          <li><a href="#version-9-1-0">Version 9.1.0</a></li>
           <li><a href="#version-9-0-2">Version 9.0.2</a></li>
           <li><a href="#version-9-0-1">Version 9.0.1</a></li>
           <li><a href="#version-9-0-0">Version 9.0.0</a></li>
@@ -3717,8 +3774,7 @@
           <li><a href="#version-8-0-1">Version 8.0.1</a></li>
           <li><a href="#version-8-0-0">Version 8.0.0</a></li>
           <li><a href="#version-7-5-3">Version 7.5.3</a></li>
-          <li><a href="#version-7-5-2">Version 7.5.2</a></li>
-          <li><a href="#version-7-5-1">Tidligere versioner</a></li>
+          <li><a href="#version-7-5-2">Tidligere versioner</a></li>
           
           </ul>
           
@@ -3750,6 +3806,22 @@
 <h3>Tidligere versioner af dokumentationen</h3>
 
 <p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.</p>
+
+<h2 id="version-9-1-0" class="mb-0">Version 9.1.0</h2>
+
+<div><span class="small-text mt-0 d-block">24-11-2023</span></div>
+
+<ul>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>. Bemærk at deaktiverede inputfelter kræver en mindre opdatering af HTML’ens klasser.</li>
+  <li>Tilføjet styling til <code>placeholder</code>-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.</li>
+  <li>Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML’en er angivet med <code>&lt;button&gt;</code>.</li>
+  <li>Rettet fejl, hvor visse typer af <code>id</code> kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Tilføjet <code>inline</code> til <a href="/kode/utilities/#display">hjælpeklasser for display</a>.</li>
+  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler, tilføjet afsnit om <code>autocomplete</code> til <a href="/kode/komponenter/inputfelter/">inputfelter</a> og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.</li>
+  <li>Tilføjet ny side til dokumentationen kaldet <a href="/faellesskab/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/design/designressourcer/">Designressourcer</a>, <a href="/design/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
+</ul>
 
 <h2 id="version-9-0-2" class="mb-0">Version 9.0.2</h2>
 
@@ -4483,8 +4555,8 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
-                        <h2 class="h5 mb-4">Digitaliseringsstyrelsen & Erhvervsstyrelsen</h2>
-                        <p><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></p>
+                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
+                        <p>Det Fælles Designsystem udvikles i fællesskab af<br>Digitaliseringsstyrelsen & Erhvervsstyrelsen</p>
                     </section>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
@@ -4493,7 +4565,7 @@
                         <ul class="nobullet-list mb-0">
                             <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
                             <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-                            <li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
+                            <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
                         </ul>
                     </section>
                 </div>

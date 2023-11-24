@@ -73,26 +73,18 @@
         "classes": {
             "input": "input-width-xl"
         },
-        "value": "Anders Andersen"
+        "value": "Anders Andersen",
+        "autocomplete": "name"
     },
     "input_gade": {
         "id": "input-gade",
         "name": "gade",
-        "label": "Gade/vej",
+        "label": "Gade/vej og husnummer",
         "classes": {
-            "formgroup": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100",
             "input": "input-width-xl"
         },
-        "value": "Mønstergade"
-    },
-    "input_husnummer": {
-        "id": "input-husnummer",
-        "name": "husnummer",
-        "label": "Husnummer",
-        "classes": {
-            "input": "input-width-xs"
-        },
-        "value": "13"
+        "value": "Mønstergade 13",
+        "autocomplete": "address-line1"
     },
     "input_postnummer": {
         "id": "input-postnummer",
@@ -103,7 +95,8 @@
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
         },
-        "value": "2300"
+        "value": "2300",
+        "autocomplete": "postal-code"
     },
     "input_by": {
         "id": "input-by",
@@ -113,17 +106,8 @@
             "formgroup": "w-percent-sm-100",
             "input": "input-width-xl"
         },
-        "value": "København S"
-    },
-    "input_COadresse": {
-        "id": "input-co-adresse",
-        "name": "COadresse",
-        "label": "Evt. C/O adresse",
-        "optionalLabel": true,
-        "classes": {
-            "input": "input-width-xl"
-        },
-        "required": false
+        "value": "København S",
+        "autocomplete": "address-line2"
     },
     "input_telefonnummer": {
         "id": "input-telefonnummer",
@@ -134,7 +118,8 @@
         "classes": {
             "input": "input-width-s"
         },
-        "required": false
+        "required": false,
+        "autocomplete": "tel"
     },
     "input_email": {
         "id": "input-email",
@@ -144,7 +129,8 @@
         "classes": {
             "input": "input-width-xl"
         },
-        "errorMessage": "Angiv din e-mail fx eksempel@mail.dk"
+        "errorMessage": "Angiv din e-mail fx eksempel@mail.dk",
+        "autocomplete": "email"
     },
     "radiobuttons_alder": {
         "id": "radiobuttons-alder",

@@ -578,6 +578,10 @@ pre {
   code {
     background-color: transparent;
   }
+
+  &:focus {
+    @include focus;
+  }
 }
 
 *:not(.details-text) > figure.highlight > pre {
@@ -824,6 +828,7 @@ code {
   background-color: #000;
   bottom: 0;
   position: fixed;
+  z-index: 1;
   width: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -928,10 +933,16 @@ div.component-preview {
   padding-top: units(4);
   padding-left: units(4);
   padding-right: units(4);
-
+  
   @include media-breakpoint-up(sm) {
-    margin-bottom: -(units(3));
+    padding-bottom: units(2);
+
+    & + figure.highlight pre {
+      padding-top: units(2);
+    }
   }
+
+  
 }
 
 .preview-iframe {
@@ -1257,4 +1268,14 @@ Design
 
 .nowrap {
   white-space: nowrap !important;
+}
+
+.checklist-heading {
+  margin-top: 0;
+  font-weight: font-weight('bold');
+  font-size: font-size('sm');
+}
+
+body.page-tjekliste svg {
+  flex-shrink: 0;
 }

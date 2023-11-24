@@ -19,6 +19,9 @@
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
       <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+      {% if page.url contains "language-switcher" %}
+      <p>Se eksempel i bunden af siden.</p>
+      {% endif %}
     </main>
     {% endif %}
 

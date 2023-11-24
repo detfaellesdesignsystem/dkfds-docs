@@ -911,7 +911,7 @@
     
 
 
-<li class="  ">
+<li class="  has-anchor-links">
 
   
 
@@ -938,8 +938,8 @@
 
   
     
-    <a href="/design/designtjek/"  class="nav-link">
-        Designtjek
+    <a href="/design/tjekliste/"  class="nav-link">
+        Tjekliste
       </a>
      
     
@@ -1921,6 +1921,26 @@
     
     <a href="/eksempler/patterns/formular/"  class="nav-link">
         Formular
+      </a>
+     
+    
+  
+</li>
+    
+
+  
+    
+
+
+<li class="  ">
+
+  
+
+
+  
+    
+    <a href="/eksempler/patterns/hentet-data/"  class="nav-link">
+        Inputfelter med hentet data
       </a>
      
     
@@ -3442,6 +3462,26 @@
 </li>
     
 
+  
+    
+
+
+<li class="  ">
+
+  
+
+
+  
+    
+    <a href="/faellesskab/faq/"  class="nav-link">
+        Ofte stillede spørgsmål
+      </a>
+     
+    
+  
+</li>
+    
+
 
         </ul>
       </div>
@@ -4427,6 +4467,41 @@
     </div>
 </div>
 
+<h3>Brug attributten “autocomplete”</h3>
+
+<p>Brug <code>autocomplete</code> på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link" target="_blank">WCAG 2.1 AA Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>).</p>
+
+<p>Brug <code>autocomplete</code> på inputfelter til fx navn (<code>autocomplete='name'</code>), postnummer (<code>autocomplete='postal-code'</code>), telefonnummer (<code>autocomplete='tel'</code>) og e-mailadresse (<code>autocomplete='email'</code>), hvis en bruger skal indtaste disse oplysninger om sig selv i din formular.</p>
+
+<div class="component-preview component-preview-code  component-code-text-input-autocomplete">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/text-input-autocomplete/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-input-autocomplete</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;postnr&quot;&gt;Postnummer&lt;/label&gt;
+
+    &lt;input type=&quot;text&quot; id=&quot;postnr&quot; name=&quot;postnr&quot; class=&quot;form-input input-char-4&quot; required
+        autocomplete=&quot;postal-code&quot;&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 <h2>Varianter</h2>
 
 <h3 id="hjaelpetekst">Hjælpetekst</h3>
@@ -4567,10 +4642,10 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-disabled&quot;&gt;Inputfelt som er låst&lt;/label&gt;
+    &lt;label class=&quot;form-label  disabled&quot; for=&quot;input-disabled&quot;&gt;Inputfelt som er låst&lt;/label&gt;
 
     &lt;input type=&quot;text&quot; id=&quot;input-disabled&quot; name=&quot;input-disabled&quot; class=&quot;form-input&quot;
-        disabled=&quot;disabled&quot;&gt;
+        value=&quot;Låst indhold&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4860,8 +4935,8 @@ form_limit.charactersLeft();</code></pre></figure>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
                     <section>
-                        <h2 class="h5 mb-4">Digitaliseringsstyrelsen & Erhvervsstyrelsen</h2>
-                        <p><a href="mailto:FDS@erst.dk" class="function-link" title="Send en e-mail til Det Fælles Designsystem">FDS@erst.dk</a></p>
+                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
+                        <p>Det Fælles Designsystem udvikles i fællesskab af<br>Digitaliseringsstyrelsen & Erhvervsstyrelsen</p>
                     </section>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 footer-col ">
@@ -4870,7 +4945,7 @@ form_limit.charactersLeft();</code></pre></figure>
                         <ul class="nobullet-list mb-0">
                             <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivspolitik og cookies</a></li>
                             <li><a href="https://www.was.digst.dk/designsystem-dk" class="function-link icon-link">Tilgængelighedserklæring<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-                            <li><button class="function-link" id="changeTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeThemeText">Skift tema</span></button></li>
+                            <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
                         </ul>
                     </section>
                 </div>

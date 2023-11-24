@@ -63,24 +63,17 @@
         "label": "Navn",
         "classes": {
             "input": "input-width-xl"
-        }
+        },
+        "autocomplete": "name"
     },
     "input_gade": {
         "id": "input-gade",
         "name": "gade",
-        "label": "Gade/vej",
+        "label": "Gade/vej og husnummer",
         "classes": {
-            "formgroup": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100",
             "input": "input-width-xl"
-        }
-    },
-    "input_husnummer": {
-        "id": "input-husnummer",
-        "name": "husnummer",
-        "label": "Husnummer",
-        "classes": {
-            "input": "input-width-xs"
-        }
+        },
+        "autocomplete": "address-line1"
     },
     "input_postnummer": {
         "id": "input-postnummer",
@@ -90,7 +83,8 @@
         "classes": {
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
-        }
+        },
+        "autocomplete": "postal-code"
     },
     "input_by": {
         "id": "input-by",
@@ -99,17 +93,8 @@
         "classes": {
             "formgroup": "w-percent-sm-100",
             "input": "input-width-xl"
-        }
-    },
-    "input_COadresse": {
-        "id": "input-co-adresse",
-        "name": "COadresse",
-        "label": "Evt. C/O adresse",
-        "optionalLabel": true,
-        "classes": {
-            "input": "input-width-xl"
         },
-        "required": false
+        "autocomplete": "address-line2"
     },
     "input_telefonnummer": {
         "id": "input-telefonnummer",
@@ -120,7 +105,8 @@
         "classes": {
             "input": "input-width-s"
         },
-        "required": false
+        "required": false,
+        "autocomplete": "tel"
     },
     "input_email": {
         "id": "input-email",
@@ -129,7 +115,8 @@
         "type": "email",
         "classes": {
             "input": "input-width-xl"
-        }
+        },
+        "autocomplete": "email"
     },
     "radiobuttons_alder": {
         "id": "radiobuttons-alder",

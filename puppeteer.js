@@ -24,7 +24,7 @@ var pdfUrls = [
     "design/layout/",
     "design/layout/grid/",
     "design/designressourcer/",
-    "design/designtjek/",
+    "design/tjekliste/",
     "komponenter/",
     "komponenter/accordions/",
     "komponenter/badges/",
@@ -69,6 +69,7 @@ var pdfUrls = [
     "eksempler/patterns/",
     "eksempler/patterns/angivelse-af-telefonnummer/",
     "eksempler/patterns/formular/",
+    "eksempler/patterns/hentet-data/",
     "eksempler/patterns/session-udloeber/",
     "eksempler/templates/",
     "kode/",
@@ -137,6 +138,7 @@ var pdfUrls = [
     "faellesskab/kontakt-support/",
     "faellesskab/roadmap/",
     "faellesskab/releases/",
+    "faellesskab/faq/",
     "privatlivspolitik-cookies/"
 ]
 

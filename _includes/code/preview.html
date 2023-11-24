@@ -1,3 +1,8 @@
-<div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }} p-4" aria-label="{{ include.title }}">
+<div class="component-preview {{ include.classes }} component-preview-{{ include.component | slugify }} p-4">
+    {% if include.title %}
+    <div class="sr-only">{{ include.title }}</div>
+    {% else %}
+    <div class="sr-only">Eksempel</div>
+    {% endif %}
     {% include code/components/{{ include.component }}.html %}
 </div>
