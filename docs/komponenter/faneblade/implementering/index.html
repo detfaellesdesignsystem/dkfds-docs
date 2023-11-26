@@ -3945,8 +3945,8 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tab-container" role="tablist" aria-label="List of tabs">
-    <ul>
+        <div class="tab-container">
+    <ul role="tablist">
         <li>
             <button class="tab-item" role="tab" aria-controls="tabpanel1" aria-selected="true"
                 id="tab1"><span>Indhold 1</span>
@@ -3962,46 +3962,37 @@
                 aria-selected="false" id="tab3"><span>Indhold 3</span>
             </button>
         </li>
-        <li>
-            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
-                aria-labelledby="tab1">
-                <h2>Indhold 1</h2>
-                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.</p>
-            </section>
-        </li>
-        <li>
-            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
-                aria-labelledby="tab2" hidden>
-                <h2>Indhold 2</h2>
-                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.</p>
-            </section>
-        </li>
-        <li>
-            <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
-                aria-labelledby="tab3" hidden>
-                <h2>Indhold 3</h2>
-                <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.</p>
-            </section>
-        </li>
     </ul>
+    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
+        aria-labelledby="tab1">
+        <h2>Indhold 1</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.</p>
+    </section>
+    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
+        aria-labelledby="tab2" hidden>
+        <h2>Indhold 2</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.</p>
+    </section>
+    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
+        aria-labelledby="tab3" hidden>
+        <h2>Indhold 3</h2>
+        <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.</p>
+    </section>
 </div>
         
     </div>
@@ -4063,8 +4054,8 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot; role=&quot;tablist&quot; aria-label=&quot;List of tabs&quot;&gt;
-    &lt;ul&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot;&gt;
+    &lt;ul role=&quot;tablist&quot;&gt;
         &lt;li&gt;
             &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel1&quot; aria-selected=&quot;true&quot;
                 id=&quot;tab1&quot;&gt;&lt;span&gt;Indhold 1&lt;/span&gt;
@@ -4080,46 +4071,37 @@
                 aria-selected=&quot;false&quot; id=&quot;tab3&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
-        &lt;li&gt;
-            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel1&quot;
-                aria-labelledby=&quot;tab1&quot;&gt;
-                &lt;h2&gt;Indhold 1&lt;/h2&gt;
-                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.&lt;/p&gt;
-            &lt;/section&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel2&quot;
-                aria-labelledby=&quot;tab2&quot; hidden&gt;
-                &lt;h2&gt;Indhold 2&lt;/h2&gt;
-                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.&lt;/p&gt;
-            &lt;/section&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel3&quot;
-                aria-labelledby=&quot;tab3&quot; hidden&gt;
-                &lt;h2&gt;Indhold 3&lt;/h2&gt;
-                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.&lt;/p&gt;
-            &lt;/section&gt;
-        &lt;/li&gt;
     &lt;/ul&gt;
+    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel1&quot;
+        aria-labelledby=&quot;tab1&quot;&gt;
+        &lt;h2&gt;Indhold 1&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel2&quot;
+        aria-labelledby=&quot;tab2&quot; hidden&gt;
+        &lt;h2&gt;Indhold 2&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel3&quot;
+        aria-labelledby=&quot;tab3&quot; hidden&gt;
+        &lt;h2&gt;Indhold 3&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4182,8 +4164,8 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot; role=&quot;tablist&quot; aria-label=&quot;List of tabs&quot;&gt;
-    &lt;ul&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot;&gt;
+    &lt;ul role=&quot;tablist&quot;&gt;
         &lt;li&gt;
             &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-1&quot;
                 aria-selected=&quot;true&quot;
@@ -4205,46 +4187,37 @@
                     3&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
-        &lt;li&gt;
-            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-1&quot;
-                aria-labelledby=&quot;tab-icon1&quot;&gt;
-                &lt;h2&gt;Indhold 1&lt;/h2&gt;
-                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.&lt;/p&gt;
-            &lt;/section&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-2&quot;
-                aria-labelledby=&quot;tab-icon2&quot; hidden&gt;
-                &lt;h2&gt;Indhold 2&lt;/h2&gt;
-                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.&lt;/p&gt;
-            &lt;/section&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-3&quot;
-                aria-labelledby=&quot;tab-icon3&quot; hidden&gt;
-                &lt;h2&gt;Indhold 3&lt;/h2&gt;
-                &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac
-                    lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet,
-                    maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec
-                    in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur
-                    malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id
-                    sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget
-                    urna.&lt;/p&gt;
-            &lt;/section&gt;
-        &lt;/li&gt;
     &lt;/ul&gt;
+    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-1&quot;
+        aria-labelledby=&quot;tab-icon1&quot;&gt;
+        &lt;h2&gt;Indhold 1&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-2&quot;
+        aria-labelledby=&quot;tab-icon2&quot; hidden&gt;
+        &lt;h2&gt;Indhold 2&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-3&quot;
+        aria-labelledby=&quot;tab-icon3&quot; hidden&gt;
+        &lt;h2&gt;Indhold 3&lt;/h2&gt;
+        &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
+            nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
+            orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed
+            posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
+            ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
+            nisl, in lacinia sem massa eget urna.&lt;/p&gt;
+    &lt;/section&gt;
 &lt;/div&gt;</code></pre></figure>
 
 

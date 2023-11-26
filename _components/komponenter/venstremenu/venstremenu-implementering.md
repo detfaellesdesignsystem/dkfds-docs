@@ -9,7 +9,7 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Venstremenu
 lead: Venstremenuen strukturerer et navigationshierarki med op til tre niveauer i en vertikal liste.
-component: "sidenav-normal-level2"
+component: "sidenav-normal-level1"
 componentTitle: "Eksempel på søgefelt"
 anchor: false
 description: "Dokumentation på implementering af venstremenu."
