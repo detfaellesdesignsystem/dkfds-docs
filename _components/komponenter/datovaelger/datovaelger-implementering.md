@@ -147,8 +147,6 @@ Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inpu
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
-<a href="/kode/komponenter/fejlmeddelelser/#datovaelger">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser" %} og {% include links/component-links.html linktext="fejlmeddelelser's implementering med datovælgeren." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/kode/komponenter/fejlopsummering/">fejlopsummering</a>.
-
-{% include links/internal-links.html linktext="Se flere betydninger i ikontaksonomien" %}
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="en fejlopsummering" %}.

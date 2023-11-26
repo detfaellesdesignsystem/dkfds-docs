@@ -55,6 +55,9 @@
 {%- elsif include.linktext == "sprogoversættelser" -%}
 <a href="/komponenter/datovaelger/implementering/#sprog">{{ include.linktext }}</a>
 
+{%- elsif include.linktext == "Datovælgeren" -%}
+<a href="/komponenter/datovaelger/implementering/">{{ include.linktext }}</a>
+
 {%- elsif include.linktext == "detaljekomponenten" or include.linktext == "detalje komponent" or include.linktext == "Detalje komponent" -%}
 <a href="/komponenter/detaljer/guidelines/">{{ include.linktext }}</a>
 
@@ -64,20 +67,38 @@
 {%- elsif include.linktext == "Faneblade" or include.linktext == "faneblade" -%}
 <a href="/komponenter/faneblade/guidelines/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Se eksempel på brug af fejlmeddelelse" or include.linktext == "fejlmeddelelser" or include.linktext == "Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." -%}
+{%- elsif include.linktext == "Se eksempel på brug af fejlmeddelelse" or include.linktext == "fejlmeddelelser" or include.linktext == "Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." or include.linktext == "Læs mere om korrekt brug af fejlmeddelelser" -%}
 <a href="/komponenter/fejlmeddelelser/guidelines/">{{ include.linktext }}</a>
-
+Når der vises en fejlmeddelelse, vis da også
 {%- elsif include.linktext == "fejlbeskeder i accordions" -%}
 <a href="/komponenter/fejlmeddelelser/guidelines/#accordions">{{ include.linktext }}</a>
 
+{%- elsif include.linktext == "fejlmeddelelser's implementering med datofelter." -%}
+<a href="/komponenter/fejlmeddelelser/implementering/#datofelter">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "fejlmeddelelser's implementering med datovælgeren." -%}
+<a href="/komponenter/fejlmeddelelser/implementering/#datovaelger">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "fejlmeddelelser's implementering med tekstområde." -%}
+<a href="/komponenter/fejlmeddelelser/implementering/#tekstomraade">{{ include.linktext }}</a>
+
 {%- elsif include.linktext == "fejlopsummeringskomponenten" or include.linktext == "fejlopsummeringer" or include.linktext == "fejlopsummering" or include.linktext == "fejlopsummeringen" -%}
 <a href="/komponenter/fejlopsummering/guidelines/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "en fejlopsummering" -%}
+<a href="/komponenter/fejlopsummering/implementering/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "brug et af de anviste layouts" or include.linktext == "footer" or include.linktext == "Se footer komponenten" or include.linktext == "Footer" -%}
 <a href="/komponenter/footer/guidelines/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "footeren" -%}
 <a href="/komponenter/footer/guidelines/#footer-logo">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Se eksempler på forskellige sammensætninger" -%}
+<a href="/komponenter/footer/guidelines/#tre-kolonner">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "footerne" -%}
+<a href="/komponenter/footer/implementering/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Funktionslink" or include.linktext == "funktionslinks" or include.linktext == "funktionslink" or include.linktext == "funktions link" -%}
 <a href="/komponenter/funktionslink/guidelines/">{{ include.linktext }}</a>
@@ -109,10 +130,13 @@
 {%- elsif include.linktext == "feltbredde i tekstfelter" -%}
 <a href="/komponenter/inputfelter/guidelines/#feltbredde">{{ include.linktext }}</a>
 
+{%- elsif include.linktext == "Karakterbegræsning er tilføjet til inputfelter" -%}
+<a href="/komponenter/inputfelter/guidelines/#karakterbegraensning">{{ include.linktext }}</a>
+
 {%- elsif include.linktext == "Se eksempler på frivillige og obligatoriske felter" -%}
 <a href="/komponenter/inputfelter/guidelines/#obligatoriske-og-frivillige-felter">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Se dokumentationen om inputfelter til udviklere" -%}
+{%- elsif include.linktext == "Se dokumentationen om inputfelter til udviklere" or include.linktext == "Inputfelter" -%}
 <a href="/komponenter/inputfelter/implementering/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "karakterbegrænsning" -%}
@@ -142,7 +166,7 @@
 {%- elsif include.linktext == "modaler" or include.linktext == "modal" or include.linktext == "modal komponent" -%}
 <a href="/komponenter/modal/guidelines/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Modalvindue, som kræver handling" -%}
+{%- elsif include.linktext == "Modalvindue, som kræver handling" or include.linktext == "Modal" -%}
 <a href="/komponenter/modal/guidelines/#kraever-handling">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Modalkomponenten" -%}
@@ -208,7 +232,7 @@
 {%- elsif include.linktext == "avancerede tabeller" -%}
 <a href="/komponenter/tables/guidelines/#avancerede-tabeller">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Se dokumentationen om tabeller til udviklere" -%}
+{%- elsif include.linktext == "Se dokumentationen om tabeller til udviklere" or include.linktext == "Tabeller med valgbare rækker" -%}
 <a href="/komponenter/tables/implementering/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "variant" -%}
@@ -238,7 +262,7 @@
 {%- elsif include.linktext == "tjekboks" or include.linktext == "tjekboks med collapse funktion" -%}
 <a href="/komponenter/tjekboks/guidelines/#skjult-indhold-collapse">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Toastbeskeders" or include.linktext == "toastbeskeders" or include.linktext == "toastbesked" or include.linktext == "Notifikation (Toast) komponent" -%}
+{%- elsif include.linktext == "Toastbeskeders" or include.linktext == "toastbeskeders" or include.linktext == "toastbesked" or include.linktext == "Notifikation (Toast) komponent" or include.linktext == "toastbeskederne" -%}
 <a href="/komponenter/toastbesked/guidelines/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "toastbeskeder" -%}
