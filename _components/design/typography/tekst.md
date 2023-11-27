@@ -144,7 +144,7 @@ Forklarende eller beskrivende tekst tilhørende et billede.
 {:.table .table--borderless .table--responsive-headers}
 | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve | Afstand mellem bogstaver |
 |---------------|-----------------|------------------------------|------------|--------------------------|
-| IBM Plex Sans | 13px            | 400                          | #1A1A1A    | 0.4 px                   |
+| IBM Plex Sans | 14px            | 400                          | #1A1A1A    | 0.4 px                   |
 
 {:#billedtekst-retningslinjer}
 ### Retningslinjer

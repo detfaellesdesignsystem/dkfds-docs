@@ -168,6 +168,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl, hvor overflowmenuen kunne gå ud over skærmens kanter, når den åbnede.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet JavaScript fra datofelter og ændret inputtypen fra `tel` til `number`. Man skal derfor sikre sig, at ens løsning har en passende validering af de indtastede værdier.
 - Erstattet normalize.css med styling i _base.scss.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret fontstørrelse og linjehøjde på flere overskrifter, billedtekst, subheading og manchettekst - vær opmærksom på, at disse tekster kan fylde mere end tidligere.
 
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0
