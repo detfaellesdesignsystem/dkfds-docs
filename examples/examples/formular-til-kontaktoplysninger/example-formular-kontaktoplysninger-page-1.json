@@ -69,21 +69,11 @@
     "input_gade": {
         "id": "input-gade",
         "name": "gade",
-        "label": "Gade/vej",
+        "label": "Gade/vej og husnummer",
         "classes": {
-            "formgroup": "mr-sm-4 mt-5 mt-sm-0 w-percent-sm-100",
             "input": "input-width-xl"
         },
-        "autocomplete": "on"
-    },
-    "input_husnummer": {
-        "id": "input-husnummer",
-        "name": "husnummer",
-        "label": "Husnummer",
-        "classes": {
-            "input": "input-width-xs"
-        },
-        "autocomplete": "on"
+        "autocomplete": "address-line1"
     },
     "input_postnummer": {
         "id": "input-postnummer",
@@ -105,16 +95,6 @@
             "input": "input-width-xl"
         },
         "autocomplete": "address-line2"
-    },
-    "input_COadresse": {
-        "id": "input-co-adresse",
-        "name": "COadresse",
-        "label": "Evt. C/O adresse",
-        "optionalLabel": true,
-        "classes": {
-            "input": "input-width-xl"
-        },
-        "required": false
     },
     "input_telefonnummer": {
         "id": "input-telefonnummer",

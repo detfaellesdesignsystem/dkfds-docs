@@ -28,6 +28,9 @@ var activeBuild = buildAll;
 
 var testfiles = [
     "test-html-elements",
+    "test-headings-no-sections",
+    "test-headings-with-sections",
+    "test-headings-long-text",
     "test-icons-svg-and-class",
     "test-accordion-headings",
     "test-accordion-variants",

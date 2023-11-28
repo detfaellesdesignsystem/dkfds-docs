@@ -17,10 +17,6 @@
     background-color: virk.$virk-primary;
     border-color: virk.$virk-primary-dark;
 }
-
-#changeTheme.button-tertiary {
-  width: auto;
-}
   
 .fds-title {
   font-size: font-size('4xl');
@@ -1258,6 +1254,7 @@ Design
 .checklist-heading {
   margin-top: 0;
   font-weight: font-weight('bold');
+  font-size: font-size('sm');
 }
 
 body.page-tjekliste svg {

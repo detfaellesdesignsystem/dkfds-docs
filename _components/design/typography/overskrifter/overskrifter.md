@@ -45,14 +45,14 @@ Overskriftstyperne har to formål:
 ## Designværdier
 
 {:.table .table--borderless .table--responsive-headers}
-| Tekst        | Skrifttype     | Skriftstørrelse | Tekst tykkelse | Tekstfarve | 
-|--------------|---------------|-----------------|-----------------|------------|
-| Overskrift 1 | IBM Plex Sans | 39px            | 700             | #1a1a1a    |
-| Overskrift 2 | IBM Plex Sans | 31px            | 600             | #1a1a1a    |
-| Overskrift 3 | IBM Plex Sans | 25px            | 600             | #1a1a1a    |
-| Overskrift 4 | IBM Plex Sans | 20px            | 600             | #1a1a1a    |
-| Overskrift 5 | IBM Plex Sans | 16px            | 600             | #1a1a1a    |
-| Overskrift 6 | IBM Plex Sans | 13px            | 500             | #1a1a1a    |
+| Tekst        | Skrifttype    | Skriftstørrelse | Linjehøjde | Teksttykkelse   | Tekstfarve | 
+|--------------|---------------|-----------------|------------|-----------------|------------|
+| Overskrift 1 | IBM Plex Sans | 48px            | 1.17       | 700             | #1a1a1a    |
+| Overskrift 2 | IBM Plex Sans | 32px            | 1.25       | 600             | #1a1a1a    |
+| Overskrift 3 | IBM Plex Sans | 24px            | 1.33       | 600             | #1a1a1a    |
+| Overskrift 4 | IBM Plex Sans | 20px            | 1.4        | 600             | #1a1a1a    |
+| Overskrift 5 | IBM Plex Sans | 16px            | 1.5        | 600             | #1a1a1a    |
+| Overskrift 6 | IBM Plex Sans | 12px            | 1.67       | 500             | #1a1a1a    |
 
 {:#retningslinjer}
 ## Retningslinjer

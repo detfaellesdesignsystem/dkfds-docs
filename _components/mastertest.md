@@ -11,6 +11,9 @@ title: Test
 ## HTML-elementer
 
 {% include test/preview-test.html filename="test-html-elements" description="HTML-elementer" %}
+{% include test/preview-test.html filename="test-headings-no-sections" description="Headings uden sektioner" %}
+{% include test/preview-test.html filename="test-headings-with-sections" description="Headings med sektioner" %}
+{% include test/preview-test.html filename="test-headings-long-text" description="Lange headings" %}
 
 {:.h3}
 ## Ikoner

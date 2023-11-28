@@ -61,7 +61,7 @@ Vi stiller nedenstående filer til rådighed for, at I kan komme hurtigt i gang 
 
 Designbiblioteket i Figma vedligeholdes løbende.
 
-<a href="https://www.figma.com/file/ULyQcXMQFHgGyoiAOcBQJn/FDS-UI-komponenter?node-id=48%3A3" class="icon-link">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+<a href="https://www.figma.com/community/file/1284147195952477019" class="icon-link" target="_blank">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 
 <h3 class="h4">SVG</h3>
 

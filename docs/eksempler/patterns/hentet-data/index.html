@@ -19,8 +19,8 @@
 <title>Inputfelter med hentet data | Det Fælles Designsystem</title>
 <meta property="og:title" content="Inputfelter med hentet data | Det Fælles Designsystem">
 
-<meta name="description" content="En formular med automatisk hentet data, hvor felterne kan redigeres.">
-<meta property="og:description" content="En formular med automatisk hentet data, hvor felterne kan redigeres.">
+<meta name="description" content="En formular med automatisk hentet data.">
+<meta property="og:description" content="En formular med automatisk hentet data.">
 
 
 
@@ -3205,7 +3205,7 @@
                 
 
                 
-                <p class="font-lead">En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres i.</p>
+                <p class="font-lead">En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres.</p>
                 
 
                 
@@ -3289,7 +3289,7 @@
 
 <h2>Anvendes til</h2>
 
-<p>Dette pattern anvendes til visning af data, som er hentet automatisk ind i en formular. Det kan fx være data fra CVR- eller CPR-registreret data som derved er for udfyldt og letter udfyldelsen for brugeren, samtidig med at det giver brugeren mulighed for at rediger i den hentet data, hvis dette ønskes.</p>
+<p>Dette pattern anvendes til visning af data, som er hentet automatisk ind i en formular. Det kan fx være data fra CVR- eller CPR-registret, som derved er forudfyldt. Dette letter udfyldelsen for brugeren, samtidig med at det giver brugeren mulighed for at redigere den hentede data, hvis dette er nødvendigt.</p>
 
 <h2>Anvendes ikke til</h2>
 
@@ -3299,9 +3299,9 @@
 
 <p>Den hentede data vises i et read-only felt med en hjælpetekst, som gør opmærksom på, at der er tale om automatisk indhentet data.</p>
 
-<p>Hvis brugeren har mulighed for at rette i data, placeres et funktionslink til redigering ved siden af feltet. Ved klik på funktionslinket bliver inputfeltet aktivt, og hjælpeteksten fjernes. Den hentede data forbliver i feltet, så brugeren kan slette og ændre i teksten. Bemærk, at man i koden selv står for at implementere denne funktionalitet.</p>
+<p>Hvis brugeren har mulighed for at rette i data, placeres et funktionslink til redigering ved siden af feltet. Ved klik på funktionslinket bliver inputfeltet aktivt, og hjælpeteksten fjernes. Den hentede data forbliver i feltet, så brugeren kan rette i teksten. Bemærk, at man i koden selv står for at implementere denne funktionalitet.</p>
 
-<p>Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes som ethvert andet felt i formularen og hvordan det er specificeret i den validering, der ligger til grund for den selvbetjening, hvor det anvendes.</p>
+<p>Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes og valideres som ethvert andet felt i formularen.</p>
 
 <h2>Eksempel på anvendelse af pattern</h2>
 
@@ -3349,13 +3349,13 @@
     </div>
 
     <div class="form-group">
-        <label class="form-label" for="email">E-mailadresse</label>
+        <label class="form-label" for="emailinput">E-mailadresse</label>
 
-        <input type="email" id="email" name="email" class="form-input" required="" autocomplete="email" />
+        <input type="email" id="emailinput" name="email" class="form-input" required="" autocomplete="email" />
     </div>
 
     <button class="button button-primary mt-9">
-        Fortsæt
+        Næste
     </button>
 </form>
         
@@ -3410,14 +3410,14 @@
     &lt;/div&gt;
 
     &lt;div class=&quot;form-group&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;email&quot;&gt;E-mailadresse&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;emailinput&quot;&gt;E-mailadresse&lt;/label&gt;
 
-        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required
+        &lt;input type=&quot;email&quot; id=&quot;emailinput&quot; name=&quot;email&quot; class=&quot;form-input&quot; required
             autocomplete=&quot;email&quot;&gt;
     &lt;/div&gt;
 
     &lt;button class=&quot;button button-primary mt-9&quot;&gt;
-        Fortsæt
+        Næste
     &lt;/button&gt;
 &lt;/form&gt;</code></pre></figure>
 
@@ -3447,6 +3447,7 @@ editButton.addEventListener('click', function (e) {
     textfield.setAttribute('required', '');
     textfield.setAttribute('autocomplete', 'name');
     textfield.classList.remove('mr-3');
+    textfield.focus();
 });
 
 let editButtonExample = document.getElementById("adresse-rediger");
@@ -3461,6 +3462,7 @@ editButtonExample.addEventListener('click', function (e) {
     textfield.setAttribute('required', '');
     textfield.setAttribute('autocomplete', 'street-address');
     textfield.classList.remove('mr-3');
+    textfield.focus();
 });
 </script>
 

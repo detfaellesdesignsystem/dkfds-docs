@@ -19,6 +19,8 @@ tags:
 - inline svg
 ---
 
+{% include code/preview.html component="icons--svg" title="Eksempel, der viser 5 ikoners udseende" %}
+
 {:#retningslinjer}
 ## Anvendes til  
 
@@ -73,7 +75,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
         <ul>
-            <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li><a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
             <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
         </ul>
         <p>Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes på listen.</p>
@@ -354,7 +356,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
       <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
       <p class="alert-text">Prøv evt. at søge hos:</p>
       <ul class="nobullet-list">
-        <li><a href="https://material.io/tools/icons/?style=outline" class="icon-link">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li><a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
         <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
       </ul>
     </div>
