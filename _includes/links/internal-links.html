@@ -1,9 +1,3 @@
-{% comment %} 
-    --------------------------
-    | "Kom i gang" sti links |
-    --------------------------
-{% endcomment %}
-
 {%- if include.linktext == "Implementering og kode" or include.linktext == "Til udviklere" or include.linktext == "implementering af DKFDS til udviklere" or include.linktext == "stylesheetet" -%}
 <a href="/kom-i-gang/implementering-kode/">{{ include.linktext }}</a>
 
@@ -57,12 +51,6 @@
 
 {%- elsif include.linktext == "Ofte stillede spørgsmål" -%}
 <a href="/kom-i-gang/faq/">{{ include.linktext }}</a>
-
-{% comment %} 
-    ----------------------
-    | "Design" sti links |
-    ----------------------
-{% endcomment %}
 
 {%- elsif include.linktext == "farver" or include.linktext == "Farver" or include.linktext == "bruge farverne som anvist" -%}
 <a href="/design/farver/">{{ include.linktext }}</a>

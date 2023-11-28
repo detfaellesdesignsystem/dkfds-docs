@@ -151,6 +151,22 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-links.html linktext="Faneblade" %}</h3>
+</div>
+
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Det gamle faneblad er blevet erstattet med en ny fanebladskomponent.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at anvende faneblade med URL-skifte.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at indsætte ikoner i fanebladene.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
+</div>
+
+- Dokumentationssiden har fået lavet en større omstrukturering hvor en stor del af dokumentationen er blevet inddelt i faneblade.
+- Ved omstruktureringen er kodeafsnit flyttet fra den separate menu ”Kode” og ind på hver komponent-/designside i fanen ”Kode”. Retningslinjerne for komponenterne er ligeledes flyttet ind i fanen ”Retningslinjer”.
+- Flere sider i dokumentationen under menupunkterne ”Design”, ”Kode”, ”Krav” og ”Fællesskab” er blevet flyttet ind i et nyt menupunkt ved navn ”Kom i gang”. Menupunktet ”Kode” og ”Krav” er blevet fjernet som følge af disse ændringer. Derudover er ”Design” menupunktet omdøbt til ”Styleguide”.
+
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) {% include links/component-links.html linktext="radioknapper" %} og {% include links/component-links.html linktext="tjekbokse" %}. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for {% include links/component-links.html linktext="tabeller med valgbare rækker" %} og tjekbokse skal opdateres.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret `devDependencies` og `scripts` i {% include links/external-links.html linktext="package.json" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt {% include links/internal-links.html linktext="browserunderstøttelse" %}).
@@ -175,15 +191,15 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">24-11-2023</span></div>
 
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>. Bemærk at deaktiverede inputfelter kræver en mindre opdatering af HTML'ens klasser.
-- Tilføjet styling til `placeholder`-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.
-- Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
-- Rettet fejl, hvor visse typer af `id` kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på {% include links/component-links.html linktext="readonly-inputfelter" %} og {% include links/component-links.html linktext="deaktiverede inputfelter" %}. Bemærk at deaktiverede inputfelter kræver en mindre opdatering af HTML'ens klasser.
+- Tilføjet styling til `placeholder`-attributten for {% include links/component-links.html linktext="inputfelter" %}, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at {% include links/component-links.html linktext="hjælpetekster" %} fortsat er måden at give brugere hjælp til indtastning på.
+- Opdateret {% include links/component-links.html linktext="funktionslinks" %}, så teksten er venstrestillet, når de i HTML'en er angivet med `<button>`.
+- Rettet fejl, hvor visse typer af `id` kunne få {% include links/component-links.html linktext="overflowmenuen" %} til at fejle.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span>
-- Tilføjet `inline` til <a href="/kode/utilities/#display">hjælpeklasser for display</a>.
-- Tilføjet `autocomplete`-attributter til flere eksempler, tilføjet afsnit om `autocomplete` til <a href="/kode/komponenter/inputfelter/">inputfelter</a> og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
+- Tilføjet `inline` til {% include links/internal-links.html linktext="hjælpeklasser for display" %}.
+- Tilføjet `autocomplete`-attributter til flere eksempler, tilføjet afsnit om `autocomplete` til {% include links/component-links.html linktext="implementeringen af inputfelter" %} og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.
-- Tilføjet ny side til dokumentationen kaldet <a href="/faellesskab/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/design/designressourcer/">Designressourcer</a>, <a href="/design/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.
+- Tilføjet ny side til dokumentationen kaldet {% include links/internal-links.html linktext="Ofte stillede spørgsmål" %}, samt opdateret siderne {% include links/internal-links.html linktext="Designressourcer" %}, {% include links/internal-links.html linktext="Tjekliste" %} og {% include links/component-links.html linktext="Komponenter" %}.
 
 {:#version-9-0-2 .mb-0}
 ## Version 9.0.2
