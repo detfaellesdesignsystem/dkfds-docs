@@ -3268,7 +3268,7 @@
 <p>, samt opdateret siderne <a href="/kom-i-gang/designressourcer/">Designressourcer</a>, <a href="/kom-i-gang/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</p>
 <ul>
   <li>Tilføjet <code>inline</code> til <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">hjælpeklasser for display</a>.</li>
-  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler samt tilføjet afsnit om <code>autocomplete</code> til <a href="/kode/komponenter/inputfelter/">inputfelter</a>.</li>
+  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler samt tilføjet afsnit om <code>autocomplete</code> til <a href="/komponenter/inputfelter/implementering/">Inputfelter</a>.</li>
 </ul>
 
 <h2 id="version-9-0-2" class="mb-0">Version 9.0.2</h2>
@@ -3361,7 +3361,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.</li>
   <li>Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/implementering/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/komponenter/cookiemeddelelse/implementering/">cookiemeddelelser</a>, <a href="/kode/komponenter/footer/">footer</a> og <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/implementering/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/komponenter/cookiemeddelelse/implementering/">cookiemeddelelser</a>, <a href="/komponenter/footer/implementering/">footerne</a> og <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/guidelines/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/guidelines/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/guidelines/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
@@ -3371,7 +3371,7 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/radioknap/guidelines/">Radioknapper</a> og 
 <a href="/komponenter/tjekboks/guidelines/">tjekbokse</a> er omskrevet, så de ikke længere indeholder listeelementerne <code>li</code> og <code>ul</code>.</li>
   <li>Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/guidelines/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/guidelines/">store tjekbokse</a>.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/accordions/">accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/kode/komponenter/datovaelger/">datovælgeren</a>, hvor dokumentationen er præciseret.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/accordions/implementering/">Accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/komponenter/datovaelger/implementering/">Datovælgeren</a>, hvor dokumentationen er præciseret.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a>. Funktionen <code>init</code> samt sprogskifte er uændrede.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/guidelines/">ikonet</a> <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/knapper/guidelines/#klikbart-ikon">Klikbare ikoner</a> med klassen <code>button-unstyled</code> fylder ikke længere hele skærmbredden på mindre skærme og HTML’en er opdateret for alle eksempler.</li>
@@ -3396,9 +3396,9 @@
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
 <ul>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/komponenter/accordions/implementering/">Accordions</a>, <a href="/komponenter/tables/implementering/">Tabeller med valgbare rækker</a>, <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/datovaelger/implementering/">Datovælgeren</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af <a href="/komponenter/toastbesked/guidelines/">toastbeskederne</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.</li>
   <li>Tilføjet <code>cursor:pointer</code> til <a href="/komponenter/toastbesked/guidelines/">toastbeskeders</a> luk-knap.</li>
   <li>Opdateret <a href="/komponenter/dropdown/guidelines/">dropdown</a>-komponentens background-image, så det sættes ved hjælp af ikonet <code>expand-more</code>.</li>
   <li>Ændret stylingen på <a href="/komponenter/trinindikator/guidelines/#responsiv">responsive trinindikatorers</a> top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.</li>
@@ -3411,7 +3411,7 @@
 
 <ul>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent: <a href="/komponenter/tilbage-til-top/guidelines/">Tilbage til toppen</a></li>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/guidelines/">tekstområder</a></li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: <a href="/komponenter/inputfelter/guidelines/#karakterbegraensning">Karakterbegræsning er tilføjet til inputfelter</a> og <a href="/komponenter/tekstomraade/guidelines/">tekstområder</a></li>
   <li>Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/guidelines/">headerens</a> række 3</li>
   <li>Rettet fejl hvor <a href="/komponenter/skip-link/guidelines/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren</li>
   <li>Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/guidelines/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3</li>
@@ -3456,7 +3456,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for <a href="/komponenter/radioknap/guidelines/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle <a href="/design/ikoner/guidelines/">ikoner</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet <a href="/komponenter/beskeder/implementering/">JavaScript til luk knap i beskeder</a></li>
-  <li>Tilføjet <a href="/komponenter/modal/#kraever-handling">modal</a> som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold.</li>
+  <li>Tilføjet <a href="/komponenter/modal/guidelines/#kraever-handling">Modal</a> som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ved luk af <a href="/komponenter/modal/guidelines/">modal</a> sættes fokus på element, som åbnede modalen</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Luk modal, hvis en ny <a href="/komponenter/modal/guidelines/">modal</a> åbnes.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Forbedret <a href="/komponenter/header/guidelines/">headeren</a> på mobil.</li>
@@ -3625,7 +3625,8 @@
   <li>Ny komponent: <a href="/komponenter/broedkrumme/guidelines/">Brødkrumme</a></li>
   <li>Mulighed for en mere kompakt <a href="/komponenter/header/guidelines/">header</a> med brug af en <a href="/komponenter/knapper/guidelines/#lille-knap">lille knap</a></li>
   <li>Linjehøjden for <a href="/design/typografi/tekst/guidelines/">lille brødtekst</a> er ændret til 20px</li>
-  <li>Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/guidelines/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/guidelines/">fejlopsummeringer</a>.</li>
+  <li>Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/guidelines/">fejlmeddelelser</a>
+Når der vises en fejlmeddelelse, vis da også og <a href="/komponenter/fejlopsummering/guidelines/">fejlopsummeringer</a>.</li>
   <li><a href="/komponenter/venstremenu/guidelines/">Tilpasset alignment på venstremenu</a></li>
 </ul>
 
