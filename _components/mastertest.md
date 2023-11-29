@@ -195,6 +195,11 @@ title: Test
 {% include test/preview-test.html filename="test-checkboxes-9" description="Tjekbokse 9" %}
 
 {:.h3}
+## Toggle switch
+
+{% include test/preview-test.html filename="test-toggle" description="Toggle switch" %}
+
+{:.h3}
 ## Trinindikator
 
 {% include test/preview-test.html filename="test-step-guide-1" description="Trinindikator 1" %}

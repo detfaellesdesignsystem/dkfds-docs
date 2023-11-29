@@ -5195,13 +5195,26 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="form-group">
+        <ul class="nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <li>
 
-    <input id="toggle-example" type="checkbox" name="toggle-example" value="1"
-        class="form-toggle" />
-    <label for="toggle-example" class="form-toggle-label ">Dette er en toggle</label>
+        <div class="toggle-element">
+            <label class="toggle-label" for="completed-switch">Vis afsluttede sager</label>
+            <button class="toggle-button" role="switch" aria-checked="true"
+                id="completed-switch"></button>
+        </div>
 
-</div>
+    </li>
+    <li>
+
+        <div class="toggle-element">
+            <label class="toggle-label" for="yearold-switch">Vis sager ældre end et år</label>
+            <button class="toggle-button" role="switch" aria-checked="false"
+                id="yearold-switch"></button>
+        </div>
+
+    </li>
+</ul>
         
     </div>
     
@@ -5226,6 +5239,8 @@
 
 <h3>HTML Struktur</h3>
 
+<p>Afstand mellem label og knap skal tilpasses til ens løsning. Hvorvidt toggle switches skal placeres i en liste eller i en anden semantisk struktur, afhænger af konteksten.</p>
+
 <div class="component-preview component-preview-code  component-code-toggle">
     
     
@@ -5238,18 +5253,34 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40&quot;&gt;
+    &lt;li&gt;
 
-    &lt;input id=&quot;toggle-example&quot; type=&quot;checkbox&quot; name=&quot;toggle-example&quot; value=&quot;1&quot;
-        class=&quot;form-toggle&quot; /&gt;
-    &lt;label for=&quot;toggle-example&quot; class=&quot;form-toggle-label &quot;&gt;Dette er en toggle&lt;/label&gt;
+        &lt;div class=&quot;toggle-element&quot;&gt;
+            &lt;label class=&quot;toggle-label&quot; for=&quot;completed-switch&quot;&gt;Vis afsluttede sager&lt;/label&gt;
+            &lt;button class=&quot;toggle-button&quot; role=&quot;switch&quot; aria-checked=&quot;true&quot;
+                id=&quot;completed-switch&quot;&gt;&lt;/button&gt;
+        &lt;/div&gt;
 
-&lt;/div&gt;</code></pre></figure>
+    &lt;/li&gt;
+    &lt;li&gt;
+
+        &lt;div class=&quot;toggle-element&quot;&gt;
+            &lt;label class=&quot;toggle-label&quot; for=&quot;yearold-switch&quot;&gt;Vis sager ældre end et år&lt;/label&gt;
+            &lt;button class=&quot;toggle-button&quot; role=&quot;switch&quot; aria-checked=&quot;false&quot;
+                id=&quot;yearold-switch&quot;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
 
 
     </div>
 </div>
 
+<h3>Javascript</h3>
+
+<p>Der medfølger ikke funktionalitet med denne komponent. Når der trykkes på switchen, skal man derfor selv - udover at implementere den ønskede funktionalitet - sørge for at skifte værdien i attributten <code>aria-checked</code> til <code>true</code>/<code>false</code>.</p>
 
 
                 
@@ -5437,6 +5468,9 @@
 <script src="/assets/js/styleguide.js"></script>
 <script src="/assets/js/vendor.js"></script>
 
+
+
+<script src="/assets/js/toggleswitch.js"></script>
 
 
 
