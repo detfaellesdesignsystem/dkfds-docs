@@ -14,15 +14,17 @@ componentTitle: "Eksempel på tags"
 componentLink: true
 anchor: true
 subnav:
-- text: Tags med luk-ikon
-  href: "#tags-med-luk-ikon"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
 description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information
   om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -50,6 +52,7 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 {% include dos-donts-box.html component="tags-dos-donts" title="Tags do's and don'ts" %}
 
+{:#varianter}
 ## Varianter
 
 {:#tags-med-luk-ikon}

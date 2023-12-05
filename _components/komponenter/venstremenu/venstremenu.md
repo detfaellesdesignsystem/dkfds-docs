@@ -13,21 +13,21 @@ componentTitle: "Eksempel på venstremenu med ét niveau"
 componentLink: true
 anchor: true
 subnav:
-- text: 2 niveauer
-  href: "#to-niveauer"
-- text: 3 niveauer
-  href: "#tre-niveauer"
-- text: Ekstra information
-  href: "#ekstra-information"
-- text: Anchorlinks
-  href: "#anchorlinks"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Venstremenu giver brugerne overblik over struktur og indhold, så de kan
   finde vej til det indhold, de leder efter.
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -53,10 +53,7 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
 {% include dos-donts-box.html component="sidenav-dos-donts" title="Venstremenu do's and don'ts" %}
 
-#### Referencer
-
-<a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#to-niveauer}
@@ -78,3 +75,8 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 ### Anchorlinks
 
 Fra <a href="/faellesskab/releases/#version-10-0-0">version 10.0.0</a> vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-links.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.
+
+{:#ref}
+## Referencer
+
+<a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

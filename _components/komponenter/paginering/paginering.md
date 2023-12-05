@@ -12,8 +12,12 @@ componentTitle: "Eksempel på paginering"
 componentLink: true
 anchor: true
 subnav:
-- text: Eksempler på paginering
-  href: "#eksempler"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#ref"
 description: Lad brugeren navigere mellem indhold der er opdelt på flere sider.
 tags:
 - paginering
@@ -22,7 +26,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -62,13 +66,8 @@ Hold paginering på en enkelt linje.
 
 På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktuelle side og det samlede sideantal vises i midten.
 
-#### Referencer
-
-{:.nobullet-list}
-- <a href="https://designsystem.digital.gov/components/pagination/" class="icon-link">USWDS om paginering<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-{:#eksempler}
-## Eksempler på paginering
+{:#varianter}
+## Varianter
 
 ### 7 eller færre sider
 
@@ -77,3 +76,9 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 ### 8 eller flere sider
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- <a href="https://designsystem.digital.gov/components/pagination/" class="icon-link">USWDS om paginering<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

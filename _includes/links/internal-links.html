@@ -1,11 +1,14 @@
-{%- if include.linktext == "Implementering og kode" or include.linktext == "Til udviklere" or include.linktext == "implementering af DKFDS til udviklere" or include.linktext == "stylesheetet" -%}
-<a href="/kom-i-gang/implementering-kode/">{{ include.linktext }}</a>
+{%- if include.linktext == "Implementering og kode" or include.linktext == "Til udviklere" or include.linktext == "implementering af DKFDS til udviklere" or include.linktext == "stylesheetet" or include.linktext == "Hent kodepakken" -%}
+<a href="/kom-i-gang/implementering-kode/hent-kodepakken/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "temahåndtering i koden" or include.linktext == "temahåndtering" -%}
-<a href="/kom-i-gang/implementering-kode/#temahaandtering">{{ include.linktext }}</a>
+<a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden" -%}
-<a href="/kom-i-gang/implementering-kode/#javascript">{{ include.linktext }}</a>
+<a href="/kom-i-gang/implementering-kode/hent-kodepakken/#javascript">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Hjælpeklasser (Utilities)" -%}
+<a href="/kom-i-gang/implementering-kode/hjaelpeklasser/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "hjælpeklasse" or include.linktext == "hjælpeklasser for display" -%}
 <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">{{ include.linktext }}</a>
@@ -16,16 +19,19 @@
 {%- elsif include.linktext == "breakpoint" -%}
 <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "browserunderstøttelse" -%}
+{%- elsif include.linktext == "browserunderstøttelse" or include.linktext == "Browserunderstøttelse" -%}
 <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Eksempel på implementering i Angular" -%}
 <a href="/kom-i-gang/implementering-kode/eksempler-implementering/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "plugins" or include.linktext == "Plugins i Kode sektionen" or include.linktext == "Vi peger på en række plugins og hvordan disse kan styles så de passer ind" -%}
+{%- elsif include.linktext == "plugins" or include.linktext == "Plugins" or include.linktext == "Plugins i Kode sektionen" or include.linktext == "Vi peger på en række plugins og hvordan disse kan styles så de passer ind" -%}
 <a href="/kom-i-gang/implementering-kode/plugins/">{{ include.linktext }}</a>
 
-{%- elsif include.linktext == "Kode" -%}
+{%- elsif include.linktext == "Print" -%}
+<a href="/kom-i-gang/implementering-kode/print/">{{ include.linktext }}</a>
+
+{%- elsif include.linktext == "Kode" or include.linktext == "Frameworks" -%}
 <a href="/kom-i-gang/implementering-kode/frameworks/">{{ include.linktext }}</a>
 
 {%- elsif include.linktext == "Designprincipper" -%}

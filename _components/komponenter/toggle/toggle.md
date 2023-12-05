@@ -10,14 +10,17 @@ lead: "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radiok
 component: "toggle"
 componentTitle: "Eksempel på toggle"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
 description:
 tags:
 - "switch"
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 

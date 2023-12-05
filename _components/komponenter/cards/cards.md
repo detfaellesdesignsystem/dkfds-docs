@@ -12,18 +12,20 @@ componentTitle: "Eksempel på card"
 componentLink: true
 anchor: true
 subnav:
-- text: Card med tredjedel bredde
-  href: '#card-med-tredjedel-bredde'
-- text: Card med halv bredde
-  href: '#card-med-halv-bredde'
-- text: Samme højde
-  href: '#samme-hoejde'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: "Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold"
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -53,19 +55,7 @@ Skriv kort og præcist i hvert card.
 
 {% include dos-donts-box.html component="cards-dos-donts" title="Cards do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
-- <a href="/pages/eksempler/dashboard/dashboard-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Dashboard'">Dashboard</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/cards-component/" class="icon-link">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link">Muneo Kitajima, Marilyn H Blackmon & Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#card-med-tredjedel-bredde}
@@ -82,3 +72,17 @@ Skriv kort og præcist i hvert card.
 ### Samme højde
 
 {% include code/preview-box.html component="cards-same-height" title="Eksempel på cards med samme højde" %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
+- <a href="/pages/eksempler/dashboard/dashboard-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Dashboard'">Dashboard</a>
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- <a href="https://www.nngroup.com/articles/cards-component/" class="icon-link">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link">Muneo Kitajima, Marilyn H Blackmon & Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

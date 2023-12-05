@@ -13,16 +13,10 @@ componentTitle: "Eksempel på toastbesked"
 componentLink: true
 anchor: true
 subnav:
-- text: Succes
-  href: "#succes"
-- text: Advarsel
-  href: "#advarsel"
-- text: Fejl
-  href: "#fejl"
-- text: Information
-  href: "#information"
-- text: Uden brødtekst
-  href: "#uden-broedtekst"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
 description: 
 tags:
 - toast
@@ -35,7 +29,7 @@ Til forskel fra {% include links/component-links.html linktext="Beskeder (alerts
 Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -67,6 +61,7 @@ Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom p
 
 Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 
+{:#varianter}
 ## Varianter
 
 {:#succes}

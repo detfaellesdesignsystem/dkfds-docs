@@ -11,13 +11,20 @@ lead: Tre separate felter for dato, måned og år er den nemmeste måde for brug
 component: "date-input"
 componentTitle: "Eksempel på datofelter"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -46,12 +53,13 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-links.
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Tidligere registrering (vælg Ja)'">Trinformular til registrering: Tidligere registrering (vælg <em>'Ja'</em>)</a>
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)

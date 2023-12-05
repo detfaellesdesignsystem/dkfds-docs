@@ -14,14 +14,19 @@ lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektio
 component: "tabs-buttons"
 componentTitle: "Eksempel på faneblade"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Referencer
+  href: "#ref"
 description: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen.
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -63,7 +68,8 @@ Ikoner skal altid understøttes af en label med fanebladets navn.
 
 {% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/tabs-used-right/" class="icon-link">Jakob Nielsen: Tabs, Used Right (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

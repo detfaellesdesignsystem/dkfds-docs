@@ -10,7 +10,14 @@ lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af
 component: "back-to-top"
 componentTitle: "Eksempel på tilbage til toppen"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Lad brugeren navigere tilbage til toppen.
 tags:
 - back-to-top
@@ -21,7 +28,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -50,13 +57,14 @@ På mobil anvendes knappen uden tekst for at spare plads på skærmen.
 {% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" code="/komponenter/tilbage-til-top/implementering/" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Opsummering'">Trinformular til registrering: Opsummering</a>
 - <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser//?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/back-to-top/" target="_blank" class="icon-link">Hoa Loranger: Back-to-Top Button Design Guidelines (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

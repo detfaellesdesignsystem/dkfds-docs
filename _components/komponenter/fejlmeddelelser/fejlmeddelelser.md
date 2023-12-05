@@ -12,24 +12,14 @@ componentTitle: "Eksempel på fejlmeddelelse"
 componentLink: true
 anchor: true
 subnav:
-- text: Accordions
-  href: "#accordions"
-- text: Datofelter
-  href: "#datofelter"
-- text: Datovælger
-  href: "#datovaelger"
-- text: Dropdown
-  href: "#dropdown"
-- text: Inputfelt
-  href: "#inputfelt"
-- text: Radioknapper
-  href: "#radioknapper"
-- text: Tekstområde
-  href: "#tekstomraade"
-- text: Tjekboks
-  href: "#tjekboks"
-- text: Vedhæft fil
-  href: "#vedhaeft-fil"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description:
 tags:
 - fejlbesked
@@ -48,7 +38,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -124,22 +114,8 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
-- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
-- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="icon-link">Understanding Success Criterion 3.3.1: Error Identification<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-## Komponenter med fejlmeddelelser
+{:#varianter}
+## Varianter
 
 {:#accordions}
 ### Accordions
@@ -237,3 +213,19 @@ Fx "Du kan kun vælge op til 10 filer på samme tid".
 #### Der ikke er brugt den korrekte skabelon
 
 Skriv "Den valgte fil skal gøre brug af skabelonen".
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
+- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="icon-link">Understanding Success Criterion 3.3.1: Error Identification<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

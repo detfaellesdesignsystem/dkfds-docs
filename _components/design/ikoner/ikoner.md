@@ -53,8 +53,8 @@ Vi bruger Material Designs ikoner som udgangspunkt.
 Hvis du har brug for ikoner, der ikke findes i {% include links/internal-links.html linktext="ikontaksonomien" %} henviser vi til:
 
 {:nobullet-list}
-- <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://materialdesignicons.com/" class="icon-link" target="_blank">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-links.html linktext="Material Design" %}
+- {% include links/external-links.html linktext="Material Design Icons" %}
 
 Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes.
 

@@ -12,14 +12,16 @@ componentTitle: "Eksempel på overflow menu"
 componentLink: true
 anchor: true
 subnav:
-- text: Sortering
-  href: '#sortering'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Referencer
+  href: "#ref"
 description: "Du kan bruge overflow menuer til at vise eller skjule en liste af links."
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -43,7 +45,8 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 
 {% include dos-donts-box.html component="overflow-menu-dos-donts" title="Overflow menu do's and don'ts" %}
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - Jeff Johnson: Designing with the Mind in Mind (2014)

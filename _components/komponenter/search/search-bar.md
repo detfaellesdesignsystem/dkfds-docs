@@ -10,13 +10,20 @@ lead: Søgefeltet lader brugeren søge efter bestemt indhold på siden eller i l
 component: "search"
 componentTitle: "Eksempel på søgefelt"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -47,12 +54,13 @@ Søgeknappen skal være en submit-knap.
 {% include dos-donts-box.html component="search-dos-donts" title="Søgefelt do's and don'ts" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - <a href="https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/" class="icon-link">Jakob Nielsen: Top 10 Guidelines for Homepage Usability (2002)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

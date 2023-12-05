@@ -15,7 +15,7 @@ anchor: true
 subnav:
 - text: Designværdier
   href: "#designvaerdier"
-- text: Retningslinjer
+- text: Sådan bruges overskrifter
   href: "#retningslinjer"
 - text: Overskrift som link
   href: "#overskrift-som-link"
@@ -55,7 +55,7 @@ Overskriftstyperne har to formål:
 | Overskrift 6 | IBM Plex Sans | 12px            | 1.67       | 500             | #1a1a1a    |
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges overskrifter
 
 Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
 

@@ -10,13 +10,16 @@ lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at ind
 component: "spinner"
 componentTitle: "Eksempel på spinner komponent"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
 description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 

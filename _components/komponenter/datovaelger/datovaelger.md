@@ -12,18 +12,16 @@ componentTitle: "Eksempel på datovælger"
 componentLink: true
 anchor: true
 subnav:
-- text: Begræns mulige datoer
-  href: '#begraens'
-- text: Fast værdi
-  href: '#default'
-- text: Datoformat
-  href: '#datoformat'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
 description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -37,6 +35,7 @@ Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da kompon
 
 {% include dos-donts-box.html component="datepicker-dos-donts" title="Datovælger do's and don'ts" %}
 
+{:#varianter}
 ## Varianter
 
 {:#begraens}

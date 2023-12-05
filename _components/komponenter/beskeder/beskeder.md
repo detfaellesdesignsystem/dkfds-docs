@@ -12,12 +12,14 @@ componentTitle: "Eksempel på beskeder"
 componentLink: true
 anchor: true
 subnav:
-- text: Beskeder med ikon
-  href: "#beskeder-med-ikon"
-- text: Teksteksempler
-  href: "#teksteksempler"
-- text: Besked med luk knap
-  href: "#besked-med-luk-knap"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Beskeder (Alerts) er farvede bokse, eventuelt tilknyttet et ikon, du kan
   bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer,
   o.l.
@@ -26,7 +28,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -72,22 +74,7 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include dos-donts-box.html component="alerts-success-dos-donts" title="Successbeskeder do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- Linda Newman Lior: Writing for Interaction (2013)
-- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- Adam Silver: Form Design Patterns (2018)
-
+{:#varianter}
 ## Varianter
 
 {:#beskeder-med-ikon}
@@ -104,3 +91,20 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 ### Besked med luk knap
 
 {% include code/preview-box.html component="alert-close" title="Eksempel på besked med luk-knap" %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- Linda Newman Lior: Writing for Interaction (2013)
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- Adam Silver: Form Design Patterns (2018)

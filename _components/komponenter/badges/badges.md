@@ -13,15 +13,21 @@ componentTitle: "Eksempel på badges"
 componentLink: true
 anchor: true
 subnav:
-- text: Statusbadges
-  href: "#statusbadges"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
   nyt eller vigtigt indhold.
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -45,8 +51,16 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 {% include dos-donts-box.html component="badges-dos-donts" title="Badges do's and don'ts" %}
 
+{:#varianter}
+## Varianter
+
+{:#statusbadges}
+### Statusbadges
+
+{% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" %}
+
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
@@ -54,13 +68,7 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 - <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
 - <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Opgaveliste'">Opgaveliste</a>
 
-#### Referencer
+{:#ref}
+## Referencer
 
 <a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-## Varianter
-
-{:#statusbadges}
-### Statusbadges
-
-{% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" %}

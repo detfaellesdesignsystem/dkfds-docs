@@ -22,7 +22,7 @@ var exampleUrls = [
     {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
     {"url": "/eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
     {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 },
-    {"url": "/eksempel/tabs-urls/", "filename": "tabs-urls.png", "width": 771, "height":322 }
+    {"url": "/eksempel/tabs-urls/", "filename": "tabs-urls.png", "width": 771, "height":230 }
 ];
 
 (async () => {

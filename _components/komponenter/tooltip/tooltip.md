@@ -12,20 +12,20 @@ componentTitle: "Eksempel på ikon med tooltip"
 componentLink: true
 anchor: true
 subnav:
-- text: Klikbart ikon med tooltip
-  href: "#klikbart-ikon-med-tooltip"
-- text: Tekst med tooltip
-  href: "#tekst-med-tooltip"
-- text: Knap med tooltip
-  href: "#knap-med-tooltip"
-- text: Placering af tooltip
-  href: "#placering-af-tooltip"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: "Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes."
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -59,21 +59,7 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 
 {% include dos-donts-box.html component="tooltip-dos-donts" title="Datovælger do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/timing-exposing-content/" class="icon-link">Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Alita Joyce: Tooltip Guidelines (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#klikbart-ikon-med-tooltip}
@@ -95,3 +81,19 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 ### Placering af tooltip
 
 {% include code/preview-box.html component="tooltip-position" title="Eksempel på placering af tooltip" %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- <a href="https://www.nngroup.com/articles/timing-exposing-content/" class="icon-link">Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Alita Joyce: Tooltip Guidelines (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

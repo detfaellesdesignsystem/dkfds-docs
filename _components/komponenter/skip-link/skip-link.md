@@ -8,13 +8,16 @@ lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en b
 previewimage: "skip-link-eksempel"
 previewimageTitle: "Eksempel på skip-link"
 previewimageImage: "skiplink"
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
 description: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse."
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 

@@ -11,14 +11,19 @@ lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælge at 
 component: "details"
 componentTitle: "Eksempel på skjul og vis af indhold"
 componentLink: true
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
 description: Skjul og vis yderligere information eller en ekstra funktion relevant
   for brugerens valg.
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -43,7 +48,7 @@ Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) 
 Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange interaktionsniveauer.
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>

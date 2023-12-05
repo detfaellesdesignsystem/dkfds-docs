@@ -14,10 +14,12 @@ componentTitle: "Eksempel på accordion"
 componentLink: true
 anchor: true
 subnav:
-- text: Åbn/luk alle
-  href: "#aabn-luk-alle"
-- text: Med succesbeskeder
-  href: "#med-succesbeskeder"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#ref"
 description: Accordions er interaktive overskrifter, der anvendes til at skjule og
   vise det relaterede indhold.
 tags:
@@ -26,7 +28,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til  
 
@@ -61,12 +63,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-links.
 
 {% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
 
-#### Referencer
-
-{:.nobullet-list}
-- <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#aabn-luk-alle}
@@ -78,3 +75,10 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-links.
 ### Med succesbeskeder
 
 {% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
