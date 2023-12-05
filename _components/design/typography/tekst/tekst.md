@@ -127,7 +127,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 - Vær høflig (“Indtast venligst din adresse”) og vær ikke anklagende (“Du mangler at indtaste din adresse”). Hjælp brugeren med at løse fejlen.
 - Skriv ikke tekniske eller fagligt tunge fejltekster og brug ikke “jargon”.
 - Placer fejlteksten dér, hvor fejlen forekommer.
-- Fejltekst er som udgangspunkt rød. I formulerer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.
+- Fejltekst er som udgangspunkt rød. I formularer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.
 
 {:.nobullet-list}
 - {% include links/component-links.html linktext="Se eksempel på brug af fejlmeddelelse" %}
