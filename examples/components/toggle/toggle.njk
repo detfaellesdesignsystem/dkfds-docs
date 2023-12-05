@@ -1,4 +1,21 @@
 {% from "components/toggle/toggle.njk" import toggle as toggle %}
-<div class="form-group">
-{{ toggle(data)}}
-</div>
+
+<ul class="nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <li>
+        {{ 
+            toggle({
+                "id": "completed-switch",
+                "label": "Vis afsluttede sager",
+                "checked": true
+            })
+        }}
+    </li>
+    <li>
+        {{ 
+            toggle({
+                "id": "yearold-switch",
+                "label": "Vis sager ældre end et år"
+            })
+        }}
+    </li>
+</ul>

@@ -147,6 +147,7 @@ var testfiles = [
     "test-checkboxes-7",
     "test-checkboxes-8",
     "test-checkboxes-9",
+    "test-toggle",
     "test-step-guide-1",
     "test-step-guide-2",
     "test-step-guide-3",

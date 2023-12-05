@@ -24,19 +24,15 @@ tags:
 
 ### Anvendes til
 
-En toggle switch bruges hvis der kan vælges mellem to modsatrettede tilstande. 
-
-Det forventes af denne type komponent at brugernes skiftevalg træder i kraft med det samme. 
+En toggle switch bruges til at slå en enkelt mulighed til eller fra med det samme. Brugerens valg træder altid i kraft, så snart der trykkes på switchen.
 
 ### Anvendes ikke til
 
-Hvis der er flere valgmuligheder og multiple valgmuligheder, eller hvis valget først træder i kraft efter klik på en gem-knap, skal du vælge radioknapper eller tjekbokse.
+En toggle switch anvendes ikke, hvis valget først træder i kraft efter klik på fx en gem-knap. Vælg i stedet radioknapper eller tjekbokse i de tilfælde.
 
 ### Vejledning
 
-For at gøre komponenten mere tilgængelig anbefaler vi, at du ud over en sigende label også har en etiket på selve switchen.
-
-Interaktion med en toggle switch skal have øjeblikkelig virkning og IKKE først efter klik på fx “Gem-knap”. 
-
 Sørg for at brugen af toggle switch implementeres konsekvent i en løsning.
+
+Giv switchen en kort og præcis label, som placeres til venstre for toggle switchen. Afstanden mellem label og knap vurderes i den enkelte løsning afhængigt af kontekst, enhed og længden på teksten. Hvis samme side har mere end én toggle switch, placeres toggle switchene dog altid lige under hinanden, så knapperne visuelt står i en lige linje.
 

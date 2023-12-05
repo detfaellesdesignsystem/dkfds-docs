@@ -149,7 +149,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {:#version-10-0-0 .mb-0}
 ## Version 10.0.0
 
-<div><span class="small-text mt-0 d-block">xx-xx-2023</span></div>
+<div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-links.html linktext="Faneblade" %}</h3>
@@ -184,7 +184,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl, hvor overflowmenuen kunne gå ud over skærmens kanter, når den åbnede.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet JavaScript fra datofelter og ændret inputtypen fra `tel` til `number`. Man skal derfor sikre sig, at ens løsning har en passende validering af de indtastede værdier.
 - Erstattet normalize.css med styling i _base.scss.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret fontstørrelse og linjehøjde på flere overskrifter, billedtekst, subheading og manchettekst - vær opmærksom på, at disse tekster kan fylde mere end tidligere.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret fontstørrelse og linjehøjde på overskrifter, billedtekst, subheading og manchettekst - vær opmærksom på, at disse tekster kan fylde mere end tidligere.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg-large`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Toggle switch har fået ny HTML, ny styling og opdaterede retningslinjer med det formål at øge tilgængeligheden, samt gøre det muligt at anvende komponenten på andre sprog end dansk.
 
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0
