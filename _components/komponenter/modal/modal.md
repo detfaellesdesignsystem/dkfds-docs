@@ -1,20 +1,25 @@
 ---
-permalink: "/komponenter/modal/"
+permalink: "/komponenter/modal/guidelines/"
 redirect_from:
 - "/udvidelser/micromodal/"
 - "/kode/plugins/micromodal/"
+- "/komponenter/modal/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Modal
+lead: Modaler tvinger brugeren til at fokusere på og tage stilling til afgørende indhold, mens den øvrige side er deaktiveret.
 component: "modal"
 componentTitle: "Eksempel på modal"
 componentLink: true
-componentCode: "/kode/komponenter/modal/"
 anchor: true
 subnav:
-- text: Modal som kræver handling
-  href: "#kraever-handling"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
 description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
 tags:
 - besked
@@ -29,7 +34,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -55,7 +60,7 @@ Undgå at have flere åbne modaler på siden - det giver en dårligere brugeropl
 
 Modalen skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige <a href="/komponenter/knapper/">anbefalinger for knapper</a>.
+Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige {% include links/component-links.html linktext="anbefalinger for knapper" %}.
 
 Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
@@ -63,11 +68,7 @@ Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da de
 
 Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalen bliver så langt, at der opstår scroll. Overvej at bruge en individuel side i stedet for et modal, hvis indholdet er meget langt.
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger (tryk på <em>'Kontakt'</em> i eksemplernes header)</a>
-
+{:#varianter}
 ## Varianter
 
 {:#kraever-handling}
@@ -76,3 +77,8 @@ Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at ind
 Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til dets indhold.
 
 {% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link=true %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger (tryk på <em>'Kontakt'</em> i eksemplernes header)</a>

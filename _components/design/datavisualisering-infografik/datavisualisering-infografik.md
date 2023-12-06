@@ -1,8 +1,8 @@
 ---
 permalink: "/design/datavisualisering-infografik/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Datavisualisering og infografik
 lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
 anchor: false
@@ -19,13 +19,13 @@ tags:
 
 Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
 
-Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed i forbindelse med grafik og visualisering</a>.
+Vær meget opmærksom på {% include links/internal-links.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %}.
 
 ## Datavisualisering
 
 Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram eller en graf. 
 
-<a href="/design/datavisualisering-infografik/datavisualisering/">Læs mere om datavisualisering</a>
+{% include links/internal-links.html linktext="Læs mere om datavisualisering" %}
 
 <figure>
     <img src="/assets/img/design/datavisualisering/piechart.svg" class="w-percent-50" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
@@ -38,7 +38,7 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
 
 Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af personer, ting, processer, mm. sat sammen så det formidler et budskab. 
 
-<a href="/design/datavisualisering-infografik/infografik/">Læs mere om infografik</a>
+{% include links/internal-links.html linktext="Læs mere om infografik" %}
 
 <figure>
     <img src="/assets/img/design/infografik/when-bike-tablet.svg" alt="Hvornår bruger vi cyklen? 32% fritid, 26% ærinde, 25% arbejde, 14% uddannelse, 2% erhverv" />

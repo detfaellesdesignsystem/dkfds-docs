@@ -2,8 +2,8 @@
 permalink: "/design/datavisualisering-infografik/tilgaengelig-grafik/"
 parentlink: "/design/datavisualisering-infografik/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Tilgængelig grafik
 lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det
   er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese

@@ -1,7 +1,17 @@
 {% for link in include.links -%}
+    {% assign _link = nil %}
 
-    {% if link.href -%}
-        {% assign _page = link.href | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
+    {% if link.href %}
+        {% assign _link = link.href %}
+        
+    {% elsif link.tabs %}
+        {% assign tabLinks = site.data.nav[link.tabs] %}
+        {% assign tabLink = tabLinks | first %}
+        {% assign _link = tabLink.href %}
+    {% endif %}
+
+    {% if _link and _link != '' -%}
+        {% assign _page = _link | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
         {% assign _current = false %}
         {% assign _active = false %}
 

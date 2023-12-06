@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/anchorlinks/"
+permalink: "/komponenter/anchorlinks/guidelines/"
+redirect_from:
+- "/komponenter/anchorlinks/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,8 +10,14 @@ lead: Anchorlinks linker til bestemte steder på samme side. De vises på den en
 component: "anchorlinks"
 componentTitle: "Eksempel på anchorlinks"
 componentLink: true
-componentCode: "/kode/komponenter/anchorlinks/"
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchettekst.
 tags:
 - anchorlinks
@@ -20,7 +28,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -43,13 +51,14 @@ Da anchorlinks anvendes til lange sider, kan de med fordel anvendes sammen med k
 Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der klikkes på et anchorlink, da det understøtter brugerens fornemmelse af, hvor de er på siden.
 
 {:#eksempelloesninger}
-#### Se komponenten på disse sider
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/design/farver/">Farver</a>
-- <a href="/design/typografi/overskrifter/">Overskrifter</a>
-- <a href="/komponenter/tables/">Tabeller</a>
-- <a href="/kode/komponenter/accordions/">Accordions</a>
+- {% include links/internal-links.html linktext="Farver" %}
+- {% include links/internal-links.html linktext="Overskrifter" %}
+- {% include links/component-links.html linktext="Tabeller" %}
+- {% include links/component-links.html linktext="Accordions" %}
 
-#### Referencer
+{:#ref}
+## Referencer
 <a href="https://www.nngroup.com/articles/in-page-links/" class="icon-link" target="_blank">Amy Schade: Anchors OK? Re-Assessing In-Page Links (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

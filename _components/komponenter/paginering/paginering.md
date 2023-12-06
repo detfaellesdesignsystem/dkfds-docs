@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/paginering/
+permalink: "/komponenter/paginering/guidelines/"
+redirect_from:
+- "/komponenter/paginering/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,11 +10,14 @@ lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opd
 component: "pagination"
 componentTitle: "Eksempel på paginering"
 componentLink: true
-componentCode: "/kode/komponenter/paginering/"
 anchor: true
 subnav:
-- text: Eksempler på paginering
-  href: "#eksempler"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#ref"
 description: Lad brugeren navigere mellem indhold der er opdelt på flere sider.
 tags:
 - paginering
@@ -21,7 +26,7 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -30,7 +35,7 @@ ved at opdele indholdet over flere sider.
 
 ### Anvendes ikke til
 
-Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet <a href="/komponenter/trinindikator/">trinindikator</a>.
+Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet {% include links/component-links.html linktext="trinindikator" %}.
 
 ### Vejledning
 
@@ -61,13 +66,8 @@ Hold paginering på en enkelt linje.
 
 På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktuelle side og det samlede sideantal vises i midten.
 
-#### Referencer
-
-{:.nobullet-list}
-- <a href="https://designsystem.digital.gov/components/pagination/" class="icon-link">USWDS om paginering<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-{:#eksempler}
-## Eksempler på paginering
+{:#varianter}
+## Varianter
 
 ### 7 eller færre sider
 
@@ -76,3 +76,9 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 ### 8 eller flere sider
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- <a href="https://designsystem.digital.gov/components/pagination/" class="icon-link">USWDS om paginering<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

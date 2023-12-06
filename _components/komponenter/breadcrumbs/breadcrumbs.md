@@ -1,5 +1,7 @@
 ---
-permalink: /komponenter/broedkrumme/
+permalink: "/komponenter/broedkrumme/guidelines/"
+redirect_from:
+- "/komponenter/broedkrumme/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,14 +10,20 @@ lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder
 component: "breadcrumbs"
 componentTitle: "Eksempel på brødkrumme"
 componentLink: true
-componentCode: "/kode/komponenter/broedkrumme/"
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description:
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -25,9 +33,9 @@ Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hv
 
 Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (trinindikator).
 
-Brug ikke brødkrummen sammen med en <a href="/komponenter/trinindikator/">trinindikator</a>.
+Brug ikke brødkrummen sammen med en {% include links/component-links.html linktext="trinindikator" %}.
 
-Brug ikke brødkrummen sammen med et <a href="/komponenter/tilbage-link/">tilbage-link</a>. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur. 
+Brug ikke brødkrummen sammen med et {% include links/component-links.html linktext="tilbage-link" %}. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur.
 
 ### Vejledning
 
@@ -48,13 +56,14 @@ Brødkrummestien skal omfatte brugerens aktuelle side, der skal være visuelt fo
 På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses sammen og gøres mindre. Overvej i stedet kun at vise de sidste niveauer i brødkrummen.
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
 - <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
 
-#### Referencer 
+{:#ref}
+## Referencer 
 
 {:.nobullet-list}
 - <a href="https://design-system.service.gov.uk/components/breadcrumbs/" class="icon-link">GovUK Design System Breadcrumbs<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>

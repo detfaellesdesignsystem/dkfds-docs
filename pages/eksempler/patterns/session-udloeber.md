@@ -23,7 +23,7 @@ Dialogen anvendes ikke, når en bruger selv har trykket på en log af-knap. Hvis
 
 ## Vejledning
 
-Til dette mønster anvendes komponenten <a href="/komponenter/modal/#kraever-handling">Modalvindue, som kræver handling</a>.
+Til dette mønster anvendes komponenten {% include links/component-links.html linktext="Modalvindue, som kræver handling" %}.
 
 Dialogen vises ca. 5 minutter før, brugeren automatisk bliver logget af. Således kan brugeren nå at handle på informationen og fx vælge at forblive logget ind. En kortere tid for dialogen kan vælges af sikkerhedsmæssige årsager, dog må brugeren aldrig få mindre end 20 sekunders varsel af hensyn til tilgængelighed (Timing Adjustable: Understanding SC 2.2.1).
 

@@ -3,8 +3,8 @@ permalink: "/design/borders/"
 redirect_from:
 - "/design/kanter/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Hjørner, streger, skygger
 anchor: true
 subnav:

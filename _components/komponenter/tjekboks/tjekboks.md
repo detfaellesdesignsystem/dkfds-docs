@@ -1,23 +1,31 @@
 ---
-permalink: /komponenter/tjekboks/
+permalink: "/komponenter/tjekboks/guidelines/"
+redirect_from:
+- "/komponenter/tjekboks/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tjekboks (Checkbox)
+lead: Tjekbokse lader brugeren vælge en eller flere muligheder.
 component: "checkbox-large"
 componentTitle: "Eksempel på tjekbokse"
 componentLink: true
-componentCode: "/kode/komponenter/tjekboks/"
 anchor: true
 subnav:
-- text: Skjult indhold (Collapse)
-  href: '#skjult-indhold-collapse'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -51,28 +59,30 @@ Hvis du giver brugeren en liste med tjekbokse, så gør det tydeligt gennem ente
 
 #### Fejlmeddelelse
 
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- ISO 9241-143: Forms (2012)
-- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 
 {% include code/preview-box.html component="checkbox-collapse" title="Eksempel på tjekboks med skjult indhold" %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- ISO 9241-143: Forms (2012)
+- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

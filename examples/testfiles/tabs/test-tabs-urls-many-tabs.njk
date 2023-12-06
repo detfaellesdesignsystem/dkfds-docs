@@ -1,0 +1,94 @@
+{% from "components/tabs/tabs.njk" import tabUrls as tabUrls %}
+
+{% set many_tabs = {
+    "items": [
+        {
+            "current": true,
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 1"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 2"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 3"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 4"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 5"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 6"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 7"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 8"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 9"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 10"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 11"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 12"
+            }
+        },
+        {
+            "anchorlink": {
+                "href": "javascript:void(0);",
+                "text": "Indhold 13"
+            }
+        }
+    ]
+} %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ tabUrls(many_tabs) }}
+        </div>
+    </div>
+</main>
+

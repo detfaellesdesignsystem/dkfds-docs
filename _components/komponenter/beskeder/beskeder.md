@@ -1,21 +1,25 @@
 ---
-permalink: "/komponenter/beskeder/"
+permalink: "/komponenter/beskeder/guidelines/"
+redirect_from:
+- "/komponenter/beskeder/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Beskeder (Alerts)
+lead: Beskeder anvendes til at fremhæve aktuel information, som er vigtig for brugeren.
 component: "alerts"
 componentTitle: "Eksempel på beskeder"
 componentLink: true
-componentCode: "/kode/komponenter/beskeder/"
 anchor: true
 subnav:
-- text: Beskeder med ikon
-  href: "#beskeder-med-ikon"
-- text: Teksteksempler
-  href: "#teksteksempler"
-- text: Besked med luk knap
-  href: "#besked-med-luk-knap"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Beskeder (Alerts) er farvede bokse, eventuelt tilknyttet et ikon, du kan
   bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer,
   o.l.
@@ -24,17 +28,17 @@ tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
-Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
+Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til {% include links/component-links.html linktext="fejlopsummeringer" %}, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
 
 Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besked om behov for handling.
 
 ### Anvendes ikke til
 
-Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>.
+Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet {% include links/component-links.html linktext="fejlmeddelelser" %}.
 
 Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 
@@ -70,22 +74,7 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include dos-donts-box.html component="alerts-success-dos-donts" title="Successbeskeder do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- Linda Newman Lior: Writing for Interaction (2013)
-- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- Adam Silver: Form Design Patterns (2018)
-
+{:#varianter}
 ## Varianter
 
 {:#beskeder-med-ikon}
@@ -102,3 +91,20 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 ### Besked med luk knap
 
 {% include code/preview-box.html component="alert-close" title="Eksempel på besked med luk-knap" %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
+- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
+- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
+- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- Linda Newman Lior: Writing for Interaction (2013)
+- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
+- Adam Silver: Form Design Patterns (2018)

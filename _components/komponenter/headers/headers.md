@@ -1,7 +1,8 @@
 ---
-permalink: /komponenter/header/
+permalink: "/komponenter/header/guidelines/"
 redirect_from:
-- /komponenter/headers/
+- "/komponenter/headers/"
+- "/komponenter/header/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,14 +10,20 @@ title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
 previewimage: "header-with-navigation"
 previewimageTitle: "Eksempel på header"
-previewimageCode: "/kode/komponenter/header/"
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#ref"
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -30,7 +37,7 @@ En eventuel overordnet navigation (topnavigation) skal også placeres i headeren
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
+Brug ikke topnavigationen som faneblade, anvend da {% include links/component-links.html linktext="faneblade" %}. 
 
 ### Vejledning
 
@@ -52,10 +59,6 @@ Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel sup
 ##### Række 3 (frivillig)
 Navigation (topnavigation) i løsningen og søgefelt.
 
-#### Referencer
-
-<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
 ### Eksempler
 
 #### Simpel header
@@ -76,8 +79,14 @@ På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed o
 
 Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, der ved klik vises på samme måde som mobilmenuen.
 
-### Varianter
+{:#varianter}
+## Varianter
 
-Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se <a href="/komponenter/sprogvaelger/">sprogvælger</a>-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
+Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-links.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 
 {% include code/preview-image.html component="header-switch-language" %}
+
+{:#ref}
+## Referencer
+
+<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>

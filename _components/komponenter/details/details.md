@@ -1,26 +1,29 @@
 ---
-permalink: "/komponenter/detaljer/"
+permalink: "/komponenter/detaljer/guidelines/"
 redirect_from:
 - "/komponenter/collapse/"
+- "/komponenter/detaljer/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Detaljer
-lead: Du kan bruge Detalje komponenten til at holde indhold skjult, indtil brugeren
-  vælger at aktivere det. Når brugeren klikker på komponenten, folder indholdet sig
-  ud, eller brugeren får fx mulighed for at læse teksten.
+lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælge at folde det ud.
 component: "details"
 componentTitle: "Eksempel på skjul og vis af indhold"
 componentLink: true
-componentCode: "/kode/komponenter/detaljer/"
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
 description: Skjul og vis yderligere information eller en ekstra funktion relevant
   for brugerens valg.
 tags: 
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -34,7 +37,7 @@ Anvendes ikke til indhold, som de fleste brugere behøver at læse såsom sidens
 
 Anvendes ikke til at skjule navigationselementer såsom accordions, faneblade eller flere detaljer.
 
-Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul- og vis-komponenterne med <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a>.
+Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet skjul- og vis-komponenterne med {% include links/component-links.html linktext="radioknap" %} og {% include links/component-links.html linktext="tjekboks" %}.
 
 ### Vejledning
 
@@ -45,7 +48,7 @@ Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) 
 Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange interaktionsniveauer.
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
 - <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>

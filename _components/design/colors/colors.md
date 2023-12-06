@@ -3,8 +3,8 @@ permalink: "/design/farver/"
 redirect_from:
 - "/farver/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Farver
 lead: Da designsystemet er fælles for både borger.dk og Virk er der farver til hver
   portal og samtidig en generel palette, der anvendes uanset, hvilken portal din selvbetjeningsløsning
@@ -59,7 +59,7 @@ Farverne i listerne nedenunder er angivet øverst med enten en HEX- eller RGBA-v
 
 {:#portalfarver-tema}
 ## Portalfarver (tema)
-Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af <a href="/kode/implementering/#temahaandtering">temahåndtering i koden</a>.
+Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af {% include links/internal-links.html linktext="temahåndtering i koden" %}.
 
 <!-- new setup start -->
 <h3>Primærfarver for borger.dk</h3>

@@ -1,5 +1,7 @@
 ---
-permalink: "/komponenter/datovaelger/"
+permalink: "/komponenter/datovaelger/guidelines/"
+redirect_from:
+- "/komponenter/datovaelger/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -8,21 +10,18 @@ lead: Ét felt med knap, hvor man kan vælge en dato.
 component: "date-picker"
 componentTitle: "Eksempel på datovælger"
 componentLink: true
-componentCode: "/kode/komponenter/datovaelger/"
 anchor: true
 subnav:
-- text: Begræns mulige datoer
-  href: '#begraens'
-- text: Fast værdi
-  href: '#default'
-- text: Datoformat
-  href: '#datoformat'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
 description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
 tags:
 ---
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -30,12 +29,13 @@ Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og
 
 ### Anvendes ikke til
 
-Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/datofelter/">datofelter</a>.
+Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten {% include links/component-links.html linktext="datofelter" %}.
 
 ### Vejledning
 
 {% include dos-donts-box.html component="datepicker-dos-donts" title="Datovælger do's and don'ts" %}
 
+{:#varianter}
 ## Varianter
 
 {:#begraens}

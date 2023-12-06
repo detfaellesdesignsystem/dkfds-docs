@@ -1,0 +1,14 @@
+{% from "components/tabs/tabs.njk" import tabButtons as tabButtons %}
+
+{% set no_tabs = {
+    "items": []
+} %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{ tabButtons(no_tabs) }}
+            <p>Tjek fejlbeskeden i konsollen</p>
+        </div>
+    </div>
+</main>

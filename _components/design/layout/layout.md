@@ -5,8 +5,8 @@ redirect_from:
 - "/komigang/tildesignere/sideopbygning/"
 - "/komigang/regler-principper-layout/"
 layout: styleguide
-category: Design_category
-subcategory: Design
+category: Styleguide_category
+subcategory: Styleguide
 title: Layout
 lead: Et godt layout er harmonisk, ensartet, logisk opbygget og understøtter brugerens handlinger. Det er således både behageligt for øjet og let for brugeren at anvende.
 anchor: false
@@ -42,7 +42,7 @@ Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget 
 
 Headeren er ens på tværs af trin og undersider i en given selvbetjeningsløsning. Den er således et “ankerpunkt”, som brugeren altid kan vende tilbage til og orientere sig ved.
 
-<a href="/komponenter/header/">Se header-komponenten</a>
+{% include links/component-links.html linktext="Se header-komponenten" %}
 
 En header består af et antal rækker, som vist nedenfor.
 
@@ -132,7 +132,7 @@ Det specifikke indhold i selvbetjeningsløsningerne kan variere. De konkrete ret
     <div class="col-12 col-lg-5 bg-alternative">
        <h3 class="h5">Brug et responsivt grid</h3>
        <p>Brug et grid-system til fx til at styre dit layout. Grid skaber struktur i informationer. Responsivt grid tilpasser sig desuden skærmformatet.</p>
-       <p><a href="/design/layout/grid/">Grid’et i designsystemet</a></p>
+       <p>{% include links/internal-links.html linktext="Grid’et i designsystemet" %}</p>
        <p><a href="/eksempler/">Eksempler på selvbetjeningsløsninger</a></p>
     </div>
     <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
@@ -148,7 +148,7 @@ I footeren har du også mulighed for at sende brugere videre ved at linke ud af 
 
 Vi anbefaler, at du afslutter din selvbetjeningsløsning med en footer.
 
-Designsystemet giver mulighed for forskellige typer <a href="/komponenter/footer/">footer</a>, som dækker forskellige behov. En footer kan være placeret i en række eller i 4 blokke af 3 kolonner.
+Designsystemet giver mulighed for forskellige typer {% include links/component-links.html linktext="footer" %}, som dækker forskellige behov. En footer kan være placeret i en række eller i 4 blokke af 3 kolonner.
 
 <h3 class="h4">Footer på en række</h3>
 
@@ -164,4 +164,4 @@ Under linjen er der 24 px til overskrifter og tekst. Overskrifter og tekst er 16
 
 Footeren indeholder altid ansvarlig myndighed, tilgængelighedserklæring og cookieoplysning. Det er op til den enkelte myndighed at vælge en footer, som passer til den mængde indhold, der er rigtig for den konkrete selvbetjeningsløsning.
 
-<a href="/komponenter/footer/">Se footer komponenten</a>
+{% include links/component-links.html linktext="Se footer komponenten" %}
