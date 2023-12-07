@@ -64,6 +64,6 @@ Bemærk, at dette kun gælder fra version 5.0.0.
 
 Når man vælger et nyt faneblad, bliver eventet `fds.tab.changed` udløst på `.tab-container` elementet, som man kan koble sig på med en eventlistener.
 
-Når et faneblad åbnes, bliver eventet `fds.tab.open` udløst på det tilhørende `.tab-item` faneblad element, som man kan koble sig på med en eventlistener.
+Når et faneblad åbnes, bliver eventet `fds.tab.open` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
 
-Når et faneblad lukkes, bliver eventet `fds.tab.close` udløst på det tilhørende `.tab-item` faneblad element, som man kan koble sig på med en eventlistener.
+Når et faneblad lukkes, bliver eventet `fds.tab.close` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.

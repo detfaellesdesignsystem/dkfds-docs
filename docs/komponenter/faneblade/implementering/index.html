@@ -523,7 +523,7 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/browserunderst%C3%B8ttelse/" class="nav-link"><span>Browserunderstøttelse</span></a>
+            <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/" class="nav-link"><span>Browserunderstøttelse</span></a>
         </li>
         
 
@@ -3946,25 +3946,24 @@
     <div class="component-example px-4 py-4">
         
         <div class="tab-container">
-    <ul role="tablist">
+    <ul class="tab-list" role="tablist">
         <li>
-            <button class="tab-item" role="tab" aria-controls="tabpanel1" aria-selected="true"
-                id="tab1"><span>Indhold 1</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel1"
+                aria-selected="true" id="tab1"><span>Indhold 1</span>
             </button>
         </li>
         <li>
-            <button class="tab-item" role="tab" aria-controls="tabpanel2"
+            <button class="tab-button" role="tab" aria-controls="tabpanel2"
                 aria-selected="false" id="tab2"><span>Indhold 2</span>
             </button>
         </li>
         <li>
-            <button class="tab-item" role="tab" aria-controls="tabpanel3"
+            <button class="tab-button" role="tab" aria-controls="tabpanel3"
                 aria-selected="false" id="tab3"><span>Indhold 3</span>
             </button>
         </li>
     </ul>
-    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
-        aria-labelledby="tab1">
+    <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1" aria-labelledby="tab1">
         <h2>Indhold 1</h2>
         <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -3972,9 +3971,9 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.</p>
-    </section>
-    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
-        aria-labelledby="tab2" hidden>
+    </div>
+    <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2" aria-labelledby="tab2"
+        hidden>
         <h2>Indhold 2</h2>
         <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -3982,9 +3981,9 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.</p>
-    </section>
-    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
-        aria-labelledby="tab3" hidden>
+    </div>
+    <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3" aria-labelledby="tab3"
+        hidden>
         <h2>Indhold 3</h2>
         <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -3992,7 +3991,7 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.</p>
-    </section>
+    </div>
 </div>
         
     </div>
@@ -4015,14 +4014,14 @@
 
 
     <nav class="tab-container" id="tab-component">
-        <ul>
+        <ul class="tab-list">
                 
                 <li>
-                    <a href="/komponenter/faneblade/guidelines/#tab-component" class="tab-item" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"/></svg><span>Retningslinjer</span></a>
+                    <a href="/komponenter/faneblade/guidelines/#tab-component" class="tab-button" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"/></svg><span>Retningslinjer</span></a>
                 </li>
                 
                 <li>
-                    <a href="/komponenter/faneblade/implementering/#tab-component" class="tab-item" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg><span>Kode</span></a>
+                    <a href="/komponenter/faneblade/implementering/#tab-component" class="tab-button" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg><span>Kode</span></a>
                 </li></ul>
     </nav>
 
@@ -4055,25 +4054,24 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot;&gt;
-    &lt;ul role=&quot;tablist&quot;&gt;
+    &lt;ul class=&quot;tab-list&quot; role=&quot;tablist&quot;&gt;
         &lt;li&gt;
-            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel1&quot; aria-selected=&quot;true&quot;
-                id=&quot;tab1&quot;&gt;&lt;span&gt;Indhold 1&lt;/span&gt;
+            &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel1&quot;
+                aria-selected=&quot;true&quot; id=&quot;tab1&quot;&gt;&lt;span&gt;Indhold 1&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel2&quot;
+            &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel2&quot;
                 aria-selected=&quot;false&quot; id=&quot;tab2&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel3&quot;
+            &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel3&quot;
                 aria-selected=&quot;false&quot; id=&quot;tab3&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
-    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel1&quot;
-        aria-labelledby=&quot;tab1&quot;&gt;
+    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel1&quot; aria-labelledby=&quot;tab1&quot;&gt;
         &lt;h2&gt;Indhold 1&lt;/h2&gt;
         &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -4081,9 +4079,9 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel2&quot;
-        aria-labelledby=&quot;tab2&quot; hidden&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel2&quot; aria-labelledby=&quot;tab2&quot;
+        hidden&gt;
         &lt;h2&gt;Indhold 2&lt;/h2&gt;
         &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -4091,9 +4089,9 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel3&quot;
-        aria-labelledby=&quot;tab3&quot; hidden&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel3&quot; aria-labelledby=&quot;tab3&quot;
+        hidden&gt;
         &lt;h2&gt;Indhold 3&lt;/h2&gt;
         &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -4101,7 +4099,7 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4129,17 +4127,17 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;tab-container&quot; id=&quot;tab-component&quot;&gt;
-    &lt;ul&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;tab-container&quot; id=&quot;&quot;&gt;
+    &lt;ul class=&quot;tab-list&quot;&gt;
         &lt;li&gt;
-            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-item&quot; aria-current=&quot;page&quot;&gt;&lt;span&gt;Indhold
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-button&quot; aria-current=&quot;page&quot;&gt;&lt;span&gt;Indhold
                     1&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-item&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;&lt;/a&gt;
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-item&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;&lt;/a&gt;
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;</code></pre></figure>
@@ -4165,30 +4163,30 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot;&gt;
-    &lt;ul role=&quot;tablist&quot;&gt;
+    &lt;ul class=&quot;tab-list&quot; role=&quot;tablist&quot;&gt;
         &lt;li&gt;
-            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-1&quot;
+            &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-1&quot;
                 aria-selected=&quot;true&quot;
                 id=&quot;tab-icon1&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#construction&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
                     1&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-2&quot;
+            &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-2&quot;
                 aria-selected=&quot;false&quot;
                 id=&quot;tab-icon2&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#format-list-checks&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
                     2&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;button class=&quot;tab-item&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-3&quot;
+            &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-3&quot;
                 aria-selected=&quot;false&quot;
                 id=&quot;tab-icon3&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#construction&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Indhold
                     3&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
-    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-1&quot;
+    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-1&quot;
         aria-labelledby=&quot;tab-icon1&quot;&gt;
         &lt;h2&gt;Indhold 1&lt;/h2&gt;
         &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
@@ -4197,8 +4195,8 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-2&quot;
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-2&quot;
         aria-labelledby=&quot;tab-icon2&quot; hidden&gt;
         &lt;h2&gt;Indhold 2&lt;/h2&gt;
         &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
@@ -4207,8 +4205,8 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-3&quot;
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-3&quot;
         aria-labelledby=&quot;tab-icon3&quot; hidden&gt;
         &lt;h2&gt;Indhold 3&lt;/h2&gt;
         &lt;p&gt;Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
@@ -4217,7 +4215,7 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.&lt;/p&gt;
-    &lt;/section&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -4238,9 +4236,9 @@
 
 <p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tab.changed</code> udløst på <code>.tab-container</code> elementet, som man kan koble sig på med en eventlistener.</p>
 
-<p>Når et faneblad åbnes, bliver eventet <code>fds.tab.open</code> udløst på det tilhørende <code>.tab-item</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
+<p>Når et faneblad åbnes, bliver eventet <code>fds.tab.open</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
 
-<p>Når et faneblad lukkes, bliver eventet <code>fds.tab.close</code> udløst på det tilhørende <code>.tab-item</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
+<p>Når et faneblad lukkes, bliver eventet <code>fds.tab.close</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
 
 
                 

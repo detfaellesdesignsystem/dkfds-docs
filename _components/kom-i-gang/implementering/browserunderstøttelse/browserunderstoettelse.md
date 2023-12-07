@@ -1,5 +1,5 @@
 ---
-permalink: "/kom-i-gang/implementering-kode/browserunderstøttelse/"
+permalink: "/kom-i-gang/implementering-kode/browserunderstoettelse/"
 parentlink: "/kom-i-gang/implementering-kode/"
 redirect_from:
 - "/kode/browserunderstoettelse/"

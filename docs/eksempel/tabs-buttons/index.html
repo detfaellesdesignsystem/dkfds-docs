@@ -233,21 +233,21 @@
         
         <h1 id="example-heading-tabs-buttons" class="sr-only">Tabs buttons</h1>
         <div class="tab-container">
-    <ul role="tablist">
+    <ul class="tab-list" role="tablist">
         <li>
-            <button class="tab-item" role="tab" aria-controls="tabpanel1" aria-selected="true" id="tab1"><span>Indhold 1</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel1" aria-selected="true" id="tab1"><span>Indhold 1</span>
             </button>
         </li>
         <li>
-            <button class="tab-item" role="tab" aria-controls="tabpanel2" aria-selected="false" id="tab2"><span>Indhold 2</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel2" aria-selected="false" id="tab2"><span>Indhold 2</span>
             </button>
         </li>
         <li>
-            <button class="tab-item" role="tab" aria-controls="tabpanel3" aria-selected="false" id="tab3"><span>Indhold 3</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel3" aria-selected="false" id="tab3"><span>Indhold 3</span>
             </button>
         </li>
     </ul>
-    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1" aria-labelledby="tab1">
+    <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1" aria-labelledby="tab1">
         <h2>Indhold 1</h2>
         <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -255,8 +255,8 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.</p>
-    </section>
-    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2" aria-labelledby="tab2" hidden="">
+    </div>
+    <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2" aria-labelledby="tab2" hidden="">
         <h2>Indhold 2</h2>
         <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -264,8 +264,8 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.</p>
-    </section>
-    <section class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3" aria-labelledby="tab3" hidden="">
+    </div>
+    <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3" aria-labelledby="tab3" hidden="">
         <h2>Indhold 3</h2>
         <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia
             nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum
@@ -273,7 +273,7 @@
             posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis
             ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor
             nisl, in lacinia sem massa eget urna.</p>
-    </section>
+    </div>
 </div>
 
         

@@ -12,7 +12,7 @@ function setupExample() {
 if (document.getElementById('tab-component') !== null) {
     let tabContainer = document.getElementById('tab-component');
 
-    tabs = tabContainer.getElementsByClassName('tab-item');
+    tabs = tabContainer.getElementsByClassName('tab-button');
     if (tabs.length !== 0) {
         const tabContentArray = [];
 
