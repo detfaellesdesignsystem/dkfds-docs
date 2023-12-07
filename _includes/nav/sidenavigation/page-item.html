@@ -12,7 +12,7 @@
   {% assign _current = true %}
 {% endif %}
 
-{%- if page.guidelinelink and include.page.url == page.guidelinelink -%} {%- comment -%} --- If the page is a child tabsheet --- {%- endcomment -%}
+{%- if page.guidelinelink and include.page.url == page.guidelinelink -%} {%- comment -%} --- If the page is a child tab --- {%- endcomment -%}
   {%- assign _current = true -%}
 {%- endif -%}
 
@@ -20,7 +20,7 @@
   {% assign _active = true %}
 {% endif %}
 
-{%- if include.categorynav and page.guidelinelink == include.page.url -%} {%- comment -%} --- If the page is a child tabsheet but also has its own categories --- {%- endcomment -%}
+{%- if include.categorynav and page.guidelinelink == include.page.url -%} {%- comment -%} --- If the page is a child tab but also has its own categories --- {%- endcomment -%}
   {%- assign _active = true -%}
 {%- endif -%}
 

@@ -39,133 +39,33 @@ Krav_category:
   - href: /kom-i-gang/krav/borgerdk-virk/
   - href: /kom-i-gang/krav/om-kravene/
 
-#Left menu for design-category
+#Left menu for styleguide-category
 Styleguide_category:
   - href: /design/farver/
   - href: /design/typografi/
     categorynav: 'Typografi_category'
   - href: /design/borders/
-  - tabs: 'Ikoner'
+  - href: /design/ikoner/guidelines/
+    tabs: 'Ikoner'
   - href: /design/logoer/
   - href: /design/datavisualisering-infografik/
     categorynav: 'Datavisualisering_category'
   - href: /design/layout/
-  - tabs: 'Grids'
-
-Datavisualisering_category:
-  - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
-  - href: /design/datavisualisering-infografik/datavisualisering/
-  - href: /design/datavisualisering-infografik/infografik/  
+  - href: /design/grid/guidelines/
+    tabs: 'Grids'
 
 Typografi_category:
-  - tabs: 'Fonte'
-  - tabs: 'Overskrifter'
+  - href: /design/typografi/fonte/guidelines/
+    tabs: 'Fonte'
+  - href: /design/typografi/overskrifter/guidelines/
+    tabs: 'Overskrifter'
   - href: /design/typografi/felt-tabel-overskrifter/
-  - tabs: 'Tekst'
-  - tabs: 'Links'
-  - tabs: 'Lister'
-
-#Left menu for komponent-category
-Komponenter_category:
-  - tabs: 'Accordions'
-  - tabs: 'Anchorlinks'
-  - tabs: 'Badges'
-  - tabs: 'Beskeder'
-  - tabs: 'Broedkrumme'
-  - tabs: 'Cards'
-  - tabs: 'Cookiemessage'
-  - tabs: 'Datofelter'
-  - tabs: 'Datovaelger'
-  - tabs: 'Detaljer'
-  - tabs: 'Dropdown'
-  - tabs: 'Faneblad'
-  - tabs: 'Fejlmeddelelser'
-  - tabs: 'Fejlopsummering'
-  - tabs: 'Footer'
-  - tabs: 'Funktionslink'
-  - tabs: 'Skip-link'
-  - tabs: 'Header'
-  - tabs: 'Inputfelter'
-  - tabs: 'Knapper'
-  - tabs: 'Spinner'
-  - tabs: 'Modal'
-  - tabs: 'Overflowmenu'
-  - tabs: 'Paginering'
-  - tabs: 'Radioknap'
-  - tabs: 'Sprogvaelger'
-  - tabs: 'Search'
-  - tabs: 'Tabeller'
-  - tabs: 'Tags'
-  - tabs: 'Tekstomraade'
-  - tabs: 'Tilbage-link'
-  - tabs: 'Tilbage-til-top'
-  - tabs: 'Tjekboks'
-  - tabs: 'Toastbesked'
-  - tabs: 'Toggle'
-  - tabs: 'Tooltip'
-  - tabs: 'Trinindikator'
-  - tabs: 'Fil-upload'
-  - tabs: 'Venstremenu'
-
-#Left menu for Eksempler-category
-Eksempler_category:
-  - href: /eksempler/selvbetjeningsloesninger/
-  - href: /eksempler/patterns/
-    categorynav: 'Patterns_category'
-  - href: /eksempler/templates/
-
-Patterns_category:
-  - href: /eksempler/patterns/angivelse-af-telefonnummer/
-  - href: /eksempler/patterns/formular/
-  - href: /eksempler/patterns/hentet-data/
-  - href: /eksempler/patterns/session-udloeber/
-
-#Left menu for Fællesskab-category
-Faellesskab_category:
-- href: /faellesskab/samarbejdsforum/
-- href: /faellesskab/governance/
-- href: /faellesskab/nyhedsmail/
-- href: /faellesskab/kontakt-support/
-- href: /faellesskab/roadmap/
-- href: /faellesskab/releases/
-
-Eksempelloesninger_category:
-  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/
-  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-2/
-  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-3/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-1/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-2/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-3/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-4/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-5/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-6/
-  - href: /pages/eksempler/trinformular-til-registrering/registrering-7/
-  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-1/
-  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-2/
-  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-3/
-  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-4/
-  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-5/
-  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-6/
-  - href: /pages/eksempler/sagsoversigt/find-sag/
-  - href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/
-  - href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/
-  - href: /pages/eksempler/dashboard/dashboard-1/
-  - href: /pages/eksempler/opgaveliste/
-  - href: /pages/eksempler/vedhaeft-fil/fil-1/
-  - href: /pages/eksempler/vedhaeft-fil/fil-2/
-  - href: /pages/eksempler/vedhaeft-fil/fil-3/
-  - href: /pages/eksempler/opsummering/opsummering-1/
-  - href: /pages/eksempler/opsummering/opsummering-2/
-  - href: /pages/eksempler/kvittering/kvittering-1/
-  - href: /pages/eksempler/kvittering/kvittering-2/
-  - href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
-  - href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/
-
-Ikoner:
-  - href: /design/ikoner/guidelines/
-    tabName: *retningslinjer
-  - href: /design/ikoner/implementering/
-    tabName: *implementering
+  - href: /design/typografi/tekst/guidelines/
+    tabs: 'Tekst'
+  - href: /design/typografi/links/guidelines/
+    tabs: 'Links'
+  - href: /design/typografi/lister/guidelines/
+    tabs: 'Lister'
 
 Fonte:
   - href: /design/typografi/fonte/guidelines/
@@ -197,11 +97,103 @@ Lister:
   - href: /design/typografi/lister/implementering/
     tabName: *implementering
 
+Ikoner:
+  - href: /design/ikoner/guidelines/
+    tabName: *retningslinjer
+  - href: /design/ikoner/implementering/
+    tabName: *implementering
+
+Datavisualisering_category:
+  - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
+  - href: /design/datavisualisering-infografik/datavisualisering/
+  - href: /design/datavisualisering-infografik/infografik/  
+
 Grids:
   - href: /design/grid/guidelines/
     tabName: *retningslinjer
   - href: /design/grid/implementering/
     tabName: *implementering
+
+#Left menu for komponent-category
+Komponenter_category:
+  - href: /komponenter/accordions/guidelines/
+    tabs: 'Accordions'
+  - href: /komponenter/anchorlinks/guidelines/
+    tabs: 'Anchorlinks'
+  - href: /komponenter/badges/guidelines/
+    tabs: 'Badges'
+  - href: /komponenter/beskeder/guidelines/
+    tabs: 'Beskeder'
+  - href: /komponenter/broedkrumme/guidelines/
+    tabs: 'Broedkrumme'
+  - href: /komponenter/cards/guidelines/
+    tabs: 'Cards'
+  - href: /komponenter/cookiemeddelelse/guidelines/
+    tabs: 'Cookiemessage'
+  - href: /komponenter/datofelter/guidelines/
+    tabs: 'Datofelter'
+  - href: /komponenter/datovaelger/guidelines/
+    tabs: 'Datovaelger'
+  - href: /komponenter/detaljer/guidelines/
+    tabs: 'Detaljer'
+  - href: /komponenter/dropdown/guidelines/
+    tabs: 'Dropdown'
+  - href: /komponenter/faneblade/guidelines/
+    tabs: 'Faneblad'
+  - href: /komponenter/fejlmeddelelser/guidelines/
+    tabs: 'Fejlmeddelelser'
+  - href: /komponenter/fejlopsummering/guidelines/
+    tabs: 'Fejlopsummering'
+  - href: /komponenter/footer/guidelines/
+    tabs: 'Footer'
+  - href: /komponenter/funktionslink/guidelines/
+    tabs: 'Funktionslink'
+  - href: /komponenter/skip-link/guidelines/
+    tabs: 'Skip-link'
+  - href: /komponenter/header/guidelines/
+    tabs: 'Header'
+  - href: /komponenter/inputfelter/guidelines/
+    tabs: 'Inputfelter'
+  - href: /komponenter/knapper/guidelines/
+    tabs: 'Knapper'
+  - href: /komponenter/spinner/guidelines/
+    tabs: 'Spinner'
+  - href: /komponenter/modal/guidelines/
+    tabs: 'Modal'
+  - href: /komponenter/overflowmenu/guidelines/
+    tabs: 'Overflowmenu'
+  - href: /komponenter/paginering/guidelines/
+    tabs: 'Paginering'
+  - href: /komponenter/radioknap/guidelines/
+    tabs: 'Radioknap'
+  - href: /komponenter/sprogvaelger/guidelines/
+    tabs: 'Sprogvaelger'
+  - href: /komponenter/search/guidelines/
+    tabs: 'Search'
+  - href: /komponenter/tables/guidelines/
+    tabs: 'Tabeller'
+  - href: /komponenter/tags/guidelines/
+    tabs: 'Tags'
+  - href: /komponenter/tekstomraade/guidelines/
+    tabs: 'Tekstomraade'
+  - href: /komponenter/tilbage-link/guidelines/
+    tabs: 'Tilbage-link'
+  - href: /komponenter/tilbage-til-top/guidelines/
+    tabs: 'Tilbage-til-top'
+  - href: /komponenter/tjekboks/guidelines/
+    tabs: 'Tjekboks'
+  - href: /komponenter/toastbesked/guidelines/
+    tabs: 'Toastbesked'
+  - href: /komponenter/toggle/guidelines/
+    tabs: 'Toggle'
+  - href: /komponenter/tooltip/guidelines/
+    tabs: 'Tooltip'
+  - href: /komponenter/trinindikator/guidelines/
+    tabs: 'Trinindikator'
+  - href: /komponenter/fil-upload/guidelines/
+    tabs: 'Fil-upload'
+  - href: /komponenter/venstremenu/guidelines/
+    tabs: 'Venstremenu'
 
 Accordions:
   - href: /komponenter/accordions/guidelines/
@@ -436,3 +428,62 @@ Venstremenu:
     tabName: *retningslinjer
   - href: /komponenter/venstremenu/implementering/
     tabName: *implementering
+
+#Left menu for Eksempler-category
+Eksempler_category:
+  - href: /eksempler/selvbetjeningsloesninger/
+  - href: /eksempler/patterns/
+    categorynav: 'Patterns_category'
+  - href: /eksempler/templates/
+
+Patterns_category:
+  - href: /eksempler/patterns/angivelse-af-telefonnummer/
+  - href: /eksempler/patterns/formular/
+  - href: /eksempler/patterns/hentet-data/
+  - href: /eksempler/patterns/session-udloeber/
+
+#Left menu for Fællesskab-category
+Faellesskab_category:
+- href: /faellesskab/samarbejdsforum/
+- href: /faellesskab/governance/
+- href: /faellesskab/nyhedsmail/
+- href: /faellesskab/kontakt-support/
+- href: /faellesskab/roadmap/
+- href: /faellesskab/releases/
+
+#Self-service examples and templates
+Eksempelloesninger_category:
+  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/
+  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-2/
+  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-3/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-1/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-2/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-3/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-4/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-5/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-6/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-7/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-1/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-2/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-3/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-4/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-5/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-6/
+  - href: /pages/eksempler/sagsoversigt/find-sag/
+  - href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/
+  - href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/
+  - href: /pages/eksempler/dashboard/dashboard-1/
+  - href: /pages/eksempler/opgaveliste/
+  - href: /pages/eksempler/vedhaeft-fil/fil-1/
+  - href: /pages/eksempler/vedhaeft-fil/fil-2/
+  - href: /pages/eksempler/vedhaeft-fil/fil-3/
+  - href: /pages/eksempler/opsummering/opsummering-1/
+  - href: /pages/eksempler/opsummering/opsummering-2/
+  - href: /pages/eksempler/kvittering/kvittering-1/
+  - href: /pages/eksempler/kvittering/kvittering-2/
+  - href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
+  - href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/
+
+
+
+

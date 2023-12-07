@@ -95,7 +95,7 @@ layout: default
                     component=page.previewcomponent %}
                 {% endif %}
 
-                {% include nav/sidenavigation/tabsheets.html %}
+                {% include nav/sidenavigation/tabs.html %}
 
                 {% if page.subnav and page.anchor == true %}
                 <nav class="anchorbox" aria-label="Ankerlinks">
@@ -112,47 +112,59 @@ layout: default
 
                 {% if page.category %}
                     {% assign _links = site.data.nav[page.category] %}
-                    {% assign _isCurrentInList = false %}
+                    {% assign subLinksFound = false %}
+                    {% assign isTopLevel = true %}
+
+                    {% if page.subcategory %}
+                        {% assign isTopLevel = false %}
+                    {% endif %}
 
                     {%- for link in _links -%}
-                        {% comment %}found in list level {% endcomment %}
-                        {% if link.href == page.permalink %}
-                            {% unless link.overblik %}
-                            {% if link.categorynav %}
-                                {% assign _links = site.data.nav[link.categorynav] %}
-                                {% break %}
-                            {% endif %}
-                            {% assign _isCurrentInList = true %}
+
+                        {% if isTopLevel == true %}
+                            {% assign subLinksFound = true %}
                             {% break %}
-                            {% endunless %}
                         {% endif %}
 
-                        {% comment %}not found in level 1 - check all categorynav {% endcomment %}
+                        {% if link.href == page.permalink %}
+                            {% if link.categorynav %}
+                                {% assign _links = site.data.nav[link.categorynav] %}
+                                {% assign subLinksFound = true %}
+                            {% endif %}
+                        {% endif %}
+
+                        {% if subLinksFound == true %}
+                            {% break %}
+                        {% endif %}
+
                         {% if link.categorynav %}
-                            {% assign _links_level_3 = site.data.nav[link.categorynav] %}
-                            {% for link_3 in _links_level_3 %}
-                                {% if link_3.href == page.permalink %}
-                                    {% unless link.overblik %}
-                                    {% if link_3.categorynav %}
+                            {% assign _sublinks = site.data.nav[link.categorynav] %}
+                            {% for sublink in _sublinks %}
+                                {% if sublink.href == page.permalink %}
+                                    {% if sublink.categorynav %}
                                         {% assign _links = site.data.nav[link_3.categorynav] %}
-                                        {% break %}
+                                        {% assign subLinksFound = true %}
                                     {% endif %}
-                                    {% endunless %}
-                                    {% assign _isCurrentInList = true %}
+                                {% endif %}
+                                {% if subLinksFound == true %}
                                     {% break %}
                                 {% endif %}
                             {% endfor %}
                         {% endif %}
+
+                        {% if subLinksFound == true %}
+                            {% break %}
+                        {% endif %}
+
                     {%- endfor -%}
-                    {% if _links.size > 0 and _isCurrentInList == false %}
+
+                    {% if _links.size > 0 and subLinksFound == true %}
                     <h2 class="sr-only d-lg-none">Undersider</h2>
 
-                    <ul class="d-lg-none nobullet-list">
+                    <ul class="d-lg-none nobullet-list mt-9">
                         {% for link in _links -%}
-                        {% unless link.overblik %}
                         {%- assign _page = link.href | resolve_permalink -%}
                         <li><a href="{{link.href}}">{{_page.title}}</a></li>
-                        {% endunless %}
                         {% endfor %}
                     </ul>
                     {% endif %}
