@@ -7,7 +7,7 @@ redirect_from:
 layout: styleguide
 category: Kom_i_gang_category
 subcategory: Kom i gang
-title: Kode og implementering
+title: Implementering og kode
 lead: I denne sektion findes al dokumentation henvendt specifikt til udvikling og brug af designsystemets kode.
 anchor: false
 description: Sådan kommer du i gang med FDS i dit projekt. Værd at læse for alle udviklere.

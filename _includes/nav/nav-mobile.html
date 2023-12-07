@@ -1,52 +1,52 @@
-{% for link in include.links -%}
-    {% assign _link = nil %}
+{% for link in include.links %}
+    {%- assign _link = nil %}
 
-    {% if link.href %}
-        {% assign _link = link.href %}
+    {%- if link.href %}
+        {%- assign _link = link.href %}
         
-    {% elsif link.tabs %}
-        {% assign tabLinks = site.data.nav[link.tabs] %}
-        {% assign tabLink = tabLinks | first %}
-        {% assign _link = tabLink.href %}
-    {% endif %}
+    {%- elsif link.tabs %}
+        {%- assign tabLinks = site.data.nav[link.tabs] %}
+        {%- assign tabLink = tabLinks | first %}
+        {%- assign _link = tabLink.href %}
+    {%- endif %}
 
-    {% if _link and _link != '' -%}
-        {% assign _page = _link | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
-        {% assign _current = false %}
-        {% assign _active = false %}
+    {%- if _link and _link != '' -%}
+        {%- assign _page = _link | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
+        {%- assign _current = false %}
+        {%- assign _active = false %}
 
-        {% comment %} 
+        {%- comment %} 
         ---------------------------------------------------------------
         | Check whether the link matches the currently displayed page |
         --------------------------------------------------------------- 
-        {% endcomment %}
+        {%- endcomment %}
 
-        {% if page.url == _page.permalink -%}
-            {% assign _current = true %}
-            {% assign _active = true %}
-        {% endif %}
+        {%- if page.url == _page.permalink -%}
+            {%- assign _current = true %}
+            {%- assign _active = true %}
+        {%- endif %}
 
-        {% comment %} 
+        {%- comment %} 
         --------------------------------------------------------------------------------------------------
         | Ensures first level links in mobile hierarchy are marked as active when a sublevel is selected |
         --------------------------------------------------------------------------------------------------
-        {% endcomment %}
+        {%- endcomment %}
 
-        {% if _page.category == page.category and _page.subcategory == nil -%}
-            {% assign _active = true %}
-        {% endif %}
+        {%- if _page.category == page.category and _page.subcategory == nil -%}
+            {%- assign _active = true %}
+        {%- endif %}
 
-        {% comment %} 
+        {%- comment %} 
         -------------------------------------------------------------------------------------------------------------
         | If the currently selected page is part of a submenu (i.e. it has a parentlink), mark the parent as active |
         -------------------------------------------------------------------------------------------------------------
-        {% endcomment %}
+        {%- endcomment %}
 
-        {% if page.parentlink == _page.permalink -%}
-            {% assign _active = true %}
-        {% endif %}
+        {%- if page.parentlink == _page.permalink -%}
+            {%- assign _active = true %}
+        {%- endif %}
 
-        {% if link.categorynav -%}
+        {% if link.categorynav %}
         <li{% if _active %} class="active"{% endif %}>
             <div class="submenu">
                 <button class="button-mobile-menu js-menudropdown" data-js-target="{{link.categorynav | downcase }}" aria-haspopup="true" aria-expanded="{% if _active %}true{% else %}false{% endif %}">
@@ -71,6 +71,6 @@
         </li>
         {% endif %}
 
-    {% endif %}
+    {%- endif %}
 
 {% endfor %}

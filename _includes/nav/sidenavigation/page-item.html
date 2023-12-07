@@ -24,9 +24,9 @@
   {%- assign _active = true -%}
 {%- endif -%}
 
-{% if _current %}
-  {% assign _active = true %}
-{% endif %}
+{%- if _current %}
+  {%- assign _active = true %}
+{%- endif %}
 
 <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
 
@@ -34,34 +34,34 @@
     <span>{{ include.page.title | smartify }}</span>
   </a>
 
-  {% if include.categorynav -%}
+  {%- if include.categorynav -%}
 
-    {% assign _sublinks = site.data.nav[include.categorynav] %}
+    {%- assign _sublinks = site.data.nav[include.categorynav] %}
 
-    {% comment %} 
+    {%- comment %} 
     ------------------------------------------------------------------
     | If the currently selected page has a submenu, show the submenu |
     ------------------------------------------------------------------ 
-    {% endcomment %}
+    {%- endcomment %}
 
-    {% if _current and _sublinks -%}
+    {%- if _current and _sublinks -%}
       <ul>
-        {% include nav/sidenavigation/list.html links=_sublinks %}
+        {%- include nav/sidenavigation/list.html links=_sublinks %}
       </ul>
-    {% endif %}
+    {%- endif %}
 
-    {% comment %} 
+    {%- comment %} 
     ----------------------------------------------------------------------------------------------------
     | If the currently selected page is part of a submenu (i.e. it has a parentlink), show the submenu |
     ----------------------------------------------------------------------------------------------------
-    {% endcomment %}
+    {%- endcomment %}
 
-    {% if page.parentlink == include.page.url and _sublinks -%}
+    {%- if page.parentlink == include.page.url and _sublinks -%}
       <ul>
-        {% include nav/sidenavigation/list.html links=_sublinks %}
+        {%- include nav/sidenavigation/list.html links=_sublinks %}
       </ul>
-    {% endif %}
+    {%- endif %}
 
-  {% endif %}
+  {%- endif %}
 
 </li>
