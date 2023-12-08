@@ -80,17 +80,20 @@
         <main class="col-12 col-lg-9" id="main-content">
             <button class="function-link link-right d-flex w-percent-100 justify-content-end">{{icon_svg({"name": "save"})}}Gem kladde</button>
             <div><a href="#" class="back-link">Tilbage</a></div>
-            {{ 
-                alert({
-                    "variant": "error",
-                    "classes": "mt-0 mb-8",
-                    "headingLevel": "h2",
-                    "heading": "Der er problemer på et eller flere af trinene i formularen",
-                    "contentContainer": false,
-                    "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
-                    "attributes": "data-module=\"error-summary\""
-                }) 
-            }}
+            <nav aria-labelledby="trinindikator-error-summary">
+                {{ 
+                    alert({
+                        "variant": "error",
+                        "classes": "mt-0 mb-8",
+                        "headingLevel": "h2",
+                        "headingID": "trinindikator-error-summary",
+                        "heading": "Der er problemer på et eller flere af trinene i formularen",
+                        "contentContainer": false,
+                        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
+                        "attributes": "data-module=\"error-summary\""
+                    }) 
+                }}
+            </nav>
             <h1 class="mb-6">Opsummering</h1>
             <h2>Vælg personer</h2>
             {{

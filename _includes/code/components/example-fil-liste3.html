@@ -91,18 +91,20 @@
 
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
     <a href="javascript:void(0);" class="back-link">Tilbage</a>
+    <nav aria-labelledby="error-summary-file">
 
-    <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
-        <div class="alert-body">
-            <h2 class="alert-heading">Der er problemer</h2>
-            <ul class="alert-text nobullet-list mb-3">
-                <li><a class="function-link" href="#fileinput">Filens størrelse skal være
-                        under 10MB. Opdel evt. dokumentet og tilføj som flere dokumenter.</a>
-                </li>
-            </ul>
+        <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
+            <div class="alert-body">
+                <h2 class="alert-heading" id="error-summary-file">Der er problemer</h2>
+                <ul class="alert-text nobullet-list mb-3">
+                    <li><a class="function-link" href="#fileinput">Filens størrelse skal være
+                            under 10MB. Opdel evt. dokumentet og tilføj som flere
+                            dokumenter.</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
+    </nav>
     <h1>Dokumentation</h1>
 
     <div class="form-group file-input mb-5 form-error">

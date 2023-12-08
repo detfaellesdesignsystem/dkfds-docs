@@ -72,7 +72,9 @@
 
 {% block body %}
 <main class="container page-container" id="main-content">
-    {{ alert(alert_summary) }}
+    <nav aria-labelledby="example-form-summary">
+        {{ alert(alert_summary) }}
+    </nav>
     <form novalidate method="post" action="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/">
         <fieldset>
             <legend>

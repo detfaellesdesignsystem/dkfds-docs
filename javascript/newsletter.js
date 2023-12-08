@@ -6,12 +6,21 @@ function isValidEmailAddress(emailAddress) {
 };
 
 function clearAlertMessage(alertMessage) {
-    alertMessage.setAttribute('hidden', '');
+    if (alertMessage.parentNode.nodeName === 'NAV') {
+        alertMessage.parentNode.setAttribute('hidden', '');
+    }
+    else {
+        alertMessage.setAttribute('hidden', '');
+    }
     alertMessage.classList.remove('alert-success');
     alertMessage.classList.remove('alert-warning');
     alertMessage.classList.remove('alert-error');
     alertMessage.querySelector('.alert-heading').innerHTML = "";
     alertMessage.querySelector('.alert-text').innerHTML = "";
+    document.getElementById('newsletter-emailaddress').querySelector('.form-input').removeAttribute('aria-describedby');
+    if (document.querySelector('body').classList.contains('page-nyhedsbrev')) {
+        document.getElementById('samtykke-check').removeAttribute('aria-describedby');
+    }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,13 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let subscriptionPage = document.querySelector('body').classList.contains('page-nyhedsbrev');
     let unsubscriptionPage = document.querySelector('body').classList.contains('page-afmeld-nyhedsbrev');
     let alert = document.getElementById('newsletter-alert');
+    let alertSummary = document.getElementById('newsletter-alert-nav');
 
     /* Don't change these values */
-    document.getElementById('newsletter_lists').setAttribute('name', 'lists');
-    document.getElementById('newsletter_lists').value = "82268";
-    document.getElementById('newsletter_language').setAttribute('name', 'language_code');
-    document.getElementById('newsletter_language').value = "da";
-    document.getElementById('i_newsform_email').setAttribute('name', 'email_address');
+    if (subscriptionPage || unsubscriptionPage) {
+        document.getElementById('newsletter_lists').setAttribute('name', 'lists');
+        document.getElementById('newsletter_lists').value = "82268";
+        document.getElementById('newsletter_language').setAttribute('name', 'language_code');
+        document.getElementById('newsletter_language').value = "da";
+        document.getElementById('i_newsform_email').setAttribute('name', 'email_address');
+    }
     if (subscriptionPage) {
         document.getElementById('newsletter_action').setAttribute('name', 'action');
         document.getElementById('newsletter_action').value = "subscribe";
@@ -89,9 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let emailError = emailSection.querySelector('.form-error-message');
 
             /* Hide and clear any previous alert message */
-            if (!alert.hidden) {
-                clearAlertMessage(alert);
-            }
+            clearAlertMessage(alert);
+            clearAlertMessage(alertSummary);
 
             if (!isValidEmailAddress(emailAddress)) {
                 let errormessage = "E-mailadressen er ikke gyldig";
@@ -99,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 /* Show error message for email field */
                 emailSection.classList.add('form-error');
                 emailError.innerHTML = '<span class="sr-only">Fejl: </span>' + errormessage;
+                emailSection.querySelector('.form-input').setAttribute('aria-describedby', 'i_newsform_email-error');
                 emailError.classList.remove('d-none');
 
                 /* Add error message to error summary */
@@ -123,6 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     /* Show error message for checkbox */
                     confirmSection.classList.add('form-error');
                     confirmSection.querySelector('.form-error-message').innerHTML = '<span class="sr-only">Fejl: </span>' + errormessage;
+                    document.getElementById('samtykke-check').setAttribute('aria-describedby', 'samtykke-check-error');
+
                     confirmSection.querySelector('.form-error-message').classList.remove('d-none');
 
                     /* Add error message to error summary */
@@ -137,10 +151,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (errors !== '') {
-                alert.classList.add('alert-error');
-                alert.querySelector('.alert-heading').innerHTML = "Der er problemer";
-                alert.querySelector('.alert-text').innerHTML = '<ul class="nobullet-list mt-0 mb-0">' + errors + '</ul>';
-                alert.removeAttribute('hidden');
+                alertSummary.classList.add('alert-error');
+                alertSummary.querySelector('.alert-heading').innerHTML = "Der er problemer";
+                alertSummary.querySelector('.alert-text').innerHTML = '<ul class="nobullet-list mt-0 mb-0">' + errors + '</ul>';
+                alertSummary.parentNode.removeAttribute('hidden');
                 if (!isValidEmailAddress(emailAddress)) {
                     document.getElementById('i_newsform_email').focus();
                 }
@@ -151,17 +165,17 @@ document.addEventListener("DOMContentLoaded", function () {
             /* No errors detected in fields - submit the form */
             else {
 
-                /* Error happened in backend. Reload the page and remove any current error messages in url. */
-                document.getElementById('failure_url').value = (window.location.href).replace(/\?.+/ig, '');
-
                 if (subscriptionPage) {
-                    document.getElementById('success_url').value = window.location.href + 'tilmeldt/';
+                    document.getElementById('success_url').value = window.location.origin + '/faellesskab/nyhedsmail/tilmeldt/';
+                    document.getElementById('failure_url').value = window.location.origin + "/faellesskab/nyhedsmail/";
                 }
                 else if (unsubscriptionPage) {
-                    document.getElementById('success_url').value = (window.location.href).replace('afmeld', 'afmeldt');
+                    document.getElementById('success_url').value = window.location.origin + '/faellesskab/nyhedsmail/afmeldt/';
+                    document.getElementById('failure_url').value = window.location.origin + "/faellesskab/nyhedsmail/afmeld/";
                 }
 
                 clearAlertMessage(alert);
+                clearAlertMessage(alertSummary);
 
                 /* Clear previous email error, if any */
                 emailSection.classList.remove('form-error');

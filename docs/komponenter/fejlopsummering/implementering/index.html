@@ -1764,17 +1764,21 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
-    <div class="alert-body">
-        <h2 class="alert-heading">Der er problemer</h2>
-        <ul class="alert-text nobullet-list">
-            <li><a class="function-link" href="#date-field-year">Datoen for udløbsdato på dit
-                    pas bør inkludere årstal</a></li>
-            <li><a class="function-link" href="#zipcode-field">Indtast postnummer - fx
-                    4000</a></li>
-        </ul>
+        <nav aria-labelledby="error-summary-example">
+
+    <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
+        <div class="alert-body">
+            <h2 class="alert-heading" id="error-summary-example">Der er problemer</h2>
+            <ul class="alert-text nobullet-list">
+                <li><a class="function-link" href="#date-field-year">Datoen for udløbsdato på
+                        dit pas bør inkludere årstal</a></li>
+                <li><a class="function-link" href="#zipcode-field">Indtast postnummer - fx
+                        4000</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+
+</nav>
         
     </div>
     
@@ -1826,17 +1830,21 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; data-module=&quot;error-summary&quot;&gt;
-    &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;h2 class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/h2&gt;
-        &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-field-year&quot;&gt;Datoen for udløbsdato på dit
-                    pas bør inkludere årstal&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#zipcode-field&quot;&gt;Indtast postnummer - fx
-                    4000&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav aria-labelledby=&quot;error-summary-example&quot;&gt;
+
+    &lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; data-module=&quot;error-summary&quot;&gt;
+        &lt;div class=&quot;alert-body&quot;&gt;
+            &lt;h2 class=&quot;alert-heading&quot; id=&quot;error-summary-example&quot;&gt;Der er problemer&lt;/h2&gt;
+            &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-field-year&quot;&gt;Datoen for udløbsdato på
+                        dit pas bør inkludere årstal&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#zipcode-field&quot;&gt;Indtast postnummer - fx
+                        4000&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+
+&lt;/nav&gt;</code></pre></figure>
 
 
     </div>
@@ -1866,20 +1874,24 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; data-module=&quot;error-summary&quot;&gt;
-    &lt;div class=&quot;alert-body&quot;&gt;
-        &lt;h2 class=&quot;alert-heading&quot;&gt;Der er problemer&lt;/h2&gt;
-        &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#example-name-error&quot;&gt;Skriv dit fulde navn, og
-                    adskil for- og efternavne med mellemrum, fx Anders Andersen&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#checkboxes-error-option1&quot;&gt;Angiv om du er
-                    dansk, svensk eller anden nationalitet&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-input-error-day&quot;&gt;Datoen kan ikke være i
-                    fremtiden&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav aria-labelledby=&quot;error-form-example&quot;&gt;
 
+    &lt;div class=&quot;alert alert-error mt-0 mb-8&quot; role=&quot;alert&quot; data-module=&quot;error-summary&quot;&gt;
+        &lt;div class=&quot;alert-body&quot;&gt;
+            &lt;h2 class=&quot;alert-heading&quot; id=&quot;error-form-example&quot;&gt;Der er problemer&lt;/h2&gt;
+            &lt;ul class=&quot;alert-text nobullet-list&quot;&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#example-name-error&quot;&gt;Skriv dit fulde navn,
+                        og adskil for- og efternavne med mellemrum, fx Anders Andersen&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#checkboxes-error-option1&quot;&gt;Angiv om du er
+                        dansk, svensk eller anden nationalitet&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;function-link&quot; href=&quot;#date-input-error-day&quot;&gt;Datoen kan ikke være
+                        i fremtiden&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;
 &lt;h1 id=&quot;oplysninger-om-dig&quot;&gt;Oplysninger om dig&lt;/h1&gt;
 &lt;form novalidate&gt;
 
