@@ -160,14 +160,15 @@ layout: default
                     {%- endfor -%}
 
                     {% if _links.size > 0 and subLinksFound == true %}
-                    <h2 class="sr-only d-lg-none">Undersider</h2>
-
-                    <ul class="d-lg-none nobullet-list mt-9">
-                        {% for link in _links -%}
-                        {%- assign _page = link.href | resolve_permalink -%}
-                        <li><a href="{{link.href}}">{{_page.title}}</a></li>
-                        {% endfor %}
-                    </ul>
+                    <nav aria-labelledby="mobile-subpages-section" class="mt-9">
+                        <h2 class="sr-only d-lg-none" id="mobile-subpages-section">Undersider</h2>
+                        <ul class="d-lg-none nobullet-list">
+                            {% for link in _links -%}
+                            {%- assign _page = link.href | resolve_permalink -%}
+                            <li><a href="{{link.href}}">{{_page.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
                     {% endif %}
                 {% endif %}
             </section>
