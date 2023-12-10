@@ -28,9 +28,9 @@ tags:
 
 {:#npm}
 ## Hent via NPM
-Vi anbefaler som udgangspunkt at kodepakken hentes via NPM, hvor kodepakken går under navnet {% include links/external-link.html linktext="DKFDS" %}. 
+Vi anbefaler som udgangspunkt, at kodepakken hentes via NPM, hvor kodepakken går under navnet {% include links/external-link.html linktext="DKFDS" %}. 
 
-Navigér til roden af dit projekt i en kommando prompt og installer DKFDS med følgende kommando:
+Navigér til roden af dit projekt i en kommandoprompt og installer DKFDS med følgende kommando:
 
 {% highlight shell %}
 npm install --save dkfds
@@ -41,7 +41,7 @@ Modulet 'dkfds' er nu installeret i 'node_modules' mappen.
 {:#github}
 ## Hent via GitHub (zip)
 
-Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.
+Hent {% include links/external-link.html linktext="nyeste version som zipfil på GitHub" %}, og pak indholdet ud i dit projekt.
 
 ### Inkludér  CSS
 
@@ -57,7 +57,7 @@ Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css" />
 {% endhighlight %}
 
-Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.
+Har du brug for dit eget tema? Så læs sektionen om, {% include links/internal-link.html linktext="hvordan du tilpasser DKFDS til dit eget tema" %}.
 
 {:#javascript}
 ### Inkludér JavaScript
@@ -81,7 +81,7 @@ import * as DKFDS from "dkfds";
 
 Når DKFDS er inkluderet kan du køre funktionen `DKFDS.init();` ved dom ready, eller hvornår det nu end passer i dit projekt.
 
-`DKFDS.init();` aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javascript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.
+`DKFDS.init();` aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring javascript for hver komponent finder du i kodesektionen for den specifikke {% include links/internal-link.html linktext="komponent" %}.
 
 <p class="mb-2">Eksempel på init:</p>
 
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 {% endhighlight %}
 
-#### Initiér alle komponenter i et bestemt område
+##### Initiér alle komponenter i et bestemt område
 Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.
 
 I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.
@@ -101,43 +101,28 @@ let $header = document.getElementsByTagName('header')[0];
 DKFDS.init({'scope': $header});
 {% endhighlight %}
 
-#### Initiér komponenter enkeltvis
-
-Javascript for komponenter kan kaldes enkeltvis, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance kan dette være værd at undersøge.
-
-Javascript dokumentationen for hver komponent findes på de enkelte <a href="/kode/komponenter/">komponentsider under kodesektionen</a>.
-
 {:#temahaandtering}
 ## Temahåndtering
 
-Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.
+Designsystemet er udviklet med 2 forskellige temaer og et standardtema. Standardtemaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.
 
-Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.
+Det eneste som er forskelligt mellem standardtemaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaerne.
 
-<p class="mb-2">Tema eksempel – borger.dk (scss):</p>
+Nedenstående eksempel viser, hvordan en scss-fil i mappen `src/stylesheets` skulle se ud, hvis man selv ville generere temaet for borger.dk. 
 
 {% highlight scss %}
-// These variables overwrite the default values
-$theme-colors: (
-    "virk": (
-        100: #0059B3,
-        200: #004993,
-        300: #003972
-    )
+@use 'variables/variables/theme-colors' with (
+    $theme-color-primary:               #44831E,
+    $theme-color-primary-dark:          #3C5C22,
+    $theme-color-primary-darker:        #233614
 );
-
-$theme-color-primary: 'virk-100';
-$theme-color-primary-dark: 'virk-200';
-$theme-color-primary-darker: 'virk-300';
-$header-portal-logo: 'logo_virk.svg';
-$header-portal-logo-height: 4.8rem;
-$header-portal-logo-width: 7.8rem;
-$header-portal-compact-logo-width: 3.8rem;
-
-$font-path:         '/assets/fonts/IBMPlexSans/';
-$image-path:        '/assets/img';
-$icons-folder-path: '/assets/svg';
-@import '~dkfds/src/stylesheets/dkfds';
+@use 'variables/variables/components' with (
+    $header-portal-background-color:    #f1f1f1,
+    $header-portal-logo:                'logo-borgerdk.svg',
+    $header-portal-logo-height:         4.8rem,
+    $header-portal-compact-logo-width:  10rem
+);
+@use 'dkfds-base';
 {% endhighlight %}
 
 {:#integration}

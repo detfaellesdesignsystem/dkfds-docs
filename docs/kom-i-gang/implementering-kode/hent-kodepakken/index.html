@@ -1397,9 +1397,9 @@
                 
 
                 <h2 id="npm">Hent via NPM</h2>
-<p>Vi anbefaler som udgangspunkt at kodepakken hentes via NPM, hvor kodepakken går under navnet <a href="https://www.npmjs.com/package/dkfds" class="icon-link" target="_blank">DKFDS<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+<p>Vi anbefaler som udgangspunkt, at kodepakken hentes via NPM, hvor kodepakken går under navnet <a href="https://www.npmjs.com/package/dkfds" class="icon-link" target="_blank">DKFDS<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
-<p>Navigér til roden af dit projekt i en kommando prompt og installer DKFDS med følgende kommando:</p>
+<p>Navigér til roden af dit projekt i en kommandoprompt og installer DKFDS med følgende kommando:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">npm install --save dkfds</code></pre></figure>
 
@@ -1407,7 +1407,7 @@
 
 <h2 id="github">Hent via GitHub (zip)</h2>
 
-<p>Hent nyeste <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link">version som zipfil på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.</p>
+<p>Hent <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">nyeste version som zipfil på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, og pak indholdet ud i dit projekt.</p>
 
 <h3>Inkludér  CSS</h3>
 
@@ -1419,7 +1419,7 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css&quot; /&gt;</code></pre></figure>
 
-<p>Har du brug for dit eget tema? Så læs sektionen om, <a href="#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.</p>
+<p>Har du brug for dit eget tema? Så læs sektionen om, <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">hvordan du tilpasser DKFDS til dit eget tema</a>.</p>
 
 <h3 id="javascript">Inkludér JavaScript</h3>
 
@@ -1438,7 +1438,7 @@
 
 <p>Når DKFDS er inkluderet kan du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 
-<p><code>DKFDS.init();</code> aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent. Information omkring javascript for hver komponent finder du i <a href="/kode/komponenter/">kode sektionen for den specifikke komponent</a>.</p>
+<p><code>DKFDS.init();</code> aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring javascript for hver komponent finder du i kodesektionen for den specifikke <a href="/komponenter/">komponent</a>.</p>
 
 <p class="mb-2">Eksempel på init:</p>
 
@@ -1446,7 +1446,7 @@
   DKFDS.init();
 });</code></pre></figure>
 
-<h4>Initiér alle komponenter i et bestemt område</h4>
+<h5>Initiér alle komponenter i et bestemt område</h5>
 <p>Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.</p>
 
 <p>I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.</p>
@@ -1454,41 +1454,26 @@
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let $header = document.getElementsByTagName(&#39;header&#39;)[0];
 DKFDS.init({&#39;scope&#39;: $header});</code></pre></figure>
 
-<h4>Initiér komponenter enkeltvis</h4>
-
-<p>Javascript for komponenter kan kaldes enkeltvis, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance kan dette være værd at undersøge.</p>
-
-<p>Javascript dokumentationen for hver komponent findes på de enkelte <a href="/kode/komponenter/">komponentsider under kodesektionen</a>.</p>
-
 <h2 id="temahaandtering">Temahåndtering</h2>
 
-<p>Designsystemet er udviklet med 2 forskellige temaer. Standard temaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
+<p>Designsystemet er udviklet med 2 forskellige temaer og et standardtema. Standardtemaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
 
-<p>Temaerne er simple, det eneste som er forskelligt mellem standard temaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaer.</p>
+<p>Det eneste som er forskelligt mellem standardtemaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaerne.</p>
 
-<p class="mb-2">Tema eksempel – borger.dk (scss):</p>
+<p>Nedenstående eksempel viser, hvordan en scss-fil i mappen <code>src/stylesheets</code> skulle se ud, hvis man selv ville generere temaet for borger.dk.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">// These variables overwrite the default values
-$theme-colors: (
-    &quot;virk&quot;: (
-        100: #0059B3,
-        200: #004993,
-        300: #003972
-    )
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;variables/variables/theme-colors&#39; with (
+    $theme-color-primary:               #44831E,
+    $theme-color-primary-dark:          #3C5C22,
+    $theme-color-primary-darker:        #233614
 );
-
-$theme-color-primary: &#39;virk-100&#39;;
-$theme-color-primary-dark: &#39;virk-200&#39;;
-$theme-color-primary-darker: &#39;virk-300&#39;;
-$header-portal-logo: &#39;logo_virk.svg&#39;;
-$header-portal-logo-height: 4.8rem;
-$header-portal-logo-width: 7.8rem;
-$header-portal-compact-logo-width: 3.8rem;
-
-$font-path:         &#39;/assets/fonts/IBMPlexSans/&#39;;
-$image-path:        &#39;/assets/img&#39;;
-$icons-folder-path: &#39;/assets/svg&#39;;
-@import &#39;~dkfds/src/stylesheets/dkfds&#39;;</code></pre></figure>
+@use &#39;variables/variables/components&#39; with (
+    $header-portal-background-color:    #f1f1f1,
+    $header-portal-logo:                &#39;logo-borgerdk.svg&#39;,
+    $header-portal-logo-height:         4.8rem,
+    $header-portal-compact-logo-width:  10rem
+);
+@use &#39;dkfds-base&#39;;</code></pre></figure>
 
 <h2 id="integration">Vejledning til integration på borger.dk og Virk</h2>
 

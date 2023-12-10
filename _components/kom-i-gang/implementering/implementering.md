@@ -18,7 +18,7 @@ tags:
 
 {% include links/external-link.html linktext='Se videoen "Det Fælles Designsystem til udviklere" på YouTube' %} 
 
-<h2 class="h5">{% include links/internal-link.html linktext="Hent kodepakken" %}</h2>
+<h2 class="h5 mt-8">{% include links/internal-link.html linktext="Hent kodepakken" %}</h2>
 
 Hent den kode, som Det Fælles Designsystem stiller til rådighed.
 

@@ -38,7 +38,7 @@ subnav:
 {:#responsive-hjaelpeklasser}
 ## Responsive hjælpeklasser
 
-Alle de klasser som bliver genereret af hjælpefunktionerne findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints som er defineret i scss-variablen `$grid-breakpoints`:
+Alle de klasser, som bliver genereret af hjælpefunktionerne, findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints, som er defineret i scss-variablen `$grid-breakpoints`:
 
 {% highlight scss %}
 $grid-breakpoints: ( 
@@ -53,7 +53,7 @@ $grid-breakpoints: (
 {:#text-align}
 ## Text align
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser til `text-align` baseret på de definerede breakpoints i $grid-breakpoints.
+Der er opsat en hjælpefunktion, som automatisk genererer klasser til `text-align` baseret på de definerede breakpoints i $grid-breakpoints.
 
 Format: `align-text-{retning}` og `align-text-{breakpoint}-{retning}`
 
@@ -72,7 +72,7 @@ Format: `align-text-{retning}` og `align-text-{breakpoint}-{retning}`
 {:#margin-og-padding}
 ## Margin og padding
 
-Der er opsat hjælpefunktioner som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" class="icon-link">Bootstraps Spacing Utilities<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+Der er opsat hjælpefunktioner, som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af {% include links/external-link.html linktext="Bootstraps Spacing Utilities" %}.
 
 Format: `{css-egenskab}{retning}-{størrelse}` og `{css-egenskab}{retning}-{breakpoint}-{størrelse}`.
 
@@ -126,7 +126,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til `$spacers` variabl
 {:#display}
 ## Display
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/display/" class="icon-link">Bootstraps Display Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.
+Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af {% include links/external-link.html linktext="Bootstraps Display Utility" %}.
 
 Format: `d-{display}` og `d-{breakpoint}-{display}`
 
@@ -264,7 +264,7 @@ Format: `d-{display}` og `d-{breakpoint}-{display}`
 {:#flexbox}
 ## Flexbox
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser til flexbox baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" class="icon-link">Bootstraps Flex Utility<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Bemærk at disse hjælpeklasser kun kan anvendes, når display er sat til flexbox. Afsnittene om vandret og lodret justering tager udgangspunkt i at retningen er sat til `row`.
+Der er opsat en hjælpefunktion, som automatisk genererer klasser til flexbox baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af {% include links/external-link.html linktext="Bootstraps Flex Utility" %}. Bemærk at disse hjælpeklasser kun kan anvendes, når `display` er sat til `flexbox`. Afsnittene om vandret og lodret justering tager udgangspunkt i at retningen er sat til `row`.
 
 ### Retning
 
