@@ -26,7 +26,7 @@ tags:
 - "h6"
 ---
 
-{% include links/internal-links.html linktext="Læs retningslinjerne for overskrifter" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for overskrifter" %}
 
 ## HTML Struktur
 
@@ -45,7 +45,7 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 {% include code/preview-box.html component="subheading" link=false title="Eksempel på subheading" %}
 
-{% include links/internal-links.html linktext="Læs retningslinjer for subheadings" %}
+{% include links/internal-link.html linktext="Læs retningslinjer for subheadings" %}
 
 ### HTML Struktur
 

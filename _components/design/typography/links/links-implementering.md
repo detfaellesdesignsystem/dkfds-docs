@@ -33,7 +33,7 @@ tags:
 
 {% include code/syntax.html component="external-link" copybutton=true %}
 
-Eksternt link gør brug af ikoner. {% include links/internal-links.html linktext="Se dokumentationen for implementering af ikoner" %}.
+Eksternt link gør brug af ikoner. {% include links/internal-link.html linktext="Se dokumentationen for implementering af ikoner" %}.
 
 {:#sekundaere-links}
 ## Sekundære links
@@ -47,7 +47,7 @@ Eksternt link gør brug af ikoner. {% include links/internal-links.html linktext
 {:#billeder-som-links}
 ## Billeder som links
 
-Brug en {% include links/internal-links.html linktext="hjælpeklasse" %} til at vælge en anden display-værdi end `inline`.
+Brug en {% include links/internal-link.html linktext="hjælpeklasse" %} til at vælge en anden display-værdi end `inline`.
 
 Tilføj yderligere klassen `full-width-image`, hvis billedets bredde ikke skal begrænses.
 

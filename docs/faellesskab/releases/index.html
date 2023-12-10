@@ -1346,7 +1346,6 @@
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/faneblade/guidelines/">Faneblade</a></h3>
 </div>
-
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Det gamle faneblad er blevet erstattet med en ny fanebladskomponent.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at anvende faneblade med URL-skifte.</li>
@@ -1356,13 +1355,16 @@
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
 </div>
-
 <ul>
   <li>Dokumentationssiden har fået lavet en større omstrukturering hvor en stor del af dokumentationen er blevet inddelt i faneblade.</li>
   <li>Ved omstruktureringen er kodeafsnit flyttet fra den separate menu ”Kode” og ind på hver komponent-/designside i fanen ”Kode”. Retningslinjerne for komponenterne er ligeledes flyttet ind i fanen ”Retningslinjer”.</li>
-  <li>
-    <p>Flere sider i dokumentationen under menupunkterne ”Design”, ”Kode”, ”Krav” og ”Fællesskab” er blevet flyttet ind i et nyt menupunkt ved navn ”Kom i gang”. Menupunktet ”Kode” og ”Krav” er blevet fjernet som følge af disse ændringer. Derudover er ”Design” menupunktet omdøbt til ”Styleguide”.</p>
-  </li>
+  <li>Flere sider i dokumentationen under menupunkterne ”Design”, ”Kode”, ”Krav” og ”Fællesskab” er blevet flyttet ind i et nyt menupunkt ved navn ”Kom i gang”. Menupunktet ”Kode” og ”Krav” er blevet fjernet som følge af disse ændringer. Derudover er ”Design” menupunktet omdøbt til ”Styleguide”.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+<ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) <a href="/komponenter/radioknap/guidelines/">radioknapper</a> og <a href="/komponenter/tjekboks/guidelines/">tjekbokse</a>. Den nye standardstørrelse er 24 pixels. Bemærk at HTML’en for <a href="/komponenter/tables/guidelines/#valgbare-raekker">tabeller med valgbare rækker</a> og tjekbokse skal opdateres.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret <code>devDependencies</code> og <code>scripts</code> i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">browserunderstøttelse</a>).</li>
@@ -1492,7 +1494,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.</li>
   <li>Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/implementering/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/komponenter/cookiemeddelelse/implementering/">cookiemeddelelser</a>, <a href="/komponenter/footer/implementering/">footerne</a> og <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/implementering/">Badges</a>, <a href="/komponenter/beskeder/implementering/">beskeder</a>, <a href="/komponenter/cookiemeddelelse/implementering/">cookiemeddelelser</a>, <a href="/komponenter/footer/implementering/">footerne</a> og <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/guidelines/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/guidelines/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/guidelines/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
@@ -1583,7 +1585,7 @@
   <li>Erstattet brug af / ved division i scss med math.div
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på <a href="/komponenter/detaljer/guidelines/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/komponenter/">Se mere under hver komponent i kodesektionen</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for <a href="/komponenter/radioknap/guidelines/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle <a href="/design/ikoner/guidelines/">ikoner</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet <a href="/komponenter/beskeder/implementering/">JavaScript til luk knap i beskeder</a></li>
@@ -1696,7 +1698,7 @@
   <li>Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/guidelines/">accordions</a>
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt</li>
-  <li>Opdateret typografi</li>
+  <li>Opdateret <a href="/design/typografi/">typografi</a></li>
   <li>Tilføjet styling af <a href="/design/typografi/tekst/guidelines/#billedtekst">billedtekst (figcaption)</a></li>
   <li><a href="/komponenter/accordions/guidelines/#aabn-luk-alle">Åbn/luk alle accordions function</a></li>
   <li><a href="/komponenter/accordions/guidelines/">Accordion</a> knapper kan nu være i en overskrift

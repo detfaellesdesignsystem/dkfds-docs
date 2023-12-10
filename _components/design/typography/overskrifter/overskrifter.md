@@ -65,7 +65,7 @@ Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit in
 
 ### Hvornår skal du overveje anden formatering end overskrifter?
 
-Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx {% include links/component-links.html linktext="beskeder til information" %}, {% include links/internal-links.html linktext="fremhæv særlige punkter med punktopstilling" %} eller anvend {% include links/internal-links.html linktext="stor tekst" %} til at markere udvalgte dele af teksten.
+Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx {% include links/component-links.html linktext="beskeder til information" %}, {% include links/internal-link.html linktext="fremhæv særlige punkter med punktopstilling" %} eller anvend {% include links/internal-link.html linktext="stor tekst" %} til at markere udvalgte dele af teksten.
 
 ### Hvis du vil vide mere
 
@@ -84,7 +84,7 @@ Overblikslinks kan anvendes på overblikssider, hvor brugeren kan navigere til f
 
 ### Anvendes ikke til
 
-Må ikke bruges til at fremhæve links eller som erstatning for {% include links/internal-links.html linktext="standard links" %} i selvbetjeningsløsninger.
+Må ikke bruges til at fremhæve links eller som erstatning for {% include links/internal-link.html linktext="standard links" %} i selvbetjeningsløsninger.
 
 ### Vejledning
 
@@ -102,7 +102,7 @@ Søgeresultatlinks bruges til at skabe en overskuelig struktur i søgeresultater
 
 ### Anvendes ikke til
 
-Må ikke anvendes til at fremhæve links i tekst eller som erstatning for {% include links/internal-links.html linktext="standard links" %}.
+Må ikke anvendes til at fremhæve links i tekst eller som erstatning for {% include links/internal-link.html linktext="standard links" %}.
 
 ### Vejledning
 

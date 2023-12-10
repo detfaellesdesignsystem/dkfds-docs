@@ -89,7 +89,7 @@ Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den
 
 #### Topnavigation og venstremenu
 
-Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende {% include links/internal-links.html linktext="hjælpeklasser for display" %}, samt at mobilmenuen indeholder de korrekte links.
+Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende {% include links/internal-link.html linktext="hjælpeklasser for display" %}, samt at mobilmenuen indeholder de korrekte links.
 
 #### Sprogvælger
 

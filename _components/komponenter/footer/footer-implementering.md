@@ -40,7 +40,7 @@ Man kan indsætte en vandret liste, der er defineret med klasserne `unstyled-lis
 
 #### Kolonner
 
-Man kan indsætte et {% include links/internal-links.html linktext="grid" %} med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
+Man kan indsætte et {% include links/internal-link.html linktext="grid" %} med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
 
 {% include links/component-links.html linktext="Se eksempler på forskellige sammensætninger" %}.
 
@@ -48,7 +48,7 @@ Man kan indsætte et {% include links/internal-links.html linktext="grid" %} med
 
 Links i footer defineres med klassen `function-link` på `<a>`.
 
-Hvis man ved tryk på et link i footeren forlader selvbetjeningsløsningen bør dette indikeres ved brug af et {% include links/internal-links.html linktext="eksternt link" %}.
+Hvis man ved tryk på et link i footeren forlader selvbetjeningsløsningen bør dette indikeres ved brug af et {% include links/internal-link.html linktext="eksternt link" %}.
 
 Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventuelt indtastet data kan blive tabt. Evt. ved brug af en almindelig JavaScript alert.
 

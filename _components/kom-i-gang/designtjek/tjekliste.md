@@ -28,7 +28,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Anvend designsystemets farver, former og typografi</h2>
-        <p>Ved at bruge de visuelle designretningslinjer sikrer du et rent udtryk uden visuel støj. Læs mere om retningslinjerne for {% include links/internal-links.html linktext="typografi" %}, designsystemets {% include links/internal-links.html linktext="farver" %} og vores {% include links/internal-links.html linktext="hjørner, streger og skygger" %}.</p>
+        <p>Ved at bruge de visuelle designretningslinjer sikrer du et rent udtryk uden visuel støj. Læs mere om retningslinjerne for {% include links/internal-link.html linktext="typografi" %}, designsystemets {% include links/internal-link.html linktext="farver" %} og vores {% include links/internal-link.html linktext="hjørner, streger og skygger" %}.</p>
     </div>
 </div>
 
@@ -36,7 +36,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Udvalgte ikoner skal anvendes som angivet</h2>
-        <p>Følg vores <a href="/design/ikoner/#betydning">ikontaksonomi</a>, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under {% include links/internal-links.html linktext="ikoner" %}.</p>
+        <p>Følg vores <a href="/design/ikoner/#betydning">ikontaksonomi</a>, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under {% include links/internal-link.html linktext="ikoner" %}.</p>
     </div>
 </div>
 
@@ -44,7 +44,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Løsningen skal være responsiv</h2>
-        <p>Løsningen skal kunne anvendes på tværs af platforme. Det Fælles Designsystem tager udgangspunkt i et {% include links/internal-links.html linktext="12-kolonne grid" %} for at gøre det lettere for både designere og udviklere at bruge systemet. Det er dog tilladt rent teknisk at bruge andre metoder i udviklingen, så længe løsningen er responsiv.</p>
+        <p>Løsningen skal kunne anvendes på tværs af platforme. Det Fælles Designsystem tager udgangspunkt i et {% include links/internal-link.html linktext="12-kolonne grid" %} for at gøre det lettere for både designere og udviklere at bruge systemet. Det er dog tilladt rent teknisk at bruge andre metoder i udviklingen, så længe løsningen er responsiv.</p>
     </div>
 </div>
 
@@ -52,7 +52,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Indholdet skal primært være venstrestillet i et én-kolonne-layout og have passende afstande</h2>
-        <p>Venstrestilling af indholdet på siden i en enkelt kolonne gør det lettere for brugeren at skimme indholdet. Hold designet let og luftigt (masser af white space) og brug afstande og luft i designet til at indikere sammenhænge og adskillelse. Læs mere om {% include links/internal-links.html linktext="Layout" %}.</p>
+        <p>Venstrestilling af indholdet på siden i en enkelt kolonne gør det lettere for brugeren at skimme indholdet. Hold designet let og luftigt (masser af white space) og brug afstande og luft i designet til at indikere sammenhænge og adskillelse. Læs mere om {% include links/internal-link.html linktext="Layout" %}.</p>
     </div>
 </div>
 
@@ -84,6 +84,6 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Løsningen skal være tilgængelig</h2>
-        <p>Designet (kontrastforhold m.m.) og koden skal være tilgængeligt efter <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" class="icon-link" target="_blank">EN 301 549 v.3.2.1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Læs mere om kravene for {% include links/internal-links.html linktext="tilgængelighed" %}.</p>
+        <p>Designet (kontrastforhold m.m.) og koden skal være tilgængeligt efter <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" class="icon-link" target="_blank">EN 301 549 v.3.2.1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Læs mere om kravene for {% include links/internal-link.html linktext="tilgængelighed" %}.</p>
     </div>
 </div>

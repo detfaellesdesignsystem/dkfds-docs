@@ -19,7 +19,7 @@ tags:
 
 ## Punktopstilling
 
-{% include links/internal-links.html linktext="Læs retningslinjerne for lister" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for lister" %}
 
 ### HTML Struktur
 
@@ -27,7 +27,7 @@ tags:
 
 ## Tegnopstilling
 
-{% include links/internal-links.html linktext="Læs retningslinjerne for lister" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for lister" %}
 
 ### HTML Struktur
 

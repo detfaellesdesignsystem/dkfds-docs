@@ -1,0 +1,120 @@
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+    {%- when "implementering og kode", "til udviklere", "implementering af dkfds til udviklere", "stylesheetet", "hent kodepakken" -%}
+        <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">{{ include.linktext }}</a>
+    {%- when "temahåndtering i koden", "temahåndtering" -%}
+        <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">{{ include.linktext }}</a>
+    {%- when "`dkfds.init()` udvidet med scope json parameter, så man kan køre `dkfds.init()` mere målrettet på siden" -%}
+        <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#javascript">{{ include.linktext }}</a>
+    {%- when "hjælpeklasser (utilities)" -%}
+        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/">{{ include.linktext }}</a>
+    {%- when "hjælpeklasse", "hjælpeklasser for display" -%}
+        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">{{ include.linktext }}</a>
+    {%- when "bredde i procent" -%}
+        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#bredde-i-procent">{{ include.linktext }}</a>
+    {%- when "breakpoint" -%}
+        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser">{{ include.linktext }}</a>
+    {%- when "browserunderstøttelse" -%}
+        <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">{{ include.linktext }}</a>
+    {%- when "eksempel på implementering i angular" -%}
+        <a href="/kom-i-gang/implementering-kode/eksempler-implementering/">{{ include.linktext }}</a>
+    {%- when "plugins", "plugins i kode sektionen", "vi peger på en række plugins og hvordan disse kan styles så de passer ind" -%}
+        <a href="/kom-i-gang/implementering-kode/plugins/">{{ include.linktext }}</a>
+    {%- when "print" -%}
+        <a href="/kom-i-gang/implementering-kode/print/">{{ include.linktext }}</a>
+    {%- when "kode", "frameworks" -%}
+        <a href="/kom-i-gang/implementering-kode/frameworks/">{{ include.linktext }}</a>
+    {%- when "designprincipper" -%}
+        <a href="/kom-i-gang/designprincipper/">{{ include.linktext }}</a>
+    {%- when "designressourcer", "svg filer", "figma komponent bibliotek", "design og ressourcer", "designets grundprincipper" -%}
+        <a href="/kom-i-gang/designressourcer/">{{ include.linktext }}</a>
+    {%- when "tjekliste", "designtjek" -%}
+        <a href="/kom-i-gang/tjekliste/">{{ include.linktext }}</a>
+    {%- when "krav", "krav til selvbetjeningsløsninger", "se hvilke krav og anbefalinger, der gælder din løsning" -%}
+        <a href="/kom-i-gang/krav/">{{ include.linktext }}</a>
+    {%- when "læs om kravene og se om du skal anvende designsystemet", "portalernes krav til integration (når du skal på borger.dk og virk)" -%}
+        <a href="/kom-i-gang/krav/borgerdk-virk/">{{ include.linktext }}</a>
+    {%- when "om kravene til selvbetjeningsløsninger" -%}
+        <a href="/kom-i-gang/krav/om-kravene/">{{ include.linktext }}</a>
+    {%- when "tilgængelighed" -%}
+        <a href="/kom-i-gang/tilgaengelighed/">{{ include.linktext }}</a>
+    {%- when "ofte stillede spørgsmål" -%}
+        <a href="/kom-i-gang/faq/">{{ include.linktext }}</a>
+    {%- when "farver", "bruge farverne som anvist" -%}
+        <a href="/design/farver/">{{ include.linktext }}</a>
+    {%- when "fokusramme" -%}
+        <a href="/design/farver/#fokusfarve">{{ include.linktext }}</a>
+    {%- when "farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering", "datavisualiseringsfarver" -%}
+        <a href="/design/farver/#datavisualiseringsfarver">{{ include.linktext }}</a>
+    {%- when "angivne font", "beskrevet i afsnittet om typografi", "typografi" -%}
+        <a href="/design/typografi/">{{ include.linktext }}</a>
+    {%- when "retningslinjer" -%}
+        <a href="/design/typografi/fonte/guidelines/">{{ include.linktext }}</a>
+    {%- when "overskrifter" -%}
+        <a href="/design/typografi/overskrifter/guidelines/">{{ include.linktext }}</a>
+    {%- when "læs retningslinjerne for overskrifter" -%}
+        <a href="/design/typografi/overskrifter/guidelines/#retningslinjer">{{ include.linktext }}</a>
+    {%- when "læs retningslinjer for subheadings", "subheading" -%}
+        <a href="/design/typografi/overskrifter/guidelines/#subheading">{{ include.linktext }}</a>
+    {%- when "links i overskrifter" -%}
+        <a href="/design/typografi/overskrifter/guidelines/#overskrift-som-link">{{ include.linktext }}</a>
+    {%- when "lille brødtekst" -%}
+        <a href="/design/typografi/tekst/guidelines/">{{ include.linktext }}</a>
+    {%- when "stor tekst" -%}
+        <a href="/design/typografi/tekst/guidelines/#stor-tekst">{{ include.linktext }}</a>
+    {%- when "læs retningslinjerne for manchet tekst" -%}
+        <a href="/design/typografi/tekst/guidelines/#manchet-tekst-retningslinjer">{{ include.linktext }}</a>
+    {%- when "læs retningslinjerne for brødtekst" -%}
+        <a href="/design/typografi/tekst/guidelines/#broedtekst-retningslinjer">{{ include.linktext }}</a>
+    {%- when "læs retningslinjer for hjælpetekst og fejlmeddelelser" -%}
+        <a href="/design/typografi/tekst/guidelines/#hjaelpetekst-retningslinjer">{{ include.linktext }}</a>
+    {%- when "billedtekst (figcaption)" -%}
+        <a href="/design/typografi/tekst/guidelines/#billedtekst">{{ include.linktext }}</a>
+    {%- when "læs retningslinjer for billedtekst" -%}
+        <a href="/design/typografi/tekst/guidelines/#billedtekst-retningslinjer">{{ include.linktext }}</a>
+    {%- when "læs retningslinjerne for stor tekst" -%}
+        <a href="/design/typografi/tekst/guidelines/#display-retningslinjer">{{ include.linktext }}</a>
+    {%- when "standard links" -%}
+        <a href="/design/typografi/links/guidelines/">{{ include.linktext }}</a>
+    {%- when "billeder anvendt som links" -%}
+        <a href="/design/typografi/links/guidelines/#billeder-som-links">{{ include.linktext }}</a>
+    {%- when "eksternt link" -%}
+        <a href="/design/typografi/links/guidelines/#eksternt-link">{{ include.linktext }}</a>
+    {%- when "fremhæv særlige punkter med punktopstilling", "lister" -%}
+        <a href="/design/typografi/lister/guidelines/">{{ include.linktext }}</a>
+    {%- when "læs retningslinjerne for lister" -%}
+        <a href="/design/typografi/lister/guidelines/#retningslinjer">{{ include.linktext }}</a>
+    {%- when "hjørner, streger og skygger" -%}
+        <a href="/design/borders/">{{ include.linktext }}</a>
+    {%- when "facit streger" -%}
+        <a href="/design/borders/#streger">{{ include.linktext }}</a>
+    {%- when "se dokumentationen for implementering af ikoner", "afsnittet om ikoner", "ikonet", "ikoner", "ikontaksonomi" -%}
+        <a href="/design/ikoner/guidelines/">{{ include.linktext }}</a>
+    {%- when "se flere betydninger i ikontaksonomien", "ikontaksonomien" -%}
+        <a href="/design/ikoner/guidelines/#betydning">{{ include.linktext }}</a>
+    {%- when "slet ikonet" -%}
+        <a href="/design/ikoner/guidelines/?s=slet">{{ include.linktext }}</a>
+    {%- when "ikoner til sortering i tabel" -%}
+        <a href="/design/ikoner/guidelines/?s=sorter">{{ include.linktext }}</a>
+    {%- when "ikonsamlingen" -%}
+        <a href="/design/ikoner/implementering/">{{ include.linktext }}</a>
+    {%- when "tilgængelighed i forbindelse med grafik og visualisering", "tilgængelighed der gælder for grafik og visualisering" -%}
+        <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">{{ include.linktext }}</a>
+    {%- when "læs mere om datavisualisering" -%}
+        <a href="/design/datavisualisering-infografik/datavisualisering/">{{ include.linktext }}</a>
+    {%- when "læs mere om infografik" -%}
+        <a href="/design/datavisualisering-infografik/infografik/">{{ include.linktext }}</a>
+    {%- when "layout", "regler og principper for layout" -%}
+        <a href="/design/layout/">{{ include.linktext }}</a>
+    {%- when "hele headeren skal følge retningslinjerne for layout" -%}
+        <a href="/design/layout/#struktur-header">{{ include.linktext }}</a>
+    {%- when "grid’et i designsystemet", "8point grid", "12-kolonne grid" -%}
+        <a href="/design/grid/guidelines/">{{ include.linktext }}</a>
+    {%- when "reglerne for grid-systemet", "grid" -%}
+        <a href="/design/grid/implementering/">{{ include.linktext }}</a>
+    {%- when "se mere under hver komponent i kodesektionen" -%}
+        <a href="/komponenter/">{{ include.linktext }}</a>
+    {%- else -%}
+        {{ include.linktext }}
+{%- endcase -%}

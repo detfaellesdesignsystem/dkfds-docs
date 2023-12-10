@@ -28,7 +28,7 @@ Brug ikoner til at understøtte brugerens forståelse af det som kommunikeres.
 
 Følg gængse konventioner for brug af ikoner, hvis de findes. Fx Hus-ikonet anvendes til “hjem”, som går til en forside. Lup-ikonet, bruges til at indikere en søgemulighed, osv.
 
-{% include links/internal-links.html linktext="Se flere betydninger i ikontaksonomien" %}
+{% include links/internal-link.html linktext="Se flere betydninger i ikontaksonomien" %}
 
 ## Anvendes ikke til  
 
@@ -50,11 +50,11 @@ Ikoner der anvendes illustrativt må ikke ligne eller være de samme som anvende
 
 Vi bruger Material Designs ikoner som udgangspunkt. 
 
-Hvis du har brug for ikoner, der ikke findes i {% include links/internal-links.html linktext="ikontaksonomien" %} henviser vi til:
+Hvis du har brug for ikoner, der ikke findes i {% include links/internal-link.html linktext="ikontaksonomien" %} henviser vi til:
 
 {:nobullet-list}
-- {% include links/external-links.html linktext="Material Design" %}
-- {% include links/external-links.html linktext="Material Design Icons" %}
+- {% include links/external-link.html linktext="Material Design" %}
+- {% include links/external-link.html linktext="Material Design Icons" %}
 
 Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes.
 

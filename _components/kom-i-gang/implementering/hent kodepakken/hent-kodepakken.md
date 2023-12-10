@@ -28,7 +28,7 @@ tags:
 
 {:#npm}
 ## Hent via NPM
-Vi anbefaler som udgangspunkt at kodepakken hentes via NPM, hvor kodepakken går under navnet {% include links/external-links.html linktext="DKFDS" %}. 
+Vi anbefaler som udgangspunkt at kodepakken hentes via NPM, hvor kodepakken går under navnet {% include links/external-link.html linktext="DKFDS" %}. 
 
 Navigér til roden af dit projekt i en kommando prompt og installer DKFDS med følgende kommando:
 
@@ -145,7 +145,7 @@ $icons-folder-path: '/assets/svg';
 
 Det Fælles Designsystem er som udgangspunkt udviklet til selvbetjeningsløsninger på borger.dk og Virk. For at integrere din løsning på borger.dk eller Virk, kan du her få vejledning til, hvordan du integrerer din løsning på platformene. Hvis du anvender designsystemet til andre løsninger, kan du se bort fra dette.
 
-{% include links/external-links.html linktext="Vejledning til integration på borger.dk" %}
+{% include links/external-link.html linktext="Vejledning til integration på borger.dk" %}
 
-{% include links/external-links.html linktext="Vejledning til integration på Virk" %}
+{% include links/external-link.html linktext="Vejledning til integration på Virk" %}
 

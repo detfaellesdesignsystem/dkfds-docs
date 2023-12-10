@@ -24,16 +24,16 @@ tags:
 Kravet om anvendelse af det Fælles Designsystem gælder for obligatorisk digitale (borgerrettede) selvbetjeningsløsninger, der skal på borger.dk og alle virksomhedsrettede selvbetjeningsløsninger, der skal på Virk.
 
 {:.nobullet-list}
-* {% include links/internal-links.html linktext="Om kravene til selvbetjeningsløsninger" %}
-* {% include links/internal-links.html linktext="Portalernes krav til integration (Når du skal på borger.dk og Virk)" %}
+* {% include links/internal-link.html linktext="Om kravene til selvbetjeningsløsninger" %}
+* {% include links/internal-link.html linktext="Portalernes krav til integration (Når du skal på borger.dk og Virk)" %}
 
 ### Brug Det Fælles Designsystem til din selvbetjeningsløsning
 
 Følg retningslinjer og principperne for design og layout. Brug komponenterne og koden, så laver du effektivt simple brugervenlige og tilgængelige selvbetjeningsløsninger.
 
 {:.nobullet-list}
-* {% include links/internal-links.html linktext="Tjekliste" %}
-* {% include links/internal-links.html linktext="Tilgængelighed" %}
+* {% include links/internal-link.html linktext="Tjekliste" %}
+* {% include links/internal-link.html linktext="Tilgængelighed" %}
 
 ## Det Fælles Designsystem er del af den fællesoffentlige digitale arkitektur
 

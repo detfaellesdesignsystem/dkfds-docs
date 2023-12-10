@@ -35,7 +35,7 @@ tags:
 
 {% include code/preview-box.html component="lead_paragraph" link=false title="Eksempel på manchet tekst" %}
 
-{% include links/internal-links.html linktext="Læs retningslinjerne for manchet tekst" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for manchet tekst" %}
 
 ### HTML Struktur
 
@@ -46,7 +46,7 @@ tags:
 
 {% include code/preview-box.html component="inlinetext" link=false title="Eksempel på brødtekst" %}
 
-{% include links/internal-links.html linktext="Læs retningslinjerne for brødtekst" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for brødtekst" %}
 
 ### HTML Struktur
 
@@ -57,7 +57,7 @@ tags:
 
 {% include code/preview-box.html component="helptext" link=false title="Eksempel på hjælpetekst og fejlmeddelelse" %}
 
-{% include links/internal-links.html linktext="Læs retningslinjer for hjælpetekst og fejlmeddelelser" %}
+{% include links/internal-link.html linktext="Læs retningslinjer for hjælpetekst og fejlmeddelelser" %}
 
 ### HTML Struktur
 
@@ -68,7 +68,7 @@ tags:
 
 {% include code/preview-box.html component="caption" link=false title="Eksempel på billedtekst" %}
 
-{% include links/internal-links.html linktext="Læs retningslinjer for billedtekst" %}
+{% include links/internal-link.html linktext="Læs retningslinjer for billedtekst" %}
 
 ### HTML Struktur
 
@@ -79,7 +79,7 @@ tags:
 
 {% include code/preview-box.html component="displaytext" link=false title="Eksempel på stor tekst" %}
 
-{% include links/internal-links.html linktext="Læs retningslinjerne for stor tekst" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for stor tekst" %}
 
 ### HTML Struktur
 

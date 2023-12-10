@@ -1,0 +1,8 @@
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+    {%- when "notifikation (toast) komponent", "toastbesked", "toastbeskeders", "toastbeskederne" -%}
+        <a href="/komponenter/toastbesked/guidelines/">{{ include.linktext }}</a>
+    {%- else -%}
+        {{ include.linktext }}
+{%- endcase -%}

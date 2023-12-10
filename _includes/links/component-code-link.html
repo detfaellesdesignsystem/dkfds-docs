@@ -1,0 +1,12 @@
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+    {%- when "badges" -%}
+        <a href="/komponenter/badges/implementering/">{{ include.linktext }}</a>
+    {%- when "beskeder" -%}
+        <a href="/komponenter/beskeder/implementering/">{{ include.linktext }}</a>
+    {%- when "toastbeskeder" -%}
+        <a href="/komponenter/toastbesked/implementering/">{{ include.linktext }}</a>
+    {%- else -%}
+        {{ include.linktext }}
+{%- endcase -%}
