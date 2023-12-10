@@ -1,35 +1,30 @@
 {%- assign attributes = 'class="icon-link" target="_blank"' -%}
-{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>' -%}
-{%- assign icon-tab-index = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
-{%- if include.linktext == "package.json" -%}
-<a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-{%- elsif include.linktext == "@import" -%}
-<a href="https://sass-lang.com/documentation/at-rules/import/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-{%- elsif include.linktext == "@use" -%}
-<a href="https://sass-lang.com/documentation/at-rules/use/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-{%- elsif include.linktext == "@forward" -%}
-<a href="https://sass-lang.com/documentation/at-rules/forward/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
+{%- assign link = include.linktext -%}
 
-{%- elsif include.linktext == "DKFDS" -%}
-<a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-{%- elsif include.linktext == "Se videoen &quot;Det Fælles Designsystem til designere og UX'ere&quot; på YouTube" or include.linktext == "Se videoen &quot;Det Fælles Designsystem til udviklere&quot; på YouTube" -%}
-<a href="https://www.youtube.com/watch?v=dvXn9a0_8tQ" {{ attributes }}>{{ include.linktext }}{{ icon-tab-index }}</a>
-
-{%- elsif include.linktext == "Material Design" -%}
-<a href="https://fonts.google.com/icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-{%- elsif include.linktext == "Material Design Icons" -%}
-<a href="https://materialdesignicons.com/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-{%- elsif include.linktext == "Vejledning til integration på borger.dk" -%}
-<a href="https://digitaliser.dk/borgerdk/vejledninger-borgerdk/tilslutning-af-selvbetjening-til-borgerdk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-{%- elsif include.linktext == "Vejledning til integration på Virk" -%}
-<a href="https://virk.dk/vejledning/virk-for-myndigheder/for-myndigheder-saadan-kommer-man-paa-virk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-
-
-{%- else -%}
-{{ include.linktext }}
-{%- endif -%}
+{%- case link -%}
+    {%- when "package.json" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "@import" -%}
+        <a href="https://sass-lang.com/documentation/at-rules/import/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "@use" -%}
+        <a href="https://sass-lang.com/documentation/at-rules/use/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "@forward" -%}
+        <a href="https://sass-lang.com/documentation/at-rules/forward/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "DKFDS" -%}
+        <a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when 'Se videoen "Det Fælles Designsystem til udviklere" på YouTube' -%}
+        <a href="https://www.youtube.com/watch?v=A5MvjCaoZWk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when 'Se videoen "Det Fælles Designsystem til designere og UX&apos;ere" på YouTube' -%}
+        <a href="https://www.youtube.com/watch?v=dvXn9a0_8tQ" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "Material Design" -%}
+        <a href="https://fonts.google.com/icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "Material Design Icons" -%}
+        <a href="https://materialdesignicons.com/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "Vejledning til integration på borger.dk" -%}
+        <a href="https://digitaliser.dk/borgerdk/vejledninger-borgerdk/tilslutning-af-selvbetjening-til-borgerdk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "Vejledning til integration på Virk" -%}
+        <a href="https://virk.dk/vejledning/virk-for-myndigheder/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- else -%}
+        {{ include.linktext }}
+{%- endcase -%}

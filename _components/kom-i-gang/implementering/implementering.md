@@ -16,7 +16,7 @@ tags:
 - implementering
 ---
 
-{% include links/external-links.html linktext="Se videoen &quot;Det Fælles Designsystem til udviklere&quot; på YouTube" %} 
+{% include links/external-links.html linktext='Se videoen "Det Fælles Designsystem til udviklere" på YouTube' %} 
 
 <h2 class="h5">{% include links/internal-links.html linktext="Hent kodepakken" %}</h2>
 
