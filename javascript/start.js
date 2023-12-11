@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
    correct element is displayed in view. */
 window.addEventListener("load", (event) => {
     if(location.hash !== '') {
-        console.log("# detected in url");
         let elementID = location.hash.replace('#','');
         let element = document.getElementById(elementID);
         if(element) {

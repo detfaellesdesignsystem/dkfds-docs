@@ -56,8 +56,7 @@ Søgeknappen skal være en submit-knap.
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
+{% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer

@@ -83,9 +83,9 @@ Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappe
 #### Eksempler
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Kvittering'">Formular til kontaktoplysninger: Kvittering</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Kvittering'">Trinformular til ansøgning: Kvittering</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23knapper-eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="knapper-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="knapper-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="knapper-eksempelloesninger" %}
 
 <h3 class="h4">Header</h3>
 
@@ -98,8 +98,8 @@ Hvis du har kontaktinformationer stående både i headeren og footeren bør én 
 
 {:.nobullet-list}
 - <a href="/eksempel/header-all-rows/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a>
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23header-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="header-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="header-eksempelloesninger" %}
 
 <h3 class="h4">Footer</h3>
 
@@ -114,7 +114,7 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
 - <a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 4 kolonner">Footer med 4 kolonner</a>
 - <a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Kompleks footer">Kompleks footer</a>
 - <a href="/eksempel/footer-logo/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med logo">Footer med logo</a>
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23footer-eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="footer-eksempelloesninger" %}
 
 <h3 class="h4">Responsiv tabel</h3>
 
@@ -126,6 +126,6 @@ Hvis man ønsker at tabellen skal forblive normal ved print, kan man tilføje kl
 #### Eksempler
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Opsummering'">Trinformular til registrering: Opsummering</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23tabel-eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="tabel-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="tabel-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="tabel-eksempelloesninger" %}

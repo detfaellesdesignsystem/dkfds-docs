@@ -84,8 +84,7 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
+{% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer

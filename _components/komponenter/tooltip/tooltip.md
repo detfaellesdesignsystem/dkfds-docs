@@ -85,8 +85,7 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg personer'">Trinformular til registrering: Vælg personer</a>
+{% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer

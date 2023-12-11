@@ -61,7 +61,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-links.
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-<a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
+{% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer

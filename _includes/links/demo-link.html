@@ -1,0 +1,46 @@
+{%- assign link = include.linktext -%}
+
+{%- case link -%}
+    {%- when "Formular til kontaktoplysninger: Oplysninger om dig" -%}
+        <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Formular til kontaktoplysninger: Bekræft oplysninger" -%}
+        <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Formular til kontaktoplysninger: Kvittering" -%}
+        <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Vælg personer" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Vælg noget mere" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Vedhæft dokumenter" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Tidligere registrering" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Tidligere registrering (vælg 'Ja')" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23{{include.returnID}}">Trinformular til registrering: Tidligere registrering (vælg <em>'Ja'</em>)</a>
+    {%- when "Trinformular til registrering: Kontaktoplysninger" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Opsummering" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til registrering: Kvittering" -%}
+        <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til ansøgning: Oplysninger om ansøger" -%}
+        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til ansøgning: Kontaktoplysninger" -%}
+        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til ansøgning: Ansøgningens type" -%}
+        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til ansøgning: Tilføj dokumentation" -%}
+        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til ansøgning: Opsummering" -%}
+        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Trinformular til ansøgning: Kvittering" -%}
+        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Sagsoversigt: Find sag" -%}
+        <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Sagsoversigt: Sagsnr. 123456789" -%}
+        <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Sagsoversigt: Afgørelser" -%}
+        <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- else -%}
+        {{ include.linktext }}
+{%- endcase -%}

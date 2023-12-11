@@ -46,6 +46,7 @@ Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgæng
 
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
+
 {% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
@@ -55,8 +56,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-links.
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Tidligere registrering (vælg Ja)'">Trinformular til registrering: Tidligere registrering (vælg <em>'Ja'</em>)</a>
+{% include links/demo-link.html linktext="Trinformular til registrering: Tidligere registrering (vælg 'Ja')" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer
