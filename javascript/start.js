@@ -46,7 +46,20 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < preTags.length; i++) {
         preTags[i].setAttribute('tabindex', 0);
     }
+});
 
+/* Particularly Firefox has problems viewing the right part of the page when
+   an anchor link has been clicked. This eventListener ensures that the
+   correct element is displayed in view. */
+window.addEventListener("load", (event) => {
+    if(location.hash !== '') {
+        console.log("# detected in url");
+        let elementID = location.hash.replace('#','');
+        let element = document.getElementById(elementID);
+        if(element) {
+            element.scrollIntoView(true);
+        } 
+    }
 });
 
 $(document).ready(function () {
@@ -221,3 +234,5 @@ $(document).ready(function () {
         }
     };
 });
+
+
