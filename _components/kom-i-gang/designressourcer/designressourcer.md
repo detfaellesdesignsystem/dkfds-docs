@@ -61,14 +61,14 @@ Vi stiller nedenstående filer til rådighed for, at I kan komme hurtigt i gang 
 
 Designbiblioteket i Figma vedligeholdes løbende.
 
-<a href="https://www.figma.com/community/file/1284147195952477019" class="icon-link" target="_blank">Se komponentbiblioteket i Figma<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Se komponentbiblioteket i Figma" %}
 
 <h3 class="h4">SVG</h3>
 
 Svg-filerne kan importeres i de fleste design-/prototypeprogrammer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
 
-<a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">Download svg-filer (version 7.0.0)</a>
+{% include links/internal-link.html linktext="Download svg-filer (version 7.0.0)" %}
 
 <h3 class="h4">Hjælp os med at blive bedre</h3>
 
-Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at <a href="/faellesskab/kontakt-support/">kontakte os</a>. 
+Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at {% include links/internal-link.html linktext="kontakte os" %}.

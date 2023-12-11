@@ -97,7 +97,7 @@ Hvis du har kontaktinformationer stående både i headeren og footeren bør én 
 #### Eksempler
 
 {:.nobullet-list}
-- <a href="/eksempel/header-all-rows/?r={{page.permalink}}%23header-eksempelloesninger" title="Standard header">Standard header</a>
+- {% include links/example-link.html linktext="Header med navigation og søgefelt" %}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="header-eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="header-eksempelloesninger" %}
 
@@ -109,11 +109,11 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
 #### Eksempler
 
 {:.nobullet-list}
-- <a href="/eksempel/footer-simple/?r={{page.permalink}}%23footer-eksempelloesninger" title="Simpel footer eksempel">Simpel footer eksempel</a>
-- <a href="/eksempel/footer-three-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 3 kolonner">Footer med 3 kolonner</a>
-- <a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med 4 kolonner">Footer med 4 kolonner</a>
-- <a href="/eksempel/footer-four-columns/?r={{page.permalink}}%23footer-eksempelloesninger" title="Kompleks footer">Kompleks footer</a>
-- <a href="/eksempel/footer-logo/?r={{page.permalink}}%23footer-eksempelloesninger" title="Footer med logo">Footer med logo</a>
+- {% include links/example-link.html linktext="Simpel footer" %}
+- {% include links/example-link.html linktext="Footer med tre kolonner" %}
+- {% include links/example-link.html linktext="Footer med fire kolonner" %}
+- {% include links/example-link.html linktext="Kompleks footer" %}
+- {% include links/example-link.html linktext="Footer med logo" %}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="footer-eksempelloesninger" %}
 
 <h3 class="h4">Responsiv tabel</h3>

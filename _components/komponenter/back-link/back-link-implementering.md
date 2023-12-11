@@ -22,7 +22,7 @@ tags:
 
 {% include code/syntax.html component="back-link" copybutton=true %}
 
-Linket placeres så vidt muligt i headeren, se eksempel på implementering i vores eksempelløsning: <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23html-struktur">Vedhæft filer</a>
+Linket placeres så vidt muligt i headeren, se eksempel på implementering i vores eksempelløsning: {% include links/demo-link.html linktext="Vedhæft fil" returnID="html-struktur" %}
 
 Bemærk, at tilbage-linket stadig skal være synligt ved mobilvisning.
 

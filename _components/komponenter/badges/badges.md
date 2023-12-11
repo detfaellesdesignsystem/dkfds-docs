@@ -66,7 +66,7 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 - {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
-- <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Opgaveliste'">Opgaveliste</a>
+- {% include links/demo-link.html linktext="Opgaveliste" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer

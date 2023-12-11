@@ -41,6 +41,28 @@
         <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
     {%- when "Sagsoversigt: Afgørelser" -%}
         <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Dashboard" -%}
+        <a href="/pages/eksempler/dashboard/dashboard-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Opgaveliste" -%}
+        <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Vedhæft fil" -%}
+        <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Liste af vedhæftede filer" -%}
+        <a href="/pages/eksempler/vedhaeft-fil/fil-2/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Fejl i vedhæftede filer" -%}
+        <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Opsummering 1" -%}
+        <a href="/pages/eksempler/opsummering/opsummering-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Opsummering 2" -%}
+        <a href="/pages/eksempler/opsummering/opsummering-2/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Kvittering 1" -%}
+        <a href="/pages/eksempler/kvittering/kvittering-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Kvittering 2" -%}
+        <a href="/pages/eksempler/kvittering/kvittering-2/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Formular med fejl" -%}
+        <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
+    {%- when "Fejl i tidligere trin" -%}
+        <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r={{page.permalink}}%23{{include.returnID}}">{{ include.linktext }}</a>
     {%- else -%}
         {{ include.linktext }}
 {%- endcase -%}

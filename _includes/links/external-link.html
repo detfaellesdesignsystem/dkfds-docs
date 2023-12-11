@@ -43,6 +43,8 @@
         <a href="https://validator.w3.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- when "w3c css validation service (css)" -%}
         <a href="https://jigsaw.w3.org/css-validator/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "se komponentbiblioteket i figma" -%}
+        <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- else -%}
         {{ include.linktext }}
 {%- endcase -%}

@@ -78,7 +78,7 @@ Skriv kort og præcist i hvert card.
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
-- <a href="/pages/eksempler/dashboard/dashboard-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Dashboard'">Dashboard</a>
+- {% include links/demo-link.html linktext="Dashboard" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer

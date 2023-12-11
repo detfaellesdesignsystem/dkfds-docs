@@ -218,8 +218,8 @@ Skriv "Den valgte fil skal gøre brug af skabelonen".
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Fejl i vedhæftede filer'">Fejl i vedhæftede filer</a>
-- <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular med fejl'">Formular med fejl</a>
+- {% include links/demo-link.html linktext="Fejl i vedhæftede filer" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular med fejl" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer
