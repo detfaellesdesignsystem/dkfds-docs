@@ -42,7 +42,7 @@ Hvis man gør brug af en trinindikator i forbindelse med en {% include links/com
 
 ## Varianter
 
-Nedenstående varianter implementeres i et grid på samme måde som {% include links/component-links.html linktext="venstremenu" %}, således at komponenten vises i en kolonne til venstre for indholdet.
+Nedenstående varianter implementeres i et grid på samme måde som {% include links/component-guideline-link.html linktext="venstremenu" %}, således at komponenten vises i en kolonne til venstre for indholdet.
 
 {:#klikbar}
 ### Alle trin synlige

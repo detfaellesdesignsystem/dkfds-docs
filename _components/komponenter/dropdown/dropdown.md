@@ -52,9 +52,9 @@ Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så bruge
 {% include dos-donts-box.html component="dropdown-dos-donts" title="Dropdown do's and don'ts" %}
 
 #### Fejlmeddelelse
-{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
+{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 

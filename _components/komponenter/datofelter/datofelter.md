@@ -40,16 +40,16 @@ Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, det vi
 
 Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
-Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en {% include links/component-links.html linktext="datovælger" %} (date picker) funktion.
+Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en {% include links/component-guideline-link.html linktext="datovælger" %} (date picker) funktion.
 
 {% include dos-donts-box.html component="date-dos-donts" title="Datofelter do's and don'ts" %}
 
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
 
-{% include links/component-links.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
+{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også {% include links/component-links.html linktext="fejlopsummering" %}.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 

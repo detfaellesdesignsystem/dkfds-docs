@@ -56,8 +56,8 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 {:.nobullet-list}
 - {% include links/internal-link.html linktext="Farver" %}
 - {% include links/internal-link.html linktext="Overskrifter" %}
-- {% include links/component-links.html linktext="Tabeller" %}
-- {% include links/component-links.html linktext="Accordions" %}
+- {% include links/component-guideline-link.html linktext="Tabeller" %}
+- {% include links/component-code-link.html linktext="Accordions" %}
 
 {:#ref}
 ## Referencer

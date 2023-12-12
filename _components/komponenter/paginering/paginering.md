@@ -35,7 +35,7 @@ ved at opdele indholdet over flere sider.
 
 ### Anvendes ikke til
 
-Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet {% include links/component-links.html linktext="trinindikator" %}.
+Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet {% include links/component-guideline-link.html linktext="trinindikator" %}.
 
 ### Vejledning
 

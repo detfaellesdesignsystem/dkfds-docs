@@ -42,7 +42,7 @@ Anvendes ikke som navigationsknap eller på anden vis til andet end at sende bru
 
 Tilbage til toppen-knappen placeres nederst til højre på siden. Knappen er "sticky", således at den altid er placeret det samme sted.
 
-På sider, der ikke har {% include links/component-links.html linktext="trinindikator" %} eller {% include links/component-links.html linktext="venstremenu" %}, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
+På sider, der ikke har {% include links/component-guideline-link.html linktext="trinindikator" %} eller {% include links/component-guideline-link.html linktext="venstremenu" %}, vises tilbage til toppen-knappen efter brugeren har scrollet 2 skærmsiders længde. Ligeledes vil knappen forsvinde igen, når brugeren scroller op og der er mindre end 2 skærmsiders længde til toppen af siden. 
 
 På sider med trinindikator eller venstremenu vises knappen, når sidste element i venstre side (af trinindikatoren eller venstremenuen) er ude af syne for brugeren eller hvis brugeren har scrollet 2 skærmsiders længde.
 

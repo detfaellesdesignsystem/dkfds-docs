@@ -32,13 +32,13 @@ tags:
 
 ### Anvendes til
 
-Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til {% include links/component-links.html linktext="fejlopsummeringer" %}, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
+Beskeder (Alerts) anvendes til at give brugeren vigtig og aktuel information om fx status, generelle fejl, til {% include links/component-guideline-link.html linktext="fejlopsummeringer" %}, samt til at gøre opmærksom på ting brugeren skal vide, fx automatiske ændringer i brugerens data o.l.
 
 Anvend succes- og advarselsbeskeder til at bekræfte en handling eller give besked om behov for handling.
 
 ### Anvendes ikke til
 
-Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet {% include links/component-links.html linktext="fejlmeddelelser" %}.
+Brug ikke beskeder til at markere fejlindtastning i et specifikt felt. Anvend i stedet {% include links/component-guideline-link.html linktext="fejlmeddelelser" %}.
 
 Brug modal dialog – ikke beskeder – til at give brugerne information om en potentielt kritisk handling. Dermed risikerer brugeren ikke at overse eller misforstå beskeden.
 

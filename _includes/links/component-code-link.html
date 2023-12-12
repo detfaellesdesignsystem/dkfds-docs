@@ -28,6 +28,8 @@
 
     {%- when "datovælger" -%}
         <a href="/komponenter/datovaelger/implementering/">{{ include.linktext }}</a>
+    {%- when "sprogoversættelser" -%}
+        <a href="/komponenter/datovaelger/implementering/#sprog">{{ include.linktext }}</a>
 
     {%- when "detaljer" -%}
         <a href="/komponenter/detaljer/implementering/">{{ include.linktext }}</a>
@@ -41,7 +43,7 @@
     {%- when "fejlmeddelelser" -%}
         <a href="/komponenter/fejlmeddelelser/implementering/">{{ include.linktext }}</a>
 
-    {%- when "fejlopsummering" -%}
+    {%- when "fejlopsummering", "en fejlopsummering" -%}
         <a href="/komponenter/fejlopsummering/implementering/">{{ include.linktext }}</a>
 
     {%- when "footer" -%}

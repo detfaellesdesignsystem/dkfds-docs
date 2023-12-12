@@ -21,7 +21,7 @@ tags:
 
 {% include code/syntax.html component="back-to-top" copybutton=true %}
 
-Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-knappen kan linke til. Hvis siden indeholder et {% include links/component-links.html linktext="skip-link" %}, bør id'et ligge umiddelbart før dette.
+Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-knappen kan linke til. Hvis siden indeholder et {% include links/component-guideline-link.html linktext="skip-link" %}, bør id'et ligge umiddelbart før dette.
 
 Tilbage til toppen-knappen bør altid være det første element i en sides footer.
 
@@ -34,4 +34,4 @@ new DKFDS.BackToTop(document.getElementById('BACK-TO-TOP-ID')).init();
 
 Bemærk, at JavaScripten udelukkende kontrollerer, hvornår knappen skal vises eller skjules. Hvis tryk på knappen skal lave en scroll-animation til toppen, skal man selv stå for implementeringen af denne animation.
 
-Knappen vises og skjules forskelligt, hvis der er en {% include links/component-links.html linktext="venstremenu" %} eller {% include links/component-links.html linktext="trinindikator" %} til stede på siden. Det er derfor vigtigt, at HTML for disse komponenter er anvendt som beskrevet.
+Knappen vises og skjules forskelligt, hvis der er en {% include links/component-guideline-link.html linktext="venstremenu" %} eller {% include links/component-guideline-link.html linktext="trinindikator" %} til stede på siden. Det er derfor vigtigt, at HTML for disse komponenter er anvendt som beskrevet.

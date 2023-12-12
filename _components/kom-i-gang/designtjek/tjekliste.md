@@ -20,7 +20,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Layoutet skal være inddelt i en header, et indholdsområde og en footer på alle sider</h2>
-        <p>Hver side skal starte med en {% include links/component-links.html linktext="header" %} bestående af portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt. Derefter følger indholdet såsom en formular. Slut din løsning af med en {% include links/component-links.html linktext="footer" %} og brug et af de anviste layouts til den.</p>
+        <p>Hver side skal starte med en {% include links/component-guideline-link.html linktext="header" %} bestående af portallogo, NemLog-inoplysninger, løsningens titel og ansvarlig myndighed, samt mulighed for kontakt. Derefter følger indholdet såsom en formular. Slut din løsning af med en {% include links/component-guideline-link.html linktext="footer" %} og brug et af de anviste layouts til den.</p>
     </div>
 </div>
 
@@ -60,7 +60,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Del så vidt muligt komplekse selvbetjeningsløsninger op i mindre bidder</h2>
-        <p>Løsningen bliver lettere for brugeren at overskue, hvis den deles op i mindre bidder. Afhængigt af løsningens karakter kan det opnås ved hjælp af at dele indholdet op i undersider eller, hvis der er tale om en længere formular, med en {% include links/component-links.html linktext="trinindikator" %}.</p>
+        <p>Løsningen bliver lettere for brugeren at overskue, hvis den deles op i mindre bidder. Afhængigt af løsningens karakter kan det opnås ved hjælp af at dele indholdet op i undersider eller, hvis der er tale om en længere formular, med en {% include links/component-guideline-link.html linktext="trinindikator" %}.</p>
     </div>
 </div>
 
@@ -68,7 +68,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">De komponenter, du bruger, skal fungere som beskrevet</h2>
-        <p>For at sikre en konsistent oplevelse på tværs af løsninger og portaler er det vigtigt, at de enkelte komponenter opfører sig ens. Brugeren skal ikke være nervøs for, om en ellers velkendt komponent pludselig opfører sig helt anderledes og dermed skaber utryghed. Reglerne for de enkelte komponenter er beskrevet i afsnittet {% include links/component-links.html linktext="komponenter" %}.</p>
+        <p>For at sikre en konsistent oplevelse på tværs af løsninger og portaler er det vigtigt, at de enkelte komponenter opfører sig ens. Brugeren skal ikke være nervøs for, om en ellers velkendt komponent pludselig opfører sig helt anderledes og dermed skaber utryghed. Reglerne for de enkelte komponenter er beskrevet i afsnittet {% include links/internal-link.html linktext="komponenter" %}.</p>
     </div>
 </div>
 

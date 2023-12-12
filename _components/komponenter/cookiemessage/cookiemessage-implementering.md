@@ -22,7 +22,7 @@ tags:
 
 {% include code/syntax.html component="cookie-message" copybutton=true %}
 
-Koden indsættes under body og før header. Gør man brug af {% include links/component-links.html linktext="skip-link" %}, skal skip-link indsættes efter cookiemeddelelsen.
+Koden indsættes under body og før header. Gør man brug af {% include links/component-guideline-link.html linktext="skip-link" %}, skal skip-link indsættes efter cookiemeddelelsen.
 
 Bemærk at DKFDS på nuværende tidspunkt kun leverer HTML og CSS til denne komponent. Funktionaliteten skal man derfor selv håndtere.
 
