@@ -118,7 +118,7 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
 
 <h3 class="h4">Responsiv tabel</h3>
 
-I nogle tilfælde, hvis man bruger {% include links/component-links.html linktext="en responsiv tabel" %}, giver det mening at tabellen ikke er responsiv, når det kommer til print.
+I nogle tilfælde, hvis man bruger {% include links/component-guideline-link.html linktext="en responsiv tabel" %}, giver det mening at tabellen ikke er responsiv, når det kommer til print.
 
 Hvis man ønsker at tabellen skal forblive normal ved print, kan man tilføje klassen `d-print-table` til `table` elementet.
 

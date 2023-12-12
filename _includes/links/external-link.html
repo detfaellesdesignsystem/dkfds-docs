@@ -3,48 +3,71 @@
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
+
     {%- when "nyeste version som zipfil på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    
     {%- when "bootstraps spacing utilities" -%}
         <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "bootstraps display utility" -%}
         <a href="https://getbootstrap.com/docs/4.1/utilities/display/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "bootstraps flex utility" -%}
         <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "06. understøttelse af styresystemer og browsere (fælles aftalt)" -%}
         <a href="https://arkitektur.digst.dk/node/1194#06-understttelse-af-styresystemer-og-browsere-flle" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "krav til løsninger på virk" -%}
         <a href="https://virk.dk/vejledning/virk-for-myndigheder/for-myndigheder-saadan-kommer-man-paa-virk/#Krav-til-loesninger-paa-Virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "package.json" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "@import" -%}
         <a href="https://sass-lang.com/documentation/at-rules/import/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "@use" -%}
         <a href="https://sass-lang.com/documentation/at-rules/use/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "@forward" -%}
         <a href="https://sass-lang.com/documentation/at-rules/forward/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "dkfds" -%}
         <a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when 'se videoen "det fælles designsystem til udviklere" på youtube' -%}
         <a href="https://www.youtube.com/watch?v=A5MvjCaoZWk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when 'se videoen "det fælles designsystem til designere og ux&apos;ere" på youtube' -%}
         <a href="https://www.youtube.com/watch?v=dvXn9a0_8tQ" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "material design" -%}
         <a href="https://fonts.google.com/icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "material design icons" -%}
         <a href="https://materialdesignicons.com/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "vejledning til integration på borger.dk" -%}
         <a href="https://digitaliser.dk/borgerdk/vejledninger-borgerdk/tilslutning-af-selvbetjening-til-borgerdk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "vejledning til integration på virk" -%}
         <a href="https://virk.dk/vejledning/virk-for-myndigheder/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "whatwg" -%}
         <a href="https://whatwg.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "w3c markup validation service (html)" -%}
         <a href="https://validator.w3.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "w3c css validation service (css)" -%}
         <a href="https://jigsaw.w3.org/css-validator/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "se komponentbiblioteket i figma" -%}
         <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- else -%}
         {{ include.linktext }}
+        
 {%- endcase -%}

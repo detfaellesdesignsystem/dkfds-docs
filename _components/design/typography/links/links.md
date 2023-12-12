@@ -27,7 +27,7 @@ tags:
 - "footerlink"
 ---
 
-Se også vores {% include links/component-links.html linktext="Skip-link" %}, {% include links/component-links.html linktext="Funktionslink" %} og {% include links/component-links.html linktext="Tilbage link" %}.
+Se også vores {% include links/component-guideline-link.html linktext="Skip-link" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
 
 {% include code/preview-box.html component="links" link="false" %}
 
@@ -94,9 +94,9 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 ### Anvendes til
 
-- {% include links/component-links.html linktext="Funktionslink" %}
-- {% include links/component-links.html linktext="Brødkrumme" %}
-- {% include links/component-links.html linktext="Footer" %} links
+- {% include links/component-guideline-link.html linktext="Funktionslink" %}
+- {% include links/component-guideline-link.html linktext="Brødkrumme" %}
+- {% include links/component-guideline-link.html linktext="Footer" %} links
 
 ### Anvendes ikke til
 

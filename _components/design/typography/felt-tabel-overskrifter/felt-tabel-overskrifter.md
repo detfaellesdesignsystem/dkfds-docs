@@ -21,7 +21,7 @@ tags:
 {% include code/preview.html component="labels" %}
 
 {:.nobullet-list}
-- {% include links/component-links.html linktext="Se dokumentationen om inputfelter til udviklere" %}
+- {% include links/component-code-link.html linktext="Se dokumentationen om inputfelter til udviklere" %}
 
 ### Designværdier
 
@@ -42,7 +42,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 - Feltoverskrifter placeres altid over feltet, som anvist under formularelementer.
 - Alle felter skal have en feltoverskrift.
 
-{% include links/component-links.html linktext="Se eksempel på brug af feltoverskrift (label)" %}
+{% include links/component-guideline-link.html linktext="Se eksempel på brug af feltoverskrift (label)" %}
 
 {:#tabeloverskrifter}
 ## Tabeloverskrifter
@@ -50,7 +50,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 {% include code/preview.html component="labels-table" %}
 
 {:.nobullet-list}
-- {% include links/component-links.html linktext="Se dokumentationen om tabeller til udviklere" %}
+- {% include links/component-code-link.html linktext="Se dokumentationen om tabeller til udviklere" %}
 
 ### Designværdier
 
@@ -66,4 +66,4 @@ Tabeloverskrifter er visuelt ens med feltoverskrifter. Du kan bruge dem til at s
 
 Tabeloverskrifter beskriver, hvad indholdet i en række eller kolonne angiver.
 
-{% include links/component-links.html linktext="Se eksempel på brug af tabeloverskrift (th)" %}
+{% include links/component-guideline-link.html linktext="Se eksempel på brug af tabeloverskrift (th)" %}

@@ -85,7 +85,7 @@ Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: 
 
 ### Brugervenlighed
 
-- Logoet i {% include links/component-links.html linktext="footeren" %} går til myndighedens forside
+- Logoet i {% include links/component-guideline-link.html linktext="footeren" %} går til myndighedens forside
 - Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.
 - Myndighedens logo er kun at finde i footeren og der er kun et logo
 - Venstrestil altid logoet i footeren
