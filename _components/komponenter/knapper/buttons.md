@@ -50,7 +50,7 @@ Brug også sekundære og tertiære knapper til at vægte vigtigheden af andre ti
 
 Undgå for mange knapbaserede funktioner på samme side.
 
-Funktioner af mindre vigtighed bør du style som et {% include links/component-links.html linktext="funktionslink" %}.
+Funktioner af mindre vigtighed bør du style som et {% include links/component-guideline-link.html linktext="funktionslink" %}.
 
 Brug stort forbogstav og små bogstaver for resten af teksten på knappen.
 
@@ -101,9 +101,9 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 {:#klikbart-ikon}
 ### Klikbart ikon
 
-Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med {% include links/component-links.html linktext="sorteringsikoner i tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
+Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med {% include links/component-guideline-link.html linktext="sorteringsikoner i tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
  
-Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-links.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
+Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-guideline-link.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
 
 {% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" %}
 

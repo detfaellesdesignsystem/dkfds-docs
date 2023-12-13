@@ -45,7 +45,7 @@ Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig
 
 Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for.
 
-Såfremt der er tale om meget {% include links/component-links.html linktext="avancerede tabeller" %}, kan der bruges en tredjepartsløsning.
+Såfremt der er tale om meget {% include links/component-guideline-link.html linktext="avancerede tabeller" %}, kan der bruges en tredjepartsløsning.
 
 Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tale om en numerisk størrelse som f.eks. antal eller pengebeløb. Dette gør det lettere for brugeren at skimme og sammenligne numerisk data (Rutter, 2017). Tal, der ikke angiver en numerisk størrelse og dermed ikke indebærer et behov for sammenligning, skal ikke højrestilles. Det kan f.eks. være et ID-nummer.
 
@@ -87,9 +87,9 @@ Når sortering vælges, sorteres per default stigende. Klikkes der på et aktivt
 
 Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Standardsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.
 
-Hvis kun få kolonner i en tabel kan sorteres, kan komponenten {% include links/component-links.html linktext="Sortering med overflow menu" %} anvendes i stedet.
+Hvis kun få kolonner i en tabel kan sorteres, kan komponenten {% include links/component-guideline-link.html linktext="Sortering med overflow menu" %} anvendes i stedet.
 
-Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten {% include links/component-links.html linktext="Sortering med overflow menu" %}.
+Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten {% include links/component-guideline-link.html linktext="Sortering med overflow menu" %}.
 
 {% include code/preview-box.html component="table-sort" title="Eksempel på sortering i tabel" code="/komponenter/tables/implementering/#sortering-i-tabel" %}
 

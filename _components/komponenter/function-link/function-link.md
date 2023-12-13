@@ -34,7 +34,7 @@ Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print
 
 Brug ikke funktionsikoner til generel navigation mellem sider eller til næste trin. Brug da standard links og primærknap i stedet. Anvend ikke funktionslinks til navigation til forrige side, anvend da tilbage-linket.
 
-Brug {% include links/component-links.html linktext="sprogvælgeren" %} til valg af sprog.
+Brug {% include links/component-guideline-link.html linktext="sprogvælgeren" %} til valg af sprog.
 
 ### Vejledning
 

@@ -25,7 +25,7 @@ tags:
 - besked
 ---
 
-Til forskel fra {% include links/component-links.html linktext="Beskeder (alerts)" %} som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
+Til forskel fra {% include links/component-guideline-link.html linktext="Beskeder (alerts)" %} som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
 Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
 
 {:#retningslinjer}
@@ -37,7 +37,7 @@ At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugere
 
 ### Anvendes ikke til
 
-Brug {% include links/component-links.html linktext="Beskeder (alerts)" %}, hvis en besked skal placeres som en del af indholdet på siden.
+Brug {% include links/component-guideline-link.html linktext="Beskeder (alerts)" %}, hvis en besked skal placeres som en del af indholdet på siden.
 
 Brug ikke toastbeskeder til at markere fejlindtastning i et specifikt felt. Brug da {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} i stedet.
 

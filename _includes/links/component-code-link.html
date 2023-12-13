@@ -11,7 +11,7 @@
     {%- when "badges" -%}
         <a href="/komponenter/badges/implementering/">{{ include.linktext }}</a>
 
-    {%- when "beskeder" -%}
+    {%- when "beskeder", "javascript til luk knap i beskeder" -%}
         <a href="/komponenter/beskeder/implementering/">{{ include.linktext }}</a>
 
     {%- when "brødkrumme" -%}
@@ -20,13 +20,13 @@
     {%- when "cards" -%}
         <a href="/komponenter/cards/implementering/">{{ include.linktext }}</a>
 
-    {%- when "cookiemeddelelse" -%}
+    {%- when "cookiemeddelelse", "cookiemeddelelser" -%}
         <a href="/komponenter/cookiemeddelelse/implementering/">{{ include.linktext }}</a>
 
     {%- when "datofelter" -%}
         <a href="/komponenter/datofelter/implementering/">{{ include.linktext }}</a>
 
-    {%- when "datovælger" -%}
+    {%- when "datovælger", "datovælgeren" -%}
         <a href="/komponenter/datovaelger/implementering/">{{ include.linktext }}</a>
     {%- when "sprogoversættelser" -%}
         <a href="/komponenter/datovaelger/implementering/#sprog">{{ include.linktext }}</a>
@@ -42,6 +42,12 @@
 
     {%- when "fejlmeddelelser" -%}
         <a href="/komponenter/fejlmeddelelser/implementering/">{{ include.linktext }}</a>
+    {%- when "fejlmeddelelser's implementering med datofelter." -%}
+        <a href="/komponenter/fejlmeddelelser/implementering/#datofelter">{{ include.linktext }}</a>
+    {%- when "fejlmeddelelser's implementering med datovælgeren." -%}
+        <a href="/komponenter/fejlmeddelelser/implementering/#datovaelger">{{ include.linktext }}</a>
+    {%- when "fejlmeddelelser's implementering med tekstområde." -%}
+        <a href="/komponenter/fejlmeddelelser/implementering/#tekstomraade">{{ include.linktext }}</a>
 
     {%- when "fejlopsummering", "en fejlopsummering" -%}
         <a href="/komponenter/fejlopsummering/implementering/">{{ include.linktext }}</a>
@@ -57,6 +63,8 @@
 
     {%- when "header" -%}
         <a href="/komponenter/header/implementering/">{{ include.linktext }}</a>
+    {%- when "eksemplet med den overordnede struktur i headeren" -%}
+        <a href="/komponenter/header/implementering/#html-struktur">{{ include.linktext }}</a>
 
     {%- when "inputfelter", "se dokumentationen om inputfelter til udviklere", "implementeringen af inputfelter" -%}
         <a href="/komponenter/inputfelter/implementering/">{{ include.linktext }}</a>
@@ -67,10 +75,10 @@
     {%- when "spinner" -%}
         <a href="/komponenter/spinner/implementering/">{{ include.linktext }}</a>
 
-    {%- when "modal" -%}
+    {%- when "modal", "modalkomponenten" -%}
         <a href="/komponenter/modal/implementering/">{{ include.linktext }}</a>
 
-    {%- when "overflow menu" -%}
+    {%- when "overflow menu", "dokumentationen for implementering for overflow menu" -%}
         <a href="/komponenter/overflowmenu/implementering/">{{ include.linktext }}</a>
 
     {%- when "paginering" -%}
@@ -82,11 +90,17 @@
     {%- when "sprogvælger" -%}
         <a href="/komponenter/sprogvaelger/implementering/">{{ include.linktext }}</a>
 
-    {%- when "søgefelt" -%}
+    {%- when "søgefelt", "søgefeltkomponenten" -%}
         <a href="/komponenter/search/implementering/">{{ include.linktext }}</a>
 
-    {%- when "tabeller", "se dokumentationen om tabeller til udviklere" -%}
+    {%- when "tabeller", "se dokumentationen om tabeller til udviklere", "tabeller med valgbare rækker" -%}
         <a href="/komponenter/tables/implementering/">{{ include.linktext }}</a>
+    {%- when "horisontalt scroll" -%}
+        <a href="/komponenter/tables/implementering/#horisontalt-scroll">{{ include.linktext }}</a>
+    {%- when "responsive klasser", "responsiv tabel", "responsiv" -%}
+        <a href="/komponenter/tables/implementering/#responsiv">{{ include.linktext }}</a>
+    {%- when "variant" -%}
+        <a href="/komponenter/tables/implementering/#varianter">{{ include.linktext }}</a>
 
     {%- when "tags" -%}
         <a href="/komponenter/tags/implementering/">{{ include.linktext }}</a>
@@ -97,7 +111,7 @@
     {%- when "tilbage-link" -%}
         <a href="/komponenter/tilbage-link/implementering/">{{ include.linktext }}</a>
 
-    {%- when "tilbage til toppen" -%}
+    {%- when "tilbage til toppen", "tilbage til toppen-knappen" -%}
         <a href="/komponenter/tilbage-til-top/implementering/">{{ include.linktext }}</a>
 
     {%- when "tjekboks" -%}
@@ -109,7 +123,7 @@
     {%- when "toggle switch" -%}
         <a href="/komponenter/toggle/implementering/">{{ include.linktext }}</a>
 
-    {%- when "tooltip" -%}
+    {%- when "tooltip", "for mere info om implementering se tooltip komponenten" -%}
         <a href="/komponenter/tooltip/implementering/">{{ include.linktext }}</a>
 
     {%- when "trinindikator" -%}

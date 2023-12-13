@@ -39,7 +39,7 @@ Sørg for at linkene i fejlopsummeringen er identiske med fejlmeddelelsen de lin
 
 For fejl i et enkeltstående felt, skal du linke direkte til feltet.
 
-Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelterne i {% include links/component-links.html linktext="datofelter" %}, skal du linke til det første felt, der indeholder en fejl.
+Når en bruger skal indtaste svar i flere felter, fx dag-, måned- og årsfelterne i {% include links/component-guideline-link.html linktext="datofelter" %}, skal du linke til det første felt, der indeholder en fejl.
 
 Hvis du ikke ved, hvilket felt der indeholder en fejl, skal du linke til det første felt i gruppen af felter.
 

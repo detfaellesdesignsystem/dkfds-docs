@@ -47,7 +47,7 @@ tags:
 
 Defineres med klassen `button-primary`.
 
-Bemærk særlige {% include links/component-links.html linktext="retningslinjer" %} for primær knap.
+Bemærk særlige {% include links/component-guideline-link.html linktext="retningslinjer" %} for primær knap.
 
 {:#sekundaerknap}
 ### Sekundær

@@ -50,11 +50,11 @@ Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så bruger
 
 Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
 
-Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en {% include links/component-links.html linktext="besked" %}.
+Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en {% include links/component-guideline-link.html linktext="besked" %}.
 
 ### Vejledning
 
-Fejlmeddelelsen skal også vises som et link til fejlen i {% include links/component-links.html linktext="fejlopsummeringen" %}. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
+Fejlmeddelelsen skal også vises som et link til fejlen i {% include links/component-guideline-link.html linktext="fejlopsummeringen" %}. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
 
 Vis fejlmeddelelsen i rød umiddelbart over, der hvor fejlen er.
 

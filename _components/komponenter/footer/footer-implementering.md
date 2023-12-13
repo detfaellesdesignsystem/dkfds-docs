@@ -42,7 +42,7 @@ Man kan indsætte en vandret liste, der er defineret med klasserne `unstyled-lis
 
 Man kan indsætte et {% include links/internal-link.html linktext="grid" %} med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
 
-{% include links/component-links.html linktext="Se eksempler på forskellige sammensætninger" %}.
+{% include links/component-guideline-link.html linktext="Se eksempler på forskellige sammensætninger" %}.
 
 ### Links
 

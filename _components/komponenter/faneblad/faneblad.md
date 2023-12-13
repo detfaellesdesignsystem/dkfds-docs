@@ -44,7 +44,7 @@ Faneblade anvendes ikke til at opdele et logisk flow eller en sekvens af handlin
 
 Faneblade anvendes i afgrænsede sektioner. Indholdet vises indrammet, så brugeren ikke er i tvivl om hvor det starter og slutter. Det er muligt at anvende flere fanebladskomponenter på en side. 
 
-Overvej om faneblade er den rette løsning. Vær opmærksom på, at brugeren kun kan se indholdet fra én fane ad gangen. Alternativer til faneblade kan være {% include links/component-guideline-link.html linktext="accordions" %} eller {% include links/component-links.html linktext="detaljekomponenten" %}, hvis du ønsker at indhold først bliver synligt når brugeren aktivt vælger det.
+Overvej om faneblade er den rette løsning. Vær opmærksom på, at brugeren kun kan se indholdet fra én fane ad gangen. Alternativer til faneblade kan være {% include links/component-guideline-link.html linktext="accordions" %} eller {% include links/component-guideline-link.html linktext="detaljekomponenten" %}, hvis du ønsker at indhold først bliver synligt når brugeren aktivt vælger det.
 Opdeling af indholdet på flere sider kan også være et alternativ. Faneblade bør kun anvendes hvis indholdet i de forskellige faneblade deler overordnet kontekst.
 
 Hvis du ønsker at anvende faner, bør det testes på din målgruppe før din løsning går i produktion.

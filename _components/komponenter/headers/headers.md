@@ -37,7 +37,7 @@ En eventuel overordnet navigation (topnavigation) skal også placeres i headeren
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke topnavigationen som faneblade, anvend da {% include links/component-links.html linktext="faneblade" %}. 
+Brug ikke topnavigationen som faneblade, anvend da {% include links/component-guideline-link.html linktext="faneblade" %}. 
 
 ### Vejledning
 
@@ -82,7 +82,7 @@ Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, de
 {:#varianter}
 ## Varianter
 
-Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-links.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
+Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-guideline-link.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 
 {% include code/preview-image.html component="header-switch-language" %}
 

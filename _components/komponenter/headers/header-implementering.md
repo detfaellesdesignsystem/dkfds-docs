@@ -25,7 +25,7 @@ Nedenstående eksempel viser den overordnede struktur i `header`-elementet. De �
 {:#html-struktur}
 {% include code/syntax.html component="header-overview" copybutton=true %}
 
-Placer `header`-elementet i din HTML-sides `body`-element. Du kan læse mere om {% include links/component-links.html linktext="tilbage til toppen-knappen" %} og {% include links/component-guideline-link.html linktext="skip-link" %} på disse komponenters sider.
+Placer `header`-elementet i din HTML-sides `body`-element. Du kan læse mere om {% include links/component-code-link.html linktext="tilbage til toppen-knappen" %} og {% include links/component-guideline-link.html linktext="skip-link" %} på disse komponenters sider.
 
 #### Overlay og mobilmenu
 
@@ -51,7 +51,7 @@ Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises p
 
 
 
-Se eventuelt {% include links/component-links.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
+Se eventuelt {% include links/component-code-link.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
 
 #### Række 2
 
@@ -67,7 +67,7 @@ Anden del skal indsættes i mobilmenuen <em>før</em> række 1 og indeholder kod
 
 {% include code/syntax.html component="header-solution-mobile" copybutton=true %}
 
-Se eventuelt {% include links/component-links.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
+Se eventuelt {% include links/component-code-link.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
 
 #### Række 3
 

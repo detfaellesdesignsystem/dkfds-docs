@@ -29,7 +29,7 @@ Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og
 
 ### Anvendes ikke til
 
-Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten {% include links/component-links.html linktext="datofelter" %}.
+Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten {% include links/component-guideline-link.html linktext="datofelter" %}.
 
 ### Vejledning
 

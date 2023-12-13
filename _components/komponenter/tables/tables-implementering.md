@@ -65,7 +65,7 @@ Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`
 ### Responsiv tabel
 En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved {% include links/internal-link.html linktext="breakpoint" %} `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. 
 
-Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende {% include links/component-links.html linktext="horisontalt scroll" %} - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.
+Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende {% include links/component-code-link.html linktext="horisontalt scroll" %} - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.
 
 Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:
 
@@ -116,7 +116,7 @@ Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv
 
 {:#soegning-i-tabeller}
 ### Søgning i tabeller
-Anvend {% include links/component-links.html linktext="søgefeltkomponenten" %} sammen med din tabel og tilføj `aria-live="polite"` til `<table>`. 
+Anvend {% include links/component-code-link.html linktext="søgefeltkomponenten" %} sammen med din tabel og tilføj `aria-live="polite"` til `<table>`. 
 
 Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
 
@@ -155,7 +155,7 @@ Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/
 
 Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers/titel, anden kolonne til indhold/information og tredje kolonne til eventuel redigering af rækkens indhold. Husk at markere `scope="row"` for hver tabelheader.
 
-Listen kan gøres {% include links/component-links.html linktext="responsiv" %} ved at tilføje klassen med det ønskede breakpoint. 
+Listen kan gøres {% include links/component-code-link.html linktext="responsiv" %} ved at tilføje klassen med det ønskede breakpoint. 
 
 {:#strukturerede-lister-edit}
 #### Struktureret liste med redigér
