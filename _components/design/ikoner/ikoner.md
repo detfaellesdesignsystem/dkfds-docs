@@ -58,14 +58,14 @@ Hvis du har brug for ikoner, der ikke findes i {% include links/internal-link.ht
 
 Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes.
 
-<a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link" target="_blank">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Vejledning til design af dit eget ikon" %}
 
 ### Links
 
 {:nobullet-list}
-- <a href="https://www.nngroup.com/articles/icon-usability/" class="icon-link">Icon Usability<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/icon-testing/" class="icon-link">Usability Testing of Icons<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/classifying-icons/" class="icon-link">Icon Classification: Resemblance, Reference, and Arbitrary Icons<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Icon Usability" %}
+- {% include links/external-link.html linktext="Usability Testing of Icons" %}
+- {% include links/external-link.html linktext="Icon Classification: Resemblance, Reference, and Arbitrary Icons" %}
 
 {:#betydning}
 ## Udvalgte ikoner og deres betydning
@@ -75,11 +75,11 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
         <ul>
-            <li><a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li>{% include links/external-link.html linktext="Material Design" %}</li>
+            <li>{% include links/external-link.html linktext="Material Design Icons" %}</li>
         </ul>
         <p>Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes på listen.</p>
-        <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+        <p>{% include links/external-link.html linktext="Vejledning til design af dit eget ikon" %}</p>
     </div>
 </details>
 <form method="get" id="search-icons-form">
@@ -356,14 +356,14 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
       <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
       <p class="alert-text">Prøv evt. at søge hos:</p>
       <ul class="nobullet-list">
-        <li><a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li>{% include links/external-link.html linktext="Material Design" %}</li>
+        <li>{% include links/external-link.html linktext="Material Design Icons" %}</li>
       </ul>
     </div>
   </div>
 </div>
 
-<p class="mt-9"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Efterspørg eller giv feedback på et ikon på vores FDS GitHub side<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+<p class="mt-9">{% include links/external-link.html linktext="Efterspørg eller giv feedback på et ikon på vores FDS GitHub side" %}</p>
 
 <script>
   let searchTerm, selectedIcon;

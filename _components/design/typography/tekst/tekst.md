@@ -131,7 +131,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 
 {:.nobullet-list}
 - {% include links/component-guideline-link.html linktext="Se eksempel på brug af fejlmeddelelse" %}
-- <a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" class="icon-link">Ti gode råd vedrørende fejlmeddelelser i formularer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Ti gode råd vedrørende fejlmeddelelser i formularer" %}
 
 
 

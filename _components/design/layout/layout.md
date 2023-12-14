@@ -85,7 +85,8 @@ En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servi
 
 {:.h5}
 ### Links
-<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Tilgængelighed: sidestruktur og header<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+
+{% include links/external-link.html linktext="Tilgængelighed: sidestruktur og header" %}
 
 ## Indhold
 
@@ -133,7 +134,7 @@ Det specifikke indhold i selvbetjeningsløsningerne kan variere. De konkrete ret
        <h3 class="h5">Brug et responsivt grid</h3>
        <p>Brug et grid-system til fx til at styre dit layout. Grid skaber struktur i informationer. Responsivt grid tilpasser sig desuden skærmformatet.</p>
        <p>{% include links/internal-link.html linktext="Grid’et i designsystemet" %}</p>
-       <p><a href="/eksempler/">Eksempler på selvbetjeningsløsninger</a></p>
+       <p>{% include links/internal-link.html linktext="Eksempler på selvbetjeningsløsninger" %}</p>
     </div>
     <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
         <img src="{{ site.baseurl }}/assets/img/descriptionimages/Brug_et_grid.svg" class="my-5 mx-2" alt="Side med gridsystem" />

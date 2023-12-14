@@ -32,9 +32,9 @@ At nedskalere infografik til tablet og mobil er ikke altid optimalt. Der kan med
 
 ### Eksempel på responsiv infografik
 
-<a class="d-inline-block mb-4" href="/eksempel/when-bike-responsive/">Se eksemplet på en ny side</a>
+{% include links/example-link.html linktext="Se eksemplet på en ny side" %}
 
-#### Desktop fuld bredde
+<h4 class="mt-7">Desktop fuld bredde</h4>
 
 {% include code/components/when-bike-desktop.html %}
 

@@ -30,13 +30,13 @@ Du kan placere dit myndighedslogo i footeren, hvis du har behov for det.
 
 Skal din løsning på borger.dk skal der være et borger.dk logo i headeren.
 
-<a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" download="logo-borgerdk">Download borger.dks logo (svg-fil)</a>
+{% include links/internal-link.html linktext="Download borger.dks logo (svg-fil)" %}
 
 <img src="{{ site.baseurl }}/assets/svg/logo_virk.svg" height="48" alt="Logo til Virk selvbetjeningsløsninger"/>
 
 Skal din løsning på Virk skal der være et Virk logo i headeren.
 
-<a href="{{ site.baseurl }}/assets/svg/logo_virk.svg" download="logo_virk">Download Virks logo (svg-fil)</a>
+{% include links/internal-link.html linktext="Download Virks logo (svg-fil)" %}
 
 {:#retningslinjer-for-logo-i-headeren}
 ## Retningslinjer for logo i headeren
@@ -61,11 +61,11 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
 ### Links
 
 <ul class="nobullet-list">
-    <li><a href="http://uxmovement.com/navigation/why-you-should-never-center-or-right-align-your-logo/?ref=webdesignernews.com" class="icon-link">Why You Should Never Center or Right Align Your Logo<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://www.nngroup.com/articles/centered-logos/" class="icon-link">Centered Logos Hurt Website Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://www.nngroup.com/articles/logo-placement-brand-recall/" class="icon-link">Website Logo Placement for Maximum Brand Recall<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://www.nngroup.com/videos/logo-placement/" class="icon-link">Logo Placement Affects Web Navigation and Brand Recall<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://www.nngroup.com/articles/homepage-links/" class="icon-link">Homepage Links Remain a Necessity<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li>{% include links/external-link.html linktext="Why You Should Never Center or Right Align Your Logo" %}</li>
+    <li>{% include links/external-link.html linktext="Centered Logos Hurt Website Navigation" %}</li>
+    <li>{% include links/external-link.html linktext="Website Logo Placement for Maximum Brand Recall" %}</li>
+    <li>{% include links/external-link.html linktext="Logo Placement Affects Web Navigation and Brand Recall" %}</li>
+    <li>{% include links/external-link.html linktext="Homepage Links Remain a Necessity" %}</li>
 </ul>
 
 {:#retningslinjer-for-logo-i-footeren}

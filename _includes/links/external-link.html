@@ -11,15 +11,70 @@
 
     {%- when "se koden på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "meld fejl og mangler ind via github" -%}
+    {%- when "meld fejl og mangler ind via github", "efterspørg eller giv feedback på et ikon på vores fds github side" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "nyeste version som zipfil på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "package.json" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+    {%- comment -%} -------- WCAG -------- {%- endcomment -%}
+
+    {%- when "wcag 2.1 success criterion 1.3.5 identify input purpose" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "timing adjustable: understanding sc 2.2.1" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "wcag 2.1 success criterion 1.4.3: contrast (minimum)", "læs om kontrastforhold for tekst i wcag 2.1 (engelsk)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "wcag 2.1 success criterion 1.4.11: non-text contrast", "læs om kontrastforhold for ikke-tekstbaseret indhold i wcag 2.1 (engelsk)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "inkludér altid tekstalternativer" -%}
+        <a href="https://www.w3.org/TR/WCAG21/#text-alternatives" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+    {%- comment -%} -------- arkitektur.digst.dk -------- {%- endcomment -%}
+
+    {%- when "de fælles krav til digitale løsninger" -%}
+        <a href="https://arkitektur.digst.dk/node/697" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "06. understøttelse af styresystemer og browsere (fælles aftalt)" -%}
+        <a href="https://arkitektur.digst.dk/node/1194#06-understttelse-af-styresystemer-og-browsere-flle" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "forvaltningsloven" -%}
+        <a href="https://arkitektur.digst.dk/forvaltningsloven-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "sikkerhed" -%}
+        <a href="https://arkitektur.digst.dk/sikkerhed-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "single digital gateway" -%}
+        <a href="https://arkitektur.digst.dk/single-digital-gateway-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "tilkobling til dansk eid-gateway" -%}
+        <a href="https://arkitektur.digst.dk/tilkobling-til-dansk-eid-gateway-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "webtilgængelighed" -%}
+        <a href="https://arkitektur.digst.dk/webtilgaengelighed-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "01. tidlig brugerinddragelse" -%}
+        <a href="https://arkitektur.digst.dk/01-tidlig-brugerinddragelse-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "02. sprog" -%}
+        <a href="https://arkitektur.digst.dk/02-sprog-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "03. konventioner for flow og funktionalitet" -%}
+        <a href="https://arkitektur.digst.dk/03-konventioner-flow-og-funktionalitet-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "04. feltvalidering" -%}
+        <a href="https://arkitektur.digst.dk/04-feltvalidering-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "05. personalisering" -%}
+        <a href="https://arkitektur.digst.dk/05-personalisering-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "06. understøttelse af styresystemer og browsere" -%}
+        <a href="https://arkitektur.digst.dk/06-understoettelse-af-styresystemer-og-browsere-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "07. understøttelse af skærmstørrelser" -%}
+        <a href="https://arkitektur.digst.dk/07-understoettelse-af-skaermstoerrelser-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "08. bestå den fællesoffentlige brugertest" -%}
+        <a href="https://arkitektur.digst.dk/08-bestaa-den-faellesoffentlige-brugertest-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "09. indsamling af viden om brugernes anvendelse af digitale løsninger" -%}
+        <a href="https://arkitektur.digst.dk/09-indsamling-af-viden-om-brugernes-anvendelse-af-digitale-loesninger-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "10. anvendelse af infrastrukturkomponenter og andre komponenter" -%}
+        <a href="https://arkitektur.digst.dk/10-anvendelse-af-infrastrukturkomponenter-og-andre-komponenter-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "11. genbrug af datakilder" -%}
+        <a href="https://arkitektur.digst.dk/11-genbrug-af-datakilder-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "12. efterlevelse af aftalte arkitekturstandarder" -%}
+        <a href="https://arkitektur.digst.dk/12-efterlevelse-af-aftalte-arkitekturstandarder-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "13. krav til løsninger, der skal på borger.dk og virk" -%}
+        <a href="https://arkitektur.digst.dk/13-krav-til-loesninger-der-skal-paa-borgerdk-og-virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     
     {%- comment -%} -------- Other -------- {%- endcomment -%}
@@ -32,9 +87,6 @@
 
     {%- when "bootstraps flex utility" -%}
         <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "06. understøttelse af styresystemer og browsere (fælles aftalt)" -%}
-        <a href="https://arkitektur.digst.dk/node/1194#06-understttelse-af-styresystemer-og-browsere-flle" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "krav til løsninger på virk" -%}
         <a href="https://virk.dk/vejledning/virk-for-myndigheder/for-myndigheder-saadan-kommer-man-paa-virk/#Krav-til-loesninger-paa-Virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -62,6 +114,9 @@
 
     {%- when "material design icons" -%}
         <a href="https://materialdesignicons.com/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "vejledning til design af dit eget ikon" -%}
+        <a href="https://material.io/design/iconography/system-icons.html#design-principles" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "vejledning til integration på borger.dk" -%}
         <a href="https://digitaliser.dk/borgerdk/vejledninger-borgerdk/tilslutning-af-selvbetjening-til-borgerdk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -99,14 +154,59 @@
     {%- when "ally long: field-tested interfaces for the next billion (2017)" -%}
         <a href="https://youtu.be/IjjHTa0YEg4" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "timing adjustable: understanding sc 2.2.1" -%}
-        <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "tekniske krav til tilslutning af it-system i nemlog-in" -%}
         <a href="https://www.digitaliser.dk/resource/2553483" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "wcag 2.1 success criterion 1.3.5 identify input purpose" -%}
-        <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "læs mere om kontrastforhold" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "a11y color blind empathy", "a11y color blind empathy - chrome plugin" -%}
+        <a href="https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc?hl=en" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "webaims contrast checker" -%}
+        <a href="https://webaim.org/resources/contrastchecker/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "flexbox" -%}
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "8-point grid: vertical rhythm" -%}
+        <a href="https://medium.com/built-to-adapt/8-point-grid-vertical-rhythm-90d05ad95032" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "spacing methods - baseline" -%}
+        <a href="https://material.io/design/layout/spacing-methods.html#baseline" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "icon usability" -%}
+        <a href="https://www.nngroup.com/articles/icon-usability/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "usability testing of icons" -%}
+        <a href="https://www.nngroup.com/articles/icon-testing/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "icon classification: resemblance, reference, and arbitrary icons" -%}
+        <a href="https://www.nngroup.com/articles/classifying-icons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tilgængelighed: sidestruktur og header" -%}
+        <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "why you should never center or right align your logo" -%}
+        <a href="http://uxmovement.com/navigation/why-you-should-never-center-or-right-align-your-logo/?ref=webdesignernews.com" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    
+    {%- when "centered logos hurt website navigation" -%}
+        <a href="https://www.nngroup.com/articles/centered-logos/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "website logo placement for maximum brand recall" -%}
+        <a href="https://www.nngroup.com/articles/logo-placement-brand-recall/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "logo placement affects web navigation and brand recall" -%}
+        <a href="https://www.nngroup.com/videos/logo-placement/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "homepage links remain a necessity" -%}
+        <a href="https://www.nngroup.com/articles/homepage-links/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when '"open font license" betingelser' -%}
+        <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "ti gode råd vedrørende fejlmeddelelser i formularer" -%}
+        <a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- else -%}
         {{ include.linktext }}

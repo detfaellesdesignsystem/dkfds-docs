@@ -142,12 +142,18 @@
         <a href="/komponenter/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
     {%- when "download svg-filer (version 7.0.0)" -%}
         <a href="/downloads/FDS-Komponenter-SVG-Version-700.zip"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
-    {%- when "se eksemplerne" -%}
+    {%- when "se eksemplerne", "eksempler på selvbetjeningsløsninger" -%}
         <a href="/eksempler/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
     {%- when "se hvilke krav, som gælder for din løsning" -%}
         <a href="/krav/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
     {%- when "se eksempel på, hvordan siden kan se ud med fds" -%}
         <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "download borger.dks logo (svg-fil)" -%}
+        <a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" download="logo-borgerdk">{{ include.linktext }}</a>
+    {%- when "download virks logo (svg-fil)" -%}
+        <a href="{{ site.baseurl }}/assets/svg/logo_virk.svg" download="logo_virk">{{ include.linktext }}</a>
+    
+    
     {%- else -%}
         {{ include.linktext }}
 {%- endcase -%}

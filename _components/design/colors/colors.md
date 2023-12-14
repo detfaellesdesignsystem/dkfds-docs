@@ -546,7 +546,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 Din tekst skal være læsbar for alle og efterleve gældende regler for kontrastforhold.
 
 <ul class="nobullet-list">
-  <li><a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" class="icon-link" target="_blank">Læs mere om kontrastforhold<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" class="icon-link" target="_blank">Læs om kontrastforhold for tekst i WCAG 2.1 (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="icon-link" target="_blank">Læs om kontrastforhold for ikke-tekstbaseret indhold i WCAG 2.1 (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>{% include links/external-link.html linktext="Læs mere om kontrastforhold" %}</li>
+  <li>{% include links/external-link.html linktext="Læs om kontrastforhold for tekst i WCAG 2.1 (engelsk)" %}</li>
+  <li>{% include links/external-link.html linktext="Læs om kontrastforhold for ikke-tekstbaseret indhold i WCAG 2.1 (engelsk)" %}</li>
 </ul>
