@@ -1,6 +1,9 @@
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
+
+    {%- comment -%} -------- Kom i gang -------- {%- endcomment -%}
+
     {%- when "implementering og kode", "til udviklere", "implementering af dkfds til udviklere", "stylesheetet", "hent kodepakken" -%}
         <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">{{ include.linktext }}</a>
     {%- when "temahåndtering i koden", "temahåndtering", "hvordan du tilpasser dkfds til dit eget tema" -%}
@@ -41,6 +44,12 @@
         <a href="/kom-i-gang/tilgaengelighed/">{{ include.linktext }}</a>
     {%- when "ofte stillede spørgsmål" -%}
         <a href="/kom-i-gang/faq/">{{ include.linktext }}</a>
+
+
+    {%- comment -%} -------- Styleguide -------- {%- endcomment -%}
+
+    {%- when "følg designet" -%}
+        <a href="/design/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
     {%- when "farver", "bruge farverne som anvist" -%}
         <a href="/design/farver/">{{ include.linktext }}</a>
     {%- when "fokusramme" -%}
@@ -113,14 +122,32 @@
         <a href="/design/grid/guidelines/">{{ include.linktext }}</a>
     {%- when "reglerne for grid-systemet", "grid" -%}
         <a href="/design/grid/implementering/">{{ include.linktext }}</a>
-    {%- when "komponent", "se mere under hver komponent i kodesektionen" -%}
-        <a href="/komponenter/">{{ include.linktext }}</a>
+
+
+    {%- comment -%} -------- Styleguide -------- {%- endcomment -%}
+
+    {%- when "kontakt os", "kontakte os" -%}
+        <a href="/faellesskab/kontakt-support/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "deltag i samarbejdsforum" -%}
+        <a href="/faellesskab/samarbejdsforum/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "tilmeld nyhedsmail" -%}
+        <a href="/faellesskab/nyhedsmail/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "følg med i hvad der bliver lavet (release notes)" -%}
+        <a href="/faellesskab/releases/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+
+
+    {%- comment -%} -------- Other -------- {%- endcomment -%}
+
+    {%- when "komponent", "komponenter", "se mere under hver komponent i kodesektionen", "brug komponenterne" -%}
+        <a href="/komponenter/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
     {%- when "download svg-filer (version 7.0.0)" -%}
-        <a href="/downloads/FDS-Komponenter-SVG-Version-700.zip">{{ include.linktext }}</a>
-    {%- when "kontakte os" -%}
-        <a href="/faellesskab/kontakt-support/">{{ include.linktext }}</a>
-    {%- when "komponenter" -%}
-        <a href="/komponenter/">{{ include.linktext }}</a>
+        <a href="/downloads/FDS-Komponenter-SVG-Version-700.zip"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "se eksemplerne" -%}
+        <a href="/eksempler/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "se hvilke krav, som gælder for din løsning" -%}
+        <a href="/krav/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+    {%- when "se eksempel på, hvordan siden kan se ud med fds" -%}
+        <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
     {%- else -%}
         {{ include.linktext }}
 {%- endcase -%}

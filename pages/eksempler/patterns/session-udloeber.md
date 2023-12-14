@@ -33,7 +33,7 @@ Hvis sessionens udløb vil resultere i, at ændringer, som brugere har foretaget
 
 Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialogen gøre opmærksom på dette.
 
-Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/">Se eksempel på, hvordan siden kan se ud med FDS</a>. Den kan ydermere informere brugeren om ekstra sikkerhed.
+Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. {% include links/internal-link.html linktext="Se eksempel på, hvordan siden kan se ud med FDS" %}. Den kan ydermere informere brugeren om ekstra sikkerhed.
 
 Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold.
 
@@ -48,7 +48,6 @@ Tiden der går, før brugeren logges af en løsning automatisk, defineres i forh
 ### Referencer
 
 {:.nobullet-list}
-- <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" class="icon-link">Timing Adjustable:
-Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">Tekniske krav til tilslutning af it-system i NemLog-in<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Timing Adjustable: Understanding SC 2.2.1" %}
+- {% include links/external-link.html linktext="Tekniske krav til tilslutning af it-system i NemLog-in" %}
 

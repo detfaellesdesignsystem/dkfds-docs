@@ -1,11 +1,28 @@
 {%- assign attributes = 'class="icon-link" target="_blank"' -%}
+{%- if include.bold -%}
+    {%- assign attributes = 'class="icon-link bold-link" target="_blank"' -%}
+{%- endif -%}
 {%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
 
+    {%- comment -%} -------- GitHub -------- {%- endcomment -%}
+
+    {%- when "se koden på github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "meld fejl og mangler ind via github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "nyeste version som zipfil på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "package.json" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    
+    {%- comment -%} -------- Other -------- {%- endcomment -%}
     
     {%- when "bootstraps spacing utilities" -%}
         <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -21,9 +38,6 @@
 
     {%- when "krav til løsninger på virk" -%}
         <a href="https://virk.dk/vejledning/virk-for-myndigheder/for-myndigheder-saadan-kommer-man-paa-virk/#Krav-til-loesninger-paa-Virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "package.json" -%}
-        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "@import" -%}
         <a href="https://sass-lang.com/documentation/at-rules/import/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -66,6 +80,33 @@
 
     {%- when "se komponentbiblioteket i figma" -%}
         <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inputfelter - uber’s base designsystem" -%}
+        <a href="https://baseweb.design/components/input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "read-only pattern - carbon designsystem" -%}
+        <a href="https://carbondesignsystem.com/patterns/read-only-states-pattern/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inline edit - patternfly" -%}
+        <a href="https://www.patternfly.org/components/inline-edit/design-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inputfelter - zendesk’s garden designsystem" -%}
+        <a href="https://garden.zendesk.com/components/input" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tim paul: one thing per page (2015)" -%}
+        <a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "ally long: field-tested interfaces for the next billion (2017)" -%}
+        <a href="https://youtu.be/IjjHTa0YEg4" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "timing adjustable: understanding sc 2.2.1" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tekniske krav til tilslutning af it-system i nemlog-in" -%}
+        <a href="https://www.digitaliser.dk/resource/2553483" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "wcag 2.1 success criterion 1.3.5 identify input purpose" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- else -%}
         {{ include.linktext }}

@@ -51,17 +51,17 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 ### Se eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Oplysninger om dig'">Formular til kontaktoplysninger: Oplysninger om dig</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-5/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kontaktoplysninger'">Trinformular til registrering: Kontaktoplysninger</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Ansøgningens type'">Trinformular til ansøgning: Ansøgningens type</a>
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
 ### Referencer
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)
-- <a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" class="icon-link">Tim Paul: One thing per page (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Tim Paul: One thing per page (2015)" %}
 - Jeff Johnson & Kate Finn: Designing User Interfaces for an Aging Population (2017)
-- <a href="https://youtu.be/IjjHTa0YEg4" class="icon-link">Ally Long: Field-tested interfaces for the next billion (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Ally Long: Field-tested interfaces for the next billion (2017)" %}
 - Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Luke Wroblewski: Visible Narratives: Understanding Visual Organization (2003)

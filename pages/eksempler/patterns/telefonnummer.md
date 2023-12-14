@@ -21,7 +21,7 @@ Accepter altid enhver gængs formatering af telefonnumre såsom med eller uden m
 
 Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder til det angivne nummer, brug da “Mobilnummer” som feltets label.
 
-Angiv altid autocomplete attributten i input feltet, så brugerne har mulighed for automatisk udfyldning af feltet (<a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" class="icon-link">WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)
+Anvend autocomplete-attributten i inputfeltet, hvis det er brugerens eget telefonnummer, der skal indtastes ({% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.3.5 Identify Input Purpose" %}).
 
 ## Når målgruppen hovedsageligt har danske telefonnumre
 
