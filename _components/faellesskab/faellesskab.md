@@ -23,7 +23,7 @@ Fordele ved at anvende designsystemet:
 * Du sparer tid og ressourcer, og leveringstiden for løsningen bliver hurtigere.
 
 <div class="mt-5 mb-5">
-    <a href="https://www.youtube.com/watch?v=sFRv0SrC9Rw" target="_blank" class="icon-link">Se videoen "Introduktion til Det Fælles Designsystem" på YouTube<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+    {% include links/external-link.html linktext='Se videoen "Introduktion til Det Fælles Designsystem" på YouTube' %}
 </div>
 
 Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.

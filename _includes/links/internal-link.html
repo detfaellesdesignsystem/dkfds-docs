@@ -212,8 +212,10 @@
         <a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" download="logo-borgerdk">{{ include.linktext }}</a>
     {%- when "download virks logo (svg-fil)" -%}
         <a href="{{ site.baseurl }}/assets/svg/logo_virk.svg" download="logo_virk">{{ include.linktext }}</a>
-    {%- when "fds@erst.dk" -%}
+    {%- when "fds@erst.dk", "send en e-mail til fds-teamet" -%}
         <a href="mailto:fds@erst.dk">{{ include.linktext }}</a>
+    {%- when "læs om vores behandling af dine personoplysninger og dine rettigheder" -%}
+        <a href="/privatlivspolitik-cookies/">{{ include.linktext }}</a>
     
     
     {%- else -%}

@@ -61,7 +61,7 @@ Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.
 
 Brug links til at lade brugeren navigere til andre sider i din løsning.
 
-Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under <a href="#eksternt-link">eksternt link</a>.
+Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under {% include links/internal-link.html linktext="eksternt link" %}.
 
 ### Brugervenlighed
 
