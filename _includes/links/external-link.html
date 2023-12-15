@@ -11,12 +11,23 @@
 
     {%- when "se koden på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "meld fejl og mangler ind via github", "efterspørg eller giv feedback på et ikon på vores fds github side" -%}
+    {%- when "meld fejl og mangler ind via github", 
+             "efterspørg eller giv feedback på et ikon på vores fds github side", 
+             "så må du meget gerne oprette et issue på github",
+             "så er du velkommen til at oprette en sag på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "nyeste version som zipfil på github" -%}
+    {%- when "nyeste version som zipfil på github", "zip-filen i github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- when "package.json" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "variables" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/stylesheets" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "date-input-macroen" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "macroer" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "issue #74 på github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
     {%- comment -%} -------- WCAG -------- {%- endcomment -%}
@@ -25,9 +36,11 @@
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- when "timing adjustable: understanding sc 2.2.1" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "wcag 2.1 success criterion 1.4.3: contrast (minimum)", "læs om kontrastforhold for tekst i wcag 2.1 (engelsk)" -%}
+    {%- when "wcag 2.1 success criterion 1.4.3: contrast (minimum)", 
+             "læs om kontrastforhold for tekst i wcag 2.1 (engelsk)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "wcag 2.1 success criterion 1.4.11: non-text contrast", "læs om kontrastforhold for ikke-tekstbaseret indhold i wcag 2.1 (engelsk)" -%}
+    {%- when "wcag 2.1 success criterion 1.4.11: non-text contrast", 
+             "læs om kontrastforhold for ikke-tekstbaseret indhold i wcag 2.1 (engelsk)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- when "inkludér altid tekstalternativer" -%}
         <a href="https://www.w3.org/TR/WCAG21/#text-alternatives" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -160,7 +173,8 @@
     {%- when "læs mere om kontrastforhold" -%}
         <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "a11y color blind empathy", "a11y color blind empathy - chrome plugin" -%}
+    {%- when "a11y color blind empathy", 
+             "a11y color blind empathy - chrome plugin" -%}
         <a href="https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc?hl=en" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "webaims contrast checker" -%}
@@ -207,6 +221,18 @@
 
     {%- when "ti gode råd vedrørende fejlmeddelelser i formularer" -%}
         <a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "semantisk versionering" -%}
+        <a href="https://semver.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "transpiling" -%}
+        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "polyfills" -%}
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "'dkfds'" -%}
+        <a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- else -%}
         {{ include.linktext }}
