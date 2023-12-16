@@ -49,6 +49,7 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 - <a href="https://www.freecodecamp.org/news/stop-the-overuse-of-overflow-menus-5caa4b54e843/" class="icon-link">Daniel Burka: Stop the overuse of overflow menus (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
 - Martha Brockenbrough i June Cohen: The Unusually Useful Web Book: Everything we’ve learned about why sites succeed! (2003)
 
+{:#sortering}
 ## Sortering
 
 <p class="font-lead">Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.</p>
