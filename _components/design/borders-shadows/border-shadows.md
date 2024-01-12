@@ -123,7 +123,7 @@ tags:
         <td>solid</td>
       </tr>
       <tr>
-        <td>Facit streg</td>
+        <td>Facitstreg</td>
         <td>#747474</td>
         <td>4px</td>
         <td>double</td>

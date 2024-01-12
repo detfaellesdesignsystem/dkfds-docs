@@ -59,12 +59,12 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-<a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
+{% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" class="icon-link">Farhad Manjoo: You Won’t Finish This Article (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Farhad Manjoo: You Won’t Finish This Article (2013)" %}
+- {% include links/external-link.html linktext="Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)" %}
 

@@ -54,4 +54,4 @@ Statusbadges har 4 forskellige farver og formål:
 - <strong class="badge badge-small badge-warning">Gul</strong>, som er advarselsfarven og implementeres med klassen `badge-warning`.
 - <strong class="badge badge-small badge-error">Rød</strong>, som er fejlfarven og implementeres med klassen `badge-error`.
 
-Se eksempel på anvendelse af statusbadges i vores <a href="/faellesskab/releases/">release notes</a>.
+Se eksempel på anvendelse af statusbadges i vores {% include links/internal-link.html linktext="release notes" %}.

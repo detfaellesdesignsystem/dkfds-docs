@@ -85,7 +85,7 @@ Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder kod
 
 {% include code/syntax.html component="header-navigation-mobile" copybutton=true %}
 
-Se eventuelt <a href="/kode/komponenter/header/#html-struktur">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.
+Se eventuelt {% include links/component-code-link.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
 
 #### Topnavigation og venstremenu
 

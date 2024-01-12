@@ -66,7 +66,7 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 ## Referencer 
 
 {:.nobullet-list}
-- <a href="https://design-system.service.gov.uk/components/breadcrumbs/" class="icon-link">GovUK Design System Breadcrumbs<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/breadcrumbs/" class="icon-link">Breadcrumbs: 11 Design Guidelines for Desktop and Mobile<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" class="icon-link">Breadcrumbs In Web Design: Examples And Best Practices<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" class="icon-link">When You Should Use a Breadcrumb Navigation<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="GovUK Design System Breadcrumbs" %}
+- {% include links/external-link.html linktext="Breadcrumbs: 11 Design Guidelines for Desktop and Mobile" %}
+- {% include links/external-link.html linktext="Breadcrumbs In Web Design: Examples And Best Practices" %}
+- {% include links/external-link.html linktext="When You Should Use a Breadcrumb Navigation" %}

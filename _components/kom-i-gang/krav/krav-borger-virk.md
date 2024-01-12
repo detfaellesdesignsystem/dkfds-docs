@@ -39,16 +39,17 @@ Det anbefales desuden, at løsningen har en {% include links/component-guideline
 {:#integration-paa-borgerdk}
 ## Integration på borger.dk
 
-- du skal oprette en <a href="https://www.digitaliser.dk/resource/4134076" class="icon-link">handlingsside på borger.dk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Handlingssiden er den side på borger.dk, hvorfra borgeren klikker sig ind i selvbetjeningsløsningen. Du skal sørge for, at der er udarbejdet en god tekst til handlingssiden, som forbereder borgeren til at anvende løsningen.
+- du skal oprette en {% include links/external-link.html linktext="handlingsside på borger.dk" %}. Handlingssiden er den side på borger.dk, hvorfra borgeren klikker sig ind i selvbetjeningsløsningen. Du skal sørge for, at der er udarbejdet en god tekst til handlingssiden, som forbereder borgeren til at anvende løsningen.
 
-<a href="https://www.digitaliser.dk/resource/4134076" class="icon-link">Vejledning til integration på borger.dk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Vejledning til integration på borger.dk" %}
 
 {:#integration-paa-virk}
 ## Integration på Virk
 
-- din løsning skal have implementeret <a href="https://myndighedsnet.virk.dk/virk-viden/virktoejer/services/virk-taeller" class="icon-link">Virk Tæller<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, der er et digitalt tracking- og analyseværktøj, der tracker brugen af siderne i indberetningsløsningerne på Virk.
-- din løsning skal være publiceret på <a href="https://myndighedsnet.virk.dk/virk-viden/integration-og-krav/proaktiv-tilrettelaeggelse/myndighedernes-forarbejde" class="icon-link">Virks integrationsmiljø<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og gennemgået af Virk inden publicering.
-- du skal udfylde en <a href="https://myndighedsnet.virk.dk/virk-viden/virktoejer/indhold-paa-virk" class="icon-link">introside på Virk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> (via DIA), hvor brugeren kan finde målrettet information om løsningen.
-- du skal <a href="https://myndighedsnet.virk.dk/virk-viden/integration-og-krav/proaktiv-tilrettelaeggelse/myndighedernes-forarbejde" class="icon-link">melde din løsning ind til Virk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, når den er klar til gennemgang.
+- din løsning skal have implementeret {% include links/external-link.html linktext="Virk Tæller" %}, der er et digitalt tracking- og analyseværktøj, der tracker brugen af siderne i indberetningsløsningerne på Virk.
+- din løsning skal være publiceret på {% include links/external-link.html linktext="Virks integrationsmiljø" %} og gennemgået af Virk inden publicering.
+- du skal udfylde en {% include links/external-link.html linktext="introside på Virk" %} (via DIA), hvor brugeren kan finde målrettet information om løsningen.
+- du skal {% include links/external-link.html linktext="melde din løsning ind til Virk" %}, når den er klar til gennemgang.
 
-<a href="https://myndighedsnet.virk.dk/virk-viden/integration-og-krav" class="icon-link">Vejledning til integration på Virk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Vejledning til integration på Virk" %}
+

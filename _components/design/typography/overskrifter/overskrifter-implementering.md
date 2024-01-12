@@ -45,7 +45,7 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 {% include code/preview-box.html component="subheading" link=false title="Eksempel på subheading" %}
 
-{% include links/internal-link.html linktext="Læs retningslinjer for subheadings" %}
+Læs retningslinjer for {% include links/internal-link.html linktext="subheadings" %}.
 
 ### HTML Struktur
 

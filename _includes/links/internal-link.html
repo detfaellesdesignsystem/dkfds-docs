@@ -8,157 +8,184 @@
 
     {%- comment -%} -------- Kom i gang -------- {%- endcomment -%}
 
-    {%- when "implementering og kode", 
-             "til udviklere", 
-             "implementering af dkfds til udviklere", 
-             "stylesheetet", 
-             "hent kodepakken" -%}
+    {%- when "implementering og kode" -%}
+        <a href="/kom-i-gang/implementering-kode/">{{ include.linktext }}</a>
+
+    {%- when "hent kodepakken",
+             "stylesheetet" -%}
         <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">{{ include.linktext }}</a>
-    {%- when "temahåndtering i koden", 
-             "temahåndtering", 
-             "hvordan du tilpasser dkfds til dit eget tema" -%}
+
+    {%- when "temahåndtering" -%}
         <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">{{ include.linktext }}</a>
-    {%- when "`dkfds.init()` udvidet med scope json parameter, så man kan køre `dkfds.init()` mere målrettet på siden" -%}
-        <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#javascript">{{ include.linktext }}</a>
+
     {%- when "hjælpeklasser (utilities)" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/">{{ include.linktext }}</a>
-    {%- when "hjælpeklasse", 
+
+    {%- when "hjælpeklasse for display", 
              "hjælpeklasser for display" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">{{ include.linktext }}</a>
+
     {%- when "bredde i procent" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#bredde-i-procent">{{ include.linktext }}</a>
+
     {%- when "breakpoint" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser">{{ include.linktext }}</a>
+
     {%- when "browserunderstøttelse" -%}
         <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">{{ include.linktext }}</a>
-    {%- when "eksempel på implementering i angular" -%}
-        <a href="/kom-i-gang/implementering-kode/eksempler-implementering/">{{ include.linktext }}</a>
-    {%- when "plugins", 
-             "plugins i kode sektionen" -%}
+
+    {%- when "plugins" -%}
         <a href="/kom-i-gang/implementering-kode/plugins/">{{ include.linktext }}</a>
+
     {%- when "print" -%}
         <a href="/kom-i-gang/implementering-kode/print/">{{ include.linktext }}</a>
-    {%- when "kode", 
-             "frameworks" -%}
+
+    {%- when "frameworks" -%}
         <a href="/kom-i-gang/implementering-kode/frameworks/">{{ include.linktext }}</a>
-    {%- when "designprincipper" -%}
-        <a href="/kom-i-gang/designprincipper/">{{ include.linktext }}</a>
-    {%- when "designressourcer", 
-             "svg filer", 
-             "figma komponent bibliotek", 
-             "design og ressourcer", 
-             "designets grundprincipper" -%}
+
+    {%- when "design og ressourcer" -%}
         <a href="/kom-i-gang/designressourcer/">{{ include.linktext }}</a>
-    {%- when "tjekliste", 
-             "designtjek" -%}
+
+    {%- when "grundprincipper", 
+             "designets grundprincipper" -%}
+        <a href="/kom-i-gang/designressourcer/#grundprincipper">{{ include.linktext }}</a>
+
+    {%- when "designressourcer" -%}
+        <a href="/kom-i-gang/designressourcer/#design-ressourcer">{{ include.linktext }}</a>
+
+    {%- when "tjekliste" -%}
         <a href="/kom-i-gang/tjekliste/">{{ include.linktext }}</a>
-    {%- when "krav", 
-             "krav til selvbetjeningsløsninger", 
-             "se hvilke krav og anbefalinger, der gælder din løsning" -%}
+        
+    {%- when "krav",
+             "kravene",
+             "se hvilke krav, som gælder for din løsning" -%}
         <a href="/kom-i-gang/krav/">{{ include.linktext }}</a>
-    {%- when "læs om kravene og se om du skal anvende designsystemet", 
-             "portalernes krav til integration (når du skal på borger.dk og virk)" -%}
-        <a href="/kom-i-gang/krav/borgerdk-virk/">{{ include.linktext }}</a>
-    {%- when "om kravene til selvbetjeningsløsninger" -%}
-        <a href="/kom-i-gang/krav/om-kravene/">{{ include.linktext }}</a>
+
     {%- when "tilgængelighed" -%}
         <a href="/kom-i-gang/tilgaengelighed/">{{ include.linktext }}</a>
+
     {%- when "ofte stillede spørgsmål" -%}
         <a href="/kom-i-gang/faq/">{{ include.linktext }}</a>
+
 
 
     {%- comment -%} -------- Styleguide -------- {%- endcomment -%}
 
     {%- when "følg designet" -%}
         <a href="/design/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
-    {%- when "farver", 
-             "bruge farverne som anvist" -%}
+
+    {%- when "farver" -%}
         <a href="/design/farver/">{{ include.linktext }}</a>
-    {%- when "fokusramme" -%}
-        <a href="/design/farver/#fokusfarve">{{ include.linktext }}</a>
-    {%- when "farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering", 
-             "datavisualiseringsfarver" -%}
+
+    {%- when "datavisualiseringsfarver" -%}
         <a href="/design/farver/#datavisualiseringsfarver">{{ include.linktext }}</a>
-    {%- when "angivne font", 
-             "beskrevet i afsnittet om typografi", 
-             "typografi" -%}
+
+    {%- when "typografi" -%}
         <a href="/design/typografi/">{{ include.linktext }}</a>
-    {%- when "retningslinjer" -%}
+
+    {%- when "retningslinjer for fonte" -%}
         <a href="/design/typografi/fonte/guidelines/">{{ include.linktext }}</a>
+
     {%- when "overskrifter" -%}
         <a href="/design/typografi/overskrifter/guidelines/">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjerne for overskrifter" -%}
         <a href="/design/typografi/overskrifter/guidelines/#retningslinjer">{{ include.linktext }}</a>
-    {%- when "læs retningslinjer for subheadings", 
-             "subheading" -%}
+
+    {%- when "subheading",
+             "subheadings" -%}
         <a href="/design/typografi/overskrifter/guidelines/#subheading">{{ include.linktext }}</a>
+
     {%- when "links i overskrifter" -%}
         <a href="/design/typografi/overskrifter/guidelines/#overskrift-som-link">{{ include.linktext }}</a>
+
     {%- when "lille brødtekst" -%}
-        <a href="/design/typografi/tekst/guidelines/">{{ include.linktext }}</a>
+        <a href="/design/typografi/tekst/guidelines/#broedtekst">{{ include.linktext }}</a>
+
     {%- when "stor tekst" -%}
         <a href="/design/typografi/tekst/guidelines/#stor-tekst">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjerne for manchet tekst" -%}
         <a href="/design/typografi/tekst/guidelines/#manchet-tekst-retningslinjer">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjerne for brødtekst" -%}
         <a href="/design/typografi/tekst/guidelines/#broedtekst-retningslinjer">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjer for hjælpetekst og fejlmeddelelser" -%}
         <a href="/design/typografi/tekst/guidelines/#hjaelpetekst-retningslinjer">{{ include.linktext }}</a>
+
     {%- when "billedtekst (figcaption)" -%}
         <a href="/design/typografi/tekst/guidelines/#billedtekst">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjer for billedtekst" -%}
         <a href="/design/typografi/tekst/guidelines/#billedtekst-retningslinjer">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjerne for stor tekst" -%}
         <a href="/design/typografi/tekst/guidelines/#display-retningslinjer">{{ include.linktext }}</a>
+
     {%- when "standard links" -%}
         <a href="/design/typografi/links/guidelines/">{{ include.linktext }}</a>
+
     {%- when "billeder anvendt som links" -%}
         <a href="/design/typografi/links/guidelines/#billeder-som-links">{{ include.linktext }}</a>
+
     {%- when "eksternt link" -%}
         <a href="/design/typografi/links/guidelines/#eksternt-link">{{ include.linktext }}</a>
-    {%- when "fremhæv særlige punkter med punktopstilling", 
-             "lister" -%}
+
+    {%- when "lister" -%}
         <a href="/design/typografi/lister/guidelines/">{{ include.linktext }}</a>
+
     {%- when "læs retningslinjerne for lister" -%}
         <a href="/design/typografi/lister/guidelines/#retningslinjer">{{ include.linktext }}</a>
+
     {%- when "hjørner, streger og skygger" -%}
         <a href="/design/borders/">{{ include.linktext }}</a>
+
     {%- when "facit streger" -%}
         <a href="/design/borders/#streger">{{ include.linktext }}</a>
+
     {%- when "se dokumentationen for implementering af ikoner", 
              "afsnittet om ikoner", 
              "ikonet", 
              "ikoner", 
              "ikontaksonomi" -%}
         <a href="/design/ikoner/guidelines/">{{ include.linktext }}</a>
+
     {%- when "se flere betydninger i ikontaksonomien", 
              "ikontaksonomien" -%}
         <a href="/design/ikoner/guidelines/#betydning">{{ include.linktext }}</a>
+
+    {%- when "ikontaksonomi-betydning" -%}
+        <a href="/design/ikoner/guidelines/#betydning">ikontaksonomi</a>
+
+    {%- when "ikoner-betydning" -%}
+        <a href="/design/ikoner/guidelines/#betydning">ikoner</a>
+
     {%- when "slet ikonet" -%}
         <a href="/design/ikoner/guidelines/?s=slet">{{ include.linktext }}</a>
+
     {%- when "ikoner til sortering i tabel" -%}
         <a href="/design/ikoner/guidelines/?s=sorter">{{ include.linktext }}</a>
+
     {%- when "ikonsamlingen" -%}
         <a href="/design/ikoner/implementering/">{{ include.linktext }}</a>
-    {%- when "tilgængelighed i forbindelse med grafik og visualisering", 
-             "tilgængelighed der gælder for grafik og visualisering" -%}
+
+    {%- when "tilgængelighed i forbindelse med grafik og visualisering" -%}
         <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">{{ include.linktext }}</a>
+
     {%- when "læs mere om datavisualisering" -%}
         <a href="/design/datavisualisering-infografik/datavisualisering/">{{ include.linktext }}</a>
+
     {%- when "læs mere om infografik" -%}
         <a href="/design/datavisualisering-infografik/infografik/">{{ include.linktext }}</a>
-    {%- when "layout", 
-             "regler og principper for layout" -%}
+
+    {%- when "layout" -%}
         <a href="/design/layout/">{{ include.linktext }}</a>
-    {%- when "hele headeren skal følge retningslinjerne for layout" -%}
-        <a href="/design/layout/#struktur-header">{{ include.linktext }}</a>
-    {%- when "grid’et i designsystemet", 
-             "8point grid", 
-             "12-kolonne grid" -%}
-        <a href="/design/grid/guidelines/">{{ include.linktext }}</a>
-    {%- when "reglerne for grid-systemet", 
+
+    {%- when "grid’et i designsystemet",
              "grid" -%}
-        <a href="/design/grid/implementering/">{{ include.linktext }}</a>
+        <a href="/design/grid/guidelines/">{{ include.linktext }}</a>
+
 
 
     {%- comment -%} -------- Eksempler -------- {%- endcomment -%}
@@ -166,56 +193,120 @@
     {%- when "se eksemplerne", 
              "eksempler på selvbetjeningsløsninger" -%}
         <a href="/eksempler/"{{ boldlink }}>{{ include.linktext }}</a>
+
     {%- when "inputfelter med hentet data" -%} 
         <a href="/eksempler/patterns/hentet-data/">{{ include.linktext }}</a>
-    {%- when "opsummeringssiderne" -%}
+
+    {%- when "opsummeringssiderne", 
+             "opsummering" -%}
         <a href="/eksempler/templates/#opsummering">{{ include.linktext }}</a>
-    {%- when "pattern", "patterns" -%}
+
+    {%- when "kvitteringssider" -%}
+        <a href="/eksempler/templates/#kvittering">{{ include.linktext }}</a>
+
+    {%- when "pattern", 
+             "patterns" -%}
         <a href="/eksempler/patterns/">{{ include.linktext }}</a>
-    {%- when "selvbetjeningseksemplerne", "selvbetjeningsløsninger" -%}
+
+    {%- when "selvbetjeningseksemplerne", 
+             "selvbetjeningsløsninger",
+             "eksempelløsningerne",
+             "se komponenten i forskellige eksempelløsninger" -%}
         <a href="/eksempler/selvbetjeningsloesninger/">{{ include.linktext }}</a>
+
+    {%- when 'eksempelløsningen "sagsoversigt"' -%}
+        <a href="/eksempler/selvbetjeningsloesninger/#sagsoversigt">{{ include.linktext }}</a>
+
     {%- when "session udløber" -%}
         <a href="/eksempler/patterns/session-udloeber/">{{ include.linktext }}</a>
+
     {%- when "templates" -%}
         <a href="/eksempler/templates/">{{ include.linktext }}</a>
-    {%- when "formularer", "formularstruktur" -%}
+
+    {%- when "formularer" -%}
         <a href="/eksempler/patterns/formular/">{{ include.linktext }}</a>
+
+    {%- when "se et eksempel på opsummeringssiden med fejl i trinindikatoren." -%} 
+        <a href="/eksempler/templates/#formular-med-fejl">{{ include.linktext }}</a>
+
 
 
     {%- comment -%} -------- Fællesskab -------- {%- endcomment -%}
 
     {%- when "kontakt os", 
-             "kontakte os" -%}
+             "kontakte os", 
+             "kontakte fds-teamet" -%}
         <a href="/faellesskab/kontakt-support/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+
     {%- when "deltag i samarbejdsforum" -%}
         <a href="/faellesskab/samarbejdsforum/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
-    {%- when "tilmeld nyhedsmail" -%}
+
+    {%- when "tilmeld nyhedsbrevet",
+             "tilmeldingssiden" -%}
         <a href="/faellesskab/nyhedsmail/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
-    {%- when "følg med i hvad der bliver lavet (release notes)" -%}
+
+    {%- when "tilmeld en e-mailadresse" -%}
+        <a href="/faellesskab/nyhedsmail/"{% if include.bold %} class="bold-link"{% endif %}>Tilmeld en <span class="nowrap">e-mailadresse</span></a>
+
+    {%- when "tilmeld en e-mailadresse her" -%}
+        <a href="/faellesskab/nyhedsmail/"{% if include.bold %} class="bold-link"{% endif %}>Tilmeld en <span class="nowrap">e-mailadresse</span> her</a>
+
+    {%- when "tilmeld endnu en e-mailadresse" -%}
+        <a href="/faellesskab/nyhedsmail/"{% if include.bold %} class="bold-link"{% endif %}>Tilmeld endnu en <span class="nowrap">e-mailadresse</span></a>
+
+    {%- when "afmeld en e-mailadresse her" -%}
+        <a href="/faellesskab/nyhedsmail/afmeld/"{% if include.bold %} class="bold-link"{% endif %}>Afmeld en <span class="nowrap">e-mailadresse</span> her</a>
+
+    {%- when "følg med i hvad der bliver lavet (release notes)",
+             "release notes" -%}
         <a href="/faellesskab/releases/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
 
+    {%- when "version 10.0.0" -%} 
+        <a href="/faellesskab/releases/#version-10-0-0">{{ include.linktext }}</a>
 
+    {%- when "læs om governance af fds" -%}
+        <a href="/faellesskab/governance/"{% if include.bold %} class="bold-link"{% endif %}>{{ include.linktext }}</a>
+
+
+        
     {%- comment -%} -------- Other -------- {%- endcomment -%}
 
     {%- when "komponent", 
              "komponenter", 
-             "se mere under hver komponent i kodesektionen", 
              "brug komponenterne" -%}
         <a href="/komponenter/"{{ boldlink }}>{{ include.linktext }}</a>
+
     {%- when "download svg-filer (version 7.0.0)" -%}
         <a href="/downloads/FDS-Komponenter-SVG-Version-700.zip"{{ boldlink }}>{{ include.linktext }}</a>
-    {%- when "se hvilke krav, som gælder for din løsning" -%}
-        <a href="/krav/"{{ boldlink }}>{{ include.linktext }}</a>
-    {%- when "se eksempel på, hvordan siden kan se ud med fds" -%}
+
+    {%- when "se eksempel på, hvordan en 'log af'-side kan se ud med fds" -%}
         <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/"{{ boldlink }}>{{ include.linktext }}</a>
-    {%- when "download borger.dks logo (svg-fil)" -%}
+
+    {%- when "download borger.dk's logo (svg-fil)" -%}
         <a href="{{ site.baseurl }}/assets/svg/logo-borgerdk.svg" download="logo-borgerdk">{{ include.linktext }}</a>
+
     {%- when "download virks logo (svg-fil)" -%}
         <a href="{{ site.baseurl }}/assets/svg/logo_virk.svg" download="logo_virk">{{ include.linktext }}</a>
-    {%- when "fds@erst.dk", "send en e-mail til fds-teamet" -%}
+
+    {%- when "send en e-mail til fds-teamet",
+             "sende en e-mail" -%}
         <a href="mailto:fds@erst.dk">{{ include.linktext }}</a>
+
+    {%- when "erst@erst.dk" -%}
+        <a href="mailto:erst@erst.dk">{{ include.linktext }}</a>
+
     {%- when "læs om vores behandling af dine personoplysninger og dine rettigheder" -%}
         <a href="/privatlivspolitik-cookies/">{{ include.linktext }}</a>
+
+    {%- when "start fælles krav værktøj" -%}
+        <a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary mt-3 mb-4">Start fælles krav værktøj</a>
+
+    {%- when "footer-simple-language" -%} 
+        <a href="/eksempel/footer-simple-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en simpel footer" target="_blank"></a>
+
+    {%- when "footer-four-columns-language" -%} 
+        <a href="/eksempel/footer-four-columns-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en kompleks footer" target="_blank"></a>
+    
     
     
     {%- else -%}

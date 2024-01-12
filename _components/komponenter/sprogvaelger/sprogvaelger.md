@@ -52,11 +52,11 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 
 #### Eksempel på sprogvælger i en simpel footer
 
-<a href="/eksempel/footer-simple-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en simpel footer" target="_blank"></a>
+{% include links/internal-link.html linktext="footer-simple-language" %}
 
 #### Eksempel på sprogvælger i en kompleks footer
 
-<a href="/eksempel/footer-four-columns-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en kompleks footer" target="_blank"></a>
+{% include links/internal-link.html linktext="footer-four-columns-language" %}
 
 {:#varianter}
 ## Varianter
@@ -70,13 +70,13 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 ## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt'">Sagsoversigt</a>
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 
 {:#ref}
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/" class="icon-link">Top 10 Best Practices for Multilingual Websites<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://uxdesign.cc/my-take-on-language-selectors-945caceb58f7" class="icon-link">My take on language selectors<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://usersnap.com/blog/design-language-switch/" class="icon-link">Designing a language switch: Examples and best practices<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Top 10 Best Practices for Multilingual Websites" %}
+- {% include links/external-link.html linktext="My take on language selectors" %}
+- {% include links/external-link.html linktext="Designing a language switch: Examples and best practices" %}

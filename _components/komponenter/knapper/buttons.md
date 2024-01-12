@@ -124,4 +124,4 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
-- <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Hvornår skal du bruge en knap eller et link" %}

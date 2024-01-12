@@ -91,8 +91,8 @@ Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette 
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/timing-exposing-content/" class="icon-link">Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content" %}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Alita Joyce: Tooltip Guidelines (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://w3c.github.io/aria-practices/#tooltip" class="icon-link">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link">Tooltip guidelines<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Alita Joyce: Tooltip Guidelines (2019)" %}
+- {% include links/external-link.html linktext="Tilgængelige tooltips" %}
+- {% include links/external-link.html linktext="Tooltip guidelines" %}

@@ -1337,7 +1337,7 @@
 
 <h3>Tidligere versioner af dokumentationen</h3>
 
-<p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.</p>
+<p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at <a href="/faellesskab/kontakt-support/">kontakte os</a>.</p>
 
 <h2 id="version-10-0-0" class="mb-0">Version 10.0.0</h2>
 
@@ -1400,7 +1400,7 @@
   <li>Tilføjet <code>inline</code> til <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">hjælpeklasser for display</a>.</li>
   <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler, tilføjet afsnit om <code>autocomplete</code> til inputfelter og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.</li>
-  <li>Tilføjet ny side til dokumentationen kaldet <a href="/kom-i-gang/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/kom-i-gang/designressourcer/">Designressourcer</a>, <a href="/kom-i-gang/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
+  <li>Tilføjet ny side til dokumentationen kaldet <a href="/kom-i-gang/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/kom-i-gang/designressourcer/#design-ressourcer">Designressourcer</a>, <a href="/kom-i-gang/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
 </ul>
 
 <h2 id="version-9-0-2" class="mb-0">Version 9.0.2</h2>
@@ -1577,14 +1577,14 @@
   <li>Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/guidelines/">trinindikator</a></li>
   <li>Tilpasset afstande ved tjekboks og radioknap med skjult indhold</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til <a href="/komponenter/fejlopsummering/guidelines/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.</li>
-  <li><a href="/kom-i-gang/implementering-kode/hent-kodepakken/#javascript"><code>DKFDS.init()</code> udvidet med scope json parameter, så man kan køre <code>DKFDS.init()</code> mere målrettet på siden</a>.</li>
+  <li><code>DKFDS.init()</code> udvidet med scope json parameter, så man kan køre <code>DKFDS.init()</code> mere målrettet på siden.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/design/ikoner/guidelines/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS <a href="/design/farver/">farver</a></li>
   <li>Erstattet brug af / ved division i scss med math.div
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link" target="_blank">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på <a href="/komponenter/detaljer/guidelines/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/komponenter/">Se mere under hver komponent i kodesektionen</a></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). Se mere under hver komponent i kodesektionen</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for <a href="/komponenter/radioknap/guidelines/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle <a href="/design/ikoner/guidelines/">ikoner</a></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet <a href="/komponenter/beskeder/implementering/">JavaScript til luk knap i beskeder</a></li>
@@ -1734,7 +1734,7 @@
   <li>Fikset fejl med fokus i header i Firefox</li>
   <li>Tilføjet maks. bredde på tooltip</li>
   <li>Fjernet dokumentation for brug af dkfds-plugins, da det fremover ikke vil blive vedligeholdt
-<span class="form-hint mt-0">Se mere under <a href="/kom-i-gang/implementering-kode/plugins/">Plugins i Kode sektionen</a></span></li>
+<span class="form-hint mt-0">Se mere under <a href="/kom-i-gang/implementering-kode/plugins/">Plugins</a> i Kode sektionen</span></li>
   <li>Fikset fejl, hvor valgt radioknap ikke blev vist ved print i Internet Explorer og Edge
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link" target="_blank">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
@@ -1754,7 +1754,7 @@
 <ul>
   <li>Ny komponent: <a href="/komponenter/broedkrumme/guidelines/">Brødkrumme</a></li>
   <li>Mulighed for en mere kompakt <a href="/komponenter/header/guidelines/">header</a> med brug af en <a href="/komponenter/knapper/guidelines/#lille-knap">lille knap</a></li>
-  <li>Linjehøjden for <a href="/design/typografi/tekst/guidelines/">lille brødtekst</a> er ændret til 20px</li>
+  <li>Linjehøjden for <a href="/design/typografi/tekst/guidelines/#broedtekst">lille brødtekst</a> er ændret til 20px</li>
   <li>Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/guidelines/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/guidelines/">fejlopsummeringer</a>.</li>
   <li><a href="/komponenter/venstremenu/guidelines/">Tilpasset alignment på venstremenu</a></li>
 </ul>
@@ -1819,7 +1819,7 @@
   <li>Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/guidelines/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/guidelines/#ekstra-information">trinindikator med ekstra information</a></li>
   <li>Tilføjet eksempel på tabel i Datatable
 <span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link" target="_blank">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Opdateret <a href="/kom-i-gang/implementering-kode/eksempler-implementering/">Eksempel på implementering i Angular</a></li>
+  <li>Opdateret Eksempel på implementering i Angular</li>
 </ul>
 
 <h2 id="version-5-1-0" class="mb-0">Version 5.1.0</h2>
@@ -1836,7 +1836,7 @@
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link" target="_blank">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Fikset print af modal fra iPhone.
 <span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link" target="_blank">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Opdateret beskrivelse af implementering af DKFDS under <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">Til udviklere</a>.
+  <li>Opdateret beskrivelse af implementering af DKFDS under Til udviklere.
 <span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">temahåndtering</a>.</span></li>
 </ul>
 
@@ -1846,7 +1846,7 @@
 
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen <code>DKFDS.init()</code> på hver side.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">implementering af DKFDS til udviklere</a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om implementering af DKFDS til udviklere.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/venstremenu/guidelines/">Venstremenuen</a> har fået nyt design.
@@ -1859,8 +1859,8 @@
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span></li>
   <li>Ny og simpel <a href="/komponenter/tooltip/guidelines/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.</li>
   <li>Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>.</li>
-  <li>Information om <a href="/kom-i-gang/krav/">krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk.</li>
-  <li>Tabellerne følger nu <a href="/design/grid/guidelines/">8point grid</a></li>
+  <li>Information om krav til selvbetjeningsløsninger er nu tilføjet til designsystem.dk.</li>
+  <li>Tabellerne følger nu 8point grid</li>
 </ul>
 
 <h2 id="version-4-4-0" class="mb-0">Version 4.4.0</h2>
@@ -1914,7 +1914,7 @@
       <li>Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.</li>
     </ul>
   </li>
-  <li>Tilføjet sektion omkring <a href="/eksempler/patterns/formular/">formularstruktur</a>.</li>
+  <li>Tilføjet sektion omkring formularstruktur.</li>
 </ul>
 
 <h2 id="version-4-1-0" class="mb-0">Version 4.1.0</h2>

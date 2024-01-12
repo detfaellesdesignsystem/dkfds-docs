@@ -14,5 +14,5 @@ title: Nyhedsbrev afmeldt
 </div>
 
 <p class="mt-9 mb-9 pt-0">
-    <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class='nowrap'>e-mailadresse</span></a>
+    {% include links/internal-link.html linktext="Tilmeld en e-mailadresse" %}
 </p>

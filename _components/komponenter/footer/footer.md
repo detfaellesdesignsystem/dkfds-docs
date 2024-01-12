@@ -57,11 +57,11 @@ tags:
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
+{% include links/internal-link.html linktext="Se komponenten i forskellige eksempelløsninger" %}
 
 {:#ref}
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/footers/" class="icon-link">Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.interaction-design.org/literature/article/how-to-implement-sitemap-footers-to-keep-users-going" class="icon-link">Priscilla Esser: How to Implement Sitemap Footers to Keep Users Going (2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)" %}
+- {% include links/external-link.html linktext="Priscilla Esser: How to Implement Sitemap Footers to Keep Users Going (2018)" %}

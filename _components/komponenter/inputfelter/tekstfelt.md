@@ -140,7 +140,7 @@ Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, frem
 
 {% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/komponenter/inputfelter/implementering/#deaktiveret" %}
 
-Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af <a href="#read-only">read-only</a>.
+Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af {% include links/component-guideline-link.html linktext="read-only" %}.
 
 {:#prefix-og-suffix}
 ### Prefix og suffix
@@ -184,11 +184,11 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
 - Adam Silver: Form Design Patterns (2018)
-- <a href="https://www.nngroup.com/articles/form-design-white-space/" class="icon-link">Marieke McCloskey: Form Design Quick Fix: Group Form Elements Effectively Using White Space (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/form-design-placeholders/" class="icon-link">Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Marieke McCloskey: Form Design Quick Fix: Group Form Elements Effectively Using White Space (2013)" %}
+- {% include links/external-link.html linktext="Katie Sherwin: Placeholders in Form Fields Are Harmful (2014-2018)" %}
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
-- <a href="https://web.archive.org/web/20120120004811/http://www.formsthatwork.com/files/Articles/DesigningUsableForms.pdf" class="icon-link">Caroline Jarrett: Designing usable forms: the three-layer model of the form (2000)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" class="icon-link">Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.designprinciplesftw.com/collections/don-normans-principles-of-design" class="icon-link">Don Norman: Don Normans Principles of Design (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Caroline Jarrett: Designing usable forms: the three-layer model of the form (2000)" %}
+- {% include links/external-link.html linktext="Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)" %}
+- {% include links/external-link.html linktext="Don Norman: Don Normans Principles of Design (2013)" %}

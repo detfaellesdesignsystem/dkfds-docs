@@ -85,4 +85,4 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
-- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)" %}

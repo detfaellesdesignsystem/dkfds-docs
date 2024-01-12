@@ -227,5 +227,5 @@ Skriv "Den valgte fil skal gøre brug af skabelonen".
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
-- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" class="icon-link">Understanding Success Criterion 3.3.1: Error Identification<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" class="icon-link">Understanding Success Criterion 3.3.3: Error Suggestion<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Understanding Success Criterion 3.3.1: Error Identification" %}
+- {% include links/external-link.html linktext="Understanding Success Criterion 3.3.3: Error Suggestion" %}

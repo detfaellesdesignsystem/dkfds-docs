@@ -36,7 +36,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Udvalgte ikoner skal anvendes som angivet</h2>
-        <p>Følg vores <a href="/design/ikoner/#betydning">ikontaksonomi</a>, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under {% include links/internal-link.html linktext="ikoner" %}.</p>
+        <p>Følg vores {% include links/internal-link.html linktext="ikontaksonomi-betydning" %}, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra {% include links/external-link.html linktext="Material Design" %}. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under {% include links/internal-link.html linktext="ikoner" %}.</p>
     </div>
 </div>
 
@@ -44,7 +44,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Løsningen skal være responsiv</h2>
-        <p>Løsningen skal kunne anvendes på tværs af platforme. Det Fælles Designsystem tager udgangspunkt i et {% include links/internal-link.html linktext="12-kolonne grid" %} for at gøre det lettere for både designere og udviklere at bruge systemet. Det er dog tilladt rent teknisk at bruge andre metoder i udviklingen, så længe løsningen er responsiv.</p>
+        <p>Løsningen skal kunne anvendes på tværs af platforme. Det Fælles Designsystem tager udgangspunkt i et 12-kolonne {% include links/internal-link.html linktext="grid" %} for at gøre det lettere for både designere og udviklere at bruge systemet. Det er dog tilladt rent teknisk at bruge andre metoder i udviklingen, så længe løsningen er responsiv.</p>
     </div>
 </div>
 
@@ -84,6 +84,6 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Løsningen skal være tilgængelig</h2>
-        <p>Designet (kontrastforhold m.m.) og koden skal være tilgængeligt efter <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" class="icon-link" target="_blank">EN 301 549 v.3.2.1<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Læs mere om kravene for {% include links/internal-link.html linktext="tilgængelighed" %}.</p>
+        <p>Designet (kontrastforhold m.m.) og koden skal være tilgængeligt efter {% include links/external-link.html linktext="EN 301 549 v.3.2.1" %}. Læs mere om kravene for {% include links/internal-link.html linktext="tilgængelighed" %}.</p>
     </div>
 </div>

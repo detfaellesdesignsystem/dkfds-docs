@@ -68,7 +68,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
-- <a href="https://www.lukew.com/ff/entry.asp?1950" class="icon-link">Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)" %}
 
 
 

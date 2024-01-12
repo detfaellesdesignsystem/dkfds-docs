@@ -47,7 +47,7 @@ Eksternt link gør brug af ikoner. {% include links/internal-link.html linktext=
 {:#billeder-som-links}
 ## Billeder som links
 
-Brug en {% include links/internal-link.html linktext="hjælpeklasse" %} til at vælge en anden display-værdi end `inline`.
+Brug en {% include links/internal-link.html linktext="hjælpeklasse for display" %} til at vælge en anden værdi end `inline`.
 
 Tilføj yderligere klassen `full-width-image`, hvis billedets bredde ikke skal begrænses.
 

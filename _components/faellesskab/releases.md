@@ -144,7 +144,7 @@ Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-
 
 ### Tidligere versioner af dokumentationen
 
-Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, {% include links/external-link.html linktext="så er du velkommen til at oprette en sag på Github" %} eller skrive til FDS teamet på {% include links/internal-link.html linktext="FDS@erst.dk" %}.
+Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
 {:#version-10-0-0 .mb-0}
 ## Version 10.0.0
@@ -361,14 +361,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Taget højde for alignment af lange trinnavne i {% include links/component-guideline-link.html linktext="trinindikator" %}
 - Tilpasset afstande ved tjekboks og radioknap med skjult indhold
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til {% include links/component-guideline-link.html linktext="fejlopsummeringskomponenten" %} så links sætter korrekt fokus i felter i Safari.
-- {% include links/internal-link.html linktext="`DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden" %}.
+- `DKFDS.init()` udvidet med scope json parameter, så man kan køre `DKFDS.init()` mere målrettet på siden.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret {% include links/internal-link.html linktext="slet ikonet" %}, da det gamle ikon ikke fungerede i brugertest.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye {% include links/internal-link.html linktext="datavisualiseringsfarver" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS {% include links/internal-link.html linktext="farver" %}
 - Erstattet brug af / ved division i scss med math.div
 {% include links/github-link.html number="157" afternumber=" på Github" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på {% include links/component-guideline-link.html linktext="detaljekomponenten" %}, da FDS ikke længere understøtter Internet Explorer
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). {% include links/internal-link.html linktext="Se mere under hver komponent i kodesektionen" %}
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). Se mere under hver komponent i kodesektionen
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for {% include links/component-guideline-link.html linktext="radioknap med skjult indhold" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle {% include links/internal-link.html linktext="ikoner" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet {% include links/component-code-link.html linktext="JavaScript til luk knap i beskeder" %}
@@ -508,7 +508,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Fikset fejl med fokus i header i Firefox
 - Tilføjet maks. bredde på tooltip
 - Fjernet dokumentation for brug af dkfds-plugins, da det fremover ikke vil blive vedligeholdt
-<span class="form-hint mt-0">Se mere under {% include links/internal-link.html linktext="Plugins i Kode sektionen" %}</span>
+<span class="form-hint mt-0">Se mere under {% include links/internal-link.html linktext="Plugins" %} i Kode sektionen</span>
 - Fikset fejl, hvor valgt radioknap ikke blev vist ved print i Internet Explorer og Edge
 {% include links/github-link.html number="112" afternumber=" på Github" %}
 
@@ -587,7 +587,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilpasset farve på informationstekst på komponenterne {% include links/component-guideline-link.html linktext="venstremenu med ekstra information" %} og {% include links/component-guideline-link.html linktext="trinindikator med ekstra information" %}
 - Tilføjet eksempel på tabel i Datatable
 {% include links/github-link.html number="55" beforenumber="Github issue #" beforelink="Efterspurgt i " %}
-- Opdateret {% include links/internal-link.html linktext="Eksempel på implementering i Angular" %}
+- Opdateret Eksempel på implementering i Angular
 
 {:#version-5-1-0 .mb-0}
 ## Version 5.1.0
@@ -603,7 +603,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="75" beforenumber="Github issue #" beforelink="Se mere om fejlen på " %}
 - Fikset print af modal fra iPhone.
 {% include links/github-link.html number="67" beforenumber="Github issue #" beforelink="Se mere om fejlen på " %}
-- Opdateret beskrivelse af implementering af DKFDS under {% include links/internal-link.html linktext="Til udviklere" %}.
+- Opdateret beskrivelse af implementering af DKFDS under Til udviklere.
 <span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om {% include links/internal-link.html linktext="temahåndtering" %}.</span>
 
 {:#version-5-0-0 .mb-0}
@@ -612,7 +612,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">22-10-2019</span></div>
 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen `DKFDS.init()` på hver side.
-<span class="form-hint mt-0">For mere info, se {% include links/external-link.html linktext="issue #74 på Github" %} eller vores afsnit om {% include links/internal-link.html linktext="implementering af DKFDS til udviklere" %}.</span>
+<span class="form-hint mt-0">For mere info, se {% include links/external-link.html linktext="issue #74 på Github" %} eller vores afsnit om implementering af DKFDS til udviklere.</span>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
 {% include links/github-link.html number="74" afternumber=" på Github" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-guideline-link.html linktext="Venstremenuen" %} har fået nyt design.
@@ -625,8 +625,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span>
 - Ny og simpel {% include links/component-guideline-link.html linktext="tooltip komponent" %} er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.
 - Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver {% include links/internal-link.html linktext="komponent" %}. 
-- Information om {% include links/internal-link.html linktext="krav til selvbetjeningsløsninger" %} er nu tilføjet til designsystem.dk. 
-- Tabellerne følger nu {% include links/internal-link.html linktext="8point grid" %}
+- Information om krav til selvbetjeningsløsninger er nu tilføjet til designsystem.dk. 
+- Tabellerne følger nu 8point grid
 
 {:#version-4-4-0 .mb-0}
 ## Version 4.4.0
@@ -673,7 +673,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret afstand fra label til read-only felt.
 - Ændret JavaScript, der håndterer regex maske på dato felt, således at man nu kan bruge copy/paste igen.
     - Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.
-- Tilføjet sektion omkring {% include links/internal-link.html linktext="formularstruktur" %}.
+- Tilføjet sektion omkring formularstruktur.
 
 {:#version-4-1-0 .mb-0}
 ## Version 4.1.0

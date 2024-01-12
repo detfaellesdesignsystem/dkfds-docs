@@ -64,7 +64,7 @@ Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Design
 
 Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 
-Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt. Den eneste undtagelse er pattern for <a href="/eksempler/patterns/session-udloeber/">Session udløber</a>, hvor modalen åbner af sig selv for at advare om en anden ændring i brugergrænsefladen, som brugeren ikke selv har aktiveret - nemlig automatisk log af.
+Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da det kan have en modsatrettet effekt, hvor brugeren lukker det i affekt. Den eneste undtagelse er pattern for {% include links/internal-link.html linktext="Session udløber" %}, hvor modalen åbner af sig selv for at advare om en anden ændring i brugergrænsefladen, som brugeren ikke selv har aktiveret - nemlig automatisk log af.
 
 Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalen bliver så langt, at der opstår scroll. Overvej at bruge en individuel side i stedet for et modal, hvis indholdet er meget langt.
 
@@ -81,4 +81,4 @@ Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen u
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger (tryk på <em>'Kontakt'</em> i eksemplernes header)</a>
+{% include links/internal-link.html linktext="Se komponenten i forskellige eksempelløsninger" %} (tryk på <em>'Kontakt'</em> i eksemplernes header)

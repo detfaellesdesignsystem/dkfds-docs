@@ -111,6 +111,6 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
-- <a href="https://www.nngroup.com/articles/radio-buttons-default-selection/" class="icon-link">Kara Pernice: Radio Buttons: Select One by Default or Leave All Unselected? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" class="icon-link">Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/interaction-cost-definition/" class="icon-link">Raluca Budiu: Interaction Cost (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Kara Pernice: Radio Buttons: Select One by Default or Leave All Unselected? (2014)" %}
+- {% include links/external-link.html linktext="Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)" %}
+- {% include links/external-link.html linktext="Raluca Budiu: Interaction Cost (2013)" %}

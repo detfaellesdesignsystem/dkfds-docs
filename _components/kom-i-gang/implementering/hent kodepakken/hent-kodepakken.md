@@ -57,7 +57,7 @@ Hent {% include links/external-link.html linktext="nyeste version som zipfil på
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css" />
 {% endhighlight %}
 
-Har du brug for dit eget tema? Så læs sektionen om, {% include links/internal-link.html linktext="hvordan du tilpasser DKFDS til dit eget tema" %}.
+Har du brug for dit eget tema? Så læs, hvordan du tilpasser koden til dit eget tema i afsnittet {% include links/internal-link.html linktext="temahåndtering" %}.
 
 {:#javascript}
 ### Inkludér JavaScript

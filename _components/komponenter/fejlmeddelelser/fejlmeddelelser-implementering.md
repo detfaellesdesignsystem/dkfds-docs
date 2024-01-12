@@ -43,7 +43,7 @@ tags:
 For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.”
 Teksten er skjult i et `<span>` element med klassen `sr-only`.
 
-Fejlmeddelelsen vises også i <a href="/kode/komponenter/fejlopsummering/">fejlopsummeringen</a> øverst på siden.
+Fejlmeddelelsen vises også i {% include links/component-code-link.html linktext="fejlopsummeringen" %} øverst på siden.
 
 ## Varianter
 

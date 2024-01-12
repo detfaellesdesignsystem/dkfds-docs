@@ -6,6 +6,7 @@ redirect_from:
 - /omdesignsystemet/anbefalinger-vaerktoejer/
 - /komigang/tiludviklere/anbefalinger-vaerktoejer/
 - /kode/anbefalinger-vaerktoejer/
+- /kode/eksempler-implementering/
 layout: styleguide
 category: Kom_i_gang_category
 subcategory: Kom i gang

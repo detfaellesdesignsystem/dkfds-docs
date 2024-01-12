@@ -19,7 +19,7 @@ tags:
 * Fælles aftalte krav: krav, som de statslige myndigheder, KL og Danske Regioner har udarbejdet i fællesskab.
 * Krav til digitale løsninger, der skal på borger.dk og Virk: krav, som alene omfatter digitale selvbetjeningsløsninger, der skal udstilles på portalerne Virk og borger.dk.
 
-{% include links/internal-link.html linktext="Se hvilke krav og anbefalinger, der gælder din løsning" %}
+Se hvilke {% include links/internal-link.html linktext="krav" %} og anbefalinger, der gælder din løsning.
 
 <h2>Eksterne krav</h2>
 

@@ -33,7 +33,7 @@ Hvis sessionens udløb vil resultere i, at ændringer, som brugere har foretaget
 
 Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialogen gøre opmærksom på dette.
 
-Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. {% include links/internal-link.html linktext="Se eksempel på, hvordan siden kan se ud med FDS" %}. Den kan ydermere informere brugeren om ekstra sikkerhed.
+Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. {% include links/internal-link.html linktext="Se eksempel på, hvordan en 'log af'-side kan se ud med FDS" %}. Den kan ydermere informere brugeren om ekstra sikkerhed.
 
 Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold.
 

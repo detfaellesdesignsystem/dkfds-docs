@@ -32,7 +32,7 @@ tags:
     </div>
 </div>
 
-Sprogvælgeren indsættes nederst i footeren. Se <a href="/eksempler/selvbetjeningsloesninger/#sagsoversigt">eksempelløsningen "Sagsoversigt"</a> for placering i koden.
+Sprogvælgeren indsættes nederst i footeren. Se {% include links/internal-link.html linktext='eksempelløsningen "Sagsoversigt"' %} for placering i koden.
 
 Hvert sprog tilføjes i listen på original sproget og med den tilsvarende landekode i `lang` attributten.
 

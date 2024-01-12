@@ -50,8 +50,8 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 
 {:.nobullet-list}
 - Jeff Johnson: Designing with the Mind in Mind (2014)
-- <a href="https://www.designprinciplesftw.com/collections/don-normans-principles-of-design" class="icon-link">Don Norman: Principles of Design (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.freecodecamp.org/news/stop-the-overuse-of-overflow-menus-5caa4b54e843/" class="icon-link">Daniel Burka: Stop the overuse of overflow menus (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Don Norman: Principles of Design (2013)" %}
+- {% include links/external-link.html linktext="Daniel Burka: Stop the overuse of overflow menus (2016)" %}
 - Martha Brockenbrough i June Cohen: The Unusually Useful Web Book: Everything we’ve learned about why sites succeed! (2003)
 
 {:#sortering}

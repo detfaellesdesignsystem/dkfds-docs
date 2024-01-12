@@ -61,4 +61,4 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 
 {:#ref}
 ## Referencer
-<a href="https://www.nngroup.com/articles/in-page-links/" class="icon-link" target="_blank">Amy Schade: Anchors OK? Re-Assessing In-Page Links (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Amy Schade: Anchors OK? Re-Assessing In-Page Links (2017)" %}

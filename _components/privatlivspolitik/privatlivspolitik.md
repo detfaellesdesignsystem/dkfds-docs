@@ -31,7 +31,7 @@ Langelinie Allé 17<br />
 2100 København Ø<br />
 CVR-nr. 10150817<br />
 Telefon: 35 29 10 00<br />
-Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a>
+Mail: {% include links/internal-link.html linktext="erst@erst.dk" %}
 
 ### Formålene med og retsgrundlaget for behandlingen af dine personoplysninger
 
@@ -58,7 +58,7 @@ Ved bekræftet afmelding, eller hvis du ikke har bekræftet din tilmelding til e
 ### Retten til at trække samtykke tilbage
 Du har til enhver tid ret til at trække dit samtykke tilbage, konsekvensen heraf vil være at du ikke længere kan modtage nyhedsbrev fra Det Fælles Designsystem.
 
-Ønsker du således at afmelde et eller flere af dine nyhedsabonnementer, kan du framelde dig/opdatere dine abonnementer via linket nederst på <a href="/faellesskab/nyhedsmail/">tilmeldingssiden</a>. Du vil derefter ikke modtage nyheder fra det pågældende abonnement.
+Ønsker du således at afmelde et eller flere af dine nyhedsabonnementer, kan du framelde dig/opdatere dine abonnementer via linket nederst på {% include links/internal-link.html linktext="tilmeldingssiden" %}. Du vil derefter ikke modtage nyheder fra det pågældende abonnement.
 
 Hvis du vælger at trække dit samtykke tilbage, påvirker det ikke lovligheden af vores behandling af dine personoplysninger på baggrund af dit tidligere meddelte samtykke og op til tidspunktet for tilbagetrækningen. Hvis du tilbagetrækker dit samtykke, har det derfor først virkning fra dette tidspunkt.
 
@@ -269,6 +269,6 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
 Her kan du læse om, hvad cookies kan bruges til:
 
 <ul class="nobullet-list">
-    <li><a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank" class="icon-link">Læs om cookies (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-    <li><a href="https://www.retsinformation.dk/Forms/R0710.aspx?id=139279" target="_blank" class="icon-link">Læs Cookiebekendtgørelse<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+    <li>{% include links/external-link.html linktext="Læs om cookies (engelsk)" %}</li>
+    <li>{% include links/external-link.html linktext="Læs Cookiebekendtgørelse" %}</li>
 </ul>

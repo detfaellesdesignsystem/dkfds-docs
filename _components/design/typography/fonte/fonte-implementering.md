@@ -13,7 +13,7 @@ description:
 tags:
 ---
 
-Som beskrevet under {% include links/internal-link.html linktext="retningslinjer" %} gør vi brug af fonten IBM Plex Sans i Det Fælles Designsystem. Da det er en ekstern font, skal den loades i hver løsning. Fonten leveres samlet med DKFDS pakken.
+Som beskrevet under {% include links/internal-link.html linktext="retningslinjer for fonte" %} gør vi brug af fonten IBM Plex Sans i Det Fælles Designsystem. Da det er en ekstern font, skal den loades i hver løsning. Fonten leveres samlet med DKFDS pakken.
 
 ## Preload
 

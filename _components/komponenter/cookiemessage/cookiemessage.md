@@ -44,8 +44,8 @@ Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovg
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://www.smashingmagazine.com/2019/04/privacy-ux-better-cookie-consent-experiences/" class="icon-link">Vitaly Friedman: Privacy UX: Better Cookie Consent Experiences (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/modal-nonmodal-dialog/" class="icon-link">Therese Fessenden: Modal & Nonmodal Dialogs: When (& When Not) to Use Them (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://erhvervsstyrelsen.dk/cookieregler" class="icon-link">Læs om cookies på Erhvervsstyrelsens hjemmeside<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://erhvervsstyrelsen.dk/vejledning-cookiebekendtgoerelse" class="icon-link">Vejledning til "cookiebekendtgørelsen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.retsinformation.dk/forms/r0710.aspx?id=139279" class="icon-link">Cookiebekendtgørelsen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Vitaly Friedman: Privacy UX: Better Cookie Consent Experiences (2019)" %}
+- {% include links/external-link.html linktext="Therese Fessenden: Modal & Nonmodal Dialogs: When (& When Not) to Use Them (2017)" %}
+- {% include links/external-link.html linktext="Læs om cookies på Erhvervsstyrelsens hjemmeside" %}
+- {% include links/external-link.html linktext='Vejledning til "cookiebekendtgørelsen"' %}
+- {% include links/external-link.html linktext="Cookiebekendtgørelsen" %}

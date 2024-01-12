@@ -37,7 +37,7 @@ Tabeller anvendes til at præsentere brugeren for data som fx statistik opstille
 
 Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
-Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
+Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da {% include links/external-link.html linktext="tabeller ifølge WCAG altid bør have kolonneoverskrifter" %}.
 
 ### Vejledning
 
@@ -166,7 +166,7 @@ Vi tilbyder på nuværende tidspunkt ikke avancerede tabeller, men hvis man find
 ## Referencer
 
 {:.nobullet-liat}
-- <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/mobile-tables/" class="icon-link">Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.w3.org/TR/WCAG20-TECHS/F91.html" class="icon-link">W3C: F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}
+- {% include links/external-link.html linktext="Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)" %}
+- {% include links/external-link.html linktext="Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)" %}
+- {% include links/external-link.html linktext="W3C: F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers (2016)" %}

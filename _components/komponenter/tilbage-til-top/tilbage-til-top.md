@@ -66,6 +66,5 @@ På mobil anvendes knappen uden tekst for at spare plads på skærmen.
 {:#ref}
 ## Referencer
 
-{:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/back-to-top/" target="_blank" class="icon-link">Hoa Loranger: Back-to-Top Button Design Guidelines (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Hoa Loranger: Back-to-Top Button Design Guidelines (2017)" %}
 

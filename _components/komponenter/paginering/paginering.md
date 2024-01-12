@@ -80,5 +80,4 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 {:#ref}
 ## Referencer
 
-{:.nobullet-list}
-- <a href="https://designsystem.digital.gov/components/pagination/" class="icon-link">USWDS om paginering<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="USWDS om paginering" %}

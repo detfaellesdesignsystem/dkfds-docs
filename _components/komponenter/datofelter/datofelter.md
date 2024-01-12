@@ -63,11 +63,11 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)
-- <a href="https://uxpro.cc/publications/date-picker-design-best-practices/" class="icon-link">Nick Babich: Date Picker Design Best Practices (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Nick Babich: Date Picker Design Best Practices (2019)" %}
 - Jessica Enders: Designing UX: Forms (2016)
-- <a href="https://www.nngroup.com/articles/date-input/" class="icon-link">Angie Li: Date-Input Form Fields: UX Design Guidelines (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Angie Li: Date-Input Form Fields: UX Design Guidelines (2017)" %}
+- {% include links/external-link.html linktext="GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer" %}
+- {% include links/external-link.html linktext="GovUK om at spørge brugeren om datoer" %}
+- {% include links/external-link.html linktext="USWDS om datovælgeren" %}
+- {% include links/external-link.html linktext="GovUK om fejlmeddelelser generelt" %}
 

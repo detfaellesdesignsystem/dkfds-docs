@@ -74,9 +74,9 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 {:#anchorlinks}
 ### Anchorlinks
 
-Fra <a href="/faellesskab/releases/#version-10-0-0">version 10.0.0</a> vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-guideline-link.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.
+Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-guideline-link.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.
 
 {:#ref}
 ## Referencer
 
-<a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Derek Powazek: Where Am I? (2006)" %}

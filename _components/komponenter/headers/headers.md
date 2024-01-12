@@ -41,7 +41,7 @@ Brug ikke topnavigationen som faneblade, anvend da {% include links/component-gu
 
 ### Vejledning
 
-Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsningerne</a>, for at se hvordan komponenten passer ind i en komplet løsning.
+Tag et kig på {% include links/internal-link.html linktext="eksempelløsningerne" %}, for at se hvordan komponenten passer ind i en komplet løsning.
 
 En header består af et antal rækker med forskelligt indhold.
 
@@ -89,4 +89,4 @@ Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placere
 {:#ref}
 ## Referencer
 
-<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Web Accessibility Tutorials: Headers" %}

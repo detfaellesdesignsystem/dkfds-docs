@@ -17,7 +17,7 @@ tags:
 
 ## Se hvilke krav din selvbetjeningsløsning skal overholde
 
-<a href="/krav-vaerktoej/anvendes-af-virksomheder/" id="start-reqtool" class="button button-primary mt-3 mb-4">Start fælles krav værktøj</a>
+{% include links/internal-link.html linktext="Start fælles krav værktøj" %}
 
 ### Kort om kravet om at anvende Det Fælles Designsystem
 
@@ -41,5 +41,5 @@ Kravet om anvendelse af Det Fælles Designsystem er en del af den fællesoffentl
 
 {:.nobullet-list}
 
-* <a href="https://arkitektur.digst.dk/node/697" class="icon-link">Det Fælles Designsystem er en del af den fællesoffentlige digitale arkitektur<svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-* <a href="https://arkitektur.digst.dk/krav-og-anbefalinger-0" class="icon-link">Se beskrivelser af alle krav og anbefalinger i den fællesoffentlige digitale arkitektur<svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+* {% include links/external-link.html linktext="Det Fælles Designsystem er en del af den fællesoffentlige digitale arkitektur" %}
+* {% include links/external-link.html linktext="Se beskrivelser af alle krav og anbefalinger i den fællesoffentlige digitale arkitektur" %}

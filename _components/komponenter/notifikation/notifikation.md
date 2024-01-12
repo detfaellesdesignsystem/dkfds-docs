@@ -57,7 +57,7 @@ Brug beskeder til at øge brugerens forståelse for løsningen.
 
 Tilføj ikke interaktivt indhold som links ol. på toastbeskeden, da der kan opstå udfordringer i forbindelse med tilgængelighed.
 
-Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom på at <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" class="icon-link">WCAG succes kriteriet 2.2.1: Timing Adjustable<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> bør efterleves.
+Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom på at {% include links/external-link.html linktext="WCAG succes kriteriet 2.2.1: Timing Adjustable" %} skal efterleves.
 
 Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 

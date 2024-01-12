@@ -72,5 +72,5 @@ Ikoner skal altid understøttes af en label med fanebladets navn.
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" class="icon-link">Jacob Gube: Module Tabs in Web Design: Best Practices and Solutions (2009)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/tabs-used-right/" class="icon-link">Jakob Nielsen: Tabs, Used Right (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Jacob Gube: Module Tabs in Web Design: Best Practices and Solutions (2009)" %}
+- {% include links/external-link.html linktext="Jakob Nielsen: Tabs, Used Right (2016)" %}

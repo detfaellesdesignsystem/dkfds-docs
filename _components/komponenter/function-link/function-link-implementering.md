@@ -23,7 +23,7 @@ tags:
 
 Funktionslink kan teknisk defineres som `<a>` element eller `<button>` afhængigt af funktionen.
 
-Se <a href="/design/ikoner/#betydning">ikoner</a> for korrekt brug i specifikke situationer.
+Se {% include links/internal-link.html linktext="ikoner-betydning" %} for korrekt brug i specifikke situationer.
 
 ## Varianter
 

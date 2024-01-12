@@ -109,6 +109,6 @@ Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end s
 {:#billeder-som-links}
 ## Billeder som links
 
-Links har som standard stylingen `display: inline`. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en {% include links/internal-link.html linktext="hjælpeklasse" %}, fx `d-inline-block` eller `d-block`, ellers vises der ikke nogen {% include links/internal-link.html linktext="fokusramme" %} omkring billedet, når linket har fokus. 
+Links har som standard stylingen `display: inline`. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en hjælpeklasse, fx `d-inline-block` eller `d-block`, ellers vises der ikke nogen fokusramme omkring billedet, når linket har fokus. Se alle muligheder under {% include links/internal-link.html linktext="hjælpeklasser for display" %}.
 
 Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begrænset. Du kan forhindre dette ved også at tilføje klassen `full-width-image` til linket udover hjælpeklassen.

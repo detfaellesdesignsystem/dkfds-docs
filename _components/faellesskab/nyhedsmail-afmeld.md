@@ -41,6 +41,6 @@ tags:
         <input type="submit" class="button button-primary mt-5" value="Afmeld" id="newsletter-submit">
     </form>
     <p class="mt-9 pt-0 mb-9">
-        <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class='nowrap'>e-mailadresse</span> her</a>
+        {% include links/internal-link.html linktext="Tilmeld en e-mailadresse her" %}
     </p>
 </div>

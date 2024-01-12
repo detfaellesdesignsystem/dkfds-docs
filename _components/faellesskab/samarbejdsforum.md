@@ -20,6 +20,6 @@ Næste samarbejdsforum er planlagt til 6. marts 2024.
 
 Invitationer sendes ud via nyhedsbrevet, når præcist tidspunkt er fastsat.
 
-<a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsbrevet</a> for løbende at blive informeret om samarbejdsforum m.m.
+{% include links/internal-link.html linktext="Tilmeld nyhedsbrevet" %} for løbende at blive informeret om samarbejdsforum m.m.
 
-<a href="/faellesskab/governance/">Læs om governance af FDS</a>
+{% include links/internal-link.html linktext="Læs om governance af FDS" %}

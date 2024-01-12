@@ -61,7 +61,7 @@ Toastbeskeder placeres i en div med class `toast-container` og attributter `aria
 </main>
 {% endhighlight %}
 
-<a href="/eksempel/toastbesked/" target="_blank">Se fungerende eksempel på implementering af toastbesked i et nyt vindue</a>
+{% include links/example-link.html linktext="Se fungerende eksempel på implementering af toastbesked" %}
 
 ### Javascript
 Der medfølger Javascript til komponenten, som man kan vælge at bruge. 

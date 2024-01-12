@@ -59,6 +59,6 @@ I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d.
 {:#datoformat}
 ### Datoformat
 
-Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også <a href="/kode/komponenter/datovaelger/#datoformat">andre datoformater</a>, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.
+Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også {% include links/component-code-link.html linktext="andre datoformater" %}, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.
 
 {% include code/preview-box.html component="date-picker-format" title="Eksempel på datovælger med andet datoformat"%}

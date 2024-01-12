@@ -19,8 +19,6 @@ tags:
 - inline svg
 ---
 
-{% include code/preview.html component="icons--svg" title="Eksempel, der viser 5 ikoners udseende" %}
-
 {:#retningslinjer}
 ## Anvendes til  
 
@@ -60,7 +58,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
 
 {% include links/external-link.html linktext="Vejledning til design af dit eget ikon" %}
 
-### Links
+### Referencer
 
 {:nobullet-list}
 - {% include links/external-link.html linktext="Icon Usability" %}

@@ -30,7 +30,7 @@ Du kan placere dit myndighedslogo i footeren, hvis du har behov for det.
 
 Skal din løsning på borger.dk skal der være et borger.dk logo i headeren.
 
-{% include links/internal-link.html linktext="Download borger.dks logo (svg-fil)" %}
+{% include links/internal-link.html linktext="Download borger.dk's logo (svg-fil)" %}
 
 <img src="{{ site.baseurl }}/assets/svg/logo_virk.svg" height="48" alt="Logo til Virk selvbetjeningsløsninger"/>
 

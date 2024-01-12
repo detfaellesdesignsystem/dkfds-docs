@@ -84,7 +84,7 @@ Udover at tilføje en klasse, skal attributten `data-title` tilføjes til hver `
 </tr>
 {% endhighlight %}
 
-Attributten kan sættes automatisk ved brug af <a href="#javascript-responsiv">JavaScript</a>.
+Attributten kan sættes automatisk ved brug af {% include links/component-code-link.html linktext="JavaScript" %}.
 
 Bemærk, at tabeller med sortering og tabeller med valgbare rækker ikke har en responsiv version.
 
@@ -151,7 +151,7 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 
 {% include code/syntax.html component="structured-list" link=true copybutton=true %}
 
-Strukturerede lister kan bruges i forbindelse med <a href="/eksempler/templates/#opsummering">opsummering</a> eller <a href="/eksempler/templates/#kvittering">kvitteringssider</a> som en alternativ tabel, hvor der ikke er nogen vandrette headers. 
+Strukturerede lister kan bruges i forbindelse med {% include links/internal-link.html linktext="opsummering" %} eller {% include links/internal-link.html linktext="kvitteringssider" %} som en alternativ tabel, hvor der ikke er nogen vandrette headers. 
 
 Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers/titel, anden kolonne til indhold/information og tredje kolonne til eventuel redigering af rækkens indhold. Husk at markere `scope="row"` for hver tabelheader.
 

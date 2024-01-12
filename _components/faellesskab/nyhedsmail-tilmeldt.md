@@ -15,5 +15,5 @@ title: Tilmelding til nyhedsbrev
 </div>
 
 <p class="mt-9 mb-9 pt-0">
-    <a href="/faellesskab/nyhedsmail/">Tilmeld endnu en <span class='nowrap'>e-mailadresse</span></a>
+    {% include links/internal-link.html linktext="Tilmeld endnu en e-mailadresse" %}
 </p>
