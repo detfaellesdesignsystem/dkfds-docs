@@ -34,10 +34,10 @@ Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere
 ## Referencer
 
 {:.nobullet-list}
-- <a href="https://baseweb.design/components/input/" class="icon-link" target="_blank">Inputfelter - Uber’s Base designsystem<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://carbondesignsystem.com/patterns/read-only-states-pattern/" class="icon-link" target="_blank">Read-only pattern - Carbon designsystem<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.patternfly.org/components/inline-edit/design-guidelines/" class="icon-link" target="_blank">Inline edit - PatternFly<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://garden.zendesk.com/components/input" class="icon-link" target="_blank">Inputfelter - Zendesk’s Garden designsystem<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Inputfelter - Uber’s Base designsystem" %}
+- {% include links/external-link.html linktext="Read-only pattern - Carbon designsystem" %}
+- {% include links/external-link.html linktext="Inline edit - PatternFly" %}
+- {% include links/external-link.html linktext="Inputfelter - Zendesk’s Garden designsystem" %}
 
 <script>
 let editButton = document.getElementById("hentetdata-rediger");

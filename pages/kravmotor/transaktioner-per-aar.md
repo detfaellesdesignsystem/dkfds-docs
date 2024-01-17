@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/transaktioner-per-aar/
-layout: requirements-tool
 title: Er der mere end 20.000 transaktioner per år på det pågældende løsningsområde?
 description: 
 backlink: true

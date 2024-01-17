@@ -226,3523 +226,1043 @@
     </svg>
 </div>
     <header class="header">
-  <div id="top"></div>
-  <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-     <!--2A: Solutiuon header -->
-    <div class="solution-header">
-      <div class="solution-header-inner container">
-        <div class="solution-heading d-flex align-items-center">
-            <a href="/">Det Fælles Designsystem</a><strong class="badge badge-large badge-error ml-4">Develop</strong>
+    <div id="top"></div>
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+    <div class="solution-info">
+        <div class="solution-info-inner container">
+            <div class="solution-heading d-flex align-items-center">
+                <a href="/">Det Fælles Designsystem</a><strong class="badge badge-large badge-error ml-4">Develop</strong>
+            </div>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
-        <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
-      </div>
+    </div>
 
-      
-      <div class="search-form d-lg-none py-4 container" id="search-form-mobile">
-        <form method="get" action="/search/" id="mobileSearchForm" role="search">
-          <div class="form-group search">
-            <input class="form-input input-char-27" id="search-input-mobile" name="q" type="search" required aria-label="Søg">
-            <button class="button button-search" type="submit" id="searchmobilebtn">Søg</button>
-          </div>
-        </form>
-      </div>
-      
+    <!-- Desktop main menu-->
+    <div class="navigation-menu contains-search">
+        <div class="navigation-menu-inner container">
+            <nav class="nav" aria-label="Hovedmenu">
+                <ul class="mainmenu">
+                    <li>
+            <a href="/kom-i-gang/" class="nav-link">
+                <span>Kom i gang</span>
+            </a>
+        </li>
+
+    
+  
+<li>
+            <a href="/design/" class="nav-link">
+                <span>Styleguide</span>
+            </a>
+        </li>
+
+    
+  
+<li>
+            <a href="/komponenter/" class="nav-link">
+                <span>Komponenter</span>
+            </a>
+        </li>
+
+    
+  
+<li>
+            <a href="/eksempler/" class="nav-link">
+                <span>Eksempler</span>
+            </a>
+        </li>
+
+    
+  
+<li class="active">
+            <a href="/faellesskab/" class="nav-link" aria-current="page">
+                <span>Fællesskab</span>
+            </a>
+        </li>
+
+    
+  
+
+                </ul>
+            </nav>
+            
+            <div class="search-form">
+                <form method="get" action="/search/" id="menuSearchForm" role="search">
+                    <div class="form-group search">
+                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required
+                            aria-label="Søg">
+                        <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
     </div>
 
     <div class="overlay"></div>
-    <!-- Desktop main menu-->
-    <nav class="nav d-none d-lg-block" aria-label="Hovedmenu">
-      <!-- 3: Main navigation-->
-      <div class="navbar navbar-primary">
-        <!--3A: Main navigation-->
-
-        <div class="navbar-inner container">
-          <ul class="nav-primary">
-            
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!-- Do not render subnavs-->
-  <a href="/design/" 
-    class="nav-link">
-    <span>Design</span>
-  </a>
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!-- Do not render subnavs-->
-  <a href="/komponenter/" 
-    class="nav-link">
-    <span>Komponenter</span>
-  </a>
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!-- Do not render subnavs-->
-  <a href="/eksempler/" 
-    class="nav-link">
-    <span>Eksempler</span>
-  </a>
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!-- Do not render subnavs-->
-  <a href="/kode/" 
-    class="nav-link">
-    <span>Kode</span>
-  </a>
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!-- Do not render subnavs-->
-  <a href="/krav/" 
-    class="nav-link">
-    <span>Krav</span>
-  </a>
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="current">
-<!-- Do not render subnavs-->
-  <a href="/faellesskab/" aria-current="page"
-    class="nav-link">
-    <span>Fællesskab</span>
-  </a>
-
-</li>
-
-
-
-          </ul>
-          
-          <div class="search-form">
-            <form method="get" action="/search/" id="menuSearchForm" role="search">
-              <div class="form-group search">
-                <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
-                <button class="button button-search" type="submit" id="searchbtn">Søg</button>
-              </div>
-            </form>
-          </div>
-          
-        </div>
-      </div>
-      <!-- 3: Main navigation end-->
-    </nav>
-    <!-- collapsible nav end-->
 
     <!-- Mobile main menu-->
-    <nav class="nav d-lg-none">
-      <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg " aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
-      <!-- 3: Main navigation-->
-      <div class="navbar navbar-primary">
-        <!--3A: Main navigation-->
-
-        <div class="navbar-inner">
-          <ul class="nav-primary">
-            
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!--Do render subnavs-->
-
-  
-  
-  <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-  
-
-  <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-design" aria-haspopup="true" aria-expanded="false"  >
-        <span>Design</span>
-      </button>
-      <div class="overflow-menu-inner" id="submenu-level1-design" aria-hidden="true">
-        <ul class="overflow-list">
-          
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/"  class="nav-link">
-        Design<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/farver/"  class="nav-link">
-        Farver
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-design-typografi" aria-expanded="false"  >
-          <span>Typografi</span>
-        </button>
-        <div class="overflow-menu-inner" id="submenu-level2-design-typografi" aria-hidden="true">
-          <ul class="overflow-list">
-            
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/"  class="nav-link">
-        Typografi<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/fonte/"  class="nav-link">
-        Fonte
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/overskrifter/"  class="nav-link">
-        Overskrifter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/felt-tabel-overskrifter/"  class="nav-link">
-        Felt- og tabeloverskrifter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/tekst/"  class="nav-link">
-        Tekst
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/links/"  class="nav-link">
-        Links
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/typografi/lister/"  class="nav-link">
-        Lister
-      </a>
-     
-    
-  
-</li>
-    
-
-
-          </ul>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        <div class="menu-top">
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
-      </div>  
-
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/borders/"  class="nav-link">
-        Hjørner, streger, skygger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/ikoner/"  class="nav-link">
-        Ikoner
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/logoer/"  class="nav-link">
-        Logoer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-design-datavisualisering-og-infografik" aria-expanded="false"  >
-          <span>Datavisualisering og infografik</span>
-        </button>
-        <div class="overflow-menu-inner" id="submenu-level3-design-datavisualisering-og-infografik" aria-hidden="true">
-          <ul class="overflow-list">
-            
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/datavisualisering-infografik/"  class="nav-link">
-        Datavisualisering og infografik<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/"  class="nav-link">
-        Tilgængelig grafik
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/datavisualisering-infografik/datavisualisering/"  class="nav-link">
-        Datavisualisering
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/datavisualisering-infografik/infografik/"  class="nav-link">
-        Infografik
-      </a>
-     
-    
-  
-</li>
-    
-
-
-          </ul>
-        </div>
-      </div>  
-
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level4-design-layout" aria-expanded="false"  >
-          <span>Layout</span>
-        </button>
-        <div class="overflow-menu-inner" id="submenu-level4-design-layout" aria-hidden="true">
-          <ul class="overflow-list">
-            
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/layout/"  class="nav-link">
-        Layout<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/layout/grid/"  class="nav-link">
-        Grid og baseline grid
-      </a>
-     
-    
-  
-</li>
-    
-
-
-          </ul>
-        </div>
-      </div>  
-
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/design/designressourcer/"  class="nav-link">
-        Designressourcer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/design/tjekliste/"  class="nav-link">
-        Tjekliste
-      </a>
-     
-    
-  
-</li>
-    
-
-
-        </ul>
-      </div>
+        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
+            <ul class="mainmenu">
+                 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Kom i gang</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="kom_i_gang_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/kom-i-gang/" class="nav-link">
+                                <span>Kom i gang <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Implementering og kode</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="implementering_kode_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/kom-i-gang/implementering-kode/" class="nav-link">
+                                <span>Implementering og kode <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/hent-kodepakken/" class="nav-link"><span>Hent kodepakken</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/" class="nav-link"><span>Hjælpeklasser</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/" class="nav-link"><span>Browserunderstøttelse</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/plugins/" class="nav-link"><span>Plugins</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/print/" class="nav-link"><span>Print</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link"><span>Frameworks</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Design og ressourcer</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="krav_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Krav</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="krav_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/kom-i-gang/krav/" class="nav-link">
+                                <span>Krav <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/kom-i-gang/krav/borgerdk-virk/" class="nav-link"><span>Når du skal på borger.dk og Virk</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/krav/om-kravene/" class="nav-link"><span>Om kravene til selvbetjeningsløsninger</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Styleguide</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="styleguide_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/design/" class="nav-link">
+                                <span>Styleguide <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/design/farver/" class="nav-link"><span>Farver</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Typografi</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="typografi_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/design/typografi/" class="nav-link">
+                                <span>Typografi <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/design/typografi/fonte/guidelines/" class="nav-link"><span>Fonte</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/typografi/overskrifter/guidelines/" class="nav-link"><span>Overskrifter</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/typografi/felt-tabel-overskrifter/" class="nav-link"><span>Felt- og tabeloverskrifter</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/typografi/tekst/guidelines/" class="nav-link"><span>Tekst</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/typografi/links/guidelines/" class="nav-link"><span>Links</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/typografi/lister/guidelines/" class="nav-link"><span>Lister</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/borders/" class="nav-link"><span>Hjørner, streger, skygger</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/ikoner/guidelines/" class="nav-link"><span>Ikoner</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/logoer/" class="nav-link"><span>Logoer</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Datavisualisering og infografik</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="datavisualisering_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/design/datavisualisering-infografik/" class="nav-link">
+                                <span>Datavisualisering og infografik <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/" class="nav-link"><span>Tilgængelig grafik</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/datavisualisering-infografik/datavisualisering/" class="nav-link"><span>Datavisualisering</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/datavisualisering-infografik/infografik/" class="nav-link"><span>Infografik</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/layout/" class="nav-link"><span>Layout</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/design/grid/guidelines/" class="nav-link"><span>Grid og baseline grid</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Komponenter</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="komponenter_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/komponenter/" class="nav-link">
+                                <span>Komponenter <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/komponenter/accordions/guidelines/" class="nav-link"><span>Accordions</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/anchorlinks/guidelines/" class="nav-link"><span>Anchorlinks</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/badges/guidelines/" class="nav-link"><span>Badges</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/beskeder/guidelines/" class="nav-link"><span>Beskeder (Alerts)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/broedkrumme/guidelines/" class="nav-link"><span>Brødkrumme</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/cards/guidelines/" class="nav-link"><span>Cards</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/cookiemeddelelse/guidelines/" class="nav-link"><span>Cookiemeddelelse</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/datofelter/guidelines/" class="nav-link"><span>Datofelter</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/datovaelger/guidelines/" class="nav-link"><span>Datovælger</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/detaljer/guidelines/" class="nav-link"><span>Detaljer</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/dropdown/guidelines/" class="nav-link"><span>Dropdown</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/faneblade/guidelines/" class="nav-link"><span>Faneblade (Tabs)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/fejlmeddelelser/guidelines/" class="nav-link"><span>Fejlmeddelelser</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/fejlopsummering/guidelines/" class="nav-link"><span>Fejlopsummering</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/footer/guidelines/" class="nav-link"><span>Footer</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/funktionslink/guidelines/" class="nav-link"><span>Funktionslink</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/skip-link/guidelines/" class="nav-link"><span>Gå til sidens indhold (Skip-link)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/header/guidelines/" class="nav-link"><span>Header</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/inputfelter/guidelines/" class="nav-link"><span>Inputfelter</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/knapper/guidelines/" class="nav-link"><span>Knapper (Buttons)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/spinner/guidelines/" class="nav-link"><span>Loading spinner</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/modal/guidelines/" class="nav-link"><span>Modal</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/overflowmenu/guidelines/" class="nav-link"><span>Overflow menu</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/paginering/guidelines/" class="nav-link"><span>Paginering</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/radioknap/guidelines/" class="nav-link"><span>Radioknap (Radio button)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/sprogvaelger/guidelines/" class="nav-link"><span>Sprogvælger</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/search/guidelines/" class="nav-link"><span>Søgefelt</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tables/guidelines/" class="nav-link"><span>Tabeller</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tags/guidelines/" class="nav-link"><span>Tags</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tekstomraade/guidelines/" class="nav-link"><span>Tekstområde (Textarea)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tilbage-link/guidelines/" class="nav-link"><span>Tilbage-link</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tilbage-til-top/guidelines/" class="nav-link"><span>Tilbage til toppen</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tjekboks/guidelines/" class="nav-link"><span>Tjekboks (Checkbox)</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/toastbesked/guidelines/" class="nav-link"><span>Toastbesked</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/toggle/guidelines/" class="nav-link"><span>Toggle switch</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/tooltip/guidelines/" class="nav-link"><span>Tooltip</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/trinindikator/guidelines/" class="nav-link"><span>Trinindikator</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/fil-upload/guidelines/" class="nav-link"><span>Vedhæft fil</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/venstremenu/guidelines/" class="nav-link"><span>Venstremenu</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Eksempler</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="eksempler_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/eksempler/" class="nav-link">
+                                <span>Eksempler <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/eksempler/selvbetjeningsloesninger/" class="nav-link"><span>Selvbetjeningsløsninger</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
+                    <span>Patterns</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="patterns_category" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/eksempler/patterns/" class="nav-link">
+                                <span>Patterns <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/eksempler/patterns/angivelse-af-telefonnummer/" class="nav-link"><span>Angivelse af telefonnummer</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/eksempler/patterns/formular/" class="nav-link"><span>Formular</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/eksempler/patterns/session-udloeber/" class="nav-link"><span>Session udløber</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/eksempler/templates/" class="nav-link"><span>Templates</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+ 
+
+        
+        <li class="active">
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="true">
+                    <span>Fællesskab</span>
+                </button>
+                
+                <div class="overflow-menu-inner" id="faellesskab_category" aria-hidden="false">
+                    <ul class="overflow-list">
+                        <li>
+                            <a href="/faellesskab/" class="nav-link">
+                                <span>Fællesskab <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                         
+
+        
+        <li>
+            <a href="/faellesskab/samarbejdsforum/" class="nav-link"><span>Samarbejdsforum</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/faellesskab/governance/" class="nav-link"><span>Governance</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/faellesskab/nyhedsmail/" class="nav-link"><span>Nyhedsbrev</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/faellesskab/kontakt-support/" class="nav-link"><span>Kontakt og support</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/faellesskab/roadmap/" class="nav-link"><span>Roadmap</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li class="active current">
+            <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
+        </li>
+        
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+
+
+            </ul>
+        </nav>
     </div>
-  
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!--Do render subnavs-->
-
-  
-  
-  <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-  
-
-  <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-komponenter" aria-haspopup="true" aria-expanded="false"  >
-        <span>Komponenter</span>
-      </button>
-      <div class="overflow-menu-inner" id="submenu-level1-komponenter" aria-hidden="true">
-        <ul class="overflow-list">
-          
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/"  class="nav-link">
-        Komponenter<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/accordions/"  class="nav-link">
-        Accordions
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/badges/"  class="nav-link">
-        Badges
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/beskeder/"  class="nav-link">
-        Beskeder (Alerts)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/broedkrumme/"  class="nav-link">
-        Brødkrumme
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/cards/"  class="nav-link">
-        Cards
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/cookiemeddelelse/"  class="nav-link">
-        Cookiemeddelelse
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/datofelter/"  class="nav-link">
-        Datofelter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/datovaelger/"  class="nav-link">
-        Datovælger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/detaljer/"  class="nav-link">
-        Detaljer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/dropdown/"  class="nav-link">
-        Dropdown
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/faneblade/"  class="nav-link">
-        Faneblade (Tabs)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/fejlmeddelelser/"  class="nav-link">
-        Fejlmeddelelser
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/fejlopsummering/"  class="nav-link">
-        Fejlopsummering
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/footer/"  class="nav-link">
-        Footer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/funktionslink/"  class="nav-link">
-        Funktionslink
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/skip-link/"  class="nav-link">
-        Gå til sidens indhold (Skip-link)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/header/"  class="nav-link">
-        Header
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/inputfelter/"  class="nav-link">
-        Inputfelter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/knapper/"  class="nav-link">
-        Knapper (Buttons)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/spinner/"  class="nav-link">
-        Loading spinner
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/modal/"  class="nav-link">
-        Modal
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/overflowmenu/"  class="nav-link">
-        Overflow menu
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/paginering/"  class="nav-link">
-        Paginering
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/radioknap/"  class="nav-link">
-        Radioknap (Radio button)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/sprogvaelger/"  class="nav-link">
-        Sprogvælger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/search/"  class="nav-link">
-        Søgefelt
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tables/"  class="nav-link">
-        Tabeller
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tags/"  class="nav-link">
-        Tags
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tekstomraade/"  class="nav-link">
-        Tekstområde (Textarea)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tilbage-link/"  class="nav-link">
-        Tilbage-link
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tilbage-til-top/"  class="nav-link">
-        Tilbage til toppen
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tjekboks/"  class="nav-link">
-        Tjekboks (Checkbox)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/toastbesked/"  class="nav-link">
-        Toastbesked
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/toggle/"  class="nav-link">
-        Toggle switch
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/tooltip/"  class="nav-link">
-        Tooltip
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/trinindikator/"  class="nav-link">
-        Trinindikator
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/komponenter/fil-upload/"  class="nav-link">
-        Vedhæft fil
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/komponenter/venstremenu/"  class="nav-link">
-        Venstremenu
-      </a>
-     
-    
-  
-</li>
-    
-
-
-        </ul>
-      </div>
-    </div>
-  
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!--Do render subnavs-->
-
-  
-  
-  <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-  
-
-  <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-eksempler" aria-haspopup="true" aria-expanded="false"  >
-        <span>Eksempler</span>
-      </button>
-      <div class="overflow-menu-inner" id="submenu-level1-eksempler" aria-hidden="true">
-        <ul class="overflow-list">
-          
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/eksempler/"  class="nav-link">
-        Eksempler<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/eksempler/selvbetjeningsloesninger/"  class="nav-link">
-        Selvbetjeningsløsninger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-eksempler-patterns" aria-expanded="false"  >
-          <span>Patterns</span>
-        </button>
-        <div class="overflow-menu-inner" id="submenu-level2-eksempler-patterns" aria-hidden="true">
-          <ul class="overflow-list">
-            
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/"  class="nav-link">
-        Patterns<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/angivelse-af-telefonnummer/"  class="nav-link">
-        Angivelse af telefonnummer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/formular/"  class="nav-link">
-        Formular
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/hentet-data/"  class="nav-link">
-        Inputfelter med hentet data
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/eksempler/patterns/session-udloeber/"  class="nav-link">
-        Session udløber
-      </a>
-     
-    
-  
-</li>
-    
-
-
-          </ul>
-        </div>
-      </div>  
-
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/eksempler/templates/"  class="nav-link">
-        Templates
-      </a>
-     
-    
-  
-</li>
-    
-
-
-        </ul>
-      </div>
-    </div>
-  
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!--Do render subnavs-->
-
-  
-  
-  <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-  
-
-  <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-kode" aria-haspopup="true" aria-expanded="false"  >
-        <span>Kode</span>
-      </button>
-      <div class="overflow-menu-inner" id="submenu-level1-kode" aria-hidden="true">
-        <ul class="overflow-list">
-          
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/"  class="nav-link">
-        Kode<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-
-          
-
-
-
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/implementering/"  class="nav-link">
-        Implementering af DKFDS
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level2-kode-komponenter" aria-expanded="false"  >
-          <span>Komponenter</span>
-        </button>
-        <div class="overflow-menu-inner" id="submenu-level2-kode-komponenter" aria-hidden="true">
-          <ul class="overflow-list">
-            
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/"  class="nav-link">
-        Komponenter<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/accordions/"  class="nav-link">
-        Accordions
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/badges/"  class="nav-link">
-        Badges
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/beskeder/"  class="nav-link">
-        Beskeder (Alerts)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/broedkrumme/"  class="nav-link">
-        Brødkrumme
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/cards/"  class="nav-link">
-        Cards
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/cookiemeddelelse/"  class="nav-link">
-        Cookiemeddelelse
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/datofelter/"  class="nav-link">
-        Datofelter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/datovaelger/"  class="nav-link">
-        Datovælger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/detaljer/"  class="nav-link">
-        Detaljer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/dropdown/"  class="nav-link">
-        Dropdown
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/faneblade/"  class="nav-link">
-        Faneblade (Tabs)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/fejlmeddelelser/"  class="nav-link">
-        Fejlmeddelelser
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/fejlopsummering/"  class="nav-link">
-        Fejlopsummering
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/footer/"  class="nav-link">
-        Footer
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/funktionslink/"  class="nav-link">
-        Funktionslink
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/skip-link/"  class="nav-link">
-        Gå til sidens indhold (Skip-link)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/header/"  class="nav-link">
-        Header
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/inputfelter/"  class="nav-link">
-        Inputfelter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/knapper/"  class="nav-link">
-        Knapper (Buttons)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/spinner/"  class="nav-link">
-        Loading spinner
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/modal/"  class="nav-link">
-        Modal
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/overflowmenu/"  class="nav-link">
-        Overflow menu
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/paginering/"  class="nav-link">
-        Paginering
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/radioknap/"  class="nav-link">
-        Radioknap (Radio button)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/sprogvaelger/"  class="nav-link">
-        Sprogvælger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/search/"  class="nav-link">
-        Søgefelt
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tables/"  class="nav-link">
-        Tabeller
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tags/"  class="nav-link">
-        Tags
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tekstomraade/"  class="nav-link">
-        Tekstområde (Textarea)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tilbage-link/"  class="nav-link">
-        Tilbage-link
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tilbage-til-top/"  class="nav-link">
-        Tilbage til toppen
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tjekboks/"  class="nav-link">
-        Tjekboks (Checkbox)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/toastbesked/"  class="nav-link">
-        Toastbesked
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/toggle/"  class="nav-link">
-        Toggle switch
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/tooltip/"  class="nav-link">
-        Tooltip
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/trinindikator/"  class="nav-link">
-        Trinindikator
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/fil-upload/"  class="nav-link">
-        Vedhæft fil
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/komponenter/venstremenu/"  class="nav-link">
-        Venstremenu
-      </a>
-     
-    
-  
-</li>
-    
-
-
-          </ul>
-        </div>
-      </div>  
-
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/browserunderstoettelse/"  class="nav-link">
-        Browserunderstøttelse
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/grid/"  class="nav-link">
-        Grid
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-      
-      
-
-      
-      <div class="overflow-menu">
-        <button aria-haspopup="true" class="button-overflow-menu js-dropdown" data-js-target="#submenu-level3-kode-typografi" aria-expanded="false"  >
-          <span>Typografi</span>
-        </button>
-        <div class="overflow-menu-inner" id="submenu-level3-kode-typografi" aria-hidden="true">
-          <ul class="overflow-list">
-            
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/typografi/"  class="nav-link">
-        Typografi<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-            
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/typografi/overskrifter/"  class="nav-link">
-        Overskrifter
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/typografi/tekst/"  class="nav-link">
-        Tekst
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/typografi/links/"  class="nav-link">
-        Links
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/typografi/lister/"  class="nav-link">
-        Lister
-      </a>
-     
-    
-  
-</li>
-    
-
-
-          </ul>
-        </div>
-      </div>  
-
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/ikoner/"  class="nav-link">
-        Ikoner
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/kode/utilities/"  class="nav-link">
-        Hjælpeklasser (Utilities)
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/eksempler-implementering/"  class="nav-link">
-        Eksempler på implementering
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/print/"  class="nav-link">
-        Print
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/kode/plugins/"  class="nav-link">
-        Plugins
-      </a>
-     
-    
-  
-</li>
-    
-
-
-        </ul>
-      </div>
-    </div>
-  
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="">
-<!--Do render subnavs-->
-
-  
-  
-  <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-  
-
-  <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-krav" aria-haspopup="true" aria-expanded="false"  >
-        <span>Krav</span>
-      </button>
-      <div class="overflow-menu-inner" id="submenu-level1-krav" aria-hidden="true">
-        <ul class="overflow-list">
-          
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/krav/"  class="nav-link">
-        Krav<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-
-          
-
-
-
-
-  
-    
-
-
-<li class="  has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/krav/borgerdk-virk/"  class="nav-link">
-        Når du skal på borger.dk og Virk
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/krav/om-kravene/"  class="nav-link">
-        Om kravene til selvbetjeningsløsninger
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/krav/tilgaengelighed/"  class="nav-link">
-        Tilgængelighed
-      </a>
-     
-    
-  
-</li>
-    
-
-
-        </ul>
-      </div>
-    </div>
-  
-
-</li>
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-<li class="current">
-<!--Do render subnavs-->
-
-  
-  
-  <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    
-  
-
-  <div class="overflow-menu">
-      <button class="button-overflow-menu js-dropdown" data-js-target="#submenu-level1-fællesskab" aria-haspopup="true" aria-expanded="true"  >
-        <span>Fællesskab</span>
-      </button>
-      <div class="overflow-menu-inner" id="submenu-level1-fællesskab" aria-hidden="false">
-        <ul class="overflow-list">
-          
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/"  class="nav-link">
-        Fællesskab<span class="helptext"> (overblik)</span>
-      </a>
-     
-    
-  
-</li>
-
-          
-
-
-
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/samarbejdsforum/"  class="nav-link">
-        Samarbejdsforum
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/governance/"  class="nav-link">
-        Governance
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/nyhedsmail/"  class="nav-link">
-        Nyhedsbrev
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/kontakt-support/"  class="nav-link">
-        Kontakt og support
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/roadmap/"  class="nav-link">
-        Roadmap
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="current active has-anchor-links">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/releases/" aria-current="page" class="nav-link">
-        Release notes
-      </a>
-     
-    
-  
-</li>
-    
-
-  
-    
-
-
-<li class="  ">
-
-  
-
-
-  
-    
-    <a href="/faellesskab/faq/"  class="nav-link">
-        Ofte stillede spørgsmål
-      </a>
-     
-    
-  
-</li>
-    
-
-
-        </ul>
-      </div>
-    </div>
-  
-
-</li>
-
-
-
-          </ul>
-        </div>
-      </div>
-      <!-- 3: Main navigation end-->
-    </nav>
-   <!-- collapsible nav end-->
 </header>
 
-
 <div class="container page-container">
-  <div class="row">
+    <div class="row">
 
-    <aside class="col-12 col-lg-3 sidebar-col">
-      <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
-        
-        
-        <ul class="sidenav-list">
-          
-    
-
-<li class="  ">
+        <aside class="col-12 col-lg-3">
+            <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
+                <ul class="sidemenu">
 
 
-  
 
-<a href="/faellesskab/samarbejdsforum/" 
-  class="nav-link">
-  Samarbejdsforum
-</a>
+
+
+
+<li>
+
+  <a href="/faellesskab/samarbejdsforum/" class="nav-link">
+    <span>Samarbejdsforum</span>
+  </a>
 
 </li>
 
-    
-
-    
-
-<li class="  ">
 
 
-  
 
-<a href="/faellesskab/governance/" 
-  class="nav-link">
-  Governance
-</a>
+
+
+
+<li>
+
+  <a href="/faellesskab/governance/" class="nav-link">
+    <span>Governance</span>
+  </a>
 
 </li>
 
-    
-
-    
-
-<li class="  ">
 
 
-  
 
-<a href="/faellesskab/nyhedsmail/" 
-  class="nav-link">
-  Nyhedsbrev
-</a>
+
+
+
+<li>
+
+  <a href="/faellesskab/nyhedsmail/" class="nav-link">
+    <span>Nyhedsbrev</span>
+  </a>
 
 </li>
 
-    
-
-    
-
-<li class="  ">
 
 
-  
 
-<a href="/faellesskab/kontakt-support/" 
-  class="nav-link">
-  Kontakt og support
-</a>
+
+
+
+<li>
+
+  <a href="/faellesskab/kontakt-support/" class="nav-link">
+    <span>Kontakt og support</span>
+  </a>
 
 </li>
 
-    
-
-    
-
-<li class="  ">
 
 
-  
 
-<a href="/faellesskab/roadmap/" 
-  class="nav-link">
-  Roadmap
-</a>
+
+
+
+<li>
+
+  <a href="/faellesskab/roadmap/" class="nav-link">
+    <span>Roadmap</span>
+  </a>
 
 </li>
 
-    
-
-    
-
-<li class="current active has-anchor-links">
 
 
-  
-
-<a href="/faellesskab/releases/" aria-current="page"
-  class="nav-link">
-  Release notes
-</a>
-
-    
-    <!-- Uses page.subnav as navmenu-->
-    
-    
-
-    
-
-    <ul class="sidenav-sub_list">
-    
 
 
-<li class=" ">
-<a href="#version-9-1-0" >Version 9.1.0</a>
-</li>
-
-    
-
-    
 
 
-<li class=" ">
-<a href="#version-9-0-2" >Version 9.0.2</a>
-</li>
+<li class="active current">
 
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-9-0-1" >Version 9.0.1</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-9-0-0" >Version 9.0.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-8-2-1" >Version 8.2.1</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-8-2-0" >Version 8.2.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-8-1-0" >Version 8.1.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-8-0-1" >Version 8.0.1</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-8-0-0" >Version 8.0.0</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-7-5-3" >Version 7.5.3</a>
-</li>
-
-    
-
-    
-
-
-<li class=" ">
-<a href="#version-7-5-2" >Tidligere versioner</a>
-</li>
-
-    
-
-</ul>
-    
-  
+  <a href="/faellesskab/releases/" class="nav-link" aria-current="page">
+    <span>Release notes</span>
+  </a>
 
 </li>
 
-    
+</ul></nav>
+        </aside>
 
-    
-
-<li class="  ">
-
-
-  
-
-<a href="/faellesskab/faq/" 
-  class="nav-link">
-  Ofte stillede spørgsmål
-</a>
-
-</li>
-
-    
-
-
-        </ul>
-        
-      </nav>
-    </aside>
-
-    <main class="col-12 col-lg-9" id="main-content">
-          <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+        <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <div class="alert-body">
             <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
@@ -3750,44 +1270,54 @@
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
         </div>
     </div>
+<section id="section-/faellesskab/releases">
 
-      <section id="section-/faellesskab/releases">
-          
-          
+                
 
-          <div class="subheading">
-            Fællesskab
-          </div>
+                <div class="subheading">
+                    Fællesskab
+                </div>
 
-          
-          <h1 id="release-notes">Release notes</h1>
-          
+                
+                
+                <h1 id="release-notes">Release notes</h1>
+                
 
-          
-          
-          <ul class="d-lg-none nobullet-list">
-          <li><a href="#version-9-1-0">Version 9.1.0</a></li>
-          <li><a href="#version-9-0-2">Version 9.0.2</a></li>
-          <li><a href="#version-9-0-1">Version 9.0.1</a></li>
-          <li><a href="#version-9-0-0">Version 9.0.0</a></li>
-          <li><a href="#version-8-2-1">Version 8.2.1</a></li>
-          <li><a href="#version-8-2-0">Version 8.2.0</a></li>
-          <li><a href="#version-8-1-0">Version 8.1.0</a></li>
-          <li><a href="#version-8-0-1">Version 8.0.1</a></li>
-          <li><a href="#version-8-0-0">Version 8.0.0</a></li>
-          <li><a href="#version-7-5-3">Version 7.5.3</a></li>
-          <li><a href="#version-7-5-2">Tidligere versioner</a></li>
-          
-          </ul>
-          
+                
+                <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
+                
 
-          
-            <p class="font-lead">Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.</p>
-          
+                
 
-          
+                
 
-          <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
+                
+
+                
+
+                
+
+                
+                <nav class="anchorbox" aria-label="Ankerlinks">
+                    <h2 class="anchortitle">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        <li><a href="#version-10-0-0">Version 10.0.0</a></li>
+                        <li><a href="#version-9-1-0">Version 9.1.0</a></li>
+                        <li><a href="#version-9-0-2">Version 9.0.2</a></li>
+                        <li><a href="#version-9-0-1">Version 9.0.1</a></li>
+                        <li><a href="#version-9-0-0">Version 9.0.0</a></li>
+                        <li><a href="#version-8-2-1">Version 8.2.1</a></li>
+                        <li><a href="#version-8-2-0">Version 8.2.0</a></li>
+                        <li><a href="#version-8-1-0">Version 8.1.0</a></li>
+                        <li><a href="#version-8-0-1">Version 8.0.1</a></li>
+                        <li><a href="#version-8-0-0">Version 8.0.0</a></li>
+                        <li><a href="#version-7-5-3">Tidligere versioner</a></li>
+                        
+                    </ul>
+                </nav>
+                
+
+                <p>Har du et nyt forslag til en feature eller et bug fix? <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">Så må du meget gerne oprette et issue på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 
 <h2>Versionering</h2>
 
@@ -3807,22 +1337,70 @@
 
 <h3>Tidligere versioner af dokumentationen</h3>
 
-<p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">så er du velkommen til at oprette en sag på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller skrive til FDS teamet på <a href="mailto:fds@erst.dk">FDS@erst.dk</a>.</p>
+<p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at <a href="/faellesskab/kontakt-support/">kontakte os</a>.</p>
+
+<h2 id="version-10-0-0" class="mb-0">Version 10.0.0</h2>
+
+<div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/faneblade/guidelines/">Faneblade</a></h3>
+</div>
+<ul>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Det gamle faneblad er blevet erstattet med en ny fanebladskomponent.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at anvende faneblade med URL-skifte.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at indsætte ikoner i fanebladene.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
+</div>
+<ul>
+  <li>Dokumentationssiden har fået lavet en større omstrukturering hvor en stor del af dokumentationen er blevet inddelt i faneblade.</li>
+  <li>Ved omstruktureringen er kodeafsnit flyttet fra den separate menu ”Kode” og ind på hver komponent-/designside i fanen ”Kode”. Retningslinjerne for komponenterne er ligeledes flyttet ind i fanen ”Retningslinjer”.</li>
+  <li>Flere sider i dokumentationen under menupunkterne ”Design”, ”Kode”, ”Krav” og ”Fællesskab” er blevet flyttet ind i et nyt menupunkt ved navn ”Kom i gang”. Menupunktet ”Kode” og ”Krav” er blevet fjernet som følge af disse ændringer. Derudover er ”Design” menupunktet omdøbt til ”Styleguide”.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+<ul>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) <a href="/komponenter/radioknap/guidelines/">radioknapper</a> og <a href="/komponenter/tjekboks/guidelines/">tjekbokse</a>. Den nye standardstørrelse er 24 pixels. Bemærk at HTML’en for <a href="/komponenter/tables/guidelines/#valgbare-raekker">tabeller med valgbare rækker</a> og tjekbokse skal opdateres.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret <code>devDependencies</code> og <code>scripts</code> i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Der tages ikke længere forbehold i koden for browsere, som ikke er understøttet af FDS. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv anvende den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Tips" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Nyere versioner af Chrome, Edge, Safari og Firefox er fortsat understøttet (se eventuelt <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/">browserunderstøttelse</a>).</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/anchorlinks/guidelines/">Anchorlinks</a> er fjernet fra <a href="/komponenter/venstremenu/guidelines/">venstremenuen</a> og har i stedet fået sin egen komponent.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Headerens række 4 og række 5 er fjernet, mens de øvrige rækker i headeren har fået opdateret design og forbedret tilgængelighed. Se flere detaljer på <a href="/komponenter/header/guidelines/">headerkomponentens side</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu, så de viser <code>aria-label</code> for <code>nav</code>-elementet.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet <a href="https://sass-lang.com/documentation/at-rules/import/" class="icon-link" target="_blank">@import<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> i alle SASS-filer med <a href="https://sass-lang.com/documentation/at-rules/use/" class="icon-link" target="_blank">@use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://sass-lang.com/documentation/at-rules/forward/" class="icon-link" target="_blank">@forward<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet. Anvender man udelukkende de færdiggenererede CSS-filer, kan man se bort fra dette punkt.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/199" class="icon-link" target="_blank">issue #199 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere har flere SASS-variable gjort det simpelt at ændre grundlæggende dele af designsystemets design og layout. Dette gjaldt også dele, det ikke var tiltænkt, at man skulle ændre. Flere SASS-variable er derfor blevet slettet, flyttet eller erstattet. De variable, som stadig anvendes, kan findes i mappen <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/stylesheets" class="icon-link" target="_blank">variables<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Anvender man udelukkende de færdiggenererede CSS-filer, kan man se bort fra dette punkt. Bemærk, at der i kommende major releases kan blive fjernet yderligere variable.</li>
+  <li>Ændret accordions <code>border-radius</code> (hjørner) fra 3px til 4px.</li>
+  <li>Rettet ikonet “file-upload”, der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.</li>
+  <li>Rettet fejl, hvor fokusmarkeringen kunne mangle delvist i overflowmenuer.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at placere sprogvælgeren i headeren og mobilmenuen udover footeren.</li>
+  <li>Rettet fejl, hvor overflowmenuen kunne gå ud over skærmens kanter, når den åbnede.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet JavaScript fra datofelter og ændret inputtypen fra <code>tel</code> til <code>number</code>. Man skal derfor sikre sig, at ens løsning har en passende validering af de indtastede værdier.</li>
+  <li>Erstattet normalize.css med styling i _base.scss.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret fontstørrelse og linjehøjde på overskrifter, billedtekst, subheading og manchettekst - vær opmærksom på, at disse tekster kan fylde mere end tidligere.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen <code>icon-svg-large</code>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Toggle switch har fået ny HTML, ny styling og opdaterede retningslinjer med det formål at øge tilgængeligheden, samt gøre det muligt at anvende komponenten på andre sprog end dansk.</li>
+</ul>
 
 <h2 id="version-9-1-0" class="mb-0">Version 9.1.0</h2>
 
 <div><span class="small-text mt-0 d-block">24-11-2023</span></div>
 
 <ul>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede inputfelter</a>. Bemærk at deaktiverede inputfelter kræver en mindre opdatering af HTML’ens klasser.</li>
-  <li>Tilføjet styling til <code>placeholder</code>-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.</li>
-  <li>Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML’en er angivet med <code>&lt;button&gt;</code>.</li>
-  <li>Rettet fejl, hvor visse typer af <code>id</code> kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Tilføjet <code>inline</code> til <a href="/kode/utilities/#display">hjælpeklasser for display</a>.</li>
-  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler, tilføjet afsnit om <code>autocomplete</code> til <a href="/kode/komponenter/inputfelter/">inputfelter</a> og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret design på <a href="/komponenter/inputfelter/guidelines/#read-only">readonly-inputfelter</a> og <a href="/komponenter/inputfelter/guidelines/#deaktiveret">deaktiverede inputfelter</a>. Bemærk at deaktiverede inputfelter kræver en mindre opdatering af HTML’ens klasser.</li>
+  <li>Tilføjet styling til <code>placeholder</code>-attributten for <a href="/komponenter/inputfelter/guidelines/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/guidelines/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.</li>
+  <li>Opdateret <a href="/komponenter/funktionslink/guidelines/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML’en er angivet med <code>&lt;button&gt;</code>.</li>
+  <li>Rettet fejl, hvor visse typer af <code>id</code> kunne få <a href="/komponenter/overflowmenu/guidelines/">overflowmenuen</a> til at fejle.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Tilføjet <code>inline</code> til <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">hjælpeklasser for display</a>.</li>
+  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler, tilføjet afsnit om <code>autocomplete</code> til inputfelter og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.</li>
-  <li>Tilføjet ny side til dokumentationen kaldet <a href="/faellesskab/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/design/designressourcer/">Designressourcer</a>, <a href="/design/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
+  <li>Tilføjet ny side til dokumentationen kaldet <a href="/kom-i-gang/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/kom-i-gang/designressourcer/#design-ressourcer">Designressourcer</a>, <a href="/kom-i-gang/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
 </ul>
 
 <h2 id="version-9-0-2" class="mb-0">Version 9.0.2</h2>
@@ -3830,9 +1408,9 @@
 <div><span class="small-text mt-0 d-block">30-08-2023</span></div>
 
 <ul>
-  <li>Rettet fejl, hvor musemarkøren ikke blev vist korrekt på <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede felter</a>, når de var angivet som andet end <code>type="text"</code>.</li>
-  <li>Rettet fejl, hvor <a href="/komponenter/knapper/">knapper</a> ikke altid stod på linje, når de lå i samme række.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet fejl, hvor musemarkøren ikke blev vist korrekt på <a href="/komponenter/inputfelter/guidelines/#deaktiveret">deaktiverede felter</a>, når de var angivet som andet end <code>type="text"</code>.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/knapper/guidelines/">knapper</a> ikke altid stod på linje, når de lå i samme række.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h2 id="version-9-0-1" class="mb-0">Version 9.0.1</h2>
@@ -3840,10 +1418,10 @@
 <div><span class="small-text mt-0 d-block">20-06-2023</span></div>
 
 <ul>
-  <li>Rettet fejl, hvor teksten på <a href="/komponenter/knapper/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.</li>
-  <li>Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.</li>
-  <li>Tilføjet tjek i JavaScript-koden for <a href="/komponenter/modal/">modaler</a>, så man ikke længere får en fejlbesked i browserens konsol, hvis man programmatisk forsøger at lukke en allerede lukket modal.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/210" class="icon-link" target="_blank">issue #210 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet fejl, hvor teksten på <a href="/komponenter/knapper/guidelines/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/guidelines/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.</li>
+  <li>Tilføjet tjek i JavaScript-koden for <a href="/komponenter/modal/guidelines/">modaler</a>, så man ikke længere får en fejlbesked i browserens konsol, hvis man programmatisk forsøger at lukke en allerede lukket modal.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/210" class="icon-link" target="_blank">issue #210 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Rettet fejl i dokumentationen, hvor nogle <a href="/design/farver/">farver</a> stod angivet forkert.</li>
 </ul>
 
@@ -3852,46 +1430,46 @@
 <div><span class="small-text mt-0 d-block">14-04-2023</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/guidelines/">Datovælger</a></h3>
 </div>
 <ul>
   <li>Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link" target="_blank">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link" target="_blank">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.</li>
   <li>Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selvom disse knapper ikke var synlige.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/kode/komponenter/datovaelger/#sprog">sprogoversættelser</a>, skal disse derfor opdateres.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/komponenter/datovaelger/implementering/#sprog">sprogoversættelser</a>, skal disse derfor opdateres.</li>
   <li>Ændret <code>aria-selected</code> til <code>aria-current</code> på valgte datoer, måneder og år.</li>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse <a href="/komponenter/datovaelger/#datoformat">datoformatet</a>.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at tilpasse <a href="/komponenter/datovaelger/guidelines/#datoformat">datoformatet</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret inputfeltet, så datovælgeren accepterer flere måder at indtaste en dato på (uafhængigt af det valgte datoformat).</li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/guidelines/">Venstremenu</a> og <a href="/komponenter/trinindikator/guidelines/">trinindikator</a></h3>
 </div>
 <ul>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor lange tekster blev ombrudt forkert (ændringen påvirker både venstremenu og trinindikator).</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er <a href="/komponenter/trinindikator/#med-fejl">fejl i et trin</a> i trinindikatoren.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er <a href="/komponenter/trinindikator/guidelines/#med-fejl">fejl i et trin</a> i trinindikatoren.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a> og <a href="/komponenter/tables/#strukturerede-lister">strukturerede lister</a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/guidelines/">Tabeller</a> og <a href="/komponenter/tables/guidelines/#strukturerede-lister">strukturerede lister</a></h3>
 </div>
 <ul>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen <code>table--lines</code>, der var en forældet <a href="/kode/komponenter/tables/#varianter">variant</a>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen <code>table--lines</code>, der var en forældet <a href="/komponenter/tables/implementering/#varianter">variant</a>.</li>
   <li>Rettet fejl relateret til margin og padding for tabeller.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/#soegning-i-tabeller">søgning i tabeller</a>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være “vælg række”. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML’en fremadrettet.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <code>aria-label</code> fra <code>label</code>-elementet for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret teksten på søgeknappen ved <a href="/komponenter/tables/guidelines/#soegning-i-tabeller">søgning i tabeller</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæserbeskederne til tjekboksene i <a href="/komponenter/tables/guidelines/#valgbare-raekker">tabeller med valgbare rækker</a> er ændret til kun at være “vælg række”. Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML’en fremadrettet.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <code>aria-label</code> fra <code>label</code>-elementet for tjekbokse i <a href="/komponenter/tables/guidelines/#valgbare-raekker">tabeller med valgbare rækker</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/eksempler/templates/#opsummering">opsummeringssiderne</a> i selvbetjeningseksemplerne, hvor tidligere tomme headers har fået en skærmlæserbesked.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <code>DKFDS.init()</code>, så kun tabeller markeret med <a href="/kode/komponenter/tables/#responsiv">responsive klasser</a> får indsat attributten <code>data-title</code>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> <strong><a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a> er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <code>DKFDS.init()</code>, så kun tabeller markeret med <a href="/komponenter/tables/implementering/#responsiv">responsive klasser</a> får indsat attributten <code>data-title</code>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> <strong><a href="/komponenter/tables/guidelines/#strukturerede-lister">Strukturerede lister</a> er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.</li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/guidelines/">Header</a></h3>
 </div>
 <ul>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret myndighedsnavnet i række 2, så det er kodet med <code>&lt;strong&gt;</code>.</li>
@@ -3902,36 +1480,37 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></h3>
 </div>
 <ul>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen <code>"jsnext:main": "src/js/start.js"</code>.<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen <code>"jsnext:main": "src/js/start.js"</code>.<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>release</code> fra <code>scripts</code>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>app-root-path</code>, <code>array-filter</code>, <code>gulp4-run-sequence</code> og <code>zip-folder</code> fra <code>devDependencies</code>.</li>
 </ul>
 
 <h3 class="h4">Øvrige</h3>
 <ul>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.</li>
   <li>Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/kode/komponenter/badges/">Badges</a>, <a href="/kode/komponenter/beskeder/">beskeder</a>, <a href="/kode/komponenter/cookiemeddelelse/">cookiemeddelelser</a>, <a href="/kode/komponenter/footer/">footer</a> og <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten <code>aria-selected</code> på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til <code>aria-current</code> og flyttet fra <code>li</code>-elementet til <code>button</code>-elementet.</li>
-  <li>Rettet fejl, hvor <a href="/komponenter/search/">søgefelter</a> blev grå i stedet for hvide på iPhones.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/radioknap/">Radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a> er omskrevet, så de ikke længere indeholder listeelementerne <code>li</code> og <code>ul</code>.</li>
-  <li>Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/">store tjekbokse</a>.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/accordions/">accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/kode/komponenter/datovaelger/">datovælgeren</a>, hvor dokumentationen er præciseret.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a>. Funktionen <code>init</code> samt sprogskifte er uændrede.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/">ikonet</a> <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/knapper/#klikbart-ikon">Klikbare ikoner</a> med klassen <code>button-unstyled</code> fylder ikke længere hele skærmbredden på mindre skærme og HTML’en er opdateret for alle eksempler.</li>
-  <li>Rettet fejl, hvor deaktiverede <a href="/komponenter/knapper/#tertiærknapper">tertiærknapper</a> skiftede farve på hover.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/implementering/">Badges</a>, <a href="/komponenter/beskeder/implementering/">beskeder</a>, <a href="/komponenter/cookiemeddelelse/implementering/">cookiemeddelelser</a>, <a href="/komponenter/footer/implementering/">footer</a> og <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/guidelines/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/guidelines/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/guidelines/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/guidelines/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten <code>aria-selected</code> på <a href="/komponenter/overflowmenu/guidelines/#sortering">sortering</a> er ændret til <code>aria-current</code> og flyttet fra <code>li</code>-elementet til <code>button</code>-elementet.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/search/guidelines/">søgefelter</a> blev grå i stedet for hvide på iPhones.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/radioknap/guidelines/">Radioknapper</a> og 
+<a href="/komponenter/tjekboks/guidelines/">tjekbokse</a> er omskrevet, så de ikke længere indeholder listeelementerne <code>li</code> og <code>ul</code>.</li>
+  <li>Mindsket afstanden mellem label og hjælpetekst ved <a href="/komponenter/radioknap/guidelines/#hjaelpetekst">store radioknapper</a> og <a href="/komponenter/tjekboks/guidelines/">store tjekbokse</a>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/accordions/implementering/">Accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/komponenter/datovaelger/implementering/">Datovælgeren</a>, hvor dokumentationen er præciseret.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a>. Funktionen <code>init</code> samt sprogskifte er uændrede.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/guidelines/">ikonet</a> <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/knapper/guidelines/#klikbart-ikon">Klikbare ikoner</a> med klassen <code>button-unstyled</code> fylder ikke længere hele skærmbredden på mindre skærme og HTML’en er opdateret for alle eksempler.</li>
+  <li>Rettet fejl, hvor deaktiverede <a href="/komponenter/knapper/guidelines/#tertiaerknapper">tertiærknapper</a> skiftede farve på hover.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <a href="/eksempler/patterns/">pattern</a> for visning af modal, når en side forlades. I stedet kan browseradvarsler anvendes.</li>
-  <li>Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet <code>aria-haspopup</code> til knapper, der åbner modaler. <a href="/kode/komponenter/modal/">Modalkomponenten</a>, <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningseksemplerne</a> og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.</li>
+  <li>Rettet fejl i <a href="/komponenter/overflowmenu/guidelines/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet <code>aria-haspopup</code> til knapper, der åbner modaler. <a href="/komponenter/modal/implementering/">Modalkomponenten</a>, <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningseksemplerne</a> og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.</li>
 </ul>
 
 <h2 id="version-8-2-1" class="mb-0">Version 8.2.1</h2>
@@ -3939,8 +1518,8 @@
 <div><span class="small-text mt-0 d-block">03-01-2023</span></div>
 
 <ul>
-  <li>Tilføjet klassen <code>full-width-image</code>, der kan bruges til <a href="/design/typografi/links/#billeder-som-links">billeder anvendt som links</a>.</li>
-  <li>Rettet fejl i <a href="/komponenter/modal/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.</li>
+  <li>Tilføjet klassen <code>full-width-image</code>, der kan bruges til <a href="/design/typografi/links/guidelines/#billeder-som-links">billeder anvendt som links</a>.</li>
+  <li>Rettet fejl i <a href="/komponenter/modal/guidelines/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.</li>
   <li>Opdateret licensinformation og tilføjet licensfilen til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">zip-filen i GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
 </ul>
 
@@ -3949,13 +1528,13 @@
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
 <ul>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/kode/komponenter/accordions/">accordions</a>, <a href="/kode/komponenter/tables/">tabeller med valgbare rækker</a>, <a href="/kode/komponenter/inputfelter/#karakterbegraensning">karakterbegrænsning</a> og <a href="/kode/komponenter/datovaelger/">datovælger</a>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for <a href="/kode/komponenter/toastbesked/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af <a href="/komponenter/toastbesked/">toastbeskeder</a>, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.</li>
-  <li>Tilføjet <code>cursor:pointer</code> til <a href="/komponenter/toastbesked/">toastbeskeders</a> luk-knap.</li>
-  <li>Opdateret <a href="/komponenter/dropdown/">dropdown</a>-komponentens background-image, så det sættes ved hjælp af ikonet <code>expand-more</code>.</li>
-  <li>Ændret stylingen på <a href="/komponenter/trinindikator/#responsiv">responsive trinindikatorers</a> top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.</li>
-  <li>Rettet en mindre fejl, hvor <a href="/komponenter/tooltip/">tooltip</a>-pilen kunne pege væk fra elementet.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/komponenter/accordions/implementering/">accordions</a>, <a href="/komponenter/tables/implementering/">tabeller med valgbare rækker</a>, <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af toastbeskeder, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.</li>
+  <li>Tilføjet <code>cursor:pointer</code> til <a href="/komponenter/toastbesked/guidelines/">toastbeskeders</a> luk-knap.</li>
+  <li>Opdateret <a href="/komponenter/dropdown/guidelines/">dropdown</a>-komponentens background-image, så det sættes ved hjælp af ikonet <code>expand-more</code>.</li>
+  <li>Ændret stylingen på <a href="/komponenter/trinindikator/guidelines/#responsiv">responsive trinindikatorers</a> top- og bund-kanter, så de ikke længere forsvinder på mindre skærme.</li>
+  <li>Rettet en mindre fejl, hvor <a href="/komponenter/tooltip/guidelines/">tooltip</a>-pilen kunne pege væk fra elementet.</li>
 </ul>
 
 <h2 id="version-8-1-0" class="mb-0">Version 8.1.0</h2>
@@ -3963,15 +1542,15 @@
 <div><span class="small-text mt-0 d-block">28-09-2022</span></div>
 
 <ul>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent: <a href="/komponenter/tilbage-til-top/">Tilbage til toppen</a></li>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: Karakterbegræsning er tilføjet til <a href="/komponenter/inputfelter/#karakterbegraensning">inputfelter</a> og <a href="/komponenter/tekstomraade/">tekstområder</a></li>
-  <li>Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/#kompleks-header-med-alle-r%C3%A6kker">headerens</a> række 3</li>
-  <li>Rettet fejl hvor <a href="/komponenter/skip-link/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren</li>
-  <li>Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent: <a href="/komponenter/tilbage-til-top/guidelines/">Tilbage til toppen</a></li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Ny variant: Karakterbegræsning er tilføjet til inputfelter og tekstområder</li>
+  <li>Tilføjet manglende padding i venstre side af overflow-menupunkter i <a href="/komponenter/header/guidelines/">headerens</a> række 3</li>
+  <li>Rettet fejl hvor <a href="/komponenter/skip-link/guidelines/">skip-links</a> ikke blev vist, når der var zoomet ca. 400% ind i browseren</li>
+  <li>Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/guidelines/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Negativ letter-spacing er fjernet fra al tekst - vær opmærksom på, at brødtekster og titler kan fylde mere end tidligere</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Begge knapper i <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a> har nu typen <a href="/komponenter/knapper/#sekundærknapper">sekundærknapper</a></li>
-  <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af (valgfri) properties</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningsløsninger</a> og <a href="/eksempler/templates/">templates</a> er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, ‘sidenavigation’ er omdøbt til ‘<a href="/komponenter/venstremenu/">venstremenu</a>’, ‘felter’ er omdøbt til ‘<a href="/komponenter/inputfelter/">inputfelter</a>’, ‘notifikation’ er omdøbt til ‘<a href="/komponenter/toastbesked/">toastbesked</a>’, ‘skip-link’ er omdøbt til ‘<a href="/komponenter/skip-link/">gå til sidens indhold</a>’ og ‘spinner’ er omdøbt til ‘<a href="/komponenter/spinner/">loading spinner</a>’. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Begge knapper i <a href="/komponenter/cookiemeddelelse/guidelines/">cookiemeddelelse</a> har nu typen <a href="/komponenter/knapper/guidelines/#sekundærknapper">sekundærknapper</a></li>
+  <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af (valgfri) properties</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på <a href="/eksempler/selvbetjeningsloesninger/">selvbetjeningsløsninger</a> og <a href="/eksempler/templates/">templates</a> er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, ‘sidenavigation’ er omdøbt til ‘<a href="/komponenter/venstremenu/guidelines/">venstremenu</a>’, ‘felter’ er omdøbt til ‘<a href="/komponenter/inputfelter/guidelines/">inputfelter</a>’, ‘notifikation’ er omdøbt til ‘<a href="/komponenter/toastbesked/guidelines/">toastbesked</a>’, ‘skip-link’ er omdøbt til ‘<a href="/komponenter/skip-link/guidelines/">gå til sidens indhold</a>’ og ‘spinner’ er omdøbt til ‘<a href="/komponenter/spinner/guidelines/">loading spinner</a>’. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.</li>
 </ul>
 
 <h2 id="version-8-0-1" class="mb-0">Version 8.0.1</h2>
@@ -3979,13 +1558,13 @@
 <div><span class="small-text mt-0 d-block">16-06-2022</span></div>
 
 <ul>
-  <li>Rettet aria-labels i <a href="/komponenter/datovaelger/">datovælgerens</a> tilbage/frem-knapper.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link" target="_blank">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Tilføjet <code>chevron-double-left</code> og <code>chevron-double-right</code> til <a href="/design/ikoner/">ikoner</a>, der manglede efter version 8.0.0.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet aria-labels i <a href="/komponenter/datovaelger/guidelines/">datovælgerens</a> tilbage/frem-knapper.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link" target="_blank">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Tilføjet <code>chevron-double-left</code> og <code>chevron-double-right</code> til <a href="/design/ikoner/guidelines/">ikoner</a>, der manglede efter version 8.0.0.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Opdateret ikonet <code>arrow-left</code>, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.</li>
   <li>Opdateret ikonerne <code>sort-default</code> og <code>sort-table-none</code>, så de også kan bruges som klasse.</li>
-  <li>Opdateret ikonerne <code>sort-ascending</code>, <code>sort-default</code>, <code>sort-descending</code>, <code>sort-table-ascending</code>, <code>sort-table-descending</code> og <code>sort-table-none</code>, så det er muligt at ændre farve på disse, når man anvender <a href="/kode/ikoner/">ikonsamlingen</a>.</li>
+  <li>Opdateret ikonerne <code>sort-ascending</code>, <code>sort-default</code>, <code>sort-descending</code>, <code>sort-table-ascending</code>, <code>sort-table-descending</code> og <code>sort-table-none</code>, så det er muligt at ændre farve på disse, når man anvender <a href="/design/ikoner/implementering/">ikonsamlingen</a>.</li>
 </ul>
 
 <h2 id="version-8-0-0" class="mb-0">Version 8.0.0</h2>
@@ -3993,40 +1572,40 @@
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
 <ul>
-  <li>Ny komponent: <a href="/komponenter/paginering/">Paginering</a></li>
-  <li>Ny komponent: <a href="/komponenter/tables/#strukturerede-lister">Strukturerede lister</a></li>
-  <li>Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/">trinindikator</a></li>
-  <li>Tilpasset afstande ved <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks</a> og <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til <a href="/komponenter/fejlopsummering/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.</li>
-  <li><a href="/kode/implementering/#javascript"><code>DKFDS.init()</code> udvidet med scope json parameter, så man kan køre <code>DKFDS.init()</code> mere målrettet på siden</a>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/design/ikoner/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.</li>
+  <li>Ny komponent: <a href="/komponenter/paginering/guidelines/">Paginering</a></li>
+  <li>Ny komponent: <a href="/komponenter/tables/guidelines/#strukturerede-lister">Strukturerede lister</a></li>
+  <li>Taget højde for alignment af lange trinnavne i <a href="/komponenter/trinindikator/guidelines/">trinindikator</a></li>
+  <li>Tilpasset afstande ved tjekboks og radioknap med skjult indhold</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Javascript tilføjet til <a href="/komponenter/fejlopsummering/guidelines/">fejlopsummeringskomponenten</a> så links sætter korrekt fokus i felter i Safari.</li>
+  <li><code>DKFDS.init()</code> udvidet med scope json parameter, så man kan køre <code>DKFDS.init()</code> mere målrettet på siden.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret <a href="/design/ikoner/guidelines/?s=slet">slet ikonet</a>, da det gamle ikon ikke fungerede i brugertest.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye <a href="/design/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS <a href="/design/farver/">farver</a></li>
   <li>Erstattet brug af / ved division i scss med math.div
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). <a href="/kode/komponenter/">Se mere under hver komponent i kodesektionen</a></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle <a href="/design/ikoner/">ikoner</a></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet <a href="/kode/komponenter/beskeder/">JavaScript til luk knap i beskeder</a></li>
-  <li>Tilføjet <a href="/komponenter/modal/#kraever-handling">modal</a> som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ved luk af <a href="/komponenter/modal/">modal</a> sættes fokus på element, som åbnede modalen</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Luk modal, hvis en ny <a href="/komponenter/modal/">modal</a> åbnes.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Forbedret <a href="/komponenter/header/#standard-header-med-navigation">navigation i headeren</a> på mobil.</li>
-  <li>Vis <a href="/komponenter/tjekboks/">tjekbokse</a> og <a href="/komponenter/radioknap/">radioknapper</a> ved print.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link">macroer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.</li>
-  <li>Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.</li>
-  <li>Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.</li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link" target="_blank">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på <a href="/komponenter/detaljer/guidelines/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). Se mere under hver komponent i kodesektionen</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for <a href="/komponenter/radioknap/guidelines/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet gamle <a href="/design/ikoner/guidelines/">ikoner</a></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet <a href="/komponenter/beskeder/implementering/">JavaScript til luk knap i beskeder</a></li>
+  <li>Tilføjet Modal som kræver handling, så brugeren ikke kan lukke modalen uden at tage stilling til dets indhold.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ved luk af <a href="/komponenter/modal/guidelines/">modal</a> sættes fokus på element, som åbnede modalen</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Luk modal, hvis en ny <a href="/komponenter/modal/guidelines/">modal</a> åbnes.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Forbedret <a href="/komponenter/header/guidelines/">headeren</a> på mobil.</li>
+  <li>Vis <a href="/komponenter/tjekboks/guidelines/">tjekbokse</a> og <a href="/komponenter/radioknap/guidelines/">radioknapper</a> ved print.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.</li>
+  <li>Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a>.</li>
+  <li>Opdateret breakpoints i <a href="/komponenter/knapper/guidelines/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.</li>
   <li>Fjernet accordion uden ramme.</li>
-  <li>Tilpasset afstande i <a href="/komponenter/modal/">modal</a> på mindre skærme</li>
+  <li>Tilpasset afstande i <a href="/komponenter/modal/guidelines/">modal</a> på mindre skærme</li>
   <li>Opdateret normalize.css til v8.0.1</li>
-  <li>Fjernet styling på <a href="/komponenter/badges/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.</li>
-  <li>Grå baggrundsfarve på <a href="/komponenter/dropdown/">dropdown</a> i Firefox er ændret til hvid.</li>
-  <li><a href="/komponenter/header/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.</li>
-  <li>Lille fejl i border på <a href="/komponenter/tables/">tabeller</a> er fikset.</li>
-  <li>Bredde på <a href="/komponenter/overflowmenu/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.</li>
-  <li>Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Fjernet styling på <a href="/komponenter/badges/guidelines/">badges</a>, som gør teksten til store bogstaver. Store bogstaver gav udfordringer med korrekt oplæsning af teksten med skærmlæser.</li>
+  <li>Grå baggrundsfarve på <a href="/komponenter/dropdown/guidelines/">dropdown</a> i Firefox er ændret til hvid.</li>
+  <li><a href="/komponenter/header/guidelines/">Header komponent</a>: Log ud og Log ind knapper i mobilnavigationen er sat til fuld bredde, så knapper præsenteres ens i menuen.</li>
+  <li>Lille fejl i border på <a href="/komponenter/tables/guidelines/">tabeller</a> er fikset.</li>
+  <li>Bredde på <a href="/komponenter/overflowmenu/guidelines/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.</li>
+  <li>Ændringer i opførelse af <a href="/komponenter/tooltip/guidelines/">tooltip</a>, for at sikre teksten kan markeres.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link" target="_blank">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet og ændret SASS variabler for bedre vedligehold og tematisering.</li>
   <li>Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.</li>
 </ul>
@@ -4036,7 +1615,7 @@
 <div><span class="small-text mt-0 d-block">03-12-2021</span></div>
 
 <ul>
-  <li>Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/#subheading">subheading</a>, så skærmlæsere læser teksten frem for at stave</li>
+  <li>Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/guidelines/#subheading">subheading</a>, så skærmlæsere læser teksten frem for at stave</li>
 </ul>
 
 <h2 id="version-7-5-2" class="mb-0">Version 7.5.2</h2>
@@ -4044,7 +1623,7 @@
 <div><span class="small-text mt-0 d-block">25-11-2021</span></div>
 
 <ul>
-  <li>Gjort det muligt at markere tekst i <a href="/komponenter/knapper/">knapper</a> for support af hjælpeværktøjer som Adgang for alle.</li>
+  <li>Gjort det muligt at markere tekst i <a href="/komponenter/knapper/guidelines/">knapper</a> for support af hjælpeværktøjer som Adgang for alle.</li>
 </ul>
 
 <h2 id="version-7-5-1" class="mb-0">Version 7.5.1</h2>
@@ -4052,9 +1631,9 @@
 <div><span class="small-text mt-0 d-block">18-11-2021</span></div>
 
 <ul>
-  <li>Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/">datovælger</a> i mobilvisning.</li>
-  <li>Rettet fejl i <a href="/komponenter/datovaelger/">datovælgeren</a> der gjorde, at den første dag i måneden ikke blev vist, når den var en søndag.</li>
-  <li>Tillader nu dato i <a href="/komponenter/datovaelger/">datovælgeren</a> fra start.</li>
+  <li>Fikset fejl med placering af årstal i <a href="/komponenter/datovaelger/guidelines/">datovælger</a> i mobilvisning.</li>
+  <li>Rettet fejl i <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a> der gjorde, at den første dag i måneden ikke blev vist, når den var en søndag.</li>
+  <li>Tillader nu dato i <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a> fra start.</li>
 </ul>
 
 <h2 id="version-7-5-0" class="mb-0">Version 7.5.0</h2>
@@ -4062,18 +1641,18 @@
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
 <ul>
-  <li><a href="/komponenter/tables/#valgbare-rækker">Valgbare rækker i tabel</a></li>
-  <li><a href="/komponenter/inputfelter/#prefix-og-suffix">Prefix og suffix på felter</a></li>
-  <li>Småtilpasninger i designet på <a href="/komponenter/modal/">modaler</a></li>
-  <li>Opdateret design på <a href="/komponenter/datovaelger/">datovælger</a></li>
-  <li>Tilføjet 72px i bunden af <a href="/komponenter/footer/">footer</a></li>
-  <li>Tilføjet styling og retningslinjer for <a href="/komponenter/tables/#sortering-i-tabeller">sortering i tabeller</a></li>
-  <li>Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/#søgning-i-tabeller">søgning i tabeller</a></li>
-  <li>Tilføjet en tykkere border i bunden af <a href="/komponenter/knapper/">knapper</a></li>
-  <li>Opdateret <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige felter</a></li>
-  <li>Tilføjet <a href="/design/ikoner/?s=sorter">ikoner til sortering i tabel</a></li>
-  <li>Tilføjet variant til <a href="/komponenter/overflowmenu/#sortering">overflow menu til brug ved sortering</a></li>
-  <li>Ændret ikon i <a href="/komponenter/detaljer/">detalje komponent</a></li>
+  <li><a href="/komponenter/tables/guidelines/#valgbare-raekker">Valgbare rækker i tabel</a></li>
+  <li><a href="/komponenter/inputfelter/guidelines/#prefix-og-suffix">Prefix og suffix på felter</a></li>
+  <li>Småtilpasninger i designet på <a href="/komponenter/modal/guidelines/">modaler</a></li>
+  <li>Opdateret design på <a href="/komponenter/datovaelger/guidelines/">datovælger</a></li>
+  <li>Tilføjet 72px i bunden af <a href="/komponenter/footer/guidelines/">footer</a></li>
+  <li>Tilføjet styling og retningslinjer for <a href="/komponenter/tables/guidelines/#sortering-i-tabeller">sortering i tabeller</a></li>
+  <li>Tilføjet eksempel og retningslinjer på <a href="/komponenter/tables/guidelines/#soegning-i-tabeller">søgning i tabeller</a></li>
+  <li>Tilføjet en tykkere border i bunden af <a href="/komponenter/knapper/guidelines/">knapper</a></li>
+  <li>Opdateret <a href="/komponenter/inputfelter/guidelines/#obligatoriske-og-frivillige-felter">retningslinjer for obligatoriske og frivillige felter</a></li>
+  <li>Tilføjet <a href="/design/ikoner/guidelines/?s=sorter">ikoner til sortering i tabel</a></li>
+  <li>Tilføjet variant til <a href="/komponenter/overflowmenu/guidelines/#sortering">overflow menu til brug ved sortering</a></li>
+  <li>Ændret ikon i <a href="/komponenter/detaljer/guidelines/">detalje komponent</a></li>
 </ul>
 
 <h2 id="version-7-4-0" class="mb-0">Version 7.4.0</h2>
@@ -4081,10 +1660,10 @@
 <div><span class="small-text mt-0 d-block">02-06-2021</span></div>
 
 <ul>
-  <li>Ændringer i <a href="/komponenter/tooltip/">tooltip komponenten</a> - der er tilføjet delay og pil på tooltip</li>
-  <li>Links får nu automatisk sort farve i <a href="/komponenter/beskeder/">beskeder</a></li>
-  <li>Ny komponent: <a href="/komponenter/toggle/">Toggle switch komponent</a></li>
-  <li>Tilføjet status tekst i forbindelse med <a href="/komponenter/spinner/">spinner komponenten</a></li>
+  <li>Ændringer i <a href="/komponenter/tooltip/guidelines/">tooltip komponenten</a> - der er tilføjet delay og pil på tooltip</li>
+  <li>Links får nu automatisk sort farve i <a href="/komponenter/beskeder/guidelines/">beskeder</a></li>
+  <li>Ny komponent: <a href="/komponenter/toggle/guidelines/">Toggle switch komponent</a></li>
+  <li>Tilføjet status tekst i forbindelse med <a href="/komponenter/spinner/guidelines/">spinner komponenten</a></li>
 </ul>
 
 <h2 id="version-7-3-0" class="mb-0">Version 7.3.0</h2>
@@ -4092,17 +1671,17 @@
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
 <ul>
-  <li><a href="/design/ikoner/">Ikontaksonomi</a></li>
-  <li>Ny komponent: <a href="/komponenter/toastbesked/">Notifikation (Toast) komponent</a></li>
+  <li><a href="/design/ikoner/guidelines/">Ikontaksonomi</a></li>
+  <li>Ny komponent: <a href="/komponenter/toastbesked/guidelines/">Notifikation (Toast) komponent</a></li>
   <li>Fjernet unødvendige kald til fontfiler</li>
   <li>Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer</li>
   <li>Generel oprydning i dependencies
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modaler</a> kolliderer og lukker begge, når en overflow er inde i en modal
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link" target="_blank">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/guidelines/">overflow menu</a> og <a href="/komponenter/modal/guidelines/">modaler</a> kolliderer og lukker begge, når en overflow er inde i en modal
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link" target="_blank">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><a href="/design/borders/#streger">Facit streger</a></li>
-  <li>Udvidelse af breakpoint for <a href="/kode/komponenter/tables/#responsiv">responsiv tabel</a>
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Udvidelse af breakpoint for <a href="/komponenter/tables/implementering/#responsiv">responsiv tabel</a>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link" target="_blank">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h2 id="version-7-2-0" class="mb-0">Version 7.2.0</h2>
@@ -4111,18 +1690,18 @@
 
 <ul>
   <li>Ændret font i drop down for at fikse bug i Firefox
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li><a href="/komponenter/datovaelger/">Ny komponent: Datovælger</a></li>
-  <li>Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/">accordions</a>
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link" target="_blank">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><a href="/komponenter/datovaelger/guidelines/">Ny komponent: Datovælger</a></li>
+  <li>Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/guidelines/">accordions</a>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link" target="_blank">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt</li>
   <li>Opdateret <a href="/design/typografi/">typografi</a></li>
-  <li>Tilføjet styling af <a href="/design/typografi/tekst/#billedtekst">billedtekst (figcaption)</a></li>
-  <li><a href="/komponenter/accordions/#åbn-luk-alle">Åbn/luk alle accordions function</a></li>
-  <li><a href="/komponenter/accordions/">Accordion</a> knapper kan nu være i en overskrift
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Tilføjet styling af <a href="/design/typografi/tekst/guidelines/#billedtekst">billedtekst (figcaption)</a></li>
+  <li><a href="/komponenter/accordions/guidelines/#aabn-luk-alle">Åbn/luk alle accordions function</a></li>
+  <li><a href="/komponenter/accordions/guidelines/">Accordion</a> knapper kan nu være i en overskrift
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link" target="_blank">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Padding fikset på extracompact tabeller
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/113" class="icon-link">issue #113 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/113" class="icon-link" target="_blank">issue #113 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h2 id="version-7-1-1" class="mb-0">Version 7.1.1</h2>
@@ -4130,17 +1709,17 @@
 <div><span class="small-text mt-0 d-block">28-10-2020</span></div>
 
 <ul>
-  <li>Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/header/">header</a> hopper ved hover.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Fikset fejl i Internet Explorer, hvor <a href="/komponenter/inputfelter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.</li>
-  <li>Luk <a href="/komponenter/overflowmenu/">overflow menu</a> i <a href="/komponenter/header/">header</a> ved klik uden for menuen.</li>
-  <li>Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/">trinindikator</a> for bedre tilgængelighed</li>
+  <li>Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/header/guidelines/">header</a> hopper ved hover.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link" target="_blank">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Fikset fejl i Internet Explorer, hvor <a href="/komponenter/inputfelter/guidelines/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.</li>
+  <li>Luk <a href="/komponenter/overflowmenu/guidelines/">overflow menu</a> i <a href="/komponenter/header/guidelines/">header</a> ved klik uden for menuen.</li>
+  <li>Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/guidelines/">trinindikator</a> for bedre tilgængelighed</li>
 </ul>
 
 <h2 id="version-7-1-0" class="mb-0">Version 7.1.0</h2>
 
 <ul>
-  <li>Ny komponent: <a href="/komponenter/sprogvaelger/">Sprogvælger</a></li>
+  <li>Ny komponent: <a href="/komponenter/sprogvaelger/guidelines/">Sprogvælger</a></li>
 </ul>
 
 <h2 id="version-7-0-0" class="mb-0">Version 7.0.0</h2>
@@ -4150,14 +1729,14 @@
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret fonten IBM Plex Sans til version 5.0.0
 <span class="form-hint mt-0">Hvis man preloader fonten - hvilket anbefales - så bør man tjekke om stien til fonten skal ændres, da mappestrukturen under fonts er ændret i dkfds</span></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter på <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.</li>
-  <li>Tilføjet ny <a href="/komponenter/modal/">modal komponent</a></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter på <a href="/komponenter/tjekboks/guidelines/#skjult-indhold-collapse">tjekboks med collapse funktion</a>, så HTML nu er valid.</li>
+  <li>Tilføjet ny <a href="/komponenter/modal/guidelines/">modal komponent</a></li>
   <li>Fikset fejl med fokus i header i Firefox</li>
   <li>Tilføjet maks. bredde på tooltip</li>
   <li>Fjernet dokumentation for brug af dkfds-plugins, da det fremover ikke vil blive vedligeholdt
-<span class="form-hint mt-0">Se mere under <a href="/kode/plugins/">Plugins i Kode sektionen</a></span></li>
+<span class="form-hint mt-0">Se mere under <a href="/kom-i-gang/implementering-kode/plugins/">Plugins</a> i Kode sektionen</span></li>
   <li>Fikset fejl, hvor valgt radioknap ikke blev vist ved print i Internet Explorer og Edge
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link" target="_blank">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h2 id="version-6-1-1" class="mb-0">Version 6.1.1</h2>
@@ -4173,11 +1752,11 @@
 <div><span class="small-text mt-0 d-block">14-05-2020</span></div>
 
 <ul>
-  <li>Ny komponent: <a href="/komponenter/broedkrumme/">Brødkrumme</a></li>
-  <li>Mulighed for en mere kompakt <a href="/komponenter/header/">header</a> med brug af en <a href="/komponenter/knapper/#lille-knap">lille knap</a></li>
-  <li>Linjehøjden for <a href="/design/typografi/tekst/">lille brødtekst</a> er ændret til 20px</li>
-  <li>Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/">fejlopsummeringer</a>.</li>
-  <li><a href="/komponenter/venstremenu/">Tilpasset alignment på venstremenu</a></li>
+  <li>Ny komponent: <a href="/komponenter/broedkrumme/guidelines/">Brødkrumme</a></li>
+  <li>Mulighed for en mere kompakt <a href="/komponenter/header/guidelines/">header</a> med brug af en <a href="/komponenter/knapper/guidelines/#lille-knap">lille knap</a></li>
+  <li>Linjehøjden for <a href="/design/typografi/tekst/guidelines/#broedtekst">lille brødtekst</a> er ændret til 20px</li>
+  <li>Tilføjet dokumentation og eksempler på <a href="/komponenter/fejlmeddelelser/guidelines/">fejlmeddelelser</a> og <a href="/komponenter/fejlopsummering/guidelines/">fejlopsummeringer</a>.</li>
+  <li><a href="/komponenter/venstremenu/guidelines/">Tilpasset alignment på venstremenu</a></li>
 </ul>
 
 <h2 id="version-6-0-1" class="mb-0">Version 6.0.1</h2>
@@ -4186,9 +1765,9 @@
 
 <ul>
   <li>Fjernet inkludering af IBM Plex Sans definitionen i dkfds-tippy-theme.standalone.css.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link" target="_blank">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Understøttelse af Tippy.js v6.1.0
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/105" class="icon-link">issue #105 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/105" class="icon-link" target="_blank">issue #105 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilpasset CSS til faneblade, så der ikke længere kommer fejl ved import af dkfds scss i angular.</li>
 </ul>
 
@@ -4197,18 +1776,18 @@
 <div><span class="small-text mt-0 d-block">10-03-2020</span></div>
 
 <ul>
-  <li><a href="/komponenter/detaljer/">Detalje komponent</a> tilføjet.</li>
+  <li><a href="/komponenter/detaljer/guidelines/">Detalje komponent</a> tilføjet.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Skjul/vis indhold med knap er fjernet.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a> opdateret i udseende og HTML.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/cookiemeddelelse/guidelines/">Cookiemeddelelse</a> opdateret i udseende og HTML.</li>
   <li>Rettet fejl med border i tabel.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Tilføjet mulighed for styling af <a href="/design/typografi/overskrifter/#overskrift-som-link">links i overskrifter</a>.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/" title="Læs mere om faneblade">Faneblade</a> er ændret i HTML og JavaScript.</li>
-  <li>Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a></li>
-  <li>Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet korrekte ARIA attributer på <a href="/kode/komponenter/venstremenu/" title="Se koden til venstremenuen">venstremenuen</a>, <a href="/kode/komponenter/header/" title="Se koden til mobilmenu og headermenu">mobilmenu og headermenuen</a>.</li>
-  <li>Fikset fejl på <a href="/komponenter/trinindikator/#responsiv">responsiv trinindikator</a>.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link" target="_blank">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Tilføjet mulighed for styling af <a href="/design/typografi/overskrifter/guidelines/#overskrift-som-link">links i overskrifter</a>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/guidelines/">Faneblade</a> er ændret i HTML og JavaScript.</li>
+  <li>Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/guidelines/">venstremenu</a></li>
+  <li>Tilføjet retningslinjer for <a href="/komponenter/funktionslink/guidelines/">funktionslink</a>, <a href="/komponenter/tilbage-link/guidelines/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/guidelines/">cookiemeddelelse</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet korrekte ARIA attributer på <a href="/komponenter/venstremenu/implementering/">venstremenuen</a>, <a href="/komponenter/header/implementering/">mobilmenu og headermenuen</a>.</li>
+  <li>Fikset fejl på <a href="/komponenter/trinindikator/guidelines/#responsiv">responsiv trinindikator</a>.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link" target="_blank">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h2 id="version-5-3-0" class="mb-0">Version 5.3.0</h2>
@@ -4216,15 +1795,15 @@
 <div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
 <ul>
-  <li><a href="/komponenter/tilbage-link/">Tilbage link</a> har fået større linje højde.</li>
-  <li>Mere padding i toppen af <a href="/komponenter/header/#header-medium">navbar indeholdende funktionslink og overflow menu i header</a>.</li>
-  <li>Ændret udseende af <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse komponenten</a>.</li>
-  <li><a href="/design/typografi/lister/">Lister</a> har fået nyt udtryk.</li>
-  <li>Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/header/">header</a> samt <a href="/komponenter/venstremenu/">venstremenuen</a>.</li>
-  <li>Tilføjet mulighed for <a href="/komponenter/radioknap/#hjaelpetekst">hjælpetekst på radioknap</a>.</li>
-  <li>Tilpasset fokusramme om <a href="/komponenter/funktionslink/">funktions link</a>.</li>
-  <li>Tilpasset retningslinjer for <a href="/komponenter/radioknap/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.</li>
-  <li>Opdateret <a href="/design/designressourcer/">SVG filer</a>, samt tilføjet link til <a href="/design/designressourcer/">Figma komponent bibliotek</a>.</li>
+  <li><a href="/komponenter/tilbage-link/guidelines/">Tilbage link</a> har fået større linje højde.</li>
+  <li>Mere padding i toppen af <a href="/komponenter/header/guidelines/">navbar indeholdende funktionslink og overflow menu i header</a>.</li>
+  <li>Ændret udseende af <a href="/komponenter/cookiemeddelelse/guidelines/">cookiemeddelelse komponenten</a>.</li>
+  <li><a href="/design/typografi/lister/guidelines/">Lister</a> har fået nyt udtryk.</li>
+  <li>Ændret farve og tykkelse på aktivt menupunkt i <a href="/komponenter/header/guidelines/">header</a> samt <a href="/komponenter/venstremenu/guidelines/">venstremenuen</a>.</li>
+  <li>Tilføjet mulighed for <a href="/komponenter/radioknap/guidelines/#hjaelpetekst">hjælpetekst på radioknap</a>.</li>
+  <li>Tilpasset fokusramme om <a href="/komponenter/funktionslink/guidelines/">funktions link</a>.</li>
+  <li>Tilpasset retningslinjer for <a href="/komponenter/radioknap/guidelines/#skjult-indhold-collapse">Skjul/vis med radioknapper</a>.</li>
+  <li>Opdateret SVG filer, samt tilføjet link til Figma komponent bibliotek.</li>
 </ul>
 
 <h2 id="version-5-2-0" class="mb-0">Version 5.2.0</h2>
@@ -4234,13 +1813,13 @@
 <ul>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret accordion aria-multiselectable så man i stedet kan bruge klassen accordion-multiselectable
 <span class="form-hint mt-0">Ændringen er fortsat bagudkompatibel, men den tidligere implementering anbefales ikke, da det ikke var valid HTML.</span></li>
-  <li>Teksten i <a href="/komponenter/cards/#cards-med-samme-højde">cards med samme højde</a> placeres nu korrekt</li>
+  <li>Teksten i <a href="/komponenter/cards/guidelines/#samme-hoejde">cards med samme højde</a> placeres nu korrekt</li>
   <li>Tilføjet mere afstand mellem links i footer</li>
   <li>Overskriftstørrelser på mobil er blevet opdateret</li>
-  <li>Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/#ekstra-information">trinindikator med ekstra information</a></li>
+  <li>Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/guidelines/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/guidelines/#ekstra-information">trinindikator med ekstra information</a></li>
   <li>Tilføjet eksempel på tabel i Datatable
-<span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></span></li>
-  <li>Opdateret <a href="/kode/eksempler-implementering/">Eksempel på implementering i Angular</a></li>
+<span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link" target="_blank">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Opdateret Eksempel på implementering i Angular</li>
 </ul>
 
 <h2 id="version-5-1-0" class="mb-0">Version 5.1.0</h2>
@@ -4248,17 +1827,17 @@
 <div><span class="small-text mt-0 d-block">12-11-2019</span></div>
 
 <ul>
-  <li><a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse komponent</a> er tilføjet i kernen.</li>
-  <li><a href="/komponenter/tilbage-link/">Tilbage link</a> er tilføjet i kernen.
-<span class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/">Tilbage link</a> anbefales frem for <a href="/komponenter/knapper/#tilbage-knap">Tilbage knap</a>.</span></li>
-  <li>Fokuskant tilføjet på #main-content ved fokus fra <a href="/komponenter/skip-link/">Skip link</a>.</li>
-  <li><a href="/komponenter/badges/#statusbadges">Statusbadges</a> er tilføjet i kernen.</li>
+  <li><a href="/komponenter/cookiemeddelelse/guidelines/">Cookiemeddelelse komponent</a> er tilføjet i kernen.</li>
+  <li><a href="/komponenter/tilbage-link/guidelines/">Tilbage link</a> er tilføjet i kernen.
+<span class="form-hint mt-0">Bemærk, at <a href="/komponenter/tilbage-link/guidelines/">Tilbage link</a> anbefales frem for <a href="/komponenter/knapper/guidelines/#tilbage-knap">Tilbage knap</a>.</span></li>
+  <li>Fokuskant tilføjet på #main-content ved fokus fra <a href="/komponenter/skip-link/guidelines/">Skip link</a>.</li>
+  <li><a href="/komponenter/badges/guidelines/#statusbadges">Statusbadges</a> er tilføjet i kernen.</li>
   <li>Fejl i overflow menu brugt i header fikset.
-<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link" target="_blank">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Fikset print af modal fra iPhone.
-<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li>Opdateret beskrivelse af implementering af DKFDS under <a href="/kode/implementering/">Til udviklere</a>.
-<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/kode/implementering/#temahaandtering">temahåndtering</a>.</span></li>
+<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link" target="_blank">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Opdateret beskrivelse af implementering af DKFDS under Til udviklere.
+<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">temahåndtering</a>.</span></li>
 </ul>
 
 <h2 id="version-5-0-0" class="mb-0">Version 5.0.0</h2>
@@ -4267,21 +1846,21 @@
 
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen <code>DKFDS.init()</code> på hver side.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om <a href="/kode/implementering/">implementering af DKFDS til udviklere</a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om implementering af DKFDS til udviklere.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/venstremenu/">Venstremenuen</a> har fået nyt design.
-<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/venstremenu/">venstremenu-komponenten</a>.</span></li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/">Faneblade</a> er blevet redefineret.
-<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblade/">faneblade</a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/venstremenu/guidelines/">Venstremenuen</a> har fået nyt design.
+<span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/venstremenu/guidelines/">venstremenu-komponenten</a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/guidelines/">Faneblade</a> er blevet redefineret.
+<span class="form-hint mt-0">Hele komponenten er blevet redefineret - se den nye komponent under <a href="/komponenter/faneblade/guidelines/">faneblade</a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Den gamle tooltip (tippy) komponent er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen, men at der er kommet en erstatning i kernen.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Modal-komponenten er blevet flyttet til plugins.
 <span class="form-hint mt-0">Bemærk, at komponenten ikke længere er en del af kernen.</span></li>
-  <li>Ny og simpel <a href="/komponenter/tooltip/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.</li>
+  <li>Ny og simpel <a href="/komponenter/tooltip/guidelines/">tooltip komponent</a> er tilføjet til kernen - Komponenten er ikke længere baseret på tredjeparts bibliotek.</li>
   <li>Der er tilføjet events til komponenter. Man sætte eventlisteners på bestemte events - Fx når en accordion åbner og lukker. For mere info, se implementeringsafsnittet under hver <a href="/komponenter/">komponent</a>.</li>
-  <li>Information om <a href="/krav/">krav til selvbetjeningsløsninger</a> er nu tilføjet til designsystem.dk.</li>
-  <li>Tabellerne følger nu <a href="/design/layout/grid/">8point grid</a></li>
+  <li>Information om krav til selvbetjeningsløsninger er nu tilføjet til designsystem.dk.</li>
+  <li>Tabellerne følger nu 8point grid</li>
 </ul>
 
 <h2 id="version-4-4-0" class="mb-0">Version 4.4.0</h2>
@@ -4305,8 +1884,8 @@
   <li>Fjernet farve på small-text mixin.</li>
   <li>Tilpasset positionering af ikon på knapper.</li>
   <li>Fikset fejl i input felter, hvor specialtegn (Å, Ö, Ä etc.) ikke blev vist korrekt.</li>
-  <li>Tilføjet eksempel på luk knap i <a href="/komponenter/beskeder/#beskeder-med-luk-knap">Beskeder</a>.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet mulighed for at <a href="/komponenter/cards/#cards-med-samme-højde">positionere action knapper i cards</a> i bunden.</li>
+  <li>Tilføjet eksempel på luk knap i Beskeder.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet mulighed for at <a href="/komponenter/cards/guidelines/#samme-hoejde">positionere action knapper i cards</a> i bunden.</li>
   <li>Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.</li>
 </ul>
 
@@ -4335,7 +1914,7 @@
       <li>Fejlhåndtering omkring ikke gyldige karakterer indsat i feltet med copy/paste bør håndteres i projektet selv.</li>
     </ul>
   </li>
-  <li>Tilføjet sektion omkring <a href="/eksempler/patterns/formular/">formularstruktur</a>.</li>
+  <li>Tilføjet sektion omkring formularstruktur.</li>
 </ul>
 
 <h2 id="version-4-1-0" class="mb-0">Version 4.1.0</h2>
@@ -4447,7 +2026,7 @@
 
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Refaktoreret fra ‘dkwds’ til ‘dkfds’
-<span class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds">‘dkfds’</a> i stedet for ‘dkwds’. </span></li>
+<span class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds" class="icon-link" target="_blank">‘dkfds’<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> i stedet for ‘dkwds’. </span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Bourbon er fjernet
 <span class="form-hint mt-0">Biblioteket ‘Bourbon’ er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Nyt gridsystem
@@ -4510,41 +2089,13 @@
 </ul>
 
 
-          
-            
-            
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
-
-              
-              
-              
                 
-                  
-                  
-                  
-          
-      </section>
-    </main>
+                
+            </section>
+        </main>
 
-  </div>
+    </div>
 </div>
-
 
 <footer>
     <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
@@ -4592,13 +2143,5 @@
     <script src="/assets/js/theme.js"></script>
 <script src="/assets/js/styleguide.js"></script>
 <script src="/assets/js/vendor.js"></script>
-
-
-
-
-
-
-
-
   </body>
 </html>

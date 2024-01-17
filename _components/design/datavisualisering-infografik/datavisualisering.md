@@ -2,10 +2,11 @@
 permalink: "/design/datavisualisering-infografik/datavisualisering/"
 parentlink: "/design/datavisualisering-infografik/"
 layout: styleguide
+category: Styleguide_category
+subcategory: Styleguide
 title: Datavisualisering
-category: Design_category
-subcategory: Design
-type: component
+lead: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
+anchor: false
 description: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
 tags:
 - data
@@ -15,12 +16,9 @@ tags:
 - diagram
 - graf
 - infografik
-lead: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
 ---
 
-Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed i forbindelse med grafik og visualisering</a>.
-
-Vær opmærksom på, hvilke <a href="/design/farver/#datavisualiseringsfarver">farvepaletter der anbefales til de forskellige typer af diagrammer og datavisualisering</a>.
+Vær opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %} og anvend designsystemets {% include links/internal-link.html linktext="datavisualiseringsfarver" %}.
 
 ## Cirkeldiagrammer (Kagediagram)
 Et cirkeldiagram består af en cirkel, som opdeles i områder, der svarer til de enkelte datas størrelse. Det bruges typisk, hvis data er en del af en samlet mængde.

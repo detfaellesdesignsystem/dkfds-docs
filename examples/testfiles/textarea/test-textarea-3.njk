@@ -1,0 +1,18 @@
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip og hjælpetekst</p>
+            {{
+                textarea({
+                    "id": "input-textarea",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "tooltip": "Dette er et tooltip",
+                    "helptext": "Her er en hjælpetekst"
+                })
+            }}
+        </div>
+    </div>
+</main>

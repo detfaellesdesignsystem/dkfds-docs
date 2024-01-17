@@ -1,21 +1,30 @@
 ---
-permalink: "/komponenter/datofelter/"
+permalink: "/komponenter/datofelter/guidelines/"
 redirect_from:
-- /komponenter/dato-felt/
+- "/komponenter/dato-felt/"
+- "/komponenter/datofelter/"
 layout: styleguide
-type: component
-title: Datofelter
 category: Komponenter_category
 subcategory: Komponenter
+title: Datofelter
+lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
+component: "date-input"
+componentTitle: "Eksempel på datofelter"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
-lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 ---
 
-{% include code/preview-box.html component="date-input" title="Eksempel på datofelter" link=true code="/kode/komponenter/datofelter/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -31,33 +40,34 @@ Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, det vi
 
 Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
-Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en <a href="/komponenter/datovaelger/">datovælger</a> (date picker) funktion.
+Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en {% include links/component-guideline-link.html linktext="datovælger" %} (date picker) funktion.
 
 {% include dos-donts-box.html component="date-dos-donts" title="Datofelter do's and don'ts" %}
 
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
+
+Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Tidligere registrering (vælg Ja)'">Trinformular til registrering: Tidligere registrering (vælg <em>'Ja'</em>)</a>
+{% include links/demo-link.html linktext="Trinformular til registrering: Tidligere registrering (vælg 'Ja')" returnID="eksempelloesninger" %}
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)
-- <a href="https://uxpro.cc/publications/date-picker-design-best-practices/" class="icon-link">Nick Babich: Date Picker Design Best Practices (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Nick Babich: Date Picker Design Best Practices (2019)" %}
 - Jessica Enders: Designing UX: Forms (2016)
-- <a href="https://www.nngroup.com/articles/date-input/" class="icon-link">Angie Li: Date-Input Form Fields: UX Design Guidelines (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://design-system.service.gov.uk/components/date-input/" class="icon-link">GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://design-system.service.gov.uk/patterns/dates/" class="icon-link">GovUK om at spørge brugeren om datoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" class="icon-link">USWDS om datovælgeren<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link">GovUK om fejlmeddelelser generelt<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Angie Li: Date-Input Form Fields: UX Design Guidelines (2017)" %}
+- {% include links/external-link.html linktext="GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer" %}
+- {% include links/external-link.html linktext="GovUK om at spørge brugeren om datoer" %}
+- {% include links/external-link.html linktext="USWDS om datovælgeren" %}
+- {% include links/external-link.html linktext="GovUK om fejlmeddelelser generelt" %}
 

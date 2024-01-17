@@ -1,0 +1,79 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="tab-container">
+                <ul class="tab-list" role="tablist">
+                    <li>
+                        <button class="tab-button" role="tab" aria-controls="tabpanel1"
+                            aria-selected="true" id="tab1"><span>Indhold 1</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tab-button" role="tab" aria-controls="tabpanel2"
+                            aria-selected="false" id="tab2"><span>Indhold 2</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tab-button" role="tab" aria-controls="tabpanel3"
+                            aria-selected="false" id="tab3"><span>Indhold 3</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
+                    aria-labelledby="tab1">
+                    <h2>Indhold 1</h2>
+                    <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue,
+                        ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit
+                        amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum
+                        semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis.
+                        Curabitur malesuada nisi nec nisl facilisis ornare. Praesent
+                        vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in
+                        lacinia sem massa eget urna.</p>
+                </div>
+                <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
+                    aria-labelledby="tab2" hidden>
+                    <h2>Indhold 2</h2>
+                    <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue,
+                        ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit
+                        amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum
+                        semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis.
+                        Curabitur malesuada nisi nec nisl facilisis ornare. Praesent
+                        vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in
+                        lacinia sem massa eget urna.</p>
+                </div>
+                <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
+                    aria-labelledby="tab3" hidden>
+                    <h2>Indhold 3</h2>
+                    <p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue,
+                        ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit
+                        amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum
+                        semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis.
+                        Curabitur malesuada nisi nec nisl facilisis ornare. Praesent
+                        vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in
+                        lacinia sem massa eget urna.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let tabContainer = document.getElementsByClassName("tab-container")[0];
+        tabContainer.addEventListener("fds.tab.changed", function() {
+            console.log("The tabcontainer has changed");
+        });
+        let tabs = tabContainer.getElementsByClassName("tab-button");
+        for (let i = 0; i < tabs.length; i++) {
+            let number = i + 1;
+            tabs[i].addEventListener("fds.tab.open", function() {
+                console.log("Tab " + number + " was opened");
+            });
+            tabs[i].addEventListener("fds.tab.close", function() {
+                console.log("Tab " + number + " was closed");
+            });
+        }
+    });
+</script>

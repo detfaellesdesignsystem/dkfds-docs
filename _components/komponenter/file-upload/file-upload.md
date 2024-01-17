@@ -1,18 +1,27 @@
 ---
-permalink: /komponenter/fil-upload/
+permalink: "/komponenter/fil-upload/guidelines/"
+redirect_from:
+- "/komponenter/fil-upload/"
 layout: styleguide
-type: component
-title: Vedhæft fil
 category: Komponenter_category
 subcategory: Komponenter
+title: Vedhæft fil
+lead: Komponenten lader brugeren tilføje og indsende en fil.
+component: "file-input"
+componentTitle: "Eksempel på vedhæft fil"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
 description: "Brug fil upload til at lade brugeren vælge en fil fra sin egen computer, tablet eller mobil."
 tags:
 ---
 
-{% include code/preview-box.html component="file-input" title="Eksempel på vedhæft fil" link=true code="/kode/komponenter/fil-upload/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -30,16 +39,16 @@ Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
 #### Fejlmeddelelse
 
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-3/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vedhæft dokumenter'">Trinformular til registrering: Vedhæft dokumenter</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
-- <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Vedhæft fil'">Vedhæft fil</a>
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vedhæft dokumenter" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Vedhæft fil" returnID="eksempelloesninger" %}

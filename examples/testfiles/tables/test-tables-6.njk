@@ -1,0 +1,33 @@
+{% from "components/table/table.njk" import table as table %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Udseende og responsivitet</p>
+            {{ 
+                table({
+                    "zebra": true,
+                    "borderless": true,
+                    "responsive": true,
+                    "thead": [
+                        { "headerContent": "First column" },
+                        { "headerContent": "Second column" },
+                        { "headerContent": "Third column" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "First row, first cell" },
+                            { "content": "First row, second cell" },
+                            { "content": "First row, third cell" }
+                        ],
+                        [
+                            { "content": "Second row, first cell" },
+                            { "content": "Second row, second cell" },
+                            { "content": "Second row, third cell" }
+                        ]
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

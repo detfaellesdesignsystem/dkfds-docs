@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/obligatorisk-for-borgere/
-layout: requirements-tool
 title: Er løsningen obligatorisk at anvende for borgerne?
 description:
 backlink: true 

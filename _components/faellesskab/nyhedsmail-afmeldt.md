@@ -1,11 +1,10 @@
 ---
-permalink: /faellesskab/nyhedsmail/afmeldt/
-parentlink: /faellesskab/nyhedsmail/
+permalink: "/faellesskab/nyhedsmail/afmeldt/"
+parentlink: "/faellesskab/nyhedsmail/"
 layout: styleguide
-title: Nyhedsbrev afmeldt
 category: Faellesskab_category
 subcategory: Fællesskab
-tags:
+title: Nyhedsbrev afmeldt
 ---
 
 <div class="alert alert-success mt-5" id="newsletter-alert">
@@ -15,5 +14,5 @@ tags:
 </div>
 
 <p class="mt-9 mb-9 pt-0">
-    <a href="/faellesskab/nyhedsmail/">Tilmeld en <span class='nowrap'>e-mailadresse</span></a>
+    {% include links/internal-link.html linktext="Tilmeld en e-mailadresse" %}
 </p>

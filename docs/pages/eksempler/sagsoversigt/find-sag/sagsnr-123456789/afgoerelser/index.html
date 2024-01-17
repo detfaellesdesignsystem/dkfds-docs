@@ -231,37 +231,33 @@
 
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <div class="portal-header portal-header-compact">
-        <div class="container portal-header-inner">
-            <a href="#" aria-label="Portalnavn" class="logo ">
-                <span class="d-none d-print-block">Portalnavn</span>
+    <div class="portal-info">
+        <div class="portal-info-inner container">
+            <a href="#" aria-label="Portalnavn" class="logo">
+                <span>Portalnavn</span>
             </a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <div class="portal-info">
+            <div class="portal-user">
                 <p class="user">
-
-                    <span class="username">Anders Andersen</span>
-
+                    Anders Andersen
                 </p>
 
-                <button class="button button-secondary d-print-none">
-                    Log af
-                </button>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
 
-    <div class="solution-header">
-        <div class="container solution-header-inner">
+    <div class="solution-info">
+        <div class="solution-info-inner container">
             <div class="solution-heading">
-                <a href="#">
-                    Sagsunivers
-                </a>
+                <a href="#">Sagsunivers</a>
             </div>
 
-            <div class="solution-info">
+            <div class="additional-info">
 
                 <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -278,16 +274,12 @@
         </div>
     </div>
 
-    <div class="overlay"></div>
-    <nav class="nav">
+    <div class="navigation-menu">
+        <div class="navigation-menu-inner container">
 
-        <button class="function-link button-menu-close js-menu-close"
-            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-
-        <div class="navbar navbar-primary">
-            <div class="navbar-inner container">
-                <ul class="nav-primary">
-                    <li class="current active">
+            <nav class="nav" aria-label="Hovedmenu">
+                <ul class="mainmenu">
+                    <li class="active current">
                         <a href="#" class="nav-link" aria-current="page">
                             <span>Find sag</span>
                         </a>
@@ -303,55 +295,125 @@
                         </a>
                     </li>
                     <li>
-                        <div class="overflow-menu">
-                            <button
-                                class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
-                                data-js-target="headeroverflow1" aria-haspopup="true"
+
+                        <div class="submenu">
+                            <button class="button-overflow-menu js-dropdown"
+                                data-js-target="desktopmenu-4" aria-haspopup="true"
                                 aria-expanded="false">
                                 <span>Udbetalinger</span>
                             </button>
-                            <div class="overflow-menu-inner" id="headeroverflow1"
+                            <div class="overflow-menu-inner collapsed" id="desktopmenu-4"
                                 aria-hidden="true">
-                                <ul class="overflow-list" role="menu">
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2022</a>
+                                <ul class="overflow-list">
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2022</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2021</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2021</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2020</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2020</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2019</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2019</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2018</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2018</span>
+                                        </a>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
+
                     </li>
                 </ul>
-                <div class="nav-secondary d-none d-lg-block">
-                </div>
-            </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+
+        <div class="menu-top">
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close"
+                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
 
-        <div class="portal-info-mobile">
+        <nav class="navigation-menu-mobile" aria-label="Hovedmenu">
+            <ul class="mainmenu">
+                <li class="active current">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <span>Find sag</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Ansøgninger</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Beskeder</span>
+                    </a>
+                </li>
+                <li>
 
-            <p class="user">
+                    <div class="submenu">
+                        <button class="button-mobile-menu js-menudropdown"
+                            data-js-target="mobilemenu-4" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span>Udbetalinger</span>
+                        </button>
+                        <div class="overflow-menu-inner" id="mobilemenu-4" aria-hidden="true">
+                            <ul class="overflow-list">
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2022</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2021</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2020</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2019</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2018</span>
+                                    </a>
+                                </li>
 
-                <span class="username">Anders Andersen</span>
+                            </ul>
+                        </div>
+                    </div>
 
-            </p>
-
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
-        </div>
+                </li>
+            </ul>
+        </nav>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -365,34 +427,26 @@
 
         </div>
 
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-secondary d-none d-lg-block">
-                    <nav class="breadcrumbs" aria-label="Brødkrumme">
-                        <ol class="breadcrumbs__list">
-                            <li class="breadcrumbs__list-item">
-                                <a class="breadcrumbs__link"
-                                    href="/pages/eksempler/sagsoversigt/find-sag/">Find
-                                    sag</a>
-                            </li>
+        <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
 
-                            <li class="breadcrumbs__list-item">
-                                <a class="breadcrumbs__link"
-                                    href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/">Sagsnr.
-                                    123456789</a>
-                            </li>
+            <p class="user">
 
-                            <li class="breadcrumbs__list-item" aria-current="page">Afgørelser
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+                Anders Andersen
+
+            </p>
+
+            <p>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
         </div>
-    </nav>
+
+    </div>
 </header>
 
-<nav class="breadcrumbs container d-lg-none mt-3" aria-label="Brødkrumme">
+<nav class="breadcrumbs container mt-3" aria-label="Brødkrumme">
     <ol class="breadcrumbs__list">
         <li class="breadcrumbs__list-item">
             <a class="breadcrumbs__link" href="/pages/eksempler/sagsoversigt/find-sag/">Find
@@ -643,7 +697,7 @@
 
     <div class="language-switcher">
         <div class="container">
-            <ul aria-label="Vælg sprog fra listen ">
+            <ul aria-label="Vælg sprog fra listen">
                 <li><a href="" lang="da"
                         aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
                 </li>

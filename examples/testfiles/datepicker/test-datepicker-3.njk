@@ -1,0 +1,19 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip, hjælpetekst og format</p>
+            {{ 
+                datepicker({
+                    "id": "datepicker-example1",
+                    "name": "appointment-date1",
+                    "label": "Dato for aftale",
+                    "tooltip": "Dette er et tooltip",
+                    "helptext": "Anvend formatet DD-MM-YYYY",
+                    "format": "DD-MM-YYYY"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

@@ -266,13 +266,13 @@
             </legend>
 
             <div class="form-group-radio">
-                <input type="radio" id="kontakt-option1" name="kontakt" class="form-radio radio-large" value="telefon" />
+                <input type="radio" id="kontakt-option1" name="kontakt" class="form-radio" value="telefon" />
                 <label class="form-label" for="kontakt-option1">Pr. telefon</label>
 
             </div>
 
             <div class="form-group-radio">
-                <input type="radio" id="kontakt-option2" name="kontakt" class="form-radio radio-large" value="email" />
+                <input type="radio" id="kontakt-option2" name="kontakt" class="form-radio" value="email" />
                 <label class="form-label" for="kontakt-option2">Pr. e-mail</label>
 
             </div>
@@ -287,27 +287,27 @@
             </legend>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkbox-tidspunkt-option1" name="tidspunkt[]" class="form-checkbox checkbox-large" value="morgen" />
+                <input type="checkbox" id="checkbox-tidspunkt-option1" name="tidspunkt[]" class="form-checkbox" value="morgen" />
                 <label class="form-label" for="checkbox-tidspunkt-option1">Om morgenen</label>
 
             </div>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkbox-tidspunkt-option2" name="tidspunkt[]" class="form-checkbox checkbox-large" value="middag" />
+                <input type="checkbox" id="checkbox-tidspunkt-option2" name="tidspunkt[]" class="form-checkbox" value="middag" />
                 <label class="form-label" for="checkbox-tidspunkt-option2">Ved
                     middagstid</label>
 
             </div>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkbox-tidspunkt-option3" name="tidspunkt[]" class="form-checkbox checkbox-large" value="eftermiddag" />
+                <input type="checkbox" id="checkbox-tidspunkt-option3" name="tidspunkt[]" class="form-checkbox" value="eftermiddag" />
                 <label class="form-label" for="checkbox-tidspunkt-option3">Om
                     eftermiddagen</label>
 
             </div>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkbox-tidspunkt-option4" name="tidspunkt[]" class="form-checkbox checkbox-large" value="aften" />
+                <input type="checkbox" id="checkbox-tidspunkt-option4" name="tidspunkt[]" class="form-checkbox" value="aften" />
                 <label class="form-label" for="checkbox-tidspunkt-option4">Om aftenen</label>
 
             </div>
@@ -327,24 +327,24 @@
                     <span class="form-hint" id="date-input-birthday-hint">For eksempel: 05 12
                         1987</span>
 
-                    <div class="date-group js-calendar-group mt-3">
+                    <div class="date-group mt-3">
 
                         <div class="form-group form-group-day">
                             <label class="form-label" for="date-input-birthday-day">Dag</label>
 
-                            <input type="tel" id="date-input-birthday-day" class="form-input js-calendar-day-input" required="" autocomplete="bday-day" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+                            <input type="number" id="date-input-birthday-day" name="birthday-day" class="form-input" required="" autocomplete="bday-day" />
                         </div>
 
                         <div class="form-group form-group-month">
                             <label class="form-label" for="date-input-birthday-month">Måned</label>
 
-                            <input type="tel" id="date-input-birthday-month" class="form-input js-calendar-month-input" required="" autocomplete="bday-month" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+                            <input type="number" id="date-input-birthday-month" name="birthday-month" class="form-input" required="" autocomplete="bday-month" />
                         </div>
 
                         <div class="form-group form-group-year">
                             <label class="form-label" for="date-input-birthday-year">År</label>
 
-                            <input type="tel" id="date-input-birthday-year" class="form-input js-calendar-year-input" required="" autocomplete="bday-year" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+                            <input type="number" id="date-input-birthday-year" name="birthday-year" class="form-input" required="" autocomplete="bday-year" />
                         </div>
 
                     </div>
@@ -358,13 +358,13 @@
                     </legend>
 
                     <div class="form-group-radio">
-                        <input type="radio" id="odense-option1" name="odense" class="form-radio radio-large" value="ja" />
+                        <input type="radio" id="odense-option1" name="odense" class="form-radio" value="ja" />
                         <label class="form-label" for="odense-option1">Ja</label>
 
                     </div>
 
                     <div class="form-group-radio">
-                        <input type="radio" id="odense-option2" name="odense" class="form-radio radio-large" value="nej" />
+                        <input type="radio" id="odense-option2" name="odense" class="form-radio" value="nej" />
                         <label class="form-label" for="odense-option2">Nej</label>
 
                     </div>
@@ -384,6 +384,8 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
+    
+    
     
     
     

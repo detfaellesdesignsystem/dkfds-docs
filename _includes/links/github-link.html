@@ -1,0 +1,6 @@
+{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
+{%- assign beforelink = include.beforelink | default: "For mere info, se " -%}
+{%- assign before = include.beforenumber | default: "issue #" -%}
+{%- assign linktext = include.number | prepend: before | append: include.afternumber -%}
+
+<span class="form-hint mt-0">{{ beforelink }}<a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/{{ include.number }}" class="icon-link" target="_blank">{{ linktext }}{{ icon }}</a>.</span>

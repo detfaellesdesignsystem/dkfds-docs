@@ -1,0 +1,73 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Knapper på én række</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                button({
+                    "variant": "primary",
+                    "text": "Knap 1"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Knap 2"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "tertiary",
+                    "text": "Knap 3"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "quaternary",
+                    "text": "Knap 4"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "primary",
+                    "text": "Knap 1",
+                    "icon": "refresh"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Knap 2",
+                    "icon": "refresh"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "tertiary",
+                    "text": "Knap 3",
+                    "icon": "refresh"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "quaternary",
+                    "text": "Knap 4",
+                    "icon": "refresh"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "unstyled",
+                    "icon": "trash-can",
+                    "srOnly": "Kun ikon",
+                    "classes": { "icon": "mr-0 mt-0" }
+                }) 
+            }}
+        </div>
+    </div>
+</main>

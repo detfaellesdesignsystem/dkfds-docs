@@ -1,7 +1,7 @@
 {% if page.search %}
 <script>
 let searchIndex = [
-{% for navs in site.data.nav offset:1 %}
+{% for navs in site.data.nav %}
 {% for nav in navs %}
 {% for link in nav %}
 {% if link.href %}

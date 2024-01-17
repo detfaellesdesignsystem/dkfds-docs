@@ -1,36 +1,35 @@
 ---
-permalink: /komponenter/header/
+permalink: "/komponenter/header/guidelines/"
 redirect_from:
-- /komponenter/headers/
+- "/komponenter/headers/"
+- "/komponenter/header/"
 layout: styleguide
-title: Header
 category: Komponenter_category
 subcategory: Komponenter
-description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
-tags: 
-lead: Headeren identificerer portalen, den ansvarlig myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
+title: Header
+lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
+previewimage: "header-with-navigation"
+previewimageTitle: "Eksempel på header"
 anchor: true
 subnav:
-- text: Standard header
-  href: '#standard-header'
-- text: Standard header med navigation
-  href: '#standard-header-med-navigation'
-- text: Kompleks header med alle rækker
-  href: '#kompleks-header-med-alle-raekker'
-- text: Header med større logo og brugeroplysninger
-  href: '#header-med-stoerre-logo-og-brugeroplysninger'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#ref"
+description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
+tags: 
 ---
 
-{% include code/preview-image.html component="header-simple" code="/kode/komponenter/header/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
 Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
 
-Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.
+Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed og evt. med kontaktoplysninger.
 
 En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.
 
@@ -38,78 +37,56 @@ En eventuel overordnet navigation (topnavigation) skal også placeres i headeren
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
 
-Brug ikke topnavigationen som faneblade, anvend da <a href="/komponenter/faneblade/">faneblade</a>. 
+Brug ikke topnavigationen som faneblade, anvend da {% include links/component-guideline-link.html linktext="faneblade" %}. 
 
 ### Vejledning
 
-Tag et kig på <a href="/eksempler/selvbetjeningsloesninger/">eksempelløsningerne</a>, for at se hvordan komponenten passer ind i en komplet løsning.
+Tag et kig på {% include links/internal-link.html linktext="eksempelløsningerne" %}, for at se hvordan komponenten passer ind i en komplet løsning.
 
-En header består af et antal rækker med forskelligt indhold. Jo flere rækker jo mere kompleks en header. Designsystemet giver mulighed for op til 5 rækker og minimum 2 rækker.
+En header består af et antal rækker med forskelligt indhold.
 
-- Række 1 og 2 er obligatoriske
-- Række 3 til 5 er valgfri
-
-Når du laver en header, bør du følge disse principper:
-
-- Jo enklere navigationen er, desto bedre for brugeren.
-- Brug kun række 3, 4, 5, med knapper, links og ekstra navigation, når det er absolut nødvendigt.
-- Hold altid rækkefølgen, uanset kombinationen
-
-<div class="header-rows-example">
-  <img src="{{ site.baseurl }}/assets/img/headers/header-row-example.svg" class="w-percent-100 inner-border-box p-4" alt="Viser alle rækker i en header" />
-</div>
+- Række 1 og række 2 er obligatoriske. Alle selvbetjeningsløsninger skal have portal-logo, login-info og løsningstitel som minimum.
+- Række 3 (topnavigation) kan anvendes hvis nødvendigt.
 
 #### Headerens rækker forklaret
 
 ##### Række 1 (obligatorisk)
-
-Portal-logo, NemLog-in-oplysninger og ”Log af” knap.
+Portal-logo, NemLog-in-oplysninger og “Log af” knap.
 
 ##### Række 2 (obligatorisk)
-
-Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuelt support/kontakt oplysninger.
+Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger.
 
 ##### Række 3 (frivillig)
+Navigation (topnavigation) i løsningen og søgefelt.
 
-Navigation (topnavigation) i løsningen, eventuelt knapper, eventuelt ekstramenu.
+### Eksempler
 
-##### Række 4 (frivillig)
-
-Flere sorteringsmuligheder, eventuelt ekstramenu, eventuelt knapper.
-
-##### Række 5 (frivillig)
-
-Funktionslinks (igangsætter system- eller OS-funktionalitet, fx gem, print osv.)
-
-En header med fem rækker er meget tilpasningsvenlig og gør det muligt at servicere både simple og komplekse løsninger. Den er også kompleks at anvende for brugerne. Du bør derfor udgangspunkt anvende færre end fem rækker i din header.
-
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-<a href="/eksempler/selvbetjeningsloesninger/">Se komponenten i forskellige eksempelløsninger</a>
-
-#### Referencer
-
-<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" class="icon-link">Web Accessibility Tutorials: Headers<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
-## Varianter
-
-{:#standard-header}
-### Standard header
+#### Simpel header
 
 {% include code/preview-image.html component="header-simple" %}
 
-{:#standard-header-med-navigation}
-### Standard header med navigation
+#### Header med navigation og søgefelt
 
-{% include code/preview-image.html component="header-medium" %}
+{% include code/preview-image.html component="header-with-navigation" %}
 
-{:#kompleks-header-med-alle-raekker}
-### Kompleks header med alle rækker
+### Menupunkter med dropdown
 
-{% include code/preview-image.html component="header-full" %}
+Menupunkter med dropdown-funktionalitet giver adgang til undermenupunkter, men er ikke et menupunkt i sig selv. Overvej om dropdown-menu er den rigtige løsning. Topnavigation kombineret med venstremenu giver større fleksibilitet og mulighed for flere niveauer i navigationen.
 
-{:#header-med-stoerre-logo-og-brugeroplysninger}
-### Header med større logo og brugeroplysninger
+### Responsivitet og breakpoints
 
-{% include code/preview-image.html component="header-large" %}
+På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed og eventuelle menupunkter ind i en “mobil”-menu. Vi anbefaler, at løsningen kun anvender denne visning, når der ikke længere er plads til indholdet på sidens bredde.
+
+Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, der ved klik vises på samme måde som mobilmenuen.
+
+{:#varianter}
+## Varianter
+
+Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-guideline-link.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
+
+{% include code/preview-image.html component="header-switch-language" %}
+
+{:#ref}
+## Referencer
+
+{% include links/external-link.html linktext="Web Accessibility Tutorials: Headers" %}

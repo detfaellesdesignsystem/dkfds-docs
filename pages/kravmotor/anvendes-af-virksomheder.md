@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/anvendes-af-virksomheder/
-layout: requirements-tool
 title: Skal din løsning anvendes af virksomheder?
 description: 
 ---

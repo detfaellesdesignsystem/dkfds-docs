@@ -3,38 +3,33 @@
 
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <div class="portal-header">
-        <div class="container portal-header-inner">
-            <a href="#" aria-label="Portalnavn" class="logo ">
-                <span class="d-none d-print-block">Portalnavn</span>
+    <div class="portal-info">
+        <div class="portal-info-inner container">
+            <a href="#" aria-label="Portalnavn" class="logo">
+                <span>Portalnavn</span>
             </a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <div class="portal-info">
+            <div class="portal-user">
                 <p class="user">
-
-                    <strong class="username weight-semibold">Anders Andersen</strong>
-
-                    <br />Forsikringens Forsikringsfirma
+                    Anders Andersen
                 </p>
 
-                <button class="button button-secondary d-print-none">
-                    Log af
-                </button>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
 
-    <div class="solution-header header-end">
-        <div class="container solution-header-inner">
+    <div class="solution-info">
+        <div class="solution-info-inner container">
             <div class="solution-heading">
-                <a href="#">
-                    Ansøg om et eller andet
-                </a>
+                <a href="#">Ansøg om et eller andet</a>
             </div>
 
-            <div class="solution-info d-print-none">
+            <div class="additional-info d-print-none">
 
                 <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -52,26 +47,16 @@
     </div>
 
     <div class="overlay"></div>
-    <nav class="nav">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
 
-        <button class="function-link button-menu-close js-menu-close"
-            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-
-        <div class="portal-info-mobile">
-
-            <p class="user">
-
-                <strong class="username weight-semibold">Anders Andersen</strong>
-
-                <br />Forsikringens Forsikringsfirma
-            </p>
-
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
+        <div class="menu-top">
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close"
+                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -85,68 +70,94 @@
 
         </div>
 
-    </nav>
+        <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
+
+            <p class="user">
+
+                Anders Andersen
+
+            </p>
+
+            <p>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
+        </div>
+
+    </div>
 </header>
 
 <main class="container page-container" id="main-content">
     <div><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/"
             class="back-link">Tilbage</a></div>
 
-    <div class="overflow-menu overflow-menu--open-right sidebar-col">
+    <div class="overflow-menu overflow-menu--open-right">
         <button class="button-overflow-menu js-dropdown" data-js-target="overflow-ansoeg"
             aria-haspopup="true" aria-expanded="false">
             Trin 2 af 5
             <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-drop-down"></use></svg>
         </button>
         <div class="overflow-menu-inner" id="overflow-ansoeg" aria-hidden="true">
-
-            <nav class="sidebar-col">
-                <ul class="sidenav-list" role="menu">
+            <nav aria-label="Trinindikator">
+                <ul class="sidemenu">
                     <li role="none">
-                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/"
-                            role="menuitem">
-                            <span class="sidenav-number">1.</span>
+                        <a class="nav-step"
+                            href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/">
                             <div>
-                                <span>Oplysninger om afsender</span>
+                                <span class="sidenav-number">1.</span>
+                                <div>
+                                    <span>Oplysninger om afsender</span>
+                                </div>
+                                <span class="sidenav-icon">
+                                    <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
+                                </span>
                             </div>
-                            <span class="sidenav-icon">
-                                <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
-                            </span>
                         </a>
                     </li>
                     <li class="active current " role="none">
-                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
-                            role="menuitem" aria-current="page">
-                            <span class="sidenav-number">2.</span>
+                        <a class="nav-step"
+                            href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
+                            aria-current="page">
                             <div>
-                                <span>Kontaktoplysninger</span>
+                                <span class="sidenav-number">2.</span>
+                                <div>
+                                    <span>Kontaktoplysninger</span>
+                                </div>
                             </div>
                         </a>
                     </li>
                     <li role="none">
-                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/"
-                            role="menuitem">
-                            <span class="sidenav-number">3.</span>
+                        <a class="nav-step"
+                            href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/">
                             <div>
-                                <span>Ansøgningens type</span>
+                                <span class="sidenav-number">3.</span>
+                                <div>
+                                    <span>Ansøgningens type</span>
+                                </div>
                             </div>
                         </a>
                     </li>
                     <li role="none">
-                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
-                            role="menuitem">
-                            <span class="sidenav-number">4.</span>
+                        <a class="nav-step"
+                            href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">
                             <div>
-                                <span>Tilføj dokumentation</span>
+                                <span class="sidenav-number">4.</span>
+                                <div>
+                                    <span>Tilføj dokumentation</span>
+                                </div>
                             </div>
                         </a>
                     </li>
                     <li role="none">
-                        <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
-                            role="menuitem">
-                            <span class="sidenav-number">5.</span>
+                        <a class="nav-step"
+                            href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/">
                             <div>
-                                <span>Opsummering</span>
+                                <span class="sidenav-number">5.</span>
+                                <div>
+                                    <span>Opsummering</span>
+                                </div>
                             </div>
                         </a>
                     </li>

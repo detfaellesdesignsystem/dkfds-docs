@@ -1,12 +1,10 @@
 ---
-permalink: /faellesskab/nyhedsmail/tilmeldt/
-parentlink: /faellesskab/nyhedsmail/
+permalink: "/faellesskab/nyhedsmail/tilmeldt/"
+parentlink: "/faellesskab/nyhedsmail/"
 layout: styleguide
-title: Tilmelding til nyhedsbrev
 category: Faellesskab_category
 subcategory: Fællesskab
-description: "Tilmelding til nyhedsbrev fra Det Fælles Designsystem"
-tags:
+title: Tilmelding til nyhedsbrev
 ---
 
 <div class="alert alert-success mt-5" id="newsletter-alert">
@@ -17,5 +15,5 @@ tags:
 </div>
 
 <p class="mt-9 mb-9 pt-0">
-    <a href="/faellesskab/nyhedsmail/">Tilmeld endnu en <span class='nowrap'>e-mailadresse</span></a>
+    {% include links/internal-link.html linktext="Tilmeld endnu en e-mailadresse" %}
 </p>

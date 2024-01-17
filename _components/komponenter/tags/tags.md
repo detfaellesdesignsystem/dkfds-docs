@@ -1,26 +1,30 @@
 ---
-permalink: "/komponenter/tags/"
+permalink: "/komponenter/tags/guidelines/"
+redirect_from:
+- "/komponenter/tags/"
 layout: styleguide
-type: element
-title: Tags
 category: Komponenter_category
 subcategory: Komponenter
-description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information
-  om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
-tags: 
+title: Tags
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om
   indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
   Tags forekommer med og uden ikon.
+component: "tags"
+componentTitle: "Eksempel på tags"
+componentLink: true
 anchor: true
 subnav:
-- text: Tags med luk-ikon
-  href: "#tags-med-luk-ikon"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information
+  om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
+tags: 
 ---
 
-{% include code/preview-box.html component="tags" title="Eksempel på tags" link=true code="/kode/komponenter/tags/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -48,6 +52,7 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 {% include dos-donts-box.html component="tags-dos-donts" title="Tags do's and don'ts" %}
 
+{:#varianter}
 ## Varianter
 
 {:#tags-med-luk-ikon}

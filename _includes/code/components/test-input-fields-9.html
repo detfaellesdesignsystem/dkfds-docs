@@ -1,0 +1,28 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Fejlbesked, hjælpetekst og karakterbegrænsning</p>
+
+            <div class="form-group form-error form-limit" data-maxlength="20">
+                <label class="form-label" for="input-text">E-mail</label>
+
+                <span class="form-hint" id="input-text-hint">Dette er en hjælpetekst</span>
+                <span class="form-error-message" id="input-text-error">
+                    <span class="sr-only">Fejl: </span>Der er sket en fejl
+                </span>
+
+                <input type="text" id="input-text" name="input-text" class="form-input"
+                    aria-invalid="true"
+                    aria-describedby="input-text-hint input-text-error input-text-limit-message"
+                    required>
+                <span id="input-text-limit-message" class="sr-only">Du kan indtaste op til 20
+                    tegn</span>
+                <span class="form-hint character-limit" aria-hidden="true">Du har 20 tegn
+                    tilbage</span>
+                <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 20
+                    tegn tilbage</span>
+            </div>
+
+        </div>
+    </div>
+</main>

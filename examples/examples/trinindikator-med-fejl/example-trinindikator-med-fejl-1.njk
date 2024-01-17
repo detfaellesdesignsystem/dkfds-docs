@@ -1,9 +1,9 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
-{% from "components/header/header.njk" import portal_header as portal_header %}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{% from "components/header/header.njk" import solution_header as solution_header %}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
@@ -60,45 +60,40 @@
 <header class="header">
     <div id="top"></div>
     {{ skiplink() }}
-    {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
-
+    {{ portal_info(portal_header_data) }}
+    {{ solution_info(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-actions">
-                    <a href="#" class="function-link">{{icon_svg({"name": "save"})}}Gem kladde</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_header_data) }}
+        {{ mobile_portal_info(portal_header_data) }}
+    </div>
 </header>
 {% endblock %}
 
 {% block body %}
 <div class="container page-container pt-5 pt-lg-0">
     <div class="row">
-        <aside class="col-12 col-lg-3 sidebar-col">
+        <aside class="col-12 col-lg-3">
             {{ overflow_stepguide(trinindikator_data) }}
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
+            <button class="function-link link-right d-flex w-percent-100 justify-content-end">{{icon_svg({"name": "save"})}}Gem kladde</button>
             <div><a href="#" class="back-link">Tilbage</a></div>
-            {{ 
-                alert({
-                    "variant": "error",
-                    "classes": "mt-0 mb-8",
-                    "headingLevel": "h2",
-                    "heading": "Der er problemer på et eller flere af trinene i formularen",
-                    "contentContainer": false,
-                    "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
-                    "attributes": "data-module=\"error-summary\""
-                }) 
-            }}
+            <nav aria-labelledby="trinindikator-error-summary">
+                {{ 
+                    alert({
+                        "variant": "error",
+                        "classes": "mt-0 mb-8",
+                        "headingLevel": "h2",
+                        "headingID": "trinindikator-error-summary",
+                        "heading": "Der er problemer på et eller flere af trinene i formularen",
+                        "contentContainer": false,
+                        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
+                        "attributes": "data-module=\"error-summary\""
+                    }) 
+                }}
+            </nav>
             <h1 class="mb-6">Opsummering</h1>
             <h2>Vælg personer</h2>
             {{

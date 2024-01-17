@@ -1,10 +1,11 @@
 ---
 permalink: "/design/datavisualisering-infografik/"
 layout: styleguide
+category: Styleguide_category
+subcategory: Styleguide
 title: Datavisualisering og infografik
-category: Design_category
-subcategory: Design
-type: component
+lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
+anchor: false
 description: Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
 tags:
 - data
@@ -14,18 +15,17 @@ tags:
 - diagram
 - graf
 - infografik
-lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
 ---
 
 Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
 
-Vær meget opmærksom på <a href="/design/datavisualisering-infografik/tilgaengelig-grafik/">tilgængelighed i forbindelse med grafik og visualisering</a>.
+Vær meget opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %}.
 
 ## Datavisualisering
 
 Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram eller en graf. 
 
-<a href="/design/datavisualisering-infografik/datavisualisering/">Læs mere om datavisualisering</a>
+{% include links/internal-link.html linktext="Læs mere om datavisualisering" %}
 
 <figure>
     <img src="/assets/img/design/datavisualisering/piechart.svg" class="w-percent-50" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
@@ -38,7 +38,7 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
 
 Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af personer, ting, processer, mm. sat sammen så det formidler et budskab. 
 
-<a href="/design/datavisualisering-infografik/infografik/">Læs mere om infografik</a>
+{% include links/internal-link.html linktext="Læs mere om infografik" %}
 
 <figure>
     <img src="/assets/img/design/infografik/when-bike-tablet.svg" alt="Hvornår bruger vi cyklen? 32% fritid, 26% ærinde, 25% arbejde, 14% uddannelse, 2% erhverv" />
@@ -65,6 +65,6 @@ Overvej hvorvidt data eller information er for kompleks til en visuel præsentat
 
 Overvej grundigt, hvordan infografikken og datavisualiseringen bygges, da der skal tages højde for brugere af hjælpeteknologier som skærmlæsere. Infografik og datavisualisering i HTML/CSS er at foretrække, da det gør grafikken tilgængelig for brugere med skærmlæsere og for navigation med keyboard. Det giver ydermere mulighed for bedre skalering på tværs af forskellige skærmstørrelser. Vær opmærksom på at bygge HTML/CSS, så det er læseligt for en skærmlæser. Det er ikke altid muligt at oprette infografik og datavisualisering som HTML/CSS og man vil i stedet benytte en flad raster grafikfil (SVG, PNG, JPG, GIF). I sådanne tilfælde er et godt gennemtænkt tekstalternativ (se nedenfor) yderst vigtigt. 
 
-<a href="https://www.w3.org/TR/WCAG21/#text-alternatives" class="icon-link">Inkludér altid tekstalternativer<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a> fx en beskrivende tekst, som placeres under infografik/datavisualisering. I nogle tilfælde kan en numerisk tabel sammen med grafikken, der også gengiver dataene, give yderligere tilgængelighed. Dette er især godt, når forskellen er marginal og præcise tal ikke kan passe ind i mindre dele af datavisualiseringen – når “kagestykkerne” fx bliver for små i et “kagediagram”.
+{% include links/external-link.html linktext="Inkludér altid tekstalternativer" %} fx en beskrivende tekst, som placeres under infografik/datavisualisering. I nogle tilfælde kan en numerisk tabel sammen med grafikken, der også gengiver dataene, give yderligere tilgængelighed. Dette er især godt, når forskellen er marginal og præcise tal ikke kan passe ind i mindre dele af datavisualiseringen – når “kagestykkerne” fx bliver for små i et “kagediagram”.
 
 

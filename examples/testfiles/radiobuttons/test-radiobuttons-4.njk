@@ -1,0 +1,23 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Fejlbesked, valgt knap og disabled</p>
+            {{
+                radiobuttons({
+                    "id": "radiogroup",
+                    "radiogroupLegend": "Liste med radioknapper",
+                    "groupname": "radio-example",
+                    "errorMessage": "Dette er en fejlbesked",
+                    "isLarge": false,
+                    "items": [
+                        { "value": "v1", "label": "Valg 1" },
+                        { "value": "v2", "label": "Valg 2", "disabled": true },
+                        { "value": "v3", "label": "Valg 3", "checked": true }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

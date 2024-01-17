@@ -1,33 +1,33 @@
 ---
-permalink: "/komponenter/venstremenu/"
+permalink: "/komponenter/venstremenu/guidelines/"
 redirect_from:
 - "/komponenter/sidenav/"
+- "/komponenter/venstremenu/"
 layout: styleguide
-type: component
-title: Venstremenu
 category: Komponenter_category
 subcategory: Komponenter
+title: Venstremenu
+lead: Venstremenuen strukturerer et navigationshierarki med op til tre niveauer i en vertikal liste.
+component: "sidenav-normal-level1"
+componentTitle: "Eksempel på venstremenu med ét niveau"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Venstremenu giver brugerne overblik over struktur og indhold, så de kan
   finde vej til det indhold, de leder efter.
 tags: 
-lead: Venstremenu giver brugerne overblik over struktur og indhold, så de kan finde
-  vej til det indhold, de leder efter.
-anchor: true
-subnav:
-- text: 2 niveauer
-  href: "#2-niveauer"
-- text: 3 niveauer
-  href: "#3-niveauer"
-- text: Aktivt link med anchor links
-  href: "#aktivt-link-med-anchor-links"
-- text: Ekstra information
-  href: "#ekstra-information"
 ---
 
-{% include code/preview-box.html component="sidenav-normal-level1" title="Eksempel på venstremenu med ét niveau" link=true code="/kode/komponenter/venstremenu/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -53,28 +53,30 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
 {% include dos-donts-box.html component="sidenav-dos-donts" title="Venstremenu do's and don'ts" %}
 
-#### Referencer
-
-<a href="http://www.alistapart.com/articles/whereami" class="icon-link">Derek Powazek: Where Am I? (2006)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
-{:#2-niveauer}
+{:#to-niveauer}
 ### 2 niveauer
 
 {% include code/preview-box.html component="sidenav-normal-level2" title="Eksempel på venstremenu med to niveauer" %}
 
-{:#3-niveauer}
+{:#tre-niveauer}
 ### 3 niveauer
 
 {% include code/preview-box.html component="sidenav-normal-level3" title="Eksempel på venstremenu med tre niveauer" %}
-
-{:#aktivt-link-med-anchor-links}
-### Aktivt link med anchor links
-
-{% include code/preview-box.html component="sidenav-anchor" title="Eksempel på venstremenu med anchor links" %}
 
 {:#ekstra-information}
 ### Ekstra information
 
 {% include code/preview-box.html component="sidenav-information-level1" title="Eksempel på venstremenu med hjælpetekst på ét niveau" %}
+
+{:#anchorlinks}
+### Anchorlinks
+
+Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-guideline-link.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.
+
+{:#ref}
+## Referencer
+
+{% include links/external-link.html linktext="Derek Powazek: Where Am I? (2006)" %}

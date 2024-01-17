@@ -1,0 +1,76 @@
+{% from "components/form/controls/select.njk" import select as select %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Standard</p>
+            {{ 
+                select({
+                    "name": "options-name",
+                    "id": "options-id",
+                    "label": "Dropdown label",
+                    "required": false,
+                    "options": [
+                        { "value": "option1", "text": "Mulighed 1" },
+                        { "value": "option2", "text": "Mulighed 2" },
+                        { "value": "option3", "text": "Mulighed 3" }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet</p>
+            {{ 
+                select({
+                    "name": "options-name1",
+                    "id": "options-id1",
+                    "label": "Dropdown label",
+                    "requiredLabel": true,
+                    "options": [
+                        { "value": "option1", "text": "Mulighed 1" },
+                        { "value": "option2", "text": "Mulighed 2" },
+                        { "value": "option3", "text": "Mulighed 3" }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet</p>
+            {{ 
+                select({
+                    "name": "options-name2",
+                    "id": "options-id2",
+                    "label": "Dropdown label",
+                    "optionalLabel": true,
+                    "options": [
+                        { "value": "option1", "text": "Mulighed 1" },
+                        { "value": "option2", "text": "Mulighed 2" },
+                        { "value": "option3", "text": "Mulighed 3" }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Disabled</p>
+            {{ 
+                select({
+                    "name": "options-name3",
+                    "id": "options-id3",
+                    "label": "Dropdown label",
+                    "disabled": true,
+                    "options": [
+                        { "value": "option1", "text": "Mulighed 1" },
+                        { "value": "option2", "text": "Mulighed 2" },
+                        { "value": "option3", "text": "Mulighed 3" }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+</main>

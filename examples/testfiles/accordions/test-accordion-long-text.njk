@@ -1,0 +1,121 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Tekstombrydning i accordions</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "group1", 
+                    "items": [
+                        {
+                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "custom",
+                            "custom": {
+                                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                                "icon": "accessibility-new"
+                            }
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "group2", 
+                    "items": [
+                        {
+                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "info"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "group3", 
+                    "items": [
+                        {
+                            "title": "Lorem ipsum dolor sit amet",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "custom",
+                            "custom": {
+                                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.",
+                                "icon": "accessibility-new"
+                            }
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            {{ 
+                accordion({
+                    "id": "group4", 
+                    "items": [
+                        {
+                            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "custom",
+                            "custom": {
+                                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                                "icon": "accessibility-new"
+                            }
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            {{ 
+                accordion({
+                    "id": "group5", 
+                    "items": [
+                        {
+                            "title": "LoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacus",
+                            "content": "<p>Dette er et usandsynligt hjørnetilfælde, hvor udvikleren selv er ansvarlig for at sætte bredden på accordiontitlen.</p>",
+                            "variant": "custom",
+                            "custom": {
+                                "text": "Loremipsumdolorsitametconsecteturadipiscingelit",
+                                "icon": "accessibility-new"
+                            },
+                            "classes": { "title": "w-percent-md-60" }
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            {{ 
+                accordion({
+                    "id": "group6", 
+                    "items": [
+                        {
+                            "title": "LoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacus",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

@@ -1,27 +1,20 @@
 <header class="header d-print-none">
 
-    <!-- Start: Portal header -->
-    <div class="portal-header">
-        <div class="container portal-header-inner">
-            <!-- Start: Portallogo -->
-            <a class="fds-title" href="/" title="Det Fælles Designsystem">
-                Det Fælles Designsystem</a>
-            <!-- Slut: Portallogo -->
-
+    <div class="portal-info">
+        <div class="portal-info-inner container">
+            <a class="fds-title" href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
     </div>
-    <!-- Slut: Portal header -->
 
-    <div class="solution-header header-end">
-        <div class="container solution-header-inner">
-            <div class="solution-heading d-flex align-items-center">
-                <a href="/krav/" title="Gå tilbage til start">
-                    Fælles krav værktøj
-                </a><strong class="badge badge-small ml-3">Beta</strong>
+    <div class="solution-info">
+        <div class="solution-info-inner container">
+            <div class="solution-heading">
+                <div class="d-flex align-items-center">
+                    <a href="/krav/" title="Gå tilbage til start">Fælles krav værktøj</a><strong class="badge badge-small ml-3">Beta</strong>
+                </div>
             </div>
-
-            <div class="solution-info ">
+            <div class="additional-info">
                 <p><strong class="authority-name">Digitaliseringsstyrelsen</strong></p>
                 <p class="d-print-none"><button type="button" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
             </div>
@@ -29,22 +22,21 @@
     </div>
 
     <div class="overlay"></div>
-    <nav class=" nav">
-        <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#close"></use></svg>Luk</button>
-        <div class="portal-info-mobile">
+
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        <div class="menu-top">
+            <h2 class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
 
         <div class="solution-info-mobile">
-            <p><strong class="authority-name">Digitaliseringsstyrelsen</strong></p>
+            <p class="mb-2"><strong class="authority-name">Digitaliseringsstyrelsen</strong></p>
             <p class="d-print-none"><button type="button" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
         </div>
-        <div class="navbar">
-            <div class="navbar-inner navbar-context-actions container">
-                <div class="nav-actions">
-                    <a href="javascript:void(0)" class="function-link close-tool"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</a>
-                    <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" target="_blank" class="function-link"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>Feedback</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    </div>
 </header>
+
+<div class="container d-flex justify-content-end mb-5 flex-wrap">
+    <a href="javascript:void(0)" class="function-link mt-4 close-tool"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</a>
+    <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" target="_blank" class="function-link mt-4 ml-4"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>Feedback</a>
+</div>

@@ -1,0 +1,60 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Karakterbegrænsning</p>
+
+            <div class="form-group form-limit" data-maxlength="40">
+                <label class="form-label" for="input-textarea">Tekstområde med label</label>
+
+                <textarea class="form-input" id="input-textarea" name="input-textarea" aria-describedby="input-textarea-limit-message"></textarea>
+                <span id="input-textarea-limit-message" class="sr-only">Du kan indtaste op til
+                    40 tegn</span>
+                <span class="form-hint character-limit" aria-hidden="true">Du har 40 tegn
+                    tilbage</span>
+                <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 40
+                    tegn tilbage</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet</p>
+
+            <div class="form-group">
+                <label class="form-label" for="input-textarea1">Tekstområde med label</label>
+
+                <textarea class="form-input" id="input-textarea1" name="input-textarea" required></textarea>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet</p>
+
+            <div class="form-group">
+                <label class="form-label" for="input-textarea2">Tekstområde med label<span
+                        class="weight-normal"> (frivilligt)</span></label>
+
+                <textarea class="form-input" id="input-textarea2" name="input-textarea"></textarea>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Disabled</p>
+
+            <div class="form-group">
+                <label class="form-label" for="input-textarea2">Tekstområde med label</label>
+
+                <textarea class="form-input" id="input-textarea2" name="input-textarea" disabled></textarea>
+
+            </div>
+
+        </div>
+    </div>
+</main>

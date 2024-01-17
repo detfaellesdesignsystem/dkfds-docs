@@ -1,0 +1,18 @@
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Frivillig-label og disabled</p>
+            {{
+                textarea({
+                    "id": "input-textarea",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "disabled": true,
+                    "optionalLabel": true
+                })
+            }}
+        </div>
+    </div>
+</main>

@@ -3,9 +3,17 @@ permalink: "/design/borders/"
 redirect_from:
 - "/design/kanter/"
 layout: styleguide
+category: Styleguide_category
+subcategory: Styleguide
 title: Hjørner, streger, skygger
-category: Design_category
-subcategory: Design
+anchor: true
+subnav:
+- text: Hjørner
+  href: "#hjoerner"
+- text: Streger
+  href: "#streger"
+- text: Skygger
+  href: "#skygger"
 description: Hjørner, streger og skygger hjælper med at danne ramme om indhold på siden.
 tags:
 - hjørner
@@ -15,14 +23,6 @@ tags:
 - border
 - kanter
 - rammer
-anchor: true
-subnav:
-- text: Hjørner
-  href: "#hjoerner"
-- text: Streger
-  href: "#streger"
-- text: Skygger
-  href: "#skygger"
 ---
 
 <section>
@@ -123,7 +123,7 @@ subnav:
         <td>solid</td>
       </tr>
       <tr>
-        <td>Facit streg</td>
+        <td>Facitstreg</td>
         <td>#747474</td>
         <td>4px</td>
         <td>double</td>

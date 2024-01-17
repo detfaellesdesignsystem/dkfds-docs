@@ -7,14 +7,14 @@ var calculateAnchorPosition = require('./calculate-anchor-position');
 var root = $('body, html');
 
 // capture that the enter key was used to "click"
-$('.sidenav').on('keydown', 'a', function (e) {
+$('.anchorbox').on('keydown', 'a', function (e) {
     var ENTER = 13;
     if (e.which === ENTER) {
         $(this).data('keypress', true);
     }
 });
 
-$('.sidenav').on('click', 'a', function (e) {
+$('.anchorbox').on('click', 'a', function (e) {
     // long url splitting
     var hashLocation  = $(this).attr('href').split('#')[ 1 ];
     var scrollTopPos  = calculateAnchorPosition(hashLocation);

@@ -1,21 +1,23 @@
 ---
-permalink: /design/ikoner/
+permalink: "/design/ikoner/guidelines/"
 redirect_from:
-- /design/ikoner/ikoner-og-deres-betydning/
+- "/design/ikoner/"
+- "/design/ikoner/ikoner-og-deres-betydning/"
 layout: styleguide
+category: Styleguide_category
+subcategory: Styleguide
 title: Ikoner
-category: Design_category
-subcategory: Design
-description: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
+anchor: false
+description: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
+preview: ikoner
+previewcomponent: "icons--svg"
 tags:
 - icon
 - svg
 - svg use
 - inline svg
 ---
-
-{% include code/preview.html component="icons--svg" title="Eksempel, der viser 5 ikoners udseende" %}
 
 {:#retningslinjer}
 ## Anvendes til  
@@ -24,7 +26,7 @@ Brug ikoner til at understøtte brugerens forståelse af det som kommunikeres.
 
 Følg gængse konventioner for brug af ikoner, hvis de findes. Fx Hus-ikonet anvendes til “hjem”, som går til en forside. Lup-ikonet, bruges til at indikere en søgemulighed, osv.
 
-<a href="/design/ikoner/#betydning">Se flere betydninger i ikontaksonomien</a>
+{% include links/internal-link.html linktext="Se flere betydninger i ikontaksonomien" %}
 
 ## Anvendes ikke til  
 
@@ -32,6 +34,7 @@ Brug ikke dekorative ikoner til at “pynte” med, da de oftere end ikke bliver
 
 Illustrative ikoner skal bruges med omtanke, hvis brugeren ikke forstår ikonet umiddelbart er det oftest bedre at bruge tekst uden ikon.
 
+{:#vejledning}
 ## Vejledning  
 
 Ikoner kan skabe klarhed ved at understøtte din kommunikation visuelt eller tilføre forvirring ved at forekomme arbitrært.
@@ -45,22 +48,22 @@ Ikoner der anvendes illustrativt må ikke ligne eller være de samme som anvende
 
 Vi bruger Material Designs ikoner som udgangspunkt. 
 
-Hvis du har brug for ikoner, der ikke findes i <a href="/design/ikoner/#betydning">ikontaksonomien</a> henviser vi til:
+Hvis du har brug for ikoner, der ikke findes i {% include links/internal-link.html linktext="ikontaksonomien" %} henviser vi til:
 
 {:nobullet-list}
-- <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://materialdesignicons.com/" class="icon-link" target="_blank">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Material Design" %}
+- {% include links/external-link.html linktext="Material Design Icons" %}
 
 Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes.
 
-<a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link" target="_blank">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext="Vejledning til design af dit eget ikon" %}
 
-### Links
+### Referencer
 
 {:nobullet-list}
-- <a href="https://www.nngroup.com/articles/icon-usability/" class="icon-link">Icon Usability<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/icon-testing/" class="icon-link">Usability Testing of Icons<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/classifying-icons/" class="icon-link">Icon Classification: Resemblance, Reference, and Arbitrary Icons<svg class="icon-svg " focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Icon Usability" %}
+- {% include links/external-link.html linktext="Usability Testing of Icons" %}
+- {% include links/external-link.html linktext="Icon Classification: Resemblance, Reference, and Arbitrary Icons" %}
 
 {:#betydning}
 ## Udvalgte ikoner og deres betydning
@@ -70,11 +73,11 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
     <div class="details-text">
         <p>Hvis du har brug for yderligere ikoner henviser vi til:</p>
         <ul>
-            <li><a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-            <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+            <li>{% include links/external-link.html linktext="Material Design" %}</li>
+            <li>{% include links/external-link.html linktext="Material Design Icons" %}</li>
         </ul>
         <p>Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være med at lave et ikon, der allerede findes på listen.</p>
-        <p><a href="https://material.io/design/iconography/system-icons.html#design-principles" class="icon-link">Vejledning til design af dit eget ikon<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+        <p>{% include links/external-link.html linktext="Vejledning til design af dit eget ikon" %}</p>
     </div>
 </details>
 <form method="get" id="search-icons-form">
@@ -94,42 +97,40 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
 <details class="details mt-4">
     <summary class="details-summary"><span class="details-summary-text" id="checkbox-list-label">Filtrer på kategori</span></summary>
     <div class="details-text">
-        <fieldset aria-labelledby="checkbox-list-label">
-          <ul class="nobullet-list" id="category-list">
-            <li>
-              <input id="cat-konventionelle" type="checkbox" name="checkbox-category[]" value="konventionelle" class="form-checkbox" checked/>
-              <label for="cat-konventionelle">Konventionelle ikoner</label>
-            </li>
-            <li>
-              <input id="cat-beskeder" type="checkbox" name="checkbox-category[]" value="beskeder" class="form-checkbox"  checked/>
-              <label for="cat-beskeder">Beskeder (feedback)</label>
-            </li>
-            <li>
-              <input id="cat-navigation" type="checkbox" name="checkbox-category[]" value="navigation" class="form-checkbox"  checked/>
-              <label for="cat-navigation">Navigation</label>
-            </li>
-            <li>
-              <input id="cat-tilstande" type="checkbox" name="checkbox-category[]" value="tilstande" class="form-checkbox"  checked/>
-              <label for="cat-tilstande">Tilstande</label>
-            </li>
-            <li>
-              <input id="cat-filtyper" type="checkbox" name="checkbox-category[]" value="filtyper" class="form-checkbox"  checked/>
-              <label for="cat-filtyper">Filtyper</label>
-            </li>
-            <li>
-              <input id="cat-funktionalitet" type="checkbox" name="checkbox-category[]" value="funktionalitet" class="form-checkbox"  checked/>
-              <label for="cat-funktionalitet">Funktionalitet</label>
-            </li>
-            <li>
-              <input id="cat-illustrative" type="checkbox" name="checkbox-category[]" value="illustrative" class="form-checkbox"  checked/>
-              <label for="cat-illustrative">Illustrative</label>
-            </li>
-            <li>
-              <input id="cat-tekstredigering" type="checkbox" name="checkbox-category[]" value="tekstredigering" class="form-checkbox"  checked/>
-              <label for="cat-tekstredigering">Tekstredigering</label>
-            </li>
-          </ul>
-        </fieldset>
+      <fieldset aria-labelledby="checkbox-list-label" id="category-list">
+        <div class="form-group-checkbox">
+          <input id="cat-konventionelle" type="checkbox" name="checkbox-category[]" value="konventionelle" class="form-checkbox" checked/>
+          <label for="cat-konventionelle">Konventionelle ikoner</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-beskeder" type="checkbox" name="checkbox-category[]" value="beskeder" class="form-checkbox"  checked/>
+          <label for="cat-beskeder">Beskeder (feedback)</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-navigation" type="checkbox" name="checkbox-category[]" value="navigation" class="form-checkbox"  checked/>
+          <label for="cat-navigation">Navigation</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-tilstande" type="checkbox" name="checkbox-category[]" value="tilstande" class="form-checkbox"  checked/>
+          <label for="cat-tilstande">Tilstande</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-filtyper" type="checkbox" name="checkbox-category[]" value="filtyper" class="form-checkbox"  checked/>
+          <label for="cat-filtyper">Filtyper</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-funktionalitet" type="checkbox" name="checkbox-category[]" value="funktionalitet" class="form-checkbox"  checked/>
+          <label for="cat-funktionalitet">Funktionalitet</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-illustrative" type="checkbox" name="checkbox-category[]" value="illustrative" class="form-checkbox"  checked/>
+          <label for="cat-illustrative">Illustrative</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input id="cat-tekstredigering" type="checkbox" name="checkbox-category[]" value="tekstredigering" class="form-checkbox"  checked/>
+          <label for="cat-tekstredigering">Tekstredigering</label>
+        </div>
+      </fieldset>
     </div>
 </details>
 
@@ -353,121 +354,121 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
       <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
       <p class="alert-text">Prøv evt. at søge hos:</p>
       <ul class="nobullet-list">
-        <li><a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Design<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
-        <li><a href="https://materialdesignicons.com/" class="icon-link">Material Design Icons<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></li>
+        <li>{% include links/external-link.html linktext="Material Design" %}</li>
+        <li>{% include links/external-link.html linktext="Material Design Icons" %}</li>
       </ul>
     </div>
   </div>
 </div>
 
-<p class="mt-9"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link">Efterspørg eller giv feedback på et ikon på vores FDS GitHub side<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>
+<p class="mt-9">{% include links/external-link.html linktext="Efterspørg eller giv feedback på et ikon på vores FDS GitHub side" %}</p>
 
 <script>
-    let searchTerm, selectedIcon
-    const searchInput = document.getElementById("icon-search-input");
-    const searchForm = document.getElementById("search-icons-form");
-    
-    let queryParams = new URLSearchParams(window.location.search);
-    searchInput.value = queryParams.get('s');
-    let searchableItems = [];
-    let icons = document.getElementsByClassName('icon-box');
-    for(let i = 0; i < icons.length; i++){
-      const itemName = icons[i].dataset.iconName.toLowerCase();
-      const itemKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
-      const itemLabel = icons[i].getElementsByTagName('p')[0].innerText;
-      const category = icons[i].parentNode.parentNode.getAttribute('id').replace('icon-list-', '');
-      searchableItems.push({"name": itemName, "keywords": itemKeywords, "label": itemLabel, "category": category});
-    }
-    searchForm.addEventListener("submit" , handleInput);
-    
-     let categories = document.getElementById('category-list').getElementsByTagName('input');
-      for(let i = 0; i < categories.length; i++){
-        categories[i].addEventListener('change', function(){
-          let section = document.getElementById('icon-section-'+this.value);
-          if(this.checked && section.getElementsByClassName('icon-container').length !== 0){
-            section.classList.remove('d-none');
-          } else{
-            section.classList.add('d-none');
-          }
-
-          let sections = document.getElementsByClassName('icon-section');
-          let visibleResults = false;
-          for(let a = 0; a < sections.length; a++){
-            if(!sections[a].classList.contains('d-none')){
-              visibleResults = true;
-            }
-          }
-          if(visibleResults){
-            document.getElementById('no-results-message').classList.add('d-none');
-          } else{
-            document.getElementById('no-results-message').classList.remove('d-none');
-          }
-        });
-      }
-
-
-    function handleInput(e) {
-      e.preventDefault();
-      let searchTerm = searchInput.value.toLowerCase();
-      let queryParams = new URLSearchParams(window.location.search);
-      if(searchTerm !== ""){
-        queryParams.set('s', searchInput.value);
+  let searchTerm, selectedIcon;
+  const searchInput = document.getElementById("icon-search-input");
+  const searchForm = document.getElementById("search-icons-form");
+  
+  let queryParams = new URLSearchParams(window.location.search);
+  searchInput.value = queryParams.get('s');
+  let searchableItems = [];
+  let icons = document.getElementsByClassName('icon-box');
+  for(let i = 0; i < icons.length; i++) {
+    const itemName = icons[i].dataset.iconName.toLowerCase();
+    const itemKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
+    const itemLabel = icons[i].getElementsByTagName('p')[0].innerText;
+    const category = icons[i].parentNode.parentNode.getAttribute('id').replace('icon-list-', '');
+    searchableItems.push({"name": itemName, "keywords": itemKeywords, "label": itemLabel, "category": category});
+  }
+  searchForm.addEventListener("submit" , handleInput);
+  
+  let categories = document.getElementById('category-list').getElementsByTagName('input');
+  for(let i = 0; i < categories.length; i++){
+    categories[i].addEventListener('change', function(){
+      let section = document.getElementById('icon-section-'+this.value);
+      if(this.checked && section.getElementsByClassName('icon-container').length !== 0){
+        section.classList.remove('d-none');
       } else{
-        queryParams.delete('s');
-      }
-      history.replaceState(null, null, "?" + queryParams.toString());
-      let lists = document.getElementsByClassName('icon-list');
-      for(let i = 0; i < lists.length; i++){
-        lists[i].innerHTML = "";
-      }
-      
-      for (i in searchableItems) {
-        let icon = searchableItems[i];
-        if((icon.name.toLowerCase().indexOf(searchTerm) !== -1 || icon.keywords.toLowerCase().indexOf(searchTerm) !== -1 || icon.label.toLowerCase().indexOf(searchTerm) !== -1)){
-          let iconContainer = document.createElement('div');
-          let iconBox = document.createElement('div');
-          let iconText = document.createElement('p');
-          let svgns = "http://www.w3.org/2000/svg";
-          let xlinkns = "http://www.w3.org/1999/xlink";
-          let svg = document.createElementNS(svgns, 'svg');
-          svg.classList.add('icon-svg');
-          svg.setAttribute('focusable', 'false');
-          svg.setAttribute('aria-hidden', 'true');
-          let use = document.createElementNS(svgns, "use");
-          use.setAttributeNS(xlinkns, "href", "#"+icon.name);
-          svg.appendChild(use);
-          
-
-          iconContainer.classList.add('col-6', 'col-md-3', 'icon-container', 'p-0');
-          iconBox.classList.add('icon-box');
-          iconText.innerText = icon.label;
-          iconBox.appendChild(svg);
-          iconBox.appendChild(iconText);
-          iconContainer.appendChild(iconBox);
-          document.getElementById('icon-list-'+icon.category).appendChild(iconContainer);
-        }
+        section.classList.add('d-none');
       }
 
-     
-      let hasResults = false;
-      // Show or hide sections/categories depending on if they have results
       let sections = document.getElementsByClassName('icon-section');
-      for(let i = 0; i < sections.length; i++){
-        let sectionCategoryName = sections[i].id.replace('icon-section-', '');
-        if(sections[i].getElementsByClassName('icon-container').length === 0 || document.getElementById('cat-'+sectionCategoryName).checked === false){
-          sections[i].classList.add('d-none');
-        } else{
-          hasResults = true;
-          sections[i].classList.remove('d-none');
+      let visibleResults = false;
+      for(let a = 0; a < sections.length; a++){
+        if(!sections[a].classList.contains('d-none')){
+          visibleResults = true;
         }
       }
-
-      // Show or hide no results message
-      let messageElement = document.getElementById('no-results-message');
-      if(hasResults){
-        messageElement.classList.add('d-none');
+      if(visibleResults){
+        document.getElementById('no-results-message').classList.add('d-none');
       } else{
-        messageElement.classList.remove('d-none');
+        document.getElementById('no-results-message').classList.remove('d-none');
+      }
+    });
+  }
+
+
+  function handleInput(e) {
+    e.preventDefault();
+    let searchTerm = searchInput.value.toLowerCase();
+    let queryParams = new URLSearchParams(window.location.search);
+    if(searchTerm !== ""){
+      queryParams.set('s', searchInput.value);
+    } else{
+      queryParams.delete('s');
+    }
+    history.replaceState(null, null, "?" + queryParams.toString());
+    let lists = document.getElementsByClassName('icon-list');
+    for(let i = 0; i < lists.length; i++){
+      lists[i].innerHTML = "";
+    }
+    
+    for (i in searchableItems) {
+      let icon = searchableItems[i];
+      if((icon.name.toLowerCase().indexOf(searchTerm) !== -1 || icon.keywords.toLowerCase().indexOf(searchTerm) !== -1 || icon.label.toLowerCase().indexOf(searchTerm) !== -1)){
+        let iconContainer = document.createElement('div');
+        let iconBox = document.createElement('div');
+        let iconText = document.createElement('p');
+        let svgns = "http://www.w3.org/2000/svg";
+        let xlinkns = "http://www.w3.org/1999/xlink";
+        let svg = document.createElementNS(svgns, 'svg');
+        svg.classList.add('icon-svg');
+        svg.setAttribute('focusable', 'false');
+        svg.setAttribute('aria-hidden', 'true');
+        let use = document.createElementNS(svgns, "use");
+        use.setAttributeNS(xlinkns, "href", "#"+icon.name);
+        svg.appendChild(use);
+        
+
+        iconContainer.classList.add('col-6', 'col-md-3', 'icon-container', 'p-0');
+        iconBox.classList.add('icon-box');
+        iconText.innerText = icon.label;
+        iconBox.appendChild(svg);
+        iconBox.appendChild(iconText);
+        iconContainer.appendChild(iconBox);
+        document.getElementById('icon-list-'+icon.category).appendChild(iconContainer);
       }
     }
+
+    
+    let hasResults = false;
+    // Show or hide sections/categories depending on if they have results
+    let sections = document.getElementsByClassName('icon-section');
+    for(let i = 0; i < sections.length; i++){
+      let sectionCategoryName = sections[i].id.replace('icon-section-', '');
+      if(sections[i].getElementsByClassName('icon-container').length === 0 || document.getElementById('cat-'+sectionCategoryName).checked === false){
+        sections[i].classList.add('d-none');
+      } else{
+        hasResults = true;
+        sections[i].classList.remove('d-none');
+      }
+    }
+
+    // Show or hide no results message
+    let messageElement = document.getElementById('no-results-message');
+    if(hasResults){
+      messageElement.classList.add('d-none');
+    } else{
+      messageElement.classList.remove('d-none');
+    }
+  }
 </script>

@@ -1,0 +1,25 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip, hjælpetekst og format</p>
+
+            <div class="form-group">
+                <label class="form-label" for="datepicker-example1">Dato for aftale</label>
+                <button class="button button-unstyled js-tooltip" type="button"
+                    data-tooltip="Dette er et tooltip" data-tooltip-trigger="click"
+                    data-tooltip-position="top">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+                    <span class="sr-only">Hvad betyder det?</span>
+                </button>
+                <span class="form-hint" id="datepicker-example1-hint">Anvend formatet
+                    DD-MM-YYYY</span>
+
+                <div class="date-picker" data-dateformat="DD-MM-YYYY">
+                    <input type="text" id="datepicker-example1" name="appointment-date1"
+                        class="form-input" aria-describedby="datepicker-example1-hint "
+                        required>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

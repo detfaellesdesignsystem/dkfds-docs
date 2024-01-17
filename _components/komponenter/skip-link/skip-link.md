@@ -1,19 +1,23 @@
 ---
-permalink: /komponenter/skip-link/
+permalink: "/komponenter/skip-link/guidelines/"
 layout: styleguide
-type: component
-title: Gå til sidens indhold (Skip-link)
 category: Komponenter_category
 subcategory: Komponenter
+title: Gå til sidens indhold (Skip-link)
+lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse. Brugerens første tryk på tab-tasten vil få et skjult link til at komme frem, der lader brugeren skippe menuen og gå direkte til sidens indhold."
+previewimage: "skip-link-eksempel"
+previewimageTitle: "Eksempel på skip-link"
+previewimageImage: "skiplink"
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
 description: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse."
 tags: 
-lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse. Brugerens første tryk på tab-tasten vil få et skjult link til at komme frem, der lader brugeren skippe menuen og gå direkte til sidens indhold."
 ---
 
-{% include code/preview-image.html component="skip-link-eksempel" image="skiplink" code="/kode/komponenter/skip-link/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 

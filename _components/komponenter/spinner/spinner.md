@@ -1,19 +1,25 @@
 ---
-permalink: /komponenter/spinner/
+permalink: "/komponenter/spinner/guidelines/"
+redirect_from:
+- "/komponenter/spinner/"
 layout: styleguide
-type: element
-title: Loading spinner
 category: Komponenter_category
 subcategory: Komponenter
+title: Loading spinner
+lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
+component: "spinner"
+componentTitle: "Eksempel på spinner komponent"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
 description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 tags:
-lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 ---
 
-{% include code/preview-box.html component="spinner" title="Eksempel på spinner komponent" link=true code="/kode/komponenter/spinner/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 

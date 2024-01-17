@@ -1,0 +1,6 @@
+{% from "components/header/header.njk" import menu_top as menu_top %}
+
+<div class="overlay"></div>
+<div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+    {{ menu_top() }}
+</div>

@@ -1,0 +1,119 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Toggle switch</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="nobullet-list">
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label" for="switch-javascript">Denne switch
+                            virker pga. JavaScript</label>
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-javascript"></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label" for="switch-unchecked">Denne switch er
+                            slået fra</label>
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-unchecked"></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label" for="switch-checked">Denne switch er slået
+                            til</label>
+                        <button class="toggle-button" role="switch" aria-checked="true"
+                            id="switch-checked"></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label disabled"
+                            for="switch-disabled-unchecked">Denne switch er slået fra og
+                            disabled</label>
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-disabled-unchecked" disabled></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label disabled"
+                            for="switch-disabled-checked">Denne switch er slået til og
+                            disabled</label>
+                        <button class="toggle-button" role="switch" aria-checked="true"
+                            id="switch-disabled-checked" disabled></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label" for="switch-words">Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Suspendisse tincidunt vulputate
+                            risus a rhoncus. Duis maximus velit vitae dolor semper, at
+                            condimentum nunc pretium.</label>
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-words"></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+                        <label class="toggle-label"
+                            for="switch-letters">LoremipsumdolorsitametconsecteturadipiscingelitSuspendissetinciduntvulputaterisusarhoncusDuismaximusvelitvitaedolorsemperatcondimentumnuncpretium</label>
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-letters"></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element switchclass">
+                        <label class="toggle-label" for="switch-options">Klasser og
+                            attributter sat</label>
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-options" switchattributes></button>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="toggle-element">
+
+                        <button class="toggle-button" role="switch" aria-checked="false"
+                            id="switch-nolabel"></button>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('switch-javascript').addEventListener("click",
+            function() {
+                if (this.getAttribute("aria-checked") === "true") {
+                    this.setAttribute("aria-checked", "false");
+                } else {
+                    this.setAttribute("aria-checked", "true");
+                }
+            }, false);
+    });
+</script>

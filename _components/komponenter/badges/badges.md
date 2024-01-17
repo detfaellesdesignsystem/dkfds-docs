@@ -1,25 +1,33 @@
 ---
-permalink: "/komponenter/badges/"
+permalink: "/komponenter/badges/guidelines/"
+redirect_from:
+- "/komponenter/badges/"
 layout: styleguide
-type: component
-title: Badges
 category: Komponenter_category
 subcategory: Komponenter
+title: Badges
+lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller
+  vigtigt indhold.
+component: "badges"
+componentTitle: "Eksempel på badges"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
   nyt eller vigtigt indhold.
 tags: 
-lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller
-  vigtigt indhold.
-anchor: true
-subnav:
-- text: Statusbadges
-  href: "#statusbadges"
 ---
 
-{% include code/preview-box.html component="badges" title="Eksempel på badges" link=true code="/kode/komponenter/badges/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -43,22 +51,24 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 {% include dos-donts-box.html component="badges-dos-donts" title="Badges do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Afgørelser'">Sagsoversigt: Afgørelser</a>
-- <a href="/pages/eksempler/opgaveliste/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Opgaveliste'">Opgaveliste</a>
-
-#### Referencer
-
-<a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" class="icon-link">Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#statusbadges}
 ### Statusbadges
 
 {% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Opgaveliste" returnID="eksempelloesninger" %}
+
+{:#ref}
+## Referencer
+
+{% include links/external-link.html linktext="Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)" %}

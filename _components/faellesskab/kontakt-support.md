@@ -1,12 +1,13 @@
 ---
-permalink: /faellesskab/kontakt-support/
+permalink: "/faellesskab/kontakt-support/"
 redirect_from:
-- /omdesignsystemet/kontakt-support/
+- "/omdesignsystemet/kontakt-support/"
 layout: styleguide
-title: Kontakt og support
 category: Faellesskab_category
 subcategory: Fællesskab
-description: "Kontakt os via Github eller på mail."
+title: Kontakt og support
+anchor: false
+description: Kontakt os via Github eller på mail.
 tags:
 ---  
 
@@ -23,7 +24,7 @@ Brug GitHub til:
 - Efterspørgsler af nye komponenter/eksempler.
 - Forslag til ændring af komponenter/eksempler.
 
-<a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" class="icon-link">Opret et “issue” (en sag) på GitHub<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/external-link.html linktext='Opret et “issue” (en sag) på GitHub' %}
 
 ## E-mail
 
@@ -35,4 +36,4 @@ Vi anbefaler at bruge mailen i tilfælde hvor:
 - Du ikke ønsker at dele dine spørgsmål med andre.
 - Du gerne vil sætte et møde i stand med os.
 
-<a href="mailto:FDS@erst.dk" class="icon-link">Send en e-mail til FDS-teamet<svg class="icon-svg"><use xlink:href="#open-in-new"></use></svg></a>
+{% include links/internal-link.html linktext="Send en e-mail til FDS-teamet" %}

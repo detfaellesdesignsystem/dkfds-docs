@@ -1,0 +1,76 @@
+{% for link in include.links %}
+    {%- assign _link = nil %}
+
+    {%- if link.href %}
+        {%- assign _link = link.href %}
+        
+    {%- elsif link.tabs %}
+        {%- assign tabLinks = site.data.nav[link.tabs] %}
+        {%- assign tabLink = tabLinks | first %}
+        {%- assign _link = tabLink.href %}
+    {%- endif %}
+
+    {%- if _link and _link != '' -%}
+        {%- assign _page = _link | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
+        {%- assign _current = false %}
+        {%- assign _active = false %}
+
+        {%- comment %} 
+        ---------------------------------------------------------------
+        | Check whether the link matches the currently displayed page |
+        --------------------------------------------------------------- 
+        {%- endcomment %}
+
+        {%- if page.url == _page.permalink -%}
+            {%- assign _current = true %}
+            {%- assign _active = true %}
+        {%- endif %}
+
+        {%- comment %} 
+        --------------------------------------------------------------------------------------------------
+        | Ensures first level links in mobile hierarchy are marked as active when a sublevel is selected |
+        --------------------------------------------------------------------------------------------------
+        {%- endcomment %}
+
+        {%- if _page.category == page.category and _page.subcategory == nil -%}
+            {%- assign _active = true %}
+        {%- endif %}
+
+        {%- comment %} 
+        -------------------------------------------------------------------------------------------------------------
+        | If the currently selected page is part of a submenu (i.e. it has a parentlink), mark the parent as active |
+        -------------------------------------------------------------------------------------------------------------
+        {%- endcomment %}
+
+        {%- if page.parentlink == _page.permalink -%}
+            {%- assign _active = true %}
+        {%- endif %}
+
+        {% if link.categorynav %}
+        <li{% if _active %} class="active"{% endif %}>
+            <div class="submenu">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="{{link.categorynav | downcase }}" aria-haspopup="true" aria-expanded="{% if _active %}true{% else %}false{% endif %}">
+                    <span>{{ _page.title | smartify }}</span>
+                </button>
+                {% assign _sublinks = site.data.nav[link.categorynav] %}
+                <div class="overflow-menu-inner" id="{{link.categorynav | downcase }}" aria-hidden="{% if _active %}false{% else %}true{% endif %}">
+                    <ul class="overflow-list">
+                        <li{% if _current %} class="active current"{% endif %}>
+                            <a href="{{ _page.url | relative_url }}" class="nav-link">
+                                <span>{{ _page.title | smartify }} <span class="helptext">(overblik)</span></span>
+                            </a>
+                        </li>
+                        {% include nav/nav-mobile.html links=_sublinks %}
+                    </ul>
+                </div>
+            </div>
+        </li>
+        {% else %}
+        <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
+            <a href="{{ _page.url | relative_url }}" class="nav-link"><span>{{ _page.title | smartify }}</span></a>
+        </li>
+        {% endif %}
+
+    {%- endif %}
+
+{% endfor %}

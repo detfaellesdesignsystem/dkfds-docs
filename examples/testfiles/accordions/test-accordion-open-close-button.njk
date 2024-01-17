@@ -1,0 +1,85 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Åbn/luk-knapper</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "group-open",
+                    "openCloseButton": true,
+                    "items": [
+                        {
+                            "title": "Foldet ud",
+                            "content": "<p>This is some accordion content.</p>",
+                            "expanded": true
+                        },
+                        {
+                            "title": "Foldet ud",
+                            "content": "<p>This is some accordion content.</p>",
+                            "expanded": true
+                        },
+                        {
+                            "title": "Foldet ud",
+                            "content": "<p>This is some accordion content.</p>",
+                            "expanded": true
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "group-closed",
+                    "openCloseButton": true,
+                    "items": [
+                        {
+                            "title": "Foldet sammen",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Foldet sammen",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Foldet sammen",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "group-mixed",
+                    "openCloseButton": true,
+                    "items": [
+                        {
+                            "title": "Foldet sammen",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Foldet ud",
+                            "content": "<p>This is some accordion content.</p>",
+                            "expanded": true
+                        },
+                        {
+                            "title": "Foldet sammen",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

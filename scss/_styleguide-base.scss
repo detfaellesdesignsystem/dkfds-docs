@@ -1,16 +1,21 @@
 @use 'sass:math';
+@use '../node_modules/dkfds/src/stylesheets/themes/borgerdk/variables' as borger;
+@use '../node_modules/dkfds/src/stylesheets/themes/virkdk/variables' as virk;
+@use '../node_modules/dkfds/src/stylesheets/components/sidenav' as sidenav;
+@use '../node_modules/dkfds/src/stylesheets/components/navigation' as nav;
+@use '../node_modules/dkfds/src/stylesheets/global' as *;
 
 /// theme alert
 #borgerdkThemeBtn{
-    color: #ffffff;
-    background-color: #44831E;
-    border-color: #3C5C22;
+    color: color('white');
+    background-color: borger.$borger-primary;
+    border-color: borger.$borger-primary-dark;
 }
 
 #virkThemeBtn{
-    color: #ffffff;
-    background-color: #0059B3;
-    border-color: #004993;
+    color: color('white');
+    background-color: virk.$virk-primary;
+    border-color: virk.$virk-primary-dark;
 }
   
 .fds-title {
@@ -69,41 +74,31 @@ img.outer-border-box{
     }
   }
   > div:first-of-type .separator {
-    svg{fill: color($theme-color-text-positive); }
+    svg{fill: color('text-positive'); }
     div{
-      background-color: color($theme-color-text-positive);
+      background-color: color('text-positive');
     }
   }
   > div:last-of-type .separator{
-    svg{fill: color($theme-color-text-negative);}
+    svg{fill: color('text-negative');}
     div{
-      background-color: color($theme-color-text-negative);
+      background-color: color('text-negative');
     }
   }
 }
+
+// Max width for sidenavs
+
+.sidebar-col {
+  max-width: 30rem;
+}
+
 
 // Search
 
 a.search-link{
   &.link-hover{
     text-decoration: underline;
-  }
-}
-
-header .navbar .search-form{
-  align-self: center;
-
-  #search-input{
-      width: 27ch;
-  }
-}
-
-header #search-form-mobile{
-  border-top: border(20);
-
-  #search-input-mobile{
-    width: 100%;
-    max-width: none;
   }
 }
 
@@ -190,35 +185,35 @@ header #search-form-mobile{
 
 // Links color
 .color-link {
-  background-color: color($theme-color-link);
+  background-color: color("link");
 }
 .color-link-hover {
-  background-color: color($theme-color-link-hover);
+  background-color: color("link-hover");
 }
 a.link-default, a.link-default:link, a.link-default:visited, a.link-default:hover, a.link-default:focus{
-  color: color($theme-color-link);
+  color: color("link");
 }
 a.link-hover, a.link-hover:link, a.link-hover:visited, a.link-hover:hover, a.link-hover:focus{
-  color: color($theme-color-link-hover);
+  color: color("link-hover");
 }
 a.link-visited, a.link-visited:link, a.link-visited:visited, a.link-focus:visited, a.link-focus:visited{
-  color: color($theme-color-link-visited);
+  color: color("link-visited");
 }
 a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.link-focus:focus{
-  color: color($theme-color-link-focus);
+  color: color("link-focus");
 }
 .color-focus {
-  background-color: color($theme-focus-color);
+  background-color: color("focus");
 }
 .color-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color("link-visited");
 }
 
 .color-text-positive {
-  background-color: color($theme-color-text-positive);
+  background-color: color('text-positive');
 }
 .color-text-negative {
-  background-color: color($theme-color-text-negative);
+  background-color: color('text-negative');
 }
 
 // Colors used for alert boxes
@@ -304,28 +299,28 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     background-color: color('info-light');
   }
   &.borger-primary {
-    background-color: $borger-primary;
+    background-color: borger.$borger-primary;
   }
   &.borger-medium {
-    background-color: $borger-medium;
+    background-color: borger.$borger-primary-dark;
   }
   &.borger-dark {
-    background-color: $borger-dark;
+    background-color: borger.$borger-primary-darker;
   }
   &.virk-primary {
-    background-color: $virk-primary;
+    background-color: virk.$virk-primary;
   }
   &.virk-medium {
-    background-color: $virk-medium;
+    background-color: virk.$virk-primary-dark;
   }
   &.virk-dark {
-    background-color: $virk-dark;
+    background-color: virk.$virk-primary-darker;
   }
   &.color-positive {
-    background-color: color($theme-color-text-positive);
+    background-color: color('text-positive');
   }
   &.color-negative {
-    background-color: color($theme-color-text-negative);
+    background-color: color('text-negative');
   }
 }
 .color-container-medium {
@@ -434,11 +429,11 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     }
 
     .text-negative {
-      color:color($theme-color-text-negative);
+      color:color('text-negative');
     }
 
     .text-positive {
-      color:color($theme-color-text-positive);
+      color:color('text-positive');
     }
   }
 
@@ -560,7 +555,7 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
   border-left: border(20);
 }
 
-*:not(.tabnav-panel):not(.details-text):not(.component-code) > figure.highlight{
+*:not(.tab-panel):not(.details-text):not(.component-code) > figure.highlight{
   border: border(20);
 }
 
@@ -876,6 +871,10 @@ code {
   display: inline-block;
 }
 
+
+
+
+
 .video-paragraph{
   max-width: $typography-text-max-width;
 }
@@ -997,7 +996,7 @@ div.component-preview {
 
 body.layout-requirements-tool{
   .header {
-    .portal-header{
+    .portal-info{
       background-color: transparent;
     }
   }
@@ -1103,10 +1102,10 @@ body[class*="page-grid"][class*="-html"]
   border-top: $details-panel-border-width solid color($details-panel-border-color);
 }
 .sidenav-border-example{
-  border-top: $sidenav-active-border-width solid color($sidenav-active-border-color);
+  border-top: sidenav.$sidemenu-border-left-thickness solid color($sidenav-border-active-color);
 }
 .navigation-border-example{
-  border-top: $navigation-link-default-border-width solid color($navigation-link-current-border-color);
+  border-top: nav.$navigation-desktop-border-bottom-thickness solid color($navigation-link-current-border-color);
 }
 
 .screenshot-gallery .screenshot img {
@@ -1146,43 +1145,25 @@ body[class*="page-grid"][class*="-html"]
 
 // All colors as background classes
 
-@each $name, $bgcolor in $system-color-shortcodes {
+@each $name, $bgcolor in $all-colors {
   .background-#{$name} {
     background-color: color($name);
   }
 }
 
-@each $typeName, $typeColor in $all-project-colors {
-  
-  @each $variantName, $variantColor in $typeColor {
-    @if $variantName == 'default'{
-      .background-#{$typeName} {
-          background-color: color($typeName);
-      }
-    }
-    @else {
-      .background-#{$typeName}-#{$variantName} {
-        @if $variantColor != false {
-          background-color: color($typeName+'-'+$variantName);
-        }
-      }
-    }
-  }
-}
-
 $extra-colors: (
     "borgerdk": (
-        100: #44831E,
-        200: #3C5C22,
-        300: #233614
+        100: borger.$borger-primary,
+        200: borger.$borger-primary-dark,
+        300: borger.$borger-primary-darker
     ),
     "borgerdk-gray": (
         100: #f1f1f1
     ),
     "virk": (
-        100: #0059B3,
-        200: #004993,
-        300: #003972
+        100: virk.$virk-primary,
+        200: virk.$virk-primary-dark,
+        300: virk.$virk-primary-darker
     )
 );
 @each $typeName, $typeColor in $extra-colors {
@@ -1196,22 +1177,22 @@ $extra-colors: (
 }
 
 .background-focus {
-  background-color: color($theme-focus-color);
+  background-color: color("focus");
 }
 .background-link {
-  background-color: color($theme-color-link);
+  background-color: color("link");
 }
 .background-link-hover {
-  background-color: color($theme-color-link-hover);
+  background-color: color("link-hover");
 }
 .background-link-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color("link-visited");
 }
 .background-positive {
-  background-color: color($theme-color-text-positive);
+  background-color: color('text-positive');
 }
 .background-negative {
-  background-color: color($theme-color-text-negative);
+  background-color: color('text-negative');
 }
 
 /*

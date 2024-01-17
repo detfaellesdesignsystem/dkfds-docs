@@ -1,33 +1,32 @@
 ---
-permalink: "/komponenter/trinindikator/"
+permalink: "/komponenter/trinindikator/guidelines/"
 redirect_from:
-- /komponenter/trinindikatorer/
+- "/komponenter/trinindikatorer/"
+- "/komponenter/trinindikator/"
 layout: styleguide
-type: component
-title: Trinindikator
 category: Komponenter_category
 subcategory: Komponenter
-description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
-tags:
+title: Trinindikator
 lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
+component: "tringuide-overflowmenu"
+componentTitle: "Eksempel på trinindikator i overflow menu"
+componentLink: true
 anchor: true
 subnav:
-- text: Alle trin synlige
-  href: "#klikbar"
-- text: Responsiv
-  href: "#responsiv"
-- text: Låst
-  href: "#laast"
-- text: Ekstra information
-  href: "#ekstra-information"
-- text: Trinindikator med fejl
-  href: "#med-fejl"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
+description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
+tags:
 ---
 
-{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" link=true code="/kode/komponenter/trinindikator/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -57,21 +56,7 @@ Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ik
 
 {% include dos-donts-box.html component="tringuide-dos-donts" title="Trinindikator do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning'">Trinformular til ansøgning</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
-- Adam Silver: Form Design Patterns (2018)
-- Jessica Enders: Designing UX: Forms (2016)
-- <a href="https://www.effortmark.co.uk/design-patterns-government-2016/" class="icon-link">Caroline Jarrett: Design patterns in government (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#klikbar}
@@ -117,6 +102,22 @@ Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte ti
 
 #### Opsummeringsside 
 
-Eventuelle fejl vises på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med henvisning til de specifikke trin som link i fejlopsummeringen. 
+Eventuelle fejl vises på opsummeringssiden i form af {% include links/component-guideline-link.html linktext="fejlopsummering" %} med henvisning til de specifikke trin som link i fejlopsummeringen. 
 
-<a href="/eksempler/templates/#formular-med-fejl">Se et eksempel på opsummeringssiden med fejl i trinindikatoren.</a>
+{% include links/internal-link.html linktext="Se et eksempel på opsummeringssiden med fejl i trinindikatoren." %}
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" returnID="eksempelloesninger" %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
+- Adam Silver: Form Design Patterns (2018)
+- Jessica Enders: Designing UX: Forms (2016)
+- {% include links/external-link.html linktext="Caroline Jarrett: Design patterns in government (2016)" %}

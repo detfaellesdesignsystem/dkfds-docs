@@ -231,38 +231,33 @@
 
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <div class="portal-header">
-        <div class="container portal-header-inner">
-            <a href="#" aria-label="Portalnavn" class="logo ">
-                <span class="d-none d-print-block">Portalnavn</span>
+    <div class="portal-info">
+        <div class="portal-info-inner container">
+            <a href="#" aria-label="Portalnavn" class="logo">
+                <span>Portalnavn</span>
             </a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <div class="portal-info">
+            <div class="portal-user">
                 <p class="user">
-
-                    <strong class="username weight-semibold">Anders Andersen</strong>
-
-                    <br />Forsikringens Forsikringsfirma
+                    Anders Andersen
                 </p>
 
-                <button class="button button-secondary d-print-none">
-                    Log af
-                </button>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
 
-    <div class="solution-header header-end">
-        <div class="container solution-header-inner">
+    <div class="solution-info">
+        <div class="solution-info-inner container">
             <div class="solution-heading">
-                <a href="#">
-                    Løsningstitel står her
-                </a>
+                <a href="#">Løsningstitel står her</a>
             </div>
 
-            <div class="solution-info">
+            <div class="additional-info">
 
                 <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -280,26 +275,16 @@
     </div>
 
     <div class="overlay"></div>
-    <nav class="nav">
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
 
-        <button class="function-link button-menu-close js-menu-close"
-            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-
-        <div class="portal-info-mobile">
-
-            <p class="user">
-
-                <strong class="username weight-semibold">Anders Andersen</strong>
-
-                <br />Forsikringens Forsikringsfirma
-            </p>
-
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
+        <div class="menu-top">
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close"
+                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
@@ -313,7 +298,23 @@
 
         </div>
 
-    </nav>
+        <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
+
+            <p class="user">
+
+                Anders Andersen
+
+            </p>
+
+            <p>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
+        </div>
+
+    </div>
 </header>
 
 <main class="container page-container" id="main-content">
@@ -386,8 +387,7 @@
 
                             <div class="form-group-radio">
                                 <input type="radio" id="radiobuttons-alder-option1"
-                                    name="alder" class="form-radio radio-large"
-                                    value="Under 18">
+                                    name="alder" class="form-radio" value="Under 18">
                                 <label class="form-label"
                                     for="radiobuttons-alder-option1">Under 18</label>
 
@@ -395,7 +395,7 @@
 
                             <div class="form-group-radio">
                                 <input type="radio" id="radiobuttons-alder-option2"
-                                    name="alder" class="form-radio radio-large" value="18-29">
+                                    name="alder" class="form-radio" value="18-29">
                                 <label class="form-label"
                                     for="radiobuttons-alder-option2">18-29</label>
 
@@ -403,7 +403,7 @@
 
                             <div class="form-group-radio">
                                 <input type="radio" id="radiobuttons-alder-option3"
-                                    name="alder" class="form-radio radio-large" value="30-39">
+                                    name="alder" class="form-radio" value="30-39">
                                 <label class="form-label"
                                     for="radiobuttons-alder-option3">30-39</label>
 
@@ -411,7 +411,7 @@
 
                             <div class="form-group-radio">
                                 <input type="radio" id="radiobuttons-alder-option4"
-                                    name="alder" class="form-radio radio-large" value="40-59">
+                                    name="alder" class="form-radio" value="40-59">
                                 <label class="form-label"
                                     for="radiobuttons-alder-option4">40-59</label>
 
@@ -419,8 +419,7 @@
 
                             <div class="form-group-radio">
                                 <input type="radio" id="radiobuttons-alder-option5"
-                                    name="alder" class="form-radio radio-large"
-                                    value="60 eller ældre">
+                                    name="alder" class="form-radio" value="60 eller ældre">
                                 <label class="form-label" for="radiobuttons-alder-option5">60
                                     eller ældre</label>
 

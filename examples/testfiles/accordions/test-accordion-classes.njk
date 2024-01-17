@@ -1,0 +1,47 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Accordion-klasser</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionID",
+                    "classes": "accordionclass",
+                    "items": [
+                        {
+                            "title": "Accordion",
+                            "content": "<p>This is some accordion content.</p>",
+                            "classes": {
+                                "button": "buttonclass1",
+                                "title": "titleclass1"
+                            }
+                        },
+                        {
+                            "title": "Accordion",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "info",
+                            "classes": {
+                                "button": "buttonclass2",
+                                "title": "titleclass2",
+                                "icon": "iconclass2"
+                            }
+                        },
+                        {
+                            "title": "Accordion",
+                            "content": "<p>This is some accordion content.</p>",
+                            "classes": {
+                                "button": "buttonclass2",
+                                "title": "titleclass2"
+                            }
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

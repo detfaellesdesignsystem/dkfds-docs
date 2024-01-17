@@ -1,0 +1,32 @@
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Klasser</p>
+            {{ 
+                structured_list({
+                    "edit": true,
+                    "classes": {
+                        "outer": "mt-8",
+                        "table": "w-percent-70",
+                        "label": "w-percent-20",
+                        "href": "align-text-right"
+                    },
+                    "items": [
+                        {
+                            "label": "Navn",
+                            "value": "Karen Jensen",
+                            "href": "#"
+                        },
+                        {
+                            "label": "Telefonnummer",
+                            "value": "12 34 56 78",
+                            "href": "#"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

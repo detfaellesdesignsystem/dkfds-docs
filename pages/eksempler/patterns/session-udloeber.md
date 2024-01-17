@@ -2,11 +2,13 @@
 permalink: /eksempler/patterns/session-udloeber/
 parentlink: "/eksempler/patterns/"
 layout: styleguide
-title: Session udløber
 category: Eksempler_category
 subcategory: Eksempler
-description: Visning af session udløb
+title: Session udløber
 lead: Session udløber vises, inden brugeren automatisk logges af en løsning. Dialogen giver brugeren mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen. 
+anchor: false
+description: Visning af session udløb
+tags:
 ---
 
 {% include code/preview-box-details.html component="session-udloeber" title="Eksempel på session udløb" link=false detaillabel="for eksempel på udløb af session" %}
@@ -21,7 +23,7 @@ Dialogen anvendes ikke, når en bruger selv har trykket på en log af-knap. Hvis
 
 ## Vejledning
 
-Til dette mønster anvendes komponenten <a href="/komponenter/modal/#kraever-handling">Modalvindue, som kræver handling</a>.
+Til dette mønster anvendes komponenten {% include links/component-guideline-link.html linktext="Modalvindue, som kræver handling" %}.
 
 Dialogen vises ca. 5 minutter før, brugeren automatisk bliver logget af. Således kan brugeren nå at handle på informationen og fx vælge at forblive logget ind. En kortere tid for dialogen kan vælges af sikkerhedsmæssige årsager, dog må brugeren aldrig få mindre end 20 sekunders varsel af hensyn til tilgængelighed (Timing Adjustable: Understanding SC 2.2.1).
 
@@ -31,7 +33,7 @@ Hvis sessionens udløb vil resultere i, at ændringer, som brugere har foretaget
 
 Hvis brugeren har foretaget ændringer, og disse er gemt automatisk, bør dialogen gøre opmærksom på dette.
 
-Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. <a href="/pages/eksempler/logget-af/?r=/eksempler/patterns/session-udloeber/">Se eksempel på, hvordan siden kan se ud med FDS</a>. Den kan ydermere informere brugeren om ekstra sikkerhed.
+Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som kan være myndighedens egen log af-side. {% include links/internal-link.html linktext="Se eksempel på, hvordan en 'log af'-side kan se ud med FDS" %}. Den kan ydermere informere brugeren om ekstra sikkerhed.
 
 Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold.
 
@@ -46,7 +48,6 @@ Tiden der går, før brugeren logges af en løsning automatisk, defineres i forh
 ### Referencer
 
 {:.nobullet-list}
-- <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" class="icon-link">Timing Adjustable:
-Understanding SC 2.2.1<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.digitaliser.dk/resource/2553483" class="icon-link">Tekniske krav til tilslutning af it-system i NemLog-in<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Timing Adjustable: Understanding SC 2.2.1" %}
+- {% include links/external-link.html linktext="Tekniske krav til tilslutning af it-system i NemLog-in" %}
 

@@ -1,178 +1,448 @@
-#Primary menu on desktop:
-primary:
-  - href: /design/
-  - href: /komponenter/
-  - href: /eksempler/
-  - href: /kode/
-  - href: /krav/
-  - href: /faellesskab/
+define: &retningslinjer 'Retningslinjer'
+define: &responsivBreakpoint 'Responsivitet & Breakpoints'
+define: &responsiv 'Responsivitet'
+define: &implementering 'Kode'
 
-#Primary menu on mobile:
-mobile:
+#Primary menu
+primary:
+  - href: /kom-i-gang/
+    categorynav: 'Kom_i_gang_category'
   - href: /design/
-    categorynav: 'Design_category'
+    categorynav: 'Styleguide_category'
   - href: /komponenter/
     categorynav: 'Komponenter_category'
   - href: /eksempler/
     categorynav: 'Eksempler_category'
-  - href: /kode/
-    categorynav: 'Kode_category'
-  - href: /krav/
-    categorynav: 'Krav_category'
   - href: /faellesskab/
     categorynav: 'Faellesskab_category'
 
-#Left menu for krav-category
-Krav_category:
-- href: /krav/borgerdk-virk/
-- href: /krav/om-kravene/
-- href: /krav/tilgaengelighed/
+#Left menu for kom-i-gang-category
+Kom_i_gang_category:
+  - href: /kom-i-gang/implementering-kode/
+    categorynav: 'Implementering_kode_category'
+  - href: /kom-i-gang/designressourcer/
+  - href: /kom-i-gang/tjekliste/
+  - href: /kom-i-gang/krav/
+    categorynav: 'Krav_category'
+  - href: /kom-i-gang/tilgaengelighed/
+  - href: /kom-i-gang/faq/
 
-#Left menu for design-category
-Design_category:
-- href: /design/farver/
-- href: /design/typografi/
-  categorynav: 'Typografi_category'
-- href: /design/borders/
-- href: /design/ikoner/
-- href: /design/logoer/
-- href: /design/datavisualisering-infografik/
-  categorynav: 'Datavisualisering_category'
-- href: /design/layout/
-  categorynav: 'Layout_category'
-- href: /design/designressourcer/
-- href: /design/tjekliste/
+Implementering_kode_category:
+  - href: /kom-i-gang/implementering-kode/hent-kodepakken/
+  - href: /kom-i-gang/implementering-kode/hjaelpeklasser/
+  - href: /kom-i-gang/implementering-kode/browserunderstoettelse/
+  - href: /kom-i-gang/implementering-kode/plugins/
+  - href: /kom-i-gang/implementering-kode/print/
+  - href: /kom-i-gang/implementering-kode/frameworks/
+
+Krav_category:
+  - href: /kom-i-gang/krav/borgerdk-virk/
+  - href: /kom-i-gang/krav/om-kravene/
+
+#Left menu for styleguide-category
+Styleguide_category:
+  - href: /design/farver/
+  - href: /design/typografi/
+    categorynav: 'Typografi_category'
+  - href: /design/borders/
+  - href: /design/ikoner/guidelines/
+    tabs: 'Ikoner'
+  - href: /design/logoer/
+  - href: /design/datavisualisering-infografik/
+    categorynav: 'Datavisualisering_category'
+  - href: /design/layout/
+  - href: /design/grid/guidelines/
+    tabs: 'Grids'
+
+Typografi_category:
+  - href: /design/typografi/fonte/guidelines/
+    tabs: 'Fonte'
+  - href: /design/typografi/overskrifter/guidelines/
+    tabs: 'Overskrifter'
+  - href: /design/typografi/felt-tabel-overskrifter/
+  - href: /design/typografi/tekst/guidelines/
+    tabs: 'Tekst'
+  - href: /design/typografi/links/guidelines/
+    tabs: 'Links'
+  - href: /design/typografi/lister/guidelines/
+    tabs: 'Lister'
+
+Fonte:
+  - href: /design/typografi/fonte/guidelines/
+    tabName: *retningslinjer
+  - href: /design/typografi/fonte/implementering/
+    tabName: *implementering
+
+Overskrifter:
+  - href: /design/typografi/overskrifter/guidelines/
+    tabName: *retningslinjer
+  - href: /design/typografi/overskrifter/implementering/
+    tabName: *implementering
+
+Tekst:
+  - href: /design/typografi/tekst/guidelines/
+    tabName: *retningslinjer
+  - href: /design/typografi/tekst/implementering/
+    tabName: *implementering
+
+Links:
+  - href: /design/typografi/links/guidelines/
+    tabName: *retningslinjer
+  - href: /design/typografi/links/implementering/
+    tabName: *implementering
+
+Lister:
+  - href: /design/typografi/lister/guidelines/
+    tabName: *retningslinjer
+  - href: /design/typografi/lister/implementering/
+    tabName: *implementering
+
+Ikoner:
+  - href: /design/ikoner/guidelines/
+    tabName: *retningslinjer
+  - href: /design/ikoner/implementering/
+    tabName: *implementering
 
 Datavisualisering_category:
   - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
   - href: /design/datavisualisering-infografik/datavisualisering/
-  - href: /design/datavisualisering-infografik/infografik/
+  - href: /design/datavisualisering-infografik/infografik/  
 
-Layout_category:
-  - href: /design/layout/grid/
-
-Typografi_category:
-  - href: /design/typografi/fonte/
-  - href: /design/typografi/overskrifter/
-  - href: /design/typografi/felt-tabel-overskrifter/
-  - href: /design/typografi/tekst/
-  - href: /design/typografi/links/
-  - href: /design/typografi/lister/
-
-Kode_Typografi_category:
-- href: /kode/typografi/overskrifter/
-- href: /kode/typografi/tekst/
-- href: /kode/typografi/links/
-- href: /kode/typografi/lister/
+Grids:
+  - href: /design/grid/guidelines/
+    tabName: *retningslinjer
+  - href: /design/grid/implementering/
+    tabName: *implementering
 
 #Left menu for komponent-category
 Komponenter_category:
-  - href: /komponenter/accordions/
-  - href: /komponenter/badges/
-  - href: /komponenter/beskeder/
-  - href: /komponenter/broedkrumme/
-  - href: /komponenter/cards/
-  - href: /komponenter/cookiemeddelelse/
-  - href: /komponenter/datofelter/
-  - href: /komponenter/datovaelger/
-  - href: /komponenter/detaljer/
-  - href: /komponenter/dropdown/
-  - href: /komponenter/faneblade/
-  - href: /komponenter/fejlmeddelelser/
-  - href: /komponenter/fejlopsummering/
-  - href: /komponenter/footer/
-  - href: /komponenter/funktionslink/
-  - href: /komponenter/skip-link/
-  - href: /komponenter/header/
-  - href: /komponenter/inputfelter/
-  - href: /komponenter/knapper/
-  - href: /komponenter/spinner/
-  - href: /komponenter/modal/
-  - href: /komponenter/overflowmenu/
-  - href: /komponenter/paginering/
-  - href: /komponenter/radioknap/
-  - href: /komponenter/sprogvaelger/
-  - href: /komponenter/search/
-  - href: /komponenter/tables/
-  - href: /komponenter/tags/
-  - href: /komponenter/tekstomraade/
-  - href: /komponenter/tilbage-link/
-  - href: /komponenter/tilbage-til-top/
-  - href: /komponenter/tjekboks/
-  - href: /komponenter/toastbesked/
-  - href: /komponenter/toggle/
-  - href: /komponenter/tooltip/
-  - href: /komponenter/trinindikator/
-  - href: /komponenter/fil-upload/
-  - href: /komponenter/venstremenu/
+  - href: /komponenter/accordions/guidelines/
+    tabs: 'Accordions'
+  - href: /komponenter/anchorlinks/guidelines/
+    tabs: 'Anchorlinks'
+  - href: /komponenter/badges/guidelines/
+    tabs: 'Badges'
+  - href: /komponenter/beskeder/guidelines/
+    tabs: 'Beskeder'
+  - href: /komponenter/broedkrumme/guidelines/
+    tabs: 'Broedkrumme'
+  - href: /komponenter/cards/guidelines/
+    tabs: 'Cards'
+  - href: /komponenter/cookiemeddelelse/guidelines/
+    tabs: 'Cookiemessage'
+  - href: /komponenter/datofelter/guidelines/
+    tabs: 'Datofelter'
+  - href: /komponenter/datovaelger/guidelines/
+    tabs: 'Datovaelger'
+  - href: /komponenter/detaljer/guidelines/
+    tabs: 'Detaljer'
+  - href: /komponenter/dropdown/guidelines/
+    tabs: 'Dropdown'
+  - href: /komponenter/faneblade/guidelines/
+    tabs: 'Faneblad'
+  - href: /komponenter/fejlmeddelelser/guidelines/
+    tabs: 'Fejlmeddelelser'
+  - href: /komponenter/fejlopsummering/guidelines/
+    tabs: 'Fejlopsummering'
+  - href: /komponenter/footer/guidelines/
+    tabs: 'Footer'
+  - href: /komponenter/funktionslink/guidelines/
+    tabs: 'Funktionslink'
+  - href: /komponenter/skip-link/guidelines/
+    tabs: 'Skip-link'
+  - href: /komponenter/header/guidelines/
+    tabs: 'Header'
+  - href: /komponenter/inputfelter/guidelines/
+    tabs: 'Inputfelter'
+  - href: /komponenter/knapper/guidelines/
+    tabs: 'Knapper'
+  - href: /komponenter/spinner/guidelines/
+    tabs: 'Spinner'
+  - href: /komponenter/modal/guidelines/
+    tabs: 'Modal'
+  - href: /komponenter/overflowmenu/guidelines/
+    tabs: 'Overflowmenu'
+  - href: /komponenter/paginering/guidelines/
+    tabs: 'Paginering'
+  - href: /komponenter/radioknap/guidelines/
+    tabs: 'Radioknap'
+  - href: /komponenter/sprogvaelger/guidelines/
+    tabs: 'Sprogvaelger'
+  - href: /komponenter/search/guidelines/
+    tabs: 'Search'
+  - href: /komponenter/tables/guidelines/
+    tabs: 'Tabeller'
+  - href: /komponenter/tags/guidelines/
+    tabs: 'Tags'
+  - href: /komponenter/tekstomraade/guidelines/
+    tabs: 'Tekstomraade'
+  - href: /komponenter/tilbage-link/guidelines/
+    tabs: 'Tilbage-link'
+  - href: /komponenter/tilbage-til-top/guidelines/
+    tabs: 'Tilbage-til-top'
+  - href: /komponenter/tjekboks/guidelines/
+    tabs: 'Tjekboks'
+  - href: /komponenter/toastbesked/guidelines/
+    tabs: 'Toastbesked'
+  - href: /komponenter/toggle/guidelines/
+    tabs: 'Toggle'
+  - href: /komponenter/tooltip/guidelines/
+    tabs: 'Tooltip'
+  - href: /komponenter/trinindikator/guidelines/
+    tabs: 'Trinindikator'
+  - href: /komponenter/fil-upload/guidelines/
+    tabs: 'Fil-upload'
+  - href: /komponenter/venstremenu/guidelines/
+    tabs: 'Venstremenu'
 
-Kode_category:
-- href: /kode/implementering/
-- href: /kode/komponenter/
-  categorynav: 'Kode_Komponenter_category'
-- href: /kode/browserunderstoettelse/
-- href: /kode/grid/
-- href: /kode/typografi/
-  categorynav: 'Kode_Typografi_category'
-- href: /kode/ikoner/
-- href: /kode/utilities/
-- href: /kode/eksempler-implementering/
-- href: /kode/print/
-- href: /kode/plugins/
+Accordions:
+  - href: /komponenter/accordions/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/accordions/implementering/
+    tabName: *implementering
 
-#Left menu for komponent-category
-Kode_Komponenter_category:
-  - href: /kode/komponenter/accordions/
-  - href: /kode/komponenter/badges/
-  - href: /kode/komponenter/beskeder/
-  - href: /kode/komponenter/broedkrumme/
-  - href: /kode/komponenter/cards/
-  - href: /kode/komponenter/cookiemeddelelse/
-  - href: /kode/komponenter/datofelter/
-  - href: /kode/komponenter/datovaelger/
-  - href: /kode/komponenter/detaljer/
-  - href: /kode/komponenter/dropdown/
-  - href: /kode/komponenter/faneblade/
-  - href: /kode/komponenter/fejlmeddelelser/
-  - href: /kode/komponenter/fejlopsummering/
-  - href: /kode/komponenter/footer/
-  - href: /kode/komponenter/funktionslink/
-  - href: /kode/komponenter/skip-link/
-  - href: /kode/komponenter/header/
-  - href: /kode/komponenter/inputfelter/
-  - href: /kode/komponenter/knapper/
-  - href: /kode/komponenter/spinner/
-  - href: /kode/komponenter/modal/
-  - href: /kode/komponenter/overflowmenu/
-  - href: /kode/komponenter/paginering/
-  - href: /kode/komponenter/radioknap/
-  - href: /kode/komponenter/sprogvaelger/
-  - href: /kode/komponenter/search/
-  - href: /kode/komponenter/tables/
-  - href: /kode/komponenter/tags/
-  - href: /kode/komponenter/tekstomraade/
-  - href: /kode/komponenter/tilbage-link/
-  - href: /kode/komponenter/tilbage-til-top/
-  - href: /kode/komponenter/tjekboks/
-  - href: /kode/komponenter/toastbesked/
-  - href: /kode/komponenter/toggle/
-  - href: /kode/komponenter/tooltip/
-  - href: /kode/komponenter/trinindikator/
-  - href: /kode/komponenter/fil-upload/
-  - href: /kode/komponenter/venstremenu/
+Anchorlinks:
+  - href: /komponenter/anchorlinks/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/anchorlinks/implementering/
+    tabName: *implementering
 
+Badges:
+  - href: /komponenter/badges/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/badges/implementering/
+    tabName: *implementering
+
+Beskeder:
+  - href: /komponenter/beskeder/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/beskeder/implementering/
+    tabName: *implementering
+
+Broedkrumme:
+  - href: /komponenter/broedkrumme/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/broedkrumme/implementering/
+    tabName: *implementering
+  
+Cards:
+  - href: /komponenter/cards/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/cards/implementering/
+    tabName: *implementering
+
+Cookiemessage:
+  - href: /komponenter/cookiemeddelelse/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/cookiemeddelelse/implementering/
+    tabName: *implementering
+
+Datofelter:
+  - href: /komponenter/datofelter/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/datofelter/implementering/
+    tabName: *implementering
+
+Datovaelger:
+  - href: /komponenter/datovaelger/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/datovaelger/implementering/
+    tabName: *implementering
+
+Detaljer:
+  - href: /komponenter/detaljer/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/detaljer/implementering/
+    tabName: *implementering
+
+Dropdown:
+  - href: /komponenter/dropdown/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/dropdown/implementering/
+    tabName: *implementering
+
+Faneblad:
+  - href: /komponenter/faneblade/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/faneblade/implementering/
+    tabName: *implementering
+
+Fejlmeddelelser:
+  - href: /komponenter/fejlmeddelelser/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/fejlmeddelelser/implementering/
+    tabName: *implementering
+
+Fejlopsummering:
+  - href: /komponenter/fejlopsummering/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/fejlopsummering/implementering/
+    tabName: *implementering
+
+Footer:
+  - href: /komponenter/footer/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/footer/implementering/
+    tabName: *implementering
+
+Funktionslink:
+  - href: /komponenter/funktionslink/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/funktionslink/implementering/
+    tabName: *implementering
+
+Skip-link:
+  - href: /komponenter/skip-link/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/skip-link/implementering/
+    tabName: *implementering
+
+Header:
+  - href: /komponenter/header/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/header/implementering/
+    tabName: *implementering
+
+Inputfelter:
+  - href: /komponenter/inputfelter/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/inputfelter/implementering/
+    tabName: *implementering
+
+Knapper:
+  - href: /komponenter/knapper/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/knapper/implementering/
+    tabName: *implementering
+
+Spinner:
+  - href: /komponenter/spinner/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/spinner/implementering/
+    tabName: *implementering
+
+Modal:
+  - href: /komponenter/modal/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/modal/implementering/
+    tabName: *implementering
+
+Overflowmenu:
+  - href: /komponenter/overflowmenu/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/overflowmenu/implementering/
+    tabName: *implementering
+
+Paginering:
+  - href: /komponenter/paginering/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/paginering/implementering/
+    tabName: *implementering
+
+Radioknap:
+  - href: /komponenter/radioknap/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/radioknap/implementering/
+    tabName: *implementering
+
+Sprogvaelger:
+  - href: /komponenter/sprogvaelger/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/sprogvaelger/implementering/
+    tabName: *implementering
+
+Search:
+  - href: /komponenter/search/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/search/implementering/
+    tabName: *implementering
+
+Tabeller:
+  - href: /komponenter/tables/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tables/implementering/
+    tabName: *implementering
+
+Tags:
+  - href: /komponenter/tags/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tags/implementering/
+    tabName: *implementering
+
+Tekstomraade:
+  - href: /komponenter/tekstomraade/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tekstomraade/implementering/
+    tabName: *implementering
+
+Tilbage-link:
+  - href: /komponenter/tilbage-link/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tilbage-link/implementering/
+    tabName: *implementering
+
+Tilbage-til-top:
+  - href: /komponenter/tilbage-til-top/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tilbage-til-top/implementering/
+    tabName: *implementering
+
+Tjekboks:
+  - href: /komponenter/tjekboks/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tjekboks/implementering/
+    tabName: *implementering
+
+Toastbesked:
+  - href: /komponenter/toastbesked/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/toastbesked/implementering/
+    tabName: *implementering
+
+Toggle:
+  - href: /komponenter/toggle/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/toggle/implementering/
+    tabName: *implementering
+
+Tooltip:
+  - href: /komponenter/tooltip/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/tooltip/implementering/
+    tabName: *implementering
+
+Trinindikator:
+  - href: /komponenter/trinindikator/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/trinindikator/implementering/
+    tabName: *implementering
+
+Fil-upload:
+  - href: /komponenter/fil-upload/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/fil-upload/implementering/
+    tabName: *implementering
+
+Venstremenu:
+  - href: /komponenter/venstremenu/guidelines/
+    tabName: *retningslinjer
+  - href: /komponenter/venstremenu/implementering/
+    tabName: *implementering
+
+#Left menu for Eksempler-category
 Eksempler_category:
-- href: /eksempler/selvbetjeningsloesninger/
-- href: /eksempler/patterns/
-  categorynav: 'Patterns_category'
-- href: /eksempler/templates/
+  - href: /eksempler/selvbetjeningsloesninger/
+  - href: /eksempler/patterns/
+    categorynav: 'Patterns_category'
+  - href: /eksempler/templates/
 
 Patterns_category:
-- href: /eksempler/patterns/angivelse-af-telefonnummer/
-- href: /eksempler/patterns/formular/
-- href: /eksempler/patterns/hentet-data/
-- href: /eksempler/patterns/session-udloeber/
+  - href: /eksempler/patterns/angivelse-af-telefonnummer/
+  - href: /eksempler/patterns/formular/
+  - href: /eksempler/patterns/hentet-data/
+  - href: /eksempler/patterns/session-udloeber/
 
+#Left menu for Fællesskab-category
 Faellesskab_category:
 - href: /faellesskab/samarbejdsforum/
 - href: /faellesskab/governance/
@@ -180,36 +450,40 @@ Faellesskab_category:
 - href: /faellesskab/kontakt-support/
 - href: /faellesskab/roadmap/
 - href: /faellesskab/releases/
-- href: /faellesskab/faq/
 
+#Self-service examples and templates
 Eksempelloesninger_category:
-- href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/
-- href: /pages/eksempler/formular-til-kontaktoplysninger/formular-2/
-- href: /pages/eksempler/formular-til-kontaktoplysninger/formular-3/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-1/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-2/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-3/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-4/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-5/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-6/
-- href: /pages/eksempler/trinformular-til-registrering/registrering-7/
-- href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-1/
-- href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-2/
-- href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-3/
-- href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-4/
-- href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-5/
-- href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-6/
-- href: /pages/eksempler/sagsoversigt/find-sag/
-- href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/
-- href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/
-- href: /pages/eksempler/dashboard/dashboard-1/
-- href: /pages/eksempler/opgaveliste/
-- href: /pages/eksempler/vedhaeft-fil/fil-1/
-- href: /pages/eksempler/vedhaeft-fil/fil-2/
-- href: /pages/eksempler/vedhaeft-fil/fil-3/
-- href: /pages/eksempler/opsummering/opsummering-1/
-- href: /pages/eksempler/opsummering/opsummering-2/
-- href: /pages/eksempler/kvittering/kvittering-1/
-- href: /pages/eksempler/kvittering/kvittering-2/
-- href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
-- href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/
+  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/
+  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-2/
+  - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-3/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-1/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-2/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-3/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-4/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-5/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-6/
+  - href: /pages/eksempler/trinformular-til-registrering/registrering-7/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-1/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-2/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-3/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-4/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-5/
+  - href: /pages/eksempler/trinformular-til-ansoegning/ansoegning-6/
+  - href: /pages/eksempler/sagsoversigt/find-sag/
+  - href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/
+  - href: /pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/
+  - href: /pages/eksempler/dashboard/dashboard-1/
+  - href: /pages/eksempler/opgaveliste/
+  - href: /pages/eksempler/vedhaeft-fil/fil-1/
+  - href: /pages/eksempler/vedhaeft-fil/fil-2/
+  - href: /pages/eksempler/vedhaeft-fil/fil-3/
+  - href: /pages/eksempler/opsummering/opsummering-1/
+  - href: /pages/eksempler/opsummering/opsummering-2/
+  - href: /pages/eksempler/kvittering/kvittering-1/
+  - href: /pages/eksempler/kvittering/kvittering-2/
+  - href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
+  - href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/
+
+
+
+

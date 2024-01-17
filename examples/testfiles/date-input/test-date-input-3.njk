@@ -1,0 +1,46 @@
+{% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Fejlbesked og påkrævet/ikke-påkrævet</p>{{
+                datoinput({
+                    "id": "date-example",
+                    "legend": "Indtast en dato",
+                    "errorMessage": "Dette er en fejlbesked",
+                    "required": true
+                })
+            }}
+            
+            <p>Required label true</p>{{
+                datoinput({
+                    "id": "date-example2",
+                    "legend": "Indtast en dato",
+                    "errorMessage": "Dette er en fejlbesked",
+                    "required": true,
+                    "requiredLabel": true
+                })
+            }}
+            
+            <p>Optional label true</p>{{
+                datoinput({
+                    "id": "date-example3",
+                    "legend": "Indtast en dato",
+                    "errorMessage": "Dette er en fejlbesked",
+                    "required": true,
+                    "optionalLabel": true
+                })
+            }}
+            
+            <p>Disabled true</p>{{
+                datoinput({
+                    "id": "date-example4",
+                    "legend": "Indtast en dato",
+                    "errorMessage": "Dette er en fejlbesked",
+                    "required": true,
+                    "disabled": true
+                })
+            }}
+        </div>
+    </div>
+</main>

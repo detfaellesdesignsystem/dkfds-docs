@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/besoegende-om-aaret/
-layout: requirements-tool
 title: Har løsningen flere end 1000 besøgende om året?
 description: 
 backlink: true

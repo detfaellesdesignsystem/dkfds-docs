@@ -1,0 +1,33 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Max. dato og værdi</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example1",
+                    "name": "appointment-date1",
+                    "label": "Dato for aftale",
+                    "value": "02/04/2008",
+                    "maxDate": "2008-04-03"
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Min. og max. dato</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example2",
+                    "name": "appointment-date2",
+                    "label": "Dato for aftale",
+                    "value": "02/02/2024",
+                    "minDate": "2024-01-07",
+                    "maxDate": "2024-02-23"
+                })
+            }}
+        </div>
+    </div>
+</main>

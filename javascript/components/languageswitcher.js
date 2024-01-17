@@ -74,4 +74,56 @@ function languageSwitcher(){
 
         }
     }
+    else if (document.getElementsByTagName('body')[0].classList.contains('page-header-switch-language')) {
+        let queryString = window.location.search;
+        if(queryString !== "" && queryString.indexOf("lang=") !== -1) {
+            let lang = queryString.replace('?lang=', '');
+            let select_language_button = document.getElementsByClassName('select-language-button')[0];
+            let select_language_list_overflow = document.getElementsByClassName('select-language-list')[0].getElementsByClassName('overflow-list')[0];
+            let language_switcher_mobile_ul = document.getElementsByClassName('language-switcher-mobile')[0].getElementsByTagName('UL')[0];
+            let languages = select_language_list_overflow.getElementsByTagName('LI');
+            let danish = languages[0];
+            let english = languages[1];
+            let german = languages[2];
+            let polish = languages[3];
+            let globe_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>';
+            let done_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>';
+
+            switch (lang) {
+                case "en-GB":
+                    /* Header */
+                    select_language_button.innerHTML = globe_icon + 'English';
+                    danish.getElementsByTagName("A")[0].removeAttribute('aria-label');
+                    english.getElementsByTagName("A")[0].setAttribute('aria-label', 'Current language: English');
+                    select_language_list_overflow.innerHTML = english.outerHTML + danish.outerHTML + german.outerHTML + polish.outerHTML;
+                    /* Mobile menu */
+                    let english_icon = english;
+                    english_icon.getElementsByTagName('A')[0].innerHTML = done_icon + 'English';
+                    language_switcher_mobile_ul.innerHTML = english_icon.outerHTML + danish.outerHTML + german.outerHTML + polish.outerHTML;
+                    break;
+                case "de":
+                    /* Header */
+                    select_language_button.innerHTML = globe_icon + 'Deutsch';
+                    danish.getElementsByTagName("A")[0].removeAttribute('aria-label');
+                    german.getElementsByTagName("A")[0].setAttribute('aria-label', 'Aktuelle Sprache: Deutsch');
+                    select_language_list_overflow.innerHTML = german.outerHTML +  danish.outerHTML + english.outerHTML + polish.outerHTML;
+                    /* Mobile menu */
+                    let german_icon = german;
+                    german_icon.getElementsByTagName('A')[0].innerHTML = done_icon + 'Deutsch';
+                    language_switcher_mobile_ul.innerHTML = german_icon.outerHTML +  danish.outerHTML + english.outerHTML + polish.outerHTML;
+                    break;
+                case "pl":
+                    /* Header */
+                    select_language_button.innerHTML = globe_icon + 'Polski';
+                    danish.getElementsByTagName("A")[0].removeAttribute('aria-label');
+                    polish.getElementsByTagName("A")[0].setAttribute('aria-label', 'Aktualny język: polski');
+                    select_language_list_overflow.innerHTML = polish.outerHTML +  danish.outerHTML + english.outerHTML + german.outerHTML;
+                    /* Mobile menu */
+                    let polish_icon = polish;
+                    polish_icon.getElementsByTagName('A')[0].innerHTML = done_icon + 'Polski';
+                    language_switcher_mobile_ul.innerHTML = polish_icon.outerHTML +  danish.outerHTML + english.outerHTML + german.outerHTML;
+                    break;
+            }
+        }
+    }
 }

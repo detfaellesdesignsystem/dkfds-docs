@@ -1,19 +1,29 @@
 ---
-permalink: /komponenter/search/
+permalink: "/komponenter/search/guidelines/"
+redirect_from:
+- "/komponenter/search/"
 layout: styleguide
-type: component
-title: Søgefelt
 category: Komponenter_category
 subcategory: Komponenter
+title: Søgefelt
+lead: Søgefeltet lader brugeren søge efter bestemt indhold på siden eller i løsningen.
+component: "search"
+componentTitle: "Eksempel på søgefelt"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:
-lead: Et søgefelt udstiller brugerne muligheden at søge efter bestemt indhold på siden eller i løsningen.
 ---
 
-{% include code/preview-box.html component="search" title="Eksempel på søgefelt" link=true code="/kode/komponenter/search/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -44,19 +54,19 @@ Søgeknappen skal være en submit-knap.
 {% include dos-donts-box.html component="search-dos-donts" title="Søgefelt do's and don'ts" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
+
+{% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
+
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
-
-#### Referencer
-
-{:.nobullet-list}
-- <a href="https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/" class="icon-link">Jakob Nielsen: Top 10 Guidelines for Homepage Usability (2002)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/search-visible-and-simple/" class="icon-link">Jakob Nielsen: Search: Visible and Simple (2001)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Jakob Nielsen: Top 10 Guidelines for Homepage Usability (2002)" %}
+- {% include links/external-link.html linktext="Jakob Nielsen: Search: Visible and Simple (2001)" %}
 - Adam Silver: Form Design Patterns (2018)
-- <a href="https://uxmag.com/articles/usability-tip-dont-make-me-search-for-search" class="icon-link">Tammy Guy: Usability Tip: Don’t Make Me Search for Search (2014)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" class="icon-link">The ideal search box is 27 characters wide<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c" class="icon-link">Design a perfect search box<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311" class="icon-link">Best practises for search results<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/magnifying-glass-icon/" class="icon-link">The Magnifying-Glass Icon in Search Design: Pros and Cons<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Tammy Guy: Usability Tip: Don’t Make Me Search for Search (2014)" %}
+- {% include links/external-link.html linktext="The ideal search box is 27 characters wide" %}
+- {% include links/external-link.html linktext="Design a perfect search box" %}
+- {% include links/external-link.html linktext="Best practises for search results" %}
+- {% include links/external-link.html linktext="The Magnifying-Glass Icon in Search Design: Pros and Cons" %}

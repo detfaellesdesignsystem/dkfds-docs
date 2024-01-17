@@ -1,0 +1,33 @@
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+
+{% set solution_info_data = {
+    "hideOnPrint": true,
+    "menu": true,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    }
+} %}
+
+{% set navigation_menu_data = {
+    "links": [
+        { "text": "Første menupunkt" },
+        { "text": "Andet menupunkt" },
+        { "text": "Tredje menupunkt" },
+        { "text": "Fjerde menupunkt" }
+    ]
+} %}
+
+<header class="header">
+    {{ solution_info(solution_info_data) }}
+    {{ navigation_menu(navigation_menu_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_navigation_menu(navigation_menu_data) }}
+    </div>
+</header>

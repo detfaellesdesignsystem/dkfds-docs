@@ -1,14 +1,15 @@
-{% from "components/header/header.njk" import portal_header as portal_header %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
 
-{{ 
-    portal_header({
-        "compact": true,
-        "user": {
-            "name": "Anders Andersen, Forsikringens Forsikringsfirma"
-        },
-        "logolink": {
-            "label": "Portalnavn",
-            "href": "#"
-        }
-    }) 
-}}
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{{ portal_info(portal_info_data) }}

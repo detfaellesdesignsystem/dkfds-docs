@@ -1,9 +1,9 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
-{% from "components/header/header.njk" import portal_header as portal_header %}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{% from "components/header/header.njk" import solution_header as solution_header %}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
@@ -59,14 +59,14 @@
 <header class="header">
     <div id="top"></div>
     {{ skiplink() }}
-    {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
+    {{ portal_info(portal_header_data) }}
+    {{ solution_info(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-    </nav>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_header_data) }}
+        {{ mobile_portal_info(portal_header_data) }}
+    </div>
 </header>
 {% endblock %}
 

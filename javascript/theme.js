@@ -109,19 +109,21 @@ let onBorgerdkThemeSelected = function(){
 };
 
 let setStylesheet = function(){
-    let themeChosen = getThemeCookie();
-    debug('stylesheet:', themeChosen);
-    if(themeChosen === null){
-        themeChosen = "virk";
+    if (!document.body.classList.contains('layout-test-example')) {
+        let themeChosen = getThemeCookie();
+        debug('stylesheet:', themeChosen);
+        if(themeChosen === null){
+            themeChosen = "virk";
+        }
+        const indexOfTheme = themes.indexOf(themeChosen);
+    
+        var lnk = document.createElement('link');
+        lnk.type='text/css';
+        lnk.rel='stylesheet';
+        lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
+    
+        document.getElementsByTagName('head')[0].appendChild(lnk);
     }
-    const indexOfTheme = themes.indexOf(themeChosen);
-
-    var lnk = document.createElement('link');
-    lnk.type='text/css';
-    lnk.rel='stylesheet';
-    lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
-
-    document.getElementsByTagName('head')[0].appendChild(lnk);
 };
 
 
@@ -292,7 +294,8 @@ let setScreenshots = function(){
         || document.getElementsByTagName('body')[0].classList.contains('page-footer') 
         || document.getElementsByTagName('body')[0].classList.contains('page-header') 
         || document.getElementsByTagName('body')[0].classList.contains('page-tilbage-til-toppen')
-        || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
+        || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')
+        || document.getElementsByTagName('body')[0].classList.contains('page-faneblade')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
@@ -304,12 +307,6 @@ let setScreenshots = function(){
             let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
             screenshots[i].innerHTML = image;
         }
-    }
-
-    if (document.getElementsByTagName('body')[0].classList.contains('page-header')) {
-        let imageContainer = document.querySelectorAll('.header-rows-example');
-        let filename = getThemeCookie() + "-header-rows.png";
-        imageContainer[0].innerHTML = '<img src="/assets/img/headers/' + filename + '" class="w-percent-100 inner-border-box p-4" alt="De 5 foskellige rækker i headeren" />';
     }
 };
 

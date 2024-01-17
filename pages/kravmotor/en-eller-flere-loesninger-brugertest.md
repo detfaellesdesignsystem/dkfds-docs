@@ -1,6 +1,5 @@
 ---
 permalink: /krav-vaerktoej/en-eller-flere-loesninger-brugertest/
-layout: requirements-tool
 title: Har en eller flere lignende løsninger bestået den fællesoffentlige brugertest?
 description: 
 backlink: true

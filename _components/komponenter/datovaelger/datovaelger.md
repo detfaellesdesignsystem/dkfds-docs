@@ -1,27 +1,27 @@
 ---
-permalink: "/komponenter/datovaelger/"
+permalink: "/komponenter/datovaelger/guidelines/"
+redirect_from:
+- "/komponenter/datovaelger/"
 layout: styleguide
-type: component
-title: Datovælger
 category: Komponenter_category
 subcategory: Komponenter
-description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
-tags: 
+title: Datovælger
 lead: Ét felt med knap, hvor man kan vælge en dato.
+component: "date-picker"
+componentTitle: "Eksempel på datovælger"
+componentLink: true
 anchor: true
 subnav:
-- text: Begræns mulige datoer
-  href: '#begraens'
-- text: Fast værdi
-  href: '#default'
-- text: Datoformat
-  href: '#datoformat'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
+tags:
 ---
 
-{% include code/preview-box.html component="date-picker" title="Eksempel på datovælger" link=true code="/kode/komponenter/datovaelger/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -29,12 +29,13 @@ Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og
 
 ### Anvendes ikke til
 
-Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten <a href="/komponenter/datofelter/">datofelter</a>.
+Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten {% include links/component-guideline-link.html linktext="datofelter" %}.
 
 ### Vejledning
 
 {% include dos-donts-box.html component="datepicker-dos-donts" title="Datovælger do's and don'ts" %}
 
+{:#varianter}
 ## Varianter
 
 {:#begraens}
@@ -58,6 +59,6 @@ I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d.
 {:#datoformat}
 ### Datoformat
 
-Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også <a href="/kode/komponenter/datovaelger/#datoformat">andre datoformater</a>, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.
+Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også {% include links/component-code-link.html linktext="andre datoformater" %}, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.
 
 {% include code/preview-box.html component="date-picker-format" title="Eksempel på datovælger med andet datoformat"%}

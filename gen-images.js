@@ -1,15 +1,14 @@
 const puppeteer = require('puppeteer');
 
-//var root = "http://127.0.0.1:4000";
-var root = "https://develop.designsystem.dk/";
+var root = "http://127.0.0.1:4000";
+//var root = "https://develop.designsystem.dk/";
 var targetRootDir = "img/examples/";
 var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
-    {"url": "/eksempel/header-simple/", "filename": "header-simple.png", "width": 992, "height": 158 },
-    {"url": "/eksempel/header-large/", "filename": "header-large.png", "width": 992, "height": 158 },
-    {"url": "/eksempel/header-medium/", "filename": "header-medium.png", "width": 992, "height": 262 },
-    {"url": "/eksempel/header-full/", "filename": "header-full.png", "width": 992, "height": 322 },
+    {"url": "/eksempel/header-simple/", "filename": "header-simple.png", "width": 992, "height": 146 },
+    {"url": "/eksempel/header-with-navigation/", "filename": "header-with-navigation.png", "width": 992, "height": 200 },
+    {"url": "/eksempel/header-switch-language/", "filename": "header-switch-language.png", "width": 992, "height": 180 },
     {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 114 },
     {"url": "/eksempel/footer-simple-language/", "filename": "footer-simple-language.png", "width": 1017, "height": 213 },
     {"url": "/eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 80 },
@@ -22,7 +21,8 @@ var exampleUrls = [
     {"url": "/eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 280 },
     {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
     {"url": "/eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
-    {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 }
+    {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 },
+    {"url": "/eksempel/tabs-urls/", "filename": "tabs-urls.png", "width": 771, "height":230 }
 ];
 
 (async () => {
@@ -59,6 +59,9 @@ var exampleUrls = [
                     window.scrollTo(0, 0);
                     if(document.getElementsByClassName('footer').length > 0){
                         document.getElementsByClassName('footer')[0].style.marginTop = "0px";
+                    }
+                    if(document.getElementsByClassName('tab-container').length > 0){
+                        document.getElementsByClassName('tab-container')[0].parentNode.style.paddingTop = "0px";
                     }
                     if(document.getElementsByTagName('body') !== null  && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
                         var eventClick = new Event('mouseenter');

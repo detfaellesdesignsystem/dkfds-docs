@@ -1,0 +1,9 @@
+{% from "components/pagination/pagination.njk" import pagination as pagination %}
+
+{{ 
+    pagination({
+        "id": "pagination-ID",
+        "totalPages": 12,
+        "currentPage": 8
+    }) 
+}}

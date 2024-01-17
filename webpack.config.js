@@ -2,8 +2,14 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 //const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const path = require('path');
+
+console.log("[" + String(new Date().getHours()).padStart(2, '0') + 
+                ":" + String(new Date().getMinutes()).padStart(2, '0') + 
+                ":" + String(new Date().getSeconds()).padStart(2, '0') + "] " + 
+                "Running webpack...\n");
 
 module.exports = function (outputPath, prod) {
   return {
@@ -13,17 +19,23 @@ module.exports = function (outputPath, prod) {
       styleguide_display: ["./scss/styleguide-display.scss"],
       styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
       styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
+      test_neutral: ["./scss/test-neutral.scss"],
+      test_borger: ["./scss/test-borger.scss"],
+      test_virk: ["./scss/test-virk.scss"],
+      test_normalization: ["./scss/test-normalization.scss"],
       "requirements-tool": ["./javascript/requirements-tool.js"],
       "search": ["./javascript/search.js"],
       "spinner": ["./javascript/components/spinner.js"],
       "table": ["./javascript/components/table.js"],
       "toast": ["./javascript/components/toast.js"],
       "modal": ["./javascript/components/modal.js"],
+      "toggleswitch": ["./javascript/components/toggleswitch.js"],
       "languageswitcher": ["./javascript/components/languageswitcher.js"],
       "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
       "newsletter": ["./javascript/newsletter.js"],
       "pagination": ["./javascript/components/pagination.js"],
-      "session-timeout": ["./javascript/components/session-timeout.js"]
+      "session-timeout": ["./javascript/components/session-timeout.js"],
+      "url-tabs": ["./javascript/components/url-tabs.js"]
     },
     module: {
       rules: [
@@ -108,22 +120,26 @@ module.exports = function (outputPath, prod) {
         }
       ],
     },
+    //devtool: "source-map",
     output: {
       path: path.resolve(__dirname, 'assets'), //dist folder is /assets
       publicPath: "/assets/", // written in front of urls in scss
       filename: "js/[name].js"
     },
     resolve: {
-      modules: ["node_modules"]
+      modules: ["node_modules"],
     },
+    stats: 'minimal',
     plugins: [
       new CopyWebpackPlugin(
             {//copies all content from /img to /assets/img
               patterns: [
-                {from: "./img/**/*", to: ""}
+                { from: "./img/**/*", to: "" },
+                { from: "./node_modules/dkfds/dist/img/svg-icons", to: "svg" },
               ]
             }
           ),
+      new RemoveEmptyScriptsPlugin(),
       new MiniCssExtractPlugin(
         {
           filename: 'style/[name].css',

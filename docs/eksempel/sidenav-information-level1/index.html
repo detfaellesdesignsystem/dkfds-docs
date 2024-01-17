@@ -232,27 +232,41 @@
     <main class="container page-container" id="main-content">
         
         <h1 id="example-heading-sidenav-information-level1" class="sr-only">Sidenav information level1</h1>
-        <nav>
-    <ul class="sidenav-list">
+        <nav aria-label="Sidemenu (eksempel)">
+    <ul class="sidemenu">
 
         <li>
-            <a href="#">
-                <div>Hovedside <span class="sidenav-information">Informationstekst for parent
-                        link</span></div>
+            <a href="#" class="nav-link">
+
+                <div>
+                    <span>Side</span>
+                    <span class="sidenav-information">Informationstekst for side</span>
+                </div>
+
             </a>
 
         </li>
-        <li class="current  active ">
-            <a href="#" aria-current="page">
-                <div>Hovedside <span class="sidenav-information">Informationstekst for current
-                        link</span></div>
+
+        <li class="active current">
+            <a href="#" class="nav-link" aria-current="page">
+
+                <div>
+                    <span>Side</span>
+                    <span class="sidenav-information">Informationstekst for side</span>
+                </div>
+
             </a>
 
         </li>
+
         <li>
-            <a href="#">
-                <div>Hovedside <span class="sidenav-information">Informationstekst for another
-                        link</span></div>
+            <a href="#" class="nav-link">
+
+                <div>
+                    <span>Side</span>
+                    <span class="sidenav-information">Informationstekst for side</span>
+                </div>
+
             </a>
 
         </li>
@@ -265,6 +279,8 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
+    
+    
     
     
     

@@ -2,10 +2,13 @@
 permalink: "/design/datavisualisering-infografik/tilgaengelig-grafik/"
 parentlink: "/design/datavisualisering-infografik/"
 layout: styleguide
+category: Styleguide_category
+subcategory: Styleguide
 title: Tilgængelig grafik
-category: Design_category
-subcategory: Design
-type: component
+lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det
+  er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
+  farveblinde brugere.
+anchor: false
 description: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal.
   Det er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
   farveblinde brugere.
@@ -17,10 +20,6 @@ tags:
 - diagram
 - graf
 - infografik
-lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det
-  er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
-  farveblinde brugere.
-
 ---
 
 ## Forenkl kompleksiteten
@@ -58,7 +57,7 @@ Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at b
 
 Vær opmærksomhed på at farver der grænser op til hinanden skal overholde WCAG 2.1 ift farvekontrast.
 
-Tjek gerne datavisualiseringer og infografikker med et simulationsværktøj (fx <a href="https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc?hl=en" class="icon-link">A11Y Color Blind Empathy<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>) for at se, hvordan de forskellige farver syner overfor hinanden med et synshandikap som farveblindhed.
+Tjek gerne datavisualiseringer og infografikker med et simulationsværktøj (fx {% include links/external-link.html linktext="A11Y Color Blind Empathy" %}) for at se, hvordan de forskellige farver syner overfor hinanden med et synshandikap som farveblindhed.
 
 ## Sørg for alternativer til grafikken
 
@@ -86,7 +85,7 @@ Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af d
 
 {:.nobullet-list}
 
-* <a href="https://webaim.org/resources/contrastchecker/" class="icon-link">WebAIMs Contrast Checker<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-* <a href="https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc?hl=en" class="icon-link">A11Y Color Blind Empathy - Chrome plugin<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-* <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="icon-link">WCAG 2.1 Success Criterion 1.4.11: Non-text Contrast<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-* <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" class="icon-link">WCAG 2.1 Success Criterion 1.4.3: Contrast (Minimum)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+* {% include links/external-link.html linktext="WebAIMs Contrast Checker" %}
+* {% include links/external-link.html linktext="A11Y Color Blind Empathy - Chrome plugin" %}
+* {% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.4.11: Non-text Contrast" %}
+* {% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.4.3: Contrast (Minimum)" %}

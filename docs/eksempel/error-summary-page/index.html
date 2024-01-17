@@ -232,20 +232,24 @@
     <main class="container page-container" id="main-content">
         
         <h1 id="example-heading-error-summary-page" class="sr-only">Error summary page</h1>
-        <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
-    <div class="alert-body">
-        <h2 class="alert-heading">Der er problemer</h2>
-        <ul class="alert-text nobullet-list">
-            <li><a class="function-link" href="#example-name-error">Skriv dit fulde navn, og
-                    adskil for- og efternavne med mellemrum, fx Anders Andersen</a></li>
-            <li><a class="function-link" href="#checkboxes-error-option1">Angiv om du er
-                    dansk, svensk eller anden nationalitet</a></li>
-            <li><a class="function-link" href="#date-input-error-day">Datoen kan ikke være i
-                    fremtiden</a></li>
-        </ul>
-    </div>
-</div>
+        <nav aria-labelledby="error-form-example">
 
+    <div class="alert alert-error mt-0 mb-8" role="alert" data-module="error-summary">
+        <div class="alert-body">
+            <h2 class="alert-heading" id="error-form-example">Der er problemer</h2>
+            <ul class="alert-text nobullet-list">
+                <li><a class="function-link" href="#example-name-error">Skriv dit fulde navn,
+                        og adskil for- og efternavne med mellemrum, fx Anders Andersen</a>
+                </li>
+                <li><a class="function-link" href="#checkboxes-error-option1">Angiv om du er
+                        dansk, svensk eller anden nationalitet</a></li>
+                <li><a class="function-link" href="#date-input-error-day">Datoen kan ikke være
+                        i fremtiden</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
 <h1 id="oplysninger-om-dig">Oplysninger om dig</h1>
 <form novalidate="">
 
@@ -272,19 +276,19 @@
             </span>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkboxes-error-option1" name="nationalitet[]" class="form-checkbox checkbox-large" value="dansk" />
+                <input type="checkbox" id="checkboxes-error-option1" name="nationalitet[]" class="form-checkbox" value="dansk" />
                 <label class="form-label" for="checkboxes-error-option1">Dansk</label>
 
             </div>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkboxes-error-option2" name="nationalitet[]" class="form-checkbox checkbox-large" value="svensk" />
+                <input type="checkbox" id="checkboxes-error-option2" name="nationalitet[]" class="form-checkbox" value="svensk" />
                 <label class="form-label" for="checkboxes-error-option2">Svensk</label>
 
             </div>
 
             <div class="form-group-checkbox">
-                <input type="checkbox" id="checkboxes-error-option3" name="nationalitet[]" class="form-checkbox checkbox-large" value="anden" />
+                <input type="checkbox" id="checkboxes-error-option3" name="nationalitet[]" class="form-checkbox" value="anden" />
                 <label class="form-label" for="checkboxes-error-option3">Anden
                     nationalitet</label>
 
@@ -302,24 +306,24 @@
             <span class="form-error-message" id="date-input-error-error">
                 <span class="sr-only">Fejl: </span>Datoen kan ikke være i fremtiden
             </span>
-            <div class="date-group js-calendar-group mt-3">
+            <div class="date-group mt-3">
 
                 <div class="form-group form-group-day">
                     <label class="form-label" for="date-input-error-day">Dag</label>
 
-                    <input type="tel" id="date-input-error-day" class="form-input js-calendar-day-input" value="01" required="" data-min="1" data-max="31" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast dag på måneden som tal" />
+                    <input type="number" id="date-input-error-day" name="date-day" class="form-input" value="01" required="" />
                 </div>
 
                 <div class="form-group form-group-month">
                     <label class="form-label" for="date-input-error-month">Måned</label>
 
-                    <input type="tel" id="date-input-error-month" class="form-input js-calendar-month-input" value="12" required="" data-min="1" data-max="12" maxlength="2" pattern="^[0-9]{0,2}$" data-input-regex="^[0-9]{0,2}$" title="Indtast månedens nummer" />
+                    <input type="number" id="date-input-error-month" name="date-month" class="form-input" value="12" required="" />
                 </div>
 
                 <div class="form-group form-group-year">
                     <label class="form-label" for="date-input-error-year">År</label>
 
-                    <input type="tel" id="date-input-error-year" class="form-input js-calendar-year-input" value="2076" required="" data-min="1900" data-max="3000" maxlength="4" pattern="^[0-9]{0,4}$" data-input-regex="^[0-9]{0,4}$" title="Indtast årstal" />
+                    <input type="number" id="date-input-error-year" name="date-year" class="form-input" value="2076" required="" />
                 </div>
 
             </div>
@@ -333,6 +337,8 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
+    
+    
     
     
     

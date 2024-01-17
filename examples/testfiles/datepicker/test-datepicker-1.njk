@@ -1,0 +1,16 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Date picker example</p>
+            {{ 
+                datepicker({
+                    "id": "datepicker-example1",
+                    "name": "appointment-date1",
+                    "label": "Dato for aftale"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

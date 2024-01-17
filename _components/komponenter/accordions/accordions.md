@@ -1,28 +1,34 @@
 ---
-permalink: "/komponenter/accordions/"
+permalink: "/komponenter/accordions/guidelines/"
+redirect_from:
+- "/komponenter/accordions/"
 layout: styleguide
-type: component
-title: Accordions
 category: Komponenter_category
 subcategory: Komponenter
-description: Accordions er interaktive overskrifter, der anvendes til at skjule og
-  vise det relaterede indhold.
-tags: 
+title: Accordions
 lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise indhold
   med. Vær opmærksom på, at skjult indhold risikerer at blive set i mindre grad af
   brugerne, end det som er umiddelbart synligt på siden.
+component: "accordion"
+componentTitle: "Eksempel på accordion"
+componentLink: true
 anchor: true
 subnav:
-- text: Åbn/luk alle
-  href: "#aabn-luk-alle"
-- text: Med succesbeskeder
-  href: "#med-succesbeskeder"
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#ref"
+description: Accordions er interaktive overskrifter, der anvendes til at skjule og
+  vise det relaterede indhold.
+tags:
+- accordion
+- accordions
 ---
 
-{% include code/preview-box.html component="accordion" title="Eksempel på accordion" link=true code="/kode/komponenter/accordions/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til  
 
@@ -51,18 +57,13 @@ Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere s
 {:#med-fejl}
 #### Fejlmeddelelse
 
-<a href="/komponenter/fejlmeddelelser/">Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.</a>
+{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
 
-Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.
+Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
 {% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
 
-#### Referencer
-
-{:.nobullet-list}
-- <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" class="icon-link">Anthony Thomas (2006): Where to Place Your Accordion Menu items<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/accordions-complex-content/" class="icon-link">Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#aabn-luk-alle}
@@ -74,3 +75,10 @@ Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsumme
 ### Med succesbeskeder
 
 {% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="Anthony Thomas (2006): Where to Place Your Accordion Menu items" %}
+- {% include links/external-link.html linktext="Hoa Loranger (2014): Accordions Are Not Always the Answer for Complex Content on Desktops" %}

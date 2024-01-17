@@ -1,0 +1,29 @@
+{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Simpel trin guide</p>
+            <div>
+            {{ 
+                stepguide({
+                    "steps": [
+                        {
+                            "text": "Første trin",
+                            "href": "javascript:void(0);"
+                        },
+                        {
+                            "text": "Andet trin",
+                            "href": "javascript:void(0);"
+                        },
+                        {
+                            "text": "Tredje trin",
+                            "href": "javascript:void(0);"
+                        }
+                    ]
+                }) 
+            }}
+            </div>
+        </div>
+    </div>
+</main>

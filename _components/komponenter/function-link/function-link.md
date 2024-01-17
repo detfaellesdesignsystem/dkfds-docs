@@ -1,18 +1,30 @@
 ---
-permalink: "/komponenter/funktionslink/"
+permalink: "/komponenter/funktionslink/guidelines/"
+redirect_from:
+- "/komponenter/funktionslink/"
 layout: styleguide
-type: component
-title: Funktionslink
 category: Komponenter_category
 subcategory: Komponenter
+title: Funktionslink
+lead: Funktionslink lader brugeren udføre forskellige systemfunktionaliteter.
+component: "function-link-print"
+componentTitle: "Eksempel på funktionslink"
+componentLink: true
+anchor: true
+subnav:
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
 description: Et link, der udfører en handling på siden - så som print. Der er gerne
   tilføjet et ikon, som underbygger handlingen.
+tags:
 ---
 
-{% include code/preview-box.html component="function-link-print" title="Eksempel på funktions link" link="true" code="/kode/komponenter/funktionslink/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -22,7 +34,7 @@ Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print
 
 Brug ikke funktionsikoner til generel navigation mellem sider eller til næste trin. Brug da standard links og primærknap i stedet. Anvend ikke funktionslinks til navigation til forrige side, anvend da tilbage-linket.
 
-Brug <a href="/komponenter/sprogvaelger/">sprogvælgeren</a> til valg af sprog.
+Brug {% include links/component-guideline-link.html linktext="sprogvælgeren" %} til valg af sprog.
 
 ### Vejledning
 
@@ -45,13 +57,14 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 {% include dos-donts-box.html component="function-link-dos-donts" title="Funktionslink do's and don'ts" %}
 
 {:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
+## Se komponenten i eksempelløsninger
 
-<a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering'">Trinformular til registrering</a>
+{% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 
-#### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
-- <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" class="icon-link">Farhad Manjoo: You Won’t Finish This Article (2013)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/utility-navigation/" class="icon-link">Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
+- {% include links/external-link.html linktext="Farhad Manjoo: You Won’t Finish This Article (2013)" %}
+- {% include links/external-link.html linktext="Susan Farrell: Utility Navigation: What It Is and How to Design It (2015)" %}
 

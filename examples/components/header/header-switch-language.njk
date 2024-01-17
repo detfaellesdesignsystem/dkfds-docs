@@ -1,0 +1,55 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+{% from "components/language-switcher/language-switcher.njk" import languageSwitcherHeader as language_switcher %}
+{% from "components/language-switcher/language-switcher.njk" import languageSwitcherMobile as language_switcher_mobile %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+{% set language_switcher_data = {
+    "ariaLabel": "Vælg sprog fra listen",
+    "firstAriaLabel": "Valgt sprog: Dansk",
+    "languages": [
+        {"code": "da", "name": "Dansk", "href": "?lang=da"},
+        {"code": "en-GB", "name": "English", "href": "?lang=en-GB"},
+        {"code": "de", "name": "Deutsch", "href": "?lang=de"},
+        {"code": "pl", "name": "Polski", "href": "?lang=pl"}
+    ]
+} %}
+
+<header class="header">
+    {{ language_switcher(language_switcher_data) }}
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ language_switcher_mobile(language_switcher_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>

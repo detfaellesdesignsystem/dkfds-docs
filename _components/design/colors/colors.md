@@ -3,33 +3,9 @@ permalink: "/design/farver/"
 redirect_from:
 - "/farver/"
 layout: styleguide
+category: Styleguide_category
+subcategory: Styleguide
 title: Farver
-category: Design_category
-subcategory: Design
-tags:
-- color
-- Portalfarver
-- Gråtoner
-- Besked-farver
-- Link-farver
-- Fokusfarve
-- Baggrundsfarver
-- Positiv og negativ farver
-- Datavisualiseringsfarver
-- farve
-- farver
-- Grå
-- Sort
-- grøn
-- blå
-- rød
-- gul
-- lyseblå
-- link-blå
-- virk-farve
-- borger.dk-farve
-description: 'Overbliksside over alle farver i FDS: Portalfarver, Gråtoner, Besked-farver,
-  Link-farver, Fokusfarve, Baggrundsfarver, Positiv og negativ farver, Datavisualiseringsfarver'
 lead: Da designsystemet er fælles for både borger.dk og Virk er der farver til hver
   portal og samtidig en generel palette, der anvendes uanset, hvilken portal din selvbetjeningsløsning
   skal på.
@@ -53,13 +29,37 @@ subnav:
   href: "#datavisualiseringsfarver"
 - text: Kontrastforhold
   href: "#kontrastforhold"
+description: 'Overbliksside over alle farver i FDS: Portalfarver, Gråtoner, Besked-farver,
+  Link-farver, Fokusfarve, Baggrundsfarver, Positiv og negativ farver, Datavisualiseringsfarver'
+tags:
+- color
+- Portalfarver
+- Gråtoner
+- Besked-farver
+- Link-farver
+- Fokusfarve
+- Baggrundsfarver
+- Positiv og negativ farver
+- Datavisualiseringsfarver
+- farve
+- farver
+- Grå
+- Sort
+- grøn
+- blå
+- rød
+- gul
+- lyseblå
+- link-blå
+- virk-farve
+- borger.dk-farve
 ---
 
 Farverne i listerne nedenunder er angivet øverst med enten en HEX- eller RGBA-værdi og nederst med variabelnavnet anvendt i SASS-filerne.
 
 {:#portalfarver-tema}
 ## Portalfarver (tema)
-Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve. Dette gøres nemt ved hjælp af <a href="/kode/implementering/#temahaandtering">temahåndtering i koden</a>.
+Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve.
 
 <!-- new setup start -->
 <h3>Primærfarver for borger.dk</h3>
@@ -197,15 +197,15 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link"></div>
-    <div class="color-text-label"><span class="color-hex">#004D99</span><span>$theme-color-link</span></div>
+    <div class="color-text-label"><span class="color-hex">#004D99</span><span>'link'</span></div>
   </div>
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link-hover"></div>
-    <div class="color-text-label"><span class="color-hex">#000040</span><span>$theme-color-link-hover</span></div>
+    <div class="color-text-label"><span class="color-hex">#000040</span><span>'link-hover'</span></div>
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-link-visited"></div>
-    <div class="color-text-label"><span class="color-hex">#800080</span><span>$theme-color-link-visited</span></div>
+    <div class="color-text-label"><span class="color-hex">#800080</span><span>'link-visited'</span></div>
   </div>
 </div>
 
@@ -214,7 +214,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
-    <div class="color-text-label"><span class="color-hex">#747474</span><span>$theme-focus-color</span></div>
+    <div class="color-text-label"><span class="color-hex">#747474</span><span>'focus'</span></div>
   </div>
 </div>
 
@@ -241,11 +241,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
-    <div class="color-text-label"><span class="color-hex">#358000</span><span>$theme-color-text-positive</span></div>
+    <div class="color-text-label"><span class="color-hex">#358000</span><span>'text-positive'</span></div>
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-negative"></div>
-    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>$theme-color-text-negative</span></div>
+    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>'text-negative'</span></div>
   </div>
 </div>
 
@@ -546,7 +546,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 Din tekst skal være læsbar for alle og efterleve gældende regler for kontrastforhold.
 
 <ul class="nobullet-list">
-  <li><a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" class="icon-link" target="_blank">Læs mere om kontrastforhold<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" class="icon-link" target="_blank">Læs om kontrastforhold for tekst i WCAG 2.1 (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="icon-link" target="_blank">Læs om kontrastforhold for ikke-tekstbaseret indhold i WCAG 2.1 (engelsk)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li>{% include links/external-link.html linktext="Læs mere om kontrastforhold" %}</li>
+  <li>{% include links/external-link.html linktext="Læs om kontrastforhold for tekst i WCAG 2.1 (engelsk)" %}</li>
+  <li>{% include links/external-link.html linktext="Læs om kontrastforhold for ikke-tekstbaseret indhold i WCAG 2.1 (engelsk)" %}</li>
 </ul>

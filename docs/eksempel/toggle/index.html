@@ -232,12 +232,24 @@
     <main class="container page-container" id="main-content">
         
         <h1 id="example-heading-toggle" class="sr-only">Toggle</h1>
-        <div class="form-group">
+        <ul class="nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <li>
 
-    <input id="toggle-example" type="checkbox" name="toggle-example" value="1" class="form-toggle" />
-    <label for="toggle-example" class="form-toggle-label ">Dette er en toggle</label>
+        <div class="toggle-element">
+            <label class="toggle-label" for="completed-switch">Vis afsluttede sager</label>
+            <button class="toggle-button" role="switch" aria-checked="true" id="completed-switch"></button>
+        </div>
 
-</div>
+    </li>
+    <li>
+
+        <div class="toggle-element">
+            <label class="toggle-label" for="yearold-switch">Vis sager ældre end et år</label>
+            <button class="toggle-button" role="switch" aria-checked="false" id="yearold-switch"></button>
+        </div>
+
+    </li>
+</ul>
 
         
     </main>
@@ -245,6 +257,8 @@
     <script src="/assets/js/styleguide.js"></script>
     <script src="/assets/js/vendor.js"></script>
     
+    
+    <script src="/assets/js/toggleswitch.js"></script>
     
     
     

@@ -1,0 +1,53 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue"
+    },
+    "authority": {
+        "name": "Loremipsumdolorsitametconsecteturadipiscingelit",
+        "text": 'Loremipsumdolorsitametconsecteturadipiscingelit'
+    }
+} %}
+
+{% set navigation_menu_data = {
+    "links": [
+        { "text": "LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue" },
+        { "text": "Andet menupunkt" },
+        { "text": "Tredje menupunkt" },
+        { "text": "Fjerde menupunkt" }
+    ]
+} %}
+
+<header class="header">
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    {{ navigation_menu(navigation_menu_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_navigation_menu(navigation_menu_data) }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>

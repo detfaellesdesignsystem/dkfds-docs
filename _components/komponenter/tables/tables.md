@@ -1,42 +1,33 @@
 ---
-permalink: /komponenter/tables/
+permalink: "/komponenter/tables/guidelines/"
 redirect_from:
-- /tables/
-- /komponenter/strukturerede-lister/
+- "/tables/"
+- "/komponenter/strukturerede-lister/"
+- "/komponenter/tables/"
 layout: styleguide
-type: component
-title: Tabeller
 category: Komponenter_category
 subcategory: Komponenter
-description: "Tabeller er en systematisk opstilling af data i kolonner og rækker."
-tags: 
+title: Tabeller
 lead: Tabeller er en systematisk opstilling af data i kolonner og rækker.
+component: "table"
+componentTitle: "Eksempel på tabel"
+componentLink: true
 anchor: true
 subnav:
-- text: Uden ramme
-  href: '#uden-ramme'
-- text: Zebralinjer
-  href: '#zebralinjer'
-- text: Responsiv
-  href: '#responsiv'
-- text: Linjehøjde
-  href: '#linjehoejde'
-- text: Sortering i tabeller
-  href: '#sortering-i-tabeller'
-- text: Søgning i tabeller
-  href: '#soegning-i-tabeller'
-- text: Valgbare rækker
-  href: '#valgbare-raekker'
-- text: Strukturerede lister
-  href: '#strukturerede-lister'
-- text: Avancerede tabeller
-  href: '#avancerede-tabeller'
+- text: Sådan bruges komponenten
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Se komponenten i eksempelløsninger
+  href: "#eksempelloesninger"
+- text: Referencer
+  href: "#ref"
+description: "Tabeller er en systematisk opstilling af data i kolonner og rækker."
+tags: 
 ---
 
-{% include code/preview-box.html component="table" title="Eksempel på tabel" link=true code="/kode/komponenter/tables/" %}
-
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges komponenten
 
 ### Anvendes til
 
@@ -46,7 +37,7 @@ Tabeller anvendes til at præsentere brugeren for data som fx statistik opstille
 
 Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
-Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link">tabeller ifølge WCAG altid bør have kolonneoverskrifter<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>.
+Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da {% include links/external-link.html linktext="tabeller ifølge WCAG altid bør have kolonneoverskrifter" %}.
 
 ### Vejledning
 
@@ -54,54 +45,38 @@ Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig
 
 Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for.
 
-Såfremt der er tale om meget <a href="/komponenter/tables/#avancerede-tabeller">avancerede tabeller</a>, kan der bruges en tredjepartsløsning.
+Såfremt der er tale om meget {% include links/component-guideline-link.html linktext="avancerede tabeller" %}, kan der bruges en tredjepartsløsning.
 
 Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tale om en numerisk størrelse som f.eks. antal eller pengebeløb. Dette gør det lettere for brugeren at skimme og sammenligne numerisk data (Rutter, 2017). Tal, der ikke angiver en numerisk størrelse og dermed ikke indebærer et behov for sammenligning, skal ikke højrestilles. Det kan f.eks. være et ID-nummer.
 
 {% include dos-donts-box.html component="table-dos-donts" title="Tabeller do's and don'ts" %}
 
-{:#eksempelloesninger}
-#### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Vælg noget mere'">Trinformular til registrering: Vælg noget mere</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-6/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Opsummering'">Trinformular til registrering: Opsummering</a>
-- <a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til ansøgning: Tilføj dokumentation'">Trinformular til ansøgning: Tilføj dokumentation</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Find sag'">Sagsoversigt: Find sag</a>
-
-#### Referencer
-
-{:.nobullet-liat}
-- <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://alistapart.com/article/web-typography-tables/" class="icon-link">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.nngroup.com/articles/mobile-tables/" class="icon-link">Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-- <a href="https://www.w3.org/TR/WCAG20-TECHS/F91.html" class="icon-link">W3C: F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers (2016)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>
-
+{:#varianter}
 ## Varianter
 
 {:#uden-ramme}
 ### Uden ramme
 
-{% include code/preview-box.html component="table--borderless" title="Eksempel på tabel uden ramme" code="/kode/komponenter/tables/#uden-ramme" %}
+{% include code/preview-box.html component="table--borderless" title="Eksempel på tabel uden ramme" code="/komponenter/tables/implementering/#uden-ramme" %}
 
 {:#zebralinjer}
 ### Zebralinjer
 
 Zebralinjer anbefales kun til længere tabeller med mange rækker og kolonner, da brugeren kan tillægge få mørke rækker betydning, som om de var særligt markeret (Rost, 2019).
 
-{% include code/preview-box.html component="table--bordered-zebra" title="Eksempel på tabel med zebra striber" code="/kode/komponenter/tables/#zebralinjer" %}
+{% include code/preview-box.html component="table--bordered-zebra" title="Eksempel på tabel med zebra striber" code="/komponenter/tables/implementering/#zebralinjer" %}
 
 {:#responsiv}
 ### Responsiv
 
 Bemærk, at det i nogle tilfælde kan være en bedre løsning at lade lange tabeller scrolle horisontalt på mobil frem for at anvende en responsiv tabel (Schade, 2017). Det kan fx være i tilfælde, hvor sammenligning af data fra forskellige rækker er vigtig. Udfør brugertests for at vurdere den bedste mobile tabelvisning for den enkelte løsning.
 
-{% include code/preview-box.html component="table--responsive" title="Eksempel på responsiv tabel" code="/kode/komponenter/tables/#responsiv" %}
+{% include code/preview-box.html component="table--responsive" title="Eksempel på responsiv tabel" code="/komponenter/tables/implementering/#responsiv" %}
 
 {:#linjehoejde}
 ### Linjehøjde
 
-{% include code/preview-box.html component="table--lineheight" title="Eksempler på tabeller med forskellig afstand mellem rækkerne" code="/kode/komponenter/tables/#linjehoejde" %}
+{% include code/preview-box.html component="table--lineheight" title="Eksempler på tabeller med forskellig afstand mellem rækkerne" code="/komponenter/tables/implementering/#linjehoejde" %}
 
 {:#sortering-i-tabeller}
 ### Sortering i tabeller
@@ -112,11 +87,11 @@ Når sortering vælges, sorteres per default stigende. Klikkes der på et aktivt
 
 Tabeller med sortering skal altid have en aktiv sortering; sorteringen kan ikke deaktiveres. Standardsortering vælges ud fra, hvilken kolonne brugerne som regel vil forvente er sorteret. Dette vil ofte være den første kolonne eller en dato.
 
-Hvis kun få kolonner i en tabel kan sorteres, kan komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a> anvendes i stedet.
+Hvis kun få kolonner i en tabel kan sorteres, kan komponenten {% include links/component-guideline-link.html linktext="Sortering med overflow menu" %} anvendes i stedet.
 
-Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten <a href="/komponenter/overflowmenu/#sortering">Sortering med overflow menu</a>.
+Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten {% include links/component-guideline-link.html linktext="Sortering med overflow menu" %}.
 
-{% include code/preview-box.html component="table-sort" title="Eksempel på sortering i tabel" code="/kode/komponenter/tables/#sortering-i-tabel" %}
+{% include code/preview-box.html component="table-sort" title="Eksempel på sortering i tabel" code="/komponenter/tables/implementering/#sortering-i-tabel" %}
 
 {:#soegning-i-tabeller}
 ### Søgning i tabeller
@@ -125,25 +100,25 @@ Søgefelt til tabeller kan anvendes til store tabeller, der har mange rækker og
 
 Tabeller kan søges med et søgefelt placeret over tabellen. Feltet søger som udgangspunkt alt data i tabellen. Tabellen opdateres ved klik på knappen “Søg” eller ved tasten “Enter”.
 
-{% include code/preview-box.html component="table-search" title="Eksempel på søgning i tabel" code="/kode/komponenter/tables/#soegning-i-tabeller" %}
+{% include code/preview-box.html component="table-search" title="Eksempel på søgning i tabel" code="/komponenter/tables/implementering/#soegning-i-tabeller" %}
 
 {:#valgbare-raekker}
 ### Valgbare rækker
 
-{% include code/preview-box.html component="table-selectable" title="Eksempel på valgbare rækker i en tabel" code="/kode/komponenter/tables/#valgbare-raekker" %}
+{% include code/preview-box.html component="table-selectable" title="Eksempel på valgbare rækker i en tabel" code="/komponenter/tables/implementering/#valgbare-raekker" %}
 
 #### Valgbare rækker med funktionsknapper
 
 Hvis der kan udføres særlige funktioner for de valgte rækker, placeres funktionsknapper under tabellen. Brug ikke disabled knapper, når der ikke er nogen valgte rækker, da disabled knapper er svære at læse og forstå for nogle brugere. Vis i stedet en hjælpetekst ved knapperne, hvis de bliver klikket, før der er valgt en eller flere rækker.
 
-{% include code/preview-box.html component="table-selectable-functions" title="Eksempel på valgbare rækker i en tabel med funktionsknapper" code="/kode/komponenter/tables/#valgbare-raekker-knapper" %}
+{% include code/preview-box.html component="table-selectable-functions" title="Eksempel på valgbare rækker i en tabel med funktionsknapper" code="/komponenter/tables/implementering/#valgbare-raekker-knapper" %}
 
 {:#strukturerede-lister}
 ### Strukturerede lister
 
 Strukturerede lister opstiller simple informationer på en letlæselig måde.
 
-{% include code/preview-box.html component="structured-list" title="Eksempel på struktureret liste" code="/kode/komponenter/tables/#strukturerede-lister" %}
+{% include code/preview-box.html component="structured-list" title="Eksempel på struktureret liste" code="/komponenter/tables/implementering/#strukturerede-lister" %}
 
 #### Anvendes til
 
@@ -162,14 +137,7 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 {:#med-link}
 ##### Eksempel på struktureret liste med link
 
-{% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" code="/kode/komponenter/tables/#strukturerede-lister-edit" %}
-
-##### Se komponenten i eksempelløsninger
-
-{:.nobullet-list}
-- <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Formular til kontaktoplysninger: Bekræft oplysninger'">Formular til kontaktoplysninger: Bekræft oplysninger</a>
-- <a href="/pages/eksempler/trinformular-til-registrering/registrering-7/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Trinformular til registrering: Kvittering'">Trinformular til registrering: Kvittering</a>
-- <a href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r={{page.permalink}}%23eksempelloesninger" title="Vis eksempel 'Sagsoversigt: Sagsnr. 123456789'">Sagsoversigt: Sagsnr. 123456789</a>
+{% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" code="/komponenter/tables/implementering/#strukturerede-lister-edit" %}
 
 {:#avancerede-tabeller}
 ### Avancerede tabeller
@@ -181,3 +149,24 @@ Vi tilbyder på nuværende tidspunkt ikke avancerede tabeller, men hvis man find
 
 #### Rediger og slet en række
 <div><img src="/assets/img/components/advanced-table-edit-overflowmenu.png" class="outer-border-box p-4" alt="Eksempel på, hvordan en avanceret tabel med rediger og slet muligheder i en overflowmenu kan se ud" /></div>
+
+{:#eksempelloesninger}
+## Se komponenten i eksempelløsninger
+
+{:.nobullet-list}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-liat}
+- {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}
+- {% include links/external-link.html linktext="Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)" %}
+- {% include links/external-link.html linktext="Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)" %}
+- {% include links/external-link.html linktext="W3C: F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers (2016)" %}
