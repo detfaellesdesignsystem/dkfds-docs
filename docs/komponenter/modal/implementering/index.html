@@ -1892,11 +1892,23 @@
     </div>
 </div>
 
-<h3>Javascript</h3>
+<p>Modalen skal altid ligge i en <code>div</code> med klassen <code>fds-modal-container</code>, som skal ligge under <code>body</code>-elementet. Nedenstående boks viser et eksempel på strukturen:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;body&gt;
+    &lt;div class=&quot;fds-modal-container&quot;&gt;
+        &lt;div class=&quot;fds-modal&quot; aria-hidden=&quot;true&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot; ...&gt;
+          ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre></figure>
+
+<h3>JavaScript</h3>
 <p>Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let modal = new DKFDS.Modal(document.getElementById(&#39;MODAL-ID&#39;));
 modal.init();</code></pre></figure>
+
+<p>Når en modal aktiveres, vil JavaScripten sætte <code>inert</code>-attributten på alle elementer under <code>body</code> bortset fra modalens container-element. Dette sikrer, at fokus bliver inde i modalen, når brugeren navigerer med et keyboard. Når modalen lukkes, fjernes attributten igen.</p>
 
 <h4>Funktioner</h4>
 

@@ -33,6 +33,9 @@
     {% if page.url contains "notifikation" or page.url contains "notification" or page.url contains "toastbesked" %}
     <script src="{{ site.baseurl }}/assets/js/toast.js"></script>
     {% endif %}
+    {%- if page.url contains "modal" -%}
+    <script src="{{ site.baseurl }}/assets/js/modal.js"></script>
+    {% endif %}
     {% if page.url contains "language-switcher" or page.url contains "header-switch-language" %}
     <script src="{{ site.baseurl }}/assets/js/languageswitcher.js"></script>
     {% endif %}

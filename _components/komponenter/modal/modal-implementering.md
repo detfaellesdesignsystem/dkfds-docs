@@ -33,13 +33,27 @@ tags:
 
 {% include code/syntax.html component="modal" copybutton=true %}
 
-### Javascript
+Modalen skal altid ligge i en `div` med klassen `fds-modal-container`, som skal ligge under `body`-elementet. Nedenstående boks viser et eksempel på strukturen:
+
+{% highlight html %}
+<body>
+    <div class="fds-modal-container">
+        <div class="fds-modal" aria-hidden="true" role="dialog" aria-modal="true" ...>
+          ...
+        </div>
+    </div>
+</body>
+{% endhighlight %}
+
+### JavaScript
 Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
 let modal = new DKFDS.Modal(document.getElementById('MODAL-ID'));
 modal.init();
 {% endhighlight %}
+
+Når en modal aktiveres, vil JavaScripten sætte `inert`-attributten på alle elementer under `body` bortset fra modalens container-element. Dette sikrer, at fokus bliver inde i modalen, når brugeren navigerer med et keyboard. Når modalen lukkes, fjernes attributten igen.
 
 #### Funktioner
 

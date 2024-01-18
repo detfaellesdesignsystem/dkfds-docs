@@ -163,12 +163,14 @@
 {{ footer(footer_data) }}
 {% endblock %}
 
-{{
-    modal({
-        "id": "modal-contact",
-        "heading": "Kontakt",
-        "content": modal_content,
-        "forcedAction": false,
-        "actions": modal_actions
-    })
-}}
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-contact",
+            "heading": "Kontakt",
+            "content": modal_content,
+            "forcedAction": false,
+            "actions": modal_actions
+        })
+    }}
+</div>
