@@ -49,5 +49,4 @@ Tiden der går, før brugeren logges af en løsning automatisk, defineres i forh
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Timing Adjustable: Understanding SC 2.2.1" %}
-- {% include links/external-link.html linktext="Tekniske krav til tilslutning af it-system i NemLog-in" %}
 
