@@ -1,0 +1,44 @@
+<div class="mt-8 mb-8" inert>
+    <p>Der er en inert-attribut på dette element - knappen virker ikke og må fortsat ikke
+        virke efter modalen har været åben.</p>
+    <button class="button button-secondary">
+        Knap
+    </button>
+</div>
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <button class="button button-tertiary" data-module="modal"
+                data-target="modal-example" aria-haspopup="dialog">
+                Åbn modal
+            </button>
+        </div>
+    </div>
+</main>
+<div class="fds-modal-container">
+
+    <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-example-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-heading">
+                    Modal
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Tjek at fokus er fanget i modalen, når den er åben. Husk at prøve at tabbe
+                    ind fra browserens url-linje.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -228,22 +228,24 @@
         <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#info"></use></svg>Denne side er kun til test</button>
     </div>
 </div>
-<div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title" id="test-warning-heading">
-                Denne side er kun til test
-            </h2>
-            <button class="modal-close function-link"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-        </div>
-        <div class="modal-body">
-            <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
-        </div>
-        <div class="modal-footer">
-            <button class="button button-secondary" data-modal-close>
-                Luk
-            </button>
+<div class="fds-modal-container">
+    <div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="test-warning-heading">
+                    Denne side er kun til test
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -332,7 +334,7 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-modals-2/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-modal-inert/">Forrige</a>
                 
                 
                 <a class="function-link" href="/eksempel/test-overflow-menus-2/">Næste</a>

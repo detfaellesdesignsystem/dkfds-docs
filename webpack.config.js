@@ -35,7 +35,8 @@ module.exports = function (outputPath, prod) {
       "newsletter": ["./javascript/newsletter.js"],
       "pagination": ["./javascript/components/pagination.js"],
       "session-timeout": ["./javascript/components/session-timeout.js"],
-      "url-tabs": ["./javascript/components/url-tabs.js"]
+      "url-tabs": ["./javascript/components/url-tabs.js"],
+      "test-modal-javascript": ["./examples/testfiles/modals/modal-javascript.js"]
     },
     module: {
       rules: [

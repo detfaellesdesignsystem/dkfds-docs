@@ -140,8 +140,9 @@ title: Test
 {:.h3}
 ## Modal
 
-{% include test/preview-test.html filename="test-modals-1" description="Modal 1" %}
-{% include test/preview-test.html filename="test-modals-2" description="Modal 2" %}
+{% include test/preview-test.html filename="test-modal-types" description="Modaltyper" %}
+{% include test/preview-test.html filename="test-modal-javascript" description="JavaScript for modaler" %}
+{% include test/preview-test.html filename="test-modal-inert" description="Test af inert med modaler" %}
 
 {:.h3}
 ## Overflow menu
