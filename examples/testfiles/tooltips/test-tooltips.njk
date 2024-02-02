@@ -1,0 +1,69 @@
+{% from "components/tooltip/tooltip.njk" import tooltipnew as tooltipnew %}
+{% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
+{% from "components/toggle/toggle.njk" import toggle as toggle %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Tooltips</h1>
+        </div>
+    </div>
+    <div class="row mt-9 pb-9">
+        <div class="col-12">
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer. fgdgdgfdsgfsdgfsdgsfdgerstsgfsgsgfgsfdgsdtertsgfgfdgsfgsgsdfgrtgrfgsfgsfdgsdfgsdrterargfsgsdfgsertg",
+                    "id": "tooltip-helpicon"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12 d-flex justify-content-between">
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i venstre side i rækken",
+                    "id": "tooltip-left"
+                }) 
+            }}
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i midten i rækken",
+                    "id": "tooltip-center"
+                }) 
+            }}
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i højre side i rækken",
+                    "id": "tooltip-right"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {% set target = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap med tooltip",
+                    "attributes": "aria-describedby=\"tooltip-knap\"",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltipnew({
+                    "text": "Tooltip på en knap",
+                    "target": target,
+                    "trigger": "onhover",
+                    "id": "tooltip-knap"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Dette er en rigtig lang sætning, hvor der i sidste del af sætningen kommer nogle {{ tooltipnew({ "text": "Dette er et tooltip", "target": "<em class=\"tooltip-text tooltip-target\" tabindex=\"0\">ord med tooltip</em>", "id": "text-tooltip", "trigger": "onhover" }) }} inde i teksten</p>
+        </div>
+    </div>
+</main>

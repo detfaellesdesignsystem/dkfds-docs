@@ -1,15 +1,8 @@
-{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
 
 {{ 
-    button({
-        "variant": "unstyled",
-        "attributes": "type=\"button\"",
-        "classes": { "icon": "mr-0 mt-0" },
-        "srOnly": "Hvad betyder det?",
-        "icon": "help",
-        "tooltip": {
-            "text": "Dette er et tooltip",
-            "showOnClick": true
-        }
+    tooltip_helpicon({
+        "text": "Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer.",
+        "id": "tooltip-helpicon"
     }) 
 }}

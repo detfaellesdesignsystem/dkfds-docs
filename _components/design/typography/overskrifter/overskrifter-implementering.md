@@ -14,6 +14,8 @@ component: "headings"
 componentTitle: "Eksempel på overskrifter"
 anchor: true
 subnav:
+- text: HTML Struktur
+  href: "#html"
 - text: Subheading
   href: "#subheading"
 description:
@@ -28,6 +30,7 @@ tags:
 
 {% include links/internal-link.html linktext="Læs retningslinjerne for overskrifter" %}
 
+{:#html}
 ## HTML Struktur
 
 {% include code/syntax.html component="headings" copybutton=true %}

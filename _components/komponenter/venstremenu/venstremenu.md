@@ -17,8 +17,6 @@ subnav:
   href: "#retningslinjer"
 - text: Varianter
   href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
 - text: Referencer
   href: "#ref"
 description: Venstremenu giver brugerne overblik over struktur og indhold, så de kan

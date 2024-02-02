@@ -21,8 +21,8 @@ var distJekyllComponentPreview = '_preview-components';
 
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
-var buildHeader = ['examples/components/header/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
+var buildFile = ['examples/components/tooltip/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -149,6 +149,8 @@ var testfiles = [
     "test-checkboxes-8",
     "test-checkboxes-9",
     "test-toggle",
+    "test-tooltips",
+    "test-tooltip-javascript-errors",
     "test-step-guide-1",
     "test-step-guide-2",
     "test-step-guide-3",

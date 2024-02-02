@@ -221,6 +221,12 @@ title: Test
 {% include test/preview-test.html filename="test-toggle" description="Toggle switch" %}
 
 {:.h3}
+## Tooltips
+
+{% include test/preview-test.html filename="test-tooltips" description="Tooltips" %}
+{% include test/preview-test.html filename="test-tooltip-javascript-errors" description="JavaScript errors i tooltips" %}
+
+{:.h3}
 ## Trinindikator
 
 {% include test/preview-test.html filename="test-step-guide-1" description="Trinindikator 1" %}

@@ -1,5 +1,10 @@
-<button class="button button-unstyled js-tooltip" type="button"
-    data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
-    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
-    <span class="sr-only">Hvad betyder det?</span>
-</button>
+<div class="tooltip-wrapper">
+    <button class="button button-unstyled tooltip-target" type="button">
+        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+        <span class="sr-only">Hvad betyder det?</span>
+    </button>
+    <span class="tooltip onclick" id="tooltip-helpicon" aria-hidden="true">Dette er en alt for
+        lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når
+        de fylder mere end 4 linjer.</span>
+    <span class="tooltip-arrow"></span>
+</div>

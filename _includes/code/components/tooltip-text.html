@@ -1,3 +1,8 @@
-<p>Her er der <a href="javascript:void(0)" class="tooltip-link js-tooltip"
-        data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">ord med tooltip</a>
-    inde i en tekst</p>
+<p>Her er der
+    <span class="tooltip-wrapper">
+        <em class="tooltip-text tooltip-target" tabindex="0">ord med tooltip</em>
+        <span class="tooltip onhover" role="tooltip" id="text-tooltip"
+            aria-hidden="true">Dette er et tooltip</span>
+        <span class="tooltip-arrow"></span>
+    </span> inde i en tekst
+</p>

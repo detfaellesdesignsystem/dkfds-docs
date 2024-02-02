@@ -1764,11 +1764,16 @@
     
     <div class="component-example px-4 py-4">
         
-        <button class="button button-unstyled js-tooltip" type="button"
-    data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
-    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
-    <span class="sr-only">Hvad betyder det?</span>
-</button>
+        <div class="tooltip-wrapper">
+    <button class="button button-unstyled tooltip-target" type="button">
+        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+        <span class="sr-only">Hvad betyder det?</span>
+    </button>
+    <span class="tooltip onclick" id="tooltip-helpicon" aria-hidden="true">Dette er en alt for
+        lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når
+        de fylder mere end 4 linjer.</span>
+    <span class="tooltip-arrow"></span>
+</div>
         
     </div>
     
@@ -1823,11 +1828,16 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-unstyled js-tooltip&quot; type=&quot;button&quot;
-    data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-trigger=&quot;click&quot;&gt;
-    &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Hvad betyder det?&lt;/span&gt;
-&lt;/button&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot;&gt;
+    &lt;button class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;&gt;
+        &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Hvad betyder det?&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;span class=&quot;tooltip onclick&quot; id=&quot;tooltip-helpicon&quot; aria-hidden=&quot;true&quot;&gt;Dette er en alt for
+        lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når
+        de fylder mere end 4 linjer.&lt;/span&gt;
+    &lt;span class=&quot;tooltip-arrow&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>
@@ -1860,7 +1870,7 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-unstyled js-tooltip&quot; data-tooltip=&quot;Slet element&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-unstyled&quot;&gt;
     &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
     &lt;span class=&quot;sr-only&quot;&gt;Slet&lt;/span&gt;
 &lt;/button&gt;</code></pre></figure>
@@ -1894,9 +1904,14 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Her er der &lt;a href=&quot;javascript:void(0)&quot; class=&quot;tooltip-link js-tooltip&quot;
-        data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-trigger=&quot;click&quot;&gt;ord med tooltip&lt;/a&gt;
-    inde i en tekst&lt;/p&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Her er der
+    &lt;span class=&quot;tooltip-wrapper&quot;&gt;
+        &lt;em class=&quot;tooltip-text tooltip-target&quot; tabindex=&quot;0&quot;&gt;ord med tooltip&lt;/em&gt;
+        &lt;span class=&quot;tooltip onhover&quot; role=&quot;tooltip&quot; id=&quot;text-tooltip&quot;
+            aria-hidden=&quot;true&quot;&gt;Dette er et tooltip&lt;/span&gt;
+        &lt;span class=&quot;tooltip-arrow&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt; inde i en tekst
+&lt;/p&gt;</code></pre></figure>
 
 
     </div>
@@ -1924,7 +1939,7 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary js-tooltip&quot; data-tooltip=&quot;Dette er et tooltip&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary&quot;&gt;
     Knap med tooltip
 &lt;/button&gt;</code></pre></figure>
 
@@ -1955,14 +1970,12 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;!-- Placering: top --&gt;
-&lt;button class=&quot;button button-primary js-tooltip&quot; data-tooltip=&quot;Top tooltip&quot;
-    data-tooltip-position=&quot;top&quot;&gt;
+&lt;button class=&quot;button button-primary&quot;&gt;
     Top
 &lt;/button&gt;
 
 &lt;!-- Placering: bund --&gt;
-&lt;button class=&quot;button button-primary js-tooltip&quot; data-tooltip=&quot;Bund tooltip&quot;
-    data-tooltip-position=&quot;bottom&quot;&gt;
+&lt;button class=&quot;button button-primary&quot;&gt;
     Bund
 &lt;/button&gt;</code></pre></figure>
 

@@ -28,7 +28,7 @@ description: Sådan bruger du grid med FDS.
 tags: 
 ---
 
-Det fælles designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Grid-systemet er et standard 12-kolonne system med fem responsive breakpoints.
+Det Fælles Designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Grid-systemet er et standard 12-kolonne system med fem responsive breakpoints.
 
 Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger {% include links/external-link.html linktext="flexbox" %} og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.
 

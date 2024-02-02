@@ -1764,11 +1764,16 @@
     
     <div class="component-example px-4 py-4">
         
-        <button class="button button-unstyled js-tooltip" type="button"
-    data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">
-    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
-    <span class="sr-only">Hvad betyder det?</span>
-</button>
+        <div class="tooltip-wrapper">
+    <button class="button button-unstyled tooltip-target" type="button">
+        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+        <span class="sr-only">Hvad betyder det?</span>
+    </button>
+    <span class="tooltip onclick" id="tooltip-helpicon" aria-hidden="true">Dette er en alt for
+        lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når
+        de fylder mere end 4 linjer.</span>
+    <span class="tooltip-arrow"></span>
+</div>
         
     </div>
     
@@ -1879,7 +1884,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <button class="button button-unstyled js-tooltip" data-tooltip="Slet element">
+        <button class="button button-unstyled">
     <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
     <span class="sr-only">Slet</span>
 </button>
@@ -1903,8 +1908,13 @@
     
     <div class="component-example px-4 py-4">
         
-        <p>Her er der <a href="javascript:void(0)" class="tooltip-link js-tooltip" data-tooltip="Dette er et tooltip" data-tooltip-trigger="click">ord med tooltip</a>
-    inde i en tekst</p>
+        <p>Her er der
+    <span class="tooltip-wrapper">
+        <em class="tooltip-text tooltip-target" tabindex="0">ord med tooltip</em>
+        <span class="tooltip onhover" role="tooltip" id="text-tooltip" aria-hidden="true">Dette er et tooltip</span>
+        <span class="tooltip-arrow"></span>
+    </span> inde i en tekst
+</p>
         
     </div>
     
@@ -1925,7 +1935,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <button class="button button-primary js-tooltip" data-tooltip="Dette er et tooltip">
+        <button class="button button-primary">
     Knap med tooltip
 </button>
         
@@ -1949,12 +1959,12 @@
     <div class="component-example px-4 py-4">
         
         <!-- Placering: top -->
-<button class="button button-primary js-tooltip" data-tooltip="Top tooltip" data-tooltip-position="top">
+<button class="button button-primary">
     Top
 </button>
 
 <!-- Placering: bund -->
-<button class="button button-primary js-tooltip" data-tooltip="Bund tooltip" data-tooltip-position="bottom">
+<button class="button button-primary">
     Bund
 </button>
         

@@ -46,5 +46,5 @@ Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovg
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Vitaly Friedman: Privacy UX: Better Cookie Consent Experiences (2019)" %}
 - {% include links/external-link.html linktext="Therese Fessenden: Modal & Nonmodal Dialogs: When (& When Not) to Use Them (2017)" %}
-- {% include links/external-link.html linktext="læs om cookies på Digitaliseringsstyrelsens hjemmeside" %}
+- {% include links/external-link.html linktext="Læs om cookies på Digitaliseringsstyrelsens hjemmeside" %}
 - {% include links/external-link.html linktext="Cookiebekendtgørelsen" %}
