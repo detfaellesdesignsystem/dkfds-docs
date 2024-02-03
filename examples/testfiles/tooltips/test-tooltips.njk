@@ -3,7 +3,7 @@
 {% from "components/toggle/toggle.njk" import toggle as toggle %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
-<main class="container page-container" id="main-content">
+<main class="container page-container" id="main-content" style="min-height: 2000px;">
     <div class="row">
         <div class="col-12">
             <h1 class="h2 mt-0 mb-9">Tooltips</h1>
@@ -42,21 +42,40 @@
         </div>
     </div>
     <div class="row mt-9">
-        <div class="col-12">
-            {% set target = 
+        <div class="col-sm-6 mt-9">
+            {% set target1 = 
                 button({
                     "variant": "primary",
                     "text": "Knap med tooltip",
-                    "attributes": "aria-describedby=\"tooltip-knap\"",
+                    "attributes": "aria-describedby=\"tooltip-knap1\"",
                     "classes": { "button": "tooltip-target" }
                 })
             %}
             {{ 
                 tooltipnew({
                     "text": "Tooltip på en knap",
-                    "target": target,
+                    "target": target1,
                     "trigger": "onhover",
-                    "id": "tooltip-knap"
+                    "id": "tooltip-knap1"
+                }) 
+            }}
+        </div>
+        <div class="col-sm-6 mt-9">
+            {% set target2 = 
+                button({
+                    "variant": "secondary",
+                    "text": "Anden knap med tooltip",
+                    "attributes": "aria-describedby=\"tooltip-knap2\"",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltipnew({
+                    "text": "Endnu et tooltip på en knap",
+                    "target": target2,
+                    "trigger": "onhover",
+                    "id": "tooltip-knap2",
+                    "position": "below"
                 }) 
             }}
         </div>

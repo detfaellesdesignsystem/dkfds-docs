@@ -249,7 +249,7 @@
         </div>
     </div>
 </div>
-    <main class="container page-container" id="main-content">
+    <main class="container page-container" id="main-content" style="min-height: 2000px;">
     <div class="row">
         <div class="col-12">
             <h1 class="h2 mt-0 mb-9">Tooltips</h1>
@@ -306,13 +306,23 @@
         </div>
     </div>
     <div class="row mt-9">
-        <div class="col-12">
+        <div class="col-sm-6 mt-9">
 
             <div class="tooltip-wrapper">
-                <button class="button button-primary tooltip-target" aria-describedby="tooltip-knap">
+                <button class="button button-primary tooltip-target" aria-describedby="tooltip-knap1">
                     Knap med tooltip
                 </button>
-                <span class="tooltip onhover" role="tooltip" id="tooltip-knap" aria-hidden="true">Tooltip på en knap</span>
+                <span class="tooltip onhover" role="tooltip" id="tooltip-knap1" aria-hidden="true">Tooltip på en knap</span>
+                <span class="tooltip-arrow"></span>
+            </div>
+        </div>
+        <div class="col-sm-6 mt-9">
+
+            <div class="tooltip-wrapper">
+                <button class="button button-secondary tooltip-target" aria-describedby="tooltip-knap2">
+                    Anden knap med tooltip
+                </button>
+                <span class="tooltip below onhover" role="tooltip" id="tooltip-knap2" aria-hidden="true">Endnu et tooltip på en knap</span>
                 <span class="tooltip-arrow"></span>
             </div>
         </div>
