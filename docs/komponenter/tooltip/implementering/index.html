@@ -1766,13 +1766,11 @@
         
         <div class="tooltip-wrapper"
     data-tooltip="Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer."
-    data-trigger="click">
+    data-tooltip-id="tooltip-helpicon" data-position="above" data-trigger="click">
     <button class="button button-unstyled tooltip-target" type="button">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
         <span class="sr-only">Hvad betyder det?</span>
     </button>
-    <span class="tooltip" id="tooltip-helpicon"></span>
-    <span class="tooltip-arrow"></span>
 </div>
         
     </div>
@@ -1830,13 +1828,11 @@
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot;
     data-tooltip=&quot;Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer.&quot;
-    data-trigger=&quot;click&quot;&gt;
+    data-tooltip-id=&quot;tooltip-helpicon&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;
     &lt;button class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;&gt;
         &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
         &lt;span class=&quot;sr-only&quot;&gt;Hvad betyder det?&lt;/span&gt;
     &lt;/button&gt;
-    &lt;span class=&quot;tooltip&quot; id=&quot;tooltip-helpicon&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;tooltip-arrow&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -1905,10 +1901,10 @@ Tilføj attributten <code>data-tooltip-trigger="click"</code> på knappen for at
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Her er der
-    &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot; data-trigger=&quot;click&quot;&gt;
+
+    &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
+        data-tooltip-id=&quot;text-tooltip&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;
         &lt;em class=&quot;tooltip-text tooltip-target&quot; tabindex=&quot;0&quot;&gt;ord med tooltip&lt;/em&gt;
-        &lt;span class=&quot;tooltip&quot; id=&quot;text-tooltip&quot;&gt;&lt;/span&gt;
-        &lt;span class=&quot;tooltip-arrow&quot;&gt;&lt;/span&gt;
     &lt;/span&gt; inde i en tekst
 &lt;/p&gt;</code></pre></figure>
 

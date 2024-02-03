@@ -47,7 +47,6 @@
                 button({
                     "variant": "primary",
                     "text": "Knap med tooltip",
-                    "attributes": "aria-describedby=\"tooltip-knap1\"",
                     "classes": { "button": "tooltip-target" }
                 })
             %}
@@ -65,7 +64,6 @@
                 button({
                     "variant": "secondary",
                     "text": "Anden knap med tooltip",
-                    "attributes": "aria-describedby=\"tooltip-knap2\"",
                     "classes": { "button": "tooltip-target" }
                 })
             %}
@@ -85,7 +83,7 @@
             {{ 
                 tooltipnew({ 
                     "text": "Tooltip på link", 
-                    "target": "<a href=\"#\" class=\"tooltip-target\" aria-describedby=\"link-tooltip\">Link med tooltip</a>", 
+                    "target": "<a href=\"#\" class=\"tooltip-target\">Link med tooltip</a>", 
                     "id": "link-tooltip", 
                     "contentElement": "span", 
                     "trueTooltip": true 
@@ -99,7 +97,7 @@
                 button({
                     "variant": "primary",
                     "text": "Kæmpeknap",
-                    "attributes": "aria-describedby=\"tooltip-giant\" style=\"min-height: 600px;\"",
+                    "attributes": "style=\"min-height: 600px;\"",
                     "classes": { "button": "tooltip-target" }
                 })
             %}
