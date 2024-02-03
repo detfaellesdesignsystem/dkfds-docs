@@ -1,28 +1,81 @@
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
 
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
             <h1 class="h2 mt-0 mb-9">JavaScript errors i tooltips</h1>
+            <p>Åbn konsollen</p>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             <p>Mangler target</p>
-            <div class="tooltip-wrapper tooltip-above tooltip-onclick">
-                <div>
-                    {{ 
-                        button({
-                            "variant": "unstyled",
-                            "attributes": "type=\"button\" aria-describedby=\"mytooltip\"",
-                            "classes": { "icon": "mr-0 mt-0" },
-                            "srOnly": "Hvad betyder det?",
-                            "icon": "help"
-                        }) 
-                    }}
-                </div>
-                <span class="tooltip" role="tooltip" id="mytooltip">Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer.</span>
-            </div>
+            {% set target1 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap"
+                })
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tooltip på en knap",
+                    "target": target1,
+                    "trueTooltip": true,
+                    "id": "tooltip1"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler tooltip</p>
+            {% set target2 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltip({
+                    "target": target2,
+                    "trueTooltip": true,
+                    "id": "tooltip2"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler trigger</p>
+            {% set target3 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap3" data-position="above">{{ target3 }}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler tooltip</p>
+            {% set target4 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tooltip på en knap",
+                    "target": target4,
+                    "trueTooltip": true
+                }) 
+            }}
         </div>
     </div>
 </main>

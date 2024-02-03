@@ -6,8 +6,8 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: "Tooltip"
-lead: Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltippet vises på hover eller ved klik på et tooltip-ikon.
-component: "tooltip-icon"
+lead: Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.
+component: "tooltip-helpicon"
 componentTitle: "Eksempel på ikon med tooltip"
 componentLink: true
 anchor: true
@@ -20,7 +20,7 @@ subnav:
   href: "#eksempelloesninger"
 - text: Referencer
   href: "#ref"
-description: "Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes."
+description: "Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon."
 tags: 
 ---
 
@@ -29,7 +29,7 @@ tags:
 
 ### Anvendes til
 
-Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Tooltips kan enten vises ved hover over deciderede hjælpeikoner eller ved andre elementer såsom ikoner, billeder, enkelte ord i tekststykker eller til tekst, som er forkortet i brugergrænsefladen. Tooltips bør altid bruges ved ikoner, som fremstår uden tekst.
+Brug tooltips til præcisering af specifikke elementer i brugergrænsefladen. 
 
 ### Anvendes ikke til
 
@@ -37,50 +37,52 @@ Tooltips anvendes ikke til informationer, der er essentielle for at brugeren kan
 
 ### Vejledning
 
-Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad.
+Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad. 
 
-Vær konsistent i brugen af tooltips, så brugeren ikke skal gætte sig til, om der er tooltips eller ej.
-
-Gør det let at se, hvilket element tooltippet hører til.
-
-Brug altid tooltips til {% include links/component-guideline-link.html linktext="klikbare ikoner" %} uden label.
-
-Sørg for at tooltips er tydelige at se og læse.
-
-Placer tooltips så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip igen for at forstå sammenhængen.
-
-Sættes der tooltip på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.
+Gør det let at se, hvilket element tooltippet tilhører ved at placere hjælpeikonet tæt ved det element, der beskrives.
 
 Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.
 
-Vær opmærksom på, at tooltips på klikbare elementer med anden funktion ved klik ikke bliver vist på mobile løsninger. Tooltips på andre elementer, fx deciderede hjælpeikoner eller markerede ord i tekststykker, vises på mobil ved klik.
+Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten ikoner med hover-tooltip.
 
-Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
+{% include dos-donts-box.html component="tooltip-dos-donts" title="Tooltip do's and don'ts" %}
 
-{% include dos-donts-box.html component="tooltip-dos-donts" title="Datovælger do's and don'ts" %}
+### Placering af tooltips
+
+Placering af tooltips er vigtigt, så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert, kan brugeren blive nødt til at lukke og åbne tooltippet igen for at forstå sammenhængen.
+
+Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres over eller under hjælpeikonet, alt efter hvor det skygger mindst for det øvrige indhold. Nedenfor ses de typer af placeringer, som kan anvendes. 
+
+{% include code/preview-box.html component="tooltip-position" title="Eksempel på placering af tooltip" %}
+
+#### Radioknap med tooltip
+
+TO DO
+
+#### Tjekboks med tooltip
+
+TO DO
 
 {:#varianter}
 ## Varianter
 
-{:#klikbart-ikon-med-tooltip}
-### Klikbart ikon med tooltip
+### Hover-tooltip
 
-{% include code/preview-box.html component="tooltip-delete" title="Eksempel på klikbart ikon med tooltip" %}
+Tooltips og hover-tooltips minder meget om hinanden. Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom en tekst eller et ikon. På mobil vises hover-tooltip ved tap. 
 
-{:#tekst-med-tooltip}
-### Tekst med tooltip
+Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 
-{% include code/preview-box.html component="tooltip-text" title="Eksempel på tekst med tooltip" %}
+Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapper. På mobil vises disse kun ved “long press”, eftersom knappens funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
 
-{:#knap-med-tooltip}
-### Knap med tooltip
+#### Ikon med hover-tooltip
 
-{% include code/preview-box.html component="tooltip-button" title="Eksempel på primærknap med tooltip" %}
+Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.
 
-{:#placering-af-tooltip}
-### Placering af tooltip
+TO DO
 
-{% include code/preview-box.html component="tooltip-position" title="Eksempel på placering af tooltip" %}
+#### Knap med hover-tooltip
+
+TO DO
 
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger

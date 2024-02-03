@@ -253,21 +253,48 @@
     <div class="row">
         <div class="col-12">
             <h1 class="h2 mt-0 mb-9">JavaScript errors i tooltips</h1>
+            <p>Åbn konsollen</p>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             <p>Mangler target</p>
-            <div class="tooltip-wrapper tooltip-above tooltip-onclick">
-                <div>
-                    <button class="button button-unstyled" type="button" aria-describedby="mytooltip">
-                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
-                        <span class="sr-only">Hvad betyder det?</span>
-                    </button>
-                </div>
-                <span class="tooltip" role="tooltip" id="mytooltip">Dette er en alt for lang
-                    tekst til et tooltip, men den er god at teste med. Tooltips bliver for
-                    lange, når de fylder mere end 4 linjer.</span>
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip1" data-position="above" data-trigger="hover">
+                <button class="button button-primary">
+                    Knap
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler tooltip</p>
+
+            <div class="tooltip-wrapper" data-tooltip="" data-tooltip-id="tooltip2" data-position="above" data-trigger="hover">
+                <button class="button button-primary tooltip-target">
+                    Knap
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler trigger</p>
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap3" data-position="above"><button class="button button-primary tooltip-target">
+                    Knap
+                </button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler tooltip</p>
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-position="above" data-trigger="hover">
+                <button class="button button-primary tooltip-target">
+                    Knap
+                </button>
             </div>
         </div>
     </div>

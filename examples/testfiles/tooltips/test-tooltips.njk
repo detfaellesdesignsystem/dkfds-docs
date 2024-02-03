@@ -1,4 +1,4 @@
-{% from "components/tooltip/tooltip.njk" import tooltipnew as tooltipnew %}
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
 {% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
 {% from "components/toggle/toggle.njk" import toggle as toggle %}
 {% from "components/buttons/buttons.njk" import button as button %}
@@ -51,7 +51,7 @@
                 })
             %}
             {{ 
-                tooltipnew({
+                tooltip({
                     "text": "Tooltip på en knap",
                     "target": target1,
                     "trueTooltip": true,
@@ -68,7 +68,7 @@
                 })
             %}
             {{ 
-                tooltipnew({
+                tooltip({
                     "text": "Endnu et tooltip på en knap",
                     "target": target2,
                     "trueTooltip": true,
@@ -81,7 +81,7 @@
     <div class="row mt-9">
         <div class="col-12">
             {{ 
-                tooltipnew({ 
+                tooltip({ 
                     "text": "Tooltip på link", 
                     "target": "<a href=\"#\" class=\"tooltip-target\">Link med tooltip</a>", 
                     "id": "link-tooltip", 
@@ -102,7 +102,7 @@
                 })
             %}
             {{ 
-                tooltipnew({
+                tooltip({
                     "text": "Tooltip på en stor knap",
                     "target": target3,
                     "trueTooltip": true,

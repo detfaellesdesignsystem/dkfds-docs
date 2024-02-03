@@ -19,8 +19,8 @@
 <title>Tooltip | Det Fælles Designsystem</title>
 <meta property="og:title" content="Tooltip | Det Fælles Designsystem">
 
-<meta name="description" content="Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes.">
-<meta property="og:description" content="Et tooltip kommer frem, når musen er over det element tooltippet henviser til, fx et ikon, og forsvinder igen, når musen fjernes.">
+<meta name="description" content="Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.">
+<meta property="og:description" content="Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.">
 
 
 
@@ -1746,16 +1746,16 @@
                 
 
                 
-                <p class="font-lead">Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltippet vises på hover eller ved klik på et tooltip-ikon.</p>
+                <p class="font-lead">Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.</p>
                 
 
                 
                 
-<div class="component-preview  component-preview-tooltip-icon">
+<div class="component-preview  component-preview-tooltip-helpicon">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tooltip-icon/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-icon</span></a>
+        <a href="/eksempel/tooltip-helpicon/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-helpicon</span></a>
         
     </div>
     
@@ -1764,9 +1764,8 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tooltip-wrapper"
-    data-tooltip="Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer."
-    data-tooltip-id="tooltip-helpicon" data-position="above" data-trigger="click">
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above"
+    data-trigger="click">
     <button class="button button-unstyled tooltip-target" type="button">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
         <span class="sr-only">Hvad betyder det?</span>
@@ -1814,7 +1813,7 @@
 
 <h3>Anvendes til</h3>
 
-<p>Brug tooltip til præcisering af specifikke elementer i brugergrænsefladen. Tooltips kan enten vises ved hover over deciderede hjælpeikoner eller ved andre elementer såsom ikoner, billeder, enkelte ord i tekststykker eller til tekst, som er forkortet i brugergrænsefladen. Tooltips bør altid bruges ved ikoner, som fremstår uden tekst.</p>
+<p>Brug tooltips til præcisering af specifikke elementer i brugergrænsefladen.</p>
 
 <h3>Anvendes ikke til</h3>
 
@@ -1824,27 +1823,15 @@
 
 <p>Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad.</p>
 
-<p>Vær konsistent i brugen af tooltips, så brugeren ikke skal gætte sig til, om der er tooltips eller ej.</p>
-
-<p>Gør det let at se, hvilket element tooltippet hører til.</p>
-
-<p>Brug altid tooltips til <a href="/komponenter/knapper/guidelines/#klikbart-ikon">klikbare ikoner</a> uden label.</p>
-
-<p>Sørg for at tooltips er tydelige at se og læse.</p>
-
-<p>Placer tooltips så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert kan brugeren blive nødt til at lukke og åbne tooltip igen for at forstå sammenhængen.</p>
-
-<p>Sættes der tooltip på et ord i en tekst, markeres ordet med en stiplet linje under. Brug det i begrænset omfang, da det let virker forstyrrende.</p>
+<p>Gør det let at se, hvilket element tooltippet tilhører ved at placere hjælpeikonet tæt ved det element, der beskrives.</p>
 
 <p>Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.</p>
 
-<p>Vær opmærksom på, at tooltips på klikbare elementer med anden funktion ved klik ikke bliver vist på mobile løsninger. Tooltips på andre elementer, fx deciderede hjælpeikoner eller markerede ord i tekststykker, vises på mobil ved klik.</p>
-
-<p>Tooltips vises på hover med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).</p>
+<p>Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten ikoner med hover-tooltip.</p>
 
 <div class=" component-preview-tooltip-dos-donts">
     
-    <div class="sr-only">Datovælger do's and don'ts</div>
+    <div class="sr-only">Tooltip do's and don'ts</div>
     
     <div class="component-example">
         <div class="row do-dont-container">
@@ -1865,82 +1852,11 @@
     </div>
 </div>
 
-<h2 id="varianter">Varianter</h2>
+<h3>Placering af tooltips</h3>
 
-<h3 id="klikbart-ikon-med-tooltip">Klikbart ikon med tooltip</h3>
+<p>Placering af tooltips er vigtigt, så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert, kan brugeren blive nødt til at lukke og åbne tooltippet igen for at forstå sammenhængen.</p>
 
-<div class="component-preview  component-preview-tooltip-delete">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-delete/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-delete</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på klikbart ikon med tooltip</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <button class="button button-unstyled">
-    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-    <span class="sr-only">Slet</span>
-</button>
-        
-    </div>
-    
-</div>
-
-<h3 id="tekst-med-tooltip">Tekst med tooltip</h3>
-
-<div class="component-preview  component-preview-tooltip-text">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-text/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-text</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tekst med tooltip</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <p>Her er der
-
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="text-tooltip" data-position="above" data-trigger="click">
-        <em class="tooltip-text tooltip-target" tabindex="0">ord med tooltip</em>
-    </span> inde i en tekst
-</p>
-        
-    </div>
-    
-</div>
-
-<h3 id="knap-med-tooltip">Knap med tooltip</h3>
-
-<div class="component-preview  component-preview-tooltip-button">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-button/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-button</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på primærknap med tooltip</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <button class="button button-primary">
-    Knap med tooltip
-</button>
-        
-    </div>
-    
-</div>
-
-<h3 id="placering-af-tooltip">Placering af tooltip</h3>
+<p>Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres over eller under hjælpeikonet, alt efter hvor det skygger mindst for det øvrige indhold. Nedenfor ses de typer af placeringer, som kan anvendes.</p>
 
 <div class="component-preview  component-preview-tooltip-position">
     
@@ -1955,19 +1871,57 @@
     
     <div class="component-example px-4 py-4">
         
-        <!-- Placering: top -->
-<button class="button button-primary">
-    Top
-</button>
+        <p>Den her tekst har et tooltip, der er placeret over hjælpeikonet
 
-<!-- Placering: bund -->
-<button class="button button-primary">
-    Bund
-</button>
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above" data-trigger="click">
+        <button class="button button-unstyled tooltip-target" type="button">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+            <span class="sr-only">Hvad betyder det?</span>
+        </button>
+    </span>
+</p>
+
+<p>Her er tooltip placeret under hjælpeikonet
+
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="below" data-trigger="click">
+        <button class="button button-unstyled tooltip-target" type="button">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+            <span class="sr-only">Hvad betyder det?</span>
+        </button>
+    </span>
+</p>
         
     </div>
     
 </div>
+
+<h4>Radioknap med tooltip</h4>
+
+<p>TO DO</p>
+
+<h4>Tjekboks med tooltip</h4>
+
+<p>TO DO</p>
+
+<h2 id="varianter">Varianter</h2>
+
+<h3>Hover-tooltip</h3>
+
+<p>Tooltips og hover-tooltips minder meget om hinanden. Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom en tekst eller et ikon. På mobil vises hover-tooltip ved tap.</p>
+
+<p>Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).</p>
+
+<p>Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapper. På mobil vises disse kun ved “long press”, eftersom knappens funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.</p>
+
+<h4>Ikon med hover-tooltip</h4>
+
+<p>Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.</p>
+
+<p>TO DO</p>
+
+<h4>Knap med hover-tooltip</h4>
+
+<p>TO DO</p>
 
 <h2 id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
 
