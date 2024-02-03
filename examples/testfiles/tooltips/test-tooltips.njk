@@ -55,7 +55,7 @@
                 tooltipnew({
                     "text": "Tooltip på en knap",
                     "target": target1,
-                    "trigger": "onhover",
+                    "trueTooltip": true,
                     "id": "tooltip-knap1"
                 }) 
             }}
@@ -73,7 +73,7 @@
                 tooltipnew({
                     "text": "Endnu et tooltip på en knap",
                     "target": target2,
-                    "trigger": "onhover",
+                    "trueTooltip": true,
                     "id": "tooltip-knap2",
                     "position": "below"
                 }) 
@@ -82,7 +82,35 @@
     </div>
     <div class="row mt-9">
         <div class="col-12">
-            <p>Dette er en rigtig lang sætning, hvor der i sidste del af sætningen kommer nogle {{ tooltipnew({ "text": "Dette er et tooltip", "target": "<em class=\"tooltip-text tooltip-target\" tabindex=\"0\">ord med tooltip</em>", "id": "text-tooltip", "trigger": "onhover" }) }} inde i teksten</p>
+            {{ 
+                tooltipnew({ 
+                    "text": "Tooltip på link", 
+                    "target": "<a href=\"#\" class=\"tooltip-target\" aria-describedby=\"link-tooltip\">Link med tooltip</a>", 
+                    "id": "link-tooltip", 
+                    "contentElement": "span", 
+                    "trueTooltip": true 
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {% set target3 = 
+                button({
+                    "variant": "primary",
+                    "text": "Kæmpeknap",
+                    "attributes": "aria-describedby=\"tooltip-giant\" style=\"min-height: 600px;\"",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltipnew({
+                    "text": "Tooltip på en stor knap",
+                    "target": target3,
+                    "trueTooltip": true,
+                    "id": "tooltip-giant"
+                }) 
+            }}
         </div>
     </div>
 </main>

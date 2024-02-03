@@ -1764,14 +1764,14 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tooltip-wrapper">
+        <div class="tooltip-wrapper"
+    data-tooltip="Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer."
+    data-trigger="click">
     <button class="button button-unstyled tooltip-target" type="button">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
         <span class="sr-only">Hvad betyder det?</span>
     </button>
-    <span class="tooltip onclick" id="tooltip-helpicon" aria-hidden="true">Dette er en alt for
-        lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når
-        de fylder mere end 4 linjer.</span>
+    <span class="tooltip" id="tooltip-helpicon"></span>
     <span class="tooltip-arrow"></span>
 </div>
         
@@ -1909,9 +1909,9 @@
     <div class="component-example px-4 py-4">
         
         <p>Her er der
-    <span class="tooltip-wrapper">
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-trigger="click">
         <em class="tooltip-text tooltip-target" tabindex="0">ord med tooltip</em>
-        <span class="tooltip onhover" role="tooltip" id="text-tooltip" aria-hidden="true">Dette er et tooltip</span>
+        <span class="tooltip" id="text-tooltip"></span>
         <span class="tooltip-arrow"></span>
     </span> inde i en tekst
 </p>
