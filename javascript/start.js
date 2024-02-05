@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     else if (bodytag.classList.contains('layout-test-example')) {
         let pathname = window.location.pathname;
-        if (pathname.includes("test-modal-javascript")) {
+        if (pathname.includes("test-modal-javascript") || pathname.includes("test-tooltip-javascript")) {
             new DKFDS.Modal(document.getElementById('test-warning')).init();
             new DKFDS.Navigation().init();
         }

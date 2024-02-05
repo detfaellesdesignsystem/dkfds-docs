@@ -56,12 +56,12 @@
                     "classes": { "button": "tooltip-target" }
                 })
             %}
-            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap3" data-position="above">{{ target3 }}</div>
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap3">{{ target3 }}</div>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <p>Mangler tooltip</p>
+            <p>Mangler id</p>
             {% set target4 = 
                 button({
                     "variant": "primary",
@@ -76,6 +76,19 @@
                     "trueTooltip": true
                 }) 
             }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Skal virke selvom position ikke er sat</p>
+            {% set target5 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap5" data-trigger="hover">{{ target5 }}</div>
         </div>
     </div>
 </main>

@@ -224,7 +224,7 @@ title: Test
 ## Tooltips
 
 {% include test/preview-test.html filename="test-tooltips" description="Tooltips" %}
-{% include test/preview-test.html filename="test-tooltip-javascript-errors" description="JavaScript errors i tooltips" %}
+{% include test/preview-test.html filename="test-tooltip-javascript" description="JavaScript for tooltips" %}
 
 {:.h3}
 ## Trinindikator

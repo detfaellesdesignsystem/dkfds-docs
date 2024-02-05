@@ -2,6 +2,15 @@
 {% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
 {% from "components/toggle/toggle.njk" import toggle as toggle %}
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
 
 <main class="container page-container" id="main-content" style="min-height: 2000px;">
     <div class="row">
@@ -111,4 +120,35 @@
             }}
         </div>
     </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {% set target4 = 
+                button({
+                    "text": "Åbn modal",
+                    "variant": "tertiary",
+                    "classes": { "button": "tooltip-target" },
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example\" aria-haspopup=\"dialog\""
+                }) 
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tryk for at åbne modal",
+                    "target": target4,
+                    "trueTooltip": true,
+                    "id": "tooltip-modal"
+                }) 
+            }}
+        </div>
+    </div>
 </main>
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-example",
+            "heading": "Modal med handlinger",
+            "content": "<p>Dette er modalens indhold.</p>",
+            "actions": modal_actions
+        })
+    }}
+</div>

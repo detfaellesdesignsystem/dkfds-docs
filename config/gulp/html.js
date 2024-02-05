@@ -150,7 +150,7 @@ var testfiles = [
     "test-checkboxes-9",
     "test-toggle",
     "test-tooltips",
-    "test-tooltip-javascript-errors",
+    "test-tooltip-javascript",
     "test-step-guide-1",
     "test-step-guide-2",
     "test-step-guide-3",

@@ -36,7 +36,8 @@ module.exports = function (outputPath, prod) {
       "pagination": ["./javascript/components/pagination.js"],
       "session-timeout": ["./javascript/components/session-timeout.js"],
       "url-tabs": ["./javascript/components/url-tabs.js"],
-      "test-modal-javascript": ["./examples/testfiles/modals/modal-javascript.js"]
+      "test-modal-javascript": ["./examples/testfiles/modals/modal-javascript.js"],
+      "test-tooltip-javascript": ["./examples/testfiles/tooltips/tooltip-javascript.js"]
     },
     module: {
       rules: [

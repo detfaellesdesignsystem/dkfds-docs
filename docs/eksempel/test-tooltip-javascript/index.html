@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Test-step-guide-1 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-step-guide-1 | Det Fælles Designsystem">
+<title>Test-tooltip-javascript | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-tooltip-javascript | Det Fælles Designsystem">
 
 
 
@@ -252,45 +252,59 @@
     <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <p>Simpel trin guide</p>
-            <div>
+            <h1 class="h2 mt-0 mb-9">JavaScript errors i tooltips</h1>
+            <p>Åbn konsollen</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler target</p>
 
-                <nav aria-label="Trinindikator">
-                    <ul class="sidemenu">
-                        <li role="none">
-                            <a class="nav-step" href="javascript:void(0);">
-                                <div>
-                                    <span class="sidenav-number">1.</span>
-                                    <div>
-                                        <span>Første trin</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li role="none">
-                            <a class="nav-step" href="javascript:void(0);">
-                                <div>
-                                    <span class="sidenav-number">2.</span>
-                                    <div>
-                                        <span>Andet trin</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li role="none">
-                            <a class="nav-step" href="javascript:void(0);">
-                                <div>
-                                    <span class="sidenav-number">3.</span>
-                                    <div>
-                                        <span>Tredje trin</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip1" data-position="above" data-trigger="hover">
+                <button class="button button-primary">
+                    Knap
+                </button>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler tooltip</p>
+
+            <div class="tooltip-wrapper" data-tooltip="" data-tooltip-id="tooltip2" data-position="above" data-trigger="hover">
+                <button class="button button-primary tooltip-target">
+                    Knap
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler trigger</p>
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap3"><button class="button button-primary tooltip-target">
+                    Knap
+                </button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Mangler id</p>
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-position="above" data-trigger="hover">
+                <button class="button button-primary tooltip-target">
+                    Knap
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Skal virke selvom position ikke er sat</p>
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap5" data-trigger="hover"><button class="button button-primary tooltip-target">
+                    Knap
+                </button></div>
         </div>
     </div>
 </main>
@@ -311,10 +325,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-tooltip-javascript/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-tooltips/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-step-guide-2/">Næste</a>
+                <a class="function-link" href="/eksempel/test-step-guide-1/">Næste</a>
                 
             </div>
         </div>
@@ -379,7 +393,8 @@
 </script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
-    <script src="/assets/js/vendor.js"></script>
+    <script src="/assets/js/vendor.js"></script><script src="/assets/js/test-tooltip-javascript.js"></script>
+    
 </body>
 
 </html>
