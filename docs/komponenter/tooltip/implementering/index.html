@@ -1833,20 +1833,84 @@
     </div>
 </div>
 
+<p>Bemærk at <code>tooltip-wrapper</code> kan kodes med enten <code>div</code> eller <code>span</code> afhængigt af konteksten. Elementet der åbner tooltippet skal altid have klassen <code>tooltip-target</code>.</p>
+
 <h3>Javascript</h3>
-<p>Tooltip komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Tooltip(document.getElementById(&#39;Tooltip-wrapper-ID&#39;)).init();</code></pre></figure>
+
+<p>Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes på <code>tooltip-wrapper</code>.</p>
+
+<table class="table table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Attribut</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data-tooltip</td>
+      <td>Tooltipteksten</td>
+    </tr>
+    <tr>
+      <td>data-tooltip-id</td>
+      <td>ID der knytter tooltippet til det element, der åbner tooltippet.</td>
+    </tr>
+    <tr>
+      <td>data-position</td>
+      <td>Skal sættes til enten <code>above</code> eller <code>below</code>. Undlades attributten vælges <code>above</code> som standard.</td>
+    </tr>
+    <tr>
+      <td>data-trigger</td>
+      <td>Skal sættes til enten <code>click</code> eller <code>hover</code>. Anvend kun <code>click</code>, hvis elementet ikke har andre funktioner end at åbne tooltippet.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Varianter</h2>
 
 <h3>Ikon med hover-tooltip</h3>
 
-<p>TO DO</p>
+<div class="component-preview component-preview-code  component-code-tooltip-icon">
+    
+    
+    <div class="sr-only">Eksempel på tooltip på et ikon</div>
+    
+    <div class="component-code">
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Fil i pdf-format&quot; data-tooltip-id=&quot;tooltip-icon&quot;
+    data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;
+    &lt;svg class=&quot;icon-svg tooltip-target&quot; focusable=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;use xlink:href=&quot;#file-pdf&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
 
 <h3>Knap med hover-tooltip</h3>
 
-<p>TO DO</p>
+<div class="component-preview component-preview-code  component-code-tooltip-hover-button">
+    
+    
+    <div class="sr-only">Eksempel på tooltip på en knap</div>
+    
+    <div class="component-code">
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-id=&quot;tooltip-knap&quot;
+    data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;
+    &lt;button class=&quot;button button-primary tooltip-target&quot;&gt;
+        Knap med tooltip
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+</div>
+
 
 
                 

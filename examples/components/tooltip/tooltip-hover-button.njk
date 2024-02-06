@@ -1,0 +1,18 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
+
+{% set target = 
+    button({
+        "variant": "primary",
+        "text": "Knap med tooltip",
+        "classes": { "button": "tooltip-target" }
+    })
+%}
+{{ 
+    tooltip({
+        "text": "Dette er et tooltip",
+        "target": target,
+        "trueTooltip": true,
+        "id": "tooltip-knap"
+    }) 
+}}

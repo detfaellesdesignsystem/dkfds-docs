@@ -1891,11 +1891,82 @@
 
 <h4>Radioknap med tooltip</h4>
 
-<p>TO DO</p>
+<div class="component-preview  component-preview-tooltip-radiobuttons">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tooltip-radiobuttons/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-radiobuttons</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tooltip for radioknapper</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <fieldset role="radiogroup">
+
+        <legend class="form-label">Radioknapper
+
+            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="radiogroup-tooltip" data-position="above" data-trigger="click">
+                <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+            </span>
+        </legend>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option1" name="radio-tooltip" class="form-radio" value="v1" />
+            <label class="form-label" for="radiogroup-option1">Valg 1</label>
+
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option2" name="radio-tooltip" class="form-radio" value="v2" aria-describedby="radiogroup-option2-hint" />
+            <label class="form-label" for="radiogroup-option2">Valg 2</label>
+            <span class="form-hint" id="radiogroup-option2-hint">Hjælpetekst kan stå
+                her</span>
+        </div>
+
+    </fieldset>
+</div>
+        
+    </div>
+    
+</div>
 
 <h4>Tjekboks med tooltip</h4>
 
-<p>TO DO</p>
+<div class="component-preview  component-preview-tooltip-checkbox">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tooltip-checkbox/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-checkbox</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tooltip for tjekboks</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+
+    <div class="form-group-checkbox">
+        <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox" value="1" checked="" />
+        <label class="form-label" for="checkbox1">Udfyldt tjekboks</label>
+
+        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="checkbox-tooltip" data-position="above" data-trigger="click">
+            <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+        </span>
+    </div>
+
+</div>
+        
+    </div>
+    
+</div>
 
 <h2 id="varianter">Varianter</h2>
 
@@ -1911,11 +1982,51 @@
 
 <p>Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.</p>
 
-<p>TO DO</p>
+<div class="component-preview  component-preview-tooltip-icon">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tooltip-icon/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-icon</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tooltip på et ikon</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="tooltip-wrapper" data-tooltip="Fil i pdf-format" data-tooltip-id="tooltip-icon" data-position="above" data-trigger="hover">
+    <svg class="icon-svg tooltip-target" focusable="false" tabindex="-1"><use xlink:href="#file-pdf"></use></svg>
+</div>
+        
+    </div>
+    
+</div>
 
 <h4>Knap med hover-tooltip</h4>
 
-<p>TO DO</p>
+<div class="component-preview  component-preview-tooltip-hover-button">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tooltip-hover-button/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-hover-button</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tooltip på en knap</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-knap" data-position="above" data-trigger="hover">
+    <button class="button button-primary tooltip-target">
+        Knap med tooltip
+    </button>
+</div>
+        
+    </div>
+    
+</div>
 
 <h2 id="eksempelloesninger">Se komponenten i eksempelløsninger</h2>
 

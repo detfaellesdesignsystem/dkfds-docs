@@ -57,11 +57,11 @@ Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres
 
 #### Radioknap med tooltip
 
-TO DO
+{% include code/preview-box.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" %}
 
 #### Tjekboks med tooltip
 
-TO DO
+{% include code/preview-box.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" %}
 
 {:#varianter}
 ## Varianter
@@ -78,11 +78,11 @@ Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapp
 
 Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.
 
-TO DO
+{% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip på et ikon" %}
 
 #### Knap med hover-tooltip
 
-TO DO
+{% include code/preview-box.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" %}
 
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger

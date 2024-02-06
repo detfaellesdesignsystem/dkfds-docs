@@ -1,0 +1,31 @@
+<div class="form-group">
+    <fieldset role="radiogroup">
+
+        <legend class="form-label">Radioknapper
+
+            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                data-tooltip-id="radiogroup-tooltip" data-position="above"
+                data-trigger="click">
+                <button class="button button-unstyled tooltip-target" type="button"
+                    aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+            </span>
+        </legend>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option1" name="radio-tooltip"
+                class="form-radio" value="v1">
+            <label class="form-label" for="radiogroup-option1">Valg 1</label>
+
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-option2" name="radio-tooltip"
+                class="form-radio" value="v2" aria-describedby="radiogroup-option2-hint">
+            <label class="form-label" for="radiogroup-option2">Valg 2</label>
+            <span class="form-hint" id="radiogroup-option2-hint">Hjælpetekst kan stå
+                her</span>
+        </div>
+
+    </fieldset>
+</div>

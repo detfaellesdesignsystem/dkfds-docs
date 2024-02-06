@@ -159,6 +159,16 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at indsætte ikoner i fanebladene.
 
 <div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
+</div>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tooltips er ændret grundlæggende i opførsel, anvendelse og implementering.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tooltips kunne sætte sig forkert, hvis brugeren zoomede eller ændrede browservinduets størrelse.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret placeringen af tooltips i HTML'en fra altid at ligge i bunden til at være tæt på elementet, der åbnede tooltippet. Dette har indflydelse på fokusmarkørens placering, hvis man tabber efter at have klikket i et tooltip.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tooltips ikke kunne ses, hvis brugeren udelukkende brugte tastaturet til navigation.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet mulighed for tooltips på tekst grundet tilgængelighedsproblemer.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet attributter vedrørende tilgængelighed for at sikre korrekt opmærkning.
+
+<div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
 </div>
 - Dokumentationssiden har fået lavet en større omstrukturering hvor en stor del af dokumentationen er blevet inddelt i faneblade.
