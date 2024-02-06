@@ -189,6 +189,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg-large`.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Toggle switch har fået ny HTML, ny styling og opdaterede retningslinjer med det formål at øge tilgængeligheden, samt gøre det muligt at anvende komponenten på andre sprog end dansk.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor fokus kunne ryge ud af {% include links/component-guideline-link.html linktext="modaler" %} til indholdet bagved. Rettelsen kræver, at alle modaler lægges i et container-element. Se {% include links/component-code-link.html linktext="kode for modaler" %} for mere info.
+- Opdateret JavaScript for {% include links/component-guideline-link.html linktext="sortering" %}, så kravene til HTML'en er mindre rigide. Fx er det nu tilladt at have et `span`-element inde i `button`-elementet.
 
 {:#version-9-1-0 .mb-0}
 ## Version 9.1.0
