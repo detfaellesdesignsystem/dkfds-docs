@@ -7,11 +7,11 @@ category: Faellesskab_category
 subcategory: Fællesskab
 title: Kontakt og support
 anchor: false
-description: Kontakt os via Github eller på mail.
+description: Kontakt os via GitHub eller på e-mail.
 tags:
 ---  
 
-## Github
+## GitHub
 
 GitHub er verdens største frontend-udvikler fællesskab, og et værktøj til versionsstyring, deling af kode og facilitering af open source samarbejde.
 

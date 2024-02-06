@@ -1,5 +1,7 @@
 ---
 permalink: "/komponenter/"
+redirect_from:
+- "/kode/komponenter/"
 layout: styleguide
 category: Komponenter_category
 title: Komponenter

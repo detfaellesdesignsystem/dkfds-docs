@@ -27,7 +27,7 @@ tags:
 ## Installation
 
 ### HTML Struktur
-{% include code/syntax.html component="alert" copybutton=true %}
+{% include code/syntax.html component="alerts" copybutton=true %}
 
 Anvend `role="alert"` til beskeder, der skal læses højt af en skærmlæser med det samme, hvis indholdet ændrer sig. Dette kan for eksempel være en besked, der bliver synlig efter at have været skjult eller hvor indholdet ændrer sig. Advarsler og fejlbeskeder bør altid være markeret med `role="alert"`.
 
@@ -75,7 +75,7 @@ new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
 #### Informativ
 Informativ er blå, og defineres med klassen `alert-info`.
 
-{% include code/syntax.html component="alert" link=true copybutton=true %}
+{% include code/syntax.html component="alert-info" link=true copybutton=true %}
 
 #### Succes
 Succesbesked er grøn, og defineres med klassen `alert-success`.

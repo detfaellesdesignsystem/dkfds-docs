@@ -2,6 +2,7 @@
 permalink: "/komponenter/dropdown/guidelines/"
 redirect_from:
 - "/komponenter/drop-down/"
+- "/komponenter/dropdown/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter

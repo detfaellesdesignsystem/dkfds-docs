@@ -1,5 +1,7 @@
 ---
 permalink: "/komponenter/skip-link/guidelines/"
+redirect_from:
+- "/komponenter/skip-link/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
