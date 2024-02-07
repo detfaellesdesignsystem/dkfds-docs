@@ -26,5 +26,10 @@
         {% endhighlight %}
         {% endcapture %}{{ _syntax | markdownify }}
     </div>
+    {% if include.guidelines and include.guidelines != '' %}
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="{{include.guidelines}}" class="small-text">Gå til eksemplet og dets retningslinjer</a>
+    </div>
+    {% endif %}
 </div>
 {% endif %}

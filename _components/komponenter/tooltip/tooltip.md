@@ -72,8 +72,6 @@ Tooltips og hover-tooltips minder meget om hinanden. Hvor tooltip vises ved klik
 
 Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 
-Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapper. På mobil vises disse kun ved “long press”, eftersom knappens funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
-
 #### Ikon med hover-tooltip
 
 Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.
@@ -81,6 +79,8 @@ Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun ude
 {% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip på et ikon" %}
 
 #### Knap med hover-tooltip
+
+Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapper. På mobil vises disse kun ved “long press”, eftersom knappens funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
 
 {% include code/preview-box.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" %}
 

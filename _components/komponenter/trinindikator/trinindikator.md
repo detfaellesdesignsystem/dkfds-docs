@@ -62,31 +62,31 @@ Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ik
 {:#klikbar}
 ### Alle trin synlige
 
-{% include code/preview-box.html component="tringuide-clickable" title="Eksempel på synlig trinindikator" %}
+{% include code/preview-box.html component="tringuide-clickable" title="Eksempel på synlig trinindikator" code="/komponenter/trinindikator/implementering/#klikbar" %}
 
 {:#responsiv}
 ### Responsiv
 
 Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.
 
-{% include code/preview-box.html component="tringuide-responsive-overflowmenu" title="Eksempel på responsiv trinindikator" %}
+{% include code/preview-box.html component="tringuide-responsive-overflowmenu" title="Eksempel på responsiv trinindikator" code="/komponenter/trinindikator/implementering/#responsiv" %}
 
 {:#laast}
 ### Låst
 
-{% include code/preview-box.html component="tringuide-locked" title="Eksempel på trinindikator med låste trin" %}
+{% include code/preview-box.html component="tringuide-locked" title="Eksempel på trinindikator med låste trin" code="/komponenter/trinindikator/implementering/#laast" %}
 
 {:#ekstra-information}
 ### Ekstra information
 
-{% include code/preview-box.html component="tringuide-information" title="Eksempel på trinindikator med information" %}
+{% include code/preview-box.html component="tringuide-information" title="Eksempel på trinindikator med information" code="/komponenter/trinindikator/implementering/#ekstra-information" %}
 
 {:#med-fejl}
 ### Trinindikator med fejl
 
 Ved brug af trinindikator kan der i nogle tilfælde være behov for at indikere overfor brugeren, at et eller flere trin mangler information og/eller har fejl, efter brugeren er gået videre til næste trin.
 
-{% include code/preview-box.html component="tringuide-error-responsive" title="Eksempel på trinindikator med fejl" %}
+{% include code/preview-box.html component="tringuide-error-responsive" title="Eksempel på trinindikator med fejl" code="/komponenter/trinindikator/implementering/#med-fejl" %}
 
 #### Anvendes til
 
