@@ -7,7 +7,8 @@
 
 {%- case link -%}
 
-    {%- comment -%} -------- GitHub -------- {%- endcomment -%}
+
+    {%- comment -%} -------- github.com -------- {%- endcomment -%}
 
     {%- when "se koden på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -15,7 +16,6 @@
     {%- when "meld fejl og mangler ind via github", 
              "efterspørg eller giv feedback på et ikon på vores fds github side", 
              "så må du meget gerne oprette et issue på github",
-             "så er du velkommen til at oprette en sag på github",
              "opret et issue på github",
              'oprette et “issue” (en sag) på github' -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -44,7 +44,7 @@
 
 
 
-    {%- comment -%} -------- WCAG -------- {%- endcomment -%}
+    {%- comment -%} -------- w3.org -------- {%- endcomment -%}
 
     {%- when "wcag 2.1 success criterion 1.3.5 identify input purpose", 
              "wcag 2.1 aa identify input purpose" -%}
@@ -91,53 +91,43 @@
              "tabeller ifølge wcag altid bør have kolonneoverskrifter" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "tilgængelige tooltips" -%}
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c markup validation service (html)" -%}
+        <a href="https://validator.w3.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c css validation service (css)" -%}
+        <a href="https://jigsaw.w3.org/css-validator/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- digst.dk -------- {%- endcomment -%}
+
+    {%- when "læs mere om kontrastforhold" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "om tilgængelig web i det offentlige" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs vejledningen om tilgængelige billeder på nettet" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/tilgaengelige-billeder-paa-nettet/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "lær hvordan du udfører easy checks" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs om de syv hyppige fejl og deres betydning" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/syv-hyppige-fejl-og-deres-betydning/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs om cookies på digitaliseringsstyrelsens hjemmeside" -%}
+        <a href="https://digst.dk/sikkerhed/digitale-tilsyn/tilsyn-med-cookieomraadet/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
 
 
     {%- comment -%} -------- arkitektur.digst.dk -------- {%- endcomment -%}
 
-    {%- when "de fælles krav til digitale løsninger", 
-             "det fælles designsystem er en del af den fællesoffentlige digitale arkitektur" -%}
-        <a href="https://arkitektur.digst.dk/node/697" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "se beskrivelser af alle krav og anbefalinger i den fællesoffentlige digitale arkitektur" -%}
-        <a href="https://arkitektur.digst.dk/krav-og-anbefalinger-0" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- when "06. understøttelse af styresystemer og browsere (fælles aftalt)" -%}
         <a href="https://arkitektur.digst.dk/node/1194#06-understttelse-af-styresystemer-og-browsere-flle" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "forvaltningsloven" -%}
-        <a href="https://arkitektur.digst.dk/forvaltningsloven-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "sikkerhed" -%}
-        <a href="https://arkitektur.digst.dk/sikkerhed-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "single digital gateway" -%}
-        <a href="https://arkitektur.digst.dk/single-digital-gateway-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "tilkobling til dansk eid-gateway" -%}
-        <a href="https://arkitektur.digst.dk/tilkobling-til-dansk-eid-gateway-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "webtilgængelighed" -%}
-        <a href="https://arkitektur.digst.dk/webtilgaengelighed-eksterne-kilder" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "01. tidlig brugerinddragelse" -%}
-        <a href="https://arkitektur.digst.dk/01-tidlig-brugerinddragelse-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "02. sprog" -%}
-        <a href="https://arkitektur.digst.dk/02-sprog-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "03. konventioner for flow og funktionalitet" -%}
-        <a href="https://arkitektur.digst.dk/03-konventioner-flow-og-funktionalitet-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "04. feltvalidering" -%}
-        <a href="https://arkitektur.digst.dk/04-feltvalidering-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "05. personalisering" -%}
-        <a href="https://arkitektur.digst.dk/05-personalisering-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "06. understøttelse af styresystemer og browsere" -%}
-        <a href="https://arkitektur.digst.dk/06-understoettelse-af-styresystemer-og-browsere-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "07. understøttelse af skærmstørrelser" -%}
-        <a href="https://arkitektur.digst.dk/07-understoettelse-af-skaermstoerrelser-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "08. bestå den fællesoffentlige brugertest" -%}
-        <a href="https://arkitektur.digst.dk/08-bestaa-den-faellesoffentlige-brugertest-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "09. indsamling af viden om brugernes anvendelse af digitale løsninger" -%}
-        <a href="https://arkitektur.digst.dk/09-indsamling-af-viden-om-brugernes-anvendelse-af-digitale-loesninger-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "10. anvendelse af infrastrukturkomponenter og andre komponenter" -%}
-        <a href="https://arkitektur.digst.dk/10-anvendelse-af-infrastrukturkomponenter-og-andre-komponenter-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "11. genbrug af datakilder" -%}
-        <a href="https://arkitektur.digst.dk/11-genbrug-af-datakilder-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "12. efterlevelse af aftalte arkitekturstandarder" -%}
-        <a href="https://arkitektur.digst.dk/12-efterlevelse-af-aftalte-arkitekturstandarder-faelles-aftalt" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    {%- when "13. krav til løsninger, der skal på borger.dk og virk" -%}
-        <a href="https://arkitektur.digst.dk/13-krav-til-loesninger-der-skal-paa-borgerdk-og-virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     {%- when "læs de fælles krav til gode brugeroplevelser" -%}
         <a href="https://arkitektur.digst.dk/metoder/arkitekturmetoder/introduktion-til-faelles-krav-til-gode-brugeroplevelser/faelles-krav-til" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
         
@@ -251,6 +241,66 @@
 
 
 
+    {%- comment -%} -------- uxmovement.com -------- {%- endcomment -%}
+
+    {%- when "why you should never center or right align your logo" -%}
+        <a href="http://uxmovement.com/navigation/why-you-should-never-center-or-right-align-your-logo/?ref=webdesignernews.com" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    
+    {%- when "anthony thomas (2006): where to place your accordion menu items" -%}
+        <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "when you should use a breadcrumb navigation" -%}
+        <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "hvornår skal du bruge en knap eller et link" -%}
+        <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- gov.uk -------- {%- endcomment -%}
+
+    {%- when "tim paul: one thing per page (2015)" -%}
+        <a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "forsiden af gov.uk" -%}
+        <a href="https://www.gov.uk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "gov.uk design system" -%}
+        <a href="https://design-system.service.gov.uk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuk design system breadcrumbs" -%}
+        <a href="https://design-system.service.gov.uk/components/breadcrumbs/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuks anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer" -%}
+        <a href="https://design-system.service.gov.uk/components/date-input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuk om at spørge brugeren om datoer" -%}
+        <a href="https://design-system.service.gov.uk/patterns/dates/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuk om fejlmeddelelser generelt" -%}
+        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- smashingmagazine.com -------- {%- endcomment -%}
+
+    {%- when "natasha postolovski: what is the most underrated word in web design? (2014)" -%}
+        <a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "breadcrumbs in web design: examples and best practices" -%}
+        <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "vitaly friedman: privacy ux: better cookie consent experiences (2019)" -%}
+        <a href="https://www.smashingmagazine.com/2019/04/privacy-ux-better-cookie-consent-experiences/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jacob gube: module tabs in web design: best practices and solutions (2009)" -%}
+        <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "the ideal search box is 27 characters wide" -%}
+        <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
     {%- comment -%} -------- Other -------- {%- endcomment -%}
     
     {%- when "bootstraps spacing utilities" -%}
@@ -293,12 +343,6 @@
     {%- when "whatwg" -%}
         <a href="https://whatwg.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "w3c markup validation service (html)" -%}
-        <a href="https://validator.w3.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "w3c css validation service (css)" -%}
-        <a href="https://jigsaw.w3.org/css-validator/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "se komponentbiblioteket i figma" -%}
         <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -313,24 +357,6 @@
 
     {%- when "inputfelter - zendesk’s garden designsystem" -%}
         <a href="https://garden.zendesk.com/components/input" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "tim paul: one thing per page (2015)" -%}
-        <a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "læs mere om kontrastforhold" -%}
-        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "om tilgængelig web i det offentlige" -%}
-        <a href="https://digst.dk/digital-service/webtilgaengelighed/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "læs vejledningen om tilgængelige billeder på nettet" -%}
-        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/tilgaengelige-billeder-paa-nettet/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "lær hvordan du udfører easy checks" -%}
-        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "læs om de syv hyppige fejl og deres betydning" -%}
-        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/syv-hyppige-fejl-og-deres-betydning/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "a11y color blind empathy", 
              "a11y color blind empathy - chrome plugin" -%}
@@ -348,9 +374,6 @@
     {%- when "spacing methods - baseline" -%}
         <a href="https://material.io/design/layout/spacing-methods.html#baseline" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
     
-    {%- when "why you should never center or right align your logo" -%}
-        <a href="http://uxmovement.com/navigation/why-you-should-never-center-or-right-align-your-logo/?ref=webdesignernews.com" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-    
     {%- when '"open font license" betingelser' -%}
         <a href="https://openfontlicense.org/open-font-license-official-text/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -363,31 +386,14 @@
     {%- when "polyfills" -%}
         <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "forsiden af gov.uk" -%}
-        <a href="https://www.gov.uk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "us web design system" -%}
         <a href="https://designsystem.digital.gov/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "gov.uk design system" -%}
-        <a href="https://design-system.service.gov.uk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "en 301 549 v.3.2.1" -%}
         <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "handlingsside på borger.dk", 
-             "vejledning til integration på borger.dk" -%}
+    {%- when "vejledning til integration på borger.dk" -%}
         <a href="https://digitaliser.dk/borgerdk/vejledninger-borgerdk/tilslutning-af-selvbetjening-til-borgerdk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "virk tæller" -%}
-        <a href="https://myndighedsnet.virk.dk/virk-viden/virktoejer/services/virk-taeller" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "virks integrationsmiljø", 
-             "melde din løsning ind til virk" -%}
-        <a href="https://myndighedsnet.virk.dk/virk-viden/integration-og-krav/proaktiv-tilrettelaeggelse/myndighedernes-forarbejde" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "introside på virk" -%}
-        <a href="https://myndighedsnet.virk.dk/virk-viden/virktoejer/indhold-paa-virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "læs om cookies (engelsk)" -%}
         <a href="https://en.wikipedia.org/wiki/HTTP_cookie" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -396,59 +402,23 @@
              "cookiebekendtgørelsen" -%}
         <a href="https://www.retsinformation.dk/Forms/R0710.aspx?id=139279" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "anthony thomas (2006): where to place your accordion menu items" -%}
-        <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "natasha postolovski: what is the most underrated word in web design? (2014)" -%}
-        <a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "govuk design system breadcrumbs" -%}
-        <a href="https://design-system.service.gov.uk/components/breadcrumbs/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "breadcrumbs in web design: examples and best practices" -%}
-        <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "when you should use a breadcrumb navigation" -%}
-        <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "muneo kitajima, marilyn h blackmon & peter g polson: a comprehension-based model of web navigation and its application to web usability analysis (2000)" -%}
         <a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "vitaly friedman: privacy ux: better cookie consent experiences (2019)" -%}
-        <a href="https://www.smashingmagazine.com/2019/04/privacy-ux-better-cookie-consent-experiences/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "læs om cookies på digitaliseringsstyrelsens hjemmeside" -%}
-        <a href="https://digst.dk/sikkerhed/digitale-tilsyn/tilsyn-med-cookieomraadet/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "nick babich: date picker design best practices (2019)" -%}
         <a href="https://uxpro.cc/publications/date-picker-design-best-practices/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "govuks anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer" -%}
-        <a href="https://design-system.service.gov.uk/components/date-input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "govuk om at spørge brugeren om datoer" -%}
-        <a href="https://design-system.service.gov.uk/patterns/dates/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "uswds om datovælgeren" -%}
         <a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "govuk om fejlmeddelelser generelt" -%}
-        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "luke wroblewski: dropdowns should be the ui of last resort (2015)" -%}
         <a href="https://www.lukew.com/ff/entry.asp?1950" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "jacob gube: module tabs in web design: best practices and solutions (2009)" -%}
-        <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "priscilla esser: how to implement sitemap footers to keep users going (2018)" -%}
         <a href="https://www.interaction-design.org/literature/article/how-to-implement-sitemap-footers-to-keep-users-going" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "farhad manjoo: you won’t finish this article (2013)" -%}
         <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "hvornår skal du bruge en knap eller et link" -%}
-        <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "uswds om paginering" -%}
         <a href="https://designsystem.digital.gov/components/pagination/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -475,9 +445,6 @@
     {%- when "tammy guy: usability tip: don’t make me search for search (2014)" -%}
         <a href="https://uxmag.com/articles/usability-tip-dont-make-me-search-for-search" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "the ideal search box is 27 characters wide" -%}
-        <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "design a perfect search box" -%}
         <a href="https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -498,9 +465,6 @@
 
     {%- when "richard rutter: web typography: designing tables to be read, not looked at (2017)" -%}
         <a href="https://alistapart.com/article/web-typography-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "tilgængelige tooltips" -%}
-        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- else -%}
         {{ include.linktext }}
