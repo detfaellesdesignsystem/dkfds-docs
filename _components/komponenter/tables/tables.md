@@ -45,7 +45,7 @@ Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig
 
 Vær meget opmærksom på typen af data, din tabel skal præsentere brugeren for.
 
-Såfremt der er tale om meget {% include links/component-guideline-link.html linktext="avancerede tabeller" %}, kan der bruges en tredjepartsløsning.
+Såfremt der er tale om meget avancerede tabeller, kan der bruges en tredjepartsløsning.
 
 Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tale om en numerisk størrelse som f.eks. antal eller pengebeløb. Dette gør det lettere for brugeren at skimme og sammenligne numerisk data (Rutter, 2017). Tal, der ikke angiver en numerisk størrelse og dermed ikke indebærer et behov for sammenligning, skal ikke højrestilles. Det kan f.eks. være et ID-nummer.
 
@@ -138,17 +138,6 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 ##### Eksempel på struktureret liste med link
 
 {% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" code="/komponenter/tables/implementering/#strukturerede-lister-edit" %}
-
-{:#avancerede-tabeller}
-### Avancerede tabeller
-
-Vi tilbyder på nuværende tidspunkt ikke avancerede tabeller, men hvis man finder eller laver en selv, kan det se ud som på billedet nedenfor.
-
-#### Udfoldelig række
-<div><img src="/assets/img/components/advanced-table-expandable-row.png" class="outer-border-box p-4" alt="Eksempel på, hvordan en avanceret tabel med udfoldelige rækker kan se ud" /></div>
-
-#### Rediger og slet en række
-<div><img src="/assets/img/components/advanced-table-edit-overflowmenu.png" class="outer-border-box p-4" alt="Eksempel på, hvordan en avanceret tabel med rediger og slet muligheder i en overflowmenu kan se ud" /></div>
 
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
