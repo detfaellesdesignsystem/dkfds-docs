@@ -404,38 +404,7 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="krav_category" aria-haspopup="true" aria-expanded="false">
-                    <span>Krav</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="krav_category" aria-hidden="true">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/krav/" class="nav-link">
-                                <span>Krav <span class="helptext">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/kom-i-gang/krav/borgerdk-virk/" class="nav-link"><span>Når du skal på borger.dk og Virk</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/krav/om-kravene/" class="nav-link"><span>Om kravene til selvbetjeningsløsninger</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
+            <a href="/kom-i-gang/krav/" class="nav-link"><span>Krav</span></a>
         </li>
         
 
@@ -1424,10 +1393,10 @@ let searchIndex = [
 "title": "Krav",
 "category": "Kom_i_gang_category",
 "subcategory": "Kom i gang",
-"lead": "Når du skal have en selvbetjeningsløsning på borger.dk, Virk eller begge portaler, skal du følge portalernes krav til integration og overholde portalernes Fælles Designsystem og integrationsproces.",
-"tags": [''],
+"lead": "",
+"tags": ['krav','Virk','borger.dk'],
 "layout": "styleguide",
-"content" : "Se hvilke krav din selvbetjeningsløsning skal overholdeStart fælles krav værktøjKort om kravet om at anvende Det Fælles DesignsystemKravet om anvendelse af det Fælles Designsystem gælder for obligatorisk digitale (borgerrettede) selvbetjeningsløsninger, der skal på borger.dk og alle virksomhedsrettede selvbetjeningsløsninger, der skal på Virk.  Om kravene til selvbetjeningsløsninger  Portalernes krav til integration (Når du skal på borger.dk og Virk)Brug Det Fælles Designsystem til din selvbetjeningsløsningFølg retningslinjer og principperne for design og layout. Brug komponenterne og koden, så laver du effektivt simple brugervenlige og tilgængelige selvbetjeningsløsninger.  Tjekliste  TilgængelighedDet Fælles Designsystem er del af den fællesoffentlige digitale arkitekturKravet om anvendelse af Det Fælles Designsystem er en del af den fællesoffentlige digitale arkitektur, der indeholder en række fælles krav til digitale løsninger - herunder “Krav til løsninger, der skal på borger.dk og Virk - Fælles krav til digitale løsninger: nr 13”  Det Fælles Designsystem er en del af den fællesoffentlige digitale arkitektur  Se beskrivelser af alle krav og anbefalinger i den fællesoffentlige digitale arkitektur",
+"content" : "Kravet om anvendelse af Det Fælles DesignsystemKravet om anvendelse af Det Fælles Designsystem gælder for obligatorisk digitale (borgerrettede) selvbetjeningsløsninger, der skal på borger.dk, og alle virksomhedsrettede selvbetjeningsløsninger, der skal på Virk. Ved at gennemgå tjeklisten kan du sikre dig, at du følger designsystemet.Fælles krav til gode brugeroplevelserDe Fælles krav til gode brugeroplevelser indeholder fællesoffentlige krav og anbefalinger til digitale løsninger i det offentlige. Kravene skal medvirke til at sikre gode brugergrænseflader i digitale løsninger til kommunikation mellem myndigheder, borgere og virksomheder.Kravene for den enkelte løsning afhænger af en række parametre. Brug Fælles krav-værktøjet til at identificere, hvilke krav der gælder for netop din løsning.Start fælles krav værktøjLæs de fælles krav til gode brugeroplevelser",
 "description" : "Hvad er krav og hvad er anbefaling? Få et indblik i, hvilke krav din løsning skal efterleve.",
 "subnav": [""]
 },
@@ -1581,50 +1550,6 @@ let searchIndex = [
 "layout": "styleguide",
 "content" : "JavaScriptDet Fælles Designsystem anvender Vanilla JavaScript (også kendt som VanillaJS eller Plain JS) uden JavaScript-biblioteker, som fx jQuery, for at undgå afhængighed til tredjepartsleverandører og deres eventuelle tekniske gæld.Kodefrihed under ansvarVi har bestræbt os på at lave et designsystem, der er let at anvende og kode med, men vi vil ikke tvinge nogen væk fra deres favorit (JavaScript) framework. Så længe det visuelle design (CSS) er som beskrevet i designsystemet, er du velkommen til at udnytte de teknologier, du finder bedst, men giv vores kode et kig, den er lige til at gå til.Du skal altid kode selvbetjeningsløsningens brugergrænseflade i valid HTML5, som det er defineret i WHATWG. Hvis du afviger fra koden i designsystemet anbefaler vi, at du sikrer din kodes validitet, fx med W3C Markup Validation Service (HTML) eller W3C CSS Validation Service (CSS).",
 "description" : "I denne sektion findes al dokumentation henvendt specifikt til udvikling.",
-"subnav": [""]
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-"url": "/kom-i-gang/krav/borgerdk-virk/",
-"title": "Når du skal på borger.dk og Virk",
-"category": "Kom_i_gang_category",
-"subcategory": "Kom i gang",
-"lead": "Din selvbetjeningsløsning opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.",
-"tags": [''],
-"layout": "styleguide",
-"content" : "Kravene til integration som borger.dk og Virk stiller, handler om tilslutningen af selvbetjeningsløsningen til den givne portal. Mens krav til designet af selvbetjeningsløsningen retter sig specifikt mod anvendelsen af det Fælles Designsystem. Designkravet handler således om fonte, former, farver og grundlæggende layout samt konsistens i brugen af komponenter.Design til borger.dk og VirkBrug eller imiter det Fælles Designsystem.  Løsningen skal tematiseres, så den passer visuelt ind på portalen den skal vises på  Der skal være en header, der er bygget op som anvist i designsystemet  Du skal anvende/efterligne stylesheetet som anvist i designsystemet  Komponenter og plugins skal være anvendt som anvist i designsystemetDet anbefales desuden, at løsningen har en footer, der er bygget som anvist i designsystemet.TjeklisteIntegration på borger.dk  du skal oprette en handlingsside på borger.dk. Handlingssiden er den side på borger.dk, hvorfra borgeren klikker sig ind i selvbetjeningsløsningen. Du skal sørge for, at der er udarbejdet en god tekst til handlingssiden, som forbereder borgeren til at anvende løsningen.Vejledning til integration på borger.dkIntegration på Virk  din løsning skal have implementeret Virk Tæller, der er et digitalt tracking- og analyseværktøj, der tracker brugen af siderne i indberetningsløsningerne på Virk.  din løsning skal være publiceret på Virks integrationsmiljø og gennemgået af Virk inden publicering.  du skal udfylde en introside på Virk (via DIA), hvor brugeren kan finde målrettet information om løsningen.  du skal melde din løsning ind til Virk, når den er klar til gennemgang.Vejledning til integration på Virk",
-"description" : "Din selvbetjeningsløsning opfylder kravene til integration og design, når du har fulgt portalernes integrationsproces og anvendt det Fælles Designsystem som anvist.",
-"subnav": ["Design til borger.dk og Virk","Integration på borger.dk","Integration på Virk",""]
-},
-
-
-
-
-
-
-{
-"url": "/kom-i-gang/krav/om-kravene/",
-"title": "Om kravene til selvbetjeningsløsninger",
-"category": "Kom_i_gang_category",
-"subcategory": "Kom i gang",
-"lead": "",
-"tags": [''],
-"layout": "styleguide",
-"content" : "De fælles krav til digitale løsninger består af tre forskellige typer af krav:  Eksterne krav: krav fra eksterne kilder som fx lovgivning og sikkerhedsstandarder.  Fælles aftalte krav: krav, som de statslige myndigheder, KL og Danske Regioner har udarbejdet i fællesskab.  Krav til digitale løsninger, der skal på borger.dk og Virk: krav, som alene omfatter digitale selvbetjeningsløsninger, der skal udstilles på portalerne Virk og borger.dk.Se hvilke krav og anbefalinger, der gælder din løsning.Eksterne kravHer finder du blandt andet eksempler på relevant lovgivning og sikkerhedsstandarder, som du skal forholde dig til. Det er ikke en udtømmende oversigt, men alene en hjælp til at orientere dig i forhold til reguleringen af myndighedernes digitale kommunikation med borgere og virksomheder. De eksterne krav er ikke aftalt mellem de fællesoffentlige parter, men skal følges i det omfang, at lovgivning, aftaler eller lignende forpligter dig til det.  Forvaltningsloven  Sikkerhed  Single Digital Gateway  Tilkobling til dansk eID-Gateway  WebtilgængelighedEfterleves og gælder i overensstemmelse med lovgivning, aftaler mv.Fælles aftalte kravIndeholder krav og anbefalinger til brugergrænsefladen i selvbetjeningsløsninger, fællesoffentlige infrastrukturkomponenter og nationale portaler. Her finder du eksempelvis kravet om gennemførelse af den fællesoffentlige slutbrugertest, feltvalidering og tidlig brugerinddragelse i udviklingsforløb. Både krav og anbefalinger er udarbejdet i samarbejde mellem de fællesoffentlige parter for at sikre kvaliteten i den digitale kommunikation mellem myndigheder og borger samt myndigheder og virksomheder.Krav og anbefalinger er differentierede i forhold til en række parametre. Det betyder, at for flere typer af selvbetjeningsløsninger gælder kravene alene som anbefalinger, og for de fællesoffentlige infrastrukturkomponenter og de nationale portaler gælder der nogle særlige forhold om efterlevelse af kravene. Et særligt værktøj giver dig mulighed for at identificere, hvilke krav din selvbetjeningsløsning skal leve op til.  01. Tidlig brugerinddragelse  02. Sprog  03. Konventioner for flow og funktionalitet  04. Feltvalidering  05. Personalisering  06. Understøttelse af styresystemer og browsere  07. Understøttelse af skærmstørrelser  08. Bestå den fællesoffentlige brugertest  09. Indsamling af viden om brugernes anvendelse af digitale løsninger  10. Anvendelse af infrastrukturkomponenter og andre komponenter  11. Genbrug af datakilder  12. Efterlevelse af aftalte arkitekturstandarderLøsningens størrelse, type mv. afgør, om der er tale om et krav eller en anbefaling.Kravet gælder ved ny- og væsentlig videreudvikling af løsningerne.Krav til digitale løsninger, der skal på Virk og borger.dkHvis din løsning skal på Virk, borger.dk eller begge portaler, skal løsningen overholde enkle krav, som eksempelvis indebærer, at din løsning skal styles med ’Det fælles designsystem’ og i øvrigt leve op til portalernes integrationskrav. I lighed med de fælles aftalte krav kan visse løsninger i kraft af deres størrelse, målgruppe eller andre forhold være undtaget fra kravet.13. Krav til løsninger, der skal på borger.dk og VirkEfterleves og gælder for løsninger, der skal på borger.dk og Virk. Kravet gælder ved ny- og væsentlig videreudvikling af løsningerne.",
-"description" : "Information om eksterne krav, fælles aftalte krav og krav til digitale løsninger der skal på borger.dk og Virk.",
 "subnav": [""]
 },
 

@@ -16,8 +16,6 @@ var pdfUrls = [
     "kom-i-gang/designressourcer/",
     "kom-i-gang/tjekliste/",
     "kom-i-gang/krav/",
-    "kom-i-gang/krav/borgerdk-virk/",
-    "kom-i-gang/krav/om-kravene/",
     "kom-i-gang/tilgaengelighed/",
     "design/",
     "design/farver/",

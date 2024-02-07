@@ -23,7 +23,6 @@ Kom_i_gang_category:
   - href: /kom-i-gang/designressourcer/
   - href: /kom-i-gang/tjekliste/
   - href: /kom-i-gang/krav/
-    categorynav: 'Krav_category'
   - href: /kom-i-gang/tilgaengelighed/
   - href: /kom-i-gang/faq/
 
@@ -34,10 +33,6 @@ Implementering_kode_category:
   - href: /kom-i-gang/implementering-kode/plugins/
   - href: /kom-i-gang/implementering-kode/print/
   - href: /kom-i-gang/implementering-kode/frameworks/
-
-Krav_category:
-  - href: /kom-i-gang/krav/borgerdk-virk/
-  - href: /kom-i-gang/krav/om-kravene/
 
 #Left menu for styleguide-category
 Styleguide_category:
