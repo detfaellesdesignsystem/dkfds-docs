@@ -18,26 +18,26 @@ tags:
 
 {% include links/external-link.html linktext='Se videoen "Det Fælles Designsystem til udviklere" på YouTube' %} 
 
-<h2 class="h5 mt-8">{% include links/internal-link.html linktext="Hent kodepakken" %}</h2>
+<h2 class="body-text mb-0 mt-8">{% include links/internal-link.html linktext="Hent kodepakken" %}</h2>
 
-Hent den kode, som Det Fælles Designsystem stiller til rådighed.
+<p class="mt-0">Hent den kode, som Det Fælles Designsystem stiller til rådighed.</p>
 
-<h2 class="h5">{% include links/internal-link.html linktext="Hjælpeklasser (Utilities)" %}</h2>
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Hjælpeklasser (Utilities)" %}</h2>
 
-Lav hurtige justeringer direkte i HTML’en med disse hjælpeklasser.
+<p class="mt-0">Lav hurtige justeringer direkte i HTML’en med disse hjælpeklasser.</p>
 
-<h2 class="h5">{% include links/internal-link.html linktext="Browserunderstøttelse" %}</h2>
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Browserunderstøttelse" %}</h2>
 
-Læs om understøttelse af forskellige browsere og styresystemer.
+<p class="mt-0">Læs om understøttelse af forskellige browsere og styresystemer.</p>
 
-<h2 class="h5">{% include links/internal-link.html linktext="Plugins" %}</h2>
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Plugins" %}</h2>
 
-Læs om brugen af plugins fra tredjepart.
+<p class="mt-0">Læs om brugen af plugins fra tredjepart.</p>
 
-<h2 class="h5">{% include links/internal-link.html linktext="Print" %}</h2>
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Print" %}</h2>
 
-Læs om, hvordan løsninger kan optimeres til print.
+<p class="mt-0">Læs om, hvordan løsninger kan optimeres til print.</p>
 
-<h2 class="h5">{% include links/internal-link.html linktext="Frameworks" %}</h2>
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Frameworks" %}</h2>
 
-Du kan frit vælge, hvilket framework du vil bruge, når du anvender Det Fælles Designsystem.
+<p class="mt-0">Du kan frit vælge, hvilket framework du vil bruge, når du anvender Det Fælles Designsystem.</p>

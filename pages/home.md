@@ -15,7 +15,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
                 <p class="font-lead">
                     Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere.
                 </p>
-                <p>{% include links/external-link.html linktext="Se koden på Github" bold=true %}</p>
+                <p>{% include links/external-link.html linktext="Se koden på GitHub" bold=true %}</p>
             </div>
             <div class="col-12 col-lg-5 align-text-center">
                 <img id="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-block">

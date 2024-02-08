@@ -126,7 +126,7 @@ lead: Nedenfor vises release notes — en opsummering af bug fixes, nye feature
   andre opdateringer.
 ---
 
-Har du et nyt forslag til en feature eller et bug fix? {% include links/external-link.html linktext="Så må du meget gerne oprette et issue på Github" %}
+Har du et nyt forslag til en feature eller et bug fix? {% include links/external-link.html linktext="Så må du meget gerne oprette et issue på GitHub" %}
 
 ## Versionering
 

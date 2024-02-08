@@ -11,7 +11,7 @@ tags:
 
 Det Fælles Designsystem er bygget på forskning og erfaring fra FDS-teamet, andre designsystemer ({% include links/external-link.html linktext="US Web Design System" %} og {% include links/external-link.html linktext="Gov.UK Design System" %}) samt input fra anvendere af FDS.
 
-Mangler der noget på listen? {% include links/external-link.html linktext="Opret et issue på Github" %}.
+Mangler der noget på listen? {% include links/external-link.html linktext="Opret et issue på GitHub" %}.
 
 Her er en liste over komponenter, mønstre og opdateringer, der aktuelt findes i Det Fælles Designsystems backlog.
 
