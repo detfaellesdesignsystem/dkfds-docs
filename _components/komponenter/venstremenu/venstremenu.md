@@ -49,8 +49,6 @@ Undgå at lave for mange punkter.
 
 Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
-{% include dos-donts-box.html component="sidenav-dos-donts" title="Venstremenu do's and don'ts" %}
-
 {:#varianter}
 ## Varianter
 

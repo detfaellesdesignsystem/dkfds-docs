@@ -52,8 +52,6 @@ Overvej at lade den accordion, som har det vigtigste indhold, være foldet ud, n
 
 Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere spiselig. Overvej om det er nødvendigt at kollapse indhold og hvorfor, det er det. Hvis indholdet er unødigt langt eller uoverskueligt, bør du i stedet omformulere teksten og eventuelt fordele den på flere sider.
 
-{% include dos-donts-box.html component="accordion-dos-donts" title="Accordion do's and don'ts" %}
-
 {:#med-fejl}
 #### Fejlmeddelelse
 
