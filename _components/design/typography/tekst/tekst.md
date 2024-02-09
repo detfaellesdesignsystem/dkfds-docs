@@ -9,8 +9,8 @@ subcategory: Styleguide
 title: Tekst
 anchor: true
 subnav:
-- text: Manchet tekst
-  href: "#manchet-tekst"
+- text: Manchet
+  href: "#manchet"
 - text: Brødtekst
   href: "#broedtekst"
 - text: Hjælpetekst og fejlmeddelelser
@@ -40,12 +40,12 @@ tags:
 - linjehøjde
 ---
 
-{:#manchet-tekst}
-## Manchet tekst
+{:#manchet}
+## Manchet
 
-Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
+Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
 
-{% include code/preview-box.html component="lead_paragraph" link=false code="/design/typografi/tekst/implementering/#manchet-tekst" %}
+{% include code/preview-box.html component="lead_paragraph" link=false code="/design/typografi/tekst/implementering/#manchet" %}
 
 ### Designværdier
 
@@ -54,16 +54,16 @@ Du kan bruge manchettekst til at introducere et trin eller en sides indhold. Typ
 |---------------|-----------------|------------------------------|------------|
 | IBM Plex Sans | 20px            | 400                          | #1a1a1a    |
 
-{:#manchet-tekst-retningslinjer}
+{:#manchet-retningslinjer}
 ### Retningslinjer
 
-Hold manchetteksten kort og præcis, gerne max tre linjer.
+Hold manchetten kort og præcis, gerne max tre linjer.
 
-Manchetteksten er kun til korte introduktionstekster og ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationstekster.
+Manchet er kun til korte introduktionstekster og ikke til lange informationstekster. Brug brødtekst og lister til yderligere informationstekster.
 
-Brug kun manchettekst, når og hvor det er nødvendigt. Brug fx ikke manchettekst, hvis brugeren selv kan afkode siden og begynde at indtaste med det samme.
+Brug kun manchet, når og hvor det er nødvendigt. Brug fx ikke manchet, hvis brugeren selv kan afkode siden og begynde at indtaste med det samme.
 
-Typisk starter indtastningsflowet eller en sektion lige under manchetteksten. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchetteksten.
+Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchet.
 
 {:#broedtekst}
 ## Brødtekst
@@ -193,7 +193,7 @@ Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikativ
 {:#linjelaengde}
 ## Linjelængde
 
-For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchettekst i koden til designsystemet.
+For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchet i koden til designsystemet.
 
 {% include code/preview-box.html component="line_length" link=false %}
 

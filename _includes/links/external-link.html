@@ -1,7 +1,18 @@
-{%- assign attributes = 'class="icon-link" target="_blank"' -%}
+{%- comment -%}
+--------
+EXAMPLE: HOW TO USE IN MARKDOWN FILES
+{% include links/external-link.html linktext="Tekst der skal blive til link" functionlink=true %}
+--------
+{%- endcomment -%}
+
+{%- assign classes = "icon-link" -%}
 {%- if include.bold -%}
-    {%- assign attributes = 'class="icon-link bold-link" target="_blank"' -%}
+    {%- assign classes = classes | append: " bold-link" -%}
 {%- endif -%}
+{%- if include.functionlink -%}
+    {%- assign classes = classes | append: " function-link" -%}
+{%- endif -%}
+{%- assign attributes = 'class="' | append: classes | append: '"' | append: ' target="_blank"' -%}
 {%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
@@ -465,6 +476,9 @@
 
     {%- when "richard rutter: web typography: designing tables to be read, not looked at (2017)" -%}
         <a href="https://alistapart.com/article/web-typography-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tilgængelighedserklæring" -%}
+        <a href="https://www.was.digst.dk/designsystem-dk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- else -%}
         {{ include.linktext }}

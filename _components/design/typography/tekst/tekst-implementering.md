@@ -10,8 +10,8 @@ subcategory: Styleguide
 title: Tekst
 anchor: true
 subnav:
-- text: Manchet tekst
-  href: "#manchet-tekst"
+- text: Manchet
+  href: "#manchet"
 - text: Brødtekst
   href: "#broedtekst"
 - text: Hjælpetekst og fejlmeddelelser
@@ -30,12 +30,12 @@ tags:
 - "fejlbesked"
 - "fejlmeddelelser"
 ---
-{:#manchet-tekst}
-## Manchet tekst
+{:#manchet}
+## Manchet
 
-{% include code/preview-box.html component="lead_paragraph" link=false title="Eksempel på manchet tekst" %}
+{% include code/preview-box.html component="lead_paragraph" link=false title="Eksempel på manchet" %}
 
-{% include links/internal-link.html linktext="Læs retningslinjerne for manchet tekst" %}
+{% include links/internal-link.html linktext="Læs retningslinjerne for manchet" %}
 
 ### HTML Struktur
 

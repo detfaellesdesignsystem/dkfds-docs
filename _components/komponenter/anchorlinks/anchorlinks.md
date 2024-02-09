@@ -6,7 +6,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Anchorlinks
-lead: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchettekst.
+lead: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
 component: "anchorlinks"
 componentTitle: "Eksempel på anchorlinks"
 componentLink: true
@@ -18,7 +18,7 @@ subnav:
   href: "#eksempelloesninger"
 - text: Referencer
   href: "#ref"
-description: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchettekst.
+description: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
 tags:
 - anchorlinks
 - anchor
@@ -40,7 +40,7 @@ Anchorlinks anvendes ikke til kortere sider, som brugeren problemløst kan overs
 
 ### Vejledning
 
-Anchorlinks placeres altid i toppen af en side under overskrift og evt. manchettekst. I visse tilfælde kan de også placeres inde i Faneblade. I så fald placeres anchorlinks som det første element i det enkelte faneblad. 
+Anchorlinks placeres altid i toppen af en side under overskrift og evt. manchet. I visse tilfælde kan de også placeres inde i Faneblade. I så fald placeres anchorlinks som det første element i det enkelte faneblad. 
 
 Anchorlinks kan i nogle tilfælde virke forvirrende, da links til samme side går imod brugerens naturlige forventning om, at links fører til en ny side (Schade, 2017). Brug derfor kun anchorlinks, når de er nødvendige for brugeroplevelsen, og giv komponenten en klar overskrift “Indhold på siden”, som understreger funktionaliteten.
 

@@ -7,7 +7,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Anchorlinks
-lead: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchettekst.
+lead: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
 component: "anchorlinks"
 componentTitle: "Eksempel på anchorlinks komponent"
 anchor: false
