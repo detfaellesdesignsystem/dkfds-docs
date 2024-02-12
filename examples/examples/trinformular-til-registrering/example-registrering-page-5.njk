@@ -71,13 +71,19 @@
 {% endblock %}
 
 {% block body %}
-<div class="container page-container pt-5 pt-lg-0">
+<div class="container page-container pt-0">
     <div class="row">
-        <aside class="col-12 col-lg-3">
+        <div class="col-12">
+            <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-2" aria-label="Sidefunktioner">
+                <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <aside class="col-12 col-lg-3 mt-2">
             {{ overflow_stepguide(trinindikator_data) }}
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <button class="function-link link-right d-flex w-percent-100 justify-content-end">{{icon_svg({"name": "save"})}}Gem kladde</button>
             <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/" class="back-link">Tilbage</a>
             </div>
             <h1 class="mb-6">Kontaktoplysninger</h1>

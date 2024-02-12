@@ -71,13 +71,19 @@
 {% endblock %}
 
 {% block body %}
-<div class="container page-container pt-5 pt-lg-0">
+<div class="container page-container pt-0">
     <div class="row">
-        <aside class="col-12 col-lg-3">
+        <div class="col-12">
+            <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-0" aria-label="Sidefunktioner">
+                <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <aside class="col-12 col-lg-3 mt-2 mt-lg-3">
             {{ overflow_stepguide(trinindikator_data) }}
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <button class="function-link link-right d-flex w-percent-100 justify-content-end">{{icon_svg({"name": "save"})}}Gem kladde</button>
             <h1>Vælg personer</h1>
             <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-2/">
                 {{checkboxes(tjekbokse_personer)}}
