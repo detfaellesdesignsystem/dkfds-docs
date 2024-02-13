@@ -199,8 +199,7 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
         {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Åbn accordion (plus)" %}
         {% include icon.html icon="fullscreen-exit" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit" label="Luk fuld skærm" %}
         {% include icon.html icon="sort" keywords="sortering, sort, unsorted" label="Ikke sorteret" %}
-        {% include icon.html icon="lock-open" keywords="log off, log af, log ud, log, off, af, ud, exit, lås, lock, hængelås, åben, open" label="Log af (åben hængelås)" %}
-        {% include icon.html icon="lock" keywords="log in, login, log på, log ind, log, in, på, ind, lås, lock, hængelås, låst" label="Log på (lukket hængelås)" %}
+        {% include icon.html icon="lock" keywords="log af, log ud, log, af, ud, lås, lock, hængelås, låst" label="Log af (lukket hængelås)" %}
         {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
         {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
         {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Udvid (chevron)" %}

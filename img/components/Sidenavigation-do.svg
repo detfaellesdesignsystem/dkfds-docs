@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sidenavigation, 1-do</title>
+    <g id="Sidenavigation_-1-do" data-name="Sidenavigation,-1-do">
+        <g id="Group">
+            <path id="Combined-Shape" d="M31.5.5v359h267V.5Z" transform="translate(-31 0)" fill="#d8d8d8" stroke="#747474" fill-rule="evenodd"/>
+            <g id="Menupunkt-Menupunkt" style="isolation: isolate">
+                <text transform="translate(23 34)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+                <text transform="translate(112.06 34)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(23 69)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+                <text transform="translate(112.06 69)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(23 104)" font-size="18" fill="#474e95" font-family="Arial-BoldMT, Arial" font-weight="700" style="isolation: isolate">Menupunkt</text>
+            </g>
+            <g id="Menupunkt-Menupunkt-Copy" style="isolation: isolate">
+                <text transform="translate(23 263)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+                <text transform="translate(112.06 263)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(23 298)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+                <text transform="translate(112.06 298)" font-size="18" fill="#474e95" font-family="ArialMT, Arial"> </text>
+                <text transform="translate(23 333)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
+            </g>
+            <g id="Undermenupunkt-Under" style="isolation: isolate">
+                <text transform="translate(45 149)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Undermenupunkt</text>
+                <text transform="translate(45 184)" font-size="18" fill="#454545" font-family="Arial-BoldMT, Arial" font-weight="700" style="isolation: isolate">Undermenupunkt</text>
+                <text transform="translate(45 219)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Undermenupunkt</text>
+            </g>
+        </g>
+    </g>
+</svg>

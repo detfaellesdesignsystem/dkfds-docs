@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="247px" viewBox="0 0 360 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Søgfelt, 2-don't</title>
+    <g id="Søgfelt_-2-don_t" data-name="Søgfelt,-2-don&apos;t">
+        <g id="Søgfelt_-2-don_t-02" data-name="Søgfelt,-2-don&apos;t-02">
+            <rect id="Rectangle" x="271" width="82" height="42" fill="#474e95"/>
+            <g id="Søg" style="isolation: isolate">
+                <text transform="translate(295 28)" font-size="20" fill="#f5f5f5" font-family="ArialMT, Arial" style="isolation: isolate">Søg</text>
+            </g>
+            <rect id="Rectangle-Copy" x="0.5" y="0.5" width="271" height="41" fill="#c8cadf" stroke="#474e95"/>
+            <g id="Søg-på-websitet" style="isolation: isolate">
+                <text transform="translate(11 28)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Søg på websitet</text>
+            </g>
+        </g>
+    </g>
+</svg>

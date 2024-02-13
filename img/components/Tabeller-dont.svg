@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="164px" viewBox="0 0 360 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Tabeller-don't</title>
+    <g id="Tabeller-don_t" data-name="Tabeller-don&apos;t">
+        <g>
+            <rect id="Rectangle-Copy-4" x="0.5" y="26.5" width="301" height="35" fill="#c8cadf" stroke="#474e95"/>
+            <g id="Indhold" style="isolation: isolate">
+                <text transform="translate(12 50)" font-size="16" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Indhold</text>
+            </g>
+            <rect id="Rectangle-Copy-5" x="0.5" y="60.5" width="301" height="35" fill="#c8cadf" stroke="#474e95"/>
+            <rect id="Rectangle-Copy-6" x="0.5" y="94.5" width="301" height="35" fill="#c8cadf" stroke="#474e95"/>
+            <rect id="Rectangle-Copy-7" x="0.5" y="128.5" width="301" height="35" fill="#c8cadf" stroke="#474e95"/>
+            <g id="Indhold-2" data-name="Indhold" style="isolation: isolate">
+                <text transform="translate(12 84)" font-size="16" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Indhold</text>
+            </g>
+            <g id="Indhold-3" data-name="Indhold" style="isolation: isolate">
+                <text transform="translate(12 117)" font-size="16" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Indhold</text>
+            </g>
+            <g id="Indhold-4" data-name="Indhold" style="isolation: isolate">
+                <text transform="translate(12 152)" font-size="16" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate">Indhold</text>
+            </g>
+            <rect id="Rectangle-Copy-8" x="0.5" y="0.5" width="301" height="28" fill="#9195bf" stroke="#474e95"/>
+            <g id="Titel" style="isolation: isolate">
+                <text transform="translate(12 21)" font-size="18" fill="#474e95" font-family="ArialMT, Arial" style="isolation: isolate"><tspan letter-spacing="-0.04em">T</tspan><tspan x="10.33" y="0">itel</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>
