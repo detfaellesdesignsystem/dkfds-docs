@@ -444,10 +444,14 @@
                 </div>
 
                 <h2 class="form-label mt-5 mb-0">Allerede registreret</h2>
-                <button class="button button-unstyled" type="button">
-                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
-                    <span class="sr-only">Hvad betyder det?</span>
-                </button>
+
+                <span class="tooltip-wrapper"
+                    data-tooltip="Følgende personer kan ikke vælges, da de allerede er blevet registreret."
+                    data-position="above" data-trigger="click">
+                    <button class="button button-unstyled tooltip-target" type="button"
+                        aria-label="Læs mere">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+                </span>
                 <ul class="nobullet-list mt-0">
                     <li>Jens Jensen, 123456-7890</li>
                 </ul>
