@@ -5,7 +5,7 @@ let toolIsProcessing = false;
 let questionnaire = {};
 const storageKey = "reqTool";
 const root = window.location.origin + "/krav-vaerktoej";
-const restart = window.location.origin + '/krav/';
+const restart = window.location.origin + '/kom-i-gang/krav/';
 
 let questions = [
     {'id': "Q100", "path": "/anvendes-af-virksomheder/", "status": true},
