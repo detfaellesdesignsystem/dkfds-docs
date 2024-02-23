@@ -91,6 +91,7 @@ title: Test
 {% include test/preview-test.html filename="test-tabs-urls-no-active-tabs" description="Faneblade med URL-skifte, ingen aktive faneblade" %}
 {% include test/preview-test.html filename="test-tabs-urls-only-one-tab" description="Faneblade med URL-skifte, kun ét faneblad" %}
 
+{:.h3}
 ## Funktionslink
 {% include test/preview-test.html filename="test-function-link" description="Funktionslink" %}
 
@@ -199,7 +200,8 @@ title: Test
 {:.h3}
 ## Tilbage til toppen
 
-{% include test/preview-test.html filename="test-back-to-top-long-page" description="TO DO: Tilbage til toppen-knap på en lang side" %}
+{% include test/preview-test.html filename="test-back-to-top-long-page" description="Tilbage til toppen-knap på en lang side" %}
+{% include test/preview-test.html filename="test-back-to-top-short-page" description="Tilbage til toppen-knap på en kort side" %}
 
 {:.h3}
 ## Tjekbokse

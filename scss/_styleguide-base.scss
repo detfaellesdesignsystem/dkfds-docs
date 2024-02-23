@@ -31,7 +31,10 @@
     line-height: units(5, 'rem');
   }
 
-  &:visited, &:hover, &:active{
+  &:visited, 
+  &:hover, 
+  &:focus, 
+  &:active {
     color: color('black');
   }
 }
@@ -1000,6 +1003,14 @@ body.layout-requirements-tool{
       background-color: transparent;
     }
   }
+  #resultat {
+    max-width: 100% !important;
+  }
+}
+
+#start-reqtool .icon-svg {
+  height: units(405);
+  width: units(405);
 }
 
 //----- grid example

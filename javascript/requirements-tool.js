@@ -1,5 +1,5 @@
 'use strict';
-import {Modal, Navigation, Tooltip} from 'dkfds';
+import {Modal} from 'dkfds';
 
 let toolIsProcessing = false;
 let questionnaire = {};
@@ -77,22 +77,6 @@ krav[13] = {"title": "Krav til løsninger, der skal på borger.dk og Virk", "kra
 
 
 document.addEventListener("DOMContentLoaded", function(){
-
-    new Navigation();
-
-    let contactModal = new Modal(document.getElementById('modal-contact'));
-    contactModal.init();
-
-    let printModalElement = document.getElementById('modal-print');
-    if(printModalElement !== null) {
-        let printModal = new Modal(printModalElement);
-        printModal.init();
-    }
-
-    const jsSelectorTooltip = document.getElementsByClassName('js-tooltip');
-    for(let c = 0; c < jsSelectorTooltip.length; c++){
-        new Tooltip(jsSelectorTooltip[ c ]);
-    }
 
     if(document.getElementsByTagName('body')[0].classList.contains('page-resultat')) {
         let elemToObserve = document.getElementById('modal-print');
@@ -317,7 +301,7 @@ let validate = function(){
     if(radio === null){
         let errorText = "Vælg venligst Ja eller Nej";
         document.getElementsByClassName('form-group')[0].classList.add('form-error');
-        document.getElementById('error-message').innerText = errorText;
+        document.getElementById('error-message').innerHTML = '<span class="sr-only">Fejl: </span>' + errorText;
         document.getElementById('error-message').classList.remove('d-none');
         document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = '<li><a href="#radio-yes" class="function-link">'+errorText+'</a></li>';
         document.getElementById('error-summary').classList.remove('d-none');
@@ -327,8 +311,8 @@ let validate = function(){
     document.getElementsByClassName('form-group')[0].classList.remove('form-error');
     document.getElementById('error-message').classList.add('d-none');
     document.getElementById('error-message').innerText = "";
-    document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = "";
     document.getElementById('error-summary').classList.add('d-none');
+    document.getElementById('error-summary').getElementsByClassName('nobullet-list')[0].innerHTML = "";
     return true;
 };
 
@@ -399,6 +383,8 @@ let generateResult = function () {
                     rows[i].querySelector('.value').innerText = "Ja";
                 } else {
                     rows[i].querySelector('.value').innerText = "Nej";
+                    let newhref = rows[i].querySelector('a').getAttribute('href').replace('#radio-yes', '#radio-no');
+                    rows[i].querySelector('a').setAttribute('href', newhref);
                 }
                 rows[i].classList.remove('d-none');
             }

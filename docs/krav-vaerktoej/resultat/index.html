@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
+
+<head>
     <!-- Basic Page Needs
 ================================================== -->
   <meta charset="utf-8">
@@ -62,10 +63,12 @@
   <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css">
 </noscript>
 
-  </head>
-  <body class="page-resultat layout-requirements-tool">
-  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-  <div class="hide-base-svg">
+</head>
+
+<body class="page-resultat layout-requirements-tool">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
         <symbol id="account-circle" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"/></symbol>
@@ -223,59 +226,62 @@
         <symbol id="zoom-out" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></symbol>
     </svg>
 </div>
-  <header class="header d-print-none">
-
+    <header class="header d-print-none">
     <div class="portal-info">
         <div class="portal-info-inner container">
-            <a class="fds-title" href="/" title="Det Fælles Designsystem">Det Fælles Designsystem</a>
+            <a class="fds-title" href="/" title="Gå til forsiden for Det Fælles Designsystem">Det Fælles Designsystem</a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
     </div>
-
     <div class="solution-info">
         <div class="solution-info-inner container">
-            <div class="solution-heading">
-                <div class="d-flex align-items-center">
-                    <a href="/krav/" title="Gå tilbage til start">Fælles krav værktøj</a><strong class="badge badge-small ml-3">Beta</strong>
-                </div>
+            <div class="solution-heading d-flex align-items-center">
+                <a href="/kom-i-gang/krav/" title="Luk værktøjet og gå tilbage til krav">Fælles Krav-værktøj</a><strong class="badge badge-small ml-3">Beta</strong>
             </div>
             <div class="additional-info">
                 <p><strong class="authority-name">Digitaliseringsstyrelsen</strong></p>
-                <p class="d-print-none"><button type="button" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
+                <p class="d-print-none"><button type="button" data-module="modal" data-target="modal-contact" class="function-link"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
             </div>
         </div>
     </div>
-
     <div class="overlay"></div>
-
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
-            <h2 class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close"
+                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
-
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
             <p class="mb-2"><strong class="authority-name">Digitaliseringsstyrelsen</strong></p>
             <p class="d-print-none"><button type="button" data-module="modal" data-target="modal-contact" class="function-link d-inline-block"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#card-text"></use></svg>Kontakt</button></p>
         </div>
     </div>
 </header>
 
-<div class="container d-flex justify-content-end mb-5 flex-wrap">
-    <a href="javascript:void(0)" class="function-link mt-4 close-tool"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</a>
-    <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" target="_blank" class="function-link mt-4 ml-4"><svg class="icon-svg " focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>Feedback</a>
-</div>
-
-  <main class="page-container container pt-4 pt-lg-0" id="main-content">
-    
-    <div class="alert alert-error mt-0 mb-8 d-none" id="error-summary" role="alert">
-      <div class="alert-body">
-        <p class="alert-heading">Der er problemer</p>
-        <ul class="alert-text nobullet-list">
+    <div class="page-container container pt-0">
+        <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-0" aria-label="Om værktøjet">
+            <li>
+                <button class="function-link link-right close-tool"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</button>
+            </li>
+            <li>
+                <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" target="_blank" class="function-link"><svg class="icon-svg mt-1" focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>Feedback</a>
+            </li>
         </ul>
-      </div>
-    </div>
-    <div id="error-container" class="d-none">
+
+        <main class="pt-4" id="main-content">
+            
+            <div role="alert">
+                <nav aria-labelledby="error-summary-title" class="mt-0 mb-8 d-none" id="error-summary">
+                    <div class="alert alert-error mt-0 mb-8" data-module="error-summary">
+                        <div class="alert-body">
+                            <h2 class="alert-heading" id="error-summary-title">Der er problemer</h2>
+                            <ul class="alert-text nobullet-list"></ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="error-container" class="d-none">
 <h1>Fælles aftalte krav som din løsning skal efterleve</h1>
 <div class="alert alert-error">
     <div class="alert-body">
@@ -288,74 +294,74 @@
 <div id="result-container" class="d-none">
     <h1>Fælles aftalte krav som din løsning skal efterleve</h1>
     <h2 class="d-none h1" id="print-title" data-print="false"></h2>
-    <div class=" w-percent-md-70 mb-6 mt-6" id="resultat">
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">
-                1. Tidlig brugerinddragelse <span class="d-print-none">(<a href="https://arkitektur.digst.dk/01-tidlig-brugerinddragelse-faelles-aftalt" title="Læs om kravet i en ny fane: 1. Tidlig brugerinddragelse" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+    <ol class="unstyled-list w-percent-lg-80 w-percent-xl-70 mb-6 mt-6" id="resultat">
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">
+                1. Tidlig brugerinddragelse <span class="d-print-none">(<a href="https://arkitektur.digst.dk/01-tidlig-brugerinddragelse-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">2. Sprog <span class="d-print-none">(<a href="https://arkitektur.digst.dk/02-sprog-faelles-aftalt" title="Læs om kravet i en ny fane: 2. Sprog" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">2. Sprog <span class="d-print-none">(<a href="https://arkitektur.digst.dk/02-sprog-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">3. Konventioner for flow og funktionalitet <span class="d-print-none">(<a href="https://arkitektur.digst.dk/03-konventioner-flow-og-funktionalitet-faelles-aftalt" title="Læs om kravet i en ny fane: 3. Konventioner for flow og funktionalitet" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">3. Konventioner for flow og funktionalitet <span class="d-print-none">(<a href="https://arkitektur.digst.dk/03-konventioner-flow-og-funktionalitet-faelles-aftalt" title="Læs om kravet i en ny fane: 3. Konventioner for flow og funktionalitet" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">4. Feltvalidering <span class="d-print-none">(<a href="https://arkitektur.digst.dk/04-feltvalidering-faelles-aftalt" title="Læs om kravet i en ny fane: 4. Feltvalidering" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">4. Feltvalidering <span class="d-print-none">(<a href="https://arkitektur.digst.dk/04-feltvalidering-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">5. Personalisering <span class="d-print-none">(<a href="https://arkitektur.digst.dk/05-personalisering-faelles-aftalt" title="Læs om kravet i en ny fane: 5. Personalisering" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">5. Personalisering <span class="d-print-none">(<a href="https://arkitektur.digst.dk/05-personalisering-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">6. Understøttelse af styresystemer og browsere <span class="d-print-none">(<a href="https://arkitektur.digst.dk/06-understoettelse-af-styresystemer-og-browsere-faelles-aftalt" title="Læs om kravet i en ny fane: 6. Understøttelse af styresystemer og browsere" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">6. Understøttelse af styresystemer og browsere <span class="d-print-none">(<a href="https://arkitektur.digst.dk/06-understoettelse-af-styresystemer-og-browsere-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">7. Understøttelse af skærmstørrelser <span class="d-print-none">(<a href="https://arkitektur.digst.dk/07-understoettelse-af-skaermstoerrelser-faelles-aftalt" title="Læs om kravet i en ny fane: 7. Understøttelse af skærmstørrelser" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">7. Understøttelse af skærmstørrelser <span class="d-print-none">(<a href="https://arkitektur.digst.dk/07-understoettelse-af-skaermstoerrelser-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">8. Bestå den fællesoffentlige brugertest <span class="d-print-none">(<a href="https://arkitektur.digst.dk/08-bestaa-den-faellesoffentlige-brugertest-faelles-aftalt" title="Læs om kravet i en ny fane: 8. Bestå den fællesoffentlige brugertest" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">8. Bestå den fællesoffentlige brugertest <span class="d-print-none">(<a href="https://arkitektur.digst.dk/08-bestaa-den-faellesoffentlige-brugertest-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">9. Indsamling af viden om brugernes anvendelse af digitale løsninger <span class="d-print-none">(<a href="https://arkitektur.digst.dk/09-indsamling-af-viden-om-brugernes-anvendelse-af-digitale-loesninger-faelles-aftalt" title="Læs om kravet i en ny fane: 9. Indsamling af viden om brugernes anvendelse af digitale løsninger" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">9. Indsamling af viden om brugernes anvendelse af digitale løsninger <span class="d-print-none">(<a href="https://arkitektur.digst.dk/09-indsamling-af-viden-om-brugernes-anvendelse-af-digitale-loesninger-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">10. Anvendelse af infrastrukturkomponenter og andre komponenter <span class="d-print-none">(<a href="https://arkitektur.digst.dk/10-anvendelse-af-infrastrukturkomponenter-og-andre-komponenter-faelles-aftalt" title="Læs om kravet i en ny fane: 10. Anvendelse af infrastrukturkomponenter og andre komponenter" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">10. Anvendelse af infrastrukturkomponenter og andre komponenter <span class="d-print-none">(<a href="https://arkitektur.digst.dk/10-anvendelse-af-infrastrukturkomponenter-og-andre-komponenter-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">11. Genbrug af datakilder <span class="d-print-none">(<a href="https://arkitektur.digst.dk/11-genbrug-af-datakilder-faelles-aftalt" title="Læs om kravet i en ny fane: 11. Genbrug af datakilder" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">11. Genbrug af datakilder <span class="d-print-none">(<a href="https://arkitektur.digst.dk/11-genbrug-af-datakilder-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">12. Efterlevelse af aftalte arkitekturstandarder <span class="d-print-none">(<a href="https://arkitektur.digst.dk/12-efterlevelse-af-aftalte-arkitekturstandarder-faelles-aftalt" title="Læs om kravet i en ny fane: 12. Efterlevelse af aftalte arkitekturstandarder" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">12. Efterlevelse af aftalte arkitekturstandarder <span class="d-print-none">(<a href="https://arkitektur.digst.dk/12-efterlevelse-af-aftalte-arkitekturstandarder-faelles-aftalt" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-        <div class="row no-gutters row-bordered py-3">
-            <div class="col-12 col-md-10">13. Krav til løsninger, der skal på borger.dk og Virk <span class="d-print-none">(<a href="https://arkitektur.digst.dk/13-krav-til-loesninger-der-skal-paa-borgerdk-og-virk" title="Læs om kravet i en ny fane: 13. Krav til løsninger, der skal på borger.dk og Virk" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+        <li class="row no-gutters row-bordered py-3">
+            <div class="col-12 col-sm-10">13. Krav til løsninger, der skal på borger.dk og Virk <span class="d-print-none">(<a href="https://arkitektur.digst.dk/13-krav-til-loesninger-der-skal-paa-borgerdk-og-virk" target="_blank" class="icon-link">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span>
             </div>
-            <div class="col-12 col-md-2 align-text-right"><span class="badge badge-small"></span></div>
-        </div>
-    </div>
+            <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
+        </li>
+    </ol>
     <p class="mb-0 form-hint">Vær opmærksom på at der også er en række krav fra eksterne kilder:</p>
     <ul class="mt-0 form-hint">
         <li>Forvaltningsloven <span class="d-print-none">(<a href="https://arkitektur.digst.dk/forvaltningsloven-eksterne-kilder" class="icon-link" target="_blank" aria-span="Læs mere om eksterne krav i forhold til forvaltningsloven">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
@@ -364,13 +370,56 @@
         <li>Tilkobling til dansk eID-Gateway <span class="d-print-none">(<a href="https://arkitektur.digst.dk/tilkobling-til-dansk-eid-gateway-eksterne-kilder" class="icon-link" target="_blank" aria-span="Læs mere om eksterne krav i forhold til tilkobling til dansk eID-Gateway">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
         <li>Webtilgængelighed <span class="d-print-none">(<a href="https://arkitektur.digst.dk/webtilgaengelighed-eksterne-kilder" class="icon-link" target="_blank" aria-span="Læs mere om eksterne krav omkring webtilgængelighed">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
     </ul>
-    
     <button class="button button-tertiary d-print-none mt-5" data-module="modal" data-target="modal-print">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#print"></use></svg>
         Print resultat
     </button>
-    
     <h2 class="h3">Dine svar</h2>
+    <div class="table--responsive-scroll">
+        <table class="table structured-list table-sm-responsive-headers table--compact w-percent-100 w-percent-lg-70" id="summary">
+            <tbody>
+                <tr id="Q100" class="d-none">
+                    <th scope="row">Skal din løsning anvendes af virksomheder?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/anvendes-af-virksomheder/#radio-yes">Redigér</a></td>
+                </tr>
+                <tr id="Q200" class="d-none">
+                    <th scope="row">Skal din løsning anvendes af borgere?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/anvendes-af-borgere/#radio-yes">Redigér</a></td>
+                </tr>
+                <tr id="Q300" class="d-none">
+                    <th scope="row">Er løsningen obligatorisk at anvende for borgerne?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/obligatorisk-for-borgere/#radio-yes">Redigér</a></td>
+                </tr>
+                <tr id="Q400" class="d-none">
+                    <th scope="row">Har løsningen flere end 1000 besøgende om året?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/besoegende-om-aaret/#radio-yes">Redigér</a></td>
+                </tr>
+                <tr id="Q500" class="d-none">
+                    <th scope="row">Har en eller flere lignende løsninger bestået den fællesoffentlige brugertest?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/en-eller-flere-loesninger-brugertest/#radio-yes">Redigér</a></td>
+                </tr>
+                <tr id="Q600" class="d-none">
+                    <th scope="row">Har samme løsning allerede bestået den fællesoffentlige brugertest?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/bestaaet-faellesoffentlige-brugertest/#radio-yes">Redigér</a></td>
+                </tr>
+                <tr id="Q700" class="d-none">
+                    <th scope="row">Er der mere end 20.000 transaktioner per år på det pågældende løsningsområde?</th>
+                    <td class="value"></td>
+                    <td class="d-print-none align-text-md-right"><a href="/krav-vaerktoej/transaktioner-per-aar/#radio-yes">Redigér</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
     <table class="table table--borderless table--compact w-percent-100 w-percent-lg-70" id="summary">
         <thead class="sr-only">
             <tr>
@@ -417,48 +466,14 @@
             </tr>
         </tbody>
     </table>
-    
     <div><button class="button button-secondary d-print-none mt-9" id="start-over">Start krav-værktøjet forfra</button></div>
     <div><button class="button button-primary d-print-none mt-9" id="close-tool">Luk krav-værktøjet</button></div>
 </div>
 
-<div class="fds-modal d-print-none" id="modal-print" aria-hidden="true" role="dialog" aria-modal="true" aria-spanledby="modal-print-title">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title" id="modal-print-title">
-                    Hvad er navnet på din løsning?
-            </h2>
-            <button class="modal-close button button-unstyled" aria-span="Luk" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
-        </div>
-        <div class="modal-body">
-                <div class="alert alert-error d-none" id="modal-print-error-summary" role="alert">
-                    <div class="alert-body">
-                        <p class="alert-heading">Hov, der er problemer</p>
-                        <ul class="alert-text nobullet-list">
-                            <li><a class="function-link" href="#solution-name-input">Indtast løsningens navn</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <span class="form-span sr-only" for="solution-name-input" id="form-span-solution-name">
-                        Løsningens navn
-                    </span>
-                     <span class="form-error-message d-none" id="solution-name-error">
-                            Indtast løsningens navn
-                        </span>
-                    <input class="form-input" required="" id="solution-name-input" value="" name="solution-name-input" type="text" />
-                </div>
-        </div>
-        <div class="modal-footer">
-                <button class="button button-primary" id="print-result-solution" aria-span="Fx bekræft handling">Print resultat</button>
-            <button class="button button-secondary" data-modal-close="">Luk</button>
-        </div>
+        </main>
     </div>
-</div>
-
-  </main>
-
-  <footer class="d-print-none">
+    
+    <footer class="d-print-none">
     <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
     <span class="sr-only">Til toppen af siden</span>
@@ -477,32 +492,55 @@
         </div>
     </div>
 </footer>
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-     aria-modal="true" aria-labelledby="modal-contact-title">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title" id="modal-contact-title">
-                    Kontakt
-            </h2>
-            <button class="modal-close button button-unstyled"
-                    aria-label="Luk"
-                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
-        </div>
-        <div class="modal-body">
-            <p>Du er meget velkommen til at kontakte os, hvis du har forslag eller spørgsmål til den fællesoffentlige digitale arkitektur eller hjemmesiden.</p>
-            <p>Du kan kontakte sekretariatet og redaktionen ved at skrive til <a href="mailto:arkitektur@digst.dk" class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#email"></use></svg>arkitektur@digst.dk</a>.</p>
-        </div>
-
-        <div class="modal-footer">
-            <button
-                class="button button-secondary"
-                data-modal-close>Luk</button>
+<div class="fds-modal-container">
+    <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-contact-title">Kontakt</h2>
+                <button class="modal-close function-link" data-modal-close>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Du er meget velkommen til at kontakte os, hvis du har forslag eller spørgsmål til den fællesoffentlige digitale arkitektur eller hjemmesiden.</p>
+                <p>Du kan kontakte sekretariatet og redaktionen ved at skrive til <a href="mailto:arkitektur@digst.dk" class="function-link"><svg class="icon-svg "  focusable="false" aria-hidden="true" ><use xlink:href="#email"></use></svg>arkitektur@digst.dk</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>Luk</button>
+            </div>
         </div>
     </div>
 </div>
 
-  <script src="/assets/js/requirements-tool.js"></script>
-  <script src="/assets/js/styleguide.js"></script>
-  <script src="/assets/js/theme.js"></script>
-  </body>
+
+    
+    <div class="fds-modal-container">
+        <div class="fds-modal" id="modal-print" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-print-title">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal-print-title">Hvad er navnet på din løsning?</h2>
+                    <button class="modal-close function-link" data-modal-close>
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label" for="solution-name-input">Løsningens navn</label>
+                        <input type="text" id="solution-name-input" name="solution-name-input" class="form-input">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="button button-primary" id="print-result-solution">Print resultat</button>
+                    <button class="button button-secondary" data-modal-close>Luk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/assets/js/requirements-tool.js"></script>
+    <script src="/assets/js/styleguide.js"></script>
+    <script src="/assets/js/theme.js"></script>
+</body>
+
 </html>

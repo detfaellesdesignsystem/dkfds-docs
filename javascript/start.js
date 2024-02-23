@@ -109,7 +109,7 @@ $(document).ready(function () {
         e.preventDefault();
         localStorage.removeItem("reqTool");
 
-        window.location.href =  $(this).attr('href');
+        window.open("/krav-vaerktoej/anvendes-af-virksomheder/", "_blank");
     });
 
     $('.layout-demo form').submit(function(e){

@@ -10,7 +10,7 @@ layout: styleguide
 category: Kom_i_gang_category
 subcategory: Kom i gang
 title: "Tjekliste"
-lead: "Gå igennem designtjeklisten for at sikre, at dit design følger Det Fælles Designsystem."
+lead: "Gå igennem tjeklisten for at sikre, at din løsning følger Det Fælles Designsystem."
 anchor: false
 description: "En tjekliste der kan hjælpe dig med at leve op til FDS retningslinjer."
 tags:

@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
+
+<head>
     {% include head.html %}
-  </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-  {% include code/components/base-svg.html %}
-  {% include requirements-tool/header.html backlink=page.backlink %}
+</head>
 
-  <main class="page-container container pt-4 pt-lg-0" id="main-content">
-    {% if page.backlink == true %}
-    <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
-    {% endif %}
-    <div class="alert alert-error mt-0 mb-8 d-none" id="error-summary" role="alert">
-      <div class="alert-body">
-        <p class="alert-heading">Der er problemer</p>
-        <ul class="alert-text nobullet-list">
+<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+    <div id="top"></div>
+    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    {% include code/components/base-svg.html %}
+    {% include requirements-tool/header.html backlink=page.backlink %}
+
+    <div class="page-container container pt-0">
+        <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-0" aria-label="Om værktøjet">
+            <li>
+                <button class="function-link link-right close-tool"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk værktøjet</button>
+            </li>
+            <li>
+                <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/108" target="_blank" class="function-link"><svg class="icon-svg mt-1" focusable="false" aria-hidden="true"><use xlink:href="#feedback"></use></svg>Feedback</a>
+            </li>
         </ul>
-      </div>
-    </div>
-    {{ content }}
-  </main>
 
-  {% include requirements-tool/footer.html %}
-  <script src="{{ site.baseurl }}/assets/js/requirements-tool.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-  </body>
+        <main class="pt-4" id="main-content">
+            {% if page.backlink == true %}
+            <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
+            {% endif %}
+            <div role="alert">
+                <nav aria-labelledby="error-summary-title" class="mt-0 mb-8 d-none" id="error-summary">
+                    <div class="alert alert-error mt-0 mb-8" data-module="error-summary">
+                        <div class="alert-body">
+                            <h2 class="alert-heading" id="error-summary-title">Der er problemer</h2>
+                            <ul class="alert-text nobullet-list"></ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            {{ content }}
+        </main>
+    </div>
+    
+    {% include requirements-tool/footer.html %}
+    {% if page.url contains "/krav-vaerktoej/resultat/" %}
+    <div class="fds-modal-container">
+        <div class="fds-modal" id="modal-print" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-print-title">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal-print-title">Hvad er navnet på din løsning?</h2>
+                    <button class="modal-close function-link" data-modal-close>
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label" for="solution-name-input">Løsningens navn</label>
+                        <input type="text" id="solution-name-input" name="solution-name-input" class="form-input">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="button button-primary" id="print-result-solution">Print resultat</button>
+                    <button class="button button-secondary" data-modal-close>Luk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <script src="{{ site.baseurl }}/assets/js/requirements-tool.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+</body>
+
 </html>

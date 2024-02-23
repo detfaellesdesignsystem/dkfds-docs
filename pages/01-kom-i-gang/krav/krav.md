@@ -27,6 +27,8 @@ De Fælles krav til gode brugeroplevelser indeholder fællesoffentlige krav og a
 
 Kravene for den enkelte løsning afhænger af en række parametre. Brug Fælles krav-værktøjet til at identificere, hvilke krav der gælder for netop din løsning.
 
-{% include links/internal-link.html linktext="Start fælles krav værktøj" %}
+<button class="button button-secondary mt-4 mb-4" id="start-reqtool">
+    Start Fælles krav-værktøj <svg class="icon-svg mr-0 ml-2 mb-1" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>
+</button>
 
 {% include links/external-link.html linktext="Læs de fælles krav til gode brugeroplevelser" %}
