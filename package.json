@@ -57,7 +57,6 @@
     "jshint": "^2.13.4",
     "mini-css-extract-plugin": "^2.5.3",
     "node-notifier": "^10.0.1",
-    "node-sass": "^6.0.0",
     "postcss-csso": "^5.0.0",
     "postcss-discard-comments": "^5.0.3",
     "postcss-loader": "^6.2.1",
