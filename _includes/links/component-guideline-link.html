@@ -178,6 +178,7 @@
         <a href="/komponenter/modal/guidelines/#kraever-handling">{{ include.linktext }}</a>
 
     {%- when "overflow menu", 
+             "overflowmenu",
              "overflowmenuen", 
              "overflow menu komponent", 
              "overflow menuer" -%}
@@ -210,6 +211,9 @@
              "sprogvælgeren" -%}
         <a href="/komponenter/sprogvaelger/guidelines/">{{ include.linktext }}</a>
 
+    {%- when "tooltips på sprogvælgeren" -%}
+   <a href="/komponenter/sprogvaelger/guidelines/#sprogvaelger-med-tooltip">{{ include.linktext }}</a>
+
     {%- when "søgefelt", 
              "søgefelter" -%}
         <a href="/komponenter/search/guidelines/">{{ include.linktext }}</a>
@@ -232,7 +236,8 @@
     {%- when "søgning i tabeller" -%}
         <a href="/komponenter/tables/guidelines/#soegning-i-tabeller">{{ include.linktext }}</a>
         
-    {%- when "sortering i tabeller" -%}
+    {%- when "sortering i tabeller",
+             "tabeller med sortering" -%}
         <a href="/komponenter/tables/guidelines/#sortering-i-tabeller">{{ include.linktext }}</a>
 
     {%- when "tags" -%}

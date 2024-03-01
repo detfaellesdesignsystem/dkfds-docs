@@ -25,6 +25,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- comment -%} -------- Kom i gang -------- {%- endcomment -%}
 
+    {%- when "kom i gang" -%}
+        <a href="/kom-i-gang/"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "implementering og kode" -%}
         <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
 
@@ -87,7 +90,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- comment -%} -------- Styleguide -------- {%- endcomment -%}
 
-    {%- when "følg designet" -%}
+    {%- when "følg designet",
+             "styleguide" -%}
         <a href="/design/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "farver" -%}
