@@ -232,11 +232,11 @@
         
         <h1 id="example-heading-tooltip-radiobuttons" class="sr-only">Tooltip radiobuttons</h1>
         <div class="form-group">
-    <fieldset role="radiogroup">
+    <fieldset aria-labelledby="radio-tooltip-legend">
 
-        <legend class="form-label">Radioknapper
+        <legend class="form-label"><span id="radio-tooltip-legend">Radioknapper</span>
 
-            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above" data-trigger="click">
+            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="radiogroup-tooltip" data-position="above" data-trigger="click">
                 <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
                     <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
             </span>

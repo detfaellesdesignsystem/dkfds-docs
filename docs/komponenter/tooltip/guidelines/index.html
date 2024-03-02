@@ -1732,8 +1732,8 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above"
-    data-trigger="click">
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+    data-tooltip-id="helpicon-example" data-position="above" data-trigger="click">
     <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
 </div>
@@ -1839,7 +1839,7 @@
         
         <p>Den her tekst har et tooltip, der er placeret over hjælpeikonet
 
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above" data-trigger="click">
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-above" data-position="above" data-trigger="click">
         <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
     </span>
@@ -1847,7 +1847,7 @@
 
 <p>Her er tooltip placeret under hjælpeikonet
 
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="below" data-trigger="click">
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-below" data-position="below" data-trigger="click">
         <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
     </span>
@@ -1873,11 +1873,11 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group">
-    <fieldset role="radiogroup">
+    <fieldset aria-labelledby="radio-tooltip-legend">
 
-        <legend class="form-label">Radioknapper
+        <legend class="form-label"><span id="radio-tooltip-legend">Radioknapper</span>
 
-            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above" data-trigger="click">
+            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="radiogroup-tooltip" data-position="above" data-trigger="click">
                 <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
                     <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
             </span>
@@ -1924,12 +1924,42 @@
         <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox" value="1" checked="" />
         <label class="form-label" for="checkbox1">Udfyldt tjekboks</label>
 
-        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above" data-trigger="click">
+        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="checkbox-tooltip" data-position="above" data-trigger="click">
             <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
                 <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
         </span>
     </div>
 
+</div>
+        
+    </div>
+    
+</div>
+
+<h4>Inputfelt med tooltip</h4>
+
+<div class="component-preview  component-preview-tooltip-textinput">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tooltip-textinput/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-textinput</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tooltip for inputfelt</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <label class="form-label" for="input-text">Inputfelt</label>
+
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text-tooltipbutton" data-position="above" data-trigger="click">
+        <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+    </span>
+
+    <input type="text" id="input-text" name="input-text" class="form-input" required="" />
 </div>
         
     </div>

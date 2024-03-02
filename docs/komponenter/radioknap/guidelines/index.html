@@ -1733,9 +1733,9 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group">
-    <fieldset role="radiogroup">
+    <fieldset aria-labelledby="radio-example-legend">
 
-        <legend class="form-label">Radioknapper</legend>
+        <legend class="form-label" id="radio-example-legend">Radioknapper</legend>
 
         <div class="form-group-radio">
             <input type="radio" id="radiogroup-option1" name="radio-example"
@@ -1873,9 +1873,9 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group form-error">
-    <fieldset role="radiogroup" aria-describedby="radiogroup-error-error " aria-invalid="true">
+    <fieldset aria-labelledby="sagen-omhandler-legend" aria-describedby="radiogroup-error-error " aria-invalid="true">
 
-        <legend class="form-label">Sagen handler om</legend>
+        <legend class="form-label" id="sagen-omhandler-legend">Sagen handler om</legend>
 
         <span class="form-error-message" id="radiogroup-error-error">
             <span class="sr-only">Fejl: </span>Vælg hvad sagen handler om
@@ -1924,9 +1924,10 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group">
-    <fieldset role="radiogroup">
+    <fieldset aria-labelledby="radio-helptext-legend">
 
-        <legend class="form-label">Radioknapper med hjælpetekst</legend>
+        <legend class="form-label" id="radio-helptext-legend">Radioknapper med hjælpetekst
+        </legend>
 
         <div class="form-group-radio">
             <input type="radio" id="radiogroup-helptext-option1" name="radio-helptext" class="form-radio" value="v1" aria-describedby="radiogroup-helptext-option1-hint" />
@@ -1965,9 +1966,9 @@
     <div class="component-example px-4 py-4">
         
         <div class="form-group js-radio-toggle-group">
-    <fieldset role="radiogroup">
+    <fieldset aria-labelledby="radio-collapse-legend">
 
-        <legend class="form-label">Vælg en radioknap</legend>
+        <legend class="form-label" id="radio-collapse-legend">Vælg en radioknap</legend>
 
         <div class="form-group-radio">
             <input type="radio" id="radiogroup-collapse-option1" name="radio-collapse" class="form-radio" value="1" checked="" data-controls="#radiogroup-collapse-option1-collapse" data-expanded="true" />

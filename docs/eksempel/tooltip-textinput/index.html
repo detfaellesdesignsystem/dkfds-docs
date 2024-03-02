@@ -18,8 +18,8 @@
 ================================================== -->
   
 
-<title>Tooltip-position | Det Fælles Designsystem</title>
-<meta property="og:title" content="Tooltip-position | Det Fælles Designsystem">
+<title>Tooltip-textinput | Det Fælles Designsystem</title>
+<meta property="og:title" content="Tooltip-textinput | Det Fælles Designsystem">
 
 
 
@@ -66,7 +66,7 @@
 
 </head>
 
-<body class="page-tooltip-position layout-example-contained">
+<body class="page-tooltip-textinput layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -230,22 +230,17 @@
     </header>
     <main class="container page-container" id="main-content">
         
-        <h1 id="example-heading-tooltip-position" class="sr-only">Tooltip position</h1>
-        <p>Den her tekst har et tooltip, der er placeret over hjælpeikonet
+        <h1 id="example-heading-tooltip-textinput" class="sr-only">Tooltip textinput</h1>
+        <div class="form-group">
+    <label class="form-label" for="input-text">Inputfelt</label>
 
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-above" data-position="above" data-trigger="click">
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text-tooltipbutton" data-position="above" data-trigger="click">
         <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
     </span>
-</p>
 
-<p>Her er tooltip placeret under hjælpeikonet
-
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-below" data-position="below" data-trigger="click">
-        <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-    </span>
-</p>
+    <input type="text" id="input-text" name="input-text" class="form-input" required="" />
+</div>
 
         
     </main>

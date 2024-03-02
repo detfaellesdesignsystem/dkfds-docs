@@ -63,6 +63,10 @@ Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres
 
 {% include code/preview-box.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" %}
 
+#### Inputfelt med tooltip
+
+{% include code/preview-box.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" %}
+
 {:#varianter}
 ## Varianter
 

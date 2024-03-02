@@ -1732,8 +1732,8 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-position="above"
-    data-trigger="click">
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+    data-tooltip-id="helpicon-example" data-position="above" data-trigger="click">
     <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
 </div>
@@ -1791,8 +1791,8 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot; data-position=&quot;above&quot;
-    data-trigger=&quot;click&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
+    data-tooltip-id=&quot;helpicon-example&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;
     &lt;button class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
         &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre></figure>
@@ -1802,7 +1802,7 @@
     
 </div>
 
-<p>Bemærk at <code>tooltip-wrapper</code> kan kodes med enten <code>div</code> eller <code>span</code> afhængigt af konteksten. Elementet der åbner tooltippet skal altid have klassen <code>tooltip-target</code>.</p>
+<p>Bemærk at <code>tooltip-wrapper</code> kan kodes med enten <code>div</code> eller <code>span</code> afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen <code>tooltip-target</code>.</p>
 
 <h3>Javascript</h3>
 <p>Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
@@ -1839,6 +1839,113 @@
 </table>
 
 <h2>Varianter</h2>
+
+<h3>Radioknap med tooltip</h3>
+
+<div class="component-preview component-preview-code  component-code-tooltip-radiobuttons">
+    
+    
+    <div class="sr-only">Eksempel på tooltip for radioknapper</div>
+    
+    <div class="component-code">
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset aria-labelledby=&quot;radio-tooltip-legend&quot;&gt;
+
+        &lt;legend class=&quot;form-label&quot;&gt;&lt;span id=&quot;radio-tooltip-legend&quot;&gt;Radioknapper&lt;/span&gt;
+
+            &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
+                data-tooltip-id=&quot;radiogroup-tooltip&quot; data-position=&quot;above&quot;
+                data-trigger=&quot;click&quot;&gt;
+                &lt;button class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;
+                    aria-label=&quot;Læs mere&quot;&gt;
+                    &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
+            &lt;/span&gt;
+        &lt;/legend&gt;
+
+        &lt;div class=&quot;form-group-radio&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-option1&quot; name=&quot;radio-tooltip&quot;
+                class=&quot;form-radio&quot; value=&quot;v1&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-option1&quot;&gt;Valg 1&lt;/label&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-radio&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-option2&quot; name=&quot;radio-tooltip&quot;
+                class=&quot;form-radio&quot; value=&quot;v2&quot; aria-describedby=&quot;radiogroup-option2-hint&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-option2&quot;&gt;Valg 2&lt;/label&gt;
+            &lt;span class=&quot;form-hint&quot; id=&quot;radiogroup-option2-hint&quot;&gt;Hjælpetekst kan stå
+                her&lt;/span&gt;
+        &lt;/div&gt;
+
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<h3>Tjekboks med tooltip</h3>
+
+<div class="component-preview component-preview-code  component-code-tooltip-checkbox">
+    
+    
+    <div class="sr-only">Eksempel på tooltip for tjekboks</div>
+    
+    <div class="component-code">
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+
+    &lt;div class=&quot;form-group-checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; name=&quot;checkbox1&quot; class=&quot;form-checkbox&quot; value=&quot;1&quot;
+            checked&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;checkbox1&quot;&gt;Udfyldt tjekboks&lt;/label&gt;
+
+        &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
+            data-tooltip-id=&quot;checkbox-tooltip&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;
+            &lt;button class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;
+                aria-label=&quot;Læs mere&quot;&gt;
+                &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<h3>Inputfelt med tooltip</h3>
+
+<div class="component-preview component-preview-code  component-code-tooltip-textinput">
+    
+    
+    <div class="sr-only">Eksempel på tooltip for inputfelt</div>
+    
+    <div class="component-code">
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;input-text&quot;&gt;Inputfelt&lt;/label&gt;
+
+    &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
+        data-tooltip-id=&quot;input-text-tooltipbutton&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;
+        &lt;button class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;
+            aria-label=&quot;Læs mere&quot;&gt;
+            &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
+    &lt;/span&gt;
+
+    &lt;input type=&quot;text&quot; id=&quot;input-text&quot; name=&quot;input-text&quot; class=&quot;form-input&quot; required&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
 
 <h3>Ikon med hover-tooltip</h3>
 

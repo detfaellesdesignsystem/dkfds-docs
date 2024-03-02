@@ -30,7 +30,7 @@ tags:
 
 {% include code/syntax.html component="tooltip-helpicon" copybutton=true %}
 
-Bemærk at `tooltip-wrapper` kan kodes med enten `div` eller `span` afhængigt af konteksten. Elementet der åbner tooltippet skal altid have klassen `tooltip-target`.
+Bemærk at `tooltip-wrapper` kan kodes med enten `div` eller `span` afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen `tooltip-target`.
 
 ### Javascript
 Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -50,6 +50,18 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 | data-trigger    | Skal sættes til enten `click` eller `hover`. Anvend kun `click`, hvis elementet ikke har andre funktioner end at åbne tooltippet. |
 
 ## Varianter
+
+### Radioknap med tooltip
+
+{% include code/syntax.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" %}
+
+### Tjekboks med tooltip
+
+{% include code/syntax.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" %}
+
+### Inputfelt med tooltip
+
+{% include code/syntax.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" %}
 
 ### Ikon med hover-tooltip
 
