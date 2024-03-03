@@ -192,12 +192,13 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Designsystemet anvender nu webpack i stedet for gulp til at bygge filer.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret `devDependencies` og `scripts` i {% include links/external-link.html linktext="package.json" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Oprydning i polyfills til ikke-supporterede browsere. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv sikre, at man anvender den nødvendige {% include links/external-link.html linktext="transpiling" %} og {% include links/external-link.html linktext="polyfills" %}. Se eventuelt {% include links/internal-link.html linktext="browserunderstøttelse" %}.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet {% include links/external-link.html linktext="@import" %} i alle SASS-filer med {% include links/external-link.html linktext="@use" %} og {% include links/external-link.html linktext="@forward" %}. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet. Den genererede CSS-fil er ikke påvirket af dette.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet {% include links/external-link.html linktext="@import" %} i alle SASS-filer med {% include links/external-link.html linktext="@use" %} og {% include links/external-link.html linktext="@forward" %}. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet.
 {% include links/github-link.html number="199" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Flere SASS-variable er blevet slettet, flyttet eller erstattet, da de gjorde det muligt at tilpasse styling, det ikke var tiltænkt, man skulle ændre.
 - Erstattet 'normalize.css' med styling i '_base.scss'.
 - Flere {% include links/external-link.html linktext="macroer" %} har fået mindre rettelser og tilføjelser, så der blandt andet kan sættes klasser og attributter.
 - Mindre koderettelser som følge af et linter-tjek.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Oprydning i forældede klasser, heriblandt `icon-svg-large`, `collapse-transition-collapse` og `collapse-transition-expand`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
@@ -214,7 +215,6 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.
 - Rettet ikonet `file-upload`, der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg-large`.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet ikonet 'Log af (åben hængelås)' (`lock-open`). Ikonet `lock` skal i stedet bruges til 'log af'.
 - Rettet fejl, hvor fokusmarkeringen kunne mangle delvist i {% include links/component-guideline-link.html linktext="overflowmenuen" %}.
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="overflowmenuen" %} kunne gå ud over skærmens kanter, når den åbnede.
