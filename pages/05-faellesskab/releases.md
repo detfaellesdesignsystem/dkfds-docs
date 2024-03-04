@@ -226,6 +226,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> For {% include links/component-guideline-link.html linktext="tabeller med sortering" %} er hele headeren gjort klikbar.
 - Mindre stylingrettelser til {% include links/component-guideline-link.html linktext="footer" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %} og {% include links/component-guideline-link.html linktext="sprogvælger" %}.
 - {% include links/component-guideline-link.html linktext="Fejlopsummering" %} anvender nu en `nav` som udgangspunkt.
+- Ændret font-smoothing for flere elementer.
 
 
 {:#version-9-1-0 .mb-0}
