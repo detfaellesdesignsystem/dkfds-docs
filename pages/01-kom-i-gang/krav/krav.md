@@ -9,8 +9,7 @@ category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Krav
 anchor: false
-description: Hvad er krav og hvad er anbefaling? Få et indblik i, hvilke krav din
-  løsning skal efterleve.
+description: Læs kravet om anvendelse af Det Fælles Designsystem til selvbetjeningsløsninger.
 tags: 
 - krav
 - Virk

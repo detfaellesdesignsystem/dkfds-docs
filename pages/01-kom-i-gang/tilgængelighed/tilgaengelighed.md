@@ -12,8 +12,7 @@ lead: Webtilgængelighed handler om de principper og teknikker, du skal følge, 
   at alle kan anvende dine websteder og indholdet derpå, herunder også brugere med
   funktionsnedsættelser eller handicap.
 anchor: false
-description: Hjælp og værktøjer til at efterleve tilgængelighedskrav WCAG 2.1 level
-  AA.
+description: Hjælp og værktøjer til at efterleve tilgængelighedskrav efter den europæiske standard EN 301 549 v.3.2.1.
 tags:
 - tilgængelighed
 - accessibility

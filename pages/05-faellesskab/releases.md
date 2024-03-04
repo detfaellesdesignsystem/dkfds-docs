@@ -170,7 +170,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
 </div>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tooltips er ændret grundlæggende i opførsel, anvendelse og implementering.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tooltips er ændret grundlæggende i opførsel, design, anvendelse og implementering.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tooltips kunne sætte sig forkert, hvis brugeren zoomede eller ændrede browservinduets størrelse.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tooltips ikke kunne tilgås med tastatur.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret måden tooltips anvendes til tekst grundet tilgængelighedsproblemer.
