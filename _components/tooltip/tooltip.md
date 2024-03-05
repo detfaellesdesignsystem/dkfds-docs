@@ -76,11 +76,11 @@ Tooltips og hover-tooltips minder meget om hinanden. Hvor tooltip vises ved klik
 
 Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 
-#### Ikon med hover-tooltip
+#### Klikbart ikon med hover-tooltip
 
 Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.
 
-{% include code/preview-box.html component="tooltip-icon" title="Eksempel på tooltip på et ikon" %}
+{% include code/preview-box.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" %}
 
 #### Knap med hover-tooltip
 

@@ -1947,19 +1947,20 @@
     
 </div>
 
-<h3>Ikon med hover-tooltip</h3>
+<h3>Klikbart ikon med hover-tooltip</h3>
 
-<div class="component-preview component-preview-code  component-code-tooltip-icon">
+<div class="component-preview component-preview-code  component-code-tooltip-iconbutton">
     
     
-    <div class="sr-only">Eksempel på tooltip på et ikon</div>
+    <div class="sr-only">Eksempel på tooltip på et klikbart ikon</div>
     
     <div class="component-code">
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Fil i pdf-format&quot; data-tooltip-id=&quot;tooltip-icon&quot;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Slet&quot; data-tooltip-id=&quot;tooltip-ikonknap&quot;
     data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;
-    &lt;svg class=&quot;icon-svg tooltip-target&quot; focusable=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;use xlink:href=&quot;#file-pdf&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+    &lt;button class=&quot;button button-unstyled tooltip-target&quot; aria-labelledby=&quot;tooltip-ikonknap&quot;&gt;
+        &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre></figure>
 
 

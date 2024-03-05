@@ -63,9 +63,9 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 
 {% include code/syntax.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" %}
 
-### Ikon med hover-tooltip
+### Klikbart ikon med hover-tooltip
 
-{% include code/syntax.html component="tooltip-icon" title="Eksempel på tooltip på et ikon" %}
+{% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" %}
 
 ### Knap med hover-tooltip
 

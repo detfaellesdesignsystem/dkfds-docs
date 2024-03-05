@@ -1,0 +1,22 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
+
+{% set target = 
+    button({
+        "variant": "unstyled",
+        "icon": "trash-can",
+        "attributes": "aria-labelledby=\"tooltip-ikonknap\"",
+        "classes": { 
+            "button": "tooltip-target", 
+            "icon": "mr-0 mt-0" 
+        }
+    }) 
+%}
+{{ 
+    tooltip({
+        "text": "Slet",
+        "target": target,
+        "trueTooltip": true,
+        "id": "tooltip-ikonknap"
+    }) 
+}}

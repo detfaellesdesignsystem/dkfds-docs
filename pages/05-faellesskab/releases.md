@@ -198,7 +198,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Erstattet 'normalize.css' med styling i '_base.scss'.
 - Flere {% include links/external-link.html linktext="macroer" %} har fået mindre rettelser og tilføjelser, så der blandt andet kan sættes klasser og attributter.
 - Mindre koderettelser som følge af et linter-tjek.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Oprydning i forældede klasser, heriblandt `icon-svg-large`, `collapse-transition-collapse` og `collapse-transition-expand`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Oprydning i forældede klasser, heriblandt `icon-svg-large`, `collapse-transition-collapse` og `collapse-transition-expand` og flere ubrugte klasser for åbn/luk alle-knappen i accordions.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
