@@ -19,18 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         new DKFDS.Navigation().init(); // Only other relevant JavaScript on back-to-top pages is navigation
     }
-    else if (bodytag.classList.contains('layout-test-example')) {
-        let pathname = window.location.pathname;
-        if (pathname.includes("test-modal-javascript") || pathname.includes("test-tooltip-javascript")) {
-            new DKFDS.Modal(document.getElementById('test-warning')).init();
-            new DKFDS.Navigation().init();
-        }
-        else {
-            DKFDS.init();
-        }
-    }
-    // If this is not a back-to-top example page, init all JavaScript
-    else {
+    // If this is not a back-to-top example page or a test page, init all JavaScript
+    else if (!bodytag.classList.contains('layout-test-example')) {
         DKFDS.init();
     }
 
