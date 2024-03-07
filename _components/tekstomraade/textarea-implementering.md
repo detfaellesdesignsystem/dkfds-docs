@@ -39,7 +39,7 @@ Sæt højden på et tekstområde ved brug af `rows` attributten. Sæt højden, s
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
-{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med tekstområde." %}
+Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med tekstområde." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.
 

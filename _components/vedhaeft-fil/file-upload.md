@@ -39,7 +39,7 @@ Tjek filformatet før overførslen går i gang, så brugeren ikke spilder tid.
 
 #### Fejlmeddelelse
 
-{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
+Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og deres formuleringer.
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 

@@ -27,7 +27,7 @@ tags:
 - "footerlink"
 ---
 
-Se også vores {% include links/component-guideline-link.html linktext="Skip-link" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
+Se også {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
 
 {% include code/preview-box.html component="links" link="false" %}
 

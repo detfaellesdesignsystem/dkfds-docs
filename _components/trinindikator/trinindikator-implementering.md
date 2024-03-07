@@ -33,7 +33,7 @@ tags:
 
 {% include code/syntax.html component="tringuide-overflowmenu" copybutton=true %}
 
-Hvis man gør brug af en trinindikator i forbindelse med en {% include links/component-guideline-link.html linktext="overflow menu komponent" %}, så se venligst {% include links/component-code-link.html linktext="dokumentationen for implementering for overflow menu" %}.
+Hvis man gør brug af en trinindikator i forbindelse med en {% include links/component-guideline-link.html linktext="overflow menu" %}, så se dokumentationen for {% include links/component-code-link.html linktext="implementering for overflow menu" %}.
 
 #### Aktivt og overstået trin i trinindikator
 

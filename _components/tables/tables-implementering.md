@@ -155,7 +155,7 @@ Strukturerede lister kan bruges i forbindelse med {% include links/internal-link
 
 Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers/titel, anden kolonne til indhold/information og tredje kolonne til eventuel redigering af rækkens indhold. Husk at markere `scope="row"` for hver tabelheader.
 
-Listen kan gøres {% include links/component-code-link.html linktext="responsiv" %} ved at tilføje klassen med det ønskede breakpoint. 
+Listen kan gøres responsiv ved at tilføje klassen med det ønskede breakpoint. Se {% include links/component-code-link.html linktext="responsive klasser for tabeller" %}.
 
 {:#strukturerede-lister-edit}
 #### Struktureret liste med redigér

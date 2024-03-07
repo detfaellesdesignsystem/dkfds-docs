@@ -60,7 +60,7 @@ Undgå at have flere åbne modaler på siden - det giver en dårligere brugeropl
 
 Modalen skal have en meningsfuld overskrift, der klart relaterer sig til konteksten.
 
-Knapper i modalen skal være tydelige, meningsfulde og følge Det Fælles Designsystems øvrige {% include links/component-guideline-link.html linktext="anbefalinger for knapper" %}.
+Knapper i modalen skal være tydelige og meningsfulde. Læs mere om {% include links/component-guideline-link.html linktext="knapper" %}.
 
 Vær sikker på at modalen kun akkurat passer til sit indhold og ikke dækker baggrunden (selve løsningen) fuldstændigt. Det er nødvendigt, at brugeren forstår, at de ikke har skiftet kontekst.
 

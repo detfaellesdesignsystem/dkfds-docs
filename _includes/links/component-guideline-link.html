@@ -33,8 +33,7 @@
     {%- when "cards" -%}
         <a href="/komponenter/cards/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "cards med samme højde", 
-             "positionere action knapper i cards" -%}
+    {%- when "cards med samme højde" -%}
         <a href="/komponenter/cards/guidelines/#samme-hoejde">{{ include.linktext }}</a>
 
     {%- when "cookiemeddelelse", 
@@ -48,8 +47,7 @@
 
     {%- when "datovælger", 
              "datovælgeren", 
-             "datovælgerens", 
-             "ny komponent: datovælger" -%}
+             "datovælgerens" -%}
         <a href="/komponenter/datovaelger/guidelines/">{{ include.linktext }}</a>
 
     {%- when "datoformatet" -%}
@@ -66,10 +64,7 @@
     {%- when "faneblade" -%}
         <a href="/komponenter/faneblade/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "fejlmeddelelser", 
-             "se eksempel på brug af fejlmeddelelse", 
-             "læs mere om korrekt brug af fejlmeddelelser og deres formuleringer.", 
-             "læs mere om korrekt brug af fejlmeddelelser" -%}
+    {%- when "fejlmeddelelser" -%}
         <a href="/komponenter/fejlmeddelelser/guidelines/">{{ include.linktext }}</a>
 
     {%- when "fejlbeskeder i accordions" -%}
@@ -82,7 +77,6 @@
         <a href="/komponenter/fejlopsummering/guidelines/">{{ include.linktext }}</a>
 
     {%- when "footer", 
-             "brug et af de anviste layouts", 
              "se footer komponenten" -%}
         <a href="/komponenter/footer/guidelines/">{{ include.linktext }}</a>
 
@@ -97,10 +91,7 @@
              "funktions link" -%}
         <a href="/komponenter/funktionslink/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "skip-link", 
-             "skip-links", 
-             "gå til sidens indhold", 
-             "skip link" -%}
+    {%- when "gå til sidens indhold" -%}
         <a href="/komponenter/skip-link/guidelines/">{{ include.linktext }}</a>
 
     {%- when "header", 
@@ -108,16 +99,13 @@
              "headeren", 
              "headerens", 
              "headerkomponentens side", 
-             "header komponent", 
-             "mobilmenu og headermenuen", 
-             "navbar indeholdende funktionslink og overflow menu i header" -%}
+             "header komponent" -%}
         <a href="/komponenter/header/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "inputfelter", 
-             "se eksempel på brug af feltoverskrift (label)" -%}
+    {%- when "inputfelter" -%}
         <a href="/komponenter/inputfelter/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "se eksempel på brug af hjælpetekst", 
+    {%- when "hjælpetekst", 
              "hjælpetekster" -%}
         <a href="/komponenter/inputfelter/guidelines/#hjaelpetekst">{{ include.linktext }}</a>
 
@@ -129,8 +117,7 @@
              "deaktiverede inputfelter" -%}
         <a href="/komponenter/inputfelter/guidelines/#deaktiveret">{{ include.linktext }}</a>
 
-    {%- when "se eksempler på frivillige og obligatoriske felter", 
-             "retningslinjer for obligatoriske og frivillige felter" -%}
+    {%- when "retningslinjer for obligatoriske og frivillige felter" -%}
         <a href="/komponenter/inputfelter/guidelines/#obligatoriske-og-frivillige-felter">{{ include.linktext }}</a>
 
     {%- when "prefix og suffix på felter" -%}
@@ -142,8 +129,7 @@
     {%- when "feltbredde i tekstfelter" -%}
         <a href="/komponenter/inputfelter/guidelines/#feltbredde">{{ include.linktext }}</a>
 
-    {%- when "knapper", 
-             "anbefalinger for knapper" -%}
+    {%- when "knapper" -%}
         <a href="/komponenter/knapper/guidelines/">{{ include.linktext }}</a>
 
     {%- when "retningslinjer" -%}
@@ -161,9 +147,6 @@
     {%- when "tilbage knap" -%}
         <a href="/komponenter/knapper/guidelines/#tilbage-knap">{{ include.linktext }}</a>
 
-    {%- when "lille knap" -%}
-        <a href="/komponenter/knapper/guidelines/#lille-knap">{{ include.linktext }}</a>
-
     {%- when "spinner", 
              "loading spinner", 
              "spinner komponenten" -%}
@@ -180,12 +163,10 @@
     {%- when "overflow menu", 
              "overflowmenu",
              "overflowmenuen", 
-             "overflow menu komponent", 
              "overflow menuer" -%}
         <a href="/komponenter/overflowmenu/guidelines/">{{ include.linktext }}</a>
 
     {%- when "sortering", 
-             "overflow menu til brug ved sortering", 
              "sortering med overflow menu" -%}
         <a href="/komponenter/overflowmenu/guidelines/#sortering">{{ include.linktext }}</a>
 
@@ -196,31 +177,24 @@
              "radioknapper" -%}
         <a href="/komponenter/radioknap/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "radioknap med skjult indhold", 
-             "skjul/vis med radioknapper" -%}
+    {%- when "radioknap med skjult indhold" -%}
         <a href="/komponenter/radioknap/guidelines/#skjult-indhold-collapse">{{ include.linktext }}</a>
 
-    {%-  when "store radioknapper", 
-              "hjælpetekst på radioknap" -%}
+    {%-  when "hjælpetekst på radioknap" -%}
         <a href="/komponenter/radioknap/guidelines/#hjaelpetekst">{{ include.linktext }}</a>
-
-    {%- when "retningslinjer for radioknap med skjult indhold" -%}
-        <a href="/komponenter/radioknap/guidelines/#collapse-retningslinjer">{{ include.linktext }}</a>
 
     {%- when "sprogvælger", 
              "sprogvælgeren" -%}
         <a href="/komponenter/sprogvaelger/guidelines/">{{ include.linktext }}</a>
 
     {%- when "tooltips på sprogvælgeren" -%}
-   <a href="/komponenter/sprogvaelger/guidelines/#sprogvaelger-med-tooltip">{{ include.linktext }}</a>
+        <a href="/komponenter/sprogvaelger/guidelines/#sprogvaelger-med-tooltip">{{ include.linktext }}</a>
 
     {%- when "søgefelt", 
              "søgefelter" -%}
         <a href="/komponenter/search/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "tabeller", 
-             "se eksempel på brug af tabeloverskrift (th)", 
-             "sorteringsikoner i tabeller" -%}
+    {%- when "tabeller" -%}
         <a href="/komponenter/tables/guidelines/">{{ include.linktext }}</a>
 
     {%- when "en responsiv tabel" -%}
@@ -254,16 +228,13 @@
         <a href="/komponenter/tilbage-til-top/guidelines/">{{ include.linktext }}</a>
 
     {%- when "tjekboks", 
-             "tjekbokse", 
-             "store tjekbokse" -%}
+             "tjekbokse" -%}
         <a href="/komponenter/tjekboks/guidelines/">{{ include.linktext }}</a>
 
-    {%- when "tjekbokse med skjult indhold", 
-             "tjekboks med collapse funktion" -%}
+    {%- when "tjekbokse med skjult indhold" -%}
         <a href="/komponenter/tjekboks/guidelines/#skjult-indhold-collapse">{{ include.linktext }}</a>
 
-    {%- when "notifikation (toast) komponent", 
-             "toastbesked", 
+    {%- when "toastbesked", 
              "toastbeskeders", 
              "toastbeskederne" -%}
         <a href="/komponenter/toastbesked/guidelines/">{{ include.linktext }}</a>
@@ -296,8 +267,7 @@
 
     {%- when "venstremenu", 
              "venstremenuen", 
-             "venstremenu-komponenten", 
-             "tilpasset alignment på venstremenu" -%}
+             "venstremenu-komponenten" -%}
         <a href="/komponenter/venstremenu/guidelines/">{{ include.linktext }}</a>
 
     {%- when "venstremenu med ekstra information" -%}

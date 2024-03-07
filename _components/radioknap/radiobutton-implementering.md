@@ -59,8 +59,6 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 ### Skjult indhold (Collapse)
 {% include code/syntax.html component="radio-collapse" link=true copybutton=true %}
 
-{% include links/component-guideline-link.html linktext="Retningslinjer for radioknap med skjult indhold" %}
-
 For at initialisere collapse funktionaliteten på en radioknap skal `input[type=radio]` have følgende:
 
 - Klassen `'js-radio-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 

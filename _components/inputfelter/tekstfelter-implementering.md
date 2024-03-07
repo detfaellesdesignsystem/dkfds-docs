@@ -86,7 +86,7 @@ Brug `autocomplete` på inputfelter til fx navn (`autocomplete='name'`), postnum
 
 {% include code/syntax.html component="text-input-optional" link=true copybutton=true %}
 
-Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede. {% include links/component-guideline-link.html linktext="Se eksempler på frivillige og obligatoriske felter" %}.
+Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede.
 
 {:#read-only}
 ### Read-only

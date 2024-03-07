@@ -117,7 +117,7 @@ Nogle gange er det nødvendigt at forklare eller eksemplificere en feltoverskrif
 
 Brug hjælpetekst til at give uddybende forklaring (fx til at understøtte feltoverskrifter).
 
-{% include links/component-guideline-link.html linktext="Se eksempel på brug af hjælpetekst" %}
+Se eksempel på brug af {% include links/component-guideline-link.html linktext="hjælpetekst" %}
 
 #### Fejlmeddelelse
 
@@ -130,7 +130,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 - Fejltekst er som udgangspunkt rød. I formularer skal du indikere fejltekst med en rød streg. Andre steder end i formularer skal du indikere fejltekst med et fejlikon.
 
 {:.nobullet-list}
-- {% include links/component-guideline-link.html linktext="Se eksempel på brug af fejlmeddelelse" %}
+- Se retningslinjer for {% include links/component-guideline-link.html linktext="fejlmeddelelser" %}
 - {% include links/external-link.html linktext="Ti gode råd vedrørende fejlmeddelelser i formularer" %}
 
 

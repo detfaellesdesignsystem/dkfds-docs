@@ -101,7 +101,7 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 {:#klikbart-ikon}
 ### Klikbart ikon
 
-Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med {% include links/component-guideline-link.html linktext="sorteringsikoner i tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
+Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med sorteringsikoner i {% include links/component-guideline-link.html linktext="tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
  
 Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-guideline-link.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
 

@@ -55,7 +55,7 @@ Generelt er det ikke en god løsning at skjule indhold for at gøre siden mere s
 {:#med-fejl}
 #### Fejlmeddelelse
 
-{% include links/component-guideline-link.html linktext="Læs mere om korrekt brug af fejlmeddelelser og deres formuleringer." %}
+Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og deres formuleringer.
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
