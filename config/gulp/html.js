@@ -92,6 +92,7 @@ var testfiles = [
     "test-header-language-switcher",
     "test-header-long-sentences",
     "test-header-long-strings",
+    "test-header-mobile-helptext",
     "test-input-fields-1",
     "test-input-fields-2",
     "test-input-fields-3",

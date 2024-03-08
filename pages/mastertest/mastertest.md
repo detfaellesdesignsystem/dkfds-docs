@@ -115,6 +115,7 @@ title: Test
 {% include test/preview-test.html filename="test-header-language-switcher" description="Sprogvælger" %}
 {% include test/preview-test.html filename="test-header-long-sentences" description="Header med mange ord" %}
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
+{% include test/preview-test.html filename="test-header-mobile-helptext" description="Hjælpetekst i mobilemenuen" %}
 
 {:.h3}
 ## Inputfelter

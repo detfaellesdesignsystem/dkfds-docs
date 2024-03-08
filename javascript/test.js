@@ -72,12 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 break;
             
             default:
-                console.log(`No additional JavaScript found for page with heading "${heading}".`);
                 DKFDS.init();
             }
     }
     else {
-        console.log('No h1 found');
+        DKFDS.init();
     }
 });
 
