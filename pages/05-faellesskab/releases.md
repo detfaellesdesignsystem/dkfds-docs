@@ -184,6 +184,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu, så de viser aria-label for nav-elementet.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilpasset roller, opmærkning og aria-attributter.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tekst eller ikon kunne ryge ud over komponentens kanter.
+- Tilføjet understregning til klikbare trin for at adskille dem fra låste trin.
+{% include links/github-link.html number="204" afternumber=" på GitHub" %}
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Vedligehold</h3>
