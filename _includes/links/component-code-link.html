@@ -1,3 +1,10 @@
+{%- comment -%}
+--------
+EXAMPLE: HOW TO USE IN MARKDOWN FILES
+{% include links/component-code-link.html linktext="Tekst der skal blive til link" %}
+--------
+{%- endcomment -%}
+
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}

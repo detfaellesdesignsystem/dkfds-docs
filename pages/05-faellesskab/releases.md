@@ -229,6 +229,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Mindre stylingrettelser til {% include links/component-guideline-link.html linktext="footer" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %} og {% include links/component-guideline-link.html linktext="sprogvælger" %}.
 - {% include links/component-guideline-link.html linktext="Fejlopsummering" %} anvender nu en `nav` som udgangspunkt.
 - Ændret font-smoothing for flere elementer.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="tilbage til toppen" %}-knappen nogen gange var vist, selvom den skulle være skjult.
 
 
 {:#version-9-1-0 .mb-0}
