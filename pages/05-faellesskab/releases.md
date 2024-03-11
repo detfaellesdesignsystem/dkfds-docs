@@ -214,8 +214,10 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) {% include links/component-guideline-link.html linktext="radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %}. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} og tjekbokse skal opdateres.
+- Rettet fejl, hvor udseendet af inaktive radioknapper og tjekbokse kunne variere.
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.
+- Fjernet forældet JavaScript fra accordions.
 - Rettet ikonet `file-upload`, der kunne smide en fejl i konsollen, når man anvendte visse browser extensions.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet ikonet 'Log af (åben hængelås)' (`lock-open`). Ikonet `lock` skal i stedet bruges til 'log af'.
 - Rettet fejl, hvor fokusmarkeringen kunne mangle delvist i {% include links/component-guideline-link.html linktext="overflowmenuen" %}.

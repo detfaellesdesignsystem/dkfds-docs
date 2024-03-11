@@ -257,46 +257,36 @@
     <div class="row">
         <div class="col-12">
 
-            <ul class="accordion">
-                <li>
-                    <h3>
-                        <button class="accordion-button" aria-expanded="false" aria-controls="accordionID1">
-                            <span class="accordion-title">Accordion 1</span>
-                        </button>
-                    </h3>
-                    <div id="accordionID1" aria-hidden="true" class="accordion-content">
-                        <p>This is some accordion content.</p>
-                    </div>
-                </li>
-                <li>
-                    <h3>
-                        <button class="accordion-button" aria-expanded="false" aria-controls="accordionID2">
-                            <span class="accordion-title">Accordion 2</span>
-                        </button>
-                    </h3>
-                    <div id="accordionID2" aria-hidden="true" class="accordion-content">
-                        <p>This is some accordion content.</p>
-                    </div>
-                </li>
-            </ul>
+            <div>
+                <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn
+                    alle</button>
+                <ul class="accordion">
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="accordionID1">
+                                <span class="accordion-title">Accordion 1</span>
+                            </button>
+                        </h3>
+                        <div id="accordionID1" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="false" aria-controls="accordionID2">
+                                <span class="accordion-title">Accordion 2</span>
+                            </button>
+                        </h3>
+                        <div id="accordionID2" aria-hidden="true" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </div>
 </main>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let accordion1 = document.getElementsByClassName("accordion")[0]
-            .getElementsByClassName("accordion-button")[0];
-        accordion1.addEventListener("fds.accordion.open", function() {
-            console.log("Accordion 1 was opened");
-        });
-        accordion1.addEventListener("fds.accordion.close", function() {
-            console.log("Accordion 1 was closed");
-        });
-    });
-</script>
-
 
     <footer class="test-footer d-flex align-items-center">
     <div class="container">
@@ -317,7 +307,7 @@
                 <a class="function-link mr-4" href="/eksempel/test-accordion-long-text/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-alerts-1/">Næste</a>
+                <a class="function-link" href="/eksempel/test-accordion-language/">Næste</a>
                 
             </div>
         </div>

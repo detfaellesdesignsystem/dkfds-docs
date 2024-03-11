@@ -7,6 +7,44 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (heading) {
 
+            case 'JavaScript i accordions':
+
+                initTest();
+                try {
+                    new DKFDS.Accordion();
+                } catch (err) {
+                    console.error(err.message);
+                }
+                try {
+                    let accordion = new DKFDS.Accordion(document.querySelector('h1'));
+                    accordion.init();
+                } catch (err) {
+                    console.error(err.message);
+                }
+                let accordiongroup = new DKFDS.Accordion(document.querySelector('ul.accordion'));
+                accordiongroup.init();
+                accordiongroup.toggleButton(document.getElementsByClassName('accordion-button')[1], true);
+                console.log('Accordion 2 was opened by JavaScript');
+
+                let accordion1 = document.querySelector(".accordion-button");
+                accordion1.addEventListener("fds.accordion.open", function() {
+                    console.log("Accordion 1 was opened");
+                });
+                accordion1.addEventListener("fds.accordion.close", function() {
+                    console.log("Accordion 1 was closed");
+                });
+                console.log('Eventlistener set up for accordion 1');
+                break;
+
+            case 'Skift sprog i accordions':
+
+                initTest();
+                new DKFDS.Accordion(document.querySelector('ul.accordion'), {
+                    "open_all": "Open all", 
+                    "close_all": "Close all" 
+                  }).init();
+                break;
+
             case 'JavaScript for modaler':
 
                 initTest();
@@ -83,4 +121,5 @@ document.addEventListener("DOMContentLoaded", function() {
 function initTest () {
     new DKFDS.Modal(document.getElementById('test-warning')).init();
     new DKFDS.Navigation().init();
+    console.log('Page JavaScript detected');
 }

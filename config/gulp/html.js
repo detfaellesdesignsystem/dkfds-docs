@@ -38,6 +38,7 @@ var testfiles = [
     "test-accordion-open-close-button",
     "test-accordion-long-text",
     "test-accordion-javascript",
+    "test-accordion-language",
     "test-alerts-1",
     "test-alerts-2",
     "test-alerts-3",

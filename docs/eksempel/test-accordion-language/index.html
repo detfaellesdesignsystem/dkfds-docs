@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Test-alerts-1 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-alerts-1 | Det Fælles Designsystem">
+<title>Test-accordion-language | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-accordion-language | Det Fælles Designsystem">
 
 
 
@@ -251,13 +251,37 @@
     <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <p>Simpel alert</p>
+            <h1 class="h2 mt-0 mb-9">Skift sprog i accordions</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
 
-            <div class="alert alert-info">
-                <div class="alert-body">
-                    <h3 class="alert-heading">Dette er titlen</h3>
-                    <p class="alert-text">Dette er indholdet i beskeden</p>
-                </div>
+            <div>
+                <button class="accordion-bulk-button" data-accordion-bulk-expand="true">Åbn
+                    alle</button>
+                <ul class="accordion">
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="true" aria-controls="accordion-group1">
+                                <span class="accordion-title">Foldet ud</span>
+                            </button>
+                        </h3>
+                        <div id="accordion-group1" aria-hidden="false" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>
+                            <button class="accordion-button" aria-expanded="true" aria-controls="accordion-group2">
+                                <span class="accordion-title">Foldet ud</span>
+                            </button>
+                        </h3>
+                        <div id="accordion-group2" aria-hidden="false" class="accordion-content">
+                            <p>This is some accordion content.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
         </div>
@@ -280,10 +304,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-accordion-language/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-accordion-javascript/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-alerts-2/">Næste</a>
+                <a class="function-link" href="/eksempel/test-alerts-1/">Næste</a>
                 
             </div>
         </div>

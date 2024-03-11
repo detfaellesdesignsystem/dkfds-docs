@@ -29,6 +29,7 @@ title: Test
 {% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
 {% include test/preview-test.html filename="test-accordion-javascript" description="JavaScript i accordions" %}
+{% include test/preview-test.html filename="test-accordion-language" description="Skift sprog i accordions" %}
 
 {:.h3}
 ## Beskeder (Alerts)
