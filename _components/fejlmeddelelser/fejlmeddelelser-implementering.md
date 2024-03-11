@@ -40,8 +40,7 @@ tags:
 
 {% include code/syntax.html component="error-message" copybutton=true %}
 
-For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.”
-Teksten er skjult i et `<span>` element med klassen `sr-only`.
+For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.” Teksten er skjult i et `<span>` element med klassen `sr-only`. Attributten `aria-describedby` anvendes i stedet for `aria-errormessage` grundet bedre support for førstnævnte.
 
 Fejlmeddelelsen vises også i {% include links/component-code-link.html linktext="fejlopsummeringen" %} øverst på siden.
 
@@ -104,3 +103,10 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 ### Vedhæft fil
 
 {% include code/syntax.html component="error-message-file-input" link=true copybutton=true %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="aria-errormessage attribute (aria) - Accessibility Support" %}
+- {% include links/external-link.html linktext="aria-describedby attribute (aria) - Accessibility Support" %}

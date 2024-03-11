@@ -7,7 +7,7 @@ backlink: true
 <h1 id="page-legend">Skal din løsning anvendes af borgere?</h1>
 <form method="post" action="." id="form-Q200">
     <div class="form-group">
-        <fieldset role="radiogroup" aria-labelledby="page-legend">
+        <fieldset aria-labelledby="page-legend">
             <span class="form-error-message d-none" id="error-message"></span>
             <div class="form-group-radio">
                 <input type="radio" id="radio-yes" name="radio" class="form-radio" value="1">

@@ -120,7 +120,7 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
 
 <form id="cookieForm" method="post" action="/">
     <div class="form-group">
-        <fieldset role="radiogroup">
+        <fieldset>
             <legend class="form-label">Må vi indsamle statistik om din brug af Det Fælles Designsystem (FDS)?</legend>
             <div class="form-group-radio">
                 <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio radio-large">

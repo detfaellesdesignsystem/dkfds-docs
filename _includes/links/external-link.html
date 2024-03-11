@@ -480,6 +480,12 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "tilgængelighedserklæring" -%}
         <a href="https://www.was.digst.dk/designsystem-dk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "aria-errormessage attribute (aria) - accessibility support" -%}
+        <a href="https://a11ysupport.io/tech/aria/aria-errormessage_attribute" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aria-describedby attribute (aria) - accessibility support" -%}
+        <a href="https://a11ysupport.io/tech/aria/aria-describedby_attribute" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- else -%}
         {{ include.linktext }}
         
