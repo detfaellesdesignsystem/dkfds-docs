@@ -161,6 +161,7 @@ title: Test
 {:.h3}
 ## Radioknap (Radio button)
 
+{% include test/preview-test.html filename="test-radiobuttons-error" description="Radioknap 1" %}
 {% include test/preview-test.html filename="test-radiobuttons-1" description="Radioknap 1" %}
 {% include test/preview-test.html filename="test-radiobuttons-2" description="Radioknap 2" %}
 {% include test/preview-test.html filename="test-radiobuttons-3" description="Radioknap 3" %}

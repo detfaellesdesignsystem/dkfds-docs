@@ -114,6 +114,7 @@ var testfiles = [
     "test-overflow-menus-1",
     "test-overflow-menus-2",
     "test-pagination-basics",
+    "test-radiobuttons-error",
     "test-radiobuttons-1",
     "test-radiobuttons-2",
     "test-radiobuttons-3",

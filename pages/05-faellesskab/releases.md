@@ -188,6 +188,13 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="204" afternumber=" på GitHub" %}
 
 <div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %}</h3>
+</div>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) radioknapper og tjekbokse. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} og tjekbokse skal opdateres.
+- Rettet fejl, hvor udseendet af inaktive radioknapper og tjekbokse kunne variere.
+- Rettet fejl, hvor skjult indhold i enten radioknapper eller tjekbokse kunne få forkert styling ved fejl. 
+
+<div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Vedligehold</h3>
 </div>
 Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler ud fra designsystemets filer, hvis man har ændret i de oprindelige filer eller anvender designsystemet på en anden måde end specificeret på dokumentationssiden.
@@ -213,8 +220,6 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet muligheden for at vælge mellem store (32 pixels) og små (20 pixels) {% include links/component-guideline-link.html linktext="radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %}. Den nye standardstørrelse er 24 pixels. Bemærk at HTML'en for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} og tjekbokse skal opdateres.
-- Rettet fejl, hvor udseendet af inaktive radioknapper og tjekbokse kunne variere.
 - Ændret accordions `border-radius` (hjørner) fra 3px til 4px.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.
 - Fjernet forældet JavaScript fra accordions.

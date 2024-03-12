@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Test-pagination-basics | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-pagination-basics | Det Fælles Designsystem">
+<title>Test-radiobuttons-error | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-radiobuttons-error | Det Fælles Designsystem">
 
 
 
@@ -248,40 +248,279 @@
         </div>
     </div>
 </div>
-    <nav class="pagination" aria-label="Paginering" id="pagination-ID">
-    <a href="#" class="button button-arrow button-first"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span class="sr-only">Første side</span></a>
-    <a href="#" class="button button-arrow button-previous" aria-label="Forrige side">
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span class="pagination-nav-link">Forrige</span>
-    </a>
-    <span class="pagination-mobile">Side 8 af 12</span>
-    <ul class="pagination__items">
-        <li class="pagination-item pagination-number">
-            <a href="#" class="button button-secondary" aria-label="Side 1">1</a>
-        </li>
-        <li class="pagination-item pagination-overflow" role="presentation">
-            <span>...</span>
-        </li>
-        <li class="pagination-item pagination-number">
-            <a href="#" class="button button-secondary" aria-label="Side 7">7</a>
-        </li>
-        <li class="pagination-item pagination-number">
-            <a href="#" class="button current-page" aria-label="Side 8" aria-current="page">8</a>
-        </li>
-        <li class="pagination-item pagination-number">
-            <a href="#" class="button button-secondary" aria-label="Side 9">9</a>
-        </li>
-        <li class="pagination-item pagination-overflow" role="presentation">
-            <span>...</span>
-        </li>
-        <li class="pagination-item pagination-number">
-            <a href="#" class="button button-secondary" aria-label="Sidste side, side 12">12</a>
-        </li>
-    </ul>
-    <a href="#" class="button button-arrow button-next" aria-label="Næste side">
-        <span class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
-    </a>
-    <a href="#" class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span class="sr-only">Sidste side</span></a>
-</nav>
+    <main class="container page-container mb-9" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Radioknapper med fejl</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+
+            <div class="form-group form-error">
+                <fieldset aria-labelledby="radio-normal-legend" aria-describedby="radiogroup-normal-error " aria-invalid="true">
+
+                    <legend class="form-label" id="radio-normal-legend">Vælg en radioknap
+                    </legend>
+
+                    <span class="form-error-message" id="radiogroup-normal-error">
+                        <span class="sr-only">Fejl: </span>Vælg en mulighed
+                    </span>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-normal-option1" name="radio-normal" class="form-radio" value="1" />
+                        <label class="form-label" for="radiogroup-normal-option1">Radioknap
+                            1</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-normal-option2" name="radio-normal" class="form-radio" value="2" />
+                        <label class="form-label" for="radiogroup-normal-option2">Radioknap
+                            2</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-normal-option3" name="radio-normal" class="form-radio" value="3" />
+                        <label class="form-label" for="radiogroup-normal-option3">Radioknap
+                            3</label>
+
+                    </div>
+
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div class="form-group form-error js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-collapse-error-1-legend" aria-describedby="radiogroup-collapse-1-error " aria-invalid="true">
+
+                    <legend class="form-label" id="radio-collapse-error-1-legend">Vælg en
+                        radioknap</legend>
+
+                    <span class="form-error-message" id="radiogroup-collapse-1-error">
+                        <span class="sr-only">Fejl: </span>Vælg en mulighed
+                    </span>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-collapse-1-option1" name="radio-collapse-error-1" class="form-radio" value="1" checked="" data-controls="#radiogroup-collapse-1-option1-collapse" data-expanded="true" />
+                        <label class="form-label" for="radiogroup-collapse-1-option1">Radioknap viser indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup-collapse-1-option1-collapse" aria-hidden="false" class="radio-content">
+
+                        <div class="form-group">
+                            <label class="form-label" for="textinput1">Inputfelt med
+                                label</label>
+
+                            <input type="text" id="textinput1" name="text1" class="form-input" required="" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="options">Dropdown label
+                                (select)</label>
+
+                            <select class="form-select" name="options" id="options" required="">
+                                <option value="option1">Mulighed 1</option>
+                                <option value="option2">Mulighed 2</option>
+                                <option value="option3">Mulighed 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <fieldset aria-describedby="date-input-example-hint ">
+                                <legend class="form-label">
+                                    Indsendelsesfrist
+                                </legend>
+                                <span class="form-hint" id="date-input-example-hint">For
+                                    eksempel: 05 12 2018</span>
+
+                                <div class="date-group mt-3">
+
+                                    <div class="form-group form-group-day">
+                                        <label class="form-label" for="date-input-example-day">Dag</label>
+
+                                        <input type="number" id="date-input-example-day" name="deadline-day" class="form-input" required="" />
+                                    </div>
+
+                                    <div class="form-group form-group-month">
+                                        <label class="form-label" for="date-input-example-month">Måned</label>
+
+                                        <input type="number" id="date-input-example-month" name="deadline-month" class="form-input" required="" />
+                                    </div>
+
+                                    <div class="form-group form-group-year">
+                                        <label class="form-label" for="date-input-example-year">År</label>
+
+                                        <input type="number" id="date-input-example-year" name="deadline-year" class="form-input" required="" />
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="datepicker-example1">Dato for
+                                aftale</label>
+
+                            <div class="date-picker">
+                                <input type="text" id="datepicker-example1" name="appointment-date1" class="form-input" required="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="input-antal">Antal styk</label>
+
+                            <div class="form-input-wrapper form-input-wrapper--suffix">
+
+                                <input type="number" id="input-antal" name="input-antal" class="form-input input-char-8" value="56" required="" />
+                                <div class="form-input-suffix" aria-hidden="true">stk.</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="input-textarea">Tekstområde med
+                                label</label>
+
+                            <textarea class="form-input" id="input-textarea" name="input-textarea" rows="5" required=""></textarea>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-collapse-1-option2" name="radio-collapse-error-1" class="form-radio" value="2" data-controls="#radiogroup-collapse-1-option2-collapse" data-expanded="false" />
+                        <label class="form-label" for="radiogroup-collapse-1-option2">Radioknap viser andet
+                            indhold<span class="sr-only"> Udfyld informationer
+                                herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup-collapse-1-option2-collapse" aria-hidden="true" class="radio-content">
+
+                        <div class="form-group">
+                            <label class="form-label" for="textinput2">Inputfelt med anden
+                                label</label>
+
+                            <input type="text" id="textinput2" name="text2" class="form-input" required="" />
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div class="form-group js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-collapse-error-2-legend">
+
+                    <legend class="form-label" id="radio-collapse-error-2-legend">Vælg en
+                        radioknap</legend>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-collapse-2-option1" name="radio-collapse-error-2" class="form-radio" value="1" checked="" data-controls="#radiogroup-collapse-2-option1-collapse" data-expanded="true" />
+                        <label class="form-label" for="radiogroup-collapse-2-option1">Radioknap viser indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup-collapse-2-option1-collapse" aria-hidden="false" class="radio-content">
+
+                        <div class="form-group form-error">
+                            <label class="form-label" for="textinput3">Inputfelt med endnu en
+                                label</label>
+
+                            <span class="form-error-message" id="textinput3-error">
+                                <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                            </span>
+
+                            <input type="text" id="textinput3" name="text3" class="form-input" aria-invalid="true" aria-describedby="textinput3-error " required="" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-collapse-2-option2" name="radio-collapse-error-2" class="form-radio" value="2" data-controls="#radiogroup-collapse-2-option2-collapse" data-expanded="false" />
+                        <label class="form-label" for="radiogroup-collapse-2-option2">Radioknap viser andet
+                            indhold<span class="sr-only"> Udfyld informationer
+                                herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup-collapse-2-option2-collapse" aria-hidden="true" class="radio-content">
+
+                        <div class="form-group">
+                            <label class="form-label" for="textinput4">Inputfelt med
+                                label</label>
+
+                            <input type="text" id="textinput4" name="text4" class="form-input" required="" />
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div class="form-group form-error js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-collapse-error-3-legend" aria-describedby="radiogroup-collapse-3-error " aria-invalid="true">
+
+                    <legend class="form-label" id="radio-collapse-error-3-legend">Vælg en
+                        radioknap</legend>
+
+                    <span class="form-error-message" id="radiogroup-collapse-3-error">
+                        <span class="sr-only">Fejl: </span>Der skete en fejl
+                    </span>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-collapse-3-option1" name="radio-collapse-error-3" class="form-radio" value="1" checked="" data-controls="#radiogroup-collapse-3-option1-collapse" data-expanded="true" />
+                        <label class="form-label" for="radiogroup-collapse-3-option1">Radioknap viser indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup-collapse-3-option1-collapse" aria-hidden="false" class="radio-content">
+
+                        <div class="form-group form-error">
+                            <label class="form-label" for="textinput5">Inputfelt med endnu en
+                                label</label>
+
+                            <span class="form-error-message" id="textinput5-error">
+                                <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                            </span>
+
+                            <input type="text" id="textinput5" name="text5" class="form-input" aria-invalid="true" aria-describedby="textinput5-error " required="" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-collapse-3-option2" name="radio-collapse-error-3" class="form-radio" value="2" data-controls="#radiogroup-collapse-3-option2-collapse" data-expanded="false" />
+                        <label class="form-label" for="radiogroup-collapse-3-option2">Radioknap viser andet
+                            indhold<span class="sr-only"> Udfyld informationer
+                                herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup-collapse-3-option2-collapse" aria-hidden="true" class="radio-content">
+
+                        <div class="form-group">
+                            <label class="form-label" for="textinput6">Inputfelt med
+                                label</label>
+
+                            <input type="text" id="textinput6" name="text6" class="form-input" required="" />
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+</main>
 
     <footer class="test-footer d-flex align-items-center">
     <div class="container">
@@ -299,10 +538,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-overflow-menus-2/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-pagination-basics/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-radiobuttons-error/">Næste</a>
+                <a class="function-link" href="/eksempel/test-radiobuttons-1/">Næste</a>
                 
             </div>
         </div>
