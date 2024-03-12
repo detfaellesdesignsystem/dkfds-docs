@@ -65,8 +65,16 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 
 ### Klikbart ikon med hover-tooltip
 
+Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017). Vær ekstra omhyggelig i disse tilfælde med at holde tooltipteksten kort og præcis.
+
 {% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" %}
 
 ### Knap med hover-tooltip
 
 {% include code/syntax.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" %}
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="Heydon Pickering: Tooltips & Toggletips - Inclusive Components (2017)" %}
