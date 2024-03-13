@@ -1,0 +1,11 @@
+{% from "components/tooltip/tooltip.njk" import tooltip_text as tooltip_text %}
+
+{% set word = 
+    tooltip_text({
+        "tooltip": "Dette er et tooltip",
+        "id": "tooltip-text-example",
+        "phrase": "dolore magna"
+    })
+%}
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et {{ word -}} aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

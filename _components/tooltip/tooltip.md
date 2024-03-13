@@ -67,6 +67,12 @@ Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres
 
 {% include code/preview-box.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" %}
 
+#### Brødtekst med tooltip
+
+Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv de forklarede ord i teksten med fed. Brug denne form for tooltips i begrænset omfang, da det let virker forstyrrende.
+
+{% include code/preview-box.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" %}
+
 {:#varianter}
 ## Varianter
 

@@ -37,6 +37,8 @@ Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre b
 DKFDS.datePicker.on(document.body);
 {% endhighlight %}
 
+Bemærk: I visse frameworks kan ovenstående initialisering give problemer med at åbne kalenderen. Hvis du oplever dette problem, prøv da at anvende `DKFDS.datePicker.init(document.body)` i stedet for.
+
 {:#sprog}
 #### Sprog
 Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for datovælgeren, skal du selv give din oversættelse med inden komponenten initialiseres. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres. Bemærk, at ændring af sproget påvirker alle datovælgere på siden.

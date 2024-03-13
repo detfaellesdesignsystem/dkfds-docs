@@ -1,5 +1,6 @@
 {% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
 {% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
+{% from "components/tooltip/tooltip.njk" import tooltip_text as tooltip_text %}
 {% from "components/toggle/toggle.njk" import toggle as toggle %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/modal/modal.njk" import modal as modal %}
@@ -9,6 +10,14 @@
         "variant": "secondary",
         "text": "Luk",
         "attributes": "data-modal-close"
+    })
+%}
+
+{% set word = 
+    tooltip_text({
+        "tooltip": "Dette er et tooltip",
+        "id": "tooltip-text-example",
+        "phrase": "nogle ord"
     })
 %}
 
@@ -138,6 +147,11 @@
                     "id": "tooltip-modal"
                 }) 
             }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Dette er en paragraf, hvor der i teksten er behov for et tooltip. For at kunne teste at teksten ombrydes korrekt, er teksten lang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis {{ word -}} sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</p>
         </div>
     </div>
 </main>

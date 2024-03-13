@@ -1813,6 +1813,8 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.on(document.body);</code></pre></figure>
 
+<p>Bemærk: I visse frameworks kan ovenstående initialisering give problemer med at åbne kalenderen. Hvis du oplever dette problem, prøv da at anvende <code>DKFDS.datePicker.init(document.body)</code> i stedet for.</p>
+
 <h4 id="sprog">Sprog</h4>
 <p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for datovælgeren, skal du selv give din oversættelse med inden komponenten initialiseres. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres. Bemærk, at ændring af sproget påvirker alle datovælgere på siden.</p>
 

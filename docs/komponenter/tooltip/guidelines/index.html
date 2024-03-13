@@ -1733,8 +1733,8 @@
     <div class="component-example px-4 py-4">
         
         <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
-    data-tooltip-id="helpicon-example" data-position="above" data-trigger="click">
-    <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+    data-tooltip-id="helpicon-example" data-position="above" data-trigger="click"><button
+        class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
 </div>
         
@@ -1837,20 +1837,12 @@
     
     <div class="component-example px-4 py-4">
         
-        <p>Den her tekst har et tooltip, der er placeret over hjælpeikonet
-
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-above" data-position="above" data-trigger="click">
-        <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-    </span>
+        <p>Den her tekst har et tooltip, der er placeret over hjælpeikonet <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-above" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
 </p>
 
-<p>Her er tooltip placeret under hjælpeikonet
-
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-below" data-position="below" data-trigger="click">
-        <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-    </span>
+<p>Her er tooltip placeret under hjælpeikonet <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-below" data-position="below" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
 </p>
         
     </div>
@@ -1876,11 +1868,8 @@
     <fieldset aria-labelledby="radio-tooltip-legend">
 
         <legend class="form-label"><span id="radio-tooltip-legend">Radioknapper</span>
-
-            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="radiogroup-tooltip" data-position="above" data-trigger="click">
-                <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-            </span>
+            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="radiogroup-tooltip" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
         </legend>
 
         <div class="form-group-radio">
@@ -1924,10 +1913,8 @@
         <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox" value="1" checked="" />
         <label class="form-label" for="checkbox1">Udfyldt tjekboks</label>
 
-        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="checkbox-tooltip" data-position="above" data-trigger="click">
-            <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-        </span>
+        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="checkbox-tooltip" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
     </div>
 
 </div>
@@ -1953,14 +1940,38 @@
         
         <div class="form-group">
     <label class="form-label" for="input-text">Inputfelt</label>
-
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text-tooltipbutton" data-position="above" data-trigger="click">
-        <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-    </span>
+    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text-tooltipbutton" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
 
     <input type="text" id="input-text" name="input-text" class="form-input" required="" />
 </div>
+        
+    </div>
+    
+</div>
+
+<h4>Brødtekst med tooltip</h4>
+
+<p>Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv de forklarede ord i teksten med fed. Brug denne form for tooltips i begrænset omfang, da det let virker forstyrrende.</p>
+
+<div class="component-preview  component-preview-tooltip-text">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/tooltip-text/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-text</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tooltip i brødtekst</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et <strong>dolore magna</strong><span class="tooltip-wrapper in-text" data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-text-example" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Hvad betyder dolore magna">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.</p>
         
     </div>
     
@@ -1991,8 +2002,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tooltip-wrapper" data-tooltip="Slet" data-tooltip-id="tooltip-ikonknap" data-position="above" data-trigger="hover">
-    <button class="button button-unstyled tooltip-target tooltip-is-label">
+        <div class="tooltip-wrapper" data-tooltip="Slet" data-tooltip-id="tooltip-ikonknap" data-position="above" data-trigger="hover"><button class="button button-unstyled tooltip-target tooltip-is-label">
         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg></button>
 </div>
         
@@ -2017,11 +2027,9 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-knap" data-position="above" data-trigger="hover">
-    <button class="button button-primary tooltip-target">
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-knap" data-position="above" data-trigger="hover"><button class="button button-primary tooltip-target">
         Knap med tooltip
-    </button>
-</div>
+    </button></div>
         
     </div>
     
