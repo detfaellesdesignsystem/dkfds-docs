@@ -65,10 +65,10 @@ Defineres med klassen `button-quaternary`.
 
 {:#knap-med-ikon}
 ### Knap med ikon
-{% include code/syntax.html component="buttons-with-icon" copybutton=true %}
+{% include code/syntax.html component="buttons-with-icon" link=true copybutton=true %}
 
 {:#klikbart-ikon}
 ### Klikbart ikon
-{% include code/syntax.html component="buttons-only-icon" copybutton=true %}
+{% include code/syntax.html component="buttons-only-icon" link=true copybutton=true %}
 
 `button-unstyled` bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx `<span class="sr-only">Slet</span>`.

@@ -39,14 +39,14 @@ Husk at bruge rollerne `tablist`, `tab` og `tab-panel` til at informere om hvad 
 {:#faneblad-URL-skift}
 ### Faneblad med URL-skifte
 
-{% include code/syntax.html component="tabs-urls" copybutton=true %}
+{% include code/syntax.html component="tabs-urls" link=true copybutton=true %}
 
 Læg mærke til at der ved URL-skift faneblade istedet er anvendt `aria-current=page` for at indikere det aktive faneblad. Her skal man sikre sig at kun ét faneblad har denne attribut sat. 
 
 {:#faneblad-med-ikoner}
 ### Faneblad med ikoner
 
-{% include code/syntax.html component="tabs-buttons-icons" copybutton=true %}
+{% include code/syntax.html component="tabs-buttons-icons" link=true copybutton=true %}
 
 ### JavaScript
 
