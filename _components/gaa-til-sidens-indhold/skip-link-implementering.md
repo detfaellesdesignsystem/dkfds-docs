@@ -22,6 +22,12 @@ tags:
 
 {% include code/syntax.html component="skiplink" copybutton=true %}
 
-Skip-link `<a>` elementet indsættes som første element i `<header>`. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet.
+Skip-link `<a>` elementet indsættes som første, klikbare element i `<body>`. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet bortset fra en eventuel {% include links/component-guideline-link.html linktext="cookiemeddelelse" %} (GOV.UK, Skip link).
 
-Skip-link gør brug af anchor link `#main-content`, man skal derfor huske at sætte `id="main-content"` på det element, der omkranser indholdet på siden.
+Skip-link gør brug af anchorlink `#main-content`, man skal derfor huske at sætte `id="main-content"` på det element, der omkranser indholdet på siden.
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="GOV.UK Design System - Skip link" %}

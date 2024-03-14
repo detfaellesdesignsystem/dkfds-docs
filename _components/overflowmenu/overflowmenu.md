@@ -50,7 +50,7 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 
 {:.nobullet-list}
 - Jeff Johnson: Designing with the Mind in Mind (2014)
-- {% include links/external-link.html linktext="Don Norman: Principles of Design (2013)" %}
+- {% include links/external-link.html linktext="Don Norman: Don Normans Principles of Design (2013)" %}
 - {% include links/external-link.html linktext="Daniel Burka: Stop the overuse of overflow menus (2016)" %}
 - Martha Brockenbrough i June Cohen: The Unusually Useful Web Book: Everything we’ve learned about why sites succeed! (2003)
 

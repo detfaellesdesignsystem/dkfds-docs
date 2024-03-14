@@ -360,8 +360,6 @@ Du kan også lave dit eget ikon, men så skal det passe ind visuelt. Lad være m
   </div>
 </div>
 
-<p class="mt-9">{% include links/external-link.html linktext="Efterspørg eller giv feedback på et ikon på vores FDS GitHub side" %}</p>
-
 <script>
   let searchTerm, selectedIcon;
   const searchInput = document.getElementById("icon-search-input");

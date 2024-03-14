@@ -41,7 +41,7 @@ Modulet 'dkfds' er nu installeret i 'node_modules' mappen.
 {:#github}
 ## Hent via GitHub (zip)
 
-Hent {% include links/external-link.html linktext="nyeste version som zipfil på GitHub" %}, og pak indholdet ud i dit projekt.
+Hent nyeste version som {% include links/external-link.html linktext="zipfil på GitHub" %}, og pak indholdet ud i dit projekt.
 
 ### Inkludér  CSS
 

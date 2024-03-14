@@ -56,8 +56,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <h2 class="mt-0">Support</h2>
         <p>Har du spørgsmål, så kontakt os på mail, så skal vi hjælpe dig så godt vi kan, men brug GitHub til support og teknik.</p>
         <ul class="nobullet-list">
-            <li>{% include links/internal-link.html linktext="Se hvilke krav, som gælder for din løsning" %}</li>
-            <li>{% include links/external-link.html linktext="Meld fejl og mangler ind via GitHub" %}</li>
+            <li>{% include links/internal-link.html linktext="Ofte stillede spørgsmål" %}</li>
             <li>{% include links/internal-link.html linktext="Kontakt os" %}</li>
         </ul>
     </div>

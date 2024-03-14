@@ -24,7 +24,7 @@ Brug GitHub til:
 - Efterspørgsler af nye komponenter/eksempler.
 - Forslag til ændring af komponenter/eksempler.
 
-{% include links/external-link.html linktext='Opret et “issue” (en sag) på GitHub' %}
+{% include links/external-link.html linktext='Opret et issue på GitHub' %}
 
 ## E-mail
 

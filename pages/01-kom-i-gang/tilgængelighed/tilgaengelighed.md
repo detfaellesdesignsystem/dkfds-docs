@@ -68,6 +68,7 @@ Få hjælp med at forstå syv hyppige webtilgængelighedsfejl, såsom kontraster
 
 {% include links/external-link.html linktext="Læs om de syv hyppige fejl og deres betydning" %}
 
+{:#eval}
 ### Evalueringsværktøjer
 
 Der findes evalueringsværktøjer, der kan hjælpe dig med at sikre, at webindhold opfylder kravene til tilgængelighed. På W3Cs (Web Accessibility initiative) hjemmeside findes et eksempel på en liste over forskellige evalueringsværktøjer: {% include links/external-link.html linktext="Liste over evalueringsværktøjer til webtilgængelighed" %}.

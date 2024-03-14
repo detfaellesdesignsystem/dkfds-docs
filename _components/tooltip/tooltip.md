@@ -107,4 +107,3 @@ Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapp
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - {% include links/external-link.html linktext="Alita Joyce: Tooltip Guidelines (2019)" %}
 - {% include links/external-link.html linktext="Tilgængelige tooltips" %}
-- {% include links/external-link.html linktext="Tooltip guidelines" %}

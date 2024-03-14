@@ -57,7 +57,7 @@ Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at b
 
 Vær opmærksomhed på at farver der grænser op til hinanden skal overholde WCAG 2.1 ift farvekontrast.
 
-Tjek gerne datavisualiseringer og infografikker med et simulationsværktøj (fx {% include links/external-link.html linktext="A11Y Color Blind Empathy" %}) for at se, hvordan de forskellige farver syner overfor hinanden med et synshandikap som farveblindhed.
+Tjek gerne datavisualiseringer og infografikker med et simulationsværktøj (læs mere om {% include links/internal-link.html linktext="evalueringsværktøjer" %}) for at se, hvordan de forskellige farver syner overfor hinanden med et synshandikap som farveblindhed.
 
 ## Sørg for alternativer til grafikken
 
@@ -85,7 +85,5 @@ Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af d
 
 {:.nobullet-list}
 
-* {% include links/external-link.html linktext="WebAIMs Contrast Checker" %}
-* {% include links/external-link.html linktext="A11Y Color Blind Empathy - Chrome plugin" %}
 * {% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.4.11: Non-text Contrast" %}
 * {% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.4.3: Contrast (Minimum)" %}

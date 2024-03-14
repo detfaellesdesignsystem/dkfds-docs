@@ -76,12 +76,14 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/kom-i-gang/tjekliste/"{{ classes }}>{{ include.linktext }}</a>
         
     {%- when "krav",
-             "kravene",
-             "se hvilke krav, som gælder for din løsning" -%}
+             "kravene" -%}
         <a href="/kom-i-gang/krav/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "tilgængelighed" -%}
         <a href="/kom-i-gang/tilgaengelighed/"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "evalueringsværktøjer" -%}
+        <a href="/kom-i-gang/tilgaengelighed/#eval"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "ofte stillede spørgsmål" -%}
         <a href="/kom-i-gang/faq/"{{ classes }}>{{ include.linktext }}</a>

@@ -20,12 +20,12 @@ tags:
 
 ### HTML Struktur
 
-Nedenstående eksempel viser den overordnede struktur i `header`-elementet. De øvrige afsnit indeholder uddybende kodeeksempler.
+Nedenstående eksempel viser den overordnede struktur i `<header>`-elementet. De øvrige afsnit indeholder uddybende kodeeksempler.
 
 {:#html-struktur}
 {% include code/syntax.html component="header-overview" copybutton=true %}
 
-Placer `header`-elementet i din HTML-sides `body`-element. Du kan læse mere om {% include links/component-code-link.html linktext="tilbage til toppen-knappen" %} og {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %} på disse komponenters sider.
+Placer `<header>`-elementet i din HTML-sides `<body>`-element efter {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}-komponenten.
 
 #### Overlay og mobilmenu
 

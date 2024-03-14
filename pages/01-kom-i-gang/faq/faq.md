@@ -69,4 +69,4 @@ lead: Nogle gange er der spørgsmål til FDS-teamet, der går igen. Før du tage
 </ul>
 
 <h2 class="h5 mt-7">Fik du ikke svar på dit spørgsmål?</h2>
-Så kan du kontakte FDS-teamet ved at {% include links/internal-link.html linktext="sende en e-mail" %} eller {% include links/external-link.html linktext='oprette et “issue” (en sag) på GitHub' %}.
+Så kan du kontakte FDS-teamet ved at {% include links/internal-link.html linktext="sende en e-mail" %} eller {% include links/external-link.html linktext='oprette et issue på GitHub' %}.

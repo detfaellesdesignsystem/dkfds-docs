@@ -126,7 +126,7 @@ lead: Nedenfor vises release notes — en opsummering af bug fixes, nye feature
   andre opdateringer.
 ---
 
-Har du et nyt forslag til en feature eller et bug fix? {% include links/external-link.html linktext="Så må du meget gerne oprette et issue på GitHub" %}
+Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {% include links/external-link.html linktext="oprette et issue på GitHub" %}
 
 ## Versionering
 
@@ -159,6 +159,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at placere sprogvælgeren i headeren og mobilmenuen udover footeren.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Hvis der ikke er plads til alle menupunkter, vil de overskydende menupunkter automatisk ryge ind i en 'Mere'-menu.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet eksempel på søgefelt i header.
+- {% include links/component-code-link.html linktext="Gå til sidens indhold" %} placeres ikke længere i headeren.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Faneblade" %}</h3>

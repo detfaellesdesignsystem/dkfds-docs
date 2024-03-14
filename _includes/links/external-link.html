@@ -24,14 +24,11 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "se koden på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "meld fejl og mangler ind via github", 
-             "efterspørg eller giv feedback på et ikon på vores fds github side", 
-             "så må du meget gerne oprette et issue på github",
-             "opret et issue på github",
-             'oprette et “issue” (en sag) på github' -%}
+    {%- when "opret et issue på github",
+             "oprette et issue på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "nyeste version som zipfil på github", 
+    {%- when "zipfil på github", 
              "zip-filen i github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -49,9 +46,6 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "issue #74 på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when 'opret et “issue” (en sag) på github' -%}
-        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/new/choose" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 
@@ -246,8 +240,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "aurora harley (2015): timing guidelines for exposing hidden content" -%}
         <a href="https://www.nngroup.com/articles/timing-exposing-content/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "alita joyce: tooltip guidelines (2019)",
-             "tooltip guidelines" -%}
+    {%- when "alita joyce: tooltip guidelines (2019)" -%}
         <a href="https://www.nngroup.com/articles/tooltip-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
@@ -289,6 +282,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="https://design-system.service.gov.uk/patterns/dates/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "govuk om fejlmeddelelser generelt" -%}
+        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "gov.uk design system - skip link" -%}
         <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
@@ -369,13 +365,6 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "inputfelter - zendesk’s garden designsystem" -%}
         <a href="https://garden.zendesk.com/components/input" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "a11y color blind empathy", 
-             "a11y color blind empathy - chrome plugin" -%}
-        <a href="https://chrome.google.com/webstore/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc?hl=en" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
-    {%- when "webaims contrast checker" -%}
-        <a href="https://webaim.org/resources/contrastchecker/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
-
     {%- when "flexbox" -%}
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -446,8 +435,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "caroline jarrett: don’t put labels inside text boxes (unless you’re luke w) (2013)" -%}
         <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "don norman: don normans principles of design (2013)",
-             "don norman: principles of design (2013)" -%}
+    {%- when "don norman: don normans principles of design (2013)" -%}
         <a href="https://www.designprinciplesftw.com/collections/don-normans-principles-of-design" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "daniel burka: stop the overuse of overflow menus (2016)" -%}
