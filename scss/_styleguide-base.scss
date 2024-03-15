@@ -649,61 +649,37 @@ code {
   }
 }
 
-//----------------  Icon page styles
-.simple-icon-list{
+// Icon page styles
+
+.simple-icon-list {
   flex-wrap: wrap;
-  svg{
+  svg {
     width: 80px;
     height: auto;
     max-width: 100%;
   }
 }
-.icon-list{
-  .icon-container{
-    margin-top:-1px;
-    .icon-box{
-      padding: units(505) units(3) units(3);
-      border: border(20);
-      border-left-width: 0px;
-      border-top-width: 0px;
-      text-align: center;
-      height: 100%;
 
-      svg{
-        width: 48px;
-        height: 48px;
-        max-width: 100%;
-      }
-      p{
-        margin-bottom: units(405);
-        margin-top: units(405);
-        word-wrap: break-word;
-      }
-    }
-    
-    @include media-breakpoint-down(sm) {
-      &:nth-child(odd) .icon-box{
-        border-left-width: 1px;
-      }
-      &:nth-child(-n+2) .icon-box{
-        border-top-width: 1px;
-      }
-    }
-    
-    @include media-breakpoint-up(md) {
-      &:nth-child(4n-7) .icon-box{      
-          border-left-width: 1px;
-      }
+.icon-box{
+  padding: units(505) units(3) units(3);
+  border: border(20);
+  margin-right: -1px;
+  margin-bottom: -1px;
+  text-align: center;
+  height: auto;
 
-      &:nth-child(-n+4) .icon-box{
-        border-top-width: 1px;
-      }
-      
-    }
-    
+  svg {
+    width: 48px;
+    height: 48px;
+    max-width: 100%;
   }
-  
+  p {
+    margin-bottom: units(405);
+    margin-top: units(405);
+    word-wrap: break-word;
+  }
 }
+
 
 //----------------  Page styles
 

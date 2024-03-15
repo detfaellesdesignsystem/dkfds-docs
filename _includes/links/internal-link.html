@@ -168,19 +168,14 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "se dokumentationen for implementering af ikoner",
              "ikonet", 
-             "ikoner", 
-             "ikontaksonomi" -%}
+             "ikoner" -%}
         <a href="/design/ikoner/guidelines/"{{ classes }}>{{ include.linktext }}</a>
-
-    {%- when "se flere betydninger i ikontaksonomien", 
-             "ikontaksonomien" -%}
-        <a href="/design/ikoner/guidelines/#betydning"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "ikontaksonomi-betydning" -%}
         <a href="/design/ikoner/guidelines/#betydning"{{ classes }}>ikontaksonomi</a>
 
-    {%- when "ikoner-betydning" -%}
-        <a href="/design/ikoner/guidelines/#betydning"{{ classes }}>ikoner</a>
+    {%- when "ikonoversigten" -%}
+        <a href="/design/ikoner/guidelines/#ikonoversigt"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "slet ikonet" -%}
         <a href="/design/ikoner/guidelines/?s=slet"{{ classes }}>{{ include.linktext }}</a>

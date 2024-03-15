@@ -36,7 +36,7 @@ tags:
     <svg class="icon-svg mr-3" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>
     <div>
         <h2 class="h5 checklist-heading">Udvalgte ikoner skal anvendes som angivet</h2>
-        <p>Følg vores {% include links/internal-link.html linktext="ikontaksonomi-betydning" %}, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra {% include links/external-link.html linktext="Material Design" %}. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på Material Design. Læs mere under {% include links/internal-link.html linktext="ikoner" %}.</p>
+        <p>Følg taksonomien i {% include links/internal-link.html linktext="ikonoversigten" %}, så ikoner anvendes konsekvent i samme kontekst på tværs af løsninger. Designsystemet anvender ikoner fra Material Design. Hvis det er nødvendigt at tilføje flere ikoner, skal de være fra eller baseret på {% include links/external-link.html linktext="Material Symbols" %}, som er Material Designs ikonbibliotek. Læs mere under {% include links/internal-link.html linktext="ikoner" %}.</p>
     </div>
 </div>
 

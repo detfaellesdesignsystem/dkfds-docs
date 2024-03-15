@@ -500,7 +500,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
-- {% include links/internal-link.html linktext="Ikontaksonomi" %}
+- Ikontaksonomi
 - Ny komponent: Notifikation (Toast) komponent
 - Fjernet unødvendige kald til fontfiler
 - Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer
