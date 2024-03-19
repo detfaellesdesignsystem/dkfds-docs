@@ -1803,13 +1803,16 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
-                        <li><a href="#samme-hoejde">Samme højde</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#card-med-tredjedel-bredde">Card med tredjedel bredde</a></li>
+                        <li><a href="#card-med-halv-bredde">Card med halv bredde</a></li>
+                        <li><a href="#samme-hoejde">Cards med samme højde</a></li>
                         
                     </ul>
                 </nav>
                 
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1886,9 +1889,215 @@
 
 <p>Footer defineres med klassen <code>card-footer</code>.</p>
 
-<h2>Varianter</h2>
+<h2 id="card-med-tredjedel-bredde">Card med tredjedel bredde</h2>
 
-<h3 id="samme-hoejde">Samme højde</h3>
+<div class="component-preview component-preview-code  component-code-cards-third-width">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/cards-third-width/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-third-width</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container pb-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4&quot;&gt;
+
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
+                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-text&quot;&gt;
+                    &lt;p&gt;Dette er et &lt;em&gt;tekstområde&lt;/em&gt;, hvor du kan skrive hvad du har lyst
+                        til.&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer card-action&quot;&gt;
+
+                    &lt;div class=&quot;action-buttons&quot;&gt;
+                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;&lt;button
+                            class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;action-links&quot;&gt;
+                        &lt;ul class=&quot;nobullet-list&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;default link state&quot;&gt;Et
+                                    link til et sted i løsningen&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;icon-link&quot;&gt;Et link til et
+                                    sted uden for
+                                    løsningen&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
+
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
+                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-content&quot;&gt;
+                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
+                    &lt;div class=&#39;align-text-center background-data-green-blue-300 p-6&#39;&gt;
+                        &lt;h4 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum fordeling&lt;/h4&gt;
+                        &lt;div class=&#39;mt-3 row&#39;&gt;
+                            &lt;div class=&#39;col-6&#39;&gt;
+                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i København er 80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
+                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;København&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&#39;col-6&#39;&gt;
+                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i hele landet er 36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
+                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;Hele landet&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
+
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
+                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-text&quot;&gt;
+                    &lt;p&gt;Dette er et &lt;em&gt;tekstområde&lt;/em&gt;, hvor du kan skrive hvad du har lyst
+                        til.&lt;/p&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<h2 id="card-med-halv-bredde">Card med halv bredde</h2>
+
+<div class="component-preview component-preview-code  component-code-cards-half-width">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/cards-half-width/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-half-width</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container pb-5&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&gt;
+
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
+                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-content&quot;&gt;
+                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
+                    &lt;div class=&quot;align-text-center row background-data-pink-violet-300 p-6&quot;&gt;
+                        &lt;div class=&quot;col-12 col-sm-6 mb-6 mb-sm-0&quot;&gt;
+                            &lt;h4 class=&quot;h5&quot;&gt;2018&lt;/h4&gt;&lt;img src=&quot;/assets/img/cards/card-illustration-22procent.svg&quot; alt=&quot;Billedeksempel, der viser at fordelingen var 22% i 2018&quot; class=&quot;w-percent-60 w-percent-sm-40 w-percent-md-60&quot; /&gt;
+                            &lt;p class=&quot;mt-0&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-12 col-sm-6&quot;&gt;
+                            &lt;h4 class=&quot;h5&quot;&gt;2019&lt;/h4&gt;&lt;img src=&quot;/assets/img/cards/card-illustration-41procent.svg&quot; alt=&quot;Billedeksempel, der viser at fordelingen var 41% i 2019&quot; class=&quot;w-percent-60 w-percent-sm-40 w-percent-md-60&quot; /&gt;
+                            &lt;p class=&quot;mt-0&quot;&gt;Etiam aliquet at felis vel&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-text&quot;&gt;
+                    &lt;p&gt;Dette er et &lt;em&gt;tekstområde&lt;/em&gt;, hvor du kan skrive hvad du har lyst
+                        til.&lt;/p&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0&quot;&gt;
+
+            &lt;div class=&quot;card&quot;&gt;
+
+                &lt;div class=&quot;card-content&quot;&gt;
+                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
+                    &lt;div class=&quot;row background-data-violet-300 p-6&quot;&gt;
+                        &lt;div class=&quot;col-12 align-text-left&quot;&gt;
+                            &lt;h3 class=&quot;h3 mb-0&quot;&gt;3 ofte stillede spørgsmål&lt;/h3&gt;
+                            &lt;ul class=&quot;mt-0 noindent-list&quot;&gt;
+                                &lt;li&gt;In viverra faucibus lorem?&lt;/li&gt;
+                                &lt;li&gt;Phasellus posuere neque?&lt;/li&gt;
+                                &lt;li&gt;Nullam quis nunc dui?&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h4 class=&quot;header-title&quot;&gt;Header&lt;/h4&gt;
+                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer card-action&quot;&gt;
+
+                    &lt;div class=&quot;action-buttons&quot;&gt;
+                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;&lt;button
+                            class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;action-links&quot;&gt;
+                        &lt;ul class=&quot;nobullet-list&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;default link state&quot;&gt;Et
+                                    link til et sted i løsningen&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;icon-link&quot;&gt;Et link til et
+                                    sted uden for
+                                    løsningen&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;use xlink:href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<h2 id="samme-hoejde">Cards med samme højde</h2>
 
 <div class="component-preview component-preview-code  component-code-cards-same-height">
     

@@ -11,7 +11,14 @@ title: Tekstområde (Textarea)
 lead: Tekstområder lader brugeren indtaste en længere tekst på flere linjer.
 component: "text-area"
 componentTitle: "Eksempel på tekstområde"
-anchor: false
+anchor: true
+subnav:
+- text: Installation
+  href: '#installation'
+- text: Fejlmeddelelse
+  href: '#fejlmeddelelse'
+- text: Karakterbegrænsning
+  href: '#karakterbegraensning'
 description: "Dokumentation på implementering af tekstområde."
 tags:
 - tekstområde
@@ -21,6 +28,7 @@ tags:
 - karakterbegraensning
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -34,11 +42,11 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 - `name`
 - `rows`
 
-
 Sæt højden på et tekstområde ved brug af `rows` attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
+
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med tekstområde." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.
@@ -54,6 +62,7 @@ Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af s
 Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
 
 #### Funktioner
+
 <div class="table--responsive-scroll">
   <table class="table table--responsive-headers">
     <thead>
@@ -88,6 +97,7 @@ form_limit.charactersLeft();
 {% endhighlight %}
 
 #### Sprog
+
 Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
 
 {% highlight javascript %}

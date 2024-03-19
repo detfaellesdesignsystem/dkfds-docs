@@ -18,6 +18,8 @@ component: "toastbesked"
 componentTitle: "Eksempel på toastbesked"
 anchor: true
 subnav:
+- text: Installation
+  href: "#installation"
 - text: Succes
   href: "#succes"
 - text: Advarsel
@@ -34,6 +36,7 @@ tags:
 - besked
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -82,20 +85,22 @@ let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
 toast.hide();
 {% endhighlight %}
 
-## Varianter
-
 {:#succes}
-### Succes
+## Succes
+
 {% include code/syntax.html component="toastbesked-success" link=true copybutton=true %}
 
 {:#advarsel}
-### Advarsel
+## Advarsel
+
 {% include code/syntax.html component="toastbesked-warning" link=true copybutton=true %}
 
 {:#fejl}
-### Fejl
+## Fejl
+
 {% include code/syntax.html component="toastbesked-error" link=true copybutton=true %}
 
 {:#information}
-### Information
+## Information
+
 {% include code/syntax.html component="toastbesked-info" link=true copybutton=true %}

@@ -1809,6 +1809,7 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#faneblad-URL-skift">Faneblad med URL-skifte</a></li>
                         <li><a href="#faneblad-med-ikoner">Faneblad med ikoner</a></li>
                         
@@ -1816,7 +1817,7 @@
                 </nav>
                 
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1890,10 +1891,28 @@
 
 <p>Husk at tilpasse koden så attributterne passer. Bemærk her især at <code>aria-controls</code> attributten for fanebladet skal matche panel <code>id'et</code> og at disse skal være unikke.</p>
 
-<h2>Tilgængelighed</h2>
+<h3>Tilgængelighed</h3>
 <p>Husk at bruge rollerne <code>tablist</code>, <code>tab</code> og <code>tab-panel</code> til at informere om hvad der er henholdsvis fanebladsbeholder, faneblad og faneblad indhold. Her er det vigtigt at benytte <code>aria-selected</code> attributten til at indikere hvilket faneblad er aktivt. Med <code>hidden</code> attributten skjules panelet visuelt, mens det også gemmes for hjælpeteknologier.</p>
 
-<h3 id="faneblad-URL-skift">Faneblad med URL-skifte</h3>
+<h3>JavaScript</h3>
+
+<p>Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller manuelt initialisere komponenten således:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#39;TAB-ID&#39;)).init();</code></pre></figure>
+
+<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat. Hvis man står i denne situation skal man initialisere komponenten manuelt.</p>
+
+<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
+
+<h4>Events</h4>
+
+<p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tab.changed</code> udløst på <code>.tab-container</code> elementet, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når et faneblad åbnes, bliver eventet <code>fds.tab.open</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
+
+<p>Når et faneblad lukkes, bliver eventet <code>fds.tab.close</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
+
+<h2 id="faneblad-URL-skift">Faneblad med URL-skifte</h2>
 
 <div class="component-preview component-preview-code  component-code-tabs-urls">
     
@@ -1935,7 +1954,7 @@
 
 <p>Læg mærke til at der ved URL-skift faneblade istedet er anvendt <code>aria-current=page</code> for at indikere det aktive faneblad. Her skal man sikre sig at kun ét faneblad har denne attribut sat.</p>
 
-<h3 id="faneblad-med-ikoner">Faneblad med ikoner</h3>
+<h2 id="faneblad-med-ikoner">Faneblad med ikoner</h2>
 
 <div class="component-preview component-preview-code  component-code-tabs-buttons-icons">
     
@@ -2016,23 +2035,6 @@
     
 </div>
 
-<h3>JavaScript</h3>
-
-<p>Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller manuelt initialisere komponenten således:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#39;TAB-ID&#39;)).init();</code></pre></figure>
-
-<p>Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat. Hvis man står i denne situation skal man initialisere komponenten manuelt.</p>
-
-<p>Bemærk, at dette kun gælder fra version 5.0.0.</p>
-
-<h4>Events</h4>
-
-<p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tab.changed</code> udløst på <code>.tab-container</code> elementet, som man kan koble sig på med en eventlistener.</p>
-
-<p>Når et faneblad åbnes, bliver eventet <code>fds.tab.open</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
-
-<p>Når et faneblad lukkes, bliver eventet <code>fds.tab.close</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
 
 
                 

@@ -12,18 +12,27 @@ component: "tooltip-helpicon"
 componentTitle: "Eksempel på tooltip"
 anchor: true
 subnav:
-- text: Klikbart ikon
-  href: "#klikbart-ikon-med-tooltip"
-- text: Tekst
-  href: "#tekst-med-tooltip"
-- text: Knap
-  href: "#knap-med-tooltip"
-- text: Placering
-  href: "#placering-af-tooltip"
+- text: Installation
+  href: "#installation"
+- text: Radioknap med tooltip
+  href: "#radioknap-med-tooltip"
+- text: Tjekboks med tooltip
+  href: "#tjekboks-med-tooltip"
+- text: Inputfelt med tooltip
+  href: "#inputfelt-med-tooltip"
+- text: Brødtekst med tooltip
+  href: "#broedtekst-med-tooltip"
+- text: Klikbart ikon med hover-tooltip
+  href: "#klikbart-ikon-med-hover-tooltip"
+- text: Knap med hover-tooltip
+  href: "#knap-med-hover-tooltip"
+- text: Referencer
+  href: "#ref"
 description: "Dokumentation på implementering af tooltip."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -49,31 +58,35 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 | data-position   | Skal sættes til enten `above` eller `below`. Undlades attributten vælges `above` som standard.                                    |
 | data-trigger    | Skal sættes til enten `click` eller `hover`. Anvend kun `click`, hvis elementet ikke har andre funktioner end at åbne tooltippet. |
 
-## Varianter
-
-### Radioknap med tooltip
+{:#radioknap-med-tooltip}
+## Radioknap med tooltip
 
 {% include code/syntax.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" link=true copybutton=true %}
 
-### Tjekboks med tooltip
+{:#tjekboks-med-tooltip}
+## Tjekboks med tooltip
 
 {% include code/syntax.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" link=true copybutton=true %}
 
-### Inputfelt med tooltip
+{:#inputfelt-med-tooltip}
+## Inputfelt med tooltip
 
 {% include code/syntax.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" link=true copybutton=true %}
 
-### Brødtekst med tooltip
+{:#broedtekst-med-tooltip}
+## Brødtekst med tooltip
 
 {% include code/syntax.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" link=true copybutton=true %}
 
-### Klikbart ikon med hover-tooltip
+{:#klikbart-ikon-med-hover-tooltip}
+## Klikbart ikon med hover-tooltip
 
 Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017). Vær ekstra omhyggelig i disse tilfælde med at holde tooltipteksten kort og præcis.
 
 {% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" link=true copybutton=true %}
 
-### Knap med hover-tooltip
+{:#knap-med-hover-tooltip}
+## Knap med hover-tooltip
 
 {% include code/syntax.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" link=true copybutton=true %}
 

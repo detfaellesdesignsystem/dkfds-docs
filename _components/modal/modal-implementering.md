@@ -12,6 +12,8 @@ component: "modal"
 componentTitle: "Eksempel på modal komponent"
 anchor: true
 subnav:
+- text: Installation
+  href: "#installation"
 - text: Modal som kræver handling
   href: "#kraever-handling"
 description: Dokumentation på implementering af modal.
@@ -27,6 +29,7 @@ tags:
 - vindue
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -71,10 +74,8 @@ Når en modal aktiveres, vil JavaScripten sætte `inert`-attributten på alle el
 | fds.modal.hidden    | Modal element | Når en modal skjules, bliver eventet `fds.modal.hidden` udløst på modal elementet |
 | fds.modal.shown     | Modal element | Når en modal vises, bliver eventet `fds.modal.shown` udløst på modal elementet    |
 
-## Varianter
-
 {:#kraever-handling}
-### Modal som kræver handling
+## Modal som kræver handling
 
 {% include code/syntax.html component="modal-forced-action" link=true copybutton=true %}
 

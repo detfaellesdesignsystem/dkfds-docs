@@ -13,12 +13,19 @@ componentTitle: "Eksempel på card"
 componentLink: true
 anchor: true
 subnav:
-- text: Samme højde
+- text: Installation
+  href: '#installation'
+- text: Card med tredjedel bredde
+  href: '#card-med-tredjedel-bredde'
+- text: Card med halv bredde
+  href: '#card-med-halv-bredde'
+- text: Cards med samme højde
   href: '#samme-hoejde'
 description: "Dokumentation på implementering af cards."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -62,9 +69,17 @@ Footer bruges gerne i forbindelse med flere cards, som skal have samme højde, o
 
 Footer defineres med klassen `card-footer`.
 
-## Varianter
+{:#card-med-tredjedel-bredde}
+## Card med tredjedel bredde
+
+{% include code/syntax.html component="cards-third-width" link=true copybutton=true %}
+
+{:#card-med-halv-bredde}
+## Card med halv bredde
+
+{% include code/syntax.html component="cards-half-width" link=true copybutton=true %}
 
 {:#samme-hoejde}
-### Samme højde
+## Cards med samme højde
 
 {% include code/syntax.html component="cards-same-height" link=true copybutton=true %}

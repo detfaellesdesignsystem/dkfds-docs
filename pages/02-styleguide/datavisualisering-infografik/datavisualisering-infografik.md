@@ -5,7 +5,14 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Datavisualisering og infografik
 lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
-anchor: false
+anchor: true
+subnav:
+- text: Datavisualisering
+  href: "#datavisualisering"
+- text: Infografik
+  href: "#infografik"
+- text: Sådan bruges datavisualisering og infografik
+  href: "#retningslinjer"
 description: Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
 tags:
 - data
@@ -21,6 +28,7 @@ Vi skelner mellem datavisualisering og infografik. Infografik formidler en histo
 
 Vær meget opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %}.
 
+{:#datavisualisering}
 ## Datavisualisering
 
 Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram eller en graf. 
@@ -34,6 +42,7 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
     </figcaption>
 </figure>
 
+{:#infografik}
 ## Infografik
 
 Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af personer, ting, processer, mm. sat sammen så det formidler et budskab. 
@@ -49,17 +58,19 @@ Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af pers
 </figure>
 
 {:#retningslinjer}
-## Anvendes til  
+## Sådan bruges datavisualisering og infografik
+
+### Anvendes til  
 
 Datavisualisering og infografik anvendes til at sammenfatte og formidle data og information grafisk på en måde, der øger brugerens forståelse af indholdet.
 
-## Anvendes ikke til  
+### Anvendes ikke til  
 
 Brug ikke infografik og datavisualiseringer som dekoration eller for at pifte løsningen op.
 
 Brug ikke infografik og datavisualisering, hvis det bliver uoverskueligt eller på anden vis hæmmer brugernes forståelse af indholdet.
 
-## Vejledning  
+### Vejledning  
 
 Overvej hvorvidt data eller information er for kompleks til en visuel præsentation. Det er vigtigt at datavisualiseringer og infografikker forbedrer formidlingen og ikke skaber mere forvirring.
 

@@ -12,11 +12,13 @@ component: "button-primary"
 componentTitle: "Eksempel på knap"
 anchor: true
 subnav:
-- text: Primærknap
+- text: Installation
+  href: "#installation"
+- text: Primær
   href: '#primaerknap'
-- text: Sekundærknapper
+- text: Sekundær
   href: '#sekundaerknap'
-- text: Tertiærknapper
+- text: Tertiær
   href: '#tertiaerknap'
 - text: Tilbage-knap
   href: '#tilbage-knap'
@@ -31,6 +33,7 @@ tags:
 - "tertiærknap"
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -38,37 +41,37 @@ tags:
 {% include code/syntax.html component="button-primary" copybutton=true %}
 
 - Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
-- Styler du et link, så det ligner en knap, skal du være opmærksom på, at der skal tilføjes attributten `role="button"`
-
-## Varianter
 
 {:#primaerknap}
-### Primær
+## Primær
 
 Defineres med klassen `button-primary`.
 
 Bemærk særlige {% include links/component-guideline-link.html linktext="retningslinjer" %} for primær knap.
 
 {:#sekundaerknap}
-### Sekundær
+## Sekundær
+
 Defineres med klassen `button-secondary`.
 
 {:#tertiaerknap}
-### Tertiær
+## Tertiær
 
 Defineres med klassen `button-tertiary`.
 
 {:#tilbage-knap}
-### Tilbage-knap
+## Tilbage-knap
 
 Defineres med klassen `button-quaternary`.
 
 {:#knap-med-ikon}
-### Knap med ikon
+## Knap med ikon
+
 {% include code/syntax.html component="buttons-with-icon" link=true copybutton=true %}
 
 {:#klikbart-ikon}
-### Klikbart ikon
+## Klikbart ikon
+
 {% include code/syntax.html component="buttons-only-icon" link=true copybutton=true %}
 
 `button-unstyled` bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx `<span class="sr-only">Slet</span>`.

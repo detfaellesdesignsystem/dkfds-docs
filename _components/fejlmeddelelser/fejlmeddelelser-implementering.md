@@ -12,6 +12,8 @@ component: "error-message"
 componentTitle: "Eksempel på fejlmeddelelse"
 anchor: true
 subnav:
+- text: Installation
+  href: "#installation"
 - text: Accordions
   href: "#accordions"
 - text: Datofelter
@@ -30,10 +32,13 @@ subnav:
   href: "#tjekboks"
 - text: Vedhæft fil
   href: "#vedhaeft-fil"
+- text: Referencer
+  href: "#ref"
 description: Dokumentation på implementering af fejlmeddelelser.
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -44,45 +49,43 @@ For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmed
 
 Fejlmeddelelsen vises også i {% include links/component-code-link.html linktext="fejlopsummeringen" %} øverst på siden.
 
-## Varianter
-
 {:#accordions}
-### Accordions
+## Accordions
 
 {% include code/syntax.html component="error-message-accordion" link=true copybutton=true %}
  
 {:#datofelter}
-### Datofelter
+## Datofelter
 
 {% include code/syntax.html component="error-message-date" link=true copybutton=true %}
 
 {:#datovaelger}
-### Datovælger
+## Datovælger
 
 {% include code/syntax.html component="date-picker-error" link=true copybutton=true %}
 
 {:#dropdown}
-### Dropdown
+## Dropdown
 
 {% include code/syntax.html component="select-error" link=true copybutton=true %}
 
 {:#tekstfelt}
-### Inputfelt
+## Inputfelt
 
 {% include code/syntax.html component="error-message-name" link=true copybutton=true %}
 
 {:#tekstfeltsuffix}
-#### Inputfelt med suffix
+### Inputfelt med suffix
 
 {% include code/syntax.html component="text-input-suffix-error" link=true copybutton=true %}
 
 {:#radioknapper}
-### Radioknapper
+## Radioknapper
 
 {% include code/syntax.html component="error-message-radio" link=true copybutton=true %}
 
 {:#tekstomraade}
-### Tekstområde
+## Tekstområde
 
 {% include code/syntax.html component="text-area-error" link=true copybutton=true %}
 
@@ -95,12 +98,12 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 
 
 {:#tjekboks}
-### Tjekboks
+## Tjekboks
 
 {% include code/syntax.html component="error-message-checkbox" link=true copybutton=true %}
 
 {:#vedhaeft-fil}
-### Vedhæft fil
+## Vedhæft fil
 
 {% include code/syntax.html component="error-message-file-input" link=true copybutton=true %}
 

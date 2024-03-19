@@ -11,7 +11,14 @@ title: Tilgængelighed
 lead: Webtilgængelighed handler om de principper og teknikker, du skal følge, for
   at alle kan anvende dine websteder og indholdet derpå, herunder også brugere med
   funktionsnedsættelser eller handicap.
-anchor: false
+anchor: true
+subnav:
+- text: Webtilgængelighedsloven
+  href: "#webtilgaengelighedsloven"
+- text: Hvorfor tilgængelighed? 
+  href: "#hvorfor-tilgaengelighed"
+- text: Vejledning og værktøjer
+  href: "#vejledning"
 description: Hjælp og værktøjer til at efterleve tilgængelighedskrav efter den europæiske standard EN 301 549 v.3.2.1.
 tags:
 - tilgængelighed
@@ -21,6 +28,9 @@ tags:
 - wcag
 - 2.1
 ---
+
+{:#webtilgaengelighedsloven}
+## Webtilgængelighedsloven
 
 Lov nr. 692 af 08/06/2018 om tilgængelighed af offentlige organers websteder og mobilapplikationer (webtilgængelighedsloven) stiller krav til tilgængeligheden af blandt andet offentlige selvbetjeningsløsninger. 
 
@@ -42,12 +52,14 @@ Offentlige myndigheders og offentligretlige organers websteder og mobilapplikati
 
 Læs mere om webtilgængelighed, webtilgængelighedsloven og den tekniske standard her: {% include links/external-link.html linktext="Om tilgængelig web i det offentlige" %}.
 
+{:#hvorfor-tilgaengelighed}
 ## Hvorfor tilgængelighed? 
 
 Når dit websted lever op til kravene i webtilgængelighedsloven, er du med til at sikre, at brugere med funktionsnedsættelser kan deltage i det digitale samfundsliv på lige fod med andre. Det kan fx afhjælpe udfordringer med funktionsnedsættelser på syn, hørelse, motorik og tale. 
 
 Større undersøgelser fra Danske Handicaporganisationer viser, at op til 30 pct. af danskerne i alderen 16-64 år vurderer, at de har et handicap i større eller mindre grad. Hertil kommer børn og ældre med funktionsnedsættelser eller handicap. 
 
+{:#vejledning}
 ## Vejledning og værktøjer 
 
 ### Tilgængelige billeder på nettet 

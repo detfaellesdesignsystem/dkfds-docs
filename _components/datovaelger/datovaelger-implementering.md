@@ -12,6 +12,8 @@ component: "date-picker"
 componentTitle: "Eksempel på datovælger"
 anchor: true
 subnav:
+- text: Installation
+  href: '#installation'
 - text: Begræns mulige datoer
   href: '#interval'
 - text: Fast værdi
@@ -24,6 +26,7 @@ description: "Dokumentation på implementering af datovælger."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -31,6 +34,7 @@ tags:
 {% include code/syntax.html component="date-picker" copybutton=true %}
 
 ### Javascript
+
 Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
@@ -41,6 +45,7 @@ Bemærk: I visse frameworks kan ovenstående initialisering give problemer med a
 
 {:#sprog}
 #### Sprog
+
 Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for datovælgeren, skal du selv give din oversættelse med inden komponenten initialiseres. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres. Bemærk, at ændring af sproget påvirker alle datovælgere på siden.
 
 {% highlight javascript %}
@@ -124,18 +129,19 @@ DKFDS.datePicker.on(document.body);
   </table>
 </div>
 
-## Varianter
-
 {:#interval}
-### Begræns mulige datoer
+## Begræns mulige datoer
+
 {% include code/syntax.html component="date-picker-interval" link=true copybutton=true %}
 
 {:#fast-vaerdi}
-### Fast værdi
+## Fast værdi
+
 {% include code/syntax.html component="date-picker-default-date" link=true copybutton=true %}
 
 {:#datoformat}
-### Datoformat
+## Datoformat
+
 Anvend attributten `data-dateformat`. Mulige værdier er:
 - `"DD/MM/YYYY"` (default, hvis der ikke er nogen attribut)
 - `"DD-MM-YYYY"`
@@ -149,6 +155,7 @@ Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inpu
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
+
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med datovælgeren." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.

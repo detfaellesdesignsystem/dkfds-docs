@@ -6,7 +6,14 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Infografik
 lead: Infografik kan indeholde datavisualiseringer, men kan også være en illustration af et fysisk objekt eller en proces.
-anchor: false
+anchor: true
+subnav:
+- text: Farver
+  href: "#farver"
+- text: Alternativ til grafik
+  href: "#alternativ-til-grafik"
+- text: Responsiv infografik
+  href: "#responsiv-infografik"
 description: Infografik kan indeholde datavisualiseringer, men kan også være en illustration af et fysisk objekt eller en proces. 
 tags:
 - grafik
@@ -14,18 +21,21 @@ tags:
 - infografik
 ---
 
+{:#farver}
 ## Farver
 
 Ved infografik vil en sekventiel farvepalette, palette der går fra lys til mørk i samme farve, godt kunne vælges. Farver kan bruges til at understøtte budskabet, men betydning bør ikke kommunikeres af farve alene. 
 
 Vær opmærksomhed på at farver der grænser op til hinanden normalt skal overholde WCAG 2.1 ift farvekontrast. Dette gælder dog ikke elementer der udelukkende fungerer som dekoration.
 
+{:#alternativ-til-grafik}
 ## Alternativ til grafik
 
 Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af diagrammet. Beskrivelsen kan eventuelt fungere som opsummering og kan hjælpe brugeren med at drage en konklusion.  
 
 Se flere generelle anbefalinger for {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %}.
 
+{:#responsiv-infografik}
 ## Responsiv infografik
 
 At nedskalere infografik til tablet og mobil er ikke altid optimalt. Der kan med fordel arbejdes på at lave en responsiv infografik, der tilpasser sig de forskellige skærmstørrelser.

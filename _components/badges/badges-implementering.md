@@ -13,12 +13,19 @@ component: "badges"
 componentTitle: "Eksempel på badges"
 anchor: true
 subnav:
+- text: Installation
+  href: "#installation"
+- text: Stort badge
+  href: "#stort-badge"
+- text: Lille badge
+  href: "#lille-badge"
 - text: Statusbadges
   href: "#statusbadges"
 description: "Dokumentation på implementering af badge."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -29,23 +36,22 @@ Alle badges skal have en `badge` klasse på `<span>`-elementet.
 
 Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, for eksempel når nyt indhold markeres på en side, anvend da et `<strong>`-element i stedet for `<span>`.
 
-
-## Tilgængelighed
+### Tilgængelighed
 
 Interaktive badges bliver automatisk markeret, når brugere ved hjælp af tastaturet navigerer sig frem til dem.
 
 Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.
 
-## Varianter
-
-### Stort badge
+{:#stort-badge}
+## Stort badge
 For et stort badge skal der tilføjes en `badge-large` class.
 
-### Lille badge
+{:#lille-badge}
+## Lille badge
 For et lille badge skal der tilføjes en `badge-small` class.
 
 {:#statusbadges}
-### Statusbadges
+## Statusbadges
 
 Statusbadges har 4 forskellige farver og formål:
 

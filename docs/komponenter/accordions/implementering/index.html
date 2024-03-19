@@ -1815,6 +1815,7 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#aabn-luk-alle">Åbn/luk alle</a></li>
                         <li><a href="#med-fejl">Med fejl</a></li>
                         <li><a href="#med-succesbeskeder">Med succesbeskeder</a></li>
@@ -1823,7 +1824,7 @@
                 </nav>
                 
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1906,6 +1907,7 @@
 <p>Overskriften på en accordion skal angives som en heading. Sørg for at anvende det korrekte heading-niveau, som passer semantisk ind i konteksten på siden.</p>
 
 <h3>Javascript</h3>
+
 <p>Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Accordion(document.getElementById(&#39;ACCORDION-UL-GROUP-ID&#39;)).init();</code></pre></figure>
@@ -1913,6 +1915,7 @@
 <p>Attributten <code>aria-hidden</code> tilføjes automatisk i JavaScript, hvis man har undladt at tilføje attributten.</p>
 
 <h4>Sprog</h4>
+
 <p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for accordions med åbn/luk alle-funktionen, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Accordion(document.getElementById(&#39;ACCORDION-UL-GROUP-ID&#39;), {
@@ -1944,9 +1947,7 @@
   </tbody>
 </table>
 
-<h2>Varianter</h2>
-
-<h3 id="aabn-luk-alle">Åbn/luk alle</h3>
+<h2 id="aabn-luk-alle">Åbn/luk alle</h2>
 
 <div class="component-preview component-preview-code  component-code-accordion-bulk-open">
     
@@ -2029,7 +2030,7 @@
     
 </div>
 
-<h3 id="med-fejl">Med fejl</h3>
+<h2 id="med-fejl">Med fejl</h2>
 
 <div class="component-preview component-preview-code  component-code-accordion-error">
     
@@ -2125,7 +2126,7 @@
     
 </div>
 
-<h3 id="med-succesbeskeder">Med succesbeskeder</h3>
+<h2 id="med-succesbeskeder">Med succesbeskeder</h2>
 
 <div class="component-preview component-preview-code  component-code-accordion-success">
     

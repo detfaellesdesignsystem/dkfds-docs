@@ -14,12 +14,15 @@ previewimage: "language-switcher"
 previewimageTitle: "Eksempel på sprogvælger"
 anchor: true
 subnav:
-- text: Tooltip
+- text: Installation
+  href: '#installation'
+- text: Sprogvælger med tooltip
   href: '#sprogvaelger-med-tooltip'
 description: "Dokumentation på implementering af sprogvælger."
 tags: 
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -38,10 +41,8 @@ Hvert sprog tilføjes i listen på original sproget og med den tilsvarende lande
 
 Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal tilpasses for hvert sprog man kan vælge.
 
-## Varianter
-
 {:#sprogvaelger-med-tooltip}
-### Sprogvælger med tooltip
+## Sprogvælger med tooltip
 
 {% include code/syntax.html component="language-switcher-tooltip" link=true copybutton=true %}
 

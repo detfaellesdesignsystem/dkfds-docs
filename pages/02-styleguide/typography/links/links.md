@@ -4,6 +4,9 @@ parentlink: "/design/typografi/"
 redirect_from:
 - "/design/typografi/links/"
 layout: styleguide
+component: "links"
+componentTitle: "Eksempel på links"
+componentLink: false
 category: Styleguide_category
 subcategory: Styleguide
 title: Links
@@ -28,8 +31,6 @@ tags:
 ---
 
 Se også {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
-
-{% include code/preview-box.html component="links" link="false" %}
 
 {:#designvaerdier}
 ## Designværdier

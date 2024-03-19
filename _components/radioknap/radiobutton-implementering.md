@@ -12,6 +12,8 @@ component: "radiobutton"
 componentTitle: "Eksempel på radioknap"
 anchor: true
 subnav:
+- text: Installation
+  href: '#installation'
 - text: Hjælpetekst
   href: '#hjaelpetekst'
 - text: Skjult indhold (Collapse)
@@ -20,6 +22,7 @@ description: "Dokumentation på implementering af radioknapper."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -35,6 +38,7 @@ Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.
 Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
 
 ### JavaScript
+
 Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
@@ -49,14 +53,14 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 | fds.collapse.expanded  | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.       |
 | fds.collapse.collapsed | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.     |
 
-## Varianter
-
 {:#hjaelpetekst}
-### Hjælpetekst
+## Hjælpetekst
+
 {% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true %}
 
 {:#skjult-indhold}
-### Skjult indhold (Collapse)
+## Skjult indhold (Collapse)
+
 {% include code/syntax.html component="radio-collapse" link=true copybutton=true %}
 
 For at initialisere collapse funktionaliteten på en radioknap skal `input[type=radio]` have følgende:

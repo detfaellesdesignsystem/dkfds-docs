@@ -15,6 +15,8 @@ component: "tabs-buttons"
 componentTitle: "Eksempel på faneblade"
 anchor: true
 subnav:
+- text: Installation
+  href: '#installation'
 - text: Faneblad med URL-skifte
   href: '#faneblad-URL-skift'
 - text: Faneblad med ikoner
@@ -23,6 +25,7 @@ description: "Dokumentation på implementering af faneblad."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -33,20 +36,8 @@ Kopier det ovenstående kode for at indsætte en faneblads komponent. Hvis du ø
 
 Husk at tilpasse koden så attributterne passer. Bemærk her især at `aria-controls` attributten for fanebladet skal matche panel `id'et` og at disse skal være unikke.
 
-## Tilgængelighed
+### Tilgængelighed
 Husk at bruge rollerne `tablist`, `tab` og `tab-panel` til at informere om hvad der er henholdsvis fanebladsbeholder, faneblad og faneblad indhold. Her er det vigtigt at benytte `aria-selected` attributten til at indikere hvilket faneblad er aktivt. Med `hidden` attributten skjules panelet visuelt, mens det også gemmes for hjælpeteknologier.  
-
-{:#faneblad-URL-skift}
-### Faneblad med URL-skifte
-
-{% include code/syntax.html component="tabs-urls" link=true copybutton=true %}
-
-Læg mærke til at der ved URL-skift faneblade istedet er anvendt `aria-current=page` for at indikere det aktive faneblad. Her skal man sikre sig at kun ét faneblad har denne attribut sat. 
-
-{:#faneblad-med-ikoner}
-### Faneblad med ikoner
-
-{% include code/syntax.html component="tabs-buttons-icons" link=true copybutton=true %}
 
 ### JavaScript
 
@@ -67,3 +58,15 @@ Når man vælger et nyt faneblad, bliver eventet `fds.tab.changed` udløst på `
 Når et faneblad åbnes, bliver eventet `fds.tab.open` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
 
 Når et faneblad lukkes, bliver eventet `fds.tab.close` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
+
+{:#faneblad-URL-skift}
+## Faneblad med URL-skifte
+
+{% include code/syntax.html component="tabs-urls" link=true copybutton=true %}
+
+Læg mærke til at der ved URL-skift faneblade istedet er anvendt `aria-current=page` for at indikere det aktive faneblad. Her skal man sikre sig at kun ét faneblad har denne attribut sat. 
+
+{:#faneblad-med-ikoner}
+## Faneblad med ikoner
+
+{% include code/syntax.html component="tabs-buttons-icons" link=true copybutton=true %}

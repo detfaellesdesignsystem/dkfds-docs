@@ -12,12 +12,15 @@ component: "overflow-menu"
 componentTitle: "Eksempel på overflow menu komponent"
 anchor: true
 subnav:
+- text: Installation
+  href: '#installation'
 - text: Sortering
   href: '#sortering'
 description: "Dokumentation på implementering af overflow menu."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -60,21 +63,17 @@ new DKFDS.Dropdown(document.getElementById('OVERFLOW-BUTTON-ID')).init();
 | fds.dropdown.open  | `button.js-dropdown` | Når en overflow menu bliver foldet ud, bliver eventet `fds.dropdown.open` udløst på knappen  |
 | fds.dropdown.close | `button.js-dropdown` | Når en overflow menu bliver foldet ind, bliver eventet `fds.dropdown.close` udløst på knappe |
 
-## Tilgængelighed
+### Tilgængelighed
 
 Overflow menu skal kunne aktiveres og håndteres fra tastatur.
 
 Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang. 
 
-Overflow menu skal kunne aktiveres og håndteres fra tastatur og brugeren skal kunne anvende tastaturet til navigation. 
-
-## Varianter
-
 {:#sortering}
-### Sortering
+## Sortering
 {% include code/syntax.html component="sort" link=true copybutton=true %}
 
-#### JavaScript
+### JavaScript
 
 Overflow menu med sorteringsfunktion kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -82,7 +81,7 @@ Overflow menu med sorteringsfunktion kræver JavaScript for at fungere. Man kan 
 new DKFDS.DropdownSort(document.getElementById('OVERFLOW-MENU-CONTAINER')).init();
 {% endhighlight %}
 
-##### Events
+#### Events
 
 {:.table .table--responsive-headers}
 | Event key          | Element              | Beskrivelse                                                                                  |

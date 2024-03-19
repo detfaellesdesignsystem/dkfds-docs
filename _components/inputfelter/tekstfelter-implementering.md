@@ -14,6 +14,8 @@ component: "text-input"
 componentTitle: "Eksempel på inputfelt"
 anchor: true
 subnav:
+- text: Installation
+  href: "#installation"
 - text: Hjælpetekst
   href: "#hjaelpetekst"
 - text: Obligatoriske og frivillige felter
@@ -60,6 +62,7 @@ tags:
 - sufiks
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -74,46 +77,44 @@ Brug `autocomplete` på inputfelter til fx navn (`autocomplete='name'`), postnum
 
 {% include code/syntax.html component="text-input-autocomplete" link=true copybutton=true %}
 
-## Varianter
-
 {:#hjaelpetekst}
-### Hjælpetekst
+## Hjælpetekst
 
 {% include code/syntax.html component="text-input-helptext" link=true copybutton=true %}
 
 {:#obligatoriske-og-frivillige-felter}
-### Obligatoriske og frivillige inputfelter
+## Obligatoriske og frivillige inputfelter
 
 {% include code/syntax.html component="text-input-optional" link=true copybutton=true %}
 
 Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede.
 
 {:#read-only}
-### Read-only
+## Read-only
 
 {% include code/syntax.html component="text-input-readonly" link=true copybutton=true %}
 
 {:#deaktiveret}
-### Deaktiveret
+## Deaktiveret
 
 {% include code/syntax.html component="text-input-disabled" link=true copybutton=true %}
 
 {:#prefix-og-suffix}
-### Prefix og suffix
+## Prefix og suffix
 
 {% include code/syntax.html component="text-input-prefix-suffix" link=true copybutton=true %}
 
 {:#karakterbegraensning}
-### Karakterbegrænsning
+## Karakterbegrænsning
 
 {% include code/syntax.html component="text-input-character-limit" link=true copybutton=true %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
-#### JavaScript
+### JavaScript
 Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
 
-##### Funktioner
+#### Funktioner
 <div class="table--responsive-scroll">
   <table class="table table--responsive-headers">
     <thead>
@@ -147,7 +148,7 @@ form_limit.init();
 form_limit.charactersLeft();
 {% endhighlight %}
 
-##### Sprog
+#### Sprog
 Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
 
 {% highlight javascript %}
@@ -160,7 +161,7 @@ new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID'), {
 {% endhighlight %}
 
 {:#feltbredde}
-### Feltbredde
+## Feltbredde
    
 Inputfelter har en standard bredde på 32rem. For at ændre bredden bruges nedenstående klasser:
 
@@ -171,7 +172,7 @@ Inputfelter har en standard bredde på 32rem. For at ændre bredden bruges neden
 - `input-width-l` har en bredde på 40rem
 - `input-width-xl` har en bredde på 48rem
 
-#### Bredde med tegn
+### Bredde med tegn
 
 For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:
 

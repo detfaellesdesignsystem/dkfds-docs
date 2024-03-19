@@ -14,21 +14,22 @@ component: "tags"
 componentTitle: "Eksempel på tags"
 anchor: true
 subnav:
+- text: Installation
+  href: '#installation'
 - text: Tags med ikon
   href: '#tags-med-ikon'
 description: "Dokumentation på implementering af tags."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
 
 {% include code/syntax.html component="tags" copybutton=true %}
 
-## Varianter
-
 {:#tags-med-ikon}
-### Tags med ikon
+## Tags med ikon
 
 {% include code/syntax.html component="tags-icon" link=true copybutton=true %}

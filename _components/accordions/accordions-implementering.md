@@ -14,6 +14,8 @@ component: "accordion"
 componentTitle: "Eksempel på accordion"
 anchor: true
 subnav:
+- text: Installation
+  href: "#installation"
 - text: Åbn/luk alle
   href: "#aabn-luk-alle"
 - text: Med fejl
@@ -24,6 +26,7 @@ description: Dokumentation på implementering af accordions.
 tags: 
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -37,6 +40,7 @@ Husk at tilpasse koden, således at ikke kun indholdet passer, men også attribu
 Overskriften på en accordion skal angives som en heading. Sørg for at anvende det korrekte heading-niveau, som passer semantisk ind i konteksten på siden.
 
 ### Javascript
+
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
@@ -46,6 +50,7 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID')).init();
 Attributten `aria-hidden` tilføjes automatisk i JavaScript, hvis man har undladt at tilføje attributten.
 
 #### Sprog
+
 Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for accordions med åbn/luk alle-funktionen, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag.
 
 {% highlight javascript %}
@@ -63,16 +68,17 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {
 | fds.accordion.open  | `button.accordion-button` | Når en accordion bliver foldet ud, bliver eventet `fds.accordion.open` udløst på accordion knappen   |
 | fds.accordion.close | `button.accordion-button` | Når en accordion bliver foldet ind, bliver eventet `fds.accordion.close` udløst på accordion knappen |
 
-## Varianter
-
 {:#aabn-luk-alle}
-### Åbn/luk alle
+## Åbn/luk alle
+
 {% include code/syntax.html component="accordion-bulk-open" link=true copybutton=true %}
 
 {:#med-fejl}
-### Med fejl
+## Med fejl
+
 {% include code/syntax.html component="accordion-error" link=true copybutton=true %}
 
 {:#med-succesbeskeder}
-### Med succesbeskeder
+## Med succesbeskeder
+
 {% include code/syntax.html component="accordion-success" link=true copybutton=true %}

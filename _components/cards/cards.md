@@ -69,7 +69,7 @@ Skriv kort og præcist i hvert card.
 {% include code/preview-box.html component="cards-half-width" title="Eksempel på cards i to kolonner" %}
 
 {:#samme-hoejde}
-### Samme højde
+### Cards med samme højde
 
 {% include code/preview-box.html component="cards-same-height" title="Eksempel på cards med samme højde" %}
 

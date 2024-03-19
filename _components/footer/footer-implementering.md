@@ -13,6 +13,8 @@ previewimage: "footer-simple"
 previewimageTitle: "Eksempel på footer komponent"
 anchor: true
 subnav:
+- text: Installation
+  href: '#installation'
 - text: Tre kolonner
   href: '#tre-kolonner'
 - text: Fire kolonner
@@ -25,6 +27,7 @@ description: "Dokumentation på implementering af footer."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -52,21 +55,19 @@ Hvis man ved tryk på et link i footeren forlader selvbetjeningsløsningen bør 
 
 Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventuelt indtastet data kan blive tabt. Evt. ved brug af en almindelig JavaScript alert.
 
-## Varianter
-
 {:#tre-kolonner}
-### Tre kolonner
+## Tre kolonner
 
 {% include code/syntax.html component="footer-three-columns" link=true copybutton=true %}
 
 {:#fire-kolonner}
-### Fire kolonner
+## Fire kolonner
 {% include code/syntax.html component="footer-four-columns" link=true copybutton=true %}
 
 {:#kompleks}
-### Kompleks
+## Kompleks
 {% include code/syntax.html component="footer-complex" link=true copybutton=true %}
 
 {:#logo}
-### Logo
+## Logo
 {% include code/syntax.html component="footer-logo" link=true copybutton=true %}

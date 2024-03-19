@@ -9,10 +9,18 @@ category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Print
 lead: Sider kan struktureres, så de også fungerer godt ved print.
-anchor: false
+anchor: true
+subnav:
+- text: CSS-klasser
+  href: "#css-klasser"
+- text: Eksempler på skjul af elementer
+  href: "#eksempler"
 description: "FDS giver nogle værktøjer til at strukturere dine sider, så de også fungerer godt ved print."
 tags:
 ---
+
+{:#css-klasser}
+## CSS-klasser
 
 DKFDS giver nogle værktøjer, så man nemt kan tilpasse sider til print. Ved at tilføje visse klasser kan du vise, skjule eller ændre udseende på elementer ved print.
 
@@ -67,7 +75,8 @@ Derved kan du skjule eller vise visse elementer på siden, som enten ikke er rel
     </table>
 </div>
 
-<h2 class="h3">Eksempler på skjul af elementer</h2>
+{:#eksempler}
+## Eksempler på skjul af elementer
 
 Nogle elementer er ikke relevant ved print, derfor anbefaler vi at skjule dem ved print. Dette gøres ved at tilføje klassen `d-print-none` på elementet.
 
@@ -75,7 +84,7 @@ Man sparer både plads og blæk, når man skjuler elementer, der ikke er relevat
 
 Vi har udvalgt nogle eksempelløsninger, hvor du kan se eksempler på dette.
 
-<h3 class="h4">Knapper</h3>
+### Knapper
 
 Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappen.
 
@@ -87,7 +96,7 @@ Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappe
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="knapper-eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="knapper-eksempelloesninger" %}
 
-<h3 class="h4">Header</h3>
+### Header
 
 I headeren bør kun de højst nødvendige informationer vises. Menuen, links og knapper er ikke relevante, bliver derfor skjult.
 
@@ -101,7 +110,7 @@ Hvis du har kontaktinformationer stående både i headeren og footeren bør én 
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="header-eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="header-eksempelloesninger" %}
 
-<h3 class="h4">Footer</h3>
+### Footer
 
 Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysninger, men andre, så som privatlivspolitik eller andre links, er ikke relevante, da de ikke virker på print. Derfor anbefaler vi at man skjuler dem.
 
@@ -116,7 +125,7 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
 - {% include links/example-link.html linktext="Footer med logo" %}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="footer-eksempelloesninger" %}
 
-<h3 class="h4">Responsiv tabel</h3>
+### Responsiv tabel
 
 I nogle tilfælde, hvis man bruger {% include links/component-guideline-link.html linktext="en responsiv tabel" %}, giver det mening at tabellen ikke er responsiv, når det kommer til print.
 

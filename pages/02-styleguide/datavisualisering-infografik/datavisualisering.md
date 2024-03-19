@@ -6,7 +6,14 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Datavisualisering
 lead: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
-anchor: false
+anchor: true
+subnav:
+- text: Cirkeldiagrammer (kagediagram)
+  href: "#cirkeldiagrammer"
+- text: Søjlediagram (kolonnediagram)
+  href: "#soejlediagram"
+- text: Kurvediagram (linjediagram)
+  href: "#kurvediagram"
 description: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
 tags:
 - data
@@ -20,7 +27,9 @@ tags:
 
 Vær opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %} og anvend designsystemets {% include links/internal-link.html linktext="datavisualiseringsfarver" %}.
 
-## Cirkeldiagrammer (Kagediagram)
+{:#cirkeldiagrammer}
+## Cirkeldiagrammer (kagediagram)
+
 Et cirkeldiagram består af en cirkel, som opdeles i områder, der svarer til de enkelte datas størrelse. Det bruges typisk, hvis data er en del af en samlet mængde.
 
 Det anbefales at benytte en kvalitativ farvepalette, hvor der ikke er en farverækkefølge eller en sammenhæng mellem farverne (modsat sekventiel).  Det er vigtigt at, værdien af farverne opleves som nogenlunde ens. Ved brug af mønstre sammen med farver, kan brugere med synshandikap som farveblindhed eller andre handikap nemmere adskille de forskellige farver fra hinanden.
@@ -66,6 +75,7 @@ For at gøre datavisualiseringen endnu mere tilgængelig, kan en tabel med data 
     </figcaption>
 </figure>
 
+{:#soejlediagram}
 ## Søjlediagram (kolonnediagram)
 
 Et søjlediagram består af søjler, som går op til højden af de forskellige data. Det kan både være stående og liggende. Det anbefales at bruge denne type diagram til sammenligninger, der består af 10 eller færre kategorier. 
@@ -80,6 +90,7 @@ For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en
 <figcaption><p>Unge mennesker fra 18-34 år cykler mest. Ældre mennesker fra 67-84 år og børn fra 6-9 cykler mindst.</p><p>Kilde: Transportvaneundersøgelsen 2016-2019</p></figcaption>
 </figure>
 
+{:#kurvediagram}
 ## Kurvediagram (linjediagram)
 
 Kurvediagrammer bruges ikke lige så tit som søjlediagram og cirkeldiagram, men er gode til at vise en udvikling over tid, samt håndtere lidt større datamængder.

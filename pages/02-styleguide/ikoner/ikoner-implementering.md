@@ -8,7 +8,14 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
-anchor: false
+anchor: true
+subnav:
+- text: Ikoner indsat som svg med ikonsamling
+  href: "#ikoner-indsat-som-svg-med-ikonsamling"
+- text: Ikoner indsat med klasser
+  href: "#ikoner-indsat-med-klasser"
+- text: Tilgængelighed
+  href: "#tilgaengelighed"
 description: Sådan bruger du ikoner med FDS.
 preview: ikoner
 previewcomponent: "icons--svg"
@@ -19,9 +26,10 @@ tags:
 - inline svg
 ---
 
-Ikoner kan enten indsættes ved hjælp af en ikonsamling (anbefalet) eller ved hjælp af klasser.
+Ikoner kan enten indsættes som svg ved hjælp af en ikonsamling (anbefalet) eller ved hjælp af klasser.
 
-## Ikoner indsat med ikonsamling
+{:#ikoner-indsat-som-svg-med-ikonsamling}
+## Ikoner indsat som svg med ikonsamling
 
 Ikonsamlingen gør, at du kan indsætte ikoner med `<svg>`. Før dette virker, er du nødt til at implementere ikonsamlingen, der skal indsættes på hver side i løsningen.
 
@@ -62,6 +70,7 @@ Tilføj klassen `inline-svg` på ikoner, som skal fremgå i en tekst. Ikonet vil
 
 Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> midt i denne sætning.
 
+{:#ikoner-indsat-med-klasser}
 ## Ikoner indsat med klasser
 
 Ikoner kan indsættes ved hjælp af klasser på følgende måde:
@@ -70,6 +79,7 @@ Ikoner kan indsættes ved hjælp af klasser på følgende måde:
 
 Denne metode har nogle begrænsninger, hvorfor vi anbefaler, at man benytter ikonsamlingen i stedet for.
 
+{:#tilgaengelighed}
 ## Tilgængelighed
 
 Ikoner bør tilføjes en `aria-label` tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op, såfremt ikonet har betydning for forståelsen.

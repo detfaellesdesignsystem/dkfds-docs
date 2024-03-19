@@ -1769,6 +1769,7 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#interval">Begræns mulige datoer</a></li>
                         <li><a href="#fast-vaerdi">Fast værdi</a></li>
                         <li><a href="#datoformat">Datoformat</a></li>
@@ -1778,7 +1779,7 @@
                 </nav>
                 
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1809,6 +1810,7 @@
 </div>
 
 <h3>Javascript</h3>
+
 <p>Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.on(document.body);</code></pre></figure>
@@ -1816,6 +1818,7 @@
 <p>Bemærk: I visse frameworks kan ovenstående initialisering give problemer med at åbne kalenderen. Hvis du oplever dette problem, prøv da at anvende <code>DKFDS.datePicker.init(document.body)</code> i stedet for.</p>
 
 <h4 id="sprog">Sprog</h4>
+
 <p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden for datovælgeren, skal du selv give din oversættelse med inden komponenten initialiseres. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres. Bemærk, at ændring af sproget påvirker alle datovælgere på siden.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">DKFDS.datePicker.setLanguage({
@@ -1897,9 +1900,7 @@ DKFDS.datePicker.on(document.body);</code></pre></figure>
   </table>
 </div>
 
-<h2>Varianter</h2>
-
-<h3 id="interval">Begræns mulige datoer</h3>
+<h2 id="interval">Begræns mulige datoer</h2>
 
 <div class="component-preview component-preview-code  component-code-date-picker-interval">
     
@@ -1933,7 +1934,7 @@ DKFDS.datePicker.on(document.body);</code></pre></figure>
     
 </div>
 
-<h3 id="fast-vaerdi">Fast værdi</h3>
+<h2 id="fast-vaerdi">Fast værdi</h2>
 
 <div class="component-preview component-preview-code  component-code-date-picker-default-date">
     
@@ -1967,7 +1968,8 @@ DKFDS.datePicker.on(document.body);</code></pre></figure>
     
 </div>
 
-<h3 id="datoformat">Datoformat</h3>
+<h2 id="datoformat">Datoformat</h2>
+
 <p>Anvend attributten <code>data-dateformat</code>. Mulige værdier er:</p>
 <ul>
   <li><code>"DD/MM/YYYY"</code> (default, hvis der ikke er nogen attribut)</li>
@@ -2016,6 +2018,7 @@ DKFDS.datePicker.on(document.body);</code></pre></figure>
 </div>
 
 <h2 id="fejlmeddelelse">Fejlmeddelelse</h2>
+
 <p>Læs mere om korrekt brug af <a href="/komponenter/fejlmeddelelser/guidelines/">fejlmeddelelser</a> og <a href="/komponenter/fejlmeddelelser/implementering/#datovaelger">fejlmeddelelser’s implementering med datovælgeren.</a></p>
 
 <p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/implementering/">en fejlopsummering</a>.</p>

@@ -26,7 +26,7 @@ tags:
 
 Brug `class="hidden"` på Forrige-, Næste-, Første- og Sidste-knapperne, når de ikke skal vises.
 
-## Tilgængelighed
+### Tilgængelighed
 
 Lad knappen med tallet til sidste side indeholde en aria-label, der oplyser dette. Husk at lade den aktuelle side være markeret med `aria-current="page"`.
 

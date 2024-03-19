@@ -1766,6 +1766,7 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#hjaelpetekst">Hjælpetekst</a></li>
                         <li><a href="#obligatoriske-og-frivillige-felter">Obligatoriske og frivillige felter</a></li>
                         <li><a href="#read-only">Read-only</a></li>
@@ -1778,7 +1779,7 @@
                 </nav>
                 
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1841,9 +1842,7 @@
     
 </div>
 
-<h2>Varianter</h2>
-
-<h3 id="hjaelpetekst">Hjælpetekst</h3>
+<h2 id="hjaelpetekst">Hjælpetekst</h2>
 
 <div class="component-preview component-preview-code  component-code-text-input-helptext">
     
@@ -1878,7 +1877,7 @@
     
 </div>
 
-<h3 id="obligatoriske-og-frivillige-felter">Obligatoriske og frivillige inputfelter</h3>
+<h2 id="obligatoriske-og-frivillige-felter">Obligatoriske og frivillige inputfelter</h2>
 
 <div class="component-preview component-preview-code  component-code-text-input-optional">
     
@@ -1931,7 +1930,7 @@
 
 <p>Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man “(frivilligt)” ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man “(*skal udfyldes)” ved de få felter, der er påkrævede.</p>
 
-<h3 id="read-only">Read-only</h3>
+<h2 id="read-only">Read-only</h2>
 
 <div class="component-preview component-preview-code  component-code-text-input-readonly">
     
@@ -1963,7 +1962,7 @@
     
 </div>
 
-<h3 id="deaktiveret">Deaktiveret</h3>
+<h2 id="deaktiveret">Deaktiveret</h2>
 
 <div class="component-preview component-preview-code  component-code-text-input-disabled">
     
@@ -1995,7 +1994,7 @@
     
 </div>
 
-<h3 id="prefix-og-suffix">Prefix og suffix</h3>
+<h2 id="prefix-og-suffix">Prefix og suffix</h2>
 
 <div class="component-preview component-preview-code  component-code-text-input-prefix-suffix">
     
@@ -2052,7 +2051,7 @@
     
 </div>
 
-<h3 id="karakterbegraensning">Karakterbegrænsning</h3>
+<h2 id="karakterbegraensning">Karakterbegrænsning</h2>
 
 <div class="component-preview component-preview-code  component-code-text-input-character-limit">
     
@@ -2092,10 +2091,10 @@
 
 <p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
 
-<h4>JavaScript</h4>
+<h3>JavaScript</h3>
 <p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med <code>init()</code>.</p>
 
-<h5>Funktioner</h5>
+<h4>Funktioner</h4>
 <div class="table--responsive-scroll">
   <table class="table table--responsive-headers">
     <thead>
@@ -2127,7 +2126,7 @@
 form_limit.init();
 form_limit.charactersLeft();</code></pre></figure>
 
-<h5>Sprog</h5>
+<h4>Sprog</h4>
 <p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres.</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;), {
@@ -2137,7 +2136,7 @@ form_limit.charactersLeft();</code></pre></figure>
   &quot;characters_too_many&quot;: &quot;Du har {value} tegn for meget&quot;
 }).init();</code></pre></figure>
 
-<h3 id="feltbredde">Feltbredde</h3>
+<h2 id="feltbredde">Feltbredde</h2>
 
 <p>Inputfelter har en standard bredde på 32rem. For at ændre bredden bruges nedenstående klasser:</p>
 
@@ -2150,7 +2149,7 @@ form_limit.charactersLeft();</code></pre></figure>
   <li><code>input-width-xl</code> har en bredde på 48rem</li>
 </ul>
 
-<h4>Bredde med tegn</h4>
+<h3>Bredde med tegn</h3>
 
 <p>For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:</p>
 

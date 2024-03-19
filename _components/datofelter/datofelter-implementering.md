@@ -11,11 +11,17 @@ title: Datofelter
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 component: "date-input"
 componentTitle: "Eksempel på datofelter"
-anchor: false
+anchor: true
+subnav:
+- text: Installation
+  href: "#installation"
+- text: Fejlmeddelelse
+  href: "#fejlmeddelelse"
 description: "Dokumentation på implementering af datofelter."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -27,9 +33,9 @@ tags:
 
 {:#fejlmeddelelse}
 ## Fejlmeddelelse
+
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med datofelter." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.
-
 
 

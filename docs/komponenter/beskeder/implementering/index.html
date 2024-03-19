@@ -1792,8 +1792,9 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#farver">Farver</a></li>
-                        <li><a href="#beskeder-med-ikon">Beskeder med ikon</a></li>
+                        <li><a href="#beskeder-med-ikon">Ikon</a></li>
                         <li><a href="#paragrafbredde">Paragrafbredde</a></li>
                         <li><a href="#luk-knap">Luk knap</a></li>
                         
@@ -1801,7 +1802,7 @@
                 </nav>
                 
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1859,6 +1860,7 @@
 <p>Hvis beskeden indeholder en <code>alert-heading</code>, sørg da for at benytte et html-element, der passer ind i konteksten på siden. Dette vil som regel være en overskrift, for eksempel <code>&lt;h3&gt;</code>, eller et <code>&lt;strong&gt;</code>-element.</p>
 
 <h3>Javascript</h3>
+
 <p>Man kan bruge nedenstående JavaScript for at sætte events på luk-knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk-knappen.
 Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
@@ -1890,11 +1892,9 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
   </table>
 </div>
 
-<h2>Varianter</h2>
+<h2 id="farver">Farver</h2>
 
-<h3 id="farver">Farver</h3>
-
-<h4>Informativ</h4>
+<h3>Informativ</h3>
 <p>Informativ er blå, og defineres med klassen <code>alert-info</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-info">
@@ -1927,7 +1927,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
 </div>
 
-<h4>Succes</h4>
+<h3>Succes</h3>
 <p>Succesbesked er grøn, og defineres med klassen <code>alert-success</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-success">
@@ -1960,7 +1960,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
 </div>
 
-<h4>Advarsel</h4>
+<h3>Advarsel</h3>
 <p>Besked med advarsel er gul, og defineres med klassen <code>alert-warning</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-warning">
@@ -1993,7 +1993,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
 </div>
 
-<h4>Fejl</h4>
+<h3>Fejl</h3>
 <p>Besked med fejl er rød, og defineres med klassen <code>alert-error</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-error">
@@ -2026,7 +2026,8 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
 </div>
 
-<h3 id="beskeder-med-ikon">Ikon</h3>
+<h2 id="beskeder-med-ikon">Ikon</h2>
+
 <p>Defineres med klassen <code>alert--show-icon</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alerts-icons">
@@ -2084,7 +2085,8 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
 </div>
 
-<h3 id="paragrafbredde">Paragrafbredde</h3>
+<h2 id="paragrafbredde">Paragrafbredde</h2>
+
 <p>Defineres med klassen <code>alert--paragraph</code>.</p>
 
 <div class="component-preview component-preview-code  component-code-alert-paragraph">
@@ -2117,7 +2119,7 @@ Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten
     
 </div>
 
-<h3 id="luk-knap">Luk knap</h3>
+<h2 id="luk-knap">Luk knap</h2>
 
 <div class="component-preview component-preview-code  component-code-alert-close">
     

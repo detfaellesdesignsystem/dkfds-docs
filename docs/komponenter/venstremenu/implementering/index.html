@@ -1790,12 +1790,97 @@
     </nav>
 
                 
+                <nav class="anchorbox" aria-label="Ankerlinks">
+                    <h2 class="anchortitle">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#to-niveauer">2 niveauer</a></li>
+                        <li><a href="#tre-niveauer">3 niveauer</a></li>
+                        <li><a href="#ekstra-information">Ekstra information</a></li>
+                        
+                    </ul>
+                </nav>
+                
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
+<div class="component-preview component-preview-code  component-code-sidenav-normal-level1">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav aria-label=&quot;Sidemenu (eksempel)&quot;&gt;
+    &lt;ul class=&quot;sidemenu&quot;&gt;
+
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                &lt;span&gt;Side&lt;/span&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+        &lt;li class=&quot;active current&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; aria-current=&quot;page&quot;&gt;
+
+                &lt;span&gt;Side&lt;/span&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                &lt;span&gt;Side&lt;/span&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<h4>Aktive menupunkter</h4>
+
+<ul>
+  <li>Aktive menupunkter skal have klassen <code>current</code>.</li>
+  <li>Kun det sidste aktive menupunkt skal have klassen <code>active</code>.</li>
+  <li>Hvis der kun er ét aktivt niveau sættes begge klasser.</li>
+</ul>
+
+<h4>Tilføj ikon og information i venstremenu</h4>
+
+<ul>
+  <li>For at tilføje et ikon til et punkt i venstremenuen bruges klassen <code>sidenav-icon-before</code>.</li>
+  <li>For at tilføje information til et punkt i venstremenuen bruges klassen <code>sidenav-information</code>.</li>
+  <li>Ikoner og informationer kan også sammensættes i én venstremenu.</li>
+</ul>
+
+<h2 id="to-niveauer">2 niveauer</h2>
+
 <div class="component-preview component-preview-code  component-code-sidenav-normal-level2">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-normal-level2/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: sidenav-normal-level2</span></a>
+        
+    </div>
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -1892,21 +1977,207 @@
     
 </div>
 
-<h4>Aktive menupunkter</h4>
+<h2 id="tre-niveauer">3 niveauer</h2>
 
-<ul>
-  <li>Aktive menupunkter skal have klassen <code>current</code>.</li>
-  <li>Kun det sidste aktive menupunkt skal have klassen <code>active</code>.</li>
-  <li>Hvis der kun er ét aktivt niveau sættes begge klasser.</li>
-</ul>
+<div class="component-preview component-preview-code  component-code-sidenav-normal-level3">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-normal-level3/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: sidenav-normal-level3</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav aria-label=&quot;Sidemenu (eksempel)&quot;&gt;
+    &lt;ul class=&quot;sidemenu&quot;&gt;
 
-<h4>Tilføj ikon og information i venstremenu</h4>
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
 
-<ul>
-  <li>For at tilføje et ikon til et punkt i venstremenuen bruges klassen <code>sidenav-icon-before</code>.</li>
-  <li>For at tilføje information til et punkt i venstremenuen bruges klassen <code>sidenav-information</code>.</li>
-  <li>Ikoner og informationer kan også sammensættes i én venstremenu.</li>
-</ul>
+                &lt;span&gt;Side&lt;/span&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+        &lt;li class=&quot;active&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                &lt;span&gt;Side&lt;/span&gt;
+
+            &lt;/a&gt;
+            &lt;ul&gt;
+
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                        &lt;span&gt;Underside&lt;/span&gt;
+
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+
+                &lt;li class=&quot;active&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                        &lt;span&gt;Underside&lt;/span&gt;
+
+                    &lt;/a&gt;
+                    &lt;ul&gt;
+
+                        &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                                &lt;span&gt;Underunderside&lt;/span&gt;
+
+                            &lt;/a&gt;
+
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                                &lt;span&gt;Underunderside&lt;/span&gt;
+
+                            &lt;/a&gt;
+
+                        &lt;/li&gt;
+
+                        &lt;li class=&quot;active current&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; aria-current=&quot;page&quot;&gt;
+
+                                &lt;span&gt;Underunderside&lt;/span&gt;
+
+                            &lt;/a&gt;
+
+                        &lt;/li&gt;
+
+                        &lt;li&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                                &lt;span&gt;Underunderside&lt;/span&gt;
+
+                            &lt;/a&gt;
+
+                        &lt;/li&gt;
+
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                        &lt;span&gt;Underside&lt;/span&gt;
+
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                        &lt;span&gt;Underside&lt;/span&gt;
+
+                    &lt;/a&gt;
+
+                &lt;/li&gt;
+
+            &lt;/ul&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                &lt;span&gt;Side&lt;/span&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<h2 id="ekstra-information">Ekstra information</h2>
+
+<div class="component-preview component-preview-code  component-code-sidenav-information-level1">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/sidenav-information-level1/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: sidenav-information-level1</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav aria-label=&quot;Sidemenu (eksempel)&quot;&gt;
+    &lt;ul class=&quot;sidemenu&quot;&gt;
+
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                &lt;div&gt;
+                    &lt;span&gt;Side&lt;/span&gt;
+                    &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for side&lt;/span&gt;
+                &lt;/div&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+        &lt;li class=&quot;active current&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; aria-current=&quot;page&quot;&gt;
+
+                &lt;div&gt;
+                    &lt;span&gt;Side&lt;/span&gt;
+                    &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for side&lt;/span&gt;
+                &lt;/div&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+
+                &lt;div&gt;
+                    &lt;span&gt;Side&lt;/span&gt;
+                    &lt;span class=&quot;sidenav-information&quot;&gt;Informationstekst for side&lt;/span&gt;
+                &lt;/div&gt;
+
+            &lt;/a&gt;
+
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
 
 
                 

@@ -1804,6 +1804,7 @@
                 <nav class="anchorbox" aria-label="Ankerlinks">
                     <h2 class="anchortitle">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#uden-ramme">Uden ramme</a></li>
                         <li><a href="#zebralinjer">Zebralinjer</a></li>
                         <li><a href="#responsiv">Responsiv</a></li>
@@ -1817,7 +1818,7 @@
                 </nav>
                 
 
-                <h2 id="retningslinjer">Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -1892,15 +1893,13 @@
 
 <p>Tabeller er som udgangspunkt sat ind i en <code>&lt;div&gt;</code>, der har klassen <code>table--responsive-scroll</code>, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne <code>&lt;div&gt;</code>.</p>
 
-<h2 id="varianter">Varianter</h2>
-
-<h3 id="uden-ramme">Uden ramme</h3>
+<h2 id="uden-ramme">Uden ramme</h2>
 <p>For at fjerne den yderste ramme tilføj klassen <code>table--borderless</code> til <code>&lt;table&gt;</code>.</p>
 
-<h3 id="zebralinjer">Zebralinjer</h3>
+<h2 id="zebralinjer">Zebralinjer</h2>
 <p>Man kan sætte zebralinjer på en tabel med klassen <code>table--zebra</code> på <code>&lt;table&gt;</code>.</p>
 
-<h3 id="responsiv">Responsiv tabel</h3>
+<h2 id="responsiv">Responsiv tabel</h2>
 <p>En tabel gøres responsiv ved at tilføje klassen <code>table--responsive-headers</code> til <code>&lt;table&gt;</code>. Responsive tabeller ændrer som standard udseende ved <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser">breakpoint</a> <code>sm</code>, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint.</p>
 
 <p>Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende <a href="/komponenter/tables/implementering/#horisontalt-scroll">horisontalt scroll</a> - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.</p>
@@ -1926,21 +1925,21 @@
 
 <p>Bemærk, at tabeller med sortering og tabeller med valgbare rækker ikke har en responsiv version.</p>
 
-<h4 id="javascript-responsiv">JavaScript for responsive tabeller</h4>
+<h3 id="javascript-responsiv">JavaScript for responsive tabeller</h3>
 
 <p>Anvendes til at sætte de korrekte attributter automatisk, hvis man ønsker en responsiv tabel. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.ResponsiveTable(document.getElementById(&#39;TABLE-ID&#39;));</code></pre></figure>
 
-<h3 id="linjehoejde">Linjehøjde</h3>
+<h2 id="linjehoejde">Linjehøjde</h2>
 
-<h4>Kompakt</h4>
+<h3>Kompakt</h3>
 <p>Tilføj klassen <code>table--compact</code> på <code>&lt;table&gt;</code>.</p>
 
-<h4>Ekstra kompakt</h4>
+<h3>Ekstra kompakt</h3>
 <p>Tilføj klassen <code>table--extracompact</code> på <code>&lt;table&gt;</code>.</p>
 
-<h3 id="sortering-i-tabel">Sortering i tabel</h3>
+<h2 id="sortering-i-tabel">Sortering i tabel</h2>
 <p>Se nedenstående eksempels HTML for, hvilke klasser, attributter og knapper, der skal sættes på hhv. <code>&lt;th&gt;</code> og <code>&lt;tbody&gt;</code>.</p>
 
 <p>Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration.</p>
@@ -2022,7 +2021,7 @@
     
 </div>
 
-<h3 id="soegning-i-tabeller">Søgning i tabeller</h3>
+<h2 id="soegning-i-tabeller">Søgning i tabeller</h2>
 <p>Anvend <a href="/komponenter/search/implementering/">søgefeltkomponenten</a> sammen med din tabel og tilføj <code>aria-live="polite"</code> til <code>&lt;table&gt;</code>.</p>
 
 <p>Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration.</p>
@@ -2105,7 +2104,7 @@
     
 </div>
 
-<h3 id="valgbare-raekker">Valgbare rækker</h3>
+<h2 id="valgbare-raekker">Valgbare rækker</h2>
 
 <div class="component-preview component-preview-code  component-code-table-selectable">
     
@@ -2219,7 +2218,7 @@
     
 </div>
 
-<h4 id="valgbare-raekker-knapper">Valgbare rækker med funktionsknapper</h4>
+<h3 id="valgbare-raekker-knapper">Valgbare rækker med funktionsknapper</h3>
 
 <div class="component-preview component-preview-code  component-code-table-selectable-functions">
     
@@ -2348,14 +2347,14 @@
     
 </div>
 
-<h4>JavaScript for tabeller med valgbare rækker</h4>
+<h3>JavaScript for tabeller med valgbare rækker</h3>
 <p>Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.TableSelectableRows(document.getElementById(&#39;TABLE-ID&#39;)).init();</code></pre></figure>
 
 <p>Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.</p>
 
-<h5>Events</h5>
+<h4>Events</h4>
 
 <table class="table table--responsive-headers">
   <thead>
@@ -2374,7 +2373,7 @@
   </tbody>
 </table>
 
-<h3 id="strukturerede-lister">Strukturerede lister</h3>
+<h2 id="strukturerede-lister">Strukturerede lister</h2>
 
 <div class="component-preview component-preview-code  component-code-structured-list">
     
@@ -2429,7 +2428,7 @@
 
 <p>Listen kan gøres responsiv ved at tilføje klassen med det ønskede breakpoint. Se <a href="/komponenter/tables/implementering/#responsiv">responsive klasser for tabeller</a>.</p>
 
-<h4 id="strukturerede-lister-edit">Struktureret liste med redigér</h4>
+<h3 id="strukturerede-lister-edit">Struktureret liste med redigér</h3>
 
 <div class="component-preview component-preview-code  component-code-structured-list-edit">
     

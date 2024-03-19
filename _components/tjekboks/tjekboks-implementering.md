@@ -12,12 +12,15 @@ component: "checkbox-large"
 componentTitle: "Eksempel på tjekboks"
 anchor: true
 subnav:
-- text: Skjult indhold (Collapse)
+- text: Installation
+  href: '#installation'
+- text: Skjult indhold (collapse)
   href: '#skjult-indhold-collapse'
 description: "Dokumentation på implementering af tjekbokse."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -62,10 +65,8 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).in
   </table>
 </div>
 
-## Varianter
-
 {:#skjult-indhold-collapse}
-### Skjult indhold (Collapse)
+## Skjult indhold (collapse)
 
 {% include code/syntax.html component="checkbox-collapse" link=true copybutton=true %}
 

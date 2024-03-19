@@ -9,7 +9,16 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Grid og baseline grid
 lead: Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.
-anchor: false
+anchor: true
+subnav:
+- text: 12 kolonner (horisontalt)
+  href: "#kolonner"
+- text: Breakpoints
+  href: "#breakpoints"
+- text: Eksempler på grid layout
+  href: "#eksempler"
+- text: Baseline grid (8px vertikalt)
+  href: "#baseline-grid"
 description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
   af siden i 12 lige brede kolonner.
 tags:
@@ -28,12 +37,14 @@ Det vigtige er at du anvender responsivt grid.
 
 Når du anvender et responsivt grid sørger du for at din selvbetjeningsløsning tilpasser sig den skærmstørrelse som din selvbetjeningsløsning tilgås via. - uanset om det er en mindre mobilskærm eller en større stationær skærm.
 
+{:#kolonner}
 ## 12 kolonner (horisontalt)
 
 Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner med 32px afstand mellem hver kolonne (16 px på hver side af en kolonne). Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.
 
 I tablet- og mobilvisninger folder layoutet sammen til 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst. 
 
+{:#breakpoints}
 ## Breakpoints
 
 Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.
@@ -45,6 +56,7 @@ Sidens breakpoints er de værdier, hvorefter siden automatisk tilpasser sig area
 - Tablet: 768px
 - Mobil: 576px
 
+{:#eksempler}
 ## Eksempler på grid layout
 
 Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout varianter, der fx består af 3/9, 4/8, 4/4/4 osv. Alle sider bygger på den måde på det samme fundament, som bidrager til at skabe ro og overblik.
@@ -63,6 +75,7 @@ Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout va
     <figcaption>I ovenstående eksempel vises hvordan cards aligner på siden ved brug af grid.</figcaption>
 </figure>
 
+{:#baseline-grid}
 ## Baseline grid (8px vertikalt)
 
 ### 8 point
