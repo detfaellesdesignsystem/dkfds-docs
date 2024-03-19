@@ -81,4 +81,4 @@ Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen u
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{% include links/internal-link.html linktext="Se komponenten i forskellige eksempelløsninger" %} (tryk på <em>'Kontakt'</em> i eksemplernes header)
+Se hvordan komponenten bruges i de forskellige {% include links/internal-link.html linktext="eksempler på selvbetjeningsløsninger" %} (tryk på <em>'Kontakt'</em> i eksemplernes header)

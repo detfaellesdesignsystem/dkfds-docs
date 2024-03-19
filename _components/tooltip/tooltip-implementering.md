@@ -22,8 +22,8 @@ subnav:
   href: "#inputfelt-med-tooltip"
 - text: Brødtekst med tooltip
   href: "#broedtekst-med-tooltip"
-- text: Klikbart ikon med hover-tooltip
-  href: "#klikbart-ikon-med-hover-tooltip"
+- text: Ikoner med hover-tooltip
+  href: "#ikoner-med-hover-tooltip"
 - text: Knap med hover-tooltip
   href: "#knap-med-hover-tooltip"
 - text: Referencer
@@ -78,10 +78,10 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 
 {% include code/syntax.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" link=true copybutton=true %}
 
-{:#klikbart-ikon-med-hover-tooltip}
-## Klikbart ikon med hover-tooltip
+{:#ikoner-med-hover-tooltip}
+## Ikoner med hover-tooltip
 
-Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017). Vær ekstra omhyggelig i disse tilfælde med at holde tooltipteksten kort og præcis.
+Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017).
 
 {% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" link=true copybutton=true %}
 

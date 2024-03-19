@@ -35,6 +35,8 @@ Brug tooltips til præcisering af specifikke elementer i brugergrænsefladen.
 
 Tooltips anvendes ikke til informationer, der er essentielle for at brugeren kan gennemføre løsningen. Hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst i stedet for.
 
+Placér ikke interaktive elementer såsom knapper og links inde i tooltips.
+
 ### Vejledning
 
 Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad. 
@@ -43,7 +45,7 @@ Gør det let at se, hvilket element tooltippet tilhører ved at placere hjælpei
 
 Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.
 
-Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten ikoner med hover-tooltip.
+Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten {% include links/component-guideline-link.html linktext="ikoner med hover-tooltip" %}.
 
 {% include dos-donts-box.html component="tooltip-dos-donts" title="Tooltip do's and don'ts" %}
 
@@ -78,13 +80,16 @@ Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv
 
 ### Hover-tooltip
 
-Tooltips og hover-tooltips minder meget om hinanden. Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom en tekst eller et ikon. På mobil vises hover-tooltip ved tap. 
+Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom et ikon. Vær varsom med at anvende hover-tooltips. På mobil vises de kun ved “long press”, eftersom elementets funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
 
 Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 
-#### Klikbart ikon med hover-tooltip
+{:#ikoner-med-hover-tooltip}
+#### Ikoner med hover-tooltip
 
-Det anbefales altid at bruge ikoner sammen med en tekst. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse.
+Det anbefales altid at bruge ikoner sammen med en synlig tekstlabel. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse
+
+Vær opmærksom på, at tooltipteksten skal være så kort og præcis, som hvis den var en synlig tekstlabel til ikonet. Skriv fx bare “Slet” og <strong>ikke</strong> “Tryk på ikonet for at slette”. Sådan sikres den bedste brugeroplevelse, også for skærmlæserbrugere.
 
 {% include code/preview-box.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" %}
 

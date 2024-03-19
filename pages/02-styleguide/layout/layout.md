@@ -135,6 +135,7 @@ Det specifikke indhold i selvbetjeningsløsningerne kan variere. De konkrete ret
        <p>Brug et grid-system til fx til at styre dit layout. Grid skaber struktur i informationer. Responsivt grid tilpasser sig desuden skærmformatet.</p>
        <p>{% include links/internal-link.html linktext="Grid’et i designsystemet" %}</p>
        <p>{% include links/internal-link.html linktext="Eksempler på selvbetjeningsløsninger" %}</p>
+       <p>{% include links/internal-link.html linktext="Eksempler på templates" %}</p>
     </div>
     <div class="col-12 col-lg-7 bg-darkgrey align-text-center">
         <img src="{{ site.baseurl }}/assets/img/descriptionimages/Brug_et_grid.svg" class="my-5 mx-2" alt="Side med gridsystem" />

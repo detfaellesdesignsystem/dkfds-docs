@@ -12,12 +12,7 @@ lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation o
   Tags forekommer med og uden ikon.
 component: "tags"
 componentTitle: "Eksempel på tags"
-anchor: true
-subnav:
-- text: Installation
-  href: '#installation'
-- text: Tags med ikon
-  href: '#tags-med-ikon'
+anchor: false
 description: "Dokumentation på implementering af tags."
 tags:
 ---

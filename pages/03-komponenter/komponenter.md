@@ -17,4 +17,4 @@ Vi stræber efter, at Det Fælles Designsystem skal imødekomme de gængse behov
 
 Hvis der udvikles en ny komponent, skal den passe visuelt til Det Fælles Designsystem, og den skal efterleve {% include links/internal-link.html linktext="designets grundprincipper" %} og kravene til {% include links/internal-link.html linktext="tilgængelighed" %}. Husk også at brugerteste løsningen for at være sikre på, at brugerne forstår og kan anvende den nye komponent.
 
-Hvis du mener, der mangler en gængs komponent, som ville kunne bruges i flere løsninger, kan du {% include links/internal-link.html linktext="kontakte FDS-teamet" %} for at anmode om, at den tilføjes til Det Fælles Designsystem.
+Hvis du mener, der mangler en gængs komponent, som ville kunne bruges i flere løsninger, kan du {% include links/internal-link.html linktext="kontakte os" %} for at anmode om, at den tilføjes til Det Fælles Designsystem.

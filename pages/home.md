@@ -27,19 +27,19 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
 <div class="container">
     <div class="row py-9">
         <div class="col-12 col-lg-4">
-            <h2 class="mt-0">Design</h2>
-            <p>Disse grundlæggende designbeslutninger danner fundament for hele systemet af komponenter, eksempler og systemet selv.</p>
-            <p>{% include links/internal-link.html linktext="Følg designet" bold=true %}</p>
+            <h2 class="mt-0">Styleguide</h2>
+            <p>Disse grundlæggende designbeslutninger udgør fundamentet for designsystemets komponenter og retningslinjer.</p>
+            <p>{% include links/internal-link.html linktext="Gå til styleguide" bold=true %}</p>
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Komponenter</h2>
             <p>Komponenterne er byggeklodserne, som du kan bruge til at bygge den løsning dine brugere har behov for.</p>
-            <p>{% include links/internal-link.html linktext="Brug komponenterne" bold=true %}</p>
+            <p>{% include links/internal-link.html linktext="Gå til komponenter" bold=true %}</p>
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Eksempler</h2>
             <p>Få inspiration til, hvordan designsystemet kan anvendes til at bygge selvbetjenings-løsninger med.</p>
-            <p>{% include links/internal-link.html linktext="Se eksemplerne" bold=true %}</p>
+            <p>{% include links/internal-link.html linktext="Gå til eksempler" bold=true %}</p>
         </div>
     </div>
     <hr>
@@ -62,10 +62,10 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
     </div>
     <hr>
     <div class="pt-9">
-        <h2 class="mt-0">Opdateringer</h2>
-        <p>Hold dig opdateret på de seneste opdateringer. Vi releaser jævnligt.</p>
+        <h2 class="mt-0">Release notes</h2>
+        <p>Hold dig opdateret på de seneste ændringer.</p>
         <ul class="nobullet-list">
-            <li>{% include links/internal-link.html linktext="Følg med i hvad der bliver lavet (Release notes)" %}</li>
+            <li>{% include links/internal-link.html linktext="Gå til release notes" %}</li>
         </ul>
     </div> 
 </div>

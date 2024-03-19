@@ -48,7 +48,7 @@ tags:
                 <label for="samtykke-check">Jeg giver hermed samtykke til, at Erhvervsstyrelsen må opbevare min <span class='nowrap'>e-mailadresse</span>, indtil jeg selv afmelder mig nyhedsbrevet</label>
             </div>
         </div>
-        <p>{% include links/internal-link.html linktext="Læs om vores behandling af dine personoplysninger og dine rettigheder" %}</p>
+        <p>Læs om vores behandling af dine personoplysninger og dine rettigheder under {% include links/internal-link.html linktext="Privatlivspolitik og cookies" %}.</p>
         <input type="submit" class="button button-primary mt-5" value="Tilmeld" id="newsletter-submit">
     </form>
     <p class="mt-9 pt-0">

@@ -20,7 +20,7 @@ lead: Nogle gange er der spørgsmål til FDS-teamet, der går igen. Før du tage
         <div id="a1" aria-hidden="true" class="accordion-content">
             <p>Ja, det må I gerne. Overvej dog altid, om det er nødvendigt og giver værdi med et nyt ikon i netop jeres løsning.</p>
             <p>Hvis I beslutter jer for at tilføje et nyt ikon, skal det passe visuelt til Det Fælles Designsystem. Det kan I læse mere om under {% include links/internal-link.html linktext="ikoner" %}. Husk også at brugerteste jeres løsning for at være sikre på, at brugerne forstår det nye ikon.</p>
-            <p>Hvis I mener, designsystemet mangler et gængst ikon, kan I {% include links/internal-link.html linktext="kontakte FDS-teamet" %} for at anmode om, at det tilføjes til Det Fælles Designsystems ikonbibliotek.</p>
+            <p>Hvis I mener, designsystemet mangler et gængst ikon, kan I {% include links/internal-link.html linktext="kontakte os" %} for at anmode om, at det tilføjes til Det Fælles Designsystems ikonbibliotek.</p>
         </div>
     </li>
     <li>
@@ -32,7 +32,7 @@ lead: Nogle gange er der spørgsmål til FDS-teamet, der går igen. Før du tage
         <div id="a2" aria-hidden="true" class="accordion-content">
             <p>Ja, det må I gerne. Overvej dog altid, om jeres udfordring kan løses bedre med en af de komponenter, der allerede findes i designsystemet.</p>
             <p>Hvis I beslutter jer for at udvikle en ny komponent, skal den passe visuelt til Det Fælles Designsystem, og den skal efterleve {% include links/internal-link.html linktext="designets grundprincipper" %} og kravene til {% include links/internal-link.html linktext="tilgængelighed" %}. Husk også at brugerteste jeres løsning for at være sikre på, at brugerne forstår og kan anvende den nye komponent.</p>
-            <p>Hvis I mener, der mangler en gængs komponent, som ville kunne bruges i flere løsninger, kan I {% include links/internal-link.html linktext="kontakte FDS-teamet" %} for at anmode om, at den tilføjes til Det Fælles Designsystem.</p>
+            <p>Hvis I mener, der mangler en gængs komponent, som ville kunne bruges i flere løsninger, kan I {% include links/internal-link.html linktext="kontakte os" %} for at anmode om, at den tilføjes til Det Fælles Designsystem.</p>
         </div>
     </li>
     <li>
@@ -52,7 +52,7 @@ lead: Nogle gange er der spørgsmål til FDS-teamet, der går igen. Før du tage
             </button>
         </h2>
         <div id="a4" aria-hidden="true" class="accordion-content">
-            <p>I er selv ansvarlige for at følge Det Fælles Designsystems retningslinjer og brugerteste den enkelte løsning. I kan dog {% include links/internal-link.html linktext="kontakte FDS-teamet" %}, hvis I har specifikke spørgsmål eller udfordringer med at anvende designsystemet.</p>
+            <p>I er selv ansvarlige for at følge Det Fælles Designsystems retningslinjer og brugerteste den enkelte løsning. I kan dog {% include links/internal-link.html linktext="kontakte os" %}, hvis I har specifikke spørgsmål eller udfordringer med at anvende designsystemet.</p>
             <p>Kort sagt skal løsningen se ud og fungere som beskrevet her på siden for at anvende designsystemet. For at sikre jer, at jeres løsning følger Det Fælles Designsystem, kan I gennemgå punkterne på siden {% include links/internal-link.html linktext="Tjekliste" %}.</p>
         </div>
     </li>
@@ -69,4 +69,4 @@ lead: Nogle gange er der spørgsmål til FDS-teamet, der går igen. Før du tage
 </ul>
 
 <h2 class="h5 mt-7">Fik du ikke svar på dit spørgsmål?</h2>
-Så kan du kontakte FDS-teamet ved at {% include links/internal-link.html linktext="sende en e-mail" %} eller {% include links/external-link.html linktext='oprette et issue på GitHub' %}.
+Så kan du kontakte os ved at {% include links/internal-link.html linktext="sende en e-mail" %} eller {% include links/external-link.html linktext='oprette et issue på GitHub' %}.

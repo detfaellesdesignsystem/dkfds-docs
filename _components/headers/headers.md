@@ -41,7 +41,7 @@ Brug ikke topnavigationen som faneblade, anvend da {% include links/component-gu
 
 ### Vejledning
 
-Tag et kig på {% include links/internal-link.html linktext="eksempelløsningerne" %}, for at se hvordan komponenten passer ind i en komplet løsning.
+Tag et kig på {% include links/internal-link.html linktext="eksemplerne på selvbetjeningsløsninger" %} for at se, hvordan komponenten passer ind i en komplet løsning.
 
 En header består af et antal rækker med forskelligt indhold.
 

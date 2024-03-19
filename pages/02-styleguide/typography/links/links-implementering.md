@@ -33,7 +33,7 @@ tags:
 
 {% include code/syntax.html component="external-link" copybutton=true %}
 
-Eksternt link gør brug af ikoner. {% include links/internal-link.html linktext="Se dokumentationen for implementering af ikoner" %}.
+Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}.
 
 {:#sekundaere-links}
 ## Sekundære links

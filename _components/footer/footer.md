@@ -57,7 +57,7 @@ tags:
 {:#eksempelloesninger}
 ## Se komponenten i eksempelløsninger
 
-{% include links/internal-link.html linktext="Se komponenten i forskellige eksempelløsninger" %}
+Se hvordan komponenten bruges i de forskellige {% include links/internal-link.html linktext="eksempler på selvbetjeningsløsninger" %}.
 
 {:#ref}
 ## Referencer
