@@ -51,20 +51,16 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- comment -%} -------- w3.org -------- {%- endcomment -%}
 
-    {%- when "wcag 2.1 success criterion 1.3.5 identify input purpose", 
-             "wcag 2.1 aa identify input purpose" -%}
+    {%- when "w3c (wcag 2.1): understanding sc 1.3.5: identify input purpose (level aa)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "timing adjustable: understanding sc 2.2.1",
-             "wcag succes kriteriet 2.2.1: timing adjustable" -%}
+    {%- when "w3c (wcag 2.1): understanding sc 2.2.1: timing adjustable (level a)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "wcag 2.1 success criterion 1.4.3: contrast (minimum)", 
-             "læs om kontrastforhold for tekst i wcag 2.1 (engelsk)" -%}
+    {%- when "w3c (wcag 2.1): understanding sc 1.4.3: contrast (minimum) (level aa)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "wcag 2.1 success criterion 1.4.11: non-text contrast", 
-             "læs om kontrastforhold for ikke-tekstbaseret indhold i wcag 2.1 (engelsk)" -%}
+    {%- when "w3c (wcag 2.1): understanding sc 1.4.11: non-text contrast (level aa)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "inkludér altid tekstalternativer" -%}
@@ -73,8 +69,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "h42: using h1-h6 to identify headings" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H42" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "tilgængelighed: sidestruktur og header",
-             "web accessibility tutorials: headers" -%}
+    {%- when "tilgængelighed: sidestruktur og header" -%}
         <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "page-structure - headings" -%}
@@ -92,8 +87,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "understanding success criterion 3.3.3: error suggestion" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "w3c: f91: failure of success criterion 1.3.1 for not correctly marking up table headers (2016)",
-             "tabeller ifølge wcag altid bør have kolonneoverskrifter" -%}
+    {%- when "w3c (wcag 2.1): technique f91: failure of success criterion 1.3.1 for not correctly marking up table headers" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "tilgængelige tooltips" -%}

@@ -71,7 +71,7 @@ tags:
 
 ### Brug attributten “autocomplete”
 
-Brug `autocomplete` på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed ({% include links/external-link.html linktext="WCAG 2.1 AA Identify Input Purpose" %}).
+Brug `autocomplete` på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed ({% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.3.5: Identify Input Purpose (Level AA)" %}).
 
 Brug `autocomplete` på inputfelter til fx navn (`autocomplete='name'`), postnummer (`autocomplete='postal-code'`), telefonnummer (`autocomplete='tel'`) og e-mailadresse (`autocomplete='email'`), hvis en bruger skal indtaste disse oplysninger om sig selv i din formular. 
 

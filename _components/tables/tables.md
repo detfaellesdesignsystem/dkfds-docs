@@ -37,7 +37,7 @@ Tabeller anvendes til at præsentere brugeren for data som fx statistik opstille
 
 Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
-Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da {% include links/external-link.html linktext="tabeller ifølge WCAG altid bør have kolonneoverskrifter" %}.
+Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da tabeller ifølge WCAG altid bør have kolonneoverskrifter (W3C, WCAG 2.1, SC 1.3.1).
 
 ### Vejledning
 
@@ -158,4 +158,4 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 - {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}
 - {% include links/external-link.html linktext="Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)" %}
 - {% include links/external-link.html linktext="Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)" %}
-- {% include links/external-link.html linktext="W3C: F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers (2016)" %}
+- {% include links/external-link.html linktext="W3C (WCAG 2.1): Technique F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers" %}

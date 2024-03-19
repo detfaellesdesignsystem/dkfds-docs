@@ -547,6 +547,6 @@ Din tekst skal være læsbar for alle og efterleve gældende regler for kontrast
 
 <ul class="nobullet-list">
   <li>{% include links/external-link.html linktext="Læs mere om kontrastforhold" %}</li>
-  <li>{% include links/external-link.html linktext="Læs om kontrastforhold for tekst i WCAG 2.1 (engelsk)" %}</li>
-  <li>{% include links/external-link.html linktext="Læs om kontrastforhold for ikke-tekstbaseret indhold i WCAG 2.1 (engelsk)" %}</li>
+  <li>{% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.4.3: Contrast (Minimum) (Level AA)" %}</li>
+  <li>{% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.4.11: Non-text Contrast (Level AA)" %}</li>
 </ul>

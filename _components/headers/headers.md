@@ -16,8 +16,6 @@ subnav:
   href: "#retningslinjer"
 - text: Varianter
   href: "#varianter"
-- text: Referencer
-  href: "#ref"
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
 tags: 
 ---
@@ -85,8 +83,3 @@ Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, de
 Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-guideline-link.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 
 {% include code/preview-image.html component="header-switch-language" %}
-
-{:#ref}
-## Referencer
-
-{% include links/external-link.html linktext="Web Accessibility Tutorials: Headers" %}

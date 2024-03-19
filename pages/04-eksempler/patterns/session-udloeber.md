@@ -48,5 +48,5 @@ Tiden der går, før brugeren logges af en løsning automatisk, defineres i forh
 ### Referencer
 
 {:.nobullet-list}
-- {% include links/external-link.html linktext="Timing Adjustable: Understanding SC 2.2.1" %}
+- {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.2.1: Timing Adjustable (Level A)" %}
 

@@ -95,5 +95,5 @@ Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af d
 
 {:.nobullet-list}
 
-* {% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.4.11: Non-text Contrast" %}
-* {% include links/external-link.html linktext="WCAG 2.1 Success Criterion 1.4.3: Contrast (Minimum)" %}
+* {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.4.11: Non-text Contrast (Level AA)" %}
+* {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.4.3: Contrast (Minimum) (Level AA)" %}
