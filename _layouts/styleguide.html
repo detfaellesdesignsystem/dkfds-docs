@@ -111,7 +111,7 @@ layout: default
 
                 {{ content }}
 
-                {% if page.category and page.permalink != "/kom-i-gang/implementering-kode/" and page.permalink != "/kom-i-gang/" %}
+                {% if page.category and page.permalink != "/kom-i-gang/implementering-kode/" and page.permalink != "/kom-i-gang/" and page.permalink != "/eksempler/" and page.permalink != "/eksempler/patterns/" %}
                     {%- assign _links = site.data.nav[page.category] -%}
                     {%- assign subLinksFound = false -%}
                     {%- assign isTopLevel = true -%}

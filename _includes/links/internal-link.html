@@ -208,9 +208,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "gå til eksempler" -%}
         <a href="/eksempler/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "inputfelter med hentet data" -%} 
-        <a href="/eksempler/patterns/hentet-data/"{{ classes }}>{{ include.linktext }}</a>
-
+    
     {%- when "opsummeringssiderne", 
              "opsummering" -%}
         <a href="/eksempler/templates/#opsummering"{{ classes }}>{{ include.linktext }}</a>
@@ -222,15 +220,25 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "patterns" -%}
         <a href="/eksempler/patterns/"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "angivelse af telefonnummer" -%} 
+        <a href="/eksempler/patterns/angivelse-af-telefonnummer/"{{ classes }}>{{ include.linktext }}</a>
+    
+    {%- when "formular" -%} 
+        <a href="/eksempler/patterns/formular/"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "inputfelter med hentet data" -%} 
+        <a href="/eksempler/patterns/hentet-data/"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "session udløber" -%}
+        <a href="/eksempler/patterns/session-udloeber/"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "eksempler på selvbetjeningsløsninger",
-             "eksemplerne på selvbetjeningsløsninger" -%}
+             "eksemplerne på selvbetjeningsløsninger",
+             "selvbetjeningsløsninger" -%}
         <a href="/eksempler/selvbetjeningsloesninger/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when 'eksempelløsningen "sagsoversigt"' -%}
         <a href="/eksempler/selvbetjeningsloesninger/#sagsoversigt"{{ classes }}>{{ include.linktext }}</a>
-
-    {%- when "session udløber" -%}
-        <a href="/eksempler/patterns/session-udloeber/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "templates",
              "eksempler på templates" -%}
