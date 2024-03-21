@@ -160,6 +160,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-success badge-small mr-2">New</strong> Hvis der ikke er plads til alle menupunkter, vil de overskydende menupunkter automatisk ryge ind i en 'Mere'-menu.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet eksempel på søgefelt i header.
 - {% include links/component-code-link.html linktext="Gå til sidens indhold" %} placeres ikke længere i headeren.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for {% include links/component-guideline-link.html linktext="trinindikator" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %} og {% include links/component-guideline-link.html linktext="sortering" %} som følge af header-ændringerne.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Faneblade" %}</h3>

@@ -313,7 +313,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="false">
                     <span>Kom i gang</span>
                 </button>
                 
@@ -329,7 +329,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
                     <span>Implementering og kode</span>
                 </button>
                 
@@ -447,7 +447,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-expanded="false">
                     <span>Styleguide</span>
                 </button>
                 
@@ -471,7 +471,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-expanded="false">
                     <span>Typografi</span>
                 </button>
                 
@@ -566,7 +566,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-expanded="false">
                     <span>Datavisualisering og infografik</span>
                 </button>
                 
@@ -636,7 +636,7 @@
         
         <li class="active">
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="true">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="true">
                     <span>Komponenter</span>
                 </button>
                 
@@ -971,7 +971,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-expanded="false">
                     <span>Eksempler</span>
                 </button>
                 
@@ -995,7 +995,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-expanded="false">
                     <span>Patterns</span>
                 </button>
                 
@@ -1065,7 +1065,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-expanded="false">
                     <span>Fællesskab</span>
                 </button>
                 
@@ -1752,8 +1752,17 @@
     </nav>
 
                 
+                <nav class="anchorbox" aria-label="Ankerlinks">
+                    <h2 class="anchortitle">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#ref">Referencer</a></li>
+                        
+                    </ul>
+                </nav>
+                
 
-                <h2>Installation</h2>
+                <h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -2014,8 +2023,8 @@
 
                     &lt;div class=&quot;submenu&quot;&gt;
                         &lt;button class=&quot;button-overflow-menu js-dropdown&quot;
-                            data-js-target=&quot;desktopmenu-2&quot; aria-haspopup=&quot;true&quot;
-                            aria-expanded=&quot;false&quot;&gt;
+                            data-js-target=&quot;desktopmenu-2&quot; aria-expanded=&quot;false&quot;
+                            aria-controls=&quot;desktopmenu-2&quot;&gt;
                             &lt;span&gt;Andet menupunkt&lt;/span&gt;
                         &lt;/button&gt;
                         &lt;div class=&quot;overflow-menu-inner collapsed&quot; id=&quot;desktopmenu-2&quot;
@@ -2066,7 +2075,7 @@
     
 </div>
 
-<p>Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover.</p>
+<p>Hvis række 3 indeholder menupunkter med undermenuer, husk at anvende korrekt opmærkning med <code>aria-expanded</code> og <code>aria-controls</code> (APG, Disclosure Pattern). Hvis løsningen anvender et søgefelt, skal dette indsættes i første kodedel som vist ovenover, men udelades fra koden til mobilmenuen.</p>
 
 <p>Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme:</p>
 
@@ -2093,7 +2102,8 @@
 
             &lt;div class=&quot;submenu&quot;&gt;
                 &lt;button class=&quot;button-mobile-menu js-menudropdown&quot;
-                    data-js-target=&quot;mobilemenu-2&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+                    data-js-target=&quot;mobilemenu-2&quot; aria-expanded=&quot;true&quot;
+                    aria-controls=&quot;mobilemenu-2&quot;&gt;
                     &lt;span&gt;Andet menupunkt&lt;/span&gt;
                 &lt;/button&gt;
                 &lt;div class=&quot;overflow-menu-inner&quot; id=&quot;mobilemenu-2&quot; aria-hidden=&quot;false&quot;&gt;
@@ -2160,7 +2170,8 @@
     &lt;div class=&quot;container&quot;&gt;
         &lt;div class=&quot;overflow-menu overflow-menu--open-right&quot;&gt;
             &lt;button class=&quot;button-overflow-menu js-dropdown select-language-button&quot;
-                data-js-target=&quot;header-language&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                data-js-target=&quot;header-language&quot; aria-expanded=&quot;false&quot;
+                aria-controls=&quot;header-language&quot;&gt;
                 &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#language&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Dansk
             &lt;/button&gt;
             &lt;div class=&quot;overflow-menu-inner select-language-list&quot; id=&quot;header-language&quot;
@@ -2215,11 +2226,17 @@
 
 <h3>JavaScript</h3>
 
-<p>Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Navigation().init();</code></pre></figure>
 
 <p>Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren.</p>
+
+<h2 id="ref">Referencer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/" class="icon-link" target="_blank">ARIA Authoring Practices Guide (APG): Disclosure (Show/Hide) Pattern<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
 
 
                 

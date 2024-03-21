@@ -11,11 +11,17 @@ title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
 previewimage: "header-with-navigation"
 previewimageTitle: "Eksempel på header komponent"
-anchor: false
+anchor: true
+subnav:
+- text: Installation
+  href: "#installation"
+- text: Referencer
+  href: "#ref"
 description: "Dokumentation på implementering af header."
 tags:
 ---
 
+{:#installation}
 ## Installation
 
 ### HTML Struktur
@@ -49,8 +55,6 @@ Anden del skal indsættes nederst i mobilmenuen og indeholder koden, der vises p
 
 {% include code/syntax.html component="header-portal-mobile" copybutton=true %}
 
-
-
 Se eventuelt {% include links/component-code-link.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
 
 #### Række 2
@@ -79,7 +83,7 @@ Første del skal indsættes <em>efter</em> række 2 og indeholder koden, der vis
 
 {% include code/syntax.html component="header-navigation" copybutton=true %}
 
-Bemærk, at hvis løsningen anvender et søgefelt, skal dette udelukkende indsættes i første kodedel som vist ovenover. 
+Hvis række 3 indeholder menupunkter med undermenuer, husk at anvende korrekt opmærkning med `aria-expanded` og `aria-controls` (APG, Disclosure Pattern). Hvis løsningen anvender et søgefelt, skal dette indsættes i første kodedel som vist ovenover, men udelades fra koden til mobilmenuen. 
 
 Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder koden, der vises på mindre skærme:
 
@@ -105,10 +109,16 @@ Anden del skal indsættes i mobilmenuen, igen <em>før</em> række 1 (portalinfo
 
 ### JavaScript
 
-Mobil menuen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight js %}
 new DKFDS.Navigation().init();
 {% endhighlight %}
 
 Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren.
+
+{:#ref}
+## Referencer
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="ARIA Authoring Practices Guide (APG): Disclosure (Show/Hide) Pattern" %}

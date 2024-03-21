@@ -313,7 +313,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="false">
                     <span>Kom i gang</span>
                 </button>
                 
@@ -329,7 +329,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
                     <span>Implementering og kode</span>
                 </button>
                 
@@ -447,7 +447,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-expanded="false">
                     <span>Styleguide</span>
                 </button>
                 
@@ -471,7 +471,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-expanded="false">
                     <span>Typografi</span>
                 </button>
                 
@@ -566,7 +566,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-expanded="false">
                     <span>Datavisualisering og infografik</span>
                 </button>
                 
@@ -636,7 +636,7 @@
         
         <li class="active">
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-haspopup="true" aria-expanded="true">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="true">
                     <span>Komponenter</span>
                 </button>
                 
@@ -971,7 +971,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-expanded="false">
                     <span>Eksempler</span>
                 </button>
                 
@@ -995,7 +995,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-expanded="false">
                     <span>Patterns</span>
                 </button>
                 
@@ -1065,7 +1065,7 @@
         
         <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-haspopup="true" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-expanded="false">
                     <span>Fællesskab</span>
                 </button>
                 
@@ -1734,7 +1734,7 @@
         
         <div class="overflow-menu overflow-menu--open-right">
     <button class="button-overflow-menu js-dropdown" data-js-target="overflow1"
-        aria-haspopup="true" aria-expanded="false">
+        aria-expanded="false" aria-controls="overflow1">
         Overflow menu
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
     </button>
@@ -1869,21 +1869,21 @@
     <div class="component-example px-4 py-4">
         
         <div class="overflow-menu overflow-menu--sort overflow-menu--open-right" id="overflow-sort-example">
-    <button class="button-overflow-menu" data-js-target="overflow-sort-example-panel" aria-haspopup="true" aria-expanded="false">
+    <button class="button-overflow-menu" data-js-target="overflow-sort-example-panel" aria-expanded="false" aria-controls="overflow-sort-example-panel">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>Sortér:<span class="selected-value"></span>
     </button>
     <div class="overflow-menu-inner" id="overflow-sort-example-panel" aria-hidden="true">
-        <ul class="overflow-list" role="menu">
-            <li role="menuitem">
+        <ul class="overflow-list">
+            <li>
                 <button id="newfirst" aria-current="true">Nyeste først</button>
             </li>
-            <li role="menuitem">
+            <li>
                 <button id="oldfirst">Ældste først</button>
             </li>
-            <li role="menuitem">
+            <li>
                 <button id="affaldstype-asc">Affaldstype (A-Å)</button>
             </li>
-            <li role="menuitem">
+            <li>
                 <button id="affaldstype-desc">Affaldstype (Å-A)</button>
             </li>
         </ul>
