@@ -24,10 +24,6 @@ tags:
 - infografik
 ---
 
-Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
-
-Vær meget opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %}.
-
 {:#datavisualisering}
 ## Datavisualisering
 
@@ -78,4 +74,4 @@ Overvej grundigt, hvordan infografikken og datavisualiseringen bygges, da der sk
 
 {% include links/external-link.html linktext="Inkludér altid tekstalternativer" %} fx en beskrivende tekst, som placeres under infografik/datavisualisering. I nogle tilfælde kan en numerisk tabel sammen med grafikken, der også gengiver dataene, give yderligere tilgængelighed. Dette er især godt, når forskellen er marginal og præcise tal ikke kan passe ind i mindre dele af datavisualiseringen – når “kagestykkerne” fx bliver for små i et “kagediagram”.
 
-
+Vær opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %} og anvend designsystemets datavisualiseringsfarver.

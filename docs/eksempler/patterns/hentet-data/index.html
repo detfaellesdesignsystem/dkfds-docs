@@ -1274,15 +1274,6 @@
                 
 
                 
-
-                
-
-                
-
-                
-
-                
-
                 
 <div class="component-preview  component-preview-kontaktoplysninger-hentet">
     
@@ -1296,7 +1287,8 @@
 
     <span class="form-hint" id="hentetdata-hint">Data hentet fra CVR.dk</span>
 
-    <input type="text" id="hentetdata" name="navn" class="form-input" value="Keld Hedagaardsen" aria-describedby="hentetdata-hint " readonly="" />
+    <input type="text" id="hentetdata" name="navn" class="form-input"
+        value="Keld Hedagaardsen" aria-describedby="hentetdata-hint " readonly>
 </div>
 
 <div class="form-group">
@@ -1305,8 +1297,12 @@
     <span class="form-hint" id="hentetdata-redigerbar-hint">Data hentet fra CVR.dk</span>
 
     <div class="d-block d-sm-flex flex-sm-row align-items-sm-center">
-        <input type="text" id="hentetdata-redigerbar" name="navn-redigerbar" class="form-input mr-sm-3" value="Keld Hedagaardsen" aria-describedby="hentetdata-redigerbar-hint " readonly="" />
-        <button type="button" class="function-link mt-3" id="hentetdata-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger<span class="sr-only"> fornavn og efternavn</span></button>
+        <input type="text" id="hentetdata-redigerbar" name="navn-redigerbar"
+            class="form-input mr-sm-3" value="Keld Hedagaardsen"
+            aria-describedby="hentetdata-redigerbar-hint " readonly>
+        <button type="button" class="function-link mt-3"
+            id="hentetdata-rediger"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#mode"></use></svg>Rediger<span
+                class="sr-only"> fornavn og efternavn</span></button>
     </div>
 </div>
         
@@ -1345,15 +1341,38 @@
     </div>
 </details>
 
-<h2>Anvendes til</h2>
+
+                
+
+                
+
+                
+
+                
+
+                
+                <nav class="anchorbox" aria-label="Ankerlinks">
+                    <h2 class="anchortitle">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        <li><a href="#retningslinjer">Sådan bruges inputfelter med hentet data</a></li>
+                        <li><a href="#eksempel">Eksempel på anvendelse af pattern</a></li>
+                        <li><a href="#ref">Referencer</a></li>
+                        
+                    </ul>
+                </nav>
+                
+
+                <h2 id="retningslinjer">Sådan bruges inputfelter med hentet data</h2>
+
+<h3>Anvendes til</h3>
 
 <p>Dette pattern anvendes til visning af data, som er hentet automatisk ind i en formular. Det kan fx være data fra CVR- eller CPR-registret, som derved er forudfyldt. Dette letter udfyldelsen for brugeren, samtidig med at det giver brugeren mulighed for at redigere den hentede data, hvis dette er nødvendigt.</p>
 
-<h2>Anvendes ikke til</h2>
+<h3>Anvendes ikke til</h3>
 
 <p>Anvendes ikke til visning af data, som brugeren selv har tastet ind. Anvend da i stedet almindelige inputfelter eller strukturerede lister, hvis der er tale om en opsummeringsside.</p>
 
-<h2>Vejledning</h2>
+<h3>Vejledning</h3>
 
 <p>Den hentede data vises i et read-only felt med en hjælpetekst, som gør opmærksom på, at der er tale om automatisk indhentet data.</p>
 
@@ -1361,7 +1380,7 @@
 
 <p>Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes og valideres som ethvert andet felt i formularen.</p>
 
-<h2>Eksempel på anvendelse af pattern</h2>
+<h2 id="eksempel">Eksempel på anvendelse af pattern</h2>
 
 <div class="component-preview  component-preview-virksomhedsoplysninger">
     
@@ -1483,7 +1502,7 @@
     </div>
 </details>
 
-<h2>Referencer</h2>
+<h2 id="ref">Referencer</h2>
 
 <ul class="nobullet-list">
   <li><a href="https://baseweb.design/components/input/" class="icon-link" target="_blank">Inputfelter - Uber’s Base designsystem<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>

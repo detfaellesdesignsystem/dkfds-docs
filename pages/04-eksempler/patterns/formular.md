@@ -15,12 +15,19 @@ componentdetailsLink: false
 componentdetailsLabel: "for eksempel på formularstruktur"
 anchor: true
 subnav:
+- text: Vejledning
+  href: '#vejledning'
 - text: Kompleks formular
   href: '#kompleks'
+- text: Se eksempelløsninger
+  href: '#eksempelloesninger'
+- text: Referencer
+  href: '#ref'
 description: "Se eksempler på opsætning af en formular med forskellige felttyper."
 tags: 
 ---
 
+{:#vejledning}
 ## Vejledning
 
 Gør brug af `<div class="form-group">`, fieldset og overskrifter til at strukturere din formular.
@@ -47,15 +54,21 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 
 {% include dos-donts-box.html component="overskrifter-dos-donts" title="Overskrifter do's and don'ts" %}
 
+{:#kompleks}
+## Kompleks formular
+
+{% include code/preview-box-details.html component="fieldset-complex" title="Eksempel på kompleks formularstruktur" link=false detaillabel="for eksempel på kompleks formularstruktur" %}
+
 {:#eksempelloesninger}
-### Se eksempelløsninger
+## Se eksempelløsninger
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
-### Referencer
+{:#ref}
+## Referencer
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)
@@ -67,7 +80,3 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 - Luke Wroblewski: Visible Narratives: Understanding Visual Organization (2003)
 - Louise Downe: Good services are verbs, bad services are nouns (2015)
 - Linda Newman Lior: Writing for Interaction (2013)
-
-{:#kompleks}
-## Kompleks formular
-{% include code/preview-box-details.html component="fieldset-complex" title="Eksempel på kompleks formularstruktur" link=false detaillabel="for eksempel på kompleks formularstruktur" %}

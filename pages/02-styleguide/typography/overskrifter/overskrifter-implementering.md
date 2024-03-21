@@ -28,8 +28,6 @@ tags:
 - "h6"
 ---
 
-{% include links/internal-link.html linktext="Læs retningslinjerne for overskrifter" %}
-
 {:#html}
 ## HTML Struktur
 

@@ -30,8 +30,6 @@ tags:
 - "footerlink"
 ---
 
-Se også {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
-
 {:#designvaerdier}
 ## Designværdier
 
@@ -44,7 +42,7 @@ Se også {% include links/component-guideline-link.html linktext="Gå til sidens
 | Standard link, fokus  | #004D99    | Ja           | Tykkelse: 4px<br>Farve: #747474 |
 
 {:#retningslinjer}
-## Retningslinjer
+## Sådan bruges links
 
 ### Tilgængelighed
 
@@ -63,6 +61,8 @@ Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.
 Brug links til at lade brugeren navigere til andre sider i din løsning.
 
 Brug links til at linke til sider uden for din løsning. Husk at markere dette med et ikon som beskrevet under implementeringsafsnittet under {% include links/internal-link.html linktext="eksternt link" %}.
+
+Se også {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
 
 ### Brugervenlighed
 

@@ -29,20 +29,16 @@ tags:
 - spalter
 ---
 
-De fleste selvbetjeningsløsninger kan med fordel nøjes med at venstrestille alt indhold og dermed kun anvende cirka halvdelen af en desktop sides bredde. I sådanne tilfælde bruges til horisontale grid primært til at definere enkelte komponenters bredde.
-
-Det Fælles Designsystem anviser et 12-kolonne responsivt grid, men du er velkommen til at anvende responsivt grid i det antal kolonner, der skal til i dit design.
-
-Det vigtige er at du anvender responsivt grid.
-
-Når du anvender et responsivt grid sørger du for at din selvbetjeningsløsning tilpasser sig den skærmstørrelse som din selvbetjeningsløsning tilgås via. - uanset om det er en mindre mobilskærm eller en større stationær skærm.
-
 {:#kolonner}
 ## 12 kolonner (horisontalt)
 
-Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner med 32px afstand mellem hver kolonne (16 px på hver side af en kolonne). Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid og får en side og dens søskendesider til at fremtræde sammenhængende. Det har positiv betydning for billedstørrelser og andre elementer.
+Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid. Det får alle løsningens sider til at fremtræde sammenhængende.
 
-I tablet- og mobilvisninger folder layoutet sammen til 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst. 
+Det Fælles Designsystem baserer sit responsive layout på en opdeling af siden i 12 lige brede kolonner med 32px afstand mellem hver kolonne (16 px på hver side af en kolonne). I tablet- og mobilvisninger folder layoutet sammen til 8- og 4-grid. På den måde følges proportionerne ad fra størst til mindst. 
+
+Du er velkommen til at anvende et andet responsivt grid med det antal kolonner, der skal til i dit design. Det vigtige er, at det er responsivt, så din selvbetjeningsløsning tilpasser sig brugerens skærmstørrelse.
+
+De fleste selvbetjeningsløsninger kan med fordel nøjes med at venstrestille alt indhold og dermed kun anvende cirka halvdelen af en desktopsides bredde. I sådanne tilfælde bruges det horisontale grid primært til at definere enkelte komponenters bredde. 
 
 {:#breakpoints}
 ## Breakpoints

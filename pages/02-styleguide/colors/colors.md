@@ -55,8 +55,6 @@ tags:
 - borger.dk-farve
 ---
 
-Farverne i listerne nedenunder er angivet øverst med enten en HEX- eller RGBA-værdi og nederst med variabelnavnet anvendt i SASS-filerne.
-
 {:#portalfarver-tema}
 ## Portalfarver (tema)
 Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve.

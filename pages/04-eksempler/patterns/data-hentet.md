@@ -3,23 +3,36 @@ permalink: /eksempler/patterns/hentet-data/
 parentlink: "/eksempler/patterns/"
 layout: styleguide
 title: Inputfelter med hentet data
+componentdetails: "kontaktoplysninger-hentet"
+componentdetailsTitle: "Eksempel på inputfelt med hentet data"
+componentdetailsLink: false
+componentdetailsLabel: "for eksempel på inputfelt med hentet data"
 category: Eksempler_category
 subcategory: Eksempler
+anchor: true
+subnav:
+- text: Sådan bruges inputfelter med hentet data
+  href: "#retningslinjer"
+- text: Eksempel på anvendelse af pattern
+  href: "#eksempel"
+- text: Referencer
+  href: "#ref"
 description: En formular med automatisk hentet data.
 lead: En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres.
 ---
 
-{% include code/preview-box-details.html component="kontaktoplysninger-hentet" title="Eksempel på inputfelt med hentet data" link=false detaillabel="for eksempel på inputfelt med hentet data" %}
+{:#retningslinjer}
+## Sådan bruges inputfelter med hentet data
 
-## Anvendes til
+### Anvendes til
 
 Dette pattern anvendes til visning af data, som er hentet automatisk ind i en formular. Det kan fx være data fra CVR- eller CPR-registret, som derved er forudfyldt. Dette letter udfyldelsen for brugeren, samtidig med at det giver brugeren mulighed for at redigere den hentede data, hvis dette er nødvendigt.
 
-## Anvendes ikke til
+### Anvendes ikke til
 
 Anvendes ikke til visning af data, som brugeren selv har tastet ind. Anvend da i stedet almindelige inputfelter eller strukturerede lister, hvis der er tale om en opsummeringsside. 
 
-## Vejledning
+### Vejledning
 
 Den hentede data vises i et read-only felt med en hjælpetekst, som gør opmærksom på, at der er tale om automatisk indhentet data. 
 
@@ -27,10 +40,12 @@ Hvis brugeren har mulighed for at rette i data, placeres et funktionslink til re
 
 Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes og valideres som ethvert andet felt i formularen.
 
+{:#eksempel}
 ## Eksempel på anvendelse af pattern
 
 {% include code/preview-box-details.html component="virksomhedsoplysninger" title="Eksempel på formular med hentet data" link=false detaillabel="for eksempel på formular med hentet data" %}
 
+{:#ref}
 ## Referencer
 
 {:.nobullet-list}

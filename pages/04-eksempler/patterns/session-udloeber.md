@@ -5,23 +5,35 @@ layout: styleguide
 category: Eksempler_category
 subcategory: Eksempler
 title: Session udløber
+componentdetails: "session-udloeber"
+componentdetailsTitle: "Eksempel på session udløb"
+componentdetailsLink: false
+componentdetailsLabel: "for eksempel på udløb af session"
 lead: Session udløber vises, inden brugeren automatisk logges af en løsning. Dialogen giver brugeren mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen. 
-anchor: false
+anchor: true
+subnav:
+- text: Sådan bruges Session udløber
+  href: "#retningslinjer"
+- text: Varianter
+  href: "#varianter"
+- text: Referencer
+  href: "#referencer"
 description: Visning af session udløb
 tags:
 ---
 
-{% include code/preview-box-details.html component="session-udloeber" title="Eksempel på session udløb" link=false detaillabel="for eksempel på udløb af session" %}
+{:#retningslinjer}
+## Sådan bruges Session udløber
 
-## Anvendes til
+### Anvendes til
 
 Dialogen anvendes, når en bruger er ved at blive logget af en løsning automatisk, dvs. når deres session udløber.
 
-## Anvendes ikke til
+### Anvendes ikke til
 
 Dialogen anvendes ikke, når en bruger selv har trykket på en log af-knap. Hvis brugeren er ved at logge af en løsning, hvor der er foretaget ændringer, som ikke er gemt, så anvend i stedet dialogen Er du sikker på, du vil forlade siden?
 
-## Vejledning
+### Vejledning
 
 Til dette mønster anvendes komponenten {% include links/component-guideline-link.html linktext="Modalvindue, som kræver handling" %}.
 
@@ -37,15 +49,19 @@ Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som k
 
 Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold.
 
-### Ændringer er ikke gemt
+{:#varianter}
+## Varianter
+
+### Når ændringerne ikke er gemt
 
 {% include code/preview-box-details.html component="session-udloeber-aendringer-ikke-gemt" title="Eksempel på session udløb med ændringer der ikke er gemt" link=false detaillabel="for eksempel på udløb af session med ændringer, der ikke er gemt" %}
 
-### Ændringer er gemt
+### Når ændringerne er gemt
 
 {% include code/preview-box-details.html component="session-udloeber-aendringer-gemt" title="Eksempel på session udløb med gemte ændringer" link=false detaillabel="for eksempel på udløb af session med gemte ændringer" %}
 
-### Referencer
+{:#referencer}
+## Referencer
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.2.1: Timing Adjustable (Level A)" %}

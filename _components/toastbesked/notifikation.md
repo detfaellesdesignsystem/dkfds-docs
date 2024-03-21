@@ -25,9 +25,6 @@ tags:
 - besked
 ---
 
-Til forskel fra {% include links/component-guideline-link.html linktext="Beskeder (alerts)" %} som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
-Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
-
 {:#retningslinjer}
 ## Sådan bruges komponenten
 
@@ -46,6 +43,10 @@ Brug modal dialog – ikke toastbeskeder – til at give brugerne information om
 Kritiske beskeder eller lange beskeder, hvis toastbeskeden er tidsindstillet og forsvinder automatisk. Det gør det vanskeligt for brugere, som fx gør brug af hjælpeteknologier, at læse meddelelsen før den forsvinder.
 
 ### Vejledning
+
+Til forskel fra {% include links/component-guideline-link.html linktext="Beskeder (alerts)" %} som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
+
+Vær opmærksom på at toastbeskeder hurtigt kan gå fra at opfattes som nyttige til at opfattes som anmassende og påtrængende, så overvej nøje om det er denne komponent, der er det rigtige valg.
 
 Gør informationen i toastbeskeden aktiv og handlingsanvisende, så brugeren forstår, hvad der er behov for eller hvad den aktuelle status er.
 

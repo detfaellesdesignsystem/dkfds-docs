@@ -25,8 +25,6 @@ tags:
 - infografik
 ---
 
-Vær opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %} og anvend designsystemets {% include links/internal-link.html linktext="datavisualiseringsfarver" %}.
-
 {:#cirkeldiagrammer}
 ## Cirkeldiagrammer (kagediagram)
 

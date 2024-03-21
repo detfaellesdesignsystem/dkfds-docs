@@ -21,8 +21,6 @@ tags:
 - header
 ---
 
-Du kan placere dit myndighedslogo i footeren, hvis du har behov for det.
-
 {:#svg-filer-til-download}
 ## SVG-filer til download
 
@@ -39,7 +37,7 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
 {% include links/internal-link.html linktext="Download Virks logo (svg-fil)" %}
 
 {:#retningslinjer-for-logo-i-headeren}
-## Retningslinjer for logo i headeren
+## Retningslinjer for portallogo i headeren
 
 ### Begrænsninger
 
@@ -69,7 +67,7 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
 </ul>
 
 {:#retningslinjer-for-logo-i-footeren}
-## Retningslinjer for logo i footeren
+## Retningslinjer for myndighedslogo i footeren
 
 Gør kun brug af muligheden for at placere et myndighedslogo i footeren, hvis det understøtter brugerens gennemførelse af selvbetjeningsløsningen
 

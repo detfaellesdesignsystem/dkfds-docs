@@ -126,8 +126,6 @@ lead: Nedenfor vises release notes — en opsummering af bug fixes, nye feature
   andre opdateringer.
 ---
 
-Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {% include links/external-link.html linktext="oprette et issue på GitHub" %}
-
 ## Versionering
 
 Designsystemets måde at versionere på er inspireret af {% include links/external-link.html linktext="semantisk versionering" %}. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
@@ -141,6 +139,8 @@ Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR 
 ### Release-proces
 
 Designsystemet er "levende" og skal holdes ajour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.
+
+Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {% include links/external-link.html linktext="oprette et issue på GitHub" %}
 
 ### Tidligere versioner af dokumentationen
 
@@ -239,6 +239,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - {% include links/component-guideline-link.html linktext="Fejlopsummering" %} anvender nu en `nav` som udgangspunkt.
 - Ændret font-smoothing for flere elementer.
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="tilbage til toppen" %}-knappen nogen gange var vist, selvom den skulle være skjult.
+- Tilføjet klassen `no-max-width`, der forhindrer `max-width` på en paragraf eller liste.
 
 
 {:#version-9-1-0 .mb-0}

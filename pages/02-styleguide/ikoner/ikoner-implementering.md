@@ -10,7 +10,7 @@ title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 anchor: true
 subnav:
-- text: Ikoner indsat som svg med ikonsamling
+- text: Ikoner indsat som svg med ikonsamling (anbefalet)
   href: "#ikoner-indsat-som-svg-med-ikonsamling"
 - text: Ikoner indsat med klasser
   href: "#ikoner-indsat-med-klasser"
@@ -26,10 +26,8 @@ tags:
 - inline svg
 ---
 
-Ikoner kan enten indsættes som svg ved hjælp af en ikonsamling (anbefalet) eller ved hjælp af klasser.
-
 {:#ikoner-indsat-som-svg-med-ikonsamling}
-## Ikoner indsat som svg med ikonsamling
+## Ikoner indsat som svg med ikonsamling (anbefalet)
 
 Ikonsamlingen gør, at du kan indsætte ikoner med `<svg>`. Før dette virker, er du nødt til at implementere ikonsamlingen, der skal indsættes på hver side i løsningen.
 

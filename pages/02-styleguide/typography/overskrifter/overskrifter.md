@@ -36,15 +36,15 @@ tags:
 - h6
 ---
 
-Overskriftstyperne har to formål:
-
-- De er sidens indholdsfortegnelse for skærmlæsere.
-- De skaber et visuelt hierarki og gør siden overskuelig ved at inddele den i afsnit og underafsnit.
-
 {:#retningslinjer}
 ## Sådan bruges overskrifter
 
-Overskrifter er både et visuelt virkemiddel og en struktur i koden, som har betydning for brugere, der anvender skærmlæser. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
+Overskriftstyperne har to formål:
+
+- De skaber et visuelt hierarki på siden.
+- De fungerer som sidens indholdsfortegnelse for skærmlæsere.
+
+En god struktur i sidens overskrifter er altafgørende for, at brugere af skærmlæser kan forstå og navigere i indholdet på siden. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
 
 ### Hvornår skal du bruge overskrifter?
 
