@@ -65,37 +65,37 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
 </form>
-<div aria-live="polite">
-    <section class="icon-section" id="icon-section-konventionelle">
+<div aria-live="polite" aria-atomic="true">
+    <div class="icon-section" id="icon-section-konventionelle">
         <h3>Konventionelle ikoner</h3>
         <p>Må ikke bruges til andre formål end de specificerede.</p>
         <div class="container">
-            <div class="icon-list row" id="icon-list-konventionelle">
+            <ul class="icon-list no-max-width row" id="icon-list-konventionelle">
                 {% include icon.html icon="open-in-new" keywords="open in new, new window, external, ekstern, eksternt link" label="Eksternt link (åbner ny side/fane)" %}
                 {% include icon.html icon="home" keywords="hus, hjem, home, forside, house, home" label="Forside (Hjem)" %}
                 {% include icon.html icon="save" keywords="save, gem, disc, diskette" label="Gem" %}
                 {% include icon.html icon="print" keywords="print, printer, udskriv" label="Print (udskriv)" %}
                 {% include icon.html icon="trash-can" keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish" label="Slet" %}
                 {% include icon.html icon="search" keywords="lup, search, søg" label="Søg" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-beskeder">
+    </div>
+    <div class="icon-section" id="icon-section-beskeder">
         <h3>Beskeder (feedback)</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-beskeder">
+            <ul class="icon-list no-max-width row" id="icon-list-beskeder">
                 {% include icon.html icon="report-problem" keywords="besked, alert, message, warning, advarsel, report, problem, report problem" label="Advarsel" %}
                 {% include icon.html icon="highlight-off" keywords="besked, alert, message, error, fejl" label="Fejl" %}
                 {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Information" %}
                 {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Hjælp" %}
                 {% include icon.html icon="check-circle" keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark" label="Succes" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-navigation">
+    </div>
+    <div class="icon-section" id="icon-section-navigation">
         <h3>Navigation</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-navigation"> 
+            <ul class="icon-list no-max-width row" id="icon-list-navigation"> 
                 {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
                 {% include icon.html icon="arrow-right" keywords="right, højre, frem, pil, arrow" label="Frem (højre)" %}
                 {% include icon.html icon="menu" keywords="hamburger, menu, burger, burgermenu, burger menu" label="Menu" %}
@@ -113,13 +113,13 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="subdirectory-arrow-left" keywords="venstre, knækpil, pil, arrow" label="Undermenu venstre" %}
                 {% include icon.html icon="chevron-double-left" keywords="venstre, dobbeltpil, pil, arrow" label="Langt tilbage" %}
                 {% include icon.html icon="chevron-double-right" keywords="højre, dobbeltpil, pil, arrow" label="Langt frem" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-tilstande">
+    </div>
+    <div class="icon-section" id="icon-section-tilstande">
         <h3>Tilstande</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-tilstande">
+            <ul class="icon-list no-max-width row" id="icon-list-tilstande">
                 {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
                 {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold overflow ud" %}
                 {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold overflow ind" %}
@@ -142,24 +142,24 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="sort-default" keywords="sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér" %}
                 {% include icon.html icon="sort-ascending" keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (stigende)" %}
                 {% include icon.html icon="sort-descending" keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (faldende)" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-filtyper">
+    </div>
+    <div class="icon-section" id="icon-section-filtyper">
         <h3>Filtyper</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-filtyper">
+            <ul class="icon-list no-max-width row" id="icon-list-filtyper">
                 {% include icon.html icon="file-image" keywords="billede, picture, fotografi, fil, file" label="Billede" %}
                 {% include icon.html icon="file-excel" keywords="excel, ark, regneark, fil" label="Excel" %}
                 {% include icon.html icon="file-pdf" keywords="PDF, dokument, document, fil" label="PDF" %}
                 {% include icon.html icon="file-word" keywords="word, dokument, fil, document" label="Word" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-funktionalitet">
+    </div>
+    <div class="icon-section" id="icon-section-funktionalitet">
         <h3>Funktionalitet</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-funktionalitet">
+            <ul class="icon-list no-max-width row" id="icon-list-funktionalitet">
                 {% include icon.html icon="close" keywords="anuller, annullér, luk, cancel, discard, fortryd" label="Annuller (luk)" %}
                 {% include icon.html icon="hourglass-empty" keywords="waiting, hourglass, timeglas, vente, ventetid, tid" label="Afventer" %}
                 {% include icon.html icon="calculator" keywords="calculator, lommeregner, beregning, beregner" label="Beregner (lommeregner)" %}
@@ -207,13 +207,13 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="vertical-split" keywords="liste, kasse, billede, layout, vindue" label="Vis i liste form og vindue" %}
                 {% include icon.html icon="palette" keywords="tema, theme, palette, color, colours, painting, paint" label="Vælg tema (palette)" %}
                 {% include icon.html icon="folder-open" keywords="open, folder, åben, åbn, mappe" label="Åben mappe" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-illustrative">
+    </div>
+    <div class="icon-section" id="icon-section-illustrative">
         <h3>Illustrative</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-illustrative">
+            <ul class="icon-list no-max-width row" id="icon-list-illustrative">
                 {% include icon.html icon="coronavirus" keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi" label="Corona (Covid-19)" %}
                 {% include icon.html icon="list-alt" keywords="" label="Opgørelse / Resumé / Opsummering" %}
                 {% include icon.html icon="assignment" keywords="assignment" label="Opgave" %}
@@ -253,13 +253,13 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="science" keywords="" label="Videnskab (kemi)" %}
                 {% include icon.html icon="drive-eta" keywords="" label="Bil (transport)" %}
                 {% include icon.html icon="tune" keywords="" label="Parameter (finjustering)" %}
-            </div>
+            </ul>
         </div>
-    </section>
-    <section class="icon-section" id="icon-section-tekstredigering">
+    </div>
+    <div class="icon-section" id="icon-section-tekstredigering">
         <h3>Tekstredigering</h3>
         <div class="container">
-            <div class="icon-list row" id="icon-list-tekstredigering">
+            <ul class="icon-list no-max-width row" id="icon-list-tekstredigering">
                 {% include icon.html icon="text-format" keywords="" label="Formater tekst" %}
                 {% include icon.html icon="format-size" keywords="" label="Tekststørrelse" %}
                 {% include icon.html icon="format-bold" keywords="" label="Fed" %}
@@ -276,18 +276,11 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="format-align-center" keywords="" label="Centreret tekst" %}
                 {% include icon.html icon="format-align-right" keywords="" label="Højrestillet tekst" %}
                 {% include icon.html icon="format-align-justify" keywords="" label="Lige marginer" %}
-            </div>
-        </div>
-    </section>
-    <div class="alert alert-info d-none mt-4" id="no-results-message">
-        <div class="alert-body">
-            <strong class="alert-heading">Der er desværre intet ikon der matcher</strong>
-            <p class="alert-text">Prøv evt. at søge hos:</p>
-            <ul class="nobullet-list">
-                <li>{% include links/external-link.html linktext="Material Design" %}</li>
-                <li>{% include links/external-link.html linktext="Material Design Icons" %}</li>
             </ul>
         </div>
+    </div>
+    <div id="no-results-message" class="no-icons-text">
+        <span>Ingen søgeresultater for “<strong id="search-words"></strong>”. Prøv et andet søgeord, eller kig efter ikoner fra {% include links/external-link.html linktext="Material Symbols" %}.</span>
     </div>
 </div>
 
@@ -365,6 +358,7 @@ document.addEventListener("DOMContentLoaded", function() {
             messageElement.classList.add('d-none');
         } 
         else {
+            document.getElementById('search-words').textContent = input;
             messageElement.classList.remove('d-none');
         }
     }
