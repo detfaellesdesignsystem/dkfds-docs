@@ -3,26 +3,22 @@ permalink: /eksempler/patterns/hentet-data/
 parentlink: "/eksempler/patterns/"
 layout: styleguide
 title: Inputfelter med hentet data
+lead: En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres.
 componentdetails: "kontaktoplysninger-hentet"
 componentdetailsTitle: "Eksempel på inputfelt med hentet data"
 componentdetailsLink: false
 componentdetailsLabel: "for eksempel på inputfelt med hentet data"
 category: Eksempler_category
 subcategory: Eksempler
-anchor: true
-subnav:
-- text: Sådan bruges inputfelter med hentet data
-  href: "#retningslinjer"
-- text: Eksempel på anvendelse af pattern
-  href: "#eksempel"
-- text: Referencer
-  href: "#ref"
 description: En formular med automatisk hentet data.
-lead: En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres.
+headings: Inputfelter_med_hentet_data
+anchorlinks: true
 ---
 
-{:#retningslinjer}
-## Sådan bruges inputfelter med hentet data
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges inputfelter med hentet data -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -40,13 +36,13 @@ Hvis brugeren har mulighed for at rette i data, placeres et funktionslink til re
 
 Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes og valideres som ethvert andet felt i formularen.
 
-{:#eksempel}
-## Eksempel på anvendelse af pattern
+[---- Eksempel på anvendelse af pattern -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {% include code/preview-box-details.html component="virksomhedsoplysninger" title="Eksempel på formular med hentet data" link=false detaillabel="for eksempel på formular med hentet data" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Inputfelter - Uber’s Base designsystem" %}

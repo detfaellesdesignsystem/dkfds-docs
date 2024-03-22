@@ -6,6 +6,42 @@
 
 # Eksempler
 
+Angivelse_af_telefonnummer:
+- h2: Vejledning
+  id: vejledning
+- h2: Når målgruppen hovedsageligt har danske telefonnumre
+  id: hovedsageligt-danske-telefonnumre
+- h2: Når målgruppen hovedsageligt har udenlandske telefonnumre
+  id: hovedsageligt-udenlandske-telefonnumre
+- h2: Hvis der kun kan angives danske telefonnumre (ikke anbefalet)
+  id: kun-danske-telefonnumre
+
+Formular:
+- h2: Vejledning
+  id: vejledning
+- h2: Kompleks formular
+  id: kompleks
+- h2: Se eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: referencer
+
+Inputfelter_med_hentet_data:
+- h2: Sådan bruges inputfelter med hentet data
+  id: retningslinjer
+- h2: Eksempel på anvendelse af pattern
+  id: eksempel
+- h2: Referencer
+  id: referencer
+
+Session_udloeber:
+- h2: Sådan bruges Session udløber
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Referencer
+  id: referencer
+
 # Fællesskab
 
 Faellesskab:

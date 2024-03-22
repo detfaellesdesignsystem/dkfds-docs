@@ -10,20 +10,16 @@ componentdetailsTitle: "Eksempel på session udløb"
 componentdetailsLink: false
 componentdetailsLabel: "for eksempel på udløb af session"
 lead: Session udløber vises, inden brugeren automatisk logges af en løsning. Dialogen giver brugeren mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen. 
-anchor: true
-subnav:
-- text: Sådan bruges Session udløber
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Referencer
-  href: "#referencer"
 description: Visning af session udløb
+headings: Session_udloeber
+anchorlinks: true
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges Session udløber
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges Session udløber -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -49,8 +45,8 @@ Når brugeren logges af automatisk, tages de til en dedikeret log af-side, som k
 
 Tiden der går, før brugeren logges af en løsning automatisk, defineres i forhold til login-systemet og sikkerhedsmæssige forhold.
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 ### Når ændringerne ikke er gemt
 
@@ -60,8 +56,8 @@ Tiden der går, før brugeren logges af en løsning automatisk, defineres i forh
 
 {% include code/preview-box-details.html component="session-udloeber-aendringer-gemt" title="Eksempel på session udløb med gemte ændringer" link=false detaillabel="for eksempel på udløb af session med gemte ændringer" %}
 
-{:#referencer}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.2.1: Timing Adjustable (Level A)" %}

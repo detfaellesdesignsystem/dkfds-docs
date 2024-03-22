@@ -13,22 +13,16 @@ componentdetails: "fieldset"
 componentdetailsTitle: "Eksempel på formularstruktur"
 componentdetailsLink: false
 componentdetailsLabel: "for eksempel på formularstruktur"
-anchor: true
-subnav:
-- text: Vejledning
-  href: '#vejledning'
-- text: Kompleks formular
-  href: '#kompleks'
-- text: Se eksempelløsninger
-  href: '#eksempelloesninger'
-- text: Referencer
-  href: '#ref'
 description: "Se eksempler på opsætning af en formular med forskellige felttyper."
+headings: Formular
+anchorlinks: true
 tags: 
 ---
 
-{:#vejledning}
-## Vejledning
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Vejledning -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Gør brug af `<div class="form-group">`, fieldset og overskrifter til at strukturere din formular.
 
@@ -54,21 +48,21 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 
 {% include dos-donts-box.html component="overskrifter-dos-donts" title="Overskrifter do's and don'ts" %}
 
-{:#kompleks}
-## Kompleks formular
+[---- Kompleks formular -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {% include code/preview-box-details.html component="fieldset-complex" title="Eksempel på kompleks formularstruktur" link=false detaillabel="for eksempel på kompleks formularstruktur" %}
 
-{:#eksempelloesninger}
-## Se eksempelløsninger
+[---- Se eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)
