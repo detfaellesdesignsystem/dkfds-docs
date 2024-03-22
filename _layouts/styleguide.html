@@ -109,6 +109,18 @@ layout: default
                 </nav>
                 {% endif %}
 
+                {% if page.headings and page.anchorlinks == true %}
+                {%- assign headings = site.data.headings[page.headings] -%}
+                <nav class="anchorbox" aria-labelledby="anchorlinks">
+                    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
+                    <ul class="anchorlist">
+                        {% for heading in headings -%}
+                        <li><a href="#{{heading.id}}">{{heading.h2}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                {% endif -%}
+
                 {{ content }}
 
                 {% if page.category and page.permalink != "/kom-i-gang/implementering-kode/" and page.permalink != "/kom-i-gang/" and page.permalink != "/eksempler/" and page.permalink != "/eksempler/patterns/" %}
