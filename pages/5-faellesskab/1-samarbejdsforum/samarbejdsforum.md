@@ -7,14 +7,18 @@ category: Faellesskab_category
 subcategory: Fællesskab
 title: Samarbejdsforum
 lead: I forummet sparrer vi om Det Fælles Designsystem (FDS) og udviklingen fremadrettet.
-anchor: false
 description: "Se hvor og hvornår næste samarbejdsforum holdes."
+headings: Samarbejdsforum
+anchorlinks: false
 tags:
 ---
 
+{% assign headings = site.data.headings[page.headings] %}
+
 Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsystemet. Myndigheder, som overvejer at anvende designsystemet er også velkomne til at deltage.
 
-## Næste samarbejdsforum
+[---- Næste samarbejdsforum -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Næste samarbejdsforum er planlagt til 12. juni 2024.
 

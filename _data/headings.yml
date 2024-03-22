@@ -1,3 +1,21 @@
+# Kom i gang
+
+# Styleguide
+
+# Komponenter
+
+# Eksempler
+
+# Fællesskab
+
+Faellesskab:
+- h2: Designsystemet er til selvbetjeningsløsninger
+  id: designsystemet
+
+Samarbejdsforum:
+- h2: Næste samarbejdsforum
+  id: naeste-samarbejdsforum
+
 Governance:
 - h2: Governancemodellen
   id: governancemodellen
@@ -7,3 +25,19 @@ Governance:
   id: samarbejdsforum
 - h2: FDS-teamet
   id: fds-teamet
+
+Kontakt_og_support:
+- h2: GitHub
+  id: gitHub
+- h2: E-mail
+  id: e-mail
+
+Roadmap:
+- h2: Nye komponenter
+  id: nye-komponenter
+- h2: Eksempelløsninger
+  id: eksempelloesninger
+- h2: Patterns
+  id: patterns
+- h2: Andet
+  id: andet

@@ -4,10 +4,13 @@ layout: styleguide
 category: Faellesskab_category
 subcategory: Fællesskab
 title: Roadmap
-anchor: false
 description:
+headings: Roadmap
+anchorlinks: false
 tags:
 ---
+
+{% assign headings = site.data.headings[page.headings] %}
 
 Det Fælles Designsystem er bygget på forskning og erfaring fra FDS-teamet, andre designsystemer ({% include links/external-link.html linktext="US Web Design System" %} og {% include links/external-link.html linktext="Gov.UK Design System" %}) samt input fra anvendere af FDS.
 
@@ -22,7 +25,8 @@ Sagerne kan være:
 - <span class="badge badge-small badge-success">Gennemført</span>
 - <span class="badge badge-small badge-error">Annulleret</span>
 
-## Nye komponenter
+[---- Nye komponenter -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 {% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/guidelines/#prefix-og-suffix" %}
 {% include roadmap.html title="Karakterbegrænsning på inputfelt/tekstområde" status="Gennemført" link="/komponenter/inputfelter/guidelines/#karakterbegraensning" %}
@@ -43,13 +47,15 @@ Sagerne kan være:
 {% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/guidelines/#med-fejl" %}
 {% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/guidelines/#valgbare-rækker" %}
 
-## Eksempelløsninger
+[---- Eksempelløsningerr -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {% include roadmap.html title="404 - Siden blev ikke fundet" status="I gang" %}
 {% include roadmap.html title="Generiske eksempelløsninger" status="Gennemført" link="/eksempler/selvbetjeningsloesninger/" %}
 {% include roadmap.html title="Komplekse eksempelløsninger" status="Foreslået" %}
 
-## Patterns
+[---- Patterns -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include roadmap.html title="Adresse" status="Foreslået" %}
 {% include roadmap.html title="Angivelse af e-mail" status="Foreslået" %}
@@ -62,6 +68,7 @@ Sagerne kan være:
 {% include roadmap.html title="Tekstfelt med hentet data" status="Foreslået" %}
 {% include roadmap.html title="Tidsangivelse" status="Foreslået" %}
 
-## Andet
+[---- Andet -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {% include roadmap.html title="Vejledning til datavisualisering og infografik" status="Gennemført" link="/design/datavisualisering-infografik/" %}
