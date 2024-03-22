@@ -12,13 +12,9 @@ lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og sk
   til at kunne overskue sidens logik og opbygning.
 component: "headings"
 componentTitle: "Eksempel på overskrifter"
-anchor: true
-subnav:
-- text: HTML Struktur
-  href: "#html"
-- text: Subheading
-  href: "#subheading"
 description:
+headings: Overskrifter_Kode
+anchorlinks: true
 tags:
 - "h1"
 - "h2"
@@ -28,8 +24,10 @@ tags:
 - "h6"
 ---
 
-{:#html}
-## HTML Struktur
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- HTML Struktur -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 {% include code/syntax.html component="headings" copybutton=true %}
 
@@ -41,8 +39,8 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 {% include code/syntax.html component="heading" link=true copybutton=true %}
 
-{:#subheading}
-## Subheading
+[---- Subheading -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {% include code/preview-box.html component="subheading" link=false title="Eksempel på subheading" %}
 

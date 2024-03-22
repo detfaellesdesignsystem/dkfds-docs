@@ -8,17 +8,11 @@ title: Tilgængelig grafik
 lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det
   er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
   farveblinde brugere.
-anchor: true
-subnav:
-- text: Reducér kompleksiteten
-  href: "#reducer-kompleksiteten"
-- text: Brug farve med omhu
-  href: "#brug-farve-med-omhu"
-- text: Sørg for alternativer til grafikken
-  href: "#soerg-for-alternativer-til-grafikken"
 description: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal.
   Det er derfor særligt vigtigt at arbejde med tilgængelighed her, f.eks. for at tilgodese
   farveblinde brugere.
+headings: Tilgaengelig_grafik
+anchorlinks: true
 tags:
 - data
 - datavisualisering
@@ -29,15 +23,17 @@ tags:
 - infografik
 ---
 
-{:#reducer-kompleksiteten}
-## Reducér kompleksiteten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Reducér kompleksiteten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Reducer mængden af unødvendige oplysninger, så de vigtige ting er klare.
 
 Målet er at nå ud til alle målgrupper ved at kommunikere med det klareste sprog og de enkleste teknikker. Fjern det unødvendige visuelle rod for at skabe en klar og enkel oplevelse. Og husk, nogle mennesker ser tingene fysisk anderledes eller slet ikke.
 
-{:#brug-farve-med-omhu}
-## Brug farve med omhu
+[---- Brug farve med omhu -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at brugere med synshandicap som fx farveblindhed, også kan aflæse det.
 
@@ -68,8 +64,8 @@ Vær opmærksomhed på at farver der grænser op til hinanden skal overholde WCA
 
 Tjek gerne datavisualiseringer og infografikker med et simulationsværktøj (læs mere om {% include links/internal-link.html linktext="evalueringsværktøjer" %}) for at se, hvordan de forskellige farver syner overfor hinanden med et synshandikap som farveblindhed.
 
-{:#soerg-for-alternativer-til-grafikken}
-## Sørg for alternativer til grafikken
+[---- Sørg for alternativer til grafikken -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 Sæt infografik og datavisualiseringer i en kontekst, hvor sidens titel og evt. en introduktionstekst hjælper brugeren med at forstå indholdet.
 
@@ -91,7 +87,8 @@ Husk en sigende/forklarende alt-attribut på grafikken eller elementerne i datav
 
 Giv brugeren en oversigt over data fra diagrammet eller en tekstbeskrivelse af diagrammet. Beskrivelsen kan evt fungere som opsummering og kan hjælpe brugeren med at drage en konklusion.
 
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 

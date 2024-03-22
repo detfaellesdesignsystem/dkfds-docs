@@ -5,15 +5,9 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Datavisualisering og infografik
 lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
-anchor: true
-subnav:
-- text: Datavisualisering
-  href: "#datavisualisering"
-- text: Infografik
-  href: "#infografik"
-- text: Sådan bruges datavisualisering og infografik
-  href: "#retningslinjer"
 description: Vi skelner mellem datavisualisering og infografik. Infografik formidler en historie. Datavisualisering er nøgtern visning af data til fx sammenligning og overblik. 
+headings: Datavisualisering_og_infografik
+anchorlinks: true
 tags:
 - data
 - datavisualisering
@@ -24,8 +18,10 @@ tags:
 - infografik
 ---
 
-{:#datavisualisering}
-## Datavisualisering
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Datavisualisering -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram eller en graf. 
 
@@ -38,8 +34,8 @@ Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram
     </figcaption>
 </figure>
 
-{:#infografik}
-## Infografik
+[---- Infografik -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af personer, ting, processer, mm. sat sammen så det formidler et budskab. 
 
@@ -53,8 +49,8 @@ Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af pers
     </figcaption>
 </figure>
 
-{:#retningslinjer}
-## Sådan bruges datavisualisering og infografik
+[---- Sådan bruges datavisualisering og infografik -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 ### Anvendes til  
 

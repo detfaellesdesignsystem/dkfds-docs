@@ -9,28 +9,10 @@ title: Farver
 lead: Da designsystemet er fælles for både borger.dk og Virk er der farver til hver
   portal og samtidig en generel palette, der anvendes uanset, hvilken portal din selvbetjeningsløsning
   skal på.
-anchor: true
-subnav:
-- text: Portalfarver (tema)
-  href: "#portalfarver-tema"
-- text: Gråtoner
-  href: "#graatoner"
-- text: Besked-farver (alerts)
-  href: "#besked-farver-alerts"
-- text: Link-farver
-  href: "#link-farver"
-- text: Fokusfarve
-  href: "#fokusfarve"
-- text: Baggrundsfarver
-  href: "#baggrundsfarver"
-- text: Positiv og negativ farver
-  href: "#positiv-og-negativ-farver"
-- text: Datavisualiseringsfarver
-  href: "#datavisualiseringsfarver"
-- text: Kontrastforhold
-  href: "#kontrastforhold"
 description: 'Overbliksside over alle farver i FDS: Portalfarver, Gråtoner, Besked-farver,
   Link-farver, Fokusfarve, Baggrundsfarver, Positiv og negativ farver, Datavisualiseringsfarver'
+headings: Farver
+anchorlinks: true
 tags:
 - color
 - Portalfarver
@@ -55,11 +37,13 @@ tags:
 - borger.dk-farve
 ---
 
-{:#portalfarver-tema}
-## Portalfarver (tema)
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Portalfarver (tema) -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+
 Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve.
 
-<!-- new setup start -->
 <h3>Primærfarver for borger.dk</h3>
 
 Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til borger.dk
@@ -98,8 +82,8 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
   </div>
 </div>
 
-{:#graatoner}
-## Gråtoner
+[---- Gråtoner -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 Designsystemets generelle palette består mest af gråtoner og nogle få dedikerede farver til kommunikation og feedback. Paletten understøtter de visuelle principper om et neutralt, simpelt og fleksibelt designsystem.
 
@@ -138,8 +122,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:#besked-farver-alerts}
-## Besked-farver (alerts)
+[---- Besked-farver (alerts) -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 ### Succes
 <div class="row color-scale color-scale-spacing">
@@ -189,8 +173,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:#link-farver}
-## Link-farver
+[---- Link-farver -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
@@ -207,8 +191,9 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:#fokusfarve}
-## Fokusfarve
+[---- Fokusfarve -------------------------------------]: # 
+<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
+
 <div class="row color-scale">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
@@ -216,8 +201,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:#baggrundsfarver}
-## Baggrundsfarver
+[---- Baggrundsfarver -------------------------------------]: # 
+<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
 
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
@@ -234,8 +219,9 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:#positiv-og-negativ-farver}
-## Positiv og negativ farver
+[---- Positiv og negativ farver -------------------------------------]: # 
+<h2 id="{{ headings[6].id }}">{{ headings[6].h2 }}</h2>
+
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
@@ -247,8 +233,8 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-{:#datavisualiseringsfarver}
-## Datavisualiseringsfarver
+[---- Datavisualiseringsfarver -------------------------------------]: # 
+<h2 id="{{ headings[7].id }}">{{ headings[7].h2 }}</h2>
 
 Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former for visuelle fremstillinger til kommunikative formål.
 
@@ -539,8 +525,9 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-{:#kontrastforhold}
-## Kontrastforhold
+[---- Kontrastforhold -------------------------------------]: # 
+<h2 id="{{ headings[8].id }}">{{ headings[8].h2 }}</h2>
+
 Din tekst skal være læsbar for alle og efterleve gældende regler for kontrastforhold.
 
 <ul class="nobullet-list">

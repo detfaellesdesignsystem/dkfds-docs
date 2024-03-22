@@ -1303,28 +1303,30 @@
     </nav>
 
                 
-                <nav class="anchorbox" aria-label="Ankerlinks">
-                    <h2 class="anchortitle">Indhold på siden</h2>
+
+                <nav class="anchorbox" aria-labelledby="anchorlinks">
+                    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#generelt">Generelt om designsystemets grid</a></li>
+                        <li><a href="#installation">Installation</a></li>
                         <li><a href="#indstillinger">Indstillinger</a></li>
                         <li><a href="#responsive-klasser">Responsive klasser</a></li>
                         <li><a href="#auto-og-fill-kolonner">Auto og Fill kolonner</a></li>
                         <li><a href="#raekkefoelge">Rækkefølge</a></li>
                         <li><a href="#ingen-afstand-mellem-kolonner-ingen-gutter">Ingen afstand mellem kolonner (ingen gutter)</a></li>
                         <li><a href="#hjaelpeklasser">Hjælpeklasser</a></li>
-                        <li><a href="#sass-variabler-i-designsystemet">SASS variabler</a></li>
+                        <li><a href="#sass-variabler-i-designsystemet">Sass variabler i designsystemet</a></li>
                         
                     </ul>
                 </nav>
                 
-
-                <h2>Generelt om designsystemets grid</h2>
+<h2 id="generelt">Generelt om designsystemets grid</h2>
 
 <p>Det Fælles Designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Grid-systemet er et standard 12-kolonne system med fem responsive breakpoints.</p>
 
 <p>Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" class="icon-link" target="_blank">flexbox<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.</p>
 
-<h2>Installation</h2>
+<h2 id="installation">Installation</h2>
 
 <h3>HTML Struktur</h3>
 
@@ -2629,7 +2631,7 @@
 
 <p>Vil du have rækker og kolonner som går fra kant til kant, skal du undlade <code>container</code> eller tilføje klassen <code>w-percent-100</code>.</p>
 
-<h2 id="sass-variabler-i-designsystemet" tabindex="-1">Sass variabler i designsystemet</h2>
+<h2 id="sass-variabler-i-designsystemet">Sass variabler i designsystemet</h2>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss">$grid-sm: 576px;
 $grid-md: 768px;

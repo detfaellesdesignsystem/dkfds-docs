@@ -10,19 +10,9 @@ componentLink: false
 category: Styleguide_category
 subcategory: Styleguide
 title: Links
-anchor: true
-subnav:
-- text: Designværdier
-  href: "#designvaerdier"
-- text: Retningslinjer
-  href: "#retningslinjer"
-- text: Eksternt link
-  href: "#eksternt-link"
-- text: Sekundære link
-  href: "#sekundaere-links"
-- text: Billeder som links
-  href: "#billeder-som-links"
 description:
+headings: Links
+anchorlinks: true
 tags:
 - "ekstern"
 - "ekstern link"
@@ -30,8 +20,10 @@ tags:
 - "footerlink"
 ---
 
-{:#designvaerdier}
-## Designværdier
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Designværdier -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekst                 | Tekstfarve | Understreget | Ramme                           |
@@ -41,8 +33,8 @@ tags:
 | Standard link, besøgt | #800080    | Ja           |                                 |
 | Standard link, fokus  | #004D99    | Ja           | Tykkelse: 4px<br>Farve: #747474 |
 
-{:#retningslinjer}
-## Sådan bruges links
+[---- Sådan bruges links -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 ### Tilgængelighed
 
@@ -74,13 +66,13 @@ Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en p
 
 Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.
 
-{:#eksternt-link}
-## Eksternt link
+[---- Eksternt link -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/design/typografi/links/implementering/#eksternt-link" %}
 
-{:#sekundaere-links}
-## Sekundære links
+[---- Sekundære links -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 <p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
 
@@ -107,8 +99,8 @@ Brug ikke sekundære links i eller imellem afsnit af tekst eller til generel nav
 
 Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end standard-links. Alternativ anvendelse af sekundære links kan tillige skabe tvivl og forvirring hos brugerne omkring, hvad der er klikbart. 
 
-{:#billeder-som-links}
-## Billeder som links
+[---- Billeder som links -------------------------------------]: # 
+<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
 
 Links har som standard stylingen `display: inline`. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en hjælpeklasse, fx `d-inline-block` eller `d-block`, ellers vises der ikke nogen fokusramme omkring billedet, når linket har fokus. Se alle muligheder under {% include links/internal-link.html linktext="hjælpeklasser for display" %}.
 

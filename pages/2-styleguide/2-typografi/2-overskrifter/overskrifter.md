@@ -11,22 +11,10 @@ lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og sk
   til at kunne overskue sidens logik og opbygning.
 component: "headings"
 componentTitle: "Oversigt over overskriftshierarki"
-anchor: true
-subnav:
-- text: Sådan bruges overskrifter
-  href: "#retningslinjer"
-- text: Designværdier
-  href: "#designvaerdier"
-- text: Overskrift som link
-  href: "#overskrift-som-link"
-- text: Overskrift i søgeresultat
-  href: "#overskrift-i-soegeresultat"
-- text: Løsningstitel i header
-  href: "#loesnings-titel"
-- text: Subheading
-  href: "#subheading"
 description: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og
   skærmlæseren til at kunne overskue sidens logik og opbygning.
+headings: Overskrifter
+anchorlinks: true
 tags:
 - h1
 - h2
@@ -36,8 +24,10 @@ tags:
 - h6
 ---
 
-{:#retningslinjer}
-## Sådan bruges overskrifter
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges overskrifter -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Overskriftstyperne har to formål:
 
@@ -60,8 +50,8 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
 - {% include links/external-link.html linktext="H42: Using h1-h6 to identify headings" %}
 - {% include links/external-link.html linktext="Page-structure - headings" %}
 
-{:#designvaerdier}
-## Designværdier
+[---- Designværdier -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.table .table--borderless .table--responsive-headers}
 | Tekst        | Skrifttype    | Skriftstørrelse | Linjehøjde | Teksttykkelse   | Tekstfarve | 
@@ -73,8 +63,8 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
 | Overskrift 5 | IBM Plex Sans | 16px            | 1.5        | 600             | #1a1a1a    |
 | Overskrift 6 | IBM Plex Sans | 14px            | 1.67       | 500             | #1a1a1a    |
 
-{:#overskrift-som-link}
-## Overskrift som link
+[---- Overskrift som link -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include code/preview.html component="heading-link" %}
 
@@ -90,9 +80,8 @@ Må ikke bruges til at fremhæve links eller som erstatning for {% include links
 
 Et godt eksempel på brugen af overblikslinks er fx {% include links/external-link.html linktext="forsiden af gov.uk" %}, hvor de anvendes sammen med tekst til at give brugeren en generel ide om omfanget af indholdet i løsningen.
 
-
-{:#overskrift-i-soegeresultat}
-## Overskrift i søgeresultat
+[---- Overskrift i søgeresultat -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {% include code/preview.html component="search-link" %}
 
@@ -108,9 +97,8 @@ Må ikke anvendes til at fremhæve links i tekst eller som erstatning for {% inc
 
 Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.
 
-
-{:#loesnings-titel}
-## Løsningstitel i header
+[---- Løsningstitel i header -------------------------------------]: # 
+<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
 
 {% include code/preview.html component="solutionheading" %}
 
@@ -121,8 +109,8 @@ Anvendes i header som titel på hele løsningen. Titlen bør derved være den sa
 ### Anvendes ikke til
 Anvendes ikke andre steder end i headeren.
 
-{:#subheading}
-## Subheading
+[---- Subheading -------------------------------------]: # 
+<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
 
 {% include code/preview.html component="subheading" %}
 

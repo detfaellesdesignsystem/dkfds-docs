@@ -8,39 +8,29 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Grid og baseline grid
 lead: Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.
-anchor: true
-subnav:
-- text: Indstillinger
-  href: '#indstillinger'
-- text: Responsive klasser
-  href: '#responsive-klasser'
-- text: Auto og Fill kolonner
-  href: '#auto-og-fill-kolonner'
-- text: Rækkefølge
-  href: '#raekkefoelge'
-- text: Ingen afstand mellem kolonner (ingen gutter)
-  href: '#ingen-afstand-mellem-kolonner-ingen-gutter'
-- text: Hjælpeklasser
-  href: '#hjaelpeklasser'
-- text: SASS variabler
-  href: '#sass-variabler-i-designsystemet'
 description: Sådan bruger du grid med FDS.
+headings: Grid_og_baseline_grid_Kode
+anchorlinks: true
 tags: 
 ---
 
-## Generelt om designsystemets grid
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Generelt om designsystemets grid -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Det Fælles Designsystem benytter et simpelt mobile-first flexbox grid til opbygning af sider. Grid-systemet er et standard 12-kolonne system med fem responsive breakpoints.
 
 Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-systemet bruger {% include links/external-link.html linktext="flexbox" %} og er responsivt. Nedenfor kan du se eksempler på brugen af grid-systemet.
 
-## Installation
+[---- Installation -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 ### HTML Struktur
 {% include code/preview-box-details.html component="grid-simple" title="Eksempel af grid" link=false detaillabel="for eksempel af grid " %}
 
-{:#indstillinger}
-## Indstillinger
+[---- Indstillinger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 Grid systemet har følgende standardindstillinger:
 
@@ -91,8 +81,8 @@ Grid systemet har følgende standardindstillinger:
     </tbody>
 </table>
 
-{:#responsive-klasser}
-## Responsive klasser
+[---- Responsive klasser -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 Som udgangspunkt findes der 5 breakpoints: extra small, small, medium, large, or extra large.
 
@@ -126,8 +116,8 @@ Du kan indlejre flere rækker med tilhørende kolonner i hinanden.
 
 {% include code/preview-box-details.html component="grid--nesting" title="Eksempel af grid med indlejring af rækker med kolonner" link=false detaillabel="for eksempel af grid med indlejring af rækker med kolonner" %}
 
-{:#auto-og-fill-kolonner}
-## Auto og Fill kolonner
+[---- Auto og Fill kolonner -------------------------------------]: # 
+<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
 
 Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx `col-sm-6`.
 
@@ -143,8 +133,8 @@ Ved at brug `col-{breakpoint}-auto` kan du skabe individuel kolonnebredde: Kolon
 
 {% include code/preview-box-details.html component="grid--one-column-width" title="Eksempel af grid med indholdsbestemt bredde på kolonner" link=false detaillabel="for eksempel af grid med indholdsbestemt bredde på kolonner" %}
 
-{:#raekkefoelge}
-## Rækkefølge
+[---- Rækkefølge -------------------------------------]: # 
+<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
 
 ### Klasser (classes)
 
@@ -162,15 +152,15 @@ Du kan nulstille forskydning ved fx at bruge klassen `offset-md-0`.
 
 {% include code/preview-box-details.html component="grid--offsets-reset" title="Eksempel af grid med nulstilling af forskydning af kolonne" link=false detaillabel="for eksempel af grid med nulstilling af forskydning af kolonne" %}
 
-{:#ingen-afstand-mellem-kolonner-ingen-gutter}
-## Ingen afstand mellem kolonner (ingen gutter)
+[---- Ingen afstand mellem kolonner (ingen gutter) -------------------------------------]: # 
+<h2 id="{{ headings[6].id }}">{{ headings[6].h2 }}</h2>
 
 Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen `no-gutters` til rækken.
 
 {% include code/preview-box-details.html component="grid--no-gutters" title="Eksempel af grid uden afstand mellem kolonner" link=false detaillabel="for eksempel af grid uden afstand mellem kolonner" %}
 
-{:#hjaelpeklasser}
-## Hjælpeklasser
+[---- Hjælpeklasser -------------------------------------]: # 
+<h2 id="{{ headings[7].id }}">{{ headings[7].h2 }}</h2>
 
 Designsystemet kommer med forskellige hjælpeklasser, fx flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.
 
@@ -198,7 +188,8 @@ Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx `mr-auto`.
 
 Vil du have rækker og kolonner som går fra kant til kant, skal du undlade `container` eller tilføje klassen `w-percent-100`.
 
-<h2 id="sass-variabler-i-designsystemet" tabindex="-1">Sass variabler i designsystemet</h2>
+[---- Sass variabler i designsystemet -------------------------------------]: # 
+<h2 id="{{ headings[8].id }}">{{ headings[8].h2 }}</h2>
 
 {% highlight scss %}
 $grid-sm: 576px;
