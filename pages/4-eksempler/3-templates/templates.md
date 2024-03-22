@@ -8,42 +8,35 @@ category: Eksempler_category
 subcategory: Eksempler
 title: Templates
 lead: Templates er best practice designløsninger til specifikke sidetyper.
-anchor: true
-subnav:
-- text: 'Dashboard'
-  href: '#dashboard'
-- text: 'Opgaveliste'
-  href: '#opgaveliste'
-- text: 'Vedhæft filer'
-  href: '#vedhaeft-filer'
-- text: 'Opsummering'
-  href: '#opsummering'
-- text: 'Kvittering'
-  href: '#kvittering'
-- text: 'Fejl'
-  href: '#formular-med-fejl'
 description: Visning af sidetyper, der går igen på tværs af løsninger
+headings: Templates
+anchorlinks: true
 tags:
 ---
 
-{:#dashboard}
-## Dashboard
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Dashboard -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <a href="/pages/eksempler/dashboard/dashboard-1/?r=/eksempler/templates/%23dashboard" title="Dashboard" class="screenshot d-block"></a>
   </div>
 </div>
 
-{:#opgaveliste}
-## Opgaveliste
+[---- Opgaveliste -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <a href="/pages/eksempler/opgaveliste/?r=/eksempler/templates/%23opgaveliste" title="Eksempelside på opgaveliste" class="screenshot d-block"></a>
   </div>
 </div>
 
-{:#vedhaeft-filer}
-## Vedhæft filer
+[---- Vedhæft filer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+
 <div class="row screenshot-gallery">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
   <h3 class="h4">Vedhæft fil</h3>
@@ -59,8 +52,9 @@ tags:
   </div>
 </div>
 
-{:#opsummering}
-## Opsummering
+[---- Opsummering -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Opsummering 1</h3>
@@ -72,8 +66,9 @@ tags:
   </div>
 </div>
 
-{:#kvittering}
-## Kvittering
+[---- Kvittering -------------------------------------]: # 
+<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
+
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Kvittering 1</h3>
@@ -85,8 +80,9 @@ tags:
   </div>
 </div>
 
-{:#formular-med-fejl}
-## Fejl
+[---- Fejl -------------------------------------]: # 
+<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
+
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Formular med fejl</h3>

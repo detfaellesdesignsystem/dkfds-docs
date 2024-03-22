@@ -1,5 +1,55 @@
 # Kom i gang
 
+Hent_kodepakken:
+- h2: Hent via NPM
+  id: npm
+- h2: Hent via GitHub (zip)
+  id: github
+- h2: Temahåndtering
+  id: temahaandtering
+- h2: Vejledning til integration på borger.dk og Virk
+  id: integration
+
+Hjaelpeklasser:
+- h2: Responsive hjælpeklasser
+  id: responsive-hjaelpeklasser
+- h2: Text align
+  id: text-align
+- h2: Margin og padding
+  id: margin-og-padding
+- h2: Display
+  id: display
+- h2: Flexbox
+  id: flexbox
+- h2: Bredde i procent
+  id: bredde-i-procent
+- h2: Baggrundsfarver
+  id: baggrundsfarver
+- h2: Tilgængelighed
+  id: tilgaengelighed
+
+Print:
+- h2: CSS-klasser
+  id: css-klasser
+- h2: Eksempler på skjul af elementer
+  id: eksempler
+
+Design_og_ressourcer:
+- h2: Grundprincipper
+  id: grundprincipper
+- h2: Dit ansvar som designer
+  id: dit-ansvar-som-designer
+- h2: Designressourcer
+  id: design-ressourcer
+
+Tilgaengelighed:
+- h2: Webtilgængelighedsloven
+  id: webtilgaengelighedsloven
+- h2: Hvorfor tilgængelighed?
+  id: hvorfor-tilgaengelighed
+- h2: Vejledning og værktøjer
+  id: vejledning
+
 # Styleguide
 
 # Komponenter
@@ -41,6 +91,20 @@ Session_udloeber:
   id: varianter
 - h2: Referencer
   id: referencer
+
+Templates:
+- h2: Dashboard
+  id: dashboard
+- h2: Opgaveliste
+  id: opgaveliste
+- h2: Vedhæft filer
+  id: vedhaeft-filer
+- h2: Opsummering
+  id: opsummering
+- h2: Kvittering
+  id: kvittering
+- h2: Fejl
+  id: formular-med-fejl
 
 # Fællesskab
 

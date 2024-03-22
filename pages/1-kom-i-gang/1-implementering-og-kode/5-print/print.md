@@ -9,18 +9,16 @@ category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Print
 lead: Sider kan struktureres, så de også fungerer godt ved print.
-anchor: true
-subnav:
-- text: CSS-klasser
-  href: "#css-klasser"
-- text: Eksempler på skjul af elementer
-  href: "#eksempler"
 description: "FDS giver nogle værktøjer til at strukturere dine sider, så de også fungerer godt ved print."
+headings: Print
+anchorlinks: true
 tags:
 ---
 
-{:#css-klasser}
-## CSS-klasser
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- CSS-klasser -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 DKFDS giver nogle værktøjer, så man nemt kan tilpasse sider til print. Ved at tilføje visse klasser kan du vise, skjule eller ændre udseende på elementer ved print.
 
@@ -75,8 +73,8 @@ Derved kan du skjule eller vise visse elementer på siden, som enten ikke er rel
     </table>
 </div>
 
-{:#eksempler}
-## Eksempler på skjul af elementer
+[---- Eksempler på skjul af elementer -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 Nogle elementer er ikke relevant ved print, derfor anbefaler vi at skjule dem ved print. Dette gøres ved at tilføje klassen `d-print-none` på elementet.
 
