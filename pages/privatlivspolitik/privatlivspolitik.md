@@ -138,12 +138,12 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
         <button type="button" class="button button-secondary" id="cookieCancel">Annuller</button>
     </div>
 </form>
-<div class="alert alert-success alert--show-icon alert--paragraph d-none" role="alert" id="cookieNoAlert">
+<div class="alert alert-success alert--paragraph d-none" role="alert" id="cookieNoAlert">
     <div class="alert-body">
         <p class="alert-text">Ok, vi samler ikke længere anonymiseret statistik til forbedring af brugeroplevelsen</p>
     </div>
 </div>
-<div class="alert alert-success alert--show-icon alert--paragraph d-none" role="alert" id="cookieYesAlert">
+<div class="alert alert-success alert--paragraph d-none" role="alert" id="cookieYesAlert">
     <div class="alert-body">
         <p class="alert-text">Tak, vi samler nu anonymiseret statistik til forbedring af brugeroplevelsen</p>
     </div>

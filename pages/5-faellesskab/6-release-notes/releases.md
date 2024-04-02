@@ -240,6 +240,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Ændret font-smoothing for flere elementer.
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="tilbage til toppen" %}-knappen nogen gange var vist, selvom den skulle være skjult.
 - Tilføjet klassen `no-max-width`, der forhindrer `max-width` på en paragraf eller liste.
+- {% include links/component-guideline-link.html linktext="Beskeder" %} har nu altid et ikon. Klassen `alert--show-icon` bruges ikke længere.
 
 
 {:#version-9-1-0 .mb-0}

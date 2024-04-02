@@ -22,7 +22,7 @@ layout: default
             <section id="section-{{page.permalink}}">
 
                 {%- for alert in page.alerts -%}
-                <div class="alert alert-{{ alert.type }} {% if alert.icon %}alert--show-icon{% endif %}" role="alert">
+                <div class="alert alert-{{ alert.type }}" role="alert">
                     <div class="alert-body">
                         {%- if alert.header -%}
                         <h3 class="alert-heading">{{alert.header}}</h3>

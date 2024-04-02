@@ -16,8 +16,6 @@ subnav:
   href: '#installation'
 - text: Farver
   href: '#farver'
-- text: Ikon
-  href: '#beskeder-med-ikon'
 - text: Paragrafbredde
   href: '#paragrafbredde'
 - text: Luk knap
@@ -94,13 +92,6 @@ Besked med advarsel er gul, og defineres med klassen `alert-warning`.
 Besked med fejl er rød, og defineres med klassen `alert-error`.
 
 {% include code/syntax.html component="alert-error" link=true copybutton=true %}
-
-{:#beskeder-med-ikon}
-## Ikon
-
-Defineres med klassen `alert--show-icon`.
-
-{% include code/syntax.html component="alerts-icons" link=true copybutton=true %}
 
 {:#paragrafbredde}
 ## Paragrafbredde

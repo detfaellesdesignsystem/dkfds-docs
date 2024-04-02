@@ -20,9 +20,7 @@ subnav:
   href: "#eksempelloesninger"
 - text: Referencer
   href: "#ref"
-description: Beskeder (Alerts) er farvede bokse, eventuelt tilknyttet et ikon, du kan
-  bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer,
-  o.l.
+description: Beskeder (Alerts) er farvede bokse, du kan bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer, o.l.
 tags:
 - fejlbesked
 ---
@@ -76,11 +74,6 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {:#varianter}
 ## Varianter
-
-{:#beskeder-med-ikon}
-### Beskeder med ikon
-
-{% include code/preview-box.html component="alerts-icons" title="Eksempel på besked med ikon" %}
 
 {:#teksteksempler}
 ### Teksteksempler
