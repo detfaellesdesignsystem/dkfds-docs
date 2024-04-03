@@ -6,31 +6,9 @@ subcategory: Fællesskab
 title: Release notes
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
-anchor: true
-subnav:
-- text: Version 10.0.0
-  href: "#version-10-0-0"
-- text: Version 9.0.2
-  href: "#version-9-0-2"
-- text: Version 9.0.1
-  href: "#version-9-0-1"
-- text: Version 9.0.0
-  href: "#version-9-0-0"
-- text: Version 8.2.1
-  href: "#version-8-2-1"
-- text: Version 8.2.0
-  href: "#version-8-2-0"
-- text: Version 8.1.0
-  href: "#version-8-1-0"
-- text: Version 8.0.1
-  href: "#version-8-0-1"
-- text: Version 8.0.0
-  href: "#version-8-0-0"
-- text: Version 7.5.3
-  href: "#version-7-5-3"
-- text: Tidligere versioner
-  href: "#version-7-5-2"
 description: Release notes for Det Fælles Designsystem
+headings: Releases
+anchorlinks: true
 tags:
 - changelog
 - releases
@@ -98,35 +76,14 @@ tags:
 - 9.1.0
 - 10
 - 10.0.0
-anchor: true
-subnav:
-- text: Version 10.0.0
-  href: "#version-10-0-0"
-- text: Version 9.1.0
-  href: "#version-9-1-0"
-- text: Version 9.0.2
-  href: "#version-9-0-2"
-- text: Version 9.0.1
-  href: "#version-9-0-1"
-- text: Version 9.0.0
-  href: "#version-9-0-0"
-- text: Version 8.2.1
-  href: "#version-8-2-1"
-- text: Version 8.2.0
-  href: "#version-8-2-0"
-- text: Version 8.1.0
-  href: "#version-8-1-0"
-- text: Version 8.0.1
-  href: "#version-8-0-1"
-- text: Version 8.0.0
-  href: "#version-8-0-0"
-- text: Tidligere versioner
-  href: "#version-7-5-3"
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
   andre opdateringer.
 ---
 
-## Versionering
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Versionering og release-proces -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 Designsystemets måde at versionere på er inspireret af {% include links/external-link.html linktext="semantisk versionering" %}. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
 
@@ -146,8 +103,8 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
-{:#version-10-0-0 .mb-0}
-## Version 10.0.0
+[---- Version 10.0.0 -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}" class="mb-0">{{ headings[1].h2 }}</h2>
 
 <div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
 
@@ -243,8 +200,8 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - {% include links/component-guideline-link.html linktext="Beskeder" %} har nu altid et ikon. Klassen `alert--show-icon` bruges ikke længere.
 
 
-{:#version-9-1-0 .mb-0}
-## Version 9.1.0
+[---- Version 9.1.0 -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}" class="mb-0">{{ headings[2].h2 }}</h2>
 
 <div><span class="small-text mt-0 d-block">24-11-2023</span></div>
 
@@ -258,8 +215,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for {% include links/internal-link.html linktext="inputfelter med hentet data" %}.
 - Tilføjet ny side til dokumentationen kaldet {% include links/internal-link.html linktext="Ofte stillede spørgsmål" %}, samt opdateret siderne {% include links/internal-link.html linktext="Designressourcer" %}, {% include links/internal-link.html linktext="Tjekliste" %} og {% include links/internal-link.html linktext="Komponenter" %}.
 
-{:#version-9-0-2 .mb-0}
-## Version 9.0.2
+
+[---- Version 9.0.2 -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}" class="mb-0">{{ headings[3].h2 }}</h2>
 
 <div><span class="small-text mt-0 d-block">30-08-2023</span></div>
 
@@ -267,8 +225,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="knapper" %} ikke altid stod på linje, når de lå i samme række.
 {% include links/github-link.html number="215" afternumber=" på Github" %}
 
-{:#version-9-0-1 .mb-0}
-## Version 9.0.1
+
+[---- Version 9.0.1 -------------------------------------]: # 
+<h2 id="{{ headings[4].id }}" class="mb-0">{{ headings[4].h2 }}</h2>
 
 <div><span class="small-text mt-0 d-block">20-06-2023</span></div>
 
@@ -278,8 +237,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="210" afternumber=" på Github" %}
 - Rettet fejl i dokumentationen, hvor nogle {% include links/internal-link.html linktext="farver" %} stod angivet forkert.
 
-{:#version-9-0-0 .mb-0}
-## Version 9.0.0
+
+[---- Version 9.0.0 -------------------------------------]: # 
+<h2 id="{{ headings[5].id }}" class="mb-0">{{ headings[5].h2 }}</h2>
 
 <div><span class="small-text mt-0 d-block">14-04-2023</span></div>
 
@@ -355,8 +315,11 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Rettet fejl i {% include links/component-guideline-link.html linktext="overflow menuer" %}, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `aria-haspopup` til knapper, der åbner modaler. {% include links/component-code-link.html linktext="Modalkomponenten" %}, selvbetjeningseksemplerne og pattern for {% include links/internal-link.html linktext="session udløber" %} er opdateret.
 
+[---- Tidligere versioner -------------------------------------]: # 
+<h2 id="{{ headings[6].id }}" class="mb-0">{{ headings[6].h2 }}</h2>
+
 {:#version-8-2-1 .mb-0}
-## Version 8.2.1
+### Version 8.2.1
 
 <div><span class="small-text mt-0 d-block">03-01-2023</span></div>
 
@@ -365,7 +328,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Opdateret licensinformation og tilføjet licensfilen til {% include links/external-link.html linktext="zip-filen i GitHub" %}.
 
 {:#version-8-2-0 .mb-0}
-## Version 8.2.0
+### Version 8.2.0
 
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
@@ -378,7 +341,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Rettet en mindre fejl, hvor {% include links/component-guideline-link.html linktext="tooltip" %}-pilen kunne pege væk fra elementet.
 
 {:#version-8-1-0 .mb-0}
-## Version 8.1.0
+### Version 8.1.0
 
 <div><span class="small-text mt-0 d-block">28-09-2022</span></div>
 
@@ -393,7 +356,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på selvbetjeningsløsninger og {% include links/internal-link.html linktext="templates" %} er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er {% include links/internal-link.html linktext="formularer" %} flyttet ind under {% include links/internal-link.html linktext="patterns" %}, 'sidenavigation' er omdøbt til '{% include links/component-guideline-link.html linktext="venstremenu" %}', 'felter' er omdøbt til '{% include links/component-guideline-link.html linktext="inputfelter" %}', 'notifikation' er omdøbt til '{% include links/component-guideline-link.html linktext="toastbesked" %}', 'skip-link' er omdøbt til '{% include links/component-guideline-link.html linktext="gå til sidens indhold" %}' og 'spinner' er omdøbt til '{% include links/component-guideline-link.html linktext="loading spinner" %}'. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.
 
 {:#version-8-0-1 .mb-0}
-## Version 8.0.1
+### Version 8.0.1
 
 <div><span class="small-text mt-0 d-block">16-06-2022</span></div>
 
@@ -406,7 +369,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender {% include links/internal-link.html linktext="ikonsamlingen" %}.
 
 {:#version-8-0-0 .mb-0}
-## Version 8.0.0
+### Version 8.0.0
 
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
@@ -448,21 +411,21 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.
 
 {:#version-7-5-3 .mb-0}
-## Version 7.5.3
+### Version 7.5.3
 
 <div><span class="small-text mt-0 d-block">03-12-2021</span></div>
 
 - Fjernet text-transform:uppercase på {% include links/internal-link.html linktext="subheading" %}, så skærmlæsere læser teksten frem for at stave
 
 {:#version-7-5-2 .mb-0}
-## Version 7.5.2
+### Version 7.5.2
 
 <div><span class="small-text mt-0 d-block">25-11-2021</span></div>
 
 - Gjort det muligt at markere tekst i {% include links/component-guideline-link.html linktext="knapper" %} for support af hjælpeværktøjer som Adgang for alle.
 
 {:#version-7-5-1 .mb-0}
-## Version 7.5.1
+### Version 7.5.1
 
 <div><span class="small-text mt-0 d-block">18-11-2021</span></div>
 
@@ -471,7 +434,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tillader nu dato i {% include links/component-guideline-link.html linktext="datovælgeren" %} fra start.
 
 {:#version-7-5-0 .mb-0}
-## Version 7.5.0
+### Version 7.5.0
 
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
@@ -489,7 +452,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Ændret ikon i {% include links/component-guideline-link.html linktext="detalje komponent" %}
 
 {:#version-7-4-0 .mb-0}
-## Version 7.4.0
+### Version 7.4.0
 
 <div><span class="small-text mt-0 d-block">02-06-2021</span></div>
 
@@ -499,7 +462,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilføjet status tekst i forbindelse med {% include links/component-guideline-link.html linktext="spinner komponenten" %}
 
 {:#version-7-3-0 .mb-0}
-## Version 7.3.0
+### Version 7.3.0
 
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
@@ -516,7 +479,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="45" afternumber=" på Github" %}
 
 {:#version-7-2-0 .mb-0}
-## Version 7.2.0
+### Version 7.2.0
 
 <div><span class="small-text mt-0 d-block">11-02-2021</span></div>
 
@@ -535,7 +498,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="113" afternumber=" på Github" %}
 
 {:#version-7-1-1 .mb-0}
-## Version 7.1.1
+### Version 7.1.1
 
 <div><span class="small-text mt-0 d-block">28-10-2020</span></div>
 
@@ -546,12 +509,12 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilføjet ARIA attributter i {% include links/component-guideline-link.html linktext="trinindikator" %} for bedre tilgængelighed
 
 {:#version-7-1-0 .mb-0}
-## Version 7.1.0
+### Version 7.1.0
 
 - Ny komponent: {% include links/component-guideline-link.html linktext="Sprogvælger" %}
 
 {:#version-7-0-0 .mb-0}
-## Version 7.0.0
+### Version 7.0.0
 
 <div><span class="small-text mt-0 d-block">18-08-2020</span></div>
 
@@ -567,14 +530,14 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="112" afternumber=" på Github" %}
 
 {:#version-6-1-1 .mb-0}
-## Version 6.1.1
+### Version 6.1.1
 
 <div><span class="small-text mt-0 d-block">19-05-2020</span></div>
 
 - Ændret lille knap til normal knap i standard header grundet usability issues i mobilvisning
 
 {:#version-6-1-0 .mb-0}
-## Version 6.1.0
+### Version 6.1.0
 
 <div><span class="small-text mt-0 d-block">14-05-2020</span></div>
 
@@ -585,7 +548,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilpasset alignment på {% include links/component-guideline-link.html linktext="venstremenu" %}
 
 {:#version-6-0-1 .mb-0}
-## Version 6.0.1
+### Version 6.0.1
 
 <div><span class="small-text mt-0 d-block">19-03-2020</span></div>
 
@@ -596,7 +559,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilpasset CSS til faneblade, så der ikke længere kommer fejl ved import af dkfds scss i angular.
 
 {:#version-6-0-0 .mb-0}
-## Version 6.0.0
+### Version 6.0.0
 
 <div><span class="small-text mt-0 d-block">10-03-2020</span></div>
 
@@ -614,7 +577,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="94" afternumber=" på Github" %}
 
 {:#version-5-3-0 .mb-0}
-## Version 5.3.0
+### Version 5.3.0
 
 <div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
@@ -629,7 +592,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Opdateret SVG filer, samt tilføjet link til Figma komponent bibliotek.
 
 {:#version-5-2-0 .mb-0}
-## Version 5.2.0
+### Version 5.2.0
 
 <div><span class="small-text mt-0 d-block">27-11-2019</span></div>
 
@@ -644,7 +607,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Opdateret Eksempel på implementering i Angular
 
 {:#version-5-1-0 .mb-0}
-## Version 5.1.0
+### Version 5.1.0
 
 <div><span class="small-text mt-0 d-block">12-11-2019</span></div>
 
@@ -661,7 +624,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 <span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om {% include links/internal-link.html linktext="temahåndtering" %}.</span>
 
 {:#version-5-0-0 .mb-0}
-## Version 5.0.0
+### Version 5.0.0
 
 <div><span class="small-text mt-0 d-block">22-10-2019</span></div>
 
@@ -683,7 +646,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tabellerne følger nu 8point grid
 
 {:#version-4-4-0 .mb-0}
-## Version 4.4.0
+### Version 4.4.0
 
 <div><span class="small-text mt-0 d-block">20-08-2019</span></div>
 
@@ -695,7 +658,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilpasset retningslinjer for ikoner i forhold til tilgængelighed
 
 {:#version-4-3-0 .mb-0}
-## Version 4.3.0
+### Version 4.3.0
 
 <div><span class="small-text mt-0 d-block">04-07-2019</span></div>
 
@@ -707,7 +670,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.
 
 {:#version-4-2-0 .mb-0}
-## Version 4.2.0
+### Version 4.2.0
 
 <div><span class="small-text mt-0 d-block">20-06-2019</span></div>
 
@@ -718,7 +681,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.
 
 {:#version-4-1-1 .mb-0}
-## Version 4.1.1
+### Version 4.1.1
 
 <div><span class="small-text mt-0 d-block">24-05-2019</span></div>
 
@@ -730,7 +693,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilføjet sektion omkring formularstruktur.
 
 {:#version-4-1-0 .mb-0}
-## Version 4.1.0
+### Version 4.1.0
 
 <div><span class="small-text mt-0 d-block">26-04-2019</span></div>
 
@@ -744,7 +707,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Log ud skal nu hedde Log af.
 
 {:#version-4-0-1 .mb-0}
-## Version 4.0.1
+### Version 4.0.1
 
 <div><span class="small-text mt-0 d-block">08-04-2019</span></div>
 
@@ -758,7 +721,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Fikset hover farve på icon knap (button-unstyled)
 
 {:#version-4-0-0 .mb-0}
-## Version 4.0.0
+### Version 4.0.0
 
 <div><span class="small-text mt-0 d-block">01-04-2019</span></div>
 
@@ -775,7 +738,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 
 {:#version-3-0-3 .mb-0}
-## Version 3.0.3
+### Version 3.0.3
 
 <div><span class="small-text mt-0 d-block">27-03-2019</span></div>
 
@@ -791,7 +754,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilføjet JavaScript der håndterer lukning af overflow menuer, når man åbner en ny
 
 {:#version-3-0-2 .mb-0}
-## Version 3.0.2
+### Version 3.0.2
 
 <div><span class="small-text mt-0 d-block">19-02-2019</span></div>
 
@@ -810,23 +773,23 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Ændret skrifttype tykkelse på søgefelts knappen
 
 {:#version-3-0-1 .mb-0}
-## Version 3.0.1
+### Version 3.0.1
 
 <div><span class="small-text mt-0 d-block">18-01-2019</span></div>
-<h3 class="h4">Smårettelser til CSS og ikoner</h3>
+<h4>Smårettelser til CSS og ikoner</h4>
 
 - `small-text` og `small-tag` klasserne fik ændret font-size fra 13px til 14px
 - Ændrede level 2 og 3 i venstremenu på mobil
 - Rettede ikonerne help og `close-circle`
 
-<h3 class="h4">Smårettelser til eksempler</h3>
+<h4>Smårettelser til eksempler</h4>
 
 - Typesetting blev delt i to: Linjeafstand og Linjelængde.
 - Fejl i Popover-eksemplet blev rettet.
 - Neutralt logo til header-eksempler blev opdateret.
 
 {:#version-3-0-0 .mb-0}
-## Version 3.0.0
+### Version 3.0.0
 
 <div><span class="small-text mt-0 d-block">14-01-2019</span></div>
 
@@ -851,7 +814,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
     - Styling af tjekbokse kræver nu denne klasse på selve `input[type=checkbox]`: "form-check".
 
 {:#version-2-1-2 .mb-0}
-## Version 2.1.2
+### Version 2.1.2
 
 <div><span class="small-text mt-0 d-block">16-10-2018</span></div>
 <ul>

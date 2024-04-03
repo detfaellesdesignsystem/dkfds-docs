@@ -1266,26 +1266,22 @@
                 
 
                 
-                <nav class="anchorbox" aria-label="Ankerlinks">
-                    <h2 class="anchortitle">Indhold på siden</h2>
+
+                <nav class="anchorbox" aria-labelledby="anchorlinks">
+                    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
                     <ul class="anchorlist">
+                        <li><a href="#versionering">Versionering og release-proces</a></li>
                         <li><a href="#version-10-0-0">Version 10.0.0</a></li>
                         <li><a href="#version-9-1-0">Version 9.1.0</a></li>
                         <li><a href="#version-9-0-2">Version 9.0.2</a></li>
                         <li><a href="#version-9-0-1">Version 9.0.1</a></li>
                         <li><a href="#version-9-0-0">Version 9.0.0</a></li>
-                        <li><a href="#version-8-2-1">Version 8.2.1</a></li>
-                        <li><a href="#version-8-2-0">Version 8.2.0</a></li>
-                        <li><a href="#version-8-1-0">Version 8.1.0</a></li>
-                        <li><a href="#version-8-0-1">Version 8.0.1</a></li>
-                        <li><a href="#version-8-0-0">Version 8.0.0</a></li>
-                        <li><a href="#version-7-5-3">Tidligere versioner</a></li>
+                        <li><a href="#tidligere-versioner">Tidligere versioner</a></li>
                         
                     </ul>
                 </nav>
                 
-
-                <h2>Versionering</h2>
+<h2 id="versionering">Versionering og release-proces</h2>
 
 <p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link" target="_blank">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
 
@@ -1544,7 +1540,9 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet <code>aria-haspopup</code> til knapper, der åbner modaler. <a href="/komponenter/modal/implementering/">Modalkomponenten</a>, selvbetjeningseksemplerne og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.</li>
 </ul>
 
-<h2 id="version-8-2-1" class="mb-0">Version 8.2.1</h2>
+<h2 id="tidligere-versioner" class="mb-0">Tidligere versioner</h2>
+
+<h3 id="version-8-2-1" class="mb-0">Version 8.2.1</h3>
 
 <div><span class="small-text mt-0 d-block">03-01-2023</span></div>
 
@@ -1554,7 +1552,7 @@
   <li>Opdateret licensinformation og tilføjet licensfilen til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">zip-filen i GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
 </ul>
 
-<h2 id="version-8-2-0" class="mb-0">Version 8.2.0</h2>
+<h3 id="version-8-2-0" class="mb-0">Version 8.2.0</h3>
 
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
@@ -1568,7 +1566,7 @@
   <li>Rettet en mindre fejl, hvor <a href="/komponenter/tooltip/guidelines/">tooltip</a>-pilen kunne pege væk fra elementet.</li>
 </ul>
 
-<h2 id="version-8-1-0" class="mb-0">Version 8.1.0</h2>
+<h3 id="version-8-1-0" class="mb-0">Version 8.1.0</h3>
 
 <div><span class="small-text mt-0 d-block">28-09-2022</span></div>
 
@@ -1584,7 +1582,7 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på selvbetjeningsløsninger og <a href="/eksempler/templates/">templates</a> er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, ‘sidenavigation’ er omdøbt til ‘<a href="/komponenter/venstremenu/guidelines/">venstremenu</a>’, ‘felter’ er omdøbt til ‘<a href="/komponenter/inputfelter/guidelines/">inputfelter</a>’, ‘notifikation’ er omdøbt til ‘<a href="/komponenter/toastbesked/guidelines/">toastbesked</a>’, ‘skip-link’ er omdøbt til ‘<a href="/komponenter/skip-link/guidelines/">gå til sidens indhold</a>’ og ‘spinner’ er omdøbt til ‘<a href="/komponenter/spinner/guidelines/">loading spinner</a>’. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.</li>
 </ul>
 
-<h2 id="version-8-0-1" class="mb-0">Version 8.0.1</h2>
+<h3 id="version-8-0-1" class="mb-0">Version 8.0.1</h3>
 
 <div><span class="small-text mt-0 d-block">16-06-2022</span></div>
 
@@ -1598,7 +1596,7 @@
   <li>Opdateret ikonerne <code>sort-ascending</code>, <code>sort-default</code>, <code>sort-descending</code>, <code>sort-table-ascending</code>, <code>sort-table-descending</code> og <code>sort-table-none</code>, så det er muligt at ændre farve på disse, når man anvender <a href="/design/ikoner/implementering/">ikonsamlingen</a>.</li>
 </ul>
 
-<h2 id="version-8-0-0" class="mb-0">Version 8.0.0</h2>
+<h3 id="version-8-0-0" class="mb-0">Version 8.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">17-05-2022</span></div>
 
@@ -1641,7 +1639,7 @@
   <li>Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.</li>
 </ul>
 
-<h2 id="version-7-5-3" class="mb-0">Version 7.5.3</h2>
+<h3 id="version-7-5-3" class="mb-0">Version 7.5.3</h3>
 
 <div><span class="small-text mt-0 d-block">03-12-2021</span></div>
 
@@ -1649,7 +1647,7 @@
   <li>Fjernet text-transform:uppercase på <a href="/design/typografi/overskrifter/guidelines/#subheading">subheading</a>, så skærmlæsere læser teksten frem for at stave</li>
 </ul>
 
-<h2 id="version-7-5-2" class="mb-0">Version 7.5.2</h2>
+<h3 id="version-7-5-2" class="mb-0">Version 7.5.2</h3>
 
 <div><span class="small-text mt-0 d-block">25-11-2021</span></div>
 
@@ -1657,7 +1655,7 @@
   <li>Gjort det muligt at markere tekst i <a href="/komponenter/knapper/guidelines/">knapper</a> for support af hjælpeværktøjer som Adgang for alle.</li>
 </ul>
 
-<h2 id="version-7-5-1" class="mb-0">Version 7.5.1</h2>
+<h3 id="version-7-5-1" class="mb-0">Version 7.5.1</h3>
 
 <div><span class="small-text mt-0 d-block">18-11-2021</span></div>
 
@@ -1667,7 +1665,7 @@
   <li>Tillader nu dato i <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a> fra start.</li>
 </ul>
 
-<h2 id="version-7-5-0" class="mb-0">Version 7.5.0</h2>
+<h3 id="version-7-5-0" class="mb-0">Version 7.5.0</h3>
 
 <div><span class="small-text mt-0 d-block">29-09-2021</span></div>
 
@@ -1686,7 +1684,7 @@
   <li>Ændret ikon i <a href="/komponenter/detaljer/guidelines/">detalje komponent</a></li>
 </ul>
 
-<h2 id="version-7-4-0" class="mb-0">Version 7.4.0</h2>
+<h3 id="version-7-4-0" class="mb-0">Version 7.4.0</h3>
 
 <div><span class="small-text mt-0 d-block">02-06-2021</span></div>
 
@@ -1697,7 +1695,7 @@
   <li>Tilføjet status tekst i forbindelse med <a href="/komponenter/spinner/guidelines/">spinner komponenten</a></li>
 </ul>
 
-<h2 id="version-7-3-0" class="mb-0">Version 7.3.0</h2>
+<h3 id="version-7-3-0" class="mb-0">Version 7.3.0</h3>
 
 <div><span class="small-text mt-0 d-block">23-04-2021</span></div>
 
@@ -1715,7 +1713,7 @@
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link" target="_blank">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
-<h2 id="version-7-2-0" class="mb-0">Version 7.2.0</h2>
+<h3 id="version-7-2-0" class="mb-0">Version 7.2.0</h3>
 
 <div><span class="small-text mt-0 d-block">11-02-2021</span></div>
 
@@ -1735,7 +1733,7 @@
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/113" class="icon-link" target="_blank">issue #113 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
-<h2 id="version-7-1-1" class="mb-0">Version 7.1.1</h2>
+<h3 id="version-7-1-1" class="mb-0">Version 7.1.1</h3>
 
 <div><span class="small-text mt-0 d-block">28-10-2020</span></div>
 
@@ -1747,13 +1745,13 @@
   <li>Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/guidelines/">trinindikator</a> for bedre tilgængelighed</li>
 </ul>
 
-<h2 id="version-7-1-0" class="mb-0">Version 7.1.0</h2>
+<h3 id="version-7-1-0" class="mb-0">Version 7.1.0</h3>
 
 <ul>
   <li>Ny komponent: <a href="/komponenter/sprogvaelger/guidelines/">Sprogvælger</a></li>
 </ul>
 
-<h2 id="version-7-0-0" class="mb-0">Version 7.0.0</h2>
+<h3 id="version-7-0-0" class="mb-0">Version 7.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">18-08-2020</span></div>
 
@@ -1770,7 +1768,7 @@
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link" target="_blank">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
-<h2 id="version-6-1-1" class="mb-0">Version 6.1.1</h2>
+<h3 id="version-6-1-1" class="mb-0">Version 6.1.1</h3>
 
 <div><span class="small-text mt-0 d-block">19-05-2020</span></div>
 
@@ -1778,7 +1776,7 @@
   <li>Ændret lille knap til normal knap i standard header grundet usability issues i mobilvisning</li>
 </ul>
 
-<h2 id="version-6-1-0" class="mb-0">Version 6.1.0</h2>
+<h3 id="version-6-1-0" class="mb-0">Version 6.1.0</h3>
 
 <div><span class="small-text mt-0 d-block">14-05-2020</span></div>
 
@@ -1790,7 +1788,7 @@
   <li>Tilpasset alignment på <a href="/komponenter/venstremenu/guidelines/">venstremenu</a></li>
 </ul>
 
-<h2 id="version-6-0-1" class="mb-0">Version 6.0.1</h2>
+<h3 id="version-6-0-1" class="mb-0">Version 6.0.1</h3>
 
 <div><span class="small-text mt-0 d-block">19-03-2020</span></div>
 
@@ -1802,7 +1800,7 @@
   <li>Tilpasset CSS til faneblade, så der ikke længere kommer fejl ved import af dkfds scss i angular.</li>
 </ul>
 
-<h2 id="version-6-0-0" class="mb-0">Version 6.0.0</h2>
+<h3 id="version-6-0-0" class="mb-0">Version 6.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">10-03-2020</span></div>
 
@@ -1821,7 +1819,7 @@
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link" target="_blank">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
-<h2 id="version-5-3-0" class="mb-0">Version 5.3.0</h2>
+<h3 id="version-5-3-0" class="mb-0">Version 5.3.0</h3>
 
 <div><span class="small-text mt-0 d-block">16-12-2019</span></div>
 
@@ -1837,7 +1835,7 @@
   <li>Opdateret SVG filer, samt tilføjet link til Figma komponent bibliotek.</li>
 </ul>
 
-<h2 id="version-5-2-0" class="mb-0">Version 5.2.0</h2>
+<h3 id="version-5-2-0" class="mb-0">Version 5.2.0</h3>
 
 <div><span class="small-text mt-0 d-block">27-11-2019</span></div>
 
@@ -1853,7 +1851,7 @@
   <li>Opdateret Eksempel på implementering i Angular</li>
 </ul>
 
-<h2 id="version-5-1-0" class="mb-0">Version 5.1.0</h2>
+<h3 id="version-5-1-0" class="mb-0">Version 5.1.0</h3>
 
 <div><span class="small-text mt-0 d-block">12-11-2019</span></div>
 
@@ -1871,7 +1869,7 @@
 <span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">temahåndtering</a>.</span></li>
 </ul>
 
-<h2 id="version-5-0-0" class="mb-0">Version 5.0.0</h2>
+<h3 id="version-5-0-0" class="mb-0">Version 5.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">22-10-2019</span></div>
 
@@ -1894,7 +1892,7 @@
   <li>Tabellerne følger nu 8point grid</li>
 </ul>
 
-<h2 id="version-4-4-0" class="mb-0">Version 4.4.0</h2>
+<h3 id="version-4-4-0" class="mb-0">Version 4.4.0</h3>
 
 <div><span class="small-text mt-0 d-block">20-08-2019</span></div>
 
@@ -1907,7 +1905,7 @@
   <li>Tilpasset retningslinjer for ikoner i forhold til tilgængelighed</li>
 </ul>
 
-<h2 id="version-4-3-0" class="mb-0">Version 4.3.0</h2>
+<h3 id="version-4-3-0" class="mb-0">Version 4.3.0</h3>
 
 <div><span class="small-text mt-0 d-block">04-07-2019</span></div>
 
@@ -1920,7 +1918,7 @@
   <li>Fikset fejl ved print af eksempelløsninger i Firefox - tilføjet yderligere print CSS.</li>
 </ul>
 
-<h2 id="version-4-2-0" class="mb-0">Version 4.2.0</h2>
+<h3 id="version-4-2-0" class="mb-0">Version 4.2.0</h3>
 
 <div><span class="small-text mt-0 d-block">20-06-2019</span></div>
 
@@ -1932,7 +1930,7 @@
   <li>Responsiv tabel er  nu sat til display:block på små skærme således at skærmlæsere ikke tror det er en tom tabel.</li>
 </ul>
 
-<h2 id="version-4-1-1" class="mb-0">Version 4.1.1</h2>
+<h3 id="version-4-1-1" class="mb-0">Version 4.1.1</h3>
 
 <div><span class="small-text mt-0 d-block">24-05-2019</span></div>
 
@@ -1948,7 +1946,7 @@
   <li>Tilføjet sektion omkring formularstruktur.</li>
 </ul>
 
-<h2 id="version-4-1-0" class="mb-0">Version 4.1.0</h2>
+<h3 id="version-4-1-0" class="mb-0">Version 4.1.0</h3>
 
 <div><span class="small-text mt-0 d-block">26-04-2019</span></div>
 
@@ -1963,7 +1961,7 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Log ud skal nu hedde Log af.</li>
 </ul>
 
-<h2 id="version-4-0-1" class="mb-0">Version 4.0.1</h2>
+<h3 id="version-4-0-1" class="mb-0">Version 4.0.1</h3>
 
 <div><span class="small-text mt-0 d-block">08-04-2019</span></div>
 
@@ -1978,7 +1976,7 @@
   <li>Fikset hover farve på icon knap (button-unstyled)</li>
 </ul>
 
-<h2 id="version-4-0-0" class="mb-0">Version 4.0.0</h2>
+<h3 id="version-4-0-0" class="mb-0">Version 4.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">01-04-2019</span></div>
 
@@ -1995,7 +1993,7 @@
     </div>
 </div>
 
-<h2 id="version-3-0-3" class="mb-0">Version 3.0.3</h2>
+<h3 id="version-3-0-3" class="mb-0">Version 3.0.3</h3>
 
 <div><span class="small-text mt-0 d-block">27-03-2019</span></div>
 
@@ -2012,7 +2010,7 @@
   <li>Tilføjet JavaScript der håndterer lukning af overflow menuer, når man åbner en ny</li>
 </ul>
 
-<h2 id="version-3-0-2" class="mb-0">Version 3.0.2</h2>
+<h3 id="version-3-0-2" class="mb-0">Version 3.0.2</h3>
 
 <div><span class="small-text mt-0 d-block">19-02-2019</span></div>
 
@@ -2032,10 +2030,10 @@
   <li>Ændret skrifttype tykkelse på søgefelts knappen</li>
 </ul>
 
-<h2 id="version-3-0-1" class="mb-0">Version 3.0.1</h2>
+<h3 id="version-3-0-1" class="mb-0">Version 3.0.1</h3>
 
 <div><span class="small-text mt-0 d-block">18-01-2019</span></div>
-<h3 class="h4">Smårettelser til CSS og ikoner</h3>
+<h4>Smårettelser til CSS og ikoner</h4>
 
 <ul>
   <li><code>small-text</code> og <code>small-tag</code> klasserne fik ændret font-size fra 13px til 14px</li>
@@ -2043,7 +2041,7 @@
   <li>Rettede ikonerne help og <code>close-circle</code></li>
 </ul>
 
-<h3 class="h4">Smårettelser til eksempler</h3>
+<h4>Smårettelser til eksempler</h4>
 
 <ul>
   <li>Typesetting blev delt i to: Linjeafstand og Linjelængde.</li>
@@ -2051,7 +2049,7 @@
   <li>Neutralt logo til header-eksempler blev opdateret.</li>
 </ul>
 
-<h2 id="version-3-0-0" class="mb-0">Version 3.0.0</h2>
+<h3 id="version-3-0-0" class="mb-0">Version 3.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">14-01-2019</span></div>
 
@@ -2083,7 +2081,7 @@
   </li>
 </ul>
 
-<h2 id="version-2-1-2" class="mb-0">Version 2.1.2</h2>
+<h3 id="version-2-1-2" class="mb-0">Version 2.1.2</h3>
 
 <div><span class="small-text mt-0 d-block">16-10-2018</span></div>
 <ul>
