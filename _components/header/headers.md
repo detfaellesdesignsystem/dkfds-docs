@@ -10,18 +10,16 @@ title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
 previewimage: "header-with-navigation"
 previewimageTitle: "Eksempel på header"
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
+headings: Header
+anchorlinks: true
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -77,8 +75,8 @@ På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed o
 
 Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, der ved klik vises på samme måde som mobilmenuen.
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-guideline-link.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 

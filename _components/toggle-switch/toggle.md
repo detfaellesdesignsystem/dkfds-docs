@@ -10,17 +10,17 @@ lead: "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radiok
 component: "toggle"
 componentTitle: "Eksempel på toggle"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
+headings: ToggleSwitch
+anchorlinks: false
 description:
 tags:
 - "switch"
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 

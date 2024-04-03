@@ -12,22 +12,16 @@ lead: Tabeller er en systematisk opstilling af data i kolonner og rækker.
 component: "table"
 componentTitle: "Eksempel på tabel"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Tabeller
+anchorlinks: true
 description: "Tabeller er en systematisk opstilling af data i kolonner og rækker."
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -51,8 +45,8 @@ Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tal
 
 {% include dos-donts-box.html component="table-dos-donts" title="Tabeller do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#uden-ramme}
 ### Uden ramme
@@ -139,8 +133,8 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 
 {% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" code="/komponenter/tables/implementering/#strukturerede-lister-edit" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
@@ -151,8 +145,8 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 - {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-liat}
 - {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}

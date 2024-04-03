@@ -10,14 +10,8 @@ lead: Anchorlinks linker til bestemte steder på samme side. De vises på den en
 component: "anchorlinks"
 componentTitle: "Eksempel på anchorlinks"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Anchorlinks
+anchorlinks: true
 description: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
 tags:
 - anchorlinks
@@ -27,8 +21,10 @@ tags:
 - subnav
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -50,8 +46,8 @@ Da anchorlinks anvendes til lange sider, kan de med fordel anvendes sammen med k
 
 Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der klikkes på et anchorlink, da det understøtter brugerens fornemmelse af, hvor de er på siden.
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/internal-link.html linktext="Farver" %}
@@ -59,6 +55,7 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 - {% include links/component-guideline-link.html linktext="Tabeller" %}
 - {% include links/component-code-link.html linktext="Accordions" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+
 {% include links/external-link.html linktext="Amy Schade: Anchors OK? Re-Assessing In-Page Links (2017)" %}

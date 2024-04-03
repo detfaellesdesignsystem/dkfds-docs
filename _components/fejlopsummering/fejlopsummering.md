@@ -10,20 +10,16 @@ lead: Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der
 component: "error-summary"
 componentTitle: "Eksempel på fejlopsummering"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Fejlopsummering
+anchorlinks: true
 description: 
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -54,15 +50,15 @@ Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumm
 
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser og fejlopsummering do's and don'ts" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Fejl i vedhæftede filer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Formular med fejl" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)

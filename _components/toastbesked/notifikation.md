@@ -11,12 +11,8 @@ lead: Toastbeskeder viser aktuel information og dukker op på skærmen i det øj
 component: "toastbesked"
 componentTitle: "Eksempel på toastbesked"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
+headings: Toastbesked
+anchorlinks: true
 description: 
 tags:
 - toast
@@ -25,8 +21,10 @@ tags:
 - besked
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -62,8 +60,8 @@ Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom p
 
 Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#succes}
 ### Succes

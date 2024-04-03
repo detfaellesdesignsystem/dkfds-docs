@@ -11,22 +11,16 @@ lead: En sprogvælger bruges hvis løsningen udbydes på mere end et sprog. Den 
   brugeren mulighed for at vælge et andet sprog end løsningens standardsprog.
 previewimage: "language-switcher"
 previewimageTitle: "Eksempel på sprogvælger"
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Sprogvaelger
+anchorlinks: true
 description: ''
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -58,23 +52,23 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 
 {% include links/internal-link.html linktext="footer-four-columns-language" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#sprogvaelger-med-tooltip}
 ### Sprogvælger med tooltip
 
 {% include code/preview-image.html component="language-switcher-tooltip" alt="sprogvælger med tooltip" title="Sprogvælger med tooltip" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Top 10 Best Practices for Multilingual Websites" %}

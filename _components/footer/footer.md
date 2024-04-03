@@ -10,29 +10,25 @@ title: Footer
 lead: Footeren markerer enden på siden og indeholder informationer, som guider brugeren videre.
 previewimage: "footer-simple"
 previewimageTitle: "Eksempel på footer"
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Footer
+anchorlinks: true
 description: "Du kan bruge en footer til at guide brugere, som når til sidens bund, videre."
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Vejledning
 
+Footeren fungerer som sidens afslutning og indeholder altid ansvarlig myndighed, herunder support- og kontaktinformationer, samt tilgængelighedserklæring og cookieoplysninger. Footeren kan også anvendes til at sende brugere videre ved at linke ud af selvbetjeningsløsningen.
+
 {% include dos-donts-box.html component="footer-dos-donts" title="Footers do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#tre-kolonner}
 ### Tre kolonner
@@ -54,13 +50,13 @@ tags:
 
 {% include code/preview-image.html component="footer-logo" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 Se hvordan komponenten bruges i de forskellige {% include links/internal-link.html linktext="eksempler på selvbetjeningsløsninger" %}.
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)" %}

@@ -11,22 +11,16 @@ lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsn
 component: "tringuide-overflowmenu"
 componentTitle: "Eksempel på trinindikator i overflow menu"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Trinindikator
+anchorlinks: true
 description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -56,8 +50,8 @@ Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ik
 
 {% include dos-donts-box.html component="tringuide-dos-donts" title="Trinindikator do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#klikbar}
 ### Alle trin synlige
@@ -106,15 +100,15 @@ Eventuelle fejl vises på opsummeringssiden i form af {% include links/component
 
 {% include links/internal-link.html linktext="Se et eksempel på opsummeringssiden med fejl i trinindikatoren." %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)

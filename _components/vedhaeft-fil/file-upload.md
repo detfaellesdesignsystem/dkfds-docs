@@ -10,18 +10,16 @@ lead: Komponenten lader brugeren tilføje og indsende en fil.
 component: "file-input"
 componentTitle: "Eksempel på vedhæft fil"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
+headings: VedhaeftFil
+anchorlinks: true
 description: "Brug fil upload til at lade brugeren vælge en fil fra sin egen computer, tablet eller mobil."
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -45,8 +43,8 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vedhæft dokumenter" returnID="eksempelloesninger" %}

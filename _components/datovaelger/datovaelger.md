@@ -10,18 +10,16 @@ lead: Ét felt med knap, hvor man kan vælge en dato.
 component: "date-picker"
 componentTitle: "Eksempel på datovælger"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
+headings: Datovaelger
+anchorlinks: true
 description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -35,8 +33,8 @@ Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da kompon
 
 {% include dos-donts-box.html component="datepicker-dos-donts" title="Datovælger do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#begraens}
 ### Begræns mulige datoer

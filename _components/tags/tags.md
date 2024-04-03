@@ -12,19 +12,17 @@ lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation o
 component: "tags"
 componentTitle: "Eksempel på tags"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
+headings: Tags
+anchorlinks: true
 description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information
   om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -52,8 +50,8 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 {% include dos-donts-box.html component="tags-dos-donts" title="Tags do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#tags-med-luk-ikon}
 ### Tags med luk-ikon

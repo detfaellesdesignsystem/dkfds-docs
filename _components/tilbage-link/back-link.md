@@ -10,20 +10,16 @@ lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin 
 component: "back-link"
 componentTitle: "Eksempel på tilbage-link"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: TilbageLink
+anchorlinks: true
 description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -45,15 +41,16 @@ Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaSc
 
 {% include dos-donts-box.html component="back-link-dos-donts" title="Tilbage-link do's and don'ts" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+
 Adam Silver: Form Design Patterns (2018)
 

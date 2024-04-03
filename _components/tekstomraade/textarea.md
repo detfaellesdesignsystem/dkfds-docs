@@ -11,16 +11,8 @@ lead: Tekstområder lader brugeren indtaste en længere tekst på flere linjer.
 component: "text-area"
 componentTitle: "Eksempel på tekstområde"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Tekstomraade
+anchorlinks: true
 description: "Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge."
 tags:
 - tekstområde
@@ -30,8 +22,10 @@ tags:
 - karakterbegraensning
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -67,8 +61,8 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#karakterbegraensning}
 ### Karakterbegrænsning
@@ -81,12 +75,12 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 {% include code/preview-box.html component="text-area-character-limit" link=false title="Eksempel på tekstområde med karakterbegrænsning" code="/komponenter/tekstomraade/implementering/" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 ISO 9241-143: Forms (2012)

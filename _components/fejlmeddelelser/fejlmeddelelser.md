@@ -10,16 +10,8 @@ lead: Fejlmeddelelser hjælper brugeren til at udfylde enkelte formularelementer
 component: "error-message"
 componentTitle: "Eksempel på fejlmeddelelse"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Fejlmeddelelser
+anchorlinks: true
 description:
 tags:
 - fejlbesked
@@ -37,8 +29,10 @@ tags:
 - fejlmedellelser
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -114,8 +108,8 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#accordions}
 ### Accordions
@@ -214,15 +208,15 @@ Fx "Du kan kun vælge op til 10 filer på samme tid".
 
 Skriv "Den valgte fil skal gøre brug af skabelonen".
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Fejl i vedhæftede filer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Formular med fejl" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)

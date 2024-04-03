@@ -10,16 +10,16 @@ lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en b
 previewimage: "skip-link-eksempel"
 previewimageTitle: "Eksempel på skip-link"
 previewimageImage: "skiplink"
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
+headings: Skiplink
+anchorlinks: false
 description: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse."
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 

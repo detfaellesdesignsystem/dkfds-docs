@@ -242,7 +242,319 @@ Grid_og_baseline_grid_Kode:
 - h2: Sass variabler i designsystemet
   id: sass-variabler-i-designsystemet
 
-# Komponenter
+# Komponenter, retningslinjer
+
+Accordions:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Referencer
+  id: ref
+
+Anchorlinks:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Badges:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Beskeder:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Broedkrumme:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Cards:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Cookiemeddelelse:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Referencer
+  id: ref
+
+Datofelter:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Datovaelger:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+
+Detaljer:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+
+Dropdown:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Faneblade:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Referencer
+  id: ref
+
+Fejlmeddelelser:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Fejlopsummering:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Footer:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Funktionslink:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Skiplink:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+
+Header:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+
+Inputfelter:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Knapper:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+LoadingSpinner:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+
+Modal:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+
+Overflowmenu:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Referencer
+  id: ref
+- h2: Sortering
+  id: sortering
+
+Paginering:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Referencer
+  id: ref
+
+Radioknap:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Sprogvaelger:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Soegefelt:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Tabeller:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Tags:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+
+Tekstomraade:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+TilbageLink:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+TilbageTilToppen:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Tjekboks:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Toastbesked:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+
+ToggleSwitch:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+
+Tooltip:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+Trinindikator:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+- h2: Referencer
+  id: ref
+
+VedhaeftFil:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Se komponenten i eksempelløsninger
+  id: eksempelloesninger
+
+Venstremenu:
+- h2: Sådan bruges komponenten
+  id: retningslinjer
+- h2: Varianter
+  id: varianter
+- h2: Referencer
+  id: ref
 
 # Eksempler
 

@@ -12,18 +12,9 @@ lead: Inputfelter lader brugeren indtaste kort information.
 component: "text-input"
 componentTitle: "Eksempel på inputfelt"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
-description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination
-  af begge.
+headings: Inputfelter
+anchorlinks: true
+description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination af begge.
 tags:
 - tekstfelt
 - input
@@ -55,8 +46,10 @@ tags:
 - sufiks
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -101,8 +94,8 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#hjaelpetekst}
 ### Hjælpetekst
@@ -169,8 +162,8 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
@@ -178,8 +171,8 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)

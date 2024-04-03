@@ -12,14 +12,8 @@ lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise
 component: "accordion"
 componentTitle: "Eksempel på accordion"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Referencer
-  href: "#ref"
+headings: Accordions
+anchorlinks: true
 description: Accordions er interaktive overskrifter, der anvendes til at skjule og
   vise det relaterede indhold.
 tags:
@@ -27,8 +21,10 @@ tags:
 - accordions
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til  
 
@@ -61,8 +57,8 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#aabn-luk-alle}
 ### Åbn/luk alle
@@ -74,8 +70,8 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Anthony Thomas (2006): Where to Place Your Accordion Menu items" %}

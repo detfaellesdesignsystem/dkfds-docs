@@ -10,23 +10,17 @@ lead: Beskeder anvendes til at fremhæve aktuel information, som er vigtig for b
 component: "alerts"
 componentTitle: "Eksempel på beskeder"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Beskeder
+anchorlinks: true
 description: Beskeder (Alerts) er farvede bokse, du kan bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer, o.l.
 tags:
 - fejlbesked
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -72,8 +66,8 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include dos-donts-box.html component="alerts-success-dos-donts" title="Successbeskeder do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#teksteksempler}
 ### Teksteksempler
@@ -85,8 +79,8 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include code/preview-box.html component="alert-close" title="Eksempel på besked med luk-knap" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="eksempelloesninger" %}
@@ -94,8 +88,8 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - Linda Newman Lior: Writing for Interaction (2013)

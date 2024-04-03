@@ -10,19 +10,17 @@ lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvend
   formål, skal brugeren vises en cookiemeddelelse.
 previewimage: "cookie-message"
 previewimageTitle: "Eksempel på cookiemeddelelse"
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Referencer
-  href: "#ref"
+headings: Cookiemeddelelse
+anchorlinks: true
 description: Cookiemeddelelsen vises midt på siden, og blokerer indhold indtil man
   har taget stilling til brug af cookies.
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -40,8 +38,8 @@ Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovg
 
 {% include dos-donts-box.html component="cookie-message-dos-donts" title="Cookiemeddelelser do's and don'ts" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Vitaly Friedman: Privacy UX: Better Cookie Consent Experiences (2019)" %}

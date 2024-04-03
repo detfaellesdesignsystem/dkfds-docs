@@ -10,21 +10,17 @@ lead: Funktionslink lader brugeren udføre forskellige systemfunktionaliteter.
 component: "function-link-print"
 componentTitle: "Eksempel på funktionslink"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Funktionslink
+anchorlinks: true
 description: Et link, der udfører en handling på siden - så som print. Der er gerne
   tilføjet et ikon, som underbygger handlingen.
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -56,13 +52,13 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 
 {% include dos-donts-box.html component="function-link-dos-donts" title="Funktionslink do's and don'ts" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Farhad Manjoo: You Won’t Finish This Article (2013)" %}

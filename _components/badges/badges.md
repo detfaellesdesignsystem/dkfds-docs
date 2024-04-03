@@ -11,23 +11,17 @@ lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
 component: "badges"
 componentTitle: "Eksempel på badges"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Badges
+anchorlinks: true
 description: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på
   nyt eller vigtigt indhold.
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -49,16 +43,16 @@ Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer
 
 Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#statusbadges}
 ### Statusbadges
 
 {% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
@@ -66,7 +60,7 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Opgaveliste" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {% include links/external-link.html linktext="Natasha Postolovski: What Is The Most Underrated Word In Web Design? (2014)" %}

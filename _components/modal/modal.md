@@ -12,14 +12,8 @@ lead: Modaler tvinger brugeren til at fokusere på og tage stilling til afgøren
 component: "modal"
 componentTitle: "Eksempel på modal"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
+headings: Modal
+anchorlinks: true
 description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
 tags:
 - besked
@@ -33,8 +27,10 @@ tags:
 - vindue
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -68,8 +64,8 @@ Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da de
 
 Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalen bliver så langt, at der opstår scroll. Overvej at bruge en individuel side i stedet for et modal, hvis indholdet er meget langt.
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#kraever-handling}
 ### Modal som kræver handling
@@ -78,7 +74,7 @@ Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen u
 
 {% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link=true %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 Se hvordan komponenten bruges i de forskellige {% include links/internal-link.html linktext="eksempler på selvbetjeningsløsninger" %} (tryk på <em>'Kontakt'</em> i eksemplernes header)

@@ -10,22 +10,16 @@ lead: Tooltips giver brugeren kort, forklarende information om specifikke elemen
 component: "tooltip-helpicon"
 componentTitle: "Eksempel på ikon med tooltip"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Tooltip
+anchorlinks: true
 description: "Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon."
 tags: 
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -75,8 +69,8 @@ Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv
 
 {% include code/preview-box.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 ### Hover-tooltip
 
@@ -99,13 +93,13 @@ Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapp
 
 {% include code/preview-box.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content" %}

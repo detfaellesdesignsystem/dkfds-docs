@@ -10,22 +10,16 @@ lead: Cards anvendes som en visuel afgrænsning af indhold eller interaktionsele
 component: "cards-full-width"
 componentTitle: "Eksempel på card"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Cards
+anchorlinks: true
 description: "Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold"
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -55,8 +49,8 @@ Skriv kort og præcist i hvert card.
 
 {% include dos-donts-box.html component="cards-dos-donts" title="Cards do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#card-med-tredjedel-bredde}
 ### Card med tredjedel bredde
@@ -73,15 +67,15 @@ Skriv kort og præcist i hvert card.
 
 {% include code/preview-box.html component="cards-same-height" title="Eksempel på cards med samme højde" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Dashboard" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Page Laubheimer: Cards: UI-Component Definition (2016)" %}

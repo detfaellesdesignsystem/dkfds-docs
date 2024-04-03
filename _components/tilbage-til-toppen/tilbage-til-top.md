@@ -10,14 +10,8 @@ lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af
 component: "back-to-top"
 componentTitle: "Eksempel på tilbage til toppen"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: TilbageTilToppen
+anchorlinks: true
 description: Lad brugeren navigere tilbage til toppen.
 tags:
 - back-to-top
@@ -27,8 +21,10 @@ tags:
 - til-top
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -56,15 +52,15 @@ På mobil anvendes knappen uden tekst for at spare plads på skærmen.
 
 {% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" code="/komponenter/tilbage-til-top/implementering/" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include links/external-link.html linktext="Hoa Loranger: Back-to-Top Button Design Guidelines (2017)" %}
 

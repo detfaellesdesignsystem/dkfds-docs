@@ -10,18 +10,16 @@ lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links el
 component: "overflow-menu"
 componentTitle: "Eksempel på overflow menu"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Referencer
-  href: "#ref"
+headings: Overflowmenu
+anchorlinks: true
 description: "Du kan bruge overflow menuer til at vise eller skjule en liste af links."
 tags:
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -45,8 +43,8 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 
 {% include dos-donts-box.html component="overflow-menu-dos-donts" title="Overflow menu do's and don'ts" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:.nobullet-list}
 - Jeff Johnson: Designing with the Mind in Mind (2014)
@@ -54,8 +52,8 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 - {% include links/external-link.html linktext="Daniel Burka: Stop the overuse of overflow menus (2016)" %}
 - Martha Brockenbrough i June Cohen: The Unusually Useful Web Book: Everything we’ve learned about why sites succeed! (2003)
 
-{:#sortering}
-## Sortering
+[---- Sortering -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 <p class="font-lead">Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.</p>
 

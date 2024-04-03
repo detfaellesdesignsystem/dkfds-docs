@@ -10,14 +10,8 @@ lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opd
 component: "pagination"
 componentTitle: "Eksempel på paginering"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Referencer
-  href: "#ref"
+headings: Paginering
+anchorlinks: true
 description: Lad brugeren navigere mellem indhold der er opdelt på flere sider.
 tags:
 - paginering
@@ -25,8 +19,10 @@ tags:
 - sidevælger
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -66,8 +62,8 @@ Hold paginering på en enkelt linje.
 
 På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktuelle side og det samlede sideantal vises i midten.
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 ### 7 eller færre sider
 
@@ -77,7 +73,7 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {% include links/external-link.html linktext="USWDS om paginering" %}

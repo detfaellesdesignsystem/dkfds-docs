@@ -11,16 +11,8 @@ lead: Knapper lader brugeren udføre centrale funktioner.
 component: "button-primary"
 componentTitle: "Eksempel på primærknap"
 componentLink: true
-anchor: true
-subnav:
-- text: Sådan bruges komponenten
-  href: "#retningslinjer"
-- text: Varianter
-  href: "#varianter"
-- text: Se komponenten i eksempelløsninger
-  href: "#eksempelloesninger"
-- text: Referencer
-  href: "#ref"
+headings: Knapper
+anchorlinks: true
 description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på
   og dermed udløse en funktion eller handling.
 tags:
@@ -29,8 +21,10 @@ tags:
 - tertiærknap
 ---
 
-{:#retningslinjer}
-## Sådan bruges komponenten
+{% assign headings = site.data.headings[page.headings] %}
+
+[---- Sådan bruges komponenten -------------------------------------]: # 
+<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
 
 ### Anvendes til
 
@@ -70,8 +64,8 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 
 {% include dos-donts-box.html component="buttons-dos-donts" title="Knapper do's and don'ts" %}
 
-{:#varianter}
-## Varianter
+[---- Varianter -------------------------------------]: # 
+<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
 {:#primaerknap}
 ### Primærknap
@@ -107,8 +101,8 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 
 {% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" %}
 
-{:#eksempelloesninger}
-## Se komponenten i eksempelløsninger
+[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
+<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="eksempelloesninger" %}
@@ -118,8 +112,8 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
 
-{:#ref}
-## Referencer
+[---- Referencer -------------------------------------]: # 
+<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
