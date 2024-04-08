@@ -1231,6 +1231,7 @@
         </aside>
 
         <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+        <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use xlink:href="#report-problem"></use></svg>
         <div class="alert-body">
             <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
@@ -1411,7 +1412,7 @@
   <li>Ændret font-smoothing for flere elementer.</li>
   <li>Rettet fejl, hvor <a href="/komponenter/tilbage-til-top/guidelines/">tilbage til toppen</a>-knappen nogen gange var vist, selvom den skulle være skjult.</li>
   <li>Tilføjet klassen <code>no-max-width</code>, der forhindrer <code>max-width</code> på en paragraf eller liste.</li>
-  <li><a href="/komponenter/beskeder/guidelines/">Beskeder</a> har nu altid et ikon. Klassen <code>alert--show-icon</code> bruges ikke længere.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af <a href="/komponenter/beskeder/guidelines/">Beskeder</a> uden ikon. Klassen <code>alert--show-icon</code> bruges længere og ikonet skal indsættes manuelt.</li>
 </ul>
 
 <h2 id="version-9-1-0" class="mb-0">Version 9.1.0</h2>

@@ -13,6 +13,7 @@ tags:
 ---
    
 <div class="alert mt-5" id="newsletter-alert" role="alert" hidden>
+    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use xlink:href="#highlight-off"></use></svg>
     <div class="alert-body">
         <h2 class="alert-heading"></h2>
         <div class="alert-text"></div>
@@ -20,6 +21,7 @@ tags:
 </div>
 <nav aria-labelledby="newsletter-alert-heading" hidden>
     <div class="alert mt-5" id="newsletter-alert-nav" role="alert" data-module="error-summary">
+        <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use xlink:href="#highlight-off"></use></svg>
         <div class="alert-body">
             <h2 class="alert-heading" id="newsletter-alert-heading"></h2>
             <div class="alert-text"></div>

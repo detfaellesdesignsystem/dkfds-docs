@@ -20,7 +20,7 @@ layout: default
         <main class="col-12 col-lg-9" id="main-content">
             {%- include theme-alert.html -%}
             <section id="section-{{page.permalink}}">
-
+                
                 {%- for alert in page.alerts -%}
                 <div class="alert alert-{{ alert.type }}" role="alert">
                     <div class="alert-body">
@@ -38,6 +38,7 @@ layout: default
 
                 {% if page.mailalert == true %}
                 <div class="alert alert-error mt-0 mb-8 d-none" role="alert" id="mail-error-summary">
+                    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use xlink:href="#highlight-off"></use></svg>
                     <div class="alert-body">
                         <h2 class="alert-heading">Der er problemer</h2>
                         <ul class="alert-text nobullet-list"></ul>

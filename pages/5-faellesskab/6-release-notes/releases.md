@@ -4,8 +4,7 @@ layout: styleguide
 category: Faellesskab_category
 subcategory: Fællesskab
 title: Release notes
-lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
-  andre opdateringer.
+lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.
 description: Release notes for Det Fælles Designsystem
 headings: Releases
 anchorlinks: true
@@ -76,8 +75,6 @@ tags:
 - 9.1.0
 - 10
 - 10.0.0
-lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og
-  andre opdateringer.
 ---
 
 {% assign headings = site.data.headings[page.headings] %}
@@ -197,7 +194,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Ændret font-smoothing for flere elementer.
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="tilbage til toppen" %}-knappen nogen gange var vist, selvom den skulle være skjult.
 - Tilføjet klassen `no-max-width`, der forhindrer `max-width` på en paragraf eller liste.
-- {% include links/component-guideline-link.html linktext="Beskeder" %} har nu altid et ikon. Klassen `alert--show-icon` bruges ikke længere.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af {% include links/component-guideline-link.html linktext="Beskeder" %} uden ikon. Klassen `alert--show-icon` bruges længere og ikonet skal indsættes manuelt.
 
 
 [---- Version 9.1.0 -------------------------------------]: # 

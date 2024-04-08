@@ -30,6 +30,7 @@ tags:
 {% include code/syntax.html component="language-switcher" copybutton=true %}
 
 <div class="alert alert-warning" role="alert">
+    <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use xlink:href="#report-problem"></use></svg>
     <div class="alert-body">
         <p class="alert-text">Bemærk, at man i løsningen selv står for funktionaliteten i denne komponent.</p>
     </div>
