@@ -20,21 +20,6 @@ layout: default
         <main class="col-12 col-lg-9" id="main-content">
             {%- include theme-alert.html -%}
             <section id="section-{{page.permalink}}">
-                
-                {%- for alert in page.alerts -%}
-                <div class="alert alert-{{ alert.type }}" role="alert">
-                    <div class="alert-body">
-                        {%- if alert.header -%}
-                        <h3 class="alert-heading">{{alert.header}}</h3>
-                        {%- endif -%}
-                        {%- if alert.content -%}
-                        <p class="alert-text">
-                            {{alert.content}}
-                        </p>
-                        {%- endif -%}
-                    </div>
-                </div>
-                {% endfor %}
 
                 {% if page.mailalert == true %}
                 <div class="alert alert-error mt-0 mb-8 d-none" role="alert" id="mail-error-summary">
