@@ -9,9 +9,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Lister
 lead: Lister bruges til at organisere information, så det giver brugeren overblik.
-component: "lists"
-componentTitle: "Eksempel på lister"
-componentLink: false
 anchor: false
 description:
 tags:

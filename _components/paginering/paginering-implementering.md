@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Paginering
 lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opdelt på flere sider. Brugeren navigerer ved at gå fra side til side, eller til første eller sidste side på listen.
-component: "pagination"
-componentTitle: "Eksempel på paginering"
 anchor: false
 description: "Dokumentation på implementering af paginering."
 tags:

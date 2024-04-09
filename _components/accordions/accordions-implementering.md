@@ -10,8 +10,6 @@ title: Accordions
 lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise indhold
   med. Vær opmærksom på, at skjult indhold risikerer at blive set i mindre grad af
   brugerne, end det som er umiddelbart synligt på siden.
-component: "accordion"
-componentTitle: "Eksempel på accordion"
 anchor: true
 subnav:
 - text: Installation

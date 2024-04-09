@@ -10,8 +10,6 @@ subcategory: Komponenter
 title: Sprogvælger
 lead: En sprogvælger bruges hvis løsningen udbydes på mere end et sprog. Den giver
   brugeren mulighed for at vælge et andet sprog end løsningens standardsprog.
-previewimage: "language-switcher"
-previewimageTitle: "Eksempel på sprogvælger"
 anchor: true
 subnav:
 - text: Installation

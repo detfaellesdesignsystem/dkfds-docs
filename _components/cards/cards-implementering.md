@@ -8,9 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Cards
 lead: Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne.
-component: "cards-full-width"
-componentTitle: "Eksempel på card"
-componentLink: true
 anchor: true
 subnav:
 - text: Installation

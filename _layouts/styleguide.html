@@ -46,6 +46,8 @@ layout: default
                 <p class="font-lead">{{ page.lead }}</p>
                 {% endif %}
 
+                {% include nav/sidenavigation/tabs.html %}
+
                 {% if page.component %}
                 {% include code/preview-box.html 
                     component=page.component 
@@ -81,8 +83,6 @@ layout: default
                 {% include code/preview.html
                     component=page.previewcomponent %}
                 {% endif %}
-
-                {% include nav/sidenavigation/tabs.html %}
 
                 {% if page.subnav and page.anchor == true %}
                 <nav class="anchorbox" aria-label="Ankerlinks">

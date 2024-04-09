@@ -11,8 +11,6 @@ lead: Ikoner benyttes til visuelt at understrege en handling eller en informatio
 description: Sådan bruger du ikoner med FDS.
 headings: Ikoner_Kode
 anchorlinks: true
-preview: ikoner
-previewcomponent: "icons--svg"
 tags:
 - icon
 - svg

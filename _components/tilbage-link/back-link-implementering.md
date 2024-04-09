@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Tilbage-link
 lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
-component: "back-link"
-componentTitle: "Eksempel på tilbage-link komponent"
 anchor: false
 description: "Dokumentation på implementering af tilbage-link."
 tags:

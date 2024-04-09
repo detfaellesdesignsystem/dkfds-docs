@@ -9,8 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Tabeller
 lead: Tabeller er en systematisk opstilling af data i kolonner og rækker.
-component: "table"
-componentTitle: "Eksempel på tabel"
 anchor: true
 subnav:
 - text: Installation

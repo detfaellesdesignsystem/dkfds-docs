@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Brødkrumme
 lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder sig, samtidig med at den gør det muligt for brugerne at navigere tilbage igennem løsningens niveauer."
-component: "breadcrumbs"
-componentTitle: "Eksempel på brødkrumme komponent"
 anchor: false
 description: Dokumentation på implementering af brødkrumme.
 tags:

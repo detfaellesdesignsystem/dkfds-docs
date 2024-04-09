@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Loading spinner
 lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
-component: "spinner"
-componentTitle: "Eksempel på spinner"
 anchor: false
 description: "Dokumentation på implementering af spinner."
 tags:

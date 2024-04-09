@@ -11,8 +11,6 @@ title: Faneblade (Tabs)
 lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere
   ser de skjulte sektioner, når du anvender faneblade.
-component: "tabs-buttons"
-componentTitle: "Eksempel på faneblade"
 anchor: true
 subnav:
 - text: Installation

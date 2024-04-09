@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Knapper (Buttons)
 lead: Knapper lader brugeren udføre centrale funktioner.
-component: "button-primary"
-componentTitle: "Eksempel på knap"
 anchor: true
 subnav:
 - text: Installation

@@ -9,8 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Dropdown
 lead: Dropdown lader brugeren vælge én blandt flere muligheder i en udfoldet liste.
-component: "select"
-componentTitle: "Eksempel på dropdown"
 anchor: false
 description: "Dokumentation på implementering af dropdown."
 tags:

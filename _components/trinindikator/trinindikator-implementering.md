@@ -9,8 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Trinindikator
 lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
-component: "tringuide-overflowmenu"
-componentTitle: "Eksempel på trinindikator i overflow menu"
 anchor: true
 subnav:
 - text: Installation

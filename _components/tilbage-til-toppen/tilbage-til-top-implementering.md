@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Tilbage til toppen
 lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af en lang side på en let måde uden at miste overblikket. 
-component: "back-to-top"
-componentTitle: "Eksempel på tilbage til toppen-knap"
 anchor: false
 description:
 tags:

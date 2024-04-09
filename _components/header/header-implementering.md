@@ -9,8 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
-previewimage: "header-with-navigation"
-previewimageTitle: "Eksempel på header komponent"
 anchor: true
 subnav:
 - text: Installation

@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Radioknap (Radio button)
 lead: Radioknapper lader brugeren vælge én blandt flere muligheder.
-component: "radiobutton"
-componentTitle: "Eksempel på radioknap"
 anchor: true
 subnav:
 - text: Installation

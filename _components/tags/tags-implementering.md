@@ -10,8 +10,6 @@ title: Tags
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om
   indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
   Tags forekommer med og uden ikon.
-component: "tags"
-componentTitle: "Eksempel på tags"
 anchor: false
 description: "Dokumentation på implementering af tags."
 tags:

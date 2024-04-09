@@ -9,8 +9,6 @@ subcategory: Komponenter
 title: Badges
 lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller
   vigtigt indhold.
-component: "badges"
-componentTitle: "Eksempel på badges"
 anchor: true
 subnav:
 - text: Installation

@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Fejlopsummering
 lead: Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.
-component: "error-summary"
-componentTitle: "Eksempel på fejlopssumering"
 anchor: true
 subnav:
 - text: Placering

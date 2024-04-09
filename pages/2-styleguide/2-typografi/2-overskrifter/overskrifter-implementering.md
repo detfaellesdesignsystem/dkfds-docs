@@ -10,8 +10,6 @@ subcategory: Styleguide
 title: Overskrifter
 lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren
   til at kunne overskue sidens logik og opbygning.
-component: "headings"
-componentTitle: "Eksempel på overskrifter"
 description:
 headings: Overskrifter_Kode
 anchorlinks: true

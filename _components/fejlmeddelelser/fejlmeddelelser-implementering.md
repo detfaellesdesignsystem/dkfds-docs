@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Fejlmeddelelser
 lead: Fejlmeddelelser hjælper brugeren til at udfylde enkelte formularelementer korrekt.
-component: "error-message"
-componentTitle: "Eksempel på fejlmeddelelse"
 anchor: true
 subnav:
 - text: Installation

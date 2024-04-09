@@ -9,8 +9,6 @@ subcategory: Komponenter
 title: Cookiemeddelelse
 lead: Anvender din selvbetjeningsløsning cookies til andet end teknisk nødvendige
   formål, skal brugeren vises en cookiemeddelelse.
-previewimage: "cookie-message"
-previewimageTitle: "Eksempel på cookiemeddelelse"
 anchor: false
 description: Dokumentation på implementering af cookiemeddelelse.
 tags:

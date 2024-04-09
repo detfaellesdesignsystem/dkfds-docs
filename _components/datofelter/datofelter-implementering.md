@@ -9,8 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Datofelter
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
-component: "date-input"
-componentTitle: "Eksempel på datofelter"
 anchor: true
 subnav:
 - text: Installation

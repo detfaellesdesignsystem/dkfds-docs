@@ -9,8 +9,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Footer
 lead: Footeren markerer enden på siden og indeholder informationer, som guider brugeren videre.
-previewimage: "footer-simple"
-previewimageTitle: "Eksempel på footer komponent"
 anchor: true
 subnav:
 - text: Installation

@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Tooltip
 lead: Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltippet vises på hover eller ved klik på et tooltip-ikon.
-component: "tooltip-helpicon"
-componentTitle: "Eksempel på tooltip"
 anchor: true
 subnav:
 - text: Installation

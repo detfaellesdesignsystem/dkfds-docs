@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Datovælger
 lead: Ét felt med knap, hvor man kan vælge en dato.
-component: "date-picker"
-componentTitle: "Eksempel på datovælger"
 anchor: true
 subnav:
 - text: Installation

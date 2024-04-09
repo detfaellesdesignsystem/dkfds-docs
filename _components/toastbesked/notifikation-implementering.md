@@ -14,8 +14,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Toastbesked
 lead: Toastbeskeder viser aktuel information og dukker op på skærmen i det øjeblik, de bliver relevante. Toastbeskeder vises typisk som reaktion på brugerinteraktion.
-component: "toastbesked"
-componentTitle: "Eksempel på toastbesked"
 anchor: true
 subnav:
 - text: Installation

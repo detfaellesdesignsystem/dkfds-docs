@@ -8,8 +8,6 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Søgefelt
 lead: Søgefeltet lader brugeren søge efter bestemt indhold på siden eller i løsningen.
-component: "search"
-componentTitle: "Eksempel på søgefelt"
 anchor: false
 description: "Dokumentation på implementering af søgefelt."
 tags:
