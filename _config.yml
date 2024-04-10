@@ -89,4 +89,3 @@ exclude:
   - helper_scripts
   - gen-images.js
   - pdf
-  - test-docs.js

@@ -10,6 +10,7 @@ const CYAN_COLOR = '\x1b[36m';
 let folder = 'docs';
 //let folder = 'docs/design';
 //let folder = 'docs/komponenter';
+//let folder = 'docs/design/borders';
 
 let allFiles = [];
 
@@ -47,8 +48,8 @@ let errorsFound = 0;
 
 // ---- CHECK THAT ALL FILES HAVE TITLES
 
-function test_hasTitle(text) {
-    let regex = /<title>(.*?)<\/title>/g;
+function check_hasTitle(text) {
+    let regex = /<title>(.*?)<\/title>/gs;
     let matches = text.match(regex);
     let result = matches?.length > 0;
     return result;
@@ -59,13 +60,13 @@ function run_hasTitle() {
 
     for (let f = 0; f < allFiles.length; f++) {
         let text = extractText(allFiles[f]);
-        let hasTitle = test_hasTitle(text);
+        let hasTitle = check_hasTitle(text);
         if (!hasTitle) {
             filesWithNoTitle.push(allFiles[f]);
             errorsFound++;
         }
     }
-    
+
     if (filesWithNoTitle.length === 0) {
         console.log(GREEN_COLOR + '\nAll files have titles' + END_COLOR);
     }
@@ -81,8 +82,8 @@ run_hasTitle();
 
 // ---- CHECK THAT STYLEGUIDE AND COMPONENT PAGES HAVE LEAD TEXT
 
-function test_hasLeadText(text) {
-    let regex = /<h1(.*?)<\/h1>(\s*?)<p class="font-lead">(.*?)<\/p>/g;
+function check_hasLeadText(text) {
+    let regex = /<h1(.*?)<\/h1>(\s*?)<p class="font-lead">(.*?)<\/p>/gs;
     let matches = text.match(regex);
     let result = matches?.length > 0;
     return result;
@@ -98,18 +99,18 @@ function run_hasLeadText() {
         let isRedirectPage = text.includes('<title>Du sendes videre til en anden side</title>');
         let isStyleguidePage = allFiles[f].includes('docs\\design');
         let isComponentPage = allFiles[f].includes('docs\\komponenter');
-    
-        if (!isRedirectPage && (isStyleguidePage || isComponentPage) ) {
+
+        if (!isRedirectPage && (isStyleguidePage || isComponentPage)) {
             if (isStyleguidePage) { styleguideFiles++; }
             if (isComponentPage) { componentFiles++; }
-            let hasLead = test_hasLeadText(text);
+            let hasLead = check_hasLeadText(text);
             if (!hasLead) {
                 filesWithNoLeadText.push(allFiles[f]);
                 errorsFound++;
             }
         }
     }
-    
+
     if (filesWithNoLeadText.length === 0) {
         console.log(GREEN_COLOR + '\nAll styleguide and component pages have lead text' + END_COLOR);
         if (styleguideFiles === 0) { console.log(YELLOW_COLOR + 'WARNING: No styleguide files processed' + END_COLOR); }
@@ -126,6 +127,51 @@ function run_hasLeadText() {
 }
 
 run_hasLeadText();
+
+// ---- CHECK THAT THERE IS A HEADING AFTER ANCHORLINKS
+
+function check_hasHeadingAfterAnchorlinks(text) {
+    let regex1 = /<nav class="anchorbox"/gs;
+    let matches1 = text.match(regex1);
+    let hasAnchorlinks = matches1?.length > 0;
+    if (hasAnchorlinks) {
+        let regex2 = /<nav class="anchorbox"(.*?)<\/nav>(\s*?)<h2/gs;
+        let matches2 = text.match(regex2);
+        let result = matches2?.length > 0;
+        return result;
+    }
+    else {
+        return true;
+    }
+}
+
+function run_hasHeadingAfterAnchorlinks() {
+    let problemFiles = [];
+
+    for (let f = 0; f < allFiles.length; f++) {
+        let isExamplePage = allFiles[f].includes('docs\\eksempel');
+        if (!isExamplePage) {
+            let text = extractText(allFiles[f]);
+            let hasHeadingAfterAnchorlinks = check_hasHeadingAfterAnchorlinks(text);
+            if (!hasHeadingAfterAnchorlinks) {
+                problemFiles.push(allFiles[f]);
+                errorsFound++;
+            }
+        }
+    }
+
+    if (problemFiles.length === 0) {
+        console.log(GREEN_COLOR + '\nAll files with anchorlinks have a heading following it' + END_COLOR);
+    }
+    else {
+        console.log(RED_COLOR + '\nA heading is missing after the anchorlinks in these files:' + END_COLOR);
+        for (let f = 0; f < problemFiles.length; f++) {
+            console.log(RED_COLOR + '-- ' + problemFiles[f] + END_COLOR);
+        }
+    }
+}
+
+run_hasHeadingAfterAnchorlinks();
 
 // WRAPUP
 
