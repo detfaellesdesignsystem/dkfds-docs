@@ -53,15 +53,17 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
 [---- Designværdier -------------------------------------]: # 
 <h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
 
+Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærksom på, at det anbefales i ens stylesheet at bruge relative værdier til skriftstørrelse og en “unitless” talværdi for linjehøjden. I designsystemets stylesheet er overskrifternes skriftstørrelse defineret med “rem”.
+
 {:.table .table--borderless .table--responsive-headers}
 | Tekst        | Skrifttype    | Skriftstørrelse | Linjehøjde | Teksttykkelse   | Tekstfarve | 
 |--------------|---------------|-----------------|------------|-----------------|------------|
-| Overskrift 1 | IBM Plex Sans | 48px            | 1.17       | 700             | #1a1a1a    |
-| Overskrift 2 | IBM Plex Sans | 32px            | 1.25       | 600             | #1a1a1a    |
-| Overskrift 3 | IBM Plex Sans | 24px            | 1.33       | 600             | #1a1a1a    |
-| Overskrift 4 | IBM Plex Sans | 20px            | 1.4        | 600             | #1a1a1a    |
-| Overskrift 5 | IBM Plex Sans | 16px            | 1.5        | 600             | #1a1a1a    |
-| Overskrift 6 | IBM Plex Sans | 14px            | 1.67       | 500             | #1a1a1a    |
+| Overskrift 1 | IBM Plex Sans | 48px            | 60px       | Bold (700)      | #1a1a1a    |
+| Overskrift 2 | IBM Plex Sans | 32px            | 40px       | Semi-bold (600) | #1a1a1a    |
+| Overskrift 3 | IBM Plex Sans | 24px            | 32px       | Semi-bold (600) | #1a1a1a    |
+| Overskrift 4 | IBM Plex Sans | 20px            | 28px       | Semi-bold (600) | #1a1a1a    |
+| Overskrift 5 | IBM Plex Sans | 16px            | 24px       | Semi-bold (600) | #1a1a1a    |
+| Overskrift 6 | IBM Plex Sans | 14px            | 20px       | Medium (500)    | #1a1a1a    |
 
 [---- Overskrift som link -------------------------------------]: # 
 <h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>

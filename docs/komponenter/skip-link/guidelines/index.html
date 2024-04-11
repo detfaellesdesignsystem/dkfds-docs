@@ -1755,22 +1755,36 @@
                 
 
                 <div id="skiplink-guidelines-section">
-    <h2 id="retningslinjer">Sådan bruges komponenten</h2>
-    <h3>Anvendes til</h3>
-    <p>Skip-link skal anvendes på alle sider.</p>
-    <p>Skip-linket gør det muligt for brugere, der anvender tasturet til navigation, at navigere direkte til sidens indhold.</p>
-    <h3>Anvendes ikke til</h3>
-    <p>Andre former for navigation.</p>
-    <h3>Vejledning</h3>
-    <p>Et skip-link er et skjult link, der kun vises, når en bruger navigerer på siden ved at bruge tastaturet.</p>
-    <p>Når brugeren trykker på linket (med tastatur eller mus) sættes fokus på første indholdselement på den aktuelle side.</p>
-    <p>Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan undgå at få læst alle menupunkter op, før de får adgang til selve indholdet.</p>
-</div>
+                        
+<h2 id="retningslinjer">Sådan bruges komponenten</h2>
 
-<div id="skiplink-code-section">
-    <h2>Installation</h2>
-    <h3>HTML Struktur</h3>
-    
+<h3>Anvendes til</h3>
+
+<p>Skip-link skal anvendes på alle sider.</p>
+
+<p>Skip-linket gør det muligt for brugere, der anvender tasturet til navigation, at navigere direkte til sidens indhold.</p>
+
+<h3>Anvendes ikke til</h3>
+
+<p>Andre former for navigation.</p>
+
+<h3>Vejledning</h3>
+
+<p>Et skip-link er et skjult link, der kun vises, når en bruger navigerer på siden ved at bruge tastaturet.</p>
+
+<p>Når brugeren trykker på linket (med tastatur eller mus) sættes fokus på første indholdselement på den aktuelle side.</p>
+
+<p>Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan undgå at få læst alle menupunkter op, før de får adgang til selve indholdet.</p>
+
+
+                    </div>
+                    <div id="skiplink-code-section">
+                        
+
+<h2>Installation</h2>
+
+<h3>HTML Struktur</h3>
+
 <div class="component-preview component-preview-code  component-code-skiplink">
     
     
@@ -1790,18 +1804,24 @@
     
 </div>
 
+<p>Skip-link <code>&lt;a&gt;</code> elementet indsættes som første, klikbare element i <code>&lt;body&gt;</code>. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet bortset fra en eventuel <a href="/komponenter/cookiemeddelelse/guidelines/">cookiemeddelelse</a> (GOV.UK, Skip link).</p>
 
-    <p>Skip-link <code>&lt;a&gt;</code> elementet indsættes som første, klikbare element i <code>&lt;body&gt;</code>. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet bortset fra en eventuel <a href="/komponenter/cookiemeddelelse/guidelines/">cookiemeddelelse</a> (GOV.UK, Skip link).</p>
-    <p>Skip-link gør brug af anchorlink <code>#main-content</code>, man skal derfor huske at sætte <code>id="main-content"</code> på det element, der omkranser indholdet på siden.</p>
-    <h2 id="ref">Referencer</h2>
-    <ul class="nobullet-list">
-        <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link" target="_blank">GOV.UK Design System - Skip link<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-    </ul>
-</div>
+<p>Skip-link gør brug af anchorlink <code>#main-content</code>, man skal derfor huske at sætte <code>id="main-content"</code> på det element, der omkranser indholdet på siden.</p>
+
+<h2 id="ref">Referencer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="https://design-system.service.gov.uk/components/error-message/" class="icon-link" target="_blank">GOV.UK Design System - Skip link<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+</ul>
+
+
+                    </div>
+                    
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("skiplink-code-section").classList.add('d-none');
+        document.title = 'Gå til sidens indhold (Skip-link) | Retningslinjer | Det Fælles Designsystem';
         let tabs = document.querySelectorAll('.tab-button');
         tabs[0].addEventListener("click", function(e) {
             e.preventDefault();
@@ -1811,6 +1831,7 @@
             tabs[0].setAttribute('aria-current', 'page');
             document.querySelector('.component-preview-skip-link-eksempel').classList.remove('d-none');
             history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/guidelines/');
+            document.title = 'Gå til sidens indhold (Skip-link) | Retningslinjer | Det Fælles Designsystem';
         });
         tabs[1].addEventListener("click", function(e) {
             e.preventDefault();
@@ -1820,6 +1841,7 @@
             tabs[1].setAttribute('aria-current', 'page');
             document.querySelector('.component-preview-skip-link-eksempel').classList.add('d-none');
             history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/implementering/');
+            document.title = 'Gå til sidens indhold (Skip-link) | Kode | Det Fælles Designsystem';
         });
         tabs[0].addEventListener("keydown", function(e) {
             let key = e.key;
@@ -1831,6 +1853,7 @@
                 tabs[0].setAttribute('aria-current', 'page');
                 document.querySelector('.component-preview-skip-link-eksempel').classList.remove('d-none');
                 history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/guidelines/');
+                document.title = 'Gå til sidens indhold (Skip-link) | Retningslinjer | Det Fælles Designsystem';
             }
         });
         tabs[1].addEventListener("keydown", function(e) {
@@ -1843,6 +1866,7 @@
                 tabs[1].setAttribute('aria-current', 'page');
                 document.querySelector('.component-preview-skip-link-eksempel').classList.add('d-none');
                 history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/implementering/');
+                document.title = 'Gå til sidens indhold (Skip-link) | Kode | Det Fælles Designsystem';
             }
         });
     });

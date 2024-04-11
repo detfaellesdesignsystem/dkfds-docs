@@ -5,6 +5,7 @@ version: 2.0.0
 baseurl:
 environment: production
 encoding: utf-8
+excerpt_separator: "<!--split-->"
 
 collections:
   components:

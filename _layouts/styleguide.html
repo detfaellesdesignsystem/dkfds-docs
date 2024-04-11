@@ -107,7 +107,18 @@ layout: default
                 </nav>
                 {% endif -%}
 
-                {{ content }}
+                {%- if page.tabs -%}
+                    {%- assign pageContent = page.content | markdownify | split: site.excerpt_separator -%}
+                    <div id="skiplink-guidelines-section">
+                        {{ pageContent[0] }}
+                    </div>
+                    <div id="skiplink-code-section">
+                        {{ pageContent[1] }}
+                    </div>
+                    {{ pageContent[2] }}
+                {%- else -%}
+                    {{ content }}
+                {%- endif %}
 
                 {% if page.category and page.permalink != "/kom-i-gang/implementering-kode/" and page.permalink != "/kom-i-gang/" and page.permalink != "/eksempler/" and page.permalink != "/eksempler/patterns/" %}
                     {%- assign _links = site.data.nav[page.category] -%}
