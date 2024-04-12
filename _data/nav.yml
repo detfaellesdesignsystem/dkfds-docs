@@ -143,8 +143,7 @@ Komponenter_category:
     tabs: 'Footer'
   - href: /komponenter/funktionslink/guidelines/
     tabs: 'Funktionslink'
-  - href: /komponenter/skip-link/guidelines/
-    tabs: 'Skip-link'
+  - href: /komponenter/skip-link/
   - href: /komponenter/header/guidelines/
     tabs: 'Header'
   - href: /komponenter/inputfelter/guidelines/
@@ -183,8 +182,7 @@ Komponenter_category:
     tabs: 'Toggle'
   - href: /komponenter/tooltip/guidelines/
     tabs: 'Tooltip'
-  - href: /komponenter/trinindikator/guidelines/
-    tabs: 'Trinindikator'
+  - href: /komponenter/trinindikator/
   - href: /komponenter/fil-upload/guidelines/
     tabs: 'Fil-upload'
   - href: /komponenter/venstremenu/guidelines/
@@ -284,12 +282,6 @@ Funktionslink:
   - href: /komponenter/funktionslink/guidelines/
     tabName: *retningslinjer
   - href: /komponenter/funktionslink/implementering/
-    tabName: *implementering
-
-Skip-link:
-  - href: /komponenter/skip-link/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/skip-link/implementering/
     tabName: *implementering
 
 Header:
@@ -404,12 +396,6 @@ Tooltip:
   - href: /komponenter/tooltip/guidelines/
     tabName: *retningslinjer
   - href: /komponenter/tooltip/implementering/
-    tabName: *implementering
-
-Trinindikator:
-  - href: /komponenter/trinindikator/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/trinindikator/implementering/
     tabName: *implementering
 
 Fil-upload:

@@ -44,7 +44,7 @@ Sagerne kan være:
 {% include roadmap.html title="Tilbage til toppen" status="Gennemført" link="/komponenter/tilbage-til-top/guidelines/" %}
 {% include roadmap.html title="Tiles" status="Annulleret" %}
 {% include roadmap.html title="Toggle switch" status="Gennemført" link="/komponenter/toggle/guidelines/" %}
-{% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/guidelines/#med-fejl" %}
+{% include roadmap.html title="Trinindikator med angivelse af fejl" status="Gennemført" link="/komponenter/trinindikator/#trinindikator-med-fejl" %}
 {% include roadmap.html title="Valgbar rækker i tabeller" status="Gennemført" link="/komponenter/tables/guidelines/#valgbare-rækker" %}
 
 [---- Eksempelløsningerr -------------------------------------]: # 

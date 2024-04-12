@@ -108,14 +108,18 @@ layout: default
                 {% endif -%}
 
                 {%- if page.tabs -%}
-                    {%- assign pageContent = page.content | markdownify | split: site.excerpt_separator -%}
-                    <div id="skiplink-guidelines-section">
+                    {%- if page.tabs == "Retningslinjer, kode" -%}
+                        {%- assign pageContent = page.content | markdownify | split: site.excerpt_separator -%}
                         {{ pageContent[0] }}
-                    </div>
-                    <div id="skiplink-code-section">
-                        {{ pageContent[1] }}
-                    </div>
-                    {{ pageContent[2] }}
+                        <div id="guidelines-section">
+                            {{ pageContent[1] }}
+                        </div>
+                        <div id="code-section">
+                            {{ pageContent[2] }}
+                        </div>
+                    {%- else -%}
+                        {{ content }}
+                    {%- endif %}
                 {%- else -%}
                     {{ content }}
                 {%- endif %}

@@ -376,7 +376,6 @@ Funktionslink:
 
 Skiplink:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 
 Header:
 - h2: Sådan bruges komponenten
@@ -534,13 +533,9 @@ Tooltip:
 
 Trinindikator:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 VedhaeftFil:
 - h2: Sådan bruges komponenten
@@ -555,6 +550,20 @@ Venstremenu:
   id: varianter
 - h2: Referencer
   id: ref
+
+# Komponenter, kode
+
+Skiplink_Kode:
+- h2: Installation
+- h2: Referencer
+
+Trinindikator_Kode:
+- h2: Installation
+- h2: Alle trin synlige
+- h2: Responsiv
+- h2: Låst
+- h2: Ekstra information
+- h2: Trinindikator med fejl
 
 # Eksempler
 

@@ -1,26 +1,24 @@
 ---
-permalink: "/komponenter/skip-link/guidelines/"
+permalink: "/komponenter/skip-link/"
 redirect_from:
-- "/komponenter/skip-link/"
+- "/kode/komponenter/skip-link/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Gå til sidens indhold (Skip-link)
 lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse. Brugerens første tryk på tab-tasten vil få et skjult link til at komme frem, der lader brugeren skippe menuen og gå direkte til sidens indhold."
-previewimage: "skip-link-eksempel"
-previewimageTitle: "Eksempel på skip-link"
-previewimageImage: "skiplink"
-headings: Skiplink
-anchorlinks: false
 description: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse."
 tags: 
-tabs: true
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headingsGuidelines = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headingsGuidelines[0].id }}">{{ headingsGuidelines[0].h2 }}</h2>
+<!--split-->
+
+{% include code/preview-image.html component="skip-link-eksempel" title="Eksempel på skip-link" image="skiplink" %}
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -42,7 +40,7 @@ Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan 
 
 <!--split-->
 
-## Installation
+## Installation {#{% include create-id.html heading="Installation" %}}
 
 ### HTML Struktur
 
@@ -52,64 +50,7 @@ Skip-link `<a>` elementet indsættes som første, klikbare element i `<body>`. E
 
 Skip-link gør brug af anchorlink `#main-content`, man skal derfor huske at sætte `id="main-content"` på det element, der omkranser indholdet på siden.
 
-{:#ref}
-## Referencer
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="GOV.UK Design System - Skip link" %}
-
-<!--split-->
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("skiplink-code-section").classList.add('d-none');
-        document.title = 'Gå til sidens indhold (Skip-link) | Retningslinjer | Det Fælles Designsystem';
-        let tabs = document.querySelectorAll('.tab-button');
-        tabs[0].addEventListener("click", function(e) {
-            e.preventDefault();
-            document.getElementById("skiplink-guidelines-section").classList.remove('d-none');
-            document.getElementById("skiplink-code-section").classList.add('d-none');
-            tabs[1].removeAttribute('aria-current');
-            tabs[0].setAttribute('aria-current', 'page');
-            document.querySelector('.component-preview-skip-link-eksempel').classList.remove('d-none');
-            history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/guidelines/');
-            document.title = 'Gå til sidens indhold (Skip-link) | Retningslinjer | Det Fælles Designsystem';
-        });
-        tabs[1].addEventListener("click", function(e) {
-            e.preventDefault();
-            document.getElementById("skiplink-guidelines-section").classList.add('d-none');
-            document.getElementById("skiplink-code-section").classList.remove('d-none');
-            tabs[0].removeAttribute('aria-current');
-            tabs[1].setAttribute('aria-current', 'page');
-            document.querySelector('.component-preview-skip-link-eksempel').classList.add('d-none');
-            history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/implementering/');
-            document.title = 'Gå til sidens indhold (Skip-link) | Kode | Det Fælles Designsystem';
-        });
-        tabs[0].addEventListener("keydown", function(e) {
-            let key = e.key;
-            if (key === 'Enter' || key === ' ') {
-                e.preventDefault();
-                document.getElementById("skiplink-guidelines-section").classList.remove('d-none');
-                document.getElementById("skiplink-code-section").classList.add('d-none');
-                tabs[1].removeAttribute('aria-current');
-                tabs[0].setAttribute('aria-current', 'page');
-                document.querySelector('.component-preview-skip-link-eksempel').classList.remove('d-none');
-                history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/guidelines/');
-                document.title = 'Gå til sidens indhold (Skip-link) | Retningslinjer | Det Fælles Designsystem';
-            }
-        });
-        tabs[1].addEventListener("keydown", function(e) {
-            let key = e.key;
-            if (key === 'Enter' || key === ' ') {
-                e.preventDefault();
-                document.getElementById("skiplink-guidelines-section").classList.add('d-none');
-                document.getElementById("skiplink-code-section").classList.remove('d-none');
-                tabs[0].removeAttribute('aria-current');
-                tabs[1].setAttribute('aria-current', 'page');
-                document.querySelector('.component-preview-skip-link-eksempel').classList.add('d-none');
-                history.replaceState(null, null, window.location.origin + '/komponenter/skip-link/implementering/');
-                document.title = 'Gå til sidens indhold (Skip-link) | Kode | Det Fælles Designsystem';
-            }
-        });
-    });
-</script>

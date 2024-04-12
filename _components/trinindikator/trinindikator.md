@@ -1,26 +1,28 @@
 ---
-permalink: "/komponenter/trinindikator/guidelines/"
+permalink: "/komponenter/trinindikator/"
 redirect_from:
 - "/komponenter/trinindikatorer/"
-- "/komponenter/trinindikator/"
+- "/kode/komponenter/trinindikatorer/"
+- "/kode/komponenter/trinindikator/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Trinindikator
 lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
-component: "tringuide-overflowmenu"
-componentTitle: "Eksempel på trinindikator i overflow menu"
-componentLink: true
-headings: Trinindikator
-anchorlinks: true
 description: "Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+<!--split-->
+
+{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" %}
+
+{% include anchorlinks.html headings="Trinindikator" %}
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -50,37 +52,31 @@ Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ik
 
 {% include dos-donts-box.html component="tringuide-dos-donts" title="Trinindikator do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#klikbar}
-### Alle trin synlige
+### Alle trin synlige {#{% include create-id.html heading="Alle trin synlige" %}}
 
-{% include code/preview-box.html component="tringuide-clickable" title="Eksempel på synlig trinindikator" code="/komponenter/trinindikator/implementering/#klikbar" %}
+{% include code/preview-box.html component="tringuide-clickable" title="Eksempel på synlig trinindikator" code="/komponenter/trinindikator/#alle-trin-synlige-kode" %}
 
-{:#responsiv}
-### Responsiv
+### Responsiv {#{% include create-id.html heading="Responsiv" %}}
 
 Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.
 
-{% include code/preview-box.html component="tringuide-responsive-overflowmenu" title="Eksempel på responsiv trinindikator" code="/komponenter/trinindikator/implementering/#responsiv" %}
+{% include code/preview-box.html component="tringuide-responsive-overflowmenu" title="Eksempel på responsiv trinindikator" code="/komponenter/trinindikator/#responsiv-kode" %}
 
-{:#laast}
-### Låst
+### Låst {#{% include create-id.html heading="Låst" %}}
 
-{% include code/preview-box.html component="tringuide-locked" title="Eksempel på trinindikator med låste trin" code="/komponenter/trinindikator/implementering/#laast" %}
+{% include code/preview-box.html component="tringuide-locked" title="Eksempel på trinindikator med låste trin" code="/komponenter/trinindikator/#laast-kode" %}
 
-{:#ekstra-information}
-### Ekstra information
+### Ekstra information {#{% include create-id.html heading="Ekstra information" %}}
 
-{% include code/preview-box.html component="tringuide-information" title="Eksempel på trinindikator med information" code="/komponenter/trinindikator/implementering/#ekstra-information" %}
+{% include code/preview-box.html component="tringuide-information" title="Eksempel på trinindikator med information" code="/komponenter/trinindikator/#ekstra-information-kode" %}
 
-{:#med-fejl}
-### Trinindikator med fejl
+### Trinindikator med fejl {#{% include create-id.html heading="Trinindikator med fejl" %}}
 
 Ved brug af trinindikator kan der i nogle tilfælde være behov for at indikere overfor brugeren, at et eller flere trin mangler information og/eller har fejl, efter brugeren er gået videre til næste trin.
 
-{% include code/preview-box.html component="tringuide-error-responsive" title="Eksempel på trinindikator med fejl" code="/komponenter/trinindikator/implementering/#med-fejl" %}
+{% include code/preview-box.html component="tringuide-error-responsive" title="Eksempel på trinindikator med fejl" code="/komponenter/trinindikator/#trinindikator-med-fejl-kode" %}
 
 #### Anvendes til
 
@@ -100,18 +96,57 @@ Eventuelle fejl vises på opsummeringssiden i form af {% include links/component
 
 {% include links/internal-link.html linktext="Se et eksempel på opsummeringssiden med fejl i trinindikatoren." %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
 - Adam Silver: Form Design Patterns (2018)
 - Jessica Enders: Designing UX: Forms (2016)
 - {% include links/external-link.html linktext="Caroline Jarrett: Design patterns in government (2016)" %}
+
+<!--split-->
+
+{% include anchorlinks.html headings="Trinindikator_Kode" append="-kode" %}
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="tringuide-overflowmenu" copybutton=true %}
+
+Hvis man gør brug af en trinindikator i forbindelse med en {% include links/component-guideline-link.html linktext="overflow menu" %}, så se dokumentationen for {% include links/component-code-link.html linktext="implementering for overflow menu" %}.
+
+#### Aktivt og overstået trin i trinindikator
+
+- Det aktive menupunkt skal have klassen `active` og `current`.
+- For at indikere et overstået trin, kan der indsættes et ikon med klassen `sidenav-icon`. Dette ikon er sat til højre i trinet.
+
+Nedenstående varianter implementeres i et grid på samme måde som {% include links/component-guideline-link.html linktext="venstremenu" %}, således at komponenten vises i en kolonne til venstre for indholdet.
+
+## Alle trin synlige {#{% include create-id.html heading="Alle trin synlige" append="-kode" %}}
+
+{% include code/syntax.html component="tringuide-clickable" link=true copybutton=true guidelines="/komponenter/trinindikator/#alle-trin-synlige" %}
+
+## Responsiv {#{% include create-id.html heading="Responsiv" append="-kode" %}}
+
+{% include code/syntax.html component="tringuide-responsive-overflowmenu" link=true copybutton=true guidelines="/komponenter/trinindikator/#responsiv" %}
+
+## Låst {#{% include create-id.html heading="Låst" append="-kode" %}}
+
+{% include code/syntax.html component="tringuide-locked" link=true copybutton=true guidelines="/komponenter/trinindikator/#laast" %}
+
+## Ekstra information {#{% include create-id.html heading="Ekstra information" append="-kode" %}}
+
+{% include code/syntax.html component="tringuide-information" link=true copybutton=true guidelines="/komponenter/trinindikator/#ekstra-information" %}
+
+## Trinindikator med fejl {#{% include create-id.html heading="Trinindikator med fejl" append="-kode" %}}
+
+Tilføj klassen `sidenav-error` til de liste-elementer, der er fejl i og anvend ikonet `highlight-off` med en passende `aria-label`.
+
+{% include code/syntax.html component="tringuide-error-responsive" link=true copybutton=true guidelines="/komponenter/trinindikator/#trinindikator-med-fejl" %}

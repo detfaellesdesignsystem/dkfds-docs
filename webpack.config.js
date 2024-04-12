@@ -35,6 +35,7 @@ module.exports = function (outputPath, prod) {
             "newsletter": ["./javascript/newsletter.js"],
             "pagination": ["./javascript/components/pagination.js"],
             "session-timeout": ["./javascript/components/session-timeout.js"],
+            "docs-tabs": ["./javascript/docs-tabs.js"],
             "url-tabs": ["./javascript/components/url-tabs.js"],
             "test": ["./javascript/test.js"]
         },
