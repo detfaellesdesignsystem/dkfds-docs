@@ -651,7 +651,7 @@
 
         
         <li>
-            <a href="/komponenter/accordions/guidelines/" class="nav-link"><span>Accordions</span></a>
+            <a href="/komponenter/accordions/" class="nav-link"><span>Accordions</span></a>
         </li>
         
 
@@ -1523,7 +1523,7 @@
   <li>Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/implementering/">Badges</a>, <a href="/komponenter/beskeder/implementering/">beskeder</a>, <a href="/komponenter/cookiemeddelelse/implementering/">cookiemeddelelser</a>, <a href="/komponenter/footer/implementering/">footer</a> og <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/guidelines/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/guidelines/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/guidelines/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/guidelines/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten <code>aria-selected</code> på <a href="/komponenter/overflowmenu/guidelines/#sortering">sortering</a> er ændret til <code>aria-current</code> og flyttet fra <code>li</code>-elementet til <code>button</code>-elementet.</li>
@@ -1531,7 +1531,7 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/radioknap/guidelines/">Radioknapper</a> og 
 <a href="/komponenter/tjekboks/guidelines/">tjekbokse</a> er omskrevet, så de ikke længere indeholder listeelementerne <code>li</code> og <code>ul</code>.</li>
   <li>Mindsket afstanden mellem label og hjælpetekst ved store radioknapper og store tjekbokse.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/accordions/implementering/">Accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/komponenter/datovaelger/implementering/">Datovælgeren</a>, hvor dokumentationen er præciseret.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor sprogoversættelser for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/accordions/#kode">Accordions</a> påvirkede sproget i disse komponenter generelt i stedet for kun i de initialiserede komponenter. Denne opførsel kan dog ikke undgås for <a href="/komponenter/datovaelger/implementering/">Datovælgeren</a>, hvor dokumentationen er præciseret.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tidligere public funktioner og variable er gjort private i koden for <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a>. Funktionen <code>init</code> samt sprogskifte er uændrede.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <a href="/design/ikoner/guidelines/">ikonet</a> <code>delete</code>. Brug i stedet ikonet <code>trash-can</code>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/knapper/guidelines/#klikbart-ikon">Klikbare ikoner</a> med klassen <code>button-unstyled</code> fylder ikke længere hele skærmbredden på mindre skærme og HTML’en er opdateret for alle eksempler.</li>
@@ -1558,7 +1558,7 @@
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
 <ul>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/komponenter/accordions/implementering/">accordions</a>, <a href="/komponenter/tables/implementering/#valgbare-raekker">tabeller med valgbare rækker</a>, <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a>.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne <a href="/komponenter/accordions/#kode">accordions</a>, <a href="/komponenter/tables/implementering/#valgbare-raekker">tabeller med valgbare rækker</a>, <a href="/komponenter/inputfelter/implementering/#karakterbegraensning">karakterbegrænsning</a> og <a href="/komponenter/datovaelger/guidelines/">datovælgeren</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for <a href="/komponenter/toastbesked/implementering/">toastbeskeder</a>, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af toastbeskeder, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.</li>
   <li>Tilføjet <code>cursor:pointer</code> til <a href="/komponenter/toastbesked/guidelines/">toastbeskeders</a> luk-knap.</li>
@@ -1722,13 +1722,13 @@
   <li>Ændret font i drop down for at fikse bug i Firefox
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link" target="_blank">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Ny komponent: <a href="/komponenter/datovaelger/guidelines/">Datovælger</a></li>
-  <li>Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/guidelines/">accordions</a>
+  <li>Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/">accordions</a>
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link" target="_blank">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt</li>
   <li>Opdateret <a href="/design/typografi/">typografi</a></li>
   <li>Tilføjet styling af <a href="/design/typografi/tekst/guidelines/#billedtekst">billedtekst (figcaption)</a></li>
-  <li><a href="/komponenter/accordions/guidelines/#aabn-luk-alle">Åbn/luk alle accordions function</a></li>
-  <li><a href="/komponenter/accordions/guidelines/">Accordion</a> knapper kan nu være i en overskrift
+  <li><a href="/komponenter/accordions/#aabn-luk-alle">Åbn/luk alle accordions function</a></li>
+  <li><a href="/komponenter/accordions/">Accordion</a> knapper kan nu være i en overskrift
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link" target="_blank">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li>Padding fikset på extracompact tabeller
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/113" class="icon-link" target="_blank">issue #113 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>

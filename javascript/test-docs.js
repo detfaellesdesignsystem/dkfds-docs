@@ -11,6 +11,7 @@ let folder = 'docs';
 //let folder = 'docs/design';
 //let folder = 'docs/komponenter';
 //let folder = 'docs/design/borders';
+//let folder = 'docs/komponenter/trinindikator';
 
 let allFiles = [];
 
@@ -135,7 +136,7 @@ function check_hasHeadingAfterAnchorlinks(text) {
     let matches1 = text.match(regex1);
     let hasAnchorlinks = matches1?.length > 0;
     if (hasAnchorlinks) {
-        let regex2 = /<nav class="anchorbox"(.*?)<\/nav>(\s*?)<h2/gs;
+        let regex2 = /<nav class="anchorbox"(.*?)<\/nav>(\s*?)(<div id="guidelines-section">)?(\s*?)<h2/gs;
         let matches2 = text.match(regex2);
         let result = matches2?.length > 0;
         return result;
@@ -172,6 +173,98 @@ function run_hasHeadingAfterAnchorlinks() {
 }
 
 run_hasHeadingAfterAnchorlinks();
+
+// ---- CHECK THAT H2s AND ANCHORLINKS MATCH
+
+function check_anchorlinksMatchHeadings(text) {
+
+    /* Find all h2s */
+    let regex_main = /<main(.*?)<\/main>/gs;
+    let main = text.match(regex_main);
+    let headings = [];
+    if (main?.length > 0) {
+        let regex_h2s = /<h2(.*?)<\/h2>/gs;
+        let h2s = main[0].match(regex_h2s);
+        if (h2s?.length > 0) {
+            for (let i = 0; i < h2s.length; i++) {
+                let alertHeading = h2s[i].includes('alert-heading');
+                let anchorHeading = h2s[i].includes('anchortitle');
+                let modalHeading = h2s[i].includes('modal-title');
+                let mobileHeading = h2s[i].includes('mobile-subpages-section');
+                let accordionHeading = h2s[i].includes('accordion-button');
+                if (!alertHeading && !anchorHeading && !modalHeading && !mobileHeading && !accordionHeading) {
+                    let heading_regex = />(.*?)</gs;
+                    let heading = h2s[i].match(heading_regex);
+                    headings.push(heading[0]);
+                }
+            }
+            //console.log(headings);
+        }
+    }
+    
+    /* Find all anchorlinks */
+    let regex_anchorbox = /<nav class="anchorbox"(.*?)<\/nav>/gs;
+    let anchorboxes = text.match(regex_anchorbox);
+    let anchorlinks = [];
+    if (anchorboxes?.length > 0) {
+        let anchorbox = anchorboxes[0];
+        if (anchorboxes.length === 2) {
+            anchorbox = anchorboxes[1]; // The component page about anchorlinks might have two anchorboxes - pick the right one
+        }
+        let regex_links = /<a(.*?)<\/a>/gs;
+        let links = anchorbox.match(regex_links);
+        for (let i = 0; i < links.length; i++) {
+            let link_regex = />(.*?)</gs;
+            let link = links[i].match(link_regex);
+            anchorlinks.push(link[0]);
+        }
+        //console.log(anchorlinks);
+    }
+
+    /* Compare the two lists */
+    if (headings.length === anchorlinks.length) {
+        let allHeadingsMatchLinks = true;
+        for (let i = 0; i < headings.length; i++) {
+            if (headings[i] !== anchorlinks[i]) {
+                allHeadingsMatchLinks = false;
+                break;
+            }
+        }
+        return allHeadingsMatchLinks;
+    }
+    else if (anchorlinks.length === 0) {
+        return true; // There are no anchorlinks --> No mismatch can happen
+    }
+    else {
+        return false;
+    }
+}
+
+function run_anchorlinksMatchHeadings() {
+    let problemFiles = [];
+
+    for (let f = 0; f < allFiles.length; f++) {
+        let isExamplePage = allFiles[f].includes('docs\\eksempel');
+        let text = extractText(allFiles[f]);
+        let anchorlinksMatchHeadings = check_anchorlinksMatchHeadings(text);
+        if (!anchorlinksMatchHeadings && !isExamplePage) {
+            problemFiles.push(allFiles[f]);
+            errorsFound++;
+        }
+    }
+
+    if (problemFiles.length === 0) {
+        console.log(GREEN_COLOR + '\nAll files have matching h2s and anchorlinks' + END_COLOR);
+    }
+    else {
+        console.log(RED_COLOR + '\nAnchorlinks mismatch in these files:' + END_COLOR);
+        for (let f = 0; f < problemFiles.length; f++) {
+            console.log(RED_COLOR + '-- ' + problemFiles[f] + END_COLOR);
+        }
+    }
+}
+
+run_anchorlinksMatchHeadings();
 
 // WRAPUP
 

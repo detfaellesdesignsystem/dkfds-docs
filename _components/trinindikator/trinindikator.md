@@ -16,11 +16,11 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
+{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Trinindikator" code="Trinindikator_Kode" appendCode="-kode" %}
+
 <!--split-->
-
-{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" %}
-
-{% include anchorlinks.html headings="Trinindikator" %}
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
@@ -111,8 +111,6 @@ Eventuelle fejl vises på opsummeringssiden i form af {% include links/component
 - {% include links/external-link.html linktext="Caroline Jarrett: Design patterns in government (2016)" %}
 
 <!--split-->
-
-{% include anchorlinks.html headings="Trinindikator_Kode" append="-kode" %}
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 

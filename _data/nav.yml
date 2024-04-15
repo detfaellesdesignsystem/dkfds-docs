@@ -111,8 +111,7 @@ Grids:
 
 #Left menu for komponent-category
 Komponenter_category:
-  - href: /komponenter/accordions/guidelines/
-    tabs: 'Accordions'
+  - href: /komponenter/accordions/
   - href: /komponenter/anchorlinks/guidelines/
     tabs: 'Anchorlinks'
   - href: /komponenter/badges/guidelines/
@@ -187,12 +186,6 @@ Komponenter_category:
     tabs: 'Fil-upload'
   - href: /komponenter/venstremenu/guidelines/
     tabs: 'Venstremenu'
-
-Accordions:
-  - href: /komponenter/accordions/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/accordions/implementering/
-    tabName: *implementering
 
 Anchorlinks:
   - href: /komponenter/anchorlinks/guidelines/

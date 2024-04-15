@@ -14,9 +14,9 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-<!--split-->
+{% include code/preview-image.html component="skip-link-eksempel" title="Eksempel på skip-link" image="skiplink" classes="intro-example" %}
 
-{% include code/preview-image.html component="skip-link-eksempel" title="Eksempel på skip-link" image="skiplink" %}
+<!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
@@ -40,7 +40,7 @@ Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan 
 
 <!--split-->
 
-## Installation {#{% include create-id.html heading="Installation" %}}
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
 ### HTML Struktur
 
@@ -50,7 +50,7 @@ Skip-link `<a>` elementet indsættes som første, klikbare element i `<body>`. E
 
 Skip-link gør brug af anchorlink `#main-content`, man skal derfor huske at sætte `id="main-content"` på det element, der omkranser indholdet på siden.
 
-## Referencer {#{% include create-id.html heading="Referencer" %}}
+## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="GOV.UK Design System - Skip link" %}

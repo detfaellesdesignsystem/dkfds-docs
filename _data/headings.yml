@@ -246,11 +246,8 @@ Grid_og_baseline_grid_Kode:
 
 Accordions:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Referencer
-  id: ref
 
 Anchorlinks:
 - h2: Sådan bruges komponenten
@@ -552,6 +549,12 @@ Venstremenu:
   id: ref
 
 # Komponenter, kode
+
+Accordions_Kode:
+- h2: Installation
+- h2: Åbn/luk alle
+- h2: Med fejl
+- h2: Med succesbeskeder
 
 Skiplink_Kode:
 - h2: Installation
