@@ -6,8 +6,6 @@ subcategory: Fællesskab
 title: Release notes
 lead: Nedenfor vises release notes — en opsummering af bug fixes, nye features og andre opdateringer.
 description: Release notes for Det Fælles Designsystem
-headings: Releases
-anchorlinks: true
 tags:
 - changelog
 - releases
@@ -77,10 +75,9 @@ tags:
 - 10.0.0
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Releases" %}
 
-[---- Versionering og release-proces -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Versionering og release-proces {#{% include create-id.html heading="Versionering og release-proces" %}}
 
 Designsystemets måde at versionere på er inspireret af {% include links/external-link.html linktext="semantisk versionering" %}. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.
 
@@ -100,8 +97,10 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
-[---- Version 10.0.0 -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}" class="mb-0">{{ headings[1].h2 }}</h2>
+
+
+## Version 10.0.0 {#{% include create-id.html heading="Version 10.0.0" %}}
+{:.mb-0}
 
 <div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
 
@@ -197,8 +196,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af {% include links/component-guideline-link.html linktext="beskeder" %} uden ikon. Klassen `alert--show-icon` bruges længere og ikonet skal indsættes manuelt.
 
 
-[---- Version 9.1.0 -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}" class="mb-0">{{ headings[2].h2 }}</h2>
+
+## Version 9.1.0 {#{% include create-id.html heading="Version 9.1.0" %}}
+{:.mb-0}
 
 <div><span class="small-text mt-0 d-block">24-11-2023</span></div>
 
@@ -213,8 +213,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Tilføjet ny side til dokumentationen kaldet {% include links/internal-link.html linktext="Ofte stillede spørgsmål" %}, samt opdateret siderne {% include links/internal-link.html linktext="Designressourcer" %}, {% include links/internal-link.html linktext="Tjekliste" %} og {% include links/internal-link.html linktext="Komponenter" %}.
 
 
-[---- Version 9.0.2 -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}" class="mb-0">{{ headings[3].h2 }}</h2>
+
+## Version 9.0.2 {#{% include create-id.html heading="Version 9.0.2" %}}
+{:.mb-0}
 
 <div><span class="small-text mt-0 d-block">30-08-2023</span></div>
 
@@ -223,8 +224,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="215" afternumber=" på Github" %}
 
 
-[---- Version 9.0.1 -------------------------------------]: # 
-<h2 id="{{ headings[4].id }}" class="mb-0">{{ headings[4].h2 }}</h2>
+
+## Version 9.0.1 {#{% include create-id.html heading="Version 9.0.1" %}}
+{:.mb-0}
 
 <div><span class="small-text mt-0 d-block">20-06-2023</span></div>
 
@@ -235,8 +237,9 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Rettet fejl i dokumentationen, hvor nogle {% include links/internal-link.html linktext="farver" %} stod angivet forkert.
 
 
-[---- Version 9.0.0 -------------------------------------]: # 
-<h2 id="{{ headings[5].id }}" class="mb-0">{{ headings[5].h2 }}</h2>
+
+## Version 9.0.0 {#{% include create-id.html heading="Version 9.0.0" %}}
+{:.mb-0}
 
 <div><span class="small-text mt-0 d-block">14-04-2023</span></div>
 
@@ -312,8 +315,10 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Rettet fejl i {% include links/component-guideline-link.html linktext="overflow menuer" %}, hvor indholdet kunne ryge ud over skærmkanten på små skærme.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `aria-haspopup` til knapper, der åbner modaler. {% include links/component-code-link.html linktext="Modalkomponenten" %}, selvbetjeningseksemplerne og pattern for {% include links/internal-link.html linktext="session udløber" %} er opdateret.
 
-[---- Tidligere versioner -------------------------------------]: # 
-<h2 id="{{ headings[6].id }}" class="mb-0">{{ headings[6].h2 }}</h2>
+
+
+## Tidligere versioner {#{% include create-id.html heading="Tidligere versioner" %}}
+{:.mb-0}
 
 {:#version-8-2-1 .mb-0}
 ### Version 8.2.1

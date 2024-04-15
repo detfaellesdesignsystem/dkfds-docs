@@ -2,17 +2,17 @@
 {%- assign guidelines = site.data.headings[include.guidelines] -%}
 {%- assign code = site.data.headings[include.code] -%}
 {%- assign id = "anchorlinks" | append: include.append -%}
-<nav class="anchorbox" aria-labelledby="{{id}}">
+<nav class="anchorbox{% if include.classes %} {{ include.classes }}{% endif %}" aria-labelledby="{{id}}">
     <h2 class="anchortitle" id="{{id}}">Indhold på siden</h2>
     <ul class="anchorlist">
         {% for heading in headings -%}
         <li><a href="#{% include create-id.html heading=heading.h2 append=include.append %}">{{heading.h2}}</a></li>
         {% endfor %}
         {% for heading in guidelines -%}
-        <li class="anchorlink-guidelines"><a href="#{% include create-id.html heading=heading.h2 append=include.appendGuidelines %}">{{heading.h2}}</a></li>
+        <li class="anchorlink-guidelines"><a href="#{% include create-id.html heading=heading.h2 %}">{{heading.h2}}</a></li>
         {% endfor %}
         {% for heading in code -%}
-        <li class="anchorlink-code"><a href="#{% include create-id.html heading=heading.h2 append=include.appendCode %}">{{heading.h2}}</a></li>
+        <li class="anchorlink-code"><a href="#{% include create-id.html heading=heading.h2 append='-kode' %}">{{heading.h2}}</a></li>
         {% endfor %}
     </ul>
 </nav>

@@ -18,7 +18,7 @@ tabs: "Retningslinjer, kode"
 
 {% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Trinindikator" code="Trinindikator_Kode" appendCode="-kode" %}
+{% include anchorlinks.html guidelines="Trinindikator" code="Trinindikator_Kode" %}
 
 <!--split-->
 

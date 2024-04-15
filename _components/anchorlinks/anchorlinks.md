@@ -1,17 +1,10 @@
 ---
-permalink: "/komponenter/anchorlinks/guidelines/"
-redirect_from:
-- "/komponenter/anchorlinks/"
+permalink: "/komponenter/anchorlinks/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Anchorlinks
 lead: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
-component: "anchorlinks"
-componentTitle: "Eksempel på anchorlinks"
-componentLink: true
-headings: Anchorlinks
-anchorlinks: true
 description: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
 tags:
 - anchorlinks
@@ -19,12 +12,18 @@ tags:
 - ankerlinks
 - anker
 - subnav
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="anchorlinks" title="Eksempel på anchorlinks" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Anchorlinks" code="Anchorlinks_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -46,8 +45,7 @@ Da anchorlinks anvendes til lange sider, kan de med fordel anvendes sammen med k
 
 Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der klikkes på et anchorlink, da det understøtter brugerens fornemmelse af, hvor de er på siden.
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/internal-link.html linktext="Farver" %}
@@ -55,7 +53,18 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 - {% include links/component-guideline-link.html linktext="Tabeller" %}
 - {% include links/component-code-link.html linktext="Accordions" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {% include links/external-link.html linktext="Amy Schade: Anchors OK? Re-Assessing In-Page Links (2017)" %}
+
+<!--split-->
+
+## Installation
+
+### HTML Struktur
+
+{% include code/syntax.html component="anchorlinks" copybutton=true %}
+
+### Javascript
+
+Der medfølger ikke funktionalitet med denne komponent. Hvis tryk på et link skal lave en scroll-animation ned til afsnittet, skal man selv stå for implementeringen af denne animation.

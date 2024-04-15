@@ -15,6 +15,13 @@ function showGuidelines() {
     for (let i = 0; i < codeAnchorlinks.length; i++) {
         codeAnchorlinks[i].classList.add('d-none');
     }
+    let anchorboxes = document.querySelectorAll('.anchorbox');
+    for (let i = 0; i < anchorboxes.length; i++) {
+        anchorboxes[i].classList.remove('d-none');
+        if (anchorboxes[i].classList.contains('hide-guidelines')) {
+            anchorboxes[i].classList.add('d-none');
+        }
+    }
 }
 
 function showCode() {
@@ -33,6 +40,13 @@ function showCode() {
     }
     for (let i = 0; i < codeAnchorlinks.length; i++) {
         codeAnchorlinks[i].classList.remove('d-none');
+    }
+    let anchorboxes = document.querySelectorAll('.anchorbox');
+    for (let i = 0; i < anchorboxes.length; i++) {
+        anchorboxes[i].classList.remove('d-none');
+        if (anchorboxes[i].classList.contains('hide-code')) {
+            anchorboxes[i].classList.add('d-none');
+        }
     }
 }
 

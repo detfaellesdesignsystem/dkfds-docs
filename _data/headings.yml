@@ -251,11 +251,8 @@ Accordions:
 
 Anchorlinks:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Badges:
 - h2: Sådan bruges komponenten
@@ -555,6 +552,9 @@ Accordions_Kode:
 - h2: Åbn/luk alle
 - h2: Med fejl
 - h2: Med succesbeskeder
+
+Anchorlinks_Kode:
+- h2: Installation
 
 Skiplink_Kode:
 - h2: Installation

@@ -11,7 +11,7 @@ let folder = 'docs';
 //let folder = 'docs/design';
 //let folder = 'docs/komponenter';
 //let folder = 'docs/design/borders';
-//let folder = 'docs/komponenter/trinindikator';
+//let folder = 'docs/komponenter/anchorlinks';
 
 let allFiles = [];
 

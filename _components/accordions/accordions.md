@@ -21,7 +21,7 @@ tabs: "Retningslinjer, kode"
 
 {% include code/preview-box.html component="accordion" title="Eksempel på accordion" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Accordions" code="Accordions_Kode" appendCode="-kode" %}
+{% include anchorlinks.html guidelines="Accordions" code="Accordions_Kode" %}
 
 <!--split-->
 
