@@ -1,26 +1,28 @@
 ---
-permalink: "/komponenter/dropdown/guidelines/"
+permalink: "/komponenter/dropdown/"
 redirect_from:
 - "/komponenter/drop-down/"
-- "/komponenter/dropdown/"
+- "/kode/komponenter/drop-down/"
+- "/kode/komponenter/dropdown/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Dropdown
 lead: Dropdown lader brugeren vælge én blandt flere muligheder i en udfoldet liste.
-component: "select"
-componentTitle: "Eksempel på dropdown"
-componentLink: true
-headings: Dropdown
-anchorlinks: true
 description: Dropdown kan bruges i tilfælde, hvor brugeren skal vælge mellem 7 og 15 værdier på en begrænset plads.
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="select" title="Eksempel på dropdown" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Dropdown" code="Dropdown_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -55,18 +57,26 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
 - {% include links/external-link.html linktext="Luke Wroblewski: Dropdowns Should be the UI of Last Resort (2015)" %}
 
+<!--split-->
 
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
+### HTML Struktur
 
+{% include code/syntax.html component="select" copybutton=true %}
+
+Dropdown skal have et label tilknyttet.
+
+Anvend ikke JavaScript til automatisk at udføre en handling, når brugeren vælger en værdi i dropdownen. Tilføj i stedet en knap ved dropdownen.
+
+Brug dropdown i begrænset omfang. Værdierne i en dropdown er ikke umiddelbart synlige for brugerne, og det øger sidens kompleksitet for dem.

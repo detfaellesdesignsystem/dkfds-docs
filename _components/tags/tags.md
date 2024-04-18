@@ -1,7 +1,7 @@
 ---
-permalink: "/komponenter/tags/guidelines/"
+permalink: "/komponenter/tags/"
 redirect_from:
-- "/komponenter/tags/"
+- "/kode/komponenter/tags/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -9,20 +9,21 @@ title: Tags
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om
   indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
   Tags forekommer med og uden ikon.
-component: "tags"
-componentTitle: "Eksempel på tags"
-componentLink: true
-headings: Tags
-anchorlinks: true
 description: Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information
   om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="tags" title="Eksempel på tags" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Tags" code="Tags_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -50,10 +51,21 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 {% include dos-donts-box.html component="tags-dos-donts" title="Tags do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#tags-med-luk-ikon}
 ### Tags med luk-ikon
 
 {% include code/preview-box.html component="tags-icon" title="Eksempel på tags med luk-ikon" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="tags" copybutton=true %}
+
+## Tags med luk-ikon {#{% include create-id.html heading="Tags med luk-ikon" append="-kode" %}}
+
+{% include code/syntax.html component="tags-icon" link=true copybutton=true %}

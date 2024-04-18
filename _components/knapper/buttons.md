@@ -1,30 +1,31 @@
 ---
-permalink: "/komponenter/knapper/guidelines/"
+permalink: "/komponenter/knapper/"
 redirect_from:
 - "/komponenter/buttons/"
-- "/komponenter/knapper/"
+- "/kode/komponenter/knapper/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Knapper (Buttons)
 lead: Knapper lader brugeren udføre centrale funktioner.
-component: "button-primary"
-componentTitle: "Eksempel på primærknap"
-componentLink: true
-headings: Knapper
-anchorlinks: true
 description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på
   og dermed udløse en funktion eller handling.
 tags:
 - primærknap
 - sekundærknap
 - tertiærknap
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="button-primary" title="Eksempel på primærknap" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Knapper" code="Knapper_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -64,8 +65,7 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 
 {% include dos-donts-box.html component="buttons-dos-donts" title="Knapper do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#primaerknap}
 ### Primærknap
@@ -101,8 +101,7 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 
 {% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="eksempelloesninger" %}
@@ -112,10 +111,47 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 - {% include links/external-link.html linktext="Hvornår skal du bruge en knap eller et link" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="button-primary" copybutton=true %}
+
+- Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
+
+## Primær {#{% include create-id.html heading="Primær" append="-kode" %}}
+
+Defineres med klassen `button-primary`.
+
+Bemærk særlige {% include links/component-guideline-link.html linktext="retningslinjer" %} for primær knap.
+
+## Sekundær {#{% include create-id.html heading="Sekundær" append="-kode" %}}
+
+Defineres med klassen `button-secondary`.
+
+## Tertiær {#{% include create-id.html heading="Tertiær" append="-kode" %}}
+
+Defineres med klassen `button-tertiary`.
+
+## Tilbage-knap {#{% include create-id.html heading="Tilbage-knap" append="-kode" %}}
+
+Defineres med klassen `button-quaternary`.
+
+## Knap med ikon {#{% include create-id.html heading="Knap med ikon" append="-kode" %}}
+
+{% include code/syntax.html component="buttons-with-icon" link=true copybutton=true %}
+
+## Klikbart ikon {#{% include create-id.html heading="Klikbart ikon" append="-kode" %}}
+
+{% include code/syntax.html component="buttons-only-icon" link=true copybutton=true %}
+
+`button-unstyled` bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx `<span class="sr-only">Slet</span>`.

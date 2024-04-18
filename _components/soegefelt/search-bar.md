@@ -1,25 +1,26 @@
 ---
-permalink: "/komponenter/search/guidelines/"
+permalink: "/komponenter/search/"
 redirect_from:
-- "/komponenter/search/"
+- "/kode/komponenter/search/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Søgefelt
 lead: Søgefeltet lader brugeren søge efter bestemt indhold på siden eller i løsningen.
-component: "search"
-componentTitle: "Eksempel på søgefelt"
-componentLink: true
-headings: Soegefelt
-anchorlinks: true
 description: "Et søgefelt udstiller brugeren muligheden for at søge efter bestemt indhold på siden eller i løsningen."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="search" title="Eksempel på søgefelt" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Soegefelt" code="Soegefelt_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -49,13 +50,11 @@ Søgeknappen skal være en submit-knap.
 
 {% include dos-donts-box.html component="search-dos-donts" title="Søgefelt do's and don'ts" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Jakob Nielsen: Top 10 Guidelines for Homepage Usability (2002)" %}
@@ -66,3 +65,19 @@ Søgeknappen skal være en submit-knap.
 - {% include links/external-link.html linktext="Design a perfect search box" %}
 - {% include links/external-link.html linktext="Best practises for search results" %}
 - {% include links/external-link.html linktext="The Magnifying-Glass Icon in Search Design: Pros and Cons" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="search" copybutton=true %}
+
+Du kan styre søgefeltets bredde via `input-width-` og `input-char-` se mere under punktet formular elementer og input bredde og validering.
+
+Du bør som oftest implementere auto-suggest på søgefelter, så brugeren foreslås relevante søge ord/sætninger.
+
+Ordet ”Søg” skal altid fremgå af søgeknappen. Hvis der anvendes et lup-ikon, skal ”søg” fremgå i en aria-label, så skærmlæsere kan se funktionen.
+
+Formularens felt skal have et skjult label af hensyn til skærmlæsere.

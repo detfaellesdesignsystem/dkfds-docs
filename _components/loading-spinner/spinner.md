@@ -1,25 +1,24 @@
 ---
-permalink: "/komponenter/spinner/guidelines/"
+permalink: "/komponenter/spinner/"
 redirect_from:
-- "/komponenter/spinner/"
+- "/kode/komponenter/spinner/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Loading spinner
 lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
-component: "spinner"
-componentTitle: "Eksempel på spinner komponent"
-componentLink: true
-headings: LoadingSpinner
-anchorlinks: false
 description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er forsinket."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="spinner" title="Eksempel på spinner komponent" classes="intro-example" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -54,3 +53,21 @@ Er der tale om en service, hvor man fra start af ved at det tager flere minutter
 - 5:30 minutter: "Det tager længere end forventet, beklager" 
 - 6 minutter: "Vi er stadig i gang, undskyld ventetiden"
 - 6:30 minutter: time-out og send til undskyldende fejlside
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="spinner" copybutton=true %}
+
+For at ændre spinnerens størrelse kan `font-size` gøres større eller mindre.
+
+
+Hvis dele af siden ændres, når spinneren er færdig, tilføj da de korrekte attributter til området, så brugere af hjælpeteknologier får besked om ændringen. Undersøg de korrekte værdier, der passer til løsningen for attributterne `aria-live` og `aria-atomic`. 
+
+Anvend ARIA attributten `aria-busy="true"` på elementet, der er igang med at blive opdateret til at markere for skærmlæsere, at der er en live region i gang med indlæsning og sæt værdien til `false`, når den er indlæst.
+
+### Javascript
+Der medfølger ikke funktionalitet med denne komponent. Man skal derfor selv i løsningen implementere opdateringen af statusmeddelelsen som ventetiden forlænges.

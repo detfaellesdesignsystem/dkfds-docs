@@ -1,27 +1,29 @@
 ---
-permalink: "/komponenter/venstremenu/guidelines/"
+permalink: "/komponenter/venstremenu/"
 redirect_from:
 - "/komponenter/sidenav/"
-- "/komponenter/venstremenu/"
+- "/kode/komponenter/sidenav/"
+- "/kode/komponenter/venstremenu/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Venstremenu
 lead: Venstremenuen strukturerer et navigationshierarki med op til tre niveauer i en vertikal liste.
-component: "sidenav-normal-level1"
-componentTitle: "Eksempel på venstremenu med ét niveau"
-componentLink: true
-headings: Venstremenu
-anchorlinks: true
 description: Venstremenu giver brugerne overblik over struktur og indhold, så de kan
   finde vej til det indhold, de leder efter.
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="sidenav-normal-level1" title="Eksempel på venstremenu med ét niveau" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Venstremenu" code="Venstremenu_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -45,8 +47,7 @@ Undgå at lave for mange punkter.
 
 Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#to-niveauer}
 ### 2 niveauer
@@ -68,7 +69,38 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
 Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-guideline-link.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {% include links/external-link.html linktext="Derek Powazek: Where Am I? (2006)" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="sidenav-normal-level1" copybutton=true %}
+
+#### Aktive menupunkter
+
+- Aktive menupunkter skal have klassen `current`.
+- Kun det sidste aktive menupunkt skal have klassen `active`.
+- Hvis der kun er ét aktivt niveau sættes begge klasser.
+
+#### Tilføj ikon og information i venstremenu
+
+- For at tilføje et ikon til et punkt i venstremenuen bruges klassen `sidenav-icon-before`.
+- For at tilføje information til et punkt i venstremenuen bruges klassen `sidenav-information`.
+- Ikoner og informationer kan også sammensættes i én venstremenu.
+
+## 2 niveauer {#{% include create-id.html heading="2 niveauer" append="-kode" %}}
+
+{% include code/syntax.html component="sidenav-normal-level2" link=true copybutton=true %}
+
+## 3 niveauer {#{% include create-id.html heading="3 niveauer" append="-kode" %}}
+
+{% include code/syntax.html component="sidenav-normal-level3" link=true copybutton=true %}
+
+## Ekstra information {#{% include create-id.html heading="Ekstra information" append="-kode" %}}
+
+{% include code/syntax.html component="sidenav-information-level1" link=true copybutton=true %}

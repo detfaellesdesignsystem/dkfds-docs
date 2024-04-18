@@ -1,25 +1,26 @@
 ---
-permalink: "/komponenter/fejlopsummering/guidelines/"
+permalink: "/komponenter/fejlopsummering/"
 redirect_from:
-- "/komponenter/fejlopsummering/"
+- "/kode/komponenter/fejlopsummering/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Fejlopsummering
 lead: Fejlopsummeringer bruges til at give overblik over fejl eller mangler, der skal rettes på en side eller et trin, før brugeren kan komme videre.
-component: "error-summary"
-componentTitle: "Eksempel på fejlopsummering"
-componentLink: true
-headings: Fejlopsummering
-anchorlinks: true
 description: 
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="error-summary" title="Eksempel på fejlopsummering" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Fejlopsummering" code="Fejlopsummering_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -50,16 +51,39 @@ Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumm
 
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser og fejlopsummering do's and don'ts" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Fejl i vedhæftede filer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Formular med fejl" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="error-summary" copybutton=true %}
+
+Indsættes over formularen, men under `h1` overskriften.
+
+Hver fejl tilføjes til `<ul>` listen med et anchor link til feltet der er omtalt således at fokus flyttes til pågældende felt.
+
+{:#placering}
+#### Placering
+
+{% include code/syntax.html component="error-summary-page" link=true copybutton=true %}
+
+### Javascript
+
+Fejlopsummering kræver JavaScript samt attributten `data-module="error-summary"` for at fungere korrekt. Dermed vil et klik på et link i opsummeringen betyde, at brugeren scroller ned til feltet med fejl uden at scrolle forbi feltets label. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.ErrorSummary(document.getElementById('ALERT-ID')).init();
+{% endhighlight %}

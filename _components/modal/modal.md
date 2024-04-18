@@ -1,19 +1,14 @@
 ---
-permalink: "/komponenter/modal/guidelines/"
+permalink: "/komponenter/modal/"
 redirect_from:
 - "/udvidelser/micromodal/"
 - "/kode/plugins/micromodal/"
-- "/komponenter/modal/"
+- "/kode/komponenter/modal/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Modal
 lead: Modaler tvinger brugeren til at fokusere på og tage stilling til afgørende indhold, mens den øvrige side er deaktiveret.
-component: "modal"
-componentTitle: "Eksempel på modal"
-componentLink: true
-headings: Modal
-anchorlinks: true
 description: Modal er separate vinduer, som popper-up på siden, når du aktiverer dem.
 tags:
 - besked
@@ -25,12 +20,18 @@ tags:
 - popup
 - pop up
 - vindue
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="modal" title="Eksempel på modal" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Modal" code="Modal_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -64,8 +65,7 @@ Brugeren skal selv aktivere modalen. Den må ikke aktiveres per automatik, da de
 
 Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at indholdet i modalen bliver så langt, at der opstår scroll. Overvej at bruge en individuel side i stedet for et modal, hvis indholdet er meget langt.
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#kraever-handling}
 ### Modal som kræver handling
@@ -74,7 +74,59 @@ Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen u
 
 {% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link=true %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 Se hvordan komponenten bruges i de forskellige {% include links/internal-link.html linktext="eksempler på selvbetjeningsløsninger" %} (tryk på <em>'Kontakt'</em> i eksemplernes header)
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="modal" copybutton=true %}
+
+Modalen skal altid ligge i en `div` med klassen `fds-modal-container`, som skal ligge under `body`-elementet. Nedenstående boks viser et eksempel på strukturen:
+
+{% highlight html %}
+<body>
+    <div class="fds-modal-container">
+        <div class="fds-modal" aria-hidden="true" role="dialog" aria-modal="true" ...>
+          ...
+        </div>
+    </div>
+</body>
+{% endhighlight %}
+
+### JavaScript
+
+Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+let modal = new DKFDS.Modal(document.getElementById('MODAL-ID'));
+modal.init();
+{% endhighlight %}
+
+Når en modal aktiveres, vil JavaScripten sætte `inert`-attributten på alle elementer under `body` bortset fra modalens container-element. Dette sikrer, at fokus bliver inde i modalen, når brugeren navigerer med et keyboard. Når modalen lukkes, fjernes attributten igen.
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion     | Beskrivelse      |
+|--------------|------------------|
+| modal.show() | Viser en modal   |
+| modal.hide() | Skjuler en modal |
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event key           | Element       | Beskrivelse                                                                       |
+|---------------------|---------------|-----------------------------------------------------------------------------------|
+| fds.modal.hidden    | Modal element | Når en modal skjules, bliver eventet `fds.modal.hidden` udløst på modal elementet |
+| fds.modal.shown     | Modal element | Når en modal vises, bliver eventet `fds.modal.shown` udløst på modal elementet    |
+
+## Modal som kræver handling {#{% include create-id.html heading="Modal som kræver handling" append="-kode" %}}
+
+{% include code/syntax.html component="modal-forced-action" link=true copybutton=true %}
+
+Tilføj attributten `data-modal-forced-action` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader luk knappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.

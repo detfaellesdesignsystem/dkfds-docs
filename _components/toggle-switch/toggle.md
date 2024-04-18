@@ -1,26 +1,25 @@
 ---
-permalink: "/komponenter/toggle/guidelines/"
+permalink: "/komponenter/toggle/"
 redirect_from:
-- "/komponenter/toggle/"
+- "/kode/komponenter/toggle/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Toggle switch
 lead: "En toggle switch er en digital tænd/sluk-knap. Til forskel fra en radioknap eller tjekboks træder valget i kraft i det øjeblik brugerne interagerer med komponenten."
-component: "toggle"
-componentTitle: "Eksempel på toggle"
-componentLink: true
-headings: ToggleSwitch
-anchorlinks: false
 description:
 tags:
 - "switch"
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="toggle" title="Eksempel på toggle" classes="intro-example" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -36,3 +35,16 @@ Sørg for at brugen af toggle switch implementeres konsekvent i en løsning.
 
 Giv switchen en kort og præcis label, som placeres til venstre for toggle switchen. Afstanden mellem label og knap vurderes i den enkelte løsning afhængigt af kontekst, enhed og længden på teksten. Hvis samme side har mere end én toggle switch, placeres toggle switchene dog altid lige under hinanden, så knapperne visuelt står i en lige linje.
 
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+Afstand mellem label og knap skal tilpasses til ens løsning. Hvorvidt toggle switches skal placeres i en liste eller i en anden semantisk struktur, afhænger af konteksten.
+
+{% include code/syntax.html component="toggle" copybutton=true %}
+
+### Javascript
+
+Der medfølger ikke funktionalitet med denne komponent. Når der trykkes på switchen, skal man derfor selv - udover at implementere den ønskede funktionalitet - sørge for at skifte værdien i attributten `aria-checked` til `true`/`false`.

@@ -1,17 +1,12 @@
 ---
-permalink: "/komponenter/fejlmeddelelser/guidelines/"
+permalink: "/komponenter/fejlmeddelelser/"
 redirect_from:
-- "/komponenter/fejlmeddelelser/"
+- "/kode/komponenter/fejlmeddelelser/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Fejlmeddelelser
 lead: Fejlmeddelelser hjælper brugeren til at udfylde enkelte formularelementer korrekt.
-component: "error-message"
-componentTitle: "Eksempel på fejlmeddelelse"
-componentLink: true
-headings: Fejlmeddelelser
-anchorlinks: true
 description:
 tags:
 - fejlbesked
@@ -27,12 +22,18 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Fejlmeddelelser" code="Fejlmeddelelser_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -108,8 +109,7 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#accordions}
 ### Accordions
@@ -208,18 +208,81 @@ Fx "Du kan kun vælge op til 10 filer på samme tid".
 
 Skriv "Den valgte fil skal gøre brug af skabelonen".
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Fejl i vedhæftede filer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Formular med fejl" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
 - {% include links/external-link.html linktext="Understanding Success Criterion 3.3.1: Error Identification" %}
 - {% include links/external-link.html linktext="Understanding Success Criterion 3.3.3: Error Suggestion" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="error-message" copybutton=true %}
+
+For at hjælpe skærmlæsere tilføjes en skjult tekst “Fejl:” foran fejlmeddelelsen. Brugere af skærmlæser vil da høre “Fejl: Datoen for udløb af dit pas bør være i fortiden.” Teksten er skjult i et `<span>` element med klassen `sr-only`. Attributten `aria-describedby` anvendes i stedet for `aria-errormessage` grundet bedre support for førstnævnte (se referencer).
+
+Fejlmeddelelsen vises også i {% include links/component-code-link.html linktext="fejlopsummeringen" %} øverst på siden.
+
+## Accordions {#{% include create-id.html heading="Accordions" append="-kode" %}}
+
+{% include code/syntax.html component="error-message-accordion" link=true copybutton=true %}
+
+## Datofelter {#{% include create-id.html heading="Datofelter" append="-kode" %}}
+
+{% include code/syntax.html component="error-message-date" link=true copybutton=true %}
+
+## Datovælger {#{% include create-id.html heading="Datovælger" append="-kode" %}}
+
+{% include code/syntax.html component="date-picker-error" link=true copybutton=true %}
+
+## Dropdown {#{% include create-id.html heading="Dropdown" append="-kode" %}}
+
+{% include code/syntax.html component="select-error" link=true copybutton=true %}
+
+## Inputfelt {#{% include create-id.html heading="Inputfelt" append="-kode" %}}
+
+{% include code/syntax.html component="error-message-name" link=true copybutton=true %}
+
+### Inputfelt med suffix {#{% include create-id.html heading="Inputfelt med suffix" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-suffix-error" link=true copybutton=true %}
+
+## Radioknapper {#{% include create-id.html heading="Radioknapper" append="-kode" %}}
+
+{% include code/syntax.html component="error-message-radio" link=true copybutton=true %}
+
+## Tekstområde {#{% include create-id.html heading="Tekstområde" append="-kode" %}}
+
+{% include code/syntax.html component="text-area-error" link=true copybutton=true %}
+
+Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:
+
+- `for`
+- `id`
+- `name`
+- `aria-describedby`
+
+## Tjekboks {#{% include create-id.html heading="Tjekboks" append="-kode" %}}
+
+{% include code/syntax.html component="error-message-checkbox" link=true copybutton=true %}
+
+## Vedhæft fil {#{% include create-id.html heading="Vedhæft fil" append="-kode" %}}
+
+{% include code/syntax.html component="error-message-file-input" link=true copybutton=true %}
+
+## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="aria-errormessage attribute (aria) - Accessibility Support" %}
+- {% include links/external-link.html linktext="aria-describedby attribute (aria) - Accessibility Support" %}

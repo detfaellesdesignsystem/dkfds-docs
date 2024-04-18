@@ -1,26 +1,27 @@
 ---
-permalink: "/komponenter/beskeder/guidelines/"
+permalink: "/komponenter/beskeder/"
 redirect_from:
-- "/komponenter/beskeder/"
+- "/kode/komponenter/beskeder/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Beskeder (Alerts)
 lead: Beskeder anvendes til at fremhæve aktuel information, som er vigtig for brugeren.
-component: "alerts"
-componentTitle: "Eksempel på beskeder"
-componentLink: true
-headings: Beskeder
-anchorlinks: true
 description: Beskeder (Alerts) er farvede bokse, du kan bruge til at give brugeren vigtig og aktuel information om fx status, fejl, opdateringer, o.l.
 tags:
 - fejlbesked
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="alerts" title="Eksempel på beskeder" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Beskeder" code="Beskeder_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -66,21 +67,17 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include dos-donts-box.html component="alerts-success-dos-donts" title="Successbeskeder do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#teksteksempler}
-### Teksteksempler
+### Teksteksempler {#{% include create-id.html heading="Teksteksempler" %}}
 
 {% include code/preview-box.html component="alerts-texts" title="Eksempel på besked i forskellige formater" %}
 
-{:#besked-med-luk-knap}
-### Besked med luk knap
+### Besked med luk knap {#{% include create-id.html heading="Besked med luk knap" %}}
 
 {% include code/preview-box.html component="alert-close" title="Eksempel på besked med luk-knap" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="eksempelloesninger" %}
@@ -88,10 +85,92 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Linda Newman Lior: Writing for Interaction (2013)
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - Adam Silver: Form Design Patterns (2018)
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="alerts" copybutton=true %}
+
+Anvend `role="alert"` til beskeder, der skal læses højt af en skærmlæser med det samme, hvis indholdet ændrer sig. Dette kan for eksempel være en besked, der bliver synlig efter at have været skjult eller hvor indholdet ændrer sig. Advarsler og fejlbeskeder bør altid være markeret med `role="alert"`.
+
+Hvis beskeden indeholder en `alert-heading`, sørg da for at benytte et html-element, der passer ind i konteksten på siden. Dette vil som regel være en overskrift, for eksempel `<h3>`, eller et `<strong>`-element.
+
+### Javascript
+
+Man kan bruge nedenstående JavaScript for at sætte events på luk-knappen i beskederne. Det er kun nødvendigt, hvis man gør brug af luk-knappen.
+Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
+{% endhighlight %}
+
+#### Events
+
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.alert.show</td>
+        <td><code>div.alert</code></td>
+        <td>Når en besked bliver vist med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).show();</code> bliver <code>fds.alert.show</code> udløst på beskedelementet</td>
+      </tr>
+      <tr>
+        <td>fds.alert.hide</td>
+        <td><code>div.alert</code></td>
+        <td>Når en besked bliver skjult med <code>DKFDS.Alert(document.getElementById('ALERT-ID')).hide();</code> eller der trykkes på luk bliver <code>fds.alert.hide</code> udløst på beskedelementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Farver {#{% include create-id.html heading="Farver" append="-kode" %}}
+
+### Informativ
+
+Informativ er blå, og defineres med klassen `alert-info`.
+
+{% include code/syntax.html component="alert-info" link=true copybutton=true %}
+
+### Succes
+
+Succesbesked er grøn, og defineres med klassen `alert-success`.
+
+{% include code/syntax.html component="alert-success" link=true copybutton=true %}
+
+### Advarsel
+
+Besked med advarsel er gul, og defineres med klassen `alert-warning`.
+
+{% include code/syntax.html component="alert-warning" link=true copybutton=true %}
+
+### Fejl
+
+Besked med fejl er rød, og defineres med klassen `alert-error`.
+
+{% include code/syntax.html component="alert-error" link=true copybutton=true %}
+
+## Paragrafbredde {#{% include create-id.html heading="Paragrafbredde" append="-kode" %}}
+
+Defineres med klassen `alert--paragraph`.
+
+{% include code/syntax.html component="alert-paragraph" link=true copybutton=true %}
+
+## Luk knap {#{% include create-id.html heading="Luk knap" append="-kode" %}}
+
+{% include code/syntax.html component="alert-close" link=true copybutton=true %}

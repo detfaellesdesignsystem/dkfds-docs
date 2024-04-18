@@ -1,26 +1,28 @@
 ---
-permalink: "/komponenter/datofelter/guidelines/"
+permalink: "/komponenter/datofelter/"
 redirect_from:
 - "/komponenter/dato-felt/"
-- "/komponenter/datofelter/"
+- "/kode/komponenter/dato-felt/"
+- "/kode/komponenter/datofelter/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Datofelter
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
-component: "date-input"
-componentTitle: "Eksempel på datofelter"
-componentLink: true
-headings: Datofelter
-anchorlinks: true
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="date-input" title="Eksempel på datofelter" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Datofelter" code="Datofelter_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -40,8 +42,7 @@ Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgæng
 
 {% include dos-donts-box.html component="date-dos-donts" title="Datofelter do's and don'ts" %}
 
-{:#fejlmeddelelse}
-#### Fejlmeddelelse
+#### Fejlmeddelelse {#{% include create-id.html heading="Fejlmeddelelse" %}}
 
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og deres formuleringer.
 
@@ -49,13 +50,11 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {% include links/demo-link.html linktext="Trinformular til registrering: Tidligere registrering (vælg 'Ja')" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)
@@ -67,3 +66,19 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 - {% include links/external-link.html linktext="USWDS om datovælgeren" %}
 - {% include links/external-link.html linktext="GovUK om fejlmeddelelser generelt" %}
 
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="date-input" copybutton=true %}
+
+- Anvend ikke JavaScript til automatisk at flytte fokus fra felt til felt, da det gør det svært for tastatur-brugere at navigere i formularen.
+- Datofelter-komponenten består af 3 inputfelter.
+
+## Fejlmeddelelse {#{% include create-id.html heading="Fejlmeddelelse" append="-kode" %}}
+
+Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med datofelter." %}
+
+Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.

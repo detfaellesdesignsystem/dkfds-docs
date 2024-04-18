@@ -256,274 +256,173 @@ Anchorlinks:
 
 Badges:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Beskeder:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Broedkrumme:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Cards:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Cookiemeddelelse:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Referencer
-  id: ref
 
 Datofelter:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Datovaelger:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 
 Detaljer:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 
 Dropdown:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Faneblade:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Referencer
-  id: ref
 
 Fejlmeddelelser:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Fejlopsummering:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Footer:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Funktionslink:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Skiplink:
 - h2: Sådan bruges komponenten
 
 Header:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 
 Inputfelter:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Knapper:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 LoadingSpinner:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 
 Modal:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 
 Overflowmenu:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Referencer
-  id: ref
 - h2: Sortering
-  id: sortering
 
 Paginering:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Referencer
-  id: ref
 
 Radioknap:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Sprogvaelger:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Soegefelt:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Tabeller:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Tags:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 
 Tekstomraade:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 TilbageLink:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 TilbageTilToppen:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Tjekboks:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Toastbesked:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 
 ToggleSwitch:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 
 Tooltip:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: ref
 
 Trinindikator:
 - h2: Sådan bruges komponenten
@@ -533,17 +432,12 @@ Trinindikator:
 
 VedhaeftFil:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Se komponenten i eksempelløsninger
-  id: eksempelloesninger
 
 Venstremenu:
 - h2: Sådan bruges komponenten
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Referencer
-  id: ref
 
 # Komponenter, kode
 
@@ -556,8 +450,183 @@ Accordions_Kode:
 Anchorlinks_Kode:
 - h2: Installation
 
+Badges_Kode:
+- h2: Installation
+- h2: Stort badge
+- h2: Lille badge
+- h2: Statusbadges
+
+Beskeder_Kode:
+- h2: Installation
+- h2: Farver
+- h2: Paragrafbredde
+- h2: Luk knap
+
+Broedkrumme_Kode:
+- h2: Installation
+
+Cards_Kode:
+- h2: Installation
+- h2: Card med tredjedel bredde
+- h2: Card med halv bredde
+- h2: Cards med samme højde
+
+Cookiemeddelelse_Kode:
+- h2: Installation
+
+Datofelter_Kode:
+- h2: Installation
+- h2: Fejlmeddelelse
+
+Datovaelger_Kode:
+- h2: Installation
+- h2: Begræns mulige datoer
+- h2: Fast værdi
+- h2: Datoformat
+- h2: Fejlmeddelelse
+
+Detaljer_Kode:
+- h2: Installation
+
+Dropdown_Kode:
+- h2: Installation
+
+Faneblade_Kode:
+- h2: Installation
+- h2: Faneblad med URL-skifte
+- h2: Faneblad med ikoner
+
+Fejlmeddelelser_Kode:
+- h2: Installation
+- h2: Accordions
+- h2: Datofelter
+- h2: Datovælger
+- h2: Dropdown
+- h2: Inputfelt
+- h2: Radioknapper
+- h2: Tekstområde
+- h2: Tjekboks
+- h2: Vedhæft fil
+- h2: Referencer
+
+Fejlopsummering_Kode:
+- h2: Installation
+
+Footer_Kode:
+- h2: Installation
+- h2: Tre kolonner
+- h2: Fire kolonner
+- h2: Kompleks
+- h2: Logo
+
+Funktionslink_Kode:
+- h2: Installation
+- h2: Gem kladde
+- h2: Luk
+- h2: Slet
+- h2: Download
+
 Skiplink_Kode:
 - h2: Installation
+- h2: Referencer
+
+Header_Kode:
+- h2: Installation
+- h2: Referencer
+
+Inputfelter_Kode:
+- h2: Installation
+- h2: Hjælpetekst
+- h2: Obligatoriske og frivillige inputfelter
+- h2: Read-only
+- h2: Deaktiveret
+- h2: Prefix og suffix
+- h2: Karakterbegrænsning
+- h2: Feltbredde
+
+Knapper_Kode:
+- h2: Installation
+- h2: Primær
+- h2: Sekundær
+- h2: Tertiær
+- h2: Tilbage-knap
+- h2: Knap med ikon
+- h2: Klikbart ikon
+
+LoadingSpinner_Kode:
+- h2: Installation
+
+Modal_Kode:
+- h2: Installation
+- h2: Modal som kræver handling
+
+Overflowmenu_Kode:
+- h2: Installation
+- h2: Sortering
+
+Paginering_Kode:
+- h2: Installation
+
+Radioknap_Kode:
+- h2: Installation
+- h2: Hjælpetekst
+- h2: Skjult indhold (Collapse)
+
+Sprogvaelger_Kode:
+- h2: Installation
+- h2: Sprogvælger med tooltip
+
+Soegefelt_Kode:
+- h2: Installation
+
+Tabeller_Kode:
+- h2: Installation
+- h2: Uden ramme
+- h2: Zebralinjer
+- h2: Responsiv tabel
+- h2: Linjehøjde
+- h2: Sortering i tabel
+- h2: Søgning i tabeller
+- h2: Valgbare rækker
+- h2: Strukturerede lister
+
+Tags_Kode:
+- h2: Installation
+- h2: Tags med luk-ikon
+
+Tekstomraade_Kode:
+- h2: Installation
+- h2: Fejlmeddelelse
+- h2: Karakterbegrænsning
+
+TilbageLink_Kode:
+- h2: Installation
+
+TilbageTilToppen_Kode:
+- h2: Installation
+
+Tjekboks_Kode:
+- h2: Installation
+- h2: Skjult indhold (collapse)
+
+Toastbesked_Kode:
+- h2: Installation
+- h2: Succes
+- h2: Advarsel
+- h2: Fejl
+- h2: Information
+
+ToggleSwitch_Kode:
+- h2: Installation
+
+Tooltip_Kode:
+- h2: Installation
+- h2: Radioknap med tooltip
+- h2: Tjekboks med tooltip
+- h2: Inputfelt med tooltip
+- h2: Brødtekst med tooltip
+- h2: Ikoner med hover-tooltip
+- h2: Knap med hover-tooltip
 - h2: Referencer
 
 Trinindikator_Kode:
@@ -567,6 +636,15 @@ Trinindikator_Kode:
 - h2: Låst
 - h2: Ekstra information
 - h2: Trinindikator med fejl
+
+VedhaeftFil_Kode:
+- h2: Installation
+
+Venstremenu_Kode:
+- h2: Installation
+- h2: 2 niveauer
+- h2: 3 niveauer
+- h2: Ekstra information
 
 # Eksempler
 

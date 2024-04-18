@@ -1,26 +1,27 @@
 ---
-permalink: "/komponenter/radioknap/guidelines/"
+permalink: "/komponenter/radioknap/"
 redirect_from:
 - "/komponenter/radiobutton/"
-- "/komponenter/radioknap/"
+- "/kode/komponenter/radioknap/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Radioknap (Radio button)
 lead: Radioknapper lader brugeren vælge én blandt flere muligheder.
-component: "radiobutton"
-componentTitle: "Eksempel på radioknapper"
-componentLink: true
-headings: Radioknap
-anchorlinks: true
 description: "Radioknapper giver brugeren mulighed for at vælge en enkelt værdi ud fra en synlig liste."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="radiobutton" title="Eksempel på radioknapper" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Radioknap" code="Radioknap_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -63,8 +64,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#hjaelpetekst}
 ### Hjælpetekst
@@ -91,8 +91,7 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 
 {% include dos-donts-box.html component="details-dos-donts" title="Radioknap med skjul/vis do's and don'ts" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
@@ -100,11 +99,61 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
 - {% include links/external-link.html linktext="Kara Pernice: Radio Buttons: Select One by Default or Leave All Unselected? (2014)" %}
 - {% include links/external-link.html linktext="Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)" %}
 - {% include links/external-link.html linktext="Raluca Budiu: Interaction Cost (2013)" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="radiobutton" copybutton=true %}
+
+Indsæt altid to eller flere radioknapper i et fieldset inklusive legend.
+
+Giv hver radioknap sit eget id og angiv samme værdi til det tilhørende label.
+
+`name` attributten bør have samme værdi for alle radioknapper i en liste.
+
+Radioknappernes design er ændret i forhold til standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
+
+### JavaScript
+
+Radioknapper med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
+{% endhighlight %}
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event key           | Element                           | Beskrivelse                                                                                               |
+|---------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
+| fds.collapse.expanded  | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet.       |
+| fds.collapse.collapsed | `input.js-radio-toggle-group` | Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet.     |
+
+## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
+
+{% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true %}
+
+## Skjult indhold (Collapse) {#{% include create-id.html heading="Skjult indhold (Collapse)" append="-kode" %}}
+
+{% include code/syntax.html component="radio-collapse" link=true copybutton=true %}
+
+For at initialisere collapse funktionaliteten på en radioknap skal `input[type=radio]` have følgende:
+
+- Klassen `'js-radio-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 
+- Attributten `data-controls="id-of-target-to-collapse"`: denne attribute skal have id'et på det element som skal vises på radioknappen er aktiveret. 
+- Hvis man ønsker at radioknappen skal være valgt fra starten af, skal den have attributten `checked` samt `data-expanded="true"`. Indholdselementet bør have attributten `aria-hidden="false"`
+
+Det element som skal collapses/expandes skal have følgende:
+
+- `id="id-of-target-to-collapse"`
+- `aria-hidden="false"` hvis indholdet vises og `aria-hidden="true"` hvis indholdet skjules

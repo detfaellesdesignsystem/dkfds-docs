@@ -109,292 +109,46 @@ Grids:
   - href: /design/grid/implementering/
     tabName: *implementering
 
-#Left menu for komponent-category
 Komponenter_category:
   - href: /komponenter/accordions/
   - href: /komponenter/anchorlinks/
-  - href: /komponenter/badges/guidelines/
-    tabs: 'Badges'
-  - href: /komponenter/beskeder/guidelines/
-    tabs: 'Beskeder'
-  - href: /komponenter/broedkrumme/guidelines/
-    tabs: 'Broedkrumme'
-  - href: /komponenter/cards/guidelines/
-    tabs: 'Cards'
-  - href: /komponenter/cookiemeddelelse/guidelines/
-    tabs: 'Cookiemessage'
-  - href: /komponenter/datofelter/guidelines/
-    tabs: 'Datofelter'
-  - href: /komponenter/datovaelger/guidelines/
-    tabs: 'Datovaelger'
-  - href: /komponenter/detaljer/guidelines/
-    tabs: 'Detaljer'
-  - href: /komponenter/dropdown/guidelines/
-    tabs: 'Dropdown'
-  - href: /komponenter/faneblade/guidelines/
-    tabs: 'Faneblad'
-  - href: /komponenter/fejlmeddelelser/guidelines/
-    tabs: 'Fejlmeddelelser'
-  - href: /komponenter/fejlopsummering/guidelines/
-    tabs: 'Fejlopsummering'
-  - href: /komponenter/footer/guidelines/
-    tabs: 'Footer'
-  - href: /komponenter/funktionslink/guidelines/
-    tabs: 'Funktionslink'
+  - href: /komponenter/badges/
+  - href: /komponenter/beskeder/
+  - href: /komponenter/broedkrumme/
+  - href: /komponenter/cards/
+  - href: /komponenter/cookiemeddelelse/
+  - href: /komponenter/datofelter/
+  - href: /komponenter/datovaelger/
+  - href: /komponenter/detaljer/
+  - href: /komponenter/dropdown/
+  - href: /komponenter/faneblade/
+  - href: /komponenter/fejlmeddelelser/
+  - href: /komponenter/fejlopsummering/
+  - href: /komponenter/footer/
+  - href: /komponenter/funktionslink/
   - href: /komponenter/skip-link/
-  - href: /komponenter/header/guidelines/
-    tabs: 'Header'
-  - href: /komponenter/inputfelter/guidelines/
-    tabs: 'Inputfelter'
-  - href: /komponenter/knapper/guidelines/
-    tabs: 'Knapper'
-  - href: /komponenter/spinner/guidelines/
-    tabs: 'Spinner'
-  - href: /komponenter/modal/guidelines/
-    tabs: 'Modal'
-  - href: /komponenter/overflowmenu/guidelines/
-    tabs: 'Overflowmenu'
-  - href: /komponenter/paginering/guidelines/
-    tabs: 'Paginering'
-  - href: /komponenter/radioknap/guidelines/
-    tabs: 'Radioknap'
-  - href: /komponenter/sprogvaelger/guidelines/
-    tabs: 'Sprogvaelger'
-  - href: /komponenter/search/guidelines/
-    tabs: 'Search'
-  - href: /komponenter/tables/guidelines/
-    tabs: 'Tabeller'
-  - href: /komponenter/tags/guidelines/
-    tabs: 'Tags'
-  - href: /komponenter/tekstomraade/guidelines/
-    tabs: 'Tekstomraade'
-  - href: /komponenter/tilbage-link/guidelines/
-    tabs: 'Tilbage-link'
-  - href: /komponenter/tilbage-til-top/guidelines/
-    tabs: 'Tilbage-til-top'
-  - href: /komponenter/tjekboks/guidelines/
-    tabs: 'Tjekboks'
-  - href: /komponenter/toastbesked/guidelines/
-    tabs: 'Toastbesked'
-  - href: /komponenter/toggle/guidelines/
-    tabs: 'Toggle'
-  - href: /komponenter/tooltip/guidelines/
-    tabs: 'Tooltip'
+  - href: /komponenter/header/
+  - href: /komponenter/inputfelter/
+  - href: /komponenter/knapper/
+  - href: /komponenter/spinner/
+  - href: /komponenter/modal/
+  - href: /komponenter/overflowmenu/
+  - href: /komponenter/paginering/
+  - href: /komponenter/radioknap/
+  - href: /komponenter/sprogvaelger/
+  - href: /komponenter/search/
+  - href: /komponenter/tables/
+  - href: /komponenter/tags/
+  - href: /komponenter/tekstomraade/
+  - href: /komponenter/tilbage-link/
+  - href: /komponenter/tilbage-til-top/
+  - href: /komponenter/tjekboks/
+  - href: /komponenter/toastbesked/
+  - href: /komponenter/toggle/
+  - href: /komponenter/tooltip/
   - href: /komponenter/trinindikator/
-  - href: /komponenter/fil-upload/guidelines/
-    tabs: 'Fil-upload'
-  - href: /komponenter/venstremenu/guidelines/
-    tabs: 'Venstremenu'
-
-Badges:
-  - href: /komponenter/badges/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/badges/implementering/
-    tabName: *implementering
-
-Beskeder:
-  - href: /komponenter/beskeder/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/beskeder/implementering/
-    tabName: *implementering
-
-Broedkrumme:
-  - href: /komponenter/broedkrumme/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/broedkrumme/implementering/
-    tabName: *implementering
-  
-Cards:
-  - href: /komponenter/cards/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/cards/implementering/
-    tabName: *implementering
-
-Cookiemessage:
-  - href: /komponenter/cookiemeddelelse/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/cookiemeddelelse/implementering/
-    tabName: *implementering
-
-Datofelter:
-  - href: /komponenter/datofelter/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/datofelter/implementering/
-    tabName: *implementering
-
-Datovaelger:
-  - href: /komponenter/datovaelger/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/datovaelger/implementering/
-    tabName: *implementering
-
-Detaljer:
-  - href: /komponenter/detaljer/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/detaljer/implementering/
-    tabName: *implementering
-
-Dropdown:
-  - href: /komponenter/dropdown/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/dropdown/implementering/
-    tabName: *implementering
-
-Faneblad:
-  - href: /komponenter/faneblade/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/faneblade/implementering/
-    tabName: *implementering
-
-Fejlmeddelelser:
-  - href: /komponenter/fejlmeddelelser/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/fejlmeddelelser/implementering/
-    tabName: *implementering
-
-Fejlopsummering:
-  - href: /komponenter/fejlopsummering/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/fejlopsummering/implementering/
-    tabName: *implementering
-
-Footer:
-  - href: /komponenter/footer/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/footer/implementering/
-    tabName: *implementering
-
-Funktionslink:
-  - href: /komponenter/funktionslink/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/funktionslink/implementering/
-    tabName: *implementering
-
-Header:
-  - href: /komponenter/header/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/header/implementering/
-    tabName: *implementering
-
-Inputfelter:
-  - href: /komponenter/inputfelter/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/inputfelter/implementering/
-    tabName: *implementering
-
-Knapper:
-  - href: /komponenter/knapper/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/knapper/implementering/
-    tabName: *implementering
-
-Spinner:
-  - href: /komponenter/spinner/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/spinner/implementering/
-    tabName: *implementering
-
-Modal:
-  - href: /komponenter/modal/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/modal/implementering/
-    tabName: *implementering
-
-Overflowmenu:
-  - href: /komponenter/overflowmenu/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/overflowmenu/implementering/
-    tabName: *implementering
-
-Paginering:
-  - href: /komponenter/paginering/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/paginering/implementering/
-    tabName: *implementering
-
-Radioknap:
-  - href: /komponenter/radioknap/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/radioknap/implementering/
-    tabName: *implementering
-
-Sprogvaelger:
-  - href: /komponenter/sprogvaelger/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/sprogvaelger/implementering/
-    tabName: *implementering
-
-Search:
-  - href: /komponenter/search/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/search/implementering/
-    tabName: *implementering
-
-Tabeller:
-  - href: /komponenter/tables/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tables/implementering/
-    tabName: *implementering
-
-Tags:
-  - href: /komponenter/tags/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tags/implementering/
-    tabName: *implementering
-
-Tekstomraade:
-  - href: /komponenter/tekstomraade/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tekstomraade/implementering/
-    tabName: *implementering
-
-Tilbage-link:
-  - href: /komponenter/tilbage-link/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tilbage-link/implementering/
-    tabName: *implementering
-
-Tilbage-til-top:
-  - href: /komponenter/tilbage-til-top/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tilbage-til-top/implementering/
-    tabName: *implementering
-
-Tjekboks:
-  - href: /komponenter/tjekboks/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tjekboks/implementering/
-    tabName: *implementering
-
-Toastbesked:
-  - href: /komponenter/toastbesked/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/toastbesked/implementering/
-    tabName: *implementering
-
-Toggle:
-  - href: /komponenter/toggle/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/toggle/implementering/
-    tabName: *implementering
-
-Tooltip:
-  - href: /komponenter/tooltip/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/tooltip/implementering/
-    tabName: *implementering
-
-Fil-upload:
-  - href: /komponenter/fil-upload/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/fil-upload/implementering/
-    tabName: *implementering
-
-Venstremenu:
-  - href: /komponenter/venstremenu/guidelines/
-    tabName: *retningslinjer
-  - href: /komponenter/venstremenu/implementering/
-    tabName: *implementering
+  - href: /komponenter/fil-upload/
+  - href: /komponenter/venstremenu/
 
 #Left menu for Eksempler-category
 Eksempler_category:

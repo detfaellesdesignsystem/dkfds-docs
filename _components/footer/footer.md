@@ -1,25 +1,28 @@
 ---
-permalink: "/komponenter/footer/guidelines/"
+permalink: "/komponenter/footer/"
 redirect_from:
 - "/komponenter/footers/"
-- "/komponenter/footer/"
+- "/kode/komponenter/footers/"
+- "/kode/komponenter/footer/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Footer
 lead: Footeren markerer enden på siden og indeholder informationer, som guider brugeren videre.
-previewimage: "footer-simple"
-previewimageTitle: "Eksempel på footer"
-headings: Footer
-anchorlinks: true
 description: "Du kan bruge en footer til at guide brugere, som når til sidens bund, videre."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="footer-simple" title="Eksempel på footer" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Footer" code="Footer_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Vejledning
 
@@ -27,8 +30,7 @@ Footeren fungerer som sidens afslutning og indeholder altid ansvarlig myndighed,
 
 {% include dos-donts-box.html component="footer-dos-donts" title="Footers do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#tre-kolonner}
 ### Tre kolonner
@@ -50,14 +52,57 @@ Footeren fungerer som sidens afslutning og indeholder altid ansvarlig myndighed,
 
 {% include code/preview-image.html component="footer-logo" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 Se hvordan komponenten bruges i de forskellige {% include links/internal-link.html linktext="eksempler på selvbetjeningsløsninger" %}.
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Therese Fessenden: Footers 101: Design Patterns and When to Use Each (2019)" %}
 - {% include links/external-link.html linktext="Priscilla Esser: How to Implement Sitemap Footers to Keep Users Going (2018)" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="footer-simple" copybutton=true %}
+
+Ovenstående indsættes i bunden af siden, under `<main>`.
+
+### Opsætning
+
+#### Én række
+Man kan indsætte en vandret liste, der er defineret med klasserne `unstyled-list inline-list`.
+
+#### Kolonner
+
+Man kan indsætte et {% include links/internal-link.html linktext="grid" %} med 4 kolonner. Man behøver ikke indsætte indhold i alle kolonner.
+
+{% include links/component-guideline-link.html linktext="Se eksempler på forskellige sammensætninger" %}.
+
+### Links
+
+Links i footer defineres med klassen `function-link` på `<a>`.
+
+Hvis man ved tryk på et link i footeren forlader selvbetjeningsløsningen bør dette indikeres ved brug af et {% include links/internal-link.html linktext="eksternt link" %}.
+
+Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventuelt indtastet data kan blive tabt. Evt. ved brug af en almindelig JavaScript alert.
+
+## Tre kolonner {#{% include create-id.html heading="Tre kolonner" append="-kode" %}}
+
+{% include code/syntax.html component="footer-three-columns" link=true copybutton=true %}
+
+## Fire kolonner {#{% include create-id.html heading="Fire kolonner" append="-kode" %}}
+
+{% include code/syntax.html component="footer-four-columns" link=true copybutton=true %}
+
+## Kompleks {#{% include create-id.html heading="Kompleks" append="-kode" %}}
+
+{% include code/syntax.html component="footer-complex" link=true copybutton=true %}
+
+## Logo {#{% include create-id.html heading="Logo" append="-kode" %}}
+
+{% include code/syntax.html component="footer-logo" link=true copybutton=true %}

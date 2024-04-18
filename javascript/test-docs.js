@@ -12,6 +12,7 @@ let folder = 'docs';
 //let folder = 'docs/komponenter';
 //let folder = 'docs/design/borders';
 //let folder = 'docs/komponenter/anchorlinks';
+//let folder = 'docs/komponenter/tags';
 
 let allFiles = [];
 
@@ -176,7 +177,7 @@ run_hasHeadingAfterAnchorlinks();
 
 // ---- CHECK THAT H2s AND ANCHORLINKS MATCH
 
-function check_anchorlinksMatchHeadings(text) {
+function check_anchorlinksMatchHeadings(text, filename) {
 
     /* Find all h2s */
     let regex_main = /<main(.*?)<\/main>/gs;
@@ -198,28 +199,29 @@ function check_anchorlinksMatchHeadings(text) {
                     headings.push(heading[0]);
                 }
             }
-            //console.log(headings);
         }
     }
+    //console.log("Headings: ", headings);
     
     /* Find all anchorlinks */
-    let regex_anchorbox = /<nav class="anchorbox"(.*?)<\/nav>/gs;
-    let anchorboxes = text.match(regex_anchorbox);
+    let regex_anchorbox = /<nav class="anchorbox(.*?)<\/nav>/gs;
+    let anchorbox = text.match(regex_anchorbox);
+    if (filename.includes('docs\\komponenter\\anchorlinks')) {
+        // The component page about anchorlinks have two anchorboxes - pick the right one
+        let correct_anchorbox = /<\/div>(\s*?)<nav class="anchorbox(.*?)<\/nav>/gs; 
+        anchorbox = (text.match(correct_anchorbox))[0].match(regex_anchorbox);
+    }
     let anchorlinks = [];
-    if (anchorboxes?.length > 0) {
-        let anchorbox = anchorboxes[0];
-        if (anchorboxes.length === 2) {
-            anchorbox = anchorboxes[1]; // The component page about anchorlinks might have two anchorboxes - pick the right one
-        }
+    if (anchorbox?.length > 0) {
         let regex_links = /<a(.*?)<\/a>/gs;
-        let links = anchorbox.match(regex_links);
+        let links = anchorbox[0].match(regex_links);
         for (let i = 0; i < links.length; i++) {
             let link_regex = />(.*?)</gs;
             let link = links[i].match(link_regex);
             anchorlinks.push(link[0]);
         }
-        //console.log(anchorlinks);
     }
+    //console.log("Anchorlinks: ", anchorlinks);
 
     /* Compare the two lists */
     if (headings.length === anchorlinks.length) {
@@ -246,7 +248,7 @@ function run_anchorlinksMatchHeadings() {
     for (let f = 0; f < allFiles.length; f++) {
         let isExamplePage = allFiles[f].includes('docs\\eksempel');
         let text = extractText(allFiles[f]);
-        let anchorlinksMatchHeadings = check_anchorlinksMatchHeadings(text);
+        let anchorlinksMatchHeadings = check_anchorlinksMatchHeadings(text, allFiles[f]);
         if (!anchorlinksMatchHeadings && !isExamplePage) {
             problemFiles.push(allFiles[f]);
             errorsFound++;

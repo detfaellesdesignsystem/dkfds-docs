@@ -1,30 +1,37 @@
 ---
-permalink: "/komponenter/toastbesked/guidelines/"
+permalink: "/komponenter/toastbesked/"
 redirect_from:
 - "/komponenter/notifikation/"
-- "/komponenter/toastbesked/"
+- "/kode/komponenter/notifikation/"
+- "/eksempel/notification/"
+- "/eksempel/notification-success/"
+- "/eksempel/notification-warning/"
+- "/eksempel/notification-error/"
+- "/eksempel/notification-info/"
+- "/kode/komponenter/toastbesked/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Toastbesked
 lead: Toastbeskeder viser aktuel information og dukker op på skærmen i det øjeblik, de bliver relevante. Toastbeskeder vises typisk som reaktion på brugerinteraktion.
-component: "toastbesked"
-componentTitle: "Eksempel på toastbesked"
-componentLink: true
-headings: Toastbesked
-anchorlinks: true
 description: 
 tags:
 - toast
 - toastbesked
 - notifikation
 - besked
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="toastbesked" title="Eksempel på toastbesked" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Toastbesked" code="Toastbesked_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -60,8 +67,7 @@ Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom p
 
 Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#succes}
 ### Succes
@@ -88,3 +94,68 @@ Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist 
 
 {% include code/preview-box.html component="toastbesked-onlyheading" title="Eksempel på notifikation uden brødtekst" %}
 
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="toastbesked-info" copybutton=true %}
+
+Kopiér ovenstående kode for at indsætte én toastbesked.
+
+Bemærk at ovenstående har class `show` som default. Der følger en animation med når en toastbesked vises, som kommer ved at man ændrer klasserne  i følgende flow:
+1. `hide`
+2. `showing`
+3. `show`
+
+Ved at bruge nedenstående javascript vil dette komme ud af boksen. Men bemærk at en toastbesked bør have class `hide` fra start.
+
+#### Placering
+Toastbeskeder placeres i en div med class `toast-container` og attributter `aria-live="assertive"`, `aria-atomic="false"` og `aria-relevant="additions"`. Denne div placeres som første element i `<main>`.
+
+{% highlight html %}
+<main id="main-content">
+    <div class="toast-container" aria-live="assertive" aria-atomic="false" aria-relevant="additions">
+        <!-- Placer toastbeskeder her -->
+    </div>
+    ...
+</main>
+{% endhighlight %}
+
+{% include links/example-link.html linktext="Se fungerende eksempel på implementering af toastbesked" %}
+
+### Javascript
+Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
+
+#### Vis
+Når en toastbesked vises, ændres class fra `hide` til `showing` og til sidst `show`.
+
+{% highlight javascript %}
+let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
+toast.show();
+{% endhighlight %}
+
+#### Skjul
+Når en toastbesked skjules, ændres class fra `show` til `hide`.
+
+{% highlight javascript %}
+let toast = new DKFDS.Toast(document.getElementById('TOAST-ID'));
+toast.hide();
+{% endhighlight %}
+
+## Succes {#{% include create-id.html heading="Succes" append="-kode" %}}
+
+{% include code/syntax.html component="toastbesked-success" link=true copybutton=true %}
+
+## Advarsel {#{% include create-id.html heading="Advarsel" append="-kode" %}}
+
+{% include code/syntax.html component="toastbesked-warning" link=true copybutton=true %}
+
+## Fejl {#{% include create-id.html heading="Fejl" append="-kode" %}}
+
+{% include code/syntax.html component="toastbesked-error" link=true copybutton=true %}
+
+## Information {#{% include create-id.html heading="Information" append="-kode" %}}
+
+{% include code/syntax.html component="toastbesked-info" link=true copybutton=true %}

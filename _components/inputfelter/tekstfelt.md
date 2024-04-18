@@ -1,19 +1,16 @@
 ---
-permalink: "/komponenter/inputfelter/guidelines/"
+permalink: "/komponenter/inputfelter/"
 redirect_from:
 - "/komponenter/felter/"
 - "/komponenter/tekstfelter/"
-- "/komponenter/inputfelter/"
+- "/kode/komponenter/felter/"
+- "/kode/komponenter/tekstfelter/"
+- "/kode/komponenter/inputfelter/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Inputfelter
 lead: Inputfelter lader brugeren indtaste kort information.
-component: "text-input"
-componentTitle: "Eksempel på inputfelt"
-componentLink: true
-headings: Inputfelter
-anchorlinks: true
 description: Inputfelter til indtastning af information i form af bogstaver, tal og en kombination af begge.
 tags:
 - tekstfelt
@@ -44,12 +41,18 @@ tags:
 - suffiks
 - sufix
 - sufiks
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="text-input" title="Eksempel på inputfelt" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Inputfelter" code="Inputfelter_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -94,8 +97,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#hjaelpetekst}
 ### Hjælpetekst
@@ -162,8 +164,7 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
@@ -171,8 +172,7 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
@@ -185,3 +185,118 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 - {% include links/external-link.html linktext="Caroline Jarrett: Designing usable forms: the three-layer model of the form (2000)" %}
 - {% include links/external-link.html linktext="Caroline Jarrett: Don’t Put Labels Inside Text Boxes (Unless You’re Luke W) (2013)" %}
 - {% include links/external-link.html linktext="Don Norman: Don Normans Principles of Design (2013)" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="text-input" copybutton=true %}
+
+### Brug attributten “autocomplete”
+
+Brug `autocomplete` på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed ({% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.3.5: Identify Input Purpose (Level AA)" %}).
+
+Brug `autocomplete` på inputfelter til fx navn (`autocomplete='name'`), postnummer (`autocomplete='postal-code'`), telefonnummer (`autocomplete='tel'`) og e-mailadresse (`autocomplete='email'`), hvis en bruger skal indtaste disse oplysninger om sig selv i din formular. 
+
+{% include code/syntax.html component="text-input-autocomplete" link=true copybutton=true %}
+
+## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-helptext" link=true copybutton=true %}
+
+## Obligatoriske og frivillige inputfelter {#{% include create-id.html heading="Obligatoriske og frivillige inputfelter" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-optional" link=true copybutton=true %}
+
+Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede.
+
+## Read-only {#{% include create-id.html heading="Read-only" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-readonly" link=true copybutton=true %}
+
+## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-disabled" link=true copybutton=true %}
+
+## Prefix og suffix {#{% include create-id.html heading="Prefix og suffix" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-prefix-suffix" link=true copybutton=true %}
+
+## Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-character-limit" link=true copybutton=true %}
+
+Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
+
+### JavaScript
+Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
+
+#### Funktioner
+<div class="table--responsive-scroll">
+  <table class="table table--responsive-headers">
+    <thead>
+      <tr>
+        <th scope="col">Funktion</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>init()</td>
+        <td>Sørger for at beskederne med antal tegn tilbage opdateres.</td>
+      </tr>
+      <tr>
+        <td>charactersLeft()</td>
+        <td>Returnerer det antal tegn, der lige nu kan indtastes i inputfeltet. Tallet er negativt, hvis antallet af tegn er overskredet.</td>
+      </tr>
+      <tr>
+        <td>updateMessages()</td>
+        <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+Eksempel på anvendelse:
+
+{% highlight javascript %}
+const form_limit = new DKFDS.CharacterLimit(document.getElementsByClassName('form-limit')[0]);
+form_limit.init();
+form_limit.charactersLeft();
+{% endhighlight %}
+
+#### Sprog
+Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
+
+{% highlight javascript %}
+new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID'), {
+  "character_remaining": "Du har {value} tegn tilbage",
+  "characters_remaining": "Du har {value} tegn tilbage",
+  "character_too_many": "Du har {value} tegn for meget",
+  "characters_too_many": "Du har {value} tegn for meget"
+}).init();
+{% endhighlight %}
+
+## Feltbredde {#{% include create-id.html heading="Feltbredde" append="-kode" %}}
+   
+Inputfelter har en standard bredde på 32rem. For at ændre bredden bruges nedenstående klasser:
+
+- `input-width-xxs` har en bredde på 8rem
+- `input-width-xs` har en bredde på 16rem
+- `input-width-s` har en bredde på 24rem
+- `input-width-m` har en bredde på 32rem
+- `input-width-l` har en bredde på 40rem
+- `input-width-xl` har en bredde på 48rem
+
+### Bredde med tegn
+
+For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:
+
+- `input-char-4` har en bredde der passer til 4 tegn
+- `input-char-8` har en bredde der passer til 8 tegn
+- `input-char-11` har en bredde der passer til 11 tegn
+- `input-char-27` har en bredde der passer til 27 tegn
+
+For at tilføje flere inputbredder, der er styret af tegn, skal der tilføjes klassen `input-char-X`, hvor det nye tal skal erstattes med X.

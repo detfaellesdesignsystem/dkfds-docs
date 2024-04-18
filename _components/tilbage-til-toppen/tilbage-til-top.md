@@ -1,17 +1,12 @@
 ---
-permalink: "/komponenter/tilbage-til-top/guidelines/"
+permalink: "/komponenter/tilbage-til-top/"
 redirect_from:
-- "/komponenter/tilbage-til-top/"
+- "/kode/komponenter/tilbage-til-top/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tilbage til toppen
 lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af en lang side på en let måde uden at miste overblikket. 
-component: "back-to-top"
-componentTitle: "Eksempel på tilbage til toppen"
-componentLink: true
-headings: TilbageTilToppen
-anchorlinks: true
 description: Lad brugeren navigere tilbage til toppen.
 tags:
 - back-to-top
@@ -19,12 +14,18 @@ tags:
 - top-knap
 - til toppen
 - til-top
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="back-to-top" title="Eksempel på tilbage til toppen" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="TilbageTilToppen" code="TilbageTilToppen_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -52,15 +53,36 @@ På mobil anvendes knappen uden tekst for at spare plads på skærmen.
 
 {% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" code="/komponenter/tilbage-til-top/implementering/" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {% include links/external-link.html linktext="Hoa Loranger: Back-to-Top Button Design Guidelines (2017)" %}
 
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="back-to-top" copybutton=true %}
+
+Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-knappen kan linke til. Dette id skal ligge lige før komponenten {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}.
+
+Tilbage til toppen-knappen bør altid være det første element i en sides footer.
+
+### Javascript
+
+Tilbage til toppen-knappen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.BackToTop(document.getElementById('BACK-TO-TOP-ID')).init();
+{% endhighlight %}
+
+Bemærk, at JavaScripten udelukkende kontrollerer, hvornår knappen skal vises eller skjules. Hvis tryk på knappen skal lave en scroll-animation til toppen, skal man selv stå for implementeringen af denne animation.
+
+Knappen vises og skjules forskelligt, hvis der er en {% include links/component-guideline-link.html linktext="venstremenu" %} eller {% include links/component-guideline-link.html linktext="trinindikator" %} til stede på siden. Det er derfor vigtigt, at HTML for disse komponenter er anvendt som beskrevet.

@@ -1,25 +1,26 @@
 ---
-permalink: "/komponenter/tooltip/guidelines/"
+permalink: "/komponenter/tooltip/"
 redirect_from:
-- "/komponenter/tooltip/"
+- "/kode/komponenter/tooltip/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: "Tooltip"
 lead: Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.
-component: "tooltip-helpicon"
-componentTitle: "Eksempel på ikon med tooltip"
-componentLink: true
-headings: Tooltip
-anchorlinks: true
 description: "Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon."
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="tooltip-helpicon" title="Eksempel på ikon med tooltip" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Tooltip" code="Tooltip_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -69,8 +70,7 @@ Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv
 
 {% include code/preview-box.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 ### Hover-tooltip
 
@@ -93,16 +93,72 @@ Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapp
 
 {% include code/preview-box.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content" %}
 - Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
 - {% include links/external-link.html linktext="Alita Joyce: Tooltip Guidelines (2019)" %}
 - {% include links/external-link.html linktext="Tilgængelige tooltips" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="tooltip-helpicon" copybutton=true %}
+
+Bemærk at `tooltip-wrapper` kan kodes med enten `div` eller `span` afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen `tooltip-target`.
+
+### Javascript
+Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.Tooltip(document.getElementById('Tooltip-wrapper-ID')).init();
+{% endhighlight %}
+
+Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes på `tooltip-wrapper`.
+
+{:.table .table--responsive-headers}
+| Attribut        | Beskrivelse                                                                                                                       |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| data-tooltip    | Tooltipteksten                                                                                                                    |
+| data-tooltip-id | ID der knytter tooltippet til det element, der åbner tooltippet.                                                                  |
+| data-position   | Skal sættes til enten `above` eller `below`. Undlades attributten vælges `above` som standard.                                    |
+| data-trigger    | Skal sættes til enten `click` eller `hover`. Anvend kun `click`, hvis elementet ikke har andre funktioner end at åbne tooltippet. |
+
+## Radioknap med tooltip {#{% include create-id.html heading="Radioknap med tooltip" append="-kode" %}}
+
+{% include code/syntax.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" link=true copybutton=true %}
+
+## Tjekboks med tooltip {#{% include create-id.html heading="Tjekboks med tooltip" append="-kode" %}}
+
+{% include code/syntax.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" link=true copybutton=true %}
+
+## Inputfelt med tooltip {#{% include create-id.html heading="Inputfelt med tooltip" append="-kode" %}}
+
+{% include code/syntax.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" link=true copybutton=true %}
+
+## Brødtekst med tooltip {#{% include create-id.html heading="Brødtekst med tooltip" append="-kode" %}}
+
+{% include code/syntax.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" link=true copybutton=true %}
+
+## Ikoner med hover-tooltip {#{% include create-id.html heading="Ikoner med hover-tooltip" append="-kode" %}}
+
+Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017).
+
+{% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" link=true copybutton=true %}
+
+## Knap med hover-tooltip {#{% include create-id.html heading="Knap med hover-tooltip" append="-kode" %}}
+
+{% include code/syntax.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" link=true copybutton=true %}
+
+## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="Heydon Pickering: Tooltips & Toggletips - Inclusive Components (2017)" %}

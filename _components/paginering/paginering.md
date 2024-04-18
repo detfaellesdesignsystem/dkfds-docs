@@ -1,28 +1,29 @@
 ---
-permalink: "/komponenter/paginering/guidelines/"
+permalink: "/komponenter/paginering/"
 redirect_from:
-- "/komponenter/paginering/"
+- "/kode/komponenter/paginering/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Paginering
 lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opdelt på flere sider. Brugeren navigerer ved at gå fra side til side, eller til første eller sidste side på listen.
-component: "pagination"
-componentTitle: "Eksempel på paginering"
-componentLink: true
-headings: Paginering
-anchorlinks: true
 description: Lad brugeren navigere mellem indhold der er opdelt på flere sider.
 tags:
 - paginering
 - pagination
 - sidevælger
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="pagination" title="Eksempel på brødkrumme" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Paginering" code="Paginering_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -62,8 +63,7 @@ Hold paginering på en enkelt linje.
 
 På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktuelle side og det samlede sideantal vises i midten.
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 ### 7 eller færre sider
 
@@ -73,7 +73,26 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {% include links/external-link.html linktext="USWDS om paginering" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="pagination" copybutton=true %}
+
+Brug `class="hidden"` på Forrige-, Næste-, Første- og Sidste-knapperne, når de ikke skal vises.
+
+### Tilgængelighed
+
+Lad knappen med tallet til sidste side indeholde en aria-label, der oplyser dette. Husk at lade den aktuelle side være markeret med `aria-current="page"`.
+
+Sørg for at alle Forrige-, Næste-, Første- og Sidste-knapper på mindre skærme har en skjult, tilknyttet tekst, så ikonerne kan læses højt af en skærmlæser.
+
+### JavaScript
+
+Bemærk at DKFDS på nuværende tidspunkt kun leverer HTML og CSS til denne komponent. Funktionaliteten skal man derfor selv håndtere.

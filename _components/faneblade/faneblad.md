@@ -1,9 +1,9 @@
 ---
-permalink: "/komponenter/faneblade/guidelines/"
+permalink: "/komponenter/faneblade/"
 redirect_from:
-- "/komponenter/tabnav/"
 - "/komponenter/faneblad/"
-- "/komponenter/faneblade/"
+- "/kode/komponenter/faneblad/"
+- "/kode/komponenter/faneblade/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
@@ -11,20 +11,21 @@ title: Faneblade (Tabs)
 lead: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen. Vær opmærksom på om dine brugere
   ser de skjulte sektioner, når du anvender faneblade.
-component: "tabs-buttons"
-componentTitle: "Eksempel på faneblade"
-componentLink: true
-headings: Faneblade
-anchorlinks: true
 description: Faneblade gør det muligt for brugerne at bladre imellem relaterede sektioner
   af indhold og kun få vist en sektion af gangen.
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="tabs-buttons" title="Eksempel på faneblade" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Faneblade" code="Faneblade_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -66,9 +67,53 @@ Ikoner skal altid understøttes af en label med fanebladets navn.
 
 {% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Jacob Gube: Module Tabs in Web Design: Best Practices and Solutions (2009)" %}
 - {% include links/external-link.html linktext="Jakob Nielsen: Tabs, Used Right (2016)" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="tabs-buttons" copybutton=true %}
+
+Kopier det ovenstående kode for at indsætte en faneblads komponent. Hvis du ønsker et andet antal faneblade kan disse fjernes/tilføjes ved at slette/indsætte et `<li>` element som indkapsler et `<button>` tag samt at slette/indsætte det tilhørende `<li>` element som har et `<section>` tag.
+
+Husk at tilpasse koden så attributterne passer. Bemærk her især at `aria-controls` attributten for fanebladet skal matche panel `id'et` og at disse skal være unikke.
+
+### Tilgængelighed
+Husk at bruge rollerne `tablist`, `tab` og `tab-panel` til at informere om hvad der er henholdsvis fanebladsbeholder, faneblad og faneblad indhold. Her er det vigtigt at benytte `aria-selected` attributten til at indikere hvilket faneblad er aktivt. Med `hidden` attributten skjules panelet visuelt, mens det også gemmes for hjælpeteknologier.  
+
+### JavaScript
+
+Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller manuelt initialisere komponenten således:
+
+{% highlight js %}
+new DKFDS.Tabs(document.getElementById('TAB-ID')).init();
+{% endhighlight %}
+
+Hvis en komponent først bliver tilføjet på siden efter pageload, så vil der være stor sandsynlighed for at komponenten ikke virker optimalt, da events ikke er blevet sat. Hvis man står i denne situation skal man initialisere komponenten manuelt.
+
+Bemærk, at dette kun gælder fra version 5.0.0.
+
+#### Events
+
+Når man vælger et nyt faneblad, bliver eventet `fds.tab.changed` udløst på `.tab-container` elementet, som man kan koble sig på med en eventlistener.
+
+Når et faneblad åbnes, bliver eventet `fds.tab.open` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
+
+Når et faneblad lukkes, bliver eventet `fds.tab.close` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
+
+## Faneblad med URL-skifte {#{% include create-id.html heading="Faneblad med URL-skifte" append="-kode" %}}
+
+{% include code/syntax.html component="tabs-urls" link=true copybutton=true %}
+
+Læg mærke til at der ved URL-skift faneblade istedet er anvendt `aria-current=page` for at indikere det aktive faneblad. Her skal man sikre sig at kun ét faneblad har denne attribut sat. 
+
+## Faneblad med ikoner {#{% include create-id.html heading="Faneblad med ikoner" append="-kode" %}}
+
+{% include code/syntax.html component="tabs-buttons-icons" link=true copybutton=true %}

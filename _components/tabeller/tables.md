@@ -1,27 +1,29 @@
 ---
-permalink: "/komponenter/tables/guidelines/"
+permalink: "/komponenter/tables/"
 redirect_from:
 - "/tables/"
 - "/komponenter/strukturerede-lister/"
-- "/komponenter/tables/"
+- "/kode/komponenter/strukturerede-lister/"
+- "/kode/komponenter/tables/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tabeller
 lead: Tabeller er en systematisk opstilling af data i kolonner og rækker.
-component: "table"
-componentTitle: "Eksempel på tabel"
-componentLink: true
-headings: Tabeller
-anchorlinks: true
 description: "Tabeller er en systematisk opstilling af data i kolonner og rækker."
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="table" title="Eksempel på tabel" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Tabeller" code="Tabeller_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -45,8 +47,7 @@ Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tal
 
 {% include dos-donts-box.html component="table-dos-donts" title="Tabeller do's and don'ts" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#uden-ramme}
 ### Uden ramme
@@ -133,8 +134,7 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 
 {% include code/preview-box.html component="structured-list--edit" title="Eksempel på struktureret liste med redigérlink" code="/komponenter/tables/implementering/#strukturerede-lister-edit" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
@@ -145,11 +145,134 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 - {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-liat}
 - {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}
 - {% include links/external-link.html linktext="Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)" %}
 - {% include links/external-link.html linktext="Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)" %}
 - {% include links/external-link.html linktext="W3C (WCAG 2.1): Technique F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="table" copybutton=true %}
+
+Man kan gøre brug af hjælpeklassen for {% include links/internal-link.html linktext="bredde i procent" %} til at definere bredde på kolonner. 
+
+Brug klassen `table-header-no-wrap` på `th`-elementet inde i `thead`, hvis du ikke ønsker, at en header skal kunne ombrydes til flere linjer.
+
+Brug klasserne `vertical-align-top`, `vertical-align-middle` og `vertical-align-bottom` på enten `<th>` eller `<td>` til at ændre den vertikale placering af indholdet i en celle i toppen, midten eller bunden.
+
+#### Horisontalt scroll {#{% include create-id.html heading="Horisontalt scroll" append="-kode" %}}
+
+Tabeller er som udgangspunkt sat ind i en `<div>`, der har klassen `table--responsive-scroll`, hvilket gør at tabellen kan scrolles vandret, hvis den bliver for smal. Hvis man ikke ønsker, at dette skal være muligt, kan man undlade denne `<div>`.
+
+## Uden ramme {#{% include create-id.html heading="Uden ramme" append="-kode" %}}
+
+For at fjerne den yderste ramme tilføj klassen `table--borderless` til `<table>`.
+
+## Zebralinjer {#{% include create-id.html heading="Zebralinjer" append="-kode" %}}
+
+Man kan sætte zebralinjer på en tabel med klassen `table--zebra` på `<table>`.
+
+## Responsiv tabel {#{% include create-id.html heading="Responsiv tabel" append="-kode" %}}
+
+En tabel gøres responsiv ved at tilføje klassen `table--responsive-headers` til `<table>`. Responsive tabeller ændrer som standard udseende ved {% include links/internal-link.html linktext="breakpoint" %} `sm`, men hvis du har mange kolonner i din tabel, kan det give mening at anvende et andet breakpoint. 
+
+Hvis din tabel indeholder værdier, der kræver mere end ca. 290 pixels i bredden for at blive vist, bør du undlade at gøre den responsiv og i stedet anvende {% include links/component-code-link.html linktext="horisontalt scroll" %} - tjek eventuelt om din responsive tabel kan vises pænt, når skærmstørrelsen er 320 pixels i bredden, uden at indholdet ryger ud over kanten.
+
+Du kan anvende en af nedenstående klasser for at ændre, ved hvilket breakpoint tabellens udseende skal ændres:
+
+- `table-sm-responsive-headers` (svarer til `table--responsive-headers`)
+- `table-md-responsive-headers`
+- `table-lg-responsive-headers`
+
+Udover at tilføje en klasse, skal attributten `data-title` tilføjes til hver `<td>`, hvilket gør at en label bliver tilføjet for hver celle på mindre skærme.
+
+{% highlight html %}
+<tr>
+    <td data-title="Affaldstype">Bioaffald og kompost</td>
+    <td data-title="Farvekode">Beige</td>
+    <td data-title="Beskrivelse">Alt madaffald uden fødevareemballage.</td>
+    <td data-title="Hvor ender det?">Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til muld.</td>
+</tr>
+{% endhighlight %}
+
+Attributten kan sættes automatisk ved brug af {% include links/component-code-link.html linktext="JavaScript" %}.
+
+Bemærk, at tabeller med sortering og tabeller med valgbare rækker ikke har en responsiv version.
+
+### JavaScript for responsive tabeller {#{% include create-id.html heading="JavaScript for responsive tabeller" append="-kode" %}}
+
+Anvendes til at sætte de korrekte attributter automatisk, hvis man ønsker en responsiv tabel. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.ResponsiveTable(document.getElementById('TABLE-ID'));
+{% endhighlight %}
+
+## Linjehøjde {#{% include create-id.html heading="Linjehøjde" append="-kode" %}}
+
+### Kompakt
+Tilføj klassen `table--compact` på `<table>`.
+
+### Ekstra kompakt
+Tilføj klassen `table--extracompact` på `<table>`.
+
+## Sortering i tabel {#{% include create-id.html heading="Sortering i tabel" append="-kode" %}}
+
+Se nedenstående eksempels HTML for, hvilke klasser, attributter og knapper, der skal sættes på hhv. `<th>` og `<tbody>`.
+
+Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
+
+{% include code/syntax.html component="table-sort" link=true copybutton=true %}
+
+## Søgning i tabeller {#{% include create-id.html heading="Søgning i tabeller" append="-kode" %}}
+
+Anvend {% include links/component-code-link.html linktext="søgefeltkomponenten" %} sammen med din tabel og tilføj `aria-live="polite"` til `<table>`. 
+
+Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
+
+{% include code/syntax.html component="table-search" link=true copybutton=true %}
+
+## Valgbare rækker {#{% include create-id.html heading="Valgbare rækker" append="-kode" %}}
+
+{% include code/syntax.html component="table-selectable" link=true copybutton=true %}
+
+{:#valgbare-raekker-knapper}
+### Valgbare rækker med funktionsknapper
+{% include code/syntax.html component="table-selectable-functions" link=true copybutton=true %}
+
+### JavaScript for tabeller med valgbare rækker
+Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
+{% endhighlight %}
+
+Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event key                      | Element       | Beskrivelse                                                                                                              |
+|--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
+| fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>`-elementet |
+
+## Strukturerede lister {#{% include create-id.html heading="Strukturerede lister" append="-kode" %}}
+
+{% include code/syntax.html component="structured-list" link=true copybutton=true %}
+
+Strukturerede lister kan bruges i forbindelse med {% include links/internal-link.html linktext="opsummering" %} eller {% include links/internal-link.html linktext="kvitteringssider" %} som en alternativ tabel, hvor der ikke er nogen vandrette headers. 
+
+Listerne skal altid indeholde præcis 2 eller 3 kolonner. Første kolonne anvendes til headers/titel, anden kolonne til indhold/information og tredje kolonne til eventuel redigering af rækkens indhold. Husk at markere `scope="row"` for hver tabelheader.
+
+Listen kan gøres responsiv ved at tilføje klassen med det ønskede breakpoint. Se {% include links/component-code-link.html linktext="responsive klasser for tabeller" %}.
+
+{:#strukturerede-lister-edit}
+### Struktureret liste med redigér
+
+{% include code/syntax.html component="structured-list--edit" link=true copybutton=true %}

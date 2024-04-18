@@ -1,25 +1,26 @@
 ---
-permalink: "/komponenter/tjekboks/guidelines/"
+permalink: "/komponenter/tjekboks/"
 redirect_from:
-- "/komponenter/tjekboks/"
+- "/kode/komponenter/tjekboks/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tjekboks (Checkbox)
 lead: Tjekbokse lader brugeren vælge en eller flere muligheder.
-component: "checkbox-large"
-componentTitle: "Eksempel på tjekbokse"
-componentLink: true
-headings: Tjekboks
-anchorlinks: true
 description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="checkbox-large" title="Eksempel på tjekbokse" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Tjekboks" code="Tjekboks_Kode" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -59,24 +60,85 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
 
-[---- Varianter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 
 {% include code/preview-box.html component="checkbox-collapse" title="Eksempel på tjekboks med skjult indhold" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - ISO 9241-143: Forms (2012)
 - {% include links/external-link.html linktext="Jakob Nielsen: Checkboxes vs. Radio Buttons (2004)" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="checkbox-large" copybutton=true %}
+
+- Indsæt altid to eller flere tjekbokse i et fieldset inklusive legend. En enkelt tjekboks skal ikke sidde i et fieldset.
+- Giv hver tjekboks sit eget id og angiv samme værdi til det tilhørende label.
+- Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
+- Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.
+
+### JavaScript
+
+Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+
+{% highlight javascript %}
+new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).init();
+{% endhighlight %}
+
+#### Events
+
+<div class="table--responsive-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Event key</th>
+        <th scope="col">Element</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fds.collapse.expanded</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ud, bliver eventet fds.collapse.open udløst på input elementet</td>
+      </tr>
+      <tr>
+        <td>fds.collapse.collapsed</td>
+        <td><code>input.js-checkbox-toggle-content</code></td>
+        <td>Når en skjul/vis komponent bliver foldet ind, bliver eventet fds.collapse.close udløst på input elementet</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Skjult indhold (collapse) {#{% include create-id.html heading="Skjult indhold (collapse)" append="-kode" %}}
+
+{% include code/syntax.html component="checkbox-collapse" link=true copybutton=true %}
+
+For at initialisere collapse funktionaliteten på en checkbox skal `input[type=checkbox]` have følgende:
+
+- Klassen `'js-checkbox-toggle-content'`. Denne klasse gør at funktionaliteten bliver initialiseret. 
+- Attributten `data-js-target="id-of-target-to-collapse"`: denne attribute skal have samme værdi som i id attributten på det element som skal vises på tjekboksen er aktiveret. 
+- Hvis man ønsker at tjekboksen skal være valgt fra starten af, skal den have attributten `'checked'`.
+- `aria-controls="id-of-target-to-collapse" `
+
+Det element som skal collapses/expandes skal have følgende:
+
+- `id="id-of-target-to-collapse"`
+- `aria-hidden="true/false"`
+

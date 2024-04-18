@@ -1,27 +1,29 @@
 ---
-permalink: "/komponenter/detaljer/guidelines/"
+permalink: "/komponenter/detaljer/"
 redirect_from:
 - "/komponenter/collapse/"
-- "/komponenter/detaljer/"
+- "/kode/komponenter/collapse/"
+- "/kode/komponenter/detaljer/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Detaljer
 lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælge at folde det ud.
-component: "details"
-componentTitle: "Eksempel på skjul og vis af indhold"
-componentLink: true
-headings: Detaljer
-anchorlinks: true
 description: Skjul og vis yderligere information eller en ekstra funktion relevant
   for brugerens valg.
 tags: 
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="details" title="Eksempel på skjul og vis af indhold" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Detaljer" code="Detaljer_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -45,9 +47,16 @@ Skjult indhold skal fortsat overholde dokumentets outline (overskriftshierarki) 
 
 Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre brugeren. Undgå generelt for mange interaktionsniveauer.
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="details" copybutton=true %}

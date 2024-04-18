@@ -1,25 +1,26 @@
 ---
-permalink: "/komponenter/tilbage-link/guidelines/"
+permalink: "/komponenter/tilbage-link/"
 redirect_from:
-- "/komponenter/tilbage-link/"
+- "/kode/komponenter/tilbage-link/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Tilbage-link
 lead: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
-component: "back-link"
-componentTitle: "Eksempel på tilbage-link"
-componentLink: true
-headings: TilbageLink
-anchorlinks: true
 description: "Tilbage-linket gør brugeren i stand til at gå tilbage til forrige trin eller side i en selvbetjeningsløsning."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="back-link" title="Eksempel på tilbage-link" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="TilbageLink" code="TilbageLink_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -41,16 +42,28 @@ Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaSc
 
 {% include dos-donts-box.html component="back-link-dos-donts" title="Tilbage-link do's and don'ts" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 Adam Silver: Form Design Patterns (2018)
 
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+{:#html-struktur}
+### HTML Struktur
+
+{% include code/syntax.html component="back-link" copybutton=true %}
+
+Linket placeres så vidt muligt under headeren, se eksempel på implementering i vores eksempelløsning: {% include links/demo-link.html linktext="Vedhæft fil" returnID="html-struktur" %}
+
+Bemærk, at tilbage-linket stadig skal være synligt ved mobilvisning.
+
+Selve funktionaliteten står man selv for i ens løsning.

@@ -1,25 +1,26 @@
 ---
-permalink: "/komponenter/fil-upload/guidelines/"
+permalink: "/komponenter/fil-upload/"
 redirect_from:
-- "/komponenter/fil-upload/"
+- "/kode/komponenter/fil-upload/"
 layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Vedhæft fil
 lead: Komponenten lader brugeren tilføje og indsende en fil.
-component: "file-input"
-componentTitle: "Eksempel på vedhæft fil"
-componentLink: true
-headings: VedhaeftFil
-anchorlinks: true
 description: "Brug fil upload til at lade brugeren vælge en fil fra sin egen computer, tablet eller mobil."
 tags:
+tabs: "Retningslinjer, kode"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include tabs.html guidelines=true code=true %}
 
-[---- Sådan bruges komponenten -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+{% include code/preview-box.html component="file-input" title="Eksempel på vedhæft fil" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="VedhaeftFil" code="VedhaeftFil_Kode" classes="hide-code" %}
+
+<!--split-->
+
+## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
 ### Anvendes til
 
@@ -43,10 +44,28 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
 
-[---- Se komponenten i eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Vedhæft dokumenter" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Vedhæft fil" returnID="eksempelloesninger" %}
+
+<!--split-->
+
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
+
+### HTML Struktur
+
+{% include code/syntax.html component="file-input" copybutton=true %}
+
+Vi anbefaler at bruge det indbyggede input felt til filer `type="file"` frem for en skræddersyet løsning.
+
+Årsagen til dette er:
+
+- at feltet får fokus, når man navigerer ved brug af tastaturet
+- at feltet fungerer ved brug af tastatur
+- at feltet fungerer ved brug af hjælpemidler
+- at feltet fungerer, selv når JavaScript er utilgængeligt.
+
+Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.
