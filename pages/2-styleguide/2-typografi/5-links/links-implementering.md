@@ -9,8 +9,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Links
 description:
-headings: Links_Kode
-anchorlinks: true
 tags:
 - "ekstern"
 - "ekstern link"
@@ -18,10 +16,9 @@ tags:
 - "footerlink"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html code="Links_Kode" %}
 
-[---- Eksternt link -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Eksternt link {#{% include create-id.html heading="Eksternt link" append="-kode" %}}
 
 {% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" %}
 
@@ -31,8 +28,7 @@ tags:
 
 Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}.
 
-[---- Sekundære links -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Sekundære links {#{% include create-id.html heading="Sekundære links" append="-kode" %}}
 
 {% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" %}
 
@@ -40,8 +36,7 @@ Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/inter
 
 {% include code/syntax.html component="secondary-links" copybutton=true %}
 
-[---- Billeder som links -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Billeder som links {#{% include create-id.html heading="Billeder som links" append="-kode" %}}
 
 Brug en {% include links/internal-link.html linktext="hjælpeklasse for display" %} til at vælge en anden værdi end `inline`.
 

@@ -74,23 +74,15 @@ Farver:
 
 Overskrifter:
 - h2: Sådan bruges overskrifter
-  id: retningslinjer
 - h2: Designværdier
-  id: designvaerdier
 - h2: Overskrift som link
-  id: overskrift-som-link
 - h2: Overskrift i søgeresultat
-  id: overskrift-i-soegeresultat
 - h2: Løsningstitel i header
-  id: loesnings-titel
 - h2: Subheading
-  id: subheading
 
 Overskrifter_Kode:
 - h2: HTML Struktur
-  id: html
 - h2: Subheading
-  id: subheading
 
 Felt_og_tabeloverskrifter:
 - h2: Feltoverskrifter
@@ -100,51 +92,31 @@ Felt_og_tabeloverskrifter:
 
 Tekst:
 - h2: Manchet
-  id: manchet
 - h2: Brødtekst
-  id: broedtekst
 - h2: Hjælpetekst og fejlmeddelelser
-  id: hjaelpetekst-og-fejlmeddelelser
 - h2: Billedtekst
-  id: billedtekst
 - h2: Stor tekst
-  id: stor-tekst
 - h2: Linjelængde
-  id: linjelaengde
 - h2: Linjeafstand
-  id: linjeafstand
 
 Tekst_Kode:
 - h2: Manchet
-  id: manchet
 - h2: Brødtekst
-  id: broedtekst
 - h2: Hjælpetekst og fejlmeddelelser
-  id: hjaelpetekst-og-fejlmeddelelser
 - h2: Billedtekst
-  id: billedtekst
 - h2: Stor tekst
-  id: stor-tekst
 
 Links:
 - h2: Designværdier
-  id: designvaerdier
 - h2: Sådan bruges links
-  id: retningslinjer
 - h2: Eksternt link
-  id: eksternt-link
 - h2: Sekundære links
-  id: sekundaere-links
 - h2: Billeder som links
-  id: billeder-som-links
 
 Links_Kode:
 - h2: Eksternt link
-  id: eksternt-link
 - h2: Sekundære links
-  id: sekundaere-links
 - h2: Billeder som links
-  id: billeder-som-links
 
 Hjoerner_streger_skygger:
 - h2: Hjørner
@@ -156,19 +128,13 @@ Hjoerner_streger_skygger:
 
 Ikoner:
 - h2: Sådan bruges ikoner
-  id: retningslinjer
 - h2: Ikonoversigt
-  id: ikonoversigt
 - h2: Referencer
-  id: ref
 
 Ikoner_Kode:
 - h2: Ikoner indsat som svg med ikonsamling (anbefalet)
-  id: ikoner-indsat-som-svg-med-ikonsamling
 - h2: Ikoner indsat med klasser
-  id: ikoner-indsat-med-klasser
 - h2: Tilgængelighed
-  id: tilgaengelighed
 
 Logoer:
 - h2: SVG-filer til download
@@ -214,33 +180,20 @@ Infografik:
 
 Grid_og_baseline_grid:
 - h2: 12 kolonner (horisontalt)
-  id: kolonner
 - h2: Breakpoints
-  id: breakpoints
 - h2: Eksempler på grid layout
-  id: eksempler
 - h2: Baseline grid (8px vertikalt)
-  id: baseline-grid
 
 Grid_og_baseline_grid_Kode:
 - h2: Generelt om designsystemets grid
-  id: generelt
 - h2: Installation
-  id: installation
 - h2: Indstillinger
-  id: indstillinger
 - h2: Responsive klasser
-  id: responsive-klasser
 - h2: Auto og Fill kolonner
-  id: auto-og-fill-kolonner
 - h2: Rækkefølge
-  id: raekkefoelge
 - h2: Ingen afstand mellem kolonner (ingen gutter)
-  id: ingen-afstand-mellem-kolonner-ingen-gutter
 - h2: Hjælpeklasser
-  id: hjaelpeklasser
 - h2: Sass variabler i designsystemet
-  id: sass-variabler-i-designsystemet
 
 # Komponenter, retningslinjer
 

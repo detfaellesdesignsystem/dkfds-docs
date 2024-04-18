@@ -9,7 +9,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Lister
 lead: Lister bruges til at organisere information, så det giver brugeren overblik.
-anchor: false
 description:
 tags:
 ---

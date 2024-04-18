@@ -11,8 +11,6 @@ title: Overskrifter
 lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren
   til at kunne overskue sidens logik og opbygning.
 description:
-headings: Overskrifter_Kode
-anchorlinks: true
 tags:
 - "h1"
 - "h2"
@@ -22,10 +20,9 @@ tags:
 - "h6"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html code="Overskrifter_Kode" %}
 
-[---- HTML Struktur -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="headings" copybutton=true %}
 
@@ -37,8 +34,7 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 {% include code/syntax.html component="heading" link=true copybutton=true %}
 
-[---- Subheading -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Subheading {#{% include create-id.html heading="Subheading" append="-kode" %}}
 
 {% include code/preview-box.html component="subheading" link=false title="Eksempel på subheading" %}
 

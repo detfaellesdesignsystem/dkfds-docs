@@ -9,8 +9,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Tekst
 description:
-headings: Tekst_Kode
-anchorlinks: true
 tags:
 - "stor tekst"
 - "manchet"
@@ -21,10 +19,9 @@ tags:
 - "fejlmeddelelser"
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html code="Tekst_Kode" %}
 
-[---- Manchet -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Manchet {#{% include create-id.html heading="Manchet" append="-kode" %}}
 
 {% include code/preview-box.html component="lead_paragraph" link=false title="Eksempel på manchet" %}
 
@@ -34,8 +31,7 @@ tags:
 
 {% include code/syntax.html component="lead_paragraph" copybutton=true %}
 
-[---- Brødtekst -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Brødtekst {#{% include create-id.html heading="Brødtekst" append="-kode" %}}
 
 {% include code/preview-box.html component="inlinetext" link=false title="Eksempel på brødtekst" %}
 
@@ -45,8 +41,7 @@ tags:
 
 {% include code/syntax.html component="inlinetext" copybutton=true %}
 
-[---- Hjælpetekst og fejlmeddelelser -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Hjælpetekst og fejlmeddelelser {#{% include create-id.html heading="Hjælpetekst og fejlmeddelelser" append="-kode" %}}
 
 {% include code/preview-box.html component="helptext" link=false title="Eksempel på hjælpetekst og fejlmeddelelse" %}
 
@@ -56,8 +51,7 @@ tags:
 
 {% include code/syntax.html component="helptext" copybutton=true %}
 
-[---- Billedtekst -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Billedtekst {#{% include create-id.html heading="Billedtekst" append="-kode" %}}
 
 {% include code/preview-box.html component="caption" link=false title="Eksempel på billedtekst" %}
 
@@ -67,8 +61,7 @@ tags:
 
 {% include code/syntax.html component="caption" copybutton=true %}
 
-[---- Stor tekst -------------------------------------]: # 
-<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
+## Stor tekst {#{% include create-id.html heading="Stor tekst" append="-kode" %}}
 
 {% include code/preview-box.html component="displaytext" link=false title="Eksempel på stor tekst" %}
 

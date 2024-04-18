@@ -11,7 +11,6 @@ lead: Lister bruges til at organisere information, så det giver brugeren overbl
 component: "lists"
 componentTitle: "Eksempel på lister"
 componentLink: false
-anchor: false
 description: Lister bruges til at organisere information, så det giver brugeren overblik.
 tags:
 ---

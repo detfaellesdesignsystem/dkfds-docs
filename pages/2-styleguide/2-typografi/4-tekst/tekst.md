@@ -8,8 +8,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Tekst
 description: Se hvordan tekster anvendes i designsystemet.
-headings: Tekst
-anchorlinks: true
 tags:
 - stor tekst
 - manchet
@@ -26,10 +24,9 @@ tags:
 - linjehøjde
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html guidelines="Tekst" %}
 
-[---- Manchet -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Manchet {#{% include create-id.html heading="Manchet" %}}
 
 Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
 
@@ -53,8 +50,7 @@ Brug kun manchet, når og hvor det er nødvendigt. Brug fx ikke manchet, hvis br
 
 Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det understøtter brugerens gennemførelse af løsningen, kan du godt indsætte brødtekst, lister, links, o.l. efter manchet.
 
-[---- Brødtekst -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Brødtekst {#{% include create-id.html heading="Brødtekst" %}}
 
 {% include code/preview-box.html component="inlinetext" link=false code="/design/typografi/tekst/implementering/#broedtekst" %}
 
@@ -80,8 +76,7 @@ Brug ikke understreget tekst, da det ligner links.
 
 Brug ikke kursiv tekst, da det nedsætter læsbarheden.
 
-[---- Hjælpetekst og fejlmeddelelser -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Hjælpetekst og fejlmeddelelser {#{% include create-id.html heading="Hjælpetekst og fejlmeddelelser" %}}
 
 Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlmeddelelser.
 
@@ -121,8 +116,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 - Se retningslinjer for {% include links/component-guideline-link.html linktext="fejlmeddelelser" %}
 - {% include links/external-link.html linktext="Ti gode råd vedrørende fejlmeddelelser i formularer" %}
 
-[---- Billedtekst -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Billedtekst {#{% include create-id.html heading="Billedtekst" %}}
 
 Forklarende eller beskrivende tekst tilhørende et billede.
 
@@ -140,8 +134,7 @@ Forklarende eller beskrivende tekst tilhørende et billede.
 
 Billedtekst vises under et billede, således at det synligt bemærkes at teksten og billedet hører sammen, samt at teksten ikke nødvendigvis er en del af den øvrige brødtekst.
 
-[---- Stor tekst -------------------------------------]: # 
-<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
+## Stor tekst {#{% include create-id.html heading="Stor tekst" %}}
 
 Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.
 
@@ -176,15 +169,13 @@ Overskrifter.
 
 Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikative formål.
 
-[---- Linjelængde -------------------------------------]: # 
-<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
+## Linjelængde {#{% include create-id.html heading="Linjelængde" %}}
 
 For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchet i koden til designsystemet.
 
 {% include code/preview-box.html component="line_length" link=false %}
 
-[---- Linjeafstand -------------------------------------]: # 
-<h2 id="{{ headings[6].id }}">{{ headings[6].h2 }}</h2>
+## Linjeafstand {#{% include create-id.html heading="Linjeafstand" %}}
 
 Linjeafstanden er baseret på teksttypernes linjehøjde.
 

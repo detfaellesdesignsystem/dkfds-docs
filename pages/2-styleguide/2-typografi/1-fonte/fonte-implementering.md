@@ -8,7 +8,6 @@ layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
 title: Fonte
-anchor: false
 description:
 tags:
 ---

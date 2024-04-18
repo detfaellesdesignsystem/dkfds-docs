@@ -9,8 +9,6 @@ subcategory: Styleguide
 title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab eller gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 description: Sådan bruger du ikoner med FDS.
-headings: Ikoner_Kode
-anchorlinks: true
 tags:
 - icon
 - svg
@@ -18,10 +16,9 @@ tags:
 - inline svg
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html code="Ikoner_Kode" %}
 
-[---- Ikoner indsat som svg med ikonsamling (anbefalet) -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Ikoner indsat som svg med ikonsamling (anbefalet) {#{% include create-id.html heading="Ikoner indsat som svg med ikonsamling (anbefalet)" append="-kode" %}}
 
 Ikonsamlingen gør, at du kan indsætte ikoner med `<svg>`. Før dette virker, er du nødt til at implementere ikonsamlingen, der skal indsættes på hver side i løsningen.
 
@@ -62,8 +59,7 @@ Tilføj klassen `inline-svg` på ikoner, som skal fremgå i en tekst. Ikonet vil
 
 Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> midt i denne sætning.
 
-[---- Ikoner indsat med klasser -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Ikoner indsat med klasser {#{% include create-id.html heading="Ikoner indsat med klasser" append="-kode" %}}
 
 Ikoner kan indsættes ved hjælp af klasser på følgende måde:
 
@@ -71,8 +67,7 @@ Ikoner kan indsættes ved hjælp af klasser på følgende måde:
 
 Denne metode har nogle begrænsninger, hvorfor vi anbefaler, at man benytter ikonsamlingen i stedet for.
 
-[---- Tilgængelighed -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Tilgængelighed {#{% include create-id.html heading="Tilgængelighed" append="-kode" %}}
 
 Ikoner bør tilføjes en `aria-label` tekst til elementet, der beskriver ikonet, så skærmlæsere kan læse ikonet op, såfremt ikonet har betydning for forståelsen.
 

@@ -11,8 +11,6 @@ title: Grid og baseline grid
 lead: Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.
 description: Det Fælles Designsystem baserer sit responsive layout på en opdeling
   af siden i 12 lige brede kolonner.
-headings: Grid_og_baseline_grid
-anchorlinks: true
 tags:
 - grid
 - grids
@@ -21,10 +19,9 @@ tags:
 - spalter
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html guidelines="Grid_og_baseline_grid" %}
 
-[---- 12 kolonner (horisontalt) -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## 12 kolonner (horisontalt) {#{% include create-id.html heading="12 kolonner (horisontalt)" %}}
 
 Det giver ro, overskuelighed og forudsigelighed, når man placerer sidens komponenter indenfor et grid. Det får alle løsningens sider til at fremtræde sammenhængende.
 
@@ -34,8 +31,7 @@ Du er velkommen til at anvende et andet responsivt grid med det antal kolonner, 
 
 De fleste selvbetjeningsløsninger kan med fordel nøjes med at venstrestille alt indhold og dermed kun anvende cirka halvdelen af en desktopsides bredde. I sådanne tilfælde bruges det horisontale grid primært til at definere enkelte komponenters bredde. 
 
-[---- Breakpoints -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Breakpoints {#{% include create-id.html heading="Breakpoints" %}}
 
 Det Fælles Designsystem er responsivt og tilpasser sig således automatisk det tilgængelige vinduesareal.
 
@@ -46,8 +42,7 @@ Sidens breakpoints er de værdier, hvorefter siden automatisk tilpasser sig area
 - Tablet: 768px
 - Mobil: 576px
 
-[---- Eksempler på grid layout -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Eksempler på grid layout {#{% include create-id.html heading="Eksempler på grid layout" %}}
 
 Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout varianter, der fx består af 3/9, 4/8, 4/4/4 osv. Alle sider bygger på den måde på det samme fundament, som bidrager til at skabe ro og overblik.
 
@@ -65,8 +60,7 @@ Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout va
     <figcaption>I ovenstående eksempel vises hvordan cards aligner på siden ved brug af grid.</figcaption>
 </figure>
 
-[---- Baseline grid (8px vertikalt) -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Baseline grid (8px vertikalt) {#{% include create-id.html heading="Baseline grid (8px vertikalt)" %}}
 
 ### 8 point
 I Det Fælles Designsystem går alle lodrette dimensioner, højder på komponenter og afstande i højderetningen op med en faktor 8. Dvs. 8px, 16px, 24px, 32px, 40px, 48px, 56px, etc.  Det er designsystemets baseline grid.

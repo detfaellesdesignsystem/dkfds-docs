@@ -109,7 +109,7 @@ layout: default
 
                 {%- if page.tabs -%}
                     {%- if page.tabs == "Retningslinjer, kode" -%}
-                        {%- assign pageContent = page.content | markdownify | split: site.excerpt_separator -%}
+                        {%- assign pageContent = page.content | split: site.excerpt_separator -%}
                         {{ pageContent[0] }}
                         <div id="guidelines-section">
                             {{ pageContent[1] }}

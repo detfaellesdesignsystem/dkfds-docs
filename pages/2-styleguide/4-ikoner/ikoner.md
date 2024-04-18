@@ -9,8 +9,6 @@ subcategory: Styleguide
 title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab og gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
 description: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab og gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
-headings: Ikoner
-anchorlinks: true
 preview: ikoner
 previewcomponent: "icons--svg"
 tags:
@@ -20,10 +18,9 @@ tags:
 - inline svg
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html guidelines="Ikoner" %}
 
-[---- Sådan bruges ikoner -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Sådan bruges ikoner {#{% include create-id.html heading="Sådan bruges ikoner" %}}
 
 ### Anvendes til  
 
@@ -47,8 +44,7 @@ Det Fælles Designsystem bruger ikoner fra Material Design. Hvis du har brug for
 
 Hvis du heller ikke finder det ønskede ikon der, kan du lave dit eget ikon. Nye ikoner skal passe ind visuelt og følge {% include links/external-link.html linktext="Material Designs vejledning til design af ikoner" %}. Det er vigtigt at brugerteste nye ikoner for at være sikker på, at brugerne forstår dem.
 
-[---- Ikonoversigt -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Ikonoversigt {#{% include create-id.html heading="Ikonoversigt" %}}
 
 Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at kommunikere det, der er angivet her, da det kan skabe forvirring hos brugerne, hvis det samme ikon tilknyttes forskellige betydninger.
 
@@ -280,8 +276,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
     </div>
 </div>
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Aurora Harley: Usability Testing of Icons (2016)" %}
