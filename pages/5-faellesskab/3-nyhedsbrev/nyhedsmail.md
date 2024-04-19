@@ -6,7 +6,6 @@ layout: styleguide
 category: Faellesskab_category
 subcategory: Fællesskab
 title: Nyhedsbrev
-anchor: false
 description: Tilmeld dig nyheder fra Det Fælles Designsystem
 tags:
 - nyhedsbrev

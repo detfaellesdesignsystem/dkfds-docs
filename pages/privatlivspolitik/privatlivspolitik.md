@@ -5,18 +5,13 @@ redirect_from:
 - /privatlivspolitik/
 layout: styleguide-nosidebar
 title: Privatlivspolitik og cookies
-anchor: true
-subnav:
-- text: Privatlivspolitik
-  href: '#privatlivspolitik'
-- text: Brug af cookies på Det Fælles Designsystem (FDS)
-  href: '#brug-af-cookies-paa-det-faelles-designsystem-fds'
 description: Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler.
 tags:
 ---
 
-{:#privatlivspolitik}
-## Privatlivspolitik
+{% include anchorlinks.html headings="Privatlivspolitik_og_cookies" %}
+
+## Privatlivspolitik {#{% include create-id.html heading="Privatlivspolitik" %}}
 
 På denne side kan du læse om vores behandling af dine personoplysninger og dine rettigheder.
 
@@ -80,8 +75,7 @@ Du har ret til at indgive en klage til Datatilsynet over FDS-behandling af dine 
 
 Datatilsynet er den uafhængige statslige myndighed, som fører tilsyn med, at reglerne i databeskyttelsesforordningen og databeskyttelsesloven overholdes. Datatilsynet har bl.a. til opgave at vejlede og rådgive myndighederne i behandlingen af personoplysninger. Datatilsynet behandler også klager over myndigheders behandling af personoplysninger samt gennemfører inspektioner hos myndigheder og private virksomheder.
 
-{:#brug-af-cookies-paa-det-faelles-designsystem-fds}
-## Brug af cookies på Det Fælles Designsystem (FDS)
+## Brug af cookies på Det Fælles Designsystem (FDS) {#{% include create-id.html heading="Brug af cookies på Det Fælles Designsystem (FDS)" %}}
 
 <h3>Hvad er en cookie?</h3>
 

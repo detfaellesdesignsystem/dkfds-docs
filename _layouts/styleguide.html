@@ -84,17 +84,6 @@ layout: default
                     component=page.previewcomponent %}
                 {% endif %}
 
-                {% if page.subnav and page.anchor == true %}
-                <nav class="anchorbox" aria-label="Ankerlinks">
-                    <h2 class="anchortitle">Indhold på siden</h2>
-                    <ul class="anchorlist">
-                        {% for subnavitem in page.subnav -%}
-                        <li><a href="{{subnavitem.href}}">{{subnavitem.text}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-                {% endif %}
-
                 {% if page.headings and page.anchorlinks == true %}
                 {%- assign headings = site.data.headings[page.headings] -%}
                 <nav class="anchorbox" aria-labelledby="anchorlinks">

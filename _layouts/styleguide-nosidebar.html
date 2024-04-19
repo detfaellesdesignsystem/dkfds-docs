@@ -20,17 +20,6 @@ layout: default
         <p class="font-lead">{{ page.lead }}</p>
         {% endif %}
 
-        {% if page.subnav and page.anchor == true %}
-        <nav class="anchorbox" aria-label="Ankerlinks">
-          <h2 class="anchortitle">Indhold på siden</h2>
-          <ul class="anchorlist">
-            {% for subnavitem in page.subnav -%}
-            <li><a href="{{subnavitem.href}}">{{subnavitem.text}}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-        {% endif %}
-        
         {{ content }}
       </section>
     </div>

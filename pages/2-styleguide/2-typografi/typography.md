@@ -7,7 +7,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Typografi
 lead: Selvbetjeningsløsninger har brug for tydelige og konsistente overskrifter, klare læsbare tekstafsnit og beskeder, samt feltoverskrifter, der giver overblik, links og lister, der understøtter brugerens gennemførsel af selvbetjeningsløsningen.
-anchor: false
 description: Selvbetjeningsløsninger har brug for tydelige og konsistente overskrifter, klare læsbare tekstafsnit og beskeder, samt feltoverskrifter, der giver overblik, links og lister, der understøtter brugerens gennemførsel af selvbetjeningsløsningen.
 tags:
 - IBM

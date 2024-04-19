@@ -11,7 +11,6 @@ title: Plugins
 lead: 'Plugins er komponenter som er lavet af en tredjepart. De er for store og specialiserede
   til, at de kan blive en del af designsystemet. Det er op til dig om du vil bruge
   plugins i din selvbetjeningsløsning.'
-anchor: false
 description: 'Plugins er komponenter som er lavet af en tredjepart. De er for store og specialiserede til, at de kan blive en del af designsystemet. Det er op til dig om du vil bruge plugins i din selvbetjeningsløsning.'
 tags: 
 ---

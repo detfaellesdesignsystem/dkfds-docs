@@ -7,7 +7,6 @@ layout: styleguide
 category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Browserunderstøttelse
-anchor: false
 description: Liste med browsers, som FDS understøtter
 tags: 
 ---

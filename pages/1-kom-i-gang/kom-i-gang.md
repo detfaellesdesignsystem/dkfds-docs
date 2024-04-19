@@ -4,7 +4,6 @@ layout: styleguide
 category: Kom_i_gang_category
 title: Kom i gang
 lead: Find alt, du skal bruge, for at komme godt i gang med at bruge Det Fælles Designsystem til din myndigheds selvbetjeningsløsninger.
-anchor: false
 description:
 tags:
 ---

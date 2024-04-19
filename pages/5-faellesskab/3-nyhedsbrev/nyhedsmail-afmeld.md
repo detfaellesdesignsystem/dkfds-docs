@@ -7,7 +7,6 @@ layout: styleguide
 category: Faellesskab_category
 subcategory: Fællesskab
 title: Afmeld nyhedsbrev
-anchor: false
 description: Afmeld nyhedsbrev fra Det Fælles Designsystem
 tags:
 ---

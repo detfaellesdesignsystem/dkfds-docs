@@ -5,7 +5,6 @@ category: Styleguide_category
 title: Styleguide
 lead: Designet er målrettet selvbetjeningsløsninger der skal på borger.dk og Virk.
   Det visuelle udtryk skal understøtte brugervenlighed i selvbetjeningsløsninger.
-anchor: false
 description:
 tags:
 ---

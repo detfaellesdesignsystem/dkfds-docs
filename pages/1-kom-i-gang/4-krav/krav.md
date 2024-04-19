@@ -8,7 +8,6 @@ layout: styleguide
 category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Krav
-anchor: false
 description: Læs kravet om anvendelse af Det Fælles Designsystem til selvbetjeningsløsninger.
 tags: 
 - krav

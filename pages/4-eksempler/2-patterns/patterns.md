@@ -7,7 +7,6 @@ category: Eksempler_category
 subcategory: Eksempler
 title: Patterns
 lead: Patterns er best practice designløsninger til specifikke brugerfokuserede opgaver.
-anchor: false
 description: Visning af forskellige situationer, der gentages på tværs af løsninger
 tags:
 ---

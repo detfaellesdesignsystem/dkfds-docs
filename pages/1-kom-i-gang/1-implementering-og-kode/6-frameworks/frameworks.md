@@ -11,7 +11,6 @@ layout: styleguide
 category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Frameworks
-anchor: false
 description: I denne sektion findes al dokumentation henvendt specifikt til udvikling.
 tags:
 - JavaScript

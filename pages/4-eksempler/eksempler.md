@@ -4,7 +4,6 @@ layout: styleguide
 category: Eksempler_category
 title: Eksempler
 lead: Eksemplerne viser, hvordan forskellige typer af selvbetjeningsløsninger kan sættes op i layout og flow.
-anchor: false
 description: Eksempler på løsninger, der gør brug af Det Fælles Designsystem
 tags:
 ---
