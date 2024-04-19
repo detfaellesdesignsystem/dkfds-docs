@@ -1,9 +1,3 @@
-define: &retningslinjer 'Retningslinjer'
-define: &responsivBreakpoint 'Responsivitet & Breakpoints'
-define: &responsiv 'Responsivitet'
-define: &implementering 'Kode'
-
-#Primary menu
 primary:
   - href: /kom-i-gang/
     categorynav: 'Kom_i_gang_category'
@@ -16,7 +10,6 @@ primary:
   - href: /faellesskab/
     categorynav: 'Faellesskab_category'
 
-#Left menu for kom-i-gang-category
 Kom_i_gang_category:
   - href: /kom-i-gang/implementering-kode/
     categorynav: 'Implementering_kode_category'
@@ -34,80 +27,30 @@ Implementering_kode_category:
   - href: /kom-i-gang/implementering-kode/print/
   - href: /kom-i-gang/implementering-kode/frameworks/
 
-#Left menu for styleguide-category
 Styleguide_category:
   - href: /design/farver/
   - href: /design/typografi/
     categorynav: 'Typografi_category'
   - href: /design/borders/
-  - href: /design/ikoner/guidelines/
-    tabs: 'Ikoner'
+  - href: /design/ikoner/
   - href: /design/logoer/
   - href: /design/datavisualisering-infografik/
     categorynav: 'Datavisualisering_category'
   - href: /design/layout/
-  - href: /design/grid/guidelines/
-    tabs: 'Grids'
+  - href: /design/grid/
 
 Typografi_category:
-  - href: /design/typografi/fonte/guidelines/
-    tabs: 'Fonte'
-  - href: /design/typografi/overskrifter/guidelines/
-    tabs: 'Overskrifter'
+  - href: /design/typografi/fonte/
+  - href: /design/typografi/overskrifter/
   - href: /design/typografi/felt-tabel-overskrifter/
-  - href: /design/typografi/tekst/guidelines/
-    tabs: 'Tekst'
-  - href: /design/typografi/links/guidelines/
-    tabs: 'Links'
-  - href: /design/typografi/lister/guidelines/
-    tabs: 'Lister'
-
-Fonte:
-  - href: /design/typografi/fonte/guidelines/
-    tabName: *retningslinjer
-  - href: /design/typografi/fonte/implementering/
-    tabName: *implementering
-
-Overskrifter:
-  - href: /design/typografi/overskrifter/guidelines/
-    tabName: *retningslinjer
-  - href: /design/typografi/overskrifter/implementering/
-    tabName: *implementering
-
-Tekst:
-  - href: /design/typografi/tekst/guidelines/
-    tabName: *retningslinjer
-  - href: /design/typografi/tekst/implementering/
-    tabName: *implementering
-
-Links:
-  - href: /design/typografi/links/guidelines/
-    tabName: *retningslinjer
-  - href: /design/typografi/links/implementering/
-    tabName: *implementering
-
-Lister:
-  - href: /design/typografi/lister/guidelines/
-    tabName: *retningslinjer
-  - href: /design/typografi/lister/implementering/
-    tabName: *implementering
-
-Ikoner:
-  - href: /design/ikoner/guidelines/
-    tabName: *retningslinjer
-  - href: /design/ikoner/implementering/
-    tabName: *implementering
+  - href: /design/typografi/tekst/
+  - href: /design/typografi/links/
+  - href: /design/typografi/lister/
 
 Datavisualisering_category:
   - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
   - href: /design/datavisualisering-infografik/datavisualisering/
   - href: /design/datavisualisering-infografik/infografik/  
-
-Grids:
-  - href: /design/grid/guidelines/
-    tabName: *retningslinjer
-  - href: /design/grid/implementering/
-    tabName: *implementering
 
 Komponenter_category:
   - href: /komponenter/accordions/
@@ -150,7 +93,6 @@ Komponenter_category:
   - href: /komponenter/fil-upload/
   - href: /komponenter/venstremenu/
 
-#Left menu for Eksempler-category
 Eksempler_category:
   - href: /eksempler/selvbetjeningsloesninger/
   - href: /eksempler/patterns/
@@ -163,7 +105,6 @@ Patterns_category:
   - href: /eksempler/patterns/hentet-data/
   - href: /eksempler/patterns/session-udloeber/
 
-#Left menu for Fællesskab-category
 Faellesskab_category:
 - href: /faellesskab/samarbejdsforum/
 - href: /faellesskab/governance/
@@ -172,7 +113,6 @@ Faellesskab_category:
 - href: /faellesskab/roadmap/
 - href: /faellesskab/releases/
 
-#Self-service examples and templates
 Eksempelloesninger_category:
   - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-1/
   - href: /pages/eksempler/formular-til-kontaktoplysninger/formular-2/
@@ -204,7 +144,3 @@ Eksempelloesninger_category:
   - href: /pages/eksempler/kvittering/kvittering-2/
   - href: /pages/eksempler/formular-med-fejl/formular-med-fejl-1/
   - href: /pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/
-
-
-
-

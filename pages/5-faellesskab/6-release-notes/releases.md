@@ -368,7 +368,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="177" afternumber=" på Github" %}
 - Opdateret ikonet `arrow-left`, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.
 - Opdateret ikonerne `sort-default` og `sort-table-none`, så de også kan bruges som klasse.
-- Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender {% include links/internal-link.html linktext="ikonsamlingen" %}.
+- Opdateret ikonerne `sort-ascending`, `sort-default`, `sort-descending`, `sort-table-ascending`, `sort-table-descending` og `sort-table-none`, så det er muligt at ændre farve på disse, når man anvender ikonsamlingen.
 
 {:#version-8-0-0 .mb-0}
 ### Version 8.0.0

@@ -1,12 +1,9 @@
 ---
-permalink: "/design/typografi/links/guidelines/"
+permalink: "/design/typografi/links/"
 parentlink: "/design/typografi/"
 redirect_from:
-- "/design/typografi/links/"
+- "/kode/typografi/links/"
 layout: styleguide
-component: "links"
-componentTitle: "Eksempel på links"
-componentLink: false
 category: Styleguide_category
 subcategory: Styleguide
 title: Links
@@ -16,9 +13,16 @@ tags:
 - "ekstern link"
 - "footer link"
 - "footerlink"
+tabs: "Retningslinjer, kode"
 ---
 
-{% include anchorlinks.html guidelines="Links" %}
+{% include tabs.html guidelines=true code=true %}
+
+{% include code/preview-box.html component="links" title="Eksempel på links" classes="intro-example" %}
+
+{% include anchorlinks.html guidelines="Links" code="Links_Kode" %}
+
+<!--split-->
 
 ## Designværdier {#{% include create-id.html heading="Designværdier" %}}
 
@@ -64,13 +68,13 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 ## Eksternt link {#{% include create-id.html heading="Eksternt link" %}}
 
-{% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/design/typografi/links/implementering/#eksternt-link" %}
+{% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/design/typografi/links/#eksternt-link" %}
 
 ## Sekundære links {#{% include create-id.html heading="Sekundære links" %}}
 
 <p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
 
-{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" link=false code="/design/typografi/links/implementering/#sekundaere-links" %}
+{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" link=false code="/design/typografi/links/#sekundaere-links" %}
 
 ### Designværdier
 
@@ -98,3 +102,36 @@ Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end s
 Links har som standard stylingen `display: inline`. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en hjælpeklasse, fx `d-inline-block` eller `d-block`, ellers vises der ikke nogen fokusramme omkring billedet, når linket har fokus. Se alle muligheder under {% include links/internal-link.html linktext="hjælpeklasser for display" %}.
 
 Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begrænset. Du kan forhindre dette ved også at tilføje klassen `full-width-image` til linket udover hjælpeklassen.
+
+<!--split-->
+
+## Eksternt link {#{% include create-id.html heading="Eksternt link" append="-kode" %}}
+
+{% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="external-link" copybutton=true %}
+
+Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}.
+
+## Sekundære links {#{% include create-id.html heading="Sekundære links" append="-kode" %}}
+
+{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="secondary-links" copybutton=true %}
+
+## Billeder som links {#{% include create-id.html heading="Billeder som links" append="-kode" %}}
+
+Brug en {% include links/internal-link.html linktext="hjælpeklasse for display" %} til at vælge en anden værdi end `inline`.
+
+Tilføj yderligere klassen `full-width-image`, hvis billedets bredde ikke skal begrænses.
+
+Nedenstående kode viser et eksempel på, hvordan klasserne kan anvendes:
+{% highlight html %}
+<a href="#" class="d-block full-width-image">
+  <img src="..." alt="...">
+</a>
+{% endhighlight %}

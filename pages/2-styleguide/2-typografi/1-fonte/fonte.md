@@ -1,8 +1,8 @@
 ---
-permalink: "/design/typografi/fonte/guidelines/"
+permalink: "/design/typografi/fonte/"
 parentlink: "/design/typografi/"
 redirect_from:
-- "/design/typografi/fonte/"
+- "/kode/typografi/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
@@ -19,9 +19,14 @@ tags:
 - typography
 - font
 - fonte
+tabs: "Retningslinjer, kode"
 ---
 
-Hvis din selvbetjeningsløsning skal integreres på borger.dk og Virk, skal du benytte fonten “IBM Plex Sans”. Fonten er valgt, fordi alle browsere præsenterer den flot og den  er nem at arbejde med. Samtidig bygger den visuelt bro mellem de fonte, der for tiden bliver anvendt på borger.dk og Virk.
+{% include tabs.html guidelines=true code=true %}
+
+<!--split-->
+
+Hvis din selvbetjeningsløsning skal integreres på borger.dk og Virk, skal du benytte fonten “IBM Plex Sans”. Fonten er valgt, fordi alle browsere præsenterer den flot og den er nem at arbejde med. Samtidig bygger den visuelt bro mellem de fonte, der for tiden bliver anvendt på borger.dk og Virk.
 
 ## IBM Plex Sans
 
@@ -34,3 +39,15 @@ IBM Plex Sans er valgt som font, da det er en æstetisk og læsbar open source f
 En fallback font, er den font som vises, når browseren ikke kan indlæse den angivne font.
 
 Det Fælles Designsystem gør brug af "system", hvilket vil sige at fallback fonten er op til styresystemet på den enhed der benyttes. Dette gør ydeevnen (performance) bedre, da browseren ikke skal hente andre fonte, men i stedet bruger en den har i forvejen.
+
+<!--split-->
+
+Som beskrevet under {% include links/internal-link.html linktext="retningslinjer for fonte" %} gør vi brug af fonten IBM Plex Sans i Det Fælles Designsystem. Da det er en ekstern font, skal den loades i hver løsning. Fonten leveres samlet med DKFDS pakken.
+
+## Preload
+
+Man kan vælge at gøre brug af preload, således at fonten loades tidligere og giver derfor en bedre oplevelse af løsningen.
+
+Nedenstående kode opdateres, så stien matcher løsningen, og koden indsættes i `<head>`-sektionen.
+
+{% include code/syntax.html component="font-preload" copybutton=true %}

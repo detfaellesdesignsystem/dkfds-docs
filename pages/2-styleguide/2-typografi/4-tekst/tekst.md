@@ -1,8 +1,8 @@
 ---
-permalink: "/design/typografi/tekst/guidelines/"
+permalink: "/design/typografi/tekst/"
 parentlink: "/design/typografi/"
 redirect_from:
-- "/design/typografi/tekst/"
+- "/kode/typografi/tekst/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
@@ -22,15 +22,20 @@ tags:
 - Linjeafstand
 - afstand
 - linjehøjde
+tabs: "Retningslinjer, kode"
 ---
 
-{% include anchorlinks.html guidelines="Tekst" %}
+{% include tabs.html guidelines=true code=true %}
+
+{% include anchorlinks.html guidelines="Tekst" code="Tekst_Kode" %}
+
+<!--split-->
 
 ## Manchet {#{% include create-id.html heading="Manchet" %}}
 
 Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
 
-{% include code/preview-box.html component="lead_paragraph" link=false code="/design/typografi/tekst/implementering/#manchet" %}
+{% include code/preview-box.html component="lead_paragraph" link=false code="/design/typografi/tekst/#manchet" %}
 
 ### Designværdier
 
@@ -52,7 +57,7 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
 
 ## Brødtekst {#{% include create-id.html heading="Brødtekst" %}}
 
-{% include code/preview-box.html component="inlinetext" link=false code="/design/typografi/tekst/implementering/#broedtekst" %}
+{% include code/preview-box.html component="inlinetext" link=false code="/design/typografi/tekst/#broedtekst" %}
 
 ### Designværdier
 
@@ -80,7 +85,7 @@ Brug ikke kursiv tekst, da det nedsætter læsbarheden.
 
 Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlmeddelelser.
 
-{% include code/preview-box.html component="helptext" link=false code="/design/typografi/tekst/implementering/#hjaelpetekst-og-fejlmeddelelser" %}
+{% include code/preview-box.html component="helptext" link=false code="/design/typografi/tekst/#hjaelpetekst-og-fejlmeddelelser" %}
 
 ### Designværdier
 
@@ -120,7 +125,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 
 Forklarende eller beskrivende tekst tilhørende et billede.
 
-{% include code/preview-box.html component="caption" link=false code="/design/typografi/tekst/implementering/#billedtekst" %}
+{% include code/preview-box.html component="caption" link=false code="/design/typografi/tekst/#billedtekst" %}
 
 ### Designværdier
 
@@ -138,7 +143,7 @@ Billedtekst vises under et billede, således at det synligt bemærkes at teksten
 
 Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.
 
-{% include code/preview-box.html component="displaytext" link=false code="/design/typografi/tekst/implementering/#stor-tekst" %}
+{% include code/preview-box.html component="displaytext" link=false code="/design/typografi/tekst/#stor-tekst" %}
 
 ### Designværdier
 
@@ -180,3 +185,55 @@ For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængd
 Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include code/preview-box.html component="line_spacing" link=false %}
+
+<!--split-->
+
+## Manchet {#{% include create-id.html heading="Manchet" append="-kode" %}}
+
+{% include code/preview-box.html component="lead_paragraph" link=false title="Eksempel på manchet" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjerne for manchet" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="lead_paragraph" copybutton=true %}
+
+## Brødtekst {#{% include create-id.html heading="Brødtekst" append="-kode" %}}
+
+{% include code/preview-box.html component="inlinetext" link=false title="Eksempel på brødtekst" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjerne for brødtekst" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="inlinetext" copybutton=true %}
+
+## Hjælpetekst og fejlmeddelelser {#{% include create-id.html heading="Hjælpetekst og fejlmeddelelser" append="-kode" %}}
+
+{% include code/preview-box.html component="helptext" link=false title="Eksempel på hjælpetekst og fejlmeddelelse" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjer for hjælpetekst og fejlmeddelelser" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="helptext" copybutton=true %}
+
+## Billedtekst {#{% include create-id.html heading="Billedtekst" append="-kode" %}}
+
+{% include code/preview-box.html component="caption" link=false title="Eksempel på billedtekst" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjer for billedtekst" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="caption" copybutton=true %}
+
+## Stor tekst {#{% include create-id.html heading="Stor tekst" append="-kode" %}}
+
+{% include code/preview-box.html component="displaytext" link=false title="Eksempel på stor tekst" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjerne for stor tekst" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="displaytext" copybutton=true %}

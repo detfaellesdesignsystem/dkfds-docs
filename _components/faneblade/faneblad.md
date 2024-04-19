@@ -56,14 +56,14 @@ Fanebladskomponenten kan anvendes til opdeling af en side i flere underafsnit. H
 Ved denne brug bør sidens indhold, fra fanebladskomponenten og ned være knyttet til det åbne faneblad. I dette tilfælde må der kun anvendes én fanebladskomponent af denne type på hver side.
 Vær opmærksom på, af faneblade ikke skal anvendes i stedet for en undermenu. Indhold i faneblade skal stadig være relateret til hinanden.
 
-{% include code/preview-image.html component="tabs-urls" title="Eksempel på faneblade med URL-skifte" code="/komponenter/faneblade/implementering/#faneblad-URL-skift" %}
+{% include code/preview-image.html component="tabs-urls" title="Eksempel på faneblade med URL-skifte" code="/komponenter/faneblade/#faneblad-URL-skift" %}
 
 ### Faneblade med ikoner
 
 Faneblade kan vises med ikoner hvis disse understøtter de angivne sektioner visuelt. Vi anbefaler at være forsigtig med denne løsning, da et ikon der læses forkert eller misforståes kan forvirre brugeren mere end det hjælper. Så benyt kun ikoner hvis de er klare i budskabet og hjælper med at kommunikere det underliggende indhold.
 Ikoner skal altid understøttes af en label med fanebladets navn.
 
-{% include code/preview-box.html component="tabs-buttons-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/implementering/#faneblad-med-ikoner"%} 
+{% include code/preview-box.html component="tabs-buttons-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/#faneblad-med-ikoner"%} 
 
 {% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
 

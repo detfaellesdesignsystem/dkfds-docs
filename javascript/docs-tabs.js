@@ -6,7 +6,7 @@ function showGuidelines() {
     guidelineTab?.setAttribute('aria-current', 'page');
     codeTab?.removeAttribute('aria-current');
     let introExample = document.querySelector('.intro-example');
-    introExample.classList.remove('d-none');
+    introExample?.classList.remove('d-none');
     let guidelineAnchorlinks = document.querySelectorAll('.anchorlink-guidelines');
     let codeAnchorlinks = document.querySelectorAll('.anchorlink-code');
     for (let i = 0; i < guidelineAnchorlinks.length; i++) {
@@ -32,7 +32,7 @@ function showCode() {
     guidelineTab?.removeAttribute('aria-current');
     codeTab?.setAttribute('aria-current', 'page');
     let introExample = document.querySelector('.intro-example');
-    introExample.classList.add('d-none');
+    introExample?.classList.add('d-none');
     let guidelineAnchorlinks = document.querySelectorAll('.anchorlink-guidelines');
     let codeAnchorlinks = document.querySelectorAll('.anchorlink-code');
     for (let i = 0; i < guidelineAnchorlinks.length; i++) {
