@@ -19,12 +19,12 @@ tags:
 - Vanilla
 ---
 
-## JavaScript
+## JavaScript {#{% include create-id.html heading="JavaScript" %}}
 
 Det Fælles Designsystem anvender Vanilla JavaScript (også kendt som VanillaJS eller Plain JS) uden JavaScript-biblioteker, som fx jQuery, for at undgå afhængighed til tredjepartsleverandører og deres eventuelle tekniske gæld.
 
 
-## Kodefrihed under ansvar
+## Kodefrihed under ansvar {#{% include create-id.html heading="Kodefrihed under ansvar" %}}
 
 Vi har bestræbt os på at lave et designsystem, der er let at anvende og kode med, men vi vil ikke tvinge nogen væk fra deres favorit (JavaScript) framework. Så længe det visuelle design (CSS) er som beskrevet i designsystemet, er du velkommen til at udnytte de teknologier, du finder bedst, men giv vores kode et kig, den er lige til at gå til.
 

@@ -39,15 +39,12 @@ category: Eksempler_category
 subcategory: Eksempler
 title: Selvbetjeningsløsninger
 description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem
-headings: Selvbetjeningsloesninger
-anchorlinks: true
 tags:
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Selvbetjeningsloesninger" %}
 
-[---- Formular til kontaktoplysninger -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Formular til kontaktoplysninger {#{% include create-id.html heading="Formular til kontaktoplysninger" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -64,8 +61,7 @@ tags:
   <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formularkontaktoplysninger">Demo af kontaktoplysninger</a>
 </p>
 
-[---- Trinformular til registrering -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Trinformular til registrering {#{% include create-id.html heading="Trinformular til registrering" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -94,8 +90,7 @@ tags:
   <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularregistrering">Demo af registrering</a>
 </p>
 
-[---- Trinformular til ansøgning -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Trinformular til ansøgning {#{% include create-id.html heading="Trinformular til ansøgning" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -121,8 +116,7 @@ tags:
   <a class="button button-secondary" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformularansoegning">Demo af ansøgning</a>
 </p>
 
-[---- Trinformular til ansøgning -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Sagsoversigt {#{% include create-id.html heading="Sagsoversigt" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">

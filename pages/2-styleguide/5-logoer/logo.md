@@ -8,17 +8,14 @@ lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Vi
   kommunikeres bl.a. via portalens logo i headeren.
 description: Din selvbetjeningsløsning er del af en større helhed på borger.dk og
   Virk, dette kommunikeres bl.a. via portalens logo i headeren.
-headings: Logoer
-anchorlinks: true
 tags:
 - billede
 - header
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Logoer" %}
 
-[---- SVG-filer til download -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## SVG-filer til download {#{% include create-id.html heading="SVG-filer til download" %}}
 
 <img src="{{ site.baseurl }}/assets/img/logo-borgerdk.svg" height="48" alt="Logo til borger.dk selvbetjeningsløsninger" />
 
@@ -32,8 +29,7 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
 
 {% include links/internal-link.html linktext="Download Virks logo (svg-fil)" %}
 
-[---- Retningslinjer for portallogo i headeren -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Retningslinjer for portallogo i headeren {#{% include create-id.html heading="Retningslinjer for portallogo i headeren" %}}
 
 ### Begrænsninger
 
@@ -62,8 +58,7 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
     <li>{% include links/external-link.html linktext="Homepage Links Remain a Necessity" %}</li>
 </ul>
 
-[---- Retningslinjer for myndighedslogo i footeren -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Retningslinjer for myndighedslogo i footeren {#{% include create-id.html heading="Retningslinjer for myndighedslogo i footeren" %}}
 
 Gør kun brug af muligheden for at placere et myndighedslogo i footeren, hvis det understøtter brugerens gennemførelse af selvbetjeningsløsningen
 

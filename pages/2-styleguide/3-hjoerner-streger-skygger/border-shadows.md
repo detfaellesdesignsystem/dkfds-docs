@@ -7,8 +7,6 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Hjørner, streger, skygger
 description: Hjørner, streger og skygger hjælper med at danne ramme om indhold på siden.
-headings: Hjoerner_streger_skygger
-anchorlinks: true
 tags:
 - hjørner
 - streger
@@ -19,10 +17,9 @@ tags:
 - rammer
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Hjoerner_streger_skygger" %}
 
-[---- Hjørner -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Hjørner {#{% include create-id.html heading="Hjørner" %}}
 
 {% include code/preview-box.html component="border-radius" link=false %}
 
@@ -46,8 +43,7 @@ tags:
   </tbody>
 </table>
 
-[---- Streger -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Streger {#{% include create-id.html heading="Streger" %}}
 
 {% include code/preview-box.html component="borders" link=false %}
 
@@ -125,8 +121,7 @@ tags:
   </tbody>
 </table>
 
-[---- Skygger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Skygger {#{% include create-id.html heading="Skygger" %}}
 
 {% include code/preview-box.html component="shadows" link=false %}
 

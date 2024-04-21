@@ -10,15 +10,12 @@ category: Faellesskab_category
 subcategory: Fællesskab
 title: Governance
 description: Det Fælles Designsystem (FDS) er bygget op omkring en agil governancemodel, som løbende bliver evalueret og tilpasset efter behov og ønsker fra de samarbejdende myndigheder og styregruppen for FDS.
-headings: Governance
-anchorlinks: true
 tags:
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Governance" %}
 
-[---- Governancemodellen -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Governancemodellen {#{% include create-id.html heading="Governancemodellen" %}}
 
 Governancemodellen skal sikre, at styringen af samarbejdet og arbejdsgangene omkring designsystemet fungerer optimalt. Det skal blandt andet ske ved at:
 
@@ -39,8 +36,7 @@ Samarbejdet omkring FDS bliver varetaget af tre organer og følger strukturen i 
     </figcaption>
 </figure>
 
-[---- Styregruppe -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Styregruppe {#{% include create-id.html heading="Styregruppe" %}}
 
 {:.font-lead}
 Styregruppen er sammensat af ledelsesrepræsentanter fra Digitaliseringsstyrelsen og Erhvervsstyrelsen. Styregruppen bliver betjent af FDS-teamet.
@@ -55,8 +51,7 @@ Endelig behandler styregruppen alle indstillinger fra samarbejdsforummet og FDS-
 
 Styregruppen afholder efter behov møder, som bliver indkaldt og afholdt af FDS-teamet.
 
-[---- Samarbejdsforum -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Samarbejdsforum {#{% include create-id.html heading="Samarbejdsforum" %}}
 
 {:.font-lead}
 Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsystemet. Myndigheder, som overvejer at anvende designsystemet, kan også deltage. I forummet sparrer vi om FDS og udviklingen fremadrettet.
@@ -70,8 +65,7 @@ I samarbejdsforummet har myndigheder og deres leverandører mulighed for at give
 
 Samarbejdsforummet har ikke selvstændig beslutningskompetence og skal følge strategien for FDS. Forummet mødes som udgangspunkt 3-4 gange om året. Møderne faciliteres af FDS-teamet.
 
-[---- FDS-teamet -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## FDS-teamet {#{% include create-id.html heading="FDS-teamet" %}}
 
 FDS-teamet varetager to primære funktioner: 
 

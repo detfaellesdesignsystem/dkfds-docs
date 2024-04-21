@@ -7,15 +7,10 @@ category: Faellesskab_category
 subcategory: Fællesskab
 title: Kontakt og support
 description: Kontakt os via GitHub eller på e-mail.
-headings: Kontakt_og_support
-anchorlinks: false
 tags:
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
-
-[---- GitHub -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## GitHub {#{% include create-id.html heading="GitHub" %}}
 
 GitHub er verdens største frontend-udvikler fællesskab, og et værktøj til versionsstyring, deling af kode og facilitering af open source samarbejde.
 
@@ -30,8 +25,7 @@ Brug GitHub til:
 
 {% include links/external-link.html linktext='Opret et issue på GitHub' %}
 
-[---- E-mail -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## E-mail {#{% include create-id.html heading="E-mail" %}}
 
 Du kan også kontakte FDS-teamet via e-mail. Vi vil bestræbe os på at svare eller videresende dig til nogen fra borger.dk eller Virk som kan svare dig.
 

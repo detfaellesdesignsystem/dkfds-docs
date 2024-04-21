@@ -11,17 +11,14 @@ subcategory: Kom i gang
 title: Hent kodepakken
 lead: Kodepakken kan installeres ved brug af NPM-pakken eller via GitHub som zip-fil.
 description: Sådan kommer du i gang med FDS i dit projekt. Værd at læse for alle udviklere.
-headings: Hent_kodepakken
-anchorlinks: true
 tags: 
 - installation
 - implementering
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Hent_kodepakken" %}
 
-[---- Hent via NPM -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Hent via NPM {#{% include create-id.html heading="Hent via NPM" %}}
 
 Vi anbefaler som udgangspunkt, at kodepakken hentes via NPM, hvor kodepakken går under navnet {% include links/external-link.html linktext="DKFDS" %}. 
 
@@ -33,8 +30,7 @@ npm install --save dkfds
 
 Modulet 'dkfds' er nu installeret i 'node_modules' mappen.
 
-[---- Hent via GitHub (zip) -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Hent via GitHub (zip) {#{% include create-id.html heading="Hent via GitHub (zip)" %}}
 
 Hent nyeste version som {% include links/external-link.html linktext="zipfil på GitHub" %}, og pak indholdet ud i dit projekt.
 
@@ -96,8 +92,7 @@ let $header = document.getElementsByTagName('header')[0];
 DKFDS.init({'scope': $header});
 {% endhighlight %}
 
-[---- Temahåndtering -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Temahåndtering {#{% include create-id.html heading="Temahåndtering" %}}
 
 Designsystemet er udviklet med 2 forskellige temaer og et standardtema. Standardtemaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.
 
@@ -120,8 +115,7 @@ Nedenstående eksempel viser, hvordan en scss-fil i mappen `src/stylesheets` sku
 @use 'dkfds-base';
 {% endhighlight %}
 
-[---- Vejledning til integration på borger.dk og Virk -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Vejledning til integration på borger.dk og Virk {#{% include create-id.html heading="Vejledning til integration på borger.dk og Virk" %}}
 
 Det Fælles Designsystem er som udgangspunkt udviklet til selvbetjeningsløsninger på borger.dk og Virk. For at integrere din løsning på borger.dk eller Virk, kan du her få vejledning til, hvordan du integrerer din løsning på platformene. Hvis du anvender designsystemet til andre løsninger, kan du se bort fra dette.
 

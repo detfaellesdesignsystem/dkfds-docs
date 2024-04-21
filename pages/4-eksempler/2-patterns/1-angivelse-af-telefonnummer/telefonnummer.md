@@ -7,15 +7,12 @@ subcategory: Eksempler
 title: Angivelse af telefonnummer
 lead: Måden at håndtere angivelsen af telefonnummer på bør afhænge af selvbetjeningsløsningens målgruppe.
 description: Visning af felt for angivelse af telefonnummer
-headings: Angivelse_af_telefonnummer
-anchorlinks: true
 tags:
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Angivelse_af_telefonnummer" %}
 
-[---- Vejledning -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Accepter altid internationale telefonnumre, når dette er teknisk muligt.
 
@@ -27,8 +24,7 @@ Hvis der kun kan angives et mobilnummer, fx hvis der skal sendes sms-beskeder ti
 
 Anvend autocomplete-attributten i inputfeltet, hvis det er brugerens eget telefonnummer, der skal indtastes ({% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.3.5: Identify Input Purpose (Level AA)" %}).
 
-[---- Når målgruppen hovedsageligt har danske telefonnumre -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Når målgruppen hovedsageligt har danske telefonnumre {#{% include create-id.html heading="Når målgruppen hovedsageligt har danske telefonnumre" %}}
 
 {% include code/preview-box-details.html component="telefonnummer" title="Eksempel på angivelse af telefonnummer" link=false detaillabel="for eksempel på angivelse af telefonnummer" %}
 
@@ -38,8 +34,7 @@ Hvis et udenlandsk nummer er skrevet uden landekode, eller hvis formatet ikke sv
 
 {% include code/preview-box-details.html component="telefonnummer-fejl-uden-landekode" title="Eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode" link=false detaillabel="for eksempel på angivelse af telefonnummer med udenlandsk nummer uden landekode" %}
 
-[---- Når målgruppen hovedsageligt har udenlandske telefonnumre -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Når målgruppen hovedsageligt har udenlandske telefonnumre {#{% include create-id.html heading="Når målgruppen hovedsageligt har udenlandske telefonnumre" %}}
 
 {% include code/preview-box-details.html component="telefonnummer-udenlandsk" title="Eksempel på angivelse af udenlandsk telefonnummer" link=false detaillabel="for eksempel på angivelse af udenlandsk telefonnummer" %}
 
@@ -49,8 +44,7 @@ Hvis et udenlandsk nummer skrives uden landekode, eller hvis formatet ikke svare
 
 {% include code/preview-box-details.html component="telefonnummer-udenlandsk-ugyldigt" title="Eksempel på angivelse af ugyldigt telefonnummer" link=false detaillabel="for eksempel på angivelse af gyldigt telefonnummer" %}
 
-[---- Hvis der kun kan angives danske telefonnumre (ikke anbefalet) -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Hvis der kun kan angives danske telefonnumre (ikke anbefalet) {#{% include create-id.html heading="Hvis der kun kan angives danske telefonnumre (ikke anbefalet)" %}}
 
 Accepter altid udenlandske telefonnumre, når det er muligt. Hvis det teknisk ikke kan lade sig gøre at acceptere udenlandske numre, vis da en fejlmeddelelse, når det indtastede nummer ikke har et almindeligt dansk format såsom 12345678, 12 123 123, +45 12345678 eller 0045 12 34 56 78.
 

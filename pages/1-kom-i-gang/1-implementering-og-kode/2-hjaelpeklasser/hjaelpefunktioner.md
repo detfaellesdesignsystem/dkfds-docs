@@ -11,18 +11,15 @@ category: Kom_i_gang_category
 subcategory: Kom i gang
 title: Hjælpeklasser
 description: Du kan bruge hjælpeklasser til at skræddersy dit indhold i forhold til placering, afstande, farver, bredde og visning
-headings: Hjaelpeklasser
-anchorlinks: true
 tags:
 - text-align
 - center
 - text-align:center
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Hjaelpeklasser" %}
 
-[---- Responsive hjælpeklasser -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Responsive hjælpeklasser {#{% include create-id.html heading="Responsive hjælpeklasser" %}}
 
 Alle de klasser, som bliver genereret af hjælpefunktionerne, findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints, som er defineret i scss-variablen `$grid-breakpoints`:
 
@@ -36,8 +33,7 @@ $grid-breakpoints: (
 ) !default;
 {% endhighlight %}
 
-[---- Text align -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Text align {#{% include create-id.html heading="Text align" %}}
 
 Der er opsat en hjælpefunktion, som automatisk genererer klasser til `text-align` baseret på de definerede breakpoints i $grid-breakpoints.
 
@@ -55,8 +51,7 @@ Format: `align-text-{retning}` og `align-text-{breakpoint}-{retning}`
 <h1 class="align-text-md-left">Tekst til højre på skærme over 768px</h1>;
 {% endhighlight %}
 
-[---- Margin og padding -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Margin og padding {#{% include create-id.html heading="Margin og padding" %}}
 
 Der er opsat hjælpefunktioner, som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af {% include links/external-link.html linktext="Bootstraps Spacing Utilities" %}.
 
@@ -109,8 +104,7 @@ Du kan selv tilføje flere muligheder ved at tilføje dem til `$spacers` variabl
 - <span class="bold">lg</span> - for klasser som sætter `margin` eller `padding` for browserstørrelser over 992px;
 - <span class="bold">xl</span> - for klasser som sætter `margin` eller `padding` for browserstørrelser over 1200px;
 
-[---- Display -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Display {#{% include create-id.html heading="Display" %}}
 
 Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af {% include links/external-link.html linktext="Bootstraps Display Utility" %}.
 
@@ -247,8 +241,7 @@ Format: `d-{display}` og `d-{breakpoint}-{display}`
   </tbody>
 </table>
 
-[---- Flexbox -------------------------------------]: # 
-<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
+## Flexbox {#{% include create-id.html heading="Flexbox" %}}
 
 Der er opsat en hjælpefunktion, som automatisk genererer klasser til flexbox baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af {% include links/external-link.html linktext="Bootstraps Flex Utility" %}. Bemærk at disse hjælpeklasser kun kan anvendes, når `display` er sat til `flexbox`. Afsnittene om vandret og lodret justering tager udgangspunkt i at retningen er sat til `row`.
 
@@ -353,8 +346,7 @@ Format: `align-content-{justering}` og `align-content-{breakpoint}-{justering}`
 <div class="d-flex flex-wrap align-content-md-end"> Flex-containerens elementer står samlet nederst på skærme over 768px </div>
 {% endhighlight %}
 
-[---- Bredde i procent -------------------------------------]: # 
-<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
+## Bredde i procent {#{% include create-id.html heading="Bredde i procent" %}}
 
 Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i `$grid-breakpoints`.
 
@@ -380,8 +372,7 @@ Format: `w-percent-{bredde}` og `w-percent-{breakpoint}-{bredde}`
 <h1 class="w-percent-md-30"> Dette element har en bredde på 30% på skærme over 768px </h1>
 {% endhighlight %}
 
-[---- Baggrundsfarver -------------------------------------]: # 
-<h2 id="{{ headings[6].id }}">{{ headings[6].h2 }}</h2>
+## Baggrundsfarver {#{% include create-id.html heading="Baggrundsfarver" %}}
 
 Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer baggrundsfarver.
 
@@ -401,8 +392,7 @@ Format: `bg-{baggrund}`
 <div class="bg-modal"> Dette element har en sort baggrund med opacity på 0.4 </div>
 {% endhighlight %}
 
-[---- Tilgængelighed -------------------------------------]: # 
-<h2 id="{{ headings[7].id }}">{{ headings[7].h2 }}</h2>
+## Tilgængelighed {#{% include create-id.html heading="Tilgængelighed" %}}
 
 Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.
 

@@ -38,6 +38,8 @@ layout: default
                 {% comment %} There's an icon with id "print" so the print page needs another id {% endcomment %}
                 {% if page.title == "Print" %}
                 <h1 id="printpage">{{ page.title }}</h1>
+                {% elsif page.title == "Anchorlinks" %}
+                <h1 id="anchorlinks-page">{{ page.title }}</h1>
                 {% else %}
                 <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
                 {% endif %}
@@ -83,18 +85,6 @@ layout: default
                 {% include code/preview.html
                     component=page.previewcomponent %}
                 {% endif %}
-
-                {% if page.headings and page.anchorlinks == true %}
-                {%- assign headings = site.data.headings[page.headings] -%}
-                <nav class="anchorbox" aria-labelledby="anchorlinks">
-                    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
-                    <ul class="anchorlist">
-                        {% for heading in headings -%}
-                        <li><a href="#{{heading.id}}">{{heading.h2}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-                {% endif -%}
 
                 {%- if page.tabs -%}
                     {%- if page.tabs == "Retningslinjer, kode" -%}

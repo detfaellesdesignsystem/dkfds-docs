@@ -15,11 +15,11 @@ tags:
 - borger.dk
 ---
 
-## Kravet om anvendelse af Det Fælles Designsystem
+## Kravet om anvendelse af Det Fælles Designsystem {#{% include create-id.html heading="Kravet om anvendelse af Det Fælles Designsystem" %}}
 
 Kravet om anvendelse af Det Fælles Designsystem gælder for obligatorisk digitale (borgerrettede) selvbetjeningsløsninger, der skal på borger.dk, og alle virksomhedsrettede selvbetjeningsløsninger, der skal på Virk. Ved at gennemgå {% include links/internal-link.html linktext="tjeklisten" %} kan du sikre dig, at du følger designsystemet.
 
-## Fælles krav til gode brugeroplevelser
+## Fælles krav til gode brugeroplevelser {#{% include create-id.html heading="Fælles krav til gode brugeroplevelser" %}}
 
 De Fælles krav til gode brugeroplevelser indeholder fællesoffentlige krav og anbefalinger til digitale løsninger i det offentlige. Kravene skal medvirke til at sikre gode brugergrænseflader i digitale løsninger til kommunikation mellem myndigheder, borgere og virksomheder.
 

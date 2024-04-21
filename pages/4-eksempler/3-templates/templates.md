@@ -9,15 +9,12 @@ subcategory: Eksempler
 title: Templates
 lead: Templates er best practice designløsninger til specifikke sidetyper.
 description: Visning af sidetyper, der går igen på tværs af løsninger
-headings: Templates
-anchorlinks: true
 tags:
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Templates" %}
 
-[---- Dashboard -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Dashboard {#{% include create-id.html heading="Dashboard" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -25,8 +22,7 @@ tags:
   </div>
 </div>
 
-[---- Opgaveliste -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Opgaveliste {#{% include create-id.html heading="Opgaveliste" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -34,8 +30,7 @@ tags:
   </div>
 </div>
 
-[---- Vedhæft filer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Vedhæft filer {#{% include create-id.html heading="Vedhæft filer" %}}
 
 <div class="row screenshot-gallery">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -52,8 +47,7 @@ tags:
   </div>
 </div>
 
-[---- Opsummering -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Opsummering {#{% include create-id.html heading="Opsummering" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -66,8 +60,7 @@ tags:
   </div>
 </div>
 
-[---- Kvittering -------------------------------------]: # 
-<h2 id="{{ headings[4].id }}">{{ headings[4].h2 }}</h2>
+## Kvittering {#{% include create-id.html heading="Kvittering" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
@@ -80,8 +73,7 @@ tags:
   </div>
 </div>
 
-[---- Fejl -------------------------------------]: # 
-<h2 id="{{ headings[5].id }}">{{ headings[5].h2 }}</h2>
+## Fejl {#{% include create-id.html heading="Fejl" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">

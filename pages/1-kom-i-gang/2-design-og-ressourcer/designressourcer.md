@@ -11,18 +11,15 @@ subcategory: Kom i gang
 title: Design og ressourcer
 lead: Ved at følge designsystemet er du med til at skabe sammenhæng i og mellem de mange offentlige selvbetjeningsløsninger du ikke selv designer, til gavn for alle brugere.
 description: Information om Det Fælles Designsystem, der retter sig mod designere
-headings: Design_og_ressourcer
-anchorlinks: true
 tags:
 - figma
 - prototype
 - svg
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Design_og_ressourcer" %}
 
-[---- Grundprincipper -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Grundprincipper {#{% include create-id.html heading="Grundprincipper" %}}
 
 Dit fokus som designer af en selvbetjeningsløsning bør være på brugervenlighed og brugernes effektivitet igennem selvbetjeningsløsningen, ikke på personligt at “shine” ved brug af “krom” og tidens trends. Designsystemet følger nogle grundprincipper, som du bør kende.
 
@@ -34,8 +31,7 @@ Designet er:
 - Simpelt
 - Målrettet til selvbetjeningsløsninger
 
-[---- Dit ansvar som designer -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Dit ansvar som designer {#{% include create-id.html heading="Dit ansvar som designer" %}}
 
 Følg allerede etablerede standarder og konventioner for placering og gruppering af komponenter og reproducer gængse interaktionsmønstre. 
 
@@ -48,8 +44,7 @@ Overvej følgende spørgsmål, før du designer nye funktioner til din løsning:
 - Kan vi gøre funktionen tilgængelig?
 - Kan vi løse behovet med en mere simpel og gennemprøvet funktion?
 
-[---- Designressourcer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Designressourcer {#{% include create-id.html heading="Designressourcer" %}}
 
 Vi stiller nedenstående filer til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Vær dog opmærkesom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilerne.
 

@@ -11,14 +11,11 @@ componentdetailsLabel: "for eksempel på inputfelt med hentet data"
 category: Eksempler_category
 subcategory: Eksempler
 description: En formular med automatisk hentet data.
-headings: Inputfelter_med_hentet_data
-anchorlinks: true
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Inputfelter_med_hentet_data" %}
 
-[---- Sådan bruges inputfelter med hentet data -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Sådan bruges inputfelter med hentet data {#{% include create-id.html heading="Sådan bruges inputfelter med hentet data" %}}
 
 ### Anvendes til
 
@@ -36,13 +33,11 @@ Hvis brugeren har mulighed for at rette i data, placeres et funktionslink til re
 
 Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere feltet eller ej. Feltets indhold gemmes og valideres som ethvert andet felt i formularen.
 
-[---- Eksempel på anvendelse af pattern -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Eksempel på anvendelse af pattern {#{% include create-id.html heading="Eksempel på anvendelse af pattern" %}}
 
 {% include code/preview-box-details.html component="virksomhedsoplysninger" title="Eksempel på formular med hentet data" link=false detaillabel="for eksempel på formular med hentet data" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Inputfelter - Uber’s Base designsystem" %}

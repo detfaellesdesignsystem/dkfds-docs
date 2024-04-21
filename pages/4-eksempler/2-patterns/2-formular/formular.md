@@ -14,15 +14,12 @@ componentdetailsTitle: "Eksempel på formularstruktur"
 componentdetailsLink: false
 componentdetailsLabel: "for eksempel på formularstruktur"
 description: "Se eksempler på opsætning af en formular med forskellige felttyper."
-headings: Formular
-anchorlinks: true
 tags: 
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Formular" %}
 
-[---- Vejledning -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Gør brug af `<div class="form-group">`, fieldset og overskrifter til at strukturere din formular.
 
@@ -48,21 +45,18 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 
 {% include dos-donts-box.html component="overskrifter-dos-donts" title="Overskrifter do's and don'ts" %}
 
-[---- Kompleks formular -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Kompleks formular {#{% include create-id.html heading="Kompleks formular" %}}
 
 {% include code/preview-box-details.html component="fieldset-complex" title="Eksempel på kompleks formularstruktur" link=false detaillabel="for eksempel på kompleks formularstruktur" %}
 
-[---- Se eksempelløsninger -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Se eksempelløsninger {#{% include create-id.html heading="Se eksempelløsninger" %}}
 
 {:.nobullet-list}
 - {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
 - {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
 
-[---- Referencer -------------------------------------]: # 
-<h2 id="{{ headings[3].id }}">{{ headings[3].h2 }}</h2>
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Adam Silver: Form Design Patterns (2018)

@@ -11,12 +11,8 @@ lead: Det Fælles Designsystem er udviklet for at sikre en ensartet funktionalit
   for brugerne af løsningerne og gør det nemmere for dem at foretage selvbetjening.
 description: Det Fælles Designsystem er inspireret af og bygger på et fundament af
   international best practices.
-headings: Faellesskab
-anchorlinks: false
 tags:
 ---
-
-{% assign headings = site.data.headings[page.headings] %}
 
 Det Fælles Designsystem understøtter udvikling af selvbetjeningsløsninger, der er simple, brugervenlige og tilgængelige.
 
@@ -31,8 +27,7 @@ Fordele ved at anvende designsystemet:
 
 Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
 
-[---- Designsystemet er til selvbetjeningsløsninger -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Designsystemet er til selvbetjeningsløsninger {#{% include create-id.html heading="Designsystemet er til selvbetjeningsløsninger" %}}
 
 Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav, at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.
 

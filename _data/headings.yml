@@ -2,75 +2,68 @@
 
 Hent_kodepakken:
 - h2: Hent via NPM
-  id: npm
 - h2: Hent via GitHub (zip)
-  id: github
 - h2: Temahåndtering
-  id: temahaandtering
 - h2: Vejledning til integration på borger.dk og Virk
-  id: integration
 
 Hjaelpeklasser:
 - h2: Responsive hjælpeklasser
-  id: responsive-hjaelpeklasser
 - h2: Text align
-  id: text-align
 - h2: Margin og padding
-  id: margin-og-padding
 - h2: Display
-  id: display
 - h2: Flexbox
-  id: flexbox
 - h2: Bredde i procent
-  id: bredde-i-procent
 - h2: Baggrundsfarver
-  id: baggrundsfarver
 - h2: Tilgængelighed
-  id: tilgaengelighed
+
+Browserunderstoettelse:
+- h2: Windows
+- h2: Mac
+- h2: iOS
+- h2: Android
+- h2: Kilder til information om krav til styresystemer og browsers
 
 Print:
 - h2: CSS-klasser
-  id: css-klasser
 - h2: Eksempler på skjul af elementer
-  id: eksempler
+
+Frameworks:
+- h2: JavaScript
+- h2: Kodefrihed under ansvar
 
 Design_og_ressourcer:
 - h2: Grundprincipper
-  id: grundprincipper
 - h2: Dit ansvar som designer
-  id: dit-ansvar-som-designer
 - h2: Designressourcer
-  id: design-ressourcer
+
+Krav:
+- h2: Kravet om anvendelse af Det Fælles Designsystem
+- h2: Fælles krav til gode brugeroplevelser
 
 Tilgaengelighed:
 - h2: Webtilgængelighedsloven
-  id: webtilgaengelighedsloven
 - h2: Hvorfor tilgængelighed?
-  id: hvorfor-tilgaengelighed
 - h2: Vejledning og værktøjer
-  id: vejledning
 
 # Styleguide
 
 Farver:
 - h2: Portalfarver (tema)
-  id: portalfarver-tema
 - h2: Gråtoner
-  id: graatoner
 - h2: Besked-farver (alerts)
-  id: besked-farver-alerts
 - h2: Link-farver
-  id: link-farver
 - h2: Fokusfarve
-  id: fokusfarve
 - h2: Baggrundsfarver
-  id: baggrundsfarver
 - h2: Positiv og negativ farver
-  id: positiv-og-negativ-farver
 - h2: Datavisualiseringsfarver
-  id: datavisualiseringsfarver
 - h2: Kontrastforhold
-  id: kontrastforhold
+
+Fonte:
+- h2: IBM Plex Sans
+- h2: Fallback font "system"
+
+Fonte_Kode:
+- h2: Preload
 
 Overskrifter:
 - h2: Sådan bruges overskrifter
@@ -86,9 +79,7 @@ Overskrifter_Kode:
 
 Felt_og_tabeloverskrifter:
 - h2: Feltoverskrifter
-  id: feltoverskrifter
 - h2: Tabeloverskrifter
-  id: tabeloverskrifter
 
 Tekst:
 - h2: Manchet
@@ -118,13 +109,17 @@ Links_Kode:
 - h2: Sekundære links
 - h2: Billeder som links
 
+Lister:
+- h2: Retningslinjer
+
+Lister_Kode:
+- h2: Punktopstilling
+- h2: Tegnopstilling
+
 Hjoerner_streger_skygger:
 - h2: Hjørner
-  id: hjoerner
 - h2: Streger
-  id: streger
 - h2: Skygger
-  id: skygger
 
 Ikoner:
 - h2: Sådan bruges ikoner
@@ -138,45 +133,29 @@ Ikoner_Kode:
 
 Logoer:
 - h2: SVG-filer til download
-  id: svg-filer-til-download
 - h2: Retningslinjer for portallogo i headeren
-  id: retningslinjer-for-logo-i-headeren
 - h2: Retningslinjer for myndighedslogo i footeren
-  id: retningslinjer-for-logo-i-footeren
 
 Datavisualisering_og_infografik:
 - h2: Datavisualisering
-  id: datavisualisering
 - h2: Infografik
-  id: infografik
 - h2: Sådan bruges datavisualisering og infografik
-  id: retningslinjer
 
 Tilgaengelig_grafik:
 - h2: Reducér kompleksiteten
-  id: reducer-kompleksiteten
 - h2: Brug farve med omhu
-  id: brug-farve-med-omhu
 - h2: Sørg for alternativer til grafikken
-  id: soerg-for-alternativer-til-grafikken
 - h2: Referencer
-  id: referencer
 
 Datavisualisering:
 - h2: Cirkeldiagrammer (kagediagram)
-  id: cirkeldiagrammer
 - h2: Søjlediagram (kolonnediagram)
-  id: soejlediagram
 - h2: Kurvediagram (linjediagram)
-  id: kurvediagram
 
 Infografik:
 - h2: Farver
-  id: farver
 - h2: Alternativ til grafik
-  id: alternativ-til-grafik
 - h2: Responsiv infografik
-  id: responsiv-infografik
 
 Grid_og_baseline_grid:
 - h2: 12 kolonner (horisontalt)
@@ -603,115 +582,72 @@ Venstremenu_Kode:
 
 Selvbetjeningsloesninger:
 - h2: Formular til kontaktoplysninger
-  id: formularkontaktoplysninger
 - h2: Trinformular til registrering
-  id: trinformularregistrering
 - h2: Trinformular til ansøgning
-  id: trinformularansoegning
 - h2: Sagsoversigt
-  id: sagsoversigt
 
 Angivelse_af_telefonnummer:
 - h2: Vejledning
-  id: vejledning
 - h2: Når målgruppen hovedsageligt har danske telefonnumre
-  id: hovedsageligt-danske-telefonnumre
 - h2: Når målgruppen hovedsageligt har udenlandske telefonnumre
-  id: hovedsageligt-udenlandske-telefonnumre
 - h2: Hvis der kun kan angives danske telefonnumre (ikke anbefalet)
-  id: kun-danske-telefonnumre
 
 Formular:
 - h2: Vejledning
-  id: vejledning
 - h2: Kompleks formular
-  id: kompleks
 - h2: Se eksempelløsninger
-  id: eksempelloesninger
 - h2: Referencer
-  id: referencer
 
 Inputfelter_med_hentet_data:
 - h2: Sådan bruges inputfelter med hentet data
-  id: retningslinjer
 - h2: Eksempel på anvendelse af pattern
-  id: eksempel
 - h2: Referencer
-  id: referencer
 
 Session_udloeber:
 - h2: Sådan bruges Session udløber
-  id: retningslinjer
 - h2: Varianter
-  id: varianter
 - h2: Referencer
-  id: referencer
 
 Templates:
 - h2: Dashboard
-  id: dashboard
 - h2: Opgaveliste
-  id: opgaveliste
 - h2: Vedhæft filer
-  id: vedhaeft-filer
 - h2: Opsummering
-  id: opsummering
 - h2: Kvittering
-  id: kvittering
 - h2: Fejl
-  id: formular-med-fejl
 
 # Fællesskab
 
 Faellesskab:
 - h2: Designsystemet er til selvbetjeningsløsninger
-  id: designsystemet
 
 Samarbejdsforum:
 - h2: Næste samarbejdsforum
-  id: naeste-samarbejdsforum
 
 Governance:
 - h2: Governancemodellen
-  id: governancemodellen
 - h2: Styregruppe
-  id: styregruppe
 - h2: Samarbejdsforum
-  id: samarbejdsforum
 - h2: FDS-teamet
-  id: fds-teamet
 
 Kontakt_og_support:
 - h2: GitHub
-  id: gitHub
 - h2: E-mail
-  id: e-mail
 
 Roadmap:
 - h2: Nye komponenter
-  id: nye-komponenter
 - h2: Eksempelløsninger
-  id: eksempelloesninger
 - h2: Patterns
-  id: patterns
 - h2: Andet
-  id: andet
 
 Releases:
 - h2: Versionering og release-proces
-  id: versionering
 - h2: Version 10.0.0
-  id: version-10-0-0
 - h2: Version 9.1.0
-  id: version-9-1-0
 - h2: Version 9.0.2
-  id: version-9-0-2
 - h2: Version 9.0.1
-  id: version-9-0-1
 - h2: Version 9.0.0
-  id: version-9-0-0
 - h2: Tidligere versioner
-  id: tidligere-versioner
 
 # Øvrige
 

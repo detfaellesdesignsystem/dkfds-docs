@@ -6,15 +6,12 @@ category: Styleguide_category
 subcategory: Styleguide
 title: Felt- og tabeloverskrifter
 description:
-headings: Felt_og_tabeloverskrifter
-anchorlinks: true
 tags:
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Felt_og_tabeloverskrifter" %}
 
-[---- Feltoverskrifter -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Feltoverskrifter {#{% include create-id.html heading="Feltoverskrifter" %}}
 
 {% include code/preview.html component="labels" %}
 
@@ -42,8 +39,7 @@ Du kan betragte formularer som en dialog med brugerne, hvor feltoverskriften er 
 
 Se dokumentationen om {% include links/component-guideline-link.html linktext="inputfelter" %}.
 
-[---- Tabeloverskrifter -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Tabeloverskrifter {#{% include create-id.html heading="Tabeloverskrifter" %}}
 
 {% include code/preview.html component="labels-table" %}
 

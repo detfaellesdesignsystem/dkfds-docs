@@ -7,8 +7,6 @@ subcategory: Styleguide
 title: Datavisualisering
 lead: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
 description: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
-headings: Datavisualisering
-anchorlinks: true
 tags:
 - data
 - datavisualisering
@@ -19,10 +17,9 @@ tags:
 - infografik
 ---
 
-{% assign headings = site.data.headings[page.headings] %}
+{% include anchorlinks.html headings="Datavisualisering" %}
 
-[---- Cirkeldiagrammer (kagediagram) -------------------------------------]: # 
-<h2 id="{{ headings[0].id }}">{{ headings[0].h2 }}</h2>
+## Cirkeldiagrammer (kagediagram) {#{% include create-id.html heading="Cirkeldiagrammer (kagediagram)" %}}
 
 Et cirkeldiagram består af en cirkel, som opdeles i områder, der svarer til de enkelte datas størrelse. Det bruges typisk, hvis data er en del af en samlet mængde.
 
@@ -69,8 +66,7 @@ For at gøre datavisualiseringen endnu mere tilgængelig, kan en tabel med data 
     </figcaption>
 </figure>
 
-[---- Søjlediagram (kolonnediagram) -------------------------------------]: # 
-<h2 id="{{ headings[1].id }}">{{ headings[1].h2 }}</h2>
+## Søjlediagram (kolonnediagram) {#{% include create-id.html heading="Søjlediagram (kolonnediagram)" %}}
 
 Et søjlediagram består af søjler, som går op til højden af de forskellige data. Det kan både være stående og liggende. Det anbefales at bruge denne type diagram til sammenligninger, der består af 10 eller færre kategorier. 
 
@@ -84,8 +80,7 @@ For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en
 <figcaption><p>Unge mennesker fra 18-34 år cykler mest. Ældre mennesker fra 67-84 år og børn fra 6-9 cykler mindst.</p><p>Kilde: Transportvaneundersøgelsen 2016-2019</p></figcaption>
 </figure>
 
-[---- Kurvediagram (linjediagram) -------------------------------------]: # 
-<h2 id="{{ headings[2].id }}">{{ headings[2].h2 }}</h2>
+## Kurvediagram (linjediagram) {#{% include create-id.html heading="Kurvediagram (linjediagram)" %}}
 
 Kurvediagrammer bruges ikke lige så tit som søjlediagram og cirkeldiagram, men er gode til at vise en udvikling over tid, samt håndtere lidt større datamængder.
 
