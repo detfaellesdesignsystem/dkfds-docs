@@ -16,7 +16,7 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="footer-simple" title="Eksempel på footer" classes="intro-example" %}
+{% include code/preview-image.html component="footer-simple" title="Eksempel på footer" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Footer" code="Footer_Kode" %}
 

@@ -111,13 +111,11 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#accordions}
-### Accordions
+### Accordions {#{% include create-id.html heading="Accordions" %}}
 
-{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" link="true" code="/kode/komponenter/fejlmeddelelser/#accordions" %}
+{% include code/preview-box.html component="error-message-accordion" title="Eksempel på accordion med fejl" link="true" code="/komponenter/fejlmeddelelser/#accordions-kode" %}
 
-{:#datofelter}
-### Datofelter
+### Datofelter {#{% include create-id.html heading="Datofelter" %}}
 
 {% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
 

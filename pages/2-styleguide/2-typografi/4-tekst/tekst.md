@@ -35,7 +35,7 @@ tabs: "Retningslinjer, kode"
 
 Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
 
-{% include code/preview-box.html component="lead_paragraph" link=false code="/design/typografi/tekst/#manchet" %}
+{% include code/preview-box.html component="lead_paragraph" link=false code="/design/typografi/tekst/#manchet-kode" %}
 
 ### Designværdier
 
@@ -57,7 +57,7 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
 
 ## Brødtekst {#{% include create-id.html heading="Brødtekst" %}}
 
-{% include code/preview-box.html component="inlinetext" link=false code="/design/typografi/tekst/#broedtekst" %}
+{% include code/preview-box.html component="inlinetext" link=false code="/design/typografi/tekst/#broedtekst-kode" %}
 
 ### Designværdier
 
@@ -85,7 +85,7 @@ Brug ikke kursiv tekst, da det nedsætter læsbarheden.
 
 Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlmeddelelser.
 
-{% include code/preview-box.html component="helptext" link=false code="/design/typografi/tekst/#hjaelpetekst-og-fejlmeddelelser" %}
+{% include code/preview-box.html component="helptext" link=false code="/design/typografi/tekst/#hjaelpetekst-og-fejlmeddelelser-kode" %}
 
 ### Designværdier
 
@@ -125,7 +125,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 
 Forklarende eller beskrivende tekst tilhørende et billede.
 
-{% include code/preview-box.html component="caption" link=false code="/design/typografi/tekst/#billedtekst" %}
+{% include code/preview-box.html component="caption" link=false code="/design/typografi/tekst/#billedtekst-kode" %}
 
 ### Designværdier
 
@@ -143,7 +143,7 @@ Billedtekst vises under et billede, således at det synligt bemærkes at teksten
 
 Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.
 
-{% include code/preview-box.html component="displaytext" link=false code="/design/typografi/tekst/#stor-tekst" %}
+{% include code/preview-box.html component="displaytext" link=false code="/design/typografi/tekst/#stor-tekst-kode" %}
 
 ### Designværdier
 

@@ -126,7 +126,7 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 
 {% include code/syntax.html component="button-primary" copybutton=true %}
 
-- Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
+Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
 
 ## Primær {#{% include create-id.html heading="Primær" append="-kode" %}}
 

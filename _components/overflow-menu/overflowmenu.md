@@ -56,7 +56,7 @@ Overvej om det er nødvendigt med dette ekstra navigationselement.
 
 <p class="font-lead">Ved sortering har brugeren indflydelse på den rækkefølge, forskelligt indhold vises i, så det bliver lettere at navigere i.</p>
 
-{% include code/preview-box.html component="sort" title="Eksempel på sorteringsfunktion med overflow menu" link=true code="/komponenter/overflowmenu/#sortering" %}
+{% include code/preview-box.html component="sort" title="Eksempel på sorteringsfunktion med overflow menu" link=true code="/komponenter/overflowmenu/#sortering-kode" %}
 
 ### Anvendes til
 

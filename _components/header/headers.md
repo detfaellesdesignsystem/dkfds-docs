@@ -80,6 +80,8 @@ Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, de
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
+### Sprogvælger
+
 Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-guideline-link.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 
 {% include code/preview-image.html component="header-switch-language" %}

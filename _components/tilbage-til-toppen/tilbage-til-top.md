@@ -51,7 +51,7 @@ Det anbefales at lave en scroll-animation til toppen, når der klikkes på knapp
 
 På mobil anvendes knappen uden tekst for at spare plads på skærmen. 
 
-{% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" code="/komponenter/tilbage-til-top/" %}
+{% include code/preview-image.html component="back-to-top" alt="Eksempel på tilbage til toppen på mobil" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
