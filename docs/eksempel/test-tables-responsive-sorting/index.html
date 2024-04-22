@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Test-textarea-1 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-textarea-1 | Det Fælles Designsystem">
+<title>Test-tables-responsive-sorting | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-tables-responsive-sorting | Det Fælles Designsystem">
 
 
 
@@ -251,13 +251,45 @@
     <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <p>Simpelt tekstområde</p>
+            <h1 class="h2 mt-0 mb-9">Tabel, der indeholder sortering og er responsiv</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
 
-            <div class="form-group">
-                <label class="form-label" for="input-textarea">Tekstområde med label</label>
-
-                <textarea class="form-input" id="input-textarea" name="input-textarea" required=""></textarea>
-
+            <div class="table--responsive-scroll">
+                <table class="table table--responsive-headers">
+                    <thead>
+                        <tr>
+                            <th scope="col" aria-sort="ascending"><button class="button button-unstyled" id="btn-sort1" type="button">First column<span class="sr-only"> Klik for
+                                        at sortere faldende</span>
+                                    <svg class="icon-svg mr-0 ml-2" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-ascending"></use></svg>
+                                </button></th>
+                            <th scope="col"><button class="button button-unstyled" id="btn-sort2" type="button">Second column<span class="sr-only"> Klik for at sortere efter denne
+                                        kolonne</span>
+                                    <svg class="icon-svg mr-0 ml-2" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg>
+                                </button></th>
+                            <th scope="col">Third column</th>
+                        </tr>
+                    </thead>
+                    <tbody aria-live="polite">
+                        <tr>
+                            <td>First row, first cell</td>
+                            <td>First row, second cell</td>
+                            <td>First row, third cell</td>
+                        </tr>
+                        <tr>
+                            <td>Second row, first cell</td>
+                            <td>Second row, second cell</td>
+                            <td>Second row, third cell</td>
+                        </tr>
+                        <tr>
+                            <td>Third row, first cell</td>
+                            <td>Third row, second cell</td>
+                            <td>Third row, third cell</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
@@ -280,10 +312,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-tables-responsive-sorting/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-tables-8/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-textarea-2/">Næste</a>
+                <a class="function-link" href="/eksempel/test-textarea-1/">Næste</a>
                 
             </div>
         </div>

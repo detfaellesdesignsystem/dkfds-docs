@@ -194,6 +194,8 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="tilbage til toppen" %}-knappen nogen gange var vist, selvom den skulle være skjult.
 - Tilføjet klassen `no-max-width`, der forhindrer `max-width` på en paragraf eller liste.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af {% include links/component-guideline-link.html linktext="beskeder" %} uden ikon. Klassen `alert--show-icon` bruges længere og ikonet skal indsættes manuelt.
+- Rettet fejl, hvor responsive tabeller med sortering indeholdt sorteringsknappernes tekst på mindre skærme.
+{% include links/github-link.html number="229" afternumber=" på GitHub" %}
 
 
 

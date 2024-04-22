@@ -188,6 +188,7 @@ title: Test
 {% include test/preview-test.html filename="test-tables-6" description="Tabeller 6" %}
 {% include test/preview-test.html filename="test-tables-7" description="Tabeller 7" %}
 {% include test/preview-test.html filename="test-tables-8" description="Tabeller 8" %}
+{% include test/preview-test.html filename="test-tables-responsive-sorting" description="Tabel, der indeholder sortering og er responsiv" %}
 
 {:.h3}
 ## Tekstområde (Textarea)

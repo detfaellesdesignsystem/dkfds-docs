@@ -133,6 +133,7 @@ var testfiles = [
     "test-tables-6",
     "test-tables-7",
     "test-tables-8",
+    "test-tables-responsive-sorting",
     "test-textarea-1",
     "test-textarea-2",
     "test-textarea-3",
