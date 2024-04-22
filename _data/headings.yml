@@ -157,6 +157,10 @@ Infografik:
 - h2: Alternativ til grafik
 - h2: Responsiv infografik
 
+Layout:
+- h2: Grundlæggende struktur
+- h2: Layoutprincipper
+
 Grid_og_baseline_grid:
 - h2: 12 kolonner (horisontalt)
 - h2: Breakpoints

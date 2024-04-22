@@ -84,7 +84,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/komponenter/fejlopsummering/">{{ include.linktext }}</a>
 
     {%- when "footer", 
-             "se footer komponenten" -%}
+             "se footer komponenten",
+             "footer-komponenten" -%}
         <a href="/komponenter/footer/">{{ include.linktext }}</a>
 
     {%- when "se eksempler på forskellige sammensætninger" -%}
@@ -103,6 +104,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "header", 
              "se header-komponenten", 
+             "header-komponenten", 
              "headeren", 
              "headerens", 
              "headerkomponentens side", 

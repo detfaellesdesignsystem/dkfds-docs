@@ -194,6 +194,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "layout" -%}
         <a href="/design/layout/"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "layoutprincipper" -%}
+        <a href="/design/layout/#layoutprincipper"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "grid’et i designsystemet",
              "grid" -%}
         <a href="/design/grid/"{{ classes }}>{{ include.linktext }}</a>
