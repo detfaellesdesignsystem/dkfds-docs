@@ -87,8 +87,8 @@ print: true
             <div class="col-12 col-sm-2 align-text-right"><strong class="badge badge-small mt-3 mt-sm-0"></strong></div>
         </li>
     </ol>
-    <p class="mb-0 form-hint">Vær opmærksom på at der også er en række krav fra eksterne kilder:</p>
-    <ul class="mt-0 form-hint">
+    <p class="mb-0">Vær opmærksom på at der også er en række krav fra eksterne kilder:</p>
+    <ul class="mt-0">
         <li>Forvaltningsloven <span class="d-print-none">(<a href="https://arkitektur.digst.dk/forvaltningsloven-eksterne-kilder" class="icon-link" target="_blank" aria-span="Læs mere om eksterne krav i forhold til forvaltningsloven">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
         <li>Sikkerhed <span class="d-print-none">(<a href="https://arkitektur.digst.dk/sikkerhed-eksterne-kilder" class="icon-link" target="_blank" aria-span="Læs mere om eksterne krav omkring sikkerhed">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
         <li>Single Digital Gateway <span class="d-print-none">(<a href="https://arkitektur.digst.dk/single-digital-gateway-eksterne-kilder" class="icon-link" target="_blank" aria-span="Læs mere om krav i forhold til Single Digital Gateway">Læs om kravet<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a>)</span></li>
@@ -141,10 +141,6 @@ print: true
             </tbody>
         </table>
     </div>
-
-
-
-
     <table class="table table--borderless table--compact w-percent-100 w-percent-lg-70" id="summary">
         <thead class="sr-only">
             <tr>
@@ -192,5 +188,4 @@ print: true
         </tbody>
     </table>
     <div><button class="button button-secondary d-print-none mt-9" id="start-over">Start krav-værktøjet forfra</button></div>
-    <div><button class="button button-primary d-print-none mt-9" id="close-tool">Luk krav-værktøjet</button></div>
 </div>
