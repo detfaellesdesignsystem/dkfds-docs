@@ -65,7 +65,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
 <div aria-live="polite" aria-atomic="true">
     <div class="icon-section" id="icon-section-konventionelle">
         <h3>Konventionelle ikoner</h3>
-        <p>Må ikke bruges til andre formål end de specificerede.</p>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-konventionelle">
                 {% include icon.html icon="open-in-new" keywords="open in new, new window, external, ekstern, eksternt link" label="Eksternt link (åbner ny side/fane)" %}
