@@ -41,7 +41,7 @@ Hvis din løsning allerede har topmenu og evt. tilknyttet dropdown, bør du over
 
 Markér det aktive punkt (”der hvor brugeren er”) i venstremenuen.
 
-Brug korte og præcise ord og begreber. De må eksempelvis gerne være kortere varianter af selve sidernes indholdstitler.
+Brug korte og præcise ord og begreber. Titlerne i venstremenuen skal stemme overens med overskriften på de sider, de linker til.
 
 Undgå at lave for mange punkter.
 
