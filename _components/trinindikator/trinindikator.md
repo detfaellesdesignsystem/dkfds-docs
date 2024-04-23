@@ -122,7 +122,7 @@ Hvis man gør brug af en trinindikator i forbindelse med en {% include links/com
 
 #### Aktivt og overstået trin i trinindikator
 
-- Det aktive menupunkt skal have klassen `active` og `current`.
+- Det aktive menupunkt skal have klasserne `active` og `current` (der skal anvendes to forskellige klasser grundet overlap med stylingen i {% include links/component-guideline-link.html linktext="venstremenuen" %}).
 - For at indikere et overstået trin, kan der indsættes et ikon med klassen `sidenav-icon`. Dette ikon er sat til højre i trinet.
 
 Nedenstående varianter implementeres i et grid på samme måde som {% include links/component-guideline-link.html linktext="venstremenu" %}, således at komponenten vises i en kolonne til venstre for indholdet.

@@ -83,9 +83,8 @@ Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises ancho
 
 #### Aktive menupunkter
 
-- Aktive menupunkter skal have klassen `current`.
-- Kun det sidste aktive menupunkt skal have klassen `active`.
-- Hvis der kun er ét aktivt niveau sættes begge klasser.
+- Klassen `active` sættes på de `li`-elementer, som enten er valgt eller aktivt viser undermenuer (disse elementer får en farvet streg i venstre side).
+- Klassen `current` sættes på det `li`-element, der viser den nuværende side (dette element vises med fed tekst og grå baggrund).
 
 #### Tilføj ikon og information i venstremenu
 
