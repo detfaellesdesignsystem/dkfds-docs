@@ -1,5 +1,7 @@
 ---
-permalink: "/design/logoer/"
+permalink: "/styleguide/logoer/"
+redirect_from:
+- "/design/logoer/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

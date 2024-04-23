@@ -1,7 +1,8 @@
 ---
-permalink: "/design/grid/"
+permalink: "/styleguide/grid/"
 redirect_from:
 - "/grid/"
+- "/design/grid/"
 - "/design/layout/grid/"
 - "/kode/grid/"
 layout: styleguide

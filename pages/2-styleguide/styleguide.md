@@ -1,5 +1,7 @@
 ---
-permalink: "/design/"
+permalink: "/styleguide/"
+redirect_from:
+- "/design/"
 layout: styleguide
 category: Styleguide_category
 title: Styleguide

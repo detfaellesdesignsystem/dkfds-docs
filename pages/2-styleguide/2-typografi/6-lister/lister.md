@@ -1,8 +1,9 @@
 ---
-permalink: "/design/typografi/lister/"
-parentlink: "/design/typografi/"
+permalink: "/styleguide/typografi/lister/"
+parentlink: "/styleguide/typografi/"
 redirect_from:
 - "/kode/typografi/lister/"
+- "/design/typografi/lister/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

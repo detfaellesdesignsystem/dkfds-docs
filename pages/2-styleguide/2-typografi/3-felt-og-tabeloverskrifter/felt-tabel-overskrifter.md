@@ -1,6 +1,8 @@
 ---
-permalink: "/design/typografi/felt-tabel-overskrifter/"
-parentlink: "/design/typografi/"
+permalink: "/styleguide/typografi/felt-tabel-overskrifter/"
+parentlink: "/styleguide/typografi/"
+redirect_from:
+- "/design/typografi/felt-tabel-overskrifter/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

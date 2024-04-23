@@ -1,6 +1,7 @@
 ---
-permalink: "/design/layout/"
+permalink: "/styleguide/layout/"
 redirect_from:
+- "/design/layout/"
 - "/design/sideopbygning/"
 - "/komigang/tildesignere/sideopbygning/"
 - "/komigang/regler-principper-layout/"

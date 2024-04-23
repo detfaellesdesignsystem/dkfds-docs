@@ -1,7 +1,7 @@
 primary:
   - href: /kom-i-gang/
     categorynav: 'Kom_i_gang_category'
-  - href: /design/
+  - href: /styleguide/
     categorynav: 'Styleguide_category'
   - href: /komponenter/
     categorynav: 'Komponenter_category'
@@ -28,29 +28,29 @@ Implementering_kode_category:
   - href: /kom-i-gang/implementering-kode/frameworks/
 
 Styleguide_category:
-  - href: /design/farver/
-  - href: /design/typografi/
+  - href: /styleguide/farver/
+  - href: /styleguide/typografi/
     categorynav: 'Typografi_category'
-  - href: /design/borders/
-  - href: /design/ikoner/
-  - href: /design/logoer/
-  - href: /design/datavisualisering-infografik/
+  - href: /styleguide/borders/
+  - href: /styleguide/ikoner/
+  - href: /styleguide/logoer/
+  - href: /styleguide/datavisualisering-infografik/
     categorynav: 'Datavisualisering_category'
-  - href: /design/layout/
-  - href: /design/grid/
+  - href: /styleguide/layout/
+  - href: /styleguide/grid/
 
 Typografi_category:
-  - href: /design/typografi/fonte/
-  - href: /design/typografi/overskrifter/
-  - href: /design/typografi/felt-tabel-overskrifter/
-  - href: /design/typografi/tekst/
-  - href: /design/typografi/links/
-  - href: /design/typografi/lister/
+  - href: /styleguide/typografi/fonte/
+  - href: /styleguide/typografi/overskrifter/
+  - href: /styleguide/typografi/felt-tabel-overskrifter/
+  - href: /styleguide/typografi/tekst/
+  - href: /styleguide/typografi/links/
+  - href: /styleguide/typografi/lister/
 
 Datavisualisering_category:
-  - href: /design/datavisualisering-infografik/tilgaengelig-grafik/
-  - href: /design/datavisualisering-infografik/datavisualisering/
-  - href: /design/datavisualisering-infografik/infografik/  
+  - href: /styleguide/datavisualisering-infografik/tilgaengelig-grafik/
+  - href: /styleguide/datavisualisering-infografik/datavisualisering/
+  - href: /styleguide/datavisualisering-infografik/infografik/  
 
 Komponenter_category:
   - href: /komponenter/accordions/

@@ -1,7 +1,8 @@
 ---
-permalink: "/design/farver/"
+permalink: "/styleguide/farver/"
 redirect_from:
 - "/farver/"
+- "/design/farver/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

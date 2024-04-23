@@ -1,7 +1,8 @@
 ---
-permalink: "/design/borders/"
+permalink: "/styleguide/borders/"
 redirect_from:
 - "/design/kanter/"
+- "/design/borders/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

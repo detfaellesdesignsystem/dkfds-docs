@@ -1,6 +1,8 @@
 ---
-permalink: "/design/datavisualisering-infografik/infografik/"
-parentlink: "/design/datavisualisering-infografik/"
+permalink: "/styleguide/datavisualisering-infografik/infografik/"
+parentlink: "/styleguide/datavisualisering-infografik/"
+redirect_from:
+- "/design/datavisualisering-infografik/infografik/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

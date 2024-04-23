@@ -1,8 +1,9 @@
 ---
-permalink: "/design/typografi/tekst/"
-parentlink: "/design/typografi/"
+permalink: "/styleguide/typografi/tekst/"
+parentlink: "/styleguide/typografi/"
 redirect_from:
 - "/kode/typografi/tekst/"
+- "/design/typografi/tekst/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

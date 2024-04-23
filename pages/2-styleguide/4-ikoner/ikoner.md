@@ -1,8 +1,9 @@
 ---
-permalink: "/design/ikoner/"
+permalink: "/styleguide/ikoner/"
 redirect_from:
 - "/design/ikoner/ikoner-og-deres-betydning/"
 - "/kode/ikoner/"
+- "/design/ikoner/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide

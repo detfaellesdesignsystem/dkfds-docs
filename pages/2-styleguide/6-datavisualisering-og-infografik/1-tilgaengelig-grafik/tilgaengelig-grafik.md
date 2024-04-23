@@ -1,6 +1,8 @@
 ---
-permalink: "/design/datavisualisering-infografik/tilgaengelig-grafik/"
-parentlink: "/design/datavisualisering-infografik/"
+permalink: "/styleguide/datavisualisering-infografik/tilgaengelig-grafik/"
+parentlink: "/styleguide/datavisualisering-infografik/"
+redirect_from:
+- "/design/datavisualisering-infografik/tilgaengelig-grafik/"
 layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
