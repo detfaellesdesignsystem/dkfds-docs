@@ -60,18 +60,6 @@ layout: default
                     url=page.componentUrl %}
                 {% endif %}
 
-                {% if page.componentdetails %}
-                {% include code/preview-box-details.html 
-                    component=page.componentdetails 
-                    classes=page.componentdetailsClasses 
-                    title=page.componentdetailsTitle 
-                    link=page.componentdetailsLink 
-                    code=page.componentdetailsCode 
-                    url=page.componentdetailsUrl
-                    detailsClass=page.componentdetailsClass
-                    detaillabel=page.componentdetailsLabel %}
-                {% endif %}
-
                 {% if page.previewimage %}
                 {% include code/preview-image.html 
                     component=page.previewimage 

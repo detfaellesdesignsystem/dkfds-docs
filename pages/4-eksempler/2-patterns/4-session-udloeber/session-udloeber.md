@@ -5,14 +5,12 @@ layout: styleguide
 category: Eksempler_category
 subcategory: Eksempler
 title: Session udløber
-componentdetails: "session-udloeber"
-componentdetailsTitle: "Eksempel på session udløb"
-componentdetailsLink: false
-componentdetailsLabel: "for eksempel på udløb af session"
 lead: Session udløber vises, inden brugeren automatisk logges af en løsning. Dialogen giver brugeren mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen. 
 description: Visning af session udløb
 tags:
 ---
+
+{% include code/preview-box-details.html component="session-udloeber" title="Eksempel på session udløb" link=false detaillabel="for eksempel på udløb af session" %}
 
 {% include anchorlinks.html headings="Session_udloeber" %}
 

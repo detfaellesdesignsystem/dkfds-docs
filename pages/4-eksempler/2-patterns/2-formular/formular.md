@@ -9,13 +9,11 @@ layout: styleguide
 category: Eksempler_category
 subcategory: Eksempler
 title: Formular
-componentdetails: "fieldset"
-componentdetailsTitle: "Eksempel på formularstruktur"
-componentdetailsLink: false
-componentdetailsLabel: "for eksempel på formularstruktur"
 description: "Se eksempler på opsætning af en formular med forskellige felttyper."
 tags: 
 ---
+
+{% include code/preview-box-details.html component="fieldset" title="Eksempel på formularstruktur" link=false detaillabel="for eksempel på formularstruktur" %}
 
 {% include anchorlinks.html headings="Formular" %}
 

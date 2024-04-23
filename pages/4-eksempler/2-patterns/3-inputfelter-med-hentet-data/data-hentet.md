@@ -4,14 +4,12 @@ parentlink: "/eksempler/patterns/"
 layout: styleguide
 title: Inputfelter med hentet data
 lead: En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres.
-componentdetails: "kontaktoplysninger-hentet"
-componentdetailsTitle: "Eksempel på inputfelt med hentet data"
-componentdetailsLink: false
-componentdetailsLabel: "for eksempel på inputfelt med hentet data"
 category: Eksempler_category
 subcategory: Eksempler
 description: En formular med automatisk hentet data.
 ---
+
+{% include code/preview-box-details.html component="kontaktoplysninger-hentet" title="Eksempel på inputfelt med hentet data" link=false detaillabel="for eksempel på inputfelt med hentet data" %}
 
 {% include anchorlinks.html headings="Inputfelter_med_hentet_data" %}
 
