@@ -1751,6 +1751,7 @@
         
         <li class="anchorlink-guidelines"><a href="#saadan-bruges-komponenten">Sådan bruges komponenten</a></li>
         <li class="anchorlink-guidelines"><a href="#varianter">Varianter</a></li>
+        <li class="anchorlink-guidelines"><a href="#se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</a></li>
         
         <li class="anchorlink-code"><a href="#installation-kode">Installation</a></li>
         <li class="anchorlink-code"><a href="#referencer-kode">Referencer</a></li>
@@ -1768,7 +1769,7 @@
 
 <p>Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen.</p>
 
-<p>Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed og evt. med kontaktoplysninger.</p>
+<p>Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.</p>
 
 <p>En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.</p>
 
@@ -1786,23 +1787,26 @@
 
 <ul>
   <li>Række 1 og række 2 er obligatoriske. Alle selvbetjeningsløsninger skal have portal-logo, login-info og løsningstitel som minimum.</li>
-  <li>Række 3 (topnavigation) kan anvendes hvis nødvendigt.</li>
+  <li>Række 3 kan anvendes hvis nødvendigt.</li>
 </ul>
 
 <h4>Headerens rækker forklaret</h4>
 
 <h5>Række 1 (obligatorisk)</h5>
+
 <p>Portal-logo, NemLog-in-oplysninger og “Log af” knap.</p>
 
 <h5>Række 2 (obligatorisk)</h5>
+
 <p>Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger.</p>
 
 <h5>Række 3 (frivillig)</h5>
+
 <p>Navigation (topnavigation) i løsningen og søgefelt.</p>
 
-<h3>Eksempler</h3>
+<h2 id="varianter">Varianter</h2>
 
-<h4>Simpel header</h4>
+<h3>Simpel header</h3>
 
 <div class="component-preview  component-preview-header-simple">
     <div class="component-link px-4 py-4">
@@ -1817,7 +1821,7 @@
     
 </div>
 
-<h4>Header med navigation og søgefelt</h4>
+<h3>Header med navigation og søgefelt</h3>
 
 <div class="component-preview  component-preview-header-with-navigation">
     <div class="component-link px-4 py-4">
@@ -1832,21 +1836,19 @@
     
 </div>
 
-<h3>Menupunkter med dropdown</h3>
+<h4>Menupunkter med dropdown</h4>
 
-<p>Menupunkter med dropdown-funktionalitet giver adgang til undermenupunkter, men er ikke et menupunkt i sig selv. Overvej om dropdown-menu er den rigtige løsning. Topnavigation kombineret med venstremenu giver større fleksibilitet og mulighed for flere niveauer i navigationen.</p>
+<p>Menupunkter med dropdown-funktionalitet giver adgang til undermenupunkter, men er ikke et menupunkt i sig selv. Overvej om dropdown-menu er den rigtige løsning. Topnavigation kombineret med <a href="/komponenter/venstremenu/">venstremenu</a> giver større fleksibilitet og mulighed for flere niveauer i navigationen.</p>
 
-<h3>Responsivitet og breakpoints</h3>
+<h4>Responsivitet og breakpoints</h4>
 
 <p>På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed og eventuelle menupunkter ind i en “mobil”-menu. Vi anbefaler, at løsningen kun anvender denne visning, når der ikke længere er plads til indholdet på sidens bredde.</p>
 
-<p>Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, der ved klik vises på samme måde som mobilmenuen.</p>
+<p>Menupunkter der ikke er plads til i sidens bredde samles i en “Mere”-menu, der vises som overflow-menu.</p>
 
-<h2 id="varianter">Varianter</h2>
+<h3>Header med sprogvælger</h3>
 
-<h3>Sprogvælger</h3>
-
-<p>Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se <a href="/komponenter/sprogvaelger/">sprogvælger</a>-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.</p>
+<p>Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflow-menu øverst i række 1 og i sidens footer (se <a href="/komponenter/sprogvaelger/">sprogvælger</a>). Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.</p>
 
 <div class="component-preview  component-preview-header-switch-language">
     <div class="component-link px-4 py-4">
@@ -1860,6 +1862,10 @@
     </div>
     
 </div>
+
+<h2 id="se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</h2>
+
+<p>Se komponenten i <a href="/eksempler/selvbetjeningsloesninger/">eksemplerne på selvbetjeningsløsninger</a>.</p>
 
 
                         </div>

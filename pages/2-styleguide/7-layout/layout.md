@@ -27,13 +27,13 @@ En selvbetjeningsløsning er delt op i tre overordnede områder:
 
 ### Header {#{% include create-id.html heading="Header" %}}
 
-<img src="{{ site.baseurl }}/assets/img/descriptionimages/Header_eksempel.svg" class="bg-darkgrey p-5" alt="Viser headeren i designsystemet" />
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/virk-header-layout.png" class="screenshot bg-darkgrey p-5" alt="Viser headeren i designsystemet" />
 
 Headeren identificerer portal, ansvarlig myndighed og den bruger, der er logget ind med NemLog-in. Headeren fungerer også til navigation og overordnet styring af selvbetjeningsløsningen. Se {% include links/component-guideline-link.html linktext="header-komponenten" %}.
 
 ### Indhold
 
-<img src="{{ site.baseurl }}/assets/img/descriptionimages/Indhold_eksempel.svg" class="bg-darkgrey p-5" alt="Viser opbygningen af en side i designsystemet" />
+<img src="{{ site.baseurl }}/assets/img/descriptionimages/virk-indhold-layout.png" class="screenshot bg-darkgrey p-5" alt="Viser opbygningen af en side i designsystemet" />
 
 Det specifikke indhold i selvbetjeningsløsningerne kan variere. Følg designsystemets {% include links/internal-link.html linktext="layoutprincipper" %}, når du designer din sides indhold.
 

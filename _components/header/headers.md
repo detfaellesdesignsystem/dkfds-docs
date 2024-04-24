@@ -26,15 +26,15 @@ tabs: "Retningslinjer, kode"
 
 ### Anvendes til
 
-Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen. 
+Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen.
 
-Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed og evt. med kontaktoplysninger.
+Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndighed, evt. med kontaktoplysninger.
 
 En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.
 
 ### Anvendes ikke til
 
-Anvend ikke headeren andre steder i løsningen end i toppen af siden. 
+Anvend ikke headeren andre steder i løsningen end i toppen af siden.
 
 Brug ikke topnavigationen som faneblade, anvend da {% include links/component-guideline-link.html linktext="faneblade" %}. 
 
@@ -45,46 +45,51 @@ Tag et kig på {% include links/internal-link.html linktext="eksemplerne på sel
 En header består af et antal rækker med forskelligt indhold.
 
 - Række 1 og række 2 er obligatoriske. Alle selvbetjeningsløsninger skal have portal-logo, login-info og løsningstitel som minimum.
-- Række 3 (topnavigation) kan anvendes hvis nødvendigt.
+- Række 3 kan anvendes hvis nødvendigt.
 
 #### Headerens rækker forklaret
 
 ##### Række 1 (obligatorisk)
+
 Portal-logo, NemLog-in-oplysninger og “Log af” knap.
 
 ##### Række 2 (obligatorisk)
+
 Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger.
 
 ##### Række 3 (frivillig)
+
 Navigation (topnavigation) i løsningen og søgefelt.
-
-### Eksempler
-
-#### Simpel header
-
-{% include code/preview-image.html component="header-simple" %}
-
-#### Header med navigation og søgefelt
-
-{% include code/preview-image.html component="header-with-navigation" %}
-
-### Menupunkter med dropdown
-
-Menupunkter med dropdown-funktionalitet giver adgang til undermenupunkter, men er ikke et menupunkt i sig selv. Overvej om dropdown-menu er den rigtige løsning. Topnavigation kombineret med venstremenu giver større fleksibilitet og mulighed for flere niveauer i navigationen.
-
-### Responsivitet og breakpoints
-
-På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed og eventuelle menupunkter ind i en “mobil”-menu. Vi anbefaler, at løsningen kun anvender denne visning, når der ikke længere er plads til indholdet på sidens bredde.
-
-Menupunkter, der ikke kan vises i sidens bredde, samles i en “mere”-menu, der ved klik vises på samme måde som mobilmenuen.
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Sprogvælger
+### Simpel header
 
-Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflowmenu øverst i række 1 og i sidens footer, hvor alle sprogvarianter skal være synlige. Se {% include links/component-guideline-link.html linktext="sprogvælger" %}-komponenten. Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
+{% include code/preview-image.html component="header-simple" %}
+
+### Header med navigation og søgefelt
+
+{% include code/preview-image.html component="header-with-navigation" %}
+
+#### Menupunkter med dropdown
+
+Menupunkter med dropdown-funktionalitet giver adgang til undermenupunkter, men er ikke et menupunkt i sig selv. Overvej om dropdown-menu er den rigtige løsning. Topnavigation kombineret med {% include links/component-guideline-link.html linktext="venstremenu" %} giver større fleksibilitet og mulighed for flere niveauer i navigationen.
+
+#### Responsivitet og breakpoints
+
+På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed og eventuelle menupunkter ind i en “mobil”-menu. Vi anbefaler, at løsningen kun anvender denne visning, når der ikke længere er plads til indholdet på sidens bredde.
+
+Menupunkter der ikke er plads til i sidens bredde samles i en “Mere”-menu, der vises som overflow-menu.
+
+### Header med sprogvælger
+
+Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflow-menu øverst i række 1 og i sidens footer (se {% include links/component-guideline-link.html linktext="sprogvælger" %}). Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 
 {% include code/preview-image.html component="header-switch-language" %}
+
+## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
+
+Se komponenten i {% include links/internal-link.html linktext="eksemplerne på selvbetjeningsløsninger" %}.
 
 <!--split-->
 

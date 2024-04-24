@@ -271,7 +271,12 @@ let debug = function(title, value){
 };
 
 let setScreenshots = function(){
-    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') || document.getElementsByTagName('body')[0].classList.contains('page-patterns') || document.getElementsByTagName('body')[0].classList.contains('page-templates') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
+    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-patterns') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-templates') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
         let screenshots = document.getElementsByClassName('screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
@@ -306,6 +311,19 @@ let setScreenshots = function(){
             let filename = getThemeCookie()+'-'+componentName+'.png';
             let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
             screenshots[i].innerHTML = image;
+        }
+    }
+
+    if (document.getElementsByTagName('body')[0].classList.contains('page-layout')) {
+        let screenshots = document.querySelectorAll('.screenshot');
+        for(let i = 0; i < screenshots.length; i++) {
+            let src = screenshots[i].getAttribute('src').split('/');
+            let lastElement = src.pop();
+            let filename = lastElement.split('-');
+            filename.shift();
+            let newFilename = getThemeCookie() + '-' + filename.join('-');
+            let newSrc = src.join('/') + "/" + newFilename;
+            screenshots[i].src = newSrc;
         }
     }
 };

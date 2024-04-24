@@ -60,7 +60,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
 {:.table .table--borderless .table--responsive-headers}
 | Tekst        | Skrifttype    | Skriftstørrelse | Linjehøjde | Teksttykkelse   | Tekstfarve | 
 |--------------|---------------|-----------------|------------|-----------------|------------|
-| Overskrift 1 | IBM Plex Sans | 48px            | 60px       | Bold (700)      | #1a1a1a    |
+| Overskrift 1 | IBM Plex Sans | 48px            | 56px       | Bold (700)      | #1a1a1a    |
 | Overskrift 2 | IBM Plex Sans | 32px            | 40px       | Semi-bold (600) | #1a1a1a    |
 | Overskrift 3 | IBM Plex Sans | 24px            | 32px       | Semi-bold (600) | #1a1a1a    |
 | Overskrift 4 | IBM Plex Sans | 20px            | 28px       | Semi-bold (600) | #1a1a1a    |
