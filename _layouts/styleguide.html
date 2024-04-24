@@ -50,16 +50,6 @@ layout: default
 
                 {% include nav/sidenavigation/tabs.html %}
 
-                {% if page.component %}
-                {% include code/preview-box.html 
-                    component=page.component 
-                    classes=page.componentClasses 
-                    title=page.componentTitle 
-                    link=page.componentLink 
-                    code=page.componentCode 
-                    url=page.componentUrl %}
-                {% endif %}
-
                 {% if page.previewimage %}
                 {% include code/preview-image.html 
                     component=page.previewimage 
