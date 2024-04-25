@@ -271,7 +271,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tabeller" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}</h3>
 </div>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `table--lines`, der var en forældet {% include links/component-code-link.html linktext="variant" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `table--lines`, der var en forældet variant.
 - Rettet fejl relateret til margin og padding for tabeller.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret teksten på søgeknappen ved {% include links/component-guideline-link.html linktext="søgning i tabeller" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Skærmlæserbeskederne til tjekboksene i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} er ændret til kun at være "vælg række". Da JavaScripten ikke længere ændrer i skærmlæserbeskederne, skal eventuelle oversættelser skrives direkte i HTML'en fremadrettet.

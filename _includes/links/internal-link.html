@@ -48,10 +48,10 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#bredde-i-procent"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "breakpoint" -%}
-        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjælpeklasser"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjaelpeklasser"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "browserunderstøttelse" -%}
-        <a href="/kom-i-gang/implementering-kode/browserunderstøttelse/"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "plugins" -%}
         <a href="/kom-i-gang/implementering-kode/plugins/"{{ classes }}>{{ include.linktext }}</a>
@@ -69,7 +69,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/kom-i-gang/designressourcer/#grundprincipper"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "designressourcer" -%}
-        <a href="/kom-i-gang/designressourcer/#design-ressourcer"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/designressourcer/#designressourcer"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "tjekliste",
              "tjeklisten" -%}
@@ -112,7 +112,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/styleguide/typografi/overskrifter/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "læs retningslinjerne for overskrifter" -%}
-        <a href="/styleguide/typografi/overskrifter/#retningslinjer"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/styleguide/typografi/overskrifter/#saadan-bruges-overskrifter"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "subheading",
              "subheadings" -%}
@@ -248,7 +248,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/eksempler/patterns/formular/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "se et eksempel på opsummeringssiden med fejl i trinindikatoren." -%} 
-        <a href="/eksempler/templates/#formular-med-fejl"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/eksempler/templates/#fejl"{{ classes }}>{{ include.linktext }}</a>
 
 
 
@@ -318,14 +318,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "privatlivspolitik og cookies" -%}
         <a href="/privatlivspolitik-cookies/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "footer-simple-language" -%} 
-        <a href="/eksempel/footer-simple-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en simpel footer" target="_blank"></a>
 
-    {%- when "footer-four-columns-language" -%} 
-        <a href="/eksempel/footer-four-columns-language/" class="screenshot d-block px-4 outer-border" title="Eksempel på sprogvælger i en kompleks footer" target="_blank"></a>
-    
-    
-    
+        
     {%- else -%}
         {{ include.linktext }}
 {%- endcase -%}

@@ -132,7 +132,7 @@ Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæ
 
 Defineres med klassen `button-primary`.
 
-Bemærk særlige {% include links/component-guideline-link.html linktext="retningslinjer" %} for primær knap.
+Bemærk særlige {% include links/component-guideline-link.html linktext="retningslinjer for primærknap" %}.
 
 ## Sekundær {#{% include create-id.html heading="Sekundær" append="-kode" %}}
 

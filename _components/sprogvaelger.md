@@ -49,11 +49,11 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 
 #### Eksempel på sprogvælger i en simpel footer
 
-{% include links/internal-link.html linktext="footer-simple-language" %}
+{% include links/example-link.html linktext="footer-simple-language" %}
 
 #### Eksempel på sprogvælger i en kompleks footer
 
-{% include links/internal-link.html linktext="footer-four-columns-language" %}
+{% include links/example-link.html linktext="footer-four-columns-language" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
