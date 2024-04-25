@@ -22,7 +22,7 @@ defaults:
       layout: "requirements-tool"
   - 
     scope:
-      path: "_components/*/*.md"
+      path: "_components/*.md"
     values:
       layout: "styleguide"
 
