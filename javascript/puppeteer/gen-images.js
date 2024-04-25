@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
-var root = "http://127.0.0.1:4000";
-//var root = "https://develop.designsystem.dk/";
+//var root = "http://127.0.0.1:4000";
+var root = "https://develop.designsystem.dk/";
 var targetRootDir = "img/examples/";
 var themes = ["virk", "borgerdk"];
 
@@ -12,7 +12,7 @@ var exampleUrls = [
     {"url": "/eksempel/footer-simple/", "filename": "footer-simple.png", "width": 1017, "height": 114 },
     {"url": "/eksempel/footer-simple-language/", "filename": "footer-simple-language.png", "width": 1017, "height": 213 },
     {"url": "/eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 80 },
-    {"url": "/eksempel/language-switcher-tooltip/", "filename": "language-switcher-tooltip.png", "width": 1017, "height": 101 },
+    {"url": "/eksempel/language-switcher-tooltip/", "filename": "language-switcher-tooltip.png", "width": 1017, "height": 95 },
     {"url": "/eksempel/footer-three-columns/", "filename": "footer-three-columns.png", "width": 1017, "height": 288 },
     {"url": "/eksempel/footer-four-columns/", "filename": "footer-four-columns.png", "width": 1017, "height": 328 },
     {"url": "/eksempel/footer-four-columns-language/", "filename": "footer-four-columns-language.png", "width": 1017, "height": 363 },
@@ -63,9 +63,15 @@ var exampleUrls = [
                     if(document.getElementsByClassName('tab-container').length > 0){
                         document.getElementsByClassName('tab-container')[0].parentNode.style.paddingTop = "0px";
                     }
-                    if(document.getElementsByTagName('body') !== null  && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
-                        var eventClick = new Event('mouseenter');
-                        document.getElementsByClassName('js-tooltip')[0].dispatchEvent(eventClick);
+                    if(document.getElementsByTagName('body') !== null && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
+                        document.querySelector('main').classList.add('d-none');
+                        document.querySelector('footer').style.marginTop = "63px";
+                        var eventMouseover = new Event('mouseover');
+                        document.getElementsByClassName('tooltip-target')[0].dispatchEvent(eventMouseover);
+                    }
+                    if(document.getElementsByTagName('body') !== null && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher")){
+                        document.querySelector('main').classList.add('d-none');
+                        document.querySelector('footer').style.marginTop = "50px";
                     }
                 });
                 await page.waitForTimeout(3000);
