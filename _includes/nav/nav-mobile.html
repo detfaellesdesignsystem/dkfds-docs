@@ -57,7 +57,7 @@
                     <ul class="overflow-list">
                         <li{% if _current %} class="active current"{% endif %}>
                             <a href="{{ _page.url | relative_url }}" class="nav-link">
-                                <span>{{ _page.title | smartify }} <span class="helptext">(overblik)</span></span>
+                                <span>{{ _page.title | smartify }} <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
                         {% include nav/nav-mobile.html links=_sublinks %}
