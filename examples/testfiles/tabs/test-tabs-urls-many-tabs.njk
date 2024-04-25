@@ -1,4 +1,4 @@
-{% from "components/tabs/tabs.njk" import tabUrls as tabUrls %}
+{% from "components/tabs/tabs.njk" import navigation_tabs as navigation_tabs %}
 
 {% set many_tabs = {
     "items": [
@@ -87,7 +87,7 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabUrls(many_tabs) }}
+            {{ navigation_tabs(many_tabs) }}
         </div>
     </div>
 </main>

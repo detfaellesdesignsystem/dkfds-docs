@@ -237,6 +237,7 @@ Dropdown:
 
 Faneblade:
 - h2: Sådan bruges komponenten
+- h2: Varianter
 - h2: Referencer
 
 Fejlmeddelelser:
@@ -430,8 +431,8 @@ Dropdown_Kode:
 
 Faneblade_Kode:
 - h2: Installation
-- h2: Faneblad med URL-skifte
-- h2: Faneblad med ikoner
+- h2: Faneblade til navigation
+- h2: Faneblade med ikoner
 
 Fejlmeddelelser_Kode:
 - h2: Installation

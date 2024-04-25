@@ -1,0 +1,39 @@
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
+
+{{ 
+    tabs({
+        "items": [
+            {
+                "active": true,
+                "button": {
+                    "text": "Indhold 1",
+                    "id": "tab1"
+                },
+                "panel": {
+                    "id": "tabpanel1",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper, enim eu fringilla varius, massa lectus molestie lacus, sed malesuada justo magna sit amet eros. Nam accumsan dignissim dignissim. In hac habitasse platea dictumst. Cras feugiat maximus turpis, id ullamcorper purus congue ut.</p>"
+                }
+            },
+            {
+                "button": {
+                    "text": "Indhold 2",
+                    "id": "tab2"
+                },
+                "panel": {
+                    "id": "tabpanel2",
+                    "content": "<p>Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit varius. Sed commodo at augue sit amet auctor. Maecenas ligula massa, rutrum quis porttitor id, semper ut libero. Nam quis felis porta lorem consequat eleifend a rutrum ante.</p>"
+                }
+            },
+            {
+                "button": {
+                    "text": "Indhold 3",
+                    "id": "tab3"
+                },
+                "panel": {
+                    "id": "tabpanel3",
+                    "content": "<p>Phasellus sodales lectus mi, vel pellentesque massa semper non. Sed iaculis sed nisl id dapibus. Aenean vitae tristique purus. Sed faucibus sit amet eros vitae commodo. Integer bibendum, justo nec scelerisque malesuada, nunc risus ultricies diam, euismod dignissim orci eros eget neque.</p>"
+                }
+            }
+        ]
+    }) 
+}}

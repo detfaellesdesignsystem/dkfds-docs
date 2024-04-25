@@ -1,4 +1,4 @@
-{% from "components/tabs/tabs.njk" import tabButtons as tabButtons %}
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
 
 
 {% set no_active_tabs = {
@@ -39,7 +39,7 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabButtons(no_active_tabs) }}
+            {{ tabs(no_active_tabs) }}
         </div>
     </div>
 </main>

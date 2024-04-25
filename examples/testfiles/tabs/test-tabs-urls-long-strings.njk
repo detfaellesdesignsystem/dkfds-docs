@@ -1,4 +1,4 @@
-{% from "components/tabs/tabs.njk" import tabUrls as tabUrls %}
+{% from "components/tabs/tabs.njk" import navigation_tabs as navigation_tabs %}
 
 {% set tab_list_long_strings = {
     "items": [
@@ -21,7 +21,7 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabUrls(tab_list_long_strings) }}
+            {{ navigation_tabs(tab_list_long_strings) }}
         </div>
     </div>
 </main>

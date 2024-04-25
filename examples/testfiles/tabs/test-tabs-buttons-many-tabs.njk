@@ -1,4 +1,4 @@
-{% from "components/tabs/tabs.njk" import tabButtons as tabButtons %}
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
 
 
 {% set very_long_tab_list = {
@@ -140,7 +140,7 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabButtons(very_long_tab_list) }}
+            {{ tabs(very_long_tab_list) }}
         </div>
     </div>
 </main>

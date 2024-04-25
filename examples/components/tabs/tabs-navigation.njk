@@ -1,0 +1,22 @@
+{% from "components/tabs/tabs.njk" import navigation_tabs as navigation_tabs %}
+
+{{ 
+    navigation_tabs({
+        "ariaLabel": "Eksemplets undersider",
+        "items": [
+            {
+                "current": true,
+                "href": "#indhold1",
+                "text": "Indhold 1"
+            },
+            {
+                "href": "#indhold2",
+                "text": "Indhold 2"
+            },
+            {
+                "href": "#indhold3",
+                "text": "Indhold 3"
+            }
+        ]
+    }) 
+}}

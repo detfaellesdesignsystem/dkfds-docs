@@ -3,7 +3,7 @@ function showGuidelines() {
     let codeTab = document.getElementById('code-tab');
     document.getElementById('guidelines-section').classList.remove('d-none');
     document.getElementById("code-section").classList.add('d-none');
-    guidelineTab?.setAttribute('aria-current', 'page');
+    guidelineTab?.setAttribute('aria-current', 'true');
     codeTab?.removeAttribute('aria-current');
     let introExample = document.querySelector('.intro-example');
     introExample?.classList.remove('d-none');
@@ -30,7 +30,7 @@ function showCode() {
     document.getElementById('guidelines-section').classList.add('d-none');
     document.getElementById('code-section').classList.remove('d-none');
     guidelineTab?.removeAttribute('aria-current');
-    codeTab?.setAttribute('aria-current', 'page');
+    codeTab?.setAttribute('aria-current', 'true');
     let introExample = document.querySelector('.intro-example');
     introExample?.classList.add('d-none');
     let guidelineAnchorlinks = document.querySelectorAll('.anchorlink-guidelines');

@@ -36,7 +36,7 @@ module.exports = function (outputPath, prod) {
             "pagination": ["./javascript/components/pagination.js"],
             "session-timeout": ["./javascript/components/session-timeout.js"],
             "docs-tabs": ["./javascript/docs-tabs.js"],
-            "url-tabs": ["./javascript/components/url-tabs.js"],
+            "tabs-navigation": ["./javascript/components/tabs-navigation.js"],
             "test": ["./javascript/test.js"]
         },
         module: {
