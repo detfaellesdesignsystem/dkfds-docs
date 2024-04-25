@@ -21,16 +21,6 @@ layout: default
             {%- include theme-alert.html -%}
             <section id="section-{{page.permalink}}">
 
-                {% if page.mailalert == true %}
-                <div class="alert alert-error mt-0 mb-8 d-none" role="alert" id="mail-error-summary">
-                    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use xlink:href="#highlight-off"></use></svg>
-                    <div class="alert-body">
-                        <h2 class="alert-heading">Der er problemer</h2>
-                        <ul class="alert-text nobullet-list"></ul>
-                    </div>
-                </div>
-                {% endif %}
-
                 <div class="subheading">
                     {{ page.subcategory }}
                 </div>
@@ -38,6 +28,7 @@ layout: default
                 {% comment %} There's an icon with id "print" so the print page needs another id {% endcomment %}
                 {% if page.title == "Print" %}
                 <h1 id="printpage">{{ page.title }}</h1>
+                {% comment %} Anchorlink component heading has id "anchorlinks" so the anchorlinks page needs another id {% endcomment %}
                 {% elsif page.title == "Anchorlinks" %}
                 <h1 id="anchorlinks-page">{{ page.title }}</h1>
                 {% else %}
@@ -46,22 +37,6 @@ layout: default
 
                 {% if page.lead != null and page.lead != "" %}
                 <p class="font-lead">{{ page.lead }}</p>
-                {% endif %}
-
-                {% include nav/sidenavigation/tabs.html %}
-
-                {% if page.previewimage %}
-                {% include code/preview-image.html 
-                    component=page.previewimage 
-                    classes=page.previewimageClasses 
-                    title=page.previewimageTitle 
-                    code=page.previewimageCode 
-                    image=page.previewimageImage %}
-                {% endif %}
-
-                {% if page.preview %}
-                {% include code/preview.html
-                    component=page.previewcomponent %}
                 {% endif %}
 
                 {%- if page.tabs -%}
