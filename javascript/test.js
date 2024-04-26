@@ -45,6 +45,51 @@ document.addEventListener("DOMContentLoaded", function() {
                   }).init();
                 break;
 
+            case 'JavaScript i faneblade':
+
+                initTest();
+
+                console.log('Testing error message for incorrect initialization:');
+                try {
+                    new DKFDS.Tabs();
+                } catch (err) {
+                    console.error(err.message);
+                }
+                let tabs = new DKFDS.Tabs(document.querySelector('div.tab-container'));
+                tabs.init();
+
+                console.log('Selecting the second tab.');
+                tabs.activateTab(tabs.tabs[1], true);
+
+                console.log('Testing events (click the tabs or navigate with the keyboard):');
+                let tabContainer = document.querySelector('div.tab-container');
+                let tab1 = tabContainer.querySelectorAll('.tab-button')[0];
+                let tab2 = tabContainer.querySelectorAll('.tab-button')[1];
+                let tab3 = tabContainer.querySelectorAll('.tab-button')[2];
+                tabContainer.addEventListener("fds.tab.changed", function() {
+                    console.log("New tab selected");
+                });
+                tab1.addEventListener("fds.tab.selected", function() {
+                    console.log("Tab 1 selected");
+                });
+                tab2.addEventListener("fds.tab.selected", function() {
+                    console.log("Tab 2 selected");
+                });
+                tab3.addEventListener("fds.tab.selected", function() {
+                    console.log("Tab 3 selected");
+                });
+                tab1.addEventListener("fds.tab.hidden", function() {
+                    console.log("Tab 1 hidden");
+                });
+                tab2.addEventListener("fds.tab.hidden", function() {
+                    console.log("Tab 2 hidden");
+                });
+                tab3.addEventListener("fds.tab.hidden", function() {
+                    console.log("Tab 3 hidden");
+                });
+
+                break;
+
             case 'JavaScript for modaler':
 
                 initTest();

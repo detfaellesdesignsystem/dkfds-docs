@@ -74,15 +74,17 @@ title: Test
 {:.h3}
 ## Faneblade
 
-{% include test/preview-test.html filename="test-tabs-buttons-javascript" description="Javascript i faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons" description="Faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-icons" description="Faneblade med ikoner" %}
 {% include test/preview-test.html filename="test-tabs-buttons-many-tabs" description="Mange faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-many-tabs-with-icons" description="Mange faneblade med ikoner" %}
-{% include test/preview-test.html filename="test-tabs-buttons-long-strings" description="Faneblade med lange tekststrenge" %}
-{% include test/preview-test.html filename="test-tabs-buttons-long-strings-with-icons" description="Faneblade med lange tekststrenge og med ikoner" %}
-{% include test/preview-test.html filename="test-tabs-buttons-long-sentences" description="Faneblade med lange sætninger" %}
-{% include test/preview-test.html filename="test-tabs-buttons-no-active-tabs" description="Ingen aktive faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-no-tabs" description="Ingen faneblade" %}
 {% include test/preview-test.html filename="test-tabs-buttons-only-one-tab" description="Kun ét faneblad" %}
-{% include test/preview-test.html filename="test-tabs-buttons-no-tabs" description="Ingen faneblade i komponenten" %}
+{% include test/preview-test.html filename="test-tabs-buttons-no-active-tabs" description="Ingen valgte faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-several-active-tabs" description="To valgte faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-javascript" description="JavaScript i faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-long-sentences" description="Faneblade med lange sætninger" %}
+{% include test/preview-test.html filename="test-tabs-buttons-long-strings" description="Faneblade med lange sætninger uden mellemrum" %}
+{% include test/preview-test.html filename="test-tabs-buttons-long-strings-with-icons" description="Faneblade med lange sætninger uden mellemrum og med ikoner" %}
 
 {% include test/preview-test.html filename="test-tabs-urls-many-tabs" description="Faneblade med URL-skifte, mange faneblade" %}
 {% include test/preview-test.html filename="test-tabs-urls-many-tabs-with-icons" description="Faneblade med URL-skifte, mange faneblade med ikoner" %}

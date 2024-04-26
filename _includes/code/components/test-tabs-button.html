@@ -1,8 +1,7 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Ingen valgte faneblade</h1>
-            <p>Åbn konsollen og tjek for sigende fejlbesked</p>
+            <h1 class="h2 mt-0 mb-9">Faneblade</h1>
         </div>
     </div>
     <div class="row">
@@ -12,7 +11,7 @@
                 <ul class="tab-list" role="tablist">
                     <li>
                         <button class="tab-button" role="tab" aria-controls="tabpanel1"
-                            aria-selected="false" id="tab1"><span>Indhold 1</span>
+                            aria-selected="true" id="tab1"><span>Indhold 1</span>
                         </button>
                     </li>
                     <li>
@@ -20,14 +19,23 @@
                             aria-selected="false" id="tab2"><span>Indhold 2</span>
                         </button>
                     </li>
+                    <li>
+                        <button class="tab-button" role="tab" aria-controls="tabpanel3"
+                            aria-selected="false" id="tab3"><span>Indhold 3</span>
+                        </button>
+                    </li>
                 </ul>
                 <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1"
-                    aria-labelledby="tab1" hidden>
+                    aria-labelledby="tab1">
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2"
                     aria-labelledby="tab2" hidden>
                     <p>Praesent consequat erat nec felis semper dignissim.</p>
+                </div>
+                <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3"
+                    aria-labelledby="tab3" hidden>
+                    <p>Phasellus sodales lectus mi.</p>
                 </div>
             </div>
 

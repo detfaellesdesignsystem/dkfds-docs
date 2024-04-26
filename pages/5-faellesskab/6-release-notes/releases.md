@@ -338,7 +338,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 <div><span class="small-text mt-0 d-block">17-10-2022</span></div>
 
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne {% include links/component-code-link.html linktext="accordions" %}, {% include links/component-code-link.html linktext="tabeller med valgbare rækker" %}, {% include links/component-guideline-link.html linktext="karakterbegrænsning" %} og {% include links/component-guideline-link.html linktext="datovælgeren" %}.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at ændre sprog i komponenterne {% include links/component-code-link.html linktext="accordions" %}, {% include links/component-code-link.html linktext="tabeller med valgbare rækker" %}, {% include links/component-code-link.html linktext="karakterbegrænsning" %} og {% include links/component-code-link.html linktext="datovælgeren" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret aria-attributter for {% include links/component-code-link.html linktext="toastbeskeder" %}, da beskederne ikke blev læst højt af skærmlæsere. De nye aria-attributter skal sættes på henholdsvis toast-containeren og toastbeskederne.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret placeringen af {% include links/component-guideline-link.html linktext="toastbeskeder" %}, så de nu vises øverst på både store og små skærme. Hvis der vises flere beskeder ad gangen, anbefales det at lade den nyeste stå øverst.
 - Tilføjet `cursor:pointer` til {% include links/component-guideline-link.html linktext="toastbeskeders" %} luk-knap.

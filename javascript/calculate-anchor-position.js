@@ -11,7 +11,10 @@ var calculateAnchorPosition = function (hash) {
         return topOffset;
     }
 
-    var navPadding    = parseInt($('.sidemenu').css('padding-top'), 10);
+    var navPadding = 0;
+    if (document.querySelectorAll('.sidemenu').length > 0) {
+        navPadding = parseInt($('.sidemenu').css('padding-top'), 10);
+    }
     var anchorPadding = parseInt(anchor.css('padding-top'), 10);
 
     //start with the height of the header

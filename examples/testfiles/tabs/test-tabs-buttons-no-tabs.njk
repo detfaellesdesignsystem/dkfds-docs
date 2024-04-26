@@ -1,14 +1,19 @@
 {% from "components/tabs/tabs.njk" import tabs as tabs %}
 
-{% set no_tabs = {
-    "items": []
-} %}
-
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabs(no_tabs) }}
-            <p>Tjek fejlbeskeden i konsollen</p>
+            <h1 class="h2 mt-0 mb-9">Ingen faneblade</h1>
+            <p>Åbn konsollen og tjek for sigende fejlbesked</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                tabs({
+                    "items": []
+                }) 
+            }}
         </div>
     </div>
 </main>

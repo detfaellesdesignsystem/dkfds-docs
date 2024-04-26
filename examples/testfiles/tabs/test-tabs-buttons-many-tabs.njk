@@ -1,146 +1,110 @@
 {% from "components/tabs/tabs.njk" import tabs as tabs %}
 
-
-{% set very_long_tab_list = {
-    "items": [
-        {
-            "active": true,
-            "button": {
-                "text": "Indhold 1",
-                "id": "tab1"
-            },
-            "panel":{
-                "id": "tabpanel1",
-                "content": "<h2>Indhold 1</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 2",
-                "id": "tab2"
-            },
-            "panel":{
-                "id": "tabpanel2",
-                "content": "<h2>Indhold 2</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 3",
-                "id": "tab3"
-            },
-            "panel":{
-                "id": "tabpanel3",
-                "content": "<h2>Indhold 3</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 4",
-                "id": "tab4"
-            },
-            "panel":{
-                "id": "tabpanel4",
-                "content": "<h2>Indhold 4</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 5",
-                "id": "tab5"
-            },
-            "panel":{
-                "id": "tabpanel5",
-                "content": "<h2>Indhold 5</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 6",
-                "id": "tab6"
-            },
-            "panel":{
-                "id": "tabpanel6",
-                "content": "<h2>Indhold 6</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 7",
-                "id": "tab7"
-            },
-            "panel":{
-                "id": "tabpanel7",
-                "content": "<h2>Indhold 7</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 8",
-                "id": "tab8"
-            },
-            "panel":{
-                "id": "tabpanel8",
-                "content": "<h2>Indhold 8</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 9",
-                "id": "tab9"
-            },
-            "panel":{
-                "id": "tabpanel9",
-                "content": "<h2>Indhold 9</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 10",
-                "id": "tab10"
-            },
-            "panel":{
-                "id": "tabpanel10",
-                "content": "<h2>Indhold 10</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 11",
-                "id": "tab11"
-            },
-            "panel":{
-                "id": "tabpanel11",
-                "content": "<h2>Indhold 11</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 12",
-                "id": "tab12"
-            },
-            "panel":{
-                "id": "tabpanel12",
-                "content": "<h2>Indhold 12</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "Indhold 13",
-                "id": "tab13"
-            },
-            "panel":{
-                "id": "tabpanel13",
-                "content": "<h2>Indhold 13</h2><p>Mauris tempor, tellus a laoreet finibus, neque metus hendrerit augue, ac lacinia nisl dolor et augue. Ut lorem massa, consequat ut orci sit amet, maximus dictum orci. Mauris pharetra nunc sed augue bibendum semper. Donec in cursus orci. Ut sed posuere elit, quis semper turpis. Curabitur malesuada nisi nec nisl facilisis ornare. Praesent vestibulum, velit id sollicitudin auctor, ipsum lacus auctor nisl, in lacinia sem massa eget urna.</p>"
-            }
-        }
-    ]
-} %}
-
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabs(very_long_tab_list) }}
+            <h1 class="h2 mt-0 mb-9">Mange faneblade</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                tabs({
+                    "items": [
+                        {
+                            "button": {
+                                "text": "Faneblad 1",
+                                "id": "tab1"
+                            },
+                            "panel": {
+                                "id": "tabpanel1",
+                                "content": "<p>Panel 1</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 2",
+                                "id": "tab2",
+                                "selected": true
+                            },
+                            "panel": {
+                                "id": "tabpanel2",
+                                "content": "<p>Panel 2</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 3",
+                                "id": "tab3"
+                            },
+                            "panel": {
+                                "id": "tabpanel3",
+                                "content": "<p>Panel 3</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 4",
+                                "id": "tab4"
+                            },
+                            "panel": {
+                                "id": "tabpanel4",
+                                "content": "<p>Panel 4</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 5",
+                                "id": "tab5"
+                            },
+                            "panel": {
+                                "id": "tabpanel5",
+                                "content": "<p>Panel 5</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 6",
+                                "id": "tab6"
+                            },
+                            "panel": {
+                                "id": "tabpanel6",
+                                "content": "<p>Panel 6</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 7",
+                                "id": "tab7"
+                            },
+                            "panel": {
+                                "id": "tabpanel7",
+                                "content": "<p>Panel 7</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 8",
+                                "id": "tab8"
+                            },
+                            "panel": {
+                                "id": "tabpanel8",
+                                "content": "<p>Panel 8</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 9",
+                                "id": "tab9"
+                            },
+                            "panel": {
+                                "id": "tabpanel9",
+                                "content": "<p>Panel 9</p>"
+                            }
+                        }
+                    ]
+                }) 
+            }}
         </div>
     </div>
 </main>

@@ -1,50 +1,42 @@
 {% from "components/tabs/tabs.njk" import tabs as tabs %}
 
-
-{% set tab_list_long_strings = {
-    "items": [
-        {
-            "active": true,
-            "button": {
-                "text": "1LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue",
-                "id": "tab1",
-                "icon": "construction"
-                
-            },
-            "panel":{
-                "id": "tabpanel1",
-                "content": "<h2>1LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</h2><p>LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "2LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue",
-                "id": "tab2",
-                "icon": "format-list-checks"
-            },
-            "panel":{
-                "id": "tabpanel2",
-                "content": "<h2>2LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</h2><p>LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</p>"
-            }
-        },
-        {
-            "button": {
-                "text": "3LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue",
-                "id": "tab3",
-                "icon": "construction"
-            },
-            "panel":{
-                "id": "tabpanel3",
-                "content": "<h2>3LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</h2><p>LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</p>"
-            }
-        }
-    ]
-} %}
-
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            {{ tabs(tab_list_long_strings) }}
+            <h1 class="h2 mt-0 mb-9">Faneblade med lange sætninger uden mellemrum og med ikoner</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                tabs({
+                    "items": [
+                        {
+                            "button": {
+                                "text": "1LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibh",
+                                "id": "tab1",
+                                "icon": "calculator",
+                                "selected": true
+                            },
+                            "panel": {
+                                "id": "tabpanel1",
+                                "content": "<p>1LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "2LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibh",
+                                "id": "tab2",
+                                "icon": "feedback"
+                            },
+                            "panel": {
+                                "id": "tabpanel2",
+                                "content": "<p>2LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugue</p>"
+                            }
+                        }
+                    ]
+                }) 
+            }}
         </div>
     </div>
 </main>
