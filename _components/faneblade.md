@@ -106,9 +106,9 @@ new DKFDS.Tabs(document.getElementById('TAB-ID')).init();
 
 Når man vælger et nyt faneblad, bliver eventet `fds.tab.changed` udløst på `.tab-container` elementet, som man kan koble sig på med en eventlistener.
 
-Når et faneblad åbnes, bliver eventet `fds.tab.open` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
+Når et faneblad vælges, bliver eventet `fds.tab.selected` udløst på det tilhørende `.tab-button` faneblad, som man kan koble sig på med en eventlistener.
 
-Når et faneblad lukkes, bliver eventet `fds.tab.close` udløst på det tilhørende `.tab-button` faneblad element, som man kan koble sig på med en eventlistener.
+Når et faneblad ikke længere er valgt, bliver eventet `fds.tab.hidden` udløst på det tilhørende `.tab-button` faneblad, som man kan koble sig på med en eventlistener.
 
 ## Faneblade til navigation {#{% include create-id.html heading="Faneblade til navigation" append="-kode" %}}
 

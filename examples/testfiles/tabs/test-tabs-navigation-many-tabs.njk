@@ -1,0 +1,70 @@
+{% from "components/tabs/tabs.njk" import navigation_tabs as navigation_tabs %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Mange faneblade til navigation</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                navigation_tabs({
+                    "ariaLabel": "Eksemplets undersider",
+                    "items": [
+                        {
+                            "current": true,
+                            "href": "#tab1",
+                            "text": "Faneblad 1"
+                        },
+                        {
+                            "href": "#tab2",
+                            "text": "Faneblad 2"
+                        },
+                        {
+                            "href": "#tab3",
+                            "text": "Faneblad 3"
+                        },
+                        {
+                            "href": "#tab4",
+                            "text": "Faneblad 4"
+                        },
+                        {
+                            "href": "#tab5",
+                            "text": "Faneblad 5"
+                        },
+                        {
+                            "href": "#tab6",
+                            "text": "Faneblad 6"
+                        },
+                        {
+                            "href": "#tab7",
+                            "text": "Faneblad 7"
+                        },
+                        {
+                            "href": "#tab8",
+                            "text": "Faneblad 8"
+                        },
+                        {
+                            "href": "#tab9",
+                            "text": "Faneblad 9"
+                        },
+                        {
+                            "href": "#tab10",
+                            "text": "Faneblad 10"
+                        },
+                        {
+                            "href": "#tab11",
+                            "text": "Faneblad 11"
+                        },
+                        {
+                            "href": "#tab12",
+                            "text": "Faneblad 12"
+                        }
+                    ]
+                }) 
+            }}
+            <p>Indhold under fanebladene</p>
+        </div>
+    </div>
+</main>

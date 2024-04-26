@@ -12,18 +12,18 @@ function setupExample() {
     if (main) {
         let content1 = document.createElement('div');
         content1.id = "content1";
-        content1.innerHTML = '<h2>Indhold 1</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper, enim eu fringilla varius, massa lectus molestie lacus, sed malesuada justo magna sit amet eros. Nam accumsan dignissim dignissim. In hac habitasse platea dictumst. Cras feugiat maximus turpis, id ullamcorper purus congue ut.</p>';
+        content1.innerHTML = '<h2>Overskrift 1</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper, enim eu fringilla varius, massa lectus molestie lacus, sed malesuada justo magna sit amet eros. Nam accumsan dignissim dignissim. In hac habitasse platea dictumst. Cras feugiat maximus turpis, id ullamcorper purus congue ut.</p>';
         main.appendChild(content1);
 
         let content2 = document.createElement('div');
         content2.id = "content2";
-        content2.innerHTML = '<h2>Indhold 2</h2><p>Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit varius. Sed commodo at augue sit amet auctor. Maecenas ligula massa, rutrum quis porttitor id, semper ut libero. Nam quis felis porta lorem consequat eleifend a rutrum ante.</p>';
+        content2.innerHTML = '<h2>Overskrift 2</h2><p>Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit varius. Sed commodo at augue sit amet auctor. Maecenas ligula massa, rutrum quis porttitor id, semper ut libero. Nam quis felis porta lorem consequat eleifend a rutrum ante.</p>';
         content2.classList.add('d-none');
         main.appendChild(content2);
 
         let content3 = document.createElement('div');
         content3.id = "content3";
-        content3.innerHTML = '<h2>Indhold 3</h2><p>Phasellus sodales lectus mi, vel pellentesque massa semper non. Sed iaculis sed nisl id dapibus. Aenean vitae tristique purus. Sed faucibus sit amet eros vitae commodo. Integer bibendum, justo nec scelerisque malesuada, nunc risus ultricies diam, euismod dignissim orci eros eget neque.</p>';
+        content3.innerHTML = '<h2>Overskrift 3</h2><p>Phasellus sodales lectus mi, vel pellentesque massa semper non. Sed iaculis sed nisl id dapibus. Aenean vitae tristique purus. Sed faucibus sit amet eros vitae commodo. Integer bibendum, justo nec scelerisque malesuada, nunc risus ultricies diam, euismod dignissim orci eros eget neque.</p>';
         content3.classList.add('d-none');
         main.appendChild(content3);
     }

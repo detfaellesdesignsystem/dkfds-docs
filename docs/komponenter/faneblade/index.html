@@ -1738,15 +1738,15 @@
         <div class="tab-container">
     <ul class="tab-list" role="tablist">
         <li>
-            <button class="tab-button" role="tab" aria-controls="tabpanel1" aria-selected="true" id="tab1"><span>Indhold 1</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel1" aria-selected="true" id="tab1"><span>Faneblad 1</span>
             </button>
         </li>
         <li>
-            <button class="tab-button" role="tab" aria-controls="tabpanel2" aria-selected="false" id="tab2"><span>Indhold 2</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel2" aria-selected="false" id="tab2"><span>Faneblad 2</span>
             </button>
         </li>
         <li>
-            <button class="tab-button" role="tab" aria-controls="tabpanel3" aria-selected="false" id="tab3"><span>Indhold 3</span>
+            <button class="tab-button" role="tab" aria-controls="tabpanel3" aria-selected="false" id="tab3"><span>Faneblad 3</span>
             </button>
         </li>
     </ul>
@@ -2007,17 +2007,17 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
     &lt;ul class=&quot;tab-list&quot; role=&quot;tablist&quot;&gt;
         &lt;li&gt;
             &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel1&quot;
-                aria-selected=&quot;true&quot; id=&quot;tab1&quot;&gt;&lt;span&gt;Indhold 1&lt;/span&gt;
+                aria-selected=&quot;true&quot; id=&quot;tab1&quot;&gt;&lt;span&gt;Faneblad 1&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
         &lt;li&gt;
             &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel2&quot;
-                aria-selected=&quot;false&quot; id=&quot;tab2&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;
+                aria-selected=&quot;false&quot; id=&quot;tab2&quot;&gt;&lt;span&gt;Faneblad 2&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
         &lt;li&gt;
             &lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel3&quot;
-                aria-selected=&quot;false&quot; id=&quot;tab3&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;
+                aria-selected=&quot;false&quot; id=&quot;tab3&quot;&gt;&lt;span&gt;Faneblad 3&lt;/span&gt;
             &lt;/button&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
@@ -2062,9 +2062,9 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
 
 <p>Når man vælger et nyt faneblad, bliver eventet <code>fds.tab.changed</code> udløst på <code>.tab-container</code> elementet, som man kan koble sig på med en eventlistener.</p>
 
-<p>Når et faneblad åbnes, bliver eventet <code>fds.tab.open</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
+<p>Når et faneblad vælges, bliver eventet <code>fds.tab.selected</code> udløst på det tilhørende <code>.tab-button</code> faneblad, som man kan koble sig på med en eventlistener.</p>
 
-<p>Når et faneblad lukkes, bliver eventet <code>fds.tab.close</code> udløst på det tilhørende <code>.tab-button</code> faneblad element, som man kan koble sig på med en eventlistener.</p>
+<p>Når et faneblad ikke længere er valgt, bliver eventet <code>fds.tab.hidden</code> udløst på det tilhørende <code>.tab-button</code> faneblad, som man kan koble sig på med en eventlistener.</p>
 
 <h2 id="faneblade-til-navigation-kode">Faneblade til navigation</h2>
 
@@ -2089,14 +2089,14 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;tab-container&quot; aria-label=&quot;Eksemplets undersider&quot;&gt;
     &lt;ul class=&quot;tab-list&quot;&gt;
         &lt;li&gt;
-            &lt;a href=&quot;#indhold1&quot; class=&quot;tab-button&quot; aria-current=&quot;true&quot;&gt;&lt;span&gt;Indhold
+            &lt;a href=&quot;#indhold1&quot; class=&quot;tab-button&quot; aria-current=&quot;true&quot;&gt;&lt;span&gt;Faneblad
                     1&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;a href=&quot;#indhold2&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Indhold 2&lt;/span&gt;&lt;/a&gt;
+            &lt;a href=&quot;#indhold2&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Faneblad 2&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;a href=&quot;#indhold3&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Indhold 3&lt;/span&gt;&lt;/a&gt;
+            &lt;a href=&quot;#indhold3&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Faneblad 3&lt;/span&gt;&lt;/a&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;</code></pre></figure>

@@ -86,13 +86,11 @@ title: Test
 {% include test/preview-test.html filename="test-tabs-buttons-long-strings" description="Faneblade med lange sætninger uden mellemrum" %}
 {% include test/preview-test.html filename="test-tabs-buttons-long-strings-with-icons" description="Faneblade med lange sætninger uden mellemrum og med ikoner" %}
 
-{% include test/preview-test.html filename="test-tabs-urls-many-tabs" description="Faneblade med URL-skifte, mange faneblade" %}
-{% include test/preview-test.html filename="test-tabs-urls-many-tabs-with-icons" description="Faneblade med URL-skifte, mange faneblade med ikoner" %}
-{% include test/preview-test.html filename="test-tabs-urls-long-strings" description="Faneblade med URL-skifte, lange tekststrenge" %}
-{% include test/preview-test.html filename="test-tabs-urls-long-strings-with-icons" description="Faneblade med URL-skifte, lange tekststrenge med ikoner" %}
-{% include test/preview-test.html filename="test-tabs-urls-long-sentences" description="Faneblade med URL-skifte, lange sætninger" %}
-{% include test/preview-test.html filename="test-tabs-urls-no-active-tabs" description="Faneblade med URL-skifte, ingen aktive faneblade" %}
-{% include test/preview-test.html filename="test-tabs-urls-only-one-tab" description="Faneblade med URL-skifte, kun ét faneblad" %}
+{% include test/preview-test.html filename="test-tabs-navigation" description="Faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-icons" description="Faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-many-tabs" description="Mange faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-no-tabs" description="Ingen faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-only-one-tab" description="Kun ét faneblad til navigation" %}
 
 {:.h3}
 ## Funktionslink
