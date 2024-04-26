@@ -22,7 +22,7 @@ var exampleUrls = [
     {"url": "/eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
     {"url": "/eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
     {"url": "/eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 },
-    {"url": "/eksempel/tabs-urls/", "filename": "tabs-urls.png", "width": 771, "height":230 }
+    {"url": "/eksempel/tabs-navigation/", "filename": "tabs-navigation.png", "width": 771, "height":286 }
 ];
 
 (async () => {
@@ -61,7 +61,7 @@ var exampleUrls = [
                         document.getElementsByClassName('footer')[0].style.marginTop = "0px";
                     }
                     if(document.getElementsByClassName('tab-container').length > 0){
-                        document.getElementsByClassName('tab-container')[0].parentNode.style.paddingTop = "0px";
+                        document.getElementsByClassName('tab-list')[0].style.marginTop = "-30px";
                     }
                     if(document.getElementsByTagName('body') !== null && document.getElementsByTagName('body')[0].classList.contains("page-language-switcher-tooltip")){
                         document.querySelector('main').classList.add('d-none');

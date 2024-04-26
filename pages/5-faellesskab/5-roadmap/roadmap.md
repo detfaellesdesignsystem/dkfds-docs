@@ -63,4 +63,4 @@ Sagerne kan være:
 
 ## Andet {#{% include create-id.html heading="Andet" %}}
 
-{% include roadmap.html title="Vejledning til datavisualisering og infografik" status="Gennemført" link="/design/datavisualisering-infografik/" %}
+{% include roadmap.html title="Vejledning til datavisualisering og infografik" status="Gennemført" link="/styleguide/datavisualisering-infografik/" %}

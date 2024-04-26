@@ -69,13 +69,13 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 ## Eksternt link {#{% include create-id.html heading="Eksternt link" %}}
 
-{% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/design/typografi/links/#eksternt-link-kode" %}
+{% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/styleguide/typografi/links/#eksternt-link-kode" %}
 
 ## Sekundære links {#{% include create-id.html heading="Sekundære links" %}}
 
 <p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
 
-{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" link=false code="/design/typografi/links/#sekundaere-links-kode" %}
+{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" link=false code="/styleguide/typografi/links/#sekundaere-links-kode" %}
 
 ### Designværdier
 

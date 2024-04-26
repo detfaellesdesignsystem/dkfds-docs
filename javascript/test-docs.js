@@ -8,9 +8,9 @@ const RED_COLOR = '\x1b[31m';
 const CYAN_COLOR = '\x1b[36m';
 
 let folder = 'docs';
-//let folder = 'docs/design';
+//let folder = 'docs/styleguide';
 //let folder = 'docs/komponenter';
-//let folder = 'docs/design/borders';
+//let folder = 'docs/styleguide/borders';
 //let folder = 'docs/komponenter/anchorlinks';
 //let folder = 'docs/komponenter/tags';
 

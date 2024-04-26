@@ -65,14 +65,14 @@ Vær særligt opmærksom på følgende:
 - Faneblade til navigation skal placeres i toppen af siden umiddelbart efter overskriften og evt. manchet.
 - Det anbefales at tilføje kode til komponenten, som gør, at siden ikke hopper til toppen ved tryk på en ny fane. Designsystemets komponentsider kan anvendes som inspiration.
 
-{% include code/preview-image.html component="tabs-navigation" title="Eksempel på faneblade med URL-skifte" code="/komponenter/faneblade/#faneblad-URL-skift" %}
+{% include code/preview-image.html component="tabs-navigation" title="Eksempel på faneblade med URL-skifte" code="/komponenter/faneblade/#faneblade-til-navigation-kode" %}
 
 ### Faneblade med ikoner
 
 Faneblade kan vises med ikoner, hvis disse understøtter de angivne sektioner visuelt. Vi anbefaler at være forsigtig med denne løsning, da et ikon der læses forkert eller misforståes kan forvirre brugeren mere end det hjælper. Så benyt kun ikoner hvis de er klare i budskabet og hjælper med at kommunikere det underliggende indhold.
 Ikoner skal altid understøttes af en label med fanebladets navn.
 
-{% include code/preview-box.html component="tabs-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/#faneblad-med-ikoner"%} 
+{% include code/preview-box.html component="tabs-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/#faneblade-med-ikoner"%} 
 
 {% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
 

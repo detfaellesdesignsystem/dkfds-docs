@@ -85,7 +85,7 @@ Hvis kun få kolonner i en tabel kan sorteres, kan komponenten {% include links/
 
 Ved sortering af responsive tabeller på mobil anvendes i stedet komponenten {% include links/component-guideline-link.html linktext="Sortering med overflow menu" %}.
 
-{% include code/preview-box.html component="table-sort" title="Eksempel på sortering i tabel" code="/komponenter/tables/#sortering-i-tabel-kode" %}
+{% include code/preview-box.html component="table-sort" title="Eksempel på sortering i tabel" code="/komponenter/tables/#sortering-i-tabeller-kode" %}
 
 ### Søgning i tabeller {#{% include create-id.html heading="Søgning i tabeller" %}}
 
@@ -219,7 +219,7 @@ Tilføj klassen `table--compact` på `<table>`.
 ### Ekstra kompakt
 Tilføj klassen `table--extracompact` på `<table>`.
 
-## Sortering i tabel {#{% include create-id.html heading="Sortering i tabel" append="-kode" %}}
+## Sortering i tabeller {#{% include create-id.html heading="Sortering i tabeller" append="-kode" %}}
 
 Se nedenstående eksempels HTML for, hvilke klasser, attributter og knapper, der skal sættes på hhv. `<th>` og `<tbody>`.
 
