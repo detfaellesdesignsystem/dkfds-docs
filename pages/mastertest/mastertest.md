@@ -74,23 +74,32 @@ title: Test
 {:.h3}
 ## Faneblade
 
-{% include test/preview-test.html filename="test-tabs-buttons" description="Faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-icons" description="Faneblade med ikoner" %}
-{% include test/preview-test.html filename="test-tabs-buttons-many-tabs" description="Mange faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-no-tabs" description="Ingen faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-only-one-tab" description="Kun ét faneblad" %}
-{% include test/preview-test.html filename="test-tabs-buttons-no-active-tabs" description="Ingen valgte faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-several-active-tabs" description="To valgte faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-javascript" description="JavaScript i faneblade" %}
-{% include test/preview-test.html filename="test-tabs-buttons-long-sentences" description="Faneblade med lange sætninger" %}
-{% include test/preview-test.html filename="test-tabs-buttons-long-strings" description="Faneblade med lange sætninger uden mellemrum" %}
-{% include test/preview-test.html filename="test-tabs-buttons-long-strings-with-icons" description="Faneblade med lange sætninger uden mellemrum og med ikoner" %}
+{:.test-link}
+A: Test af "traditionelle" faneblade<br>
+B: Test af faneblade anvendt til sidenavigation
 
-{% include test/preview-test.html filename="test-tabs-navigation" description="Faneblade til navigation" %}
-{% include test/preview-test.html filename="test-tabs-navigation-icons" description="Faneblade til navigation" %}
-{% include test/preview-test.html filename="test-tabs-navigation-many-tabs" description="Mange faneblade til navigation" %}
-{% include test/preview-test.html filename="test-tabs-navigation-no-tabs" description="Ingen faneblade til navigation" %}
-{% include test/preview-test.html filename="test-tabs-navigation-only-one-tab" description="Kun ét faneblad til navigation" %}
+{% include test/preview-test.html filename="test-tabs-buttons" description="A: Faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-icons" description="A: Faneblade med ikoner" %}
+{% include test/preview-test.html filename="test-tabs-buttons-many-tabs" description="A: Mange faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-no-tabs" description="A: Ingen faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-only-one-tab" description="A: Kun ét faneblad" %}
+{% include test/preview-test.html filename="test-tabs-buttons-no-active-tabs" description="A: Ingen valgte faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-several-active-tabs" description="A: To valgte faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-javascript" description="A: JavaScript i faneblade" %}
+{% include test/preview-test.html filename="test-tabs-buttons-long-sentences" description="A: Faneblade med lange sætninger" %}
+{% include test/preview-test.html filename="test-tabs-buttons-long-strings" description="A: Faneblade med lange sætninger uden mellemrum" %}
+{% include test/preview-test.html filename="test-tabs-buttons-long-strings-with-icons" description="A: Faneblade med lange sætninger uden mellemrum og med ikoner" %}
+
+{% include test/preview-test.html filename="test-tabs-navigation" description="B: Faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-icons" description="B: Faneblade til navigation med ikoner" %}
+{% include test/preview-test.html filename="test-tabs-navigation-many-tabs" description="B: Mange faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-no-tabs" description="B: Ingen faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-only-one-tab" description="B: Kun ét faneblad til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-no-active-tabs" description="B: Ingen valgte faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-several-active-tabs" description="B: To valgte faneblade til navigation" %}
+{% include test/preview-test.html filename="test-tabs-navigation-long-sentences" description="B: Faneblade til navigation med lange sætninger" %}
+{% include test/preview-test.html filename="test-tabs-navigation-long-strings" description="B: Faneblade til navigation med lange sætninger uden mellemrum" %}
+{% include test/preview-test.html filename="test-tabs-navigation-long-strings-with-icons" description="B: Faneblade til navigation med lange sætninger uden mellemrum og med ikoner" %}
 
 {:.h3}
 ## Funktionslink
