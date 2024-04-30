@@ -5,6 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
+const VERSION = '10.0.0';
 
 document.addEventListener("DOMContentLoaded", function(){
  
@@ -120,7 +121,7 @@ let setStylesheet = function(){
         var lnk = document.createElement('link');
         lnk.type='text/css';
         lnk.rel='stylesheet';
-        lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
+        lnk.href= '/assets/style/' + themeStylesheets[indexOfTheme] + '.css' + '?v=' + VERSION;
     
         document.getElementsByTagName('head')[0].appendChild(lnk);
     }
