@@ -1737,24 +1737,14 @@
     
     <div class="component-example px-4 py-4">
         
-        <ul class="nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40">
-    <li>
+        <div role="group" aria-labelledby="toggle-switch-heading" class="w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Indstillinger</h2>
 
-        <div class="toggle-element">
-            <label class="toggle-label" for="completed-switch">Vis afsluttede sager</label>
-            <button class="toggle-button" role="switch" aria-checked="true" id="completed-switch"></button>
-        </div>
+    <button class="toggle-switch w-percent-100" type="button" role="switch" aria-checked="true"><span>Vis afsluttede sager</span></button>
 
-    </li>
-    <li>
+    <button class="toggle-switch w-percent-100" type="button" role="switch" aria-checked="false"><span>Vis sager ældre end et år</span></button>
 
-        <div class="toggle-element">
-            <label class="toggle-label" for="yearold-switch">Vis sager ældre end et år</label>
-            <button class="toggle-button" role="switch" aria-checked="false" id="yearold-switch"></button>
-        </div>
-
-    </li>
-</ul>
+</div>
         
     </div>
     
@@ -1789,8 +1779,6 @@
 
 <h3>HTML Struktur</h3>
 
-<p>Afstand mellem label og knap skal tilpasses til ens løsning. Hvorvidt toggle switches skal placeres i en liste eller i en anden semantisk struktur, afhænger af konteksten.</p>
-
 <div class="component-preview component-preview-code  component-code-toggle">
     
     
@@ -1803,35 +1791,34 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40&quot;&gt;
-    &lt;li&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div role=&quot;group&quot; aria-labelledby=&quot;toggle-switch-heading&quot;
+    class=&quot;w-percent-100 w-percent-sm-60 w-percent-md-40&quot;&gt;
+    &lt;h2 class=&quot;h5 mb-4 mt-0&quot; id=&quot;toggle-switch-heading&quot;&gt;Indstillinger&lt;/h2&gt;
 
-        &lt;div class=&quot;toggle-element&quot;&gt;
-            &lt;label class=&quot;toggle-label&quot; for=&quot;completed-switch&quot;&gt;Vis afsluttede sager&lt;/label&gt;
-            &lt;button class=&quot;toggle-button&quot; role=&quot;switch&quot; aria-checked=&quot;true&quot;
-                id=&quot;completed-switch&quot;&gt;&lt;/button&gt;
-        &lt;/div&gt;
+    &lt;button class=&quot;toggle-switch w-percent-100&quot; type=&quot;button&quot; role=&quot;switch&quot;
+        aria-checked=&quot;true&quot;&gt;&lt;span&gt;Vis afsluttede sager&lt;/span&gt;&lt;/button&gt;
 
-    &lt;/li&gt;
-    &lt;li&gt;
+    &lt;button class=&quot;toggle-switch w-percent-100&quot; type=&quot;button&quot; role=&quot;switch&quot;
+        aria-checked=&quot;false&quot;&gt;&lt;span&gt;Vis sager ældre end et år&lt;/span&gt;&lt;/button&gt;
 
-        &lt;div class=&quot;toggle-element&quot;&gt;
-            &lt;label class=&quot;toggle-label&quot; for=&quot;yearold-switch&quot;&gt;Vis sager ældre end et år&lt;/label&gt;
-            &lt;button class=&quot;toggle-button&quot; role=&quot;switch&quot; aria-checked=&quot;false&quot;
-                id=&quot;yearold-switch&quot;&gt;&lt;/button&gt;
-        &lt;/div&gt;
-
-    &lt;/li&gt;
-&lt;/ul&gt;</code></pre></figure>
+&lt;/div&gt;</code></pre></figure>
 
 
     </div>
     
 </div>
 
+<p>Bredden på toggle switches skal tilpasses til ens løsning fx med <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/">hjælpeklasser (utilities)</a>.</p>
+
+<p>Brug <code>role="group"</code> for grupper af toggle switches og angiv en passende <code>aria-labelledby</code> (APG, Switch Pattern).</p>
+
 <h3>Javascript</h3>
 
 <p>Der medfølger ikke funktionalitet med denne komponent. Når der trykkes på switchen, skal man derfor selv - udover at implementere den ønskede funktionalitet - sørge for at skifte værdien i attributten <code>aria-checked</code> til <code>true</code>/<code>false</code>.</p>
+
+<h2 id="referencer-kode">Referencer</h2>
+
+<p><a href="https://www.w3.org/WAI/ARIA/apg/patterns/switch/" class="icon-link" target="_blank">ARIA Authoring Practices Guide (APG): Switch Pattern<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
 
                         </div>
 

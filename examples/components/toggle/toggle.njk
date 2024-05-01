@@ -1,21 +1,18 @@
-{% from "components/toggle/toggle.njk" import toggle as toggle %}
+{% from "components/toggle/toggle.njk" import toggle_switch as toggle_switch %}
 
-<ul class="nobullet-list w-percent-100 w-percent-sm-60 w-percent-md-40">
-    <li>
-        {{ 
-            toggle({
-                "id": "completed-switch",
-                "label": "Vis afsluttede sager",
-                "checked": true
-            })
-        }}
-    </li>
-    <li>
-        {{ 
-            toggle({
-                "id": "yearold-switch",
-                "label": "Vis sager ældre end et år"
-            })
-        }}
-    </li>
-</ul>
+<div role="group" aria-labelledby="toggle-switch-heading" class="w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Indstillinger</h2>
+    {{ 
+        toggle_switch({
+            "label": "Vis afsluttede sager",
+            "classes": "w-percent-100",
+            "checked": true
+        })
+    }}
+    {{ 
+        toggle_switch({
+            "label": "Vis sager ældre end et år",
+            "classes": "w-percent-100"
+        })
+    }}
+</div>

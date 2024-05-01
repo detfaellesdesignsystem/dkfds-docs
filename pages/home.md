@@ -32,12 +32,12 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
             <p>{% include links/internal-link.html linktext="Gå til styleguide" bold=true %}</p>
         </div>
         <div class="col-12 col-lg-4">
-            <h2 class="mt-0">Komponenter</h2>
+            <h2 class="mt-lg-0">Komponenter</h2>
             <p>Komponenterne er byggeklodserne, som du kan bruge til at bygge den løsning dine brugere har behov for.</p>
             <p>{% include links/internal-link.html linktext="Gå til komponenter" bold=true %}</p>
         </div>
         <div class="col-12 col-lg-4">
-            <h2 class="mt-0">Eksempler</h2>
+            <h2 class="mt-lg-0">Eksempler</h2>
             <p>Få inspiration til, hvordan designsystemet kan anvendes til at bygge selvbetjenings-løsninger med.</p>
             <p>{% include links/internal-link.html linktext="Gå til eksempler" bold=true %}</p>
         </div>

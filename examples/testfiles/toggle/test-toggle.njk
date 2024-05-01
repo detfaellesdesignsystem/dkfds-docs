@@ -1,4 +1,4 @@
-{% from "components/toggle/toggle.njk" import toggle as toggle %}
+{% from "components/toggle/toggle.njk" import toggle_switch as toggle_switch %}
 
 <main class="container page-container" id="main-content">
     <div class="row">
@@ -8,97 +8,76 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <ul class="nobullet-list">
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-javascript",
-                            "label": "Denne switch virker pga. JavaScript"
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-unchecked",
-                            "label": "Denne switch er slået fra"
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-checked",
-                            "label": "Denne switch er slået til",
-                            "checked": true
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-disabled-unchecked",
-                            "label": "Denne switch er slået fra og disabled",
-                            "disabled": true
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-disabled-checked",
-                            "label": "Denne switch er slået til og disabled",
-                            "checked": true,
-                            "disabled": true
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-words",
-                            "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt vulputate risus a rhoncus. Duis maximus velit vitae dolor semper, at condimentum nunc pretium."
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-letters",
-                            "label": "LoremipsumdolorsitametconsecteturadipiscingelitSuspendissetinciduntvulputaterisusarhoncusDuismaximusvelitvitaedolorsemperatcondimentumnuncpretium"
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-options",
-                            "label": "Klasser og attributter sat",
-                            "attributes": "switchattributes",
-                            "classes": "switchclass"
-                        })
-                    }}
-                </li>
-                <li>
-                    {{ 
-                        toggle({
-                            "id": "switch-nolabel"
-                        })
-                    }}
-                </li>
-            </ul>
+            <div role="group" aria-labelledby="toggle-switch-heading" class="w-percent-100 w-percent-sm-50">
+                <h2 class="h4 mb-4" id="toggle-switch-heading">Tests</h2>
+                {{ 
+                    toggle_switch({
+                        "label": "Ingen klasser påsat"
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Slået fra ved sidens indlæsning",
+                        "classes": "w-percent-100"
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Slået til ved sidens indlæsning",
+                        "classes": "w-percent-100",
+                        "checked": true
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Slået fra og disabled",
+                        "classes": "w-percent-100",
+                        "disabled": true
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Slået til og disabled",
+                        "classes": "w-percent-100",
+                        "checked": true,
+                        "disabled": true
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt vulputate
+                        risus a rhoncus. Duis maximus velit vitae dolor semper, at condimentum nunc pretium.",
+                        "classes": "w-percent-100"
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "LoremipsumdolorsitametconsecteturadipiscingelitSuspendissetinciduntvulputaterisusarhoncusDuismaximusvelitvitaedolorsemperatcondimentumnuncpretium",
+                        "classes": "w-percent-100"
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Attribut tilføjet",
+                        "attributes": "switch-attribute"
+                    })
+                }}
+            </div>
         </div>
     </div>
 </main>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById('switch-javascript').addEventListener("click", function() { 
-            if (this.getAttribute("aria-checked") === "true") {
-                this.setAttribute("aria-checked", "false");
-            } else {
-                this.setAttribute("aria-checked", "true");
-            } 
-        }, false);
+    document.addEventListener("DOMContentLoaded", function () {
+        let toggleSwitches = document.querySelectorAll('.toggle-switch');
+        for (let i = 0; i < toggleSwitches.length; i++) {
+            toggleSwitches[i].addEventListener("click", function () {
+                if (this.getAttribute("aria-checked") === "true") {
+                    this.setAttribute("aria-checked", "false");
+                } else {
+                    this.setAttribute("aria-checked", "true");
+                }
+            }, false);
+        }
     });
 </script>

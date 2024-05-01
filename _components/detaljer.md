@@ -8,7 +8,7 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Detaljer
-lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælge at folde det ud.
+lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælger at folde den ud.
 description: Skjul og vis yderligere information eller en ekstra funktion relevant
   for brugerens valg.
 tags: 

@@ -20,7 +20,7 @@ tabs: "Retningslinjer, kode"
 
 <!--split-->
 
-## Retningslinjer {#{% include create-id.html heading="Retningslinjer" %}}
+## Sådan bruges lister {#{% include create-id.html heading="Sådan bruges lister" %}}
 
 ### Anvendes til
 
@@ -46,15 +46,11 @@ Brug punkter, når der ikke er et hierarki i informationerne.
 
 ## Punktopstilling {#{% include create-id.html heading="Punktopstilling" append="-kode" %}}
 
-{% include links/internal-link.html linktext="Læs retningslinjerne for lister" %}
-
 ### HTML Struktur
 
 {% include code/syntax.html component="lists-unordered" copybutton=true %}
 
 ## Tegnopstilling {#{% include create-id.html heading="Tegnopstilling" append="-kode" %}}
-
-{% include links/internal-link.html linktext="Læs retningslinjerne for lister" %}
 
 ### HTML Struktur
 

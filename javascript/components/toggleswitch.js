@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let toggleSwitches = document.querySelectorAll('.toggle-switch');
     if(document.getElementById('completed-switch') !== null && document.getElementById('yearold-switch') !== null) {
         document.getElementById('completed-switch').addEventListener("click", function() { flipToggleSwitch(this); }, false);
         document.getElementById('yearold-switch').addEventListener("click", function() { flipToggleSwitch(this); }, false);
+    }
+    for(let i = 0; i < toggleSwitches.length; i++) {
+        toggleSwitches[i].addEventListener("click", function() { flipToggleSwitch(this); }, false);
     }
 });
 

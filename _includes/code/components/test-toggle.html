@@ -6,114 +6,53 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <ul class="nobullet-list">
-                <li>
+            <div role="group" aria-labelledby="toggle-switch-heading"
+                class="w-percent-100 w-percent-sm-50">
+                <h2 class="h4 mb-4" id="toggle-switch-heading">Tests</h2>
 
-                    <div class="toggle-element">
-                        <label class="toggle-label" for="switch-javascript">Denne switch
-                            virker pga. JavaScript</label>
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-javascript"></button>
-                    </div>
+                <button class="toggle-switch" type="button" role="switch"
+                    aria-checked="false"><span>Ingen klasser påsat</span></button>
 
-                </li>
-                <li>
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>Slået fra ved sidens indlæsning</span></button>
 
-                    <div class="toggle-element">
-                        <label class="toggle-label" for="switch-unchecked">Denne switch er
-                            slået fra</label>
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-unchecked"></button>
-                    </div>
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="true"><span>Slået til ved sidens indlæsning</span></button>
 
-                </li>
-                <li>
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false" disabled><span>Slået fra og disabled</span></button>
 
-                    <div class="toggle-element">
-                        <label class="toggle-label" for="switch-checked">Denne switch er slået
-                            til</label>
-                        <button class="toggle-button" role="switch" aria-checked="true"
-                            id="switch-checked"></button>
-                    </div>
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="true" disabled><span>Slået til og disabled</span></button>
 
-                </li>
-                <li>
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Suspendisse tincidunt vulputate
+                        risus a rhoncus. Duis maximus velit vitae dolor semper, at condimentum
+                        nunc pretium.</span></button>
 
-                    <div class="toggle-element">
-                        <label class="toggle-label disabled"
-                            for="switch-disabled-unchecked">Denne switch er slået fra og
-                            disabled</label>
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-disabled-unchecked" disabled></button>
-                    </div>
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>LoremipsumdolorsitametconsecteturadipiscingelitSuspendissetinciduntvulputaterisusarhoncusDuismaximusvelitvitaedolorsemperatcondimentumnuncpretium</span></button>
 
-                </li>
-                <li>
+                <button class="toggle-switch" type="button" role="switch" aria-checked="false"
+                    switch-attribute><span>Attribut tilføjet</span></button>
 
-                    <div class="toggle-element">
-                        <label class="toggle-label disabled"
-                            for="switch-disabled-checked">Denne switch er slået til og
-                            disabled</label>
-                        <button class="toggle-button" role="switch" aria-checked="true"
-                            id="switch-disabled-checked" disabled></button>
-                    </div>
-
-                </li>
-                <li>
-
-                    <div class="toggle-element">
-                        <label class="toggle-label" for="switch-words">Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit. Suspendisse tincidunt vulputate
-                            risus a rhoncus. Duis maximus velit vitae dolor semper, at
-                            condimentum nunc pretium.</label>
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-words"></button>
-                    </div>
-
-                </li>
-                <li>
-
-                    <div class="toggle-element">
-                        <label class="toggle-label"
-                            for="switch-letters">LoremipsumdolorsitametconsecteturadipiscingelitSuspendissetinciduntvulputaterisusarhoncusDuismaximusvelitvitaedolorsemperatcondimentumnuncpretium</label>
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-letters"></button>
-                    </div>
-
-                </li>
-                <li>
-
-                    <div class="toggle-element switchclass">
-                        <label class="toggle-label" for="switch-options">Klasser og
-                            attributter sat</label>
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-options" switchattributes></button>
-                    </div>
-
-                </li>
-                <li>
-
-                    <div class="toggle-element">
-
-                        <button class="toggle-button" role="switch" aria-checked="false"
-                            id="switch-nolabel"></button>
-                    </div>
-
-                </li>
-            </ul>
+            </div>
         </div>
     </div>
 </main>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById('switch-javascript').addEventListener("click",
-            function() {
+        let toggleSwitches = document.querySelectorAll('.toggle-switch');
+        for (let i = 0; i < toggleSwitches.length; i++) {
+            toggleSwitches[i].addEventListener("click", function() {
                 if (this.getAttribute("aria-checked") === "true") {
                     this.setAttribute("aria-checked", "false");
                 } else {
                     this.setAttribute("aria-checked", "true");
                 }
             }, false);
+        }
     });
 </script>

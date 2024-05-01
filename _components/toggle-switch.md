@@ -41,10 +41,16 @@ Giv switchen en kort og præcis label, som placeres til venstre for toggle switc
 
 ### HTML Struktur
 
-Afstand mellem label og knap skal tilpasses til ens løsning. Hvorvidt toggle switches skal placeres i en liste eller i en anden semantisk struktur, afhænger af konteksten.
-
 {% include code/syntax.html component="toggle" copybutton=true %}
+
+Bredden på toggle switches skal tilpasses til ens løsning fx med {% include links/internal-link.html linktext="hjælpeklasser (utilities)" %}. 
+
+Brug `role="group"` for grupper af toggle switches og angiv en passende `aria-labelledby` (APG, Switch Pattern).
 
 ### Javascript
 
 Der medfølger ikke funktionalitet med denne komponent. Når der trykkes på switchen, skal man derfor selv - udover at implementere den ønskede funktionalitet - sørge for at skifte værdien i attributten `aria-checked` til `true`/`false`.
+
+## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
+
+{% include links/external-link.html linktext="ARIA Authoring Practices Guide (APG): Switch Pattern" %}
