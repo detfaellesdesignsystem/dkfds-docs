@@ -46,19 +46,13 @@ Overvej følgende spørgsmål, før du designer nye funktioner til din løsning:
 
 ## Designressourcer {#{% include create-id.html heading="Designressourcer" %}}
 
-Vi stiller nedenstående filer til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Vær dog opmærkesom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilerne.
+Vi stiller nedenstående fil til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Vær dog opmærksom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilen.
 
 <h3 class="h4">Figma</h3>
 
 Designbiblioteket i Figma vedligeholdes løbende.
 
 {% include links/external-link.html linktext="Se komponentbiblioteket i Figma" %}
-
-<h3 class="h4">SVG</h3>
-
-Svg-filerne kan importeres i de fleste design-/prototypeprogrammer og arbejdes videre med ved at markere elementerne og opdele grupperne (ungroup).
-
-{% include links/internal-link.html linktext="Download svg-filer (version 7.0.0)" %}
 
 <h3 class="h4">Hjælp os med at blive bedre</h3>
 

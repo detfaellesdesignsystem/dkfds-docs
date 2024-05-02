@@ -173,6 +173,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Flere sider er blevet opdelt i to faner kaldet 'Retningslinjer' og 'Kode'. Man skal derfor ikke længere ind på to forskellige hovedmenupunkter for at finde hhv. kode og design.
 - '{% include links/internal-link.html linktext="Krav" %}' og nogle af de tidligere kodesider er flyttet ind under punktet '{% include links/internal-link.html linktext="Kom i gang" %}'. 
 - 'Design' er omdøbt til '{% include links/internal-link.html linktext="Styleguide" %}'.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Det er ikke længere muligt at hente designsystemets komponenter som svg-filer. Se {% include links/internal-link.html linktext="designressourcer" %} for øvrige muligheder.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
