@@ -59,7 +59,7 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 
 <!--split-->
 
-## Installation
+## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
 ### HTML Struktur
 

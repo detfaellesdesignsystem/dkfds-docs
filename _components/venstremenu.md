@@ -64,8 +64,7 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 
 {% include code/preview-box.html component="sidenav-information-level1" title="Eksempel på venstremenu med hjælpetekst på ét niveau" %}
 
-{:#anchorlinks}
-### Anchorlinks
+### Anchorlinks {#{% include create-id.html heading="Anchorlinks-komponent" %}}
 
 Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises anchorlinks ikke længere i venstremenuen. Se {% include links/component-guideline-link.html linktext="anchorlinks-komponenten" %} for nye retningslinjer.
 
