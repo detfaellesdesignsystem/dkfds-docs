@@ -1304,7 +1304,6 @@
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Hvis der ikke er plads til alle menupunkter, vil de overskydende menupunkter automatisk ryge ind i en ‘Mere’-menu.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet eksempel på søgefelt i header.</li>
   <li><a href="/komponenter/skip-link/#kode">Gå til sidens indhold</a> placeres ikke længere i headeren.</li>
-  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for <a href="/komponenter/trinindikator/">trinindikator</a>, <a href="/komponenter/overflowmenu/">overflowmenu</a> og <a href="/komponenter/overflowmenu/#sortering">sortering</a> som følge af header-ændringerne.</li>
   <li>Løsningstitlen behøver ikke længere være et link.</li>
 </ul>
 
@@ -1313,7 +1312,7 @@
 </div>
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny fanebladskomponent. Den tidligere fanebladskomponent understøttes ikke længere.</li>
-  <li><strong class="badge badge-success badge-small mr-2">New</strong> Faneblade kan nu anvendes som både komponent og til sidenavigation.</li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Faneblade kan nu også anvendes til sidenavigation.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at indsætte ikoner i faneblade.</li>
 </ul>
 
@@ -1324,7 +1323,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tooltips er ændret grundlæggende i opførsel, design, anvendelse og implementering.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tooltips kunne sætte sig forkert, hvis brugeren zoomede eller ændrede browservinduets størrelse.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tooltips ikke kunne tilgås med tastatur.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret måden tooltips anvendes til tekst grundet tilgængelighedsproblemer.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret måden tooltips anvendes til forklaring af ord i tekstparagraffer grundet tilgængelighedsproblemer.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/sprogvaelger/#sprogvaelger-med-tooltip">Tooltips på sprogvælgeren</a> er opdateret som følge af tooltipkomponentens ændringer.</li>
 </ul>
 
@@ -1332,7 +1331,7 @@
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
 </div>
 <ul>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/anchorlinks/">Anchorlinks</a> er fjernet fra venstremenuen og har i stedet fået sin egen komponent.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/anchorlinks/">Anchorlinks</a> er fjernet fra <a href="/komponenter/venstremenu/">venstremenuen</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> HTML og styling er opdateret i både trinindikator og venstremenu som følge af ændringerne i header og anchorlinks.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu, så de viser aria-label for nav-elementet.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilpasset roller, opmærkning og aria-attributter.</li>
@@ -1357,14 +1356,14 @@
 <ul>
   <li>Designsystemet anvender nu webpack i stedet for gulp til at bygge filer.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret <code>devDependencies</code> og <code>scripts</code> i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Oprydning i polyfills til ikke-supporterede browsere. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv sikre, at man anvender den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript#javascript_transpiling" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Se eventuelt <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/">browserunderstøttelse</a>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet flere polyfills til ikke-supporterede browsere. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv sikre, at man anvender den nødvendige <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript#javascript_transpiling" class="icon-link" target="_blank">transpiling<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" class="icon-link" target="_blank">polyfills<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Se eventuelt <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/">browserunderstøttelse</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet <a href="https://sass-lang.com/documentation/at-rules/import/" class="icon-link" target="_blank">@import<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> i alle SASS-filer med <a href="https://sass-lang.com/documentation/at-rules/use/" class="icon-link" target="_blank">@use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://sass-lang.com/documentation/at-rules/forward/" class="icon-link" target="_blank">@forward<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/199" class="icon-link" target="_blank">issue #199 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Flere SASS-variable er blevet slettet, flyttet eller erstattet, da de gjorde det muligt at tilpasse styling, det ikke var tiltænkt, man skulle ændre.</li>
   <li>Erstattet ‘normalize.css’ med styling i ‘_base.scss’.</li>
   <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre rettelser og tilføjelser, så der blandt andet kan sættes klasser og attributter.</li>
   <li>Mindre koderettelser som følge af et linter-tjek.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Slettet forældede klasser, heriblandt <code>icon-svg-large</code>, <code>collapse-transition-collapse</code> og <code>collapse-transition-expand</code>, <code>button-small</code> og flere ubrugte klasser for accordion’s åbn/luk alle-knap.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet forældede klasser, heriblandt <code>icon-svg-large</code>, <code>collapse-transition-collapse</code> og <code>collapse-transition-expand</code>, <code>button-small</code> og flere ubrugte klasser for accordion’s åbn/luk alle-knap.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Slettet klasser, der visuelt fik links til at fremstå inaktive.</li>
 </ul>
 
@@ -1374,15 +1373,16 @@
 <ul>
   <li>Dokumentationssiden har fået en større omstrukturering, hvor flere sider er flyttet rundt.</li>
   <li>Flere sider er blevet opdelt i to faner kaldet ‘Retningslinjer’ og ‘Kode’. Man skal derfor ikke længere ind på to forskellige hovedmenupunkter for at finde hhv. kode og design.</li>
-  <li>‘<a href="/kom-i-gang/krav/">Krav</a>’ og nogle af de tidligere kodesider er flyttet ind under punktet ‘<a href="/kom-i-gang/">Kom i gang</a>’.</li>
+  <li>Nyt hovedmenupunkt “Kom i gang”, som indeholder overordnet information om bl.a. krav, tilgængelighed og ressourcer for kode og design.</li>
   <li>‘Design’ er omdøbt til ‘<a href="/styleguide/">Styleguide</a>’.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Det er ikke længere muligt at hente designsystemets komponenter som svg-filer. Se <a href="/kom-i-gang/designressourcer/#designressourcer">designressourcer</a> for øvrige muligheder.</li>
+  <li>Det er ikke længere muligt at hente designsystemets komponenter som svg-filer. Se <a href="/kom-i-gang/designressourcer/#designressourcer">designressourcer</a> for øvrige muligheder.</li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
 <ul>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Anchorlinks har fået sin egen komponent.</li>
   <li>Ændret accordions <code>border-radius</code> (hjørner) fra 3px til 4px.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor tekst ikke altid blev ombrudt korrekt i accordions.</li>
   <li>Fjernet forældet JavaScript fra accordions.</li>
@@ -1401,9 +1401,11 @@
   <li>Ændret font-smoothing for flere elementer.</li>
   <li>Rettet fejl, hvor <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen nogen gange var vist, selvom den skulle være skjult.</li>
   <li>Tilføjet klassen <code>no-max-width</code>, der forhindrer <code>max-width</code> på en paragraf eller liste.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af <a href="/komponenter/beskeder/">beskeder</a> uden ikon. Klassen <code>alert--show-icon</code> bruges længere og ikonet skal indsættes manuelt.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af <a href="/komponenter/beskeder/">beskeder</a> uden ikon. Klassen <code>alert--show-icon</code> bruges ikke længere og ikonet skal indsættes manuelt.</li>
   <li>Rettet fejl, hvor responsive tabeller med sortering indeholdt sorteringsknappernes tekst på mindre skærme.
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/229" class="icon-link" target="_blank">issue #229 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Justeret ikonets placering i <a href="/komponenter/funktionslink/">funktionslink</a> og eksterne links samt <code>line-height</code> på knapper for bedre centrering.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for <a href="/komponenter/overflowmenu/">overflowmenu</a> og <a href="/komponenter/overflowmenu/#sortering">sortering</a> som følge af header-ændringerne.</li>
 </ul>
 
 <h2 id="version-9-1-0" class="mb-0">Version 9.1.0</h2>

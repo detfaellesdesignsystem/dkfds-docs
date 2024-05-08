@@ -59,6 +59,8 @@ function updatePage(hash) {
     }
     else if (hash !== null) {
         let hashElement = document.querySelector(hash);
+        let guidelineTabHidden = document.getElementById('guidelines-tab').classList.contains('d-none');
+        let codeTabHidden = document.getElementById('code-tab').classList.contains('d-none');
         if (hashElement !== null && document.getElementById('guidelines-section').contains(hashElement)) {
             showGuidelines();
             hashElement.scrollIntoView();
@@ -66,6 +68,9 @@ function updatePage(hash) {
         else if (hashElement !== null && document.getElementById('code-section').contains(hashElement)) {
             showCode();
             hashElement.scrollIntoView();
+        }
+        else if (!guidelineTabHidden && !codeTabHidden) {
+            showGuidelines();
         }
     }
 }

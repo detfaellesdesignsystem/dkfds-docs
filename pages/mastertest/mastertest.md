@@ -103,7 +103,7 @@ B: Test af faneblade anvendt til sidenavigation
 
 {:.h3}
 ## Funktionslink
-{% include test/preview-test.html filename="test-function-link" description="Funktionslink" %}
+{% include test/preview-test.html filename="test-function-link" description="Funktionslinks" %}
 
 {:.h3}
 ## Gå til sidens indhold (Skip-link)
@@ -125,7 +125,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-header-language-switcher" description="Sprogvælger" %}
 {% include test/preview-test.html filename="test-header-long-sentences" description="Header med mange ord" %}
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
-{% include test/preview-test.html filename="test-header-mobile-helptext" description="Hjælpetekst i mobilemenuen" %}
+{% include test/preview-test.html filename="test-header-mobile-helptext" description="Hjælpetekst i mobilmenuen" %}
 
 {:.h3}
 ## Inputfelter
