@@ -1682,7 +1682,7 @@
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-by-alpha" data-icon-keywords="sort, sorting, sorter, sortér, alfabetisk">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-by-alpha" data-icon-keywords="sorter alfabetisk, sort, sorting, sorter, sortér, alfabetisk">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-by-alpha"></use></svg>
     <p>Sortér alfabetisk</p>
 </li>
@@ -1710,42 +1710,42 @@
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-table-descending" data-icon-keywords="tabel, table, sort, sortering, kolonne, descending">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-table-descending" data-icon-keywords="sorter tabel faldende, tabel, table, sort, sortering, kolonne, descending">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-descending"></use></svg>
     <p>Sortér tabel (faldende)</p>
 </li>
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-table-ascending" data-icon-keywords="tabel, table, sort, sortering, kolonne, ascending">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-table-ascending" data-icon-keywords="sorter tabel stigende, tabel, table, sort, sortering, kolonne, ascending">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-ascending"></use></svg>
     <p>Sortér tabel (stigende)</p>
 </li>
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-table-none" data-icon-keywords="tabel, table, sort, sortering, kolonne">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-table-none" data-icon-keywords="sorter tabel, tabel, table, sort, sortering, kolonne">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-table-none"></use></svg>
     <p>Sortér tabel</p>
 </li>
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-default" data-icon-keywords="sort, sortering, overflow, overflowmenu, overflow menu">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-default" data-icon-keywords="sorter, sort, sortering, overflow, overflowmenu, overflow menu">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>
     <p>Sortér</p>
 </li>
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-ascending" data-icon-keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-ascending" data-icon-keywords="sorter stigende, stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-ascending"></use></svg>
     <p>Sortér (stigende)</p>
 </li>
 
 
                 
-<li class="icon-box col-6 col-md-3" data-icon-name="sort-descending" data-icon-keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu">
+<li class="icon-box col-6 col-md-3" data-icon-name="sort-descending" data-icon-keywords="sorter faldende, faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-descending"></use></svg>
     <p>Sortér (faldende)</p>
 </li>
@@ -2537,79 +2537,6 @@
   <li><span class="d-sm-inline-block w-percent-sm-90"><a href="https://www.nngroup.com/articles/classifying-icons/" class="icon-link" target="_blank">Jakob Nielsen: Icon Classification: Resemblance, Reference, and Arbitrary Icons (2014)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></span></li>
 </ul>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const searchInput = document.getElementById("icon-search-input");
-    const searchForm = document.getElementById("search-icons-form");
-
-    searchForm.addEventListener("submit" , handleInput);
-
-    /* Show icons matching the URL search */
-    let queryParams = new URLSearchParams(window.location.search);
-    let searchTermInURL = queryParams.get('s');
-    searchInput.value = searchTermInURL;
-    showSearchResults(searchTermInURL);
-    
-    function handleInput(e) {
-        e.preventDefault();
-        let searchTerm = searchInput.value.toLowerCase();
-        let queryParams = new URLSearchParams(window.location.search);
-        showSearchResults(searchTerm);
-        
-        /* Update URL */
-        if (searchTerm !== null && searchTerm.trim() !== "") {
-            queryParams.set('s', searchInput.value);
-            history.replaceState(null, null, "?" + queryParams.toString());
-        } 
-        else {
-            history.replaceState(null, null, window.location.origin + window.location.pathname);
-        }
-    }
-
-    function showSearchResults(input) {
-        let foundResults = false;
-        let sections = document.getElementsByClassName('icon-section');
-        for (let s = 0; s < sections.length; s++) {
-            let foundIconsInSection = false;
-            let icons = sections[s].getElementsByClassName('icon-box');
-            for (let i = 0; i < icons.length; i++) {
-                const iconName = icons[i].dataset.iconName.toLowerCase();
-                const iconKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
-                const iconLabel = icons[i].getElementsByTagName('p')[0].innerText;
-                let iconInfo = iconName + iconKeywords + iconLabel;
-                if (input === null) {
-                    foundIconsInSection = true;
-                    foundResults = true;
-                    icons[i].classList.remove('d-none');
-                }
-                else if (input.trim() === '' || iconInfo.includes(input.toLowerCase())) {
-                    foundIconsInSection = true;
-                    foundResults = true;
-                    icons[i].classList.remove('d-none');
-                }
-                else {
-                    icons[i].classList.add('d-none');
-                }
-            }
-            if (!foundIconsInSection) {
-                sections[s].classList.add('d-none');
-            }
-            else {
-                sections[s].classList.remove('d-none');
-            }
-        }
-        let messageElement = document.getElementById('no-results-message');
-        if (foundResults) {
-            messageElement.classList.add('d-none');
-        } 
-        else {
-            document.getElementById('search-words').textContent = input;
-            messageElement.classList.remove('d-none');
-        }
-    }
-});
-</script>
-
 
                         </div>
                         <div id="code-section">
@@ -2785,6 +2712,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <script src="/assets/js/theme.js?v=10.0.0"></script>
 <script src="/assets/js/styleguide.js?v=10.0.0"></script>
+<script src="/assets/js/icon-search.js"></script>
+
 
 
 <script src="/assets/js/docs-tabs.js"></script>

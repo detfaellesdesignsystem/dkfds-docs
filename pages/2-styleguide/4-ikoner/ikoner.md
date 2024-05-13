@@ -129,16 +129,16 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="sort" keywords="sortering, sort, unsorted" label="Ikke sorteret" %}
                 {% include icon.html icon="lock" keywords="log af, log ud, log, af, ud, lås, lock, hængelås, låst" label="Log af (lukket hængelås)" %}
                 {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
-                {% include icon.html icon="sort-by-alpha" keywords="sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
+                {% include icon.html icon="sort-by-alpha" keywords="sorter alfabetisk, sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
                 {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Udvid (chevron)" %}
                 {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Indskrænk (chevron)" %}
                 {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
-                {% include icon.html icon="sort-table-descending" keywords="tabel, table, sort, sortering, kolonne, descending" label="Sortér tabel (faldende)"  %}
-                {% include icon.html icon="sort-table-ascending" keywords="tabel, table, sort, sortering, kolonne, ascending" label="Sortér tabel (stigende)" %}
-                {% include icon.html icon="sort-table-none" keywords="tabel, table, sort, sortering, kolonne" label="Sortér tabel" %}
-                {% include icon.html icon="sort-default" keywords="sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér" %}
-                {% include icon.html icon="sort-ascending" keywords="stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (stigende)" %}
-                {% include icon.html icon="sort-descending" keywords="faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (faldende)" %}
+                {% include icon.html icon="sort-table-descending" keywords="sorter tabel faldende, tabel, table, sort, sortering, kolonne, descending" label="Sortér tabel (faldende)"  %}
+                {% include icon.html icon="sort-table-ascending" keywords="sorter tabel stigende, tabel, table, sort, sortering, kolonne, ascending" label="Sortér tabel (stigende)" %}
+                {% include icon.html icon="sort-table-none" keywords="sorter tabel, tabel, table, sort, sortering, kolonne" label="Sortér tabel" %}
+                {% include icon.html icon="sort-default" keywords="sorter, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér" %}
+                {% include icon.html icon="sort-ascending" keywords="sorter stigende, stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (stigende)" %}
+                {% include icon.html icon="sort-descending" keywords="sorter faldende, faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (faldende)" %}
             </ul>
         </div>
     </div>
@@ -287,79 +287,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
 - {% include links/external-link.html linktext="Aurora Harley: Usability Testing of Icons (2016)" %}
 - {% include links/external-link.html linktext="Aurora Harley: Icon usability (2014)" %}
 - {% include links/external-link.html linktext="Jakob Nielsen: Icon Classification: Resemblance, Reference, and Arbitrary Icons (2014)" %}
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const searchInput = document.getElementById("icon-search-input");
-    const searchForm = document.getElementById("search-icons-form");
-
-    searchForm.addEventListener("submit" , handleInput);
-
-    /* Show icons matching the URL search */
-    let queryParams = new URLSearchParams(window.location.search);
-    let searchTermInURL = queryParams.get('s');
-    searchInput.value = searchTermInURL;
-    showSearchResults(searchTermInURL);
-    
-    function handleInput(e) {
-        e.preventDefault();
-        let searchTerm = searchInput.value.toLowerCase();
-        let queryParams = new URLSearchParams(window.location.search);
-        showSearchResults(searchTerm);
-        
-        /* Update URL */
-        if (searchTerm !== null && searchTerm.trim() !== "") {
-            queryParams.set('s', searchInput.value);
-            history.replaceState(null, null, "?" + queryParams.toString());
-        } 
-        else {
-            history.replaceState(null, null, window.location.origin + window.location.pathname);
-        }
-    }
-
-    function showSearchResults(input) {
-        let foundResults = false;
-        let sections = document.getElementsByClassName('icon-section');
-        for (let s = 0; s < sections.length; s++) {
-            let foundIconsInSection = false;
-            let icons = sections[s].getElementsByClassName('icon-box');
-            for (let i = 0; i < icons.length; i++) {
-                const iconName = icons[i].dataset.iconName.toLowerCase();
-                const iconKeywords = icons[i].dataset.iconKeywords.toLowerCase().trim();
-                const iconLabel = icons[i].getElementsByTagName('p')[0].innerText;
-                let iconInfo = iconName + iconKeywords + iconLabel;
-                if (input === null) {
-                    foundIconsInSection = true;
-                    foundResults = true;
-                    icons[i].classList.remove('d-none');
-                }
-                else if (input.trim() === '' || iconInfo.includes(input.toLowerCase())) {
-                    foundIconsInSection = true;
-                    foundResults = true;
-                    icons[i].classList.remove('d-none');
-                }
-                else {
-                    icons[i].classList.add('d-none');
-                }
-            }
-            if (!foundIconsInSection) {
-                sections[s].classList.add('d-none');
-            }
-            else {
-                sections[s].classList.remove('d-none');
-            }
-        }
-        let messageElement = document.getElementById('no-results-message');
-        if (foundResults) {
-            messageElement.classList.add('d-none');
-        } 
-        else {
-            document.getElementById('search-words').textContent = input;
-            messageElement.classList.remove('d-none');
-        }
-    }
-});
-</script>
 
 <!--split-->
 
