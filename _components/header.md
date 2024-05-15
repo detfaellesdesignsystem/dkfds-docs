@@ -55,7 +55,7 @@ Portal-logo, NemLog-in-oplysninger og “Log af” knap.
 
 ##### Række 2 (obligatorisk)
 
-Selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger.
+Selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuel support/kontaktoplysninger.
 
 ##### Række 3 (frivillig)
 
@@ -130,7 +130,7 @@ Se eventuelt {% include links/component-code-link.html linktext="eksemplet med d
 
 #### Række 2
 
-Række 2 indeholder selvbetjeningens navn (løsningstitel), ansvarhavendes myndighed og eventuel support/kontaktoplysninger. Headeren skal altid indeholde denne række.
+Række 2 indeholder selvbetjeningens navn (løsningstitel), ansvarshavende myndighed og eventuel support/kontaktoplysninger. Headeren skal altid indeholde denne række.
 
 Der er to dele, som skal indsættes i `<header>`-elementet. 
 

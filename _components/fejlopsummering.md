@@ -47,7 +47,7 @@ For fejl, der kræver, at en bruger skal vælge en eller flere ting på en liste
 
 Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumme eller et tilbage-link, skal du placere den under disse, men over titlen (den øverste overskrift) på siden.
 
-{% include code/preview-box.html component="error-summary-page" title="Eksempel på fejlopsummering" link="true" %}
+{% include code/preview-image.html component="error-summary-page" %}
 
 {% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser og fejlopsummering do's and don'ts" %}
 
