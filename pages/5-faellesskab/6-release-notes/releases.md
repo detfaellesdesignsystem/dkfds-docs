@@ -112,7 +112,6 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet mulighed for at placere sprogvælgeren i headeren og mobilmenuen udover footeren.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Hvis der ikke er plads til alle menupunkter, vil de overskydende menupunkter automatisk ryge ind i en 'Mere'-menu.
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet eksempel på søgefelt i header.
-- {% include links/component-code-link.html linktext="Gå til sidens indhold" %} placeres ikke længere i headeren.
 - Løsningstitlen behøver ikke længere være et link.
 
 <div class="d-flex align-items-center mt-5 mb-4">

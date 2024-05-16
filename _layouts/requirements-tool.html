@@ -6,9 +6,8 @@
 </head>
 
 <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-    <div id="top"></div>
-    <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     {% include code/components/base-svg.html %}
+    <div id="top"></div>
     {% include requirements-tool/header.html backlink=page.backlink %}
 
     <main class="page-container container" id="main-content">

@@ -46,9 +46,9 @@ Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan 
 
 {% include code/syntax.html component="skiplink" copybutton=true %}
 
-Skip-link `<a>` elementet indsættes som første, klikbare element i `<body>`. Elementet skal være det første element, der kommer i fokus på siden ved brug af tastaturet bortset fra en eventuel {% include links/component-guideline-link.html linktext="cookiemeddelelse" %} (GOV.UK, Skip link).
+'Gå til sidens indhold' skal være det første element, der kommer i fokus på siden ved brug af tastaturet bortset fra en eventuel {% include links/component-guideline-link.html linktext="cookiemeddelelse" %} (GOV.UK, Skip link). Sørg derfor for, at det er det første klikbare element i `<body>`.
 
-Skip-link gør brug af anchorlink `#main-content`, man skal derfor huske at sætte `id="main-content"` på det element, der omkranser indholdet på siden.
+'Gå til sidens indhold' gør brug af anchorlink `#main-content`, man skal derfor huske at sætte `id="main-content"` på det element, der omkranser indholdet på siden.
 
 ## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
 

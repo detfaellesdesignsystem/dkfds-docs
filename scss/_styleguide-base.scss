@@ -565,9 +565,9 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
 code {
   background-color: color('gray-100');
   color: color('black');
+  font-family: monospace;
 }
 
-code,
 pre {
   font-family: monospace;
   overflow-x: auto;
@@ -575,6 +575,8 @@ pre {
 
   code {
     background-color: transparent;
+    overflow-x: auto;
+    white-space: pre;
   }
 
   &:focus {
