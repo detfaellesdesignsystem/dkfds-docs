@@ -63,7 +63,7 @@ Brug beskeder til at øge brugerens forståelse for løsningen.
 
 Tilføj ikke interaktivt indhold som links ol. på toastbeskeden, da der kan opstå udfordringer i forbindelse med tilgængelighed.
 
-Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom på at efterleve succeskriteriet 2.2.1 ({% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.2.1: Timing Adjustable (Level A)" %}).
+Når toastbeskeden vises, kan man lade den forsvinde igen, men vær opmærksom på at efterleve succeskriteriet 2.2.1 ({% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.2.1: Timing Adjustable (Level A)" classes="d-inline pt-1 pb-2" %}).
 
 Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist ad gangen og rækkefølgen er vigtig, så tilføj et tidsstempel til toastbeskeden.
 

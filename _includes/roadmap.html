@@ -1,6 +1,6 @@
 <div class="row row-bordered no-gutters py-3 w-percent-md-60">
     <div class="col-md-8">
-        {% if include.link %}<a href="{{ include.link }}" class="icon-link">{% endif %}{{ include.title }}{% if include.link %}{% if include.link contains "http" %}<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg>{% endif %}</a>{% endif %}
+        {% if include.link %}<a href="{{ include.link }}">{% endif %}{{ include.title }}{% if include.link %}</a>{% endif %}
     </div>
     <div class="col-md-4 align-text-md-right mt-3 mt-md-0">
         {% if include.status == "Foreslået" %}

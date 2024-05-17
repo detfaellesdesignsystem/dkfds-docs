@@ -1,20 +1,13 @@
 {%- comment -%}
 --------
 EXAMPLE: HOW TO USE IN MARKDOWN FILES
-{% include links/internal-link.html linktext="Tekst der skal blive til link" bold=true %}
+{% include links/internal-link.html linktext="Link tekst" classes="function-link" %}
 --------
 {%- endcomment -%}
 
 {%- assign classes = "" -%}
-{%- if include.bold -%}
-    {%- assign classes = classes | append: "bold-link" -%}
-{%- endif -%}
-{%- if include.functionlink -%}
-    {% if classes == "" %}
-        {%- assign classes = classes | append: "function-link" -%}
-    {%- else -%}
-        {%- assign classes = classes | append: " function-link" -%}
-    {%- endif -%}
+{%- if include.classes -%}
+    {%- assign classes = include.classes -%}
 {%- endif -%}
 {% if classes != "" %}
     {%- assign classes = ' class="' | append: classes | append: '"' -%}

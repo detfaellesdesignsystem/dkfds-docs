@@ -35,7 +35,7 @@ function getFilesFromDir(folderPath) {
     };
 };
 
-getFilesFromDir(folder);
+getFilesFromDir(folder); // Update allFiles
 
 function extractText(file) {
     try {
@@ -44,6 +44,23 @@ function extractText(file) {
     } catch (err) {
         console.error(err);
     }
+}
+
+function isRedirectPage(file) {
+    let text = extractText(file);
+    let isRedirect = text.includes('<title>Du sendes videre til en anden side</title>');
+    return isRedirect;
+}
+
+function isExamplePage(file) {
+    let isExample = file.includes('docs\\eksempel');
+    return isExample;
+}
+
+function isMasterTestPage(file) {
+    let text = extractText(file);
+    let isMasterTest = text.includes('class="layout-mastertest"');
+    return isMasterTest;
 }
 
 let errorsFound = 0;
@@ -70,10 +87,10 @@ function run_hasTitle() {
     }
 
     if (filesWithNoTitle.length === 0) {
-        console.log(GREEN_COLOR + '\nAll files have titles' + END_COLOR);
+        console.log(GREEN_COLOR + '\nCHECK DONE: All files have titles' + END_COLOR);
     }
     else {
-        console.log(RED_COLOR + '\nTitle is missing in these files:' + END_COLOR);
+        console.log(RED_COLOR + '\nCHECK DONE: Title is missing in these files:' + END_COLOR);
         for (let f = 0; f < filesWithNoTitle.length; f++) {
             console.log(RED_COLOR + '-- ' + filesWithNoTitle[f] + END_COLOR);
         }
@@ -98,11 +115,10 @@ function run_hasLeadText() {
     let componentFiles = 0;
     for (let f = 0; f < allFiles.length; f++) {
         let text = extractText(allFiles[f]);
-        let isRedirectPage = text.includes('<title>Du sendes videre til en anden side</title>');
-        let isStyleguidePage = allFiles[f].includes('docs\\design');
+        let isStyleguidePage = allFiles[f].includes('docs\\styleguide');
         let isComponentPage = allFiles[f].includes('docs\\komponenter');
 
-        if (!isRedirectPage && (isStyleguidePage || isComponentPage)) {
+        if (!isRedirectPage(allFiles[f]) && (isStyleguidePage || isComponentPage)) {
             if (isStyleguidePage) { styleguideFiles++; }
             if (isComponentPage) { componentFiles++; }
             let hasLead = check_hasLeadText(text);
@@ -114,12 +130,12 @@ function run_hasLeadText() {
     }
 
     if (filesWithNoLeadText.length === 0) {
-        console.log(GREEN_COLOR + '\nAll styleguide and component pages have lead text' + END_COLOR);
+        console.log(GREEN_COLOR + '\nCHECK DONE: All styleguide and component pages have lead text' + END_COLOR);
         if (styleguideFiles === 0) { console.log(YELLOW_COLOR + 'WARNING: No styleguide files processed' + END_COLOR); }
         if (componentFiles === 0) { console.log(YELLOW_COLOR + 'WARNING: No component files processed' + END_COLOR); }
     }
     else {
-        console.log(RED_COLOR + '\nLead text is missing in these files:' + END_COLOR);
+        console.log(RED_COLOR + '\nCHECK DONE: Lead text is missing in these files:' + END_COLOR);
         for (let f = 0; f < filesWithNoLeadText.length; f++) {
             console.log(RED_COLOR + '-- ' + filesWithNoLeadText[f] + END_COLOR);
         }
@@ -151,22 +167,22 @@ function run_hasHeadingAfterAnchorlinks() {
     let problemFiles = [];
 
     for (let f = 0; f < allFiles.length; f++) {
-        let isExamplePage = allFiles[f].includes('docs\\eksempel');
-        if (!isExamplePage) {
-            let text = extractText(allFiles[f]);
+        let file = allFiles[f];
+        if (!isExamplePage(file)) {
+            let text = extractText(file);
             let hasHeadingAfterAnchorlinks = check_hasHeadingAfterAnchorlinks(text);
             if (!hasHeadingAfterAnchorlinks) {
-                problemFiles.push(allFiles[f]);
+                problemFiles.push(file);
                 errorsFound++;
             }
         }
     }
 
     if (problemFiles.length === 0) {
-        console.log(GREEN_COLOR + '\nAll files with anchorlinks have a heading following it' + END_COLOR);
+        console.log(GREEN_COLOR + '\nCHECK DONE: All files with anchorlinks have a heading following it' + END_COLOR);
     }
     else {
-        console.log(RED_COLOR + '\nA heading is missing after the anchorlinks in these files:' + END_COLOR);
+        console.log(RED_COLOR + '\nCHECK DONE: A heading is missing after the anchorlinks in these files:' + END_COLOR);
         for (let f = 0; f < problemFiles.length; f++) {
             console.log(RED_COLOR + '-- ' + problemFiles[f] + END_COLOR);
         }
@@ -246,20 +262,20 @@ function run_anchorlinksMatchHeadings() {
     let problemFiles = [];
 
     for (let f = 0; f < allFiles.length; f++) {
-        let isExamplePage = allFiles[f].includes('docs\\eksempel');
-        let text = extractText(allFiles[f]);
-        let anchorlinksMatchHeadings = check_anchorlinksMatchHeadings(text, allFiles[f]);
-        if (!anchorlinksMatchHeadings && !isExamplePage) {
-            problemFiles.push(allFiles[f]);
+        let file = allFiles[f];
+        let text = extractText(file);
+        let anchorlinksMatchHeadings = check_anchorlinksMatchHeadings(text, file);
+        if (!anchorlinksMatchHeadings && !isExamplePage(file)) {
+            problemFiles.push(file);
             errorsFound++;
         }
     }
 
     if (problemFiles.length === 0) {
-        console.log(GREEN_COLOR + '\nAll files have matching h2s and anchorlinks' + END_COLOR);
+        console.log(GREEN_COLOR + '\nCHECK DONE: All files have matching h2s and anchorlinks' + END_COLOR);
     }
     else {
-        console.log(RED_COLOR + '\nAnchorlinks mismatch in these files:' + END_COLOR);
+        console.log(RED_COLOR + '\nCHECK DONE: Anchorlinks mismatch in these files:' + END_COLOR);
         for (let f = 0; f < problemFiles.length; f++) {
             console.log(RED_COLOR + '-- ' + problemFiles[f] + END_COLOR);
         }
@@ -267,6 +283,43 @@ function run_anchorlinksMatchHeadings() {
 }
 
 run_anchorlinksMatchHeadings();
+
+// ---- CHECK THAT ALL SKIP LINKS ARE FIRST ELEMENT IN HEADER
+
+function check_hasSkipLinkFirstElementInHeader(text) {
+    let regex = /<header class="header(\s*?)(d-print-none)?">(\s*?)<a class="skipnav"/gs;
+    let matches = text.match(regex);
+    let result = matches?.length > 0;
+    return result;
+}
+
+function run_hasSkipLinkFirstElementInHeader() {
+    let problemFiles = [];
+
+    for (let f = 0; f < allFiles.length; f++) {
+        let file = allFiles[f];
+        if (!isExamplePage(file) && !isRedirectPage(file) && !isMasterTestPage(file)) {
+            let text = extractText(file);
+            let hasSkipLinkFirstElementInHeader = check_hasSkipLinkFirstElementInHeader(text);
+            if (!hasSkipLinkFirstElementInHeader) {
+                problemFiles.push(file);
+                errorsFound++;
+            }
+        }
+    }
+
+    if (problemFiles.length === 0) {
+        console.log(GREEN_COLOR + '\nCHECK DONE: All skip links are first element in header' + END_COLOR);
+    }
+    else {
+        console.log(RED_COLOR + '\nCHECK DONE: Skip links not placed correctly in these files:' + END_COLOR);
+        for (let f = 0; f < problemFiles.length; f++) {
+            console.log(RED_COLOR + '-- ' + problemFiles[f] + END_COLOR);
+        }
+    }
+}
+
+run_hasSkipLinkFirstElementInHeader();
 
 // WRAPUP
 

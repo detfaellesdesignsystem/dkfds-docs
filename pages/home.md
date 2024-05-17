@@ -15,7 +15,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
                 <p class="font-lead">
                     Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere.
                 </p>
-                <p>{% include links/external-link.html linktext="Se koden på GitHub" bold=true %}</p>
+                <p>{% include links/external-link.html linktext="Se koden på GitHub" classes="bold-link" %}</p>
             </div>
             <div class="col-12 col-lg-5 align-text-center">
                 <img id="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/Forside_illu_virk.svg" alt="" class="d-none d-lg-inline-block">
@@ -29,17 +29,17 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         <div class="col-12 col-lg-4">
             <h2 class="mt-0">Styleguide</h2>
             <p>Disse grundlæggende designbeslutninger udgør fundamentet for designsystemets komponenter og retningslinjer.</p>
-            <p>{% include links/internal-link.html linktext="Gå til styleguide" bold=true %}</p>
+            <p>{% include links/internal-link.html linktext="Gå til styleguide" classes="bold-link" %}</p>
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-lg-0">Komponenter</h2>
             <p>Komponenterne er byggeklodserne, som du kan bruge til at bygge den løsning dine brugere har behov for.</p>
-            <p>{% include links/internal-link.html linktext="Gå til komponenter" bold=true %}</p>
+            <p>{% include links/internal-link.html linktext="Gå til komponenter" classes="bold-link" %}</p>
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-lg-0">Eksempler</h2>
             <p>Få inspiration til, hvordan designsystemet kan anvendes til at bygge selvbetjenings-løsninger med.</p>
-            <p>{% include links/internal-link.html linktext="Gå til eksempler" bold=true %}</p>
+            <p>{% include links/internal-link.html linktext="Gå til eksempler" classes="bold-link" %}</p>
         </div>
     </div>
     <hr>

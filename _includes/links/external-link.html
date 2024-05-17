@@ -1,23 +1,20 @@
 {%- comment -%}
 --------
 EXAMPLE: HOW TO USE IN MARKDOWN FILES
-{% include links/external-link.html linktext="Tekst der skal blive til link" functionlink=true %}
+{% include links/external-link.html linktext="Link tekst" classes="function-link" %}
 --------
 {%- endcomment -%}
 
 {%- assign classes = "icon-link" -%}
-{%- if include.bold -%}
-    {%- assign classes = classes | append: " bold-link" -%}
+{%- if include.classes -%}
+    {%- assign classes = classes | append: ' ' | append: include.classes -%}
 {%- endif -%}
-{%- if include.functionlink -%}
-    {%- assign classes = classes | append: " function-link" -%}
-{%- endif -%}
-{%- assign attributes = 'class="' | append: classes | append: '"' | append: ' target="_blank"' -%}
+{%- assign classes = 'class="' | append: classes | append: '"' -%}
+{%- assign attributes = '' | append: classes | append: ' target="_blank"' -%}
 {%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
-
 
     {%- comment -%} -------- github.com -------- {%- endcomment -%}
 
@@ -125,7 +122,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/syv-hyppige-fejl-og-deres-betydning/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "læs om cookies på digitaliseringsstyrelsens hjemmeside" -%}
-        <a href="https://digst.dk/sikkerhed/digitale-tilsyn/tilsyn-med-sporingsteknologiomraadet/cookievejledningen/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+        <a href="https://digst.dk/sikkerhed/digitale-tilsyn/tilsyn-med-sporingsteknologiomraadet/vejledninger-til-tjenesteudbydere-og-offentlige-myndigheder/cookievejledningen/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 
