@@ -340,6 +340,14 @@
 
         
         <li>
+            <a href="/kom-i-gang/implementering-kode/justering/" class="nav-link"><span>Justering af tema og stylesheets</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
             <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/" class="nav-link"><span>Hjælpeklasser</span></a>
         </li>
         
@@ -1453,6 +1461,24 @@ let searchIndex = [
 "layout": "styleguide",
 "content" : "    Indhold på siden            Hent via NPM        Hent via GitHub (zip)        Temahåndtering        Vejledning til integration på borger.dk og Virk                            Hent via NPMVi anbefaler som udgangspunkt, at kodepakken hentes via NPM, hvor kodepakken går under navnet DKFDS.Navigér til roden af dit projekt i en kommandoprompt og installer DKFDS med følgende kommando:npm install --save dkfdsModulet ‘dkfds’ er nu installeret i ‘node_modules’ mappen.Hent via GitHub (zip)Hent nyeste version som zipfil på GitHub, og pak indholdet ud i dit projekt.Inkludér  CSSVirk tema&amp;lt;link type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;[sti til DKFDS mappen]/dist/css/dkfds-virkdk.css&amp;quot; /&amp;gt;Borger.dk tema&amp;lt;link type=&amp;quot;text/css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css&amp;quot; /&amp;gt;Har du brug for dit eget tema? Så læs, hvordan du tilpasser koden til dit eget tema i afsnittet temahåndtering.Inkludér JavaScriptJavaScript kan inkluderes med et script tag eller importeres ind i en eksisterende js fil.&amp;lt;script&amp;gt; tagIndsæt følgende script tag før&amp;lt;/body&amp;gt;&amp;lt;script src=&amp;#39;[sti til DKFDS mappen]/dist/js/dkfds.js&amp;#39;&amp;gt;&amp;lt;/script&amp;gt;Importer modulet i en .js filimport * as DKFDS from &amp;quot;dkfds&amp;quot;;InitNår DKFDS er inkluderet kan du køre funktionen DKFDS.init(); ved dom ready, eller hvornår det nu end passer i dit projekt.DKFDS.init(); aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring javascript for hver komponent finder du i kodesektionen for den specifikke komponent.Eksempel på init:document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function(){  DKFDS.init();});Initiér alle komponenter i et bestemt områdeDet er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.let $header = document.getElementsByTagName(&amp;#39;header&amp;#39;)[0];DKFDS.init({&amp;#39;scope&amp;#39;: $header});TemahåndteringDesignsystemet er udviklet med 2 forskellige temaer og et standardtema. Standardtemaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.Det eneste som er forskelligt mellem standardtemaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaerne.Nedenstående eksempel viser, hvordan en scss-fil i mappen src/stylesheets skulle se ud, hvis man selv ville generere temaet for borger.dk.@use &amp;#39;variables/variables/theme-colors&amp;#39; with (    $theme-color-primary:               #44831E,    $theme-color-primary-dark:          #3C5C22,    $theme-color-primary-darker:        #233614);@use &amp;#39;variables/variables/components&amp;#39; with (    $header-portal-background-color:    #f1f1f1,    $header-portal-logo:                &amp;#39;logo-borgerdk.svg&amp;#39;,    $header-portal-logo-height:         4.8rem,    $header-portal-compact-logo-width:  10rem);@use &amp;#39;dkfds-base&amp;#39;;Vejledning til integration på borger.dk og VirkDet Fælles Designsystem er som udgangspunkt udviklet til selvbetjeningsløsninger på borger.dk og Virk. For at integrere din løsning på borger.dk eller Virk, kan du her få vejledning til, hvordan du integrerer din løsning på platformene. Hvis du anvender designsystemet til andre løsninger, kan du se bort fra dette.Vejledning til integration på borger.dkVejledning til integration på Virk",
 "description" : "Sådan kommer du i gang med FDS i dit projekt. Værd at læse for alle udviklere.",
+"subnav": [""]
+},
+
+
+
+
+
+
+{
+"url": "/kom-i-gang/implementering-kode/justering/",
+"title": "Justering af tema og stylesheets",
+"category": "Kom_i_gang_category",
+"subcategory": "Kom i gang",
+"lead": "",
+"tags": ['CSS','SCSS','SASS','JS','JavaScript'],
+"layout": "styleguide",
+"content" : "Justering af stylesheetsNår du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, fx hvis dine logoer ligger i en anden mappe end img eller hvis du skal anvende en anden portalfarve end Virk eller borger.dk.Det anbefales altid at foretage justeringer ved at bruge de medfølgende SCSS-filer og herefter generere en ny CSS-fil. Skriv aldrig direkte i CSS-filerne.Juster stylesheets med SassEksempel på skift af portalfarveDownload FDS fra enten npm eller GitHub.Sørg for at du har downloadet og installeret Sass fra npm.Opret en ny fil i mappen scss, fx mystylesheet.scss.Indsæt nedenstående kode i filen (benyt dine egne farveværdier):@use &amp;#39;variables/variables/theme-colors&amp;#39; with (    $theme-color-primary:        #AA0000,    $theme-color-primary-dark:   #990000,    $theme-color-primary-darker: #880000);@use &amp;#39;dkfds-base&amp;#39;;Byg den nye CSS-fil med Sass, fx ved at køre kommandoen sass --style=compressed scss/mystylesheet.scss mystyle.css. Dette genererer filen mystyle.css, som kan anvendes i stedet for FDS&#39; medfølgende CSS-filer.Forsøg aldrig at bygge en ny CSS-fil ud fra de to eksisterende temaer til Virk og borger.dk. Hvis du skal bruge nogle af disse temaers værdier, så kopier dem fra scss/themes/borgerdk og scss/themes/virkdk.",
+"description" : "Sådan tilpasser du koden til dit projekt.",
 "subnav": [""]
 },
 

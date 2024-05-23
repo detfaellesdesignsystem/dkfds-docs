@@ -16,11 +16,11 @@
 ================================================== -->
   
 
-<title>Tooltip | Det Fælles Designsystem</title>
-<meta property="og:title" content="Tooltip | Det Fælles Designsystem">
+<title>Justering af tema og stylesheets | Det Fælles Designsystem</title>
+<meta property="og:title" content="Justering af tema og stylesheets | Det Fælles Designsystem">
 
-<meta name="description" content="Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.">
-<meta property="og:description" content="Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.">
+<meta name="description" content="Sådan tilpasser du koden til dit projekt.">
+<meta property="og:description" content="Sådan tilpasser du koden til dit projekt.">
 
 
 
@@ -65,7 +65,7 @@
 </noscript>
 
   </head>
-  <body class="page-tooltip layout-styleguide">
+  <body class="page-justering-af-tema-og-stylesheets layout-styleguide">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -241,8 +241,8 @@
         <div class="navigation-menu-inner container">
             <nav class="nav" aria-label="Hovedmenu">
                 <ul class="mainmenu">
-                    <li>
-            <a href="/kom-i-gang/" class="nav-link">
+                    <li class="active">
+            <a href="/kom-i-gang/" class="nav-link" aria-current="page">
                 <span>Kom i gang</span>
             </a>
         </li>
@@ -257,8 +257,8 @@
 
     
   
-<li class="active">
-            <a href="/komponenter/" class="nav-link" aria-current="page">
+<li>
+            <a href="/komponenter/" class="nav-link">
                 <span>Komponenter</span>
             </a>
         </li>
@@ -311,13 +311,13 @@
                  
 
         
-        <li>
+        <li class="active">
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="true">
                     <span>Kom i gang</span>
                 </button>
                 
-                <div class="overflow-menu-inner" id="kom_i_gang_category" aria-hidden="true">
+                <div class="overflow-menu-inner" id="kom_i_gang_category" aria-hidden="false">
                     <ul class="overflow-list">
                         <li>
                             <a href="/kom-i-gang/" class="nav-link">
@@ -327,13 +327,13 @@
                          
 
         
-        <li>
+        <li class="active">
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="true">
                     <span>Implementering og kode</span>
                 </button>
                 
-                <div class="overflow-menu-inner" id="implementering_kode_category" aria-hidden="true">
+                <div class="overflow-menu-inner" id="implementering_kode_category" aria-hidden="false">
                     <ul class="overflow-list">
                         <li>
                             <a href="/kom-i-gang/implementering-kode/" class="nav-link">
@@ -351,7 +351,7 @@
  
 
         
-        <li>
+        <li class="active current">
             <a href="/kom-i-gang/implementering-kode/justering/" class="nav-link"><span>Justering af tema og stylesheets</span></a>
         </li>
         
@@ -642,13 +642,13 @@
  
 
         
-        <li class="active">
+        <li>
             <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="true">
+                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="false">
                     <span>Komponenter</span>
                 </button>
                 
-                <div class="overflow-menu-inner" id="komponenter_category" aria-hidden="false">
+                <div class="overflow-menu-inner" id="komponenter_category" aria-hidden="true">
                     <ul class="overflow-list">
                         <li>
                             <a href="/komponenter/" class="nav-link">
@@ -938,7 +938,7 @@
  
 
         
-        <li class="active current">
+        <li>
             <a href="/komponenter/tooltip/" class="nav-link"><span>Tooltip</span></a>
         </li>
         
@@ -1157,28 +1157,11 @@
 
 
 
-<li>
+<li class="active">
 
-  <a href="/komponenter/accordions/" class="nav-link">
-    <span>Accordions</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/anchorlinks/" class="nav-link">
-    <span>Anchorlinks</span>
-  </a>
-
-</li>
-
+  <a href="/kom-i-gang/implementering-kode/" class="nav-link">
+    <span>Implementering og kode</span>
+  </a><ul>
 
 
 
@@ -1187,456 +1170,8 @@
 
 <li>
 
-  <a href="/komponenter/badges/" class="nav-link">
-    <span>Badges</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/beskeder/" class="nav-link">
-    <span>Beskeder (Alerts)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/broedkrumme/" class="nav-link">
-    <span>Brødkrumme</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/cards/" class="nav-link">
-    <span>Cards</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/cookiemeddelelse/" class="nav-link">
-    <span>Cookiemeddelelse</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/datofelter/" class="nav-link">
-    <span>Datofelter</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/datovaelger/" class="nav-link">
-    <span>Datovælger</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/detaljer/" class="nav-link">
-    <span>Detaljer</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/dropdown/" class="nav-link">
-    <span>Dropdown</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/faneblade/" class="nav-link">
-    <span>Faneblade (Tabs)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fejlmeddelelser/" class="nav-link">
-    <span>Fejlmeddelelser</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fejlopsummering/" class="nav-link">
-    <span>Fejlopsummering</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/footer/" class="nav-link">
-    <span>Footer</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/funktionslink/" class="nav-link">
-    <span>Funktionslink</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/skip-link/" class="nav-link">
-    <span>Gå til sidens indhold (Skip-link)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/header/" class="nav-link">
-    <span>Header</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/inputfelter/" class="nav-link">
-    <span>Inputfelter</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/knapper/" class="nav-link">
-    <span>Knapper (Buttons)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/spinner/" class="nav-link">
-    <span>Loading spinner</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/modal/" class="nav-link">
-    <span>Modal</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/overflowmenu/" class="nav-link">
-    <span>Overflow menu</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/paginering/" class="nav-link">
-    <span>Paginering</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/radioknap/" class="nav-link">
-    <span>Radioknap (Radio button)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/sprogvaelger/" class="nav-link">
-    <span>Sprogvælger</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/search/" class="nav-link">
-    <span>Søgefelt</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tables/" class="nav-link">
-    <span>Tabeller</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tags/" class="nav-link">
-    <span>Tags</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tekstomraade/" class="nav-link">
-    <span>Tekstområde (Textarea)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tilbage-link/" class="nav-link">
-    <span>Tilbage-link</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tilbage-til-top/" class="nav-link">
-    <span>Tilbage til toppen</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tjekboks/" class="nav-link">
-    <span>Tjekboks (Checkbox)</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/toastbesked/" class="nav-link">
-    <span>Toastbesked</span>
-  </a>
-
-</li>
-
-
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/toggle/" class="nav-link">
-    <span>Toggle switch</span>
+  <a href="/kom-i-gang/implementering-kode/hent-kodepakken/" class="nav-link">
+    <span>Hent kodepakken</span>
   </a>
 
 </li>
@@ -1649,8 +1184,8 @@
 
 <li class="active current">
 
-  <a href="/komponenter/tooltip/" class="nav-link" aria-current="page">
-    <span>Tooltip</span>
+  <a href="/kom-i-gang/implementering-kode/justering/" class="nav-link" aria-current="page">
+    <span>Justering af tema og stylesheets</span>
   </a>
 
 </li>
@@ -1663,8 +1198,8 @@
 
 <li>
 
-  <a href="/komponenter/trinindikator/" class="nav-link">
-    <span>Trinindikator</span>
+  <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/" class="nav-link">
+    <span>Hjælpeklasser</span>
   </a>
 
 </li>
@@ -1677,8 +1212,8 @@
 
 <li>
 
-  <a href="/komponenter/fil-upload/" class="nav-link">
-    <span>Vedhæft fil</span>
+  <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/" class="nav-link">
+    <span>Browserunderstøttelse</span>
   </a>
 
 </li>
@@ -1691,8 +1226,111 @@
 
 <li>
 
-  <a href="/komponenter/venstremenu/" class="nav-link">
-    <span>Venstremenu</span>
+  <a href="/kom-i-gang/implementering-kode/plugins/" class="nav-link">
+    <span>Plugins</span>
+  </a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/implementering-kode/print/" class="nav-link">
+    <span>Print</span>
+  </a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link">
+    <span>Frameworks</span>
+  </a>
+
+</li>
+
+
+      </ul>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/designressourcer/" class="nav-link">
+    <span>Design og ressourcer</span>
+  </a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/tjekliste/" class="nav-link">
+    <span>Tjekliste</span>
+  </a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/krav/" class="nav-link">
+    <span>Krav</span>
+  </a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/tilgaengelighed/" class="nav-link">
+    <span>Tilgængelighed</span>
+  </a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+  <a href="/kom-i-gang/faq/" class="nav-link">
+    <span>Ofte stillede spørgsmål</span>
   </a>
 
 </li>
@@ -1709,671 +1347,46 @@
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
         </div>
     </div>
-<section id="section-/komponenter/tooltip/">
+<section id="section-/kom-i-gang/implementering-kode/justering/">
 
                 <div class="subheading">
-                    Komponenter
+                    Kom i gang
                 </div>
 
                 
                 
-                <h1 id="tooltip">Tooltip</h1>
+                <h1 id="justering-af-tema-og-stylesheets">Justering af tema og stylesheets</h1>
                 
 
-                
-                <p class="font-lead">Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.</p>
-                <nav class="tab-container mb-7" aria-label="Undersider">
-    <ul class="tab-list"><li>
-            <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
-            <span id="retningslinjer" hidden=""></span>
-        </li><li>
-            <a href="#kode" id="code-tab" class="tab-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg><span>Kode</span></a>
-            <span id="kode" hidden=""></span>
-        </li></ul>
-</nav>
+                <h2>Justering af stylesheets</h2>
 
-<div class="component-preview intro-example component-preview-tooltip-helpicon">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-helpicon/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-helpicon</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på ikon med tooltip</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-example" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
-</div>
-        
-    </div>
-    
-</div>
+<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, fx hvis dine logoer ligger i en anden mappe end <code>img</code> eller hvis du skal anvende en anden <a href="/styleguide/farver/#portalfarver-tema">portalfarve</a> end Virk eller borger.dk.</p>
 
-<nav class="anchorbox" aria-labelledby="anchorlinks">
-    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
-    <ul class="anchorlist">
-        
-        <li class="anchorlink-guidelines"><a href="#saadan-bruges-komponenten">Sådan bruges komponenten</a></li>
-        <li class="anchorlink-guidelines"><a href="#varianter">Varianter</a></li>
-        <li class="anchorlink-guidelines"><a href="#se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</a></li>
-        <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
-        
-        <li class="anchorlink-code"><a href="#installation-kode">Installation</a></li>
-        <li class="anchorlink-code"><a href="#radioknap-med-tooltip-kode">Radioknap med tooltip</a></li>
-        <li class="anchorlink-code"><a href="#tjekboks-med-tooltip-kode">Tjekboks med tooltip</a></li>
-        <li class="anchorlink-code"><a href="#inputfelt-med-tooltip-kode">Inputfelt med tooltip</a></li>
-        <li class="anchorlink-code"><a href="#broedtekst-med-tooltip-kode">Brødtekst med tooltip</a></li>
-        <li class="anchorlink-code"><a href="#ikoner-med-hover-tooltip-kode">Ikoner med hover-tooltip</a></li>
-        <li class="anchorlink-code"><a href="#knap-med-hover-tooltip-kode">Knap med hover-tooltip</a></li>
-        <li class="anchorlink-code"><a href="#referencer-kode">Referencer</a></li>
-        
-    </ul>
-</nav>
+<p>Det anbefales altid at foretage justeringer ved at bruge de medfølgende SCSS-filer og herefter generere en ny CSS-fil. Skriv aldrig direkte i CSS-filerne.</p>
 
+<h3>Juster stylesheets med Sass</h3>
 
-                        <div id="guidelines-section">
-                            
+<h4>Eksempel på skift af portalfarve</h4>
 
-<h2 id="saadan-bruges-komponenten">Sådan bruges komponenten</h2>
+<ol>
+<li>Download FDS fra enten npm eller GitHub.</li>
+<li>Sørg for at du har downloadet og installeret <a href="https://www.npmjs.com/package/sass" class="icon-link" target="_blank">Sass fra npm<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+<li>Opret en ny fil i mappen <code>scss</code>, fx <code>mystylesheet.scss</code>.</li>
+<li>Indsæt nedenstående kode i filen (benyt dine egne farveværdier):
 
-<h3>Anvendes til</h3>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;variables/variables/theme-colors&#39; with (
+    $theme-color-primary:        #AA0000,
+    $theme-color-primary-dark:   #990000,
+    $theme-color-primary-darker: #880000
+);
+@use &#39;dkfds-base&#39;;</code></pre></figure>
 
-<p>Brug tooltips til præcisering af specifikke elementer i brugergrænsefladen.</p>
+</li>
+<li>Byg den nye CSS-fil med Sass, fx ved at køre kommandoen <code>sass --style=compressed scss/mystylesheet.scss mystyle.css</code>. Dette genererer filen <code>mystyle.css</code>, som kan anvendes i stedet for FDS' medfølgende CSS-filer.</li>
+</ol>
 
-<h3>Anvendes ikke til</h3>
+<p>Forsøg aldrig at bygge en ny CSS-fil ud fra de to eksisterende temaer til Virk og borger.dk. Hvis du skal bruge nogle af disse temaers værdier, så kopier dem fra <code>scss/themes/borgerdk</code> og <code>scss/themes/virkdk</code>.</p>
 
-<p>Tooltips anvendes ikke til informationer, der er essentielle for at brugeren kan gennemføre løsningen. Hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst i stedet for.</p>
-
-<p>Placér ikke interaktive elementer såsom knapper og links inde i tooltips.</p>
-
-<h3>Vejledning</h3>
-
-<p>Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad.</p>
-
-<p>Gør det let at se, hvilket element tooltippet tilhører ved at placere hjælpeikonet tæt ved det element, der beskrives.</p>
-
-<p>Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.</p>
-
-<p>Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten <a href="/komponenter/tooltip/#ikoner-med-hover-tooltip">ikoner med hover-tooltip</a>.</p>
-
-<div class=" component-preview-tooltip-dos-donts">
-    
-    <div class="sr-only">Tooltip do's and don'ts</div>
-    
-    <div class="component-example">
-        <div class="row do-dont-container">
-    <div class="col-12 col-md-6">
-        <h4>Sådan (do)</h4>
-        <div><img src="/assets/img/do-dont/Tooltip-info-do.svg" alt="Eksempel på, hvilken information man kan sætte som tooltip" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
-        <p><strong>Sådan:</strong> Brug tooltips til ekstra information, som kun få brugere vil behøve for at udføre opgaven og forstå sidens indhold (Joyce, 2019).</p>
-    </div>
-    <div class="col-12 col-md-6">
-        <h4>Ikke sådan (don't)</h4>
-        <div><img src="/assets/img/do-dont/Tooltip-info-dont.svg" alt="Eksempel på, hvilken information man ikke skal sætte som tooltip" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
-        <p><strong>Ikke sådan:</strong> Brug ikke tooltips som erstatning for hjælpetekster eller for at spare plads. Tooltips anvendes ikke til vigtige informationer eller hjælp, som de fleste brugere har brug for, eller som ikke er umiddelbart intuitive, fx ved særlige krav til formatering (Joyce, 2019).</p>
-    </div>
-</div>
-<div class="row do-dont-container">
-    <div class="col-12 col-md-6">
-        <h4>Sådan (do)</h4>
-        <div><img src="/assets/img/do-dont/Tooltip-laengde-do.svg" alt="Eksempel på tooltip med passende mængde tekst" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
-        <p><strong>Sådan:</strong> Hold tooltipteksten så kort og præcis som muligt (Joyce, 2019).</p>
-    </div>
-    <div class="col-12 col-md-6">
-        <h4>Ikke sådan (don't)</h4>
-        <div><img src="/assets/img/do-dont/Tooltip-laengde-dont.svg" alt="Eksempel på tooltip, der indeholder for meget tekst" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
-        <p><strong>Ikke sådan:</strong> Placér ikke lange tekster inde i tooltips, da de er beregnet til korte præciseringer (Joyce, 2019). Hvis der er brug for en længere tekst, så anvend fx brødtekst, hjælpetekst eller detaljekomponenten i stedet. Vær opmærksom på, at lange tooltiptekster kan lede til tilgængelighedsproblemer på små skærme, hvis der ikke er plads til hele teksten på skærmen.</p>
-    </div>
-</div>
-
-    </div>
-</div>
-
-<h3>Placering af tooltips</h3>
-
-<p>Placering af tooltips er vigtigt, så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert, kan brugeren blive nødt til at lukke og åbne tooltippet igen for at forstå sammenhængen.</p>
-
-<p>Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres over eller under hjælpeikonet, alt efter hvor det skygger mindst for det øvrige indhold. Nedenfor ses de typer af placeringer, som kan anvendes.</p>
-
-<div class="component-preview  component-preview-tooltip-position">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-position/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-position</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på placering af tooltip</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <p>Den her tekst har et tooltip, der er placeret over hjælpeikonet <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-above" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
-</p>
-
-<p>Her er tooltip placeret under hjælpeikonet <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-below" data-position="below" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
-</p>
-        
-    </div>
-    
-</div>
-
-<h4>Radioknap med tooltip</h4>
-
-<div class="component-preview  component-preview-tooltip-radiobuttons">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-radiobuttons/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-radiobuttons</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip for radioknapper</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group">
-    <fieldset aria-labelledby="radio-tooltip-legend">
-
-        <legend class="form-label"><span id="radio-tooltip-legend">Radioknapper</span>
-            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="radiogroup-tooltip" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
-        </legend>
-
-        <div class="form-group-radio">
-            <input type="radio" id="radiogroup-option1" name="radio-tooltip" class="form-radio" value="v1" />
-            <label class="form-label" for="radiogroup-option1">Valg 1</label>
-
-        </div>
-
-        <div class="form-group-radio">
-            <input type="radio" id="radiogroup-option2" name="radio-tooltip" class="form-radio" value="v2" aria-describedby="radiogroup-option2-hint" />
-            <label class="form-label" for="radiogroup-option2">Valg 2</label>
-            <span class="form-hint" id="radiogroup-option2-hint">Hjælpetekst kan stå
-                her</span>
-        </div>
-
-    </fieldset>
-</div>
-        
-    </div>
-    
-</div>
-
-<h4>Tjekboks med tooltip</h4>
-
-<div class="component-preview  component-preview-tooltip-checkbox">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-checkbox/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-checkbox</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip for tjekboks</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group">
-
-    <div class="form-group-checkbox">
-        <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox" value="1" checked="" />
-        <label class="form-label" for="checkbox1">Udfyldt tjekboks</label>
-
-        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="checkbox-tooltip" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
-    </div>
-
-</div>
-        
-    </div>
-    
-</div>
-
-<h4>Inputfelt med tooltip</h4>
-
-<div class="component-preview  component-preview-tooltip-textinput">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-textinput/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-textinput</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip for inputfelt</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group">
-    <label class="form-label" for="input-text">Inputfelt</label>
-    <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text-tooltipbutton" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
-
-    <input type="text" id="input-text" name="input-text" class="form-input" required="" />
-</div>
-        
-    </div>
-    
-</div>
-
-<h4>Brødtekst med tooltip</h4>
-
-<p>Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv de forklarede ord i teksten med fed. Brug denne form for tooltips i begrænset omfang, da det let virker forstyrrende.</p>
-
-<div class="component-preview  component-preview-tooltip-text">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-text/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-text</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip i brødtekst</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    ut labore et <strong>dolore magna</strong><span class="tooltip-wrapper in-text" data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-text-example" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Hvad betyder dolore magna">
-            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat.</p>
-        
-    </div>
-    
-</div>
-
-<h2 id="varianter">Varianter</h2>
-
-<h3>Hover-tooltip</h3>
-
-<p>Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom et ikon. Vær varsom med at anvende hover-tooltips. På mobil vises de kun ved “long press”, eftersom elementets funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.</p>
-
-<p>Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).</p>
-
-<h4 id="ikoner-med-hover-tooltip">Ikoner med hover-tooltip</h4>
-
-<p>Det anbefales altid at bruge ikoner sammen med en synlig tekstlabel. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse</p>
-
-<p>Vær opmærksom på, at tooltipteksten skal være så kort og præcis, som hvis den var en synlig tekstlabel til ikonet. Skriv fx bare “Slet” og <strong>ikke</strong> “Tryk på ikonet for at slette”. Sådan sikres den bedste brugeroplevelse, også for skærmlæserbrugere.</p>
-
-<div class="component-preview  component-preview-tooltip-iconbutton">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-iconbutton/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-iconbutton</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip på et klikbart ikon</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="tooltip-wrapper" data-tooltip="Slet" data-tooltip-id="tooltip-ikonknap" data-position="above" data-trigger="hover"><button class="button button-unstyled tooltip-target tooltip-is-label">
-        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg></button>
-</div>
-        
-    </div>
-    
-</div>
-
-<h4>Knap med hover-tooltip</h4>
-
-<p>Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapper. På mobil vises disse kun ved “long press”, eftersom knappens funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.</p>
-
-<div class="component-preview  component-preview-tooltip-hover-button">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-hover-button/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tooltip-hover-button</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip på en knap</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-knap" data-position="above" data-trigger="hover"><button class="button button-primary tooltip-target">
-        Knap med tooltip
-    </button></div>
-        
-    </div>
-    
-</div>
-
-<h2 id="se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</h2>
-
-<p><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/komponenter/tooltip/%23eksempelloesninger">Trinformular til registrering: Vælg personer</a></p>
-
-<h2 id="referencer">Referencer</h2>
-
-<ul class="nobullet-list">
-  <li><a href="https://www.nngroup.com/articles/timing-exposing-content/" class="icon-link" target="_blank">Aurora Harley (2015): Timing Guidelines for Exposing Hidden Content<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
-  <li><a href="https://www.nngroup.com/articles/tooltip-guidelines/" class="icon-link" target="_blank">Alita Joyce: Tooltip Guidelines (2019)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/" class="icon-link" target="_blank">Tilgængelige tooltips<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-
-                        </div>
-                        <div id="code-section">
-                            
-
-<h2 id="installation-kode">Installation</h2>
-
-<h3>HTML Struktur</h3>
-
-<div class="component-preview component-preview-code  component-code-tooltip-helpicon">
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-    data-tooltip-id=&quot;helpicon-example&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;&lt;button
-        class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-        &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<p>Bemærk at <code>tooltip-wrapper</code> kan kodes med enten <code>div</code> eller <code>span</code> afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen <code>tooltip-target</code>.</p>
-
-<h3>Javascript</h3>
-<p>Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Tooltip(document.getElementById(&#39;Tooltip-wrapper-ID&#39;)).init();</code></pre></figure>
-
-<p>Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes på <code>tooltip-wrapper</code>.</p>
-
-<table class="table table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Attribut</th>
-      <th>Beskrivelse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>data-tooltip</td>
-      <td>Tooltipteksten</td>
-    </tr>
-    <tr>
-      <td>data-tooltip-id</td>
-      <td>ID der knytter tooltippet til det element, der åbner tooltippet.</td>
-    </tr>
-    <tr>
-      <td>data-position</td>
-      <td>Skal sættes til enten <code>above</code> eller <code>below</code>. Undlades attributten vælges <code>above</code> som standard.</td>
-    </tr>
-    <tr>
-      <td>data-trigger</td>
-      <td>Skal sættes til enten <code>click</code> eller <code>hover</code>. Anvend kun <code>click</code>, hvis elementet ikke har andre funktioner end at åbne tooltippet.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="radioknap-med-tooltip-kode">Radioknap med tooltip</h2>
-
-<div class="component-preview component-preview-code  component-code-tooltip-radiobuttons">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-radiobuttons/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tooltip-radiobuttons</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip for radioknapper</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;fieldset aria-labelledby=&quot;radio-tooltip-legend&quot;&gt;
-
-        &lt;legend class=&quot;form-label&quot;&gt;&lt;span id=&quot;radio-tooltip-legend&quot;&gt;Radioknapper&lt;/span&gt;
-            &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-                data-tooltip-id=&quot;radiogroup-tooltip&quot; data-position=&quot;above&quot;
-                data-trigger=&quot;click&quot;&gt;&lt;button class=&quot;button button-unstyled tooltip-target&quot;
-                    type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-                    &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
-        &lt;/legend&gt;
-
-        &lt;div class=&quot;form-group-radio&quot;&gt;
-            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-option1&quot; name=&quot;radio-tooltip&quot;
-                class=&quot;form-radio&quot; value=&quot;v1&quot;&gt;
-            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-option1&quot;&gt;Valg 1&lt;/label&gt;
-
-        &lt;/div&gt;
-
-        &lt;div class=&quot;form-group-radio&quot;&gt;
-            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-option2&quot; name=&quot;radio-tooltip&quot;
-                class=&quot;form-radio&quot; value=&quot;v2&quot; aria-describedby=&quot;radiogroup-option2-hint&quot;&gt;
-            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-option2&quot;&gt;Valg 2&lt;/label&gt;
-            &lt;span class=&quot;form-hint&quot; id=&quot;radiogroup-option2-hint&quot;&gt;Hjælpetekst kan stå
-                her&lt;/span&gt;
-        &lt;/div&gt;
-
-    &lt;/fieldset&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<h2 id="tjekboks-med-tooltip-kode">Tjekboks med tooltip</h2>
-
-<div class="component-preview component-preview-code  component-code-tooltip-checkbox">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-checkbox/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tooltip-checkbox</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip for tjekboks</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-
-    &lt;div class=&quot;form-group-checkbox&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; name=&quot;checkbox1&quot; class=&quot;form-checkbox&quot; value=&quot;1&quot;
-            checked&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;checkbox1&quot;&gt;Udfyldt tjekboks&lt;/label&gt;
-
-        &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-            data-tooltip-id=&quot;checkbox-tooltip&quot; data-position=&quot;above&quot;
-            data-trigger=&quot;click&quot;&gt;&lt;button class=&quot;button button-unstyled tooltip-target&quot;
-                type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-                &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<h2 id="inputfelt-med-tooltip-kode">Inputfelt med tooltip</h2>
-
-<div class="component-preview component-preview-code  component-code-tooltip-textinput">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-textinput/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tooltip-textinput</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip for inputfelt</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-text&quot;&gt;Inputfelt&lt;/label&gt;
-    &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-        data-tooltip-id=&quot;input-text-tooltipbutton&quot; data-position=&quot;above&quot;
-        data-trigger=&quot;click&quot;&gt;&lt;button class=&quot;button button-unstyled tooltip-target&quot;
-            type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-            &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
-
-    &lt;input type=&quot;text&quot; id=&quot;input-text&quot; name=&quot;input-text&quot; class=&quot;form-input&quot; required&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<h2 id="broedtekst-med-tooltip-kode">Brødtekst med tooltip</h2>
-
-<div class="component-preview component-preview-code  component-code-tooltip-text">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-text/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tooltip-text</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip i brødtekst</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    ut labore et &lt;strong&gt;dolore magna&lt;/strong&gt;&lt;span class=&quot;tooltip-wrapper in-text&quot;
-        data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-id=&quot;tooltip-text-example&quot;
-        data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;&lt;button
-            class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;
-            aria-label=&quot;Hvad betyder dolore magna&quot;&gt;
-            &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat.&lt;/p&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<h2 id="ikoner-med-hover-tooltip-kode">Ikoner med hover-tooltip</h2>
-
-<p>Brug klassen <code>tooltip-is-label</code> på <code>tooltip-target</code> ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017).</p>
-
-<div class="component-preview component-preview-code  component-code-tooltip-iconbutton">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-iconbutton/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tooltip-iconbutton</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip på et klikbart ikon</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Slet&quot; data-tooltip-id=&quot;tooltip-ikonknap&quot;
-    data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;&lt;button
-        class=&quot;button button-unstyled tooltip-target tooltip-is-label&quot;&gt;
-        &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<h2 id="knap-med-hover-tooltip-kode">Knap med hover-tooltip</h2>
-
-<div class="component-preview component-preview-code  component-code-tooltip-hover-button">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tooltip-hover-button/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tooltip-hover-button</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tooltip på en knap</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-id=&quot;tooltip-knap&quot;
-    data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;&lt;button
-        class=&quot;button button-primary tooltip-target&quot;&gt;
-        Knap med tooltip
-    &lt;/button&gt;&lt;/div&gt;</code></pre></figure>
-
-
-    </div>
-    
-</div>
-
-<h2 id="referencer-kode">Referencer</h2>
-
-<ul class="nobullet-list">
-  <li><a href="https://inclusive-components.design/tooltips-toggletips/" class="icon-link" target="_blank">Heydon Pickering: Tooltips &amp; Toggletips - Inclusive Components (2017)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-</ul>
-
-                        </div>
 
                 
                 
@@ -2427,8 +1440,6 @@
     <script src="/assets/js/theme.js?v=10.0.0"></script>
 <script src="/assets/js/styleguide.js?v=10.0.0"></script>
 
-
-<script src="/assets/js/docs-tabs.js"></script>
 
   </body>
 </html>
