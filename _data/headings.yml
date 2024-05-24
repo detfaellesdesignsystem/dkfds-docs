@@ -3,8 +3,12 @@
 Hent_kodepakken:
 - h2: Hent via NPM
 - h2: Hent via GitHub (zip)
-- h2: Temahåndtering
 - h2: Vejledning til integration på borger.dk og Virk
+
+Justering_af_tema_og_stylesheets:
+- h2: Før du tilpasser koden
+- h2: Juster stylesheets med Sass
+- h2: Juster stylesheets med npm scripts
 
 Hjaelpeklasser:
 - h2: Responsive hjælpeklasser

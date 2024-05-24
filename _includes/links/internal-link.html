@@ -24,11 +24,15 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "implementering og kode" -%}
         <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "hent kodepakken" -%}
+    {%- when "hent kodepakken",
+             "kodepakke" -%}
         <a href="/kom-i-gang/implementering-kode/hent-kodepakken/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "temahåndtering" -%}
-        <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering"{{ classes }}>{{ include.linktext }}</a>
+    {%- when "hentet via npm" -%}
+        <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#hent-via-npm"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "justering af tema og stylesheets" -%}
+        <a href="/kom-i-gang/implementering-kode/justering/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "hjælpeklasser (utilities)" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/"{{ classes }}>{{ include.linktext }}</a>
@@ -92,7 +96,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "farver" -%}
         <a href="/styleguide/farver/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "portalfarve" -%}
+    {%- when "portalfarve",
+             "portalfarver" -%}
         <a href="/styleguide/farver/#portalfarver-tema"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "datavisualiseringsfarver" -%}

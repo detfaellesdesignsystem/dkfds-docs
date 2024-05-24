@@ -4,8 +4,8 @@
 
 @use '../node_modules/dkfds/src/stylesheets/variables/variables/paths' with (
     $font-path:         '/assets/fonts/IBMPlexSans/',
-    $image-path:        '/assets/img',
-    $icons-folder-path: '/assets/svg'
+    $image-path:        '/assets/img/',
+    $icons-folder-path: '/assets/svg/'
 );
 @use '../node_modules/dkfds/src/stylesheets/dkfds-virkdk';
 @use 'styleguide-base';

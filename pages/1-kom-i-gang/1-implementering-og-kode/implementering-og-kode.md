@@ -21,6 +21,10 @@ tags:
 
 <p class="mt-0">Hent den kode, som Det Fælles Designsystem stiller til rådighed.</p>
 
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Justering af tema og stylesheets" classes="pt-1 pb-1" %}</h2>
+
+<p class="mt-0">Læs om, hvordan designsystemets stylesheets kan tilpasses.</p>
+
 <h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Hjælpeklasser (Utilities)" classes="pt-1 pb-1" %}</h2>
 
 <p class="mt-0">Lav hurtige justeringer direkte i HTML’en med disse hjælpeklasser.</p>

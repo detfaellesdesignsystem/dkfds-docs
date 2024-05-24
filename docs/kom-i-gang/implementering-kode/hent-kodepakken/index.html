@@ -1365,7 +1365,6 @@
     <ul class="anchorlist">
         <li><a href="#hent-via-npm">Hent via NPM</a></li>
         <li><a href="#hent-via-github-zip">Hent via GitHub (zip)</a></li>
-        <li><a href="#temahaandtering">Temahåndtering</a></li>
         <li><a href="#vejledning-til-integration-paa-borger-dk-og-virk">Vejledning til integration på borger.dk og Virk</a></li>
         
         
@@ -1397,7 +1396,9 @@
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css&quot; /&gt;</code></pre></figure>
 
-<p>Har du brug for dit eget tema? Så læs, hvordan du tilpasser koden til dit eget tema i afsnittet <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#temahaandtering">temahåndtering</a>.</p>
+<h4>Eget tema</h4>
+
+<p>Har du brug for dit eget tema? Så læs, hvordan du tilpasser koden under <a href="/kom-i-gang/implementering-kode/justering/">Justering af tema og stylesheets</a>.</p>
 
 <h3 id="javascript">Inkludér JavaScript</h3>
 
@@ -1431,27 +1432,6 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let $header = document.getElementsByTagName(&#39;header&#39;)[0];
 DKFDS.init({&#39;scope&#39;: $header});</code></pre></figure>
-
-<h2 id="temahaandtering">Temahåndtering</h2>
-
-<p>Designsystemet er udviklet med 2 forskellige temaer og et standardtema. Standardtemaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.</p>
-
-<p>Det eneste som er forskelligt mellem standardtemaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaerne.</p>
-
-<p>Nedenstående eksempel viser, hvordan en scss-fil i mappen <code>src/stylesheets</code> skulle se ud, hvis man selv ville generere temaet for borger.dk.</p>
-
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;variables/variables/theme-colors&#39; with (
-    $theme-color-primary:               #44831E,
-    $theme-color-primary-dark:          #3C5C22,
-    $theme-color-primary-darker:        #233614
-);
-@use &#39;variables/variables/components&#39; with (
-    $header-portal-background-color:    #f1f1f1,
-    $header-portal-logo:                &#39;logo-borgerdk.svg&#39;,
-    $header-portal-logo-height:         4.8rem,
-    $header-portal-compact-logo-width:  10rem
-);
-@use &#39;dkfds-base&#39;;</code></pre></figure>
 
 <h2 id="vejledning-til-integration-paa-borger-dk-og-virk">Vejledning til integration på borger.dk og Virk</h2>
 

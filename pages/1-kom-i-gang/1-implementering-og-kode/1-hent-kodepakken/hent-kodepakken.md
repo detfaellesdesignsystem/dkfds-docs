@@ -48,7 +48,9 @@ Hent nyeste version som {% include links/external-link.html linktext="zipfil på
 <link type="text/css" rel="stylesheet" href="[sti til DKFDS mappen]/dist/css/dkfds-borgerdk.css" />
 {% endhighlight %}
 
-Har du brug for dit eget tema? Så læs, hvordan du tilpasser koden til dit eget tema i afsnittet {% include links/internal-link.html linktext="temahåndtering" %}.
+#### Eget tema
+
+Har du brug for dit eget tema? Så læs, hvordan du tilpasser koden under {% include links/internal-link.html linktext="Justering af tema og stylesheets" %}.
 
 {:#javascript}
 ### Inkludér JavaScript
@@ -90,29 +92,6 @@ I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det 
 {% highlight javascript %}
 let $header = document.getElementsByTagName('header')[0];
 DKFDS.init({'scope': $header});
-{% endhighlight %}
-
-## Temahåndtering {#{% include create-id.html heading="Temahåndtering" %}}
-
-Designsystemet er udviklet med 2 forskellige temaer og et standardtema. Standardtemaet er det neutrale tema, hvor primærfarven er grå. Denne grå farve skal overskrives, da det neutrale tema blot er ment som en skabelon til ens eget tilpassede tema. De to andre temaer er målrettet borger.dk og virk.dk.
-
-Det eneste som er forskelligt mellem standardtemaet og de to andre temaer er primærfarven og nogle få variationer i headeren (fx logo). Alt andet er ens på tværs af temaerne.
-
-Nedenstående eksempel viser, hvordan en scss-fil i mappen `src/stylesheets` skulle se ud, hvis man selv ville generere temaet for borger.dk. 
-
-{% highlight scss %}
-@use 'variables/variables/theme-colors' with (
-    $theme-color-primary:               #44831E,
-    $theme-color-primary-dark:          #3C5C22,
-    $theme-color-primary-darker:        #233614
-);
-@use 'variables/variables/components' with (
-    $header-portal-background-color:    #f1f1f1,
-    $header-portal-logo:                'logo-borgerdk.svg',
-    $header-portal-logo-height:         4.8rem,
-    $header-portal-compact-logo-width:  10rem
-);
-@use 'dkfds-base';
 {% endhighlight %}
 
 ## Vejledning til integration på borger.dk og Virk {#{% include create-id.html heading="Vejledning til integration på borger.dk og Virk" %}}

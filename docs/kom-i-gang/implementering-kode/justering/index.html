@@ -19,8 +19,8 @@
 <title>Justering af tema og stylesheets | Det Fælles Designsystem</title>
 <meta property="og:title" content="Justering af tema og stylesheets | Det Fælles Designsystem">
 
-<meta name="description" content="Sådan tilpasser du koden til dit projekt.">
-<meta property="og:description" content="Sådan tilpasser du koden til dit projekt.">
+<meta name="description" content="Sådan tilpasser du stylesheets til dit projekt.">
+<meta property="og:description" content="Sådan tilpasser du stylesheets til dit projekt.">
 
 
 
@@ -1358,34 +1358,104 @@
                 <h1 id="justering-af-tema-og-stylesheets">Justering af tema og stylesheets</h1>
                 
 
-                <h2>Justering af stylesheets</h2>
+                <nav class="anchorbox" aria-labelledby="anchorlinks">
+    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
+    <ul class="anchorlist">
+        <li><a href="#foer-du-tilpasser-koden">Før du tilpasser koden</a></li>
+        <li><a href="#juster-stylesheets-med-sass">Juster stylesheets med Sass</a></li>
+        <li><a href="#juster-stylesheets-med-npm-scripts">Juster stylesheets med npm scripts</a></li>
+        
+        
+        
+    </ul>
+</nav>
 
-<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, fx hvis dine logoer ligger i en anden mappe end <code>img</code> eller hvis du skal anvende en anden <a href="/styleguide/farver/#portalfarver-tema">portalfarve</a> end Virk eller borger.dk.</p>
+<h2 id="foer-du-tilpasser-koden">Før du tilpasser koden</h2>
+
+<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end <code>img</code> eller hvis du skal anvende en anden <a href="/styleguide/farver/#portalfarver-tema">portalfarve</a> end Virk eller borger.dk.</p>
 
 <p>Det anbefales altid at foretage justeringer ved at bruge de medfølgende SCSS-filer og herefter generere en ny CSS-fil. Skriv aldrig direkte i CSS-filerne.</p>
 
-<h3>Juster stylesheets med Sass</h3>
+<h2 id="juster-stylesheets-med-sass">Juster stylesheets med Sass</h2>
 
-<h4>Eksempel på skift af portalfarve</h4>
+<p>Justering af stylesheets kræver, at man har hentet FDS’ <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">kodepakke</a> samt <a href="https://sass-lang.com/install/" class="icon-link" target="_blank">installeret Sass<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller anvender et lignende værktøj til at kompilere SCSS-filer til CSS-filer.</p>
 
-<ol>
-<li>Download FDS fra enten npm eller GitHub.</li>
-<li>Sørg for at du har downloadet og installeret <a href="https://www.npmjs.com/package/sass" class="icon-link" target="_blank">Sass fra npm<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
-<li>Opret en ny fil i mappen <code>scss</code>, fx <code>mystylesheet.scss</code>.</li>
-<li>Indsæt nedenstående kode i filen (benyt dine egne farveværdier):
+<p>Nedenstående eksempler tager udgangspunkt i at <a href="https://sass-lang.com/documentation/cli/dart-sass/" class="icon-link" target="_blank">kompilere Sass-filer med kommandoer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og at FDS-koden er <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#hent-via-npm">hentet via NPM</a>.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;variables/variables/theme-colors&#39; with (
+<h3>Eksempel: Lav CSS-fil med neutralt tema</h3>
+
+<p>Filen <code>dist/css/dkfds.css</code> indeholder det “neutrale” tema uden portalfarver eller andre tilpasninger. Følgende eksempel viser, hvordan man selv kan bygge en CSS-fil med det neutrale tema (dette eksempel udbygges i de øvrige afsnit).</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39;;</code></pre></figure>
+
+<p>Anvend derefter kommandoen:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sass mystyles.scss:mycss.css</code></pre></figure>
+
+<p>Dette genererer en ny fil kaldet <code>mycss.css</code>, som svarer til <code>dist/css/dkfds.css</code>. Afhængigt af din version af Sass og eventuel processering, kan der dog være enkelte forskelle, for eksempel brug af blanktegn. For en minified version af CSS-filen kan du i stedet køre kommandoen <code>sass --style=compressed mystyles.scss:mycss.css</code>.</p>
+
+<h3>Eksempel: Tilføj styling</h3>
+
+<p>Følgende eksempel viser, hvordan man kan tilføje sin egen styling til den endelige CSS-fil. I eksemplet tilføjes en klasse til det neutrale tema, der kan bruges til at farve en tekst blå.</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39;;
+.blue-text {
+    color: #0000FF;
+}</code></pre></figure>
+
+<p>Ovenstående eksempel anvender dog ikke en af designsystemets <a href="/styleguide/farver/">farver</a>. Dette kan løses ved at ændre koden til:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39;;
+@use &#39;dist/scss/functions/functions&#39; as func;
+.blue-text {
+    color: func.color(&#39;data-blue-700&#39;);
+}</code></pre></figure>
+
+<p>Byg herefter CSS-filen med Sass.</p>
+
+<h3>Eksempel: Skift sti til font, ikoner og billeder</h3>
+
+<p>Følgende eksempel genererer et stylesheet baseret på borger.dk-temaet, hvor værdier som <code>url("../img/svg-icons/[ikon].svg")</code> får en ny sti.</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/variables/paths&#39; with (
+    $font-path:         &#39;dist/fonts/IBMPlexSans/&#39;,
+    $image-path:        &#39;dist/img/&#39;,
+    $icons-folder-path: &#39;dist/img/svg-icons/&#39;
+);
+@use &#39;dist/scss/dkfds-borgerdk&#39;;</code></pre></figure>
+
+<p>Byg herefter CSS-filen med Sass.</p>
+
+<h3>Eksempel: Ny primærfarve</h3>
+
+<p>Følgende eksempel genererer et stylesheet, hvor farven rød anvendes som primærfarve i stedet for en af de to <a href="/styleguide/farver/#portalfarver-tema">portalfarver</a>.</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/variables/theme-colors&#39; with (
     $theme-color-primary:        #AA0000,
     $theme-color-primary-dark:   #990000,
     $theme-color-primary-darker: #880000
 );
-@use &#39;dkfds-base&#39;;</code></pre></figure>
+@use &#39;dist/scss/dkfds&#39;;</code></pre></figure>
 
-</li>
-<li>Byg den nye CSS-fil med Sass, fx ved at køre kommandoen <code>sass --style=compressed scss/mystylesheet.scss mystyle.css</code>. Dette genererer filen <code>mystyle.css</code>, som kan anvendes i stedet for FDS' medfølgende CSS-filer.</li>
-</ol>
+<p>Byg herefter CSS-filen med Sass.</p>
 
-<p>Forsøg aldrig at bygge en ny CSS-fil ud fra de to eksisterende temaer til Virk og borger.dk. Hvis du skal bruge nogle af disse temaers værdier, så kopier dem fra <code>scss/themes/borgerdk</code> og <code>scss/themes/virkdk</code>.</p>
+<p>Når du ønsker at anvende en anden primærfarve, er det vigtigt, at du udelukkende tager udgangspunkt i det neutrale tema <code>dkfds</code> og ikke forsøger at anvende et af de to medfølgende temaer <code>dkfds-borgerdk</code> eller <code>dkfds-virkdk</code>, da disse i forvejen overskriver den primære farve. Du kan se, hvilke værdier der overskrives i de to temaer i filerne <code>dist\scss\themes\borgerdk\_borgerdk.scss</code> og <code>dist\scss\themes\virkdk\_virkdk.scss</code>.</p>
+
+<h2 id="juster-stylesheets-med-npm-scripts">Juster stylesheets med npm scripts</h2>
+
+<p>Hvis du ønsker fuld kontrol over samtlige filer i Det Fælles Designsystem, kan du <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" class="icon-link" target="_blank">hente koden fra GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og benytte designsystemets egen bygproces. Bemærk, at dette kræver, at du har installeret <a href="https://nodejs.org/en" class="icon-link" target="_blank">Node.js<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+<p>Efter du har hentet filerne, kør da kommandoen <code>npm install</code> i mappen med filen <code>package.json</code>. Når processen er færdig, kan du foretage dine ændringer i mappen <code>src</code> og herefter køre kommandoen <code>npm run build</code> for at overskrive alt i mappen <code>dist</code> med nye filer.</p>
+
+<p>Bemærk, at denne metode gør det vanskeligere at tage nye versioner af designsystemet og den bør derfor kun benyttes, når det er absolut nødvendigt.</p>
 
 
                 

@@ -200,6 +200,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="229" afternumber=" på GitHub" %}
 - Justeret ikonets placering i {% include links/component-guideline-link.html linktext="funktionslink" %} og {% include links/internal-link.html linktext="eksterne links" %} samt `line-height` på knapper for bedre centrering.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for {% include links/component-guideline-link.html linktext="overflowmenu" %} og {% include links/component-guideline-link.html linktext="sortering" %} som følge af header-ændringerne.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ensrettet stistrukturen til hhv. fonte, ikoner og billeder.
 
 
 
@@ -629,7 +630,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Fikset print af modal fra iPhone.
 {% include links/github-link.html number="67" beforenumber="Github issue #" beforelink="Se mere om fejlen på " %}
 - Opdateret beskrivelse af implementering af DKFDS under Til udviklere.
-<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om {% include links/internal-link.html linktext="temahåndtering" %}.</span>
+<span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om temahåndtering.</span>
 
 {:#version-5-0-0 .mb-0}
 ### Version 5.0.0
