@@ -63,7 +63,7 @@ Ovenstående eksempel anvender dog ikke en af designsystemets {% include links/i
 
 {% highlight scss %}
 @use 'dist/scss/dkfds';
-@use 'dist/scss/functions/functions' as func;
+@use 'dist/scss/functions' as func;
 .blue-text {
     color: func.color('data-blue-700');
 }
@@ -78,7 +78,7 @@ Følgende eksempel genererer et stylesheet baseret på borger.dk-temaet, hvor v�
 Opret en ny SCSS-fil (i eksemplet kaldet `mystyles.scss`) og indsæt koden:
 
 {% highlight scss %}
-@use 'dist/scss/variables/variables/paths' with (
+@use 'dist/scss/variables/paths' with (
     $font-path:         'dist/fonts/IBMPlexSans/',
     $image-path:        'dist/img/',
     $icons-folder-path: 'dist/img/svg-icons/'
@@ -95,7 +95,7 @@ Følgende eksempel genererer et stylesheet, hvor farven rød anvendes som primæ
 Opret en ny SCSS-fil (i eksemplet kaldet `mystyles.scss`) og indsæt koden:
 
 {% highlight scss %}
-@use 'dist/scss/variables/variables/theme-colors' with (
+@use 'dist/scss/variables/theme-colors' with (
     $theme-color-primary:        #AA0000,
     $theme-color-primary-dark:   #990000,
     $theme-color-primary-darker: #880000

@@ -1410,7 +1410,7 @@
 <p>Ovenstående eksempel anvender dog ikke en af designsystemets <a href="/styleguide/farver/">farver</a>. Dette kan løses ved at ændre koden til:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39;;
-@use &#39;dist/scss/functions/functions&#39; as func;
+@use &#39;dist/scss/functions&#39; as func;
 .blue-text {
     color: func.color(&#39;data-blue-700&#39;);
 }</code></pre></figure>
@@ -1423,7 +1423,7 @@
 
 <p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/variables/paths&#39; with (
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/paths&#39; with (
     $font-path:         &#39;dist/fonts/IBMPlexSans/&#39;,
     $image-path:        &#39;dist/img/&#39;,
     $icons-folder-path: &#39;dist/img/svg-icons/&#39;
@@ -1438,7 +1438,7 @@
 
 <p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/variables/theme-colors&#39; with (
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/theme-colors&#39; with (
     $theme-color-primary:        #AA0000,
     $theme-color-primary-dark:   #990000,
     $theme-color-primary-darker: #880000

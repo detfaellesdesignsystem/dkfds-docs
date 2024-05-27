@@ -9,7 +9,6 @@
     "dev-build-watch": "webpack --mode development --color --watch",
     "build-html": "gulp html",
     "postinstall": "bundle",
-    "prestart": "npm run build",
     "start": "bundle exec jekyll serve --incremental --trace --config _config.yml,_config.dev.yml",
     "publish": "npm run build && bundle exec jekyll build --config _config.yml && gulp publish",
     "publish-dev": "npm run build && bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish",
