@@ -1,9 +1,12 @@
 @use 'sass:math';
-@use '../node_modules/dkfds/src/stylesheets/themes/borgerdk/variables' as borger;
-@use '../node_modules/dkfds/src/stylesheets/themes/virkdk/variables' as virk;
+@use '../node_modules/dkfds/src/stylesheets/themes/borgerdk' as borger;
+@use '../node_modules/dkfds/src/stylesheets/themes/virkdk' as virk;
 @use '../node_modules/dkfds/src/stylesheets/components/sidenav' as sidenav;
 @use '../node_modules/dkfds/src/stylesheets/components/navigation' as nav;
-@use '../node_modules/dkfds/src/stylesheets/global' as *;
+@use '../node_modules/dkfds/src/stylesheets/variables' as *;
+@use '../node_modules/dkfds/src/stylesheets/values' as *;
+@use '../node_modules/dkfds/src/stylesheets/functions' as *;
+@use '../node_modules/dkfds/src/stylesheets/mixins' as *;
 
 /// theme alert
 #borgerdkThemeBtn{

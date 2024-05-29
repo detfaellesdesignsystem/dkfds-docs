@@ -1,4 +1,7 @@
-@use '../node_modules/dkfds/src/stylesheets/global' as *;
+@use '../node_modules/dkfds/src/stylesheets/variables' as *;
+@use '../node_modules/dkfds/src/stylesheets/values' as *;
+@use '../node_modules/dkfds/src/stylesheets/functions' as *;
+@use '../node_modules/dkfds/src/stylesheets/mixins' as *;
 
 body.layout-test-example,
 body.layout-mastertest {
