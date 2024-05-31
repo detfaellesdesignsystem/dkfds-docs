@@ -1372,9 +1372,9 @@
 
 <h2 id="foer-du-tilpasser-koden">Før du tilpasser koden</h2>
 
-<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end <code>img</code> eller hvis du skal anvende en anden <a href="/styleguide/farver/#portalfarver-tema">portalfarve</a> end Virk eller borger.dk.</p>
+<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end <code>img</code>.</p>
 
-<p>Det anbefales altid at foretage justeringer ved at bruge de medfølgende SCSS-filer og herefter generere en ny CSS-fil. Skriv aldrig direkte i CSS-filerne.</p>
+<p>Foretag altid justeringer ved at bruge de medfølgende SCSS-filer og generer en ny CSS-fil ud fra disse. Skriv aldrig direkte i CSS-filerne.</p>
 
 <h2 id="juster-stylesheets-med-sass">Juster stylesheets med Sass</h2>
 
@@ -1386,21 +1386,21 @@
 
 <p>Filen <code>dist/css/dkfds.css</code> indeholder det “neutrale” tema uden portalfarver eller andre tilpasninger. Følgende eksempel viser, hvordan man selv kan bygge en CSS-fil med det neutrale tema (dette eksempel udbygges i de øvrige afsnit).</p>
 
-<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39;;</code></pre></figure>
 
 <p>Anvend derefter kommandoen:</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sass mystyles.scss:mycss.css</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sass main.scss:style.css</code></pre></figure>
 
-<p>Dette genererer en ny fil kaldet <code>mycss.css</code>, som svarer til <code>dist/css/dkfds.css</code>. Afhængigt af din version af Sass og eventuel processering, kan der dog være enkelte forskelle, for eksempel brug af blanktegn. For en minified version af CSS-filen kan du i stedet køre kommandoen <code>sass --style=compressed mystyles.scss:mycss.css</code>.</p>
+<p>Dette genererer en ny fil kaldet <code>style.css</code>, som svarer til <code>dist/css/dkfds.css</code>. Afhængigt af din version af Sass og eventuel processering, kan der dog være enkelte forskelle, fx brug af blanktegn. For en minified version af CSS-filen kan du i stedet køre kommandoen <code>sass --style=compressed main.scss:style.css</code>.</p>
 
 <h3>Eksempel: Tilføj styling</h3>
 
 <p>Følgende eksempel viser, hvordan man kan tilføje sin egen styling til den endelige CSS-fil. I eksemplet tilføjes en klasse til det neutrale tema, der kan bruges til at farve en tekst blå.</p>
 
-<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39;;
 .blue-text {
@@ -1417,37 +1417,93 @@
 
 <p>Byg herefter CSS-filen med Sass.</p>
 
-<h3>Eksempel: Skift sti til font, ikoner og billeder</h3>
+<h3>Eksempel: Anvend andre værdier</h3>
 
-<p>Følgende eksempel genererer et stylesheet baseret på borger.dk-temaet, hvor værdier som <code>url("../img/svg-icons/[ikon].svg")</code> får en ny sti.</p>
+<p>I mappen <code>dist\scss\variables</code> findes de variable, som kan tilpasses til dit projekt. I de følgende eksempler gennemgås nogle af de variable, som generelt forventes at blive overskrevet.</p>
 
-<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+<h4>Opdater stier</h4>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/paths&#39; with (
+<p>Følgende eksempel genererer et stylesheet ud fra det neutrale tema, hvor værdier som <code>url("../img/svg-icons/[ikon].svg")</code> får en ny sti.</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds&#39; with (
     $font-path:         &#39;dist/fonts/IBMPlexSans/&#39;,
     $image-path:        &#39;dist/img/&#39;,
     $icons-folder-path: &#39;dist/img/svg-icons/&#39;
-);
-@use &#39;dist/scss/dkfds-borgerdk&#39;;</code></pre></figure>
+);</code></pre></figure>
 
 <p>Byg herefter CSS-filen med Sass.</p>
 
-<h3>Eksempel: Ny primærfarve</h3>
+<h4>Opdater breakpoint</h4>
 
-<p>Følgende eksempel genererer et stylesheet, hvor farven rød anvendes som primærfarve i stedet for en af de to <a href="/styleguide/farver/#portalfarver-tema">portalfarver</a>.</p>
+<p>Følgende eksempel genererer et stylesheet ud fra borger.dk-temaet, hvor der ændres breakpoint for løsningen, hvilket blandt andet afgør, hvornår mobilmenuen vises.</p>
 
-<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>mystyles.scss</code>) og indsæt koden:</p>
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables/theme-colors&#39; with (
-    $theme-color-primary:        #AA0000,
-    $theme-color-primary-dark:   #990000,
-    $theme-color-primary-darker: #880000
-);
-@use &#39;dist/scss/dkfds&#39;;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds-borgerdk&#39; with (
+    $nav-responsive-breakpoint: sm
+);</code></pre></figure>
 
 <p>Byg herefter CSS-filen med Sass.</p>
 
-<p>Når du ønsker at anvende en anden primærfarve, er det vigtigt, at du udelukkende tager udgangspunkt i det neutrale tema <code>dkfds</code> og ikke forsøger at anvende et af de to medfølgende temaer <code>dkfds-borgerdk</code> eller <code>dkfds-virkdk</code>, da disse i forvejen overskriver den primære farve. Du kan se, hvilke værdier der overskrives i de to temaer i filerne <code>dist\scss\themes\borgerdk\_borgerdk.scss</code> og <code>dist\scss\themes\virkdk\_virkdk.scss</code>.</p>
+<h4>Opret egne farver</h4>
+
+<p>Følgende eksempel genererer et stylesheet ud fra Virk-temaet, hvor der tilføjes egne farver, som herefter kan anvendes.</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/dkfds-virkdk&#39; with (
+    $custom-colors: (
+        &quot;my-green-color&quot;: #118844, 
+        &quot;my-purple-color&quot;: #991177
+    )
+);
+@use &#39;partial&#39;;</code></pre></figure>
+
+<p>Opret herefter endnu en SCSS-fil (i eksemplet kaldet <code>_partial.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/functions&#39; as func;
+.my-green-text {
+    color: func.color(&#39;my-green-color&#39;);
+}</code></pre></figure>
+
+<p>Byg herefter CSS-filen med Sass. Bemærk, at farvernes navne skal være unikke og må ikke i forvejen være anvendt i designsystemet.</p>
+
+<h4>Opret styling til forskellige skærmbredder</h4>
+
+<p>Følgende eksempel genererer et stylesheet udelukkende med ens egen kode. I eksemplet oprettes en klasse, som viser en tekst i forskellige farver ved forskellige skærmstørrelser.</p>
+
+<p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/variables&#39; with (
+    $custom-colors: (
+        &#39;my-green-color&#39;: #00ff00, 
+        &#39;my-red-color&#39;: #ff0000,
+        &#39;my-blue-color&#39;: #0000ff,
+        &#39;my-yellow-color&#39;: #ffff00
+    )
+);
+@use &#39;dist/scss/functions&#39; as func;
+@use &#39;dist/scss/mixins&#39; as mixins;
+
+.rainbow-text {
+    color: func.color(&#39;my-green-color&#39;);
+
+    @include mixins.media-breakpoint-up(sm) {
+        color: func.color(&#39;my-red-color&#39;);
+    }
+
+    @include mixins.media-breakpoint-up(md) {
+        color: func.color(&#39;my-blue-color&#39;);
+    }
+
+    @include mixins.media-breakpoint-up(lg) {
+        color: func.color(&#39;my-yellow-color&#39;);
+    }
+}</code></pre></figure>
+
+<p>Byg herefter CSS-filen med Sass. Bemærk, at hvis du ikke anvender et af de tre eksisterende temaer, så skal konfigurationen af variable ske i <code>dist/scss/variables</code>.</p>
 
 <h2 id="juster-stylesheets-med-npm-scripts">Juster stylesheets med npm scripts</h2>
 
@@ -1455,7 +1511,7 @@
 
 <p>Efter du har hentet filerne, kør da kommandoen <code>npm install</code> i mappen med filen <code>package.json</code>. Når processen er færdig, kan du foretage dine ændringer i mappen <code>src</code> og herefter køre kommandoen <code>npm run build</code> for at overskrive alt i mappen <code>dist</code> med nye filer.</p>
 
-<p>Bemærk, at denne metode gør det vanskeligere at tage nye versioner af designsystemet og den bør derfor kun benyttes, når det er absolut nødvendigt.</p>
+<p>Bemærk, at denne metode gør det vanskeligere senere hen at opgradere til nye versioner af designsystemet. Den bør derfor kun benyttes, når det er absolut nødvendigt.</p>
 
 
                 
