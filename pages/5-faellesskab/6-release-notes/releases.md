@@ -102,7 +102,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.0.0 {#{% include create-id.html heading="Version 10.0.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
+<div><span class="small-text mt-0 d-block">xx-06-2024</span></div>
+
+Hvis du skal opgradere fra version 9 til version 10, så læs vores migreringsguide først. Version 10 indeholder mange breaking changes, man som designer og udvikler skal forholde sig til, da der både er ændringer i grundlæggende komponenter som header og mobilmenu, samt omstrukturering af designsystemets kodefiler.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Header" %}</h3>
@@ -198,10 +200,10 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af {% include links/component-guideline-link.html linktext="beskeder" %} uden ikon. Klassen `alert--show-icon` bruges ikke længere og ikonet skal indsættes manuelt.
 - Rettet fejl, hvor responsive tabeller med sortering indeholdt sorteringsknappernes tekst på mindre skærme.
 {% include links/github-link.html number="229" afternumber=" på GitHub" %}
-- Justeret ikonets placering i {% include links/component-guideline-link.html linktext="funktionslink" %} og {% include links/internal-link.html linktext="eksterne links" %} samt `line-height` på knapper for bedre centrering.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Justeret ikonets placering i {% include links/component-guideline-link.html linktext="funktionslink" %} og {% include links/internal-link.html linktext="eksterne links" %} samt `line-height` på knapper for bedre centrering.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for {% include links/component-guideline-link.html linktext="overflowmenu" %} og {% include links/component-guideline-link.html linktext="sortering" %} som følge af header-ændringerne.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ensrettet stistrukturen til hhv. fonte, ikoner og billeder.
-
+- Rettet fejl, hvor klassen `sr-only` risikerede at blive unødvendigt gentaget flere gange i ens stylesheet, hvis man anvendte SCSS-filerne.
 
 
 ## Version 9.1.0 {#{% include create-id.html heading="Version 9.1.0" %}}

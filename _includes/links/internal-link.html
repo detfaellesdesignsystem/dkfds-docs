@@ -152,7 +152,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "billeder anvendt som links" -%}
         <a href="/styleguide/typografi/links/#billeder-som-links"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "eksternt link" -%}
+    {%- when "eksternt link",
+             "eksterne links" -%}
         <a href="/styleguide/typografi/links/#eksternt-link"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "lister" -%}

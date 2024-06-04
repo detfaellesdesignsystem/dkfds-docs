@@ -1,0 +1,75 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs as breadcrumbs %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+<header class="header">
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>
+<div class="container page-container pt-0">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            {{ 
+                breadcrumbs({
+                    "classes": "mt-3",
+                    "aria-label": "Brødkrumme",
+                    "items": [
+                        {
+                            "text": "Element 1",
+                            "href": "#"
+                        },
+                        {
+                            "text": "Element 2",
+                            "href": "#"
+                        },
+                        {
+                            "text": "Element 3"
+                        }
+                    ]
+                })
+            }}
+        </div>
+        <div class="col-12 col-sm-6">
+            <div role="region" aria-label="Sidefunktioner">
+                <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-0">
+                    <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
+                    <li><button class="function-link link-right">{{icon_svg({"name": "print"})}}Udskriv side</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

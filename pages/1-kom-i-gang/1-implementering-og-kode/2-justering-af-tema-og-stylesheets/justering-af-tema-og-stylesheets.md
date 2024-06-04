@@ -22,11 +22,11 @@ Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggen
 
 Foretag altid justeringer ved at bruge de medfølgende SCSS-filer og generer en ny CSS-fil ud fra disse, som beskrevet i de følgende afsnit. Skriv aldrig direkte i CSS-filerne.
 
-## Juster stylesheets med Sass {#{% include create-id.html heading="Juster stylesheets med Sass" %}}
+## Justér stylesheets med Sass {#{% include create-id.html heading="Juster stylesheets med Sass" %}}
 
 Justering af stylesheets kræver, at man har hentet FDS' {% include links/internal-link.html linktext="kodepakke" %} samt {% include links/external-link.html linktext="installeret Sass" %} eller anvender et lignende værktøj til at kompilere SCSS-filer til CSS-filer. 
 
-Nedenstående eksempler tager udgangspunkt i at {% include links/external-link.html linktext="kompilere Sass-filer med kommandoer" %} og at FDS-koden er {% include links/internal-link.html linktext="hentet via NPM" %}.
+Nedenstående eksempler tager udgangspunkt i at {% include links/external-link.html linktext="kompilere Sass-filer med kommandoer" classes="d-inline" %} og at FDS-koden er {% include links/internal-link.html linktext="hentet via NPM" %}.
 
 ### Eksempel: Lav CSS-fil med neutralt tema
 
@@ -73,11 +73,19 @@ Byg herefter CSS-filen med `sass main.scss:style.css`.
 
 ### Eksempel: Anvend andre værdier
 
-I mappen `dist\scss\variables` findes de variable, som kan tilpasses til dit projekt. I de følgende eksempler gennemgås nogle af de variable, som generelt forventes at blive overskrevet.
+I mappen `dist/scss/variables` findes de variable, som kan tilpasses til dit projekt. I de følgende eksempler gennemgås nogle af de variable, som ofte overskrives.
 
-#### Opdater stier
+#### Opdatér stier
 
-Følgende eksempel genererer et stylesheet ud fra det neutrale tema, hvor værdier som `url("../img/svg-icons/[ikon].svg")` får en ny sti.
+Flere steder i de medfølgende FDS-stylesheets er der referencer til billeder eller ikoner, der som standard har stierne `"../fonts/IBMPlexSans/"`, `"../img/"` og `"../img/svg-icons/"`. For eksempel:
+
+{% highlight scss %}
+.icon-language:not(a) {
+    background-image: url("../img/svg-icons/language.svg");
+}
+{% endhighlight %}
+
+Hvis du har lagt FDS' ikoner, billeder eller fonte i andre mapper, er der behov for at opdatere stierne til disse mapper.
 
 Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 
@@ -89,9 +97,9 @@ Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 );
 {% endhighlight %}
 
-Byg herefter CSS-filen med `sass main.scss:style.css`.
+Husk at erstatte `'dist/fonts/IBMPlexSans/'`, `'dist/img/` og `'dist/img/svg-icons/'` med de stier, som passer til dit projekt. Byg herefter CSS-filen med `sass main.scss:style.css`.
 
-#### Opdater responsivt breakpoint
+#### Opdatér responsivt breakpoint
 
 Følgende eksempel genererer et stylesheet ud fra borger.dk-temaet, hvor der ændres responsivt breakpoint for løsningen, hvilket blandt andet afgør, hvornår mobilmenuen vises.
 
@@ -134,7 +142,7 @@ Byg herefter CSS-filen med `sass main.scss:style.css`. Bemærk, at farvernes nav
 
 #### Opret styling til forskellige skærmbredder
 
-Følgende eksempel genererer et stylesheet udelukkende med ens egen kode. I eksemplet oprettes en klasse, som viser en tekst i forskellige farver ved forskellige skærmstørrelser.
+Følgende eksempel genererer et stylesheet bygget med nogle af FDS' funktioner og mixins, dog uden at inkludere selve FDS-koden. I eksemplet oprettes en klasse, som viser en tekst i forskellige farver ved forskellige skærmstørrelser.
 
 Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 
@@ -169,7 +177,7 @@ Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 
 Byg herefter CSS-filen med `sass main.scss:style.css`. Bemærk, at hvis du ikke anvender et af de tre eksisterende temaer, så skal konfigurationen af variable ske med `dist/scss/variables`, som eksemplet viser.
 
-## Juster stylesheets med npm scripts {#{% include create-id.html heading="Juster stylesheets med npm scripts" %}}
+## Justér stylesheets med npm scripts {#{% include create-id.html heading="Justér stylesheets med npm scripts" %}}
 
 Hvis du ønsker fuld kontrol over samtlige filer i Det Fælles Designsystem, kan du {% include links/external-link.html linktext="hente koden fra GitHub" %} og benytte designsystemets egen bygproces. Bemærk, at dette kræver, at du har installeret {% include links/external-link.html linktext="Node.js" %}.
 

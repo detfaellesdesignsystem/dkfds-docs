@@ -114,7 +114,9 @@ Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begræn
 
 {% include code/syntax.html component="external-link" copybutton=true %}
 
-Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}.
+Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}. 
+
+Bemærk at eksterne links er stylet med `display: inline-block`, hvilket betyder, at lange links i nogle tilfælde kan give uhensigtsmæssige linjeskift. Anvend evt. en {% include links/internal-link.html linktext="hjælpeklasse for display" %}, fx `d-inline`, i disse tilfælde.
 
 ## Sekundære links {#{% include create-id.html heading="Sekundære links" append="-kode" %}}
 

@@ -99,6 +99,7 @@ var testfiles = [
     "test-header-long-sentences",
     "test-header-long-strings",
     "test-header-mobile-helptext",
+    "test-header-breadcrumb-function-links",
     "test-input-fields-1",
     "test-input-fields-2",
     "test-input-fields-3",
