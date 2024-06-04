@@ -1372,9 +1372,9 @@
 
 <h2 id="foer-du-tilpasser-koden">Før du tilpasser koden</h2>
 
-<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end <code>img</code>.</p>
+<p>Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/dist/img" class="icon-link" target="_blank">img<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
 
-<p>Foretag altid justeringer ved at bruge de medfølgende SCSS-filer og generer en ny CSS-fil ud fra disse. Skriv aldrig direkte i CSS-filerne.</p>
+<p>Foretag altid justeringer ved at bruge de medfølgende SCSS-filer og generer en ny CSS-fil ud fra disse, som beskrevet i de følgende afsnit. Skriv aldrig direkte i CSS-filerne.</p>
 
 <h2 id="juster-stylesheets-med-sass">Juster stylesheets med Sass</h2>
 
@@ -1415,7 +1415,7 @@
     color: func.color(&#39;data-blue-700&#39;);
 }</code></pre></figure>
 
-<p>Byg herefter CSS-filen med Sass.</p>
+<p>Byg herefter CSS-filen med <code>sass main.scss:style.css</code>.</p>
 
 <h3>Eksempel: Anvend andre værdier</h3>
 
@@ -1433,11 +1433,11 @@
     $icons-folder-path: &#39;dist/img/svg-icons/&#39;
 );</code></pre></figure>
 
-<p>Byg herefter CSS-filen med Sass.</p>
+<p>Byg herefter CSS-filen med <code>sass main.scss:style.css</code>.</p>
 
-<h4>Opdater breakpoint</h4>
+<h4>Opdater responsivt breakpoint</h4>
 
-<p>Følgende eksempel genererer et stylesheet ud fra borger.dk-temaet, hvor der ændres breakpoint for løsningen, hvilket blandt andet afgør, hvornår mobilmenuen vises.</p>
+<p>Følgende eksempel genererer et stylesheet ud fra borger.dk-temaet, hvor der ændres responsivt breakpoint for løsningen, hvilket blandt andet afgør, hvornår mobilmenuen vises.</p>
 
 <p>Opret en ny SCSS-fil (i eksemplet kaldet <code>main.scss</code>) og indsæt koden:</p>
 
@@ -1445,7 +1445,7 @@
     $nav-responsive-breakpoint: sm
 );</code></pre></figure>
 
-<p>Byg herefter CSS-filen med Sass.</p>
+<p>Byg herefter CSS-filen med <code>sass main.scss:style.css</code>.</p>
 
 <h4>Opret egne farver</h4>
 
@@ -1459,16 +1459,16 @@
         &quot;my-purple-color&quot;: #991177
     )
 );
-@use &#39;partial&#39;;</code></pre></figure>
+@use &#39;my-partial&#39;;</code></pre></figure>
 
-<p>Opret herefter endnu en SCSS-fil (i eksemplet kaldet <code>_partial.scss</code>) og indsæt koden:</p>
+<p>Opret herefter endnu en SCSS-fil (i eksemplet kaldet <code>_my-partial.scss</code>) og indsæt koden:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss">@use &#39;dist/scss/functions&#39; as func;
 .my-green-text {
     color: func.color(&#39;my-green-color&#39;);
 }</code></pre></figure>
 
-<p>Byg herefter CSS-filen med Sass. Bemærk, at farvernes navne skal være unikke og må ikke i forvejen være anvendt i designsystemet.</p>
+<p>Byg herefter CSS-filen med <code>sass main.scss:style.css</code>. Bemærk, at farvernes navne skal være unikke og ikke allerede være anvendt i designsystemet.</p>
 
 <h4>Opret styling til forskellige skærmbredder</h4>
 
@@ -1503,7 +1503,7 @@
     }
 }</code></pre></figure>
 
-<p>Byg herefter CSS-filen med Sass. Bemærk, at hvis du ikke anvender et af de tre eksisterende temaer, så skal konfigurationen af variable ske i <code>dist/scss/variables</code>.</p>
+<p>Byg herefter CSS-filen med <code>sass main.scss:style.css</code>. Bemærk, at hvis du ikke anvender et af de tre eksisterende temaer, så skal konfigurationen af variable ske med <code>dist/scss/variables</code>, som eksemplet viser.</p>
 
 <h2 id="juster-stylesheets-med-npm-scripts">Juster stylesheets med npm scripts</h2>
 

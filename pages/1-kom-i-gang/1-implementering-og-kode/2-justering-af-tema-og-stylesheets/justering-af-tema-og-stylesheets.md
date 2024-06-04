@@ -18,9 +18,9 @@ tags:
 
 ## Før du tilpasser koden {#{% include create-id.html heading="Før du tilpasser koden" %}}
 
-Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end `img`.
+Når du downloader Det Fælles Designsystem (FDS) vil du altid få en færdiggenereret CSS-fil, som er klar til brug. Der kan dog være tilfælde, hvor der er behov for at foretage ændringer i CSS-filen, for eksempel hvis dine logoer og ikoner ligger i en anden mappe end {% include links/external-link.html linktext="img" %}.
 
-Foretag altid justeringer ved at bruge de medfølgende SCSS-filer og generer en ny CSS-fil ud fra disse. Skriv aldrig direkte i CSS-filerne.
+Foretag altid justeringer ved at bruge de medfølgende SCSS-filer og generer en ny CSS-fil ud fra disse, som beskrevet i de følgende afsnit. Skriv aldrig direkte i CSS-filerne.
 
 ## Juster stylesheets med Sass {#{% include create-id.html heading="Juster stylesheets med Sass" %}}
 
@@ -69,7 +69,7 @@ Ovenstående eksempel anvender dog ikke en af designsystemets {% include links/i
 }
 {% endhighlight %}
 
-Byg herefter CSS-filen med Sass.
+Byg herefter CSS-filen med `sass main.scss:style.css`.
 
 ### Eksempel: Anvend andre værdier
 
@@ -89,11 +89,11 @@ Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 );
 {% endhighlight %}
 
-Byg herefter CSS-filen med Sass.
+Byg herefter CSS-filen med `sass main.scss:style.css`.
 
-#### Opdater breakpoint
+#### Opdater responsivt breakpoint
 
-Følgende eksempel genererer et stylesheet ud fra borger.dk-temaet, hvor der ændres breakpoint for løsningen, hvilket blandt andet afgør, hvornår mobilmenuen vises.
+Følgende eksempel genererer et stylesheet ud fra borger.dk-temaet, hvor der ændres responsivt breakpoint for løsningen, hvilket blandt andet afgør, hvornår mobilmenuen vises.
 
 Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 
@@ -103,7 +103,7 @@ Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 );
 {% endhighlight %}
 
-Byg herefter CSS-filen med Sass.
+Byg herefter CSS-filen med `sass main.scss:style.css`.
 
 #### Opret egne farver
 
@@ -118,10 +118,10 @@ Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
         "my-purple-color": #991177
     )
 );
-@use 'partial';
+@use 'my-partial';
 {% endhighlight %}
 
-Opret herefter endnu en SCSS-fil (i eksemplet kaldet `_partial.scss`) og indsæt koden:
+Opret herefter endnu en SCSS-fil (i eksemplet kaldet `_my-partial.scss`) og indsæt koden:
 
 {% highlight scss %}
 @use 'dist/scss/functions' as func;
@@ -130,7 +130,7 @@ Opret herefter endnu en SCSS-fil (i eksemplet kaldet `_partial.scss`) og indsæt
 }
 {% endhighlight %}
 
-Byg herefter CSS-filen med Sass. Bemærk, at farvernes navne skal være unikke og må ikke i forvejen være anvendt i designsystemet.
+Byg herefter CSS-filen med `sass main.scss:style.css`. Bemærk, at farvernes navne skal være unikke og ikke allerede være anvendt i designsystemet.
 
 #### Opret styling til forskellige skærmbredder
 
@@ -167,7 +167,7 @@ Opret en ny SCSS-fil (i eksemplet kaldet `main.scss`) og indsæt koden:
 }
 {% endhighlight %}
 
-Byg herefter CSS-filen med Sass. Bemærk, at hvis du ikke anvender et af de tre eksisterende temaer, så skal konfigurationen af variable ske i `dist/scss/variables`.
+Byg herefter CSS-filen med `sass main.scss:style.css`. Bemærk, at hvis du ikke anvender et af de tre eksisterende temaer, så skal konfigurationen af variable ske med `dist/scss/variables`, som eksemplet viser.
 
 ## Juster stylesheets med npm scripts {#{% include create-id.html heading="Juster stylesheets med npm scripts" %}}
 
