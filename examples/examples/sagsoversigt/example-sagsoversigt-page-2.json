@@ -17,7 +17,7 @@
     },
     "navigation_menu_data": {
         "links": [
-            { "text": "Find sag", "current": true },
+            { "text": "Find sag", "active": true },
             { "text": "Ansøgninger" },
             { "text": "Beskeder" },
             { "text": "Udbetalinger",
@@ -178,7 +178,7 @@
         ]
     },
     "breadcrumbs_data_mobile": {
-        "classes": "container mt-3",
+        "classes": "container mt-4",
         "aria-label": "Brødkrumme",
         "items": [
             {

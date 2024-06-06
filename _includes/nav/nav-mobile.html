@@ -56,7 +56,7 @@
                 <div class="overflow-menu-inner" id="{{link.categorynav | downcase }}" aria-hidden="{% if _active %}false{% else %}true{% endif %}">
                     <ul class="overflow-list">
                         <li{% if _current %} class="active current"{% endif %}>
-                            <a href="{{ _page.url | relative_url }}" class="nav-link">
+                            <a href="{{ _page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
                                 <span>{{ _page.title | smartify }} <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
@@ -67,7 +67,7 @@
         </li>
         {% else %}
         <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
-            <a href="{{ _page.url | relative_url }}" class="nav-link"><span>{{ _page.title | smartify }}</span></a>
+            <a href="{{ _page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}><span>{{ _page.title | smartify }}</span></a>
         </li>
         {% endif %}
 
