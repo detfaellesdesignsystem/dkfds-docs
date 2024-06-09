@@ -6,6 +6,8 @@
 {% from "components/header/header.njk" import navigation_menu as navigation_menu %}
 {% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
 {% from "components/header/header.njk" import menu_top as menu_top %}
+{% from "components/language-switcher/language-switcher.njk" import languageSwitcherHeader as language_switcher %}
+{% from "components/language-switcher/language-switcher.njk" import languageSwitcherMobile as language_switcher_mobile %}
 
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
@@ -19,6 +21,19 @@
 {% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
 
 {# <!-- Variables --> #}
+
+{% set language_switcher_data = {
+    "ariaLabel": "Vælg sprog fra listen",
+    "firstAriaLabel": "Valgt sprog: Dansk",
+    "languages": [
+        {"code": "da", "name": "Dansk", "href": "?lang=da"},
+        {"code": "en-GB", "name": "English", "href": "?lang=en-GB"},
+        {"code": "de", "name": "Deutsch", "href": "?lang=de"},
+        {"code": "kl", "name": "Kalaallisut", "href": "?lang=kl"},
+        {"code": "pl", "name": "Polski", "href": "?lang=pl"},
+        {"code": "se", "name": "Svenska", "href": "?lang=se"}
+    ]
+} %}
 
 {% set solution_header_data = {
     "lastHeader": false,
@@ -62,6 +77,7 @@
 <div id="top"></div>
 <header class="header">
     {{ skiplink() }}
+    {{ language_switcher(language_switcher_data) }}
     {{ portal_info(portal_header_data) }}
     {{ solution_info(solution_header_data) }}
     {{ navigation_menu(navigation_menu_data) }}
@@ -70,6 +86,7 @@
         {{ menu_top() }}
         {{ mobile_navigation_menu(navigation_menu_data) }}
         {{ mobile_solution_info(solution_header_data) }}
+        {{ language_switcher_mobile(language_switcher_data) }}
         {{ mobile_portal_info(portal_header_data) }}
     </div>
 </header>

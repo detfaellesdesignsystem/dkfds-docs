@@ -230,6 +230,30 @@
 
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
+    <div class="language-switcher-header">
+        <div class="container">
+            <div class="overflow-menu overflow-menu--open-right">
+                <button class="button-overflow-menu js-dropdown select-language-button"
+                    data-js-target="header-language" aria-expanded="false"
+                    aria-controls="header-language">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>Dansk
+                </button>
+                <div class="overflow-menu-inner select-language-list" id="header-language"
+                    aria-hidden="true">
+                    <ul class='overflow-list'>
+                        <li><a href="?lang=da" lang="da"
+                                aria-label="Valgt sprog: Dansk">Dansk</a></li>
+                        <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                        <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                        <li><a href="?lang=kl" lang="kl">Kalaallisut</a></li>
+                        <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                        <li><a href="?lang=se" lang="se">Svenska</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portal-info">
         <div class="portal-info-inner container">
             <a href="#" aria-label="Portalnavn" class="logo">
@@ -422,6 +446,20 @@
                     class="d-print-none function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</button>
             </p>
 
+        </div>
+
+        <div class="language-switcher-mobile">
+            <h3>Valgt sprog</h3>
+            <ul>
+                <li><a href="?lang=da" lang="da"
+                        aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
+                </li>
+                <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                <li><a href="?lang=kl" lang="kl">Kalaallisut</a></li>
+                <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                <li><a href="?lang=se" lang="se">Svenska</a></li>
+            </ul>
         </div>
 
         <div class="portal-info-mobile">

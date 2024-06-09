@@ -4,6 +4,37 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/modal/modal.njk" import modal as modal %}
 
+{% set modal_content = 
+    '<p>Dette er modalens indhold.</p>
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip i en modal"
+        data-tooltip-id="helpicon-example" data-position="above" data-trigger="click"><button
+            class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+        </div>
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip på en knap i en modal" data-tooltip-id="tooltip-modal-knap"
+        data-position="above" data-trigger="hover"><button
+            class="button button-primary tooltip-target">
+            Knap med tooltip
+        </button></div>
+        <div class="overflow-menu overflow-menu--open-right">
+            <button class="button-overflow-menu js-dropdown" data-js-target="overflow1"
+                aria-expanded="false" aria-controls="overflow1">
+                Overflow menu
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+            </button>
+            <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
+                <ul class="overflow-list">
+                    <li><button>Mulighed 1</button></li>
+                    <li><button>Mulighed 2</button></li>
+                    <li><a href="#">Mulighed 3 er et link</a></li>
+                    <li><button>Mulighed 4 er en længere tekst</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>'
+%}
+
 {% set modal_actions = 
     button({
         "variant": "secondary",
@@ -160,7 +191,7 @@
         modal({
             "id": "modal-example",
             "heading": "Modal med handlinger",
-            "content": "<p>Dette er modalens indhold.</p>",
+            "content": modal_content,
             "actions": modal_actions
         })
     }}
