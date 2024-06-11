@@ -146,7 +146,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "læs retningslinjerne for stor tekst" -%}
         <a href="/styleguide/typografi/tekst/#display-retningslinjer"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "standard links" -%}
+    {%- when "links", 
+             "standard links" -%}
         <a href="/styleguide/typografi/links/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "billeder anvendt som links" -%}

@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Test-modal-inert | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-modal-inert | Det Fælles Designsystem">
+<title>Test-overflow-menu-placement | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-overflow-menu-placement | Det Fælles Designsystem">
 
 
 
@@ -248,66 +248,97 @@
         </div>
     </div>
 </div>
-    <div class="mt-8 mb-8 container" inert="">
-    <p>Der er en inert-attribut på dette element - knappen virker ikke og må fortsat ikke
-        virke efter modalen har været åben.</p>
-    <button class="button button-secondary">
-        Knap
-    </button>
-</div>
-<main class="container page-container" id="main-content">
-    <div class="toast-container" aria-live="assertive" aria-atomic="false" aria-relevant="additions">
+    <main class="page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Placering af overflow-menu</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
 
-        <div class="toast toast-info show" aria-atomic="true">
-            <div class="toast-icon"></div>
-            <div class="toast-message">
-                <p><span class="sr-only">Information:
-                    </span><strong id="notification-onlyheading-heading">Dine ændringer er blevet gemt</strong>
-                </p>
-
-                <button class="toast-close" aria-describedby="notification-onlyheading-heading">Luk</button>
+            <div class="overflow-menu overflow-menu--open-right">
+                <button class="button-overflow-menu js-dropdown" data-js-target="overflow1" aria-expanded="false" aria-controls="overflow1">
+                    Åbner menu til højre
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+                </button>
+                <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><button>Mulighed 1</button></li>
+                        <li><a href="#">Mulighed 2</a></li>
+                        <li><button>Mulighed 3</button></li>
+                        <li><button>Mulighed 4 har en meget længere tekst end de forrige tre
+                                muligheder</button></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Test af inert med modaler</h1>
+        <div class="col-12" style="text-align: end;">
+
+            <div class="overflow-menu overflow-menu--open-right">
+                <button class="button-overflow-menu js-dropdown" data-js-target="overflow2" aria-expanded="false" aria-controls="overflow2">
+                    Åbner menu til højre
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+                </button>
+                <div class="overflow-menu-inner" id="overflow2" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><button>Mulighed 1</button></li>
+                        <li><a href="#">Mulighed 2</a></li>
+                        <li><button>Mulighed 3</button></li>
+                        <li><button>Mulighed 4 har en meget længere tekst end de forrige tre
+                                muligheder</button></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <button class="button button-tertiary" data-module="modal" data-target="modal-example" aria-haspopup="dialog">
-                Åbn modal
-            </button>
+
+            <div class="overflow-menu overflow-menu--open-left">
+                <button class="button-overflow-menu js-dropdown" data-js-target="overflow3" aria-expanded="false" aria-controls="overflow3">
+                    Åbner menu til venstre
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+                </button>
+                <div class="overflow-menu-inner" id="overflow3" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><button>Mulighed 1</button></li>
+                        <li><a href="#">Mulighed 2</a></li>
+                        <li><button>Mulighed 3</button></li>
+                        <li><button>Mulighed 4 har en meget længere tekst end de forrige tre
+                                muligheder</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="text-align: end;">
+
+            <div class="overflow-menu overflow-menu--open-left">
+                <button class="button-overflow-menu js-dropdown" data-js-target="overflow4" aria-expanded="false" aria-controls="overflow4">
+                    Åbner menu til venstre
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+                </button>
+                <div class="overflow-menu-inner" id="overflow4" aria-hidden="true">
+                    <ul class="overflow-list">
+                        <li><button>Mulighed 1</button></li>
+                        <li><a href="#">Mulighed 2</a></li>
+                        <li><button>Mulighed 3</button></li>
+                        <li><button>Mulighed 4 har en meget længere tekst end de forrige tre
+                                muligheder</button></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </main>
-<div class="fds-modal-container">
-
-    <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-heading">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modal-example-heading">
-                    Modal
-                </h2>
-                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-            </div>
-            <div class="modal-body">
-                <p>Tjek at fokus er fanget i modalen, når den er åben. Husk at prøve at tabbe
-                    ind fra browserens url-linje.</p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="button button-secondary" data-modal-close="">
-                    Luk
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-</div>
 
     <footer class="test-footer d-flex align-items-center">
     <div class="container">
@@ -325,10 +356,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-modal-javascript/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-overflow-menus-2/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-overflow-menus-1/">Næste</a>
+                <a class="function-link" href="/eksempel/test-pagination-basics/">Næste</a>
                 
             </div>
         </div>

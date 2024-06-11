@@ -119,6 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 modal2.show();
                 break;
 
+            case 'Test af inert med modaler':
+
+                DKFDS.init();
+                new DKFDS.Toast(document.getElementsByClassName('toast')[0]).show();
+                break;
+
             case 'JavaScript errors i tooltips':
 
                 initTest();

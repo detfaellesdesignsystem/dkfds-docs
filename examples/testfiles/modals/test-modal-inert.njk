@@ -1,5 +1,6 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 {% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/toast/toast.njk" import toast as toast %}
 
 {% set modal_actions = 
     button({
@@ -19,6 +20,17 @@
     }}
 </div>
 <main class="container page-container" id="main-content">
+    <div class="toast-container" aria-live="assertive" aria-atomic="false" aria-relevant="additions">
+        {{
+            toast({
+                "id": "notification-onlyheading",
+                "variant": "info",
+                "srVariant": "Information",
+                "heading": "Dine ændringer er blevet gemt",
+                "show": true
+            })
+        }}
+    </div>
     <div class="row">
         <div class="col-12">
             <h1 class="h2 mt-0 mb-9">Test af inert med modaler</h1>
