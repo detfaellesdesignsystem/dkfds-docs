@@ -11,7 +11,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-7">
-                <h1>Design brugervenlige selvbetjeningsløsninger</h1>
+                <h1 class="hyphens-manual">Design brugervenlige selvbetjenings&shy;løsninger</h1>
                 <p class="font-lead">
                     Vær med til at lave simple og effektive selvbetjeningsløsninger til borger.dk og Virk. Lad os om det trivielle og sæt fokus på at inddrage dine brugere.
                 </p>
@@ -38,7 +38,7 @@ description: Vær med til at bygge simple og effektive selvbetjeningsløsninger 
         </div>
         <div class="col-12 col-lg-4">
             <h2 class="mt-lg-0">Eksempler</h2>
-            <p>Få inspiration til, hvordan designsystemet kan anvendes til at bygge selvbetjenings-løsninger med.</p>
+            <p class="hyphens-manual">Få inspiration til, hvordan designsystemet kan anvendes til at bygge selvbetjenings&shy;løsninger med.</p>
             <p>{% include links/internal-link.html linktext="Gå til eksempler" classes="bold-link" %}</p>
         </div>
     </div>

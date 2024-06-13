@@ -31,6 +31,8 @@ layout: default
                 {% comment %} Anchorlink component heading has id "anchorlinks" so the anchorlinks page needs another id {% endcomment %}
                 {% elsif page.title == "Anchorlinks" %}
                 <h1 id="anchorlinks-page">{{ page.title }}</h1>
+                {% elsif page.title == "Selvbetjeningsløsninger" %}
+                <h1 id="anchorlinks-page" class="hyphens-manual">Selvbetjenings&shy;løsninger</h1>
                 {% else %}
                 <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
                 {% endif %}

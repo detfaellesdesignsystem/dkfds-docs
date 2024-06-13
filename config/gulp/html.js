@@ -169,7 +169,8 @@ var testfiles = [
     "test-step-guide-4",
     "test-step-guide-5",
     "test-step-guide-6",
-    "test-step-guide-7"
+    "test-step-guide-7",
+    "test-venstremenu"
 ];
 
 function getPath (dirname){

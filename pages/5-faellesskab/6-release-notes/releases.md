@@ -102,9 +102,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.0.0 {#{% include create-id.html heading="Version 10.0.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">14-06-2024</span></div>
+<div><span class="small-text mt-0 d-block">13-06-2024</span></div>
 
-Hvis du skal opgradere fra version 9 til version 10, så læs vores migreringsguide på GitHub først. Version 10 indeholder mange breaking changes, man som designer og udvikler skal forholde sig til, da der både er ændringer i grundlæggende komponenter som header og mobilmenu, samt omstrukturering af designsystemets kodefiler.
+Hvis du skal opgradere fra version 9 til version 10, så læs vores {% include links/external-link.html linktext="migreringsguide for v10.0.0" classes="d-inline" %} på GitHub først. Version 10 indeholder mange breaking changes, man som designer og udvikler skal forholde sig til, da der både er ændringer i grundlæggende komponenter som header og mobilmenu, samt omstrukturering af designsystemets kodefiler.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Header" %}</h3>
@@ -137,7 +137,7 @@ Hvis du skal opgradere fra version 9 til version 10, så læs vores migreringsgu
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-guideline-link.html linktext="Anchorlinks" %} er fjernet fra {% include links/component-guideline-link.html linktext="venstremenuen" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> HTML og styling er opdateret i både trinindikator og venstremenu som følge af ændringerne i header og anchorlinks.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu med aria-label for nav-elementet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu med `aria-label` for `nav`-elementet.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilpasset roller, opmærkning og aria-attributter.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tekst eller ikon kunne ryge ud over komponentens kanter.
 - Tilføjet understregning til klikbare trin for at adskille dem fra låste trin.

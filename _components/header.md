@@ -102,7 +102,7 @@ Nedenstående eksempel viser den overordnede struktur i `<header>`-elementet. De
 {:#html-struktur}
 {% include code/syntax.html component="header-overview" copybutton=true %}
 
-Placer `<header>`-elementet i din HTML-sides `<body>`-element efter {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}-komponenten.
+Placer `<header>`-elementet i din HTML-sides `<body>`-element.
 
 #### Overlay og mobilmenu
 
@@ -118,7 +118,7 @@ Række 1 indeholder portal-logo, NemLog-in-oplysninger og “Log af” knap. Hea
 
 Der er to dele, som skal indsættes i `<header>`-elementet. 
 
-Første del skal indsættes øverst efter skip-link og indeholder koden, der vises på større skærme:
+Første del skal indsættes øverst i headeren og indeholder koden, der vises på større skærme:
 
 {% include code/syntax.html component="header-portal" copybutton=true %}
 
