@@ -135,7 +135,7 @@ Hvis du skal opgradere fra version 9 til version 10, så læs vores {% include l
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Venstremenu" %} og {% include links/component-guideline-link.html linktext="trinindikator" %}</h3>
 </div>
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-guideline-link.html linktext="Anchorlinks" %} er fjernet fra {% include links/component-guideline-link.html linktext="venstremenuen" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> {% include links/component-guideline-link.html linktext="Anchorlinks" %} er fjernet fra venstremenuen.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> HTML og styling er opdateret i både trinindikator og venstremenu som følge af ændringerne i header og anchorlinks.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret eksempler for trinindikator og venstremenu med `aria-label` for `nav`-elementet.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilpasset roller, opmærkning og aria-attributter.
@@ -163,8 +163,8 @@ Hvis du skal opgradere fra version 9 til version 10, så læs vores {% include l
 - Rettet fejl, hvor fokusmarkeringen kunne mangle delvist i overflowmenuen.
 - Rettet fejl, hvor links i overflowmenuen kunne sidde i den forkerte side.
 - Indsat en tynd streg mellem de forskellige elementer i overflowmenuen.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for {% include links/component-guideline-link.html linktext="overflowmenu" %} og {% include links/component-guideline-link.html linktext="sortering" %} som følge af header-ændringerne.
-- Opdateret JavaScript for {% include links/component-guideline-link.html linktext="sortering" %}, så kravene til HTML'en er mindre rigide. Fx er det nu tilladt at have et `span`-element inde i `button`-elementet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML for overflowmenu og sortering som følge af header-ændringerne.
+- Opdateret JavaScript for sortering, så kravene til HTML'en er mindre rigide. Fx er det nu tilladt at have et `span`-element inde i `button`-elementet.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Vedligehold</h3>
@@ -179,7 +179,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Erstattet 'normalize.css' med styling i '_base.scss'.
 - Flere {% include links/external-link.html linktext="macroer" %} har fået mindre rettelser og tilføjelser, så der blandt andet kan sættes klasser og attributter.
 - Mindre koderettelser som følge af et linter-tjek.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet forældede klasser, heriblandt `icon-svg-large`, `collapse-transition-collapse` og `collapse-transition-expand`, `button-small`, `sidebar-col` og flere ubrugte klasser for accordion's åbn/luk alle-knap.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet forældede klasser, heriblandt `icon-svg-large`, `collapse-transition-collapse`, `collapse-transition-expand`, `button-small`, `sidebar-col` og flere ubrugte klasser for accordion's åbn/luk alle-knap.
 - Opdateret README-fil.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ensrettet stistrukturen til hhv. fonte, ikoner og billeder.
 - Rettet fejl, hvor klassen `sr-only` risikerede at blive unødvendigt gentaget flere gange i ens stylesheet, hvis man anvendte SCSS-filerne.
