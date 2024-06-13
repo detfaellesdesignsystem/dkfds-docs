@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="351px" height="250px" viewBox="0 0 351 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Trinindikatorer-don't</title>
+    <g id="Trinindikatorer-don_t" data-name="Trinindikatorer-don t">
+        <g>
+            <path id="Line-3" d="M10.5,107.5h340" fill="none" stroke="#474e95" stroke-linecap="square"/>
+            <rect id="Rectangle" x="9.5" y="94.5" width="26" height="26" rx="12.5" fill="#c8cadf" stroke="#454a99"/>
+            <g id="_1" data-name=" 1">
+                <text transform="translate(17 114)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">1</text>
+            </g>
+            <path id="Rectangle-Copy" d="M117.5,95h0A12.5,12.5,0,0,1,130,107.5h0A12.5,12.5,0,0,1,117.5,120h0A12.5,12.5,0,0,1,105,107.5h0A12.5,12.5,0,0,1,117.5,95Z" fill="#c8cadf" stroke="#454a99" fill-rule="evenodd"/>
+            <g id="_2" data-name=" 2">
+                <text transform="translate(112 114)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">2</text>
+            </g>
+            <rect id="Rectangle-Copy-2" x="198.5" y="92.5" width="30" height="30" rx="12.5" fill="#fff" stroke="#454a99" stroke-width="5"/>
+            <g id="_3" data-name=" 3">
+                <text transform="translate(208 114)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">3</text>
+            </g>
+            <path id="Rectangle-Copy-3" d="M308.5,96h0A12.5,12.5,0,0,1,321,108.5h0A12.5,12.5,0,0,1,308.5,121h0A12.5,12.5,0,0,1,296,108.5h0A12.5,12.5,0,0,1,308.5,96Z" fill="#c8cadf" stroke="#454a99" fill-rule="evenodd"/>
+            <g id="_4" data-name=" 4">
+                <text transform="translate(303 115)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">4</text>
+            </g>
+            <g id="Trin-1">
+                <g style="isolation: isolate">
+                    <text transform="translate(0 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" letter-spacing="-0.06em" style="isolation: isolate">T</text>
+                    <text transform="translate(10.33 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">rin 1</text>
+                </g>
+            </g>
+            <g id="Trin-2">
+                <g style="isolation: isolate">
+                    <text transform="translate(95 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" letter-spacing="-0.06em" style="isolation: isolate">T</text>
+                    <text transform="translate(105.33 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">rin 2</text>
+                </g>
+            </g>
+            <g id="Trin-3">
+                <g style="isolation: isolate">
+                    <text transform="translate(190 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" letter-spacing="-0.06em" style="isolation: isolate">T</text>
+                    <text transform="translate(200.33 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">rin 3</text>
+                </g>
+            </g>
+            <g id="Trin-4">
+                <g style="isolation: isolate">
+                    <text transform="translate(286 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" letter-spacing="-0.06em" style="isolation: isolate">T</text>
+                    <text transform="translate(296.33 149)" font-size="18" fill="#474e95" font-family="IBMPlexSans, IBM Plex Sans, Helvetica, Arial" style="isolation: isolate">rin 4</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+

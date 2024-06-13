@@ -1,0 +1,110 @@
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Mange faneblade</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                tabs({
+                    "items": [
+                        {
+                            "button": {
+                                "text": "Faneblad 1",
+                                "id": "tab1"
+                            },
+                            "panel": {
+                                "id": "tabpanel1",
+                                "content": "<p>Panel 1</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 2",
+                                "id": "tab2",
+                                "selected": true
+                            },
+                            "panel": {
+                                "id": "tabpanel2",
+                                "content": "<p>Panel 2</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 3",
+                                "id": "tab3"
+                            },
+                            "panel": {
+                                "id": "tabpanel3",
+                                "content": "<p>Panel 3</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 4",
+                                "id": "tab4"
+                            },
+                            "panel": {
+                                "id": "tabpanel4",
+                                "content": "<p>Panel 4</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 5",
+                                "id": "tab5"
+                            },
+                            "panel": {
+                                "id": "tabpanel5",
+                                "content": "<p>Panel 5</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 6",
+                                "id": "tab6"
+                            },
+                            "panel": {
+                                "id": "tabpanel6",
+                                "content": "<p>Panel 6</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 7",
+                                "id": "tab7"
+                            },
+                            "panel": {
+                                "id": "tabpanel7",
+                                "content": "<p>Panel 7</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 8",
+                                "id": "tab8"
+                            },
+                            "panel": {
+                                "id": "tabpanel8",
+                                "content": "<p>Panel 8</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Faneblad 9",
+                                "id": "tab9"
+                            },
+                            "panel": {
+                                "id": "tabpanel9",
+                                "content": "<p>Panel 9</p>"
+                            }
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+</main>

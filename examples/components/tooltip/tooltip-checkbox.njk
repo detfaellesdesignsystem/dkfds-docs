@@ -1,0 +1,14 @@
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+
+<div class="form-group">
+    {{ 
+        checkbox({
+            "id": "checkbox1",
+            "name": "checkbox1",
+            "value": "1",
+            "label": "Udfyldt tjekboks",
+            "checked": true,
+            "tooltip": { "text": "Dette er et tooltip", "id": "checkbox-tooltip", "contentElement": "span" }
+        }) 
+    }}
+</div>

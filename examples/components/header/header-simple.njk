@@ -1,19 +1,39 @@
-{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
 
-{% from "components/header/header.njk" import portal_header as portal_header %}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{% from "components/header/header.njk" import solution_header as solution_header %}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
 
 <header class="header">
-    {{ skiplink() }}
-    {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-    </nav>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
 </header>

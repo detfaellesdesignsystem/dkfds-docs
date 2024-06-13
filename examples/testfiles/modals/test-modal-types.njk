@@ -1,0 +1,69 @@
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Modaltyper</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                button({
+                    "text": "Åbn simpel modal",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-1\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+            {{ 
+                button({
+                    "text": "Åbn modal med handlinger",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-2\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+            {{ 
+                button({
+                    "text": "Åbn modal som kræver handling",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-3\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+        </div>
+    </div>
+</main>
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-example-1",
+            "heading": "Simpel modal",
+            "content": "<p>Dette er modalens indhold.</p>"
+        })
+    }}
+    {{
+        modal({
+            "id": "modal-example-2",
+            "heading": "Modal med handlinger",
+            "content": "<p>Dette er modalens indhold.</p>",
+            "actions": modal_actions
+        })
+    }}
+    {{
+        modal({
+            "id": "modal-example-3",
+            "heading": "Modal som kræver handling",
+            "content": "<p>Dette er modalens indhold.</p>",
+            "actions": modal_actions,
+            "forcedAction": true
+        })
+    }}
+</div>

@@ -1,44 +1,67 @@
-{% include nav/current.html page=include.page %}
-<li class="{% if _current -%}current{% endif %} {% if _active -%}active{% endif %} {% if _anchor -%}has-anchor-links{% endif %}">
+{% assign _current = false %}
+{% assign _active = false %}
 
-{% assign titletext = include.page.title %}
-  {%  assign _anchor = false %}
-{% if include.use_alt_text and include.alternative_text %}
-  {% assign titletext = include.alternative_text %}
+{% comment %} 
+------------------------------------------------------------------
+| page.url         = The page currently selected in the browser  |
+| include.page.url = The page used in this partial               |
+------------------------------------------------------------------ 
+{% endcomment %}
+
+{% if include.page.url == page.url %}
+  {% assign _current = true %}
 {% endif %}
-<a href="{{ include.page.url | relative_url }}" {%  if _active %}aria-current="page"{% endif %}
-  class="nav-link">
-  {{ titletext | smartify }}
-</a>
-{% if _current -%}
-  {% unless include.flat -%}
-    {% assign _href_key = include.href_key %}
-    {% assign _text_key = include.href_key %}
-    {% if include.categorynav -%}
-    <!--in nav.yml, it is specified that this page should use a category from nav.yml as navmenu -->
-    {% assign _links = site.data.nav[include.categorynav] %}
-    {% else -%}
-    <!-- Uses page.subnav as navmenu-->
-    {% assign _links = include.links | default: include.page.subnav %}
-    {% endif %}
 
-    {% if _links.href -%}
-      {% assign _href_key = _links.href %}
-      {% assign _text_key = _links.text %}
-      {% assign _data_key = _links.data %}
-      {% assign _links = site.data[_data_key] %}
-    {% elsif _links.type %}
-      {% assign _links = nil %}
-    {% endif %}
+{%- if page.guidelinelink and include.page.url == page.guidelinelink -%} {%- comment -%} --- If the page is a child tab --- {%- endcomment -%}
+  {%- assign _current = true -%}
+{%- endif -%}
 
-    {% if _links -%}
-    <ul class="{{ include.subnav_class | default: 'sidenav-sub_list' }}">{%
-      include nav/sidenavigation/list.html
-      links=_links
-      text_key=_text_key
-      href_key=_href_key
-    %}</ul>
-    {% endif %}
-  {% endunless %}
+{% if include.categorynav and page.parentlink == include.page.url -%}
+  {% assign _active = true %}
 {% endif %}
+
+{%- if include.categorynav and page.guidelinelink == include.page.url -%} {%- comment -%} --- If the page is a child tab but also has its own categories --- {%- endcomment -%}
+  {%- assign _active = true -%}
+{%- endif -%}
+
+{%- if _current %}
+  {%- assign _active = true %}
+{%- endif %}
+
+<li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
+
+  <a href="{{ include.page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
+    <span>{{ include.page.title | smartify }}</span>
+  </a>
+
+  {%- if include.categorynav -%}
+
+    {%- assign _sublinks = site.data.nav[include.categorynav] %}
+
+    {%- comment %} 
+    ------------------------------------------------------------------
+    | If the currently selected page has a submenu, show the submenu |
+    ------------------------------------------------------------------ 
+    {%- endcomment %}
+
+    {%- if _current and _sublinks -%}
+      <ul>
+        {%- include nav/sidenavigation/list.html links=_sublinks %}
+      </ul>
+    {%- endif %}
+
+    {%- comment %} 
+    ----------------------------------------------------------------------------------------------------
+    | If the currently selected page is part of a submenu (i.e. it has a parentlink), show the submenu |
+    ----------------------------------------------------------------------------------------------------
+    {%- endcomment %}
+
+    {%- if page.parentlink == include.page.url and _sublinks -%}
+      <ul>
+        {%- include nav/sidenavigation/list.html links=_sublinks %}
+      </ul>
+    {%- endif %}
+
+  {%- endif %}
+
 </li>

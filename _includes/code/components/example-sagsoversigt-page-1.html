@@ -1,48 +1,67 @@
+<div id="top"></div>
 <header class="header">
-    <div id="top"></div>
 
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
 
-    <div class="portal-header portal-header-compact">
-        <div class="container portal-header-inner">
-            <a href="#" aria-label="Portalnavn" class="logo ">
-                <span class="d-none d-print-block">Portalnavn</span>
+    <div class="language-switcher-header">
+        <div class="container">
+            <div class="overflow-menu overflow-menu--open-right">
+                <button class="button-overflow-menu js-dropdown select-language-button"
+                    data-js-target="header-language" aria-expanded="false"
+                    aria-controls="header-language">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>Dansk
+                </button>
+                <div class="overflow-menu-inner select-language-list" id="header-language"
+                    aria-hidden="true">
+                    <ul class='overflow-list'>
+                        <li><a href="?lang=da" lang="da"
+                                aria-label="Valgt sprog: Dansk">Dansk</a></li>
+                        <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                        <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                        <li><a href="?lang=kl" lang="kl">Kalaallisut</a></li>
+                        <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                        <li><a href="?lang=se" lang="se">Svenska</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portal-info">
+        <div class="portal-info-inner container">
+            <a href="#" aria-label="Portalnavn" class="logo">
+                <span>Portalnavn</span>
             </a>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
                 aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-            <div class="portal-info">
+            <div class="portal-user">
                 <p class="user">
-
-                    <span class="username">Anders Andersen</span>
-
+                    Anders Andersen
                 </p>
 
-                <button class="button button-secondary d-print-none">
-                    Log af
-                </button>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
             </div>
         </div>
     </div>
 
-    <div class="solution-header">
-        <div class="container solution-header-inner">
+    <div class="solution-info">
+        <div class="solution-info-inner container">
             <div class="solution-heading">
-                <a href="#">
-                    Sagsunivers
-                </a>
+                <a href="#">Sagsunivers</a>
             </div>
 
-            <div class="solution-info">
+            <div class="additional-info">
 
                 <p><strong class="authority-name">Myndighedsnavn</strong></p>
 
-                <p>Support: 12 34 56 78 <span
-                        class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
-                            class="d-none d-lg-inline-block mr-2">· </span><a
-                            href="javascript:void(0);" data-module="modal"
-                            data-target="modal-contact" aria-haspopup="dialog"
-                            class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
+                <p><span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span
+                        class="d-none d-lg-inline-block d-print-none ml-2 mr-2"
+                        aria-hidden="true">·</span><button type="button" data-module="modal"
+                        data-target="modal-contact" aria-haspopup="dialog"
+                        class="d-print-none function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</button>
                 </p>
 
             </div>
@@ -50,16 +69,12 @@
         </div>
     </div>
 
-    <div class="overlay"></div>
-    <nav class="nav">
+    <div class="navigation-menu">
+        <div class="navigation-menu-inner container">
 
-        <button class="function-link button-menu-close js-menu-close"
-            aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-
-        <div class="navbar navbar-primary">
-            <div class="navbar-inner container">
-                <ul class="nav-primary">
-                    <li class="current active">
+            <nav class="nav" aria-label="Hovedmenu">
+                <ul class="mainmenu">
+                    <li class="active current">
                         <a href="#" class="nav-link" aria-current="page">
                             <span>Find sag</span>
                         </a>
@@ -75,72 +90,173 @@
                         </a>
                     </li>
                     <li>
-                        <div class="overflow-menu">
-                            <button
-                                class="button-overflow-menu js-dropdown js-dropdown--responsive-collapse"
-                                data-js-target="headeroverflow1" aria-haspopup="true"
-                                aria-expanded="false">
+
+                        <div class="submenu">
+                            <button class="button-overflow-menu js-dropdown"
+                                data-js-target="desktopmenu-4" aria-expanded="false"
+                                aria-controls="desktopmenu-4">
                                 <span>Udbetalinger</span>
                             </button>
-                            <div class="overflow-menu-inner" id="headeroverflow1"
+                            <div class="overflow-menu-inner collapsed" id="desktopmenu-4"
                                 aria-hidden="true">
-                                <ul class="overflow-list" role="menu">
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2022</a>
+                                <ul class="overflow-list">
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2022</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2021</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2021</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2020</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2020</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2019</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2019</span>
+                                        </a>
                                     </li>
-                                    <li role="none">
-                                        <a href="#" role="menuitem">2018</a>
+                                    <li>
+                                        <a href="#" class="nav-link">
+                                            <span>2018</span>
+                                        </a>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
+
                     </li>
                 </ul>
-            </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+
+        <div class="menu-top">
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close"
+                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
         </div>
 
-        <div class="portal-info-mobile">
+        <nav class="navigation-menu-mobile" aria-label="Hovedmenu">
+            <ul class="mainmenu">
+                <li class="active current">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <span>Find sag</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Ansøgninger</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Beskeder</span>
+                    </a>
+                </li>
+                <li>
 
-            <p class="user">
+                    <div class="submenu">
+                        <button class="button-mobile-menu js-menudropdown"
+                            data-js-target="mobilemenu-4" aria-expanded="false"
+                            aria-controls="mobilemenu-4">
+                            <span>Udbetalinger</span>
+                        </button>
+                        <div class="overflow-menu-inner" id="mobilemenu-4" aria-hidden="true">
+                            <ul class="overflow-list">
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2022</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2021</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2020</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2019</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span>2018</span>
+                                    </a>
+                                </li>
 
-                <span class="username">Anders Andersen</span>
+                            </ul>
+                        </div>
+                    </div>
 
-            </p>
-
-            <button class="button button-secondary d-print-none mt-3">
-                Log af
-            </button>
-        </div>
+                </li>
+            </ul>
+        </nav>
 
         <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
 
             <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
 
-            <p>Support: 12 34 56 78 <span
-                    class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span
-                        class="d-none d-lg-inline-block mr-2">· </span><a
-                        href="javascript:void(0);" data-module="modal"
-                        data-target="modal-contact" aria-haspopup="dialog"
-                        class="function-link d-inline-block mt-0"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</a></span>
+            <p><span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span
+                    class="d-none d-lg-inline-block d-print-none ml-2 mr-2"
+                    aria-hidden="true">·</span><button type="button" data-module="modal"
+                    data-target="modal-contact" aria-haspopup="dialog"
+                    class="d-print-none function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#card-text"></use></svg>Kontakt</button>
             </p>
 
         </div>
 
-    </nav>
+        <div class="language-switcher-mobile">
+            <h3>Valgt sprog</h3>
+            <ul>
+                <li><a href="?lang=da" lang="da"
+                        aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
+                </li>
+                <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                <li><a href="?lang=kl" lang="kl">Kalaallisut</a></li>
+                <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                <li><a href="?lang=se" lang="se">Svenska</a></li>
+            </ul>
+        </div>
+
+        <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
+
+            <p class="user">
+
+                Anders Andersen
+
+            </p>
+
+            <p>
+                <button
+                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
+        </div>
+
+    </div>
 </header>
 
 <main class="container page-container" id="main-content">
     <h1>Find sag</h1>
-    <p class="font-lead mb-8">Her kan der stå en manchettekst, som siger noget meningsfyldt om
+    <p class="font-lead mb-8">Her kan der stå en manchet, som siger noget meningsfyldt om
         siden.</p>
 
     <div class="form-group search">
@@ -330,7 +446,7 @@
 
     <div class="language-switcher">
         <div class="container">
-            <ul aria-label="Vælg sprog fra listen ">
+            <ul aria-label="Vælg sprog fra listen">
                 <li><a href="" lang="da"
                         aria-label="Valgt sprog: Dansk"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>Dansk</a>
                 </li>
@@ -345,49 +461,56 @@
 
 </footer>
 
-<div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog" aria-modal="true"
-    aria-labelledby="modal-contact-heading">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2 class="modal-title" id="modal-contact-heading">
-                Kontakt
-            </h2>
-            <button class="modal-close function-link"
-                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
-        </div>
-        <div class="modal-body">
+<div class="fds-modal-container">
 
-            <div class="alert alert-warning" role="alert">
-                <div class="alert-body">
-                    <h3 class="alert-heading">Vi har noget information af advarende karakter
-                    </h3>
-                    <p class="alert-text">Noget tekst, der forklarer det af advarende
-                        karakter, som brugeren bør vide inden denne ringer eller skriver.</p>
-                </div>
+    <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-contact-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-contact-heading">
+                    Kontakt
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
             </div>
-            <h3>En form for support</h3>
-            <p>Hvis du har spørgsmål om:</p>
-            <ul>
-                <li>En ting som denne</li>
-                <li>Et andet emne som dette</li>
-            </ul>
-            <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
-            <p>Telefonen er åben:</p>
-            <p class='m-0'>
-                Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                    class='d-inline-block'>kl. 9-17</span></p>
-            <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                    class='d-inline-block'>kl. 9-17</span></p>
-            <p class='m-0'>
-                Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                    class='d-inline-block'>kl. 9-14</span></p>
-        </div>
+            <div class="modal-body">
 
-        <div class="modal-footer">
-            <button class="button button-secondary" data-modal-close>
-                Luk
-            </button>
-        </div>
+                <div class="alert alert-warning" role="alert">
+                    <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use xlink:href="#report-problem"></use></svg>
+                    <div class="alert-body">
+                        <h3 class="alert-heading">Vi har noget information af advarende
+                            karakter</h3>
+                        <p class="alert-text">Noget tekst, der forklarer det af advarende
+                            karakter, som brugeren bør vide inden denne ringer eller skriver.
+                        </p>
+                    </div>
+                </div>
+                <h3>En form for support</h3>
+                <p>Hvis du har spørgsmål om:</p>
+                <ul>
+                    <li>En ting som denne</li>
+                    <li>Et andet emne som dette</li>
+                </ul>
+                <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span>
+                </p>
+                <p>Telefonen er åben:</p>
+                <p class='m-0'>
+                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class='d-inline-block'>kl. 9-17</span></p>
+                <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class='d-inline-block'>kl. 9-17</span></p>
+                <p class='m-0'>
+                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class='d-inline-block'>kl. 9-14</span></p>
+            </div>
 
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
+
+        </div>
     </div>
+
 </div>

@@ -1,0 +1,25 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Skjult indhold</p>
+            {{
+                radiobuttons({
+                    "id": "radiogroup",
+                    "radiogroupLegend": "Liste med radioknapper",
+                    "groupname": "radio-example",
+                    "collapsedItems": true,
+                    "items": [
+                        { "value": "v1", "label": "Valg 1" },
+                        { "value": "v2", "label": "Valg 2" },
+                        { "value": "v3", "label": "Valg 3", 
+                        "srOnly": "Udfyld informationer herunder", 
+                        "hiddenContent": textinput({ "id": "mytext", "label": "Inputfelt", "name": "mytext" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

@@ -1,0 +1,22 @@
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Simpel liste med tjekbokse</p>
+            {{
+                checkboxes({
+                    "id": "checkboxgroup",
+                    "checkboxLegend": "Liste med tjekbokse",
+                    "groupname": "checkbox-example",
+                    "items": [
+                        { "value": "v1", "label": "Tjekboks 1" },
+                        { "value": "v2", "label": "Tjekboks 2" },
+                        { "value": "v3", "label": "Tjekboks 3" }
+                    ]
+                })
+            }}   
+        </div>
+    </div>
+</main>

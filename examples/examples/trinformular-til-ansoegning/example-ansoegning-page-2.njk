@@ -1,9 +1,9 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
-{% from "components/header/header.njk" import portal_header as portal_header %}
-{% from "components/header/header.njk" import mobile_portal_header as mobile_portal_header %}
-{% from "components/header/header.njk" import solution_header as solution_header %}
-{% from "components/header/header.njk" import mobile_solution_header as mobile_solution_header %}
-{% from "components/header/menu-buttons.njk" import menu_close_button as menu_close_button %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
 
 {% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 {% from "components/modal/modal.njk" import modal as modal %}
@@ -21,12 +21,12 @@
     "lastHeader": true,
     "hideOnPrint": true,
     "title": {
-        "href": "#",
-        "text": "Ansøg om et eller andet"
+        "text": "Ansøg om et eller andet",
+        "tag": "strong"
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": 'Support: 12 34 56 78 <span class="d-block d-lg-inline-block d-print-none mt-2 mt-lg-0"><span class="d-none d-lg-inline-block mr-2">· </span><a href="javascript:void(0);" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="function-link d-inline-block mt-0">' + icon_svg({"name": "card-text"}) + 'Kontakt</a></span>'
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
     }
 } %}
 
@@ -56,17 +56,17 @@
 {# <!-- Page content starts here --> #}
 
 {% block header %}
+<div id="top"></div>
 <header class="header">
-    <div id="top"></div>
     {{ skiplink() }}
-    {{ portal_header(portal_header_data) }}
-    {{ solution_header(solution_header_data) }}
+    {{ portal_info(portal_header_data) }}
+    {{ solution_info(solution_header_data) }}
     <div class="overlay"></div>
-    <nav class="nav">
-        {{ menu_close_button() }}
-        {{ mobile_portal_header(portal_header_data) }}
-        {{ mobile_solution_header(solution_header_data) }}
-    </nav>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_header_data) }}
+        {{ mobile_portal_info(portal_header_data) }}
+    </div>
 </header>
 {% endblock %}
 
@@ -89,12 +89,14 @@
 {{ footer(footer_data) }}
 {% endblock %}
 
-{{
-    modal({
-        "id": "modal-contact",
-        "heading": "Kontakt",
-        "content": modal_content,
-        "forcedAction": false,
-        "actions": modal_actions
-    })
-}}
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-contact",
+            "heading": "Kontakt",
+            "content": modal_content,
+            "forcedAction": false,
+            "actions": modal_actions
+        })
+    }}
+</div>

@@ -1,0 +1,15 @@
+{% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Date example</p>
+            {{
+                datoinput({
+                    "id": "date-example",
+                    "legend": "Indtast en dato"
+                })
+            }}
+        </div>
+    </div>
+</main>

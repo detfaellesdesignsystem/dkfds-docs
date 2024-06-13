@@ -1,0 +1,37 @@
+{% from "components/tabs/tabs.njk" import navigation_tabs as navigation_tabs %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Faneblade til navigation med lange sætninger uden mellemrum og med ikoner</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                navigation_tabs({
+                    "ariaLabel": "Eksemplets undersider",
+                    "items": [
+                        {
+                            "current": true,
+                            "href": "#tab1",
+                            "text": "1LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibh",
+                            "icon": "calculator"
+                        },
+                        {
+                            "href": "#tab2",
+                            "text": "2LoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibheratquisaugueLoremipsumdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliquetturpisasollicitudinporttitorlacusnullatristiqueturpissedvehiculanibh",
+                            "icon": "feedback"
+                        },
+                        {
+                            "href": "#tab3",
+                            "text": "Faneblad 3",
+                            "icon": "settings"
+                        }
+                    ]
+                }) 
+            }}
+            <p>Indhold under fanebladene</p>
+        </div>
+    </div>
+</main>

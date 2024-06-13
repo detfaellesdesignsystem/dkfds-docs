@@ -1,0 +1,206 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/form/controls/select.njk" import select as select %}
+{% from "components/form/controls/date-input.njk" import datoinput as datoinput %}
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+{% set radiogroupContent1 = 
+    textinput({ 
+        "id": "textinput1", 
+        "label": "Inputfelt med label", 
+        "name": "text1"
+    }) +
+    select({
+        "name": "options",
+        "id": "options",
+        "label": "Dropdown label (select)",
+        "options": [
+            { "value": "option1", "text": "Mulighed 1" },
+            { "value": "option2", "text": "Mulighed 2" },
+            { "value": "option3", "text": "Mulighed 3" }
+        ]
+    }) +
+    datoinput({
+        "id": "date-input-example",
+        "legend": "Indsendelsesfrist",
+        "helptext": "For eksempel: 05 12 2018",
+        "name": {
+            "day": "deadline-day",
+            "month": "deadline-month",
+            "year": "deadline-year"
+        }
+    }) + 
+    datepicker({
+        "id": "datepicker-example1",
+        "name": "appointment-date1",
+        "label": "Dato for aftale"
+    }) +
+    textinput({
+        "id": "input-antal",
+        "name": "input-antal",
+        "label": "Antal styk",
+        "type": "number",
+        "suffix": "stk.",
+        "value": "56",
+        "classes": {
+            "input": "input-char-8"
+        }
+    }) + 
+    textarea({
+        "id": "input-textarea",
+        "name": "input-textarea",
+        "label": "Tekstområde med label",
+        "rows": 5
+    })
+%}
+    
+{% set radiogroupContent2 = 
+    textinput({ 
+        "id": "textinput2", 
+        "label": "Inputfelt med anden label", 
+        "name": "text2"
+    }) 
+%}
+
+{% set radiogroupContent3 = 
+    textinput({ 
+        "id": "textinput3", 
+        "label": "Inputfelt med endnu en label", 
+        "name": "text3",
+        "errorMessage": "Dette er en fejlbesked"
+    }) 
+%}
+
+{% set radiogroupContent4 = 
+    textinput({ 
+        "id": "textinput4", 
+        "label": "Inputfelt med label", 
+        "name": "text4"
+    }) 
+%}
+
+{% set radiogroupContent5 = 
+    textinput({ 
+        "id": "textinput5", 
+        "label": "Inputfelt med endnu en label",
+        "name": "text5",
+        "errorMessage": "Dette er en fejlbesked"
+    }) 
+%}
+
+{% set radiogroupContent6 = 
+    textinput({ 
+        "id": "textinput6", 
+        "label": "Inputfelt med label", 
+        "name": "text6"
+    }) 
+%}
+
+<main class="container page-container mb-9" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Radioknapper med fejl</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                radiobuttons({
+                    "id": "radiogroup-normal",
+                    "groupname": "radio-normal",
+                    "radiogroupLegend": "Vælg en radioknap",
+                    "errorMessage": "Vælg en mulighed",
+                    "items": [
+                        { "value": "1", "label": "Radioknap 1" },
+                        { "value": "2", "label": "Radioknap 2" },
+                        { "value": "3", "label": "Radioknap 3" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {{ 
+                radiobuttons({
+                    "id": "radiogroup-collapse-1",
+                    "groupname": "radio-collapse-error-1",
+                    "radiogroupLegend": "Vælg en radioknap",
+                    "errorMessage": "Vælg en mulighed",
+                    "collapsedItems": true,
+                    "items": [
+                        {
+                            "value": "1",
+                            "checked": true,
+                            "label": "Radioknap viser indhold",
+                            "srOnly": "Udfyld informationer herunder",
+                            "hiddenContent": radiogroupContent1
+                        },
+                        {
+                            "value": "2",
+                            "label": "Radioknap viser andet indhold",
+                            "srOnly": "Udfyld informationer herunder",
+                            "hiddenContent": radiogroupContent2
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {{ 
+                radiobuttons({
+                    "id": "radiogroup-collapse-2",
+                    "groupname": "radio-collapse-error-2",
+                    "radiogroupLegend": "Vælg en radioknap",
+                    "collapsedItems": true,
+                    "items": [
+                        {
+                            "value": "1",
+                            "checked": true,
+                            "label": "Radioknap viser indhold",
+                            "srOnly": "Udfyld informationer herunder",
+                            "hiddenContent": radiogroupContent3
+                        },
+                        {
+                            "value": "2",
+                            "label": "Radioknap viser andet indhold",
+                            "srOnly": "Udfyld informationer herunder",
+                            "hiddenContent": radiogroupContent4
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {{ 
+                radiobuttons({
+                    "id": "radiogroup-collapse-3",
+                    "groupname": "radio-collapse-error-3",
+                    "radiogroupLegend": "Vælg en radioknap",
+                    "errorMessage": "Der skete en fejl",
+                    "collapsedItems": true,
+                    "items": [
+                        {
+                            "value": "1",
+                            "checked": true,
+                            "label": "Radioknap viser indhold",
+                            "srOnly": "Udfyld informationer herunder",
+                            "hiddenContent": radiogroupContent5
+                        },
+                        {
+                            "value": "2",
+                            "label": "Radioknap viser andet indhold",
+                            "srOnly": "Udfyld informationer herunder",
+                            "hiddenContent": radiogroupContent6
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

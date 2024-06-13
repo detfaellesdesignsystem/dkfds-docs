@@ -1,0 +1,24 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+<header class="header">
+    {{ portal_info(portal_info_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>

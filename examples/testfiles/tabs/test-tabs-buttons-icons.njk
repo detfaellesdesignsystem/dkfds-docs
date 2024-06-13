@@ -1,0 +1,53 @@
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Faneblade med ikoner</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                tabs({
+                    "items": [
+                        {
+                            "button": {
+                                "text": "Indhold 1",
+                                "id": "tab1",
+                                "icon": "calculator",
+                                "selected": true
+                            },
+                            "panel": {
+                                "id": "tabpanel1",
+                                "content": "<p>Lorem ipsum dolor sit amet.</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Indhold 2",
+                                "id": "tab2",
+                                "icon": "feedback"
+                            },
+                            "panel": {
+                                "id": "tabpanel2",
+                                "content": "<p>Praesent consequat erat nec felis semper dignissim.</p>"
+                            }
+                        },
+                        {
+                            "button": {
+                                "text": "Indhold 3",
+                                "id": "tab3",
+                                "icon": "settings"
+                            },
+                            "panel": {
+                                "id": "tabpanel3",
+                                "content": "<p>Phasellus sodales lectus mi.</p>"
+                            }
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+</main>

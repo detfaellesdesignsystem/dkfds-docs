@@ -1,0 +1,77 @@
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+<main class="page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Placering af overflow-menu</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{
+                overflowmenu({
+                    "button": { "text": "Åbner menu til højre" },
+                    "id": "overflow1",
+                    "openRight": true,
+                    "content": "<ul class='overflow-list'>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><a href='#'>Mulighed 2</a></li>
+                                    <li><button>Mulighed 3</button></li>
+                                    <li><button>Mulighed 4 har en meget længere tekst end de forrige tre muligheder</button></li>
+                                </ul>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="text-align: end;">
+            {{
+                overflowmenu({
+                    "button": { "text": "Åbner menu til højre" },
+                    "id": "overflow2",
+                    "openRight": true,
+                    "content": "<ul class='overflow-list'>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><a href='#'>Mulighed 2</a></li>
+                                    <li><button>Mulighed 3</button></li>
+                                    <li><button>Mulighed 4 har en meget længere tekst end de forrige tre muligheder</button></li>
+                                </ul>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{
+                overflowmenu({
+                    "button": { "text": "Åbner menu til venstre" },
+                    "id": "overflow3",
+                    "openRight": false,
+                    "content": "<ul class='overflow-list'>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><a href='#'>Mulighed 2</a></li>
+                                    <li><button>Mulighed 3</button></li>
+                                    <li><button>Mulighed 4 har en meget længere tekst end de forrige tre muligheder</button></li>
+                                </ul>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="text-align: end;">
+            {{
+                overflowmenu({
+                    "button": { "text": "Åbner menu til venstre" },
+                    "id": "overflow4",
+                    "openRight": false,
+                    "content": "<ul class='overflow-list'>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><a href='#'>Mulighed 2</a></li>
+                                    <li><button>Mulighed 3</button></li>
+                                    <li><button>Mulighed 4 har en meget længere tekst end de forrige tre muligheder</button></li>
+                                </ul>"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

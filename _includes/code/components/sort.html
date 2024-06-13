@@ -1,22 +1,22 @@
 <div class="overflow-menu overflow-menu--sort overflow-menu--open-right"
     id="overflow-sort-example">
     <button class="button-overflow-menu" data-js-target="overflow-sort-example-panel"
-        aria-haspopup="true" aria-expanded="false">
+        aria-expanded="false" aria-controls="overflow-sort-example-panel">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>Sortér:<span
             class="selected-value"></span>
     </button>
     <div class="overflow-menu-inner" id="overflow-sort-example-panel" aria-hidden="true">
-        <ul class='overflow-list' role="menu">
-            <li role="menuitem">
+        <ul class='overflow-list'>
+            <li>
                 <button id="newfirst" aria-current="true">Nyeste først</button>
             </li>
-            <li role="menuitem">
+            <li>
                 <button id="oldfirst">Ældste først</button>
             </li>
-            <li role="menuitem">
+            <li>
                 <button id="affaldstype-asc">Affaldstype (A-Å)</button>
             </li>
-            <li role="menuitem">
+            <li>
                 <button id="affaldstype-desc">Affaldstype (Å-A)</button>
             </li>
         </ul>

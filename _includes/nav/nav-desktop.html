@@ -1,0 +1,44 @@
+{% for link in include.links %}
+
+    {%- assign _page = nil -%}
+    {%- assign _current = false -%}
+    {%- assign _active = false -%}
+
+    {%- if link.href -%}
+        {%- assign _page = link.href | resolve_permalink -%} {%- comment -%} ---- Get the page information for the link using resolve_permalink() ---- {%- endcomment -%}
+    {%- endif -%}
+
+    {% if _page %}
+
+        {%- comment -%} 
+        ---------------------------------------------------------------
+        | Check whether the link matches the currently displayed page |
+        --------------------------------------------------------------- 
+        {%- endcomment -%}
+
+        {%- if page.url == _page.permalink -%}
+            {%- assign _current = true -%}
+            {%- assign _active = true -%}
+        {%- endif -%}
+
+        {%- comment -%} 
+        -----------------------------------------------------------------------
+        | Check whether the link is a subpage to the currently displayed page |
+        ----------------------------------------------------------------------- 
+        {%- endcomment -%}
+
+        {%- if link.categorynav -%}
+            {%- if page.category == link.categorynav -%}
+                {%- assign _active = true -%}
+            {%- endif -%}
+        {%- endif -%}
+
+        <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
+            <a href="{{ _page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
+                <span>{{ _page.title | smartify }}</span>
+            </a>
+        </li>
+
+    {% endif %}
+  
+{% endfor %}

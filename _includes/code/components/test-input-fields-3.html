@@ -1,0 +1,24 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip, hjælpetekst og prefix</p>
+
+            <div class="form-group">
+                <label class="form-label" for="input-text">E-mail</label>
+                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                    data-tooltip-id="input-text-tooltipbutton" data-position="above"
+                    data-trigger="click"><button class="button button-unstyled tooltip-target"
+                        type="button" aria-label="Læs mere">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
+                <span class="form-hint" id="input-text-hint">Her er en hjælpetekst</span>
+
+                <div class="form-input-wrapper form-input-wrapper--prefix">
+                    <div class="form-input-prefix" aria-hidden="true">Pre</div>
+                    <input type="text" id="input-text" name="input-text" class="form-input"
+                        aria-describedby="input-text-hint " required>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

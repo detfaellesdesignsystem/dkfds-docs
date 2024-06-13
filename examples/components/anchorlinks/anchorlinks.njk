@@ -1,0 +1,12 @@
+{% from "components/anchorlinks/anchorlinks.njk" import anchorlinks as anchorlinks %}
+
+{{ 
+    anchorlinks({
+        "id": "anchorlinks-example-id",
+        "links": [
+            { "text": "Æbler" },
+            { "text": "Pærer" },
+            { "text": "Bananer" }
+        ]
+    }) 
+}}

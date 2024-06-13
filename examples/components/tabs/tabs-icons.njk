@@ -1,0 +1,31 @@
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
+
+{{ 
+    tabs({
+        "items": [
+            {
+                "button": {
+                    "text": "Billede",
+                    "id": "tab-icon1",
+                    "icon": "file-image",
+                    "selected": true
+                },
+                "panel": {
+                    "id": "tabpanel-icon-1",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper, enim eu fringilla varius, massa lectus molestie lacus, sed malesuada justo magna sit amet eros. Nam accumsan dignissim dignissim. In hac habitasse platea dictumst. Cras feugiat maximus turpis, id ullamcorper purus congue ut.</p>"
+                }
+            },
+            {
+                "button": {
+                    "text": "Dokument",
+                    "id": "tab-icon2",
+                    "icon": "insert-drive-file"
+                },
+                "panel": {
+                    "id": "tabpanel-icon-2",
+                    "content": "<p>Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit varius. Sed commodo at augue sit amet auctor. Maecenas ligula massa, rutrum quis porttitor id, semper ut libero. Nam quis felis porta lorem consequat eleifend a rutrum ante.</p>"
+                }
+            }
+        ]
+    }) 
+}}

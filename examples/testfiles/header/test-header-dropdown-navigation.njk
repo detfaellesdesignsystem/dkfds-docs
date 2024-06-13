@@ -1,0 +1,96 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+{% set navigation_menu_data = {
+    "ariaLabelMobile": "Hovedmenu og undermenuer",
+    "links": [
+        { "text": "Første menupunkt" },
+        { "text": "Andet menupunkt",
+          "links": [
+              { "text": "Undermenu 2.1" },
+              { "text": "Undermenu 2.2" },
+              { "text": "Undermenu 2.3" },
+              { "text": "Undermenu 2.4" }
+          ]
+        },
+        { "text": "Tredje menupunkt" },
+        { "text": "Fjerde menupunkt" },
+        { "text": "Femte menupunkt", "active": true,
+          "links": [
+              { "text": "Undermenu 5.1" },
+              { "text": "Undermenu 5.2 med flere undermenuer kun synlige på mobil", "active": true, "currentDesktop": true,
+                "links": [
+                    { "text": "Undermenu 5.2 med flere undermenuer kun synlige på mobil", "overview": true, "current": true },
+                    { "text": "Undermenu 5.2.1" },
+                    { "text": "Undermenu 5.2.2" },
+                    { "text": "Undermenu 5.2.3" },
+                    { "text": "Undermenu 5.2.4" }
+                ] 
+              },
+              { "text": "Undermenu 5.3" }
+          ]
+        }
+    ]
+} %}
+
+<header class="header">
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    {{ navigation_menu(navigation_menu_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_navigation_menu(navigation_menu_data) }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            {{
+                overflowmenu({
+                "button": {"text": "Overflow menu"},
+                "id": "overflow1",
+                "openRight": true,
+                "content": 
+                    "<ul class='overflow-list'>
+                        <li><button>Mulighed 1</button></li>
+                        <li><button>Mulighed 2</button></li>
+                        <li><button>Mulighed 3</button></li>
+                    </ul>"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

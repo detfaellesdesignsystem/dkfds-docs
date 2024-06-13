@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="220px" viewBox="0 0 360 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Tjekboks-don't</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tjekboks-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1.000000)">
+            <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="360" height="220"></rect>
+            <rect id="Rectangle" stroke="#747474" x="18.5" y="61.5" width="19" height="19"></rect>
+            <text id="Privatperson" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="16" font-weight="normal" fill="#000000">
+                <tspan x="47" y="77">Privatperson</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#474E95" x="18.5" y="91.5" width="19" height="19"></rect>
+            <polyline id="Path" stroke="#474E95" stroke-width="3" points="23 102.082196 26.0877193 107 34 94"></polyline>
+            <text id="Virksomhed" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="16" font-weight="normal" fill="#474E95">
+                <tspan x="47" y="107">Virksomhed</tspan>
+            </text>
+            <rect id="Rectangle-Copy-7" stroke="#747474" fill="#BFBFBF" x="18.5" y="21.5" width="321" height="26"></rect>
+        </g>
+    </g>
+</svg>

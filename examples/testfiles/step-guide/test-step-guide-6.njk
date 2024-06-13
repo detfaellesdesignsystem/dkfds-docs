@@ -1,0 +1,34 @@
+{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Skifter ved md/lg-størrelse og ubegrænset bredde</p>
+            <div>
+            {{ 
+                overflow_stepguide({
+                    "id": "trinindikator-overflow",
+                    "breakpoint": "md",
+                    "hasMaxWidth": false,
+                    "steps": [
+                        {
+                            "text": "Lorem ipsum",
+                            "href": "javascript:void(0);",
+                            "icon": {"name": "done", "ariaLabel": "Gennemført", "ariaHidden": false}
+                        },
+                        {
+                            "text": "Dolor sit amet",
+                            "href": "javascript:void(0);",
+                            "active": true
+                        },
+                        {
+                            "text": "Consectetur adipiscing elit",
+                            "href": "javascript:void(0);"
+                        }
+                    ]
+                }) 
+            }}
+            </div>
+        </div>
+    </div>
+</main>

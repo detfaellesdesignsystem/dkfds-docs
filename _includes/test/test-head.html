@@ -1,0 +1,47 @@
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+
+<!-- Title and meta description
+================================================== -->
+{% include meta.html %}
+
+<!-- Favicons
+================================================== -->
+<!-- 128x128 -->
+<link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon2-erst.png">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon2-erst.png">
+
+<!-- CSS
+================================================== -->
+
+<!-- Preload fonts -->
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
+<link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
+
+<link rel="preload" href="{{ site.baseurl }}/assets/style/test_borger.css" as="style">
+<link rel="preload" href="{{ site.baseurl }}/assets/style/test_virk.css" as="style">
+<link rel="preload" href="{{ site.baseurl }}/assets/style/test_neutral.css" as="style">
+<link rel="preload" href="{{ site.baseurl }}/assets/js/theme.js" as="script">
+
+<style>
+    body {
+      opacity: 0; /*hide page until theme is downloaded by js.*/
+    }
+</style>
+
+<noscript>
+  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
+</noscript>

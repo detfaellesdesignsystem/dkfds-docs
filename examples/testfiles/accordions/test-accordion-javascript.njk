@@ -1,0 +1,29 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">JavaScript i accordions</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionID",
+                    "openCloseButton": true,
+                    "items": [
+                        {
+                            "title": "Accordion 1",
+                            "content": "<p>This is some accordion content.</p>"
+                        },
+                        {
+                            "title": "Accordion 2",
+                            "content": "<p>This is some accordion content.</p>"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

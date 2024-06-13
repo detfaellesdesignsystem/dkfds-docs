@@ -1,0 +1,56 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Standard</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example1",
+                    "name": "appointment-date1",
+                    "label": "Dato for aftale",
+                    "required": false
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example2",
+                    "name": "appointment-date2",
+                    "label": "Dato for aftale",
+                    "requiredLabel": true
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example3",
+                    "name": "appointment-date3",
+                    "label": "Dato for aftale",
+                    "optionalLabel": true
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Disabled</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example4",
+                    "name": "appointment-date4",
+                    "label": "Dato for aftale",
+                    "disabled": true
+                })
+            }}
+        </div>
+    </div>
+</main>

@@ -1,0 +1,15 @@
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+{{ mobile_solution_info(solution_info_data) }}

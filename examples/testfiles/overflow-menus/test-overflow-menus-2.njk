@@ -1,0 +1,34 @@
+{% from "components/overflow-menu/overflow-menu-sort.njk" import overflowmenu as overflowmenu_sort %}
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Sortering</p>
+            <div class="overflow-menu overflow-menu--sort overflow-menu--open-right"
+                id="overflow-sort-example">
+                <button class="button-overflow-menu" data-js-target="overflow-sort-example-panel"
+                     aria-expanded="false">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#sort-default"></use></svg>Sortér:<span
+                        class="selected-value"></span>
+                </button>
+                <div class="overflow-menu-inner" id="overflow-sort-example-panel" aria-hidden="true">
+                    <ul class='overflow-list' role="menu">
+                        <li role="menuitem">
+                            <button id="newfirst" aria-current="true">Nyeste først</button>
+                        </li>
+                        <li role="menuitem">
+                            <button id="oldfirst">Ældste først</button>
+                        </li>
+                        <li role="menuitem">
+                            <button id="affaldstype-asc">Affaldstype (A-Å)</button>
+                        </li>
+                        <li role="menuitem">
+                            <button id="affaldstype-desc">Affaldstype (Å-A)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

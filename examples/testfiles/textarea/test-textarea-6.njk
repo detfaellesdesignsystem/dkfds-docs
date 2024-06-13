@@ -1,0 +1,32 @@
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet-label og fejlbesked</p>
+            {{
+                textarea({
+                    "id": "input-textarea",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "requiredLabel": true,
+                    "errorMessage": "Dette er en fejlbesked"
+                })
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet-label og lang fejlbesked</p>
+            {{
+                textarea({
+                    "id": "input-textarea",
+                    "name": "input-textarea",
+                    "label": "Tekstområde med label",
+                    "requiredLabel": false,
+                    "errorMessage": "Dette er en meget lang fejlbesked, der er en del længere en fejlbeskeden set i det første eksempel"
+                })
+            }}
+        </div>
+    </div>
+</main>

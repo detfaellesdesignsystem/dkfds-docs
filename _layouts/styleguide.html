@@ -3,123 +3,123 @@ layout: default
 ---
 
 <div class="container page-container">
-  <div class="row">
+    <div class="row">
 
-    <aside class="col-12 col-lg-3 sidebar-col">
-      <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
-        {% assign sidenavFromNavData = site.data.nav[page.category] %}
-        {% if sidenavFromNavData %}
-        <ul class="sidenav-list">
-          {% include nav/sidenavigation/list.html links=sidenavFromNavData use_alt_text=true %}
-        </ul>
-        {% endif %}
-      </nav>
-    </aside>
+        <aside class="col-12 col-lg-3">
+            <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
+                {%- assign sidenavFromNavData = site.data.nav[page.category] -%}
 
-    <main class="col-12 col-lg-9" id="main-content">
-      {% include theme-alert.html %}
-      <section id="section-{{page.id}}">
-          {% for alert in page.alerts %}
-          <div class="alert alert-{{ alert.type }} {% if alert.icon %}alert--show-icon{% endif %}" role="alert">
-              <div class="alert-body">
-                  {% if alert.header %}
-                  <h3 class="alert-heading">{{alert.header}}</h3>
-                  {% endif %}
-                  {% if alert.content  %}
-                  <p class="alert-text">
-                    {{alert.content}}
-                  </p>
-                  {% endif %}
-              </div>
-          </div>
-          {% endfor %}
-          {% if page.mailalert == true %}
-          <div class="alert alert-error mt-0 mb-8 d-none" role="alert" id="mail-error-summary">
-              <div class="alert-body">
-                  <h2 class="alert-heading">Der er problemer</h2>
-                  <ul class="alert-text nobullet-list"></ul>
-              </div>
-          </div>
-          {% endif %}
+                {% if sidenavFromNavData %}
+                <ul class="sidemenu">
+                    {%- include nav/sidenavigation/list.html links=sidenavFromNavData -%}
+                </ul>
+                {%- endif -%}
+            </nav>
+        </aside>
 
-          <div class="subheading">
-            {{ page.subcategory }}
-          </div>
+        <main class="col-12 col-lg-9" id="main-content">
+            {%- include theme-alert.html -%}
+            <section id="section-{{page.permalink}}">
 
-          {% if page.title == "Print" %}
-          <h1 id="printpage">{{ page.title }}</h1>
-          {% else %}
-          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-          {% endif %}
+                <div class="subheading">
+                    {{ page.subcategory }}
+                </div>
 
-          {% comment %}List of hash links/anchor links outputted for mobile overview and use{% endcomment %}
-          {% if page.subnav and page.anchor == true %}
-          <ul class="d-lg-none nobullet-list">
-          {% for subnavitem in page.subnav -%}
-          <li><a href="{{subnavitem.href}}">{{subnavitem.text}}</a></li>
-          {% endfor %}
-          </ul>
-          {% endif %}
+                {% comment %} There's an icon with id "print" so the print page needs another id {% endcomment %}
+                {% if page.title == "Print" %}
+                <h1 id="printpage">{{ page.title }}</h1>
+                {% comment %} Anchorlink component heading has id "anchorlinks" so the anchorlinks page needs another id {% endcomment %}
+                {% elsif page.title == "Anchorlinks" %}
+                <h1 id="anchorlinks-page">{{ page.title }}</h1>
+                {% elsif page.title == "Selvbetjeningsløsninger" %}
+                <h1 id="anchorlinks-page" class="hyphens-manual">Selvbetjenings&shy;løsninger</h1>
+                {% else %}
+                <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+                {% endif %}
 
-          {% if page.lead != null and page.lead != "" %}
-            <p class="font-lead">{{ page.lead }}</p>
-          {% endif %}
+                {% if page.lead != null and page.lead != "" %}
+                <p class="font-lead">{{ page.lead }}</p>
+                {% endif %}
 
-          {% if page.component %}
-          {% include code/preview-box.html component=page.component title=page.componentTitle link=page.componentLink code=page.componentCode url=page.componentUrl %}
-          {% endif %}
+                {%- if page.tabs -%}
+                    {%- if page.tabs == "Retningslinjer, kode" -%}
+                        {%- assign pageContent = content | split: site.excerpt_separator -%}
+                        {{ pageContent[0] }}
+                        <div id="guidelines-section">
+                            {{ pageContent[1] }}
+                        </div>
+                        <div id="code-section">
+                            {{ pageContent[2] }}
+                        </div>
+                    {%- else -%}
+                        {{ content }}
+                    {%- endif %}
+                {%- else -%}
+                    {{ content }}
+                {%- endif %}
 
-          {{ content }}
+                {% if page.category and page.permalink != "/kom-i-gang/implementering-kode/" and page.permalink != "/kom-i-gang/" and page.permalink != "/eksempler/" and page.permalink != "/eksempler/patterns/" %}
+                    {%- assign _links = site.data.nav[page.category] -%}
+                    {%- assign subLinksFound = false -%}
+                    {%- assign isTopLevel = true -%}
 
-          {% if page.category %}
-            {% assign _links = site.data.nav[page.category] %}
-            {% assign _isCurrentInList = false %}
+                    {%- if page.subcategory -%}
+                        {%- assign isTopLevel = false -%}
+                    {%- endif -%}
 
-            {%- for link in _links -%}
-            {% comment %}found in list level {% endcomment %}
-              {% if link.href == page.permalink %}
-                {% unless link.overblik %}
-                  {% if link.categorynav %}
-                    {% assign _links = site.data.nav[link.categorynav] %}
-                    {% break %}
-                  {% endif %}
-                  {% assign _isCurrentInList = true %}
-                  {% break %}
-                {% endunless %}
-              {% endif %}
+                    {%- for link in _links -%}
 
-              {% comment %}not found in level 1 - check all categorynav {% endcomment %}
-              {% if link.categorynav %}
-              {% assign _links_level_3 = site.data.nav[link.categorynav] %}
-                {% for link_3 in _links_level_3 %}
-                  {% if link_3.href == page.permalink %}
-                    {% unless link.overblik %}
-                      {% if link_3.categorynav %}
-                        {% assign _links = site.data.nav[link_3.categorynav] %}
-                        {% break %}
-                      {% endif %}
-                    {% endunless %}
-                    {% assign _isCurrentInList = true %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-            {%- endfor -%}
-            {% if _links.size > 0 and _isCurrentInList == false %}
-            <h2 class="sr-only d-lg-none">Undersider</h2>
+                        {%- if isTopLevel == true -%}
+                            {%- assign subLinksFound = true -%}
+                            {%- break -%}
+                        {%- endif -%}
 
-            <ul class="d-lg-none nobullet-list">
-            {% for link in _links -%}
-            {% unless link.overblik %}
-              {%- assign _page = link.href | resolve_permalink -%}
-            <li><a href="{{link.href}}">{{_page.title}}</a></li>
-            {% endunless %}
-            {% endfor %}
-            </ul>
-            {% endif %}
-          {% endif %}
-      </section>
-    </main>
+                        {%- if link.href == page.permalink -%}
+                            {%- if link.categorynav -%}
+                                {%- assign _links = site.data.nav[link.categorynav] -%}
+                                {%- assign subLinksFound = true -%}
+                            {%- endif -%}
+                        {%- endif -%}
 
-  </div>
+                        {%- if subLinksFound == true -%}
+                            {%- break -%}
+                        {%- endif -%}
+
+                        {%- if link.categorynav -%}
+                            {%- assign _sublinks = site.data.nav[link.categorynav] -%}
+                            {%- for sublink in _sublinks -%}
+                                {%- if sublink.href == page.permalink -%}
+                                    {%- if sublink.categorynav -%}
+                                        {%- assign _links = site.data.nav[sublink.categorynav] -%}
+                                        {%- assign subLinksFound = true -%}
+                                    {%- endif -%}
+                                {%- endif -%}
+                                {%- if subLinksFound == true -%}
+                                    {%- break -%}
+                                {%- endif -%}
+                            {%- endfor -%}
+                        {%- endif -%}
+
+                        {%- if subLinksFound == true -%}
+                            {%- break -%}
+                        {%- endif -%}
+
+                    {%- endfor -%}
+
+                    {% if _links.size > 0 and subLinksFound == true %}
+                    <nav aria-labelledby="mobile-subpages-section" class="mt-9">
+                        <h2 class="sr-only d-lg-none" id="mobile-subpages-section">Undersider</h2>
+                        <ul class="d-lg-none nobullet-list">
+                            {% for link in _links -%}
+                            {%- assign _page = link.href | resolve_permalink -%}
+                            <li><a href="{{link.href}}">{{_page.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    {% endif %}
+                {% endif %}
+            </section>
+        </main>
+
+    </div>
 </div>

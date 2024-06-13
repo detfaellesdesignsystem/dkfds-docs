@@ -1,0 +1,14 @@
+{% from "components/language-switcher/language-switcher.njk" import languageSwitcherMobile as language_switcher_mobile %}
+
+{% set language_switcher_data = {
+    "ariaLabel": "Vælg sprog fra listen",
+    "firstAriaLabel": "Valgt sprog: Dansk",
+    "languages": [
+        {"code": "da", "name": "Dansk", "href": "?lang=da"},
+        {"code": "en-GB", "name": "English", "href": "?lang=en-GB"},
+        {"code": "de", "name": "Deutsch", "href": "?lang=de"},
+        {"code": "pl", "name": "Polski", "href": "?lang=pl"}
+    ]
+} %}
+
+{{ language_switcher_mobile(language_switcher_data) }}

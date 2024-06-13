@@ -1,0 +1,60 @@
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/toast/toast.njk" import toast as toast %}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+<div class="mt-8 mb-8 container" inert>
+    <p>Der er en inert-attribut på dette element - knappen virker ikke og må fortsat ikke virke efter modalen har været åben.</p>
+    {{
+        button({
+            "variant": "secondary",
+            "text": "Knap"
+        })
+    }}
+</div>
+<main class="container page-container" id="main-content">
+    <div class="toast-container" aria-live="assertive" aria-atomic="false" aria-relevant="additions">
+        {{
+            toast({
+                "id": "notification-onlyheading",
+                "variant": "info",
+                "srVariant": "Information",
+                "heading": "Dine ændringer er blevet gemt",
+                "show": true
+            })
+        }}
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Test af inert med modaler</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                button({
+                    "text": "Åbn modal",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+        </div>
+    </div>
+</main>
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-example",
+            "heading": "Modal",
+            "content": "<p>Tjek at fokus er fanget i modalen, når den er åben. Husk at prøve at tabbe ind fra browserens url-linje.</p>",
+            "actions": modal_actions
+        })
+    }}
+</div>

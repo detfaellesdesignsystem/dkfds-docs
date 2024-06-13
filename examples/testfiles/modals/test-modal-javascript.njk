@@ -1,0 +1,55 @@
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">JavaScript for modaler</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Åbn developer console for at se testresultater</p>
+            {{ 
+                button({
+                    "text": "Åbn modal 1",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-1\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+            {{ 
+                button({
+                    "text": "Åbn modal 2",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-2\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+        </div>
+    </div>
+</main>
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-example-1",
+            "heading": "Modal 1",
+            "content": "<p>Tjek at modalen kan lukkes med Escape-tasten.</p>",
+            "actions": modal_actions
+        })
+    }}
+    {{
+        modal({
+            "id": "modal-example-2",
+            "heading": "Modal 2",
+            "content": "<p>Tjek at modalen kan lukkes med Escape-tasten.</p>",
+            "actions": modal_actions
+        })
+    }}
+</div>

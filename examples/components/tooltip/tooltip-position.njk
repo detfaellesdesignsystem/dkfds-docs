@@ -1,25 +1,5 @@
-{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
 
-<!-- Placering: top -->
-{{ 
-    button({
-        "variant": "primary",
-        "text": "Top",
-        "tooltip": {
-            "text": "Top tooltip",
-            "position": "top"
-        }
-    }) 
-}}
+<p>Den her tekst har et tooltip, der er placeret over hjælpeikonet {{ tooltip_helpicon({ "text": "Dette er et tooltip", "id": "helpicon-above", "position": "above", "contentElement": "span" }) }}</p>
 
-<!-- Placering: bund -->
-{{ 
-    button({
-        "variant": "primary",
-        "text": "Bund",
-        "tooltip": {
-            "text": "Bund tooltip",
-            "position": "bottom"
-        }
-    }) 
-}}
+<p>Her er tooltip placeret under hjælpeikonet {{ tooltip_helpicon({ "text": "Dette er et tooltip", "id": "helpicon-below", "position": "below", "contentElement": "span" }) }}</p>

@@ -1,0 +1,47 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip og hjælpetekst</p>
+
+            <div class="form-group">
+                <fieldset aria-describedby="date-example-hint ">
+                    <legend class="form-label">
+                        Indtast en dato
+                        <button class="button button-unstyled" type="button">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+                            <span class="sr-only">Hvad betyder det?</span>
+                        </button>
+                    </legend>
+                    <span class="form-hint" id="date-example-hint">For eksempel 23 11
+                        2008</span>
+
+                    <div class="date-group mt-3">
+
+                        <div class="form-group form-group-day">
+                            <label class="form-label" for="date-example-day">Dag</label>
+
+                            <input type="number" id="date-example-day" class="form-input"
+                                required>
+                        </div>
+
+                        <div class="form-group form-group-month">
+                            <label class="form-label" for="date-example-month">Måned</label>
+
+                            <input type="number" id="date-example-month" class="form-input"
+                                required>
+                        </div>
+
+                        <div class="form-group form-group-year">
+                            <label class="form-label" for="date-example-year">År</label>
+
+                            <input type="number" id="date-example-year" class="form-input"
+                                required>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+</main>

@@ -1,8 +1,6 @@
 {% if include.icon and include.icon != '' %}
-<div class="col-6 col-md-3 icon-container p-0">
-    <div class="icon-box" data-icon-name="{{include.icon}}" data-icon-keywords="{{include.keywords}}">
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#{{include.icon}}"></use></svg>
-        <p>{{include.label}}</p>
-    </div>
-  </div>
+<li class="icon-box col-6 col-md-3" data-icon-name="{{include.icon}}" data-icon-keywords="{{include.keywords}}">
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#{{include.icon}}"></use></svg>
+    <p>{{include.label}}</p>
+</li>
 {% endif %}

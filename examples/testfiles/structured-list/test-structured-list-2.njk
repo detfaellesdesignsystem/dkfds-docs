@@ -1,0 +1,27 @@
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Responsiv med redigering</p>
+            {{ 
+                structured_list({
+                    "breakpoint": "sm",
+                    "edit": true,
+                    "items": [
+                        {
+                            "label": "Navn",
+                            "value": "Karen Jensen",
+                            "href": "#"
+                        },
+                        {
+                            "label": "Telefonnummer",
+                            "value": "12 34 56 78",
+                            "href": "#"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

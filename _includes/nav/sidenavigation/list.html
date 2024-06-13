@@ -1,27 +1,20 @@
-{% for link in include.links -%}
-  {% if link.href -%}
-    {% assign _page = link.href | resolve_permalink %}
-  {% else -%}
-    {% assign _page = nil %}
-  {% endif %}
-    {% if _page -%}
-      {%
-        include nav/sidenavigation/page-item.html
-        page=_page
-        rel=include.rel
-        flat=include.flat
-        links=link.links
-        use_alt_text=include.use_alt_text
-        categorynav=link.categorynav
-        alternative_text=link.alternative_text
-        subnav_class=include.subnav_class
-      %}
-    {% else -%}
-      {% include nav/sidenavigation/link-item.html
-        link=link
-        subnav_class=include.subnav_class
-        href_key=include.href_key
-        text_key=include.text_key
-      %}
-    {% endif %}
-{% endfor %}
+{%- for link in include.links -%}
+
+  {%- assign _page = nil -%}
+
+  {%- if link.tabs -%}
+    {%- assign tabLinks = site.data.nav[link.tabs] -%}
+    {%- assign guidelinelink = tabLinks | first -%}
+    {%- if guidelinelink.href -%}
+      {%- assign _page = guidelinelink.href | resolve_permalink %} {%- comment %} ---- Get the page information for the link using resolve_permalink() ---- {%- endcomment -%}
+    {%- endif -%}
+
+  {%- elsif link.href -%}
+    {%- assign _page = link.href | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
+  {%- endif %}
+
+  {%- if _page -%}
+    {%- include nav/sidenavigation/page-item.html page=_page categorynav=link.categorynav %}
+  {%- endif %}
+  
+{%- endfor %}

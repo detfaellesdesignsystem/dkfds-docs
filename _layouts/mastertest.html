@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta name="robots" content="noindex" >
+    {% include head.html %}
+</head>
+<body class="layout-{{ page.layout }}">
+    {% include code/components/fds-base-svg.html %}
+    {% include test/test-header.html %}
+    <main class="container page-container" id="main-content">
+        <div class="row">
+            <div class="col-12">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+    {% include scripts.html %}
+</body>
+</html>

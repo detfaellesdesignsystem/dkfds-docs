@@ -1,0 +1,21 @@
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
+
+{% set navigation_menu_data = {
+    "search": {
+        "id": "header-search",
+        "name": "header-search"
+    },
+    "links": [
+        { "text": "Første menupunkt" },
+        { "text": "Andet menupunkt", "active": true,
+          "links": [
+              { "text": "Endnu en undermenu" },
+              { "text": "Endnu en undermenu", "current": true },
+              { "text": "Endnu en undermenu" }
+          ]
+        },
+        { "text": "Tredje menupunkt" }
+    ]
+} %}
+
+{{ mobile_navigation_menu(navigation_menu_data) }}

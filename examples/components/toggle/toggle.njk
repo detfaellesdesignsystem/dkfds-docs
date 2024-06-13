@@ -1,4 +1,18 @@
-{% from "components/toggle/toggle.njk" import toggle as toggle %}
-<div class="form-group">
-{{ toggle(data)}}
+{% from "components/toggle/toggle.njk" import toggle_switch as toggle_switch %}
+
+<div role="group" aria-labelledby="toggle-switch-heading" class="w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Indstillinger</h2>
+    {{ 
+        toggle_switch({
+            "label": "Vis afsluttede sager",
+            "classes": "w-percent-100",
+            "checked": true
+        })
+    }}
+    {{ 
+        toggle_switch({
+            "label": "Vis sager ældre end et år",
+            "classes": "w-percent-100"
+        })
+    }}
 </div>

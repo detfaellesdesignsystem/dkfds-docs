@@ -1,0 +1,23 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Tooltip og hjælpetekster</p>
+            {{
+                radiobuttons({
+                    "id": "radiogroup",
+                    "radiogroupLegend": "Liste med radioknapper",
+                    "groupname": "radio-example",
+                    "tooltip": { "text": "Dette er et tooltip", "id": "radiogroup-tooltip", "contentElement": "span" },
+                    "helptext": "Overordnet hjælpetekst",
+                    "items": [
+                        { "value": "v1", "label": "Valg 1" },
+                        { "value": "v2", "label": "Valg 2", "helptext": "Hjælpetekst til en enkelt knap" },
+                        { "value": "v3", "label": "Valg 3" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

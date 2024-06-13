@@ -1,0 +1,31 @@
+{% from "components/tabs/tabs.njk" import tabs as tabs %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Kun ét faneblad</h1>
+            <p>Åbn konsollen og tjek for sigende fejlbesked</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                tabs({
+                    "items": [
+                        {
+                            "button": {
+                                "text": "Indhold 1",
+                                "id": "tab1",
+                                "selected": true
+                            },
+                            "panel": {
+                                "id": "tabpanel1",
+                                "content": "<p>Lorem ipsum dolor sit amet.</p>"
+                            }
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+</main>

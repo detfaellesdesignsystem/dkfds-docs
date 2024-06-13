@@ -1,0 +1,15 @@
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{{ mobile_portal_info(portal_info_data) }}

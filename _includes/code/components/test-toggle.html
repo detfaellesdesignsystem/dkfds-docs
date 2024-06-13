@@ -1,0 +1,58 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Toggle switch</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div role="group" aria-labelledby="toggle-switch-heading"
+                class="w-percent-100 w-percent-sm-50">
+                <h2 class="h4 mb-4" id="toggle-switch-heading">Tests</h2>
+
+                <button class="toggle-switch" type="button" role="switch"
+                    aria-checked="false"><span>Ingen klasser påsat</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>Slået fra ved sidens indlæsning</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="true"><span>Slået til ved sidens indlæsning</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false" disabled><span>Slået fra og disabled</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="true" disabled><span>Slået til og disabled</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Suspendisse tincidunt vulputate
+                        risus a rhoncus. Duis maximus velit vitae dolor semper, at condimentum
+                        nunc pretium.</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>LoremipsumdolorsitametconsecteturadipiscingelitSuspendissetinciduntvulputaterisusarhoncusDuismaximusvelitvitaedolorsemperatcondimentumnuncpretium</span></button>
+
+                <button class="toggle-switch" type="button" role="switch" aria-checked="false"
+                    switch-attribute><span>Attribut tilføjet</span></button>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let toggleSwitches = document.querySelectorAll('.toggle-switch');
+        for (let i = 0; i < toggleSwitches.length; i++) {
+            toggleSwitches[i].addEventListener("click", function() {
+                if (this.getAttribute("aria-checked") === "true") {
+                    this.setAttribute("aria-checked", "false");
+                } else {
+                    this.setAttribute("aria-checked", "true");
+                }
+            }, false);
+        }
+    });
+</script>

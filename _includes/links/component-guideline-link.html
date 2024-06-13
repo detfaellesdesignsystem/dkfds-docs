@@ -1,0 +1,290 @@
+{%- comment -%}
+--------
+EXAMPLE: HOW TO USE IN MARKDOWN FILES
+{% include links/component-guideline-link.html linktext="Tekst der skal blive til link" %}
+--------
+{%- endcomment -%}
+
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+
+    {%- when "accordions", 
+             "accordion" -%}
+        <a href="/komponenter/accordions/">{{ include.linktext }}</a>
+
+    {%- when "åbn/luk alle accordions function" -%}
+        <a href="/komponenter/accordions/#aabn-luk-alle">{{ include.linktext }}</a>
+
+    {%- when "anchorlinks", 
+             "anchorlinks-komponenten" -%}
+        <a href="/komponenter/anchorlinks/">{{ include.linktext }}</a>
+
+    {%- when "badges" -%}
+        <a href="/komponenter/badges/">{{ include.linktext }}</a>
+
+    {%- when "statusbadges" -%}
+        <a href="/komponenter/badges/#statusbadges">{{ include.linktext }}</a>
+
+    {%- when "beskeder", 
+             "besked", 
+             "beskeder (alerts)" -%}
+        <a href="/komponenter/beskeder/">{{ include.linktext }}</a>
+
+    {%- when "luk knap i beskeder" -%}
+        <a href="/komponenter/beskeder/#besked-med-luk-knap">{{ include.linktext }}</a>
+
+    {%- when "brødkrumme" -%}
+        <a href="/komponenter/broedkrumme/">{{ include.linktext }}</a>
+
+    {%- when "cards" -%}
+        <a href="/komponenter/cards/">{{ include.linktext }}</a>
+
+    {%- when "cards med samme højde" -%}
+        <a href="/komponenter/cards/#cards-med-samme-hoejde">{{ include.linktext }}</a>
+
+    {%- when "cookiemeddelelse", 
+             "cookiemeddelelsen", 
+             "cookiemeddelelse komponent", 
+             "cookiemeddelelse komponenten" -%}
+        <a href="/komponenter/cookiemeddelelse/">{{ include.linktext }}</a>
+
+    {%- when "datofelter" -%}
+        <a href="/komponenter/datofelter/">{{ include.linktext }}</a>
+
+    {%- when "datovælger", 
+             "datovælgeren", 
+             "datovælgerens" -%}
+        <a href="/komponenter/datovaelger/">{{ include.linktext }}</a>
+
+    {%- when "datoformatet" -%}
+        <a href="/komponenter/datovaelger/#datoformat">{{ include.linktext }}</a>
+
+    {%- when "detaljer", 
+             "detaljekomponenten", 
+             "detalje komponent" -%}
+        <a href="/komponenter/detaljer/">{{ include.linktext }}</a>
+
+    {%- when "dropdown" -%}
+        <a href="/komponenter/dropdown/">{{ include.linktext }}</a>
+
+    {%- when "faneblade" -%}
+        <a href="/komponenter/faneblade/">{{ include.linktext }}</a>
+
+    {%- when "fejlmeddelelser" -%}
+        <a href="/komponenter/fejlmeddelelser/">{{ include.linktext }}</a>
+
+    {%- when "fejlbeskeder i accordions" -%}
+        <a href="/komponenter/fejlmeddelelser/#accordions">{{ include.linktext }}</a>
+
+    {%- when "fejlopsummering", 
+             "fejlopsummeringer", 
+             "fejlopsummeringen", 
+             "fejlopsummeringskomponenten" -%}
+        <a href="/komponenter/fejlopsummering/">{{ include.linktext }}</a>
+
+    {%- when "footer", 
+             "se footer komponenten",
+             "footer-komponenten" -%}
+        <a href="/komponenter/footer/">{{ include.linktext }}</a>
+
+    {%- when "se eksempler på forskellige sammensætninger" -%}
+        <a href="/komponenter/footer/#tre-kolonner">{{ include.linktext }}</a>
+
+    {%- when "footeren" -%}
+        <a href="/komponenter/footer/#logo">{{ include.linktext }}</a>
+
+    {%- when "funktionslink", 
+             "funktionslinks", 
+             "funktions link" -%}
+        <a href="/komponenter/funktionslink/">{{ include.linktext }}</a>
+
+    {%- when "gå til sidens indhold" -%}
+        <a href="/komponenter/skip-link/">{{ include.linktext }}</a>
+
+    {%- when "header", 
+             "se header-komponenten", 
+             "header-komponenten", 
+             "headeren", 
+             "headerens", 
+             "headerkomponentens side", 
+             "header komponent" -%}
+        <a href="/komponenter/header/">{{ include.linktext }}</a>
+
+    {%- when "inputfelter" -%}
+        <a href="/komponenter/inputfelter/">{{ include.linktext }}</a>
+
+    {%- when "hjælpetekst", 
+             "hjælpetekster" -%}
+        <a href="/komponenter/inputfelter/#hjaelpetekst">{{ include.linktext }}</a>
+
+    {%- when "readonly-inputfelter", 
+             "read-only" -%}
+        <a href="/komponenter/inputfelter/#read-only">{{ include.linktext }}</a>
+
+    {%- when "deaktiverede felter", 
+             "deaktiverede inputfelter" -%}
+        <a href="/komponenter/inputfelter/#deaktiveret">{{ include.linktext }}</a>
+
+    {%- when "retningslinjer for obligatoriske og frivillige felter" -%}
+        <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-felter">{{ include.linktext }}</a>
+
+    {%- when "prefix og suffix på felter" -%}
+        <a href="/komponenter/inputfelter/#prefix-og-suffix">{{ include.linktext }}</a>
+
+    {%- when "karakterbegrænsning" -%}
+        <a href="/komponenter/inputfelter/#karakterbegraensning">{{ include.linktext }}</a>
+
+    {%- when "feltbredde i tekstfelter" -%}
+        <a href="/komponenter/inputfelter/#feltbredde">{{ include.linktext }}</a>
+
+    {%- when "knapper" -%}
+        <a href="/komponenter/knapper/">{{ include.linktext }}</a>
+
+    {%- when "retningslinjer for primærknap" -%}
+        <a href="/komponenter/knapper/#saadan-bruges-komponenten">{{ include.linktext }}</a>
+
+    {%- when "klikbare ikoner" -%}
+        <a href="/komponenter/knapper/#klikbart-ikon">{{ include.linktext }}</a>
+
+    {%- when "sekundærknapper" -%}
+        <a href="/komponenter/knapper/#sekundaerknapper">{{ include.linktext }}</a>
+
+    {%- when "tertiærknapper" -%}
+        <a href="/komponenter/knapper/#tertiaerknapper">{{ include.linktext }}</a>
+
+    {%- when "tilbage knap" -%}
+        <a href="/komponenter/knapper/#tilbage-knap">{{ include.linktext }}</a>
+
+    {%- when "spinner", 
+             "loading spinner", 
+             "spinner komponenten" -%}
+        <a href="/komponenter/spinner/">{{ include.linktext }}</a>
+
+    {%- when "modal", 
+             "modaler", 
+             "modal komponent" -%}
+        <a href="/komponenter/modal/">{{ include.linktext }}</a>
+
+    {%- when "modalvindue, som kræver handling" -%}
+        <a href="/komponenter/modal/#kraever-handling">{{ include.linktext }}</a>
+
+    {%- when "overflow menu", 
+             "overflowmenu",
+             "overflowmenuen", 
+             "overflow menuer" -%}
+        <a href="/komponenter/overflowmenu/">{{ include.linktext }}</a>
+
+    {%- when "sortering", 
+             "sortering med overflow menu" -%}
+        <a href="/komponenter/overflowmenu/#sortering">{{ include.linktext }}</a>
+
+    {%- when "paginering" -%}
+        <a href="/komponenter/paginering/">{{ include.linktext }}</a>
+
+    {%- when "radioknap", 
+             "radioknapper" -%}
+        <a href="/komponenter/radioknap/">{{ include.linktext }}</a>
+
+    {%- when "radioknap med skjult indhold" -%}
+        <a href="/komponenter/radioknap/#skjult-indhold-collapse">{{ include.linktext }}</a>
+
+    {%-  when "hjælpetekst på radioknap" -%}
+        <a href="/komponenter/radioknap/#hjaelpetekst">{{ include.linktext }}</a>
+
+    {%- when "sprogvælger", 
+             "sprogvælgeren" -%}
+        <a href="/komponenter/sprogvaelger/">{{ include.linktext }}</a>
+
+    {%- when "tooltips på sprogvælgeren" -%}
+        <a href="/komponenter/sprogvaelger/#sprogvaelger-med-tooltip">{{ include.linktext }}</a>
+
+    {%- when "søgefelt", 
+             "søgefelter" -%}
+        <a href="/komponenter/search/">{{ include.linktext }}</a>
+
+    {%- when "tabeller" -%}
+        <a href="/komponenter/tables/">{{ include.linktext }}</a>
+
+    {%- when "en responsiv tabel" -%}
+        <a href="/komponenter/tables/#responsiv">{{ include.linktext }}</a>
+
+    {%- when "tabeller med valgbare rækker", 
+             "valgbare rækker i tabel" -%}
+        <a href="/komponenter/tables/#valgbare-raekker">{{ include.linktext }}</a>
+
+    {%- when "strukturerede lister" -%}
+        <a href="/komponenter/tables/#strukturerede-lister">{{ include.linktext }}</a>
+
+    {%- when "søgning i tabeller" -%}
+        <a href="/komponenter/tables/#soegning-i-tabeller">{{ include.linktext }}</a>
+        
+    {%- when "sortering i tabeller",
+             "tabeller med sortering" -%}
+        <a href="/komponenter/tables/#sortering-i-tabeller">{{ include.linktext }}</a>
+
+    {%- when "tags" -%}
+        <a href="/komponenter/tags/">{{ include.linktext }}</a>
+
+    {%- when "tekstområde" -%}
+        <a href="/komponenter/tekstomraade/">{{ include.linktext }}</a>
+
+    {%- when "tilbage-link", 
+             "tilbage link" -%}
+        <a href="/komponenter/tilbage-link/">{{ include.linktext }}</a>
+
+    {%- when "tilbage til toppen" -%}
+        <a href="/komponenter/tilbage-til-top/">{{ include.linktext }}</a>
+
+    {%- when "tjekboks", 
+             "tjekbokse" -%}
+        <a href="/komponenter/tjekboks/">{{ include.linktext }}</a>
+
+    {%- when "tjekbokse med skjult indhold" -%}
+        <a href="/komponenter/tjekboks/#skjult-indhold-collapse">{{ include.linktext }}</a>
+
+    {%- when "toastbesked", 
+             "toastbeskeders", 
+             "toastbeskederne" -%}
+        <a href="/komponenter/toastbesked/">{{ include.linktext }}</a>
+
+    {%- when "toggle switch", 
+             "toggle switch komponent" -%}
+        <a href="/komponenter/toggle/">{{ include.linktext }}</a>
+
+    {%- when "tooltip", 
+             "tooltip komponent", 
+             "tooltip komponenten",
+             "tooltips" -%}
+        <a href="/komponenter/tooltip/">{{ include.linktext }}</a>
+    {%- when "ikoner med hover-tooltip" -%}
+        <a href="/komponenter/tooltip/#ikoner-med-hover-tooltip">{{ include.linktext }}</a>
+
+    {%- when "trinindikator" -%}
+        <a href="/komponenter/trinindikator/">{{ include.linktext }}</a>
+
+    {%- when "responsive trinindikatorers", 
+             "responsiv trinindikator" -%}
+        <a href="/komponenter/trinindikator/#responsiv">{{ include.linktext }}</a>
+
+    {%- when "fejl i et trin" -%}
+        <a href="/komponenter/trinindikator/#trinindikator-med-fejl">{{ include.linktext }}</a>
+
+    {%- when "trinindikator med ekstra information" -%}
+        <a href="/komponenter/trinindikator/#ekstra-information">{{ include.linktext }}</a>
+
+    {%- when "vedhæft fil" -%}
+        <a href="/komponenter/fil-upload/">{{ include.linktext }}</a>
+
+    {%- when "venstremenu", 
+             "venstremenuen", 
+             "venstremenu-komponenten" -%}
+        <a href="/komponenter/venstremenu/">{{ include.linktext }}</a>
+
+    {%- when "venstremenu med ekstra information" -%}
+        <a href="/komponenter/venstremenu/#ekstra-information">{{ include.linktext }}</a>
+
+    {%- else -%}
+        {{ include.linktext }}
+
+{%- endcase -%}

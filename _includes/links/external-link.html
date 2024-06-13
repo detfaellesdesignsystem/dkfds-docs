@@ -1,0 +1,495 @@
+{%- comment -%}
+--------
+EXAMPLE: HOW TO USE IN MARKDOWN FILES
+{% include links/external-link.html linktext="Link tekst" classes="function-link" %}
+--------
+{%- endcomment -%}
+
+{%- assign classes = "icon-link" -%}
+{%- if include.classes -%}
+    {%- assign classes = classes | append: ' ' | append: include.classes -%}
+{%- endif -%}
+{%- assign classes = 'class="' | append: classes | append: '"' -%}
+{%- assign attributes = '' | append: classes | append: ' target="_blank"' -%}
+{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+
+    {%- comment -%} -------- github.com -------- {%- endcomment -%}
+
+    {%- when "se koden på github",
+             "hente koden fra github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "opret et issue på github",
+             "oprette et issue på github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "zipfil på github", 
+             "zip-filen i github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "package.json" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "variables" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/stylesheets" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "date-input-macroen" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "macroer" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "issue #74 på github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "img" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/dist/img" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "migreringsguide for v10.0.0" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+        
+
+
+    {%- comment -%} -------- w3.org -------- {%- endcomment -%}
+
+    {%- when "w3c (wcag 2.1): understanding sc 1.3.5: identify input purpose (level aa)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c (wcag 2.1): understanding sc 2.2.1: timing adjustable (level a)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c (wcag 2.1): understanding sc 1.4.3: contrast (minimum) (level aa)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c (wcag 2.1): understanding sc 1.4.11: non-text contrast (level aa)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inkludér altid tekstalternativer" -%}
+        <a href="https://www.w3.org/TR/WCAG21/#text-alternatives" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "h42: using h1-h6 to identify headings" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H42" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tilgængelighed: sidestruktur og header" -%}
+        <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/#main-heading-after-navigation" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "page-structure - headings" -%}
+        <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "wcag 2.1 (web content accessibility guidelines)" -%}
+        <a href="https://www.w3.org/Translations/WCAG21-da/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "liste over evalueringsværktøjer til webtilgængelighed" -%}
+        <a href="https://www.w3.org/WAI/ER/tools/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "understanding success criterion 3.3.1: error identification" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "understanding success criterion 3.3.3: error suggestion" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c (wcag 2.1): technique f91: failure of success criterion 1.3.1 for not correctly marking up table headers" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tilgængelige tooltips" -%}
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c markup validation service (html)" -%}
+        <a href="https://validator.w3.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c css validation service (css)" -%}
+        <a href="https://jigsaw.w3.org/css-validator/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aria authoring practices guide (apg): disclosure (show/hide) pattern" -%}
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aria authoring practices guide (apg): switch pattern" -%}
+        <a href="https://www.w3.org/WAI/ARIA/apg/patterns/switch/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- digst.dk -------- {%- endcomment -%}
+
+    {%- when "læs mere om kontrastforhold" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/kontrastforhold-farvekontrast/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "om tilgængelig web i det offentlige" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs vejledningen om tilgængelige billeder på nettet" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/tilgaengelige-billeder-paa-nettet/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "lær hvordan du udfører easy checks" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/easy-checks/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs om de syv hyppige fejl og deres betydning" -%}
+        <a href="https://digst.dk/digital-service/webtilgaengelighed/vejledning/syv-hyppige-fejl-og-deres-betydning/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs om cookies på digitaliseringsstyrelsens hjemmeside" -%}
+        <a href="https://digst.dk/sikkerhed/digitale-tilsyn/tilsyn-med-sporingsteknologiomraadet/cookievejledningen/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- arkitektur.digst.dk -------- {%- endcomment -%}
+
+    {%- when "06. understøttelse af styresystemer og browsere (fælles aftalt)" -%}
+        <a href="https://arkitektur.digst.dk/node/1194#06-understttelse-af-styresystemer-og-browsere-flle" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "læs de fælles krav til gode brugeroplevelser" -%}
+        <a href="https://arkitektur.digst.dk/metoder/arkitekturmetoder/introduktion-til-faelles-krav-til-gode-brugeroplevelser/faelles-krav-til" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+        
+
+
+    {%- comment -%} -------- YouTube -------- {%- endcomment -%}
+
+    {%- when 'se videoen "det fælles designsystem til udviklere" på youtube' -%}
+        <a href="https://www.youtube.com/watch?v=A5MvjCaoZWk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when 'se videoen "det fælles designsystem til designere og ux&apos;ere" på youtube' -%}
+        <a href="https://www.youtube.com/watch?v=dvXn9a0_8tQ" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "ally long: field-tested interfaces for the next billion (2017)" -%}
+        <a href="https://youtu.be/IjjHTa0YEg4" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when 'se videoen "introduktion til det fælles designsystem" på youtube' -%}
+        <a href="https://www.youtube.com/watch?v=sFRv0SrC9Rw" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- nngroup.com -------- {%- endcomment -%}
+
+    {%- when "aurora harley: icon usability (2014)" -%}
+        <a href="https://www.nngroup.com/articles/icon-usability/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aurora harley: usability testing of icons (2016)" -%}
+        <a href="https://www.nngroup.com/articles/icon-testing/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jakob nielsen: icon classification: resemblance, reference, and arbitrary icons (2014)" -%}
+        <span class="d-sm-inline-block w-percent-sm-90"><a href="https://www.nngroup.com/articles/classifying-icons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a></span>
+
+    {%- when "centered logos hurt website navigation" -%}
+        <a href="https://www.nngroup.com/articles/centered-logos/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "website logo placement for maximum brand recall" -%}
+        <a href="https://www.nngroup.com/articles/logo-placement-brand-recall/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "logo placement affects web navigation and brand recall" -%}
+        <a href="https://www.nngroup.com/videos/logo-placement/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "homepage links remain a necessity" -%}
+        <a href="https://www.nngroup.com/articles/homepage-links/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "ti gode råd vedrørende fejlmeddelelser i formularer" -%}
+        <a href="https://www.nngroup.com/articles/errors-forms-design-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "hoa loranger (2014): accordions are not always the answer for complex content on desktops" -%}
+        <a href="https://www.nngroup.com/articles/accordions-complex-content/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "amy schade: anchors ok? re-assessing in-page links (2017)" -%}
+        <a href="https://www.nngroup.com/articles/in-page-links/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "breadcrumbs: 11 design guidelines for desktop and mobile" -%}
+        <a href="https://www.nngroup.com/articles/breadcrumbs/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "page laubheimer: cards: ui-component definition (2016)" -%}
+        <a href="https://www.nngroup.com/articles/cards-component/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "therese fessenden: modal & nonmodal dialogs: when (& when not) to use them (2017)" -%}
+        <a href="https://www.nngroup.com/articles/modal-nonmodal-dialog" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "angie li: date-input form fields: ux design guidelines (2017)" -%}
+        <a href="https://www.nngroup.com/articles/date-input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jakob nielsen: tabs, used right (2016)" -%}
+        <a href="https://www.nngroup.com/articles/tabs-used-right/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "therese fessenden: footers 101: design patterns and when to use each (2019)" -%}
+        <a href="https://www.nngroup.com/articles/footers/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "susan farrell: utility navigation: what it is and how to design it (2015)" -%}
+        <a href="https://www.nngroup.com/articles/utility-navigation/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "hoa loranger: back-to-top button design guidelines (2017)" -%}
+        <a href="https://www.nngroup.com/articles/back-to-top/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jakob nielsen: checkboxes vs. radio buttons (2004)" -%}
+        <a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "marieke mccloskey: form design quick fix: group form elements effectively using white space (2013)" -%}
+        <a href="https://www.nngroup.com/articles/form-design-white-space/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "katie sherwin: placeholders in form fields are harmful (2014-2018)" -%}
+        <a href="https://www.nngroup.com/articles/form-design-placeholders/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "kara pernice: radio buttons: select one by default or leave all unselected? (2014)" -%}
+        <a href="https://www.nngroup.com/articles/radio-buttons-default-selection/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "raluca budiu: interaction cost (2013)" -%}
+        <a href="https://www.nngroup.com/articles/interaction-cost-definition/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jakob nielsen: top 10 guidelines for homepage usability (2002)" -%}
+        <a href="https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jakob nielsen: search: visible and simple (2001)" -%}
+        <a href="https://www.nngroup.com/articles/search-visible-and-simple/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "the magnifying-glass icon in search design: pros and cons" -%}
+        <a href="https://www.nngroup.com/articles/magnifying-glass-icon/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "amy schade: mobile tables: comparisons and other data tables (2017)" -%}
+        <a href="https://www.nngroup.com/articles/mobile-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aurora harley (2015): timing guidelines for exposing hidden content" -%}
+        <a href="https://www.nngroup.com/articles/timing-exposing-content/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "alita joyce: tooltip guidelines (2019)" -%}
+        <a href="https://www.nngroup.com/articles/tooltip-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- uxmovement.com -------- {%- endcomment -%}
+
+    {%- when "why you should never center or right align your logo" -%}
+        <a href="http://uxmovement.com/navigation/why-you-should-never-center-or-right-align-your-logo/?ref=webdesignernews.com" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    
+    {%- when "anthony thomas (2006): where to place your accordion menu items" -%}
+        <a href="http://uxmovement.com/navigation/where-to-place-your-accordion-menu-icons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "when you should use a breadcrumb navigation" -%}
+        <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "hvornår skal du bruge en knap eller et link" -%}
+        <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- gov.uk -------- {%- endcomment -%}
+
+    {%- when "tim paul: one thing per page (2015)" -%}
+        <a href="https://designnotes.blog.gov.uk/2015/07/03/one-thing-per-page/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "forsiden af gov.uk" -%}
+        <a href="https://www.gov.uk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "gov.uk design system" -%}
+        <a href="https://design-system.service.gov.uk/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuk design system breadcrumbs" -%}
+        <a href="https://design-system.service.gov.uk/components/breadcrumbs/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuks anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer" -%}
+        <a href="https://design-system.service.gov.uk/components/date-input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuk om at spørge brugeren om datoer" -%}
+        <a href="https://design-system.service.gov.uk/patterns/dates/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "govuk om fejlmeddelelser generelt" -%}
+        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "gov.uk design system - skip link" -%}
+        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- smashingmagazine.com -------- {%- endcomment -%}
+
+    {%- when "natasha postolovski: what is the most underrated word in web design? (2014)" -%}
+        <a href="https://www.smashingmagazine.com/2014/06/affordance-most-underrated-word-in-web-design/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "breadcrumbs in web design: examples and best practices" -%}
+        <a href="https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "vitaly friedman: privacy ux: better cookie consent experiences (2019)" -%}
+        <a href="https://www.smashingmagazine.com/2019/04/privacy-ux-better-cookie-consent-experiences/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "jacob gube: module tabs in web design: best practices and solutions (2009)" -%}
+        <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "the ideal search box is 27 characters wide" -%}
+        <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- comment -%} -------- Other -------- {%- endcomment -%}
+    
+    {%- when "bootstraps spacing utilities" -%}
+        <a href="https://getbootstrap.com/docs/4.1/utilities/spacing/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "bootstraps display utility" -%}
+        <a href="https://getbootstrap.com/docs/4.1/utilities/display/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "bootstraps flex utility" -%}
+        <a href="https://getbootstrap.com/docs/4.1/utilities/flex/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "krav til løsninger på virk" -%}
+        <a href="https://virk.dk/vejledning/virk-for-myndigheder/for-myndigheder-saadan-kommer-man-paa-virk/#Krav-til-loesninger-paa-Virk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "@import" -%}
+        <a href="https://sass-lang.com/documentation/at-rules/import/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "@use" -%}
+        <a href="https://sass-lang.com/documentation/at-rules/use/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "@forward" -%}
+        <a href="https://sass-lang.com/documentation/at-rules/forward/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "dkfds",
+             "'dkfds'" -%}
+        <a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "material symbols" -%}
+        <a href="https://fonts.google.com/icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "material designs vejledning til design af ikoner" -%}
+        <a href="https://m3.material.io/styles/icons/designing-icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "vejledning til integration på virk" -%}
+        <a href="https://virk.dk/vejledning/virk-for-myndigheder/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "whatwg" -%}
+        <a href="https://whatwg.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "se komponentbiblioteket i figma" -%}
+        <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inputfelter - uber’s base designsystem" -%}
+        <a href="https://baseweb.design/components/input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "read-only pattern - carbon designsystem" -%}
+        <a href="https://carbondesignsystem.com/patterns/read-only-states-pattern/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inline edit - patternfly" -%}
+        <a href="https://www.patternfly.org/components/inline-edit/design-guidelines/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "inputfelter - zendesk’s garden designsystem" -%}
+        <a href="https://garden.zendesk.com/components/input" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "flexbox" -%}
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "8-point grid: vertical rhythm" -%}
+        <a href="https://medium.com/built-to-adapt/8-point-grid-vertical-rhythm-90d05ad95032" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "spacing methods - baseline" -%}
+        <a href="https://material.io/design/layout/spacing-methods.html#baseline" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    
+    {%- when '"open font license" betingelser' -%}
+        <a href="https://openfontlicense.org/open-font-license-official-text/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "semantisk versionering" -%}
+        <a href="https://semver.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "transpiling" -%}
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript#javascript_transpiling" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "polyfills" -%}
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/Polyfill" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "us web design system" -%}
+        <a href="https://designsystem.digital.gov/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "en 301 549 v.3.2.1" -%}
+        <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "vejledning til integration på borger.dk" -%}
+        <a href="https://digitaliser.dk/borgerdk/vejledninger-borgerdk/tilslutning-af-selvbetjening-til-borgerdk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs om cookies (engelsk)" -%}
+        <a href="https://en.wikipedia.org/wiki/HTTP_cookie" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "læs cookiebekendtgørelse",
+             "cookiebekendtgørelsen" -%}
+        <a href="https://www.retsinformation.dk/Forms/R0710.aspx?id=139279" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "muneo kitajima, marilyn h blackmon & peter g polson: a comprehension-based model of web navigation and its application to web usability analysis (2000)" -%}
+        <a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "nick babich: date picker design best practices (2019)" -%}
+        <a href="https://uxpro.cc/publications/date-picker-design-best-practices/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "uswds om datovælgeren" -%}
+        <a href="https://v2.designsystem.digital.gov/components/form-controls/#date-input" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "luke wroblewski: dropdowns should be the ui of last resort (2015)" -%}
+        <a href="https://www.lukew.com/ff/entry.asp?1950" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "priscilla esser: how to implement sitemap footers to keep users going (2018)" -%}
+        <a href="https://www.interaction-design.org/literature/article/how-to-implement-sitemap-footers-to-keep-users-going" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "farhad manjoo: you won’t finish this article (2013)" -%}
+        <a href="https://slate.com/technology/2013/06/how-people-read-online-why-you-wont-finish-this-article.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "uswds om paginering" -%}
+        <a href="https://designsystem.digital.gov/components/pagination/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "caroline jarrett: design patterns in government (2016)" -%}
+        <a href="https://www.effortmark.co.uk/design-patterns-government-2016/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "derek powazek: where am i? (2006)" -%}
+        <a href="http://www.alistapart.com/articles/whereami" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "caroline jarrett: designing usable forms: the three-layer model of the form (2000)" -%}
+        <a href="https://web.archive.org/web/20120120004811/http://www.formsthatwork.com/files/Articles/DesigningUsableForms.pdf" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "caroline jarrett: don’t put labels inside text boxes (unless you’re luke w) (2013)" -%}
+        <a href="https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "don norman: don normans principles of design (2013)" -%}
+        <a href="https://www.designprinciplesftw.com/collections/don-normans-principles-of-design" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "daniel burka: stop the overuse of overflow menus (2016)" -%}
+        <a href="https://www.freecodecamp.org/news/stop-the-overuse-of-overflow-menus-5caa4b54e843/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tammy guy: usability tip: don’t make me search for search (2014)" -%}
+        <a href="https://uxmag.com/articles/usability-tip-dont-make-me-search-for-search" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "design a perfect search box" -%}
+        <a href="https://uxplanet.org/design-a-perfect-search-box-b6baaf9599c" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "best practises for search results" -%}
+        <a href="https://uxplanet.org/best-practices-for-search-results-1bbed9d7a311" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "top 10 best practices for multilingual websites" -%}
+        <a href="https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "my take on language selectors" -%}
+        <a href="https://uxdesign.cc/my-take-on-language-selectors-945caceb58f7" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "designing a language switch: examples and best practices" -%}
+        <a href="https://usersnap.com/blog/design-language-switch/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "lisa charlotte rost: what to consider when creating tables (2019)" -%}
+        <a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "richard rutter: web typography: designing tables to be read, not looked at (2017)" -%}
+        <a href="https://alistapart.com/article/web-typography-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "tilgængelighedserklæring" -%}
+        <a href="https://www.was.digst.dk/designsystem-dk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aria-errormessage attribute (aria) - accessibility support" -%}
+        <a href="https://a11ysupport.io/tech/aria/aria-errormessage_attribute" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "aria-describedby attribute (aria) - accessibility support" -%}
+        <a href="https://a11ysupport.io/tech/aria/aria-describedby_attribute" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "heydon pickering: tooltips & toggletips - inclusive components (2017)" -%}
+        <a href="https://inclusive-components.design/tooltips-toggletips/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "installeret sass" -%}
+        <a href="https://sass-lang.com/install/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "kompilere sass-filer med kommandoer" -%}
+        <a href="https://sass-lang.com/documentation/cli/dart-sass/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "node.js" -%}
+        <a href="https://nodejs.org/en" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+
+
+    {%- else -%}
+        {{ include.linktext }}
+        
+{%- endcase -%}

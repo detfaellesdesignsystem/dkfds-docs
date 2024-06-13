@@ -1,0 +1,137 @@
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Funktionslinks</h1>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Simpel test af link</p>
+            <a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}Funktionslink</a>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Simpel test af knap</p>
+            <button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}Funktionslink som knap</button>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Flere links i træk - ikon fremhævet i sidste link for tjek af alignment</p>
+            <a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}Link 1</a>
+            <a href="#" class="function-link">{{ icon_svg({"name":'trash-can'}) }}Link 2</a>
+            <a href="#" class="function-link">{{ icon_svg({"name":'menu'}) }}Link 3</a>
+            <a href="#" class="function-link">{{ icon_svg({"name":'close'}) }}Link 4</a>
+            <a href="#" class="function-link">{{ icon_svg({"name":'search'}) }}Link 5</a>
+            <a href="#" class="function-link" style="outline: 1px solid black;">{{ icon_svg({"name":'search', "attributes": 'style="background-color: blue;"'}) }}Link 6</a>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Flere knapper i træk - ikon fremhævet i sidste knap for tjek af alignment</p>
+            <button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}Knap 1</button>
+            <button type="button" class="function-link">{{ icon_svg({"name":'trash-can'}) }}Knap 2</button>
+            <button type="button" class="function-link">{{ icon_svg({"name":'menu'}) }}Knap 3</button>
+            <button type="button" class="function-link">{{ icon_svg({"name":'close'}) }}Knap 4</button>
+            <button type="button" class="function-link">{{ icon_svg({"name":'search'}) }}Knap 5</button>
+            <button type="button" class="function-link" style="outline: 1px solid black;">{{ icon_svg({"name":'search', "attributes": 'style="background-color: blue;"'}) }}Knap 6</button>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-10">
+            <p>Lang tekst i link</p>
+            <a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}Link. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</a>
+            <p>Ubrudt tekst:</p>
+            <a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}LinkLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacus</a>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-10">
+            <p>Lang tekst i knap</p>
+            <button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}Knap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</button>
+            <p>Ubrudt tekst:</p>
+            <button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}KnapLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacus</button>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-2">
+            <p>Link inde i tekst</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id.<a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}Funktionslink som link.</a> Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</p>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-2">
+            <p>Knap inde i tekst</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis sapien vehicula consequat lacinia et mauris. Nam venenatis id.<button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}Funktionslink som knap.</button> Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</p>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Links med små ikoner</p>
+            <a href="#" class="function-link icon-link">Link med lille ikon 1{{ icon_svg({"name":'open-in-new'}) }}</a>
+            <a href="#" class="function-link icon-link">Link med lille ikon 2{{ icon_svg({"name":'print'}) }}</a>
+            <a href="#" class="function-link icon-link" style="outline: 1px solid black;">Link med lille ikon 3{{ icon_svg({"name":'open-in-new', "attributes": 'style="background-color: blue;"'}) }}</a>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Knapper med små ikoner</p>
+            <button type="button" class="function-link icon-link">Knap med lille ikon 1{{ icon_svg({"name":'open-in-new'}) }}</button>
+            <button type="button" class="function-link icon-link">Knap med lille ikon 2{{ icon_svg({"name":'print'}) }}</button>
+            <button type="button" class="function-link icon-link" style="outline: 1px solid black;">Knap med lille ikon 3{{ icon_svg({"name":'open-in-new', "attributes": 'style="background-color: blue;"'}) }}</button>
+        </div>
+    </div>
+    <div class="row mb-9 position-relative">
+        <div class="col-12" style="border-top: 1px solid red; position: absolute; top: 18px;"></div>
+        <div class="col-4 col-md-3 col-xl-2">
+            <p class="mt-0">Dette er et afsnit</p>
+        </div>
+        <div class="col-4 col-md-3 col-xl-2">
+            <a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}Dette er et link</a>
+        </div>
+        <div class="col-4 col-md-3 col-xl-2">
+            <span>Dette er et span</span>
+        </div>
+    </div>
+    <div class="row mb-9 position-relative">
+        <div class="col-12" style="border-top: 1px solid red; position: absolute; top: 18px;"></div>
+        <div class="col-4 col-md-3 col-xl-2">
+            <p class="mt-0">Dette er et afsnit</p>
+        </div>
+        <div class="col-4 col-md-3 col-xl-2">
+            <button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}Dette er en knap</button>
+        </div>
+        <div class="col-4 col-md-3 col-xl-2">
+            <span>Dette er et span</span>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <div class="align-text-right">Test af wrapper:</div>
+            <ul class="function-link-wrapper">
+                <li>
+                    <a href="#" class="function-link">{{ icon_svg({"name":'print'}) }}Link 1</a>
+                </li>
+                <li>
+                    <a href="#" class="function-link">{{ icon_svg({"name":'trash-can'}) }}Link 2</a>
+                </li>
+                <li>
+                    <button type="button" class="function-link">{{ icon_svg({"name":'print'}) }}Knap 1</button>
+                </li>
+                <li>
+                    <button type="button" class="function-link">{{ icon_svg({"name":'trash-can'}) }}Knap 2</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Dette er et ikonlink, der ofte bruges sammen med funktionslinks</p>
+            <a href="#" class="icon-link">Ikonlink{{ icon_svg({"name":'open-in-new'}) }}</a>
+        </div>
+    </div>
+    
+</main>

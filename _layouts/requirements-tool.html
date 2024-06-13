@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
+
+<head>
     {% include head.html %}
-  </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-  <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
-  {% include code/components/base-svg.html %}
-  {% include requirements-tool/header.html backlink=page.backlink %}
+</head>
 
-  <main class="page-container container pt-4 pt-lg-0" id="main-content">
-    {% if page.backlink == true %}
-    <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
-    {% endif %}
-    <div class="alert alert-error mt-0 mb-8 d-none" id="error-summary" role="alert">
-      <div class="alert-body">
-        <p class="alert-heading">Der er problemer</p>
-        <ul class="alert-text nobullet-list">
-        </ul>
-      </div>
+<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+    {% include code/components/base-svg.html %}
+    <div id="top"></div>
+    {% include requirements-tool/header.html backlink=page.backlink %}
+
+    <main class="page-container container" id="main-content">
+        {% if page.backlink == true %}
+        <div><a href="javascript:void(0);" class="back-link" id="back-link">Tilbage</a></div>
+        {% endif %}
+        <div role="alert">
+            <nav aria-labelledby="error-summary-title" class="mt-0 mb-8 d-none" id="error-summary">
+                <div class="alert alert-error mt-0 mb-8" data-module="error-summary">
+                    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use xlink:href="#highlight-off"></use></svg>
+                    <div class="alert-body">
+                        <h2 class="alert-heading" id="error-summary-title">Der er problemer</h2>
+                        <ul class="alert-text nobullet-list"></ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        {{ content }}
+    </main>
+    
+    {% include requirements-tool/footer.html %}
+    {% if page.url contains "/krav-vaerktoej/resultat/" %}
+    <div class="fds-modal-container">
+        <div class="fds-modal" id="modal-print" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-print-title">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modal-print-title">Hvad er navnet på din løsning?</h2>
+                    <button class="modal-close function-link" data-modal-close>
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label" for="solution-name-input">Løsningens navn</label>
+                        <input type="text" id="solution-name-input" name="solution-name-input" class="form-input">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="button button-primary" id="print-result-solution">Print resultat</button>
+                    <button class="button button-secondary" data-modal-close>Luk</button>
+                </div>
+            </div>
+        </div>
     </div>
-    {{ content }}
-  </main>
+    {% endif %}
 
-  {% include requirements-tool/footer.html %}
-  <script src="{{ site.baseurl }}/assets/js/requirements-tool.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
-  </body>
+    {% include scripts.html %}
+</body>
+
 </html>

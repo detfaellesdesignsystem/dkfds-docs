@@ -1,0 +1,163 @@
+<main class="container page-container" id="main-content" style="min-height: 2000px;">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Tooltips</h1>
+        </div>
+    </div>
+    <div class="row mt-9 pb-9">
+        <div class="col-12">
+            <div class="tooltip-wrapper"
+                data-tooltip="Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer. fgdgdgfdsgfsdgfsdgsfdgerstsgfsgsgfgsfdgsdtertsgfgfdgsfgsgsdfgrtgrfgsfgsfdgsdfgsdrterargfsgsdfgsertg"
+                data-tooltip-id="tooltip-helpicon" data-position="above" data-trigger="click">
+                <button class="button button-unstyled tooltip-target" type="button"
+                    aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12 d-flex justify-content-between">
+            <div class="tooltip-wrapper"
+                data-tooltip="Dette tooltip sidder i venstre side i rækken"
+                data-tooltip-id="tooltip-left" data-position="above" data-trigger="click">
+                <button class="button button-unstyled tooltip-target" type="button"
+                    aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+            </div>
+            <div class="tooltip-wrapper" data-tooltip="Dette tooltip sidder i midten i rækken"
+                data-tooltip-id="tooltip-center" data-position="above" data-trigger="click">
+                <button class="button button-unstyled tooltip-target" type="button"
+                    aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+            </div>
+            <div class="tooltip-wrapper"
+                data-tooltip="Dette tooltip sidder i højre side i rækken"
+                data-tooltip-id="tooltip-right" data-position="above" data-trigger="click">
+                <button class="button button-unstyled tooltip-target" type="button"
+                    aria-label="Læs mere">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-sm-6 mt-9">
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap"
+                data-tooltip-id="tooltip-knap1" data-position="above" data-trigger="hover">
+                <button class="button button-primary tooltip-target">
+                    Knap med tooltip
+                </button></div>
+        </div>
+        <div class="col-sm-6 mt-9">
+
+            <div class="tooltip-wrapper" data-tooltip="Endnu et tooltip på en knap"
+                data-tooltip-id="tooltip-knap2" data-position="below" data-trigger="hover">
+                <button class="button button-secondary tooltip-target">
+                    Anden knap med tooltip
+                </button></div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <span class="tooltip-wrapper" data-tooltip="Tooltip på link"
+                data-tooltip-id="link-tooltip" data-position="above" data-trigger="hover"><a
+                    href="#" class="tooltip-target">Link med tooltip</a></span>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div class="tooltip-wrapper" data-tooltip="Tooltip på en stor knap"
+                data-tooltip-id="tooltip-giant" data-position="above" data-trigger="hover">
+                <button class="button button-primary tooltip-target"
+                    style="min-height: 600px;">
+                    Kæmpeknap
+                </button></div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+
+            <div class="tooltip-wrapper" data-tooltip="Tryk for at åbne modal"
+                data-tooltip-id="tooltip-modal" data-position="above" data-trigger="hover">
+                <button class="button button-tertiary tooltip-target" data-module="modal"
+                    data-target="modal-example" aria-haspopup="dialog">
+                    Åbn modal
+                </button></div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Dette er en paragraf, hvor der i teksten er behov for et tooltip. For at kunne
+                teste at teksten ombrydes korrekt, er teksten lang. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Vestibulum nec libero quis
+                <strong>nogle ord</strong><span class="tooltip-wrapper in-text"
+                    data-tooltip="Dette er et tooltip" data-tooltip-id="tooltip-text-example"
+                    data-position="above" data-trigger="click"><button
+                        class="button button-unstyled tooltip-target" type="button"
+                        aria-label="Hvad betyder nogle ord">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>sapien
+                vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida.
+                Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</p>
+        </div>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+
+    <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-example-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-heading">
+                    Modal med handlinger
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Dette er modalens indhold.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip i en modal"
+                        data-tooltip-id="helpicon-example" data-position="above"
+                        data-trigger="click"><button
+                            class="button button-unstyled tooltip-target" type="button"
+                            aria-label="Læs mere">
+                            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+                    </div>
+                    <div class="tooltip-wrapper"
+                        data-tooltip="Dette er et tooltip på en knap i en modal"
+                        data-tooltip-id="tooltip-modal-knap" data-position="above"
+                        data-trigger="hover"><button
+                            class="button button-primary tooltip-target">
+                            Knap med tooltip
+                        </button></div>
+                    <div class="overflow-menu overflow-menu--open-right">
+                        <button class="button-overflow-menu js-dropdown"
+                            data-js-target="overflow1" aria-expanded="false"
+                            aria-controls="overflow1">
+                            Overflow menu
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+                        </button>
+                        <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
+                            <ul class="overflow-list">
+                                <li><button>Mulighed 1</button></li>
+                                <li><button>Mulighed 2</button></li>
+                                <li><a href="#">Mulighed 3 er et link</a></li>
+                                <li><button>Mulighed 4 er en længere tekst</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

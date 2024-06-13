@@ -16,6 +16,16 @@
             "href": "#"
         }
     },
+    "navigation_menu_data": {
+        "links": [
+            { "text": "Beskeder" },
+            { "text": "Udbetalinger" },
+            { "text": "Sager" },
+            { "text": "Ansøgninger" },
+            { "text": "Ændringer" },
+            { "text": "Dokumentation" }
+        ]
+    },
     "footer_data": {
         "topButton": {
             "href": "#top"

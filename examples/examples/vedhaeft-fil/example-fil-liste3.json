@@ -95,6 +95,7 @@
         "variant": "error",
         "classes": "mt-0 mb-8",
         "headingLevel": "h2",
+        "headingID": "error-summary-file",
         "heading": "Der er problemer",
         "contentContainer": false,
         "content": "<ul class=\"alert-text nobullet-list mb-3\"><li><a class=\"function-link\" href=\"#fileinput\">Filens størrelse skal være under 10MB. Opdel evt. dokumentet og tilføj som flere dokumenter.</a></li></ul>",

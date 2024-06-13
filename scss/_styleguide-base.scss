@@ -1,16 +1,24 @@
 @use 'sass:math';
+@use '../node_modules/dkfds/src/stylesheets/themes/borgerdk' as borger;
+@use '../node_modules/dkfds/src/stylesheets/themes/virkdk' as virk;
+@use '../node_modules/dkfds/src/stylesheets/components/sidenav' as sidenav;
+@use '../node_modules/dkfds/src/stylesheets/components/navigation' as nav;
+@use '../node_modules/dkfds/src/stylesheets/variables' as *;
+@use '../node_modules/dkfds/src/stylesheets/values' as *;
+@use '../node_modules/dkfds/src/stylesheets/functions' as *;
+@use '../node_modules/dkfds/src/stylesheets/mixins' as *;
 
 /// theme alert
 #borgerdkThemeBtn{
-    color: #ffffff;
-    background-color: #44831E;
-    border-color: #3C5C22;
+    color: color('white');
+    background-color: borger.$borger-primary;
+    border-color: borger.$borger-primary-dark;
 }
 
 #virkThemeBtn{
-    color: #ffffff;
-    background-color: #0059B3;
-    border-color: #004993;
+    color: color('white');
+    background-color: virk.$virk-primary;
+    border-color: virk.$virk-primary-dark;
 }
   
 .fds-title {
@@ -26,7 +34,10 @@
     line-height: units(5, 'rem');
   }
 
-  &:visited, &:hover, &:active{
+  &:visited, 
+  &:hover, 
+  &:focus, 
+  &:active {
     color: color('black');
   }
 }
@@ -69,15 +80,15 @@ img.outer-border-box{
     }
   }
   > div:first-of-type .separator {
-    svg{fill: color($theme-color-text-positive); }
+    svg{fill: color('text-positive'); }
     div{
-      background-color: color($theme-color-text-positive);
+      background-color: color('text-positive');
     }
   }
   > div:last-of-type .separator{
-    svg{fill: color($theme-color-text-negative);}
+    svg{fill: color('text-negative');}
     div{
-      background-color: color($theme-color-text-negative);
+      background-color: color('text-negative');
     }
   }
 }
@@ -87,23 +98,6 @@ img.outer-border-box{
 a.search-link{
   &.link-hover{
     text-decoration: underline;
-  }
-}
-
-header .navbar .search-form{
-  align-self: center;
-
-  #search-input{
-      width: 27ch;
-  }
-}
-
-header #search-form-mobile{
-  border-top: border(20);
-
-  #search-input-mobile{
-    width: 100%;
-    max-width: none;
   }
 }
 
@@ -190,35 +184,35 @@ header #search-form-mobile{
 
 // Links color
 .color-link {
-  background-color: color($theme-color-link);
+  background-color: color("link");
 }
 .color-link-hover {
-  background-color: color($theme-color-link-hover);
+  background-color: color("link-hover");
 }
 a.link-default, a.link-default:link, a.link-default:visited, a.link-default:hover, a.link-default:focus{
-  color: color($theme-color-link);
+  color: color("link");
 }
 a.link-hover, a.link-hover:link, a.link-hover:visited, a.link-hover:hover, a.link-hover:focus{
-  color: color($theme-color-link-hover);
+  color: color("link-hover");
 }
 a.link-visited, a.link-visited:link, a.link-visited:visited, a.link-focus:visited, a.link-focus:visited{
-  color: color($theme-color-link-visited);
+  color: color("link-visited");
 }
 a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.link-focus:focus{
-  color: color($theme-color-link-focus);
+  color: color("link-focus");
 }
 .color-focus {
-  background-color: color($theme-focus-color);
+  background-color: color("focus");
 }
 .color-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color("link-visited");
 }
 
 .color-text-positive {
-  background-color: color($theme-color-text-positive);
+  background-color: color('text-positive');
 }
 .color-text-negative {
-  background-color: color($theme-color-text-negative);
+  background-color: color('text-negative');
 }
 
 // Colors used for alert boxes
@@ -304,28 +298,28 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     background-color: color('info-light');
   }
   &.borger-primary {
-    background-color: $borger-primary;
+    background-color: borger.$borger-primary;
   }
   &.borger-medium {
-    background-color: $borger-medium;
+    background-color: borger.$borger-primary-dark;
   }
   &.borger-dark {
-    background-color: $borger-dark;
+    background-color: borger.$borger-primary-darker;
   }
   &.virk-primary {
-    background-color: $virk-primary;
+    background-color: virk.$virk-primary;
   }
   &.virk-medium {
-    background-color: $virk-medium;
+    background-color: virk.$virk-primary-dark;
   }
   &.virk-dark {
-    background-color: $virk-dark;
+    background-color: virk.$virk-primary-darker;
   }
   &.color-positive {
-    background-color: color($theme-color-text-positive);
+    background-color: color('text-positive');
   }
   &.color-negative {
-    background-color: color($theme-color-text-negative);
+    background-color: color('text-negative');
   }
 }
 .color-container-medium {
@@ -434,11 +428,11 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     }
 
     .text-negative {
-      color:color($theme-color-text-negative);
+      color:color('text-negative');
     }
 
     .text-positive {
-      color:color($theme-color-text-positive);
+      color:color('text-positive');
     }
   }
 
@@ -560,16 +554,16 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
   border-left: border(20);
 }
 
-*:not(.tabnav-panel):not(.details-text):not(.component-code) > figure.highlight{
+*:not(.tab-panel):not(.details-text):not(.component-code) > figure.highlight{
   border: border(20);
 }
 
 code {
   background-color: color('gray-100');
   color: color('black');
+  font-family: monospace;
 }
 
-code,
 pre {
   font-family: monospace;
   overflow-x: auto;
@@ -577,6 +571,8 @@ pre {
 
   code {
     background-color: transparent;
+    overflow-x: auto;
+    white-space: pre;
   }
 
   &:focus {
@@ -651,61 +647,51 @@ code {
   }
 }
 
-//----------------  Icon page styles
-.simple-icon-list{
+// Icon page styles
+
+.simple-icon-list {
   flex-wrap: wrap;
-  svg{
+  svg {
     width: 80px;
     height: auto;
     max-width: 100%;
   }
 }
-.icon-list{
-  .icon-container{
-    margin-top:-1px;
-    .icon-box{
-      padding: units(505) units(3) units(3);
-      border: border(20);
-      border-left-width: 0px;
-      border-top-width: 0px;
-      text-align: center;
-      height: 100%;
 
-      svg{
-        width: 48px;
-        height: 48px;
-        max-width: 100%;
-      }
-      p{
-        margin-bottom: units(405);
-        margin-top: units(405);
-        word-wrap: break-word;
-      }
-    }
-    
-    @include media-breakpoint-down(sm) {
-      &:nth-child(odd) .icon-box{
-        border-left-width: 1px;
-      }
-      &:nth-child(-n+2) .icon-box{
-        border-top-width: 1px;
-      }
-    }
-    
-    @include media-breakpoint-up(md) {
-      &:nth-child(4n-7) .icon-box{      
-          border-left-width: 1px;
-      }
+.icon-list {
+  list-style-type: none;
 
-      &:nth-child(-n+4) .icon-box{
-        border-top-width: 1px;
-      }
-      
-    }
-    
+  > li::before {
+    content: "" !important;
   }
-  
 }
+
+.icon-box{
+  padding: units(505) units(4) units(3);
+  border: border(20);
+  margin-right: -1px;
+  margin-bottom: -1px;
+  margin-top: 0;
+  text-align: center;
+  height: auto;
+
+  svg {
+    width: 48px;
+    height: 48px;
+    max-width: 100%;
+  }
+  p {
+    margin-bottom: units(405);
+    margin-top: units(405);
+    word-wrap: break-word;
+  }
+}
+
+.no-icons-text {
+  color: color('gray-500');
+  margin-top: units(5);
+}
+
 
 //----------------  Page styles
 
@@ -811,6 +797,10 @@ code {
   padding: 8px;
 }
 
+.hyphens-manual {
+  hyphens: manual;
+}
+
 .layout-demo {
   margin-bottom: 8.6rem;
 
@@ -876,6 +866,10 @@ code {
   display: inline-block;
 }
 
+
+
+
+
 .video-paragraph{
   max-width: $typography-text-max-width;
 }
@@ -907,7 +901,7 @@ div.component-preview {
   .component-link{
     border-bottom: border(30);
   }
-  .component-code-link{
+  .component-code-link, .component-guidelines-link {
     border-top: border(30);
   }
 }
@@ -997,10 +991,18 @@ div.component-preview {
 
 body.layout-requirements-tool{
   .header {
-    .portal-header{
+    .portal-info{
       background-color: transparent;
     }
   }
+  #resultat {
+    max-width: 100% !important;
+  }
+}
+
+#start-reqtool .icon-svg {
+  height: units(405);
+  width: units(405);
 }
 
 //----- grid example
@@ -1103,10 +1105,10 @@ body[class*="page-grid"][class*="-html"]
   border-top: $details-panel-border-width solid color($details-panel-border-color);
 }
 .sidenav-border-example{
-  border-top: $sidenav-active-border-width solid color($sidenav-active-border-color);
+  border-top: sidenav.$sidemenu-border-left-thickness solid color($sidenav-border-active-color);
 }
 .navigation-border-example{
-  border-top: $navigation-link-default-border-width solid color($navigation-link-current-border-color);
+  border-top: nav.$navigation-desktop-border-bottom-thickness solid color($navigation-link-current-border-color);
 }
 
 .screenshot-gallery .screenshot img {
@@ -1146,43 +1148,25 @@ body[class*="page-grid"][class*="-html"]
 
 // All colors as background classes
 
-@each $name, $bgcolor in $system-color-shortcodes {
+@each $name, $bgcolor in $all-colors {
   .background-#{$name} {
     background-color: color($name);
   }
 }
 
-@each $typeName, $typeColor in $all-project-colors {
-  
-  @each $variantName, $variantColor in $typeColor {
-    @if $variantName == 'default'{
-      .background-#{$typeName} {
-          background-color: color($typeName);
-      }
-    }
-    @else {
-      .background-#{$typeName}-#{$variantName} {
-        @if $variantColor != false {
-          background-color: color($typeName+'-'+$variantName);
-        }
-      }
-    }
-  }
-}
-
 $extra-colors: (
     "borgerdk": (
-        100: #44831E,
-        200: #3C5C22,
-        300: #233614
+        100: borger.$borger-primary,
+        200: borger.$borger-primary-dark,
+        300: borger.$borger-primary-darker
     ),
     "borgerdk-gray": (
         100: #f1f1f1
     ),
     "virk": (
-        100: #0059B3,
-        200: #004993,
-        300: #003972
+        100: virk.$virk-primary,
+        200: virk.$virk-primary-dark,
+        300: virk.$virk-primary-darker
     )
 );
 @each $typeName, $typeColor in $extra-colors {
@@ -1196,22 +1180,22 @@ $extra-colors: (
 }
 
 .background-focus {
-  background-color: color($theme-focus-color);
+  background-color: color("focus");
 }
 .background-link {
-  background-color: color($theme-color-link);
+  background-color: color("link");
 }
 .background-link-hover {
-  background-color: color($theme-color-link-hover);
+  background-color: color("link-hover");
 }
 .background-link-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color("link-visited");
 }
 .background-positive {
-  background-color: color($theme-color-text-positive);
+  background-color: color('text-positive');
 }
 .background-negative {
-  background-color: color($theme-color-text-negative);
+  background-color: color('text-negative');
 }
 
 /*

@@ -1,0 +1,19 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet-label, fejlbesked og min. dato</p>
+            {{
+                datepicker ({
+                    "id": "datepicker-example1",
+                    "name": "appointment-date1",
+                    "label": "Dato for aftale",
+                    "requiredLabel": true,
+                    "errorMessage": "Dette er en fejlbesked",
+                    "minDate": "2030-04-03"
+                })
+            }}
+        </div>
+    </div>
+</main>

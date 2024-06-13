@@ -1,0 +1,26 @@
+{% from "components/tabs/tabs.njk" import navigation_tabs as navigation_tabs %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Kun ét faneblad til navigation</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                navigation_tabs({
+                    "ariaLabel": "Eksemplets undersider",
+                    "items": [
+                        {
+                            "current": true,
+                            "href": "#tab1",
+                            "text": "Faneblad 1"
+                        }
+                    ]
+                }) 
+            }}
+            <p>Indhold under fanebladene</p>
+        </div>
+    </div>
+</main>

@@ -5,28 +5,26 @@ version: 2.0.0
 baseurl:
 environment: production
 encoding: utf-8
+excerpt_separator: "<!--split-->"
 
 collections:
   components:
-    output: true
-    permalink: /:path/
-  pages:
     output: true
     permalink: /:path/
   preview-components:
     output: true
     permalink: /:path/
 defaults:
-  - scope:
-      path: ''
-      type: components
+  - 
+    scope:
+      path: "pages/kravvaerktoej/*.md"
     values:
-      layout: component
-  - scope:
-      path: ''
-      type: posts
+      layout: "requirements-tool"
+  - 
+    scope:
+      path: "_components/*.md"
     values:
-      layout: post
+      layout: "styleguide"
 
 # Build settings
 highlighter: none

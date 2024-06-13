@@ -1,0 +1,16 @@
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Simpel alert</p>
+            {{ 
+                alert({
+                    "variant": "info",
+                    "heading": "Dette er titlen",
+                    "content": "Dette er indholdet i beskeden"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

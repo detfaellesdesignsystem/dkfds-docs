@@ -1,0 +1,19 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Fejlbesked, hjælpetekst og karakterbegrænsning</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "E-mail",
+                    "helptext": "Dette er en hjælpetekst",
+                    "errorMessage": "Der er sket en fejl",
+                    "characterLimit": 20
+                })
+            }}
+        </div>
+    </div>
+</main>

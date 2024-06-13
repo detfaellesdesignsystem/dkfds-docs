@@ -1,0 +1,23 @@
+{% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Struktureret liste simpel</p>
+            {{ 
+                structured_list({
+                    "items": [
+                        {
+                            "label": "Navn",
+                            "value": "Karen Jensen"
+                        },
+                        {
+                            "label": "Telefonnummer",
+                            "value": "12 34 56 78"
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

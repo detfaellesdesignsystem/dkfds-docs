@@ -1,0 +1,36 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Påkrævet-label og fejlbesked</p>
+
+            <div class="form-group form-error">
+                <label class="form-label" for="input-textarea">Tekstområde med label<span
+                        class="weight-normal"> (*skal udfyldes)</span></label>
+
+                <span class="form-error-message" id="input-textarea-error">
+                    <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                </span>
+                <textarea class="form-input" id="input-textarea" name="input-textarea" required aria-describedby="input-textarea-error "></textarea>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Ikke påkrævet-label og lang fejlbesked</p>
+
+            <div class="form-group form-error">
+                <label class="form-label" for="input-textarea">Tekstområde med label</label>
+
+                <span class="form-error-message" id="input-textarea-error">
+                    <span class="sr-only">Fejl: </span>Dette er en meget lang fejlbesked, der
+                    er en del længere en fejlbeskeden set i det første eksempel
+                </span>
+                <textarea class="form-input" id="input-textarea" name="input-textarea" required aria-describedby="input-textarea-error "></textarea>
+
+            </div>
+
+        </div>
+    </div>
+</main>

@@ -1,0 +1,26 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Klasser og attributer</p>
+            {{
+                radiobuttons({
+                    "id": "radiogroup",
+                    "radiogroupLegend": "Liste med radioknapper",
+                    "groupname": "radio-example",
+                    "classes": "radioclass",
+                    "attributes": "radioattr",
+                    "items": [
+                        { "value": "v1", "label": "Valg 1", "classes": { "formgroupradio": "formgroupclass" } },
+                        { "value": "v2", "label": "Valg 2", "classes": { "label": "labelclass" } },
+                        { "value": "v3", "label": "Valg 3", "classes": { "input": "inputclass" } },
+                        { "value": "v4", "label": "Valg 4", "attributes": { "formgroupradio": "formgroupattr" } },
+                        { "value": "v5", "label": "Valg 5", "attributes": { "label": "labelattr" } },
+                        { "value": "v6", "label": "Valg 6", "attributes": { "input": "inputattr" } }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

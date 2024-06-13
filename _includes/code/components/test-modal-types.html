@@ -1,0 +1,88 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Modaltyper</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="button button-tertiary" data-module="modal"
+                data-target="modal-example-1" aria-haspopup="dialog">
+                Åbn simpel modal
+            </button>
+            <button class="button button-tertiary" data-module="modal"
+                data-target="modal-example-2" aria-haspopup="dialog">
+                Åbn modal med handlinger
+            </button>
+            <button class="button button-tertiary" data-module="modal"
+                data-target="modal-example-3" aria-haspopup="dialog">
+                Åbn modal som kræver handling
+            </button>
+        </div>
+    </div>
+</main>
+<div class="fds-modal-container">
+
+    <div class="fds-modal" id="modal-example-1" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-example-1-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-1-heading">
+                    Simpel modal
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Dette er modalens indhold.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fds-modal" id="modal-example-2" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-example-2-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-2-heading">
+                    Modal med handlinger
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Dette er modalens indhold.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fds-modal" id="modal-example-3" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-example-3-heading" data-modal-forced-action>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-3-heading">
+                    Modal som kræver handling
+                </h2>
+
+            </div>
+            <div class="modal-body">
+                <p>Dette er modalens indhold.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

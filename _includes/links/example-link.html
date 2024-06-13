@@ -1,0 +1,32 @@
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+    {%- when "header med navigation og søgefelt" -%}
+        <a href="/eksempel/header-with-navigation/">{{ include.linktext }}</a>
+
+    {%- when "simpel footer" -%}
+        <a href="/eksempel/footer-simple/">{{ include.linktext }}</a>
+
+    {%- when "footer med tre kolonner" -%}
+        <a href="/eksempel/footer-three-columns/">{{ include.linktext }}</a>
+
+    {%- when "footer med fire kolonner" -%}
+        <a href="/eksempel/footer-four-columns/">{{ include.linktext }}</a>
+
+    {%- when "kompleks footer" -%}
+        <a href="/eksempel/footer-complex/">{{ include.linktext }}</a>
+
+    {%- when "footer med logo" -%}
+        <a href="/eksempel/footer-logo/">{{ include.linktext }}</a>
+
+    {%- when "se eksemplet på en ny side" -%}
+        <a href="/eksempel/when-bike-responsive/" target="_blank">{{ include.linktext }}</a>
+
+    {%- when "se fungerende eksempel på implementering af toastbesked" -%}
+        <a href="/eksempel/toastbesked/">{{ include.linktext }}</a>
+    
+
+        
+    {%- else -%}
+        {{ include.linktext }}
+{%- endcase -%}

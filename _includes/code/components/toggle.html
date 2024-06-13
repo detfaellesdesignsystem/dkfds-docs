@@ -1,7 +1,11 @@
-<div class="form-group">
+<div role="group" aria-labelledby="toggle-switch-heading"
+    class="w-percent-100 w-percent-sm-60 w-percent-md-40">
+    <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Indstillinger</h2>
 
-    <input id="toggle-example" type="checkbox" name="toggle-example" value="1"
-        class="form-toggle" />
-    <label for="toggle-example" class="form-toggle-label ">Dette er en toggle</label>
+    <button class="toggle-switch w-percent-100" type="button" role="switch"
+        aria-checked="true"><span>Vis afsluttede sager</span></button>
+
+    <button class="toggle-switch w-percent-100" type="button" role="switch"
+        aria-checked="false"><span>Vis sager ældre end et år</span></button>
 
 </div>

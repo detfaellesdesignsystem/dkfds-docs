@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         new DKFDS.Navigation().init(); // Only other relevant JavaScript on back-to-top pages is navigation
     }
-    // If this is not a back-to-top example page, init all JavaScript
-    else {
+    // If this is not a back-to-top example page or a test page, init all JavaScript
+    else if (!bodytag.classList.contains('layout-test-example')) {
         DKFDS.init();
     }
 
@@ -46,7 +46,19 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < preTags.length; i++) {
         preTags[i].setAttribute('tabindex', 0);
     }
+});
 
+/* Particularly Firefox has problems viewing the right part of the page when
+   an anchor link has been clicked. This eventListener ensures that the
+   correct element is displayed in view. */
+window.addEventListener("load", (event) => {
+    if(location.hash !== '') {
+        let elementID = location.hash.replace('#','');
+        let element = document.getElementById(elementID);
+        if(element) {
+            element.scrollIntoView(true);
+        } 
+    }
 });
 
 $(document).ready(function () {
@@ -87,7 +99,7 @@ $(document).ready(function () {
         e.preventDefault();
         localStorage.removeItem("reqTool");
 
-        window.location.href =  $(this).attr('href');
+        window.open("/krav-vaerktoej/anvendes-af-virksomheder/", "_blank");
     });
 
     $('.layout-demo form').submit(function(e){
@@ -221,3 +233,5 @@ $(document).ready(function () {
         }
     };
 });
+
+

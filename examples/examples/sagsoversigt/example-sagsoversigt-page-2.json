@@ -15,6 +15,22 @@
             "href": "#"
         }
     },
+    "navigation_menu_data": {
+        "links": [
+            { "text": "Find sag", "active": true },
+            { "text": "Ansøgninger" },
+            { "text": "Beskeder" },
+            { "text": "Udbetalinger",
+              "links": [
+                { "text": "2022" },
+                { "text": "2021" },
+                { "text": "2020" },
+                { "text": "2019" },
+                { "text": "2018" }
+              ]
+            }
+        ]
+    },
     "footer_data": {
         "topButton": {
             "href": "#top"
@@ -162,7 +178,7 @@
         ]
     },
     "breadcrumbs_data_mobile": {
-        "classes": "container d-lg-none mt-3",
+        "classes": "container mt-4",
         "aria-label": "Brødkrumme",
         "items": [
             {

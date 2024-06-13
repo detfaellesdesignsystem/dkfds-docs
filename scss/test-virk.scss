@@ -1,0 +1,10 @@
+@use '../node_modules/dkfds/src/stylesheets/dkfds-virkdk' with (
+    $font-path:         '/assets/fonts/IBMPlexSans/',
+    $image-path:        '/assets/img/',
+    $icons-folder-path: '/assets/svg/'
+);
+@use 'test-base';
+
+body {
+    opacity: 1 !important;
+}

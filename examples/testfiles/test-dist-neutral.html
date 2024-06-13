@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Test</title>
+
+    <link type='text/css' rel='stylesheet' href='../../node_modules/dkfds/dist/css/dkfds.min.css'>
+    <script src='../../node_modules/dkfds/dist/js/dkfds.min.js'></script>
+
+    <style>
+        /* Enter styling to be used in this document only */
+    </style>
+</head>
+
+<body>
+    <div class="hide-base-svg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <!-- Place icons here -->
+            <symbol id="help" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></symbol>
+        </svg>
+    </div>
+    
+    <main class="container page-container" id="main-content">
+        <h1>Test af dist-filer (neutral)</h1>
+        <button class="button button-primary mt-9 mb-9">Primærknap</button>
+        <div class="tooltip-wrapper d-block" data-tooltip="Dette er et tooltip" data-tooltip-id="helpicon-example" data-position="above" data-trigger="click">
+            <button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            DKFDS.init();
+        });
+    </script>
+</body>
+
+</html>

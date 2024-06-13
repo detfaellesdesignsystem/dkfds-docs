@@ -40,36 +40,6 @@
                     "hideOnPrint": true
                 }
             ]
-        },
-        "languageSwitcher": {
-            "ariaLabel": "Vælg sprog fra listen",
-            "firstAriaLabel": "Valgt sprog: Dansk",
-            "languages": [
-                {
-                    "code": "da",
-                    "name": "Dansk"
-                },
-                {
-                    "code": "en-GB",
-                    "name": "English"
-                },
-                {
-                    "code": "de",
-                    "name": "Deutsch"
-                },
-                {
-                    "code": "kl",
-                    "name": "Kalaallisut"
-                },
-                {
-                    "code": "pl",
-                    "name": "Polski"
-                },
-                {
-                    "code": "se",
-                    "name": "Svenska"
-                }
-            ]
         }
     },
     "trinindikator_data": {
@@ -130,7 +100,12 @@
     "dateinput_data": {
         "id": "input-date",
         "legend": "Dato for registreringen",
-        "helptext": "For eksempel: 01 12 2016"
+        "helptext": "For eksempel: 01 12 2016",
+        "name": {
+            "day": "date-day",
+            "month": "date-month",
+            "year": "date-year"
+        }
     },
     "button_next": {
         "text": "Næste",

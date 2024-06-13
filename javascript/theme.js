@@ -5,6 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
+const VERSION = '10.0.0';
 
 document.addEventListener("DOMContentLoaded", function(){
  
@@ -109,19 +110,21 @@ let onBorgerdkThemeSelected = function(){
 };
 
 let setStylesheet = function(){
-    let themeChosen = getThemeCookie();
-    debug('stylesheet:', themeChosen);
-    if(themeChosen === null){
-        themeChosen = "virk";
+    if (!document.body.classList.contains('layout-test-example')) {
+        let themeChosen = getThemeCookie();
+        debug('stylesheet:', themeChosen);
+        if(themeChosen === null){
+            themeChosen = "virk";
+        }
+        const indexOfTheme = themes.indexOf(themeChosen);
+    
+        var lnk = document.createElement('link');
+        lnk.type='text/css';
+        lnk.rel='stylesheet';
+        lnk.href= '/assets/style/' + themeStylesheets[indexOfTheme] + '.css' + '?v=' + VERSION;
+    
+        document.getElementsByTagName('head')[0].appendChild(lnk);
     }
-    const indexOfTheme = themes.indexOf(themeChosen);
-
-    var lnk = document.createElement('link');
-    lnk.type='text/css';
-    lnk.rel='stylesheet';
-    lnk.href= '/assets/style/'+themeStylesheets[indexOfTheme]+'.css';
-
-    document.getElementsByTagName('head')[0].appendChild(lnk);
 };
 
 
@@ -269,7 +272,12 @@ let debug = function(title, value){
 };
 
 let setScreenshots = function(){
-    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') || document.getElementsByTagName('body')[0].classList.contains('page-patterns') || document.getElementsByTagName('body')[0].classList.contains('page-templates') || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
+    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-patterns') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-templates') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') 
+    || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
         let screenshots = document.getElementsByClassName('screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
@@ -292,7 +300,9 @@ let setScreenshots = function(){
         || document.getElementsByTagName('body')[0].classList.contains('page-footer') 
         || document.getElementsByTagName('body')[0].classList.contains('page-header') 
         || document.getElementsByTagName('body')[0].classList.contains('page-tilbage-til-toppen')
-        || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')){
+        || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')
+        || document.getElementsByTagName('body')[0].classList.contains('page-fejlopsummering')
+        || document.getElementsByTagName('body')[0].classList.contains('page-faneblade-tabs')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
@@ -306,10 +316,17 @@ let setScreenshots = function(){
         }
     }
 
-    if (document.getElementsByTagName('body')[0].classList.contains('page-header')) {
-        let imageContainer = document.querySelectorAll('.header-rows-example');
-        let filename = getThemeCookie() + "-header-rows.png";
-        imageContainer[0].innerHTML = '<img src="/assets/img/headers/' + filename + '" class="w-percent-100 inner-border-box p-4" alt="De 5 foskellige rækker i headeren" />';
+    if (document.getElementsByTagName('body')[0].classList.contains('page-layout')) {
+        let screenshots = document.querySelectorAll('.screenshot');
+        for(let i = 0; i < screenshots.length; i++) {
+            let src = screenshots[i].getAttribute('src').split('/');
+            let lastElement = src.pop();
+            let filename = lastElement.split('-');
+            filename.shift();
+            let newFilename = getThemeCookie() + '-' + filename.join('-');
+            let newSrc = src.join('/') + "/" + newFilename;
+            screenshots[i].src = newSrc;
+        }
     }
 };
 

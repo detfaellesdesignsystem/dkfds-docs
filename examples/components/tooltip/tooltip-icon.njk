@@ -1,15 +1,19 @@
-{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
 
+{% set target = 
+    icon_svg({ 
+        "name": "file-pdf", 
+        "ariaHidden": false, 
+        "classes": "tooltip-target",
+        "tabindex": true
+    }) 
+%}
 {{ 
-    button({
-        "variant": "unstyled",
-        "attributes": "type=\"button\"",
-        "classes": { "icon": "mr-0 mt-0" },
-        "srOnly": "Hvad betyder det?",
-        "icon": "help",
-        "tooltip": {
-            "text": "Dette er et tooltip",
-            "showOnClick": true
-        }
+    tooltip({
+        "text": "Fil i pdf-format",
+        "target": target,
+        "trueTooltip": true,
+        "id": "tooltip-icon"
     }) 
 }}

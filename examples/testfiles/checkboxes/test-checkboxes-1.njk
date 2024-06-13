@@ -1,0 +1,19 @@
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Simpel tjekboks</p>
+            {{ 
+                checkbox({
+                    "id": "checkbox",
+                    "isStandalone": true,
+                    "name": "checkbox",
+                    "value": "1",
+                    "label": "Label til tjekboks"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

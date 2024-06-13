@@ -1,0 +1,50 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Accordion-varianter</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionID", 
+                    "items": [
+                        {
+                            "title": "Variant: info",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "info"
+                        },
+                        {
+                            "title": "Variant: success",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "success"
+                        },
+                        {
+                            "title": "Variant: warning",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "warning"
+                        },
+                        {
+                            "title": "Variant: error",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "error",
+                            "errorMessage": "Dette er en fejlmeddelelse."
+                        },
+                        {
+                            "title": "Variant: custom",
+                            "content": "<p>This is some accordion content.</p>",
+                            "variant": "custom",
+                            "custom": {
+                                "text": "Tilgængelighed",
+                                "icon": "accessibility-new"
+                            }
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

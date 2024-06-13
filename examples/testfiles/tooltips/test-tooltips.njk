@@ -1,0 +1,198 @@
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
+{% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
+{% from "components/tooltip/tooltip.njk" import tooltip_text as tooltip_text %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% set modal_content = 
+    '<p>Dette er modalens indhold.</p>
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip i en modal"
+        data-tooltip-id="helpicon-example" data-position="above" data-trigger="click"><button
+            class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+        </div>
+        <div class="tooltip-wrapper" data-tooltip="Dette er et tooltip på en knap i en modal" data-tooltip-id="tooltip-modal-knap"
+        data-position="above" data-trigger="hover"><button
+            class="button button-primary tooltip-target">
+            Knap med tooltip
+        </button></div>
+        <div class="overflow-menu overflow-menu--open-right">
+            <button class="button-overflow-menu js-dropdown" data-js-target="overflow1"
+                aria-expanded="false" aria-controls="overflow1">
+                Overflow menu
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#more-vert"></use></svg>
+            </button>
+            <div class="overflow-menu-inner" id="overflow1" aria-hidden="true">
+                <ul class="overflow-list">
+                    <li><button>Mulighed 1</button></li>
+                    <li><button>Mulighed 2</button></li>
+                    <li><a href="#">Mulighed 3 er et link</a></li>
+                    <li><button>Mulighed 4 er en længere tekst</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>'
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{% set word = 
+    tooltip_text({
+        "tooltip": "Dette er et tooltip",
+        "id": "tooltip-text-example",
+        "phrase": "nogle ord"
+    })
+%}
+
+<main class="container page-container" id="main-content" style="min-height: 2000px;">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Tooltips</h1>
+        </div>
+    </div>
+    <div class="row mt-9 pb-9">
+        <div class="col-12">
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer. fgdgdgfdsgfsdgfsdgsfdgerstsgfsgsgfgsfdgsdtertsgfgfdgsfgsgsdfgrtgrfgsfgsfdgsdfgsdrterargfsgsdfgsertg",
+                    "id": "tooltip-helpicon"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12 d-flex justify-content-between">
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i venstre side i rækken",
+                    "id": "tooltip-left"
+                }) 
+            }}
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i midten i rækken",
+                    "id": "tooltip-center"
+                }) 
+            }}
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i højre side i rækken",
+                    "id": "tooltip-right"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-sm-6 mt-9">
+            {% set target1 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap med tooltip",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tooltip på en knap",
+                    "target": target1,
+                    "trueTooltip": true,
+                    "id": "tooltip-knap1"
+                }) 
+            }}
+        </div>
+        <div class="col-sm-6 mt-9">
+            {% set target2 = 
+                button({
+                    "variant": "secondary",
+                    "text": "Anden knap med tooltip",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltip({
+                    "text": "Endnu et tooltip på en knap",
+                    "target": target2,
+                    "trueTooltip": true,
+                    "id": "tooltip-knap2",
+                    "position": "below"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {{ 
+                tooltip({ 
+                    "text": "Tooltip på link", 
+                    "target": "<a href=\"#\" class=\"tooltip-target\">Link med tooltip</a>", 
+                    "id": "link-tooltip", 
+                    "contentElement": "span", 
+                    "trueTooltip": true 
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {% set target3 = 
+                button({
+                    "variant": "primary",
+                    "text": "Kæmpeknap",
+                    "attributes": "style=\"min-height: 600px;\"",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tooltip på en stor knap",
+                    "target": target3,
+                    "trueTooltip": true,
+                    "id": "tooltip-giant"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            {% set target4 = 
+                button({
+                    "text": "Åbn modal",
+                    "variant": "tertiary",
+                    "classes": { "button": "tooltip-target" },
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example\" aria-haspopup=\"dialog\""
+                }) 
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tryk for at åbne modal",
+                    "target": target4,
+                    "trueTooltip": true,
+                    "id": "tooltip-modal"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Dette er en paragraf, hvor der i teksten er behov for et tooltip. For at kunne teste at teksten ombrydes korrekt, er teksten lang. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec libero quis {{ word -}} sapien vehicula consequat lacinia et mauris. Nam venenatis id mi ut gravida. Pellentesque non ligula aliquam, viverra magna sed, pellentesque lacus.</p>
+        </div>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-example",
+            "heading": "Modal med handlinger",
+            "content": modal_content,
+            "actions": modal_actions
+        })
+    }}
+</div>

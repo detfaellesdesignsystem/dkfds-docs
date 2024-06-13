@@ -1,0 +1,42 @@
+{% from "components/side-navigation/stepguide.njk" import stepguide as stepguide %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <p>Alle trin låst</p>
+            <div>
+            <nav>
+                <ul class="sidenav-list" role="menu">
+                    <li class="disabled " role="none">
+                        <a role="menuitem">
+                            <span class="sidenav-number">1.</span>
+                            <div>
+                                <span>Trin 1</span>
+                            </div>
+                            <span class="sidenav-icon">
+                                <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use xlink:href="#done"></use></svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="disabled active current " role="none">
+                        <a role="menuitem" aria-current="page">
+                            <span class="sidenav-number">2.</span>
+                            <div>
+                                <span>Trin 2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled " role="none">
+                        <a role="menuitem">
+                            <span class="sidenav-number">3.</span>
+                            <div>
+                                <span>Trin 3</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </div>
+</main>

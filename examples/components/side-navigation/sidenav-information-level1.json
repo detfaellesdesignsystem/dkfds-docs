@@ -1,22 +1,19 @@
 {
-  "sidenavsInformation":
-  {
-    "subclass": "sidenav-sub_list",
-    "links": [
-      {
-        "text": "Hovedside",
-        "information": "Informationstekst for parent link"
-      },
-      {
-        "text": "Hovedside",
-        "information": "Informationstekst for current link",
-        "current": true,
-        "active": true
-      },
-      {
-        "text": "Hovedside",
-        "information": "Informationstekst for another link"
-      }
-    ]
-  }
+    "sidenavsInformation": {
+        "links": [
+            {
+                "text": "Side",
+                "information": "Informationstekst for side"
+            },
+            {
+                "text": "Side",
+                "information": "Informationstekst for side",
+                "current": true
+            },
+            {
+                "text": "Side",
+                "information": "Informationstekst for side"
+            }
+        ]
+    }
 }
