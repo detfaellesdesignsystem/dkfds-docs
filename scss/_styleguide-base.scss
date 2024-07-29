@@ -680,9 +680,16 @@ code {
     height: 48px;
     max-width: 100%;
   }
-  p {
-    margin-bottom: units(405);
+
+  .descriptive-name {
+    margin-bottom: units(2);
     margin-top: units(405);
+    word-wrap: break-word;
+  }
+
+  .code-name {
+    margin-bottom: units(405);
+    margin-top: units(2);
     word-wrap: break-word;
   }
 }
