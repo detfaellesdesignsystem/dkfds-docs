@@ -98,6 +98,14 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
 
+## Version 10.0.1 {#{% include create-id.html heading="Version 10.0.1" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">xx-08-2024</span></div>
+
+- Ændret baggrundsfarven på fokuserede accordions fra gennemsigtig til grå.
+
+
 
 ## Version 10.0.0 {#{% include create-id.html heading="Version 10.0.0" %}}
 {:.mb-0}
