@@ -16,6 +16,10 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
 {%- case link -%}
 
+    {%- when "gå til forsiden" -%}
+        <a href="/"{{ classes }}>{{ include.linktext }}</a>
+
+
     {%- comment -%} -------- Kom i gang -------- {%- endcomment -%}
 
     {%- when "kom i gang" -%}
