@@ -196,7 +196,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "sprogvælgeren" -%}
         <a href="/komponenter/sprogvaelger/">{{ include.linktext }}</a>
 
-    {%- when "tooltips på sprogvælgeren" -%}
+    {%- when "tooltips på sprogvælgeren",
+             "sprogvælger med tooltip" -%}
         <a href="/komponenter/sprogvaelger/#sprogvaelger-med-tooltip">{{ include.linktext }}</a>
 
     {%- when "søgefelt", 

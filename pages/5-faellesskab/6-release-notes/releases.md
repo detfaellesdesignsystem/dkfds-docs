@@ -103,7 +103,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-08-2024</span></div>
 
-- Ændret baggrundsfarven på fokuserede accordions fra gennemsigtig til grå.
+- Ændret baggrundsfarven på fokuserede {% include links/component-guideline-link.html linktext="accordions" %} fra gennemsigtig til grå.
+- Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="sprogvælger med tooltip" %} stod skævt.
 
 
 
