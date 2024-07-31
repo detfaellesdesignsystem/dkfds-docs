@@ -85,3 +85,12 @@ tags:
     <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Opsummeringsside med fejl" class="screenshot d-block"></a>
   </div>
 </div>
+
+## Siden kunne ikke findes {#{% include create-id.html heading="Siden kunne ikke findes" %}}
+
+<div class="row screenshot-gallery">
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <h3 class="h4">Siden kunne ikke findes 1</h3>
+    <a href="/pages/eksempler/siden-kunne-ikke-findes/siden-kunne-ikke-findes-1/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: Siden kunne ikke findes 1" class="screenshot d-block"></a>
+  </div>
+</div>

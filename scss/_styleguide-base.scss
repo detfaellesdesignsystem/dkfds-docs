@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use 'sass:math' as math;
 @use '../node_modules/dkfds/src/stylesheets/themes/borgerdk' as borger;
 @use '../node_modules/dkfds/src/stylesheets/themes/virkdk' as virk;
 @use '../node_modules/dkfds/src/stylesheets/components/sidenav' as sidenav;
@@ -8,178 +8,139 @@
 @use '../node_modules/dkfds/src/stylesheets/functions' as *;
 @use '../node_modules/dkfds/src/stylesheets/mixins' as *;
 
-/// theme alert
-#borgerdkThemeBtn{
+// ------------------------------------
+// Theme alert
+// ------------------------------------
+
+#borgerdkThemeBtn {
     color: color('white');
     background-color: borger.$borger-primary;
     border-color: borger.$borger-primary-dark;
 }
 
-#virkThemeBtn{
+#virkThemeBtn {
     color: color('white');
     background-color: virk.$virk-primary;
     border-color: virk.$virk-primary-dark;
 }
+
+// ------------------------------------
+// Header
+// ------------------------------------
   
 .fds-title {
-  font-size: font-size('4xl');
-  line-height: units(6, 'rem');
-  font-weight: font-weight('semibold');
-  color: color('black');
-  text-decoration: none;
-  display: inline-block;
-
-  @include media-breakpoint-down(sm) {
-    font-size: font-size('2xl');
-    line-height: units(5, 'rem');
-  }
-
-  &:visited, 
-  &:hover, 
-  &:focus, 
-  &:active {
+    font-size: font-size('4xl');
+    line-height: units(6, 'rem');
+    font-weight: font-weight('semibold');
     color: color('black');
-  }
-}
-img.inner-border-box{
-  border: border(20);
-}
-img.outer-border-box{
-  border: border(10);
-}
-// Preview box (e.g. used by header and footer documentation) -------- //
-.preview {
-  margin-bottom: 2em;
-  background-color: color('white');
-  padding: math.div($grid-gutter-width, 2);
-  border: border(10); // scss-lint:disable ColorVariable
+    text-decoration: none;
+    display: inline-block;
 
-  > *:first-child {
-    margin-top: 0;
-  }
+    @include media-breakpoint-down(sm) {
+        font-size: font-size('2xl');
+        line-height: units(5, 'rem');
+    }
+
+    &:visited, 
+    &:hover, 
+    &:focus, 
+    &:active {
+        color: color('black');
+    }
 }
 
+// ------------------------------------
 // Do's and Don'ts
-.do-dont-container{
+// ------------------------------------
 
-  img{
-    padding: units(2);
-    border: border(10);
-    width: 100%;
-    height: auto;
-  }
+.do-dont-container {
+    img {
+        padding: units(2);
+        border: border(10);
+        width: 100%;
+        height: auto;
+    }
 
-  .separator{
-    margin-top: units(3);
-    display: flex;
-    div{
-      height: units(4);
-      margin-top: units(2);
-      width: calc(100% - 28px);
-      margin-left: units(2);
+    .separator {
+        margin-top: units(3);
+        display: flex;
+
+        div {
+            height: units(4);
+            margin-top: units(2);
+            width: calc(100% - 28px);
+            margin-left: units(2);
+        }
     }
-  }
-  > div:first-of-type .separator {
-    svg{fill: color('text-positive'); }
-    div{
-      background-color: color('text-positive');
+    > div:first-of-type .separator {
+        svg {
+            fill: color('text-positive'); 
+        }
+        div {
+            background-color: color('text-positive');
+        }
     }
-  }
-  > div:last-of-type .separator{
-    svg{fill: color('text-negative');}
-    div{
-      background-color: color('text-negative');
+    > div:last-of-type .separator{
+        svg {
+            fill: color('text-negative');
+        }
+        div{
+            background-color: color('text-negative');
+        }
     }
-  }
 }
 
+// ------------------------------------
 // Search
+// ------------------------------------
 
-a.search-link{
-  &.link-hover{
-    text-decoration: underline;
-  }
+a.search-link {
+    &.link-hover{
+        text-decoration: underline;
+    }
 }
 
 .page-result {
-  .h4 a.search-link {
-    .page-category{
-      text-transform: uppercase;
+    .h4 a.search-link {
+        .page-category {
+            text-transform: uppercase;
+        }
     }
-  }
-  .form-hint.small-text{
-    @include small-text();
-  }
+    .form-hint.small-text{
+        @include small-text();
+    }
 }
 
-// Back-to-top button --------------
+// ------------------------------------
+// Back-to-top button
+// ------------------------------------
 
 // Ensure that the back-to-top button used in the component preview example stays within the preview window
 .component-preview .button.back-to-top-button {
-  position: relative;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  top: auto;
-  z-index: 1;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    top: auto;
+    z-index: 1;
 }
 
 // Ensure that the back-to-top button is visible in the example areas when printing the page
 @media print {
-  .component-preview-back-to-top .back-to-top-button.d-print-none {
-    display: inline-block !important;
-  }
+    .component-preview-back-to-top .back-to-top-button.d-print-none {
+        display: inline-block !important;
+    }
 }
 
-// Typography --------------
+// ------------------------------------
+// Typography
+// ------------------------------------
+
 .demo-typesetting{
-  border-top: 2px solid color('data-violet-800');
-  color: color('data-violet-800');
-  padding-top: 1rem;
-  text-align: center;
-}
-
-// Colors -------------- //
-
-// Base colors
-.color-white {
-  background-color: color('white');
-}
-
-.color-base {
-  background-color: color('black');
-}
-
-// Gray-scales
-
-.color-gray-dark {
-  background-color: color('gray-500');
-}
-.color-gray {
-  background-color: color('gray-500');
-}
-.color-gray-light {
-  background-color: color('gray-400');
-}
-.color-gray-lighter {
-  background-color: color('gray-400');
-}
-.color-gray-lightest {
-  background-color: color('gray-400');
-}
-.color-gray-brightest {
-  background-color: color('gray-500');
-}
-
-// Text color
-.color-text {
-  background-color: color('ink');
-}
-.color-text-secondary {
-  background-color: color('ink-light');
-}
-.color-text-bright {
-  background-color: color('gray-100');
+    border-top: 2px solid color('data-violet-800');
+    color: color('data-violet-800');
+    padding-top: 1rem;
+    text-align: center;
 }
 
 // Links color

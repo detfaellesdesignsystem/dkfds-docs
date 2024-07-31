@@ -35,7 +35,8 @@ var exampleUrls = [
     {"url": "pages/eksempler/kvittering/kvittering-1/", "folder": "kvittering", "filename": "kvittering-1.PNG"},
     {"url": "pages/eksempler/kvittering/kvittering-2/", "folder": "kvittering", "filename": "kvittering-2.PNG"},
     {"url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "folder": "formular-med-fejl", "filename": "formular-med-fejl-1.PNG"},
-    {"url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "folder": "trinindikator-med-fejl", "filename": "trinindikator-med-fejl-1.PNG"}
+    {"url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "folder": "trinindikator-med-fejl", "filename": "trinindikator-med-fejl-1.PNG"},
+    {"url": "pages/eksempler/siden-kunne-ikke-findes/siden-kunne-ikke-findes-1/", "folder": "siden-kunne-ikke-findes", "filename": "siden-kunne-ikke-findes-1.PNG"},
 ];
 
 

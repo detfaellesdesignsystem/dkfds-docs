@@ -277,7 +277,8 @@ let setScreenshots = function(){
     || document.getElementsByTagName('body')[0].classList.contains('page-patterns') 
     || document.getElementsByTagName('body')[0].classList.contains('page-templates') 
     || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') 
-    || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
+    || document.getElementsByTagName('body')[0].classList.contains('page-kvittering')
+    || document.getElementsByTagName('body')[0].classList.contains('page-siden-kunne-ikke-findes')){
         let screenshots = document.getElementsByClassName('screenshot');
         for(let i = 0; i < screenshots.length; i++){
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
