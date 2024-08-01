@@ -48,13 +48,13 @@ tags:
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 1. side: Oplysninger om dig" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 1. side: Oplysninger om dig" class="screenshot d-block" data-folder="formular-til-kontaktoplysninger" data-image="formular-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 2. side: Bekræft oplysninger" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 2. side: Bekræft oplysninger" class="screenshot d-block" data-folder="formular-til-kontaktoplysninger" data-image="formular-2"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 3. side: Kvittering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" title="Formular til kontaktoplysninger, 3. side: Kvittering" class="screenshot d-block" data-folder="formular-til-kontaktoplysninger" data-image="formular-3"></a>
   </div>
 </div>
 <p class="mt-0">
@@ -65,25 +65,25 @@ tags:
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 1. side: Vælg personer" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 1. side: Vælg personer" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 2. side: Vælg noget mere" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 2. side: Vælg noget mere" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-2"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 3. side: Vedhæft dokumenter" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 3. side: Vedhæft dokumenter" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-3"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 4. side: Tidligere registrering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 4. side: Tidligere registrering" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-4"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 5. side: Kontaktoplysninger" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 5. side: Kontaktoplysninger" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-5"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 6. side: Opsummering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 6. side: Opsummering" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-6"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-7/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 7. side: Kvittering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-7/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-registrering" title="Trinformular til registrering, 7. side: Kvittering" class="screenshot d-block" data-folder="trinformular-til-registrering" data-image="registrering-7"></a>
   </div>
 </div>
 <p class="mt-0">
@@ -94,22 +94,22 @@ tags:
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 1. side: Oplysninger om ansøger" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 1. side: Oplysninger om ansøger" class="screenshot d-block" data-folder="trinformular-til-ansoegning" data-image="ansoegning-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 2. side: Kontaktoplysninger" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 2. side: Kontaktoplysninger" class="screenshot d-block" data-folder="trinformular-til-ansoegning" data-image="ansoegning-2"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 3. side: Ansøgningens type" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 3. side: Ansøgningens type" class="screenshot d-block" data-folder="trinformular-til-ansoegning" data-image="ansoegning-3"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 4. side: Tilføj dokumentation" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 4. side: Tilføj dokumentation" class="screenshot d-block" data-folder="trinformular-til-ansoegning" data-image="ansoegning-4"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 5. side: Opsummering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 5. side: Opsummering" class="screenshot d-block" data-folder="trinformular-til-ansoegning" data-image="ansoegning-5"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 6. side: Kvittering" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/?r=/eksempler/selvbetjeningsloesninger/%23trinformular-til-ansoegning" title="Trinformular til ansøgning, 6. side: Kvittering" class="screenshot d-block" data-folder="trinformular-til-ansoegning" data-image="ansoegning-6"></a>
   </div>
 </div>
 <p class="mt-0">
@@ -120,13 +120,13 @@ tags:
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 1. side: Find sag" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 1. side: Find sag" class="screenshot d-block" data-folder="sagsoversigt" data-image="find-sag"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 2. side: Sagsnr. 123456789" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 2. side: Sagsnr. 123456789" class="screenshot d-block" data-folder="sagsoversigt" data-image="sagsnr-123456789"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 3. side: Afgørelser" class="screenshot d-block"></a>
+    <a href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/?r=/eksempler/selvbetjeningsloesninger/%23sagsoversigt" title="Sagsoversigt, 3. side: Afgørelser" class="screenshot d-block" data-folder="sagsoversigt" data-image="afgoerelser"></a>
   </div>
 </div>
 <p class="mt-0">

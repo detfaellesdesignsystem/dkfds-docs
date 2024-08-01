@@ -11,6 +11,7 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
 {% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/search/search.njk" import search as search %}
 
 {# <!-- Variables --> #}
 
@@ -78,9 +79,16 @@
 
     <h2 class="h3 mt-sm-905 pt-sm-905">Hjælp til at komme videre</h2>
 
+    {{ 
+        search({
+            "id": "example-input-search",
+            "classes": "input-char-27",
+            "name": "example-search-button"
+        }) 
+    }}
+
     <ul class="nobullet-list">
         <li><a href="#">Gå til forsiden</a></li>
-        <li><a href="#">Brug søgefunktionen</a></li>
         <li><a href="#">Kontakt os</a></li>
     </ul>
 

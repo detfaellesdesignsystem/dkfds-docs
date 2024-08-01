@@ -18,7 +18,7 @@ tags:
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="/pages/eksempler/dashboard/dashboard-1/?r=/eksempler/templates/%23dashboard" title="Dashboard" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/dashboard/dashboard-1/?r=/eksempler/templates/%23dashboard" title="Eksempelside: Dashboard" class="screenshot d-block" data-folder="dashboard" data-image="dashboard-1"></a>
   </div>
 </div>
 
@@ -26,24 +26,24 @@ tags:
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="/pages/eksempler/opgaveliste/?r=/eksempler/templates/%23opgaveliste" title="Eksempelside på opgaveliste" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/opgaveliste/?r=/eksempler/templates/%23opgaveliste" title="Eksempelside: Opgaveliste" class="screenshot d-block" data-folder="opgaveliste" data-image="opgaveliste"></a>
   </div>
 </div>
 
 ## Vedhæft filer {#{% include create-id.html heading="Vedhæft filer" %}}
 
-<div class="row screenshot-gallery">
+<div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
   <h3 class="h4">Vedhæft fil</h3>
-    <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Vedhæft fil" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Vedhæft fil" class="screenshot d-block" data-folder="vedhaeft-fil" data-image="fil-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Liste af vedhæftede filer</h3>
-    <a href="/pages/eksempler/vedhaeft-fil/fil-2/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Liste af vedhæftede filer" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/vedhaeft-fil/fil-2/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Liste af vedhæftede filer" class="screenshot d-block" data-folder="vedhaeft-fil" data-image="fil-2"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Fejl i vedhæftede filer</h3>
-    <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Fejl i vedhæftede filer" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Fejl i vedhæftede filer" class="screenshot d-block" data-folder="vedhaeft-fil" data-image="fil-3"></a>
   </div>
 </div>
 
@@ -52,11 +52,11 @@ tags:
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Opsummering 1</h3>
-    <a href="/pages/eksempler/opsummering/opsummering-1/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering 1" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/opsummering/opsummering-1/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering 1" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Opsummering 2</h3>
-    <a href="/pages/eksempler/opsummering/opsummering-2/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering 2" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/opsummering/opsummering-2/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering 2" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-2"></a>
   </div>
 </div>
 
@@ -65,11 +65,11 @@ tags:
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Kvittering 1</h3>
-    <a href="/pages/eksempler/kvittering/kvittering-1/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 1" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/kvittering/kvittering-1/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 1" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Kvittering 2</h3>
-    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 2" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 2" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-2"></a>
   </div>
 </div>
 
@@ -78,19 +78,23 @@ tags:
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Formular med fejl</h3>
-    <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Formular med fejl" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Formular med fejl" class="screenshot d-block" data-folder="formular-med-fejl" data-image="formular-med-fejl-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Fejl i tidligere trin</h3>
-    <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Opsummeringsside med fejl" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Opsummeringsside med fejl" class="screenshot d-block" data-folder="trinindikator-med-fejl" data-image="trinindikator-med-fejl-1"></a>
   </div>
 </div>
 
 ## Siden kunne ikke findes {#{% include create-id.html heading="Siden kunne ikke findes" %}}
 
-<div class="row screenshot-gallery">
+<div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Siden kunne ikke findes 1</h3>
-    <a href="/pages/eksempler/siden-kunne-ikke-findes/siden-kunne-ikke-findes-1/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: Siden kunne ikke findes 1" class="screenshot d-block"></a>
+    <a href="/pages/eksempler/siden-kunne-ikke-findes-1/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: Siden kunne ikke findes 1" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-1"></a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-6">
+    <h3 class="h4">Siden kunne ikke findes 2</h3>
+    <a href="/pages/eksempler/siden-kunne-ikke-findes-2/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: Siden kunne ikke findes 2" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-2"></a>
   </div>
 </div>
