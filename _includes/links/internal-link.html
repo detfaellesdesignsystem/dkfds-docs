@@ -257,6 +257,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "se et eksempel på opsummeringssiden med fejl i trinindikatoren." -%} 
         <a href="/eksempler/templates/#fejl"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "siden kunne ikke findes" -%} 
+        <a href="/eksempler/templates/#siden-kunne-ikke-findes"{{ classes }}>{{ include.linktext }}</a>
+
 
 
     {%- comment -%} -------- Fællesskab -------- {%- endcomment -%}
