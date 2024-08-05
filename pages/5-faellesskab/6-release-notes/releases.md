@@ -105,6 +105,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Ændret baggrundsfarven på fokuserede {% include links/component-guideline-link.html linktext="accordions" %} fra gennemsigtig til grå.
 - Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="sprogvælger med tooltip" %} stod skævt.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="readonly-inputfelter" %} ikke blev vist korrekt, hvis de havde en anden type end `text`.
 - Tilføjet eksempler for '{% include links/internal-link.html linktext="siden kunne ikke findes" %}' (fejl 404).
 
 
