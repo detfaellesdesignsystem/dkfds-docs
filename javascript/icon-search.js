@@ -8,13 +8,18 @@ document.addEventListener("DOMContentLoaded", function() {
     let queryParams = new URLSearchParams(window.location.search);
     let searchTermInURL = queryParams.get('s');
     searchInput.value = searchTermInURL;
-    showSearchResults(searchTermInURL);
+    let initialResults = showSearchResults(searchTermInURL);
+    if (initialResults && searchTermInURL) {
+        document.getElementById('initial-result-message').textContent = `Ikonoversigten er filtreret. Viser de ikoner, der matcher søgningen '${searchInput.value}'.`;
+    }
     
     function handleInput(e) {
         e.preventDefault();
         let searchTerm = searchInput.value.toLowerCase();
         let queryParams = new URLSearchParams(window.location.search);
-        showSearchResults(searchTerm);
+        let foundResults = showSearchResults(searchTerm);
+        document.getElementById('initial-result-message').classList.add('d-none');
+        document.getElementById('initial-result-message').textContent = '';
         
         /* Update URL */
         if (searchTerm !== null && searchTerm.trim() !== "") {
@@ -23,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
         } 
         else {
             history.replaceState(null, null, window.location.origin + window.location.pathname);
+        }
+
+        if (foundResults) {
+            document.getElementById('sr-result-message').classList.remove('d-none');
+            document.getElementById('sr-result-message').textContent = `Ikonoversigten er filtreret. Viser de ikoner, der matcher søgningen '${searchTerm}'.`;
+        }
+        else {
+            document.getElementById('sr-result-message').classList.add('d-none');
         }
     }
 
@@ -69,8 +82,9 @@ document.addEventListener("DOMContentLoaded", function() {
             messageElement.classList.add('d-none');
         } 
         else {
-            document.getElementById('search-words').textContent = input;
             messageElement.classList.remove('d-none');
+            document.getElementById('search-words').textContent = input;
         }
+        return foundResults;
     }
 });

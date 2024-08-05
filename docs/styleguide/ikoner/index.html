@@ -1383,14 +1383,18 @@
         </div>
     </div>
 </form>
+<p><span id="initial-result-message" class="sr-only"></span></p>
 <div aria-live="polite" aria-atomic="true">
+    <span id="sr-result-message" class="sr-only"></span>
+</div>
+<div>
     <div class="icon-section" id="icon-section-konventionelle">
         <h3>Konventionelle ikoner</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-konventionelle">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="open-in-new" data-icon-keywords="open in new, new window, external, ekstern, eksternt link">
-    <svg class="icon-svg" focusable="false" aria-label="Eksternt link (åbner ny side/fane), programmatisk navn 'open-in-new'"><use xlink:href="#open-in-new"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Eksternt link (åbner ny side/fane), programmatisk navn 'open-in-new'"><use xlink:href="#open-in-new"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Eksternt link (åbner ny side/fane)</p>
     <p class="code-name" aria-hidden="true">'open-in-new'</p>
 </li>
@@ -1398,7 +1402,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="home" data-icon-keywords="hus, hjem, home, forside, house, home">
-    <svg class="icon-svg" focusable="false" aria-label="Forside (Hjem), programmatisk navn 'home'"><use xlink:href="#home"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Forside (Hjem), programmatisk navn 'home'"><use xlink:href="#home"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Forside (Hjem)</p>
     <p class="code-name" aria-hidden="true">'home'</p>
 </li>
@@ -1406,7 +1410,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="save" data-icon-keywords="save, gem, disc, diskette">
-    <svg class="icon-svg" focusable="false" aria-label="Gem, programmatisk navn 'save'"><use xlink:href="#save"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Gem, programmatisk navn 'save'"><use xlink:href="#save"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Gem</p>
     <p class="code-name" aria-hidden="true">'save'</p>
 </li>
@@ -1414,7 +1418,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="print" data-icon-keywords="print, printer, udskriv">
-    <svg class="icon-svg" focusable="false" aria-label="Print (udskriv), programmatisk navn 'print'"><use xlink:href="#print"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Print (udskriv), programmatisk navn 'print'"><use xlink:href="#print"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Print (udskriv)</p>
     <p class="code-name" aria-hidden="true">'print'</p>
 </li>
@@ -1422,7 +1426,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="trash-can" data-icon-keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish">
-    <svg class="icon-svg" focusable="false" aria-label="Slet, programmatisk navn 'trash-can'"><use xlink:href="#trash-can"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Slet, programmatisk navn 'trash-can'"><use xlink:href="#trash-can"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Slet</p>
     <p class="code-name" aria-hidden="true">'trash-can'</p>
 </li>
@@ -1430,7 +1434,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="search" data-icon-keywords="lup, search, søg">
-    <svg class="icon-svg" focusable="false" aria-label="Søg, programmatisk navn 'search'"><use xlink:href="#search"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Søg, programmatisk navn 'search'"><use xlink:href="#search"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Søg</p>
     <p class="code-name" aria-hidden="true">'search'</p>
 </li>
@@ -1445,7 +1449,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-beskeder">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="report-problem" data-icon-keywords="besked, alert, message, warning, advarsel, report, problem, report problem">
-    <svg class="icon-svg" focusable="false" aria-label="Advarsel, programmatisk navn 'report-problem'"><use xlink:href="#report-problem"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Advarsel, programmatisk navn 'report-problem'"><use xlink:href="#report-problem"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Advarsel</p>
     <p class="code-name" aria-hidden="true">'report-problem'</p>
 </li>
@@ -1453,7 +1457,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="highlight-off" data-icon-keywords="besked, alert, message, error, fejl">
-    <svg class="icon-svg" focusable="false" aria-label="Fejl, programmatisk navn 'highlight-off'"><use xlink:href="#highlight-off"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Fejl, programmatisk navn 'highlight-off'"><use xlink:href="#highlight-off"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Fejl</p>
     <p class="code-name" aria-hidden="true">'highlight-off'</p>
 </li>
@@ -1461,7 +1465,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="info" data-icon-keywords="besked, alert, message, information, info">
-    <svg class="icon-svg" focusable="false" aria-label="Information, programmatisk navn 'info'"><use xlink:href="#info"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Information, programmatisk navn 'info'"><use xlink:href="#info"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Information</p>
     <p class="code-name" aria-hidden="true">'info'</p>
 </li>
@@ -1469,7 +1473,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="help" data-icon-keywords="besked, alert, message, help, hjælp">
-    <svg class="icon-svg" focusable="false" aria-label="Hjælp, programmatisk navn 'help'"><use xlink:href="#help"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Hjælp, programmatisk navn 'help'"><use xlink:href="#help"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Hjælp</p>
     <p class="code-name" aria-hidden="true">'help'</p>
 </li>
@@ -1477,7 +1481,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="check-circle" data-icon-keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark">
-    <svg class="icon-svg" focusable="false" aria-label="Succes, programmatisk navn 'check-circle'"><use xlink:href="#check-circle"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Succes, programmatisk navn 'check-circle'"><use xlink:href="#check-circle"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Succes</p>
     <p class="code-name" aria-hidden="true">'check-circle'</p>
 </li>
@@ -1492,7 +1496,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-navigation"> 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="more-horiz" data-icon-keywords="more, vertical, mere">
-    <svg class="icon-svg" focusable="false" aria-label="Flere menupunkter (horisontalt), programmatisk navn 'more-horiz'"><use xlink:href="#more-horiz"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Flere menupunkter (horisontalt), programmatisk navn 'more-horiz'"><use xlink:href="#more-horiz"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Flere menupunkter (horisontalt)</p>
     <p class="code-name" aria-hidden="true">'more-horiz'</p>
 </li>
@@ -1500,7 +1504,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-right" data-icon-keywords="right, højre, frem, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Frem (højre), programmatisk navn 'arrow-right'"><use xlink:href="#arrow-right"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Frem (højre), programmatisk navn 'arrow-right'"><use xlink:href="#arrow-right"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Frem (højre)</p>
     <p class="code-name" aria-hidden="true">'arrow-right'</p>
 </li>
@@ -1508,7 +1512,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="menu" data-icon-keywords="hamburger, menu, burger, burgermenu, burger menu">
-    <svg class="icon-svg" focusable="false" aria-label="Menu, programmatisk navn 'menu'"><use xlink:href="#menu"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Menu, programmatisk navn 'menu'"><use xlink:href="#menu"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Menu</p>
     <p class="code-name" aria-hidden="true">'menu'</p>
 </li>
@@ -1516,7 +1520,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="more-vert" data-icon-keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical">
-    <svg class="icon-svg" focusable="false" aria-label="Overflow menu (vertikalt), programmatisk navn 'more-vert'"><use xlink:href="#more-vert"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Overflow menu (vertikalt), programmatisk navn 'more-vert'"><use xlink:href="#more-vert"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Overflow menu (vertikalt)</p>
     <p class="code-name" aria-hidden="true">'more-vert'</p>
 </li>
@@ -1524,7 +1528,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="chevron-left" data-icon-keywords="næste, next, side">
-    <svg class="icon-svg" focusable="false" aria-label="Paginering forrige, programmatisk navn 'chevron-left'"><use xlink:href="#chevron-left"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Paginering forrige, programmatisk navn 'chevron-left'"><use xlink:href="#chevron-left"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Paginering forrige</p>
     <p class="code-name" aria-hidden="true">'chevron-left'</p>
 </li>
@@ -1532,7 +1536,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="first-page" data-icon-keywords="start, første, side">
-    <svg class="icon-svg" focusable="false" aria-label="Paginering første, programmatisk navn 'first-page'"><use xlink:href="#first-page"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Paginering første, programmatisk navn 'first-page'"><use xlink:href="#first-page"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Paginering første</p>
     <p class="code-name" aria-hidden="true">'first-page'</p>
 </li>
@@ -1540,7 +1544,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="chevron-right" data-icon-keywords="forrige, previous, prev, side">
-    <svg class="icon-svg" focusable="false" aria-label="Paginering næste, programmatisk navn 'chevron-right'"><use xlink:href="#chevron-right"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Paginering næste, programmatisk navn 'chevron-right'"><use xlink:href="#chevron-right"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Paginering næste</p>
     <p class="code-name" aria-hidden="true">'chevron-right'</p>
 </li>
@@ -1548,7 +1552,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="last-page" data-icon-keywords="sidste, slut, side">
-    <svg class="icon-svg" focusable="false" aria-label="Paginering sidste, programmatisk navn 'last-page'"><use xlink:href="#last-page"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Paginering sidste, programmatisk navn 'last-page'"><use xlink:href="#last-page"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Paginering sidste</p>
     <p class="code-name" aria-hidden="true">'last-page'</p>
 </li>
@@ -1556,7 +1560,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-forward" data-icon-keywords="pil, højre, arrow, frem, forward">
-    <svg class="icon-svg" focusable="false" aria-label="Pil frem (højre), programmatisk navn 'arrow-forward'"><use xlink:href="#arrow-forward"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Pil frem (højre), programmatisk navn 'arrow-forward'"><use xlink:href="#arrow-forward"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Pil frem (højre)</p>
     <p class="code-name" aria-hidden="true">'arrow-forward'</p>
 </li>
@@ -1564,7 +1568,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-downward" data-icon-keywords="pil, ned, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Pil ned, programmatisk navn 'arrow-downward'"><use xlink:href="#arrow-downward"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Pil ned, programmatisk navn 'arrow-downward'"><use xlink:href="#arrow-downward"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Pil ned</p>
     <p class="code-name" aria-hidden="true">'arrow-downward'</p>
 </li>
@@ -1572,7 +1576,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-upward" data-icon-keywords="pil, op, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Pil op, programmatisk navn 'arrow-upward'"><use xlink:href="#arrow-upward"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Pil op, programmatisk navn 'arrow-upward'"><use xlink:href="#arrow-upward"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Pil op</p>
     <p class="code-name" aria-hidden="true">'arrow-upward'</p>
 </li>
@@ -1580,7 +1584,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-back" data-icon-keywords="pil, arrow, tilbage, back">
-    <svg class="icon-svg" focusable="false" aria-label="Pil tilbage (venstre), programmatisk navn 'arrow-back'"><use xlink:href="#arrow-back"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Pil tilbage (venstre), programmatisk navn 'arrow-back'"><use xlink:href="#arrow-back"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Pil tilbage (venstre)</p>
     <p class="code-name" aria-hidden="true">'arrow-back'</p>
 </li>
@@ -1588,7 +1592,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-left" data-icon-keywords="pil, arrow, back, tilbage">
-    <svg class="icon-svg" focusable="false" aria-label="Tilbage (venstre), programmatisk navn 'arrow-left'"><use xlink:href="#arrow-left"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tilbage (venstre), programmatisk navn 'arrow-left'"><use xlink:href="#arrow-left"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tilbage (venstre)</p>
     <p class="code-name" aria-hidden="true">'arrow-left'</p>
 </li>
@@ -1596,7 +1600,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="subdirectory-arrow-right" data-icon-keywords="højre, knækpil, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Undermenu højre, programmatisk navn 'subdirectory-arrow-right'"><use xlink:href="#subdirectory-arrow-right"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Undermenu højre, programmatisk navn 'subdirectory-arrow-right'"><use xlink:href="#subdirectory-arrow-right"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Undermenu højre</p>
     <p class="code-name" aria-hidden="true">'subdirectory-arrow-right'</p>
 </li>
@@ -1604,7 +1608,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="subdirectory-arrow-left" data-icon-keywords="venstre, knækpil, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Undermenu venstre, programmatisk navn 'subdirectory-arrow-left'"><use xlink:href="#subdirectory-arrow-left"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Undermenu venstre, programmatisk navn 'subdirectory-arrow-left'"><use xlink:href="#subdirectory-arrow-left"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Undermenu venstre</p>
     <p class="code-name" aria-hidden="true">'subdirectory-arrow-left'</p>
 </li>
@@ -1612,7 +1616,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="chevron-double-left" data-icon-keywords="venstre, dobbeltpil, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Langt tilbage, programmatisk navn 'chevron-double-left'"><use xlink:href="#chevron-double-left"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Langt tilbage, programmatisk navn 'chevron-double-left'"><use xlink:href="#chevron-double-left"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Langt tilbage</p>
     <p class="code-name" aria-hidden="true">'chevron-double-left'</p>
 </li>
@@ -1620,7 +1624,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="chevron-double-right" data-icon-keywords="højre, dobbeltpil, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Langt frem, programmatisk navn 'chevron-double-right'"><use xlink:href="#chevron-double-right"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Langt frem, programmatisk navn 'chevron-double-right'"><use xlink:href="#chevron-double-right"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Langt frem</p>
     <p class="code-name" aria-hidden="true">'chevron-double-right'</p>
 </li>
@@ -1635,7 +1639,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-tilstande">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-right" data-icon-keywords="pil, højre, lukket, luk, detalje">
-    <svg class="icon-svg" focusable="false" aria-label="Detalje lukket, programmatisk navn 'arrow-right'"><use xlink:href="#arrow-right"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Detalje lukket, programmatisk navn 'arrow-right'"><use xlink:href="#arrow-right"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Detalje lukket</p>
     <p class="code-name" aria-hidden="true">'arrow-right'</p>
 </li>
@@ -1643,7 +1647,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-drop-down" data-icon-keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud">
-    <svg class="icon-svg" focusable="false" aria-label="Detalje åben / Fold overflow ud, programmatisk navn 'arrow-drop-down'"><use xlink:href="#arrow-drop-down"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Detalje åben / Fold overflow ud, programmatisk navn 'arrow-drop-down'"><use xlink:href="#arrow-drop-down"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Detalje åben / Fold overflow ud</p>
     <p class="code-name" aria-hidden="true">'arrow-drop-down'</p>
 </li>
@@ -1651,7 +1655,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="arrow-drop-up" data-icon-keywords="pil, op, up, arrow, dropdown, fold ind, luk">
-    <svg class="icon-svg" focusable="false" aria-label="Fold overflow ind, programmatisk navn 'arrow-drop-up'"><use xlink:href="#arrow-drop-up"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Fold overflow ind, programmatisk navn 'arrow-drop-up'"><use xlink:href="#arrow-drop-up"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Fold overflow ind</p>
     <p class="code-name" aria-hidden="true">'arrow-drop-up'</p>
 </li>
@@ -1659,7 +1663,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="zoom-out" data-icon-keywords="lup, zoom, zoom ud, ud">
-    <svg class="icon-svg" focusable="false" aria-label="Formindsk, programmatisk navn 'zoom-out'"><use xlink:href="#zoom-out"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Formindsk, programmatisk navn 'zoom-out'"><use xlink:href="#zoom-out"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Formindsk</p>
     <p class="code-name" aria-hidden="true">'zoom-out'</p>
 </li>
@@ -1667,7 +1671,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="zoom-in" data-icon-keywords="lup, zoom, zoom ind, ind">
-    <svg class="icon-svg" focusable="false" aria-label="Forstør, programmatisk navn 'zoom-in'"><use xlink:href="#zoom-in"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Forstør, programmatisk navn 'zoom-in'"><use xlink:href="#zoom-in"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Forstør</p>
     <p class="code-name" aria-hidden="true">'zoom-in'</p>
 </li>
@@ -1675,7 +1679,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="fullscreen" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm">
-    <svg class="icon-svg" focusable="false" aria-label="Fuld skærm, programmatisk navn 'fullscreen'"><use xlink:href="#fullscreen"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Fuld skærm, programmatisk navn 'fullscreen'"><use xlink:href="#fullscreen"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Fuld skærm</p>
     <p class="code-name" aria-hidden="true">'fullscreen'</p>
 </li>
@@ -1683,7 +1687,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="remove" data-icon-keywords="-, minus, luk, accordion, close, collapse">
-    <svg class="icon-svg" focusable="false" aria-label="Luk accordion (minus), programmatisk navn 'remove'"><use xlink:href="#remove"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Luk accordion (minus), programmatisk navn 'remove'"><use xlink:href="#remove"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Luk accordion (minus)</p>
     <p class="code-name" aria-hidden="true">'remove'</p>
 </li>
@@ -1691,7 +1695,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="add" data-icon-keywords="+, plus, åben, accordion, open, expand">
-    <svg class="icon-svg" focusable="false" aria-label="Åbn accordion (plus), programmatisk navn 'add'"><use xlink:href="#add"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Åbn accordion (plus), programmatisk navn 'add'"><use xlink:href="#add"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Åbn accordion (plus)</p>
     <p class="code-name" aria-hidden="true">'add'</p>
 </li>
@@ -1699,7 +1703,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="fullscreen-exit" data-icon-keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit">
-    <svg class="icon-svg" focusable="false" aria-label="Luk fuld skærm, programmatisk navn 'fullscreen-exit'"><use xlink:href="#fullscreen-exit"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Luk fuld skærm, programmatisk navn 'fullscreen-exit'"><use xlink:href="#fullscreen-exit"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Luk fuld skærm</p>
     <p class="code-name" aria-hidden="true">'fullscreen-exit'</p>
 </li>
@@ -1707,7 +1711,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort" data-icon-keywords="sortering, sort, unsorted">
-    <svg class="icon-svg" focusable="false" aria-label="Ikke sorteret, programmatisk navn 'sort'"><use xlink:href="#sort"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Ikke sorteret, programmatisk navn 'sort'"><use xlink:href="#sort"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Ikke sorteret</p>
     <p class="code-name" aria-hidden="true">'sort'</p>
 </li>
@@ -1715,7 +1719,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="lock" data-icon-keywords="log af, log ud, log, af, ud, lås, lock, hængelås, låst">
-    <svg class="icon-svg" focusable="false" aria-label="Log af (lukket hængelås), programmatisk navn 'lock'"><use xlink:href="#lock"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Log af (lukket hængelås), programmatisk navn 'lock'"><use xlink:href="#lock"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Log af (lukket hængelås)</p>
     <p class="code-name" aria-hidden="true">'lock'</p>
 </li>
@@ -1723,7 +1727,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="visibility-off" data-icon-keywords="øje, eye, se, see, skjul, blind">
-    <svg class="icon-svg" focusable="false" aria-label="Skjul, programmatisk navn 'visibility-off'"><use xlink:href="#visibility-off"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Skjul, programmatisk navn 'visibility-off'"><use xlink:href="#visibility-off"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Skjul</p>
     <p class="code-name" aria-hidden="true">'visibility-off'</p>
 </li>
@@ -1731,7 +1735,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-by-alpha" data-icon-keywords="sorter alfabetisk, sort, sorting, sorter, sortér, alfabetisk">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér alfabetisk, programmatisk navn 'sort-by-alpha'"><use xlink:href="#sort-by-alpha"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér alfabetisk, programmatisk navn 'sort-by-alpha'"><use xlink:href="#sort-by-alpha"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér alfabetisk</p>
     <p class="code-name" aria-hidden="true">'sort-by-alpha'</p>
 </li>
@@ -1739,7 +1743,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="expand-more" data-icon-keywords="udvid, expand, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Udvid (chevron), programmatisk navn 'expand-more'"><use xlink:href="#expand-more"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Udvid (chevron), programmatisk navn 'expand-more'"><use xlink:href="#expand-more"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Udvid (chevron)</p>
     <p class="code-name" aria-hidden="true">'expand-more'</p>
 </li>
@@ -1747,7 +1751,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="expand-less" data-icon-keywords="collapse, pil, arrow">
-    <svg class="icon-svg" focusable="false" aria-label="Indskrænk (chevron), programmatisk navn 'expand-less'"><use xlink:href="#expand-less"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Indskrænk (chevron), programmatisk navn 'expand-less'"><use xlink:href="#expand-less"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Indskrænk (chevron)</p>
     <p class="code-name" aria-hidden="true">'expand-less'</p>
 </li>
@@ -1755,7 +1759,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="visibility" data-icon-keywords="øje, eye, se, see, vis, blind">
-    <svg class="icon-svg" focusable="false" aria-label="Vis, programmatisk navn 'visibility'"><use xlink:href="#visibility"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Vis, programmatisk navn 'visibility'"><use xlink:href="#visibility"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Vis</p>
     <p class="code-name" aria-hidden="true">'visibility'</p>
 </li>
@@ -1763,7 +1767,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-table-descending" data-icon-keywords="sorter tabel faldende, tabel, table, sort, sortering, kolonne, descending">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér tabel (faldende), programmatisk navn 'sort-table-descending'"><use xlink:href="#sort-table-descending"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér tabel (faldende), programmatisk navn 'sort-table-descending'"><use xlink:href="#sort-table-descending"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér tabel (faldende)</p>
     <p class="code-name" aria-hidden="true">'sort-table-descending'</p>
 </li>
@@ -1771,7 +1775,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-table-ascending" data-icon-keywords="sorter tabel stigende, tabel, table, sort, sortering, kolonne, ascending">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér tabel (stigende), programmatisk navn 'sort-table-ascending'"><use xlink:href="#sort-table-ascending"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér tabel (stigende), programmatisk navn 'sort-table-ascending'"><use xlink:href="#sort-table-ascending"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér tabel (stigende)</p>
     <p class="code-name" aria-hidden="true">'sort-table-ascending'</p>
 </li>
@@ -1779,7 +1783,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-table-none" data-icon-keywords="sorter tabel, tabel, table, sort, sortering, kolonne">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér tabel, programmatisk navn 'sort-table-none'"><use xlink:href="#sort-table-none"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér tabel, programmatisk navn 'sort-table-none'"><use xlink:href="#sort-table-none"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér tabel</p>
     <p class="code-name" aria-hidden="true">'sort-table-none'</p>
 </li>
@@ -1787,7 +1791,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-default" data-icon-keywords="sorter, sort, sortering, overflow, overflowmenu, overflow menu">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér, programmatisk navn 'sort-default'"><use xlink:href="#sort-default"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér, programmatisk navn 'sort-default'"><use xlink:href="#sort-default"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér</p>
     <p class="code-name" aria-hidden="true">'sort-default'</p>
 </li>
@@ -1795,7 +1799,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-ascending" data-icon-keywords="sorter stigende, stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér (stigende), programmatisk navn 'sort-ascending'"><use xlink:href="#sort-ascending"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér (stigende), programmatisk navn 'sort-ascending'"><use xlink:href="#sort-ascending"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér (stigende)</p>
     <p class="code-name" aria-hidden="true">'sort-ascending'</p>
 </li>
@@ -1803,7 +1807,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="sort-descending" data-icon-keywords="sorter faldende, faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu">
-    <svg class="icon-svg" focusable="false" aria-label="Sortér (faldende), programmatisk navn 'sort-descending'"><use xlink:href="#sort-descending"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sortér (faldende), programmatisk navn 'sort-descending'"><use xlink:href="#sort-descending"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sortér (faldende)</p>
     <p class="code-name" aria-hidden="true">'sort-descending'</p>
 </li>
@@ -1818,7 +1822,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-filtyper">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="file-image" data-icon-keywords="billede, picture, fotografi, fil, file">
-    <svg class="icon-svg" focusable="false" aria-label="Billede, programmatisk navn 'file-image'"><use xlink:href="#file-image"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Billede, programmatisk navn 'file-image'"><use xlink:href="#file-image"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Billede</p>
     <p class="code-name" aria-hidden="true">'file-image'</p>
 </li>
@@ -1826,7 +1830,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="file-excel" data-icon-keywords="excel, ark, regneark, fil">
-    <svg class="icon-svg" focusable="false" aria-label="Excel, programmatisk navn 'file-excel'"><use xlink:href="#file-excel"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Excel, programmatisk navn 'file-excel'"><use xlink:href="#file-excel"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Excel</p>
     <p class="code-name" aria-hidden="true">'file-excel'</p>
 </li>
@@ -1834,7 +1838,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="file-pdf" data-icon-keywords="PDF, dokument, document, fil">
-    <svg class="icon-svg" focusable="false" aria-label="PDF, programmatisk navn 'file-pdf'"><use xlink:href="#file-pdf"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="PDF, programmatisk navn 'file-pdf'"><use xlink:href="#file-pdf"></use></svg>
     <p class="descriptive-name" aria-hidden="true">PDF</p>
     <p class="code-name" aria-hidden="true">'file-pdf'</p>
 </li>
@@ -1842,7 +1846,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="file-word" data-icon-keywords="word, dokument, fil, document">
-    <svg class="icon-svg" focusable="false" aria-label="Word, programmatisk navn 'file-word'"><use xlink:href="#file-word"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Word, programmatisk navn 'file-word'"><use xlink:href="#file-word"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Word</p>
     <p class="code-name" aria-hidden="true">'file-word'</p>
 </li>
@@ -1857,7 +1861,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-funktionalitet">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="close" data-icon-keywords="anuller, annullér, luk, cancel, discard, fortryd">
-    <svg class="icon-svg" focusable="false" aria-label="Annuller (luk), programmatisk navn 'close'"><use xlink:href="#close"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Annuller (luk), programmatisk navn 'close'"><use xlink:href="#close"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Annuller (luk)</p>
     <p class="code-name" aria-hidden="true">'close'</p>
 </li>
@@ -1865,7 +1869,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="hourglass-empty" data-icon-keywords="waiting, hourglass, timeglas, vente, ventetid, tid">
-    <svg class="icon-svg" focusable="false" aria-label="Afventer, programmatisk navn 'hourglass-empty'"><use xlink:href="#hourglass-empty"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Afventer, programmatisk navn 'hourglass-empty'"><use xlink:href="#hourglass-empty"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Afventer</p>
     <p class="code-name" aria-hidden="true">'hourglass-empty'</p>
 </li>
@@ -1873,7 +1877,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="calculator" data-icon-keywords="calculator, lommeregner, beregning, beregner">
-    <svg class="icon-svg" focusable="false" aria-label="Beregner (lommeregner), programmatisk navn 'calculator'"><use xlink:href="#calculator"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Beregner (lommeregner), programmatisk navn 'calculator'"><use xlink:href="#calculator"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Beregner (lommeregner)</p>
     <p class="code-name" aria-hidden="true">'calculator'</p>
 </li>
@@ -1881,7 +1885,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="reply" data-icon-keywords="besvar, mail, email">
-    <svg class="icon-svg" focusable="false" aria-label="Besvar, programmatisk navn 'reply'"><use xlink:href="#reply"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Besvar, programmatisk navn 'reply'"><use xlink:href="#reply"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Besvar</p>
     <p class="code-name" aria-hidden="true">'reply'</p>
 </li>
@@ -1889,7 +1893,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="chat" data-icon-keywords="chat, kontakt, kommunikation, communication">
-    <svg class="icon-svg" focusable="false" aria-label="Chat, programmatisk navn 'chat'"><use xlink:href="#chat"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Chat, programmatisk navn 'chat'"><use xlink:href="#chat"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Chat</p>
     <p class="code-name" aria-hidden="true">'chat'</p>
 </li>
@@ -1897,7 +1901,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="insert-invitation" data-icon-keywords="date, calendar, kalender, dato, invitation, aftale, møde">
-    <svg class="icon-svg" focusable="false" aria-label="Dato / kalender, programmatisk navn 'insert-invitation'"><use xlink:href="#insert-invitation"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Dato / kalender, programmatisk navn 'insert-invitation'"><use xlink:href="#insert-invitation"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Dato / kalender</p>
     <p class="code-name" aria-hidden="true">'insert-invitation'</p>
 </li>
@@ -1905,7 +1909,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="share" data-icon-keywords="share, del">
-    <svg class="icon-svg" focusable="false" aria-label="Del, programmatisk navn 'share'"><use xlink:href="#share"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Del, programmatisk navn 'share'"><use xlink:href="#share"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Del</p>
     <p class="code-name" aria-hidden="true">'share'</p>
 </li>
@@ -1913,7 +1917,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="file-download" data-icon-keywords="download">
-    <svg class="icon-svg" focusable="false" aria-label="Download, programmatisk navn 'file-download'"><use xlink:href="#file-download"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Download, programmatisk navn 'file-download'"><use xlink:href="#file-download"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Download</p>
     <p class="code-name" aria-hidden="true">'file-download'</p>
 </li>
@@ -1921,7 +1925,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="download-done" data-icon-keywords="færdig, gennemført, download">
-    <svg class="icon-svg" focusable="false" aria-label="Download afsluttet, programmatisk navn 'download-done'"><use xlink:href="#download-done"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Download afsluttet, programmatisk navn 'download-done'"><use xlink:href="#download-done"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Download afsluttet</p>
     <p class="code-name" aria-hidden="true">'download-done'</p>
 </li>
@@ -1929,7 +1933,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="email" data-icon-keywords="email, mail, e-mail, e-mailadresse, adresse, adress">
-    <svg class="icon-svg" focusable="false" aria-label="Email, programmatisk navn 'email'"><use xlink:href="#email"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Email, programmatisk navn 'email'"><use xlink:href="#email"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Email</p>
     <p class="code-name" aria-hidden="true">'email'</p>
 </li>
@@ -1937,7 +1941,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="feedback" data-icon-keywords="feedback, respons, response, besvarelse">
-    <svg class="icon-svg" focusable="false" aria-label="Feedback, programmatisk navn 'feedback'"><use xlink:href="#feedback"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Feedback, programmatisk navn 'feedback'"><use xlink:href="#feedback"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Feedback</p>
     <p class="code-name" aria-hidden="true">'feedback'</p>
 </li>
@@ -1945,7 +1949,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="person-remove" data-icon-keywords="bruger, person, user, remove">
-    <svg class="icon-svg" focusable="false" aria-label="Fjern person/bruger, programmatisk navn 'person-remove'"><use xlink:href="#person-remove"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Fjern person/bruger, programmatisk navn 'person-remove'"><use xlink:href="#person-remove"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Fjern person/bruger</p>
     <p class="code-name" aria-hidden="true">'person-remove'</p>
 </li>
@@ -1953,7 +1957,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="flag" data-icon-keywords="flag, filled, udfyldt">
-    <svg class="icon-svg" focusable="false" aria-label="Flag fyldt, programmatisk navn 'flag'"><use xlink:href="#flag"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Flag fyldt, programmatisk navn 'flag'"><use xlink:href="#flag"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Flag fyldt</p>
     <p class="code-name" aria-hidden="true">'flag'</p>
 </li>
@@ -1961,7 +1965,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="outlined-flag" data-icon-keywords="flag, tomt">
-    <svg class="icon-svg" focusable="false" aria-label="Flag tomt, programmatisk navn 'outlined-flag'"><use xlink:href="#outlined-flag"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Flag tomt, programmatisk navn 'outlined-flag'"><use xlink:href="#outlined-flag"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Flag tomt</p>
     <p class="code-name" aria-hidden="true">'outlined-flag'</p>
 </li>
@@ -1969,7 +1973,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="open-with" data-icon-keywords="flyt, move, drag, drop">
-    <svg class="icon-svg" focusable="false" aria-label="Flyt, programmatisk navn 'open-with'"><use xlink:href="#open-with"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Flyt, programmatisk navn 'open-with'"><use xlink:href="#open-with"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Flyt</p>
     <p class="code-name" aria-hidden="true">'open-with'</p>
 </li>
@@ -1977,7 +1981,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="credit-card" data-icon-keywords="kreditkort, creditcard, credit, money, payment, betal, betaling, pay">
-    <svg class="icon-svg" focusable="false" aria-label="Indbetaling (kreditkort), programmatisk navn 'credit-card'"><use xlink:href="#credit-card"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Indbetaling (kreditkort), programmatisk navn 'credit-card'"><use xlink:href="#credit-card"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Indbetaling (kreditkort)</p>
     <p class="code-name" aria-hidden="true">'credit-card'</p>
 </li>
@@ -1985,7 +1989,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="settings" data-icon-keywords="settings, indstillinger">
-    <svg class="icon-svg" focusable="false" aria-label="Indstillinger, programmatisk navn 'settings'"><use xlink:href="#settings"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Indstillinger, programmatisk navn 'settings'"><use xlink:href="#settings"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Indstillinger</p>
     <p class="code-name" aria-hidden="true">'settings'</p>
 </li>
@@ -1993,7 +1997,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="photo-camera" data-icon-keywords="kamera, video, picture, billede">
-    <svg class="icon-svg" focusable="false" aria-label="Kamera (tag billede), programmatisk navn 'photo-camera'"><use xlink:href="#photo-camera"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kamera (tag billede), programmatisk navn 'photo-camera'"><use xlink:href="#photo-camera"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kamera (tag billede)</p>
     <p class="code-name" aria-hidden="true">'photo-camera'</p>
 </li>
@@ -2001,7 +2005,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="card-text" data-icon-keywords="card, text, tekst, kort, oplysninger, kontakt, contact">
-    <svg class="icon-svg" focusable="false" aria-label="Kontaktoplysninger, programmatisk navn 'card-text'"><use xlink:href="#card-text"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kontaktoplysninger, programmatisk navn 'card-text'"><use xlink:href="#card-text"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kontaktoplysninger</p>
     <p class="code-name" aria-hidden="true">'card-text'</p>
 </li>
@@ -2009,7 +2013,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="content-copy" data-icon-keywords="copy, paste, kopi, indsæt, sæt ind">
-    <svg class="icon-svg" focusable="false" aria-label="Kopi, programmatisk navn 'content-copy'"><use xlink:href="#content-copy"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kopi, programmatisk navn 'content-copy'"><use xlink:href="#content-copy"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kopi</p>
     <p class="code-name" aria-hidden="true">'content-copy'</p>
 </li>
@@ -2017,7 +2021,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="playlist-add-check" data-icon-keywords="liste, list, done, check, flueben, completed, gennemført">
-    <svg class="icon-svg" focusable="false" aria-label="Liste gennemført, programmatisk navn 'playlist-add-check'"><use xlink:href="#playlist-add-check"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Liste gennemført, programmatisk navn 'playlist-add-check'"><use xlink:href="#playlist-add-check"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Liste gennemført</p>
     <p class="code-name" aria-hidden="true">'playlist-add-check'</p>
 </li>
@@ -2025,7 +2029,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="folder" data-icon-keywords="mappe, folder">
-    <svg class="icon-svg" focusable="false" aria-label="Mappe, programmatisk navn 'folder'"><use xlink:href="#folder"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Mappe, programmatisk navn 'folder'"><use xlink:href="#folder"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Mappe</p>
     <p class="code-name" aria-hidden="true">'folder'</p>
 </li>
@@ -2033,7 +2037,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="notifications" data-icon-keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe">
-    <svg class="icon-svg" focusable="false" aria-label="Notifikation/besked, programmatisk navn 'notifications'"><use xlink:href="#notifications"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Notifikation/besked, programmatisk navn 'notifications'"><use xlink:href="#notifications"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Notifikation/besked</p>
     <p class="code-name" aria-hidden="true">'notifications'</p>
 </li>
@@ -2041,7 +2045,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="refresh" data-icon-keywords="update, refresh, opdater, genindlæs, pil, cirkel">
-    <svg class="icon-svg" focusable="false" aria-label="Opdater (genindlæs), programmatisk navn 'refresh'"><use xlink:href="#refresh"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Opdater (genindlæs), programmatisk navn 'refresh'"><use xlink:href="#refresh"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Opdater (genindlæs)</p>
     <p class="code-name" aria-hidden="true">'refresh'</p>
 </li>
@@ -2049,7 +2053,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="create-new-folder" data-icon-keywords="folder, mappe, opret, ny, add, new, create">
-    <svg class="icon-svg" focusable="false" aria-label="Opret mappe, programmatisk navn 'create-new-folder'"><use xlink:href="#create-new-folder"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Opret mappe, programmatisk navn 'create-new-folder'"><use xlink:href="#create-new-folder"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Opret mappe</p>
     <p class="code-name" aria-hidden="true">'create-new-folder'</p>
 </li>
@@ -2057,7 +2061,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="apps" data-icon-keywords="apps, applikation, oversigt, overblik, kasser">
-    <svg class="icon-svg" focusable="false" aria-label="Oversigt (overblik), programmatisk navn 'apps'"><use xlink:href="#apps"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Oversigt (overblik), programmatisk navn 'apps'"><use xlink:href="#apps"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Oversigt (overblik)</p>
     <p class="code-name" aria-hidden="true">'apps'</p>
 </li>
@@ -2065,7 +2069,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="location-on" data-icon-keywords="position, maps, adresse, lokation, location">
-    <svg class="icon-svg" focusable="false" aria-label="Placering (adresse), programmatisk navn 'location-on'"><use xlink:href="#location-on"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Placering (adresse), programmatisk navn 'location-on'"><use xlink:href="#location-on"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Placering (adresse)</p>
     <p class="code-name" aria-hidden="true">'location-on'</p>
 </li>
@@ -2073,7 +2077,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="mode" data-icon-keywords="redigér, edit, rediger, ændre, change">
-    <svg class="icon-svg" focusable="false" aria-label="Rediger, programmatisk navn 'mode'"><use xlink:href="#mode"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Rediger, programmatisk navn 'mode'"><use xlink:href="#mode"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Rediger</p>
     <p class="code-name" aria-hidden="true">'mode'</p>
 </li>
@@ -2081,7 +2085,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="send" data-icon-keywords="send">
-    <svg class="icon-svg" focusable="false" aria-label="Send, programmatisk navn 'send'"><use xlink:href="#send"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Send, programmatisk navn 'send'"><use xlink:href="#send"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Send</p>
     <p class="code-name" aria-hidden="true">'send'</p>
 </li>
@@ -2089,7 +2093,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="language" data-icon-keywords="sprog, language, globe, earch, jorden, lande, countries">
-    <svg class="icon-svg" focusable="false" aria-label="Sprog (globe), programmatisk navn 'language'"><use xlink:href="#language"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Sprog (globe), programmatisk navn 'language'"><use xlink:href="#language"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Sprog (globe)</p>
     <p class="code-name" aria-hidden="true">'language'</p>
 </li>
@@ -2097,7 +2101,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="grade" data-icon-keywords="star, stjerne, bedømmelse, rating">
-    <svg class="icon-svg" focusable="false" aria-label="Stjerne fyldt (markeret), programmatisk navn 'grade'"><use xlink:href="#grade"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Stjerne fyldt (markeret), programmatisk navn 'grade'"><use xlink:href="#grade"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Stjerne fyldt (markeret)</p>
     <p class="code-name" aria-hidden="true">'grade'</p>
 </li>
@@ -2105,7 +2109,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="grade-outline" data-icon-keywords="star, stjerne, bedømmelse, rating">
-    <svg class="icon-svg" focusable="false" aria-label="Stjerne tom (ikke-markeret), programmatisk navn 'grade-outline'"><use xlink:href="#grade-outline"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Stjerne tom (ikke-markeret), programmatisk navn 'grade-outline'"><use xlink:href="#grade-outline"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Stjerne tom (ikke-markeret)</p>
     <p class="code-name" aria-hidden="true">'grade-outline'</p>
 </li>
@@ -2113,7 +2117,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="contact-support" data-icon-keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question">
-    <svg class="icon-svg" focusable="false" aria-label="Support, programmatisk navn 'contact-support'"><use xlink:href="#contact-support"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Support, programmatisk navn 'contact-support'"><use xlink:href="#contact-support"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Support</p>
     <p class="code-name" aria-hidden="true">'contact-support'</p>
 </li>
@@ -2121,7 +2125,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="cached" data-icon-keywords="synkroniser, refresh, genindlæs, update, opdater">
-    <svg class="icon-svg" focusable="false" aria-label="Synkroniser (refresh), programmatisk navn 'cached'"><use xlink:href="#cached"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Synkroniser (refresh), programmatisk navn 'cached'"><use xlink:href="#cached"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Synkroniser (refresh)</p>
     <p class="code-name" aria-hidden="true">'cached'</p>
 </li>
@@ -2129,7 +2133,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="query-builder" data-icon-keywords="ur, tid, time, clock, klokke">
-    <svg class="icon-svg" focusable="false" aria-label="Tid (tidsinterval), programmatisk navn 'query-builder'"><use xlink:href="#query-builder"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tid (tidsinterval), programmatisk navn 'query-builder'"><use xlink:href="#query-builder"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tid (tidsinterval)</p>
     <p class="code-name" aria-hidden="true">'query-builder'</p>
 </li>
@@ -2137,7 +2141,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="add-a-photo" data-icon-keywords="kamera, camera, picture, add, tilføj, billede, ny, create">
-    <svg class="icon-svg" focusable="false" aria-label="Tilføj billede, programmatisk navn 'add-a-photo'"><use xlink:href="#add-a-photo"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tilføj billede, programmatisk navn 'add-a-photo'"><use xlink:href="#add-a-photo"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tilføj billede</p>
     <p class="code-name" aria-hidden="true">'add-a-photo'</p>
 </li>
@@ -2145,7 +2149,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="note-add" data-icon-keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create">
-    <svg class="icon-svg" focusable="false" aria-label="Tilføj dokument, programmatisk navn 'note-add'"><use xlink:href="#note-add"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tilføj dokument, programmatisk navn 'note-add'"><use xlink:href="#note-add"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tilføj dokument</p>
     <p class="code-name" aria-hidden="true">'note-add'</p>
 </li>
@@ -2153,7 +2157,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="playlist-add" data-icon-keywords="add, list, tilføj, ny, opret">
-    <svg class="icon-svg" focusable="false" aria-label="Tilføj til liste, programmatisk navn 'playlist-add'"><use xlink:href="#playlist-add"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tilføj til liste, programmatisk navn 'playlist-add'"><use xlink:href="#playlist-add"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tilføj til liste</p>
     <p class="code-name" aria-hidden="true">'playlist-add'</p>
 </li>
@@ -2161,7 +2165,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="person-add-alt-1" data-icon-keywords="add, tilføj, ny, create, opret, bruger, user, person">
-    <svg class="icon-svg" focusable="false" aria-label="Tilføj person/bruger, programmatisk navn 'person-add-alt-1'"><use xlink:href="#person-add-alt-1"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tilføj person/bruger, programmatisk navn 'person-add-alt-1'"><use xlink:href="#person-add-alt-1"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tilføj person/bruger</p>
     <p class="code-name" aria-hidden="true">'person-add-alt-1'</p>
 </li>
@@ -2169,7 +2173,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="done" data-icon-keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt">
-    <svg class="icon-svg" focusable="false" aria-label="Udført (korrekt, gennemført), programmatisk navn 'done'"><use xlink:href="#done"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Udført (korrekt, gennemført), programmatisk navn 'done'"><use xlink:href="#done"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Udført (korrekt, gennemført)</p>
     <p class="code-name" aria-hidden="true">'done'</p>
 </li>
@@ -2177,7 +2181,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="file-upload" data-icon-keywords="Upload, eksporter, export">
-    <svg class="icon-svg" focusable="false" aria-label="Upload (eksportér), programmatisk navn 'file-upload'"><use xlink:href="#file-upload"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Upload (eksportér), programmatisk navn 'file-upload'"><use xlink:href="#file-upload"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Upload (eksportér)</p>
     <p class="code-name" aria-hidden="true">'file-upload'</p>
 </li>
@@ -2185,7 +2189,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="attach-file" data-icon-keywords="Vedhæft, attachment, bilag">
-    <svg class="icon-svg" focusable="false" aria-label="Vedhæft (bilag), programmatisk navn 'attach-file'"><use xlink:href="#attach-file"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Vedhæft (bilag), programmatisk navn 'attach-file'"><use xlink:href="#attach-file"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Vedhæft (bilag)</p>
     <p class="code-name" aria-hidden="true">'attach-file'</p>
 </li>
@@ -2193,7 +2197,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="forward" data-icon-keywords="videresend">
-    <svg class="icon-svg" focusable="false" aria-label="Videresend, programmatisk navn 'forward'"><use xlink:href="#forward"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Videresend, programmatisk navn 'forward'"><use xlink:href="#forward"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Videresend</p>
     <p class="code-name" aria-hidden="true">'forward'</p>
 </li>
@@ -2201,7 +2205,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="view-headline" data-icon-keywords="Liste, justify">
-    <svg class="icon-svg" focusable="false" aria-label="Vis i liste form, programmatisk navn 'view-headline'"><use xlink:href="#view-headline"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Vis i liste form, programmatisk navn 'view-headline'"><use xlink:href="#view-headline"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Vis i liste form</p>
     <p class="code-name" aria-hidden="true">'view-headline'</p>
 </li>
@@ -2209,7 +2213,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="vertical-split" data-icon-keywords="liste, kasse, billede, layout, vindue">
-    <svg class="icon-svg" focusable="false" aria-label="Vis i liste form og vindue, programmatisk navn 'vertical-split'"><use xlink:href="#vertical-split"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Vis i liste form og vindue, programmatisk navn 'vertical-split'"><use xlink:href="#vertical-split"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Vis i liste form og vindue</p>
     <p class="code-name" aria-hidden="true">'vertical-split'</p>
 </li>
@@ -2217,7 +2221,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="palette" data-icon-keywords="tema, theme, palette, color, colours, painting, paint">
-    <svg class="icon-svg" focusable="false" aria-label="Vælg tema (palette), programmatisk navn 'palette'"><use xlink:href="#palette"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Vælg tema (palette), programmatisk navn 'palette'"><use xlink:href="#palette"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Vælg tema (palette)</p>
     <p class="code-name" aria-hidden="true">'palette'</p>
 </li>
@@ -2225,7 +2229,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="folder-open" data-icon-keywords="open, folder, åben, åbn, mappe">
-    <svg class="icon-svg" focusable="false" aria-label="Åben mappe, programmatisk navn 'folder-open'"><use xlink:href="#folder-open"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Åben mappe, programmatisk navn 'folder-open'"><use xlink:href="#folder-open"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Åben mappe</p>
     <p class="code-name" aria-hidden="true">'folder-open'</p>
 </li>
@@ -2240,7 +2244,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-illustrative">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="coronavirus" data-icon-keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi">
-    <svg class="icon-svg" focusable="false" aria-label="Corona (Covid-19), programmatisk navn 'coronavirus'"><use xlink:href="#coronavirus"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Corona (Covid-19), programmatisk navn 'coronavirus'"><use xlink:href="#coronavirus"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Corona (Covid-19)</p>
     <p class="code-name" aria-hidden="true">'coronavirus'</p>
 </li>
@@ -2248,7 +2252,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="list-alt" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Opgørelse / Resumé / Opsummering, programmatisk navn 'list-alt'"><use xlink:href="#list-alt"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Opgørelse / Resumé / Opsummering, programmatisk navn 'list-alt'"><use xlink:href="#list-alt"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Opgørelse / Resumé / Opsummering</p>
     <p class="code-name" aria-hidden="true">'list-alt'</p>
 </li>
@@ -2256,7 +2260,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="assignment" data-icon-keywords="assignment">
-    <svg class="icon-svg" focusable="false" aria-label="Opgave, programmatisk navn 'assignment'"><use xlink:href="#assignment"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Opgave, programmatisk navn 'assignment'"><use xlink:href="#assignment"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Opgave</p>
     <p class="code-name" aria-hidden="true">'assignment'</p>
 </li>
@@ -2264,7 +2268,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="payments" data-icon-keywords="money, payment">
-    <svg class="icon-svg" focusable="false" aria-label="Penge/Betaling/Opkrævning, programmatisk navn 'payments'"><use xlink:href="#payments"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Penge/Betaling/Opkrævning, programmatisk navn 'payments'"><use xlink:href="#payments"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Penge/Betaling/Opkrævning</p>
     <p class="code-name" aria-hidden="true">'payments'</p>
 </li>
@@ -2272,7 +2276,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="database" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Data, programmatisk navn 'database'"><use xlink:href="#database"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Data, programmatisk navn 'database'"><use xlink:href="#database"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Data</p>
     <p class="code-name" aria-hidden="true">'database'</p>
 </li>
@@ -2280,7 +2284,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="assessment" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Analyse, programmatisk navn 'assessment'"><use xlink:href="#assessment"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Analyse, programmatisk navn 'assessment'"><use xlink:href="#assessment"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Analyse</p>
     <p class="code-name" aria-hidden="true">'assessment'</p>
 </li>
@@ -2288,7 +2292,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="map" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Kort, programmatisk navn 'map'"><use xlink:href="#map"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kort, programmatisk navn 'map'"><use xlink:href="#map"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kort</p>
     <p class="code-name" aria-hidden="true">'map'</p>
 </li>
@@ -2296,7 +2300,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="link" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Links, programmatisk navn 'link'"><use xlink:href="#link"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Links, programmatisk navn 'link'"><use xlink:href="#link"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Links</p>
     <p class="code-name" aria-hidden="true">'link'</p>
 </li>
@@ -2304,7 +2308,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="person" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Person (bruger), programmatisk navn 'person'"><use xlink:href="#person"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Person (bruger), programmatisk navn 'person'"><use xlink:href="#person"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Person (bruger)</p>
     <p class="code-name" aria-hidden="true">'person'</p>
 </li>
@@ -2312,7 +2316,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="shopping-cart" data-icon-keywords="shopping, buy, cart, payment, checkout">
-    <svg class="icon-svg" focusable="false" aria-label="Kurv (afventer køb), programmatisk navn 'shopping-cart'"><use xlink:href="#shopping-cart"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kurv (afventer køb), programmatisk navn 'shopping-cart'"><use xlink:href="#shopping-cart"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kurv (afventer køb)</p>
     <p class="code-name" aria-hidden="true">'shopping-cart'</p>
 </li>
@@ -2320,7 +2324,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="videocam" data-icon-keywords="video, kamera">
-    <svg class="icon-svg" focusable="false" aria-label="Videokamera, programmatisk navn 'videocam'"><use xlink:href="#videocam"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Videokamera, programmatisk navn 'videocam'"><use xlink:href="#videocam"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Videokamera</p>
     <p class="code-name" aria-hidden="true">'videocam'</p>
 </li>
@@ -2328,7 +2332,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="headphones" data-icon-keywords="headset, sound, lyd, høretelefoner">
-    <svg class="icon-svg" focusable="false" aria-label="Headset, programmatisk navn 'headphones'"><use xlink:href="#headphones"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Headset, programmatisk navn 'headphones'"><use xlink:href="#headphones"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Headset</p>
     <p class="code-name" aria-hidden="true">'headphones'</p>
 </li>
@@ -2336,7 +2340,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="desktop-windows" data-icon-keywords="skærm, screen, computer">
-    <svg class="icon-svg" focusable="false" aria-label="Desktop, programmatisk navn 'desktop-windows'"><use xlink:href="#desktop-windows"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Desktop, programmatisk navn 'desktop-windows'"><use xlink:href="#desktop-windows"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Desktop</p>
     <p class="code-name" aria-hidden="true">'desktop-windows'</p>
 </li>
@@ -2344,7 +2348,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="laptop" data-icon-keywords="bærbar, computer">
-    <svg class="icon-svg" focusable="false" aria-label="Laptop, programmatisk navn 'laptop'"><use xlink:href="#laptop"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Laptop, programmatisk navn 'laptop'"><use xlink:href="#laptop"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Laptop</p>
     <p class="code-name" aria-hidden="true">'laptop'</p>
 </li>
@@ -2352,7 +2356,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="phone-iphone" data-icon-keywords="telefon, smartphone">
-    <svg class="icon-svg" focusable="false" aria-label="Mobiltelefon, programmatisk navn 'phone-iphone'"><use xlink:href="#phone-iphone"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Mobiltelefon, programmatisk navn 'phone-iphone'"><use xlink:href="#phone-iphone"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Mobiltelefon</p>
     <p class="code-name" aria-hidden="true">'phone-iphone'</p>
 </li>
@@ -2360,7 +2364,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="mouse" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Mus, programmatisk navn 'mouse'"><use xlink:href="#mouse"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Mus, programmatisk navn 'mouse'"><use xlink:href="#mouse"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Mus</p>
     <p class="code-name" aria-hidden="true">'mouse'</p>
 </li>
@@ -2368,7 +2372,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="accessibility-new" data-icon-keywords="man, mand">
-    <svg class="icon-svg" focusable="false" aria-label="Tilgængelighed, programmatisk navn 'accessibility-new'"><use xlink:href="#accessibility-new"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tilgængelighed, programmatisk navn 'accessibility-new'"><use xlink:href="#accessibility-new"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tilgængelighed</p>
     <p class="code-name" aria-hidden="true">'accessibility-new'</p>
 </li>
@@ -2376,7 +2380,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-list-bulleted" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Liste, programmatisk navn 'format-list-bulleted'"><use xlink:href="#format-list-bulleted"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Liste, programmatisk navn 'format-list-bulleted'"><use xlink:href="#format-list-bulleted"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Liste</p>
     <p class="code-name" aria-hidden="true">'format-list-bulleted'</p>
 </li>
@@ -2384,7 +2388,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-list-checks" data-icon-keywords="punktopstilling, liste">
-    <svg class="icon-svg" focusable="false" aria-label="Tjekliste, programmatisk navn 'format-list-checks'"><use xlink:href="#format-list-checks"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tjekliste, programmatisk navn 'format-list-checks'"><use xlink:href="#format-list-checks"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tjekliste</p>
     <p class="code-name" aria-hidden="true">'format-list-checks'</p>
 </li>
@@ -2392,7 +2396,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="bookmark-border" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Bogmærke, programmatisk navn 'bookmark-border'"><use xlink:href="#bookmark-border"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Bogmærke, programmatisk navn 'bookmark-border'"><use xlink:href="#bookmark-border"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Bogmærke</p>
     <p class="code-name" aria-hidden="true">'bookmark-border'</p>
 </li>
@@ -2400,7 +2404,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="bookmarks" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Bogmærker, programmatisk navn 'bookmarks'"><use xlink:href="#bookmarks"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Bogmærker, programmatisk navn 'bookmarks'"><use xlink:href="#bookmarks"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Bogmærker</p>
     <p class="code-name" aria-hidden="true">'bookmarks'</p>
 </li>
@@ -2408,7 +2412,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="card-account-details" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Kontaktoplysninger, programmatisk navn 'card-account-details'"><use xlink:href="#card-account-details"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kontaktoplysninger, programmatisk navn 'card-account-details'"><use xlink:href="#card-account-details"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kontaktoplysninger</p>
     <p class="code-name" aria-hidden="true">'card-account-details'</p>
 </li>
@@ -2416,7 +2420,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="people-alt" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Personer (brugere), programmatisk navn 'people-alt'"><use xlink:href="#people-alt"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Personer (brugere), programmatisk navn 'people-alt'"><use xlink:href="#people-alt"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Personer (brugere)</p>
     <p class="code-name" aria-hidden="true">'people-alt'</p>
 </li>
@@ -2424,7 +2428,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="groups" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Gruppe (møde), programmatisk navn 'groups'"><use xlink:href="#groups"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Gruppe (møde), programmatisk navn 'groups'"><use xlink:href="#groups"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Gruppe (møde)</p>
     <p class="code-name" aria-hidden="true">'groups'</p>
 </li>
@@ -2432,7 +2436,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="forum" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Forum, programmatisk navn 'forum'"><use xlink:href="#forum"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Forum, programmatisk navn 'forum'"><use xlink:href="#forum"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Forum</p>
     <p class="code-name" aria-hidden="true">'forum'</p>
 </li>
@@ -2440,7 +2444,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="insert-drive-file" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Dokument (sag), programmatisk navn 'insert-drive-file'"><use xlink:href="#insert-drive-file"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Dokument (sag), programmatisk navn 'insert-drive-file'"><use xlink:href="#insert-drive-file"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Dokument (sag)</p>
     <p class="code-name" aria-hidden="true">'insert-drive-file'</p>
 </li>
@@ -2448,7 +2452,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="domain" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Virksomhed, programmatisk navn 'domain'"><use xlink:href="#domain"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Virksomhed, programmatisk navn 'domain'"><use xlink:href="#domain"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Virksomhed</p>
     <p class="code-name" aria-hidden="true">'domain'</p>
 </li>
@@ -2456,7 +2460,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="face" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Elev, programmatisk navn 'face'"><use xlink:href="#face"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Elev, programmatisk navn 'face'"><use xlink:href="#face"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Elev</p>
     <p class="code-name" aria-hidden="true">'face'</p>
 </li>
@@ -2464,7 +2468,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="engineering" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Erhverv/Erhvervsuddannet, programmatisk navn 'engineering'"><use xlink:href="#engineering"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Erhverv/Erhvervsuddannet, programmatisk navn 'engineering'"><use xlink:href="#engineering"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Erhverv/Erhvervsuddannet</p>
     <p class="code-name" aria-hidden="true">'engineering'</p>
 </li>
@@ -2472,7 +2476,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="account-circle" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Brugerprofil, programmatisk navn 'account-circle'"><use xlink:href="#account-circle"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Brugerprofil, programmatisk navn 'account-circle'"><use xlink:href="#account-circle"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Brugerprofil</p>
     <p class="code-name" aria-hidden="true">'account-circle'</p>
 </li>
@@ -2480,7 +2484,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="how-to-reg" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Fuldmagtsprofil (3. part), programmatisk navn 'how-to-reg'"><use xlink:href="#how-to-reg"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Fuldmagtsprofil (3. part), programmatisk navn 'how-to-reg'"><use xlink:href="#how-to-reg"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Fuldmagtsprofil (3. part)</p>
     <p class="code-name" aria-hidden="true">'how-to-reg'</p>
 </li>
@@ -2488,7 +2492,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="support-agent" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Supporter (telefonrådgiver), programmatisk navn 'support-agent'"><use xlink:href="#support-agent"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Supporter (telefonrådgiver), programmatisk navn 'support-agent'"><use xlink:href="#support-agent"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Supporter (telefonrådgiver)</p>
     <p class="code-name" aria-hidden="true">'support-agent'</p>
 </li>
@@ -2496,7 +2500,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="local-shipping" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Lastbil (transport), programmatisk navn 'local-shipping'"><use xlink:href="#local-shipping"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Lastbil (transport), programmatisk navn 'local-shipping'"><use xlink:href="#local-shipping"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Lastbil (transport)</p>
     <p class="code-name" aria-hidden="true">'local-shipping'</p>
 </li>
@@ -2504,7 +2508,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="agriculture" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Traktor (landmand), programmatisk navn 'agriculture'"><use xlink:href="#agriculture"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Traktor (landmand), programmatisk navn 'agriculture'"><use xlink:href="#agriculture"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Traktor (landmand)</p>
     <p class="code-name" aria-hidden="true">'agriculture'</p>
 </li>
@@ -2512,7 +2516,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="school" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Studerende (studie), programmatisk navn 'school'"><use xlink:href="#school"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Studerende (studie), programmatisk navn 'school'"><use xlink:href="#school"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Studerende (studie)</p>
     <p class="code-name" aria-hidden="true">'school'</p>
 </li>
@@ -2520,7 +2524,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="construction" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Håndværk (bygge- og anlægsarbejde), programmatisk navn 'construction'"><use xlink:href="#construction"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Håndværk (bygge- og anlægsarbejde), programmatisk navn 'construction'"><use xlink:href="#construction"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Håndværk (bygge- og anlægsarbejde)</p>
     <p class="code-name" aria-hidden="true">'construction'</p>
 </li>
@@ -2528,7 +2532,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="science" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Videnskab (kemi), programmatisk navn 'science'"><use xlink:href="#science"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Videnskab (kemi), programmatisk navn 'science'"><use xlink:href="#science"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Videnskab (kemi)</p>
     <p class="code-name" aria-hidden="true">'science'</p>
 </li>
@@ -2536,7 +2540,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="drive-eta" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Bil (transport), programmatisk navn 'drive-eta'"><use xlink:href="#drive-eta"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Bil (transport), programmatisk navn 'drive-eta'"><use xlink:href="#drive-eta"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Bil (transport)</p>
     <p class="code-name" aria-hidden="true">'drive-eta'</p>
 </li>
@@ -2544,7 +2548,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="tune" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Parameter (finjustering), programmatisk navn 'tune'"><use xlink:href="#tune"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Parameter (finjustering), programmatisk navn 'tune'"><use xlink:href="#tune"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Parameter (finjustering)</p>
     <p class="code-name" aria-hidden="true">'tune'</p>
 </li>
@@ -2559,7 +2563,7 @@
             <ul class="icon-list no-max-width row" id="icon-list-tekstredigering">
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="text-format" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Formater tekst, programmatisk navn 'text-format'"><use xlink:href="#text-format"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Formater tekst, programmatisk navn 'text-format'"><use xlink:href="#text-format"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Formater tekst</p>
     <p class="code-name" aria-hidden="true">'text-format'</p>
 </li>
@@ -2567,7 +2571,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-size" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Tekststørrelse, programmatisk navn 'format-size'"><use xlink:href="#format-size"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Tekststørrelse, programmatisk navn 'format-size'"><use xlink:href="#format-size"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Tekststørrelse</p>
     <p class="code-name" aria-hidden="true">'format-size'</p>
 </li>
@@ -2575,7 +2579,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-bold" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Fed, programmatisk navn 'format-bold'"><use xlink:href="#format-bold"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Fed, programmatisk navn 'format-bold'"><use xlink:href="#format-bold"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Fed</p>
     <p class="code-name" aria-hidden="true">'format-bold'</p>
 </li>
@@ -2583,7 +2587,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-italic" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Kursiv, programmatisk navn 'format-italic'"><use xlink:href="#format-italic"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Kursiv, programmatisk navn 'format-italic'"><use xlink:href="#format-italic"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Kursiv</p>
     <p class="code-name" aria-hidden="true">'format-italic'</p>
 </li>
@@ -2591,7 +2595,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-underlined" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Understregning, programmatisk navn 'format-underlined'"><use xlink:href="#format-underlined"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Understregning, programmatisk navn 'format-underlined'"><use xlink:href="#format-underlined"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Understregning</p>
     <p class="code-name" aria-hidden="true">'format-underlined'</p>
 </li>
@@ -2599,7 +2603,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-color-text" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Farve, programmatisk navn 'format-color-text'"><use xlink:href="#format-color-text"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Farve, programmatisk navn 'format-color-text'"><use xlink:href="#format-color-text"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Farve</p>
     <p class="code-name" aria-hidden="true">'format-color-text'</p>
 </li>
@@ -2607,7 +2611,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-color-fill" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Baggrundsfarve, programmatisk navn 'format-color-fill'"><use xlink:href="#format-color-fill"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Baggrundsfarve, programmatisk navn 'format-color-fill'"><use xlink:href="#format-color-fill"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Baggrundsfarve</p>
     <p class="code-name" aria-hidden="true">'format-color-fill'</p>
 </li>
@@ -2615,7 +2619,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-clear" data-icon-keywords="ryd, clear, tekst, formatering, clean">
-    <svg class="icon-svg" focusable="false" aria-label="Ryd tekstformatering, programmatisk navn 'format-clear'"><use xlink:href="#format-clear"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Ryd tekstformatering, programmatisk navn 'format-clear'"><use xlink:href="#format-clear"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Ryd tekstformatering</p>
     <p class="code-name" aria-hidden="true">'format-clear'</p>
 </li>
@@ -2623,7 +2627,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-list-bulleted" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Punktopstilling, programmatisk navn 'format-list-bulleted'"><use xlink:href="#format-list-bulleted"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Punktopstilling, programmatisk navn 'format-list-bulleted'"><use xlink:href="#format-list-bulleted"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Punktopstilling</p>
     <p class="code-name" aria-hidden="true">'format-list-bulleted'</p>
 </li>
@@ -2631,7 +2635,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-list-numbered" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Punktopstilling numerisk, programmatisk navn 'format-list-numbered'"><use xlink:href="#format-list-numbered"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Punktopstilling numerisk, programmatisk navn 'format-list-numbered'"><use xlink:href="#format-list-numbered"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Punktopstilling numerisk</p>
     <p class="code-name" aria-hidden="true">'format-list-numbered'</p>
 </li>
@@ -2639,7 +2643,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-indent-increase" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Indryk højre, programmatisk navn 'format-indent-increase'"><use xlink:href="#format-indent-increase"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Indryk højre, programmatisk navn 'format-indent-increase'"><use xlink:href="#format-indent-increase"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Indryk højre</p>
     <p class="code-name" aria-hidden="true">'format-indent-increase'</p>
 </li>
@@ -2647,7 +2651,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-indent-decrease" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Indryk venstre, programmatisk navn 'format-indent-decrease'"><use xlink:href="#format-indent-decrease"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Indryk venstre, programmatisk navn 'format-indent-decrease'"><use xlink:href="#format-indent-decrease"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Indryk venstre</p>
     <p class="code-name" aria-hidden="true">'format-indent-decrease'</p>
 </li>
@@ -2655,7 +2659,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-align-left" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Venstrestillet tekst, programmatisk navn 'format-align-left'"><use xlink:href="#format-align-left"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Venstrestillet tekst, programmatisk navn 'format-align-left'"><use xlink:href="#format-align-left"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Venstrestillet tekst</p>
     <p class="code-name" aria-hidden="true">'format-align-left'</p>
 </li>
@@ -2663,7 +2667,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-align-center" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Centreret tekst, programmatisk navn 'format-align-center'"><use xlink:href="#format-align-center"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Centreret tekst, programmatisk navn 'format-align-center'"><use xlink:href="#format-align-center"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Centreret tekst</p>
     <p class="code-name" aria-hidden="true">'format-align-center'</p>
 </li>
@@ -2671,7 +2675,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-align-right" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Højrestillet tekst, programmatisk navn 'format-align-right'"><use xlink:href="#format-align-right"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Højrestillet tekst, programmatisk navn 'format-align-right'"><use xlink:href="#format-align-right"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Højrestillet tekst</p>
     <p class="code-name" aria-hidden="true">'format-align-right'</p>
 </li>
@@ -2679,7 +2683,7 @@
 
                 
 <li class="icon-box col-6 col-md-3" data-icon-name="format-align-justify" data-icon-keywords="">
-    <svg class="icon-svg" focusable="false" aria-label="Lige marginer, programmatisk navn 'format-align-justify'"><use xlink:href="#format-align-justify"></use></svg>
+    <svg role="img" class="icon-svg" focusable="false" aria-label="Lige marginer, programmatisk navn 'format-align-justify'"><use xlink:href="#format-align-justify"></use></svg>
     <p class="descriptive-name" aria-hidden="true">Lige marginer</p>
     <p class="code-name" aria-hidden="true">'format-align-justify'</p>
 </li>
@@ -2688,8 +2692,8 @@
             </ul>
         </div>
     </div>
-    <div id="no-results-message" class="no-icons-text">
-        <span>Ingen søgeresultater for “<strong id="search-words"></strong>”. Prøv et andet søgeord, eller kig efter ikoner fra <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Symbols<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
+    <div class="no-icons-text" aria-live="polite" aria-atomic="true">
+        <span id="no-results-message">Ingen søgeresultater for “<strong id="search-words"></strong>”. Prøv et andet søgeord, eller kig efter ikoner fra <a href="https://fonts.google.com/icons" class="icon-link" target="_blank">Material Symbols<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span>
     </div>
 </div>
 

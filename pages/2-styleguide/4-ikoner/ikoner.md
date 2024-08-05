@@ -63,7 +63,11 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
 </form>
+<span id="initial-result-message" class="sr-only"></span>
 <div aria-live="polite" aria-atomic="true">
+    <span id="sr-result-message" class="sr-only"></span>
+</div>
+<div>
     <div class="icon-section" id="icon-section-konventionelle">
         <h3>Konventionelle ikoner</h3>
         <div class="container">
@@ -276,8 +280,8 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
             </ul>
         </div>
     </div>
-    <div id="no-results-message" class="no-icons-text">
-        <span>Ingen søgeresultater for “<strong id="search-words"></strong>”. Prøv et andet søgeord, eller kig efter ikoner fra {% include links/external-link.html linktext="Material Symbols" %}.</span>
+    <div class="no-icons-text" aria-live="polite" aria-atomic="true">
+        <span id="no-results-message">Ingen søgeresultater for “<strong id="search-words"></strong>”. Prøv et andet søgeord, eller kig efter ikoner fra {% include links/external-link.html linktext="Material Symbols" %}.</span>
     </div>
 </div>
 
