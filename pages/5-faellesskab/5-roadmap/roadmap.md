@@ -25,7 +25,7 @@ Sagerne kan være:
 
 {% include roadmap.html title="Felter med prefix og suffix" status="Gennemført" link="/komponenter/inputfelter/#prefix-og-suffix" %}
 {% include roadmap.html title="Karakterbegrænsning på inputfelt/tekstområde" status="Gennemført" link="/komponenter/inputfelter/#karakterbegraensning" %}
-{% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/#kraever-handling" %}
+{% include roadmap.html title="Modalvindue som kræver handling" status="Gennemført" link="/komponenter/modal/#modal-som-kraever-handling" %}
 {% include roadmap.html title="Multiselect dropdown" status="I gang" %}
 {% include roadmap.html title="Notifikationsprik" status="I gang" %}
 {% include roadmap.html title="Paginering" status="Gennemført" link="/komponenter/paginering/" %}

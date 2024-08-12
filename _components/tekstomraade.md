@@ -109,7 +109,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-code-l
 
 ## Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" append="-kode" %}}
 
-{% include code/syntax.html component="text-area-character-limit" link=true copybutton=true %}
+{% include code/syntax.html component="text-area-character-limit" link=true copybutton=true guidelines="/komponenter/tekstomraade/#karakterbegraensning" %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 

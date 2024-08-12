@@ -65,7 +65,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 
-{% include code/preview-box.html component="checkbox-collapse" title="Eksempel på tjekboks med skjult indhold" %}
+{% include code/preview-box.html component="checkbox-collapse" title="Eksempel på tjekboks med skjult indhold" code="/komponenter/tjekboks/#skjult-indhold-collapse-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -128,7 +128,7 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).in
 
 ## Skjult indhold (collapse) {#{% include create-id.html heading="Skjult indhold (collapse)" append="-kode" %}}
 
-{% include code/syntax.html component="checkbox-collapse" link=true copybutton=true %}
+{% include code/syntax.html component="checkbox-collapse" link=true copybutton=true guidelines="/komponenter/tjekboks/#skjult-indhold-collapse" %}
 
 For at initialisere collapse funktionaliteten på en checkbox skal `input[type=checkbox]` have følgende:
 

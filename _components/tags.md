@@ -53,10 +53,9 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#tags-med-luk-ikon}
-### Tags med luk-ikon
+### Tags med luk-ikon {#{% include create-id.html heading="Tags med luk-ikon" %}}
 
-{% include code/preview-box.html component="tags-icon" title="Eksempel på tags med luk-ikon" %}
+{% include code/preview-box.html component="tags-icon" title="Eksempel på tags med luk-ikon" code="/komponenter/tags/#tags-med-luk-ikon-kode" %}
 
 <!--split-->
 
@@ -68,4 +67,4 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 ## Tags med luk-ikon {#{% include create-id.html heading="Tags med luk-ikon" append="-kode" %}}
 
-{% include code/syntax.html component="tags-icon" link=true copybutton=true %}
+{% include code/syntax.html component="tags-icon" link=true copybutton=true guidelines="/komponenter/tags/#tags-med-luk-ikon" %}

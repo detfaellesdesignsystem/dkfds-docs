@@ -67,12 +67,11 @@ Hold teksten i modalen så kort og koncis som muligt. Det anbefales ikke, at ind
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#kraever-handling}
-### Modal som kræver handling
+### Modal som kræver handling {#{% include create-id.html heading="Modal som kræver handling" %}}
 
 Anvend modal som kræver handling, når brugeren ikke skal kunne lukke modalen uden at tage stilling til dets indhold.
 
-{% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link=true %}
+{% include code/preview-box.html component="modal-forced-action" title="Eksempel på modal, som kræver handling" link=true code="/komponenter/modal/#modal-som-kraever-handling-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -127,6 +126,6 @@ Når en modal aktiveres, vil JavaScripten sætte `inert`-attributten på alle el
 
 ## Modal som kræver handling {#{% include create-id.html heading="Modal som kræver handling" append="-kode" %}}
 
-{% include code/syntax.html component="modal-forced-action" link=true copybutton=true %}
+{% include code/syntax.html component="modal-forced-action" link=true copybutton=true guidelines="/komponenter/modal/#modal-som-kraever-handling" %}
 
 Tilføj attributten `data-modal-forced-action` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader luk knappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.

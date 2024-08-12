@@ -99,7 +99,7 @@ Tabeller kan søges med et søgefelt placeret over tabellen. Feltet søger som u
 
 {% include code/preview-box.html component="table-selectable" title="Eksempel på valgbare rækker i en tabel" code="/komponenter/tables/#valgbare-raekker-kode" %}
 
-#### Valgbare rækker med funktionsknapper
+#### Valgbare rækker med funktionsknapper {#{% include create-id.html heading="Valgbare rækker med funktionsknapper" %}}
 
 Hvis der kan udføres særlige funktioner for de valgte rækker, placeres funktionsknapper under tabellen. Brug ikke disabled knapper, når der ikke er nogen valgte rækker, da disabled knapper er svære at læse og forstå for nogle brugere. Vis i stedet en hjælpetekst ved knapperne, hvis de bliver klikket, før der er valgt en eller flere rækker.
 
@@ -225,7 +225,7 @@ Se nedenstående eksempels HTML for, hvilke klasser, attributter og knapper, der
 
 Der følger ikke JavaScript med til sortering i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
 
-{% include code/syntax.html component="table-sort" link=true copybutton=true %}
+{% include code/syntax.html component="table-sort" link=true copybutton=true guidelines="/komponenter/tables/#sortering-i-tabeller" %}
 
 ## Søgning i tabeller {#{% include create-id.html heading="Søgning i tabeller" append="-kode" %}}
 
@@ -233,15 +233,15 @@ Anvend {% include links/component-code-link.html linktext="søgefeltkomponenten"
 
 Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv håndtere funktionaliteten. Nedenstående eksempel er dog gjort funktionelt som demonstration. 
 
-{% include code/syntax.html component="table-search" link=true copybutton=true %}
+{% include code/syntax.html component="table-search" link=true copybutton=true guidelines="/komponenter/tables/#soegning-i-tabeller" %}
 
 ## Valgbare rækker {#{% include create-id.html heading="Valgbare rækker" append="-kode" %}}
 
-{% include code/syntax.html component="table-selectable" link=true copybutton=true %}
+{% include code/syntax.html component="table-selectable" link=true copybutton=true guidelines="/komponenter/tables/#valgbare-raekker" %}
 
 ### Valgbare rækker med funktionsknapper {#{% include create-id.html heading="Valgbare rækker med funktionsknapper" append="-kode" %}}
 
-{% include code/syntax.html component="table-selectable-functions" link=true copybutton=true %}
+{% include code/syntax.html component="table-selectable-functions" link=true copybutton=true guidelines="/komponenter/tables/#valgbare-raekker-med-funktionsknapper" %}
 
 ### JavaScript for tabeller med valgbare rækker
 Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
@@ -261,7 +261,7 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 
 ## Strukturerede lister {#{% include create-id.html heading="Strukturerede lister" append="-kode" %}}
 
-{% include code/syntax.html component="structured-list" link=true copybutton=true %}
+{% include code/syntax.html component="structured-list" link=true copybutton=true guidelines="/komponenter/tables/#strukturerede-lister" %}
 
 Strukturerede lister kan bruges i forbindelse med {% include links/internal-link.html linktext="opsummering" %} eller {% include links/internal-link.html linktext="kvitteringssider" %} som en alternativ tabel, hvor der ikke er nogen vandrette headers. 
 
@@ -271,4 +271,4 @@ Listen kan gøres responsiv ved at tilføje klassen med det ønskede breakpoint.
 
 ### Struktureret liste med redigér {#{% include create-id.html heading="Struktureret liste med redigér" append="-kode" %}}
 
-{% include code/syntax.html component="structured-list--edit" link=true copybutton=true %}
+{% include code/syntax.html component="structured-list--edit" link=true copybutton=true guidelines="/komponenter/tables/#med-link" %}

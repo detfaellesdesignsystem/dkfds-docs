@@ -67,39 +67,33 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#primaerknap}
-### Primærknap
+### Primærknap {#{% include create-id.html heading="Primærknap" %}}
 
-{% include code/preview-box.html component="buttons-primary" title="Eksempel på primærknap" %}
+{% include code/preview-box.html component="buttons-primary" title="Eksempel på primærknap" code="/komponenter/knapper/#primaer-kode" %}
 
-{:#sekundaerknapper}
-### Sekundærknapper
+### Sekundærknapper {#{% include create-id.html heading="Sekundærknapper" %}}
 
-{% include code/preview-box.html component="buttons-secondary" title="Eksempel på sekundærknap" %}
+{% include code/preview-box.html component="buttons-secondary" title="Eksempel på sekundærknap" code="/komponenter/knapper/#sekundaer-kode" %}
 
-{:#tertiaerknapper}
-### Tertiærknapper
+### Tertiærknapper {#{% include create-id.html heading="Tertiærknapper" %}}
 
-{% include code/preview-box.html component="buttons-tertiary" title="Eksempel på tertiær knap" %}
+{% include code/preview-box.html component="buttons-tertiary" title="Eksempel på tertiær knap" code="/komponenter/knapper/#tertiaer-kode" %}
 
-{:#tilbage-knap}
-### Tilbage-knap
+### Tilbage-knap {#{% include create-id.html heading="Tilbage-knap" %}}
 
-{% include code/preview-box.html component="buttons-back" title="Eksempel på tilbageknap" %}
+{% include code/preview-box.html component="buttons-back" title="Eksempel på tilbageknap" code="/komponenter/knapper/#tilbage-knap-kode" %}
 
-{:#knap-med-ikon}
-### Knap med ikon
+### Knap med ikon {#{% include create-id.html heading="Knap med ikon" %}}
 
-{% include code/preview-box.html component="buttons-with-icon" title="Eksempel på knap med ikon" %}
+{% include code/preview-box.html component="buttons-with-icon" title="Eksempel på knap med ikon" code="/komponenter/knapper/#knap-med-ikon-kode" %}
 
-{:#klikbart-ikon}
-### Klikbart ikon
+### Klikbart ikon {#{% include create-id.html heading="Klikbart ikon" %}}
 
 Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med sorteringsikoner i {% include links/component-guideline-link.html linktext="tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
  
 Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-guideline-link.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
 
-{% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" %}
+{% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" code="/komponenter/knapper/#klikbart-ikon-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -148,10 +142,10 @@ Defineres med klassen `button-quaternary`.
 
 ## Knap med ikon {#{% include create-id.html heading="Knap med ikon" append="-kode" %}}
 
-{% include code/syntax.html component="buttons-with-icon" link=true copybutton=true %}
+{% include code/syntax.html component="buttons-with-icon" link=true copybutton=true guidelines="/komponenter/knapper/#knap-med-ikon" %}
 
 ## Klikbart ikon {#{% include create-id.html heading="Klikbart ikon" append="-kode" %}}
 
-{% include code/syntax.html component="buttons-only-icon" link=true copybutton=true %}
+{% include code/syntax.html component="buttons-only-icon" link=true copybutton=true guidelines="/komponenter/knapper/#klikbart-ikon" %}
 
 `button-unstyled` bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx `<span class="sr-only">Slet</span>`.

@@ -42,7 +42,7 @@ Definér datoer det er muligt for brugeren at vælge fra.
 
 I eksemplet kan brugeren kun vælge datoer mellem 4. december til og med 24. december 2020. Man kan kun vælge datoer inden for dette interval. En anden mulighed kunne også være dags dato og 1 år frem, således at man kun kan vælge en dag i fremtiden.
 
-{% include code/preview-box.html component="date-picker-interval" title="Eksempel på datovælger med begrænsning"%}
+{% include code/preview-box.html component="date-picker-interval" title="Eksempel på datovælger med begrænsning" code="/komponenter/datovaelger/#begraens-mulige-datoer-kode" %}
 
 ### Fast værdi {#{% include create-id.html heading="Fast værdi" %}}
 
@@ -50,13 +50,13 @@ Definér en dato som udgangspunkt. Hvis datoen ikke defineres vil udgangspunktet
 
 I eksemplet er der valgt at man ved aktivering af datovælgeren starter fokus d. 1 december 2020. Datoen er ikke valgt, man tager blot udgangspunkt i den dag i kalenderen. Hvis man ikke vælger en fast værdi, vil datoen i stedet være dags dato.
 
-{% include code/preview-box.html component="date-picker-default-date" title="Eksempel på datovælger med fast værdi"%}
+{% include code/preview-box.html component="date-picker-default-date" title="Eksempel på datovælger med fast værdi" code="/komponenter/datovaelger/#fast-vaerdi-kode" %}
 
 ### Datoformat {#{% include create-id.html heading="Datoformat" %}}
 
 Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt en dato i datovælgeren. Der findes dog også {% include links/component-code-link.html linktext="andre datoformater" %}, der kan anvendes i stedet. Bemærk, at brugeren altid kan anvende alle datoformater, hvis de selv indtaster datoen i feltet.
 
-{% include code/preview-box.html component="date-picker-format" title="Eksempel på datovælger med andet datoformat"%}
+{% include code/preview-box.html component="date-picker-format" title="Eksempel på datovælger med andet datoformat" code="/komponenter/datovaelger/#datoformat-kode" %}
 
 <!--split-->
 
@@ -163,11 +163,11 @@ DKFDS.datePicker.on(document.body);
 
 ## Begræns mulige datoer {#{% include create-id.html heading="Begræns mulige datoer" append="-kode" %}}
 
-{% include code/syntax.html component="date-picker-interval" link=true copybutton=true %}
+{% include code/syntax.html component="date-picker-interval" link=true copybutton=true guidelines="/komponenter/datovaelger/#begraens-mulige-datoer" %}
 
 ## Fast værdi {#{% include create-id.html heading="Fast værdi" append="-kode" %}}
 
-{% include code/syntax.html component="date-picker-default-date" link=true copybutton=true %}
+{% include code/syntax.html component="date-picker-default-date" link=true copybutton=true guidelines="/komponenter/datovaelger/#fast-vaerdi" %}
 
 ## Datoformat {#{% include create-id.html heading="Datoformat" append="-kode" %}}
 
@@ -180,7 +180,7 @@ Anvend attributten `data-dateformat`. Mulige værdier er:
 
 Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inputfeltet, efter brugeren har trykket på en dato i datovælgeren. Alle ovenstående datoformater er gyldige, hvis brugeren selv vælger at skrive datoen ind i feltet.
 
-{% include code/syntax.html component="date-picker-format" link=true copybutton=true %}
+{% include code/syntax.html component="date-picker-format" link=true copybutton=true guidelines="/komponenter/datovaelger/#datoformat" %}
 
 ## Fejlmeddelelse {#{% include create-id.html heading="Fejlmeddelelse" append="-kode" %}}
 

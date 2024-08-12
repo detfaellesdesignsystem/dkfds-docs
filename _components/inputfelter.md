@@ -99,15 +99,13 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#hjaelpetekst}
-### Hjælpetekst
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
 
 {% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/komponenter/inputfelter/#hjaelpetekst-kode" %}
 
 {% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
 
-{:#obligatoriske-og-frivillige-felter}
-### Obligatoriske og frivillige inputfelter
+### Obligatoriske og frivillige inputfelter {#{% include create-id.html heading="Obligatoriske og frivillige inputfelter" %}}
 
 Undgå frivillige inputfelter så vidt muligt. Hvis et felt er frivilligt, så overvej altid, om det er nødvendigt at have med i formularen. 
 
@@ -123,22 +121,19 @@ I de fleste tilfælde bør der være flere obligatoriske end frivillige inputfel
 
 Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, fremhæves de obligatoriske felter i stedet for de frivillige. 
 
-{% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige inputfelter" %}
+{% include code/preview-box.html component="text-input-optional" title="Eksempel på formular med flest frivillige inputfelter" code="/komponenter/inputfelter/#obligatoriske-og-frivillige-inputfelter-kode" %}
 
-{:#read-only}
-### Read-only
+### Read-only {#{% include create-id.html heading="Read-only" %}}
 
 {% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/komponenter/inputfelter/#read-only-kode" %}
 
-{:#deaktiveret}
-### Deaktiveret
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" %}}
 
 {% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/komponenter/inputfelter/#deaktiveret-kode" %}
 
 Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af {% include links/component-guideline-link.html linktext="read-only" %}.
 
-{:#prefix-og-suffix}
-### Prefix og suffix
+### Prefix og suffix {#{% include create-id.html heading="Prefix og suffix" %}}
 
 Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive bestemte data såsom beløb, antal m.m.
 
@@ -146,8 +141,7 @@ Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyld
 
 {% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/komponenter/inputfelter/#prefix-og-suffix-kode" %}
 
-{:#karakterbegraensning}
-### Karakterbegrænsning
+### Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" %}}
 
 Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et felt. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.
 
@@ -157,8 +151,7 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 {% include code/preview-box.html component="text-input-character-limit" link=false title="Eksempel på felt med karakterbegrænsning" code="/komponenter/inputfelter/#karakterbegraensning-kode" %}
 
-{:#feltbredde}
-### Feltbredde
+### Feltbredde {#{% include create-id.html heading="Feltbredde" %}}
 
 {% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/komponenter/inputfelter/#feltbredde-kode" %}
 
@@ -204,36 +197,38 @@ Brug `autocomplete` på inputfelter til fx navn (`autocomplete='name'`), postnum
 
 ## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-helptext" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-helptext" link=true copybutton=true guidelines="/komponenter/inputfelter/#hjaelpetekst" %}
 
 ## Obligatoriske og frivillige inputfelter {#{% include create-id.html heading="Obligatoriske og frivillige inputfelter" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-optional" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-optional" link=true copybutton=true guidelines="/komponenter/inputfelter/#obligatoriske-og-frivillige-inputfelter" %}
 
 Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(frivilligt)" ved de få felter, der ikke er påkrævede. Hvis de fleste felter er frivillige i en løsning, noterer man "(*skal udfyldes)" ved de få felter, der er påkrævede.
 
 ## Read-only {#{% include create-id.html heading="Read-only" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-readonly" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-readonly" link=true copybutton=true guidelines="/komponenter/inputfelter/#read-only" %}
 
 ## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-disabled" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-disabled" link=true copybutton=true guidelines="/komponenter/inputfelter/#deaktiveret" %}
 
 ## Prefix og suffix {#{% include create-id.html heading="Prefix og suffix" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-prefix-suffix" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-prefix-suffix" link=true copybutton=true guidelines="/komponenter/inputfelter/#prefix-og-suffix" %}
 
 ## Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-character-limit" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-character-limit" link=true copybutton=true guidelines="/komponenter/inputfelter/#karakterbegraensning" %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
 ### JavaScript
+
 Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
 
 #### Funktioner
+
 <div class="table--responsive-scroll">
   <table class="table table--responsive-headers">
     <thead>
@@ -268,6 +263,7 @@ form_limit.charactersLeft();
 {% endhighlight %}
 
 #### Sprog
+
 Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten "lang" i din sides html-tag. Indholdet i krøllede parenteser `{...}` nedenunder skal ikke oversættes eller ændres.
 
 {% highlight javascript %}
