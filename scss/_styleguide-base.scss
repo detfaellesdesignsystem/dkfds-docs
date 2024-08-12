@@ -1048,6 +1048,9 @@ body[class*="page-grid"][class*="-html"]
 }
 
 //BORDERS
+.focus-border {
+  border-top: $theme-focus-width $theme-focus-style color("focus");
+}
 .outer-border-example {
   border-top: border(10);
 }

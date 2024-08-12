@@ -60,6 +60,12 @@ tags:
   </thead>
   <tbody>
     <tr>
+      <td>Fokusstreg</td>
+      <td>#747474</td>
+      <td>4px</td>
+      <td>solid</td>
+    </tr>
+    <tr>
       <td>Ydre streger</td>
       <td>#747474</td>
       <td>1px</td>

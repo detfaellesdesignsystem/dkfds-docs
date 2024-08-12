@@ -188,7 +188,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="create-new-folder" keywords="folder, mappe, opret, ny, add, new, create" label="Opret mappe" %}
                 {% include icon.html icon="apps" keywords="apps, applikation, oversigt, overblik, kasser" label="Oversigt (overblik)" %}
                 {% include icon.html icon="location-on" keywords="position, maps, adresse, lokation, location" label="Placering (adresse)" %}
-                {% include icon.html icon="mode" keywords="redigér, edit, rediger, ændre, change" label="Rediger" %}
+                {% include icon.html icon="mode" keywords="redigér, edit, rediger, ændre, change, pen, blyant" label="Rediger" %}
                 {% include icon.html icon="send" keywords="send" label="Send" %}
                 {% include icon.html icon="language" keywords="sprog, language, globe, earch, jorden, lande, countries" label="Sprog (globe)" %}
                 {% include icon.html icon="grade" keywords="star, stjerne, bedømmelse, rating" label="Stjerne fyldt (markeret)" %}
