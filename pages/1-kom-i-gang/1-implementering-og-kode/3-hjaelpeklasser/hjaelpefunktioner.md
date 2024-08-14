@@ -19,94 +19,96 @@ tags:
 
 {% include anchorlinks.html headings="Hjaelpeklasser" %}
 
-## Responsive hjælpeklasser {#{% include create-id.html heading="Responsive hjælpeklasser" %}}
+## Om hjælpeklasserne {#{% include create-id.html heading="Om hjælpeklasserne" %}}
 
-Alle de klasser, som bliver genereret af hjælpefunktionerne, findes både i en version som virker i alle browserstørrelser og i responsive versioner som genereres på baggrund af de breakpoints, som er defineret i scss-variablen `$grid-breakpoints`:
+Det Fælles Designsystem tilbyder en række hjælpeklasser, hvis formål er at gøre det nemt at ændre fx størrelse eller placering af et element hurtigt.
 
-{% highlight scss %}
-$grid-breakpoints: ( 
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
-) !default;
-{% endhighlight %}
+<h3 class="h5 mb-0">Breakpoint</h3>
 
-## Text align {#{% include create-id.html heading="Text align" %}}
+Flere af hjælpeklasserne har responsive muligheder, så man kan justere et element forskelligt afhængigt af skærmstørrelse. Disse klasser vil i de følgende afsnit have værdien `{breakpoint}` nævnt i deres format. For at gøre en hjælpeklasse responsiv, skal du erstatte `{breakpoint}` med en af nedenstående værdier.
 
-Der er opsat en hjælpefunktion, som automatisk genererer klasser til `text-align` baseret på de definerede breakpoints i $grid-breakpoints.
+- Ekstra små skærme (<576px): `xs`
+- Små skærme (≥576px): `sm`
+- Mellem skærme (≥768px): `md`
+- Store skærme (≥992px): `lg`
+- Ekstra store skærme (≥1200px): `xl`
+
+Eksempelvis vil hjælpeklassen `d-md-block` kun have effekt på skærmstørrelser over 768px. Se de følgende afsnit for flere detaljer om de forskellige formater.
+
+## Tekstjustering {#{% include create-id.html heading="Tekstjustering" %}}
+
+Disse hjælpeklasser bruges til at styre, om en tekst skal være venstrejusteret, centreret eller højrejusteret. Hjælpeklassen sætter CSS-egenskaben `text-align` på elementet.
 
 Format: `align-text-{retning}` og `align-text-{breakpoint}-{retning}`
 
-<h3 class="h5 mb-0">Retning:</h3>
+<h3 class="h5 mb-0">Retning</h3>
 
-- Venstre: `text-align: left`
-- Midten: `text-align: center`
-- Højre: `text-align: right`
+- Venstre: `left`
+- Midten: `center`
+- Højre: `right`
 
-<h3 class="h5 mb-0">Eksempel:</h3>
+<h3 class="h5 mb-0">Eksempel</h3>
+
 {% highlight html %}
-<h1 class="align-text-right">Tekst til højre</h1>
-<h1 class="align-text-md-left">Tekst til højre på skærme over 768px</h1>;
+<p class="align-text-right"> Højrejusteret tekst på alle skærme </p>
+<p class="align-text-md-center"> Centreret tekst på skærme over 768px </p>
 {% endhighlight %}
 
 ## Margin og padding {#{% include create-id.html heading="Margin og padding" %}}
 
-Der er opsat hjælpefunktioner, som genererer klasser til margin og padding. Disse hjælpefunktioner er inspireret af {% include links/external-link.html linktext="Bootstraps Spacing Utilities" %}.
+Disse hjælpeklasser bruges til at styre padding og margin på et element (inspireret af {% include links/external-link.html linktext="Bootstraps Spacing Utilities" %}).
 
-Format: `{css-egenskab}{retning}-{størrelse}` og `{css-egenskab}{retning}-{breakpoint}-{størrelse}`.
+Format: `{egenskab}{retning}-{størrelse}` og `{egenskab}{retning}-{breakpoint}-{størrelse}`.
 
-<h3 class="h5 mb-0">CSS egenskab:</h3>
+<h3 class="h5 mb-0">Egenskab</h3>
 
-- <span class="bold">m</span> – for klasser som sætter `margin`
-- <span class="bold">p</span> - for klasser som sætter `padding`
+- <span class="bold">`m`</span> – for klasser som sætter margin
+- <span class="bold">`p`</span> - for klasser som sætter padding
 
-<h3 class="h5 mb-0">Retning:</h3>
+<h3 class="h5 mb-0">Retning</h3>
 
-- <span class="bold">t</span> – for klasser som sætter `margin-top` eller `padding-top`
-- <span class="bold">b</span> – for klasser som sætter `margin-bottom` eller `padding-bottom`
-- <span class="bold">l</span> – for klasser som sætter `margin-left` eller `padding-left`
-- <span class="bold">r</span> – for klasser som sætter `margin-right` eller `padding-right`
-- <span class="bold">x</span> – for klasser som sætter både`*-left` og `*-right`
-- <span class="bold">y</span> – for klasser som sætter både`*-top` og `*-bottom`
-- blank – for klasser som sætter margin eller padding på alle 4 sider af elementet.
+- <span class="bold">`t`</span> – for klasser som sætter `margin-top` eller `padding-top`
+- <span class="bold">`b`</span> – for klasser som sætter `margin-bottom` eller `padding-bottom`
+- <span class="bold">`l`</span> – for klasser som sætter `margin-left` eller `padding-left`
+- <span class="bold">`r`</span> – for klasser som sætter `margin-right` eller `padding-right`
+- <span class="bold">`x`</span> – for klasser som sætter både`*-left` og `*-right`
+- <span class="bold">`y`</span> – for klasser som sætter både`*-top` og `*-bottom`
 
-<h3 class="h5 mb-0">Størrelse:</h3>
+Undlades retning sættes margin eller padding på alle 4 sider af elementet.
 
-- <span class="bold">0</span> – for klasser som fjerner alt `margin` eller `padding`
-- <span class="bold">1</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 0.25`
-- <span class="bold">2</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 0.5`
-- <span class="bold">3</span> – for klasser som sætter `margin` eller `padding` til `$spacer`
-- <span class="bold">305</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 1.5`
-- <span class="bold">4</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 2`
-- <span class="bold">405</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 2.5`
-- <span class="bold">5</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 3`
-- <span class="bold">505</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 3.5`
-- <span class="bold">6</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 4`
-- <span class="bold">605</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 4.5`
-- <span class="bold">7</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 5`
-- <span class="bold">705</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 5.5`
-- <span class="bold">8</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 6`
-- <span class="bold">805</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 6.5`
-- <span class="bold">9</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 7`
-- <span class="bold">905</span> – for klasser som sætter `margin` eller `padding` til `$spacer * 7.5`
+<h3 class="h5 mb-0">Størrelse</h3>
 
-`$spacer` er sat til `8px.`
+- <span class="bold">`0`</span> – 0px
+- <span class="bold">`1`</span> – `$spacer * 0.25`, hvilket som standard er 2px
+- <span class="bold">`2`</span> – `$spacer * 0.5`, hvilket som standard er 4px
+- <span class="bold">`3`</span> – `$spacer`, hvilket som standard er 8px
+- <span class="bold">`305`</span> – `$spacer * 1.5`, hvilket som standard er 12px
+- <span class="bold">`4`</span> – `$spacer * 2`, hvilket som standard er 16px
+- <span class="bold">`405`</span> – `$spacer * 2.5`, hvilket som standard er 20px
+- <span class="bold">`5`</span> – `$spacer * 3`, hvilket som standard er 24px
+- <span class="bold">`505`</span> – `$spacer * 3.5`, hvilket som standard er 28px
+- <span class="bold">`6`</span> – `$spacer * 4`, hvilket som standard er 32px
+- <span class="bold">`605`</span> – `$spacer * 4.5`, hvilket som standard er 36px
+- <span class="bold">`7`</span> – `$spacer * 5`, hvilket som standard er 40px
+- <span class="bold">`705`</span> – `$spacer * 5.5`, hvilket som standard er 44px
+- <span class="bold">`8`</span> – `$spacer * 6`, hvilket som standard er 48px
+- <span class="bold">`805`</span> – `$spacer * 6.5`, hvilket som standard er 52px
+- <span class="bold">`9`</span> – `$spacer * 7`, hvilket som standard er 56px
+- <span class="bold">`905`</span> – `$spacer * 7.5`, hvilket som standard er 60px
 
-Du kan selv tilføje flere muligheder ved at tilføje dem til `$spacers` variablen.
+Sass-variablen `$spacer` er som standard sat til 8px.
 
-<h3 class="h5 mb-0">Breakpoint:</h3>
+<h3 class="h5 mb-0">Eksempel</h3>
 
-- blank - for klasser som sætter `margin` eller `padding` for alle browserstørrelser.
-- <span class="bold">sm</span> - for klasser som sætter `margin` eller `padding` for browserstørrelser over 576px;
-- <span class="bold">md</span> - for klasser som sætter `margin` eller `padding` for browserstørrelser over 768px;
-- <span class="bold">lg</span> - for klasser som sætter `margin` eller `padding` for browserstørrelser over 992px;
-- <span class="bold">xl</span> - for klasser som sætter `margin` eller `padding` for browserstørrelser over 1200px;
+{% highlight html %}
+<p class="mt-8"> Tekst med margin på 48px over elementet </p>
+<p class="p-0"> Padding på alle fire sider sat til 0px på elementet </p>
+<p class="my-xl-1"> Tekst med margin på 2px over og under elementet på skærme over 1200px </p>
+{% endhighlight %}
 
 ## Display {#{% include create-id.html heading="Display" %}}
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser til display-egenskaben baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af {% include links/external-link.html linktext="Bootstraps Display Utility" %}.
+Disse hjælpeklasser bruges til at styre CSS-egenskaben `display` på et element (inspireret af {% include links/external-link.html linktext="Bootstraps Display Utility" %}).
 
 Format: `d-{display}` og `d-{breakpoint}-{display}`
 
@@ -118,9 +120,6 @@ Format: `d-{display}` og `d-{breakpoint}-{display}`
 - `block`
 - `flex`
 - `inline-flex`
-
-<h3 class="h5 mb-0">Print display</h3>
-
 - `print-none`
 - `print-inline`
 - `print-inline-block`
@@ -131,121 +130,23 @@ Format: `d-{display}` og `d-{breakpoint}-{display}`
 - `print-flex`
 - `print-inline-flex`
 
-<h3 class="h5 mb-0">Eksempel med grid breakpoints</h3>
+`print`-værdierne sætter udelukkende `display`-egenskaben i printformat.
 
-<table class="table">
-  <thead>
-    <tr>
-      <th class="w-percent-50">Browserstørrelse</th>
-      <th>Klasse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Skjul på alle</td>
-      <td>`d-none`</td>
-    </tr>
-    <tr>
-      <td>Skjul kun på xs</td>
-      <td>`d-none d-sm-block`</td>
-    </tr>
-    <tr>
-      <td>Skjul kun på sm</td>
-      <td>`d-sm-none d-md-block`</td>
-    </tr>
-    <tr>
-      <td>Skjul kun på md</td>
-      <td>`d-md-none d-lg-block`</td>
-    </tr>
-    <tr>
-      <td>Skjul kun på lg</td>
-      <td>`d-lg-none d-xl-block`</td>
-    </tr>
-    <tr>
-      <td>Skjul kun på xl</td>
-      <td>`d-xl-none`</td>
-    </tr>
-    <tr>
-      <td>Synlig på alle</td>
-      <td>`d-block`</td>
-    </tr>
-    <tr>
-      <td>Synlig kun på xs</td>
-      <td>`d-block d-sm-none`</td>
-    </tr>
-    <tr>
-      <td>Synlig kun på sm</td>
-      <td>`d-none d-sm-block d-md-none`</td>
-    </tr>
-    <tr>
-      <td>Synlig kun på md</td>
-      <td>`d-none d-md-block d-lg-none`</td>
-    </tr>
-    <tr>
-      <td>Synlig kun på lg</td>
-      <td>`d-none d-lg-block d-xl-none`</td>
-    </tr>
-    <tr>
-      <td>Synlig kun på xl</td>
-      <td>`d-none d-xl-block`</td>
-    </tr>
-  </tbody>
-</table>
+<h3 class="h5 mb-0">Eksempel</h3>
 
-<h3 class="h5 mb-0">Eksempel på klasser med print</h3>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th class="w-percent-50">Beskrivelse</th>
-      <th>Klasse</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Skjul ved print</td>
-      <td>`d-print-none`</td>
-    </tr>
-    <tr>
-      <td>Vis element med inline display ved print</td>
-      <td>`d-print-inline`</td>
-    </tr>
-    <tr>
-      <td>Vis element med inline-block display ved print</td>
-      <td>`d-print-inline-block`</td>
-    </tr>
-    <tr>
-      <td>Vis element med block display ved print</td>
-      <td>`d-print-block`</td>
-    </tr>
-    <tr>
-      <td>Vis element som tabel display ved print</td>
-      <td>`d-print-table`</td>
-    </tr>
-    <tr>
-      <td>Vis element som en tabel række display ved print</td>
-      <td>`d-print-table-row`</td>
-    </tr>
-    <tr>
-      <td>Vis element med tabel celle display ved print</td>
-      <td>`d-print-table-cell`</td>
-    </tr>
-    <tr>
-      <td>Vis element med flex display ved print</td>
-      <td>`d-print-flex`</td>
-    </tr>
-    <tr>
-      <td>Vis element med inline-flex display ved print</td>
-      <td>`d-print-inline-flex`</td>
-    </tr>
-  </tbody>
-</table>
+{% highlight html %}
+<p class="d-none"> Elementet er skjult </p>
+<p class="d-block d-print-none"> Elementet er synligt på skærme, men skjult hvis siden printes </p>
+<p class="d-block d-md-inline"> Elementet har display-værdien 'block' på små skærme og værdien 'inline' på skærme over 768px </p>
+{% endhighlight %}
 
 ## Flexbox {#{% include create-id.html heading="Flexbox" %}}
 
-Der er opsat en hjælpefunktion, som automatisk genererer klasser til flexbox baseret på de definerede breakpoints i `$grid-breakpoints`. Disse hjælpeklasser er inspireret af {% include links/external-link.html linktext="Bootstraps Flex Utility" %}. Bemærk at disse hjælpeklasser kun kan anvendes, når `display` er sat til `flexbox`. Afsnittene om vandret og lodret justering tager udgangspunkt i at retningen er sat til `row`.
+Disse hjælpeklasser bruges til at sætte de CSS-egenskaber, som er relevante, når `display: flex` er sat på et element (inspireret af {% include links/external-link.html linktext="Bootstraps Flex Utility" %}). 
 
-### Retning
+Du kan fx sætte `display: flex` på et element med Det Fælles Designsystems hjælpeklasse `d-flex`.
+
+### Retning {#{% include create-id.html heading="Retning" %}}
 
 Format: `flex-{retning}` og `flex-{breakpoint}-{retning}`
 
@@ -278,6 +179,8 @@ Format: `flex-{ombrydning}` og `flex-{breakpoint}-{ombrydning}`
 
 ### Vandret justering
 
+<em>Bemærk: Eksemplerne tager udgangspunkt i, at <a href="#retning">retningen</a> er sat til `row`.</em>
+
 Format: `justify-content-{justering}` og `justify-content-{breakpoint}-{justering}`
 
 <h4 class="h5 mb-0">Justering</h4>
@@ -294,6 +197,8 @@ Format: `justify-content-{justering}` og `justify-content-{breakpoint}-{justerin
 {% endhighlight %}
 
 ### Lodret justering af elementer
+
+<em>Bemærk: Eksemplerne tager udgangspunkt i, at <a href="#retning">retningen</a> er sat til `row`.</em>
 
 Format: `align-items-{justering}` og `align-items-{breakpoint}-{justering}`
 
@@ -348,7 +253,7 @@ Format: `align-content-{justering}` og `align-content-{breakpoint}-{justering}`
 
 ## Bredde i procent {#{% include create-id.html heading="Bredde i procent" %}}
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer bredde i procent. De responsive klasser er baseret på de definerede breakpoints i `$grid-breakpoints`.
+Disse hjælpeklasser bruges til at styre bredden på et element.
 
 Format: `w-percent-{bredde}` og `w-percent-{breakpoint}-{bredde}`
 
@@ -365,38 +270,56 @@ Format: `w-percent-{bredde}` og `w-percent-{breakpoint}-{bredde}`
 - 90: `90%`
 - 100: `100%`
 
-<h3 class="h5">Eksempel:</h3>
+<h3 class="h5">Eksempel</h3>
 
 {% highlight html %}
-<h1 class="w-percent-100"> Dette element har en bredde på 100% </h1>
-<h1 class="w-percent-md-30"> Dette element har en bredde på 30% på skærme over 768px </h1>
+<p class="w-percent-100"> Dette element har en bredde på 100% </p>
+<p class="w-percent-md-30"> Dette element har en bredde på 30% på skærme over 768px </p>
 {% endhighlight %}
 
 ## Baggrundsfarver {#{% include create-id.html heading="Baggrundsfarver" %}}
 
-Der er opsat en hjælpefunktion som automatisk genererer klasser som styrer baggrundsfarver.
+Disse hjælpeklasser bruges til at styre baggrundsfarven på et element.
 
 Format: `bg-{baggrund}`
 
 <h3 class="h5 mb-0">Baggrundsfarver</h3>
 
-- Normal: `normal`
-- Alternativ: `alternative`
-- Modal: `modal`
+- `normal`
+- `alternative`
+- `modal`
 
-<h3 class="h5">Eksempel:</h3>
+<h3 class="h5">Eksempel</h3>
 
 {% highlight html %}
-<div class="bg-normal"> Dette element har hvid baggrund </div> <br>
-<div class="bg-alternative"> Dette element har lysegrå baggrund </div><br>
+<div class="bg-normal"> Dette element har hvid baggrund </div>
+<div class="bg-alternative"> Dette element har lysegrå baggrund </div>
 <div class="bg-modal"> Dette element har en sort baggrund med opacity på 0.4 </div>
 {% endhighlight %}
 
-## Tilgængelighed {#{% include create-id.html heading="Tilgængelighed" %}}
+## Position {#{% include create-id.html heading="Position" %}}
 
-Nedenfor vises hvordan du gør dine elementer tilgængelige for skærmlæsere.
+Disse hjælpeklasser bruges til at sætte CSS-egenskaben `position` på et element.
 
-- `aria-hidden="true"` og `aria-hidden="false"` bruges til at skjule og vise elementer for skærmlæsere.
-- `.sr-only` klassen og mixin `@mixin sr-only()` bruges når elementer kun skal vises for skærmlæsere.
-- `aria-expanded="true"` og `aria-expanded="false"` bruges til elementer som toggler mellem at være åbne og lukket.
-- `aria-label=""` skal beskrive hvad funktionen af et element gør.
+Format: `position-{position}`
+
+<h3 class="h5 mb-0">Position</h3>
+
+- `static`
+- `relative`
+- `absolute`
+- `fixed`
+- `sticky`
+
+Derudover findes der følgende hjælpeklasser til specifikt at placere et element i toppen eller bunden.
+
+- `fixed-top`
+- `fixed-bottom`
+- `sticky-top`
+
+<h3 class="h5">Eksempel</h3>
+
+{% highlight html %}
+<div class="position-absolute"> Dette element har egenskaben 'position: absolute' </div>
+<div class="fixed-top"> Dette element sidder i toppen af siden </div>
+{% endhighlight %}

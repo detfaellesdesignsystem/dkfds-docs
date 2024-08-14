@@ -11,14 +11,14 @@ Justering_af_tema_og_stylesheets:
 - h2: Juster stylesheets med npm scripts
 
 Hjaelpeklasser:
-- h2: Responsive hjælpeklasser
-- h2: Text align
+- h2: Om hjælpeklasserne
+- h2: Tekstjustering
 - h2: Margin og padding
 - h2: Display
 - h2: Flexbox
 - h2: Bredde i procent
 - h2: Baggrundsfarver
-- h2: Tilgængelighed
+- h2: Position
 
 Browserunderstoettelse:
 - h2: Windows
