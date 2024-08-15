@@ -650,8 +650,9 @@ code {
 
   .code-name {
     margin-bottom: units(405);
-    margin-top: units(2);
+    margin-top: units(3);
     word-wrap: break-word;
+    font-size: font-size("xs");
   }
 }
 
