@@ -107,6 +107,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="sprogvælger med tooltip" %} stod skævt.
 - Rettet fejl, hvor {% include links/component-guideline-link.html linktext="readonly-inputfelter" %} ikke blev vist korrekt, hvis de havde en anden type end `text`.
 - Tilføjet eksempler for '{% include links/internal-link.html linktext="siden kunne ikke findes" %}' (fejl 404).
+- Opdateret flere af dokumentationsidens eksempler og retningslinjer, så de er mere retvisende og anvendelige.
 
 
 

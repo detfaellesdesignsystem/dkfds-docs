@@ -149,7 +149,7 @@ Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begræn
 
 ### HTML Struktur
 
-{% include code/syntax.html component="external-link" copybutton=true %}
+{% include code/syntax.html component="external-link" copybutton=true guidelines="/styleguide/typografi/links/#eksternt-link" %}
 
 Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}. 
 
@@ -161,7 +161,7 @@ Bemærk at eksterne links er stylet med `display: inline-block`, hvilket betyder
 
 ### HTML Struktur
 
-{% include code/syntax.html component="secondary-links" copybutton=true %}
+{% include code/syntax.html component="secondary-links" copybutton=true guidelines="/styleguide/typografi/links/#sekundaere-links" %}
 
 ## Billeder som links {#{% include create-id.html heading="Billeder som links" append="-kode" %}}
 

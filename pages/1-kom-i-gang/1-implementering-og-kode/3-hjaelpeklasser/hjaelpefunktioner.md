@@ -157,6 +157,8 @@ Format: `flex-{retning}` og `flex-{breakpoint}-{retning}`
 - `row-reverse`
 - `column-reverse`
 
+<h3 class="h5 mb-0">Eksempel</h3>
+
 {% highlight html %}
 <div class="d-flex flex-row"> Flex-containerens elementer står vandret </div>
 <div class="d-flex flex-md-column"> Flex-containerens elementer står lodret på skærme over 768px </div>
@@ -171,6 +173,8 @@ Format: `flex-{ombrydning}` og `flex-{breakpoint}-{ombrydning}`
 - `wrap`
 - `nowrap`
 - `wrap-reverse`
+
+<h3 class="h5 mb-0">Eksempel</h3>
 
 {% highlight html %}
 <div class="d-flex flex-nowrap"> Flex-containerens elementer står altid i én række </div>
@@ -191,6 +195,8 @@ Format: `justify-content-{justering}` og `justify-content-{breakpoint}-{justerin
 - `between`
 - `around`
 
+<h3 class="h5 mb-0">Eksempel</h3>
+
 {% highlight html %}
 <div class="d-flex justify-content-start"> Flex-containerens elementer står til venstre </div>
 <div class="d-flex justify-content-md-center"> Flex-containerens elementer står i midten på skærme over 768px </div>
@@ -210,6 +216,8 @@ Format: `align-items-{justering}` og `align-items-{breakpoint}-{justering}`
 - `baseline`
 - `stretch`
 
+<h3 class="h5 mb-0">Eksempel</h3>
+
 {% highlight html %}
 <div class="d-flex align-items-start"> Flex-containerens elementer står øverst </div>
 <div class="d-flex align-items-md-end"> Flex-containerens elementer står nederst på skærme over 768px </div>
@@ -228,6 +236,8 @@ Format: `align-self-{justering}` og `align-self-{breakpoint}-{justering}`
 - `baseline`
 - `stretch`
 
+<h3 class="h5 mb-0">Eksempel</h3>
+
 {% highlight html %}
 <div class="d-flex"><div class="align-self-start"> Flex-containerens element står øverst </div></div>
 <div class="d-flex"><div class="align-self-md-end"> Flex-containerens element står nederst på skærme over 768px </div></div>
@@ -245,6 +255,8 @@ Format: `align-content-{justering}` og `align-content-{breakpoint}-{justering}`
 - `between`
 - `around`
 - `stretch`
+
+<h3 class="h5 mb-0">Eksempel</h3>
 
 {% highlight html %}
 <div class="d-flex flex-wrap align-content-start"> Flex-containerens elementer står samlet øverst </div>
