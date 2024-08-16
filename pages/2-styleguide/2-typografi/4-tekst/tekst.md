@@ -36,14 +36,28 @@ tabs: "Retningslinjer, kode"
 
 Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
 
-{% include code/preview-box.html component="lead_paragraph" link=false code="/styleguide/typografi/tekst/#manchet-kode" %}
-
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|---------------|-----------------|------------------------------|------------|
-| IBM Plex Sans | 20px            | 400                          | #1a1a1a    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Eksempel på styling</th>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="font-lead">Dette er en manchet</span></td>
+        <td>20px</td>
+        <td>32px</td>
+        <td>Regular (400)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#manchet-retningslinjer}
 ### Retningslinjer
@@ -58,16 +72,40 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
 
 ## Brødtekst {#{% include create-id.html heading="Brødtekst" %}}
 
-{% include code/preview-box.html component="inlinetext" link=false code="/styleguide/typografi/tekst/#broedtekst-kode" %}
-
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Tekst           | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|-----------------|---------------|-----------------|------------------------------|------------|
-| Brødtekst       | IBM Plex Sans | 16px            | 400                          | #1a1a1a    |
-| Lille brødtekst | IBM Plex Sans | 14px            | 400                          | #1a1a1a    |
-| Fed brødtekst   | IBM Plex Sans | 16px            | 700                          | #1a1a1a    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Eksempel på styling</th> 
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dette er en brødtekst</td>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Regular (400)</td>
+      </tr>
+      <tr>
+        <td><span class="small-text">Dette er en lille brødtekst</span></td>
+        <td>14px</td>
+        <td>20px</td>
+        <td>Regular (400)</td>
+      </tr>
+      <tr>
+        <td><span class="bold">Dette er en fed brødtekst</span></td>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Bold (700)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#broedtekst-retningslinjer}
 ### Retningslinjer
@@ -82,33 +120,67 @@ Brug ikke understreget tekst, da det ligner links.
 
 Brug ikke kursiv tekst, da det nedsætter læsbarheden.
 
-## Hjælpetekst og fejlmeddelelser {#{% include create-id.html heading="Hjælpetekst og fejlmeddelelser" %}}
+## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
 
-Kommunikér med og giv feedback til brugeren via hjælpetekster og fejlmeddelelser.
-
-{% include code/preview-box.html component="helptext" link=false code="/styleguide/typografi/tekst/#hjaelpetekst-og-fejlmeddelelser-kode" %}
-
-### Designværdier
-
-{:.table .table--borderless .table--responsive-headers}
-| Tekst                | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|----------------------|---------------|-----------------|------------------------------|------------|
-| Hjælpetekst          | IBM Plex Sans | 16px            | 400                          | #747474    |
-| Fejlmeddelelse       | IBM Plex Sans | 16px            | 600                          | #CC0000    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Eksempel på styling</th>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="form-hint">Dette er en hjælpetekst</span></td>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Regular (400)</td>
+        <td>#747474</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#hjaelpetekst-retningslinjer}
 ### Retningslinjer
 
-Hjælpetekst og fejltekst knytter sig i udpræget grad til formularer. Du kan også anvende dem, hvor der er behov for at hjælpe brugeren med forklaring af et element eller at give feedback på et element.
-
-#### Hjælpetekst
 Nogle gange er det nødvendigt at forklare eller eksemplificere en feltoverskrift. Her kan du anvende hjælpetekst. Du kan også bruge hjælpetekst til at forklare, hvorfor du efterspørger særligt følsomme oplysninger. Fx hvis det kan være en barriere for at få et svar fra brugeren.
 
 Brug hjælpetekst til at give uddybende forklaring (fx til at understøtte feltoverskrifter).
 
 Se eksempel på brug af {% include links/component-guideline-link.html linktext="hjælpetekst" %}
 
-#### Fejlmeddelelse
+## Fejlmeddelelser {#{% include create-id.html heading="Fejlmeddelelser" %}}
+
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Eksempel på styling</th>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="form-error-message">Dette er en fejlmeddelelse</span></td>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Semi-bold (600)</td>
+        <td>#CC0000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{:#fejlmeddelelser-retningslinjer}
+### Retningslinjer
 
 Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder særligt, når noget fejler og fejltekst er et helt centralt element for formularer. Sørg derfor for, at de er knivskarpe og præcist kommunikerer, hvad fejlen består i, og hvad brugeren skal gøre for at komme videre. Skriv så vidt muligt fejlmeddelelse og vejledning i én og samme sætning.
 
@@ -126,14 +198,30 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 
 Forklarende eller beskrivende tekst tilhørende et billede.
 
-{% include code/preview-box.html component="caption" link=false code="/styleguide/typografi/tekst/#billedtekst-kode" %}
-
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve | Afstand mellem bogstaver |
-|---------------|-----------------|------------------------------|------------|--------------------------|
-| IBM Plex Sans | 14px            | 400                          | #1A1A1A    | 0.4 px                   |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Eksempel på styling</th>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+        <th scope="col">Letter-spacing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="figcaption">Dette er en billedtekst</span></td>
+        <td>14px</td>
+        <td>24px</td>
+        <td>Regular (400)</td>
+        <td>0.4px</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#billedtekst-retningslinjer}
 ### Retningslinjer
@@ -144,17 +232,51 @@ Billedtekst vises under et billede, således at det synligt bemærkes at teksten
 
 Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.
 
-{% include code/preview-box.html component="displaytext" link=false code="/styleguide/typografi/tekst/#stor-tekst-kode" %}
-
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Tekst                  | Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|------------------------|---------------|-----------------|------------------------------|------------|
-| Stor tekst nr. 1       | IBM Plex Sans | 25px            | 500                          | #1a1a1a    |
-| Stor tekst nr. 2       | IBM Plex Sans | 21px            | 500                          | #1a1a1a    |
-| Stor positiv tekst     | IBM Plex Sans | 21px            | 500                          | #358000    |
-| Stor negativ tekst     | IBM Plex Sans | 21px            | 500                          | #CC0000    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <th scope="col">Eksempel på styling</th>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="displayheading-1">Stor tekst nr. 1</span></td>
+        <td>24px</td>
+        <td>36px</td>
+        <td>Medium (500)</td>
+        <td>#1A1A1A</td>
+      </tr>
+      <tr>
+        <td><span class="displayheading-2">Stor tekst nr. 2</span></td>
+        <td>21px</td>
+        <td>32px</td>
+        <td>Medium (500)</td>
+        <td>#1A1A1A</td>
+      </tr>
+      <tr>
+        <td><span class="displayheading-1 text-positive">Stor positiv tekst</span></td>
+        <td>24px</td>
+        <td>36px</td>
+        <td>Medium (500)</td>
+        <td>#358000</td>
+      </tr>
+      <tr>
+        <td><span class="displayheading-1 text-negative">Stor negativ tekst</span></td>
+        <td>24px</td>
+        <td>36px</td>
+        <td>Medium (500)</td>
+        <td>#CC0000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#display-retningslinjer}
 ### Retningslinjer
@@ -209,11 +331,17 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include code/syntax.html component="inlinetext" copybutton=true %}
 
-## Hjælpetekst og fejlmeddelelser {#{% include create-id.html heading="Hjælpetekst og fejlmeddelelser" append="-kode" %}}
+## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
 
-{% include code/preview-box.html component="helptext" link=false title="Eksempel på hjælpetekst og fejlmeddelelse" %}
+{% include code/preview-box.html component="helptext" link=false title="Eksempel på hjælpetekst" %}
 
-{% include links/internal-link.html linktext="Læs retningslinjer for hjælpetekst og fejlmeddelelser" %}
+{% include links/internal-link.html linktext="Læs retningslinjer for hjælpetekst" %}
+
+## Fejlmeddelelser {#{% include create-id.html heading="Fejlmeddelelser" append="-kode" %}}
+
+{% include code/preview-box.html component="error-message-definition" link=false title="Eksempel på fejlmeddelelse" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjer for fejlmeddelelser" %}
 
 ### HTML Struktur
 

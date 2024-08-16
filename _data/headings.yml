@@ -88,7 +88,8 @@ Felt_og_tabeloverskrifter:
 Tekst:
 - h2: Manchet
 - h2: Brødtekst
-- h2: Hjælpetekst og fejlmeddelelser
+- h2: Hjælpetekst
+- h2: Fejlmeddelelser
 - h2: Billedtekst
 - h2: Stor tekst
 - h2: Linjelængde
@@ -97,7 +98,8 @@ Tekst:
 Tekst_Kode:
 - h2: Manchet
 - h2: Brødtekst
-- h2: Hjælpetekst og fejlmeddelelser
+- h2: Hjælpetekst
+- h2: Fejlmeddelelser
 - h2: Billedtekst
 - h2: Stor tekst
 
