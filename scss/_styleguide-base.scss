@@ -367,6 +367,12 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
   }
 }
 
+.color-code-name {
+  margin-right: units(1);
+  word-wrap: break-word;
+  font-size: font-size("xs");
+}
+
 .color-container-small {
   height: 40px;
   margin-bottom: 0.8rem;

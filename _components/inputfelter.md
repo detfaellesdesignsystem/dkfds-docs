@@ -101,7 +101,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
 
-{% include code/preview-box.html component="text-input-helptext" link=false title="Eksempel på inputfelt med hjælpetekst" code="/komponenter/inputfelter/#hjaelpetekst-kode" %}
+{% include code/preview-box.html component="text-input-helptext" title="Eksempel på inputfelt med hjælpetekst" code="/komponenter/inputfelter/#hjaelpetekst-kode" %}
 
 {% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
 
@@ -125,11 +125,11 @@ Hvis en formular indeholder flere frivillige end obligatoriske inputfelter, frem
 
 ### Read-only {#{% include create-id.html heading="Read-only" %}}
 
-{% include code/preview-box.html component="text-input-readonly" link=false title="Eksempel på readonly inputfelt" code="/komponenter/inputfelter/#read-only-kode" %}
+{% include code/preview-box.html component="text-input-readonly" title="Eksempel på readonly inputfelt" code="/komponenter/inputfelter/#read-only-kode" %}
 
 ### Deaktiveret {#{% include create-id.html heading="Deaktiveret" %}}
 
-{% include code/preview-box.html component="text-input-disabled" link=false title="Eksempel på deaktiveret inputfelt" code="/komponenter/inputfelter/#deaktiveret-kode" %}
+{% include code/preview-box.html component="text-input-disabled" title="Eksempel på deaktiveret inputfelt" code="/komponenter/inputfelter/#deaktiveret-kode" %}
 
 Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af {% include links/component-guideline-link.html linktext="read-only" %}.
 
@@ -139,7 +139,7 @@ Prefix og suffix kan bruges til at tydeliggøre, hvordan brugeren skal angive be
 
 Et suffix må aldrig være den eneste indikator for, hvordan et felt skal udfyldes, eftersom det ikke læses højt af skærmlæsere. Feltets label eller en hjælpetekst kan bruges til også at indikere dette.
 
-{% include code/preview-box.html component="text-input-prefix-suffix" link=false title="Eksempel på felter med prefix og suffix" code="/komponenter/inputfelter/#prefix-og-suffix-kode" %}
+{% include code/preview-box.html component="text-input-prefix-suffix" title="Eksempel på felter med prefix og suffix" code="/komponenter/inputfelter/#prefix-og-suffix-kode" %}
 
 ### Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" %}}
 
@@ -149,11 +149,11 @@ Vis altid antallet af tegn, der er til rådighed i inputfeltet, inden brugeren b
 
 Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.
 
-{% include code/preview-box.html component="text-input-character-limit" link=false title="Eksempel på felt med karakterbegrænsning" code="/komponenter/inputfelter/#karakterbegraensning-kode" %}
+{% include code/preview-box.html component="text-input-character-limit" title="Eksempel på felt med karakterbegrænsning" code="/komponenter/inputfelter/#karakterbegraensning-kode" %}
 
 ### Feltbredde {#{% include create-id.html heading="Feltbredde" %}}
 
-{% include code/preview-box.html component="text-input-width" link=false title="Eksempel på felter med forskellig bredde" code="/komponenter/inputfelter/#feltbredde-kode" %}
+{% include code/preview-box.html component="text-input-width" title="Eksempel på felter med forskellig bredde" code="/komponenter/inputfelter/#feltbredde-kode" %}
 
 {% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
 
