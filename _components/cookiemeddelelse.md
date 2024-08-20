@@ -38,7 +38,7 @@ Det Fælles Designsystem anviser kun styling for cookiemeddelelsen, ikke den tek
 
 Du skal selv tilpasse indholdet i meddelelsen, så den overholder gældende lovgivning og stemmer overens med din løsnings specifikke anvendelse af cookies.
 
-{% include dos-donts-box.html component="cookie-message-dos-donts" title="Cookiemeddelelser do's and don'ts" %}
+{% include dos-donts-box.html component="cookie-message-dos-donts" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

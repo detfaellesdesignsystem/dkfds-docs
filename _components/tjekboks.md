@@ -50,7 +50,7 @@ Sørg for at der er tilstrækkelig luft omkring den enkelte tjekboks, så den er
 
 Hvis du giver brugeren en liste med tjekbokse, så gør det tydeligt gennem enten label eller hjælpetekst, hvor mange tjekbokse det forventes, at de vælger.
 
-{% include dos-donts-box.html component="checkbox-dos-donts" title="Tjekboks do's and don'ts" %}
+{% include dos-donts-box.html component="checkbox-dos-donts" %}
 
 #### Fejlmeddelelse
 

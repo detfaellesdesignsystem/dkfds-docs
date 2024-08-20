@@ -39,9 +39,9 @@ Formularelementer skal automatisk fremhæves, når brugeren navigerer til dem ve
 
 Sørg for at alle elementer står i register, dvs. at de står på linje og i et naturligt lodret læse-flow fra top til bund.
 
-{% include dos-donts-box.html component="formular-dos-donts" title="Formular do's and don'ts" %}
+{% include dos-donts-box.html component="formular-dos-donts" %}
 
-{% include dos-donts-box.html component="overskrifter-dos-donts" title="Overskrifter do's and don'ts" %}
+{% include dos-donts-box.html component="overskrifter-dos-donts" %}
 
 ## Kompleks formular {#{% include create-id.html heading="Kompleks formular" %}}
 

@@ -51,7 +51,7 @@ Enkelte ikoner kan stå alene, hvis der fx skal spares på pladsen i en tabel. D
 
 Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennemføre løsningen uden brug af funktionaliteten, bør man vælge at lave en tertiærknap med et ikon i, i stedet for et funktionslink.
 
-{% include dos-donts-box.html component="function-link-dos-donts" title="Funktionslink do's and don'ts" %}
+{% include dos-donts-box.html component="function-link-dos-donts" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 

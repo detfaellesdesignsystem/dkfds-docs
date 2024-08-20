@@ -42,7 +42,7 @@ Brugerspecifikke handlinger som fx ”Slet” bør placeres til sidst i menuen f
 
 Overvej om det er nødvendigt med dette ekstra navigationselement.
 
-{% include dos-donts-box.html component="overflow-menu-dos-donts" title="Overflow menu do's and don'ts" %}
+{% include dos-donts-box.html component="overflow-menu-dos-donts" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

@@ -107,7 +107,7 @@ Visse fejlmeddelelser fungerer bedst som instrukser og andre som beskrivelser. F
 
 Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instruktion til tomme felter som "Indtast dit navn" men brug en beskrivelse som "Navnet bør højst være 35 bogstaver" til felter som er for lange.
 
-{% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser do's and don'ts" %}
+{% include dos-donts-box.html component="error-message-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 

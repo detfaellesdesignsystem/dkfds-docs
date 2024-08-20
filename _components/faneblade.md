@@ -51,7 +51,7 @@ Opdeling af indholdet på flere sider kan også være et alternativ. Faneblade b
 
 Hvis du ønsker at anvende faner, bør det testes på din målgruppe, før din løsning går i produktion.
 
-{% include dos-donts-box.html component="faneblad-dos-donts" title="Faneblade do's and don'ts" %}
+{% include dos-donts-box.html component="faneblad-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
@@ -74,7 +74,7 @@ Ikoner skal altid understøttes af en label med fanebladets navn.
 
 {% include code/preview-box.html component="tabs-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/#faneblade-med-ikoner-kode" %} 
 
-{% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
+{% include dos-donts-box.html component="faneblad-ikoner-dos-donts" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
