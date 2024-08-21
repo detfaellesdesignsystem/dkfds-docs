@@ -117,54 +117,47 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 ### Datofelter {#{% include create-id.html heading="Datofelter" %}}
 
-{% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" %}
+{% include code/preview-box.html component="error-message-date" title="Eksempel på datofelter med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#datofelter-kode" %}
 
-{:#datovaelger}
-### Datovælger
+### Datovælger {#{% include create-id.html heading="Datovælger" %}}
 
-{% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" %}
+{% include code/preview-box.html component="date-picker-error" title="Eksempel på datovælger med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#datovaelger-kode" %}
 
-{:#dropdown}
-### Dropdown
+### Dropdown {#{% include create-id.html heading="Dropdown" %}}
 
-{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
+{% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#dropdown-kode" %}
 
-{:#inputfelt}
-### Inputfelt
+### Inputfelt {#{% include create-id.html heading="Inputfelt" %}}
 
-{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" %}
+{% include code/preview-box.html component="error-message-name" title="Eksempel på tekstfelt med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#inputfelt-kode" %}
 
-#### Inputfelt med suffix
+#### Inputfelt med suffix {#{% include create-id.html heading="Inputfelt med suffix" %}}
 
-{% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" %}
+{% include code/preview-box.html component="text-input-suffix-error" title="Eksempel på inputfejl med suffix og fejlmeddelelse" code="/komponenter/fejlmeddelelser/#inputfelt-med-suffix-kode" %}
 
-#### Inputfelt med karakterbegrænsning
+#### Inputfelt med karakterbegrænsning {#{% include create-id.html heading="Inputfelt med karakterbegrænsning" %}}
 
-{% include code/preview-box.html component="text-input-character-limit-error" title="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse" %}
+{% include code/preview-box.html component="text-input-character-limit-error" title="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#inputfelt-med-karakterbegraensning-kode" %}
 
-{:#radioknapper}
-### Radioknapper
+### Radioknapper {#{% include create-id.html heading="Radioknapper" %}}
 
-{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" %}
+{% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#radioknapper-kode" %}
 
-{:#tekstomraade}
-### Tekstområde
+### Tekstområde {#{% include create-id.html heading="Tekstområde" %}}
 
-{% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" %}
+{% include code/preview-box.html component="text-area-error" title="Eksempel på tekstområde med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#tekstomraade-kode" %}
 
-#### Tekstområde med karakterbegrænsning
+#### Tekstområde med karakterbegrænsning {#{% include create-id.html heading="Tekstområde med karakterbegrænsning" %}}
 
-{% include code/preview-box.html component="text-area-character-limit-error" title="Eksempel på tekstområde med karakterbegrænsning med fejlmeddelelse" %}
+{% include code/preview-box.html component="text-area-character-limit-error" title="Eksempel på tekstområde med karakterbegrænsning med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#tekstomraade-med-karakterbegraensning-kode" %}
 
-{:#tjekboks}
-### Tjekboks
+### Tjekboks {#{% include create-id.html heading="Tjekboks" %}}
 
-{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" %}
+{% include code/preview-box.html component="error-message-checkbox" title="Eksempel på tjekbokse med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#tjekboks-kode" %}
 
-{:#vedhaeft-fil}
-### Vedhæft fil
+### Vedhæft fil {#{% include create-id.html heading="Vedhæft fil" %}}
 
-{% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" %}
+{% include code/preview-box.html component="error-message-file-input" title="Eksempel på felt til vedhæftning af fil med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#vedhaeft-fil-kode" %}
 
 #### Ingen fil er valgt
 
@@ -234,35 +227,39 @@ Fejlmeddelelsen vises også i {% include links/component-code-link.html linktext
 
 ## Accordions {#{% include create-id.html heading="Accordions" append="-kode" %}}
 
-{% include code/syntax.html component="error-message-accordion" link=true copybutton=true %}
+{% include code/syntax.html component="error-message-accordion" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#accordions" %}
 
 ## Datofelter {#{% include create-id.html heading="Datofelter" append="-kode" %}}
 
-{% include code/syntax.html component="error-message-date" link=true copybutton=true %}
+{% include code/syntax.html component="error-message-date" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#datofelter" %}
 
 ## Datovælger {#{% include create-id.html heading="Datovælger" append="-kode" %}}
 
-{% include code/syntax.html component="date-picker-error" link=true copybutton=true %}
+{% include code/syntax.html component="date-picker-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#datovaelger" %}
 
 ## Dropdown {#{% include create-id.html heading="Dropdown" append="-kode" %}}
 
-{% include code/syntax.html component="select-error" link=true copybutton=true %}
+{% include code/syntax.html component="select-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#dropdown" %}
 
 ## Inputfelt {#{% include create-id.html heading="Inputfelt" append="-kode" %}}
 
-{% include code/syntax.html component="error-message-name" link=true copybutton=true %}
+{% include code/syntax.html component="error-message-name" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#inputfelt" %}
 
 ### Inputfelt med suffix {#{% include create-id.html heading="Inputfelt med suffix" append="-kode" %}}
 
-{% include code/syntax.html component="text-input-suffix-error" link=true copybutton=true %}
+{% include code/syntax.html component="text-input-suffix-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#inputfelt-med-suffix" %}
+
+### Inputfelt med karakterbegrænsning {#{% include create-id.html heading="Inputfelt med karakterbegrænsning" append="-kode" %}}
+
+{% include code/syntax.html component="text-input-character-limit-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#inputfelt-med-karakterbegraensning" %}
 
 ## Radioknapper {#{% include create-id.html heading="Radioknapper" append="-kode" %}}
 
-{% include code/syntax.html component="error-message-radio" link=true copybutton=true %}
+{% include code/syntax.html component="error-message-radio" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#radioknapper" %}
 
 ## Tekstområde {#{% include create-id.html heading="Tekstområde" append="-kode" %}}
 
-{% include code/syntax.html component="text-area-error" link=true copybutton=true %}
+{% include code/syntax.html component="text-area-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#tekstomraade" %}
 
 Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:
 
@@ -271,13 +268,17 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 - `name`
 - `aria-describedby`
 
+#### Tekstområde med karakterbegrænsning {#{% include create-id.html heading="Tekstområde med karakterbegrænsning" append="-kode" %}}
+
+{% include code/syntax.html component="text-area-character-limit-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#tekstomraade-med-karakterbegraensning" %}
+
 ## Tjekboks {#{% include create-id.html heading="Tjekboks" append="-kode" %}}
 
-{% include code/syntax.html component="error-message-checkbox" link=true copybutton=true %}
+{% include code/syntax.html component="error-message-checkbox" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#tjekboks" %}
 
 ## Vedhæft fil {#{% include create-id.html heading="Vedhæft fil" append="-kode" %}}
 
-{% include code/syntax.html component="error-message-file-input" link=true copybutton=true %}
+{% include code/syntax.html component="error-message-file-input" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#vedhaeft-fil" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
 

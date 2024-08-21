@@ -57,10 +57,9 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#sprogvaelger-med-tooltip}
-### Sprogvælger med tooltip
+### Sprogvælger med tooltip {#{% include create-id.html heading="Sprogvælger med tooltip" %}}
 
-{% include code/preview-image.html component="language-switcher-tooltip" alt="sprogvælger med tooltip" title="Sprogvælger med tooltip" %}
+{% include code/preview-image.html component="language-switcher-tooltip" alt="sprogvælger med tooltip" title="Sprogvælger med tooltip" code="/komponenter/sprogvaelger/#sprogvaelger-med-tooltip-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -97,6 +96,6 @@ Bemærk aria-labels i koden, hvor der vil være tekst og formuleringer der skal 
 
 ## Sprogvælger med tooltip {#{% include create-id.html heading="Sprogvælger med tooltip" append="-kode" %}}
 
-{% include code/syntax.html component="language-switcher-tooltip" link=true copybutton=true %}
+{% include code/syntax.html component="language-switcher-tooltip" link=true copybutton=true guidelines="/komponenter/sprogvaelger/#sprogvaelger-med-tooltip" %}
 
 For mere information se {% include links/component-code-link.html linktext="implementering af tooltip" %}.

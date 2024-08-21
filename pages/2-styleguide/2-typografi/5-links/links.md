@@ -27,13 +27,34 @@ tabs: "Retningslinjer, kode"
 
 ## Designværdier {#{% include create-id.html heading="Designværdier" %}}
 
-{:.table .table--borderless .table--responsive-headers}
-| Tekst                 | Tekstfarve | Understreget | Ramme                           |
-|-----------------------|------------|--------------|---------------------------------|
-| Standard link         | #004D99    | Ja           |                                 |
-| Standard link, hover  | #000040    | Ja           |                                 |
-| Standard link, besøgt | #800080    | Ja           |                                 |
-| Standard link, fokus  | #004D99    | Ja           | Tykkelse: 4px<br>Farve: #747474 |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Tekstdekoration</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><a href="#">Link</a></th>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Understreget</td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">#004D99</li>
+            <li>#000040 (hover)</li>
+            <li>#800080 (besøgt)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Sådan bruges links {#{% include create-id.html heading="Sådan bruges links" %}}
 
@@ -75,14 +96,30 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 <p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
 
-{% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" link=false code="/styleguide/typografi/links/#sekundaere-links-kode" %}
-
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Tekstfarve | Understreget |
-|------------|--------------|
-| #1a1a1a    | Ja           |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Tekstdekoration</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><a href="#" class="function-link">Sekundært link</a></th>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Understreget</td>
+        <td>#1A1A1A</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Anvendes til
 
@@ -112,7 +149,7 @@ Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begræn
 
 ### HTML Struktur
 
-{% include code/syntax.html component="external-link" copybutton=true %}
+{% include code/syntax.html component="external-link" copybutton=true guidelines="/styleguide/typografi/links/#eksternt-link" %}
 
 Eksternt link gør brug af ikoner. Se dokumentationen for {% include links/internal-link.html linktext="implementering af ikoner" %}. 
 
@@ -124,7 +161,7 @@ Bemærk at eksterne links er stylet med `display: inline-block`, hvilket betyder
 
 ### HTML Struktur
 
-{% include code/syntax.html component="secondary-links" copybutton=true %}
+{% include code/syntax.html component="secondary-links" copybutton=true guidelines="/styleguide/typografi/links/#sekundaere-links" %}
 
 ## Billeder som links {#{% include create-id.html heading="Billeder som links" append="-kode" %}}
 

@@ -66,15 +66,13 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#hjaelpetekst}
-### Hjælpetekst
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
 
-{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" %}
+{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" code="/komponenter/radioknap/#hjaelpetekst-kode" %}
 
-{:#skjult-indhold-collapse}
-### Skjult indhold (Collapse)
+### Skjult indhold (Collapse) {#{% include create-id.html heading="Skjult indhold (Collapse)" %}}
 
-{% include code/preview-box.html component="radio-collapse" title="Eksempel på radioknapper med skjult indhold" %}
+{% include code/preview-box.html component="radio-collapse" title="Eksempel på radioknapper med skjult indhold" code="/komponenter/radioknap/#skjult-indhold-collapse-kode" %}
 
 {:#collapse-retningslinjer}
 #### Anvendes til
@@ -141,11 +139,11 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 
 ## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
 
-{% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true %}
+{% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true guidelines="/komponenter/radioknap/#hjaelpetekst" %}
 
 ## Skjult indhold (Collapse) {#{% include create-id.html heading="Skjult indhold (Collapse)" append="-kode" %}}
 
-{% include code/syntax.html component="radio-collapse" link=true copybutton=true %}
+{% include code/syntax.html component="radio-collapse" link=true copybutton=true guidelines="/komponenter/radioknap/#skjult-indhold-collapse" %}
 
 For at initialisere collapse funktionaliteten på en radioknap skal `input[type=radio]` have følgende:
 

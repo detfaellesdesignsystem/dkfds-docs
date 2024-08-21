@@ -142,7 +142,7 @@ Overflow menu skjuler indhold for brugeren og bør anvendes i begrænset omfang.
 
 ## Sortering {#{% include create-id.html heading="Sortering" append="-kode" %}}
 
-{% include code/syntax.html component="sort" link=true copybutton=true %}
+{% include code/syntax.html component="sort" link=true copybutton=true guidelines="/komponenter/overflowmenu/#sortering" %}
 
 ### JavaScript
 

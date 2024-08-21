@@ -55,17 +55,17 @@ Læs mere om korrekt brug af {% include links/component-guideline-link.html link
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-guideline-link.html linktext="fejlopsummering" %}.
 
-{% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" %}
+{% include code/preview-box.html component="accordion-error" title="Eksempel på accordion med fejl" code="/komponenter/accordions/#med-fejl-kode" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 ### Åbn/luk alle {#{% include create-id.html heading="Åbn/luk alle" %}}
 
-{% include code/preview-box.html component="accordion-bulk-open" title="Eksempel på accordions med åbn alle funktion" %}
+{% include code/preview-box.html component="accordion-bulk-open" title="Eksempel på accordions med åbn alle funktion" code="/komponenter/accordions/#aabn-luk-alle-kode" %}
 
 ### Med succesbeskeder {#{% include create-id.html heading="Med succesbeskeder" %}}
 
-{% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" %}
+{% include code/preview-box.html component="accordion-success" title="Eksempel på accordion med succesbesked" code="/komponenter/accordions/#med-succesbeskeder-kode" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
@@ -118,12 +118,12 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {
 
 ## Åbn/luk alle {#{% include create-id.html heading="Åbn/luk alle" append="-kode" %}}
 
-{% include code/syntax.html component="accordion-bulk-open" link=true copybutton=true %}
+{% include code/syntax.html component="accordion-bulk-open" link=true copybutton=true guidelines="/komponenter/accordions/#aabn-luk-alle" %}
 
 ## Med fejl {#{% include create-id.html heading="Med fejl" append="-kode" %}}
 
-{% include code/syntax.html component="accordion-error" link=true copybutton=true %}
+{% include code/syntax.html component="accordion-error" link=true copybutton=true guidelines="/komponenter/accordions/#fejlmeddelelse" %}
 
 ## Med succesbeskeder {#{% include create-id.html heading="Med succesbeskeder" append="-kode" %}}
 
-{% include code/syntax.html component="accordion-success" link=true copybutton=true %}
+{% include code/syntax.html component="accordion-success" link=true copybutton=true guidelines="/komponenter/accordions/#med-succesbeskeder" %}

@@ -48,7 +48,7 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 ### Statusbadges {#{% include create-id.html heading="Statusbadges" %}}
 
-{% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" %}
+{% include code/preview-box.html component="badges-status" title="Eksempel på statusbadges" code="/komponenter/badges/#statusbadges-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 

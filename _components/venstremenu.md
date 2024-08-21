@@ -52,17 +52,17 @@ Undgå at lave menuen for dyb – forsøg at undgå mere end 1-2 niveauer.
 {:#to-niveauer}
 ### 2 niveauer
 
-{% include code/preview-box.html component="sidenav-normal-level2" title="Eksempel på venstremenu med to niveauer" %}
+{% include code/preview-box.html component="sidenav-normal-level2" title="Eksempel på venstremenu med to niveauer" code="/komponenter/venstremenu/#to-niveauer-kode" %}
 
 {:#tre-niveauer}
 ### 3 niveauer
 
-{% include code/preview-box.html component="sidenav-normal-level3" title="Eksempel på venstremenu med tre niveauer" %}
+{% include code/preview-box.html component="sidenav-normal-level3" title="Eksempel på venstremenu med tre niveauer" code="/komponenter/venstremenu/#tre-niveauer-kode" %}
 
 {:#ekstra-information}
 ### Ekstra information
 
-{% include code/preview-box.html component="sidenav-information-level1" title="Eksempel på venstremenu med hjælpetekst på ét niveau" %}
+{% include code/preview-box.html component="sidenav-information-level1" title="Eksempel på venstremenu med hjælpetekst på ét niveau" code="/komponenter/venstremenu/#ekstra-information-kode" %}
 
 ### Anchorlinks {#{% include create-id.html heading="Anchorlinks-komponent" %}}
 
@@ -93,12 +93,12 @@ Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises ancho
 
 ## 2 niveauer {#{% include create-id.html heading="2 niveauer" append="-kode" %}}
 
-{% include code/syntax.html component="sidenav-normal-level2" link=true copybutton=true %}
+{% include code/syntax.html component="sidenav-normal-level2" link=true copybutton=true guidelines="/komponenter/venstremenu/#to-niveauer" %}
 
 ## 3 niveauer {#{% include create-id.html heading="3 niveauer" append="-kode" %}}
 
-{% include code/syntax.html component="sidenav-normal-level3" link=true copybutton=true %}
+{% include code/syntax.html component="sidenav-normal-level3" link=true copybutton=true guidelines="/komponenter/venstremenu/#tre-niveauer" %}
 
 ## Ekstra information {#{% include create-id.html heading="Ekstra information" append="-kode" %}}
 
-{% include code/syntax.html component="sidenav-information-level1" link=true copybutton=true %}
+{% include code/syntax.html component="sidenav-information-level1" link=true copybutton=true guidelines="/komponenter/venstremenu/#ekstra-information" %}

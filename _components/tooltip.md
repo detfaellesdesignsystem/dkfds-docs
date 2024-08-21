@@ -52,23 +52,23 @@ Et tooltip kan anvendes sammen med en række forskellige komponenter og placeres
 
 {% include code/preview-box.html component="tooltip-position" title="Eksempel på placering af tooltip" %}
 
-#### Radioknap med tooltip
+#### Radioknap med tooltip {#{% include create-id.html heading="Radioknap med tooltip" %}}
 
-{% include code/preview-box.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" %}
+{% include code/preview-box.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" code="/komponenter/tooltip/#radioknap-med-tooltip-kode" %}
 
-#### Tjekboks med tooltip
+#### Tjekboks med tooltip {#{% include create-id.html heading="Tjekboks med tooltip" %}}
 
-{% include code/preview-box.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" %}
+{% include code/preview-box.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" code="/komponenter/tooltip/#tjekboks-med-tooltip-kode" %}
 
-#### Inputfelt med tooltip
+#### Inputfelt med tooltip {#{% include create-id.html heading="Inputfelt med tooltip" %}}
 
-{% include code/preview-box.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" %}
+{% include code/preview-box.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" code="/komponenter/tooltip/#inputfelt-med-tooltip-kode" %}
 
-#### Brødtekst med tooltip
+#### Brødtekst med tooltip {#{% include create-id.html heading="Brødtekst med tooltip" %}}
 
 Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv de forklarede ord i teksten med fed. Brug denne form for tooltips i begrænset omfang, da det let virker forstyrrende.
 
-{% include code/preview-box.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" %}
+{% include code/preview-box.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" code="/komponenter/tooltip/#broedtekst-med-tooltip-kode" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
@@ -78,20 +78,19 @@ Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips v
 
 Hover-tooltips vises med en ganske kort forsinkelse på 0,3 sekunder. Dette er for at sikre, at tooltippet kun vises, når brugeren bevidst er stoppet ved elementet og ikke blot tilfældigt har bevæget musen over det (Harley, 2015).
 
-{:#ikoner-med-hover-tooltip}
-#### Ikoner med hover-tooltip
+#### Ikoner med hover-tooltip {#{% include create-id.html heading="Ikoner med hover-tooltip" %}}
 
 Det anbefales altid at bruge ikoner sammen med en synlig tekstlabel. Ikoner anvendes kun uden tekst, hvis der er tale om meget gængse ikoner, og når der af pladshensyn ikke kan være en tekst direkte ved ikonet. Anvend i de tilfælde altid hover-tooltips som ekstra beskrivelse
 
 Vær opmærksom på, at tooltipteksten skal være så kort og præcis, som hvis den var en synlig tekstlabel til ikonet. Skriv fx bare “Slet” og <strong>ikke</strong> “Tryk på ikonet for at slette”. Sådan sikres den bedste brugeroplevelse, også for skærmlæserbrugere.
 
-{% include code/preview-box.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" %}
+{% include code/preview-box.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" code="/komponenter/tooltip/#ikoner-med-hover-tooltip-kode" %}
 
-#### Knap med hover-tooltip
+#### Knap med hover-tooltip {#{% include create-id.html heading="Knap med hover-tooltip" %}}
 
 Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapper. På mobil vises disse kun ved “long press”, eftersom knappens funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
 
-{% include code/preview-box.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" %}
+{% include code/preview-box.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" code="/komponenter/tooltip/#knap-med-hover-tooltip-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -134,29 +133,29 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 
 ## Radioknap med tooltip {#{% include create-id.html heading="Radioknap med tooltip" append="-kode" %}}
 
-{% include code/syntax.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" link=true copybutton=true %}
+{% include code/syntax.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" link=true copybutton=true guidelines="/komponenter/tooltip/#radioknap-med-tooltip" %}
 
 ## Tjekboks med tooltip {#{% include create-id.html heading="Tjekboks med tooltip" append="-kode" %}}
 
-{% include code/syntax.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" link=true copybutton=true %}
+{% include code/syntax.html component="tooltip-checkbox" title="Eksempel på tooltip for tjekboks" link=true copybutton=true guidelines="/komponenter/tooltip/#tjekboks-med-tooltip" %}
 
 ## Inputfelt med tooltip {#{% include create-id.html heading="Inputfelt med tooltip" append="-kode" %}}
 
-{% include code/syntax.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" link=true copybutton=true %}
+{% include code/syntax.html component="tooltip-textinput" title="Eksempel på tooltip for inputfelt" link=true copybutton=true guidelines="/komponenter/tooltip/#inputfelt-med-tooltip" %}
 
 ## Brødtekst med tooltip {#{% include create-id.html heading="Brødtekst med tooltip" append="-kode" %}}
 
-{% include code/syntax.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" link=true copybutton=true %}
+{% include code/syntax.html component="tooltip-text" title="Eksempel på tooltip i brødtekst" link=true copybutton=true guidelines="/komponenter/tooltip/#broedtekst-med-tooltip" %}
 
 ## Ikoner med hover-tooltip {#{% include create-id.html heading="Ikoner med hover-tooltip" append="-kode" %}}
 
 Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden tekst. Tooltippet vil da fungere som både tooltip og knappens tilgængelige navn (Pickering, 2017).
 
-{% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" link=true copybutton=true %}
+{% include code/syntax.html component="tooltip-iconbutton" title="Eksempel på tooltip på et klikbart ikon" link=true copybutton=true guidelines="/komponenter/tooltip/#ikoner-med-hover-tooltip" %}
 
 ## Knap med hover-tooltip {#{% include create-id.html heading="Knap med hover-tooltip" append="-kode" %}}
 
-{% include code/syntax.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" link=true copybutton=true %}
+{% include code/syntax.html component="tooltip-hover-button" title="Eksempel på tooltip på en knap" link=true copybutton=true guidelines="/komponenter/tooltip/#knap-med-hover-tooltip" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
 

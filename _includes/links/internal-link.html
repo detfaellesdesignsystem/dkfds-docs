@@ -16,6 +16,10 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
 {%- case link -%}
 
+    {%- when "gå til forsiden" -%}
+        <a href="/"{{ classes }}>{{ include.linktext }}</a>
+
+
     {%- comment -%} -------- Kom i gang -------- {%- endcomment -%}
 
     {%- when "kom i gang" -%}
@@ -43,9 +47,6 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "bredde i procent" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#bredde-i-procent"{{ classes }}>{{ include.linktext }}</a>
-
-    {%- when "breakpoint" -%}
-        <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#responsive-hjaelpeklasser"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "browserunderstøttelse" -%}
         <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/"{{ classes }}>{{ include.linktext }}</a>
@@ -134,8 +135,11 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "læs retningslinjerne for brødtekst" -%}
         <a href="/styleguide/typografi/tekst/#broedtekst-retningslinjer"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "læs retningslinjer for hjælpetekst og fejlmeddelelser" -%}
+    {%- when "læs retningslinjer for hjælpetekst" -%}
         <a href="/styleguide/typografi/tekst/#hjaelpetekst-retningslinjer"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "læs retningslinjer for fejlmeddelelser" -%}
+        <a href="/styleguide/typografi/tekst/#fejlmeddelelser-retningslinjer"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "billedtekst (figcaption)" -%}
         <a href="/styleguide/typografi/tekst/#billedtekst"{{ classes }}>{{ include.linktext }}</a>
@@ -204,6 +208,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "grid" -%}
         <a href="/styleguide/grid/"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "breakpoint" -%}
+        <a href="/styleguide/grid/#indstillinger-kode"{{ classes }}>{{ include.linktext }}</a>
+
 
 
     {%- comment -%} -------- Eksempler -------- {%- endcomment -%}
@@ -252,6 +259,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "se et eksempel på opsummeringssiden med fejl i trinindikatoren." -%} 
         <a href="/eksempler/templates/#fejl"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "siden kunne ikke findes" -%} 
+        <a href="/eksempler/templates/#siden-kunne-ikke-findes-404-side"{{ classes }}>{{ include.linktext }}</a>
 
 
 

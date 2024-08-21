@@ -75,7 +75,7 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 ### Besked med luk knap {#{% include create-id.html heading="Besked med luk knap" %}}
 
-{% include code/preview-box.html component="alert-close" title="Eksempel på besked med luk-knap" %}
+{% include code/preview-box.html component="alert-close" title="Eksempel på besked med luk-knap" code="/komponenter/beskeder/#luk-knap-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -173,4 +173,4 @@ Defineres med klassen `alert--paragraph`.
 
 ## Luk knap {#{% include create-id.html heading="Luk knap" append="-kode" %}}
 
-{% include code/syntax.html component="alert-close" link=true copybutton=true %}
+{% include code/syntax.html component="alert-close" link=true copybutton=true guidelines="/komponenter/beskeder/#besked-med-luk-knap" %}

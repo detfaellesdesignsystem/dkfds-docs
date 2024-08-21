@@ -32,25 +32,21 @@ Footeren fungerer som sidens afslutning og indeholder altid ansvarlig myndighed,
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-{:#tre-kolonner}
-### Tre kolonner
+### Tre kolonner {#{% include create-id.html heading="Tre kolonner" %}}
 
-{% include code/preview-image.html component="footer-three-columns" %}
+{% include code/preview-image.html component="footer-three-columns" code="/komponenter/footer/#tre-kolonner-kode" %}
 
-{:#fire-kolonner}
-### Fire kolonner
+### Fire kolonner {#{% include create-id.html heading="Fire kolonner" %}}
 
-{% include code/preview-image.html component="footer-four-columns" %}
+{% include code/preview-image.html component="footer-four-columns" code="/komponenter/footer/#fire-kolonner-kode" %}
 
-{:#kompleks}
-### Kompleks
+### Kompleks {#{% include create-id.html heading="Kompleks" %}}
 
-{% include code/preview-image.html component="footer-complex" %}
+{% include code/preview-image.html component="footer-complex" code="/komponenter/footer/#kompleks-kode" %}
 
-{:#logo}
-### Logo
+### Logo {#{% include create-id.html heading="Logo" %}}
 
-{% include code/preview-image.html component="footer-logo" %}
+{% include code/preview-image.html component="footer-logo" code="/komponenter/footer/#logo-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -75,6 +71,7 @@ Ovenstående indsættes i bunden af siden, under `<main>`.
 ### Opsætning
 
 #### Én række
+
 Man kan indsætte en vandret liste, der er defineret med klasserne `unstyled-list inline-list`.
 
 #### Kolonner
@@ -93,16 +90,16 @@ Yderligere bør brugeren oplyses om, at de nu forlader løsningen, og at eventue
 
 ## Tre kolonner {#{% include create-id.html heading="Tre kolonner" append="-kode" %}}
 
-{% include code/syntax.html component="footer-three-columns" link=true copybutton=true %}
+{% include code/syntax.html component="footer-three-columns" link=true copybutton=true guidelines="/komponenter/footer/#tre-kolonner" %}
 
 ## Fire kolonner {#{% include create-id.html heading="Fire kolonner" append="-kode" %}}
 
-{% include code/syntax.html component="footer-four-columns" link=true copybutton=true %}
+{% include code/syntax.html component="footer-four-columns" link=true copybutton=true guidelines="/komponenter/footer/#fire-kolonner" %}
 
 ## Kompleks {#{% include create-id.html heading="Kompleks" append="-kode" %}}
 
-{% include code/syntax.html component="footer-complex" link=true copybutton=true %}
+{% include code/syntax.html component="footer-complex" link=true copybutton=true guidelines="/komponenter/footer/#kompleks" %}
 
 ## Logo {#{% include create-id.html heading="Logo" append="-kode" %}}
 
-{% include code/syntax.html component="footer-logo" link=true copybutton=true %}
+{% include code/syntax.html component="footer-logo" link=true copybutton=true guidelines="/komponenter/footer/#logo" %}

@@ -1,0 +1,104 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% from "components/footers/footer.njk" import footer as footer %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel står her"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
+    }
+} %}
+
+{% set modal_content = 
+    alert(alert_modal_warning) + 
+    "<h3>En form for support</h3>
+    <p>Hvis du har spørgsmål om:</p>
+        <ul>
+            <li>En ting som denne</li>
+            <li>Et andet emne som dette</li>
+        </ul>
+    <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span></p>
+    <p>Telefonen er åben:</p> 
+    <p class='m-0'>Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
+    <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{# <!-- Page content starts here --> #}
+
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    {{ skiplink() }}
+    {{ portal_info(portal_header_data) }}
+    {{ solution_info(solution_header_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_header_data) }}
+        {{ mobile_portal_info(portal_header_data) }}
+    </div>
+</header>
+{% endblock %}
+
+{% block body %}
+<main class="container page-container" id="main-content">
+
+    <h1 class="mt-4 mt-sm-7">Siden kunne ikke findes</h1>
+
+    <p class="font-lead mb-0">Vi kan ikke finde den side, du leder efter (fejl 404).</p>
+
+    <p class="font-lead mt-0 pb-4 pb-sm-905">Måske er siden blevet flyttet, eller også er webadressen forkert.</p>
+
+    <h2 class="h3 mt-sm-905 pt-sm-905">Hjælp til at komme videre</h2>
+
+    <ul class="nobullet-list">
+        <li><a href="#">Gå til forsiden</a></li>
+        <li><a href="#">Brug søgefunktionen</a></li>
+        <li><a href="#">Kontakt os</a></li>
+    </ul>
+
+</main>
+{% endblock %}
+
+{% block footer -%}
+{{ footer(footer_data) }}
+{% endblock %}
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-contact",
+            "heading": "Kontakt",
+            "content": modal_content,
+            "forcedAction": false,
+            "actions": modal_actions
+        })
+    }}
+</div>

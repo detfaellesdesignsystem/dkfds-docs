@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.0.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.0.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.0.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.0.1" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.0.1" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.0.1" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.0.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.0.1">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.0.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.0.1">
 </noscript>
 
   </head>
@@ -1382,30 +1382,6 @@
         </li></ul>
 </nav>
 
-<div class="component-preview intro-example component-preview-headings">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/headings/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: headings</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Oversigt over overskriftshierarki</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <h1>Overskrift 1</h1>
-<h2>Overskrift 2</h2>
-<h3>Overskrift 3</h3>
-<h4>Overskrift 4</h4>
-<h5>Overskrift 5</h5>
-<h6>Overskrift 6</h6>
-        
-    </div>
-    
-</div>
-
 <nav class="anchorbox" aria-labelledby="anchorlinks">
     <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
     <ul class="anchorlist">
@@ -1457,109 +1433,170 @@
 
 <p>Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærksom på, at det anbefales i ens stylesheet at bruge relative værdier til skriftstørrelse og en “unitless” talværdi for linjehøjden. I designsystemets stylesheet er overskrifternes skriftstørrelse defineret med “rem”.</p>
 
-<table class="table table--borderless table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Tekst</th>
-      <th>Skrifttype</th>
-      <th>Skriftstørrelse</th>
-      <th>Linjehøjde</th>
-      <th>Teksttykkelse</th>
-      <th>Tekstfarve</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Overskrift 1</td>
-      <td>IBM Plex Sans</td>
-      <td>48px</td>
-      <td>56px</td>
-      <td>Bold (700)</td>
-      <td>#1a1a1a</td>
-    </tr>
-    <tr>
-      <td>Overskrift 2</td>
-      <td>IBM Plex Sans</td>
-      <td>32px</td>
-      <td>40px</td>
-      <td>Semi-bold (600)</td>
-      <td>#1a1a1a</td>
-    </tr>
-    <tr>
-      <td>Overskrift 3</td>
-      <td>IBM Plex Sans</td>
-      <td>24px</td>
-      <td>32px</td>
-      <td>Semi-bold (600)</td>
-      <td>#1a1a1a</td>
-    </tr>
-    <tr>
-      <td>Overskrift 4</td>
-      <td>IBM Plex Sans</td>
-      <td>20px</td>
-      <td>28px</td>
-      <td>Semi-bold (600)</td>
-      <td>#1a1a1a</td>
-    </tr>
-    <tr>
-      <td>Overskrift 5</td>
-      <td>IBM Plex Sans</td>
-      <td>16px</td>
-      <td>24px</td>
-      <td>Semi-bold (600)</td>
-      <td>#1a1a1a</td>
-    </tr>
-    <tr>
-      <td>Overskrift 6</td>
-      <td>IBM Plex Sans</td>
-      <td>14px</td>
-      <td>20px</td>
-      <td>Medium (500)</td>
-      <td>#1a1a1a</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="h1">Overskrift 1</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">48px (desktop)</li>
+            <li>40px (tablet)</li>
+            <li>32px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">56px (desktop)</li>
+            <li>48px (tablet)</li>
+            <li>40px (mobil)</li>
+          </ul>
+        </td>
+        <td>Bold (700)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h2">Overskrift 2</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">32px (desktop)</li>
+            <li>28px (tablet)</li>
+            <li>24px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">40px (desktop)</li>
+            <li>36px (tablet)</li>
+            <li>32px (mobil)</li>
+          </ul>
+        </td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h3">Overskrift 3</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">24px (desktop)</li>
+            <li>24px (tablet)</li>
+            <li>22px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">32px (desktop)</li>
+            <li>32px (tablet)</li>
+            <li>28px (mobil)</li>
+          </ul>
+        </td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h4">Overskrift 4</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">20px (desktop)</li>
+            <li>20px (tablet)</li>
+            <li>18px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">28px (desktop)</li>
+            <li>28px (tablet)</li>
+            <li>24px (mobil)</li>
+          </ul>
+        </td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h5">Overskrift 5</span></th>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h6">Overskrift 6</span></th>
+        <td>14px</td>
+        <td>20px</td>
+        <td>Medium (500)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2 id="overskrift-som-link">Overskrift som link</h2>
 
-<div class="component-preview  component-preview-heading-link p-4">
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <h3><a href="javascript:void(0);">Dette er en overskrift, der vises som et link</a></h3>
-<h3><a href="javascript:void(0);" class="link-hover">Dette er en overskrift, der vises som et
-        link (hover)</a></h3>
-<h3><a href="javascript:void(0);" class="link-visited">Dette er en overskrift, der vises som
-        et link (besøgt)</a></h3>
-<h3><a href="javascript:void(0);" class="link-focus">Dette er en overskrift, der vises som et
-        link (fokus)</a></h3>
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Tekstdekoration</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift, som er et link</a></span></th>
+        <td>Understreget</td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">#004D99</li>
+            <li>#000040 (hover)</li>
+            <li>#800080 (besøgt)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <h3>Anvendes til</h3>
 
-<p>Overblikslinks kan anvendes på overblikssider, hvor brugeren kan navigere til forskellige indberetninger i samme selvbetjeningsløsning. Overblikslinks kan også anvendes til at navigere til forskellige sektioner i en løsning.</p>
+<p>Overskrift som links kan anvendes på sider, hvor brugeren kan navigere til andre sider i samme selvbetjeningsløsning.</p>
 
 <h3>Anvendes ikke til</h3>
 
 <p>Må ikke bruges til at fremhæve links eller som erstatning for <a href="/styleguide/typografi/links/">standard links</a> i selvbetjeningsløsninger.</p>
 
-<h3>Vejledning</h3>
-
-<p>Et godt eksempel på brugen af overblikslinks er fx <a href="https://www.gov.uk/" class="icon-link" target="_blank">forsiden af gov.uk<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>, hvor de anvendes sammen med tekst til at give brugeren en generel ide om omfanget af indholdet i løsningen.</p>
-
 <h2 id="overskrift-i-soegeresultat">Overskrift i søgeresultat</h2>
 
-<div class="component-preview  component-preview-search-link p-4">
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <h3><a href="#" class="search-link">Dette er en overskrift, der vises som et link</a></h3>
-<h3><a href="#" class="search-link link-hover">Dette er en overskrift, der vises som et link
-        (hover)</a></h3>
-<h3><a href="#" class="search-link link-visited">Dette er en overskrift, der vises som et link
-        (besøgt)</a></h3>
-<h3><a href="#" class="search-link link-focus">Dette er en overskrift, der vises som et link
-        (fokus)</a></h3>
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Tekstdekoration</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift i søgeresultat</a></span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">Ingen</li>
+            <li>Understreget (hover)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">#004D99</li>
+            <li>#000040 (hover)</li>
+            <li>#800080 (besøgt)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <h3>Anvendes til</h3>
@@ -1569,10 +1606,6 @@
 <h3>Anvendes ikke til</h3>
 
 <p>Må ikke anvendes til at fremhæve links i tekst eller som erstatning for <a href="/styleguide/typografi/links/">standard links</a>.</p>
-
-<h3>Vejledning</h3>
-
-<p>Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.</p>
 
 <h2 id="loesningstitel-i-header">Løsningstitel i header</h2>
 
@@ -1604,11 +1637,29 @@
 
 <h2 id="subheading">Subheading</h2>
 
-<div class="component-preview  component-preview-subheading p-4">
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="subheading">Dette er en subheading</div>
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+        <th scope="col">Farve</th>
+        <th scope="col">Letter-spacing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="subheading">Subheading</span></th>
+        <td>14px</td>
+        <td>16px</td>
+        <td>Regular (400)</td>
+        <td>#747474</td>
+        <td>1px</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <h3>Anvendes til</h3>
@@ -1771,8 +1822,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=10.0.0"></script>
-<script src="/assets/js/styleguide.js?v=10.0.0"></script>
+    <script src="/assets/js/theme.js?v=10.0.1"></script>
+<script src="/assets/js/styleguide.js?v=10.0.1"></script>
 
 
 <script src="/assets/js/docs-tabs.js"></script>

@@ -55,7 +55,7 @@ Hvis du ønsker at anvende faner, bør det testes på din målgruppe, før din l
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Faneblade til navigation
+### Faneblade til navigation {#{% include create-id.html heading="Faneblade til navigation" %}}
 
 Fanebladskomponenten kan anvendes til navigation mellem flere undersider. Hver fane vil kunne afspejles i sidens URL, og det skal være muligt at linke direkte til, og åbne, et faneblad. Ved denne brug skal sidens indhold fra fanebladskomponenten og ned til footeren være knyttet til det åbne faneblad.
 
@@ -67,12 +67,12 @@ Vær særligt opmærksom på følgende:
 
 {% include code/preview-image.html component="tabs-navigation" title="Eksempel på faneblade med URL-skifte" code="/komponenter/faneblade/#faneblade-til-navigation-kode" %}
 
-### Faneblade med ikoner
+### Faneblade med ikoner {#{% include create-id.html heading="Faneblade med ikoner" %}}
 
 Faneblade kan vises med ikoner, hvis disse understøtter de angivne sektioner visuelt. Vi anbefaler at være forsigtig med denne løsning, da et ikon der læses forkert eller misforståes kan forvirre brugeren mere end det hjælper. Så benyt kun ikoner hvis de er klare i budskabet og hjælper med at kommunikere det underliggende indhold.
 Ikoner skal altid understøttes af en label med fanebladets navn.
 
-{% include code/preview-box.html component="tabs-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/#faneblade-med-ikoner"%} 
+{% include code/preview-box.html component="tabs-icons" title="Eksempel på faneblade med ikoner" code="/komponenter/faneblade/#faneblade-med-ikoner-kode" %} 
 
 {% include dos-donts-box.html component="faneblad-ikoner-dos-donts" title="Faneblade med ikoner do's and don'ts" %}
 
@@ -112,7 +112,7 @@ Når et faneblad ikke længere er valgt, bliver eventet `fds.tab.hidden` udløst
 
 ## Faneblade til navigation {#{% include create-id.html heading="Faneblade til navigation" append="-kode" %}}
 
-{% include code/syntax.html component="tabs-navigation" link=true copybutton=true %}
+{% include code/syntax.html component="tabs-navigation" link=true copybutton=true guidelines="/komponenter/faneblade/#faneblade-til-navigation" %}
 
 Ved faneblade til navigation angives det aktive faneblad med `aria-current="true"`, alternativt `aria-current="page"` hvis siderne har forskellige URL'er. Her skal man sikre sig at kun ét faneblad har denne attribut sat.
 
@@ -120,4 +120,4 @@ Bemærk, at der ikke medfølger JavaScript til faneblade til navigation. Hvis ma
 
 ## Faneblade med ikoner {#{% include create-id.html heading="Faneblade med ikoner" append="-kode" %}}
 
-{% include code/syntax.html component="tabs-icons" link=true copybutton=true %}
+{% include code/syntax.html component="tabs-icons" link=true copybutton=true guidelines="/komponenter/faneblade/#faneblade-med-ikoner" %}

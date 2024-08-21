@@ -72,22 +72,22 @@ Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist 
 {:#succes}
 ### Succes
 
-{% include code/preview-box.html component="toastbesked-success" title="Eksempel på notifikation med success farver" %}
+{% include code/preview-box.html component="toastbesked-success" title="Eksempel på notifikation med success farver" code="/komponenter/toastbesked/#succes-kode" %}
 
 {:#advarsel}
 ### Advarsel
 
-{% include code/preview-box.html component="toastbesked-warning" title="Eksempel på notifikation med advarselsfarver" %}
+{% include code/preview-box.html component="toastbesked-warning" title="Eksempel på notifikation med advarselsfarver" code="/komponenter/toastbesked/#advarsel-kode" %}
 
 {:#fejl}
 ### Fejl
 
-{% include code/preview-box.html component="toastbesked-error" title="Eksempel på notifikation med fejlfarver" %}
+{% include code/preview-box.html component="toastbesked-error" title="Eksempel på notifikation med fejlfarver" code="/komponenter/toastbesked/#fejl-kode" %}
 
 {:#information}
 ### Information
 
-{% include code/preview-box.html component="toastbesked-info" title="Eksempel på notifikation med infofarver" %}
+{% include code/preview-box.html component="toastbesked-info" title="Eksempel på notifikation med infofarver" code="/komponenter/toastbesked/#information-kode" %}
 
 {:#uden-broedtekst}
 ### Uden brødtekst
@@ -146,16 +146,16 @@ toast.hide();
 
 ## Succes {#{% include create-id.html heading="Succes" append="-kode" %}}
 
-{% include code/syntax.html component="toastbesked-success" link=true copybutton=true %}
+{% include code/syntax.html component="toastbesked-success" link=true copybutton=true guidelines="/komponenter/toastbesked/#succes" %}
 
 ## Advarsel {#{% include create-id.html heading="Advarsel" append="-kode" %}}
 
-{% include code/syntax.html component="toastbesked-warning" link=true copybutton=true %}
+{% include code/syntax.html component="toastbesked-warning" link=true copybutton=true guidelines="/komponenter/toastbesked/#advarsel" %}
 
 ## Fejl {#{% include create-id.html heading="Fejl" append="-kode" %}}
 
-{% include code/syntax.html component="toastbesked-error" link=true copybutton=true %}
+{% include code/syntax.html component="toastbesked-error" link=true copybutton=true guidelines="/komponenter/toastbesked/#fejl" %}
 
 ## Information {#{% include create-id.html heading="Information" append="-kode" %}}
 
-{% include code/syntax.html component="toastbesked-info" link=true copybutton=true %}
+{% include code/syntax.html component="toastbesked-info" link=true copybutton=true guidelines="/komponenter/toastbesked/#information" %}

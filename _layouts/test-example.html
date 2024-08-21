@@ -9,9 +9,9 @@
     {% include code/components/base-svg.html %}
     {% include test/test-header.html %}
     {{ content }}
-    {% include test/test-footer.html previoustest=page.previoustest nexttest=page.nexttest %}
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
+    {% include test/test-footer.html previoustest=page.previoustest nexttest=page.nexttest %}
     <script src="{{ site.baseurl }}/assets/js/test.js"></script>
 </body>
 

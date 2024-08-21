@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta name="robots" content="noindex" >
+    {% include head.html %}
+  </head>
+  <body class="layout-{{ page.layout }}">
+    {% include code/components/fds-base-svg.html %}
+    <div id="top"></div>
+    {% include navbar.html %}
+
+    <main class="container page-container" id="main-content">
+        {% include theme-alert.html %}
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mt-4 mt-sm-7" id="{{ page.title | slugify }}">{{ page.title }}</h1>
+                {{ content }}
+            </div>
+    
+        </div>
+    </main>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

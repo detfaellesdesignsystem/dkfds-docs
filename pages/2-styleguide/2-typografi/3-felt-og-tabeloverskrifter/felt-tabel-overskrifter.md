@@ -15,17 +15,31 @@ tags:
 
 ## Feltoverskrifter {#{% include create-id.html heading="Feltoverskrifter" %}}
 
-{% include code/preview.html component="labels" %}
-
 {:.nobullet-list}
 - Se dokumentationen om {% include links/component-code-link.html linktext="implementeringen af inputfelter" %}.
 
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|---------------|-----------------|------------------------------|------------|
-| IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="form-label">Feltoverskrift</span></th>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Semi-bold (600)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#label-retningslinjer}
 ### Retningslinjer
@@ -43,17 +57,31 @@ Se dokumentationen om {% include links/component-guideline-link.html linktext="i
 
 ## Tabeloverskrifter {#{% include create-id.html heading="Tabeloverskrifter" %}}
 
-{% include code/preview.html component="labels-table" %}
-
 {:.nobullet-list}
 - Se dokumentationen om {% include links/component-code-link.html linktext="implementeringen af tabeller" %}.
 
 ### Designværdier
 
-{:.table .table--borderless .table--responsive-headers}
-| Skrifttype    | Skriftstørrelse | Tekst tykkelse (font-weight) | Tekstfarve |
-|---------------|-----------------|------------------------------|------------|
-| IBM Plex Sans | 16px            | 600                          | #1a1a1a    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="example-table-th">Kolonneoverskrift i en tabel</span></th>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Semi-bold (600)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 {:#tabeloverskrift-retningslinjer}
 ### Retningslinjer

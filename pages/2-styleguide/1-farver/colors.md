@@ -49,15 +49,15 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-6 mb-4 md-md-0">
     <div class="color background-borgerdk-100"></div>
-    <div class="color-text-label"><span class="color-hex">#44831E</span><span>'primary'</span></div>
+    {% include color.html hex="#44831E" name="primary" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-borgerdk-200"></div>
-    <div class="color-text-label"><span class="color-hex">#3C5C22</span><span>'primary-dark'</span></div>
+    {% include color.html hex="#3C5C22" name="primary-dark" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-borgerdk-300"></div>
-    <div class="color-text-label"><span class="color-hex">#233614</span><span>'primary-darker'</span></div>
+    {% include color.html hex="#233614" name="primary-darker" %}
   </div>
 </div>
 
@@ -68,15 +68,15 @@ Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærkn
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-6 mb-4 md-md-0">
     <div class="color background-virk-100"></div>
-    <div class="color-text-label"><span class="color-hex">#0059B3</span><span>'primary'</span></div>
+    {% include color.html hex="#0059B3" name="primary" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-virk-200"></div>
-    <div class="color-text-label"><span class="color-hex">#004993</span><span>'primary-dark'</span></div>
+    {% include color.html hex="#004993" name="primary-dark" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-virk-300"></div>
-    <div class="color-text-label"><span class="color-hex">#003972</span><span>'primary-darker'</span></div>
+    {% include color.html hex="#003972" name="primary-darker" %}
   </div>
 </div>
 
@@ -87,35 +87,35 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-white"></div>
-    <div class="color-text-label"><span class="color-hex">#FFFFFF</span><span>'white'</span></div>
+    {% include color.html hex="#FFFFFF" name="white" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-100"></div>
-    <div class="color-text-label"><span class="color-hex">#F5F5F5</span><span>'gray-100'</span></div>
+    {% include color.html hex="#F5F5F5" name="gray-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-200"></div>
-    <div class="color-text-label"><span class="color-hex">#DCDCDC</span><span>'gray-200'</span></div>
+    {% include color.html hex="#DCDCDC" name="gray-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-300"></div>
-    <div class="color-text-label"><span class="color-hex">#BFBFBF</span><span>'gray-300'</span></div>
+    {% include color.html hex="#BFBFBF" name="gray-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-400"></div>
-    <div class="color-text-label"><span class="color-hex">#999999</span><span>'gray-400'</span></div>
+    {% include color.html hex="#999999" name="gray-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-500"></div>
-    <div class="color-text-label"><span class="color-hex">#747474</span><span>'gray-500'</span></div>
+    {% include color.html hex="#747474" name="gray-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-600"></div>
-    <div class="color-text-label"><span class="color-hex">#454545</span><span>'gray-600'</span></div>
+    {% include color.html hex="#454545" name="gray-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-black"></div>
-    <div class="color-text-label"><span class="color-hex">#1A1A1A</span><span>'black'</span></div>
+    {% include color.html hex="#1A1A1A" name="black" %}
   </div>
 </div>
 
@@ -126,11 +126,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-success-light"></div>
-    <div class="color-text-label"><span class="color-hex">#EEFFE2</span><span>'success-light'</span></div>
+    {% include color.html hex="#EEFFE2" name="success-light" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-success"></div>
-    <div class="color-text-label"><span class="color-hex">#358000</span><span>'success'</span></div>
+    {% include color.html hex="#358000" name="success" %}
   </div>
 </div>
 
@@ -139,11 +139,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-warning-light"></div>
-    <div class="color-text-label"><span class="color-hex">#FFEECC</span><span>'warning-light'</span></div>
+    {% include color.html hex="#FFEECC" name="warning-light" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color color-scale-spacing background-warning"></div>
-    <div class="color-text-label"><span class="color-hex">#FEBB30</span><span>'warning'</span></div>
+    {% include color.html hex="#FEBB30" name="warning" %}
   </div>
 </div>
 
@@ -152,11 +152,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-error-light"></div>
-    <div class="color-text-label"><span class="color-hex">#FFE0E0</span><span>'error-light'</span></div>
+    {% include color.html hex="#FFE0E0" name="error-light" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-error"></div>
-    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>'error'</span></div>
+    {% include color.html hex="#CC0000" name="error" %}
   </div>
 </div>
 
@@ -165,11 +165,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-info-light"></div>
-    <div class="color-text-label"><span class="color-hex">#E2F2FB</span><span>'info-light'</span></div>
+    {% include color.html hex="#E2F2FB" name="info-light" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-info"></div>
-    <div class="color-text-label"><span class="color-hex">#1B86C3</span><span>'info'</span></div>
+    {% include color.html hex="#1B86C3" name="info" %}
   </div>
 </div>
 
@@ -178,15 +178,15 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link"></div>
-    <div class="color-text-label"><span class="color-hex">#004D99</span><span>'link'</span></div>
+    {% include color.html hex="#004D99" name="link" %}
   </div>
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link-hover"></div>
-    <div class="color-text-label"><span class="color-hex">#000040</span><span>'link-hover'</span></div>
+    {% include color.html hex="#000040" name="link-hover" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-link-visited"></div>
-    <div class="color-text-label"><span class="color-hex">#800080</span><span>'link-visited'</span></div>
+    {% include color.html hex="#800080" name="link-visited" %}
   </div>
 </div>
 
@@ -195,7 +195,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
-    <div class="color-text-label"><span class="color-hex">#747474</span><span>'focus'</span></div>
+    {% include color.html hex="#747474" name="focus" %}
   </div>
 </div>
 
@@ -204,15 +204,15 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color bg-normal"></div>
-    <div class="color-text-label"><span class="color-hex">#FFFFFF</span><span>'white'</span></div>
+    {% include color.html hex="#FFFFFF" name="white" %}
   </div>
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color bg-alternative"></div>
-    <div class="color-text-label"><span class="color-hex">#F5F5F5</span><span>'gray-100'</span></div>
+    {% include color.html hex="#F5F5F5" name="gray-100" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color bg-modal"></div>
-    <div class="color-text-label"><span class="color-hex">rgba(0, 0, 0, 0.4)</span><span>$modal-overlay-background-color</span></div>
+    {% include color.html hex="rgba(0, 0, 0, 0.4)" name="$modal-overlay-background-color" %}
   </div>
 </div>
 
@@ -221,11 +221,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
-    <div class="color-text-label"><span class="color-hex">#358000</span><span>'text-positive'</span></div>
+    {% include color.html hex="#358000" name="text-positive" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-negative"></div>
-    <div class="color-text-label"><span class="color-hex">#CC0000</span><span>'text-negative'</span></div>
+    {% include color.html hex="#CC0000" name="text-negative" %}
   </div>
 </div>
 
@@ -238,39 +238,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-100"></div>
-    <div class="color-text-label"><span class="color-hex">#FCFBFD</span><span>'data-violet-100'</span></div>
+    {% include color.html hex="#FCFBFD" name="data-violet-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-200"></div>
-    <div class="color-text-label"><span class="color-hex">#EFEDF5</span><span>'data-violet-200'</span></div>
+    {% include color.html hex="#EFEDF5" name="data-violet-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-300"></div>
-    <div class="color-text-label"><span class="color-hex">#DADAEB</span><span>'data-violet-300'</span></div>
+    {% include color.html hex="#DADAEB" name="data-violet-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-400"></div>
-    <div class="color-text-label"><span class="color-hex">#BCBDDC</span><span>'data-violet-400'</span></div>
+    {% include color.html hex="#BCBDDC" name="data-violet-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-500"></div>
-    <div class="color-text-label"><span class="color-hex">#9E9AC8</span><span>'data-violet-500'</span></div>
+    {% include color.html hex="#9E9AC8" name="data-violet-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-600"></div>
-    <div class="color-text-label"><span class="color-hex">#807DBA</span><span>'data-violet-600'</span></div>
+    {% include color.html hex="#807DBA" name="data-violet-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-700"></div>
-    <div class="color-text-label"><span class="color-hex">#6A51A3</span><span>'data-violet-700'</span></div>
+    {% include color.html hex="#6A51A3" name="data-violet-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-800"></div>
-    <div class="color-text-label"><span class="color-hex">#54278F</span><span>'data-violet-800'</span></div>
+    {% include color.html hex="#54278F" name="data-violet-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-violet-900"></div>
-    <div class="color-text-label"><span class="color-hex">#3F007D</span><span>'data-violet-900'</span></div>
+    {% include color.html hex="#3F007D" name="data-violet-900" %}
   </div>
 </div>
 
@@ -279,39 +279,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-100"></div>
-    <div class="color-text-label"><span class="color-hex">#FFF7F3</span><span>'data-pink-violet-100'</span></div>
+    {% include color.html hex="#FFF7F3" name="data-pink-violet-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-200"></div>
-    <div class="color-text-label"><span class="color-hex">#FDE0DD</span><span>'data-pink-violet-200'</span></div>
+    {% include color.html hex="#FDE0DD" name="data-pink-violet-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-300"></div>
-    <div class="color-text-label"><span class="color-hex">#FCC5C0</span><span>'data-pink-violet-300'</span></div>
+    {% include color.html hex="#FCC5C0" name="data-pink-violet-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-400"></div>
-    <div class="color-text-label"><span class="color-hex">#FA9FB5</span><span>'data-pink-violet-400'</span></div>
+    {% include color.html hex="#FA9FB5" name="data-pink-violet-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-500"></div>
-    <div class="color-text-label"><span class="color-hex">#F768A1</span><span>'data-pink-violet-500'</span></div>
+    {% include color.html hex="#F768A1" name="data-pink-violet-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-600"></div>
-    <div class="color-text-label"><span class="color-hex">#DD3497</span><span>'data-pink-violet-600'</span></div>
+    {% include color.html hex="#DD3497" name="data-pink-violet-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-700"></div>
-    <div class="color-text-label"><span class="color-hex">#AE017E</span><span>'data-pink-violet-700'</span></div>
+    {% include color.html hex="#AE017E" name="data-pink-violet-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-800"></div>
-    <div class="color-text-label"><span class="color-hex">#7A0177</span><span>'data-pink-violet-800'</span></div>
+    {% include color.html hex="#7A0177" name="data-pink-violet-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-pink-violet-900"></div>
-    <div class="color-text-label"><span class="color-hex">#49006A</span><span>'data-pink-violet-900'</span></div>
+    {% include color.html hex="#49006A" name="data-pink-violet-900" %}
   </div>
 </div>
 
@@ -320,39 +320,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-100"></div>
-    <div class="color-text-label"><span class="color-hex">#FFF5EB</span><span>'data-orange-100'</span></div>
+    {% include color.html hex="#FFF5EB" name="data-orange-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-200"></div>
-    <div class="color-text-label"><span class="color-hex">#FEE6CE</span><span>'data-orange-200'</span></div>
+    {% include color.html hex="#FEE6CE" name="data-orange-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-300"></div>
-    <div class="color-text-label"><span class="color-hex">#FDD0A2</span><span>'data-orange-300'</span></div>
+    {% include color.html hex="#FDD0A2" name="data-orange-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-400"></div>
-    <div class="color-text-label"><span class="color-hex">#FDAE6B</span><span>'data-orange-400'</span></div>
+    {% include color.html hex="#FDAE6B" name="data-orange-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-500"></div>
-    <div class="color-text-label"><span class="color-hex">#FD8D3C</span><span>'data-orange-500'</span></div>
+    {% include color.html hex="#FD8D3C" name="data-orange-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-600"></div>
-    <div class="color-text-label"><span class="color-hex">#F16913</span><span>'data-orange-600'</span></div>
+    {% include color.html hex="#F16913" name="data-orange-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-700"></div>
-    <div class="color-text-label"><span class="color-hex">#D94801</span><span>'data-orange-700'</span></div>
+    {% include color.html hex="#D94801" name="data-orange-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-800"></div>
-    <div class="color-text-label"><span class="color-hex">#A63603</span><span>'data-orange-800'</span></div>
+    {% include color.html hex="#A63603" name="data-orange-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-orange-900"></div>
-    <div class="color-text-label"><span class="color-hex">#7F2704</span><span>'data-orange-900'</span></div>
+    {% include color.html hex="#7F2704" name="data-orange-900" %}
   </div>
 </div>
 
@@ -361,39 +361,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-100"></div>
-    <div class="color-text-label"><span class="color-hex">#FFFFCC</span><span>'data-yellow-red-100'</span></div>
+    {% include color.html hex="#FFFFCC" name="data-yellow-red-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-200"></div>
-    <div class="color-text-label"><span class="color-hex">#FFEDA0</span><span>'data-yellow-red-200'</span></div>
+    {% include color.html hex="#FFEDA0" name="data-yellow-red-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-300"></div>
-    <div class="color-text-label"><span class="color-hex">#FED976</span><span>'data-yellow-red-300'</span></div>
+    {% include color.html hex="#FED976" name="data-yellow-red-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-400"></div>
-    <div class="color-text-label"><span class="color-hex">#FEB24C</span><span>'data-yellow-red-400'</span></div>
+    {% include color.html hex="#FEB24C" name="data-yellow-red-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-500"></div>
-    <div class="color-text-label"><span class="color-hex">#FD8D3C</span><span>'data-yellow-red-500'</span></div>
+    {% include color.html hex="#FD8D3C" name="data-yellow-red-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-600"></div>
-    <div class="color-text-label"><span class="color-hex">#FC4E2A</span><span>'data-yellow-red-600'</span></div>
+    {% include color.html hex="#FC4E2A" name="data-yellow-red-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-700"></div>
-    <div class="color-text-label"><span class="color-hex">#E31A1C</span><span>'data-yellow-red-700'</span></div>
+    {% include color.html hex="#E31A1C" name="data-yellow-red-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-800"></div>
-    <div class="color-text-label"><span class="color-hex">#BD0026</span><span>'data-yellow-red-800'</span></div>
+    {% include color.html hex="#BD0026" name="data-yellow-red-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-yellow-red-900"></div>
-    <div class="color-text-label"><span class="color-hex">#800026</span><span>'data-yellow-red-900'</span></div>
+    {% include color.html hex="#800026" name="data-yellow-red-900" %}
   </div>
 </div>
 
@@ -402,39 +402,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-100"></div>
-    <div class="color-text-label"><span class="color-hex">#F7FBFF</span><span>'data-blue-100'</span></div>
+    {% include color.html hex="#F7FBFF" name="data-blue-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-200"></div>
-    <div class="color-text-label"><span class="color-hex">#DEEBF7</span><span>'data-blue-200'</span></div>
+    {% include color.html hex="#DEEBF7" name="data-blue-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-300"></div>
-    <div class="color-text-label"><span class="color-hex">#C6DBEF</span><span>'data-blue-300'</span></div>
+    {% include color.html hex="#C6DBEF" name="data-blue-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-400"></div>
-    <div class="color-text-label"><span class="color-hex">#9ECAE1</span><span>'data-blue-400'</span></div>
+    {% include color.html hex="#9ECAE1" name="data-blue-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-500"></div>
-    <div class="color-text-label"><span class="color-hex">#6BAED6</span><span>'data-blue-500'</span></div>
+    {% include color.html hex="#6BAED6" name="data-blue-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-600"></div>
-    <div class="color-text-label"><span class="color-hex">#4292C6</span><span>'data-blue-600'</span></div>
+    {% include color.html hex="#4292C6" name="data-blue-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-700"></div>
-    <div class="color-text-label"><span class="color-hex">#2171B5</span><span>'data-blue-700'</span></div>
+    {% include color.html hex="#2171B5" name="data-blue-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-800"></div>
-    <div class="color-text-label"><span class="color-hex">#08519C</span><span>'data-blue-800'</span></div>
+    {% include color.html hex="#08519C" name="data-blue-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-blue-900"></div>
-    <div class="color-text-label"><span class="color-hex">#08306B</span><span>'data-blue-900'</span></div>
+    {% include color.html hex="#08306B" name="data-blue-900" %}
   </div>
 </div>
 
@@ -443,39 +443,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-100"></div>
-    <div class="color-text-label"><span class="color-hex">#F7FCF0</span><span>'data-green-blue-100'</span></div>
+    {% include color.html hex="#F7FCF0" name="data-green-blue-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-200"></div>
-    <div class="color-text-label"><span class="color-hex">#E0F3DB</span><span>'data-green-blue-200'</span></div>
+    {% include color.html hex="#E0F3DB" name="data-green-blue-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-300"></div>
-    <div class="color-text-label"><span class="color-hex">#CCEBC5</span><span>'data-green-blue-300'</span></div>
+    {% include color.html hex="#CCEBC5" name="data-green-blue-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-400"></div>
-    <div class="color-text-label"><span class="color-hex">#A8DDB5</span><span>'data-green-blue-400'</span></div>
+    {% include color.html hex="#A8DDB5" name="data-green-blue-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-500"></div>
-    <div class="color-text-label"><span class="color-hex">#7BCCC4</span><span>'data-green-blue-500'</span></div>
+    {% include color.html hex="#7BCCC4" name="data-green-blue-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-600"></div>
-    <div class="color-text-label"><span class="color-hex">#4EB3D3</span><span>'data-green-blue-600'</span></div>
+    {% include color.html hex="#4EB3D3" name="data-green-blue-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-700"></div>
-    <div class="color-text-label"><span class="color-hex">#2B8CBE</span><span>'data-green-blue-700'</span></div>
+    {% include color.html hex="#2B8CBE" name="data-green-blue-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-800"></div>
-    <div class="color-text-label"><span class="color-hex">#0868AC</span><span>'data-green-blue-800'</span></div>
+    {% include color.html hex="#0868AC" name="data-green-blue-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-blue-900"></div>
-    <div class="color-text-label"><span class="color-hex">#084081</span><span>'data-green-blue-900'</span></div>
+    {% include color.html hex="#084081" name="data-green-blue-900" %}
   </div>
 </div>
 
@@ -484,39 +484,39 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-100"></div>
-    <div class="color-text-label"><span class="color-hex">#F7FCF5</span><span>'data-green-100'</span></div>
+    {% include color.html hex="#F7FCF5" name="data-green-100" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-200"></div>
-    <div class="color-text-label"><span class="color-hex">#E5F5E0</span><span>'data-green-200'</span></div>
+    {% include color.html hex="#E5F5E0" name="data-green-200" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-300"></div>
-    <div class="color-text-label"><span class="color-hex">#C7E9C0</span><span>'data-green-300'</span></div>
+    {% include color.html hex="#C7E9C0" name="data-green-300" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-400"></div>
-    <div class="color-text-label"><span class="color-hex">#A1D99B</span><span>'data-green-400'</span></div>
+    {% include color.html hex="#A1D99B" name="data-green-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-500"></div>
-    <div class="color-text-label"><span class="color-hex">#74C476</span><span>'data-green-500'</span></div>
+    {% include color.html hex="#74C476" name="data-green-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-600"></div>
-    <div class="color-text-label"><span class="color-hex">#41AB5D</span><span>'data-green-600'</span></div>
+    {% include color.html hex="#41AB5D" name="data-green-600" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-700"></div>
-    <div class="color-text-label"><span class="color-hex">#238B45</span><span>'data-green-700'</span></div>
+    {% include color.html hex="#238B45" name="data-green-700" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-800"></div>
-    <div class="color-text-label"><span class="color-hex">#006D2C</span><span>'data-green-800'</span></div>
+    {% include color.html hex="#006D2C" name="data-green-800" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-data-green-900"></div>
-    <div class="color-text-label"><span class="color-hex">#00441B</span><span>'data-green-900'</span></div>
+    {% include color.html hex="#00441B" name="data-green-900" %}
   </div>
 </div>
 

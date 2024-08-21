@@ -24,8 +24,6 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="headings" title="Oversigt over overskriftshierarki" classes="intro-example" %}
-
 {% include anchorlinks.html guidelines="Overskrifter" code="Overskrifter_Kode" %}
 
 <!--split-->
@@ -57,35 +55,171 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
 
 Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærksom på, at det anbefales i ens stylesheet at bruge relative værdier til skriftstørrelse og en “unitless” talværdi for linjehøjden. I designsystemets stylesheet er overskrifternes skriftstørrelse defineret med “rem”.
 
-{:.table .table--borderless .table--responsive-headers}
-| Tekst        | Skrifttype    | Skriftstørrelse | Linjehøjde | Teksttykkelse   | Tekstfarve | 
-|--------------|---------------|-----------------|------------|-----------------|------------|
-| Overskrift 1 | IBM Plex Sans | 48px            | 56px       | Bold (700)      | #1a1a1a    |
-| Overskrift 2 | IBM Plex Sans | 32px            | 40px       | Semi-bold (600) | #1a1a1a    |
-| Overskrift 3 | IBM Plex Sans | 24px            | 32px       | Semi-bold (600) | #1a1a1a    |
-| Overskrift 4 | IBM Plex Sans | 20px            | 28px       | Semi-bold (600) | #1a1a1a    |
-| Overskrift 5 | IBM Plex Sans | 16px            | 24px       | Semi-bold (600) | #1a1a1a    |
-| Overskrift 6 | IBM Plex Sans | 14px            | 20px       | Medium (500)    | #1a1a1a    |
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="h1">Overskrift 1</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">48px (desktop)</li>
+            <li>40px (tablet)</li>
+            <li>32px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">56px (desktop)</li>
+            <li>48px (tablet)</li>
+            <li>40px (mobil)</li>
+          </ul>
+        </td>
+        <td>Bold (700)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h2">Overskrift 2</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">32px (desktop)</li>
+            <li>28px (tablet)</li>
+            <li>24px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">40px (desktop)</li>
+            <li>36px (tablet)</li>
+            <li>32px (mobil)</li>
+          </ul>
+        </td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h3">Overskrift 3</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">24px (desktop)</li>
+            <li>24px (tablet)</li>
+            <li>22px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">32px (desktop)</li>
+            <li>32px (tablet)</li>
+            <li>28px (mobil)</li>
+          </ul>
+        </td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h4">Overskrift 4</span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">20px (desktop)</li>
+            <li>20px (tablet)</li>
+            <li>18px (mobil)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">28px (desktop)</li>
+            <li>28px (tablet)</li>
+            <li>24px (mobil)</li>
+          </ul>
+        </td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h5">Overskrift 5</span></th>
+        <td>16px</td>
+        <td>24px</td>
+        <td>Semi-bold (600)</td>
+      </tr>
+      <tr>
+        <th scope="row"><span class="h6">Overskrift 6</span></th>
+        <td>14px</td>
+        <td>20px</td>
+        <td>Medium (500)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Overskrift som link {#{% include create-id.html heading="Overskrift som link" %}}
 
-{% include code/preview.html component="heading-link" %}
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Tekstdekoration</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift, som er et link</a></span></th>
+        <td>Understreget</td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">#004D99</li>
+            <li>#000040 (hover)</li>
+            <li>#800080 (besøgt)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Anvendes til
 
-Overblikslinks kan anvendes på overblikssider, hvor brugeren kan navigere til forskellige indberetninger i samme selvbetjeningsløsning. Overblikslinks kan også anvendes til at navigere til forskellige sektioner i en løsning.
+Overskrift som links kan anvendes på sider, hvor brugeren kan navigere til andre sider i samme selvbetjeningsløsning.
 
 ### Anvendes ikke til
 
 Må ikke bruges til at fremhæve links eller som erstatning for {% include links/internal-link.html linktext="standard links" %} i selvbetjeningsløsninger.
 
-### Vejledning
-
-Et godt eksempel på brugen af overblikslinks er fx {% include links/external-link.html linktext="forsiden af gov.uk" %}, hvor de anvendes sammen med tekst til at give brugeren en generel ide om omfanget af indholdet i løsningen.
-
 ## Overskrift i søgeresultat {#{% include create-id.html heading="Overskrift i søgeresultat" %}}
 
-{% include code/preview.html component="search-link" %}
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Tekstdekoration</th>
+        <th scope="col">Tekstfarve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift i søgeresultat</a></span></th>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">Ingen</li>
+            <li>Understreget (hover)</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="nobullet-list mt-0 mb-0">
+            <li class="mt-0 mb-0">#004D99</li>
+            <li>#000040 (hover)</li>
+            <li>#800080 (besøgt)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Anvendes til
 
@@ -94,10 +228,6 @@ Søgeresultatlinks bruges til at skabe en overskuelig struktur i søgeresultater
 ### Anvendes ikke til
 
 Må ikke anvendes til at fremhæve links i tekst eller som erstatning for {% include links/internal-link.html linktext="standard links" %}.
-
-### Vejledning
-
-Et godt eksempel på brugen af søgeresultatlinks er googles søgeresultatside.
 
 ## Løsningstitel i header {#{% include create-id.html heading="Løsningstitel i header" %}}
 
@@ -113,7 +243,30 @@ Anvendes ikke andre steder end i headeren.
 
 ## Subheading {#{% include create-id.html heading="Subheading" %}}
 
-{% include code/preview.html component="subheading" %}
+<div class="table--responsive-scroll">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Skriftstørrelse</th>
+        <th scope="col">Linjehøjde</th>
+        <th scope="col">Teksttykkelse</th>
+        <th scope="col">Farve</th>
+        <th scope="col">Letter-spacing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="subheading">Subheading</span></th>
+        <td>14px</td>
+        <td>16px</td>
+        <td>Regular (400)</td>
+        <td>#747474</td>
+        <td>1px</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Anvendes til
 

@@ -74,7 +74,7 @@ Vis altid antallet af tegn, der er til rådighed i tekstområdet, inden brugeren
 
 Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.
 
-{% include code/preview-box.html component="text-area-character-limit" link=false title="Eksempel på tekstområde med karakterbegrænsning" code="/komponenter/tekstomraade/#karakterbegraensning-kode" %}
+{% include code/preview-box.html component="text-area-character-limit" title="Eksempel på tekstområde med karakterbegrænsning" code="/komponenter/tekstomraade/#karakterbegraensning-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -109,7 +109,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-code-l
 
 ## Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" append="-kode" %}}
 
-{% include code/syntax.html component="text-area-character-limit" link=true copybutton=true %}
+{% include code/syntax.html component="text-area-character-limit" link=true copybutton=true guidelines="/komponenter/tekstomraade/#karakterbegraensning" %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 

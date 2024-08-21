@@ -54,15 +54,15 @@ Skriv kort og præcist i hvert card.
 
 ### Card med tredjedel bredde {#{% include create-id.html heading="Card med tredjedel bredde" %}}
 
-{% include code/preview-box.html component="cards-third-width" title="Eksempel på cards i tre kolonner" %}
+{% include code/preview-box.html component="cards-third-width" title="Eksempel på cards i tre kolonner" code="/komponenter/cards/#card-med-tredjedel-bredde-kode" %}
 
 ### Card med halv bredde {#{% include create-id.html heading="Card med halv bredde" %}}
 
-{% include code/preview-box.html component="cards-half-width" title="Eksempel på cards i to kolonner" %}
+{% include code/preview-box.html component="cards-half-width" title="Eksempel på cards i to kolonner" code="/komponenter/cards/#card-med-halv-bredde-kode" %}
 
 ### Cards med samme højde {#{% include create-id.html heading="Cards med samme højde" %}}
 
-{% include code/preview-box.html component="cards-same-height" title="Eksempel på cards med samme højde" %}
+{% include code/preview-box.html component="cards-same-height" title="Eksempel på cards med samme højde" code="/komponenter/cards/#cards-med-samme-hoejde-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -124,12 +124,12 @@ Footer defineres med klassen `card-footer`.
 
 ## Card med tredjedel bredde {#{% include create-id.html heading="Card med tredjedel bredde" append="-kode" %}}
 
-{% include code/syntax.html component="cards-third-width" link=true copybutton=true %}
+{% include code/syntax.html component="cards-third-width" link=true copybutton=true guidelines="/komponenter/cards/#card-med-tredjedel-bredde" %}
 
 ## Card med halv bredde {#{% include create-id.html heading="Card med halv bredde" append="-kode" %}}
 
-{% include code/syntax.html component="cards-half-width" link=true copybutton=true %}
+{% include code/syntax.html component="cards-half-width" link=true copybutton=true guidelines="/komponenter/cards/#card-med-halv-bredde" %}
 
 ## Cards med samme højde {#{% include create-id.html heading="Cards med samme højde" append="-kode" %}}
 
-{% include code/syntax.html component="cards-same-height" link=true copybutton=true %}
+{% include code/syntax.html component="cards-same-height" link=true copybutton=true guidelines="/komponenter/cards/#cards-med-samme-hoejde" %}

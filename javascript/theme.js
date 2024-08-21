@@ -5,7 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
-const VERSION = '10.0.0';
+const VERSION = '10.0.1';
 
 document.addEventListener("DOMContentLoaded", function(){
  
@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function(){
         setDemoSwitcher();
 
         setScreenshots();
+
+        setThumbnails();
 
         setDoDontImages();
 
@@ -271,29 +273,27 @@ let debug = function(title, value){
     }
 };
 
-let setScreenshots = function(){
-    if(document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') 
-    || document.getElementsByTagName('body')[0].classList.contains('page-dashboard') 
-    || document.getElementsByTagName('body')[0].classList.contains('page-patterns') 
-    || document.getElementsByTagName('body')[0].classList.contains('page-templates') 
-    || document.getElementsByTagName('body')[0].classList.contains('page-opsummeringsside') 
-    || document.getElementsByTagName('body')[0].classList.contains('page-kvittering') ){
-        let screenshots = document.getElementsByClassName('screenshot');
-        for(let i = 0; i < screenshots.length; i++){
-            let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
-            let filename = getThemeCookie()+'-'+url[url.length-2]+'.PNG';
-
-            let image = '<img src="/assets/img/examples_pages/'+url[3]+'/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="w-percent-100 d-block" />';
-            screenshots[i].innerHTML = image;
+let setThumbnails = function() {
+    if (document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || 
+        document.getElementsByTagName('body')[0].classList.contains('page-templates')) {
+        let thumbnails = document.querySelectorAll('[data-image]');
+        for (let t = 0; t < thumbnails.length; t++) {
+            let thumbnail = thumbnails[t];
+            let imageSrc = '/assets/img/examples_pages/' + thumbnail.dataset.folder + '/' + getThemeCookie() + '-' + thumbnail.dataset.image + '.PNG';
+            let imageAlt = 'Skærmbillede af ' + thumbnail.getAttribute('title');
+            let image = `<img src="${imageSrc}" alt="${imageAlt}" class="w-percent-100 d-block" />`;
+            thumbnail.innerHTML = image;
         }
         let galleries = document.getElementsByClassName('screenshot-gallery');
-        if(galleries.length !== 0 ) {
+        if (galleries.length !== 0 ) {
             for (let g = 0; g < galleries.length; g++) {
                 galleries[g].classList.remove('d-none');
             }
         }
     }
+}
 
+let setScreenshots = function(){
     if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
         || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
         || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') 
