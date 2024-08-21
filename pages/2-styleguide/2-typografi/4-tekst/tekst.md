@@ -86,7 +86,7 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><span class="mt-0 mb-0">Brødtekst</span></th>
+        <th scope="row"><span class="weight-normal">Brødtekst</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Regular (400)</td>
