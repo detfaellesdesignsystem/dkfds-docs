@@ -59,7 +59,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -67,7 +67,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
     </thead>
     <tbody>
       <tr>
-        <td><span class="h1">Overskrift 1</span></td>
+        <th scope="row"><span class="h1">Overskrift 1</span></th>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">48px (desktop)</li>
@@ -85,7 +85,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
         <td>Bold (700)</td>
       </tr>
       <tr>
-        <td><span class="h2">Overskrift 2</span></td>
+        <th scope="row"><span class="h2">Overskrift 2</span></th>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">32px (desktop)</li>
@@ -103,7 +103,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
         <td>Semi-bold (600)</td>
       </tr>
       <tr>
-        <td><span class="h3">Overskrift 3</span></td>
+        <th scope="row"><span class="h3">Overskrift 3</span></th>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">24px (desktop)</li>
@@ -121,7 +121,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
         <td>Semi-bold (600)</td>
       </tr>
       <tr>
-        <td><span class="h4">Overskrift 4</span></td>
+        <th scope="row"><span class="h4">Overskrift 4</span></th>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">20px (desktop)</li>
@@ -139,13 +139,13 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
         <td>Semi-bold (600)</td>
       </tr>
       <tr>
-        <td><span class="h5">Overskrift 5</span></td>
+        <th scope="row"><span class="h5">Overskrift 5</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Semi-bold (600)</td>
       </tr>
       <tr>
-        <td><span class="h6">Overskrift 6</span></td>
+        <th scope="row"><span class="h6">Overskrift 6</span></th>
         <td>14px</td>
         <td>20px</td>
         <td>Medium (500)</td>
@@ -160,14 +160,14 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Tekstdekoration</th>
         <th scope="col">Tekstfarve</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="h3"><a href="javascript:void(0);">Dette er en overskrift, som er et link</a></span></td>
+        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift, som er et link</a></span></th>
         <td>Understreget</td>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
@@ -195,14 +195,14 @@ Må ikke bruges til at fremhæve links eller som erstatning for {% include links
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Tekstdekoration</th>
         <th scope="col">Tekstfarve</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="h3"><a href="javascript:void(0);">Dette er en overskrift i søgeresultat</a></span></td>
+        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift i søgeresultat</a></span></th>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">Ingen</li>
@@ -247,7 +247,7 @@ Anvendes ikke andre steder end i headeren.
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -257,7 +257,7 @@ Anvendes ikke andre steder end i headeren.
     </thead>
     <tbody>
       <tr>
-        <td><span class="subheading">Dette er en subheading</span></td>
+        <th scope="row"><span class="subheading">Subheading</span></th>
         <td>14px</td>
         <td>16px</td>
         <td>Regular (400)</td>
