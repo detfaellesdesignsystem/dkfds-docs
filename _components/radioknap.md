@@ -53,7 +53,7 @@ Der bør være en overordnet label for hele listen af radioknapper.
 
 Radioknapper bør altid kræve, at brugeren foretager et valg. I stedet for at lade brugeren skippe radioknapperne, så giv dem en neutral valgmulighed, der eventuelt er valgt som standard.
 
-{% include dos-donts-box.html component="radiobutton-dos-donts" title="Radioknapper do's and don'ts" %}
+{% include dos-donts-box.html component="radiobutton-dos-donts" %}
 
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
@@ -87,7 +87,7 @@ Anvendes ikke til at vise ekstra beskrivende/oplysende tekst, da skærmlæsere i
 
 Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.
 
-{% include dos-donts-box.html component="details-dos-donts" title="Radioknap med skjul/vis do's and don'ts" %}
+{% include dos-donts-box.html component="details-dos-donts" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 

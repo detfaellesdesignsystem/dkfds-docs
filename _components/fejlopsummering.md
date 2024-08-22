@@ -48,7 +48,7 @@ Sæt fejlopsummeringen øverst på siden. Hvis din side indeholder en brødkrumm
 
 {% include code/preview-image.html component="error-summary-page" code="/komponenter/fejlopsummering/#placering-kode" %}
 
-{% include dos-donts-box.html component="error-message-dos-donts" title="Fejlmeddelelser og fejlopsummering do's and don'ts" %}
+{% include dos-donts-box.html component="error-message-dos-donts" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 

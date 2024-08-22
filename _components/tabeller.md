@@ -45,7 +45,7 @@ Såfremt der er tale om meget avancerede tabeller, kan der bruges en tredjeparts
 
 Tal i tabeller bør højrestilles og have samme antal decimaler, når der er tale om en numerisk størrelse som f.eks. antal eller pengebeløb. Dette gør det lettere for brugeren at skimme og sammenligne numerisk data (Rutter, 2017). Tal, der ikke angiver en numerisk størrelse og dermed ikke indebærer et behov for sammenligning, skal ikke højrestilles. Det kan f.eks. være et ID-nummer.
 
-{% include dos-donts-box.html component="table-dos-donts" title="Tabeller do's and don'ts" %}
+{% include dos-donts-box.html component="table-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 

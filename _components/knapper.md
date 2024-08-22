@@ -63,7 +63,7 @@ Brug ikke "disabled" tilstand på "næste" knapper (knapper der bringer brugeren
 
 Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disabled" tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerne bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.
 
-{% include dos-donts-box.html component="buttons-dos-donts" title="Knapper do's and don'ts" %}
+{% include dos-donts-box.html component="buttons-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 

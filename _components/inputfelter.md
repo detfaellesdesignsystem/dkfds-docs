@@ -84,9 +84,9 @@ Brug ikke feltbredde til at validere brugerens input. Angiv i stedet krav til in
 
 Feltets bredde skal modsvare det, du forventer at brugeren  skal indtaste, så brugeren kan se alle tegn under indtastningen.
 
-{% include dos-donts-box.html component="text-input-dos-donts" title="Felter do's and don'ts" %}
+{% include dos-donts-box.html component="text-input-dos-donts" %}
 
-{% include dos-donts-box.html component="text-input-labels-dos-donts" title="Felt labels do's and don'ts" %}
+{% include dos-donts-box.html component="text-input-labels-dos-donts" %}
 
 {:#fejlmeddelelse}
 #### Fejlmeddelelse
@@ -103,7 +103,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="text-input-helptext" title="Eksempel på inputfelt med hjælpetekst" code="/komponenter/inputfelter/#hjaelpetekst-kode" %}
 
-{% include dos-donts-box.html component="text-input-helptext-dos-donts" title="Felt med hjælpetekst do's and don'ts" %}
+{% include dos-donts-box.html component="text-input-helptext-dos-donts" %}
 
 ### Obligatoriske og frivillige inputfelter {#{% include create-id.html heading="Obligatoriske og frivillige inputfelter" %}}
 
@@ -155,7 +155,7 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 {% include code/preview-box.html component="text-input-width" title="Eksempel på felter med forskellig bredde" code="/komponenter/inputfelter/#feltbredde-kode" %}
 
-{% include dos-donts-box.html component="text-input-width-dos-donts" title="Feltbredde do's and don'ts" %}
+{% include dos-donts-box.html component="text-input-width-dos-donts" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 

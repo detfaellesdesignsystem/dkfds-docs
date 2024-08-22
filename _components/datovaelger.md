@@ -32,7 +32,7 @@ Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da kompon
 
 ### Vejledning
 
-{% include dos-donts-box.html component="datepicker-dos-donts" title="Datovælger do's and don'ts" %}
+{% include dos-donts-box.html component="datepicker-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
