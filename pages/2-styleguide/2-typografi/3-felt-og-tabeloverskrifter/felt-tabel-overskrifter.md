@@ -24,7 +24,7 @@ tags:
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -32,7 +32,7 @@ tags:
     </thead>
     <tbody>
       <tr>
-        <td><span class="form-label">Dette er en feltoverskrift</span></td>
+        <th scope="row"><span class="form-label">Feltoverskrift</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Semi-bold (600)</td>
@@ -66,7 +66,7 @@ Se dokumentationen om {% include links/component-guideline-link.html linktext="i
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -74,7 +74,7 @@ Se dokumentationen om {% include links/component-guideline-link.html linktext="i
     </thead>
     <tbody>
       <tr>
-        <td><span class="example-table-th">Dette er en kolonneoverskrift i en tabel</span></td>
+        <th scope="row"><span class="example-table-th">Kolonneoverskrift i en tabel</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Semi-bold (600)</td>

@@ -42,7 +42,7 @@ Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typis
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -50,7 +50,7 @@ Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typis
     </thead>
     <tbody>
       <tr>
-        <td><span class="font-lead">Dette er en manchet</span></td>
+        <th scope="row"><span class="font-lead">Manchet</span></th>
         <td>20px</td>
         <td>32px</td>
         <td>Regular (400)</td>
@@ -78,7 +78,7 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th> 
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -86,19 +86,19 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
     </thead>
     <tbody>
       <tr>
-        <td>Dette er en brødtekst</td>
+        <th scope="row"><span class="weight-normal">Brødtekst</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Regular (400)</td>
       </tr>
       <tr>
-        <td><span class="small-text">Dette er en lille brødtekst</span></td>
+        <th scope="row"><span class="small-text">Lille brødtekst</span></th>
         <td>14px</td>
         <td>20px</td>
         <td>Regular (400)</td>
       </tr>
       <tr>
-        <td><span class="bold">Dette er en fed brødtekst</span></td>
+        <th scope="row"><span class="bold">Fed brødtekst</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Bold (700)</td>
@@ -126,7 +126,7 @@ Brug ikke kursiv tekst, da det nedsætter læsbarheden.
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -135,7 +135,7 @@ Brug ikke kursiv tekst, da det nedsætter læsbarheden.
     </thead>
     <tbody>
       <tr>
-        <td><span class="form-hint">Dette er en hjælpetekst</span></td>
+        <th scope="row"><span class="form-hint">Hjælpetekst</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Regular (400)</td>
@@ -160,7 +160,7 @@ Se eksempel på brug af {% include links/component-guideline-link.html linktext=
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -169,7 +169,7 @@ Se eksempel på brug af {% include links/component-guideline-link.html linktext=
     </thead>
     <tbody>
       <tr>
-        <td><span class="form-error-message">Dette er en fejlmeddelelse</span></td>
+        <th scope="row"><span class="form-error-message">Fejlmeddelelse</span></th>
         <td>16px</td>
         <td>24px</td>
         <td>Semi-bold (600)</td>
@@ -204,7 +204,7 @@ Forklarende eller beskrivende tekst tilhørende et billede.
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -213,7 +213,7 @@ Forklarende eller beskrivende tekst tilhørende et billede.
     </thead>
     <tbody>
       <tr>
-        <td><span class="figcaption">Dette er en billedtekst</span></td>
+        <th scope="row"><span class="figcaption">Billedtekst</span></th>
         <td>14px</td>
         <td>24px</td>
         <td>Regular (400)</td>
@@ -238,7 +238,7 @@ Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og 
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Teksttykkelse</th>
@@ -247,28 +247,28 @@ Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og 
     </thead>
     <tbody>
       <tr>
-        <td><span class="displayheading-1">Stor tekst nr. 1</span></td>
+        <th scope="row"><span class="displayheading-1">Stor tekst nr. 1</span></th>
         <td>24px</td>
         <td>36px</td>
         <td>Medium (500)</td>
         <td>#1A1A1A</td>
       </tr>
       <tr>
-        <td><span class="displayheading-2">Stor tekst nr. 2</span></td>
+        <th scope="row"><span class="displayheading-2">Stor tekst nr. 2</span></th>
         <td>21px</td>
         <td>32px</td>
         <td>Medium (500)</td>
         <td>#1A1A1A</td>
       </tr>
       <tr>
-        <td><span class="displayheading-1 text-positive">Stor positiv tekst</span></td>
+        <th scope="row"><span class="displayheading-1 text-positive">Stor positiv tekst</span></th>
         <td>24px</td>
         <td>36px</td>
         <td>Medium (500)</td>
         <td>#358000</td>
       </tr>
       <tr>
-        <td><span class="displayheading-1 text-negative">Stor negativ tekst</span></td>
+        <th scope="row"><span class="displayheading-1 text-negative">Stor negativ tekst</span></th>
         <td>24px</td>
         <td>36px</td>
         <td>Medium (500)</td>

@@ -31,7 +31,7 @@ tabs: "Retningslinjer, kode"
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Tekstdekoration</th>
@@ -40,7 +40,7 @@ tabs: "Retningslinjer, kode"
     </thead>
     <tbody>
       <tr>
-        <td><a href="#">Dette er et link</a></td>
+        <th scope="row"><a href="#">Link</a></th>
         <td>16px</td>
         <td>24px</td>
         <td>Understreget</td>
@@ -102,7 +102,7 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
   <table class="table table--borderless">
     <thead>
       <tr>
-        <th scope="col">Eksempel på styling</th>
+        <td></td>
         <th scope="col">Skriftstørrelse</th>
         <th scope="col">Linjehøjde</th>
         <th scope="col">Tekstdekoration</th>
@@ -111,7 +111,7 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
     </thead>
     <tbody>
       <tr>
-        <td><a href="#" class="function-link">Dette er et sekundært link</a></td>
+        <th scope="row"><a href="#" class="function-link">Sekundært link</a></th>
         <td>16px</td>
         <td>24px</td>
         <td>Understreget</td>

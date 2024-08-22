@@ -52,11 +52,11 @@ tags:
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Opsummering med venstrestillet trinindikator</h3>
-    <a href="/pages/eksempler/opsummering/opsummering-1/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering 1" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-1"></a>
+    <a href="/pages/eksempler/opsummering/opsummering-1/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering med venstrestillet trinindikator" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Opsummering med trinindikator i overflowmenu</h3>
-    <a href="/pages/eksempler/opsummering/opsummering-2/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering 2" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-2"></a>
+    <a href="/pages/eksempler/opsummering/opsummering-2/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering med trinindikator i overflowmenu" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-2"></a>
   </div>
 </div>
 
@@ -65,11 +65,11 @@ tags:
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Kvittering med opsummering</h3>
-    <a href="/pages/eksempler/kvittering/kvittering-1/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 1" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-1"></a>
+    <a href="/pages/eksempler/kvittering/kvittering-1/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering med opsummering" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Kvittering med betalingsoplysninger</h3>
-    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering 2" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-2"></a>
+    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering med betalingsoplysninger" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-2"></a>
   </div>
 </div>
 
@@ -82,19 +82,19 @@ tags:
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
     <h3 class="h4">Fejl i tidligere trin</h3>
-    <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Opsummeringsside med fejl" class="screenshot d-block" data-folder="trinindikator-med-fejl" data-image="trinindikator-med-fejl-1"></a>
+    <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Fejl i tidligere trin" class="screenshot d-block" data-folder="trinindikator-med-fejl" data-image="trinindikator-med-fejl-1"></a>
   </div>
 </div>
 
-## Siden kunne ikke findes {#{% include create-id.html heading="Siden kunne ikke findes" %}}
+## Siden kunne ikke findes (404-side) {#{% include create-id.html heading="Siden kunne ikke findes (404-side)" %}}
 
 <div class="row screenshot-gallery d-none">
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Siden kunne ikke findes</h3>
-    <a href="/pages/eksempler/siden-kunne-ikke-findes-1/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: Siden kunne ikke findes 1" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-1"></a>
+    <h3 class="h4">404-side</h3>
+    <a href="/pages/eksempler/siden-kunne-ikke-findes-1/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: 404-side" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-1"></a>
   </div>
   <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Siden kunne ikke findes - med søgefelt</h3>
-    <a href="/pages/eksempler/siden-kunne-ikke-findes-2/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: Siden kunne ikke findes 2" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-2"></a>
+    <h3 class="h4">404-side med søgefelt</h3>
+    <a href="/pages/eksempler/siden-kunne-ikke-findes-2/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: 404-side med søgefelt" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-2"></a>
   </div>
 </div>
