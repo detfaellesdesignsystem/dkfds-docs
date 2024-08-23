@@ -73,6 +73,8 @@ tags:
 - 9.1.0
 - 10
 - 10.0.0
+- 10.0.1
+- 10.0.2
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -99,12 +101,12 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 
 
-## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
+## Version 10.0.2 {#{% include create-id.html heading="Version 10.0.2" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
+<div><span class="small-text mt-0 d-block">xx-08-2024</span></div>
 
-- Fjernet kryds i søgefeltet, som blev sat i visse browsere.
+- Fjernet visse browseres modificeringer af søgefeltet, der kunne indsætte knapper til sletning af søgning, søgehistorik eller ekstra padding.
 {% include links/github-link.html number="237" afternumber=" på GitHub" %}
 
 

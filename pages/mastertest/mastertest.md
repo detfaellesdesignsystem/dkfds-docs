@@ -189,6 +189,11 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-structured-list-5" description="Strukturerede lister 5" %}
 
 {:.h3}
+## Søgefelt
+
+{% include test/preview-test.html filename="test-search" description="Søgefelt med browsertilføjelser" %}
+
+{:.h3}
 ## Tabeller
 
 {% include test/preview-test.html filename="test-tables-1" description="Tabeller 1" %}

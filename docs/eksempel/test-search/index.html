@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Test-radiobuttons-5 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test-radiobuttons-5 | Det Fælles Designsystem">
+<title>Test-search | Det Fælles Designsystem</title>
+<meta property="og:title" content="Test-search | Det Fælles Designsystem">
 
 
 
@@ -248,44 +248,50 @@
         </div>
     </div>
 </div>
-    <main class="container page-container" id="main-content">
+    <main class="container page-container mb-9" id="main-content">
     <div class="row">
         <div class="col-12">
-            <p>Skjult indhold</p>
+            <h1 class="h2 mt-0 mb-9">Søgefelt med browsertilføjelser</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Søgefelt til sammenligning - visse browsere vil vise søgehistorik og sletknap i
+                dette søgefelt. Padding sat til 0px med hjælpeklasse. Bruges kun til
+                testformål.</p>
+            <div class="form-group search">
+                <label for="input-type-text" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27 test-search-field p-0" id="input-type-text" name="search-button" type="search" results="5" />
+                <button class="button button-search">
+                    Søg
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Søgefelt til sammenligning - visse browsere vil vise sletknap og ekstra padding
+                i dette søgefelt. Padding sat til 0px med hjælpeklasse. Bruges kun til
+                testformål.</p>
+            <div class="form-group search">
+                <label for="input-type-text" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27 test-search-field p-0" id="input-type-text" name="search-button" type="search" />
+                <button class="button button-search">
+                    Søg
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Søgefelt uden browser features. Padding sat til 0px med hjælpeklasse.</p>
 
-            <div class="form-group js-radio-toggle-group">
-                <fieldset aria-labelledby="radio-example-legend">
-
-                    <legend class="form-label" id="radio-example-legend">Liste med
-                        radioknapper</legend>
-
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup-option1" name="radio-example" class="form-radio" value="v1" />
-                        <label class="form-label" for="radiogroup-option1">Valg 1</label>
-
-                    </div>
-
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup-option2" name="radio-example" class="form-radio" value="v2" />
-                        <label class="form-label" for="radiogroup-option2">Valg 2</label>
-
-                    </div>
-
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup-option3" name="radio-example" class="form-radio" value="v3" data-controls="#radiogroup-option3-collapse" data-expanded="false" />
-                        <label class="form-label" for="radiogroup-option3">Valg 3<span class="sr-only"> Udfyld informationer herunder</span></label>
-
-                    </div>
-                    <div id="radiogroup-option3-collapse" aria-hidden="true" class="radio-content">
-
-                        <div class="form-group">
-                            <label class="form-label" for="mytext">Inputfelt</label>
-
-                            <input type="text" id="mytext" name="mytext" class="form-input" required="" />
-                        </div>
-
-                    </div>
-                </fieldset>
+            <div class="form-group search">
+                <label for="input-type-text" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27 p-0" id="input-type-text" name="search-button" type="search" />
+                <button class="button button-search">
+                    Søg
+                </button>
             </div>
 
         </div>
@@ -310,10 +316,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-radiobuttons-4/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-radiobuttons-5/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-search/">Næste</a>
+                <a class="function-link" href="/eksempel/test-structured-list-1/">Næste</a>
                 
             </div>
         </div>

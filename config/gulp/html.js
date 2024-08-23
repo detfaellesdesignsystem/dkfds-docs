@@ -22,7 +22,7 @@ var distJekyllComponentPreview = '_preview-components';
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/components/tooltip/*.njk'];
+var buildFile = ['examples/testfiles/search/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -127,6 +127,7 @@ var testfiles = [
     "test-radiobuttons-3",
     "test-radiobuttons-4",
     "test-radiobuttons-5",
+    "test-search",
     "test-structured-list-1",
     "test-structured-list-2",
     "test-structured-list-3",
