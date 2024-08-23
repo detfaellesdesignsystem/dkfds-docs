@@ -25,6 +25,16 @@
   <a href="{{ include.page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
     {%- if include.page.title == 'Beskeder (Alerts)' %}
       <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
+    {%- elsif include.page.title == 'Faneblade (Tabs)' %}
+      <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
+    {%- elsif include.page.title == 'Knapper (Buttons)' %}
+      <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
+    {%- elsif include.page.title == 'Radioknap (Radio button)' %}
+      <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
+    {%- elsif include.page.title == 'Tekstområde (Textarea)' %}
+      <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
+    {%- elsif include.page.title == 'Tjekboks (Checkbox)' %}
+      <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
     {% else %}
     <span>{{ include.page.title | smartify }}</span>
     {%- endif %}

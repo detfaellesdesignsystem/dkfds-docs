@@ -37,6 +37,16 @@
             <a href="{{ _page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
                 {%- if _page.title == 'Beskeder (Alerts)' %}
                 <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
+                {%- elsif _page.title == 'Faneblade (Tabs)' %}
+                <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
+                {%- elsif _page.title == 'Knapper (Buttons)' %}
+                <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
+                {%- elsif _page.title == 'Radioknap (Radio button)' %}
+                <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
+                {%- elsif _page.title == 'Tekstområde (Textarea)' %}
+                <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
+                {%- elsif _page.title == 'Tjekboks (Checkbox)' %}
+                <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
                 {% else %}
                 <span>{{ _page.title | smartify }}</span>
                 {%- endif %}
