@@ -106,8 +106,10 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-08-2024</span></div>
 
-- Fjernet visse browseres modificeringer af søgefeltet, der kunne indsætte knapper til sletning af søgning, søgehistorik eller ekstra padding.
+- Fjernet visse browseres modificeringer af {% include links/component-guideline-link.html linktext="søgefeltet" %}, der kunne indsætte knapper til sletning af søgning, søgehistorik eller ekstra padding.
 {% include links/github-link.html number="237" afternumber=" på GitHub" %}
+- Tilføjet {% include links/internal-link.html linktext="ikonerne" %} `chevron-double-left`, `chevron-double-right` og `file-upload` til filen 'all-svg-icons.svg'.
+{% include links/github-link.html number="243" afternumber=" på GitHub" %}
 
 
 
