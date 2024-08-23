@@ -8,21 +8,13 @@
 ------------------------------------------------------------------ 
 {% endcomment %}
 
-{% if include.page.url == page.url %}
-  {% assign _current = true %}
-{% endif %}
+{%- if include.page.url == page.url %}
+  {%- assign _current = true %}
+{%- endif %}
 
-{%- if page.guidelinelink and include.page.url == page.guidelinelink -%} {%- comment -%} --- If the page is a child tab --- {%- endcomment -%}
-  {%- assign _current = true -%}
-{%- endif -%}
-
-{% if include.categorynav and page.parentlink == include.page.url -%}
-  {% assign _active = true %}
-{% endif %}
-
-{%- if include.categorynav and page.guidelinelink == include.page.url -%} {%- comment -%} --- If the page is a child tab but also has its own categories --- {%- endcomment -%}
-  {%- assign _active = true -%}
-{%- endif -%}
+{%- if include.categorynav and page.parentlink == include.page.url -%}
+  {%- assign _active = true %}
+{%- endif %}
 
 {%- if _current %}
   {%- assign _active = true %}
