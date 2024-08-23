@@ -31,7 +31,11 @@
 <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
 
   <a href="{{ include.page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
+    {%- if include.page.title == 'Beskeder (Alerts)' %}
+      <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
+    {% else %}
     <span>{{ include.page.title | smartify }}</span>
+    {%- endif %}
   </a>
 
   {%- if include.categorynav -%}
