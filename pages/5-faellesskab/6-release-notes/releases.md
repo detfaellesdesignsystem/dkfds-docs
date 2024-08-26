@@ -110,6 +110,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="237" afternumber=" på GitHub" %}
 - Tilføjet {% include links/internal-link.html linktext="ikonerne" %} `chevron-double-left`, `chevron-double-right` og `file-upload` til filen 'all-svg-icons.svg'.
 {% include links/github-link.html number="243" afternumber=" på GitHub" %}
+- Rettet fejl i headeren, hvor variablerne `$header-portal-logo-width` og `$header-portal-logo-height` ikke blev anvendt.
+{% include links/github-link.html number="245" afternumber=" på GitHub" %}
 
 
 
