@@ -48,7 +48,7 @@ Undgå lange tekster i cards.
 
 Skriv kort og præcist i hvert card.
 
-{% include dos-donts-box.html component="cards-dos-donts" title="Cards do's and don'ts" %}
+{% include dos-donts-box.html component="cards-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 

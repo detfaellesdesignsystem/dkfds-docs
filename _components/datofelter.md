@@ -40,7 +40,7 @@ Tilføj hjælpetekst, der viser formatet af datoen man efterspørger.
 
 Ofte kan datofelter til indtastning være nemmere at anvende - og gøre tilgængeligt - end en {% include links/component-guideline-link.html linktext="datovælger" %} (date picker) funktion.
 
-{% include dos-donts-box.html component="date-dos-donts" title="Datofelter do's and don'ts" %}
+{% include dos-donts-box.html component="date-dos-donts" %}
 
 #### Fejlmeddelelse {#{% include create-id.html heading="Fejlmeddelelse" %}}
 

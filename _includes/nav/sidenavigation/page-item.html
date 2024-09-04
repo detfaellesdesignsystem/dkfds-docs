@@ -8,21 +8,13 @@
 ------------------------------------------------------------------ 
 {% endcomment %}
 
-{% if include.page.url == page.url %}
-  {% assign _current = true %}
-{% endif %}
+{%- if include.page.url == page.url %}
+  {%- assign _current = true %}
+{%- endif %}
 
-{%- if page.guidelinelink and include.page.url == page.guidelinelink -%} {%- comment -%} --- If the page is a child tab --- {%- endcomment -%}
-  {%- assign _current = true -%}
-{%- endif -%}
-
-{% if include.categorynav and page.parentlink == include.page.url -%}
-  {% assign _active = true %}
-{% endif %}
-
-{%- if include.categorynav and page.guidelinelink == include.page.url -%} {%- comment -%} --- If the page is a child tab but also has its own categories --- {%- endcomment -%}
-  {%- assign _active = true -%}
-{%- endif -%}
+{%- if include.categorynav and page.parentlink == include.page.url -%}
+  {%- assign _active = true %}
+{%- endif %}
 
 {%- if _current %}
   {%- assign _active = true %}
@@ -31,7 +23,21 @@
 <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
 
   <a href="{{ include.page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
+    {%- if include.page.title == 'Beskeder (Alerts)' %}
+      <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
+    {%- elsif include.page.title == 'Faneblade (Tabs)' %}
+      <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
+    {%- elsif include.page.title == 'Knapper (Buttons)' %}
+      <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
+    {%- elsif include.page.title == 'Radioknap (Radio button)' %}
+      <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
+    {%- elsif include.page.title == 'Tekstområde (Textarea)' %}
+      <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
+    {%- elsif include.page.title == 'Tjekboks (Checkbox)' %}
+      <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
+    {% else %}
     <span>{{ include.page.title | smartify }}</span>
+    {%- endif %}
   </a>
 
   {%- if include.categorynav -%}

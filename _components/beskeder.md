@@ -63,9 +63,9 @@ Brug advarsler til information, som ikke er udtryk for fejl, men som med høj sa
 
 Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering af fejl i brugerens egne indtastninger, eller hvis en handling ikke kunne gennemføres grundet tekniske fejl. 
 
-{% include dos-donts-box.html component="alerts-dos-donts" title="Beskeder do's and don'ts" %}
+{% include dos-donts-box.html component="alerts-dos-donts" %}
 
-{% include dos-donts-box.html component="alerts-success-dos-donts" title="Successbeskeder do's and don'ts" %}
+{% include dos-donts-box.html component="alerts-success-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 

@@ -33,6 +33,18 @@ layout: default
                 <h1 id="anchorlinks-page">{{ page.title }}</h1>
                 {% elsif page.title == "Selvbetjeningsløsninger" %}
                 <h1 id="self-service-page" class="hyphens-manual">Selvbetjenings&shy;løsninger</h1>
+                {% elsif page.title == "Beskeder (Alerts)" %}
+                <h1 id="beskeder-alerts">Beskeder <span class="d-inline" lang="en">(Alerts)</span></h1>
+                {% elsif page.title == "Faneblade (Tabs)" %}
+                <h1 id="faneblade-tabs">Faneblade <span class="d-inline" lang="en">(Tabs)</span></h1>
+                {% elsif page.title == "Knapper (Buttons)" %}
+                <h1 id="knapper-buttons">Knapper <span class="d-inline" lang="en">(Buttons)</span></h1>
+                {% elsif page.title == "Radioknap (Radio button)" %}
+                <h1 id="radioknap-radio-button">Radioknap <span class="d-inline" lang="en">(Radio button)</span></h1>
+                {% elsif page.title == "Tekstområde (Textarea)" %}
+                <h1 id="tekstområde-textarea">Tekstområde <span class="d-inline" lang="en">(Textarea)</span></h1>
+                {% elsif page.title == "Tjekboks (Checkbox)" %}
+                <h1 id="tjekboks-checkbox">Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></h1>
                 {% else %}
                 <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
                 {% endif %}

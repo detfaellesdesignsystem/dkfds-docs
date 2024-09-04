@@ -73,6 +73,8 @@ tags:
 - 9.1.0
 - 10
 - 10.0.0
+- 10.0.1
+- 10.0.2
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -96,6 +98,23 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 10.0.2 {#{% include create-id.html heading="Version 10.0.2" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">04-09-2024</span></div>
+
+- Fjernet visse browseres modificeringer af {% include links/component-guideline-link.html linktext="søgefeltet" %}, der kunne indsætte knapper til sletning af søgning, søgehistorik eller ekstra padding.
+{% include links/github-link.html number="237" afternumber=" på GitHub" %}
+- Tilføjet {% include links/internal-link.html linktext="ikonerne" %} `chevron-double-left`, `chevron-double-right` og `file-upload` til filen 'all-svg-icons.svg'.
+{% include links/github-link.html number="243" afternumber=" på GitHub" %}
+- Rettet fejl i {% include links/component-guideline-link.html linktext="headeren" %}, hvor variablerne `$header-portal-logo-width` og `$header-portal-logo-height` ikke blev anvendt.
+{% include links/github-link.html number="245" afternumber=" på GitHub" %}
+- Rettet fejl, hvor pilen i {% include links/component-guideline-link.html linktext="detaljekomponenten" %} kun var delvist synlig ved tekstforstørrelse.
+- Rettet fejl, hvor prikkerne i {% include links/internal-link.html linktext="lister" %} med punktopstilling kom for tæt på teksten ved tekstforstørrelse.
+
 
 
 ## Version 10.0.1 {#{% include create-id.html heading="Version 10.0.1" %}}

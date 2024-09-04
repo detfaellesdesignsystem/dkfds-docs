@@ -2,14 +2,7 @@
 
   {%- assign _page = nil -%}
 
-  {%- if link.tabs -%}
-    {%- assign tabLinks = site.data.nav[link.tabs] -%}
-    {%- assign guidelinelink = tabLinks | first -%}
-    {%- if guidelinelink.href -%}
-      {%- assign _page = guidelinelink.href | resolve_permalink %} {%- comment %} ---- Get the page information for the link using resolve_permalink() ---- {%- endcomment -%}
-    {%- endif -%}
-
-  {%- elsif link.href -%}
+  {%- if link.href -%}
     {%- assign _page = link.href | resolve_permalink %} {% comment %} ---- Get the page information for the link using resolve_permalink() ---- {% endcomment %}
   {%- endif %}
 

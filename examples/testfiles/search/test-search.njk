@@ -1,0 +1,46 @@
+{% from "components/search/search.njk" import search as search %}
+
+<main class="container page-container mb-9" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Søgefelt med browsertilføjelser</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Søgefelt til sammenligning - visse browsere vil vise søgehistorik og sletknap i dette søgefelt. Padding sat til 0px med hjælpeklasse. Bruges kun til testformål.</p>
+            <div class="form-group search">
+                <label for="input-type-text" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27 test-search-field p-0" id="input-type-text" name="search-button" type="search" results="5">
+                <button class="button button-search">
+                    Søg
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Søgefelt til sammenligning - visse browsere vil vise sletknap og ekstra padding i dette søgefelt. Padding sat til 0px med hjælpeklasse. Bruges kun til testformål.</p>
+            <div class="form-group search">
+                <label for="input-type-text" class="sr-only">Søg efter indhold</label>
+                <input class="form-input input-char-27 test-search-field p-0" id="input-type-text" name="search-button" type="search">
+                <button class="button button-search">
+                    Søg
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Søgefelt uden browser features. Padding sat til 0px med hjælpeklasse.</p>
+            {{ 
+                search({
+                    "id": "input-type-text",
+                    "classes": "input-char-27 p-0",
+                    "name": "search-button"
+                }) 
+            }}
+        </div>
+    </div>
+</main>
+

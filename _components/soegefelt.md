@@ -48,7 +48,7 @@ Brug kun avanceret søgning som valgmulighed. Den primære søgning skal være e
 
 Søgeknappen skal være en submit-knap.
 
-{% include dos-donts-box.html component="search-dos-donts" title="Søgefelt do's and don'ts" %}
+{% include dos-donts-box.html component="search-dos-donts" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 

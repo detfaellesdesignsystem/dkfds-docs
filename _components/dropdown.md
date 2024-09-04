@@ -48,7 +48,7 @@ Hvis du ved, at mange brugere vil vælge den samme værdi i en dropdown, så mar
 
 Undlad at løsningen reagerer på brugerens direkte valg i dropdownen, så brugeren altid let kan vælge en anden mulighed. Tilføj i stedet en knap, så løsningen først anvender brugerens valg ved klik på knappen.
 
-{% include dos-donts-box.html component="dropdown-dos-donts" title="Dropdown do's and don'ts" %}
+{% include dos-donts-box.html component="dropdown-dos-donts" %}
 
 #### Fejlmeddelelse
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og deres formuleringer.

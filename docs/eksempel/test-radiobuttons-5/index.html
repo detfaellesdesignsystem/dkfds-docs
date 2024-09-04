@@ -29,9 +29,9 @@
 
 <!-- Favicons
 ================================================== -->
-<!-- 128x128 -->
-<link rel="shortcut icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
-<link rel="icon" type="image/png" href="/assets/img/favicons/favicon2-erst.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
 
 <!-- CSS
 ================================================== -->
@@ -290,6 +290,51 @@
 
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Skjult indhold</p>
+
+            <div class="form-group js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-example2-legend">
+
+                    <legend class="form-label" id="radio-example2-legend">Liste med
+                        radioknapper</legend>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup2-option1" name="radio-example2" class="form-radio" value="v1" />
+                        <label class="form-label" for="radiogroup2-option1">Valg 1</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup2-option2" name="radio-example2" class="form-radio" value="v2" data-controls="#radiogroup2-option2-collapse" data-expanded="false" />
+                        <label class="form-label" for="radiogroup2-option2">Valg 2<span class="sr-only"> Udfyld informationer herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup2-option2-collapse" aria-hidden="true" class="radio-content">
+                        Dette er noget tekst, som man aldrig må have som skjult indhold i
+                        radioknapper
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup2-option3" name="radio-example2" class="form-radio" value="v3" data-controls="#radiogroup2-option3-collapse" data-expanded="false" />
+                        <label class="form-label" for="radiogroup2-option3">Valg 3<span class="sr-only"> Udfyld informationer herunder</span></label>
+
+                    </div>
+                    <div id="radiogroup2-option3-collapse" aria-hidden="true" class="radio-content">
+
+                        <div class="form-group">
+                            <label class="form-label" for="text3">Inputfelt</label>
+
+                            <input type="text" id="text3" name="text3" class="form-input" required="" />
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
 </main>
 
     <script src="/assets/js/theme.js"></script>
@@ -313,7 +358,7 @@
                 <a class="function-link mr-4" href="/eksempel/test-radiobuttons-4/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-structured-list-1/">Næste</a>
+                <a class="function-link" href="/eksempel/test-search/">Næste</a>
                 
             </div>
         </div>

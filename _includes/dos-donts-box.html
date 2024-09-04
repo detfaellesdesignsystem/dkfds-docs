@@ -1,10 +1,5 @@
 {% if include.component and include.component != '' %}
 <div class="{{ include.classes }} component-preview-{{ include.component | slugify }}">
-    {% if include.title %}
-    <div class="sr-only">{{ include.title }}</div>
-    {% else %}
-    <div class="sr-only">Eksempel med do and don't</div>
-    {% endif %}
     <div class="component-example">
         {% include do-dont/{{ include.component }}.html %}
     </div>

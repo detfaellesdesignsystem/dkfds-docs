@@ -53,7 +53,7 @@ Fejlmeddelelser skal være meningsfulde og hjælpsomme.
 
 Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.
 
-{% include dos-donts-box.html component="textarea-dos-donts" title="Tekstområde do's and don'ts" %}
+{% include dos-donts-box.html component="textarea-dos-donts" %}
 
 #### Fejlmeddelelse
 

@@ -50,7 +50,7 @@ Tilstræb så få trin som muligt.
 
 Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.
 
-{% include dos-donts-box.html component="tringuide-dos-donts" title="Trinindikator do's and don'ts" %}
+{% include dos-donts-box.html component="tringuide-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 

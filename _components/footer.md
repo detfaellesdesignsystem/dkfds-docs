@@ -28,7 +28,7 @@ tabs: "Retningslinjer, kode"
 
 Footeren fungerer som sidens afslutning og indeholder altid ansvarlig myndighed, herunder support- og kontaktinformationer, samt tilgængelighedserklæring og cookieoplysninger. Footeren kan også anvendes til at sende brugere videre ved at linke ud af selvbetjeningsløsningen.
 
-{% include dos-donts-box.html component="footer-dos-donts" title="Footers do's and don'ts" %}
+{% include dos-donts-box.html component="footer-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
