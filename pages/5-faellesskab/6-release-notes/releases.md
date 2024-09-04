@@ -104,7 +104,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.0.2 {#{% include create-id.html heading="Version 10.0.2" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-09-2024</span></div>
+<div><span class="small-text mt-0 d-block">04-09-2024</span></div>
 
 - Fjernet visse browseres modificeringer af {% include links/component-guideline-link.html linktext="søgefeltet" %}, der kunne indsætte knapper til sletning af søgning, søgehistorik eller ekstra padding.
 {% include links/github-link.html number="237" afternumber=" på GitHub" %}
