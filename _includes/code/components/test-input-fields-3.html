@@ -21,4 +21,62 @@
 
         </div>
     </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Prefix, suffix og fejlbesked</p>
+
+            <div class="form-group form-error">
+                <label class="form-label" for="input-text">Udvalgt vare</label>
+
+                <span class="form-error-message" id="input-text-error">
+                    <span class="sr-only">Fejl: </span>Dette er en fejlbesked
+                </span>
+                <div
+                    class="form-input-wrapper form-input-wrapper--prefix form-input-wrapper--suffix">
+                    <div class="form-input-prefix" aria-hidden="true">Pris</div>
+                    <input type="text" id="input-text" name="input-text" class="form-input"
+                        aria-invalid="true" aria-describedby="input-text-error " required>
+                    <div class="form-input-suffix" aria-hidden="true">kr.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Prefix, suffix og readonly</p>
+
+            <div class="form-group">
+                <label class="form-label" for="input-text">Udvalgt vare</label>
+
+                <div
+                    class="form-input-wrapper form-input-wrapper--prefix form-input-wrapper--suffix readonly">
+                    <div class="form-input-prefix" aria-hidden="true">Pris</div>
+                    <input type="text" id="input-text" name="input-text" class="form-input"
+                        readonly required>
+                    <div class="form-input-suffix" aria-hidden="true">kr.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Prefix, suffix og disabled</p>
+
+            <div class="form-group">
+                <label class="form-label  disabled" for="input-text">Udvalgt vare<span
+                        class="weight-normal"> (frivilligt)</span></label>
+
+                <div
+                    class="form-input-wrapper form-input-wrapper--prefix form-input-wrapper--suffix disabled">
+                    <div class="form-input-prefix" aria-hidden="true">Pris</div>
+                    <input type="text" id="input-text" name="input-text" class="form-input"
+                        disabled="disabled">
+                    <div class="form-input-suffix" aria-hidden="true">kr.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </main>

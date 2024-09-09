@@ -75,6 +75,7 @@ tags:
 - 10.0.0
 - 10.0.1
 - 10.0.2
+- 10.1.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -98,6 +99,15 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
+
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet en stylingfejl, som opstod, når man anvendte inputfelter med {% include links/component-guideline-link.html linktext="prefix eller suffix" %}, som samtidigt var read-only eller disabled. Tilføj klassen `disabled` eller `readonly` til `form-input-wrapper` for at få den korrekte styling.
 
 
 

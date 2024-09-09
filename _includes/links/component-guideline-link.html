@@ -129,7 +129,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "retningslinjer for obligatoriske og frivillige felter" -%}
         <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-inputfelter">{{ include.linktext }}</a>
 
-    {%- when "prefix og suffix på felter" -%}
+    {%- when "prefix og suffix på felter",
+             "prefix eller suffix" -%}
         <a href="/komponenter/inputfelter/#prefix-og-suffix">{{ include.linktext }}</a>
 
     {%- when "karakterbegrænsning" -%}

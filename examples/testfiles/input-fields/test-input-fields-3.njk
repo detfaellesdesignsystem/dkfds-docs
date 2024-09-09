@@ -16,4 +16,50 @@
             }}
         </div>
     </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Prefix, suffix og fejlbesked</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "Udvalgt vare",
+                    "errorMessage": "Dette er en fejlbesked",
+                    "prefix": "Pris",
+                    "suffix": "kr."
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Prefix, suffix og readonly</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "Udvalgt vare",
+                    "readonly": true,
+                    "prefix": "Pris",
+                    "suffix": "kr."
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mt-9">
+        <div class="col-12">
+            <p>Prefix, suffix og disabled</p>
+            {{
+                textinput({
+                    "id": "input-text",
+                    "name": "input-text",
+                    "label": "Udvalgt vare",
+                    "prefix": "Pris",
+                    "suffix": "kr.",
+                    "disabled": true,
+                    "optionalLabel": true
+                })
+            }}
+        </div>
+    </div>
 </main>
