@@ -87,8 +87,8 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
             <ul class="icon-list no-max-width row" id="icon-list-beskeder">
                 {% include icon.html icon="report-problem" keywords="besked, alert, message, warning, advarsel, report, problem, report problem" label="Advarsel" %}
                 {% include icon.html icon="highlight-off" keywords="besked, alert, message, error, fejl" label="Fejl" %}
-                {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Information" %}
                 {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Hjælp" %}
+                {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Information" %}
                 {% include icon.html icon="check-circle" keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark" label="Succes" %}
             </ul>
         </div>
@@ -112,8 +112,8 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="arrow-left" keywords="pil, arrow, back, tilbage" label="Tilbage (venstre)" %}
                 {% include icon.html icon="subdirectory-arrow-right" keywords="højre, knækpil, pil, arrow" label="Undermenu højre" %}
                 {% include icon.html icon="subdirectory-arrow-left" keywords="venstre, knækpil, pil, arrow" label="Undermenu venstre" %}
-                {% include icon.html icon="chevron-double-left" keywords="venstre, dobbeltpil, pil, arrow" label="Langt tilbage" %}
                 {% include icon.html icon="chevron-double-right" keywords="højre, dobbeltpil, pil, arrow" label="Langt frem" %}
+                {% include icon.html icon="chevron-double-left" keywords="venstre, dobbeltpil, pil, arrow" label="Langt tilbage" %}
             </ul>
         </div>
     </div>
@@ -121,28 +121,28 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Tilstande</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-tilstande">
+                {% include icon.html icon="remove" keywords="-, minus, luk, accordion, close, collapse" label="Accordion luk (minus)" %}
+                {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Accordion åbn (plus)" %}
+                {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Chevron indskrænk" %}
+                {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Chevron udvid" %}
                 {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
                 {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold overflow ud" %}
                 {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold overflow ind" %}
                 {% include icon.html icon="zoom-out" keywords="lup, zoom, zoom ud, ud" label="Formindsk" %}
                 {% include icon.html icon="zoom-in" keywords="lup, zoom, zoom ind, ind" label="Forstør" %}
                 {% include icon.html icon="fullscreen" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm" label="Fuld skærm" %}
-                {% include icon.html icon="remove" keywords="-, minus, luk, accordion, close, collapse" label="Luk accordion (minus)" %}
-                {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Åbn accordion (plus)" %}
-                {% include icon.html icon="fullscreen-exit" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit" label="Luk fuld skærm" %}
+                {% include icon.html icon="fullscreen-exit" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm, off, small screen, exit" label="Fuld skærm (luk)" %}
                 {% include icon.html icon="sort" keywords="sortering, sort, unsorted" label="Ikke sorteret" %}
                 {% include icon.html icon="lock" keywords="log af, log ud, log, af, ud, lås, lock, hængelås, låst" label="Log af (lukket hængelås)" %}
                 {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
-                {% include icon.html icon="sort-by-alpha" keywords="sorter alfabetisk, sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
-                {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Udvid (chevron)" %}
-                {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Indskrænk (chevron)" %}
-                {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
-                {% include icon.html icon="sort-table-descending" keywords="sorter tabel faldende, tabel, table, sort, sortering, kolonne, descending" label="Sortér tabel (faldende)"  %}
-                {% include icon.html icon="sort-table-ascending" keywords="sorter tabel stigende, tabel, table, sort, sortering, kolonne, ascending" label="Sortér tabel (stigende)" %}
-                {% include icon.html icon="sort-table-none" keywords="sorter tabel, tabel, table, sort, sortering, kolonne" label="Sortér tabel" %}
                 {% include icon.html icon="sort-default" keywords="sorter, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér" %}
-                {% include icon.html icon="sort-ascending" keywords="sorter stigende, stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (stigende)" %}
+                {% include icon.html icon="sort-by-alpha" keywords="sorter alfabetisk, sort, sorting, sorter, sortér, alfabetisk" label="Sortér alfabetisk" %}
                 {% include icon.html icon="sort-descending" keywords="sorter faldende, faldende, descending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (faldende)" %}
+                {% include icon.html icon="sort-ascending" keywords="sorter stigende, stigende, ascending, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortér (stigende)" %}
+                {% include icon.html icon="sort-table-none" keywords="sorter tabel, tabel, table, sort, sortering, kolonne" label="Sortér tabel" %}
+                {% include icon.html icon="sort-table-descending" keywords="sorter tabel faldende, tabel, table, sort, sortering, kolonne, descending" label="Sortér tabel (faldende)" %}
+                {% include icon.html icon="sort-table-ascending" keywords="sorter tabel stigende, tabel, table, sort, sortering, kolonne, ascending" label="Sortér tabel (stigende)" %}
+                {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
             </ul>
         </div>
     </div>
@@ -161,8 +161,8 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Funktionalitet</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-funktionalitet">
-                {% include icon.html icon="close" keywords="anuller, annullér, luk, cancel, discard, fortryd" label="Annuller (luk)" %}
                 {% include icon.html icon="hourglass-empty" keywords="waiting, hourglass, timeglas, vente, ventetid, tid" label="Afventer" %}
+                {% include icon.html icon="close" keywords="anuller, annullér, luk, cancel, discard, fortryd" label="Annuller (luk)" %}
                 {% include icon.html icon="calculator" keywords="calculator, lommeregner, beregning, beregner" label="Beregner (lommeregner)" %}
                 {% include icon.html icon="reply" keywords="besvar, mail, email" label="Besvar" %}
                 {% include icon.html icon="chat" keywords="chat, kontakt, kommunikation, communication" label="Chat" %}
@@ -184,7 +184,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="playlist-add-check" keywords="liste, list, done, check, flueben, completed, gennemført" label="Liste gennemført" %}
                 {% include icon.html icon="folder" keywords="mappe, folder" label="Mappe" %}
                 {% include icon.html icon="notifications" keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe" label="Notifikation/besked" %}
-                {% include icon.html icon="refresh" keywords="update, refresh, opdater, genindlæs, pil, cirkel" label="Opdater (genindlæs)" %}
+                {% include icon.html icon="refresh" keywords="update, refresh, opdater, genindlæs, pil, cirkel" label="Opdatér (genindlæs)" %}
                 {% include icon.html icon="create-new-folder" keywords="folder, mappe, opret, ny, add, new, create" label="Opret mappe" %}
                 {% include icon.html icon="apps" keywords="apps, applikation, oversigt, overblik, kasser" label="Oversigt (overblik)" %}
                 {% include icon.html icon="location-on" keywords="position, maps, adresse, lokation, location" label="Placering (adresse)" %}
@@ -198,14 +198,14 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="query-builder" keywords="ur, tid, time, clock, klokke" label="Tid (tidsinterval)" %}
                 {% include icon.html icon="add-a-photo" keywords="kamera, camera, picture, add, tilføj, billede, ny, create" label="Tilføj billede" %}
                 {% include icon.html icon="note-add" keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create" label="Tilføj dokument" %}
-                {% include icon.html icon="playlist-add" keywords="add, list, tilføj, ny, opret" label="Tilføj til liste" %}
                 {% include icon.html icon="person-add-alt-1" keywords="add, tilføj, ny, create, opret, bruger, user, person" label="Tilføj person/bruger" %}
+                {% include icon.html icon="playlist-add" keywords="add, list, tilføj, ny, opret" label="Tilføj til liste" %}
                 {% include icon.html icon="done" keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt" label="Udført (korrekt, gennemført)" %}
                 {% include icon.html icon="file-upload" keywords="Upload, eksporter, export" label="Upload (eksportér)" %}
                 {% include icon.html icon="attach-file" keywords="Vedhæft, attachment, bilag" label="Vedhæft (bilag)" %}
                 {% include icon.html icon="forward" keywords="videresend" label="Videresend" %}
-                {% include icon.html icon="view-headline" keywords="Liste, justify" label="Vis i liste form" %}
-                {% include icon.html icon="vertical-split" keywords="liste, kasse, billede, layout, vindue" label="Vis i liste form og vindue" %}
+                {% include icon.html icon="view-headline" keywords="Liste, justify" label="Vis i listeform" %}
+                {% include icon.html icon="vertical-split" keywords="liste, kasse, billede, layout, vindue" label="Vis i listeform og vindue" %}
                 {% include icon.html icon="palette" keywords="tema, theme, palette, color, colours, painting, paint" label="Vælg tema (palette)" %}
                 {% include icon.html icon="folder-open" keywords="open, folder, åben, åbn, mappe" label="Åben mappe" %}
             </ul>
@@ -215,45 +215,45 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Illustrative</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-illustrative">
-                {% include icon.html icon="coronavirus" keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi" label="Corona (Covid-19)" %}
-                {% include icon.html icon="list-alt" keywords="" label="Opgørelse / Resumé / Opsummering" %}
-                {% include icon.html icon="assignment" keywords="assignment" label="Opgave" %}
-                {% include icon.html icon="payments" keywords="money, payment" label="Penge/Betaling/Opkrævning" %}
-                {% include icon.html icon="database" keywords="" label="Data" %}
                 {% include icon.html icon="assessment" keywords="" label="Analyse" %}
-                {% include icon.html icon="map" keywords="" label="Kort" %}
-                {% include icon.html icon="link" keywords="" label="Links" %}
-                {% include icon.html icon="person" keywords="" label="Person (bruger)" %}
-                {% include icon.html icon="shopping-cart" keywords="shopping, buy, cart, payment, checkout" label="Kurv (afventer køb)" %}
-                {% include icon.html icon="videocam" keywords="video, kamera" label="Videokamera" %}
-                {% include icon.html icon="headphones" keywords="headset, sound, lyd, høretelefoner" label="Headset" %}
-                {% include icon.html icon="desktop-windows" keywords="skærm, screen, computer" label="Desktop" %}
-                {% include icon.html icon="laptop" keywords="bærbar, computer" label="Laptop" %}
-                {% include icon.html icon="phone-iphone" keywords="telefon, smartphone" label="Mobiltelefon" %}
-                {% include icon.html icon="mouse" keywords="" label="Mus" %}
-                {% include icon.html icon="accessibility-new" keywords="man, mand" label="Tilgængelighed" %}
-                {% include icon.html icon="format-list-bulleted" keywords="" label="Liste" %}
-                {% include icon.html icon="format-list-checks" keywords="punktopstilling, liste" label="Tjekliste" %}
+                {% include icon.html icon="drive-eta" keywords="" label="Bil (transport)" %}
                 {% include icon.html icon="bookmark-border" keywords="" label="Bogmærke" %}
                 {% include icon.html icon="bookmarks" keywords="" label="Bogmærker" %}
-                {% include icon.html icon="card-account-details" keywords="" label="Kontaktoplysninger" %}
-                {% include icon.html icon="people-alt" keywords="" label="Personer (brugere)" %}
-                {% include icon.html icon="groups" keywords="" label="Gruppe (møde)" %}
-                {% include icon.html icon="forum" keywords="" label="Forum" %}
+                {% include icon.html icon="account-circle" keywords="" label="Brugerprofil" %}
+                {% include icon.html icon="coronavirus" keywords="virus, corona, coronavirus, covid, 19, covid19, covid-19, pandemi, epidemi" label="Corona (Covid-19)" %}
+                {% include icon.html icon="database" keywords="" label="Data" %}
+                {% include icon.html icon="desktop-windows" keywords="skærm, screen, computer" label="Desktop" %}
                 {% include icon.html icon="insert-drive-file" keywords="" label="Dokument (sag)" %}
-                {% include icon.html icon="domain" keywords="" label="Virksomhed" %}
                 {% include icon.html icon="face" keywords="" label="Elev" %}
                 {% include icon.html icon="engineering" keywords="" label="Erhverv/Erhvervsuddannet" %}
-                {% include icon.html icon="account-circle" keywords="" label="Brugerprofil" %}
+                {% include icon.html icon="forum" keywords="" label="Forum" %}
                 {% include icon.html icon="how-to-reg" keywords="" label="Fuldmagtsprofil (3. part)" %}
-                {% include icon.html icon="support-agent" keywords="" label="Supporter (telefonrådgiver)" %}
-                {% include icon.html icon="local-shipping" keywords="" label="Lastbil (transport)" %}
-                {% include icon.html icon="agriculture" keywords="" label="Traktor (landmand)" %}
-                {% include icon.html icon="school" keywords="" label="Studerende (studie)" %}
+                {% include icon.html icon="groups" keywords="" label="Gruppe (møde)" %}
+                {% include icon.html icon="headphones" keywords="headset, sound, lyd, høretelefoner" label="Headset" %}
                 {% include icon.html icon="construction" keywords="" label="Håndværk (bygge- og anlægsarbejde)" %}
-                {% include icon.html icon="science" keywords="" label="Videnskab (kemi)" %}
-                {% include icon.html icon="drive-eta" keywords="" label="Bil (transport)" %}
+                {% include icon.html icon="card-account-details" keywords="" label="Kontaktoplysninger" %}
+                {% include icon.html icon="map" keywords="" label="Kort" %}
+                {% include icon.html icon="shopping-cart" keywords="shopping, buy, cart, payment, checkout" label="Kurv (afventer køb)" %}
+                {% include icon.html icon="laptop" keywords="bærbar, computer" label="Laptop" %}
+                {% include icon.html icon="local-shipping" keywords="" label="Lastbil (transport)" %}
+                {% include icon.html icon="link" keywords="" label="Links" %}
+                {% include icon.html icon="format-list-bulleted" keywords="" label="Liste" %}
+                {% include icon.html icon="phone-iphone" keywords="telefon, smartphone" label="Mobiltelefon" %}
+                {% include icon.html icon="mouse" keywords="" label="Mus" %}
+                {% include icon.html icon="assignment" keywords="assignment" label="Opgave" %}
+                {% include icon.html icon="list-alt" keywords="" label="Opgørelse / Resumé / Opsummering" %}
                 {% include icon.html icon="tune" keywords="" label="Parameter (finjustering)" %}
+                {% include icon.html icon="payments" keywords="money, payment" label="Penge/Betaling/Opkrævning" %}
+                {% include icon.html icon="person" keywords="" label="Person (bruger)" %}
+                {% include icon.html icon="people-alt" keywords="" label="Personer (brugere)" %}
+                {% include icon.html icon="school" keywords="" label="Studerende (studie)" %}
+                {% include icon.html icon="support-agent" keywords="" label="Supporter (telefonrådgiver)" %}
+                {% include icon.html icon="accessibility-new" keywords="man, mand, a11y" label="Tilgængelighed" %}
+                {% include icon.html icon="format-list-checks" keywords="punktopstilling, liste" label="Tjekliste" %}
+                {% include icon.html icon="agriculture" keywords="" label="Traktor (landmand)" %}
+                {% include icon.html icon="science" keywords="" label="Videnskab (kemi)" %}
+                {% include icon.html icon="videocam" keywords="video, kamera" label="Videokamera" %}
+                {% include icon.html icon="domain" keywords="" label="Virksomhed" %}
             </ul>
         </div>
     </div>
@@ -261,22 +261,22 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Tekstredigering</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-tekstredigering">
-                {% include icon.html icon="text-format" keywords="" label="Formater tekst" %}
-                {% include icon.html icon="format-size" keywords="" label="Tekststørrelse" %}
-                {% include icon.html icon="format-bold" keywords="" label="Fed" %}
-                {% include icon.html icon="format-italic" keywords="" label="Kursiv" %}
-                {% include icon.html icon="format-underlined" keywords="" label="Understregning" %}
-                {% include icon.html icon="format-color-text" keywords="" label="Farve" %}
                 {% include icon.html icon="format-color-fill" keywords="" label="Baggrundsfarve" %}
-                {% include icon.html icon="format-clear" keywords="ryd, clear, tekst, formatering, clean" label="Ryd tekstformatering" %}
-                {% include icon.html icon="format-list-bulleted" keywords="" label="Punktopstilling" %}
-                {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
+                {% include icon.html icon="format-color-text" keywords="" label="Farve" %}
+                {% include icon.html icon="format-bold" keywords="" label="Fed" %}
+                {% include icon.html icon="text-format" keywords="" label="Formatér tekst" %}
                 {% include icon.html icon="format-indent-increase" keywords="" label="Indryk højre" %}
                 {% include icon.html icon="format-indent-decrease" keywords="" label="Indryk venstre" %}
-                {% include icon.html icon="format-align-left" keywords="" label="Venstrestillet tekst" %}
-                {% include icon.html icon="format-align-center" keywords="" label="Centreret tekst" %}
-                {% include icon.html icon="format-align-right" keywords="" label="Højrestillet tekst" %}
-                {% include icon.html icon="format-align-justify" keywords="" label="Lige marginer" %}
+                {% include icon.html icon="format-italic" keywords="" label="Kursiv" %}
+                {% include icon.html icon="format-list-bulleted" keywords="" label="Punktopstilling" %}
+                {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
+                {% include icon.html icon="format-clear" keywords="ryd, clear, tekst, formatering, clean" label="Ryd tekstformatering" %}
+                {% include icon.html icon="format-align-center" keywords="" label="Tekst centreret" %}
+                {% include icon.html icon="format-align-right" keywords="" label="Tekst højrestillet" %}
+                {% include icon.html icon="format-align-justify" keywords="" label="Tekst lige marginer" %}
+                {% include icon.html icon="format-align-left" keywords="" label="Tekst venstrestillet" %}
+                {% include icon.html icon="format-size" keywords="" label="Tekststørrelse" %}
+                {% include icon.html icon="format-underlined" keywords="" label="Understregning" %}
             </ul>
         </div>
     </div>
