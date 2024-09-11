@@ -45,14 +45,19 @@ var exampleUrls = [
     var resWidth = 1125; // width of screenshot
     var resHeight = 961;
 
+    const browser = await puppeteer.launch({headless: true});
+    const page = await browser.newPage();
+
+    // Ensure that 'leave' dialogs don't block when you change page with page.goto()
+    page.on('dialog', async dialog => {
+        await dialog.accept();
+    });
+
     for (var t = 0; t < themes.length; t++) {
         for (var i = 0; i < exampleUrls.length; i++) {
-            const browser = await puppeteer.launch({headless: 'shell'});
-            const page = await browser.newPage();
-
             console.log(root + exampleUrls[i].url + '?theme=' + themes[t]);
             
-            await page.goto(root + exampleUrls[i].url + '?theme=' + themes[t], { waitUntil: 'networkidle2' });
+            await page.goto(root + exampleUrls[i].url + '?theme=' + themes[t], { waitUntil: 'load' });
             await page.setViewport({ width: resWidth, height: resHeight });
             await page.evaluate(() => matchMedia('screen').matches);
 
@@ -65,10 +70,11 @@ var exampleUrls = [
                 window.scrollTo(0, 0);
             });
 
-            var pdfFileName = targetRootDir + exampleUrls[i].folder + '/' + themes[t] + '-' + exampleUrls[i].filename + '.PNG';
+            var pngFileName = targetRootDir + exampleUrls[i].folder + '/' + themes[t] + '-' + exampleUrls[i].filename + '.PNG';
 
-            await page.screenshot({ path: pdfFileName });
-            await browser.close();
+            await page.screenshot({ path: pngFileName });
         }
     }
+
+    await browser.close();
 })();
