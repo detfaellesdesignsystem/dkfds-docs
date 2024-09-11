@@ -184,7 +184,7 @@ var exampleUrls = [
         ':' + String(new Date().getSeconds()).padStart(2, '0') + '] ' +
         'Starting...');
 
-    const browser = await puppeteer.launch({headless: 'shell'});
+    const browser = await puppeteer.launch({headless: true});
     const page = await browser.newPage();
 
     // Ensure that 'leave' dialogs don't block when you change page with page.goto()
@@ -202,9 +202,10 @@ var exampleUrls = [
         'Creating pdfs...');
 
     for (var i = 0; i < pdfUrls.length; i++) {
-        await page.goto(root + pdfUrls[i], { waitUntil: 'networkidle0', timeout: 0 });
+        await page.goto(root + pdfUrls[i], { waitUntil: 'load' });
         await page.setViewport({ width: resWidth, height: resHeight });
         await page.evaluate(() => matchMedia('screen').matches);
+
         await page.evaluate(() => {
             var buttons = document.querySelectorAll('.accordion-button');
             for (var i = 0; i < buttons.length; i++) {
@@ -212,7 +213,7 @@ var exampleUrls = [
                 document.getElementById(buttons[i].getAttribute('aria-controls')).setAttribute('aria-hidden', false);
             }
 
-            var buttons = document.querySelectorAll('.code-sample .accordion-button');
+            buttons = document.querySelectorAll('.code-sample .accordion-button');
             for (var i = 0; i < buttons.length; i++) {
                 buttons[i].setAttribute('aria-expanded', false);
                 document.getElementById(buttons[i].getAttribute('aria-controls')).setAttribute('aria-hidden', true);
@@ -227,7 +228,8 @@ var exampleUrls = [
         if (pdfUrls[i] != '') {
             var filename = pdfUrls[i].replace(/\//g, '-').replace(/#/g, '');
             filename = filename.substring(0, filename.length - 1);
-        } else {
+        } 
+        else {
             filename = 'frontpage';
         }
         var pdfFileName = targetRootDir + (i + 1) + '-' + filename + '.pdf';
@@ -242,7 +244,7 @@ var exampleUrls = [
         'Creating example page images...');
 
     for (var i = 0; i < exampleUrls.length; i++) {
-        await page.goto(root + exampleUrls[i].url, { waitUntil: 'networkidle0', timeout: 0 });
+        await page.goto(root + exampleUrls[i].url, { waitUntil: 'load' });
         await page.setViewport({ width: resWidth, height: resHeight });
         await page.evaluate(() => matchMedia('screen').matches);
 
@@ -257,9 +259,9 @@ var exampleUrls = [
             window.scrollBy(0, 5000);
         });
 
-        var pdfFileName = targetRootDir + screenshotsDir + 'example_' + (i + 1) + '-' + exampleUrls[i].filename + '.png';
+        var pngFileName = targetRootDir + screenshotsDir + 'example_' + (i + 1) + '-' + exampleUrls[i].filename + '.png';
 
-        await page.screenshot({ path: pdfFileName, fullPage: true });
+        await page.screenshot({ path: pngFileName, fullPage: true });
     }
 
     console.log('[' + String(new Date().getHours()).padStart(2, '0') +
@@ -268,7 +270,7 @@ var exampleUrls = [
         'Creating page images...');
 
     for (var i = 0; i < pdfUrls.length; i++) {
-        await page.goto(root + pdfUrls[i], { waitUntil: 'networkidle0', timeout: 0 });
+        await page.goto(root + pdfUrls[i], { waitUntil: 'load' });
         await page.setViewport({ width: resWidth, height: resHeight });
         await page.evaluate(() => matchMedia('screen').matches);
         await page.evaluate(() => {
@@ -297,9 +299,9 @@ var exampleUrls = [
         } else {
             filename = 'frontpage';
         }
-        var pdfFileName = targetRootDir + screenshotsDir + (i + 1) + '-' + filename + '.png';
+        var pngFileName = targetRootDir + screenshotsDir + (i + 1) + '-' + filename + '.png';
 
-        await page.screenshot({ path: pdfFileName, fullPage: true });
+        await page.screenshot({ path: pngFileName, fullPage: true });
     }
 
     await browser.close();
