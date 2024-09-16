@@ -170,9 +170,8 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="share" keywords="share, del" label="Del" %}
                 {% include icon.html icon="file-download" keywords="download" label="Download" %}
                 {% include icon.html icon="download-done" keywords="færdig, gennemført, download" label="Download afsluttet" %}
-                {% include icon.html icon="email" keywords="email, mail, e-mail, e-mailadresse, adresse, adress" label="Email" %}
+                {% include icon.html icon="email" keywords="email, mail, e-mail, e-mailadresse, adresse, adress" label="E-mail" %}
                 {% include icon.html icon="feedback" keywords="feedback, respons, response, besvarelse" label="Feedback" %}
-                {% include icon.html icon="person-remove" keywords="bruger, person, user, remove" label="Fjern person/bruger" %}
                 {% include icon.html icon="flag" keywords="flag, filled, udfyldt" label="Flag fyldt" %}
                 {% include icon.html icon="outlined-flag" keywords="flag, tomt" label="Flag tomt" %}
                 {% include icon.html icon="open-with" keywords="flyt, move, drag, drop" label="Flyt" %}
@@ -183,31 +182,32 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="content-copy" keywords="copy, paste, kopi, indsæt, sæt ind" label="Kopi" %}
                 {% include icon.html icon="playlist-add-check" keywords="liste, list, done, check, flueben, completed, gennemført" label="Liste gennemført" %}
                 {% include icon.html icon="folder" keywords="mappe, folder" label="Mappe" %}
+                {% include icon.html icon="folder-open" keywords="open, folder, åben, åbn, mappe" label="Mappe åben" %}
                 {% include icon.html icon="notifications" keywords="notifikation, besked, toast, notification, bell, klokke, alarm, ringe" label="Notifikation/besked" %}
                 {% include icon.html icon="refresh" keywords="update, refresh, opdater, genindlæs, pil, cirkel" label="Opdatér (genindlæs)" %}
                 {% include icon.html icon="create-new-folder" keywords="folder, mappe, opret, ny, add, new, create" label="Opret mappe" %}
                 {% include icon.html icon="apps" keywords="apps, applikation, oversigt, overblik, kasser" label="Oversigt (overblik)" %}
+                {% include icon.html icon="person-remove" keywords="bruger, person, user, remove" label="Person (bruger) fjern" %}
+                {% include icon.html icon="person-add-alt-1" keywords="add, tilføj, ny, create, opret, bruger, user, person" label="Person (bruger) tilføj" %}
                 {% include icon.html icon="location-on" keywords="position, maps, adresse, lokation, location" label="Placering (adresse)" %}
-                {% include icon.html icon="mode" keywords="redigér, edit, rediger, ændre, change, pen, blyant" label="Rediger" %}
+                {% include icon.html icon="mode" keywords="redigér, edit, rediger, ændre, change, pen, blyant" label="Redigér" %}
                 {% include icon.html icon="send" keywords="send" label="Send" %}
                 {% include icon.html icon="language" keywords="sprog, language, globe, earch, jorden, lande, countries" label="Sprog (globe)" %}
                 {% include icon.html icon="grade" keywords="star, stjerne, bedømmelse, rating" label="Stjerne fyldt (markeret)" %}
                 {% include icon.html icon="grade-outline" keywords="star, stjerne, bedømmelse, rating" label="Stjerne tom (ikke-markeret)" %}
                 {% include icon.html icon="contact-support" keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question" label="Support" %}
-                {% include icon.html icon="cached" keywords="synkroniser, refresh, genindlæs, update, opdater" label="Synkroniser (refresh)" %}
+                {% include icon.html icon="cached" keywords="synkroniser, refresh, genindlæs, update, opdater" label="Synkronisér (refresh)" %}
                 {% include icon.html icon="query-builder" keywords="ur, tid, time, clock, klokke" label="Tid (tidsinterval)" %}
                 {% include icon.html icon="add-a-photo" keywords="kamera, camera, picture, add, tilføj, billede, ny, create" label="Tilføj billede" %}
                 {% include icon.html icon="note-add" keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create" label="Tilføj dokument" %}
-                {% include icon.html icon="person-add-alt-1" keywords="add, tilføj, ny, create, opret, bruger, user, person" label="Tilføj person/bruger" %}
                 {% include icon.html icon="playlist-add" keywords="add, list, tilføj, ny, opret" label="Tilføj til liste" %}
-                {% include icon.html icon="done" keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt" label="Udført (korrekt, gennemført)" %}
+                {% include icon.html icon="done" keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt" label="Udført (korrekt, gennemført, flueben)" %}
                 {% include icon.html icon="file-upload" keywords="Upload, eksporter, export" label="Upload (eksportér)" %}
                 {% include icon.html icon="attach-file" keywords="Vedhæft, attachment, bilag" label="Vedhæft (bilag)" %}
                 {% include icon.html icon="forward" keywords="videresend" label="Videresend" %}
                 {% include icon.html icon="view-headline" keywords="Liste, justify" label="Vis i listeform" %}
                 {% include icon.html icon="vertical-split" keywords="liste, kasse, billede, layout, vindue" label="Vis i listeform og vindue" %}
                 {% include icon.html icon="palette" keywords="tema, theme, palette, color, colours, painting, paint" label="Vælg tema (palette)" %}
-                {% include icon.html icon="folder-open" keywords="open, folder, åben, åbn, mappe" label="Åben mappe" %}
             </ul>
         </div>
     </div>
