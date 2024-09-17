@@ -1396,7 +1396,9 @@
 
 <p>Når DKFDS er inkluderet kan du køre funktionen <code>DKFDS.init();</code> ved dom ready, eller hvornår det nu end passer i dit projekt.</p>
 
-<p><code>DKFDS.init();</code> aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring javascript for hver komponent finder du i kodesektionen for den specifikke <a href="/komponenter/">komponent</a>.</p>
+<p><code>DKFDS.init();</code> aktiverer JavaScript for alle komponenter, men man kan også tilføje JavaScript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor JavaScript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring JavaScript for hver komponent finder du i kodesektionen for den specifikke <a href="/komponenter/">komponent</a>.</p>
+
+<p>Bemærk, at du aldrig bør køre <code>DKFDS.init()</code> mere end én gang på en side eller køre en af init-funktionerne mere end én gang på en komponent. Hvis du efter kørsel af <code>DKFDS.init()</code> tilføjer nye komponenter til din side, anbefales det at køre komponentens egen init-funktion for at aktivere dens JavaScript.</p>
 
 <p class="mb-2">Eksempel på init:</p>
 
@@ -1405,7 +1407,7 @@
 });</code></pre></figure>
 
 <h5>Initiér alle komponenter i et bestemt område</h5>
-<p>Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.</p>
+<p>Det er muligt at bruge <code>DKFDS.init()</code> i bestemte områder af din side ved at medsende parameter.</p>
 
 <p>I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.</p>
 

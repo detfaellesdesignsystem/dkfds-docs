@@ -14,6 +14,12 @@ description: Sådan kommer du i gang med FDS i dit projekt. Værd at læse for a
 tags: 
 - installation
 - implementering
+- DKFDS
+- DKFDS.init
+- DKFDS.init()
+- init
+- init()
+- scope
 ---
 
 {% include anchorlinks.html headings="Hent_kodepakken" %}
@@ -74,7 +80,9 @@ import * as DKFDS from "dkfds";
 
 Når DKFDS er inkluderet kan du køre funktionen `DKFDS.init();` ved dom ready, eller hvornår det nu end passer i dit projekt.
 
-`DKFDS.init();` aktiverer javascript for alle komponenter, men man kan også tilføje javascript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor javascript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring javascript for hver komponent finder du i kodesektionen for den specifikke {% include links/internal-link.html linktext="komponent" %}.
+`DKFDS.init();` aktiverer JavaScript for alle komponenter, men man kan også tilføje JavaScript specifikt for hver komponent, hvis man foretrækker denne metode. Hvis man kun har få komponenter, hvor JavaScript er nødvendig eller hvis man har meget fokus på performance, kan dette være værd at undersøge. Information omkring JavaScript for hver komponent finder du i kodesektionen for den specifikke {% include links/internal-link.html linktext="komponent" %}.
+
+Bemærk, at du aldrig bør køre `DKFDS.init()` mere end én gang på en side eller køre en af init-funktionerne mere end én gang på en komponent. Hvis du efter kørsel af `DKFDS.init()` tilføjer nye komponenter til din side, anbefales det at køre komponentens egen init-funktion for at aktivere dens JavaScript.
 
 <p class="mb-2">Eksempel på init:</p>
 
@@ -85,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(){
 {% endhighlight %}
 
 ##### Initiér alle komponenter i et bestemt område
-Det er muligt at bruge DKFDS.init() i bestemte områder af din side ved at medsende parameter.
+Det er muligt at bruge `DKFDS.init()` i bestemte områder af din side ved at medsende parameter.
 
 I nedenstående eksempel vil vi gerne initiere alle komponenter i headeren. Det vil sige navigation, alle overflow menuer samt eventuelle modaler i headeren. Komponenter uden for headeren vil ikke blive berørt.
 

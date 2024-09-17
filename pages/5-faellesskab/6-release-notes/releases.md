@@ -108,6 +108,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet en stylingfejl, som opstod, når man anvendte inputfelter med {% include links/component-guideline-link.html linktext="prefix eller suffix" %}, som samtidigt var read-only eller disabled. Tilføj klassen `disabled` eller `readonly` til `form-input-wrapper` for at få den korrekte styling.
+- Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} som følge af Sass-version 1.77.7. Dette har ændret rækkefølgen af visse deklarationer i CSS-filerne, men burde ikke have nogen funktionel betydning.
 
 
 
