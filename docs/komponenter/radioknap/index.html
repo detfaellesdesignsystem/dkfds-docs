@@ -1832,6 +1832,63 @@
 
 <h3 id="hjaelpetekst">Hjælpetekst</h3>
 
+<h4 id="radioknapgruppe-med-hjaelpetekst">Radioknapgruppe med hjælpetekst</h4>
+
+<div class="component-preview  component-preview-radiobutton-group-helptext">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/radiobutton-group-helptext/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: radiobutton-group-helptext</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på radioknapgruppe med hjælpetekst</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <fieldset aria-labelledby="radio-group-helptext-legend" aria-describedby="radiogroup-group-helptext-hint ">
+
+        <legend class="form-label" id="radio-group-helptext-legend">Radioknapper</legend>
+
+        <span class="form-hint" id="radiogroup-group-helptext-hint">Dette er en
+            hjælpetekst</span>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-group-helptext-option1" name="radio-group-helptext" class="form-radio" value="v1" />
+            <label class="form-label" for="radiogroup-group-helptext-option1">Første
+                radioknap</label>
+
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-group-helptext-option2" name="radio-group-helptext" class="form-radio" value="v2" />
+            <label class="form-label" for="radiogroup-group-helptext-option2">Anden
+                radioknap</label>
+
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-group-helptext-option3" name="radio-group-helptext" class="form-radio" value="v3" />
+            <label class="form-label" for="radiogroup-group-helptext-option3">Tredje
+                radioknap</label>
+
+        </div>
+
+    </fieldset>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/radioknap/#radioknapgruppe-med-hjaelpetekst-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: radiobutton-group-helptext</span></a>
+    </div>
+    
+</div>
+
+<h4 id="hjaelpetekst-til-enkelte-radioknapper">Hjælpetekst til enkelte radioknapper</h4>
+
 <div class="component-preview  component-preview-radiobutton-helptext">
     
     <div class="component-link px-4 py-4">
@@ -1848,21 +1905,29 @@
         <div class="form-group">
     <fieldset aria-labelledby="radio-helptext-legend">
 
-        <legend class="form-label" id="radio-helptext-legend">Radioknapper med hjælpetekst
-        </legend>
+        <legend class="form-label" id="radio-helptext-legend">Radioknapper</legend>
 
         <div class="form-group-radio">
             <input type="radio" id="radiogroup-helptext-option1" name="radio-helptext" class="form-radio" value="v1" aria-describedby="radiogroup-helptext-option1-hint" />
-            <label class="form-label" for="radiogroup-helptext-option1">Valg 1</label>
+            <label class="form-label" for="radiogroup-helptext-option1">Første
+                radioknap</label>
             <span class="form-hint" id="radiogroup-helptext-option1-hint">Dette er en
                 hjælpetekst</span>
         </div>
 
         <div class="form-group-radio">
             <input type="radio" id="radiogroup-helptext-option2" name="radio-helptext" class="form-radio" value="v2" aria-describedby="radiogroup-helptext-option2-hint" />
-            <label class="form-label" for="radiogroup-helptext-option2">Valg 2</label>
+            <label class="form-label" for="radiogroup-helptext-option2">Anden
+                radioknap</label>
             <span class="form-hint" id="radiogroup-helptext-option2-hint">Dette er en
                 hjælpetekst</span>
+        </div>
+
+        <div class="form-group-radio">
+            <input type="radio" id="radiogroup-helptext-option3" name="radio-helptext" class="form-radio" value="v3" />
+            <label class="form-label" for="radiogroup-helptext-option3">Tredje
+                radioknap</label>
+
         </div>
 
     </fieldset>
@@ -1871,7 +1936,7 @@
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/radioknap/#hjaelpetekst-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: radiobutton-helptext</span></a>
+        <a href="/komponenter/radioknap/#hjaelpetekst-til-enkelte-radioknapper-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: radiobutton-helptext</span></a>
     </div>
     
 </div>
@@ -1940,15 +2005,15 @@
 
 <h4 id="collapse-retningslinjer">Anvendes til</h4>
 
-<p>Anvendes til at vise et ekstra felt relevant for brugerens valg, fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.</p>
+<p>Anvendes til at vise et ekstra felt, der er relevant afhængigt af den valgte radioknap. Fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.</p>
 
 <h4>Anvendes ikke til</h4>
 
-<p>Anvendes ikke til at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.</p>
+<p>Anvendes ikke til at vise ekstra beskrivende/oplysende tekst eller billeder.</p>
 
 <h4>Vejledning</h4>
 
-<p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.</p>
+<p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje at fordele det ud over flere sider i stedet.</p>
 
 <div class=" component-preview-details-dos-donts">
     <div class="component-example">
@@ -2083,6 +2148,73 @@
 
 <h2 id="hjaelpetekst-kode">Hjælpetekst</h2>
 
+<h3 id="radioknapgruppe-med-hjaelpetekst-kode">Radioknapgruppe med hjælpetekst</h3>
+
+<div class="component-preview component-preview-code  component-code-radiobutton-group-helptext">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/radiobutton-group-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: radiobutton-group-helptext</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset aria-labelledby=&quot;radio-group-helptext-legend&quot;
+        aria-describedby=&quot;radiogroup-group-helptext-hint &quot;&gt;
+
+        &lt;legend class=&quot;form-label&quot; id=&quot;radio-group-helptext-legend&quot;&gt;Radioknapper&lt;/legend&gt;
+
+        &lt;span class=&quot;form-hint&quot; id=&quot;radiogroup-group-helptext-hint&quot;&gt;Dette er en
+            hjælpetekst&lt;/span&gt;
+
+        &lt;div class=&quot;form-group-radio&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-group-helptext-option1&quot;
+                name=&quot;radio-group-helptext&quot; class=&quot;form-radio&quot; value=&quot;v1&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-group-helptext-option1&quot;&gt;Første
+                radioknap&lt;/label&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-radio&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-group-helptext-option2&quot;
+                name=&quot;radio-group-helptext&quot; class=&quot;form-radio&quot; value=&quot;v2&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-group-helptext-option2&quot;&gt;Anden
+                radioknap&lt;/label&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-radio&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-group-helptext-option3&quot;
+                name=&quot;radio-group-helptext&quot; class=&quot;form-radio&quot; value=&quot;v3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-group-helptext-option3&quot;&gt;Tredje
+                radioknap&lt;/label&gt;
+
+        &lt;/div&gt;
+
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/radioknap/#radioknapgruppe-med-hjaelpetekst" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<h3 id="hjaelpetekst-til-enkelte-radioknapper-kode">Hjælpetekst til enkelte radioknapper</h3>
+
 <div class="component-preview component-preview-code  component-code-radiobutton-helptext">
     
     <div class="component-link px-4 py-4">
@@ -2104,14 +2236,14 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
     &lt;fieldset aria-labelledby=&quot;radio-helptext-legend&quot;&gt;
 
-        &lt;legend class=&quot;form-label&quot; id=&quot;radio-helptext-legend&quot;&gt;Radioknapper med hjælpetekst
-        &lt;/legend&gt;
+        &lt;legend class=&quot;form-label&quot; id=&quot;radio-helptext-legend&quot;&gt;Radioknapper&lt;/legend&gt;
 
         &lt;div class=&quot;form-group-radio&quot;&gt;
             &lt;input type=&quot;radio&quot; id=&quot;radiogroup-helptext-option1&quot; name=&quot;radio-helptext&quot;
                 class=&quot;form-radio&quot; value=&quot;v1&quot;
                 aria-describedby=&quot;radiogroup-helptext-option1-hint&quot;&gt;
-            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-helptext-option1&quot;&gt;Valg 1&lt;/label&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-helptext-option1&quot;&gt;Første
+                radioknap&lt;/label&gt;
             &lt;span class=&quot;form-hint&quot; id=&quot;radiogroup-helptext-option1-hint&quot;&gt;Dette er en
                 hjælpetekst&lt;/span&gt;
         &lt;/div&gt;
@@ -2120,9 +2252,18 @@
             &lt;input type=&quot;radio&quot; id=&quot;radiogroup-helptext-option2&quot; name=&quot;radio-helptext&quot;
                 class=&quot;form-radio&quot; value=&quot;v2&quot;
                 aria-describedby=&quot;radiogroup-helptext-option2-hint&quot;&gt;
-            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-helptext-option2&quot;&gt;Valg 2&lt;/label&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-helptext-option2&quot;&gt;Anden
+                radioknap&lt;/label&gt;
             &lt;span class=&quot;form-hint&quot; id=&quot;radiogroup-helptext-option2-hint&quot;&gt;Dette er en
                 hjælpetekst&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-radio&quot;&gt;
+            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-helptext-option3&quot; name=&quot;radio-helptext&quot;
+                class=&quot;form-radio&quot; value=&quot;v3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-helptext-option3&quot;&gt;Tredje
+                radioknap&lt;/label&gt;
+
         &lt;/div&gt;
 
     &lt;/fieldset&gt;
@@ -2132,7 +2273,7 @@
     </div>
     
     <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/radioknap/#hjaelpetekst" class="small-text">Gå til eksemplets retningslinjer</a>
+        <a href="/komponenter/radioknap/#hjaelpetekst-til-enkelte-radioknapper" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>

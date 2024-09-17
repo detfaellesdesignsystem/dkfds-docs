@@ -68,7 +68,13 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
 
-{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" code="/komponenter/radioknap/#hjaelpetekst-kode" %}
+#### Radioknapgruppe med hjælpetekst {#{% include create-id.html heading="Radioknapgruppe med hjælpetekst" %}}
+
+{% include code/preview-box.html component="radiobutton-group-helptext" title="Eksempel på radioknapgruppe med hjælpetekst" code="/komponenter/radioknap/#radioknapgruppe-med-hjaelpetekst-kode" %}
+
+#### Hjælpetekst til enkelte radioknapper {#{% include create-id.html heading="Hjælpetekst til enkelte radioknapper" %}}
+
+{% include code/preview-box.html component="radiobutton-helptext" title="Eksempel på radioknapper med hjælpetekst" code="/komponenter/radioknap/#hjaelpetekst-til-enkelte-radioknapper-kode" %}
 
 ### Skjult indhold (Collapse) {#{% include create-id.html heading="Skjult indhold (Collapse)" %}}
 
@@ -77,15 +83,15 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 {:#collapse-retningslinjer}
 #### Anvendes til
 
-Anvendes til at vise et ekstra felt relevant for brugerens valg, fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.
+Anvendes til at vise et ekstra felt, der er relevant afhængigt af den valgte radioknap. Fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.
 
 #### Anvendes ikke til
 
-Anvendes ikke til at vise ekstra beskrivende/oplysende tekst, da skærmlæsere ikke kan læse det.
+Anvendes ikke til at vise ekstra beskrivende/oplysende tekst eller billeder.
 
 #### Vejledning
 
-Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje, at fordele det ud over flere sider i stedet.
+Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje at fordele det ud over flere sider i stedet.
 
 {% include dos-donts-box.html component="details-dos-donts" %}
 
@@ -139,7 +145,13 @@ new DKFDS.RadioToggleGroup(document.getElementById('DIV-CONTAINER-ID')).init();
 
 ## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
 
-{% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true guidelines="/komponenter/radioknap/#hjaelpetekst" %}
+### Radioknapgruppe med hjælpetekst {#{% include create-id.html heading="Radioknapgruppe med hjælpetekst" append="-kode" %}}
+
+{% include code/syntax.html component="radiobutton-group-helptext" link=true copybutton=true guidelines="/komponenter/radioknap/#radioknapgruppe-med-hjaelpetekst" %}
+
+### Hjælpetekst til enkelte radioknapper {#{% include create-id.html heading="Hjælpetekst til enkelte radioknapper" append="-kode" %}}
+
+{% include code/syntax.html component="radiobutton-helptext" link=true copybutton=true guidelines="/komponenter/radioknap/#hjaelpetekst-til-enkelte-radioknapper" %}
 
 ## Skjult indhold (Collapse) {#{% include create-id.html heading="Skjult indhold (Collapse)" append="-kode" %}}
 

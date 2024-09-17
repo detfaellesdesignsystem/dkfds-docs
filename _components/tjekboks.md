@@ -62,10 +62,33 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
+
+#### Tjekboksgruppe med hjælpetekst {#{% include create-id.html heading="Tjekboksgruppe med hjælpetekst" %}}
+
+{% include code/preview-box.html component="checkbox-group-helptext" title="Eksempel på tjekboksgruppe med hjælpetekst" code="/komponenter/tjekboks/#tjekboksgruppe-med-hjaelpetekst-kode" %}
+
+#### Hjælpetekst til enkelte tjekbokse {#{% include create-id.html heading="Hjælpetekst til enkelte tjekbokse" %}}
+
+{% include code/preview-box.html component="checkbox-helptext" title="Eksempel på tjekbokse med hjælpetekst" code="/komponenter/tjekboks/#hjaelpetekst-til-enkelte-tjekbokse-kode" %}
+
 {:#skjult-indhold-collapse}
 ### Skjult indhold (Collapse)
 
 {% include code/preview-box.html component="checkbox-collapse" title="Eksempel på tjekboks med skjult indhold" code="/komponenter/tjekboks/#skjult-indhold-collapse-kode" %}
+
+{:#collapse-retningslinjer}
+#### Anvendes til
+
+Anvendes til at vise et ekstra felt, der er relevant afhængigt af den valgte tjekboks. Fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.
+
+#### Anvendes ikke til
+
+Anvendes ikke til at vise ekstra beskrivende/oplysende tekst eller billeder.
+
+#### Vejledning
+
+Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje at fordele det ud over flere sider i stedet.
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -125,6 +148,16 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).in
     </tbody>
   </table>
 </div>
+
+## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-kode" %}}
+
+### Tjekboksgruppe med hjælpetekst {#{% include create-id.html heading="Tjekboksgruppe med hjælpetekst" append="-kode" %}}
+
+{% include code/syntax.html component="checkbox-group-helptext" link=true copybutton=true guidelines="/komponenter/tjekboks/#tjekboksgruppe-med-hjaelpetekst" %}
+
+### Hjælpetekst til enkelte tjekbokse {#{% include create-id.html heading="Hjælpetekst til enkelte tjekbokse" append="-kode" %}}
+
+{% include code/syntax.html component="checkbox-helptext" link=true copybutton=true guidelines="/komponenter/tjekboks/#hjaelpetekst-til-enkelte-tjekbokse" %}
 
 ## Skjult indhold (collapse) {#{% include create-id.html heading="Skjult indhold (collapse)" append="-kode" %}}
 

@@ -1714,6 +1714,7 @@
         <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
         
         <li class="anchorlink-code"><a href="#installation-kode">Installation</a></li>
+        <li class="anchorlink-code"><a href="#hjaelpetekst-kode">Hjælpetekst</a></li>
         <li class="anchorlink-code"><a href="#skjult-indhold-collapse-kode">Skjult indhold (collapse)</a></li>
         
     </ul>
@@ -1831,6 +1832,113 @@
 
 <h2 id="varianter">Varianter</h2>
 
+<h3 id="hjaelpetekst">Hjælpetekst</h3>
+
+<h4 id="tjekboksgruppe-med-hjaelpetekst">Tjekboksgruppe med hjælpetekst</h4>
+
+<div class="component-preview  component-preview-checkbox-group-helptext">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-group-helptext/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: checkbox-group-helptext</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tjekboksgruppe med hjælpetekst</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <fieldset aria-describedby="group-helptext-hint ">
+        <legend class="form-label">
+            Tjekbokse
+        </legend>
+        <span class="form-hint" id="group-helptext-hint">Dette er en hjælpetekst</span>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="group-helptext-option1" name="checkbox-group-helptext" class="form-checkbox" value="1" />
+            <label class="form-label" for="group-helptext-option1">Første tjekboks</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="group-helptext-option2" name="checkbox-group-helptext" class="form-checkbox" value="2" />
+            <label class="form-label" for="group-helptext-option2">Anden tjekboks</label>
+
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="group-helptext-option3" name="checkbox-group-helptext" class="form-checkbox" value="3" />
+            <label class="form-label" for="group-helptext-option3">Tredje tjekboks</label>
+
+        </div>
+
+    </fieldset>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/tjekboks/#tjekboksgruppe-med-hjaelpetekst-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: checkbox-group-helptext</span></a>
+    </div>
+    
+</div>
+
+<h4 id="hjaelpetekst-til-enkelte-tjekbokse">Hjælpetekst til enkelte tjekbokse</h4>
+
+<div class="component-preview  component-preview-checkbox-helptext">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-helptext/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: checkbox-helptext</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tjekbokse med hjælpetekst</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <fieldset>
+        <legend class="form-label">
+            Tjekbokse
+        </legend>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="checkbox-helptext-option1" name="checkbox-helptext" class="form-checkbox" value="1" aria-describedby="checkbox-helptext-option1-hint" />
+            <label class="form-label" for="checkbox-helptext-option1">Første tjekboks</label>
+
+            <span class="form-hint" id="checkbox-helptext-option1-hint">Dette er en
+                hjælpetekst</span>
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="checkbox-helptext-option2" name="checkbox-helptext" class="form-checkbox" value="2" aria-describedby="checkbox-helptext-option2-hint" />
+            <label class="form-label" for="checkbox-helptext-option2">Anden tjekboks</label>
+
+            <span class="form-hint" id="checkbox-helptext-option2-hint">Dette er en
+                hjælpetekst</span>
+        </div>
+
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="checkbox-helptext-option3" name="checkbox-helptext" class="form-checkbox" value="3" />
+            <label class="form-label" for="checkbox-helptext-option3">Tredje tjekboks</label>
+
+        </div>
+
+    </fieldset>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/tjekboks/#hjaelpetekst-til-enkelte-tjekbokse-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: checkbox-helptext</span></a>
+    </div>
+    
+</div>
+
 <h3 id="skjult-indhold-collapse">Skjult indhold (Collapse)</h3>
 
 <div class="component-preview  component-preview-checkbox-collapse">
@@ -1873,6 +1981,18 @@
     </div>
     
 </div>
+
+<h4 id="collapse-retningslinjer">Anvendes til</h4>
+
+<p>Anvendes til at vise et ekstra felt, der er relevant afhængigt af den valgte tjekboks. Fx kan du vise et e-mailfelt, når brugeren vælger at ville kontaktes pr. e-mail.</p>
+
+<h4>Anvendes ikke til</h4>
+
+<p>Anvendes ikke til at vise ekstra beskrivende/oplysende tekst eller billeder.</p>
+
+<h4>Vejledning</h4>
+
+<p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje at fordele det ud over flere sider i stedet.</p>
 
 <h2 id="se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</h2>
 
@@ -1981,6 +2101,133 @@
       </tr>
     </tbody>
   </table>
+</div>
+
+<h2 id="hjaelpetekst-kode">Hjælpetekst</h2>
+
+<h3 id="tjekboksgruppe-med-hjaelpetekst-kode">Tjekboksgruppe med hjælpetekst</h3>
+
+<div class="component-preview component-preview-code  component-code-checkbox-group-helptext">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-group-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: checkbox-group-helptext</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset aria-describedby=&quot;group-helptext-hint &quot;&gt;
+        &lt;legend class=&quot;form-label&quot;&gt;
+            Tjekbokse
+        &lt;/legend&gt;
+        &lt;span class=&quot;form-hint&quot; id=&quot;group-helptext-hint&quot;&gt;Dette er en hjælpetekst&lt;/span&gt;
+
+        &lt;div class=&quot;form-group-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;group-helptext-option1&quot; name=&quot;checkbox-group-helptext&quot;
+                class=&quot;form-checkbox&quot; value=&quot;1&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;group-helptext-option1&quot;&gt;Første tjekboks&lt;/label&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;group-helptext-option2&quot; name=&quot;checkbox-group-helptext&quot;
+                class=&quot;form-checkbox&quot; value=&quot;2&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;group-helptext-option2&quot;&gt;Anden tjekboks&lt;/label&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;group-helptext-option3&quot; name=&quot;checkbox-group-helptext&quot;
+                class=&quot;form-checkbox&quot; value=&quot;3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;group-helptext-option3&quot;&gt;Tredje tjekboks&lt;/label&gt;
+
+        &lt;/div&gt;
+
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/tjekboks/#tjekboksgruppe-med-hjaelpetekst" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<h3 id="hjaelpetekst-til-enkelte-tjekbokse-kode">Hjælpetekst til enkelte tjekbokse</h3>
+
+<div class="component-preview component-preview-code  component-code-checkbox-helptext">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/checkbox-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: checkbox-helptext</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend class=&quot;form-label&quot;&gt;
+            Tjekbokse
+        &lt;/legend&gt;
+
+        &lt;div class=&quot;form-group-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-helptext-option1&quot; name=&quot;checkbox-helptext&quot;
+                class=&quot;form-checkbox&quot; value=&quot;1&quot;
+                aria-describedby=&quot;checkbox-helptext-option1-hint&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;checkbox-helptext-option1&quot;&gt;Første tjekboks&lt;/label&gt;
+
+            &lt;span class=&quot;form-hint&quot; id=&quot;checkbox-helptext-option1-hint&quot;&gt;Dette er en
+                hjælpetekst&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-helptext-option2&quot; name=&quot;checkbox-helptext&quot;
+                class=&quot;form-checkbox&quot; value=&quot;2&quot;
+                aria-describedby=&quot;checkbox-helptext-option2-hint&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;checkbox-helptext-option2&quot;&gt;Anden tjekboks&lt;/label&gt;
+
+            &lt;span class=&quot;form-hint&quot; id=&quot;checkbox-helptext-option2-hint&quot;&gt;Dette er en
+                hjælpetekst&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group-checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-helptext-option3&quot; name=&quot;checkbox-helptext&quot;
+                class=&quot;form-checkbox&quot; value=&quot;3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;checkbox-helptext-option3&quot;&gt;Tredje tjekboks&lt;/label&gt;
+
+        &lt;/div&gt;
+
+    &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/tjekboks/#hjaelpetekst-til-enkelte-tjekbokse" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
 </div>
 
 <h2 id="skjult-indhold-collapse-kode">Skjult indhold (collapse)</h2>

@@ -7,8 +7,8 @@ Hent_kodepakken:
 
 Justering_af_tema_og_stylesheets:
 - h2: Før du tilpasser koden
-- h2: Juster stylesheets med Sass
-- h2: Juster stylesheets med npm scripts
+- h2: Justér stylesheets med Sass
+- h2: Justér stylesheets med npm scripts
 
 Hjaelpeklasser:
 - h2: Om hjælpeklasserne
@@ -551,6 +551,7 @@ TilbageTilToppen_Kode:
 
 Tjekboks_Kode:
 - h2: Installation
+- h2: Hjælpetekst
 - h2: Skjult indhold (collapse)
 
 Toastbesked_Kode:
