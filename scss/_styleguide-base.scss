@@ -94,14 +94,8 @@
 // Search
 // ------------------------------------
 
-a.search-link {
-    &.link-hover{
-        text-decoration: underline;
-    }
-}
-
 .page-result {
-    .h4 a.search-link {
+    .h4 {
         .page-category {
             text-transform: uppercase;
         }

@@ -203,12 +203,7 @@ Må ikke bruges til at fremhæve links eller som erstatning for {% include links
     <tbody>
       <tr>
         <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift i søgeresultat</a></span></th>
-        <td>
-          <ul class="nobullet-list mt-0 mb-0">
-            <li class="mt-0 mb-0">Ingen</li>
-            <li>Understreget (hover)</li>
-          </ul>
-        </td>
+        <td>Understreget</td>
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">#004D99</li>
