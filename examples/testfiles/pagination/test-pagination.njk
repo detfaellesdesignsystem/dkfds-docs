@@ -1,0 +1,194 @@
+{% from "components/pagination/pagination.njk" import pagination as pagination %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Paginering</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 8,
+                    "currentPage": 1
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 8,
+                    "currentPage": 4
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 8,
+                    "currentPage": 5
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 8,
+                    "currentPage": 8
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-905">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 7,
+                    "currentPage": 1
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 7,
+                    "currentPage": 4
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 7,
+                    "currentPage": 7
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-905">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 9999,
+                    "currentPage": 1200
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 9,
+                    "currentPage": 5
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-905">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 4,
+                    "currentPage": 2,
+                    "pageElement": "button"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 4,
+                    "currentPage": 2,
+                    "pageElement": "a"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 10,
+                    "currentPage": 5,
+                    "pageElement": "button"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 10,
+                    "currentPage": 5
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mt-905">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 15,
+                    "currentPage": 1,
+                    "pageElement": "button",
+                    "paginationType": "table-pagination",
+                    "ariaLabel": "Skift side i tabellen"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 15,
+                    "currentPage": 7,
+                    "pageElement": "button",
+                    "paginationType": "table-pagination",
+                    "ariaLabel": "Skift side i tabellen"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 15,
+                    "currentPage": 15,
+                    "pageElement": "button",
+                    "paginationType": "table-pagination",
+                    "ariaLabel": "Skift side i tabellen"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 12,
+                    "currentPage": 2,
+                    "pageElement": "button",
+                    "paginationType": "table-pagination",
+                    "ariaLabel": "Skift side i tabellen"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

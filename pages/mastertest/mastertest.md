@@ -167,7 +167,7 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Paginering
 
-{% include test/preview-test.html filename="test-pagination-basics" description="Paginering, basale funktioner" %}
+{% include test/preview-test.html filename="test-pagination" description="Paginering, basale funktioner" %}
 
 {:.h3}
 ## Radioknap (Radio button)

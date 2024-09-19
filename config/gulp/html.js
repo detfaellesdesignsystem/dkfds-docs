@@ -120,7 +120,7 @@ var testfiles = [
     "test-overflow-menus-1",
     "test-overflow-menus-2",
     "test-overflow-menu-placement",
-    "test-pagination-basics",
+    "test-pagination",
     "test-radiobuttons-error",
     "test-radiobuttons-1",
     "test-radiobuttons-2",
