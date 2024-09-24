@@ -22,7 +22,7 @@ var distJekyllComponentPreview = '_preview-components';
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/search/*.njk'];
+var buildFile = ['examples/components/table/*.njk'];
 
 var activeBuild = buildAll;
 

@@ -18,8 +18,8 @@
 ================================================== -->
 
 
-<title>Table-search | Det Fælles Designsystem</title>
-<meta property="og:title" content="Table-search | Det Fælles Designsystem">
+<title>Table-pagination | Det Fælles Designsystem</title>
+<meta property="og:title" content="Table-pagination | Det Fælles Designsystem">
 
 
 
@@ -66,7 +66,7 @@
 
 </head>
 
-<body class="page-table-search layout-example-contained">
+<body class="page-table-pagination layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -230,59 +230,88 @@
     </header>
     <main class="container page-container" id="main-content">
         
-        <h1 id="example-heading-table-search" class="sr-only">Table search</h1>
-        <form novalidate="" method="get" id="formSearchTable">
-    <div class="form-group search">
-        <label for="inputSearchTable" class="sr-only">Søg efter indhold</label>
-        <input class="form-input input-char-27" id="inputSearchTable" name="searchtable" type="search" />
-        <button class="button button-search" id="btnSearchTable" type="submit">
-            Søg
-        </button>
-    </div>
-</form>
-
-<div class="table--responsive-scroll mt-4">
-    <table class="table" id="searchTable" aria-live="polite">
+        <h1 id="example-heading-table-pagination" class="sr-only">Table pagination</h1>
+        <p class="rows-message" id="table-pagination-message">Viser
+    <strong class="displayed-rows">1-10</strong> af <strong class="total-rows">40</strong>
+    rækker</p>
+<div class="table--responsive-scroll">
+    <table class="table" id="table-pagination">
         <thead>
             <tr>
-                <th scope="col">Affaldstype</th>
-                <th scope="col">Farvekode</th>
+                <th scope="col">Farve</th>
+                <th scope="col">ID</th>
                 <th scope="col">Beskrivelse</th>
-                <th scope="col">Hvor ender det?</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Dagrenovation</td>
                 <td>Grøn</td>
-                <td>Madaffald, samt papir, pap eller plastik der ikke kan genanvendes, fordi
-                    der er madrester eller andet snask på.</td>
-                <td>Alt det affald, du smider ud i din primære skraldespand, som er
-                    dagrenovationen, bliver hentet og kørt på forbrændingen.</td>
+                <td>ASDF</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
             </tr>
             <tr>
-                <td>Bioaffald og kompost</td>
-                <td>Beige</td>
-                <td>Alt madaffald uden fødevareemballage.</td>
-                <td>Bioaffaldet kommes i bionedbrydelige poser, som bliver komposteret til
-                    muld.</td>
+                <td>Blå</td>
+                <td>GHJK</td>
+                <td>Cras pellentesque sapien eu ante consequat pellentesque.</td>
             </tr>
             <tr>
-                <td>Glas</td>
-                <td>Hvid</td>
-                <td>Alle typer glas og flasker.</td>
-                <td>De hele vinflasker rengøres og genbruges af vinhuse, mens glasskårene
-                    bliver smeltet om til nyt glas.</td>
-            </tr>
-            <tr>
-                <td>Elektronik</td>
-                <td>Orange</td>
-                <td>Genstande der har brugt strøm.</td>
-                <td>Det elektroniske affald bliver typisk kørt til et demonteringsanlæg, hvor
-                    det bliver skilt ad, så de forskellige dele kan genanvendes separat.</td>
+                <td>Rød</td>
+                <td>YUIO</td>
+                <td>Curabitur vel augue et felis aliquam dictum at a risus.</td>
             </tr>
         </tbody>
     </table>
+
+    <div class="table-pagination-options">
+
+        <div class="form-group">
+            <label class="form-label" for="pagination-pages">Vis rækker per side:</label>
+
+            <select class="form-select" name="pagination-pages" id="pagination-pages" required="">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="all">Alle</option>
+            </select>
+        </div>
+
+        <div role="group" class="table-pagination" aria-label="Skift side i tabellen">
+            <button class="button button-arrow button-first"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span class="sr-only">Første side</span></button>
+            <button class="button button-arrow button-previous" aria-label="Forrige side">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span class="pagination-nav-link">Forrige</span>
+            </button>
+            <span class="pagination-mobile">Side 7 af 15</span>
+            <ul class="pagination__items">
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 1">1</button>
+                </li>
+                <li class="pagination-item pagination-overflow">
+                    <span>...</span>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 6">6</button>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button current-page" aria-label="Side 7" aria-current="true">7</button>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 8">8</button>
+                </li>
+                <li class="pagination-item pagination-overflow">
+                    <span>...</span>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Sidste side, side 15">15</button>
+                </li>
+            </ul>
+            <button class="button button-arrow button-next" aria-label="Næste side">
+                <span class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+            </button>
+            <button class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span class="sr-only">Sidste side</span></button>
+        </div>
+
+    </div>
 </div>
 
         
@@ -291,6 +320,8 @@
 <script src="/assets/js/styleguide.js?v=10.0.2"></script>
 <script src="/assets/js/table.js"></script>
 <script src="/assets/js/table-pagination.js"></script>
+
+<script src="/assets/js/pagination.js"></script>
 
 
 

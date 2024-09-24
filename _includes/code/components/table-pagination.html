@@ -1,0 +1,91 @@
+<p class="rows-message" id="table-pagination-message">Viser
+    <strong class="displayed-rows">1-10</strong> af <strong class="total-rows">40</strong>
+    rækker</p>
+<div class="table--responsive-scroll">
+    <table class="table" id="table-pagination">
+        <thead>
+            <tr>
+                <th scope="col">Farve</th>
+                <th scope="col">ID</th>
+                <th scope="col">Beskrivelse</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Grøn</td>
+                <td>ASDF</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+            </tr>
+            <tr>
+                <td>Blå</td>
+                <td>GHJK</td>
+                <td>Cras pellentesque sapien eu ante consequat pellentesque.</td>
+            </tr>
+            <tr>
+                <td>Rød</td>
+                <td>YUIO</td>
+                <td>Curabitur vel augue et felis aliquam dictum at a risus.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="table-pagination-options">
+
+        <div class="form-group">
+            <label class="form-label" for="pagination-pages">Vis rækker per side:</label>
+
+            <select class="form-select" name="pagination-pages" id="pagination-pages"
+                required>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="all">Alle</option>
+            </select>
+        </div>
+
+        <div role="group" class="table-pagination" aria-label="Skift side i tabellen">
+            <button
+                class="button button-arrow button-first"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span
+                    class="sr-only">Første side</span></button>
+            <button class="button button-arrow button-previous" aria-label="Forrige side">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span
+                    class="pagination-nav-link">Forrige</span>
+            </button>
+            <span class="pagination-mobile">Side 7 af 15</span>
+            <ul class="pagination__items">
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label='Side 1'>1</button>
+                </li>
+                <li class="pagination-item pagination-overflow">
+                    <span>...</span>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label='Side 6'>6</button>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button current-page" aria-label='Side 7'
+                        aria-current="true">7</button>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label='Side 8'>8</button>
+                </li>
+                <li class="pagination-item pagination-overflow">
+                    <span>...</span>
+                </li>
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary"
+                        aria-label='Sidste side, side 15'>15</button>
+                </li>
+            </ul>
+            <button class="button button-arrow button-next" aria-label="Næste side">
+                <span
+                    class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+            </button>
+            <button
+                class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span
+                    class="sr-only">Sidste side</span></button>
+        </div>
+
+    </div>
+</div>
