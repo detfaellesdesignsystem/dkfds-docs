@@ -73,6 +73,10 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
 
+### Paginering af tabeller
+
+Se på siden {% include links/component-guideline-link.html linktext="Tabeller" %}, hvordan paginering anvendes i forbindelse med tabeller.
+
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {% include links/external-link.html linktext="USWDS om paginering" %}

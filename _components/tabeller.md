@@ -105,9 +105,13 @@ Hvis der kan udføres særlige funktioner for de valgte rækker, placeres funkti
 
 {% include code/preview-box.html component="table-selectable-functions" title="Eksempel på valgbare rækker i en tabel med funktionsknapper" code="/komponenter/tables/#valgbare-raekker-med-funktionsknapper-kode" %}
 
-### Paginering {#{% include create-id.html heading="Paginering" %}}
+### Tabel med paginering {#{% include create-id.html heading="Tabel med paginering" %}}
 
-{% include code/preview-box.html component="table-pagination" title="Eksempel på tabel med paginering" code="/komponenter/tables/#paginering-kode" %}
+Tilføj paginering til tabeller, hvor der potentielt kan være mange rækker.
+
+Giv brugeren mulighed for at se flere rækker per side. Hvis det er teknisk muligt mht. tabellens størrelse, så tilbyd brugeren at se alle rækker på én gang (Nielsen, 2013).
+
+{% include code/preview-box.html component="table-pagination" title="Eksempel på tabel med paginering" code="/komponenter/tables/#tabel-med-paginering-kode" %}
 
 {:#strukturerede-lister}
 ### Strukturerede lister
@@ -148,11 +152,12 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
-{:.nobullet-liat}
+{:.nobullet-list}
 - {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}
 - {% include links/external-link.html linktext="Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)" %}
 - {% include links/external-link.html linktext="Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)" %}
 - {% include links/external-link.html linktext="W3C (WCAG 2.1): Technique F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers" %}
+- {% include links/external-link.html linktext='Jakob Nielsen: Users Pagination Preferences and "View All" (2013)' %}
 
 <!--split-->
 
@@ -263,9 +268,11 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
 | fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>`-elementet |
 
-## Paginering {#{% include create-id.html heading="Paginering" append="-kode" %}}
+## Tabel med paginering {#{% include create-id.html heading="Tabel med paginering" append="-kode" %}}
 
-{% include code/syntax.html component="table-pagination" link=true copybutton=true guidelines="/komponenter/tables/#paginering" %}
+{% include code/syntax.html component="table-pagination" link=true copybutton=true guidelines="/komponenter/tables/#tabel-med-paginering" %}
+
+Opdatér beskeden i `rows-message` når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens `aria-live`, før brugeren selv trykker på en af pagineringsknapperne.
 
 ## Strukturerede lister {#{% include create-id.html heading="Strukturerede lister" append="-kode" %}}
 

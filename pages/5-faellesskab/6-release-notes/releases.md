@@ -110,9 +110,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Paginering" %}</h3>
 </div>
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `role="presentation"` fra elementerne med "...".
-- Nyt design på sidetallene.
-- Fjernet klassen `pagination__dropdown`, der ikke blev anvendt nogen steder.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-guideline-link.html linktext="paginering til tabeller" %}.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `role="presentation"` fra "..."-elementerne.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet en skærmlæserbesked til "..."-elementerne.
+- Opdateret designet.
+- Fjernet klassen `pagination__dropdown`, der ikke blev anvendt.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>

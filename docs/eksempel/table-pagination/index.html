@@ -231,9 +231,9 @@
     <main class="container page-container" id="main-content">
         
         <h1 id="example-heading-table-pagination" class="sr-only">Table pagination</h1>
-        <p class="rows-message" id="table-pagination-message">Viser
-    <strong class="displayed-rows">1-10</strong> af <strong class="total-rows">40</strong>
-    rækker</p>
+        <p aria-live="polite" aria-atomic="true" class="rows-message" id="table-pagination-message">
+    Viser <strong class="displayed-rows">1-10</strong> af
+    <strong class="total-rows">90</strong> rækker</p>
 <div class="table--responsive-scroll">
     <table class="table" id="table-pagination">
         <thead>
@@ -267,42 +267,47 @@
         <div class="form-group">
             <label class="form-label" for="pagination-pages">Vis rækker per side:</label>
 
-            <select class="form-select" name="pagination-pages" id="pagination-pages" required="">
-                <option value="5">5</option>
+            <select class="form-select" name="pagination-pages" id="pagination-pages">
                 <option value="10">10</option>
-                <option value="20">20</option>
                 <option value="30">30</option>
                 <option value="all">Alle</option>
             </select>
         </div>
 
         <div role="group" class="table-pagination" aria-label="Skift side i tabellen">
-            <button class="button button-arrow button-first"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span class="sr-only">Første side</span></button>
-            <button class="button button-arrow button-previous" aria-label="Forrige side">
+            <button class="button button-arrow button-first hidden"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span class="sr-only">Første side</span></button>
+            <button class="button button-arrow button-previous hidden" aria-label="Forrige side">
                 <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span class="pagination-nav-link">Forrige</span>
             </button>
-            <span class="pagination-mobile">Side 7 af 15</span>
+            <span class="pagination-mobile">Side 1 af 9</span>
             <ul class="pagination__items">
+
                 <li class="pagination-item pagination-number">
-                    <button class="button button-secondary" aria-label="Side 1">1</button>
+                    <button class="button current-page" aria-label="Side 1" aria-current="true">1</button>
                 </li>
+
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 2">2</button>
+                </li>
+
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 3">3</button>
+                </li>
+
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 4">4</button>
+                </li>
+
+                <li class="pagination-item pagination-number">
+                    <button class="button button-secondary" aria-label="Side 5">5</button>
+                </li>
+
                 <li class="pagination-item pagination-overflow">
-                    <span>...</span>
+                    <span class="sr-only">Prikker som indikerer skjulte
+                        sider</span><span>...</span>
                 </li>
                 <li class="pagination-item pagination-number">
-                    <button class="button button-secondary" aria-label="Side 6">6</button>
-                </li>
-                <li class="pagination-item pagination-number">
-                    <button class="button current-page" aria-label="Side 7" aria-current="true">7</button>
-                </li>
-                <li class="pagination-item pagination-number">
-                    <button class="button button-secondary" aria-label="Side 8">8</button>
-                </li>
-                <li class="pagination-item pagination-overflow">
-                    <span>...</span>
-                </li>
-                <li class="pagination-item pagination-number">
-                    <button class="button button-secondary" aria-label="Sidste side, side 15">15</button>
+                    <button class="button button-secondary" aria-label="Sidste side, side 9">9</button>
                 </li>
             </ul>
             <button class="button button-arrow button-next" aria-label="Næste side">
