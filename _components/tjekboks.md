@@ -90,6 +90,8 @@ Anvendes ikke til at vise ekstra beskrivende/oplysende tekst eller billeder.
 
 Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet, bør du overveje at fordele det ud over flere sider i stedet.
 
+{% include dos-donts-box.html component="checkbox-hidden-content-do-dont" %}
+
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
