@@ -123,6 +123,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet klassen `search-link`, der gav linkoverskrifter en alternativ styling. Klassen var tiltænkt overskrifter på søgeresultatsider, hvilke nu vil se ud som linkoverskrifter alle andre steder. Hvis man anvender klassen i sin løsning, kan man blot fjerne den, da den ikke længere har nogen effekt.
 - Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} som følge af Sass-version 1.77.7. Dette har ændret rækkefølgen af visse deklarationer i CSS-filerne, men burde ikke have nogen funktionel betydning.
 - Opdateret siderne for radioknapper og tjekbokse med flere eksempler og retningslinjer.
+- Rettet fejl i eksemplerne for dropdown.
 
 
 
