@@ -235,9 +235,16 @@
     Viser <strong class="displayed-rows">1-10</strong> af
     <strong class="total-rows">90</strong> rækker</p>
 <div class="table--responsive-scroll">
-    <table class="table" id="table-pagination">
+    <table class="table table--selectable" id="table-pagination">
         <thead>
             <tr>
+                <th>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-all" type="checkbox" class="form-checkbox" aria-controls=" table-pagination-check-1 table-pagination-check-2 table-pagination-check-3" />
+                        <label for="table-pagination-check-all"><span class="sr-only">Vælg
+                                alle rækker</span></label>
+                    </div>
+                </th>
                 <th scope="col">Farve</th>
                 <th scope="col">ID</th>
                 <th scope="col">Beskrivelse</th>
@@ -245,16 +252,37 @@
         </thead>
         <tbody>
             <tr>
+                <td>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-1" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Grøn" />
+                        <label for="table-pagination-check-1"><span class="sr-only">Vælg
+                                række</span></label>
+                    </div>
+                </td>
                 <td>Grøn</td>
                 <td>ASDF</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
             </tr>
             <tr>
+                <td>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-2" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Blå" />
+                        <label for="table-pagination-check-2"><span class="sr-only">Vælg
+                                række</span></label>
+                    </div>
+                </td>
                 <td>Blå</td>
                 <td>GHJK</td>
                 <td>Cras pellentesque sapien eu ante consequat pellentesque.</td>
             </tr>
             <tr>
+                <td>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-3" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Rød" />
+                        <label for="table-pagination-check-3"><span class="sr-only">Vælg
+                                række</span></label>
+                    </div>
+                </td>
                 <td>Rød</td>
                 <td>YUIO</td>
                 <td>Curabitur vel augue et felis aliquam dictum at a risus.</td>
@@ -316,6 +344,9 @@
             <button class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span class="sr-only">Sidste side</span></button>
         </div>
 
+    </div>
+    <div class="table-actions">
+        <p class="table-selected-number no-selected mb-0">Vælg en eller flere rækker</p>
     </div>
 </div>
 

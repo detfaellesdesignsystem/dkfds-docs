@@ -156,8 +156,7 @@ function selectableTable(){
 
         for(let t = 0; t < tables.length; t++){
             let table = tables[t];
-            if((table.nextElementSibling !== null) && table.nextElementSibling.classList.contains('table-actions')){
-
+            if((table.nextElementSibling !== null) && table.nextElementSibling.classList.contains('table-actions') && table.id !== 'table-pagination'){
                 table.addEventListener('fds.table.selectable.updated', function(e){
                     let number = e.detail.checkedNumber;
                     let numberElement = this.nextElementSibling.getElementsByClassName('table-selected-number')[0];

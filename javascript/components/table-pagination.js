@@ -1,3 +1,5 @@
+import * as DKFDS from "dkfds";
+
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('table-pagination') !== null) {
         let t = document.getElementById('table-pagination');
@@ -19,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 r = 0;
             }
             let row = document.createElement('tr');
-            row.innerHTML = rows[r];
+            let checkbox = `<td><div class="form-group-checkbox"><input id="table-pagination-check-${i+1}" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Grøn"><label for="table-pagination-check-${i+1}"><span class="sr-only">Vælg række</span></label></div></td>`;
+            row.innerHTML = checkbox + rows[r];
             t.querySelector('tbody').appendChild(row);
             r++;
         }
@@ -46,6 +49,28 @@ document.addEventListener("DOMContentLoaded", function() {
                 pagination.querySelector('.table-pagination').removeAttribute('hidden');
             }
             scrollPaginationIntoView(document.querySelector('#table-pagination + .table-pagination-options'));
+        });
+        new DKFDS.TableSelectableRows(t).init();
+
+        t.addEventListener('fds.table.selectable.updated', function(e){
+            let number = e.detail.checkedNumber;
+            let numberElement = this.nextElementSibling.nextElementSibling.getElementsByClassName('table-selected-number')[0];
+            if(number > 1){
+                numberElement.innerHTML = number+ " rækker valgt";
+                numberElement.classList.remove('no-selected');
+                numberElement.classList.remove('form-error-message');
+                numberElement.removeAttribute('role');
+            } else if (number === 1){
+                numberElement.innerHTML = number+ " række valgt";
+                numberElement.classList.remove('form-error-message');
+                numberElement.classList.remove('no-selected');
+                numberElement.removeAttribute('role');
+            } else{
+                numberElement.innerHTML = "Vælg en eller flere rækker for at udføre funktioner.";
+                numberElement.classList.add('no-selected');
+                numberElement.classList.remove('form-error-message');
+                numberElement.removeAttribute('role');
+            }
         });
     }
 });
