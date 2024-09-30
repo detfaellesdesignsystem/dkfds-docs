@@ -272,9 +272,11 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 
 {% include code/syntax.html component="table-pagination" link=true copybutton=true guidelines="/komponenter/tables/#tabel-med-paginering" %}
 
-Opdatér beskeden i `rows-message` når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens `aria-live`, før brugeren selv trykker på en af pagineringsknapperne.
+Der medfølger ikke JavaScript med denne variant. Man skal derfor selv implementere sideskift i tabellen og opdatere beskeden om antal valgte rækker, såfremt disse er valgbare.
 
-Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden, indtil knapperne er synlige igen.
+Beskeden i `rows-message` skal opdateres, når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens `aria-live`, før brugeren selv trykker på en af pagineringsknapperne.
+
+Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden programmatisk, så knapperne bliver synlige igen.
 
 ## Strukturerede lister {#{% include create-id.html heading="Strukturerede lister" append="-kode" %}}
 

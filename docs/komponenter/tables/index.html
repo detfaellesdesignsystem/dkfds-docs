@@ -3550,9 +3550,11 @@
     
 </div>
 
-<p>Opdatér beskeden i <code>rows-message</code> når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens <code>aria-live</code>, før brugeren selv trykker på en af pagineringsknapperne.</p>
+<p>Der medfølger ikke JavaScript med denne variant. Man skal derfor selv implementere sideskift i tabellen og opdatere beskeden om antal valgte rækker, såfremt disse er valgbare.</p>
 
-<p>Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden, indtil knapperne er synlige igen.</p>
+<p>Beskeden i <code>rows-message</code> skal opdateres, når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens <code>aria-live</code>, før brugeren selv trykker på en af pagineringsknapperne.</p>
+
+<p>Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden programmatisk, så knapperne bliver synlige igen.</p>
 
 <h2 id="strukturerede-lister-kode">Strukturerede lister</h2>
 

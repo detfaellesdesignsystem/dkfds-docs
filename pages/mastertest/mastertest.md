@@ -196,6 +196,11 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Tabeller
 
+{% include test/preview-test.html filename="test-simple-table" description="Simpel tabel" %}
+{% include test/preview-test.html filename="test-responsive-table" description="Responsiv tabel" %}
+{% include test/preview-test.html filename="test-sorting-table" description="Sortering i tabel" %}
+{% include test/preview-test.html filename="test-selectable-table" description="Tabel med valgbare rækker" %}
+{% include test/preview-test.html filename="test-selectable-table-with-buttons" description="Valgbare rækker med funktionsknapper" %}
 {% include test/preview-test.html filename="test-tables-1" description="Tabeller 1" %}
 {% include test/preview-test.html filename="test-tables-2" description="Tabeller 2" %}
 {% include test/preview-test.html filename="test-tables-3" description="Tabeller 3" %}
