@@ -274,6 +274,8 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 
 Opdatér beskeden i `rows-message` når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens `aria-live`, før brugeren selv trykker på en af pagineringsknapperne.
 
+Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden, indtil knapperne er synlige igen.
+
 ## Strukturerede lister {#{% include create-id.html heading="Strukturerede lister" append="-kode" %}}
 
 {% include code/syntax.html component="structured-list" link=true copybutton=true guidelines="/komponenter/tables/#strukturerede-lister" %}

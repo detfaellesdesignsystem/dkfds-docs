@@ -124,6 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} som følge af Sass-version 1.77.7. Dette har ændret rækkefølgen af visse deklarationer i CSS-filerne, men burde ikke have nogen funktionel betydning.
 - Opdateret siderne for radioknapper og tjekbokse med flere eksempler og retningslinjer.
 - Rettet fejl i eksemplerne for dropdown.
+- Rettet fejl, hvor tjekboksen i headeren for tabeller med valgbare rækker ikke fik den korrekte status i JavaScripten.
 
 
 
