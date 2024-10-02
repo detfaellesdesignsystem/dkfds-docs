@@ -138,6 +138,8 @@ var testfiles = [
     "test-sorting-table",
     "test-selectable-table",
     "test-selectable-table-with-buttons",
+    "test-table-many-columns",
+    "test-table-many-columns-with-buttons",
     "test-tables-1",
     "test-tables-2",
     "test-tables-3",

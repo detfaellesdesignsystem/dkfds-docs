@@ -130,6 +130,8 @@ document.addEventListener("DOMContentLoaded", function() {
             case 'Sortering i tabel':
             case 'Tabel med valgbare rækker':
             case 'Valgbare rækker med funktionsknapper':
+            case 'Tabel med mange kolonner':
+            case 'Tabel med mange kolonner og funktionsknapper':
 
                 DKFDS.init();
                 let borderless_toggle = document.querySelectorAll('.toggle-switch')[0];
