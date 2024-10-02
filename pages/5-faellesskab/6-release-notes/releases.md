@@ -120,11 +120,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet en stylingfejl, som opstod, når man anvendte inputfelter med {% include links/component-guideline-link.html linktext="prefix eller suffix" %}, som samtidigt var read-only eller disabled. Tilføj klassen `disabled` eller `readonly` til `form-input-wrapper` for at få den korrekte styling.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet klassen `search-link`, der gav linkoverskrifter en alternativ styling. Klassen var tiltænkt overskrifter på søgeresultatsider, hvilke nu vil se ud som linkoverskrifter alle andre steder. Hvis man anvender klassen i sin løsning, kan man blot fjerne den, da den ikke længere har nogen effekt.
-- Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} som følge af Sass-version 1.77.7. Dette har ændret rækkefølgen af visse deklarationer i CSS-filerne, men burde ikke have nogen funktionel betydning.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet klassen `search-link`, der satte en alternativ styling tiltænkt overskrifter på søgeresultatsider. Der er nu ikke længere forskel på {% include links/internal-link.html linktext="linkoverskifter" %}, uanset om de anvendes i søgeresultateter eller ej. Hvis man anvender klassen i sin løsning, kan man blot fjerne den, da den ikke længere har nogen effekt.
+- Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} som følge af Sass-version 1.77.7. Dette har ændret rækkefølgen af visse deklarationer i CSS-filerne, men har ikke nogen funktionel betydning.
 - Opdateret siderne for {% include links/component-guideline-link.html linktext="radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %} med flere eksempler og retningslinjer.
-- Rettet fejl i eksemplerne for dropdown.
-- Rettet fejl, hvor tjekboksen i headeren for tabeller med valgbare rækker ikke fik den korrekte status i JavaScripten.
+- Rettet eksemplerne for {% include links/component-guideline-link.html linktext="dropdown" %}, så de alle indeholder en "vælg"-mulighed.
+- Rettet fejl, hvor tjekboksen i headeren for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} ikke fik den korrekte status i JavaScripten.
 
 
 

@@ -122,7 +122,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "subheadings" -%}
         <a href="/styleguide/typografi/overskrifter/#subheading"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "links i overskrifter" -%}
+    {%- when "links i overskrifter",
+             "linkoverskifter" -%}
         <a href="/styleguide/typografi/overskrifter/#overskrift-som-link"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "lille brødtekst" -%}
