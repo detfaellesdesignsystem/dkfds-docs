@@ -105,7 +105,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-xx-2024</span></div>
+<div><span class="small-text mt-0 d-block">xx-10-2024</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Paginering" %}</h3>
@@ -125,6 +125,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret siderne for {% include links/component-guideline-link.html linktext="radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %} med flere eksempler og retningslinjer.
 - Rettet eksemplerne for {% include links/component-guideline-link.html linktext="dropdown" %}, så de alle indeholder en "vælg"-mulighed.
 - Rettet fejl, hvor tjekboksen i headeren for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} ikke fik den korrekte status i JavaScripten.
+- Ændret opførsel for {% include links/component-guideline-link.html linktext="overflowmenu" %}, så komponenten lukker, når fokus forsvinder fra menuen. Dette kan for eksempel ske, ved at brugeren navigerer videre med Tab-tasten.
 
 
 
