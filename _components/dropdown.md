@@ -9,7 +9,7 @@ category: Komponenter_category
 subcategory: Komponenter
 title: Dropdown
 lead: Dropdown lader brugeren vælge én blandt flere muligheder i en udfoldet liste.
-description: Dropdown kan bruges i tilfælde, hvor brugeren skal vælge mellem 7 og 15 værdier på en begrænset plads.
+description: Dropdown kan bruges i tilfælde, hvor brugeren skal vælge mellem 5 og 15 værdier på en begrænset plads.
 tags:
 tabs: "Retningslinjer, kode"
 ---
@@ -26,11 +26,11 @@ tabs: "Retningslinjer, kode"
 
 ### Anvendes til
 
-Anvend kun dropdown, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 7 til 15 værdier på en begrænset plads.
+Anvend kun dropdown, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 5 til 15 værdier på en begrænset plads.
 
 ### Anvendes ikke til
 
-Lister med færre værdier end 7.
+Lister med færre værdier end 5.
 
 Lister med flere værdier end 15. I så tilfælde bør du tilbyde brugeren et felt med auto-forslag, når brugeren begynder at indtaste.
 
