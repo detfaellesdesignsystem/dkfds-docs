@@ -208,6 +208,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 break;
             
+            case 'Manuelt initialiseret':
+                /* Init mobile navigation */
+                initTest();
+                /* Init mobile submenus */
+                const jsSelectorMenuDropdown = document.getElementsByClassName('js-menudropdown');
+                for(let c = 0; c < jsSelectorMenuDropdown.length; c++){
+                    new DKFDS.MenuDropdown(jsSelectorMenuDropdown[c]).init();
+                }
+                /* Init header submenus */
+                const jsSelectorDropdown = document.getElementsByClassName('js-dropdown');
+                for(let c = 0; c < jsSelectorDropdown.length; c++){
+                    new DKFDS.Dropdown(jsSelectorDropdown[c]).init();
+                }
+                break;
+            
             default:
                 DKFDS.init();
             }

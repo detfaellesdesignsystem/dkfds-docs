@@ -2264,11 +2264,21 @@
 
 <h3>JavaScript</h3>
 
-<p>Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
+<p>Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt.</p>
+
+<p>Mobilmenuen initieres med:</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Navigation().init();</code></pre></figure>
 
-<p>Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren.</p>
+<p>Hvis man anvender menupunkter med undermenuer, skal disse initieres med:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">new Dropdown(document.getElementById(&#39;OVERFLOW-BUTTON-ID&#39;)).init();</code></pre></figure>
+
+<p>Undermenuer i mobilmenuen initieres med:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">new MenuDropdown(document.getElementById(&#39;MENUOVERFLOW-BUTTON-ID&#39;)).init();</code></pre></figure>
+
+<p>Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren. Funktionen til at åbne og lukke sprogvælgeren initieres på samme måde som menupunkter med undermenuer.</p>
 
 <h2 id="referencer-kode">Referencer</h2>
 
