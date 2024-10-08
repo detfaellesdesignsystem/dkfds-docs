@@ -1,7 +1,7 @@
 <main class="container page-container" id="main-content">
     <div class="row">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Valgbare rækker med funktionsknapper</h1>
+            <h1 class="h2 mt-0 mb-9">Valgbare rækker med paginering og funktionsknapper</h1>
         </div>
     </div>
     <div class="row mb-905">
@@ -56,6 +56,9 @@
     <div class="row mb-905">
         <div class="col-12">
 
+            <p aria-live="polite" aria-atomic="true" class="rows-message">Viser
+                <strong class="displayed-rows">1-4</strong> af
+                <strong class="total-rows">92</strong> rækker</p>
             <div class="table--responsive-scroll">
                 <table class="table table--selectable">
                     <thead>
@@ -69,10 +72,16 @@
                                             rækker</span></label>
                                 </div>
                             </th>
-                            <th scope="col">First column</th>
-                            <th scope="col">Second column</th>
-                            <th scope="col">Third column</th>
-                            <th scope="col">Fourth column</th>
+                            <th scope="col" class="table-header-no-wrap">First column</th>
+                            <th scope="col" class="table-header-no-wrap">Second column</th>
+                            <th scope="col" class="table-header-no-wrap">Third column</th>
+                            <th scope="col" class="table-header-no-wrap">Fourth column</th>
+                            <th scope="col" class="table-header-no-wrap">Fifth column</th>
+                            <th scope="col" class="table-header-no-wrap">Sixth column</th>
+                            <th scope="col" class="table-header-no-wrap">Seventh column</th>
+                            <th scope="col" class="table-header-no-wrap">Eighth column</th>
+                            <th scope="col" class="table-header-no-wrap">Ninth column</th>
+                            <th scope="col" class="table-header-no-wrap">Tenth column</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -89,6 +98,12 @@
                             <td>First row, second cell</td>
                             <td>First row, third cell</td>
                             <td>First row, fourth cell</td>
+                            <td>First row, fifth cell</td>
+                            <td>First row, sixth cell</td>
+                            <td>First row, seventh cell</td>
+                            <td>First row, eighth cell</td>
+                            <td>First row, ninth cell</td>
+                            <td>First row, tenth cell</td>
                         </tr>
                         <tr>
                             <td>
@@ -103,6 +118,12 @@
                             <td>Second row, second cell</td>
                             <td>Second row, third cell</td>
                             <td>Second row, fourth cell</td>
+                            <td>Second row, fifth cell</td>
+                            <td>Second row, sixth cell</td>
+                            <td>Second row, seventh cell</td>
+                            <td>Second row, eighth cell</td>
+                            <td>Second row, ninth cell</td>
+                            <td>Second row, tenth cell</td>
                         </tr>
                         <tr>
                             <td>
@@ -117,6 +138,12 @@
                             <td>Third row, second cell</td>
                             <td>Third row, third cell</td>
                             <td>Third row, fourth cell</td>
+                            <td>Third row, fifth cell</td>
+                            <td>Third row, sixth cell</td>
+                            <td>Third row, seventh cell</td>
+                            <td>Third row, eighth cell</td>
+                            <td>Third row, ninth cell</td>
+                            <td>Third row, tenth cell</td>
                         </tr>
                         <tr>
                             <td>
@@ -131,11 +158,86 @@
                             <td>Fourth row, second cell</td>
                             <td>Fourth row, third cell</td>
                             <td>Fourth row, fourth cell</td>
+                            <td>Fourth row, fifth cell</td>
+                            <td>Fourth row, sixth cell</td>
+                            <td>Fourth row, seventh cell</td>
+                            <td>Fourth row, eighth cell</td>
+                            <td>Fourth row, ninth cell</td>
+                            <td>Fourth row, tenth cell</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
+            <div class="table-pagination-options">
+
+                <div class="form-group">
+                    <label class="form-label" for="pagination-pages">Vis rækker per
+                        side:</label>
+
+                    <select class="form-select" name="pagination-pages" id="pagination-pages">
+                        <option value="10">10</option>
+                        <option value="30">30</option>
+                        <option value="all">Alle</option>
+                    </select>
+                </div>
+
+                <div role="group" class="table-pagination" aria-label="Skift side i tabellen">
+                    <button
+                        class="button button-arrow button-first hidden"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span
+                            class="sr-only">Første side</span></button>
+                    <button class="button button-arrow button-previous hidden"
+                        aria-label="Forrige side">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span
+                            class="pagination-nav-link">Forrige</span>
+                    </button>
+                    <span class="pagination-mobile">Side 1 af 23</span>
+                    <ul class="pagination__items">
+
+                        <li class="pagination-item pagination-number">
+                            <button class="button current-page" aria-label='Side 1'
+                                aria-current="true">1</button>
+                        </li>
+
+                        <li class="pagination-item pagination-number">
+                            <button class="button button-secondary"
+                                aria-label='Side 2'>2</button>
+                        </li>
+
+                        <li class="pagination-item pagination-number">
+                            <button class="button button-secondary"
+                                aria-label='Side 3'>3</button>
+                        </li>
+
+                        <li class="pagination-item pagination-number">
+                            <button class="button button-secondary"
+                                aria-label='Side 4'>4</button>
+                        </li>
+
+                        <li class="pagination-item pagination-number">
+                            <button class="button button-secondary"
+                                aria-label='Side 5'>5</button>
+                        </li>
+
+                        <li class="pagination-item pagination-overflow">
+                            <span class="sr-only">Prikker som indikerer skjulte
+                                sider</span><span>...</span>
+                        </li>
+                        <li class="pagination-item pagination-number">
+                            <button class="button button-secondary"
+                                aria-label='Sidste side, side 23'>23</button>
+                        </li>
+                    </ul>
+                    <button class="button button-arrow button-next" aria-label="Næste side">
+                        <span
+                            class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                    </button>
+                    <button
+                        class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span
+                            class="sr-only">Sidste side</span></button>
+                </div>
+
+            </div>
             <div class="table-actions">
                 <p class="table-selected-number no-selected">Vælg en eller flere rækker for at
                     udføre funktioner</p>

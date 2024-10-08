@@ -132,6 +132,8 @@ document.addEventListener("DOMContentLoaded", function() {
             case 'Valgbare rækker med funktionsknapper':
             case 'Tabel med mange kolonner':
             case 'Tabel med mange kolonner og funktionsknapper':
+            case 'Valgbare rækker med paginering':
+            case 'Valgbare rækker med paginering og funktionsknapper':
 
                 DKFDS.init();
                 let borderless_toggle = document.querySelectorAll('.toggle-switch')[0];

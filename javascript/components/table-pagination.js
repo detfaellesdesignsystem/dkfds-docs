@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let table_rows = t.querySelectorAll('tbody tr');
         let defaultRows = 10;
         let defaultPage = 0;
-        let pagination = document.querySelector('#table-pagination + .table-pagination-options');
+        let pagination = document.querySelector('.table-pagination-options');
         
         setVisibleRows(table_rows, defaultRows, defaultPage);
         createPaginationButtons(table_rows, defaultRows, pagination.querySelector('.table-pagination'));
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 updateVisiblePaginationButtons(pagination.querySelector('.table-pagination'), defaultPage);
                 pagination.querySelector('.table-pagination').removeAttribute('hidden');
             }
-            scrollPaginationIntoView(document.querySelector('#table-pagination + .table-pagination-options'));
+            scrollPaginationIntoView(pagination);
         });
         new DKFDS.TableSelectableRows(t).init();
 
