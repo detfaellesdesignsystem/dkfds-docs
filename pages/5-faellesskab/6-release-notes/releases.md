@@ -113,8 +113,13 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-guideline-link.html linktext="paginering til tabeller" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `role="presentation"` fra "..."-elementerne.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet en skærmlæserbesked til "..."-elementerne.
-- Opdateret designet.
+- Visuelt løft af pagineringsknapperne.
 - Fjernet klassen `pagination__dropdown`, der ikke blev anvendt.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tabeller" %}</h3>
+</div>
+- Tilføjet padding i {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}, så de har samme padding som de øvrige tabeltyper.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
