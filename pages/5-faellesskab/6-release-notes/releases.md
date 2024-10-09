@@ -120,8 +120,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tabeller" %}</h3>
 </div>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Flyttet knapperne i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker og funktionsknapper" %} ned under tabellen i HTML'en, så de ikke scroller horisontalt, hvis tabellen har mange kolonner.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex` og synligt fokus til tabeller, så de kan navigeres til og scrolles med tastaturet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex` og synligt fokus til tabeller, så det er muligt at navigere til og scrolle brede tabeller med tastaturet.
 - Tilføjet padding i {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}, så de har samme padding som de øvrige tabeltyper.
+- Tilføjet kant til bunden af tabelrækkerne på store skærme, når varianterne {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="tabeller med zebralinjer" %} kombineres.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
