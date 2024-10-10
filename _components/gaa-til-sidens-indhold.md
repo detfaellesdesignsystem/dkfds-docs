@@ -14,6 +14,8 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
+<div id="kode" hidden></div>
+
 {% include code/preview-image.html component="skip-link-eksempel" title="Eksempel på skip-link" image="skiplink" classes="intro-example" %}
 
 <!--split-->

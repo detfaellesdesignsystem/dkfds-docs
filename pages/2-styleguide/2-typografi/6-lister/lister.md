@@ -16,6 +16,8 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
+<div id="kode" hidden></div>
+
 {% include code/preview-box.html component="lists" title="Eksempel på lister" classes="intro-example" %}
 
 <!--split-->
