@@ -139,15 +139,29 @@ document.addEventListener("DOMContentLoaded", function() {
                 let borderless_toggle = document.querySelectorAll('.toggle-switch')[0];
                 let zebra_toggle = document.querySelectorAll('.toggle-switch')[1];
                 let table = document.querySelector('.table');
+                let pagination = document.querySelector('.table-pagination-options');
+                let actions = document.querySelector('.table-actions');
                 let radios = document.querySelectorAll('input[type="radio"]');
 
                 borderless_toggle.addEventListener("click", function () {
                     if (this.getAttribute("aria-checked") === "true") {
                         this.setAttribute("aria-checked", "false");
                         table.classList.remove('table--borderless');
+                        if (pagination) {
+                            pagination.classList.remove('table--borderless');
+                        }
+                        if (actions) {
+                            actions.classList.remove('table--borderless');
+                        }
                     } else {
                         this.setAttribute("aria-checked", "true");
                         table.classList.add('table--borderless');
+                        if (pagination) {
+                            pagination.classList.add('table--borderless');
+                        }
+                        if (actions) {
+                            actions.classList.add('table--borderless');
+                        }
                     }
                 }, false);
 
