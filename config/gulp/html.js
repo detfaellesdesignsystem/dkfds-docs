@@ -214,7 +214,9 @@ function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop().replace('.html', '');
     var title = fileName[0].toUpperCase() + fileName.slice(1);
     if (titles[fileName]) {
-        title = titles[fileName];
+        if (titles[fileName] !== fileName) {
+            title = titles[fileName];
+        }
     }
     var header = ``;
     if((path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('toastbesked')) && !path.includes('test')) {
