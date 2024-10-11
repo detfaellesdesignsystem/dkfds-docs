@@ -4,21 +4,21 @@
     <meta name="robots" content="noindex">
     {% include head.html %}
   </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+  <body class="page-{{ page.filename | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
     {% if page.title contains "Toastbesked" %}
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
       <div class="toast-container"></div>
-      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+      <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
       {{ content }}
     </main>
     {% else %}
     
-    {% if page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher"  %}
+    {% if page.filename contains "footer" or page.filename contains "Footer" or page.filename contains "language-switcher" or page.filename contains "Language-switcher"  %}
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     <main class="container page-container" id="main-content">
-      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+      <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
       {% if page.url contains "language-switcher" %}
       <p>Se eksempel i bunden af siden.</p>
       {% endif %}
@@ -27,12 +27,12 @@
 
     {{ content }}
     {% endif %}
-    {% unless page.title contains "footer" or page.title contains "Footer" or page.title contains "language-switcher" or page.title contains "Language-switcher" or page.title contains "Toastbesked" %}
-    {% unless page.title contains "header" or page.title contains "Header"%}
+    {% unless page.filename contains "footer" or page.filename contains "Footer" or page.filename contains "language-switcher" or page.filename contains "Language-switcher" or page.filename contains "toastbesked" or page.filename contains "Toastbesked" %}
+    {% unless page.filename contains "header" or page.filename contains "Header"%}
     <header><a href="#main-content" class="skipnav">Gå til sidens indhold</a></header>
     {% endunless %}
     <main class="container page-container" id="main-content">
-      <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+      <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
     </main>
     {% endunless %}
     {% include scripts.html %}

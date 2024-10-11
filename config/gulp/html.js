@@ -19,6 +19,8 @@ var flatten = require('gulp-flatten');
 var distComponentCode = '_includes/code/components';
 var distJekyllComponentPreview = '_preview-components';
 
+var titles = require('./example-titles').default;
+
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
@@ -210,12 +212,17 @@ function isThisAComponentExample(file){
 
 function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop().replace('.html', '');
+    var title = fileName[0].toUpperCase() + fileName.slice(1);
+    if (titles[fileName]) {
+        title = titles[fileName];
+    }
     var header = ``;
     if((path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('toastbesked')) && !path.includes('test')) {
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example 
-title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+filename: ` + fileName + `
+title: ` + title + `
 ---
 `
     } else if(path.includes('test')) {
@@ -231,7 +238,8 @@ title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: test-example 
-title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+filename: ` + fileName + `
+title: ` + title + `
 previoustest: ` + previous + `
 nexttest: ` + next + `
 ---
@@ -240,7 +248,8 @@ nexttest: ` + next + `
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example-contained 
-title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+filename: ` + fileName + `
+title: ` + title + `
 ---
 `
     }

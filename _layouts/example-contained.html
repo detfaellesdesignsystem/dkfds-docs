@@ -6,7 +6,7 @@
     {% include head.html %}
 </head>
 
-<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+<body class="page-{{ page.filename | slugify }} layout-{{ page.layout }}">
     {% include code/components/base-svg.html %}
     <header>
         <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
@@ -16,9 +16,9 @@
         <div class="toast-container">
             {{ content }}
         </div>
-        <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
         {% else %}
-        <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
         {{ content }}
         {% endif %}
     </main>
