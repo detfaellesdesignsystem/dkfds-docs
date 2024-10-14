@@ -124,6 +124,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Tilføjet padding i {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}, så de har samme padding som de øvrige tabeltyper.
 - Tilføjet kant til bunden af tabelrækkerne på store skærme, når varianterne {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="tabeller med zebralinjer" %} kombineres.
 - Klassen `table--borderless` kan nu også anvendes sammen med klassen `table-actions` (og den nye tabelpaginering), hvis man anvender {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} sammen med funktionsknapper.
+- Rettet fejl, hvor tjekboksen i headeren for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} ikke fik den korrekte status i JavaScripten.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
@@ -133,7 +134,6 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} som følge af Sass-version 1.77.7. Dette har ændret rækkefølgen af visse deklarationer i CSS-filerne, men har ikke nogen funktionel betydning.
 - Opdateret siderne for {% include links/component-guideline-link.html linktext="radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %} med flere eksempler og retningslinjer.
 - Rettet eksemplerne for {% include links/component-guideline-link.html linktext="dropdown" %}, så de alle indeholder en "vælg"-mulighed.
-- Rettet fejl, hvor tjekboksen i headeren for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} ikke fik den korrekte status i JavaScripten.
 - Ændret opførsel for {% include links/component-guideline-link.html linktext="overflowmenu" %}, så komponenten lukker, når fokus forsvinder fra menuen. Dette kan for eksempel ske, ved at brugeren navigerer videre med Tab-tasten.
 
 

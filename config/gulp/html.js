@@ -241,7 +241,7 @@ title: ` + title + `
 permalink: /eksempel/` + fileName + `/
 layout: test-example 
 filename: ` + fileName + `
-title: ` + title + `
+title: Testfil | ` + title.toLowerCase() + `
 previoustest: ` + previous + `
 nexttest: ` + next + `
 ---
