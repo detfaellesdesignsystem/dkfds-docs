@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         t.addEventListener('fds.table.selectable.updated', function(e){
             let number = e.detail.checkedNumber;
-            let numberElement = this.nextElementSibling.nextElementSibling.getElementsByClassName('table-selected-number')[0];
+            let paginationElement = this.parentNode.nextElementSibling;
+            let tableActions = paginationElement.nextElementSibling;
+            let numberElement = tableActions.getElementsByClassName('table-selected-number')[0];
             if(number > 1){
                 numberElement.innerHTML = number+ " rækker valgt";
                 numberElement.classList.remove('no-selected');
@@ -66,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 numberElement.classList.remove('no-selected');
                 numberElement.removeAttribute('role');
             } else{
-                numberElement.innerHTML = "Vælg en eller flere rækker for at udføre funktioner.";
+                numberElement.innerHTML = "Vælg en eller flere rækker";
                 numberElement.classList.add('no-selected');
                 numberElement.classList.remove('form-error-message');
                 numberElement.removeAttribute('role');

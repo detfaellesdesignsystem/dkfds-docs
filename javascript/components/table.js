@@ -156,10 +156,11 @@ function selectableTable(){
 
         for(let t = 0; t < tables.length; t++){
             let table = tables[t];
-            if((table.nextElementSibling !== null) && table.nextElementSibling.classList.contains('table-actions') && table.id !== 'table-pagination'){
+            if((table.parentNode.nextElementSibling !== null) && table.parentNode.nextElementSibling.classList.contains('table-actions') && table.id !== 'table-pagination'){
                 table.addEventListener('fds.table.selectable.updated', function(e){
                     let number = e.detail.checkedNumber;
-                    let numberElement = this.nextElementSibling.getElementsByClassName('table-selected-number')[0];
+                    let tableActions = this.parentNode.nextElementSibling;
+                    let numberElement = tableActions.getElementsByClassName('table-selected-number')[0];
                     if(number > 1){
                         numberElement.innerHTML = number+ " rækker valgt";
                         numberElement.classList.remove('no-selected');
@@ -178,7 +179,7 @@ function selectableTable(){
                     }
                 });
 
-                let buttons = table.nextElementSibling.getElementsByTagName('button');
+                let buttons = table.parentNode.nextElementSibling.getElementsByTagName('button');
                 for(let b = 0; b < buttons.length; b++){
                     let button = buttons[b];
                     button.addEventListener('click', function(e){
