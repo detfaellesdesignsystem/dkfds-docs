@@ -12,7 +12,7 @@
         <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     </header>
     <main class="container page-container" id="main-content">
-        {% if page.title contains "Toastbesked" %}
+        {% if page.title contains "Toastbesked" or page.title contains "toastbesked" %}
         <div class="toast-container">
             {{ content }}
         </div>

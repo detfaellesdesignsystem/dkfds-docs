@@ -17,7 +17,7 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="pagination" title="Eksempel på brødkrumme" classes="intro-example" %}
+{% include code/preview-box.html component="pagination" title="Eksempel på paginering" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Paginering" code="Paginering_Kode" classes="hide-code" %}
 
