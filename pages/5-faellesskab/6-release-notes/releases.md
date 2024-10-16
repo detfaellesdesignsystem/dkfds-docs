@@ -121,6 +121,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 </div>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Flyttet knapperne i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker og funktionsknapper" %} ned under tabellen i HTML'en, så de ikke scroller horisontalt, hvis tabellen har mange kolonner.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex` og synligt fokus til tabeller, så det er muligt at navigere til og scrolle brede tabeller med tastaturet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret beskeden "Vælg en eller flere rækker" til "Ingen rækker valgt" og tilføjet den til alle tabeller med valgbare rækker.
 - Tilføjet padding i {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}, så de har samme padding som de øvrige tabeltyper.
 - Tilføjet kant til bunden af tabelrækkerne på store skærme, når varianterne {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="tabeller med zebralinjer" %} kombineres.
 - Klassen `table--borderless` kan nu også anvendes sammen med klassen `table-actions` (og den nye tabelpaginering), hvis man anvender {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} sammen med funktionsknapper.

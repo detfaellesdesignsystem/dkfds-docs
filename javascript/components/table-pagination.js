@@ -60,18 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
             if(number > 1){
                 numberElement.innerHTML = number+ " rækker valgt";
                 numberElement.classList.remove('no-selected');
-                numberElement.classList.remove('form-error-message');
-                numberElement.removeAttribute('role');
             } else if (number === 1){
                 numberElement.innerHTML = number+ " række valgt";
-                numberElement.classList.remove('form-error-message');
                 numberElement.classList.remove('no-selected');
-                numberElement.removeAttribute('role');
             } else{
-                numberElement.innerHTML = "Vælg en eller flere rækker";
+                numberElement.innerHTML = "Ingen rækker valgt";
                 numberElement.classList.add('no-selected');
-                numberElement.classList.remove('form-error-message');
-                numberElement.removeAttribute('role');
             }
         });
     }

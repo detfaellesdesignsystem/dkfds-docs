@@ -552,6 +552,9 @@
                     </table>
                 </div>
 
+                <div class="table-actions">
+                    <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
+                </div>
                 <button class="button button-primary d-print-none mt-7" type='submit'>
                     Næste
                 </button>
@@ -639,6 +642,27 @@
     </div>
 
 </div>
+
+<script>
+    document.getElementById('selectable-table').addEventListener(
+        'fds.table.selectable.updated',
+        function(e) {
+            let number = e.detail.checkedNumber;
+            let tableActions = this.parentNode.nextElementSibling;
+            let numberElement = tableActions.getElementsByClassName(
+                'table-selected-number')[0];
+            if (number > 1) {
+                numberElement.innerHTML = number + " rækker valgt";
+                numberElement.classList.remove('no-selected');
+            } else if (number === 1) {
+                numberElement.innerHTML = number + " række valgt";
+                numberElement.classList.remove('no-selected');
+            } else {
+                numberElement.innerHTML = "Ingen rækker valgt";
+                numberElement.classList.add('no-selected');
+            }
+        });
+</script>
 
 <footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
   <div class="demo-footer-content d-flex align-items-center">

@@ -172,7 +172,7 @@ function selectableTable(){
                         numberElement.classList.remove('no-selected');
                         numberElement.removeAttribute('role');
                     } else{
-                        numberElement.innerHTML = "Vælg en eller flere rækker for at udføre funktioner.";
+                        numberElement.innerHTML = "Ingen rækker valgt";
                         numberElement.classList.add('no-selected');
                         numberElement.classList.remove('form-error-message');
                         numberElement.removeAttribute('role');
@@ -185,6 +185,7 @@ function selectableTable(){
                     button.addEventListener('click', function(e){
                         let message = this.parentNode.getElementsByClassName('table-selected-number')[0];
                         if(message.classList.contains('no-selected')){
+                            message.innerHTML = "Vælg en eller flere rækker for at udføre funktioner";
                             message.classList.add('form-error-message');
                             message.classList.remove('no-selected');
                             message.setAttribute('role', 'alert');

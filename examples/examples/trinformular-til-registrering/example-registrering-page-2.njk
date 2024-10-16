@@ -114,3 +114,21 @@
         })
     }}
 </div>
+
+<script>
+    document.getElementById('selectable-table').addEventListener('fds.table.selectable.updated', function(e){
+        let number = e.detail.checkedNumber;
+        let tableActions = this.parentNode.nextElementSibling;
+        let numberElement = tableActions.getElementsByClassName('table-selected-number')[0];
+        if(number > 1){
+            numberElement.innerHTML = number+ " rækker valgt";
+            numberElement.classList.remove('no-selected');
+        } else if (number === 1){
+            numberElement.innerHTML = number+ " række valgt";
+            numberElement.classList.remove('no-selected');
+        } else{
+            numberElement.innerHTML = "Ingen rækker valgt";
+            numberElement.classList.add('no-selected');
+        }
+    });
+</script>

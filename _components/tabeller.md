@@ -111,6 +111,8 @@ Tilføj paginering til tabeller, hvor der potentielt kan være mange rækker.
 
 Giv brugeren mulighed for at se flere rækker per side. Hvis det er teknisk muligt mht. tabellens størrelse, så tilbyd brugeren at se alle rækker på én gang (Nielsen, 2013).
 
+Hvis tabellen indeholder både paginering og sortering, skal klik på en sorteringskolonne sortere alle rækker på tværs af siderne i tabellen og aldrig kun rækkerne på den aktuelle side. Ved sortering og søgning i tabellen skal brugeren tages tilbage til side 1.
+
 {% include code/preview-box.html component="table-pagination" title="Eksempel på tabel med paginering" code="/komponenter/tables/#tabel-med-paginering-kode" %}
 
 {:#strukturerede-lister}
@@ -259,7 +261,7 @@ Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gør
 new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
 {% endhighlight %}
 
-Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.
+Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Tabeleksemplerne på denne side er gjort funktionelle for bedre demonstrationen af valgbare rækker.
 
 #### Events
 

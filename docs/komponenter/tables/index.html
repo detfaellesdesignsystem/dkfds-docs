@@ -2399,6 +2399,10 @@
         </tbody>
     </table>
 </div>
+
+<div class="table-actions">
+    <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
+</div>
         
     </div>
     
@@ -2505,8 +2509,7 @@
 </div>
 
 <div class="table-actions">
-    <p class="table-selected-number no-selected">Vælg en eller flere rækker for at udføre
-        funktioner</p>
+    <p class="table-selected-number no-selected">Ingen rækker valgt</p>
     <button class="button button-primary">
         <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
         Download
@@ -2532,6 +2535,8 @@
 <p>Tilføj paginering til tabeller, hvor der potentielt kan være mange rækker.</p>
 
 <p>Giv brugeren mulighed for at se flere rækker per side. Hvis det er teknisk muligt mht. tabellens størrelse, så tilbyd brugeren at se alle rækker på én gang (Nielsen, 2013).</p>
+
+<p>Hvis tabellen indeholder både paginering og sortering, skal klik på en sorteringskolonne sortere alle rækker på tværs af siderne i tabellen og aldrig kun rækkerne på den aktuelle side. Ved sortering og søgning i tabellen skal brugeren tages tilbage til side 1.</p>
 
 <div class="component-preview  component-preview-table-pagination">
     
@@ -2662,7 +2667,7 @@
 
 </div>
 <div class="table-actions">
-    <p class="table-selected-number no-selected mb-0">Vælg en eller flere rækker</p>
+    <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
 </div>
         
     </div>
@@ -3216,6 +3221,10 @@
             &lt;/tr&gt;
         &lt;/tbody&gt;
     &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;table-actions&quot;&gt;
+    &lt;p class=&quot;table-selected-number no-selected mb-0&quot;&gt;Ingen rækker valgt&lt;/p&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -3337,8 +3346,7 @@
 &lt;/div&gt;
 
 &lt;div class=&quot;table-actions&quot;&gt;
-    &lt;p class=&quot;table-selected-number no-selected&quot;&gt;Vælg en eller flere rækker for at udføre
-        funktioner&lt;/p&gt;
+    &lt;p class=&quot;table-selected-number no-selected&quot;&gt;Ingen rækker valgt&lt;/p&gt;
     &lt;button class=&quot;button button-primary&quot;&gt;
         &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#file-download&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
         Download
@@ -3365,7 +3373,7 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.TableSelectableRows(document.getElementById(&#39;TABLE-ID&#39;)).init();</code></pre></figure>
 
-<p>Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.</p>
+<p>Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Tabeleksemplerne på denne side er gjort funktionelle for bedre demonstrationen af valgbare rækker.</p>
 
 <h4>Events</h4>
 
@@ -3536,7 +3544,7 @@
 
 &lt;/div&gt;
 &lt;div class=&quot;table-actions&quot;&gt;
-    &lt;p class=&quot;table-selected-number no-selected mb-0&quot;&gt;Vælg en eller flere rækker&lt;/p&gt;
+    &lt;p class=&quot;table-selected-number no-selected mb-0&quot;&gt;Ingen rækker valgt&lt;/p&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
