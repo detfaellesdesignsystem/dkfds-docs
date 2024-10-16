@@ -16,9 +16,9 @@
         <div class="toast-container">
             {{ content }}
         </div>
-        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign pageTitle = page.title | downcase %}{% if pageTitle == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
         {% else %}
-        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign pageTitle = page.title | downcase %}{% if pageTitle == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
         {{ content }}
         {% endif %}
     </main>
