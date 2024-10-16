@@ -105,7 +105,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-10-2024</span></div>
+<div><span class="small-text mt-0 d-block">17-10-2024</span></div>
+
+Se vores {% include links/external-link.html linktext="beslutningslog for version 10.1.0" %} for yderligere detaljer om releasen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Paginering" %}</h3>
