@@ -18,7 +18,7 @@ Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsysteme
 
 ## Næste samarbejdsforum {#{% include create-id.html heading="Næste samarbejdsforum" %}}
 
-Datoen for næste samarbejdsforum er endnu ikke planlagt.
+Datoen for næste samarbejdsforum er endnu ikke fastlagt.
 
 <a href="/faellesskab/nyhedsmail/">Tilmeld nyhedsbrevet</a> for at blive informeret om samarbejdsforum m.m. fremover.
 
