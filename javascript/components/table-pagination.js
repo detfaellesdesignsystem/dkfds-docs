@@ -117,8 +117,7 @@ function setVisibleRows(allTableRows, rowsPerPage, page) {
     }
     let first_row_displayed = ((page+1)*rowsPerPage) - (rowsPerPage-1);
     let last_row_displayed = first_row_displayed + rowsDisplayed - 1;
-    document.getElementById('table-pagination-message').querySelector('.displayed-rows').textContent = `${first_row_displayed}-${last_row_displayed}`;
-    document.getElementById('table-pagination-message').querySelector('.total-rows').textContent = `${allTableRows.length}`;
+    document.getElementById('table-pagination-message').innerHTML = `Viser <strong class="displayed-rows">${first_row_displayed}-${last_row_displayed}</strong> af <strong class="total-rows">${allTableRows.length}</strong> rækker`;
 }
 
 function createPaginationButtons(allTableRows, rowsPerPage, pagination) {
