@@ -111,7 +111,7 @@ Tilføj paginering til tabeller, hvor der potentielt kan være mange rækker.
 
 Giv brugeren mulighed for at se flere rækker per side. Hvis det er teknisk muligt mht. tabellens størrelse, så tilbyd brugeren at se alle rækker på én gang (Nielsen, 2013).
 
-Hvis tabellen indeholder både paginering og sortering, skal klik på en sorteringskolonne sortere alle rækker på tværs af siderne i tabellen og aldrig kun rækkerne på den aktuelle side. Ved sortering og søgning i tabellen skal brugeren tages tilbage til side 1.
+Hvis tabellen indeholder både paginering og sortering, skal klik på en sorteringskolonne sortere alle rækker på tværs af siderne i tabellen og aldrig kun rækkerne på den aktuelle side. Ved ændring i sortering og efter søgning i tabellen skal brugeren tages tilbage til side 1.
 
 {% include code/preview-box.html component="table-pagination" title="Eksempel på tabel med paginering" code="/komponenter/tables/#tabel-med-paginering-kode" %}
 
