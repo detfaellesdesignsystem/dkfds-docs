@@ -1,0 +1,85 @@
+{% from "components/table/table.njk" import table as table %}
+{% from "components/toggle/toggle.njk" import toggle_switch as toggle_switch %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Responsiv tabel</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-6">
+            <div role="group" aria-labelledby="toggle-switch-heading" class="w-percent-100 w-percent-sm-80 w-percent-lg-50 pr-sm-905">
+                <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Tabeludseende</h2>
+                {{ 
+                    toggle_switch({
+                        "label": "Borderless",
+                        "classes": "w-percent-100"
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Zebra",
+                        "classes": "w-percent-100"
+                    })
+                }}
+            </div>            
+        </div>
+        <div class="col-6">
+            {{
+                radiobuttons({
+                    "id": "radiogroup",
+                    "radiogroupLegend": "Linjehøjde",
+                    "groupname": "radio-line-height",
+                    "items": [
+                        { "value": "v1", "label": "Normal", "checked": true },
+                        { "value": "v2", "label": "Kompakt" },
+                        { "value": "v3", "label": "Ekstra kompakt" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                table({
+                    "responsive": true,
+                    "thead": [
+                        { "headerContent": "First column" },
+                        { "headerContent": "Second column" },
+                        { "headerContent": "Third column" },
+                        { "headerContent": "Fourth column" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "First row, first cell" },
+                            { "content": "First row, second cell" },
+                            { "content": "First row, third cell" },
+                            { "content": "First row, fourth cell" }
+                        ],
+                        [
+                            { "content": "Second row, first cell" },
+                            { "content": "Second row, second cell" },
+                            { "content": "Second row, third cell" },
+                            { "content": "Second row, fourth cell" }
+                        ],
+                        [
+                            { "content": "Third row, first cell" },
+                            { "content": "Third row, second cell" },
+                            { "content": "Third row, third cell" },
+                            { "content": "Third row, fourth cell" }
+                        ],
+                        [
+                            { "content": "Fourth row, first cell" },
+                            { "content": "Fourth row, second cell" },
+                            { "content": "Fourth row, third cell" },
+                            { "content": "Fourth row, fourth cell" }
+                        ]
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

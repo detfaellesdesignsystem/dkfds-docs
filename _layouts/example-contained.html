@@ -6,19 +6,19 @@
     {% include head.html %}
 </head>
 
-<body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-    {% include code/components/base-svg.html %}
+<body class="page-{{ page.filename | slugify }} layout-{{ page.layout }}">
+    {% include code/components/fds-base-svg.html %}
     <header>
         <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
     </header>
     <main class="container page-container" id="main-content">
-        {% if page.title contains "Toastbesked" %}
+        {% if page.title contains "Toastbesked" or page.title contains "toastbesked" %}
         <div class="toast-container">
             {{ content }}
         </div>
-        <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign pageTitle = page.title | downcase %}{% if pageTitle == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
         {% else %}
-        <h1 id="example-heading-{{ page.title | slugify }}" class="sr-only">{{ page.title | replace: "-", " " }}</h1>
+        <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign pageTitle = page.title | downcase %}{% if pageTitle == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
         {{ content }}
         {% endif %}
     </main>

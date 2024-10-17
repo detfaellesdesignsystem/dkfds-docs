@@ -1,0 +1,40 @@
+{% from "components/table/table.njk" import table as table %}
+
+{{ 
+    table({
+        "selectable": true,
+        "id": "table-pagination",
+        "pagination": {
+            "displayedRows": "1-10",
+            "totalRows": 90,
+            "totalPages": 9,
+            "options": [
+                { "value": "10", "text": "10" },
+                { "value": "30", "text": "30" },
+                { "value": "all", "text": "Alle" }
+            ]
+        },
+        "thead": [
+            { "headerContent": "Farve" },
+            { "headerContent": "ID" },
+            { "headerContent": "Beskrivelse" }
+        ],
+        "tbody": [
+            [
+                { "content": "Grøn" },
+                { "content": "ASDF" },
+                { "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit." }
+            ],
+            [
+                { "content": "Blå" },
+                { "content": "GHJK" },
+                { "content": "Cras pellentesque sapien eu ante consequat pellentesque." }
+            ],
+            [
+                { "content": "Rød" },
+                { "content": "YUIO" },
+                { "content": "Curabitur vel augue et felis aliquam dictum at a risus." }
+            ]
+        ]
+    })
+}}

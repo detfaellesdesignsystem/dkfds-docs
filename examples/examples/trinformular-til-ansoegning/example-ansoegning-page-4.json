@@ -89,10 +89,10 @@
         "classes": { "select": "input-width-s" },
         "attributes": { "select": "aria-labelledby=\"file1 header2\"" },
         "options": [
-            { "value": "option1", "text": "Vælg type" },
-            { "value": "option2", "text": "Type 1" },
-            { "value": "option3", "text": "Type 2" },
-            { "value": "option4", "text": "Type 3" }
+            { "value": "", "text": "Vælg type" },
+            { "value": "option1", "text": "Type 1" },
+            { "value": "option2", "text": "Type 2" },
+            { "value": "option3", "text": "Type 3" }
         ]
     },
     "pages_data": {

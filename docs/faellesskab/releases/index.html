@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.0.2" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.0.2">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.0.2">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
 </noscript>
 
   </head>
@@ -1255,6 +1255,7 @@
     <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
     <ul class="anchorlist">
         <li><a href="#versionering-og-release-proces">Versionering og release-proces</a></li>
+        <li><a href="#version-10-1-0">Version 10.1.0</a></li>
         <li><a href="#version-10-0-to">Version 10.0.2</a></li>
         <li><a href="#version-10-0-1">Version 10.0.1</a></li>
         <li><a href="#version-10-0-0">Version 10.0.0</a></li>
@@ -1290,6 +1291,50 @@
 <h3>Tidligere versioner af dokumentationen</h3>
 
 <p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at <a href="/faellesskab/kontakt-support/">kontakte os</a>.</p>
+
+<h2 id="version-10-1-0" class="mb-0">Version 10.1.0</h2>
+
+<div><span class="small-text mt-0 d-block">17-10-2024</span></div>
+
+<p>Som noget nyt introducerer vi en beslutningslog, der fremover skal supplere den aktuelle release. Her vil der være detaljer og baggrund om de valg, der er truffet.</p>
+
+<p>Se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/251" class="icon-link" target="_blank">beslutningslog for version 10.1.0<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/paginering/">Paginering</a></h3>
+</div>
+<ul>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet <a href="/komponenter/tables/#tabel-med-paginering">paginering til tabeller</a>.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet <code>role="presentation"</code> fra “…“-elementerne.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet en skærmlæserbesked til “…“-elementerne.</li>
+  <li>Visuelt løft af pagineringsknapperne.</li>
+  <li>Fjernet klassen <code>pagination__dropdown</code>, der ikke blev anvendt.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a></h3>
+</div>
+<ul>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flyttet knapperne i <a href="/komponenter/tables/#valgbare-raekker-med-funktionsknapper">tabeller med valgbare rækker og funktionsknapper</a> ned under tabellen i HTML’en, så de ikke scroller horisontalt, hvis tabellen har mange kolonner.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet <code>tabindex</code> og synligt fokus til tabeller, så det er muligt at navigere til og scrolle brede tabeller med tastaturet.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Ændret beskeden “Vælg en eller flere rækker” til “Ingen rækker valgt” og tilføjet den til alle tabeller med valgbare rækker.</li>
+  <li>Tilføjet padding i <a href="/komponenter/tables/#uden-ramme">tabeller uden ramme</a> og <a href="/komponenter/tables/#strukturerede-lister">strukturerede lister</a>, så de har samme padding som de øvrige tabeltyper.</li>
+  <li>Tilføjet kant til bunden af tabelrækkerne på store skærme, når varianterne <a href="/komponenter/tables/#uden-ramme">tabeller uden ramme</a> og <a href="/komponenter/tables/#zebralinjer">tabeller med zebralinjer</a> kombineres.</li>
+  <li>Klassen <code>table--borderless</code> kan nu også anvendes sammen med klassen <code>table-actions</code> (og den nye tabelpaginering), hvis man anvender <a href="/komponenter/tables/#uden-ramme">tabeller uden ramme</a> sammen med funktionsknapper.</li>
+  <li>Rettet fejl, hvor tjekboksen i headeren for <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> ikke fik den korrekte status i JavaScripten.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+<ul>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet en stylingfejl, som opstod, når man anvendte inputfelter med <a href="/komponenter/inputfelter/#prefix-og-suffix">prefix eller suffix</a>, som samtidigt var read-only eller disabled. Tilføj klassen <code>disabled</code> eller <code>readonly</code> til <code>form-input-wrapper</code> for at få den korrekte styling.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet klassen <code>search-link</code>, der satte en alternativ styling tiltænkt overskrifter på søgeresultatsider. Der er nu ikke længere forskel på <a href="/styleguide/typografi/overskrifter/#overskrift-som-link">linkoverskifter</a>, uanset om de anvendes i søgeresultateter eller ej. Hvis man anvender klassen i sin løsning, kan man blot fjerne den, da den ikke længere har nogen effekt.</li>
+  <li>Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er <a href="https://sass-lang.com/documentation/breaking-changes/mixed-decls/" class="icon-link" target="_blank">deklarationer blandet med indlejrede regler<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller anvendelse af <a href="https://sass-lang.com/blog/import-is-deprecated/#built-in-functions" class="icon-link" target="_blank">globale built-in Sass-funktioner<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Rækkefølgen af visse deklarationer i CSS-filerne er derfor ændret, men dette har ikke nogen funktionel betydning.</li>
+  <li>Opdateret siderne for <a href="/komponenter/radioknap/">radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a> med flere eksempler og retningslinjer.</li>
+  <li>Rettet eksemplerne for <a href="/komponenter/dropdown/">dropdown</a>, så de alle indeholder en “vælg”-mulighed.</li>
+  <li>Ændret opførsel for <a href="/komponenter/overflowmenu/">overflowmenu</a>, så komponenten lukker, når fokus forsvinder fra menuen. Dette kan for eksempel ske, ved at brugeren navigerer videre med Tab-tasten.</li>
+</ul>
 
 <h2 id="version-10-0-to" class="mb-0">Version 10.0.2</h2>
 
@@ -2207,8 +2252,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=10.0.2"></script>
-<script src="/assets/js/styleguide.js?v=10.0.2"></script>
+    <script src="/assets/js/theme.js?v=10.1.0"></script>
+<script src="/assets/js/styleguide.js?v=10.1.0"></script>
 
 
   </body>

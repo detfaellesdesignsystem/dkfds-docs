@@ -1,0 +1,24 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+{{
+    radiobuttons({
+        "id": "radiogroup-group-helptext",
+        "radiogroupLegend": "Radioknapper",
+        "groupname": "radio-group-helptext",
+        "helptext": "Dette er en hjælpetekst",
+        "items": [
+            {
+                "value": "v1",
+                "label": "Første radioknap"
+            },
+            {
+                "value": "v2",
+                "label": "Anden radioknap"
+            },
+            {
+                "value": "v3",
+                "label": "Tredje radioknap"
+            }
+        ]
+    })
+}}

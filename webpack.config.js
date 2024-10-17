@@ -31,6 +31,7 @@ module.exports = function (outputPath, prod) {
             "modal": ["./javascript/components/modal.js"],
             "toggleswitch": ["./javascript/components/toggleswitch.js"],
             "languageswitcher": ["./javascript/components/languageswitcher.js"],
+            "table-pagination": ["./javascript/components/table-pagination.js"],
             "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
             "newsletter": ["./javascript/newsletter.js"],
             "pagination": ["./javascript/components/pagination.js"],

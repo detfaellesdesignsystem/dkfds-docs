@@ -47,9 +47,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.0.2" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
 
 <style>
   body {
@@ -57,10 +57,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.0.2">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.0.2">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
 </noscript>
 
 </head>
@@ -439,7 +439,7 @@
                     perspiciatis unde omnis iste natus error sit voluptatem accusantium
                     doloremque laudantium.</p>
 
-                <div class="table--responsive-scroll">
+                <div class="table--responsive-scroll" tabindex="0">
                     <table class="table table--selectable" id="selectable-table">
                         <thead>
                             <tr>
@@ -550,6 +550,9 @@
                     </table>
                 </div>
 
+                <div class="table-actions">
+                    <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
+                </div>
                 <button class="button button-primary d-print-none mt-7" type='submit'>
                     Næste
                 </button>
@@ -638,14 +641,35 @@
 
 </div>
 
+<script>
+    document.getElementById('selectable-table').addEventListener(
+        'fds.table.selectable.updated',
+        function(e) {
+            let number = e.detail.checkedNumber;
+            let tableActions = this.parentNode.nextElementSibling;
+            let numberElement = tableActions.getElementsByClassName(
+                'table-selected-number')[0];
+            if (number > 1) {
+                numberElement.innerHTML = number + " rækker valgt";
+                numberElement.classList.remove('no-selected');
+            } else if (number === 1) {
+                numberElement.innerHTML = number + " række valgt";
+                numberElement.classList.remove('no-selected');
+            } else {
+                numberElement.innerHTML = "Ingen rækker valgt";
+                numberElement.classList.add('no-selected');
+            }
+        });
+</script>
+
 <footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
   <div class="demo-footer-content d-flex align-items-center">
     <a class="button mr-5" id="btn-demo-return" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-left"></use></svg>Tilbage<span class="sr-only"> til dokumentationssiden</span></a>
     <button class="function-link" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span></button>
   </div>
 </footer>
-<script src="/assets/js/theme.js?v=10.0.2"></script>
-<script src="/assets/js/styleguide.js?v=10.0.2"></script>
+<script src="/assets/js/theme.js?v=10.1.0"></script>
+<script src="/assets/js/styleguide.js?v=10.1.0"></script>
 
 
 <script src="/assets/js/demo-return-to-prev-page.js"></script>

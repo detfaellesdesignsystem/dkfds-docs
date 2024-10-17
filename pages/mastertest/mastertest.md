@@ -127,6 +127,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
 {% include test/preview-test.html filename="test-header-mobile-helptext" description="Hjælpetekst i mobilmenuen" %}
 {% include test/preview-test.html filename="test-header-breadcrumb-function-links" description="Brødkrumme og funktionslinks under headeren" %}
+{% include test/preview-test.html filename="test-header-init" description="Kun header er initialiseret" %}
 
 {:.h3}
 ## Inputfelter
@@ -167,7 +168,7 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Paginering
 
-{% include test/preview-test.html filename="test-pagination-basics" description="Paginering, basale funktioner" %}
+{% include test/preview-test.html filename="test-pagination" description="Paginering, basale funktioner" %}
 
 {:.h3}
 ## Radioknap (Radio button)
@@ -196,6 +197,15 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Tabeller
 
+{% include test/preview-test.html filename="test-simple-table" description="Simpel tabel" %}
+{% include test/preview-test.html filename="test-responsive-table" description="Responsiv tabel" %}
+{% include test/preview-test.html filename="test-sorting-table" description="Sortering i tabel" %}
+{% include test/preview-test.html filename="test-selectable-table" description="Tabel med valgbare rækker" %}
+{% include test/preview-test.html filename="test-selectable-table-with-buttons" description="Valgbare rækker med funktionsknapper" %}
+{% include test/preview-test.html filename="test-table-pagination" description="Valgbare rækker med paginering" %}
+{% include test/preview-test.html filename="test-table-pagination-with-buttons" description="Valgbare rækker med paginering og funktionsknapper" %}
+{% include test/preview-test.html filename="test-table-many-columns" description="Tabel med mange kolonner" %}
+{% include test/preview-test.html filename="test-table-many-columns-with-buttons" description="Tabel med mange kolonner og funktionsknapper" %}
 {% include test/preview-test.html filename="test-tables-1" description="Tabeller 1" %}
 {% include test/preview-test.html filename="test-tables-2" description="Tabeller 2" %}
 {% include test/preview-test.html filename="test-tables-3" description="Tabeller 3" %}

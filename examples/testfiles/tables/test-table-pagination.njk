@@ -1,0 +1,125 @@
+{% from "components/table/table.njk" import table as table %}
+{% from "components/toggle/toggle.njk" import toggle_switch as toggle_switch %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Valgbare rækker med paginering</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-6">
+            <div role="group" aria-labelledby="toggle-switch-heading" class="w-percent-100 w-percent-sm-80 w-percent-lg-50 pr-sm-905">
+                <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Tabeludseende</h2>
+                {{ 
+                    toggle_switch({
+                        "label": "Borderless",
+                        "classes": "w-percent-100"
+                    })
+                }}
+                {{ 
+                    toggle_switch({
+                        "label": "Zebra",
+                        "classes": "w-percent-100"
+                    })
+                }}
+            </div>            
+        </div>
+        <div class="col-6">
+            {{
+                radiobuttons({
+                    "id": "radiogroup",
+                    "radiogroupLegend": "Linjehøjde",
+                    "groupname": "radio-line-height",
+                    "items": [
+                        { "value": "v1", "label": "Normal", "checked": true },
+                        { "value": "v2", "label": "Kompakt" },
+                        { "value": "v3", "label": "Ekstra kompakt" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                table({
+                    "selectable": true,
+                    "pagination": {
+                        "displayedRows": "1-4",
+                        "totalRows": 92,
+                        "totalPages": 23,
+                        "options": [
+                            { "value": "10", "text": "10" },
+                            { "value": "30", "text": "30" },
+                            { "value": "all", "text": "Alle" }
+                        ]
+                    },
+                    "thead": [
+                        { "headerContent": "First column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Second column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Third column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Fourth column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Fifth column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Sixth column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Seventh column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Eighth column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Ninth column", "classes": "table-header-no-wrap" },
+                        { "headerContent": "Tenth column", "classes": "table-header-no-wrap" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "First row, first cell" },
+                            { "content": "First row, second cell" },
+                            { "content": "First row, third cell" },
+                            { "content": "First row, fourth cell" },
+                            { "content": "First row, fifth cell" },
+                            { "content": "First row, sixth cell" },
+                            { "content": "First row, seventh cell" },
+                            { "content": "First row, eighth cell" },
+                            { "content": "First row, ninth cell" },
+                            { "content": "First row, tenth cell" }
+                        ],
+                        [
+                            { "content": "Second row, first cell" },
+                            { "content": "Second row, second cell" },
+                            { "content": "Second row, third cell" },
+                            { "content": "Second row, fourth cell" },
+                            { "content": "Second row, fifth cell" },
+                            { "content": "Second row, sixth cell" },
+                            { "content": "Second row, seventh cell" },
+                            { "content": "Second row, eighth cell" },
+                            { "content": "Second row, ninth cell" },
+                            { "content": "Second row, tenth cell" }
+                        ],
+                        [
+                            { "content": "Third row, first cell" },
+                            { "content": "Third row, second cell" },
+                            { "content": "Third row, third cell" },
+                            { "content": "Third row, fourth cell" },
+                            { "content": "Third row, fifth cell" },
+                            { "content": "Third row, sixth cell" },
+                            { "content": "Third row, seventh cell" },
+                            { "content": "Third row, eighth cell" },
+                            { "content": "Third row, ninth cell" },
+                            { "content": "Third row, tenth cell" }
+                        ],
+                        [
+                            { "content": "Fourth row, first cell" },
+                            { "content": "Fourth row, second cell" },
+                            { "content": "Fourth row, third cell" },
+                            { "content": "Fourth row, fourth cell" },
+                            { "content": "Fourth row, fifth cell" },
+                            { "content": "Fourth row, sixth cell" },
+                            { "content": "Fourth row, seventh cell" },
+                            { "content": "Fourth row, eighth cell" },
+                            { "content": "Fourth row, ninth cell" },
+                            { "content": "Fourth row, tenth cell" }
+                        ]
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

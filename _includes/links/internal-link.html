@@ -25,7 +25,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "kom i gang" -%}
         <a href="/kom-i-gang/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "implementering og kode" -%}
+    {%- when "implementering og kode",
+             "kom i gang som udvikler" -%}
         <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "hent kodepakken",
@@ -60,7 +61,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "frameworks" -%}
         <a href="/kom-i-gang/implementering-kode/frameworks/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "design og ressourcer" -%}
+    {%- when "design og ressourcer",
+             "kom i gang som designer" -%}
         <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "designets grundprincipper" -%}
@@ -120,7 +122,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "subheadings" -%}
         <a href="/styleguide/typografi/overskrifter/#subheading"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "links i overskrifter" -%}
+    {%- when "links i overskrifter",
+             "linkoverskifter" -%}
         <a href="/styleguide/typografi/overskrifter/#overskrift-som-link"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "lille brødtekst" -%}

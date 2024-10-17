@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Select-error | Det Fælles Designsystem</title>
-<meta property="og:title" content="Select-error | Det Fælles Designsystem">
+<title>Eksempel på dropdown med fejlmeddelelse | Det Fælles Designsystem</title>
+<meta property="og:title" content="Eksempel på dropdown med fejlmeddelelse | Det Fælles Designsystem">
 
 
 
@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.0.2" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.0.2">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.0.2">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
 </noscript>
 
 </head>
@@ -228,25 +228,27 @@
     </header>
     <main class="container page-container" id="main-content">
         
-        <h1 id="example-heading-select-error" class="sr-only">Select error</h1>
+        <h1 id="example-heading-select-error" class="sr-only">Eksempel på dropdown med fejlmeddelelse</h1>
         <div class="form-group form-error">
-    <label class="form-label" for="options-error">Dropdown (select)</label>
+    <label class="form-label" for="options-error">Region</label>
 
     <span class="form-error-message" id="options-error-error">
-        <span class="sr-only">Fejl: </span>Vælg en mulighed
+        <span class="sr-only">Fejl: </span>Vælg region
     </span>
     <select class="form-select" name="options-error" id="options-error" aria-invalid="true" aria-describedby="options-error-error" required="">
-        <option value="option1">Ingen mulighed valgt</option>
-        <option value="option2">Mulighed 1</option>
-        <option value="option3">Mulighed 2</option>
-        <option value="option4">Mulighed 3</option>
+        <option value="">Vælg region</option>
+        <option value="option1">Hovedstaden</option>
+        <option value="option2">Midtjylland</option>
+        <option value="option3">Nordjylland</option>
+        <option value="option4">Sjælland</option>
+        <option value="option5">Syddanmark</option>
     </select>
 </div>
 
         
     </main>
-    <script src="/assets/js/theme.js?v=10.0.2"></script>
-<script src="/assets/js/styleguide.js?v=10.0.2"></script>
+    <script src="/assets/js/theme.js?v=10.1.0"></script>
+<script src="/assets/js/styleguide.js?v=10.1.0"></script>
 
 
 </body>

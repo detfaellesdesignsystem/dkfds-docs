@@ -1,0 +1,25 @@
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+{{
+    checkboxes({
+        "id": "checkbox-helptext",
+        "checkboxLegend": "Tjekbokse",
+        "groupname": "checkbox-helptext",
+        "items": [
+            {
+                "value": "1",
+                "label": "Første tjekboks",
+                "helptext": "Dette er en hjælpetekst"
+            },
+            {
+                "value": "2",
+                "label": "Anden tjekboks",
+                "helptext": "Dette er en hjælpetekst"
+            },
+            {
+                "value": "3",
+                "label": "Tredje tjekboks"
+            }
+        ]
+    })
+}}

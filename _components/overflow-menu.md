@@ -9,6 +9,12 @@ title: Overflow menu
 lead: Du kan bruge overflow menuer til at vise eller skjule en liste af links eller knapper. Når brugeren klikker på menulinjen, folder listen sig ud.
 description: "Du kan bruge overflow menuer til at vise eller skjule en liste af links."
 tags:
+- overflow
+- overflowmenu
+- overflow-menu
+- overflowmenu
+- sorter
+- sortering
 tabs: "Retningslinjer, kode"
 ---
 

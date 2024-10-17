@@ -180,13 +180,24 @@ Anden del skal indsættes i mobilmenuen, igen <em>før</em> række 1 (portalinfo
 
 ### JavaScript
 
-Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
+Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt.
 
+Mobilmenuen initieres med:
 {% highlight js %}
 new DKFDS.Navigation().init();
 {% endhighlight %}
 
-Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren.
+Hvis man anvender menupunkter med undermenuer, skal disse initieres med:
+{% highlight js %}
+new Dropdown(document.getElementById('OVERFLOW-BUTTON-ID')).init();
+{% endhighlight %}
+
+Undermenuer i mobilmenuen initieres med:
+{% highlight js %}
+new MenuDropdown(document.getElementById('MENUOVERFLOW-BUTTON-ID')).init();
+{% endhighlight %}
+
+Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvælgeren. Funktionen til at åbne og lukke sprogvælgeren initieres på samme måde som menupunkter med undermenuer.
 
 ## Referencer {#{% include create-id.html heading="Referencer" append="-kode" %}}
 

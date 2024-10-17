@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.0.2" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.0.2" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.0.2">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.0.2">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
 </noscript>
 
   </head>
@@ -1651,12 +1651,11 @@
                 <nav class="tab-container mb-7" aria-label="Undersider">
     <ul class="tab-list"><li>
             <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
-            <span id="retningslinjer" hidden=""></span>
         </li><li>
             <a href="#kode" id="code-tab" class="tab-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg><span>Kode</span></a>
-            <span id="kode" hidden=""></span>
         </li></ul>
 </nav>
+<div id="retningslinjer" hidden=""></div>
 
 <div class="component-preview intro-example component-preview-table">
     
@@ -1671,7 +1670,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table">
         <thead>
             <tr>
@@ -1728,7 +1727,7 @@
         <li class="anchorlink-guidelines"><a href="#se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</a></li>
         <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
         
-        <li class="anchorlink-code"><a href="#installation-kode">Installation</a></li>
+        <li class="anchorlink-code"><span id="kode" hidden=""></span><a href="#installation-kode">Installation</a></li>
         <li class="anchorlink-code"><a href="#uden-ramme-kode">Uden ramme</a></li>
         <li class="anchorlink-code"><a href="#zebralinjer-kode">Zebralinjer</a></li>
         <li class="anchorlink-code"><a href="#responsiv-tabel-kode">Responsiv tabel</a></li>
@@ -1736,6 +1735,7 @@
         <li class="anchorlink-code"><a href="#sortering-i-tabeller-kode">Sortering i tabeller</a></li>
         <li class="anchorlink-code"><a href="#soegning-i-tabeller-kode">Søgning i tabeller</a></li>
         <li class="anchorlink-code"><a href="#valgbare-raekker-kode">Valgbare rækker</a></li>
+        <li class="anchorlink-code"><a href="#tabel-med-paginering-kode">Tabel med paginering</a></li>
         <li class="anchorlink-code"><a href="#strukturerede-lister-kode">Strukturerede lister</a></li>
         
     </ul>
@@ -1804,7 +1804,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table table--borderless">
         <thead>
             <tr>
@@ -1873,7 +1873,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table table--zebra">
         <thead>
             <tr>
@@ -1942,7 +1942,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table table--responsive-headers">
         <thead>
             <tr>
@@ -2011,7 +2011,7 @@
         
         <h4 class="mt-0">Normal</h4>
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
     <table class="table">
         <thead>
             <tr>
@@ -2052,7 +2052,7 @@
 
 <h4>Kompakt</h4>
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
     <table class="table table--compact">
         <thead>
             <tr>
@@ -2093,7 +2093,7 @@
 
 <h4>Ekstra kompakt</h4>
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
     <table class="table table--extracompact">
         <thead>
             <tr>
@@ -2165,7 +2165,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table" id="sortingTable">
         <thead>
             <tr>
@@ -2252,7 +2252,7 @@
     </div>
 </form>
 
-<div class="table--responsive-scroll mt-4">
+<div class="table--responsive-scroll mt-4" tabindex="0">
     <table class="table" id="searchTable" aria-live="polite">
         <thead>
             <tr>
@@ -2319,7 +2319,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table table--selectable" id="selectable-table1">
         <thead>
             <tr>
@@ -2397,6 +2397,10 @@
         </tbody>
     </table>
 </div>
+
+<div class="table-actions">
+    <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
+</div>
         
     </div>
     
@@ -2423,7 +2427,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
     <table class="table table--selectable" id="selectable-table2">
         <thead>
             <tr>
@@ -2500,27 +2504,174 @@
             </tr>
         </tbody>
     </table>
+</div>
 
-    <div class="table-actions">
-        <p class="table-selected-number no-selected">Vælg en eller flere rækker for at udføre
-            funktioner</p>
-        <button class="button button-primary">
-            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
-            Download
-        </button><button class="button button-secondary">
-            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
-            Duplikér
-        </button><button class="button button-secondary">
-            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-            Slet
-        </button>
-    </div>
+<div class="table-actions">
+    <p class="table-selected-number no-selected">Ingen rækker valgt</p>
+    <button class="button button-primary">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
+        Download
+    </button><button class="button button-secondary">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
+        Duplikér
+    </button><button class="button button-secondary">
+        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
+        Slet
+    </button>
 </div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
         <a href="/komponenter/tables/#valgbare-raekker-med-funktionsknapper-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: table-selectable-functions</span></a>
+    </div>
+    
+</div>
+
+<h3 id="tabel-med-paginering">Tabel med paginering</h3>
+
+<p>Tilføj paginering til tabeller, hvor der potentielt kan være mange rækker.</p>
+
+<p>Giv brugeren mulighed for at se flere rækker per side. Hvis det er teknisk muligt mht. tabellens størrelse, så tilbyd brugeren at se alle rækker på én gang (Nielsen, 2013).</p>
+
+<p>Hvis tabellen indeholder både paginering og sortering, skal klik på en sorteringskolonne sortere alle rækker på tværs af siderne i tabellen og aldrig kun rækkerne på den aktuelle side. Ved ændring i sortering og efter søgning i tabellen skal brugeren tages tilbage til side 1.</p>
+
+<div class="component-preview  component-preview-table-pagination">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-pagination/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: table-pagination</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på tabel med paginering</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <p aria-live="polite" aria-atomic="true" class="rows-message" id="table-pagination-message">
+    Viser <strong class="displayed-rows">1-10</strong> af
+    <strong class="total-rows">90</strong> rækker</p>
+<div class="table--responsive-scroll" tabindex="0">
+    <table class="table table--selectable" id="table-pagination">
+        <thead>
+            <tr>
+                <th>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-all" type="checkbox" class="form-checkbox" aria-controls=" table-pagination-check-1 table-pagination-check-2 table-pagination-check-3" />
+                        <label for="table-pagination-check-all"><span class="sr-only">Vælg
+                                alle rækker</span></label>
+                    </div>
+                </th>
+                <th scope="col">Farve</th>
+                <th scope="col">ID</th>
+                <th scope="col">Beskrivelse</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-1" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Grøn" />
+                        <label for="table-pagination-check-1"><span class="sr-only">Vælg
+                                række</span></label>
+                    </div>
+                </td>
+                <td>Grøn</td>
+                <td>ASDF</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-2" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Blå" />
+                        <label for="table-pagination-check-2"><span class="sr-only">Vælg
+                                række</span></label>
+                    </div>
+                </td>
+                <td>Blå</td>
+                <td>GHJK</td>
+                <td>Cras pellentesque sapien eu ante consequat pellentesque.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group-checkbox">
+                        <input id="table-pagination-check-3" type="checkbox" name="table-pagination-check[]" class="form-checkbox" value="Rød" />
+                        <label for="table-pagination-check-3"><span class="sr-only">Vælg
+                                række</span></label>
+                    </div>
+                </td>
+                <td>Rød</td>
+                <td>YUIO</td>
+                <td>Curabitur vel augue et felis aliquam dictum at a risus.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-pagination-options">
+
+    <div class="form-group">
+        <label class="form-label" for="pagination-pages">Vis rækker per side:</label>
+
+        <select class="form-select" name="pagination-pages" id="pagination-pages">
+            <option value="10">10</option>
+            <option value="30">30</option>
+            <option value="all">Alle</option>
+        </select>
+    </div>
+
+    <div role="group" class="table-pagination" aria-label="Skift side i tabellen">
+        <button class="button button-arrow button-first hidden"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span class="sr-only">Første side</span></button>
+        <button class="button button-arrow button-previous hidden" aria-label="Forrige side">
+            <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span class="pagination-nav-link">Forrige</span>
+        </button>
+        <span class="pagination-mobile">Side 1 af 9</span>
+        <ul class="pagination__items">
+
+            <li class="pagination-item pagination-number">
+                <button class="button current-page" aria-label="Side 1" aria-current="true">1</button>
+            </li>
+
+            <li class="pagination-item pagination-number">
+                <button class="button button-secondary" aria-label="Side 2">2</button>
+            </li>
+
+            <li class="pagination-item pagination-number">
+                <button class="button button-secondary" aria-label="Side 3">3</button>
+            </li>
+
+            <li class="pagination-item pagination-number">
+                <button class="button button-secondary" aria-label="Side 4">4</button>
+            </li>
+
+            <li class="pagination-item pagination-number">
+                <button class="button button-secondary" aria-label="Side 5">5</button>
+            </li>
+
+            <li class="pagination-item pagination-overflow">
+                <span class="sr-only">Prikker som indikerer skjulte
+                    sider</span><span>...</span>
+            </li>
+            <li class="pagination-item pagination-number">
+                <button class="button button-secondary" aria-label="Sidste side, side 9">9</button>
+            </li>
+        </ul>
+        <button class="button button-arrow button-next" aria-label="Næste side">
+            <span class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+        </button>
+        <button class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span class="sr-only">Sidste side</span></button>
+    </div>
+
+</div>
+<div class="table-actions">
+    <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/tables/#tabel-med-paginering-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: table-pagination</span></a>
     </div>
     
 </div>
@@ -2649,11 +2800,12 @@
 
 <h2 id="referencer">Referencer</h2>
 
-<ul class="nobullet-liat">
+<ul class="nobullet-list">
   <li><a href="https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/" class="icon-link" target="_blank">Lisa Charlotte Rost: What to consider when creating tables (2019)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://alistapart.com/article/web-typography-tables/" class="icon-link" target="_blank">Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://www.nngroup.com/articles/mobile-tables/" class="icon-link" target="_blank">Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F91" class="icon-link" target="_blank">W3C (WCAG 2.1): Technique F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/item-list-view-all/" class="icon-link" target="_blank">Jakob Nielsen: Users' Pagination Preferences and “View All” (2013)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
 </ul>
 
 
@@ -2677,7 +2829,7 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot; tabindex=&quot;0&quot;&gt;
     &lt;table class=&quot;table&quot;&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -2809,7 +2961,7 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot; tabindex=&quot;0&quot;&gt;
     &lt;table class=&quot;table&quot; id=&quot;sortingTable&quot;&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -2907,7 +3059,7 @@
     &lt;/div&gt;
 &lt;/form&gt;
 
-&lt;div class=&quot;table--responsive-scroll mt-4&quot;&gt;
+&lt;div class=&quot;table--responsive-scroll mt-4&quot; tabindex=&quot;0&quot;&gt;
     &lt;table class=&quot;table&quot; id=&quot;searchTable&quot; aria-live=&quot;polite&quot;&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -2980,7 +3132,7 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot; tabindex=&quot;0&quot;&gt;
     &lt;table class=&quot;table table--selectable&quot; id=&quot;selectable-table1&quot;&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -3067,6 +3219,10 @@
             &lt;/tr&gt;
         &lt;/tbody&gt;
     &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;table-actions&quot;&gt;
+    &lt;p class=&quot;table-selected-number no-selected mb-0&quot;&gt;Ingen rækker valgt&lt;/p&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -3098,7 +3254,7 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;table--responsive-scroll&quot; tabindex=&quot;0&quot;&gt;
     &lt;table class=&quot;table table--selectable&quot; id=&quot;selectable-table2&quot;&gt;
         &lt;thead&gt;
             &lt;tr&gt;
@@ -3185,21 +3341,20 @@
             &lt;/tr&gt;
         &lt;/tbody&gt;
     &lt;/table&gt;
+&lt;/div&gt;
 
-    &lt;div class=&quot;table-actions&quot;&gt;
-        &lt;p class=&quot;table-selected-number no-selected&quot;&gt;Vælg en eller flere rækker for at udføre
-            funktioner&lt;/p&gt;
-        &lt;button class=&quot;button button-primary&quot;&gt;
-            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#file-download&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-            Download
-        &lt;/button&gt;&lt;button class=&quot;button button-secondary&quot;&gt;
-            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#content-copy&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-            Duplikér
-        &lt;/button&gt;&lt;button class=&quot;button button-secondary&quot;&gt;
-            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-            Slet
-        &lt;/button&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;table-actions&quot;&gt;
+    &lt;p class=&quot;table-selected-number no-selected&quot;&gt;Ingen rækker valgt&lt;/p&gt;
+    &lt;button class=&quot;button button-primary&quot;&gt;
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#file-download&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        Download
+    &lt;/button&gt;&lt;button class=&quot;button button-secondary&quot;&gt;
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#content-copy&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        Duplikér
+    &lt;/button&gt;&lt;button class=&quot;button button-secondary&quot;&gt;
+        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#trash-can&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        Slet
+    &lt;/button&gt;
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -3216,7 +3371,7 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.TableSelectableRows(document.getElementById(&#39;TABLE-ID&#39;)).init();</code></pre></figure>
 
-<p>Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.</p>
+<p>Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Tabeleksemplerne på denne side er gjort funktionelle for bedre demonstrationen af valgbare rækker.</p>
 
 <h4>Events</h4>
 
@@ -3236,6 +3391,174 @@
     </tr>
   </tbody>
 </table>
+
+<h2 id="tabel-med-paginering-kode">Tabel med paginering</h2>
+
+<div class="component-preview component-preview-code  component-code-table-pagination">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/table-pagination/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: table-pagination</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p aria-live=&quot;polite&quot; aria-atomic=&quot;true&quot; class=&quot;rows-message&quot; id=&quot;table-pagination-message&quot;&gt;
+    Viser &lt;strong class=&quot;displayed-rows&quot;&gt;1-10&lt;/strong&gt; af
+    &lt;strong class=&quot;total-rows&quot;&gt;90&lt;/strong&gt; rækker&lt;/p&gt;
+&lt;div class=&quot;table--responsive-scroll&quot; tabindex=&quot;0&quot;&gt;
+    &lt;table class=&quot;table table--selectable&quot; id=&quot;table-pagination&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;
+                    &lt;div class=&quot;form-group-checkbox&quot;&gt;
+                        &lt;input id=&quot;table-pagination-check-all&quot; type=&quot;checkbox&quot;
+                            class=&quot;form-checkbox&quot;
+                            aria-controls=&quot; table-pagination-check-1 table-pagination-check-2 table-pagination-check-3&quot;&gt;
+                        &lt;label for=&quot;table-pagination-check-all&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
+                                alle rækker&lt;/span&gt;&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/th&gt;
+                &lt;th scope=&quot;col&quot;&gt;Farve&lt;/th&gt;
+                &lt;th scope=&quot;col&quot;&gt;ID&lt;/th&gt;
+                &lt;th scope=&quot;col&quot;&gt;Beskrivelse&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div class=&quot;form-group-checkbox&quot;&gt;
+                        &lt;input id=&quot;table-pagination-check-1&quot; type=&quot;checkbox&quot;
+                            name=&quot;table-pagination-check[]&quot; class=&quot;form-checkbox&quot;
+                            value=&quot;Grøn&quot;&gt;
+                        &lt;label for=&quot;table-pagination-check-1&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
+                                række&lt;/span&gt;&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Grøn&lt;/td&gt;
+                &lt;td&gt;ASDF&lt;/td&gt;
+                &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div class=&quot;form-group-checkbox&quot;&gt;
+                        &lt;input id=&quot;table-pagination-check-2&quot; type=&quot;checkbox&quot;
+                            name=&quot;table-pagination-check[]&quot; class=&quot;form-checkbox&quot; value=&quot;Blå&quot;&gt;
+                        &lt;label for=&quot;table-pagination-check-2&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
+                                række&lt;/span&gt;&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Blå&lt;/td&gt;
+                &lt;td&gt;GHJK&lt;/td&gt;
+                &lt;td&gt;Cras pellentesque sapien eu ante consequat pellentesque.&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div class=&quot;form-group-checkbox&quot;&gt;
+                        &lt;input id=&quot;table-pagination-check-3&quot; type=&quot;checkbox&quot;
+                            name=&quot;table-pagination-check[]&quot; class=&quot;form-checkbox&quot; value=&quot;Rød&quot;&gt;
+                        &lt;label for=&quot;table-pagination-check-3&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Vælg
+                                række&lt;/span&gt;&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Rød&lt;/td&gt;
+                &lt;td&gt;YUIO&lt;/td&gt;
+                &lt;td&gt;Curabitur vel augue et felis aliquam dictum at a risus.&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;table-pagination-options&quot;&gt;
+
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;pagination-pages&quot;&gt;Vis rækker per side:&lt;/label&gt;
+
+        &lt;select class=&quot;form-select&quot; name=&quot;pagination-pages&quot; id=&quot;pagination-pages&quot;&gt;
+            &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+            &lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;
+            &lt;option value=&quot;all&quot;&gt;Alle&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+    &lt;div role=&quot;group&quot; class=&quot;table-pagination&quot; aria-label=&quot;Skift side i tabellen&quot;&gt;
+        &lt;button
+            class=&quot;button button-arrow button-first hidden&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#first-page&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                class=&quot;sr-only&quot;&gt;Første side&lt;/span&gt;&lt;/button&gt;
+        &lt;button class=&quot;button button-arrow button-previous hidden&quot; aria-label=&quot;Forrige side&quot;&gt;
+            &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#chevron-left&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                class=&quot;pagination-nav-link&quot;&gt;Forrige&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;span class=&quot;pagination-mobile&quot;&gt;Side 1 af 9&lt;/span&gt;
+        &lt;ul class=&quot;pagination__items&quot;&gt;
+
+            &lt;li class=&quot;pagination-item pagination-number&quot;&gt;
+                &lt;button class=&quot;button current-page&quot; aria-label=&#39;Side 1&#39;
+                    aria-current=&quot;true&quot;&gt;1&lt;/button&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;pagination-item pagination-number&quot;&gt;
+                &lt;button class=&quot;button button-secondary&quot; aria-label=&#39;Side 2&#39;&gt;2&lt;/button&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;pagination-item pagination-number&quot;&gt;
+                &lt;button class=&quot;button button-secondary&quot; aria-label=&#39;Side 3&#39;&gt;3&lt;/button&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;pagination-item pagination-number&quot;&gt;
+                &lt;button class=&quot;button button-secondary&quot; aria-label=&#39;Side 4&#39;&gt;4&lt;/button&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;pagination-item pagination-number&quot;&gt;
+                &lt;button class=&quot;button button-secondary&quot; aria-label=&#39;Side 5&#39;&gt;5&lt;/button&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;pagination-item pagination-overflow&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Prikker som indikerer skjulte
+                    sider&lt;/span&gt;&lt;span&gt;...&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;pagination-item pagination-number&quot;&gt;
+                &lt;button class=&quot;button button-secondary&quot;
+                    aria-label=&#39;Sidste side, side 9&#39;&gt;9&lt;/button&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;button class=&quot;button button-arrow button-next&quot; aria-label=&quot;Næste side&quot;&gt;
+            &lt;span
+                class=&quot;pagination-nav-link&quot;&gt;Næste&lt;/span&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#chevron-right&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;button
+            class=&quot;button button-arrow button-last&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use xlink:href=&quot;#last-page&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span
+                class=&quot;sr-only&quot;&gt;Sidste side&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;table-actions&quot;&gt;
+    &lt;p class=&quot;table-selected-number no-selected mb-0&quot;&gt;Ingen rækker valgt&lt;/p&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/tables/#tabel-med-paginering" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<p>Der medfølger ikke JavaScript med denne variant. Man skal derfor selv implementere sideskift i tabellen og opdatere beskeden om antal valgte rækker, såfremt disse er valgbare.</p>
+
+<p>Beskeden i <code>rows-message</code> skal opdateres, når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens <code>aria-live</code>, før brugeren selv trykker på en af pagineringsknapperne.</p>
+
+<p>Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden programmatisk, så knapperne bliver synlige igen.</p>
 
 <h2 id="strukturerede-lister-kode">Strukturerede lister</h2>
 
@@ -3402,9 +3725,10 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=10.0.2"></script>
-<script src="/assets/js/styleguide.js?v=10.0.2"></script>
+    <script src="/assets/js/theme.js?v=10.1.0"></script>
+<script src="/assets/js/styleguide.js?v=10.1.0"></script>
 <script src="/assets/js/table.js"></script>
+<script src="/assets/js/table-pagination.js"></script>
 
 
 

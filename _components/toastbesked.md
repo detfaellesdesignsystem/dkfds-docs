@@ -72,7 +72,7 @@ Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist 
 {:#succes}
 ### Succes
 
-{% include code/preview-box.html component="toastbesked-success" title="Eksempel på notifikation med success farver" code="/komponenter/toastbesked/#succes-kode" %}
+{% include code/preview-box.html component="toastbesked-success" title="Eksempel på notifikation med succesfarver" code="/komponenter/toastbesked/#succes-kode" %}
 
 {:#advarsel}
 ### Advarsel

@@ -183,51 +183,11 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
 
 ### Anvendes til
 
-Overskrift som links kan anvendes på sider, hvor brugeren kan navigere til andre sider i samme selvbetjeningsløsning.
+Overskrift som links kan anvendes på sider, hvor brugeren kan navigere til andre sider i samme selvbetjeningsløsning. Overskrift som links anvendes også til overskrifter på søgeresultatsider.
 
 ### Anvendes ikke til
 
 Må ikke bruges til at fremhæve links eller som erstatning for {% include links/internal-link.html linktext="standard links" %} i selvbetjeningsløsninger.
-
-## Overskrift i søgeresultat {#{% include create-id.html heading="Overskrift i søgeresultat" %}}
-
-<div class="table--responsive-scroll">
-  <table class="table table--borderless">
-    <thead>
-      <tr>
-        <td></td>
-        <th scope="col">Tekstdekoration</th>
-        <th scope="col">Tekstfarve</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><span class="h3"><a href="javascript:void(0);">Overskrift i søgeresultat</a></span></th>
-        <td>
-          <ul class="nobullet-list mt-0 mb-0">
-            <li class="mt-0 mb-0">Ingen</li>
-            <li>Understreget (hover)</li>
-          </ul>
-        </td>
-        <td>
-          <ul class="nobullet-list mt-0 mb-0">
-            <li class="mt-0 mb-0">#004D99</li>
-            <li>#000040 (hover)</li>
-            <li>#800080 (besøgt)</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-### Anvendes til
-
-Søgeresultatlinks bruges til at skabe en overskuelig struktur i søgeresultater. 
-
-### Anvendes ikke til
-
-Må ikke anvendes til at fremhæve links i tekst eller som erstatning for {% include links/internal-link.html linktext="standard links" %}.
 
 ## Løsningstitel i header {#{% include create-id.html heading="Løsningstitel i header" %}}
 

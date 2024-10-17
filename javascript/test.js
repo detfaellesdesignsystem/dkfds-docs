@@ -125,6 +125,70 @@ document.addEventListener("DOMContentLoaded", function() {
                 new DKFDS.Toast(document.getElementsByClassName('toast')[0]).show();
                 break;
 
+            case 'Simpel tabel':
+            case 'Responsiv tabel':
+            case 'Sortering i tabel':
+            case 'Tabel med valgbare rækker':
+            case 'Valgbare rækker med funktionsknapper':
+            case 'Tabel med mange kolonner':
+            case 'Tabel med mange kolonner og funktionsknapper':
+            case 'Valgbare rækker med paginering':
+            case 'Valgbare rækker med paginering og funktionsknapper':
+
+                DKFDS.init();
+                let borderless_toggle = document.querySelectorAll('.toggle-switch')[0];
+                let zebra_toggle = document.querySelectorAll('.toggle-switch')[1];
+                let table = document.querySelector('.table');
+                let pagination = document.querySelector('.table-pagination-options');
+                let actions = document.querySelector('.table-actions');
+                let radios = document.querySelectorAll('input[type="radio"]');
+
+                borderless_toggle.addEventListener("click", function () {
+                    if (this.getAttribute("aria-checked") === "true") {
+                        this.setAttribute("aria-checked", "false");
+                        table.classList.remove('table--borderless');
+                        if (pagination) {
+                            pagination.classList.remove('table--borderless');
+                        }
+                        if (actions) {
+                            actions.classList.remove('table--borderless');
+                        }
+                    } else {
+                        this.setAttribute("aria-checked", "true");
+                        table.classList.add('table--borderless');
+                        if (pagination) {
+                            pagination.classList.add('table--borderless');
+                        }
+                        if (actions) {
+                            actions.classList.add('table--borderless');
+                        }
+                    }
+                }, false);
+
+                zebra_toggle.addEventListener("click", function () {
+                    if (this.getAttribute("aria-checked") === "true") {
+                        this.setAttribute("aria-checked", "false");
+                        table.classList.remove('table--zebra');
+                    } else {
+                        this.setAttribute("aria-checked", "true");
+                        table.classList.add('table--zebra');
+                    }
+                }, false);
+
+                for (let i = 0; i < radios.length; i++){
+                    var radio = radios[i];
+                    radio.addEventListener('change', event => {
+                        table.classList.remove('table--compact', 'table--extracompact');
+                        if (event.target.value === 'v2') {
+                            table.classList.add('table--compact');
+                        }
+                        else if (event.target.value === 'v3') {
+                            table.classList.add('table--extracompact');
+                        }
+                    }, false);
+                }
+                break;
+
             case 'JavaScript errors i tooltips':
 
                 initTest();
@@ -157,6 +221,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     tooltip5.init();
                 } catch (err) {
                     console.error(err.message);
+                }
+                break;
+            
+            case 'Manuelt initialiseret':
+                /* Init mobile navigation */
+                initTest();
+                /* Init mobile submenus */
+                const jsSelectorMenuDropdown = document.getElementsByClassName('js-menudropdown');
+                for(let c = 0; c < jsSelectorMenuDropdown.length; c++){
+                    new DKFDS.MenuDropdown(jsSelectorMenuDropdown[c]).init();
+                }
+                /* Init header submenus */
+                const jsSelectorDropdown = document.getElementsByClassName('js-dropdown');
+                for(let c = 0; c < jsSelectorDropdown.length; c++){
+                    new DKFDS.Dropdown(jsSelectorDropdown[c]).init();
                 }
                 break;
             

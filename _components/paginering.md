@@ -17,7 +17,7 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="pagination" title="Eksempel på brødkrumme" classes="intro-example" %}
+{% include code/preview-box.html component="pagination" title="Eksempel på paginering" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Paginering" code="Paginering_Kode" classes="hide-code" %}
 
@@ -72,6 +72,10 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 ### 8 eller flere sider
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
+
+### Paginering af tabeller
+
+Se på siden {% include links/component-guideline-link.html linktext="Tabeller" %}, hvordan paginering anvendes i forbindelse med tabeller.
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

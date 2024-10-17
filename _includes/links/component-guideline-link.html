@@ -129,7 +129,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "retningslinjer for obligatoriske og frivillige felter" -%}
         <a href="/komponenter/inputfelter/#obligatoriske-og-frivillige-inputfelter">{{ include.linktext }}</a>
 
-    {%- when "prefix og suffix på felter" -%}
+    {%- when "prefix og suffix på felter",
+             "prefix eller suffix" -%}
         <a href="/komponenter/inputfelter/#prefix-og-suffix">{{ include.linktext }}</a>
 
     {%- when "karakterbegrænsning" -%}
@@ -208,12 +209,21 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "tabeller" -%}
         <a href="/komponenter/tables/">{{ include.linktext }}</a>
 
+    {%- when "tabeller uden ramme" -%}
+        <a href="/komponenter/tables/#uden-ramme">{{ include.linktext }}</a>
+
+    {%- when "tabeller med zebralinjer" -%}
+        <a href="/komponenter/tables/#zebralinjer">{{ include.linktext }}</a>
+
     {%- when "en responsiv tabel" -%}
         <a href="/komponenter/tables/#responsiv">{{ include.linktext }}</a>
 
     {%- when "tabeller med valgbare rækker", 
              "valgbare rækker i tabel" -%}
         <a href="/komponenter/tables/#valgbare-raekker">{{ include.linktext }}</a>
+
+    {%- when "tabeller med valgbare rækker og funktionsknapper" -%}
+        <a href="/komponenter/tables/#valgbare-raekker-med-funktionsknapper">{{ include.linktext }}</a>
 
     {%- when "strukturerede lister" -%}
         <a href="/komponenter/tables/#strukturerede-lister">{{ include.linktext }}</a>
@@ -224,6 +234,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "sortering i tabeller",
              "tabeller med sortering" -%}
         <a href="/komponenter/tables/#sortering-i-tabeller">{{ include.linktext }}</a>
+
+    {%- when "paginering til tabeller" -%}
+        <a href="/komponenter/tables/#tabel-med-paginering">{{ include.linktext }}</a>
 
     {%- when "tags" -%}
         <a href="/komponenter/tags/">{{ include.linktext }}</a>

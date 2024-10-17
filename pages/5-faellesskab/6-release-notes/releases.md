@@ -75,6 +75,7 @@ tags:
 - 10.0.0
 - 10.0.1
 - 10.0.2
+- 10.1.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -98,6 +99,47 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">17-10-2024</span></div>
+
+Som noget nyt introducerer vi en beslutningslog, der fremover skal supplere den aktuelle release. Her vil der være detaljer og baggrund om de valg, der er truffet.
+
+Se {% include links/external-link.html linktext="beslutningslog for version 10.1.0" %}.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Paginering" %}</h3>
+</div>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-guideline-link.html linktext="paginering til tabeller" %}.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet `role="presentation"` fra "..."-elementerne.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet en skærmlæserbesked til "..."-elementerne.
+- Visuelt løft af pagineringsknapperne.
+- Fjernet klassen `pagination__dropdown`, der ikke blev anvendt.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tabeller" %}</h3>
+</div>
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Flyttet knapperne i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker og funktionsknapper" %} ned under tabellen i HTML'en, så de ikke scroller horisontalt, hvis tabellen har mange kolonner.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex` og synligt fokus til tabeller, så det er muligt at navigere til og scrolle brede tabeller med tastaturet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Ændret beskeden "Vælg en eller flere rækker" til "Ingen rækker valgt" og tilføjet den til alle tabeller med valgbare rækker.
+- Tilføjet padding i {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}, så de har samme padding som de øvrige tabeltyper.
+- Tilføjet kant til bunden af tabelrækkerne på store skærme, når varianterne {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} og {% include links/component-guideline-link.html linktext="tabeller med zebralinjer" %} kombineres.
+- Klassen `table--borderless` kan nu også anvendes sammen med klassen `table-actions` (og den nye tabelpaginering), hvis man anvender {% include links/component-guideline-link.html linktext="tabeller uden ramme" %} sammen med funktionsknapper.
+- Rettet fejl, hvor tjekboksen i headeren for {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} ikke fik den korrekte status i JavaScripten.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet en stylingfejl, som opstod, når man anvendte inputfelter med {% include links/component-guideline-link.html linktext="prefix eller suffix" %}, som samtidigt var read-only eller disabled. Tilføj klassen `disabled` eller `readonly` til `form-input-wrapper` for at få den korrekte styling.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet klassen `search-link`, der satte en alternativ styling tiltænkt overskrifter på søgeresultatsider. Der er nu ikke længere forskel på {% include links/internal-link.html linktext="linkoverskifter" %}, uanset om de anvendes i søgeresultateter eller ej. Hvis man anvender klassen i sin løsning, kan man blot fjerne den, da den ikke længere har nogen effekt.
+- Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er {% include links/external-link.html linktext="deklarationer blandet med indlejrede regler" %} eller anvendelse af {% include links/external-link.html linktext="globale built-in Sass-funktioner" %}. Rækkefølgen af visse deklarationer i CSS-filerne er derfor ændret, men dette har ikke nogen funktionel betydning.
+- Opdateret siderne for {% include links/component-guideline-link.html linktext="radioknapper" %} og {% include links/component-guideline-link.html linktext="tjekbokse" %} med flere eksempler og retningslinjer.
+- Rettet eksemplerne for {% include links/component-guideline-link.html linktext="dropdown" %}, så de alle indeholder en "vælg"-mulighed.
+- Ændret opførsel for {% include links/component-guideline-link.html linktext="overflowmenu" %}, så komponenten lukker, når fokus forsvinder fra menuen. Dette kan for eksempel ske, ved at brugeren navigerer videre med Tab-tasten.
 
 
 

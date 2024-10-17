@@ -14,6 +14,8 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
+<div id="kode" hidden></div>
+
 {% include code/preview-box.html component="spinner" title="Eksempel på spinner komponent" classes="intro-example" %}
 
 <!--split-->

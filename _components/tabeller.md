@@ -105,6 +105,16 @@ Hvis der kan udføres særlige funktioner for de valgte rækker, placeres funkti
 
 {% include code/preview-box.html component="table-selectable-functions" title="Eksempel på valgbare rækker i en tabel med funktionsknapper" code="/komponenter/tables/#valgbare-raekker-med-funktionsknapper-kode" %}
 
+### Tabel med paginering {#{% include create-id.html heading="Tabel med paginering" %}}
+
+Tilføj paginering til tabeller, hvor der potentielt kan være mange rækker.
+
+Giv brugeren mulighed for at se flere rækker per side. Hvis det er teknisk muligt mht. tabellens størrelse, så tilbyd brugeren at se alle rækker på én gang (Nielsen, 2013).
+
+Hvis tabellen indeholder både paginering og sortering, skal klik på en sorteringskolonne sortere alle rækker på tværs af siderne i tabellen og aldrig kun rækkerne på den aktuelle side. Ved ændring i sortering og efter søgning i tabellen skal brugeren tages tilbage til side 1.
+
+{% include code/preview-box.html component="table-pagination" title="Eksempel på tabel med paginering" code="/komponenter/tables/#tabel-med-paginering-kode" %}
+
 {:#strukturerede-lister}
 ### Strukturerede lister
 
@@ -144,11 +154,12 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
-{:.nobullet-liat}
+{:.nobullet-list}
 - {% include links/external-link.html linktext="Lisa Charlotte Rost: What to consider when creating tables (2019)" %}
 - {% include links/external-link.html linktext="Richard Rutter: Web Typography: Designing Tables to be Read, Not Looked At (2017)" %}
 - {% include links/external-link.html linktext="Amy Schade: Mobile Tables: Comparisons and Other Data Tables (2017)" %}
 - {% include links/external-link.html linktext="W3C (WCAG 2.1): Technique F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers" %}
+- {% include links/external-link.html linktext='Jakob Nielsen: Users Pagination Preferences and "View All" (2013)' %}
 
 <!--split-->
 
@@ -250,7 +261,7 @@ Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gør
 new DKFDS.TableSelectableRows(document.getElementById('TABLE-ID')).init();
 {% endhighlight %}
 
-Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Nedenstående eksempel er gjort funktionelt som demonstration.
+Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere funktionaliteten for, hvilke meddelelser der vises under tabellen, for eksempel antal rækker valgt. Tabeleksemplerne på denne side er gjort funktionelle for bedre demonstrationen af valgbare rækker.
 
 #### Events
 
@@ -258,6 +269,16 @@ Bemærk, at for valgbare rækker med funktionsknapper skal man selv håndtere fu
 | Event key                      | Element       | Beskrivelse                                                                                                              |
 |--------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------|
 | fds.table.selectable.updated   | `<table>`     | Når en tjekboks ændrer tilstand i tabellen vil eventet `fds.table.selectable.updated` blive udløst på `<table>`-elementet |
+
+## Tabel med paginering {#{% include create-id.html heading="Tabel med paginering" append="-kode" %}}
+
+{% include code/syntax.html component="table-pagination" link=true copybutton=true guidelines="/komponenter/tables/#tabel-med-paginering" %}
+
+Der medfølger ikke JavaScript med denne variant. Man skal derfor selv implementere sideskift i tabellen og opdatere beskeden om antal valgte rækker, såfremt disse er valgbare.
+
+Beskeden i `rows-message` skal opdateres, når der skiftes side. Vær dog opmærksom på ikke at trigge beskedens `aria-live`, før brugeren selv trykker på en af pagineringsknapperne.
+
+Når brugeren skifter side, er der risiko for, at tabellens længde skifter. Hvis pagineringsknapperne ikke er synlige efter sideskift, så sørg for at scrolle siden programmatisk, så knapperne bliver synlige igen.
 
 ## Strukturerede lister {#{% include create-id.html heading="Strukturerede lister" append="-kode" %}}
 

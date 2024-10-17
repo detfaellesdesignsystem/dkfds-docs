@@ -19,10 +19,12 @@ var flatten = require('gulp-flatten');
 var distComponentCode = '_includes/code/components';
 var distJekyllComponentPreview = '_preview-components';
 
+var titles = require('./example-titles').default;
+
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/search/*.njk'];
+var buildFile = ['examples/components/table/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -100,6 +102,7 @@ var testfiles = [
     "test-header-long-strings",
     "test-header-mobile-helptext",
     "test-header-breadcrumb-function-links",
+    "test-header-init",
     "test-input-fields-1",
     "test-input-fields-2",
     "test-input-fields-3",
@@ -120,7 +123,7 @@ var testfiles = [
     "test-overflow-menus-1",
     "test-overflow-menus-2",
     "test-overflow-menu-placement",
-    "test-pagination-basics",
+    "test-pagination",
     "test-radiobuttons-error",
     "test-radiobuttons-1",
     "test-radiobuttons-2",
@@ -133,6 +136,15 @@ var testfiles = [
     "test-structured-list-3",
     "test-structured-list-4",
     "test-structured-list-5",
+    "test-simple-table",
+    "test-responsive-table",
+    "test-sorting-table",
+    "test-selectable-table",
+    "test-selectable-table-with-buttons",
+    "test-table-many-columns",
+    "test-table-many-columns-with-buttons",
+    "test-table-pagination",
+    "test-table-pagination-with-buttons",
     "test-tables-1",
     "test-tables-2",
     "test-tables-3",
@@ -200,12 +212,19 @@ function isThisAComponentExample(file){
 
 function createMarkdown(content, path, file) {
     var fileName = path.split("\\").pop().replace('.html', '');
+    var title = fileName[0].toUpperCase() + fileName.slice(1);
+    if (titles[fileName]) {
+        if (titles[fileName] !== fileName) {
+            title = titles[fileName];
+        }
+    }
     var header = ``;
     if((path.includes('language-switcher') || path.includes('footer') || path.includes('cookie-message') || (path.includes('header') && !path.includes('table--body-headers') ) || path.includes('toastbesked')) && !path.includes('test')) {
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example 
-title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+filename: ` + fileName + `
+title: ` + title + `
 ---
 `
     } else if(path.includes('test')) {
@@ -221,7 +240,8 @@ title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: test-example 
-title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+filename: ` + fileName + `
+title: Testfil | ` + title.toLowerCase() + `
 previoustest: ` + previous + `
 nexttest: ` + next + `
 ---
@@ -230,7 +250,8 @@ nexttest: ` + next + `
         header = `--- 
 permalink: /eksempel/` + fileName + `/
 layout: example-contained 
-title: ` + fileName[0].toUpperCase() + fileName.slice(1) + `
+filename: ` + fileName + `
+title: ` + title + `
 ---
 `
     }
