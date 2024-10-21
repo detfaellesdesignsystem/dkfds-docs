@@ -330,7 +330,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "erst@erst.dk" -%}
         <a href="mailto:erst@erst.dk"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "privatlivspolitik og cookies" -%}
+    {%- when "privatlivspolitik og cookies",
+             "privatlivs&shy;politik og cookies" -%}
         <a href="/privatlivspolitik-cookies/"{{ classes }}>{{ include.linktext }}</a>
 
 

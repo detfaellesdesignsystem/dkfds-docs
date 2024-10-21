@@ -771,6 +771,10 @@ code {
   hyphens: manual;
 }
 
+.word-wrap {
+  overflow-wrap: break-word;
+}
+
 .layout-demo {
   margin-bottom: 8.6rem;
 

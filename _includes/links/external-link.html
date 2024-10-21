@@ -478,7 +478,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "richard rutter: web typography: designing tables to be read, not looked at (2017)" -%}
         <a href="https://alistapart.com/article/web-typography-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "tilgængelighedserklæring" -%}
+    {%- when "tilgængelighedserklæring",
+             "tilgængeligheds&shy;erklæring" -%}
         <a href="https://www.was.digst.dk/designsystem-dk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "aria-errormessage attribute (aria) - accessibility support" -%}
