@@ -139,7 +139,7 @@ Brug ikke kursiv tekst, da det nedsætter læsbarheden.
         <td>16px</td>
         <td>24px</td>
         <td>Regular (400)</td>
-        <td>#747474</td>
+        <td>#707070</td>
       </tr>
     </tbody>
   </table>

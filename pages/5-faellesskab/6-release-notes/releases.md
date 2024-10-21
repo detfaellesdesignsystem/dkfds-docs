@@ -112,6 +112,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 </div>
 - Ændret `success-light` fra `#EEFFE2` til `#DDF7CE`.
 - Ændret `gray-400` fra `#999999` til `#8E8E8E`.
+- Ændret `gray-500` fra `#747474` til `#707070`.
 
 
 

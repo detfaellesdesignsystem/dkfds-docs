@@ -10,7 +10,7 @@
 <rect x="402" y="126" width="55" height="1" transform="rotate(90 402 126)" fill="#BFBFBF"/>
 <rect x="17" y="235" width="385" height="1" fill="#BFBFBF"/>
 <rect x="402" y="181" width="55" height="1" transform="rotate(90 402 181)" fill="#BFBFBF"/>
-<rect x="16.5" y="16.5" width="385" height="219" stroke="#747474"/>
+<rect x="16.5" y="16.5" width="385" height="219" stroke="#707070"/>
 <rect width="353" height="20" transform="translate(32 88)" fill="#DCDCDC"/>
 <rect width="353" height="20" transform="translate(32 143)" fill="#DCDCDC"/>
 <rect width="353" height="20" transform="translate(32 198)" fill="#DCDCDC"/>
