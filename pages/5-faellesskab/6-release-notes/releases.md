@@ -114,6 +114,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret `gray-400` fra `#999999` til `#8E8E8E`.
 - Ændret `gray-500` fra `#747474` til `#707070`.
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg--inherit-color` og i stedet tilføjet `fill: currentColor` til ikonklassen `icon-svg`. Hvor ikoner tidligere som standard var sorte, arver de nu farven fra det element, de optræder i.
+
 
 
 ## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
