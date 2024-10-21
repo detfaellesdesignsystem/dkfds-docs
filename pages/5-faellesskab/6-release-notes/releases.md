@@ -102,6 +102,15 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 
 
+## Version 11.0.0 {#{% include create-id.html heading="Version 11.0.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+
+- Ændret værdien for {% include links/internal-link.html linktext="farven" %} `success-light` fra `#EEFFE2` til `#DDF7CE`, så den er en anelse mørkere.
+
+
+
 ## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
 {:.mb-0}
 

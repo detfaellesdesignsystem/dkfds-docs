@@ -126,7 +126,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-success-light"></div>
-    {% include color.html hex="#EEFFE2" name="success-light" %}
+    {% include color.html hex="#DDF7CE" name="success-light" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-success"></div>

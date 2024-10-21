@@ -96,7 +96,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "styleguide" -%}
         <a href="/styleguide/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "farver" -%}
+    {%- when "farver",
+             "farven" -%}
         <a href="/styleguide/farver/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "portalfarve",

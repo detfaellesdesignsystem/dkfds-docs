@@ -10,7 +10,7 @@
                 <rect id="Rectangle" stroke="#BFBFBF" fill="#BFBFBF" x="9.5" y="98.5" width="341" height="141"></rect>
             </g>
             <g transform="translate(10.000000, 42.000000)">
-                <rect id="Rectangle" stroke="#358000" fill="#EEFFE2" x="-0.5" y="-0.5" width="341" height="46.1801075"></rect>
+                <rect id="Rectangle" stroke="#358000" fill="#DDF7CE" x="-0.5" y="-0.5" width="341" height="46.1801075"></rect>
                 <rect id="Rectangle" fill="#358000" x="0" y="0" width="2" height="45.1801075"></rect>
                 <text id="Tak" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="20" font-weight="normal" fill="#358000">
                     <tspan x="42" y="30.6279122">Tak</tspan>
