@@ -103,7 +103,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-400"></div>
-    {% include color.html hex="#999999" name="gray-400" %}
+    {% include color.html hex="#8E8E8E" name="gray-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-500"></div>

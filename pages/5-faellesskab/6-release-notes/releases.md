@@ -107,7 +107,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">??-??-2024</span></div>
 
-- Ændret værdien for {% include links/internal-link.html linktext="farven" %} `success-light` fra `#EEFFE2` til `#DDF7CE`, så den er en anelse mørkere.
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Farver" %}</h3>
+</div>
+- Ændret `success-light` fra `#EEFFE2` til `#DDF7CE`.
+- Ændret `gray-400` fra `#999999` til `#8E8E8E`.
 
 
 
