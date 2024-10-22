@@ -19,7 +19,7 @@
         "subheading": "Understøttende tekst",
         "content": "<!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --><div class=\"row background-data-violet-300 p-6\"><div class=\"col-12 align-text-left\"><h3 class=\"h3 mb-0\">3 ofte stillede spørgsmål</h3><ul class=\"mt-0 noindent-list\"><li>In viverra faucibus lorem?</li><li>Phasellus posuere neque?</li><li>Nullam quis nunc dui?</li></ul></div></div>",
         "actionButtons": "<button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button>",
-        "actionLinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\" tabindex=\"-1\"><use xlink:href=\"#open-in-new\"></use></svg></a></li></ul>",
+        "actionLinks": "<ul class=\"nobullet-list\"><li><a href=\"javascript:void(0);\" class=\"default link state\">Et link til et sted i løsningen</a></li><li><a href=\"javascript:void(0);\" class=\"icon-link\">Et link til et sted uden for løsningen<svg class=\"icon-svg\" aria-hidden=\"true\" focusable=\"false\" tabindex=\"-1\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
         "order": ["content", "header", "text", "action"]
       }
     ]

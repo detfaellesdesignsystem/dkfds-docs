@@ -11,7 +11,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 {%- endif -%}
 {%- assign classes = 'class="' | append: classes | append: '"' -%}
 {%- assign attributes = '' | append: classes | append: ' target="_blank"' -%}
-{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
+{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
@@ -499,6 +499,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "node.js" -%}
         <a href="https://nodejs.org/en" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "xlink:href er forældet" -%}
+        <a href="https://svgwg.org/svg2-draft/linking.html#XLinkRefAttrs" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 

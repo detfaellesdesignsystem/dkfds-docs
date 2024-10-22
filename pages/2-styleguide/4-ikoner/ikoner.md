@@ -333,7 +333,7 @@ For at anvende et ikon skal du indsætte det ved hjælp af `<svg>` og referere t
 
 Tilføj klassen `inline-svg` på ikoner, som skal fremgå i en tekst. Ikonet vil da tilpasse sig linjehøjden. Se eksemplet herunder:
 
-Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg> midt i denne sætning.
+Der er et ikon <svg class="icon-svg inline-svg" focusable="false" aria-hidden="true"><use href="#language"></use></svg> midt i denne sætning.
 
 ## Ikoner indsat med klasser {#{% include create-id.html heading="Ikoner indsat med klasser" append="-kode" %}}
 

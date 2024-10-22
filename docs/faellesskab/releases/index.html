@@ -232,7 +232,7 @@
             <div class="solution-heading d-flex flex-wrap align-items-center">
                 <a href="/" class="mr-4">Det Fælles Designsystem</a><strong class="badge badge-large badge-error">Develop</strong>
             </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#menu"></use></svg>Menu</button>
         </div>
     </div>
 
@@ -304,7 +304,7 @@
     <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
         <div class="menu-top">
             <h2 id="menu-heading" class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use xlink:href="#close"></use></svg>Luk</button>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#close"></use></svg>Luk</button>
         </div>
         <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
             <ul class="mainmenu">
@@ -1232,9 +1232,9 @@
         </aside>
 
         <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
-        <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use xlink:href="#report-problem"></use></svg>
+        <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#report-problem"></use></svg>
         <div class="alert-body">
-            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use xlink:href="#close"></use></svg>Luk</button>
+            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#close"></use></svg>Luk</button>
             <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
             <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
@@ -1272,7 +1272,7 @@
 
 <h2 id="versionering-og-release-proces">Versionering og release-proces</h2>
 
-<p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link" target="_blank">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
+<p>Designsystemets måde at versionere på er inspireret af <a href="https://semver.org/" class="icon-link" target="_blank">semantisk versionering<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>. Versionsnummeret indikerer, hvilken type rettelse, der er tale om.</p>
 
 <p>Versionsnummeret skrives altid x.y.z (fx 2.1.3) og skal læses MAJOR (x), MINOR (y), PATCH (z)</p>
 
@@ -1286,7 +1286,7 @@
 
 <p>Designsystemet er “levende” og skal holdes ajour, hvorfor langt de fleste bagud-kompatible ændringer og tilføjelser vil ske løbende. Fejlrettelser vil ske hurtigst muligt. Ikke bagud-kompatible ændringer vil samles op og blive releaset med lavere frekvens.</p>
 
-<p>Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">oprette et issue på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></p>
+<p>Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link" target="_blank">oprette et issue på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a></p>
 
 <h3>Tidligere versioner af dokumentationen</h3>
 
@@ -1310,9 +1310,10 @@
 </div>
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen <code>icon-svg--inherit-color</code> og i stedet tilføjet <code>fill: currentColor</code> til ikonklassen <code>icon-svg</code>. Hvor ikoner tidligere som standard var sorte, arver de nu farven fra det element, de optræder i.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>aria-hidden</code> fra overflowmenuen, sortering, trinindikator og række 3 i headeren. Stylingen er opdateret, så det i stedet er klassen <code>collapsed</code>, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat <code>aria-hidden="true"</code> på <code>overflow-menu-inner</code>, skal man sikre sig, at man i stedet tilføjer klassen <code>collapsed</code>.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/239" class="icon-link" target="_blank">issue #239 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>aria-hidden</code> fra <a href="/komponenter/overflowmenu/">overflowmenuen</a>, <a href="/komponenter/overflowmenu/#sortering">sortering</a>, <a href="/komponenter/trinindikator/">trinindikator</a> og række 3 i <a href="/komponenter/header/">headeren</a>. Stylingen er opdateret, så det i stedet er klassen <code>collapsed</code>, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat <code>aria-hidden="true"</code> på <code>overflow-menu-inner</code>, skal man sikre sig, at man i stedet tilføjer klassen <code>collapsed</code>. Dette har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/239" class="icon-link" target="_blank">issue #239 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret filen ‘all-svg-icons.svg’ så ikonerne matcher dem i filen ‘base-svg.njk’.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet <code>xlink:href</code> med <code>href</code> på alle ikoner, da <a href="https://svgwg.org/svg2-draft/linking.html#XLinkRefAttrs" class="icon-link" target="_blank">xlink:href er forældet<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>. Funktionaliteten er uændret.</li>
 </ul>
 
 <h2 id="version-10-1-0" class="mb-0">Version 10.1.0</h2>
@@ -1321,7 +1322,7 @@
 
 <p>Som noget nyt introducerer vi en beslutningslog, der fremover skal supplere den aktuelle release. Her vil der være detaljer og baggrund om de valg, der er truffet.</p>
 
-<p>Se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/251" class="icon-link" target="_blank">beslutningslog for version 10.1.0<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+<p>Se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/251" class="icon-link" target="_blank">beslutningslog for version 10.1.0<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</p>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/paginering/">Paginering</a></h3>
@@ -1353,7 +1354,7 @@
 <ul>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet en stylingfejl, som opstod, når man anvendte inputfelter med <a href="/komponenter/inputfelter/#prefix-og-suffix">prefix eller suffix</a>, som samtidigt var read-only eller disabled. Tilføj klassen <code>disabled</code> eller <code>readonly</code> til <code>form-input-wrapper</code> for at få den korrekte styling.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Fjernet klassen <code>search-link</code>, der satte en alternativ styling tiltænkt overskrifter på søgeresultatsider. Der er nu ikke længere forskel på <a href="/styleguide/typografi/overskrifter/#overskrift-som-link">linkoverskifter</a>, uanset om de anvendes i søgeresultateter eller ej. Hvis man anvender klassen i sin løsning, kan man blot fjerne den, da den ikke længere har nogen effekt.</li>
-  <li>Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er <a href="https://sass-lang.com/documentation/breaking-changes/mixed-decls/" class="icon-link" target="_blank">deklarationer blandet med indlejrede regler<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller anvendelse af <a href="https://sass-lang.com/blog/import-is-deprecated/#built-in-functions" class="icon-link" target="_blank">globale built-in Sass-funktioner<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Rækkefølgen af visse deklarationer i CSS-filerne er derfor ændret, men dette har ikke nogen funktionel betydning.</li>
+  <li>Opdateret pakkerne i package.json til nyere versioner. Dette har medført en tilretning i flere sass-filer, så der ikke er <a href="https://sass-lang.com/documentation/breaking-changes/mixed-decls/" class="icon-link" target="_blank">deklarationer blandet med indlejrede regler<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> eller anvendelse af <a href="https://sass-lang.com/blog/import-is-deprecated/#built-in-functions" class="icon-link" target="_blank">globale built-in Sass-funktioner<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>. Rækkefølgen af visse deklarationer i CSS-filerne er derfor ændret, men dette har ikke nogen funktionel betydning.</li>
   <li>Opdateret siderne for <a href="/komponenter/radioknap/">radioknapper</a> og <a href="/komponenter/tjekboks/">tjekbokse</a> med flere eksempler og retningslinjer.</li>
   <li>Rettet eksemplerne for <a href="/komponenter/dropdown/">dropdown</a>, så de alle indeholder en “vælg”-mulighed.</li>
   <li>Ændret opførsel for <a href="/komponenter/overflowmenu/">overflowmenu</a>, så komponenten lukker, når fokus forsvinder fra menuen. Dette kan for eksempel ske, ved at brugeren navigerer videre med Tab-tasten.</li>
@@ -1365,11 +1366,11 @@
 
 <ul>
   <li>Fjernet visse browseres modificeringer af <a href="/komponenter/search/">søgefeltet</a>, der kunne indsætte knapper til sletning af søgning, søgehistorik eller ekstra padding.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/237" class="icon-link" target="_blank">issue #237 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/237" class="icon-link" target="_blank">issue #237 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet <a href="/styleguide/ikoner/">ikonerne</a> <code>chevron-double-left</code>, <code>chevron-double-right</code> og <code>file-upload</code> til filen ‘all-svg-icons.svg’.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/243" class="icon-link" target="_blank">issue #243 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/243" class="icon-link" target="_blank">issue #243 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Rettet fejl i <a href="/komponenter/header/">headeren</a>, hvor variablerne <code>$header-portal-logo-width</code> og <code>$header-portal-logo-height</code> ikke blev anvendt.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/245" class="icon-link" target="_blank">issue #245 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/245" class="icon-link" target="_blank">issue #245 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Rettet fejl, hvor pilen i <a href="/komponenter/detaljer/">detaljekomponenten</a> kun var delvist synlig ved tekstforstørrelse.</li>
   <li>Rettet fejl, hvor prikkerne i <a href="/styleguide/typografi/lister/">lister</a> med punktopstilling kom for tæt på teksten ved tekstforstørrelse.</li>
 </ul>
@@ -1391,7 +1392,7 @@
 
 <div><span class="small-text mt-0 d-block">13-06-2024</span></div>
 
-<p>Hvis du skal opgradere fra version 9 til version 10, så læs vores <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/236" class="icon-link d-inline" target="_blank">migreringsguide for v10.0.0<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> på GitHub først. Version 10 indeholder mange breaking changes, man som designer og udvikler skal forholde sig til, da der både er ændringer i grundlæggende komponenter som header og mobilmenu, samt omstrukturering af designsystemets kodefiler.</p>
+<p>Hvis du skal opgradere fra version 9 til version 10, så læs vores <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/236" class="icon-link d-inline" target="_blank">migreringsguide for v10.0.0<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> på GitHub først. Version 10 indeholder mange breaking changes, man som designer og udvikler skal forholde sig til, da der både er ændringer i grundlæggende komponenter som header og mobilmenu, samt omstrukturering af designsystemets kodefiler.</p>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
@@ -1435,7 +1436,7 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilpasset roller, opmærkning og aria-attributter.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor tekst eller ikon kunne ryge ud over komponentens kanter.</li>
   <li>Tilføjet understregning til klikbare trin for at adskille dem fra låste trin.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/204" class="icon-link" target="_blank">issue #204 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/204" class="icon-link" target="_blank">issue #204 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
@@ -1473,13 +1474,13 @@
 <p>Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler ud fra designsystemets filer, hvis man har ændret i de oprindelige filer eller anvender designsystemet på en anden måde end specificeret på dokumentationssiden.</p>
 <ul>
   <li>Designsystemet anvender nu webpack i stedet for gulp til at bygge filer.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret <code>devDependencies</code> og <code>scripts</code> i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret <code>devDependencies</code> og <code>scripts</code> i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet flere polyfills til ikke-supporterede browsere. Hvis man i sit projekt har et krav om at supportere ældre browsere, skal man derfor selv sikre, at man anvender den nødvendige transpiling og polyfills. Se eventuelt <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/">browserunderstøttelse</a>.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet <a href="https://sass-lang.com/documentation/at-rules/import/" class="icon-link" target="_blank">@import<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> i alle SASS-filer med <a href="https://sass-lang.com/documentation/at-rules/use/" class="icon-link" target="_blank">@use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> og <a href="https://sass-lang.com/documentation/at-rules/forward/" class="icon-link" target="_blank">@forward<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/199" class="icon-link" target="_blank">issue #199 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Erstattet <a href="https://sass-lang.com/documentation/at-rules/import/" class="icon-link" target="_blank">@import<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> i alle SASS-filer med <a href="https://sass-lang.com/documentation/at-rules/use/" class="icon-link" target="_blank">@use<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> og <a href="https://sass-lang.com/documentation/at-rules/forward/" class="icon-link" target="_blank">@forward<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>. Dette har medført en generel restruktur i alle SASS-filer og tilhørende mapper, hvor flere funktioner og mixins er blevet slettet eller flyttet.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/199" class="icon-link" target="_blank">issue #199 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Flere SASS-variable er blevet slettet, flyttet eller erstattet, da de gjorde det muligt at tilpasse styling, det ikke var tiltænkt, man skulle ændre.</li>
   <li>Erstattet ‘normalize.css’ med styling i ‘_base.scss’.</li>
-  <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre rettelser og tilføjelser, så der blandt andet kan sættes klasser og attributter.</li>
+  <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> har fået mindre rettelser og tilføjelser, så der blandt andet kan sættes klasser og attributter.</li>
   <li>Mindre koderettelser som følge af et linter-tjek.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet forældede klasser, heriblandt <code>icon-svg-large</code>, <code>collapse-transition-collapse</code>, <code>collapse-transition-expand</code>, <code>button-small</code>, <code>sidebar-col</code> og flere ubrugte klasser for accordion’s åbn/luk alle-knap.</li>
   <li>Opdateret README-fil.</li>
@@ -1518,7 +1519,7 @@
   <li>Tilføjet klassen <code>no-max-width</code>, der forhindrer <code>max-width</code> på en paragraf eller liste.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet varianten af <a href="/komponenter/beskeder/">beskeder</a> uden ikon. Klassen <code>alert--show-icon</code> bruges ikke længere og ikonet skal indsættes manuelt.</li>
   <li>Rettet fejl, hvor responsive tabeller med sortering indeholdt sorteringsknappernes tekst på mindre skærme.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/229" class="icon-link" target="_blank">issue #229 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/229" class="icon-link" target="_blank">issue #229 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Justeret ikonets placering i <a href="/komponenter/funktionslink/">funktionslink</a> og <a href="/styleguide/typografi/links/#eksternt-link">eksterne links</a> samt <code>line-height</code> på knapper for bedre centrering.</li>
 </ul>
 
@@ -1531,9 +1532,9 @@
   <li>Tilføjet styling til <code>placeholder</code>-attributten for <a href="/komponenter/inputfelter/">inputfelter</a>, så placeholder-tekst afviger i udseende fra indtastet tekst. Vær dog opmærksom på, at <a href="/komponenter/inputfelter/#hjaelpetekst">hjælpetekster</a> fortsat er måden at give brugere hjælp til indtastning på.</li>
   <li>Opdateret <a href="/komponenter/funktionslink/">funktionslinks</a>, så teksten er venstrestillet, når de i HTML’en er angivet med <code>&lt;button&gt;</code>.</li>
   <li>Rettet fejl, hvor visse typer af <code>id</code> kunne få <a href="/komponenter/overflowmenu/">overflowmenuen</a> til at fejle.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/220" class="icon-link" target="_blank">issue #220 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet <code>inline</code> til <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">hjælpeklasser for display</a>.</li>
-  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler, tilføjet afsnit om <code>autocomplete</code> til inputfelter og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li>Tilføjet <code>autocomplete</code>-attributter til flere eksempler, tilføjet afsnit om <code>autocomplete</code> til inputfelter og gjort det muligt at sætte autocomplete i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" class="icon-link" target="_blank">date-input-macroen<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet pattern for <a href="/eksempler/patterns/hentet-data/">inputfelter med hentet data</a>.</li>
   <li>Tilføjet ny side til dokumentationen kaldet <a href="/kom-i-gang/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/kom-i-gang/designressourcer/#designressourcer">Designressourcer</a>, <a href="/kom-i-gang/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
 </ul>
@@ -1545,7 +1546,7 @@
 <ul>
   <li>Rettet fejl, hvor musemarkøren ikke blev vist korrekt på <a href="/komponenter/inputfelter/#deaktiveret">deaktiverede felter</a>, når de var angivet som andet end <code>type="text"</code>.</li>
   <li>Rettet fejl, hvor <a href="/komponenter/knapper/">knapper</a> ikke altid stod på linje, når de lå i samme række.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h2 id="version-9-0-1" class="mb-0">Version 9.0.1</h2>
@@ -1556,7 +1557,7 @@
   <li>Rettet fejl, hvor teksten på <a href="/komponenter/knapper/">knapper</a> røg ud over kanten, hvis teksten fyldte flere linjer.</li>
   <li>Rettet fejl, hvor <a href="/komponenter/cookiemeddelelse/">cookiemeddelelsen</a> ikke kunne læses, når der var zoomet kraftigt ind i browseren.</li>
   <li>Tilføjet tjek i JavaScript-koden for <a href="/komponenter/modal/">modaler</a>, så man ikke længere får en fejlbesked i browserens konsol, hvis man programmatisk forsøger at lukke en allerede lukket modal.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/210" class="icon-link" target="_blank">issue #210 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/210" class="icon-link" target="_blank">issue #210 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Rettet fejl i dokumentationen, hvor nogle <a href="/styleguide/farver/">farver</a> stod angivet forkert.</li>
 </ul>
 
@@ -1569,7 +1570,7 @@
 </div>
 <ul>
   <li>Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link" target="_blank">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/201" class="icon-link" target="_blank">issue #201 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Rettet fejl, hvor navigationen i datovælgeren ikke fungerede sammen med visse skærmlæsere.</li>
   <li>Rettet fejl, hvor markøren skiftede udseende på navigationsknapperne, selvom disse knapper ikke var synlige.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet, tilføjet og ændret flere skærmlæserbeskeder. Anvender du dine egne <a href="/komponenter/datovaelger/#sprog-kode">sprogoversættelser</a>, skal disse derfor opdateres.</li>
@@ -1586,7 +1587,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor lange tekster blev ombrudt forkert (ændringen påvirker både venstremenu og trinindikator).</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor trinindikatoren kunne blive for lille, medmindre den var responsiv.</li>
   <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet muligheden for at vise, når der er <a href="/komponenter/trinindikator/#trinindikator-med-fejl">fejl i et trin</a> i trinindikatoren.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/142" class="icon-link" target="_blank">issue #142 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
@@ -1615,22 +1616,22 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></h3>
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a></h3>
 </div>
 <ul>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen <code>"jsnext:main": "src/js/start.js"</code>.<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen <code>"jsnext:main": "src/js/start.js"</code>.<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>release</code> fra <code>scripts</code>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>app-root-path</code>, <code>array-filter</code>, <code>gulp4-run-sequence</code> og <code>zip-folder</code> fra <code>devDependencies</code>.</li>
 </ul>
 
 <h3 class="h4">Øvrige</h3>
 <ul>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.</li>
   <li>Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret HTML’en for følgende komponenter, så titler og fremhævet tekst er angivet med enten et heading-element eller <code>&lt;strong&gt;</code>-element: <a href="/komponenter/badges/#kode">Badges</a>, <a href="/komponenter/beskeder/#kode">beskeder</a>, <a href="/komponenter/cookiemeddelelse/#kode">cookiemeddelelser</a>, <a href="/komponenter/footer/#kode">footer</a> og <a href="/komponenter/toastbesked/#kode">toastbeskeder</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> <a href="/komponenter/toastbesked/">Toastbeskeders</a> aria-attributter og skærmlæserbeskeder er opdateret. Skærmlæsere annoncerer nu også beskedens variant og derudover titlen ved fokus på luk-knappen.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret <a href="/komponenter/accordions/">accordions</a>, så de altid kan åbnes og lukkes uafhængigt af de øvrige accordions i gruppen (mobilversionen af faneblade er dog undtaget).<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/207" class="icon-link" target="_blank">issue #207 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret <a href="/komponenter/fejlmeddelelser/#accordions">fejlbeskeder i accordions</a>, så skærmlæsere kun læser fejlbeskeden højt og ikke hele accordionens indhold.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den lille version af <a href="/komponenter/tilbage-til-top/">tilbage til toppen</a>-knappen ikke blev læst korrekt op af skærmlæsere.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten <code>aria-selected</code> på <a href="/komponenter/overflowmenu/#sortering">sortering</a> er ændret til <code>aria-current</code> og flyttet fra <code>li</code>-elementet til <code>button</code>-elementet.</li>
@@ -1657,7 +1658,7 @@
 <ul>
   <li>Tilføjet klassen <code>full-width-image</code>, der kan bruges til <a href="/styleguide/typografi/links/#billeder-som-links">billeder anvendt som links</a>.</li>
   <li>Rettet fejl i <a href="/komponenter/modal/">modaler</a>, hvor baggrunden kunne blive dækket helt af modalen på især mindre skærme.</li>
-  <li>Opdateret licensinformation og tilføjet licensfilen til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">zip-filen i GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li>Opdateret licensinformation og tilføjet licensfilen til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/releases" class="icon-link" target="_blank">zip-filen i GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</li>
 </ul>
 
 <h3 id="version-8-2-0" class="mb-0">Version 8.2.0</h3>
@@ -1686,7 +1687,7 @@
   <li>Fjernet text-transform:uppercase på <a href="/styleguide/typografi/overskrifter/#subheading">subheading</a>, der ved en fejl var blevet genintroduceret efter version 7.5.3</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Negativ letter-spacing er fjernet fra al tekst - vær opmærksom på, at brødtekster og titler kan fylde mere end tidligere</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Begge knapper i <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a> har nu typen <a href="/komponenter/knapper/#sekundaerknapper">sekundærknapper</a></li>
-  <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af (valgfri) properties</li>
+  <li>Flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> har fået mindre ændringer, for eksempel fejlrettelser (dropdowns og tekstområder) eller tilføjelse af (valgfri) properties</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Dokumentationens eksempler på selvbetjeningsløsninger og <a href="/eksempler/templates/">templates</a> er opdateret og gjort generiske. Derudover er der foretaget flere mindre rettelser, heriblandt er <a href="/eksempler/patterns/formular/">formularer</a> flyttet ind under <a href="/eksempler/patterns/">patterns</a>, ‘sidenavigation’ er omdøbt til ‘<a href="/komponenter/venstremenu/">venstremenu</a>’, ‘felter’ er omdøbt til ‘<a href="/komponenter/inputfelter/">inputfelter</a>’, ‘notifikation’ er omdøbt til ‘<a href="/komponenter/toastbesked/">toastbesked</a>’, ‘skip-link’ er omdøbt til ‘<a href="/komponenter/skip-link/">gå til sidens indhold</a>’ og ‘spinner’ er omdøbt til ‘<a href="/komponenter/spinner/">loading spinner</a>’. De nye navne har udelukkende betydning for, hvor på sitet der kan findes dokumentation og koden er derfor uændret.</li>
 </ul>
 
@@ -1696,9 +1697,9 @@
 
 <ul>
   <li>Rettet aria-labels i <a href="/komponenter/datovaelger/">datovælgerens</a> tilbage/frem-knapper.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link" target="_blank">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/180" class="icon-link" target="_blank">issue #180 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet <code>chevron-double-left</code> og <code>chevron-double-right</code> til <a href="/styleguide/ikoner/">ikoner</a>, der manglede efter version 8.0.0.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/177" class="icon-link" target="_blank">issue #177 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Opdateret ikonet <code>arrow-left</code>, der viste det forkerte ikon, når man indsatte det ved hjælp af klassen.</li>
   <li>Opdateret ikonerne <code>sort-default</code> og <code>sort-table-none</code>, så de også kan bruges som klasse.</li>
   <li>Opdateret ikonerne <code>sort-ascending</code>, <code>sort-default</code>, <code>sort-descending</code>, <code>sort-table-ascending</code>, <code>sort-table-descending</code> og <code>sort-table-none</code>, så det er muligt at ændre farve på disse, når man anvender ikonsamlingen.</li>
@@ -1719,7 +1720,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Indført nye <a href="/styleguide/farver/#datavisualiseringsfarver">datavisualiseringsfarver</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Omdøbt FDS <a href="/styleguide/farver/">farver</a></li>
   <li>Erstattet brug af / ved division i scss med math.div
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link" target="_blank">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/157" class="icon-link" target="_blank">issue #157 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet javascript på <a href="/komponenter/detaljer/">detaljekomponenten</a>, da FDS ikke længere understøtter Internet Explorer</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret javascript kald for komponenter, således at man for visse komponenter skal køre init(). Se mere under hver komponent i kodesektionen</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret attributter for <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a></li>
@@ -1730,7 +1731,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Luk modal, hvis en ny <a href="/komponenter/modal/">modal</a> åbnes.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Forbedret <a href="/komponenter/header/">headeren</a> på mobil.</li>
   <li>Vis <a href="/komponenter/tjekboks/">tjekbokse</a> og <a href="/komponenter/radioknap/">radioknapper</a> ved print.</li>
-  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.</li>
+  <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering af <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> for nemmere vedligehold og brug.</li>
   <li>Vis dage for forrige og næste måned, når de deler uge med aktuelle måned i <a href="/komponenter/datovaelger/">datovælgeren</a>.</li>
   <li>Opdateret breakpoints i <a href="/komponenter/knapper/">knapper</a>, så knapperne ikke er helt så brede på mindre skærme.</li>
   <li>Fjernet accordion uden ramme.</li>
@@ -1742,7 +1743,7 @@
   <li>Lille fejl i border på <a href="/komponenter/tables/">tabeller</a> er fikset.</li>
   <li>Bredde på <a href="/komponenter/overflowmenu/">overflow menu</a> ændret til at fylde hele skærmens bredde på små skærme.</li>
   <li>Ændringer i opførelse af <a href="/komponenter/tooltip/">tooltip</a>, for at sikre teksten kan markeres.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link" target="_blank">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/163" class="icon-link" target="_blank">issue #163 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet og ændret SASS variabler for bedre vedligehold og tematisering.</li>
   <li>Opdateret højden på knapper med ikoner, så de nu har samme højde som knapper uden ikoner.</li>
 </ul>
@@ -1813,12 +1814,12 @@
   <li>Fjernet unødvendige kald til fontfiler</li>
   <li>Timing issue på datovælger - sæt ikke knappen, hvis den allerede eksisterer</li>
   <li>Generel oprydning i dependencies
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link" target="_blank">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/130" class="icon-link" target="_blank">issue #130 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Håndtering af situation: Escape funktion på <a href="/komponenter/overflowmenu/">overflow menu</a> og <a href="/komponenter/modal/">modaler</a> kolliderer og lukker begge, når en overflow er inde i en modal
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link" target="_blank">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/125" class="icon-link" target="_blank">issue #125 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><a href="/styleguide/borders/#streger">Facit streger</a></li>
   <li>Udvidelse af breakpoint for <a href="/komponenter/tables/#responsiv-tabel-kode">responsiv tabel</a>
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link" target="_blank">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/45" class="icon-link" target="_blank">issue #45 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h3 id="version-7-2-0" class="mb-0">Version 7.2.0</h3>
@@ -1827,18 +1828,18 @@
 
 <ul>
   <li>Ændret font i drop down for at fikse bug i Firefox
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link" target="_blank">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/102" class="icon-link" target="_blank">issue #102 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Ny komponent: <a href="/komponenter/datovaelger/">Datovælger</a></li>
   <li>Fiks fejl, hvor ol liste bliver vist med bullets i <a href="/komponenter/accordions/">accordions</a>
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link" target="_blank">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/120" class="icon-link" target="_blank">issue #120 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet brugervenlige JS fejl, når en komponent ikke er tilføjet korrekt</li>
   <li>Opdateret <a href="/styleguide/typografi/">typografi</a></li>
   <li>Tilføjet styling af <a href="/styleguide/typografi/tekst/#billedtekst">billedtekst (figcaption)</a></li>
   <li><a href="/komponenter/accordions/#aabn-luk-alle">Åbn/luk alle accordions function</a></li>
   <li><a href="/komponenter/accordions/">Accordion</a> knapper kan nu være i en overskrift
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link" target="_blank">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/88" class="icon-link" target="_blank">issue #88 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Padding fikset på extracompact tabeller
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/113" class="icon-link" target="_blank">issue #113 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/113" class="icon-link" target="_blank">issue #113 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h3 id="version-7-1-1" class="mb-0">Version 7.1.1</h3>
@@ -1847,7 +1848,7 @@
 
 <ul>
   <li>Fikset fejl, hvor border ved aktivt menupunkt i <a href="/komponenter/header/">header</a> hopper ved hover.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link" target="_blank">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/118" class="icon-link" target="_blank">issue #118 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Fikset fejl i Internet Explorer, hvor <a href="/komponenter/inputfelter/#feltbredde">feltbredde i tekstfelter</a> er defineret ved antal karakterer bliver ignoreret.</li>
   <li>Luk <a href="/komponenter/overflowmenu/">overflow menu</a> i <a href="/komponenter/header/">header</a> ved klik uden for menuen.</li>
   <li>Tilføjet ARIA attributter i <a href="/komponenter/trinindikator/">trinindikator</a> for bedre tilgængelighed</li>
@@ -1873,7 +1874,7 @@
   <li>Fjernet dokumentation for brug af dkfds-plugins, da det fremover ikke vil blive vedligeholdt
 <span class="form-hint mt-0">Se mere under <a href="/kom-i-gang/implementering-kode/plugins/">Plugins</a> i Kode sektionen</span></li>
   <li>Fikset fejl, hvor valgt radioknap ikke blev vist ved print i Internet Explorer og Edge
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link" target="_blank">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/112" class="icon-link" target="_blank">issue #112 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h3 id="version-6-1-1" class="mb-0">Version 6.1.1</h3>
@@ -1902,9 +1903,9 @@
 
 <ul>
   <li>Fjernet inkludering af IBM Plex Sans definitionen i dkfds-tippy-theme.standalone.css.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link" target="_blank">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/104" class="icon-link" target="_blank">issue #104 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Understøttelse af Tippy.js v6.1.0
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/105" class="icon-link" target="_blank">issue #105 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/105" class="icon-link" target="_blank">issue #105 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilpasset CSS til faneblade, så der ikke længere kommer fejl ved import af dkfds scss i angular.</li>
 </ul>
 
@@ -1917,14 +1918,14 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Skjul/vis indhold med knap er fjernet.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/cookiemeddelelse/">Cookiemeddelelse</a> opdateret i udseende og HTML.</li>
   <li>Rettet fejl med border i tabel.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link" target="_blank">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/96" class="icon-link" target="_blank">issue #96 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Tilføjet mulighed for styling af <a href="/styleguide/typografi/overskrifter/#overskrift-som-link">links i overskrifter</a>.</li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/">Faneblade</a> er ændret i HTML og JavaScript.</li>
   <li>Ændret aktive farve på undermenupunkt i <a href="/komponenter/venstremenu/">venstremenu</a></li>
   <li>Tilføjet retningslinjer for <a href="/komponenter/funktionslink/">funktionslink</a>, <a href="/komponenter/tilbage-link/">tilbage-link</a> og <a href="/komponenter/cookiemeddelelse/">cookiemeddelelse</a>.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet korrekte ARIA attributer på <a href="/komponenter/venstremenu/#kode">venstremenuen</a>, mobilmenu og <a href="/komponenter/header/#kode">headermenuen</a>.</li>
   <li>Fikset fejl på <a href="/komponenter/trinindikator/#responsiv">responsiv trinindikator</a>.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link" target="_blank">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/94" class="icon-link" target="_blank">issue #94 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
 <h3 id="version-5-3-0" class="mb-0">Version 5.3.0</h3>
@@ -1955,7 +1956,7 @@
   <li>Overskriftstørrelser på mobil er blevet opdateret</li>
   <li>Tilpasset farve på informationstekst på komponenterne <a href="/komponenter/venstremenu/#ekstra-information">venstremenu med ekstra information</a> og <a href="/komponenter/trinindikator/#ekstra-information">trinindikator med ekstra information</a></li>
   <li>Tilføjet eksempel på tabel i Datatable
-<span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link" target="_blank">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">Efterspurgt i <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/55" class="icon-link" target="_blank">Github issue #55<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Opdateret Eksempel på implementering i Angular</li>
 </ul>
 
@@ -1970,9 +1971,9 @@
   <li>Fokuskant tilføjet på #main-content ved fokus fra Skip link.</li>
   <li><a href="/komponenter/badges/#statusbadges">Statusbadges</a> er tilføjet i kernen.</li>
   <li>Fejl i overflow menu brugt i header fikset.
-<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link" target="_blank">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/75" class="icon-link" target="_blank">Github issue #75<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Fikset print af modal fra iPhone.
-<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link" target="_blank">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">Se mere om fejlen på <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/67" class="icon-link" target="_blank">Github issue #67<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li>Opdateret beskrivelse af implementering af DKFDS under Til udviklere.
 <span class="form-hint mt-0">Bemærk, at neutralt tema kun bør benyttes som skabelon til et nyt tema, og ikke som et enkeltstående tema. Læs mere om temahåndtering.</span></li>
 </ul>
@@ -1983,9 +1984,9 @@
 
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i kernen er skrevet om. Man skal initiere javascript med funktionen <code>DKFDS.init()</code> på hver side.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> eller vores afsnit om implementering af DKFDS til udviklere.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> eller vores afsnit om implementering af DKFDS til udviklere.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> JavaScript i DKFDS kernen bliver nu udstillet til brug i projekter.
-<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/74" class="icon-link" target="_blank">issue #74 på Github<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/venstremenu/">Venstremenuen</a> har fået nyt design.
 <span class="form-hint mt-0">HTML er ændret - se korrekt struktur under <a href="/komponenter/venstremenu/">venstremenu-komponenten</a>.</span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> <a href="/komponenter/faneblade/">Faneblade</a> er blevet redefineret.
@@ -2163,7 +2164,7 @@
 
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Refaktoreret fra ‘dkwds’ til ‘dkfds’
-<span class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds" class="icon-link" target="_blank">‘dkfds’<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> i stedet for ‘dkwds’. </span></li>
+<span class="form-hint mt-0">Alt kode er blevet refaktoreret så den nu benytter forkortelsen <a href="https://www.npmjs.com/package/dkfds" class="icon-link" target="_blank">‘dkfds’<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a> i stedet for ‘dkwds’. </span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Bourbon er fjernet
 <span class="form-hint mt-0">Biblioteket ‘Bourbon’ er ikke længere en del af designsystemet. Det vil derfor ikke længere være muligt at benytte sig af deres hjælpeklasser og funktioner. </span></li>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Nyt gridsystem
@@ -2236,7 +2237,7 @@
 
 <footer>
     <a class="back-to-top-button button button-tertiary d-print-none" href="#top">
-    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#arrow-upward"></use></svg>
+    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-upward"></use></svg>
     <span class="sr-only">Til toppen af siden</span>
     <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
 </a>
@@ -2254,7 +2255,7 @@
                         <h2 class="h5 mb-4">Webtilgængelig&shy;hed og cookies</h2>
                         <ul class="nobullet-list mb-0">
                             <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivs&shy;politik og cookies</a></li>
-                            <li><a href="https://www.was.digst.dk/designsystem-dk" class="icon-link function-link" target="_blank">Tilgængeligheds&shy;erklæring<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
+                            <li><a href="https://www.was.digst.dk/designsystem-dk" class="icon-link function-link" target="_blank">Tilgængeligheds&shy;erklæring<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a></li>
                             <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
                         </ul>
                     </section>
@@ -2264,8 +2265,8 @@
                         <h2 class="h5 mb-4">Mangler vi noget?</h2>
                         <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.</p>
                         <ul class="mt-4 nobullet-list mb-0">
-                            <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link function-link" target="_blank">Opret et issue på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a></li>
-                            <li><a href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#email"></use></svg>Send en mail til FDS-teamet</a></li>
+                            <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link function-link" target="_blank">Opret et issue på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a></li>
+                            <li><a href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#email"></use></svg>Send en mail til FDS-teamet</a></li>
                         </ul>
                     </section>
                 </div>

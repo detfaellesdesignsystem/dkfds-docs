@@ -86,8 +86,8 @@ function languageSwitcher(){
             let english = languages[1];
             let german = languages[2];
             let polish = languages[3];
-            let globe_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>';
-            let done_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>';
+            let globe_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#language"></use></svg>';
+            let done_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#done"></use></svg>';
 
             switch (lang) {
                 case "en-GB":
