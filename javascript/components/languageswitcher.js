@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 function languageSwitcher(){
 
-    // if (document.getElementsByTagName('body')[0].classList.contains('page-language-switcher') || document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
     if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher')) {
         let queryString = window.location.search;
         if(queryString !== "" && queryString.indexOf("lang=") !== -1){

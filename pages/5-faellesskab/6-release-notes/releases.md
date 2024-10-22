@@ -118,6 +118,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg--inherit-color` og i stedet tilføjet `fill: currentColor` til ikonklassen `icon-svg`. Hvor ikoner tidligere som standard var sorte, arver de nu farven fra det element, de optræder i.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra overflowmenuen, sortering, trinindikator og række 3 i headeren. Stylingen er opdateret, så det i stedet er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`.
+{% include links/github-link.html number="239" afternumber=" på GitHub" %}
 
 
 
