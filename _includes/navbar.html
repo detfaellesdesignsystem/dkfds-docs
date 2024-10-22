@@ -2,8 +2,8 @@
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
     <div class="solution-info">
         <div class="solution-info-inner container">
-            <div class="solution-heading d-flex align-items-center">
-                <a href="/">Det Fælles Designsystem</a>{% if site.environment == "development" %}<strong class="badge badge-large badge-error ml-4">Develop</strong>{% endif %}
+            <div class="solution-heading d-flex flex-wrap align-items-center">
+                <a href="/"{% if site.environment == "development" %} class="mr-4"{% endif %}>Det Fælles Designsystem</a>{% if site.environment == "development" %}<strong class="badge badge-large badge-error">Develop</strong>{% endif %}
             </div>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
         </div>
