@@ -144,22 +144,16 @@ tags:
   </thead>
   <tbody>
     <tr>
-      <td>Modal</td>
-      <td>0 8px 16px 0</td>
+      <td>Kraftig</td>
+      <td>0 8px 24px 0</td>
       <td>#000000</td>
-      <td>30%</td>
+      <td>20%</td>
     </tr>
     <tr>
-      <td>Overflow menu</td>
-      <td>0 4px 8px 0</td>
+      <td>Let</td>
+      <td>0 4px 12px 0</td>
       <td>#000000</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td>Cards</td>
-      <td>0 2px 4px 0</td>
-      <td>#000000</td>
-      <td>30%</td>
+      <td>20%</td>
     </tr>
   </tbody>
 </table>

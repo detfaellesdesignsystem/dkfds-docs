@@ -127,6 +127,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny styleguide for {% include links/internal-link.html linktext="skygger" %}. Skyggen `medium` er fjernet, og skyggerne `light` og `heavy` er blevet mere gennemsigtige med større blur-værdi. Skygger på {% include links/component-guideline-link.html linktext="cards" %} er fjernet helt (inkl. variablen `$cards-shadow`) og skygger på komponenterne {% include links/component-guideline-link.html linktext="tilbage til toppen" %}, {% include links/component-guideline-link.html linktext="cookiemeddelelse" %}, {% include links/component-guideline-link.html linktext="datovælger" %}, {% include links/component-guideline-link.html linktext="modal" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %}, {% include links/component-guideline-link.html linktext="toastbesked" %} og {% include links/component-guideline-link.html linktext="tooltip" %} er opdateret til at følge den nye styleguide.
 
 
 
@@ -137,7 +138,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 Som noget nyt introducerer vi en beslutningslog, der fremover skal supplere den aktuelle release. Her vil der være detaljer og baggrund om de valg, der er truffet.
 
-Se {% include links/external-link.html linktext="beslutningslog for version 10.1.0" %}.
+Se {% include links/external-link.html linktext="beslutningslog for version 10.1.0" %}
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Paginering" %}</h3>
