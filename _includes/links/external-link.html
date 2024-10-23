@@ -11,7 +11,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 {%- endif -%}
 {%- assign classes = 'class="' | append: classes | append: '"' -%}
 {%- assign attributes = '' | append: classes | append: ' target="_blank"' -%}
-{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg>' -%}
+{%- assign icon = '<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}

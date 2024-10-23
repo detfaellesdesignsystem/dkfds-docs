@@ -115,13 +115,18 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - Ændret `gray-500` fra `#747474` til `#707070`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Ikoner" %}</h3>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg--inherit-color` og i stedet tilføjet `fill: currentColor` til ikonklassen `icon-svg`. Hvor ikoner tidligere som standard var sorte, arver de nu farven fra det element, de optræder i.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det i stedet er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Dette har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
-{% include links/github-link.html number="239" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret filen 'all-svg-icons.svg' så ikonerne matcher dem i filen 'base-svg.njk'.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet `xlink:href` med `href` på alle ikoner, da {% include links/external-link.html linktext="xlink:href er forældet" %}. Funktionaliteten er uændret.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet tilgængelighedsfejl, hvor ikonet i {% include links/internal-link.html linktext="eksterne links" %} ikke blev læst højt. Fjern `aria-hidden` fra ikonet og indsæt en passende `aria-label` i stedet. Makroen 'icon_svg' er i denne forbindelse opdateret, så et ikon ikke både kan have `aria-label` og `aria-hidden="true"`.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
+{% include links/github-link.html number="239" afternumber=" på GitHub" %}
 
 
 
