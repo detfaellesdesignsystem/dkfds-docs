@@ -95,7 +95,7 @@
     },
     "button_add": {
         "text": "Tilføj person",
-        "variant": "tertiary",
+        "variant": "secondary",
         "classes": { "button": "d-print-none mt-5" },
         "icon": "add",
         "attributes": "type='button'"

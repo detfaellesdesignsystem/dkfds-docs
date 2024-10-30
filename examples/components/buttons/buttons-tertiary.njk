@@ -1,5 +1,7 @@
 {% from "components/buttons/buttons.njk" import button as button %}
+
+<div class="button-group">
 {% for item in button_example.items %}
 {{ button(item) }}
 {% endfor %}
-
+</div>

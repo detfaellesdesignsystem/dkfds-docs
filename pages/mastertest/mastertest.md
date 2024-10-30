@@ -145,11 +145,11 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Knapper
 
+{% include test/preview-test.html filename="test-buttons" description="Knapper" %}
 {% include test/preview-test.html filename="test-buttons-in-row" description="Knapper på én række" %}
 {% include test/preview-test.html filename="test-buttons-in-divs" description="Knapper i hver sin række" %}
 {% include test/preview-test.html filename="test-buttons-next-to-text" description="Knapper i tekstafsnit" %}
 {% include test/preview-test.html filename="test-button-long-text" description="Knapper med lang tekst" %}
-{% include test/preview-test.html filename="test-buttons-1" description="Knap 1" %}
 
 {:.h3}
 ## Modal

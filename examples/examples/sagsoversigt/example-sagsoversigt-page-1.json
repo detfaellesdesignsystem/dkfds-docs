@@ -142,7 +142,7 @@
         "heading": "Jørgen Hansen",
         "headingLevel": "h4",
         "text": "Ansøgning om adgang til sagsnr. 20200000012.",
-        "actionButtons": "<button class=\"button button-tertiary\">Annuller anmodning</button>",
+        "actionButtons": "<button class=\"button button-secondary\">Annuller anmodning</button>",
         "content": "<strong class='badge badge-small badge-info ml-5'>Afventer godkendelse</strong>",
         "order": [
             "header",

@@ -123,11 +123,25 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet tilgængelighedsfejl, hvor ikonet i {% include links/internal-link.html linktext="eksterne links" %} ikke blev læst højt. Fjern `aria-hidden` fra ikonet og indsæt en passende `aria-label` i stedet. Makroen 'icon_svg' er i denne forbindelse opdateret, så et ikon ikke både kan have `aria-label` og `aria-hidden="true"`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Knapper" %}</h3>
+</div>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet knapvariant til brug ved advarsler.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Visuelt løft af alle knapper inkl. {% include links/component-guideline-link.html linktext="Tilbage til toppen" %} og knappen i {% include links/component-guideline-link.html linktext="søgefeltet" %}. Læs de opdaterede {% include links/component-guideline-link.html linktext="retningslinjer for knapper" %} for korrekt anvendelse af knapperne.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Klassen `button-unstyled` udgår og erstattes af `button`, der allerede eksisterer, men som tidligere ikke har kunnet anvendes for sig selv. Variant-klasserne som fx `button-secondary` skal fortsat anvendes sammen med `button`, hvis knappen skal styles som en af varianterne.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilbage-knapperne (sat med klassen `button-quaternary`) udgår.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Har man flere knapper ved siden af hinanden, skal man enten anvende en wrapper med klassen `button-group` for at sikre korrekt margin mellem knapperne eller selv justere afstanden med {% include links/internal-link.html linktext="hjælpeklasser" %}. Klassen `button-column` udgår.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Knapper er som standard ikke længere fuld bredde på små skærme. Ønsker man fortsat denne funktionalitet, skal man tilføje klassen `xs-full-width` til sin knap.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Klassen `button-tertiary` skal ikke længere anvendes på {% include links/component-guideline-link.html linktext="Tilbage til toppen" %}.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Knapper med lange ord bliver nu ombrudt korrekt ved pladsmangel, hvis man placerer teksten i et `<span>`-element.
+
+<div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny styleguide for {% include links/internal-link.html linktext="skygger" %}. Skyggen `medium` er fjernet, og skyggerne `light` og `heavy` er blevet mere gennemsigtige med større blur-værdi. Skygger på {% include links/component-guideline-link.html linktext="cards" %} er fjernet helt (inkl. variablen `$cards-shadow`) og skygger på komponenterne {% include links/component-guideline-link.html linktext="tilbage til toppen" %}, {% include links/component-guideline-link.html linktext="cookiemeddelelse" %}, {% include links/component-guideline-link.html linktext="datovælger" %}, {% include links/component-guideline-link.html linktext="modal" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %}, {% include links/component-guideline-link.html linktext="toastbesked" %} og {% include links/component-guideline-link.html linktext="tooltip" %} er opdateret til at følge den nye styleguide.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper og tags er enten slettet, tilføjet eller ændret.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet variable og funktion for `border-radius`.
 
 
 

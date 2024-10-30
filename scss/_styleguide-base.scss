@@ -789,7 +789,7 @@ code {
 // Demo fixed footer
 .demo-footer {
   padding: 8px;
-  background-color: #000;
+  background-color: color('black');
   bottom: 0;
   position: fixed;
   z-index: 1;
@@ -798,13 +798,13 @@ code {
   -webkit-font-smoothing: antialiased;
 
   .button {
-    background-color: black;
-    border-color: white !important;
+    background-color: color('black');
+    border-color: color('white') !important;
     width: auto;
+    color: color('white');
 
-    &:hover,
-    &:visited {
-      color: white;
+    &:hover, &:focus, &:active {
+      color: color('black');
     }
 
     .icon-svg {
@@ -819,14 +819,14 @@ code {
 
   .form-select {
     background-color: black;
-    color: #fff;
+    color: color('white');
   }
 
   .function-link {
     color: color('white');
 
     .icon-svg {
-      fill: #fff;
+      fill: color('white');
     }
 
     @include media-breakpoint-up(sm) {
@@ -1045,7 +1045,7 @@ body[class*="page-grid"][class*="-html"]
 }
 
 .interactive-border-radius-example {
-  border-top-left-radius: $button-border-radius;
+  border-top-left-radius: border-radius('small');;
   width: 144px;
   height: 120px;
   background-color: color('gray-100');
@@ -1069,10 +1069,6 @@ body[class*="page-grid"][class*="-html"]
 }
 .inner-inner-border-example {
   border-top: border(30);
-}
-
-.button-border-example {
-  border-top: $button-border-width solid color($button-primary-default-border-color);
 }
 
 .form-error-border-example{

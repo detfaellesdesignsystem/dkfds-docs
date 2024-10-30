@@ -79,10 +79,6 @@ Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disa
 
 {% include code/preview-box.html component="buttons-tertiary" title="Eksempel på tertiær knap" code="/komponenter/knapper/#tertiaer-kode" %}
 
-### Tilbage-knap {#{% include create-id.html heading="Tilbage-knap" %}}
-
-{% include code/preview-box.html component="buttons-back" title="Eksempel på tilbageknap" code="/komponenter/knapper/#tilbage-knap-kode" %}
-
 ### Knap med ikon {#{% include create-id.html heading="Knap med ikon" %}}
 
 {% include code/preview-box.html component="buttons-with-icon" title="Eksempel på knap med ikon" code="/komponenter/knapper/#knap-med-ikon-kode" %}
