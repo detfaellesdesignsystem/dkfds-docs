@@ -101,6 +101,16 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
 
+## Version 10.1.1 {#{% include create-id.html heading="Version 10.1.1" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+
+- Rettet fejl, hvor indhold i modaler ikke altid kunne ses ved print.
+- Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
+- Ændret `position` for tooltips, så de kan bruges i modaler uden at teksten skæres af.
+- Tilføjet funktioner til at vise og skjule et tooltip.
+
 
 ## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}
 {:.mb-0}

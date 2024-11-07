@@ -131,6 +131,15 @@ Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes 
 | data-position   | Skal sættes til enten `above` eller `below`. Undlades attributten vælges `above` som standard.                                    |
 | data-trigger    | Skal sættes til enten `click` eller `hover`. Anvend kun `click`, hvis elementet ikke har andre funktioner end at åbne tooltippet. |
 
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion              | Beskrivelse                                   |
+|-----------------------|-----------------------------------------------|
+| tooltip.hideTooltip() | Skjuler et tooltip                            |
+| tooltip.showTooltip() | Viser et tooltip                              |
+| tooltip.isShowing()   | Returnerer `true`, hvis tooltippet er synligt |
+
 ## Radioknap med tooltip {#{% include create-id.html heading="Radioknap med tooltip" append="-kode" %}}
 
 {% include code/syntax.html component="tooltip-radiobuttons" title="Eksempel på tooltip for radioknapper" link=true copybutton=true guidelines="/komponenter/tooltip/#radioknap-med-tooltip" %}
