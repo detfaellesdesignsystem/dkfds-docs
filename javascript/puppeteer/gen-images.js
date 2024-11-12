@@ -23,7 +23,8 @@ var exampleUrls = [
     { "url": "eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
     { "url": "eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 },
     { "url": "eksempel/tabs-navigation/", "filename": "tabs-navigation.png", "width": 771, "height": 286 },
-    { "url": "eksempel/error-summary-page/", "filename": "error-summary-page.png", "width": 1150, "height": 810 }
+    { "url": "eksempel/error-summary-page/", "filename": "error-summary-page.png", "width": 1150, "height": 810 },
+    { "url": "eksempel/anchorlinks/", "filename": "anchorlinks.png", "width": 240, "height": 171 }
 ];
 
 (async () => {
@@ -57,6 +58,10 @@ var exampleUrls = [
                         toTopButton.style.right = "auto";
                         toTopButton.style.bottom = "auto";
                         toTopButton.style.top = "10px";
+                    }
+                    if (document.body.classList.contains('page-anchorlinks')) {
+                        document.querySelector('.anchorbox').style.marginTop = "0";
+                        document.querySelector('.anchortitle').style.marginTop = "0";
                     }
                     window.scrollTo(0, 0);
                     if (document.getElementsByClassName('footer').length > 0) {

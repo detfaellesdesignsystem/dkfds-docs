@@ -38,7 +38,7 @@ Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typis
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -74,7 +74,7 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -122,7 +122,7 @@ Brug ikke kursiv tekst, da det nedsætter læsbarheden.
 
 ## Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" %}}
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -156,7 +156,7 @@ Se eksempel på brug af {% include links/component-guideline-link.html linktext=
 
 ## Fejlmeddelelser {#{% include create-id.html heading="Fejlmeddelelser" %}}
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -200,7 +200,7 @@ Forklarende eller beskrivende tekst tilhørende et billede.
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -234,7 +234,7 @@ Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og 
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>

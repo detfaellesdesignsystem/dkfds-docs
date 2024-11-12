@@ -106,10 +106,19 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">??-??-2024</span></div>
 
-- Rettet fejl, hvor indhold i modaler ikke altid kunne ses ved print.
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
+</div>
 - Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
 - Ændret `position` for tooltips, så de kan bruges i modaler uden at teksten skæres af.
 - Tilføjet funktioner til at vise og skjule et tooltip.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- Rettet fejl, hvor indhold i {% include links/component-guideline-link.html linktext="modaler" %} ikke altid kunne ses ved print.
+- Tilføjet flere tekstmuligheder til {% include links/external-link.html linktext="macroerne" %} for anchorlinks og trinindikator.
+
 
 
 ## Version 10.1.0 {#{% include create-id.html heading="Version 10.1.0" %}}

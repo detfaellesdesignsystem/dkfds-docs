@@ -268,7 +268,7 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 - `name`
 - `aria-describedby`
 
-#### Tekstområde med karakterbegrænsning {#{% include create-id.html heading="Tekstområde med karakterbegrænsning" append="-kode" %}}
+### Tekstområde med karakterbegrænsning {#{% include create-id.html heading="Tekstområde med karakterbegrænsning" append="-kode" %}}
 
 {% include code/syntax.html component="text-area-character-limit-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#tekstomraade-med-karakterbegraensning" %}
 
