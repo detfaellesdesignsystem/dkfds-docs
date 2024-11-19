@@ -257,6 +257,8 @@ B: Test af faneblade anvendt til sidenavigation
 ## Tooltips
 
 {% include test/preview-test.html filename="test-tooltips" description="Tooltips" %}
+{% include test/preview-test.html filename="test-tooltip-overflow" description="Tooltips i overflow elements" %}
+{% include test/preview-test.html filename="test-tooltip-overflow-2" description="Tooltips i overflow elements 2" %}
 {% include test/preview-test.html filename="test-tooltip-javascript" description="JavaScript for tooltips" %}
 
 {:.h3}

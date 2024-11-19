@@ -1,0 +1,178 @@
+{% from "components/tooltip/tooltip.njk" import tooltip as tooltip %}
+{% from "components/tooltip/tooltip.njk" import tooltip_helpicon as tooltip_helpicon %}
+{% from "components/tooltip/tooltip.njk" import tooltip_text as tooltip_text %}
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/modal/modal.njk" import modal as modal %}
+{% from "components/table/table.njk" import table as table %}
+
+{% set modal_content = 
+    '<h3>Tooltips der tilpasser sig browseren</h3>
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="tooltip-wrapper" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
+        data-tooltip-id="modal-left" data-position="above" data-trigger="click" data-force-visible="true"><button
+            class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+        </div>
+        <div class="tooltip-wrapper" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem." data-tooltip-id="tooltip-modal-knap"
+        data-position="above" data-trigger="hover" data-force-visible="true"><button
+            class="button button-primary tooltip-target">
+            Knap med tooltip
+        </button></div>
+        <div class="tooltip-wrapper" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
+        data-tooltip-id="modal-right" data-position="below" data-trigger="click" data-force-visible="true"><button
+            class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
+        </div>
+    </div>'
+%}
+
+{% set modal_actions = 
+    button({
+        "variant": "secondary",
+        "text": "Luk",
+        "attributes": "data-modal-close"
+    })
+%}
+
+{% set cellTextTooltip = 
+    tooltip_text({
+        "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
+        "id": "tooltip-table-text-example",
+        "phrase": "cell",
+        "forceVisible": "true"
+    })
+%}
+
+{% set tableCellTextTooltip = "Second row, fourth " + cellTextTooltip %}
+
+{% set headerTooltip = 
+    tooltip_helpicon({
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
+        "id": "tooltip-tableheader",
+        "forceVisible": "true"
+    }) 
+%}
+
+{% set tableHeaderTooltip = "Second column " + headerTooltip %}
+
+{% set cellTooltip = 
+    tooltip_helpicon({
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
+        "id": "tooltip-tablecell",
+        "position": "below",
+        "forceVisible": "true"
+    }) 
+%}
+
+{% set tableCellTooltip = cellTooltip + " Fourth row, first cell" %}
+
+{% set buttonWithTooltip = 
+    button({
+        "variant": "primary",
+        "text": "Third row, third cell",
+        "classes": { "button": "tooltip-target" }
+    })
+%}
+{% set trueTooltip = 
+    tooltip({
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
+        "target": buttonWithTooltip,
+        "trueTooltip": true,
+        "id": "tooltip-knap1",
+        "forceVisible": "true"
+    }) 
+%}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tooltips i overflow elements</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {% set target4 = 
+                button({
+                    "text": "Åbn modal",
+                    "variant": "tertiary",
+                    "classes": { "button": "tooltip-target" },
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example\" aria-haspopup=\"dialog\""
+                }) 
+            %}
+            {{ 
+                tooltip({
+                    "text": "Tryk for at åbne modal",
+                    "target": target4,
+                    "trueTooltip": true,
+                    "id": "tooltip-modal"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                table({
+                    "id": "table-with-tooltips",
+                    "thead": [
+                        { "headerContent": "First column" },
+                        { "headerContent": tableHeaderTooltip },
+                        { "headerContent": "Third column" },
+                        { "headerContent": "Fourth column" }
+                    ],
+                    "tbody": [
+                        [
+                            { "content": "First row, first cell" },
+                            { "content": "First row, second cell" },
+                            { "content": "First row, third cell" },
+                            { "content": "First row, fourth cell" }
+                        ],
+                        [
+                            { "content": "Second row, first cell" },
+                            { "content": "Second row, second cell" },
+                            { "content": "Second row, third cell" },
+                            { "content": tableCellTextTooltip }
+                        ],
+                        [
+                            { "content": "Third row, first cell" },
+                            { "content": "Third row, second cell" },
+                            { "content": trueTooltip },
+                            { "content": "Third row, fourth cell" }
+                        ],
+                        [
+                            { "content": tableCellTooltip },
+                            { "content": "Fourth row, second cell" },
+                            { "content": "Fourth row, third cell" },
+                            { "content": "Fourth row, fourth cell" }
+                        ]
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <div style="height: 60px; width: 60px; background-color: #DCDCDC; overflow: auto;" id="overflow-container">
+                {{ 
+                    tooltip_helpicon({
+                        "text": "Dette tooltip sidder i højre side i rækken",
+                        "id": "tooltip-small-overflow",
+                        "forceVisible": "true"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-example",
+            "contentId": "modal-example-content",
+            "heading": "Modal med handlinger",
+            "content": modal_content,
+            "actions": modal_actions
+        })
+    }}
+</div>
