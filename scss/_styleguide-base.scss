@@ -1034,23 +1034,35 @@ body[class*="page-grid"][class*="-html"]
   }
 }
 
-//BORDER RADIUS
-.static-border-radius-example {
-  border-top-left-radius:0; //  0
-  width: 144px;
-  height: 120px;
+// Border radius examples
+%-border-radius-example {
   background-color: color('gray-100');
-  border-left: border(10);
-  border-top: border(10);
+  width: 96px;
+  height: 48px;
+  border-left: units(1) solid color('gray-400');
+  border-top: units(1) solid color('gray-400');
 }
 
-.interactive-border-radius-example {
-  border-top-left-radius: border-radius('small');;
-  width: 144px;
-  height: 120px;
-  background-color: color('gray-100');
-  border-left: border(10);
-  border-top: border(10);
+.no-border-radius-example {
+  @extend %-border-radius-example;
+  border-top-left-radius: border-radius('none');
+}
+
+.small-border-radius-example {
+  @extend %-border-radius-example;
+  border-top-left-radius: border-radius('small');
+}
+
+.medium-border-radius-example {
+  @extend %-border-radius-example;
+  border-top-left-radius: border-radius('medium');
+}
+
+.round-border-radius-example {
+  @extend %-border-radius-example;
+  border-bottom: units(1) solid color('gray-400');
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
 }
 
 //BORDERS

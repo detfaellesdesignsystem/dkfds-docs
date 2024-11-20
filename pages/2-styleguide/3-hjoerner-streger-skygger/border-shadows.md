@@ -22,27 +22,9 @@ tags:
 
 ## Hjørner {#{% include create-id.html heading="Hjørner" %}}
 
-{% include code/preview-box.html component="border-radius" link=false %}
+Designsystemets hjørner er med til at skabe visuel genkendelse samt til at lede brugerens opmærksomhed.
 
-<h3>Designværdier</h3>
-<table class="table table--borderless table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Navn</th>
-      <th>Border radius</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Statiske hjørner</td>
-      <td>0px</td>
-    </tr>
-    <tr>
-      <td>Interaktive hjørner</td>
-      <td>4px</td>
-    </tr>
-  </tbody>
-</table>
+{% include code/preview-box.html component="border-radius" link=false %}
 
 ## Streger {#{% include create-id.html heading="Streger" %}}
 

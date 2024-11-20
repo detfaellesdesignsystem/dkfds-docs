@@ -141,7 +141,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny styleguide for {% include links/internal-link.html linktext="skygger" %}. Skyggen `medium` er fjernet, og skyggerne `light` og `heavy` er blevet mere gennemsigtige med større blur-værdi. Skygger på {% include links/component-guideline-link.html linktext="cards" %} er fjernet helt (inkl. variablen `$cards-shadow`) og skygger på komponenterne {% include links/component-guideline-link.html linktext="tilbage til toppen" %}, {% include links/component-guideline-link.html linktext="cookiemeddelelse" %}, {% include links/component-guideline-link.html linktext="datovælger" %}, {% include links/component-guideline-link.html linktext="modal" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %}, {% include links/component-guideline-link.html linktext="toastbesked" %} og {% include links/component-guideline-link.html linktext="tooltip" %} er opdateret til at følge den nye styleguide.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper og tags er enten slettet, tilføjet eller ændret.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet variable og funktion for `border-radius`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. De tidligere variable `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
+- Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
+- Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 
 
 
