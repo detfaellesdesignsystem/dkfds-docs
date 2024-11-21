@@ -56,7 +56,7 @@
 .do-dont-container {
     img {
         padding: units(2);
-        border: border(10);
+        border: border('high-contrast');
         width: 100%;
         height: auto;
     }
@@ -201,7 +201,7 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
 
 .color-container-large {
   height: 108px;
-  border: border(10);
+  border: border('high-contrast');
 
   //Colors
   &.color-white {
@@ -279,7 +279,7 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
 }
 .color-container-medium {
   height: 64px;
-  border: border(10);
+  border: border('high-contrast');
 /*
   &.color-data-turquoise {
     background-color: $color-data-turquoise;
@@ -371,7 +371,7 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
   height: 40px;
   margin-bottom: 0.8rem;
   margin-top: 0.8rem;
-  border: border(10);
+  border: border('high-contrast');
 
   .color-text-container {
     padding: 7px 15px 7px 15px;
@@ -510,13 +510,13 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
   margin: 0px;
 }
 .component-preview-syntax{
-  border-right: border(20);
-  border-bottom: border(20);
-  border-left: border(20);
+  border-right: border('low-contrast');
+  border-bottom: border('low-contrast');
+  border-left: border('low-contrast');
 }
 
 *:not(.tab-panel):not(.details-text):not(.component-code) > figure.highlight{
-  border: border(20);
+  border: border('low-contrast');
 }
 
 code {
@@ -629,7 +629,7 @@ code {
 
 .icon-box{
   padding: units(505) units(4) units(3);
-  border: border(20);
+  border: border('low-contrast');
   margin-right: -1px;
   margin-bottom: -1px;
   margin-top: 0;
@@ -763,7 +763,7 @@ code {
 }
 
 .description-image{ //creates a border around an image.
-  border: border(10);
+  border: border('high-contrast');
   padding: 8px;
 }
 
@@ -787,7 +787,7 @@ code {
 }
 
 .screenshot-gallery .screenshot img {
-  border: border(10);
+  border: border('high-contrast');
 }
 
 // Demo fixed footer
@@ -857,7 +857,7 @@ code {
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  border: border(10);
+  border: border('high-contrast');
 
   .youtube-video {
     position: absolute;
@@ -872,15 +872,15 @@ code {
 /////////////////// component preview //////////////////////
 
 div.component-preview {
-  border: border(20);
+  border: border('low-contrast');
   position: relative;
   margin-bottom: 8px;
 
   .component-link{
-    border-bottom: border(30);
+    border-bottom: border('very-low-contrast');
   }
   .component-code-link, .component-guidelines-link {
-    border-top: border(30);
+    border-top: border('very-low-contrast');
   }
 }
 
@@ -933,7 +933,7 @@ div.component-preview {
 
 .component-preview-button {
   background: color('gray-400');
-  border: border(10);
+  border: border('high-contrast');
   outline: none;
   height: units(5);
   width: units(5);
@@ -1000,12 +1000,12 @@ body[class*="page-grid"][class*="-html"]
         padding-left: units(2);
         padding-right: units(2);
         background-color: color('info-light');
-        border: border(10);
+        border: border('high-contrast');
         margin: units(0);
       }
       .grid-example-content{
         background-color: color('info-light');
-        border: border(10);
+        border: border('high-contrast');
         padding-top: units(4);
         padding-bottom: units(4);
         & > p{
@@ -1020,7 +1020,7 @@ body[class*="page-grid"][class*="-html"]
   }
   .grid-example-content{
     background-color: color('info-light');
-    border: border(10);
+    border: border('high-contrast');
     padding-top: units(4);
     padding-bottom: units(4);
     & > p{
@@ -1222,7 +1222,7 @@ Color scale
   .color{
     display: block;
     width: 100%;
-    border: border(10);
+    border: border('high-contrast');
     height: 64px;
     margin-bottom: units(3);
     

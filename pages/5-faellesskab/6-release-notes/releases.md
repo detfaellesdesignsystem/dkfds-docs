@@ -143,9 +143,12 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper og tags er enten slettet, tilføjet eller ændret.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. Variablene `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret værdier og navne for de mulige stregtyper. I stedet for `10`, `20` og `30` skal man anvende `'high-contrast'`, `'low-contrast'` og `'very-low-contrast'` til `border`-funktionen.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret skygger, hvor de tidligere skygger kaldet "Modalvindue", "Overflow menu" og "Cards" er fjernet til fordel for to nye skygger kaldet "Stor skygge" og "Lille skygge". Mulighed for at ændre skygge med variablene `$back-to-top-button-shadow`, `$cookie-message-shadow`, `$datepicker-shadow`, `$modal-shadow`, `$overflow-menu-content-shadow`, `$toast-shadow` og `$tooltip-shadow` er fjernet.
 - Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
+- Ændret {% include links/internal-link.html linktext="streger" %} (`border`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
+- Ændret tykkelse og farve på fokusstreger.
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 
 
