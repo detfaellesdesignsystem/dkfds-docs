@@ -1327,137 +1327,39 @@
 
 <h2 id="streger">Streger</h2>
 
-<div class="component-preview  component-preview-borders">
-    
-    
-    <div class="sr-only">Eksempel</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <h3 class="h5">Fokusstreg</h3>
-<p class="form-hint">Bruges til at fremhæve det interaktive element, som har fokus.</p>
-<div class="focus-border"></div>
+<h3 class="h5 bold">Fokusstreg</h3>
 
-<h3 class="h5">Ydre-streger</h3>
-<p class="form-hint">Bruges til de yderste streger i et element, se fx tabeller.</p>
-<div class="outer-border-example"></div>
+<div class="focus-border-example"></div>
 
-<h3 class="h5">Indre-streger</h3>
-<p class="form-hint">Bruges til indre streger i et element, se fx tabeller.</p>
-<div class="inner-border-example"></div>
+<p class="mt-3 mb-3">Farve: #454545</p>
 
-<h3 class="h5">Indre-indre-streger</h3>
-<p class="form-hint">Bruges til indre streger i et element, som allerede er omkranset af indre
-    steger, se fx venstremenu.</p>
-<div class="inner-inner-border-example"></div>
+<p class="mt-3">Tykkelse: 3px</p>
 
-<h3 class="h5">Horisontal ruler</h3>
-<p class="form-hint"><code>hr</code> elementet har samme farve som den Indre streg.</p>
-<hr />
+<p>Denne streg gør det tydeligt, hvilket interaktivt element, der har fokus. En tydelig fokusstreg med tilstrækkelig farvekontrast er afgørende for brugere, der navigerer med tastatur.</p>
 
-<h3 class="h5">Fejl ved felt</h3>
-<p class="form-hint">Bruges i venstre side af et felt, når der er fejl i feltet.</p>
-<div class="form-error-border-example"></div>
+<h3 class="h5 bold">Meningsbærende streger (kontrast over 1:3)</h3>
 
-<h3 class="h5">Streg ved åben detalje-komponent</h3>
-<p class="form-hint">Bruges i venstre side af en åben detalje-komponent.</p>
-<div class="details-border-example"></div>
+<div class="high-contrast-border-example"></div>
 
-<h3 class="h5">Streg ved aktivt menupunkt i venstremenuen</h3>
-<p class="form-hint">Bruges i venstre side af et aktivt menupunkt i venstremenuen.</p>
-<div class="sidenav-border-example"></div>
+<p class="mt-3">Farve: #8E8E8E</p>
 
-<h3 class="h5">Streg under aktivt menupunkt i header navigation</h3>
-<p class="form-hint">Bruges under et aktivt menupunkt i navigationen i headeren.</p>
-<div class="navigation-border-example"></div>
+<p>Brug denne streg, når stregens visuelle afgrænsning er afgørende for, at brugeren kan se og forstå komponenten. Eksempelvis skal interaktive elementer såsom inputfelter have tilstrækkelig kontrast, før alle seende brugere kan se og forstå, at der er tale om et inputfelt.</p>
 
-<h3 class="h5">Facitstreg</h3>
-<p class="form-hint">Bruges under et tal for at indikere et resultat.</p>
-<span class="facit">10.884,50</span>
-        
-    </div>
-    
-</div>
+<p>Horizontal ruler <code>&lt;hr&gt;</code> anvender denne stregfarve.</p>
 
-<h3>Designværdier</h3>
-<table class="table table--borderless table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Navn</th>
-      <th>Farve</th>
-      <th>Tykkelse</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Fokusstreg</td>
-      <td>#707070</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Ydre streger</td>
-      <td>#707070</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Indre streger</td>
-      <td>#BFBFBF</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Indre-indre streger</td>
-      <td>#DCDCDC</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Knap kant streger</td>
-      <td>#3C5C22 (Borger.dk)<br />#004993 (Virk)</td>
-      <td>2px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Horisontal ruler</td>
-      <td>#BFBFBF</td>
-      <td>1px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Fejl ved felt</td>
-      <td>#CC0000</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Streg ved åben detalje-komponent</td>
-      <td>#BFBFBF</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Streg ved aktivt menupunkt i venstremenu</td>
-      <td>#44831E (Borger.dk)<br />#0059B3 (Virk)</td>
-      <td>4px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Streg ved aktivt menupunkt i venstremenu</td>
-      <td>#44831E (Borger.dk)<br />#0059B3 (Virk)</td>
-      <td>7px</td>
-      <td>solid</td>
-    </tr>
-    <tr>
-      <td>Facitstreg</td>
-      <td>#707070</td>
-      <td>4px</td>
-      <td>double</td>
-    </tr>
-  </tbody>
-</table>
+<h3 class="h5 bold">Dekorative streger (kontrast under 1:3)</h3>
+
+<div class="low-contrast-border-example"><span class="sr-only">Dekorativ streg mulighed 1</span></div>
+
+<p class="mt-3">Farve: #BFBFBF</p>
+
+<div class="very-low-contrast-border-example"><span class="sr-only">Dekorativ streg mulighed 2</span></div>
+
+<p class="mt-3">Farve: #DCDCDC</p>
+
+<p>Dekorative streger har lav kontrastværdi. Brug kun disse streger, når brugeren kan se og forstå komponenten helt uden stregen, dvs. kraft af generelt layout og afstande/luft om komponenten. Eksempelvis kan tabeller forstås uden streger, eftersom den grafiske opsætning i sig selv er nok til, at brugerne kan læse og forstå tabellen.</p>
+
+<p>Inden du anvender dekorative streger, så overvej, om dit design kan holdes mere enkelt fx ved i stedet at nøjes med mere afstand mellem dine komponenter.</p>
 
 <h2 id="skygger">Skygger</h2>
 
@@ -1506,6 +1408,12 @@
     </tbody>
   </table>
 </div>
+
+<h2>Referencer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" class="icon-link" target="_blank">W3C (WCAG 2.1): Understanding SC 1.4.11: Non-text Contrast (Level AA)<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+</ul>
 
 
                 

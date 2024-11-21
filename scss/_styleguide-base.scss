@@ -786,6 +786,10 @@ code {
   }
 }
 
+.screenshot-gallery .screenshot img {
+  border: border(10);
+}
+
 // Demo fixed footer
 .demo-footer {
   padding: 8px;
@@ -1065,39 +1069,25 @@ body[class*="page-grid"][class*="-html"]
   border-bottom-left-radius: 24px;
 }
 
-//BORDERS
-.focus-border {
+// Border examples
+.focus-border-example {
   border-top: $theme-focus-width $theme-focus-style color("focus");
-}
-.outer-border-example {
-  border-top: border(10);
-}
-.outer-border{
-  border: border(10);
+  margin-top: units(4);
 }
 
-.inner-border-example {
-  border-top: border(20);
-}
-.inner-inner-border-example {
-  border-top: border(30);
+.high-contrast-border-example {
+  border-top: border('high-contrast');
+  margin-top: units(4);
 }
 
-.form-error-border-example{
-  border-top: $form-group-error-border-width solid color($form-group-error-border-color);
-}
-.details-border-example{
-  border-top: $details-panel-border-width solid color($details-panel-border-color);
-}
-.sidenav-border-example{
-  border-top: sidenav.$sidemenu-border-left-thickness solid color($sidenav-border-active-color);
-}
-.navigation-border-example{
-  border-top: nav.$navigation-desktop-border-bottom-thickness solid color($navigation-link-current-border-color);
+.low-contrast-border-example {
+  border-top: border('low-contrast');
+  margin-top: units(4);
 }
 
-.screenshot-gallery .screenshot img {
-  border: border(10);
+.very-low-contrast-border-example {
+  border-top: border('very-low-contrast');
+  margin-top: units(6);
 }
 
 // Shadow examples
