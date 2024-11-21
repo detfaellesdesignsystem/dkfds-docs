@@ -107,6 +107,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">??-??-2024</span></div>
 
+Se {% include links/external-link.html linktext="beslutningslog for version 11.0.0" %}
+
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Farver" %}</h3>
 </div>
@@ -123,7 +125,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet tilgængelighedsfejl, hvor ikonet i {% include links/internal-link.html linktext="eksterne links" %} ikke blev læst højt. Fjern `aria-hidden` fra ikonet og indsæt en passende `aria-label` i stedet. Makroen 'icon_svg' er i denne forbindelse opdateret, så et ikon ikke både kan have `aria-label` og `aria-hidden="true"`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Knapper" %}</h3>
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Knapper" %}</h3>
 </div>
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet knapvariant til brug ved advarsler.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Visuelt løft af alle knapper inkl. {% include links/component-guideline-link.html linktext="Tilbage til toppen" %} og knappen i {% include links/component-guideline-link.html linktext="søgefeltet" %}. Læs de opdaterede {% include links/component-guideline-link.html linktext="retningslinjer for knapper" %} for korrekt anvendelse af knapperne.
@@ -139,10 +141,11 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny styleguide for {% include links/internal-link.html linktext="skygger" %}. Skyggen `medium` er fjernet, og skyggerne `light` og `heavy` er blevet mere gennemsigtige med større blur-værdi. Skygger på {% include links/component-guideline-link.html linktext="cards" %} er fjernet helt (inkl. variablen `$cards-shadow`) og skygger på komponenterne {% include links/component-guideline-link.html linktext="tilbage til toppen" %}, {% include links/component-guideline-link.html linktext="cookiemeddelelse" %}, {% include links/component-guideline-link.html linktext="datovælger" %}, {% include links/component-guideline-link.html linktext="modal" %}, {% include links/component-guideline-link.html linktext="overflowmenu" %}, {% include links/component-guideline-link.html linktext="toastbesked" %} og {% include links/component-guideline-link.html linktext="tooltip" %} er opdateret til at følge den nye styleguide.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper og tags er enten slettet, tilføjet eller ændret.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. De tidligere variable `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. Variablene `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret skygger, hvor de tidligere skygger kaldet "Modalvindue", "Overflow menu" og "Cards" er fjernet til fordel for to nye skygger kaldet "Stor skygge" og "Lille skygge". Mulighed for at ændre skygge med variablene `$back-to-top-button-shadow`, `$cookie-message-shadow`, `$datepicker-shadow`, `$modal-shadow`, `$overflow-menu-content-shadow`, `$toast-shadow` og `$tooltip-shadow` er fjernet.
 - Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
+- Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 
 

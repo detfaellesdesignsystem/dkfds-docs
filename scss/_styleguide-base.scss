@@ -223,7 +223,7 @@ a.link-focus, a.link-focus:link, a.link-focus:visited, a.link-focus:hover, a.lin
     background-color: color('gray-300');
   }
   &.color-gray-mediumpale{
-    background-color: color('gray-200');;
+    background-color: color('gray-200');
   }
   &.color-gray-pale {
     background-color: color('gray-100');
@@ -1100,27 +1100,62 @@ body[class*="page-grid"][class*="-html"]
   border: border(10);
 }
 
-//SHADOWS
-.heavy-shadow-example {
-  width: 144px;
-  height: 104px;
-  box-shadow: shadow('heavy');
-  background-color: color('white');
-  border: border(10);
+// Shadow examples
+$-example-box-padding: 16px;
+
+%-shadow-example {
+  background-color: color('gray-100');
+  width: calc(100% - 32px);
+  max-width: 300px;
+  height: 120px;
+  border: 1px solid color('gray-400');
+  border-radius: border-radius('medium');
+  display: flex;
+  align-items: flex-end;
+  padding: units(305);
+  position: absolute;
+  left: $-example-box-padding;
 }
 
-.slightly-shadow-example {
-  width: 144px;
-  height: 104px;
-  box-shadow: shadow('light');
-  background-color: color('white');
-  border: border(10);
+.component-preview-shadows {
+  position: relative;
+  height: 298px;
+
+  .large-shadow-example {
+    @extend %-shadow-example;
+    box-shadow: shadow('heavy');
+    top: $-example-box-padding;
+    z-index: 2;
+  }
+  
+  .small-shadow-example {
+    @extend %-shadow-example;
+    box-shadow: shadow('light');
+    top: calc($-example-box-padding + 72px);
+    z-index: 1;
+  }
+  
+  .no-shadow-example {
+    @extend %-shadow-example;
+    top: calc($-example-box-padding + 72px * 2);
+    z-index: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .small-shadow-example {
+      left: calc($-example-box-padding + 8%);
+    }
+
+    .no-shadow-example {
+      left: calc($-example-box-padding + 16%);
+    }
+  }
 }
 
 /* HOME */
 
 .bg-darkgrey{
-  background-color: color('gray-200');;
+  background-color: color('gray-200');
 }
 
 // All colors as background classes

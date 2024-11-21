@@ -112,30 +112,32 @@ Designsystemets hjørner er med til at skabe visuel genkendelse samt til at lede
 
 ## Skygger {#{% include create-id.html heading="Skygger" %}}
 
+Det Fælles Designsystem anvender skygger til at visualisere dybde på skærmen. Skygger anvendes kun til elementer, der lægger sig oven på andre elementer i brugergrænsefladen. Helt grundlæggende ligger elementer med den store skygge øverst, derefter kommer den lille skygge, og nederst resten af brugergrænsefladen uden skygge. 
+
+Vær opmærksom på, at skyggen er relativ til konteksten. Fx vil en tooltip, der åbnes inde i en modal med stor skygge, fortsat have den lille skygge. 
+
 {% include code/preview-box.html component="shadows" link=false %}
 
-<h3>Designværdier</h3>
-<table class="table table--borderless table--responsive-headers">
-  <thead>
-    <tr>
-      <th>Navn</th>
-      <th>Skygge</th>
-      <th>Skyggefarve</th>
-      <th>Gennemsigtighed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Kraftig</td>
-      <td>0 8px 24px 0</td>
-      <td>#000000</td>
-      <td>20%</td>
-    </tr>
-    <tr>
-      <td>Let</td>
-      <td>0 4px 12px 0</td>
-      <td>#000000</td>
-      <td>20%</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table--responsive-scroll" tabindex="0">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Position</th>
+        <th scope="col">Farve</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Stor skygge</th>
+        <td>0px 8px 24px 0px</td>
+        <td>rgba(0, 0, 0, 0.20)</td>
+      </tr>
+      <tr>
+        <th scope="row">Lille skygge</th>
+        <td>0px 4px 12px 0px</td>
+        <td>rgba(0, 0, 0, 0.20)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
