@@ -127,7 +127,7 @@ new DKFDS.CheckboxToggleContent(document.getElementById('CHECKBOX-INPUT-ID')).in
 
 #### Events
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table">
     <thead>
       <tr>

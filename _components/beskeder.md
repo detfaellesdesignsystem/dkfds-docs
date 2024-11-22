@@ -115,7 +115,7 @@ new DKFDS.Alert(document.getElementById('ALERT-ID')).init();
 
 #### Events
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table">
     <thead>
       <tr>

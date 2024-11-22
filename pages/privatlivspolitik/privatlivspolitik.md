@@ -149,7 +149,7 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
 
 <div class="row">
     <div class="col-12 col-md-10 col-lg-8">
-        <div class="table--responsive-scroll">
+        <div class="table--responsive-scroll" tabindex="0">
             <table class="table table--borderless table--compact">
                 <thead>
                     <tr>

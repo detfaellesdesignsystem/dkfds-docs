@@ -222,6 +222,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 } catch (err) {
                     console.error(err.message);
                 }
+
+                let tooltip6 = new DKFDS.Tooltip(document.getElementsByClassName('tooltip-wrapper')[5]);
+                tooltip6.init();
+                console.log('Is tooltip 6 showing? ' + tooltip6.isShowing());
+                tooltip6.showTooltip();
+                console.log('Is tooltip 6 showing? ' + tooltip6.isShowing());
+
                 break;
             
             case 'Manuelt initialiseret':

@@ -76,6 +76,7 @@ tags:
 - 10.0.1
 - 10.0.2
 - 10.1.0
+- 10.2.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -150,6 +151,29 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
 - Ændret tykkelse og farve på fokusstreger.
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
+
+
+
+## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
+</div>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`, som kan bruges i de tilfælde, hvor tooltippet ikke er fuldt synligt.
+{% include links/github-link.html number="225" afternumber=" på GitHub" %}
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
+- Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- Rettet fejl, hvor indhold i {% include links/component-guideline-link.html linktext="modaler" %} ikke altid kunne ses ved print.
+- Tilføjet flere tekstmuligheder til {% include links/external-link.html linktext="macroerne" %} for anchorlinks og trinindikator.
+- Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="dropdowns" %} kunne gå under pilen, når stylingen for fejlmeddelelse blev anvendt.
+{% include links/github-link.html number="255" afternumber=" på GitHub" %} 
 
 
 

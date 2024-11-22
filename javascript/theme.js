@@ -302,6 +302,7 @@ let setScreenshots = function(){
         || document.getElementsByTagName('body')[0].classList.contains('page-tilbage-til-toppen')
         || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')
         || document.getElementsByTagName('body')[0].classList.contains('page-fejlopsummering')
+        || document.getElementsByTagName('body')[0].classList.contains('page-anchorlinks')
         || document.getElementsByTagName('body')[0].classList.contains('page-faneblade-tabs')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){

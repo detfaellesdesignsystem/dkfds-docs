@@ -2051,7 +2051,8 @@
 
 <p>Bemærk at <code>tooltip-wrapper</code> kan kodes med enten <code>div</code> eller <code>span</code> afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen <code>tooltip-target</code>.</p>
 
-<h3>Javascript</h3>
+<h3 id="javascript">JavaScript</h3>
+
 <p>Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Tooltip(document.getElementById(&#39;Tooltip-wrapper-ID&#39;)).init();</code></pre></figure>
@@ -2081,6 +2082,41 @@
     <tr>
       <td>data-trigger</td>
       <td>Skal sættes til enten <code>click</code> eller <code>hover</code>. Anvend kun <code>click</code>, hvis elementet ikke har andre funktioner end at åbne tooltippet.</td>
+    </tr>
+    <tr>
+      <td>data-force-visible</td>
+      <td>Skal sættes til <code>true</code> for at blive anvendt. Brug kun undtagelsesvist, når et andet element forhindrer fuld synlighed af tooltippet.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bemærk, at attributten <code>data-force-visible="true"</code> kun skal anvendes, når det er nødvendigt. Dette kan fx ske, hvis man har tooltips inde i modaler eller tabeller, da CSS-egenskaben <code>overflow</code> forhindrer tooltippet i at blive vist korrekt. I visse tilfælde kan der dog komme en lille forsinkelse i tooltippets placering, når brugeren scroller mens tooltippet er åbent, hvorfor attributten skal undlades, når det er muligt.</p>
+
+<h4 id="funktioner">Funktioner</h4>
+
+<table class="table table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Funktion</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tooltip.hideTooltip()</td>
+      <td>Skjuler et tooltip</td>
+    </tr>
+    <tr>
+      <td>tooltip.showTooltip()</td>
+      <td>Viser et tooltip</td>
+    </tr>
+    <tr>
+      <td>tooltip.isShowing()</td>
+      <td>Returnerer <code>true</code>, hvis tooltippet er synligt</td>
+    </tr>
+    <tr>
+      <td>tooltip.updateTooltipPosition()</td>
+      <td>Opdaterer tooltippets position, så det er placeret korrekt i forhold til elementet, der åbnede det</td>
     </tr>
   </tbody>
 </table>

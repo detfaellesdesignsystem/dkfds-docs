@@ -69,7 +69,7 @@ title: Test
 {% include test/preview-test.html filename="test-dropdown-5" description="Dropdown 5" %}
 {% include test/preview-test.html filename="test-dropdown-6" description="Dropdown 6" %}
 {% include test/preview-test.html filename="test-dropdown-7" description="Dropdown 7" %}
-{% include test/preview-test.html filename="test-dropdown-8" description="Dropdown 8" %}
+{% include test/preview-test.html filename="test-dropdown-long-text" description="Dropdowns med lang tekst" %}
 
 {:.h3}
 ## Faneblade
@@ -157,6 +157,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-modal-types" description="Modaltyper" %}
 {% include test/preview-test.html filename="test-modal-javascript" description="JavaScript for modaler" %}
 {% include test/preview-test.html filename="test-modal-inert" description="Test af inert med modaler" %}
+{% include test/preview-test.html filename="test-modal-long" description="Lang modal" %}
 
 {:.h3}
 ## Overflow menu
@@ -256,6 +257,7 @@ B: Test af faneblade anvendt til sidenavigation
 ## Tooltips
 
 {% include test/preview-test.html filename="test-tooltips" description="Tooltips" %}
+{% include test/preview-test.html filename="test-tooltip-force-visible" description="Tooltips med attributten force-visible" %}
 {% include test/preview-test.html filename="test-tooltip-javascript" description="JavaScript for tooltips" %}
 
 {:.h3}
