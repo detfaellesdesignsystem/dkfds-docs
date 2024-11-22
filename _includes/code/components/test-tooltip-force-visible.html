@@ -1,7 +1,7 @@
 <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">Tooltips i overflow elements</h1>
+            <h1 class="h2 mt-0">Tooltips med attributten force-visible</h1>
         </div>
     </div>
     <div class="row mb-905">
@@ -27,7 +27,7 @@
                                     data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                                     data-tooltip-id="tooltip-tableheader"
                                     data-position="above" data-trigger="click"
-                                    data-adjust-to="table-with-tooltips"><button
+                                    data-force-visible="true"><button
                                         class="button button-unstyled tooltip-target"
                                         type="button" aria-label="Læs mere">
                                         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
@@ -53,7 +53,7 @@
                                     data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                                     data-tooltip-id="tooltip-table-text-example"
                                     data-position="above" data-trigger="click"
-                                    data-adjust-to="table-with-tooltips"><button
+                                    data-force-visible="true"><button
                                         class="button button-unstyled tooltip-target"
                                         type="button" aria-label="Hvad betyder cell">
                                         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button></span>
@@ -66,8 +66,8 @@
                                 <div class="tooltip-wrapper"
                                     data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                                     data-tooltip-id="tooltip-knap1" data-position="above"
-                                    data-trigger="hover" data-adjust-to="table-with-tooltips">
-                                    <button class="button button-primary tooltip-target">
+                                    data-trigger="hover" data-force-visible="true"><button
+                                        class="button button-primary tooltip-target">
                                         Third row, third cell
                                     </button></div>
                             </td>
@@ -78,8 +78,8 @@
                                 <div class="tooltip-wrapper"
                                     data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                                     data-tooltip-id="tooltip-tablecell" data-position="below"
-                                    data-trigger="click" data-adjust-to="table-with-tooltips">
-                                    <button class="button button-unstyled tooltip-target"
+                                    data-trigger="click" data-force-visible="true"><button
+                                        class="button button-unstyled tooltip-target"
                                         type="button" aria-label="Læs mere">
                                         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
                                 </div> Fourth row, first cell
@@ -99,9 +99,9 @@
             <div style="height: 60px; width: 60px; background-color: #DCDCDC; overflow: auto;"
                 id="overflow-container">
                 <div class="tooltip-wrapper"
-                    data-tooltip="Dette tooltip sidder i højre side i rækken"
+                    data-tooltip="Dette tooltip sidder inde i en lille container"
                     data-tooltip-id="tooltip-small-overflow" data-position="above"
-                    data-trigger="click" data-adjust-to="overflow-container"><button
+                    data-trigger="click" data-force-visible="true"><button
                         class="button button-unstyled tooltip-target" type="button"
                         aria-label="Læs mere">
                         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
@@ -124,12 +124,11 @@
                     data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
             </div>
             <div class="modal-body">
-                <h3>Tooltips der tilpasser sig modalen</h3>
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="tooltip-wrapper"
                         data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                         data-tooltip-id="modal-left" data-position="above"
-                        data-trigger="click" data-adjust-to="modal-example-content"><button
+                        data-trigger="click" data-force-visible="true"><button
                             class="button button-unstyled tooltip-target" type="button"
                             aria-label="Læs mere">
                             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
@@ -137,14 +136,14 @@
                     <div class="tooltip-wrapper"
                         data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                         data-tooltip-id="tooltip-modal-knap" data-position="above"
-                        data-trigger="hover" data-adjust-to="modal-example-content"><button
+                        data-trigger="hover" data-force-visible="true"><button
                             class="button button-primary tooltip-target">
                             Knap med tooltip
                         </button></div>
                     <div class="tooltip-wrapper"
                         data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
                         data-tooltip-id="modal-right" data-position="below"
-                        data-trigger="click" data-adjust-to="modal-example-content"><button
+                        data-trigger="click" data-force-visible="true"><button
                             class="button button-unstyled tooltip-target" type="button"
                             aria-label="Læs mere">
                             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>

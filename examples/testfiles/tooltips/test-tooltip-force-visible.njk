@@ -6,20 +6,19 @@
 {% from "components/table/table.njk" import table as table %}
 
 {% set modal_content = 
-    '<h3>Tooltips der tilpasser sig modalen</h3>
-    <div class="d-flex align-items-center justify-content-between">
+    '<div class="d-flex align-items-center justify-content-between">
         <div class="tooltip-wrapper" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
-        data-tooltip-id="modal-left" data-position="above" data-trigger="click" data-adjust-to="modal-example-content"><button
+        data-tooltip-id="modal-left" data-position="above" data-trigger="click" data-force-visible="true"><button
             class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
         </div>
         <div class="tooltip-wrapper" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem." data-tooltip-id="tooltip-modal-knap"
-        data-position="above" data-trigger="hover" data-adjust-to="modal-example-content"><button
+        data-position="above" data-trigger="hover" data-force-visible="true"><button
             class="button button-primary tooltip-target">
             Knap med tooltip
         </button></div>
         <div class="tooltip-wrapper" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem."
-        data-tooltip-id="modal-right" data-position="below" data-trigger="click" data-adjust-to="modal-example-content"><button
+        data-tooltip-id="modal-right" data-position="below" data-trigger="click" data-force-visible="true"><button
             class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
             <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use xlink:href="#help"></use></svg></button>
         </div>
@@ -39,7 +38,7 @@
         "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
         "id": "tooltip-table-text-example",
         "phrase": "cell",
-        "adjustTo": "table-with-tooltips"
+        "forceVisible": "true"
     })
 %}
 
@@ -49,7 +48,7 @@
     tooltip_helpicon({
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
         "id": "tooltip-tableheader",
-        "adjustTo": "table-with-tooltips"
+        "forceVisible": "true"
     }) 
 %}
 
@@ -60,7 +59,7 @@
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et aliquet arcu. Integer nec tristique arcu, vitae sagittis lorem.",
         "id": "tooltip-tablecell",
         "position": "below",
-        "adjustTo": "table-with-tooltips"
+        "forceVisible": "true"
     }) 
 %}
 
@@ -79,14 +78,14 @@
         "target": buttonWithTooltip,
         "trueTooltip": true,
         "id": "tooltip-knap1",
-        "adjustTo": "table-with-tooltips"
+        "forceVisible": "true"
     }) 
 %}
 
 <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">Tooltips i overflow elements</h1>
+            <h1 class="h2 mt-0">Tooltips med attributten force-visible</h1>
         </div>
     </div>
     <div class="row mb-905">
@@ -155,9 +154,9 @@
             <div style="height: 60px; width: 60px; background-color: #DCDCDC; overflow: auto;" id="overflow-container">
                 {{ 
                     tooltip_helpicon({
-                        "text": "Dette tooltip sidder i højre side i rækken",
+                        "text": "Dette tooltip sidder inde i en lille container",
                         "id": "tooltip-small-overflow",
-                        "adjustTo": "overflow-container"
+                        "forceVisible": "true"
                     }) 
                 }}
             </div>

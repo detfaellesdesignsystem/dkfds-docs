@@ -76,6 +76,7 @@ tags:
 - 10.0.1
 - 10.0.2
 - 10.1.0
+- 10.2.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -101,7 +102,7 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
 
-## Version 10.1.1 {#{% include create-id.html heading="Version 10.1.1" %}}
+## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
 <div><span class="small-text mt-0 d-block">??-??-2024</span></div>
@@ -109,9 +110,10 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
 </div>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`, som kan bruges i de tilfælde, hvor tooltippet ikke er fuldt synligt.
+{% include links/github-link.html number="225" afternumber=" på GitHub" %}
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
 - Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
-- Ændret `position` for tooltips, så de kan bruges i modaler uden at teksten skæres af.
-- Tilføjet funktioner til at vise og skjule et tooltip.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>

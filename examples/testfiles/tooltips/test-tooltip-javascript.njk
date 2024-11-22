@@ -91,4 +91,17 @@
             <div class="tooltip-wrapper" data-tooltip="Tooltip på en knap" data-tooltip-id="tooltip-knap5" data-trigger="hover">{{ target5 }}</div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Skal virke selvom position ikke er sat</p>
+            {% set target6 = 
+                button({
+                    "variant": "primary",
+                    "text": "Knap",
+                    "classes": { "button": "tooltip-target" }
+                })
+            %}
+            <div class="tooltip-wrapper" data-tooltip="Åben ved page load" data-tooltip-id="tooltip-knap6" data-trigger="hover">{{ target6 }}</div>
+        </div>
+    </div>
 </main>
