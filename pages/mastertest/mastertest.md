@@ -69,7 +69,7 @@ title: Test
 {% include test/preview-test.html filename="test-dropdown-5" description="Dropdown 5" %}
 {% include test/preview-test.html filename="test-dropdown-6" description="Dropdown 6" %}
 {% include test/preview-test.html filename="test-dropdown-7" description="Dropdown 7" %}
-{% include test/preview-test.html filename="test-dropdown-8" description="Dropdown 8" %}
+{% include test/preview-test.html filename="test-dropdown-long-text" description="Dropdowns med lang tekst" %}
 
 {:.h3}
 ## Faneblade

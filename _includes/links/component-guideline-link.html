@@ -65,7 +65,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "detalje komponent" -%}
         <a href="/komponenter/detaljer/">{{ include.linktext }}</a>
 
-    {%- when "dropdown" -%}
+    {%- when "dropdown",
+             "dropdowns" -%}
         <a href="/komponenter/dropdown/">{{ include.linktext }}</a>
 
     {%- when "faneblade" -%}

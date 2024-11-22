@@ -120,6 +120,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 </div>
 - Rettet fejl, hvor indhold i {% include links/component-guideline-link.html linktext="modaler" %} ikke altid kunne ses ved print.
 - Tilføjet flere tekstmuligheder til {% include links/external-link.html linktext="macroerne" %} for anchorlinks og trinindikator.
+- Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="dropdowns" %} kunne gå under pilen, når stylingen for fejlmeddelelse blev anvendt.
+{% include links/github-link.html number="255" afternumber=" på GitHub" %} 
 
 
 
