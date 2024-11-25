@@ -138,7 +138,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-input-fields-4" description="Inputfelter 4" %}
 {% include test/preview-test.html filename="test-input-fields-5" description="Inputfelter 5" %}
 {% include test/preview-test.html filename="test-input-fields-6" description="Inputfelter 6" %}
-{% include test/preview-test.html filename="test-input-fields-7" description="Inputfelter 7" %}
+{% include test/preview-test.html filename="test-input-fields-character-limit" description="Inputfelter med karakterbegrænsning" %}
 {% include test/preview-test.html filename="test-input-fields-8" description="Inputfelter 8" %}
 {% include test/preview-test.html filename="test-input-fields-9" description="Inputfelter 9" %}
 

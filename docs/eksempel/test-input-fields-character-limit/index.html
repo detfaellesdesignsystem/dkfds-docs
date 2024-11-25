@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
+
+<head>
     <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
@@ -9,18 +10,15 @@
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-
 <meta name="robots" content="noindex">
 
 <!-- Title and meta description
 ================================================== -->
 
 
-<title>Tekstområde (Textarea) | Det Fælles Designsystem</title>
-<meta property="og:title" content="Tekstområde (Textarea) | Det Fælles Designsystem">
+<title>Testfil | test-input-fields-character-limit | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-input-fields-character-limit | Det Fælles Designsystem">
 
-<meta name="description" content="Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge.">
-<meta property="og:description" content="Felt til indtastning af information på flere linjer i form af bogstaver, tal og en kombination af begge.">
 
 
 
@@ -48,24 +46,24 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
+<link rel="preload" href="/assets/style/test_borger.css" as="style">
+<link rel="preload" href="/assets/style/test_virk.css" as="style">
+<link rel="preload" href="/assets/style/test_neutral.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
-  body {
-    opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
+    body {
+      opacity: 0; /*hide page until theme is downloaded by js.*/
+    }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
-
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
 </noscript>
 
-  </head>
-  <body class="page-tekstområde-textarea layout-styleguide">
+</head>
+
+<body class="layout-test-example">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -224,1814 +222,172 @@
         <symbol id="zoom-out" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></symbol>
     </svg>
 </div>
-    <div id="top"></div>
-    <header class="header">
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-    <div class="solution-info">
-        <div class="solution-info-inner container">
-            <div class="solution-heading d-flex flex-wrap align-items-center">
-                <a href="/" class="mr-4">Det Fælles Designsystem</a><strong class="badge badge-large badge-error">Develop</strong>
+    <div class="test-header d-flex align-items-center">
+    <div class="container">
+        <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>Denne side er kun til test</button>
+    </div>
+</div>
+<div class="fds-modal-container">
+    <div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="test-warning-heading">
+                    Denne side er kun til test
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
             </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#menu"></use></svg>Menu</button>
+            <div class="modal-body">
+                <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
         </div>
     </div>
-
-    <!-- Desktop main menu-->
-    <div class="navigation-menu contains-search">
-        <div class="navigation-menu-inner container">
-            <nav class="nav" aria-label="Hovedmenu">
-                <ul class="mainmenu">
-                    <li>
-            <a href="/kom-i-gang/" class="nav-link">
-                <span>Kom i gang</span>
-            </a>
-        </li>
-
-    
-  
-<li>
-            <a href="/styleguide/" class="nav-link">
-                <span>Styleguide</span>
-            </a>
-        </li>
-
-    
-  
-<li class="active">
-            <a href="/komponenter/" class="nav-link">
-                <span>Komponenter</span>
-            </a>
-        </li>
-
-    
-  
-<li>
-            <a href="/eksempler/" class="nav-link">
-                <span>Eksempler</span>
-            </a>
-        </li>
-
-    
-  
-<li>
-            <a href="/faellesskab/" class="nav-link">
-                <span>Fællesskab</span>
-            </a>
-        </li>
-
-    
-  
-
-                </ul>
-            </nav>
-            
-            <div class="search-form">
-                <form method="get" action="/search/" id="menuSearchForm" role="search">
-                    <div class="form-group search">
-                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required
-                            aria-label="Søg">
-                        <button class="button button-search" type="submit" id="searchbtn">Søg</button>
-                    </div>
-                </form>
-            </div>
-            
+</div>
+    <main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Inputfelter med karakterbegrænsning</h1>
         </div>
     </div>
+    <div class="row mb-905">
+        <div class="col-12">
 
-    <div class="overlay"></div>
+            <div class="form-group form-limit" data-maxlength="40">
+                <label class="form-label" for="input-text-1">Begrænsning på 40 tegn</label>
 
-    <!-- Mobile main menu-->
-    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
-        <div class="menu-top">
-            <h2 id="menu-heading" class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#close"></use></svg>Luk</button>
-        </div>
-        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
-            <ul class="mainmenu">
-                 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="false">
-                    <span>Kom i gang</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="kom_i_gang_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/" class="nav-link">
-                                <span>Kom i gang <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
-                    <span>Implementering og kode</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="implementering_kode_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/implementering-kode/" class="nav-link">
-                                <span>Implementering og kode <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/hent-kodepakken/" class="nav-link"><span>Hent kodepakken</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/justering/" class="nav-link"><span>Justering af tema og stylesheets</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/" class="nav-link"><span>Hjælpeklasser</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/" class="nav-link"><span>Browserunderstøttelse</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/plugins/" class="nav-link"><span>Plugins</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/print/" class="nav-link"><span>Print</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link"><span>Frameworks</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
+                <input type="text" id="input-text-1" name="input-text" class="form-input" value="tekst" aria-describedby="input-text-1-limit-message" required="" />
+                <span id="input-text-1-limit-message" class="sr-only">Du kan indtaste op til
+                    40 tegn</span>
+                <span class="form-hint character-limit" aria-hidden="true">Du har 40 tegn
+                    tilbage</span>
+                <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 40
+                    tegn tilbage</span>
             </div>
-        </li>
-        
 
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Design og ressourcer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/krav/" class="nav-link"><span>Krav</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-expanded="false">
-                    <span>Styleguide</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="styleguide_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/styleguide/" class="nav-link">
-                                <span>Styleguide <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/styleguide/farver/" class="nav-link"><span>Farver</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-expanded="false">
-                    <span>Typografi</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="typografi_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/styleguide/typografi/" class="nav-link">
-                                <span>Typografi <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/styleguide/typografi/fonte/" class="nav-link"><span>Fonte</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/overskrifter/" class="nav-link"><span>Overskrifter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/felt-tabel-overskrifter/" class="nav-link"><span>Felt- og tabeloverskrifter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/tekst/" class="nav-link"><span>Tekst</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/links/" class="nav-link"><span>Links</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/lister/" class="nav-link"><span>Lister</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/borders/" class="nav-link"><span>Hjørner, streger, skygger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/ikoner/" class="nav-link"><span>Ikoner</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/logoer/" class="nav-link"><span>Logoer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-expanded="false">
-                    <span>Datavisualisering og infografik</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="datavisualisering_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/styleguide/datavisualisering-infografik/" class="nav-link">
-                                <span>Datavisualisering og infografik <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/styleguide/datavisualisering-infografik/tilgaengelig-grafik/" class="nav-link"><span>Tilgængelig grafik</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/datavisualisering-infografik/datavisualisering/" class="nav-link"><span>Datavisualisering</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/datavisualisering-infografik/infografik/" class="nav-link"><span>Infografik</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/layout/" class="nav-link"><span>Layout</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/grid/" class="nav-link"><span>Grid og baseline grid</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li class="active">
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="true">
-                    <span>Komponenter</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="komponenter_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/komponenter/" class="nav-link">
-                                <span>Komponenter <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/komponenter/accordions/" class="nav-link"><span>Accordions</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/anchorlinks/" class="nav-link"><span>Anchorlinks</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/badges/" class="nav-link"><span>Badges</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/beskeder/" class="nav-link"><span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/broedkrumme/" class="nav-link"><span>Brødkrumme</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/cards/" class="nav-link"><span>Cards</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/cookiemeddelelse/" class="nav-link"><span>Cookiemeddelelse</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/datofelter/" class="nav-link"><span>Datofelter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/datovaelger/" class="nav-link"><span>Datovælger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/detaljer/" class="nav-link"><span>Detaljer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/dropdown/" class="nav-link"><span>Dropdown</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/faneblade/" class="nav-link">
-                <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/fejlmeddelelser/" class="nav-link"><span>Fejlmeddelelser</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/fejlopsummering/" class="nav-link"><span>Fejlopsummering</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/footer/" class="nav-link"><span>Footer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/funktionslink/" class="nav-link"><span>Funktionslink</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/skip-link/" class="nav-link"><span>Gå til sidens indhold (Skip-link)</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/header/" class="nav-link"><span>Header</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/inputfelter/" class="nav-link"><span>Inputfelter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/knapper/" class="nav-link">
-                <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/spinner/" class="nav-link"><span>Loading spinner</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/modal/" class="nav-link"><span>Modal</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/overflowmenu/" class="nav-link"><span>Overflow menu</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/paginering/" class="nav-link"><span>Paginering</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/radioknap/" class="nav-link">
-                <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/sprogvaelger/" class="nav-link"><span>Sprogvælger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/search/" class="nav-link"><span>Søgefelt</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tables/" class="nav-link"><span>Tabeller</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tags/" class="nav-link"><span>Tags</span></a>
-        </li>
-        
-
- 
-
-        
-        <li class="active current">
-            <a href="/komponenter/tekstomraade/" class="nav-link" aria-current="page">
-                <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tilbage-link/" class="nav-link"><span>Tilbage-link</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tilbage-til-top/" class="nav-link"><span>Tilbage til toppen</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tjekboks/" class="nav-link">
-                <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/toastbesked/" class="nav-link"><span>Toastbesked</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/toggle/" class="nav-link"><span>Toggle switch</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tooltip/" class="nav-link"><span>Tooltip</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/trinindikator/" class="nav-link"><span>Trinindikator</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/fil-upload/" class="nav-link"><span>Vedhæft fil</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/venstremenu/" class="nav-link"><span>Venstremenu</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-expanded="false">
-                    <span>Eksempler</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="eksempler_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/eksempler/" class="nav-link">
-                                <span>Eksempler <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/eksempler/selvbetjeningsloesninger/" class="nav-link"><span>Selvbetjeningsløsninger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-expanded="false">
-                    <span>Patterns</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="patterns_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/eksempler/patterns/" class="nav-link">
-                                <span>Patterns <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/eksempler/patterns/angivelse-af-telefonnummer/" class="nav-link"><span>Angivelse af telefonnummer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/patterns/formular/" class="nav-link"><span>Formular</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/patterns/session-udloeber/" class="nav-link"><span>Session udløber</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/templates/" class="nav-link"><span>Templates</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-expanded="false">
-                    <span>Fællesskab</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="faellesskab_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/faellesskab/" class="nav-link">
-                                <span>Fællesskab <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/faellesskab/samarbejdsforum/" class="nav-link"><span>Samarbejdsforum</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/governance/" class="nav-link"><span>Governance</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/nyhedsmail/" class="nav-link"><span>Nyhedsbrev</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/kontakt-support/" class="nav-link"><span>Kontakt og support</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/roadmap/" class="nav-link"><span>Roadmap</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
-        </li>
-        
-
-
-                    </ul>
-                </div>
-            </div>
-        </li>
-        
-
-
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<div class="container page-container">
-    <div class="row">
-
-        <aside class="col-12 col-lg-3">
-            <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
-                <ul class="sidemenu">
-
-
-
-
-<li>
-
-  <a href="/komponenter/accordions/" class="nav-link">
-    <span>Accordions</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/anchorlinks/" class="nav-link">
-    <span>Anchorlinks</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/badges/" class="nav-link">
-    <span>Badges</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/beskeder/" class="nav-link">
-      <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/broedkrumme/" class="nav-link">
-    <span>Brødkrumme</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/cards/" class="nav-link">
-    <span>Cards</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/cookiemeddelelse/" class="nav-link">
-    <span>Cookiemeddelelse</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/datofelter/" class="nav-link">
-    <span>Datofelter</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/datovaelger/" class="nav-link">
-    <span>Datovælger</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/detaljer/" class="nav-link">
-    <span>Detaljer</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/dropdown/" class="nav-link">
-    <span>Dropdown</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/faneblade/" class="nav-link">
-      <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fejlmeddelelser/" class="nav-link">
-    <span>Fejlmeddelelser</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fejlopsummering/" class="nav-link">
-    <span>Fejlopsummering</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/footer/" class="nav-link">
-    <span>Footer</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/funktionslink/" class="nav-link">
-    <span>Funktionslink</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/skip-link/" class="nav-link">
-    <span>Gå til sidens indhold (Skip-link)</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/header/" class="nav-link">
-    <span>Header</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/inputfelter/" class="nav-link">
-    <span>Inputfelter</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/knapper/" class="nav-link">
-      <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/spinner/" class="nav-link">
-    <span>Loading spinner</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/modal/" class="nav-link">
-    <span>Modal</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/overflowmenu/" class="nav-link">
-    <span>Overflow menu</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/paginering/" class="nav-link">
-    <span>Paginering</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/radioknap/" class="nav-link">
-      <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/sprogvaelger/" class="nav-link">
-    <span>Sprogvælger</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/search/" class="nav-link">
-    <span>Søgefelt</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tables/" class="nav-link">
-    <span>Tabeller</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tags/" class="nav-link">
-    <span>Tags</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li class="active current">
-
-  <a href="/komponenter/tekstomraade/" class="nav-link" aria-current="page">
-      <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tilbage-link/" class="nav-link">
-    <span>Tilbage-link</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tilbage-til-top/" class="nav-link">
-    <span>Tilbage til toppen</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tjekboks/" class="nav-link">
-      <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
-    
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/toastbesked/" class="nav-link">
-    <span>Toastbesked</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/toggle/" class="nav-link">
-    <span>Toggle switch</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tooltip/" class="nav-link">
-    <span>Tooltip</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/trinindikator/" class="nav-link">
-    <span>Trinindikator</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fil-upload/" class="nav-link">
-    <span>Vedhæft fil</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/venstremenu/" class="nav-link">
-    <span>Venstremenu</span>
-  </a>
-
-</li>
-
-</ul></nav>
-        </aside>
-
-        <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
-        <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#report-problem"></use></svg>
-        <div class="alert-body">
-            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#close"></use></svg>Luk</button>
-            <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
-            <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
-            <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
         </div>
     </div>
-<section id="section-/komponenter/tekstomraade/">
+    <div class="row mb-905">
+        <div class="col-12" id="input-added-after-init">
 
-                <div class="subheading">
-                    Komponenter
-                </div>
-
-                
-                
-                <h1 id="tekstområde-textarea">Tekstområde <span class="d-inline" lang="en">(Textarea)</span></h1>
-                
-
-                
-                <p class="font-lead">Tekstområder lader brugeren indtaste en længere tekst på flere linjer.</p>
-                <nav class="tab-container mb-7" aria-label="Undersider">
-    <ul class="tab-list"><li>
-            <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
-        </li><li>
-            <a href="#kode" id="code-tab" class="tab-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg><span>Kode</span></a>
-        </li></ul>
-</nav>
-<div id="retningslinjer" hidden=""></div>
-
-<div class="component-preview intro-example component-preview-text-area">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-area/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tekstområde</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group">
-    <label class="form-label" for="input-textarea">Tekstområde med label</label>
-
-    <textarea class="form-input" id="input-textarea" name="input-textarea" rows="5" required=""></textarea>
-
-</div>
-        
-    </div>
-    
-</div>
-
-<nav class="anchorbox" aria-labelledby="anchorlinks">
-    <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
-    <ul class="anchorlist">
-        
-        <li class="anchorlink-guidelines"><a href="#saadan-bruges-komponenten">Sådan bruges komponenten</a></li>
-        <li class="anchorlink-guidelines"><a href="#varianter">Varianter</a></li>
-        <li class="anchorlink-guidelines"><a href="#se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</a></li>
-        <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
-        
-        <li class="anchorlink-code"><span id="kode" hidden=""></span><a href="#installation-kode">Installation</a></li>
-        <li class="anchorlink-code"><a href="#fejlmeddelelse-kode">Fejlmeddelelse</a></li>
-        <li class="anchorlink-code"><a href="#karakterbegraensning-kode">Karakterbegrænsning</a></li>
-        
-    </ul>
-</nav>
-
-
-                        <div id="guidelines-section">
-                            
-
-<h2 id="saadan-bruges-komponenten">Sådan bruges komponenten</h2>
-
-<h3>Anvendes til</h3>
-
-<p>Brug tekstområder til sammenhængende (mere end 2 linjer) men ustruktureret tekst og sætninger, der har karakter af prosa. Fx en baggrundsfortælling.</p>
-
-<p>Anvendes når der er behov for yderligere sammenhængende information, hvis karakter brugeren ikke kan vælge ud fra et prædefineret sæt værdier.</p>
-
-<p>Anvendes når løsningen stiller et spørgsmål, der ikke kan besvares i et felt.</p>
-
-<h3>Anvendes ikke til</h3>
-
-<p>Brug ikke tekstområder til struktureret information, hvor datakonsistens har betydning.</p>
-
-<h3>Vejledning</h3>
-
-<p>Angiv tekstområdets højde, så det modsvarer den tekstmængde, du forventer, at brugeren skal indtaste.</p>
-
-<p>Overvej at begrænse antallet af tegn, hvis det giver mening.</p>
-
-<p>Vis kun fejlmeddelelser, når brugeren har indtastet en ugyldig værdi.</p>
-
-<p>Fejlmeddelelser skal være meningsfulde og hjælpsomme.</p>
-
-<p>Placér fejlmeddelelser mellem label og felt, og markér feltet med rødt.</p>
-
-<div class=" component-preview-textarea-dos-donts">
-    <div class="component-example">
-        <div class="row do-dont-container">
-    <div class="col-12 col-md-6">
-        <h4>Sådan (<span lang="en">do</span>)</h4>
-        <div><img src="/assets/img/do-dont/Tekstomraade-stoerrelse-do-borgerdk.svg" alt="Eksempel på, hvordan et tekstområde kan se ud" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#check-circle"></use></svg><div></div></div>
-        <p><strong>Sådan:</strong> Tilpas højde og bredde af tekstområdet, så brugerne komfortabelt kan indtaste kommentarer eller redegøre for handlingsforløb. Teksten skal ombryde, så enkeltord ikke bliver delt (ISO, 2012, afsnit 9.1.3). Lad områdets størrelse indikere mængden af indhold, der forventeligt skal skrives i tekstområdet.</p>
-    </div>
-    <div class="col-12 col-md-6">
-        <h4>Ikke sådan (<span lang="en">don't</span>)</h4>
-        <div><img src="/assets/img/do-dont/Tekstomraade-stoerrelse-dont-borgerdk.svg" alt="Eksempel på, hvordan et tekstområde ikke bør se ud" /></div>
-        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#highlight-off"></use></svg><div></div></div>
-        <p><strong>Ikke sådan:</strong> Gør ikke tekstområder så små, at brugerne bliver nødt til at scrolle for at kontrollere almindelige mængder tekst. Undgå helt horisontal scroll.</p>
-    </div>
-</div>
-
-    </div>
-</div>
-
-<h4>Fejlmeddelelse</h4>
-
-<p>Læs mere om korrekt brug af <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> og deres formuleringer.</p>
-
-<p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/">fejlopsummering</a>.</p>
-
-<div class="component-preview  component-preview-text-area-error">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-area-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area-error</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tekstområde med fejlmeddelelse</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group form-error">
-    <label class="form-label" for="textarea-error">Tekstområde med fejlmeddelelse</label>
-
-    <span class="form-error-message" id="textarea-error-error">
-        <span class="sr-only">Fejl: </span>Hjælpsom fejlmeddelelse
-    </span>
-    <textarea class="form-input" id="textarea-error" name="textarea-error" rows="5" required="" aria-describedby="textarea-error-error "></textarea>
-
-</div>
-        
-    </div>
-    
-</div>
-
-<h2 id="varianter">Varianter</h2>
-
-<h3 id="karakterbegraensning">Karakterbegrænsning</h3>
-
-<p>Karakterbegrænsning sætter et maksimalt antal af tegn, som brugeren kan indtaste i et tekstområde. Karakterbegrænsning indikerer løbende overfor brugeren, hvor mange tegn der er tilbage, og hvor mange tegn de evt. har overskredet med.</p>
-
-<p>Vis altid antallet af tegn, der er til rådighed i tekstområdet, inden brugeren begynder at skrive.</p>
-
-<p>Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stedet løbende med rød tekst under feltet, hvor mange tegn der er overskredet med.</p>
-
-<div class="component-preview  component-preview-text-area-character-limit">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-area-character-limit/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: text-area-character-limit</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tekstområde med karakterbegrænsning</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="form-group form-limit" data-maxlength="60">
-    <label class="form-label" for="textarea-limit">Tekstområde med karakterbegrænsning</label>
-
-    <textarea class="form-input" id="textarea-limit" name="textarea-limit" rows="5" required="" aria-describedby="textarea-limit-limit-message"></textarea>
-    <span id="textarea-limit-limit-message" class="sr-only">Du kan indtaste op til 60
-        tegn</span>
-    <span class="form-hint character-limit" aria-hidden="true">Du har 60 tegn tilbage</span>
-    <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 60 tegn
-        tilbage</span>
-</div>
-        
-    </div>
-    
-    <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/tekstomraade/#karakterbegraensning-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: text-area-character-limit</span></a>
-    </div>
-    
-</div>
-
-<h2 id="se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</h2>
-
-<p><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/?r=/komponenter/tekstomraade/%23eksempelloesninger">Trinformular til ansøgning: Ansøgningens type</a></p>
-
-<h2 id="referencer">Referencer</h2>
-
-<p>ISO 9241-143: Forms (2012)</p>
-
-
-                        </div>
-                        <div id="code-section">
-                            
-
-<h2 id="installation-kode">Installation</h2>
-
-<h3>HTML Struktur</h3>
-
-<div class="component-preview component-preview-code  component-code-text-area">
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
         </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-textarea&quot;&gt;Tekstområde med label&lt;/label&gt;
-
-    &lt;textarea class=&quot;form-input&quot; id=&quot;input-textarea&quot; name=&quot;input-textarea&quot; rows=&quot;5&quot; required&gt;&lt;/textarea&gt;
-
-&lt;/div&gt;</code></pre></figure>
-
-
     </div>
-    
-</div>
+    <div class="row mb-905">
+        <div class="col-12 col-md-4">
 
-<p>Sørg for at rette værdierne i følgende attributter, så de svarer til din løsning:</p>
+            <div class="form-group form-limit" data-maxlength="70">
+                <label class="form-label" for="input-text-3">Begrænsning på 70 tegn</label>
 
-<ul>
-  <li><code>for</code></li>
-  <li><code>id</code></li>
-  <li><code>name</code></li>
-  <li><code>rows</code></li>
-</ul>
+                <input type="text" id="input-text-3" name="input-text" class="form-input" value="tekst" aria-describedby="input-text-3-limit-message" required="" />
+                <span id="input-text-3-limit-message" class="sr-only">Du kan indtaste op til
+                    70 tegn</span>
+                <span class="form-hint character-limit" aria-hidden="true">Du har 70 tegn
+                    tilbage</span>
+                <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 70
+                    tegn tilbage</span>
+            </div>
 
-<p>Sæt højden på et tekstområde ved brug af <code>rows</code> attributten. Sæt højden, så det svarer til den mængde tekst, der forventes indtastet.</p>
-
-<h2 id="fejlmeddelelse-kode">Fejlmeddelelse</h2>
-
-<p>Læs mere om korrekt brug af <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a> og <a href="/komponenter/fejlmeddelelser/#tekstomraade-kode">fejlmeddelelser’s implementering med tekstområde.</a></p>
-
-<p>Når der vises en fejlmeddelelse, vis da også <a href="/komponenter/fejlopsummering/#kode">en fejlopsummering</a>.</p>
-
-<h2 id="karakterbegraensning-kode">Karakterbegrænsning</h2>
-
-<div class="component-preview component-preview-code  component-code-text-area-character-limit">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/text-area-character-limit/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: text-area-character-limit</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
         </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group form-limit&quot; data-maxlength=&quot;60&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;textarea-limit&quot;&gt;Tekstområde med karakterbegrænsning&lt;/label&gt;
-
-    &lt;textarea class=&quot;form-input&quot; id=&quot;textarea-limit&quot; name=&quot;textarea-limit&quot; rows=&quot;5&quot; required aria-describedby=&quot;textarea-limit-limit-message&quot;&gt;&lt;/textarea&gt;
-    &lt;span id=&quot;textarea-limit-limit-message&quot; class=&quot;sr-only&quot;&gt;Du kan indtaste op til 60
-        tegn&lt;/span&gt;
-    &lt;span class=&quot;form-hint character-limit&quot; aria-hidden=&quot;true&quot;&gt;Du har 60 tegn tilbage&lt;/span&gt;
-    &lt;span class=&quot;character-limit-sr-only sr-only&quot; aria-live=&quot;polite&quot;&gt;Du har 60 tegn
-        tilbage&lt;/span&gt;
-&lt;/div&gt;</code></pre></figure>
-
-
+        <div class="col-12 col-md-8 mt-4 mt-md-6">
+            <button class="button button-secondary" id="new-text">
+                Sæt ny tekst
+            </button>
+            <button class="button button-secondary" id="new-text-silent">
+                Sæt ny tekst (sr lydløs)
+            </button>
+        </div>
     </div>
-    
-    <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/tekstomraade/#karakterbegraensning" class="small-text">Gå til eksemplets retningslinjer</a>
-    </div>
-    
-</div>
+</main>
 
-<p>Husk at medtage de to beskeder skjult med klassen <code>sr-only</code>. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.</p>
-
-<h3>Javascript</h3>
-
-<p>Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med <code>init()</code>.</p>
-
-<h4>Funktioner</h4>
-
-<div class="table--responsive-scroll">
-  <table class="table table--responsive-headers">
-    <thead>
-      <tr>
-        <th scope="col">Funktion</th>
-        <th scope="col">Beskrivelse</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>init()</td>
-        <td>Sørger for at beskederne med antal tegn tilbage opdateres.</td>
-      </tr>
-      <tr>
-        <td>charactersLeft()</td>
-        <td>Returnerer det antal tegn, der lige nu kan indtastes i inputfeltet. Tallet er negativt, hvis antallet af tegn er overskredet.</td>
-      </tr>
-      <tr>
-        <td>updateMessages()</td>
-        <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
-      </tr>
-      <tr>
-        <td>silentUpdateMessages()</td>
-        <td>Fungerer på samme måde som <code>updateMessages()</code>, bortset fra at ændringen ikke læses højt i skærmlæsere. Anvend kun, når ændringer i feltet er meningsforstyrrende for skærmlæserbrugere.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<p>Eksempel på anvendelse:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">const form_limit = new DKFDS.CharacterLimit(document.getElementsByClassName(&#39;form-limit&#39;)[0]);
-form_limit.init();
-form_limit.charactersLeft();</code></pre></figure>
-
-<h4>Sprog</h4>
-
-<p>Hvis du ønsker at anvende et andet sprog end dansk i JavaScript-koden til karakterbegrænsning, skal du selv give din oversættelse med og derefter initiere komponenten manuelt. Husk at opdatere værdien i attributten “lang” i din sides html-tag. Indholdet i krøllede parenteser <code>{...}</code> nedenunder skal ikke oversættes eller ændres.</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.CharacterLimit(document.getElementById(&#39;FORM-LIMIT-ID&#39;), {
-  &quot;character_remaining&quot;: &quot;Du har {value} tegn tilbage&quot;,
-  &quot;characters_remaining&quot;: &quot;Du har {value} tegn tilbage&quot;,
-  &quot;character_too_many&quot;: &quot;Du har {value} tegn for meget&quot;,
-  &quot;characters_too_many&quot;: &quot;Du har {value} tegn for meget&quot;
-}).init();</code></pre></figure>
-
-                        </div>
-
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/styleguide.js"></script>
+    <footer class="test-footer d-flex align-items-center">
+    <div class="container">
+        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+            <div class="d-flex mr-8">
+                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                </button>
+                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
+                </button>
+                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
+                </button>
+                <button id="theme-virk" class="function-link"><span>Virk</span>
+                </button>
+            </div>
+            <div>
+                
+                <a class="function-link mr-4" href="/eksempel/test-input-fields-6/">Forrige</a>
                 
                 
-            </section>
-        </main>
-
-    </div>
-</div>
-
-<footer>
-    <a class="button back-to-top-button d-print-none" href="#top">
-    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-upward"></use></svg>
-    <span class="sr-only">Til toppen af siden</span>
-    <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
-</a>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-3 footer-col ">
-                    <section class="word-wrap hyphens-manual">
-                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
-                        <p>Det Fælles Design&shy;system udvikles i fællesskab af<br>Digitaliserings&shy;styrelsen & Erhvervs&shy;styrelsen</p>
-                    </section>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 footer-col ">
-                    <section class="word-wrap hyphens-manual">
-                        <h2 class="h5 mb-4">Webtilgængelig&shy;hed og cookies</h2>
-                        <ul class="nobullet-list mb-0">
-                            <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivs&shy;politik og cookies</a></li>
-                            <li><a href="https://www.was.digst.dk/designsystem-dk" class="icon-link function-link" target="_blank">Tilgængeligheds&shy;erklæring<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
-                            <li class="mt-4"><button class="button button-secondary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 footer-col ">
-                    <section class="word-wrap hyphens-manual">
-                        <h2 class="h5 mb-4">Mangler vi noget?</h2>
-                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.</p>
-                        <ul class="mt-4 nobullet-list mb-0">
-                            <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link function-link" target="_blank">Opret et issue på GitHub<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
-                            <li><a href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#email"></use></svg>Send en mail til FDS-teamet</a></li>
-                        </ul>
-                    </section>
-                </div>
+                <a class="function-link" href="/eksempel/test-input-fields-8/">Næste</a>
+                
             </div>
         </div>
     </div>
 </footer>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let createLink = function(style) {
+            var lnk = document.createElement('link');
+            lnk.type='text/css';
+            lnk.rel='stylesheet';
+            switch (style) {
+                case "neutral":
+                    lnk.href= '/assets/style/test_neutral.css';
+                    break;
+                case "borger":
+                    lnk.href= '/assets/style/test_borger.css';
+                    break;
+                case "virk":
+                    lnk.href= '/assets/style/test_virk.css';
+                    break;
+                case 'normalization':
+                    lnk.href= '/assets/style/test_normalization.css';
+                    break;
+            }
+            document.getElementsByTagName('head')[0].appendChild(lnk);
+        }
 
-    <script src="/assets/js/theme.js?v=10.1.0"></script>
-<script src="/assets/js/styleguide.js?v=10.1.0"></script>
+        let setNeutralStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        };
 
+        let setBorgerStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        };
 
-<script src="/assets/js/docs-tabs.js"></script>
+        let setVirkStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        };
 
-  </body>
+        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
+        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
+        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
+
+        let normalize = false;
+        if (document.querySelectorAll('main h1').length > 0) {
+            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
+                normalize = true;
+                createLink("normalization");
+            }
+        }
+        if (document.cookie.includes('theme=borger') && !normalize) {
+            createLink("borger");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
+        }
+        else if (document.cookie.includes('theme=virk') && !normalize) {
+            createLink("virk");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
+        }
+    });
+</script>
+    <script src="/assets/js/test.js"></script>
+</body>
+
 </html>

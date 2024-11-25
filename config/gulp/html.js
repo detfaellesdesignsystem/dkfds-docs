@@ -109,7 +109,7 @@ var testfiles = [
     "test-input-fields-4",
     "test-input-fields-5",
     "test-input-fields-6",
-    "test-input-fields-7",
+    "test-input-fields-character-limit",
     "test-input-fields-8",
     "test-input-fields-9",
     "test-buttons",

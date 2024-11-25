@@ -90,6 +90,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 break;
 
+            case 'Inputfelter med karakterbegrænsning':
+                new DKFDS.CharacterLimit(document.querySelectorAll('.form-limit')[0]).init();
+
+                document.getElementById('input-added-after-init').innerHTML = '<div class="form-group form-limit" data-maxlength="20" id="javascript-init"><label class="form-label" for="input-text-2">Begrænsning på 20 tegn</label><input type="text" id="input-text-2" name="input-text" class="form-input" value="tekst" aria-describedby="input-text-2-limit-message" required=""><span id="input-text-2-limit-message" class="sr-only">Du kan indtaste op til 20 tegn</span><span class="form-hint character-limit" aria-hidden="true">Du har 20 tegn tilbage</span><span class="character-limit-sr-only sr-only" aria-live="polite">Du har 20 tegn tilbage</span></div>';
+                const form_limit = new DKFDS.CharacterLimit(document.getElementById('javascript-init'));
+                form_limit.init();
+
+                const message_form_limit = new DKFDS.CharacterLimit(document.querySelectorAll('.form-limit')[2]);
+                message_form_limit.init();
+                document.getElementById('new-text').addEventListener('click', () => {
+                    message_form_limit.container.querySelector('.form-input').value = "Clicked new-text";
+                    message_form_limit.updateMessages();
+                });
+                document.getElementById('new-text-silent').addEventListener('click', () => {
+                    message_form_limit.container.querySelector('.form-input').value = "Clicked new-text-silent";
+                    message_form_limit.silentUpdateMessages();
+                });
+
+                break;
+
             case 'JavaScript for modaler':
 
                 initTest();

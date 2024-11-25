@@ -1,0 +1,56 @@
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Inputfelter med karakterbegrænsning</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="form-group form-limit" data-maxlength="40">
+                <label class="form-label" for="input-text-1">Begrænsning på 40 tegn</label>
+
+                <input type="text" id="input-text-1" name="input-text" class="form-input"
+                    value="tekst" aria-describedby="input-text-1-limit-message" required>
+                <span id="input-text-1-limit-message" class="sr-only">Du kan indtaste op til
+                    40 tegn</span>
+                <span class="form-hint character-limit" aria-hidden="true">Du har 40 tegn
+                    tilbage</span>
+                <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 40
+                    tegn tilbage</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12" id="input-added-after-init">
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-md-4">
+
+            <div class="form-group form-limit" data-maxlength="70">
+                <label class="form-label" for="input-text-3">Begrænsning på 70 tegn</label>
+
+                <input type="text" id="input-text-3" name="input-text" class="form-input"
+                    value="tekst" aria-describedby="input-text-3-limit-message" required>
+                <span id="input-text-3-limit-message" class="sr-only">Du kan indtaste op til
+                    70 tegn</span>
+                <span class="form-hint character-limit" aria-hidden="true">Du har 70 tegn
+                    tilbage</span>
+                <span class="character-limit-sr-only sr-only" aria-live="polite">Du har 70
+                    tegn tilbage</span>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-8 mt-4 mt-md-6">
+            <button class="button button-secondary" id="new-text">
+                Sæt ny tekst
+            </button>
+            <button class="button button-secondary" id="new-text-silent">
+                Sæt ny tekst (sr lydløs)
+            </button>
+        </div>
+    </div>
+</main>
