@@ -64,7 +64,7 @@ var testfiles = [
     "test-dropdown-5",
     "test-dropdown-6",
     "test-dropdown-7",
-    "test-dropdown-8",
+    "test-dropdown-long-text",
     "test-tabs-buttons",
     "test-tabs-buttons-icons",
     "test-tabs-buttons-many-tabs",

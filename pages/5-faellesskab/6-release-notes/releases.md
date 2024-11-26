@@ -102,10 +102,13 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
 
 
+
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
 <div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+
+Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
