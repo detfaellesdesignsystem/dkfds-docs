@@ -109,6 +109,31 @@
         </div>
     </div>
     <div class="row mb-905">
+        <div class="col-12 d-flex justify-content-between">
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i venstre side i rækken",
+                    "id": "tooltip-left",
+                    "forceVisible": "true"
+                }) 
+            }}
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i midten i rækken",
+                    "id": "tooltip-center",
+                    "forceVisible": "true"
+                }) 
+            }}
+            {{ 
+                tooltip_helpicon({
+                    "text": "Dette tooltip sidder i højre side i rækken",
+                    "id": "tooltip-right",
+                    "forceVisible": "true"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 table({
