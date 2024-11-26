@@ -117,6 +117,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 {% include links/github-link.html number="225" afternumber=" på GitHub" %}
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
 - Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
+- Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
