@@ -16,6 +16,11 @@ title: Test
 {% include test/preview-test.html filename="test-headings-long-text" description="Lange headings" %}
 
 {:.h3}
+## Grid
+
+{% include test/preview-test.html filename="test-container" description="Container-test" %}
+
+{:.h3}
 ## Ikoner
 
 {% include test/preview-test.html filename="test-icons-svg-and-class" description="Ikoner indsat som svg og klasse" %}

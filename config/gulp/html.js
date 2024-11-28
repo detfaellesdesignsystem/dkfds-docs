@@ -33,6 +33,7 @@ var testfiles = [
     "test-headings-no-sections",
     "test-headings-with-sections",
     "test-headings-long-text",
+    "test-container",
     "test-icons-svg-and-class",
     "test-accordion-headings",
     "test-accordion-variants",
