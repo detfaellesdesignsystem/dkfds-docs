@@ -137,6 +137,7 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Inputfelter
 
+{% include test/preview-test.html filename="test-input-fields-styling" description="Styling af inputfelter" %}
 {% include test/preview-test.html filename="test-input-fields-1" description="Inputfelter 1" %}
 {% include test/preview-test.html filename="test-input-fields-2" description="Inputfelter 2" %}
 {% include test/preview-test.html filename="test-input-fields-3" description="Inputfelter 3" %}

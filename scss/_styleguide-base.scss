@@ -792,56 +792,47 @@ code {
 
 // Demo fixed footer
 .demo-footer {
-  padding: 8px;
-  background-color: color('black');
-  bottom: 0;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-
-  .button {
+    padding: 8px;
     background-color: color('black');
-    border-color: color('white') !important;
-    width: auto;
-    color: color('white');
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
-    &:hover, &:focus, &:active {
-      color: color('black');
+    .button, .function-link {
+        &:focus {
+            outline-color: color('gray-300');
+        }
     }
 
-    .icon-svg {
-      margin-right: units(2);
+    .button {
+        background-color: color('black');
+        border-color: color('white');
+        width: auto;
+        color: color('white');
+
+        .icon-svg {
+            margin-right: units(2);
+        }
+
+        & + .function-link {
+            margin-top: 0;
+        }
     }
 
-    & + .function-link {
-      margin-top: 0;
+    .function-link {
+        color: color('white');
+
+        .icon-svg {
+            fill: color('white');
+        }
+
+        @include media-breakpoint-up(sm) {
+            width: auto;
+        }
     }
-
-  }
-
-  .form-select {
-    background-color: black;
-    color: color('white');
-  }
-
-  .function-link {
-    color: color('white');
-
-    .icon-svg {
-      fill: color('white');
-    }
-
-    @include media-breakpoint-up(sm) {
-      width: auto;
-    }
-  }
-}
-
-.demo-footer-title {
-  color: color('white');
-  display: inline-block;
 }
 
 

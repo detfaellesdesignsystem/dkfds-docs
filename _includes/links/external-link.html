@@ -65,6 +65,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "w3c (wcag 2.1): understanding sc 2.2.1: timing adjustable (level a)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "w3c (wcag 2.1): understanding sc 1.4.1: use of color (level a)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "w3c (wcag 2.1): understanding sc 1.4.3: contrast (minimum) (level aa)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -267,7 +270,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "when you should use a breadcrumb navigation" -%}
         <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "hvornår skal du bruge en knap eller et link" -%}
+    {%- when "when to use a button or link" -%}
         <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
@@ -296,7 +299,10 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "gov.uk design system - skip link" -%}
-        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+        <a href="https://design-system.service.gov.uk/components/skip-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "gov.uk design system - button" -%}
+        <a href="https://design-system.service.gov.uk/components/button/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 
@@ -316,6 +322,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "the ideal search box is 27 characters wide" -%}
         <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "usability pitfalls of disabled buttons, and how to avoid them" -%}
+        <a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 
@@ -384,6 +393,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "8-point grid: vertical rhythm" -%}
         <a href="https://medium.com/built-to-adapt/8-point-grid-vertical-rhythm-90d05ad95032" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "the problem with disabled buttons and what to do instead" -%}
+        <a href="https://medium.com/@adamsilverhq/the-problem-with-disabled-buttons-and-what-to-do-instead-e88df7f36253" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "spacing methods - baseline" -%}
         <a href="https://material.io/design/layout/spacing-methods.html#baseline" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>

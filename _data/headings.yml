@@ -492,8 +492,10 @@ Knapper_Kode:
 - h2: Primær
 - h2: Sekundær
 - h2: Tertiær
-- h2: Tilbage-knap
+- h2: Primærknap i fuld bredde på små skærme
 - h2: Knap med ikon
+- h2: Knapgruppe
+- h2: Advarselsknapper
 - h2: Klikbart ikon
 
 LoadingSpinner_Kode:

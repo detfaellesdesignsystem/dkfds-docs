@@ -1659,22 +1659,34 @@
 </nav>
 <div id="retningslinjer" hidden=""></div>
 
-<div class="component-preview intro-example component-preview-button-primary">
+<div class="component-preview intro-example component-preview-buttons">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/button-primary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: button-primary</span></a>
+        <a href="/eksempel/buttons/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på primærknap</div>
+    <div class="sr-only">Eksempel på knapper</div>
     
     <div class="component-example px-4 py-4">
         
-        <button class="button button-primary">
-    Gem
-</button>
+        <div class="mb-7">
+    <button class="button button-primary">
+        Primærknap
+    </button>
+</div>
+<div class="mb-7">
+    <button class="button button-secondary">
+        Sekundærknap
+    </button>
+</div>
+<div>
+    <button class="button button-tertiary">
+        Tertiærknap
+    </button>
+</div>
         
     </div>
     
@@ -1693,8 +1705,10 @@
         <li class="anchorlink-code"><a href="#primaer-kode">Primær</a></li>
         <li class="anchorlink-code"><a href="#sekundaer-kode">Sekundær</a></li>
         <li class="anchorlink-code"><a href="#tertiaer-kode">Tertiær</a></li>
-        <li class="anchorlink-code"><a href="#tilbage-knap-kode">Tilbage-knap</a></li>
+        <li class="anchorlink-code"><a href="#primaerknap-i-fuld-bredde-paa-smaa-skaerme-kode">Primærknap i fuld bredde på små skærme</a></li>
         <li class="anchorlink-code"><a href="#knap-med-ikon-kode">Knap med ikon</a></li>
+        <li class="anchorlink-code"><a href="#knapgruppe-kode">Knapgruppe</a></li>
+        <li class="anchorlink-code"><a href="#advarselsknapper-kode">Advarselsknapper</a></li>
         <li class="anchorlink-code"><a href="#klikbart-ikon-kode">Klikbart ikon</a></li>
         
     </ul>
@@ -1708,204 +1722,100 @@
 
 <h3>Anvendes til</h3>
 
-<p>Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom “næste” trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ind”, ”Log af” m.fl.</p>
+<p>Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom “Næste” trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ud” m.fl.</p>
 
 <h3>Anvendes ikke til</h3>
 
-<p>Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.</p>
+<p>Brug ikke knapper til at navigere til andre sider. Der skal du i stedet anvende <a href="/styleguide/typografi/links/">links</a>.</p>
 
 <h3>Vejledning</h3>
 
-<p>Der er kun én primærknap pr. side.</p>
+<p>Hierarkisk er der tre typer af knapper, Primær, Sekundær og Tertiær, der bruges til at fremhæve udvalgte handlinger.</p>
 
-<p>Generelt skal du anvende primære knapper til handlinger, der bringer brugeren videre i sin udfyldelse/indberetning i selvbetjeningsløsningen. Sekundære og tertiære knapper bruges til handlinger, der foregår på det aktuelle trin.</p>
+<h4>Primærknap</h4>
 
-<p>Brug også sekundære og tertiære knapper til at vægte vigtigheden af andre tilbudte funktioner.</p>
+<p>Primærknapper anvendes til den centrale handling i brugergrænsefladen. Det kan eksempelvis være “Tilmeld” eller “Indsend”. Der må kun anvendes én primærknap pr. side.</p>
 
-<p>Undgå for mange knapbaserede funktioner på samme side.</p>
+<h4>Sekundærknap</h4>
 
-<p>Funktioner af mindre vigtighed bør du style som et <a href="/komponenter/funktionslink/">funktionslink</a>.</p>
+<p>Sekundærknapper anvendes til handlinger der ikke er centrale i brugergrænsefladen. Der kan være flere sekundærknapper på en side.</p>
 
-<p>Brug stort forbogstav og små bogstaver for resten af teksten på knappen.</p>
+<h4>Tertiærknap</h4>
 
-<p>Skriv kort og præcist.</p>
-
-<p>Skriv i aktiv form: I stedet for at skrive ”Fejlindmelding” bør du skrive ”Indmeld en fejl”.</p>
-
-<p>I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger.</p>
+<p>Tertiærknapper anvendes til nedtonede handlinger, der ikke er centrale i brugergrænsefladen.</p>
 
 <h4>Disabled tilstand</h4>
 
-<p>Brug helst ikke “disabled” state på knapper eller i det hele taget, da ikke alle brugere forstår, at det som er “disabled” ikke kan anvendes.</p>
-
-<p>Brug ikke “disabled” tilstand på “næste” knapper (knapper der bringer brugeren videre i løsningen), da brugeren ved tryk på sådanne knapper skal have at vide, hvor i formularen, der mangler udfyldelse og dermed hjælpes til gennemførelse af selvbetjeningsløsningen.</p>
-
-<p>Der kan være tilfælde, hvor det giver mening for brugeren at du anvender “disabled” tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerne bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.</p>
+<p>Alle knapper har en “disabled” tilstand, men vi anbefaler ikke at benytte denne, da ikke alle brugere forstår, at det som er “disabled” ikke kan anvendes. Derudover er disabled knapper svære at se og læse grundet lav farvekontrast. Disabled knapper får ikke fokus, hvormed brugere, der navigerer med tastatur og bruger skærmlæser, ikke vil opdage knappen.</p>
 
 <div class=" component-preview-buttons-dos-donts">
     <div class="component-example">
         <div class="row do-dont-container">
     <div class="col-12 col-md-6">
         <h4>Sådan (<span lang="en">do</span>)</h4>
-        <div><img src="/assets/img/do-dont/Knapper-placering-do-borgerdk.svg" alt="Eksempel på, hvordan knapper kan se ud" /></div>
+        <div><img src="/assets/img/do-dont/Knapper-primaer-do-borgerdk.svg" alt="Eksempel på korrekt anvendelse af primærknapper" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#check-circle"></use></svg><div></div></div>
-        <p><strong>Sådan:</strong> Placér knapper i venstre side under formularens felter. Øjet følger som oftest en ”skannelinje” til venstre i formularer (Wroblewski, 2008, s. 93-97). Når alle elementer står på én linje, skal brugerne kun bevæge øjet vertikalt – ikke både vertikalt og horisontalt.</p>
+        <p><strong>Sådan:</strong> Benyt kun én primærknap pr side.</p>
     </div>
     <div class="col-12 col-md-6">
         <h4>Ikke sådan (<span lang="en">don't</span>)</h4>
-        <div><img src="/assets/img/do-dont/Knapper-placering-dont-borgerdk.svg" alt="Eksempel på, hvordan knapper ikke bør se ud" /></div>
+        <div><img src="/assets/img/do-dont/Knapper-primaer-dont-borgerdk.svg" alt="Eksempel på forkert anvendelse af primærknapper" /></div>
         <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#highlight-off"></use></svg><div></div></div>
-        <p><strong>Ikke sådan:</strong> Undlad at placere den afsluttende knap i formularer til højre. Brugerne kan let overse højrestillede knapper, da øjet mest fokuserer til venstre, og kun kan se skarpt i en diameter på 2-4 cm ved en computerskærm (Johnson, 2014, s. 54).</p>
+        <p><strong>Ikke sådan:</strong> Anvend ikke flere primærknapper på samme side.</p>
     </div>
 </div>
-
+<div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h4>Sådan (<span lang="en">do</span>)</h4>
+        <div><img src="/assets/img/do-dont/Knapper-funktion-do-borgerdk.svg" alt="Eksempel på to forskellige funktioner 'gem' og 'udskriv', der har hver sin knap" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#check-circle"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Anvend én knap til hver funktion.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h4>Ikke sådan (<span lang="en">don't</span>)</h4>
+        <div><img src="/assets/img/do-dont/Knapper-funktion-dont-borgerdk.svg" alt="Eksempel på to forskellige funktioner 'gem' og 'udskriv', der ukorrekt er blevet placeret på samme knap" /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#highlight-off"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> En knap må ikke indeholde flere funktioner.</p>
+    </div>
+</div>
     </div>
 </div>
 
 <h2 id="varianter">Varianter</h2>
 
-<h3 id="primaerknap">Primærknap</h3>
+<h3 id="fuld-bredde">Primærknap i fuld bredde på små skærme</h3>
 
-<div class="component-preview  component-preview-buttons-primary">
+<p>På små skærme med kun én central handling kan primærknapper indsættes på siden med fuld bredde. Benyt kun denne variant til primærknapper og kun til små skærmstørrelser (breakpoint mobil).</p>
+
+<div class="component-preview  component-preview-buttons-full-width">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/buttons-primary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-primary</span></a>
+        <a href="/eksempel/buttons-full-width/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-full-width</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på primærknap</div>
+    <div class="sr-only">Eksempel på knap med fuld bredde på små skærme</div>
     
     <div class="component-example px-4 py-4">
         
-        <div class="button-group">
-
-    <button class="button button-primary">
-        Default
-    </button>
-
-    <button class="button button-primary button-hover">
-        Hover
-    </button>
-
-    <button class="button button-primary button-active">
-        Active
-    </button>
-
-    <button class="button button-primary focus">
-        Focus
-    </button>
-
-    <button class="button button-primary" disabled="">
-        Disabled
-    </button>
-
-</div>
+        <p class="mt-0">Reducér skærmens bredde for at se knappens effekt.</p>
+<button class="button button-primary xs-full-width">
+    Gem
+</button>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/knapper/#primaer-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: buttons-primary</span></a>
-    </div>
-    
-</div>
-
-<h3 id="sekundaerknapper">Sekundærknapper</h3>
-
-<div class="component-preview  component-preview-buttons-secondary">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/buttons-secondary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-secondary</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på sekundærknap</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="button-group">
-
-    <button class="button button-secondary">
-        Default
-    </button>
-
-    <button class="button button-secondary button-hover">
-        Hover
-    </button>
-
-    <button class="button button-secondary button-active">
-        Active
-    </button>
-
-    <button class="button button-secondary focus">
-        Focus
-    </button>
-
-    <button class="button button-secondary" disabled="">
-        Disabled
-    </button>
-
-</div>
-        
-    </div>
-    
-    <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/knapper/#sekundaer-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: buttons-secondary</span></a>
-    </div>
-    
-</div>
-
-<h3 id="tertiaerknapper">Tertiærknapper</h3>
-
-<div class="component-preview  component-preview-buttons-tertiary">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/buttons-tertiary/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-tertiary</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på tertiær knap</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="button-group">
-
-    <button class="button button-tertiary">
-        Default
-    </button>
-
-    <button class="button button-tertiary button-hover">
-        Hover
-    </button>
-
-    <button class="button button-tertiary button-active">
-        Active
-    </button>
-
-    <button class="button button-tertiary focus">
-        Focus
-    </button>
-
-    <button class="button button-tertiary" disabled="">
-        Disabled
-    </button>
-
-</div>
-        
-    </div>
-    
-    <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/knapper/#tertiaer-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: buttons-tertiary</span></a>
+        <a href="/komponenter/knapper/#fuld-bredde-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: buttons-full-width</span></a>
     </div>
     
 </div>
 
 <h3 id="knap-med-ikon">Knap med ikon</h3>
+
+<p>Du kan supplere knappens tekst med et ikon, hvis dette klart og tydeligt angiver knappens funktion.</p>
 
 <div class="component-preview  component-preview-buttons-with-icon">
     
@@ -1922,7 +1832,7 @@
         
         <button class="button button-primary">
     <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
-    Refresh
+    Genindlæs
 </button>
         
     </div>
@@ -1933,11 +1843,76 @@
     
 </div>
 
+<h3 id="knapgruppe">Knapgruppe</h3>
+
+<p>For funktioner, der er sammenhængende, kan knapper grupperes og placeres ved siden af hinanden.</p>
+
+<div class="component-preview  component-preview-buttons-group">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-group/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-group</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på knapgruppe</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="button-group">
+    <button class="button button-secondary">
+        Gem
+    </button>
+    <button class="button button-tertiary">
+        Fortryd
+    </button>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/knapper/#knapgruppe-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: buttons-group</span></a>
+    </div>
+    
+</div>
+
+<h3 id="advarselsknapper">Advarselsknapper</h3>
+
+<p>Bør kun anvendes til funktioner hvor brugeren skal forstå, at de er ved at foretage en handling, der ikke efterfølgende kan omgøres, og som kan have store konsekvenser. Eksempelvis “Er du sikker på, du ønsker at slette det indtastede?”</p>
+
+<p>Vær opmærksom på, at den røde farve ikke må være det eneste, der kommunikerer handlingens alvor. Konteksten og knapteksten skal også kommunikere dette, da ikke alle brugere kan se og forstå farven og dens betydning (GOV.UK, WCAG).</p>
+
+<div class="component-preview  component-preview-buttons-warning">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-warning/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: buttons-warning</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på advarselsknap</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <button class="button button-warning">
+    Slet kladde
+</button>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/knapper/#advarselsknapper-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: buttons-warning</span></a>
+    </div>
+    
+</div>
+
 <h3 id="klikbart-ikon">Klikbart ikon</h3>
 
-<p>Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med sorteringsikoner i <a href="/komponenter/tables/">tabeller</a> eller skraldespandsikoner på mobil, hvor pladsen er begrænset.</p>
+<p>Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med sorteringsikoner i <a href="/komponenter/tables/">tabeller</a> eller skraldespandsikoner på mobil, hvor pladsen er begrænset.</p>
 
-<p>Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid <a href="/komponenter/funktionslink/">funktionslink</a> i stedet for klikbare ikoner, når det er muligt.</p>
+<p>Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid <a href="/komponenter/funktionslink/">funktionslink</a> i stedet for klikbare ikoner, når det er muligt.</p>
 
 <div class="component-preview  component-preview-buttons-only-icon">
     
@@ -1979,9 +1954,11 @@
 <h2 id="referencer">Referencer</h2>
 
 <ul class="nobullet-list">
-  <li>Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)</li>
-  <li>Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)</li>
-  <li><a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link" target="_blank">Hvornår skal du bruge en knap eller et link<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://medium.com/@adamsilverhq/the-problem-with-disabled-buttons-and-what-to-do-instead-e88df7f36253" class="icon-link" target="_blank">The Problem with Disabled Buttons and What To Do Instead<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" class="icon-link" target="_blank">When to Use a Button or Link<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/" class="icon-link" target="_blank">Usability Pitfalls of Disabled Buttons, and How To Avoid Them<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color" class="icon-link" target="_blank">W3C (WCAG 2.1): Understanding SC 1.4.1: Use of Color (Level A)<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://design-system.service.gov.uk/components/button/" class="icon-link" target="_blank">GOV.UK Design System - Button<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
 </ul>
 
 
@@ -1993,7 +1970,46 @@
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-button-primary">
+<div class="component-preview component-preview-code  component-code-buttons">
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;mb-7&quot;&gt;
+    &lt;button class=&quot;button button-primary&quot;&gt;
+        Primærknap
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mb-7&quot;&gt;
+    &lt;button class=&quot;button button-secondary&quot;&gt;
+        Sekundærknap
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;button class=&quot;button button-tertiary&quot;&gt;
+        Tertiærknap
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+</div>
+
+<p>Undgå at anvende <code>div</code> eller <code>img</code> tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.</p>
+
+<p>Alle knapper skal altid have klassen <code>button</code>, der sætter en grundlæggende styling.</p>
+
+<p>Hvis man har knapper med lang tekst, kan der i enkelte tilfælde være ombrydningsproblemer på mindre skærme. Hvis det ikke er muligt at give knappen et kortere navn, kan man placere knappens tekst i et <code>&lt;span&gt;</code>-element for at ombryde teksten over flere linjer.</p>
+
+<div class="component-preview component-preview-code  component-code-buttons-long-text">
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -2006,7 +2022,7 @@
         
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary&quot;&gt;
-    Gem
+    &lt;span&gt;Sommerferiearrangementskalender&lt;/span&gt;
 &lt;/button&gt;</code></pre></figure>
 
 
@@ -2014,25 +2030,53 @@
     
 </div>
 
-<p>Undgå at anvende <code>div</code> eller <code>img</code> tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.</p>
-
 <h2 id="primaer-kode">Primær</h2>
 
-<p>Defineres med klassen <code>button-primary</code>.</p>
+<p>Tilføj klassen <code>button-primary</code> til knappen.</p>
 
 <p>Bemærk særlige <a href="/komponenter/knapper/#saadan-bruges-komponenten">retningslinjer for primærknap</a>.</p>
 
 <h2 id="sekundaer-kode">Sekundær</h2>
 
-<p>Defineres med klassen <code>button-secondary</code>.</p>
+<p>Tilføj klassen <code>button-secondary</code> til knappen.</p>
 
 <h2 id="tertiaer-kode">Tertiær</h2>
 
-<p>Defineres med klassen <code>button-tertiary</code>.</p>
+<p>Tilføj klassen <code>button-tertiary</code> til knappen.</p>
 
-<h2 id="tilbage-knap-kode">Tilbage-knap</h2>
+<h2 id="fuld-bredde-kode">Primærknap i fuld bredde på små skærme</h2>
 
-<p>Defineres med klassen <code>button-quaternary</code>.</p>
+<div class="component-preview component-preview-code  component-code-buttons-full-width">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-full-width/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: buttons-full-width</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p class=&quot;mt-0&quot;&gt;Reducér skærmens bredde for at se knappens effekt.&lt;/p&gt;
+&lt;button class=&quot;button button-primary xs-full-width&quot;&gt;
+    Gem
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/knapper/#fuld-bredde" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
 
 <h2 id="knap-med-ikon-kode">Knap med ikon</h2>
 
@@ -2056,7 +2100,7 @@
         
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-primary&quot;&gt;
     &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#refresh&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-    Refresh
+    Genindlæs
 &lt;/button&gt;</code></pre></figure>
 
 
@@ -2064,6 +2108,77 @@
     
     <div class="component-guidelines-link px-4 py-4">
         <a href="/komponenter/knapper/#knap-med-ikon" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<h2 id="knapgruppe-kode">Knapgruppe</h2>
+
+<div class="component-preview component-preview-code  component-code-buttons-group">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-group/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: buttons-group</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;button-group&quot;&gt;
+    &lt;button class=&quot;button button-secondary&quot;&gt;
+        Gem
+    &lt;/button&gt;
+    &lt;button class=&quot;button button-tertiary&quot;&gt;
+        Fortryd
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/knapper/#knapgruppe" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<h2 id="advarselsknapper-kode">Advarselsknapper</h2>
+
+<div class="component-preview component-preview-code  component-code-buttons-warning">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/buttons-warning/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: buttons-warning</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;button class=&quot;button button-warning&quot;&gt;
+    Slet kladde
+&lt;/button&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/knapper/#advarselsknapper" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>
@@ -2102,7 +2217,6 @@
     
 </div>
 
-<p><code>button-unstyled</code> bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx <code>&lt;span class="sr-only"&gt;Slet&lt;/span&gt;</code>.</p>
 
                         </div>
 
