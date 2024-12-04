@@ -261,12 +261,29 @@
                 <div class="tab-list" role="tablist"><button class="tab-button" role="tab" aria-controls="tabpanel1" aria-selected="true" id="tab1"><span>Indhold
                             1</span>
                     </button><button class="tab-button" role="tab" aria-controls="tabpanel2" aria-selected="false" id="tab2"><span>Indhold 2</span>
+                    </button><button class="tab-button" role="tab" aria-controls="tabpanel3" aria-selected="false" id="tab3"><span>Indhold 3</span>
                     </button></div>
                 <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel1" aria-labelledby="tab1">
-                    <p>Lorem ipsum dolor sit amet.</p>
+
+                    <div class="alert alert-info">
+                        <svg class="icon-svg alert-icon" aria-label="Information" focusable="false"><use xlink:href="#info"></use></svg>
+                        <div class="alert-body">
+                            <h3 class="alert-heading">Dette er titlen</h3>
+                            <p class="alert-text">Dette er indholdet i beskeden</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel2" aria-labelledby="tab2" hidden="">
                     <p>Praesent consequat erat nec felis semper dignissim.</p>
+                </div>
+                <div class="tab-panel" role="tabpanel" tabindex="0" id="tabpanel3" aria-labelledby="tab3" hidden="">
+                    <h2>Heading 2</h2>
+                    <p>Content under heading.</p>
+                    <div>
+                        <p>Paragraph 1 inside a div.</p>
+                        <p>Paragraph 2 inside a div.</p>
+                    </div>
                 </div>
             </div>
 
