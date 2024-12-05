@@ -1,4 +1,5 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/back-link/back-link.njk" import back_link as back_link %}
 {% from "components/header/header.njk" import portal_info as portal_info %}
 {% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
 {% from "components/header/header.njk" import solution_info as solution_info %}
@@ -87,7 +88,7 @@
             {{ overflow_stepguide(trinindikator_data) }}
         </aside>
         <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="#" class="back-link">Tilbage</a></div>
+            {{ back_link({ "href": "#" }) }}
             <nav aria-labelledby="trinindikator-error-summary">
                 {{ 
                     alert({

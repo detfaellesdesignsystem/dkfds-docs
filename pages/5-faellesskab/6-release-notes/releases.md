@@ -106,7 +106,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 11.0.0 {#{% include create-id.html heading="Version 11.0.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+<div><span class="small-text mt-0 d-block">??-??-2025</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 11.0.0" %}
 
@@ -142,6 +142,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for {% include links/component-guideline-link.html linktext="tilbage-link" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper og tags er enten slettet, tilføjet eller ændret.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Slettet forældet styling herunder al anvendelse af `::-ms-clear`, `-ms-high-contrast`, `-ms-box-orient` og `:-moz-focusring`, samt klasserne `page-navigation` og `background-dark`.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. Variablene `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
@@ -153,6 +154,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Ændret {% include links/internal-link.html linktext="streger" %} (`border`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
 - Ændret tykkelse og farve på fokusstreger.
+- Fjernet dedikeret fokusfarve fra {% include links/internal-link.html linktext="links" %}.
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 
 

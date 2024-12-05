@@ -235,6 +235,11 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-textarea-7" description="Tekstområde 7" %}
 
 {:.h3}
+## Tilbage-link
+
+{% include test/preview-test.html filename="test-back-link" description="Tilbage-link" %}
+
+{:.h3}
 ## Tilbage til toppen
 
 {% include test/preview-test.html filename="test-back-to-top-long-page" description="Tilbage til toppen-knap på en lang side" %}
