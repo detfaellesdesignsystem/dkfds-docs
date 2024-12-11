@@ -42,6 +42,8 @@ Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.
 
 Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten {% include links/component-guideline-link.html linktext="ikoner med hover-tooltip" %}.
 
+Vær opmærksom på, at tooltipteksten ikke kan ses på print. Hvis indholdet er så essentielt, at det skal kunne udskrives, så anvend fx synlig hjælpetekst eller brødtekst frem for tooltip.
+
 {% include dos-donts-box.html component="tooltip-dos-donts" %}
 
 ### Placering af tooltips

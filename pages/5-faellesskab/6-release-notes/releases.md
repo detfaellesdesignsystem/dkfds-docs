@@ -163,17 +163,17 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+<div><span class="small-text mt-0 d-block">12-12-2024</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
 </div>
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`, som kan bruges i de tilfælde, hvor tooltippet ikke er fuldt synligt.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`. Attributten kan bruges, når tooltippet placeres i et afgrænset element (fx modal eller tabel), som ellers ville afskære tooltippen.
 {% include links/github-link.html number="225" afternumber=" på GitHub" %}
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
-- Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
+- Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
 - Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
@@ -183,6 +183,8 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 - Tilføjet flere tekstmuligheder til {% include links/external-link.html linktext="macroerne" %} for anchorlinks og trinindikator.
 - Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="dropdowns" %} kunne gå under pilen, når stylingen for fejlmeddelelse blev anvendt.
 {% include links/github-link.html number="255" afternumber=" på GitHub" %} 
+- Rettet fejl, hvor padding og margin kunne mangle for nogle elementer i {% include links/component-guideline-link.html linktext="faneblade" %}.
+{% include links/github-link.html number="259" afternumber=" på GitHub" %} 
 
 
 
