@@ -106,7 +106,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">??-??-2024</span></div>
+<div><span class="small-text mt-0 d-block">12-12-2024</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
@@ -116,7 +116,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`. Attributten kan bruges, når tooltippet placeres i et afgrænset element (fx modal eller tabel), som ellers ville afskære tooltippen.
 {% include links/github-link.html number="225" afternumber=" på GitHub" %}
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
-- Rettet fejl, hvor tooltips ikke altid kunne ses ved print.
+- Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
 - Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
