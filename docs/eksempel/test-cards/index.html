@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta name="robots" content="noindex" >
     <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
@@ -10,15 +10,14 @@
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-
 <meta name="robots" content="noindex">
 
 <!-- Title and meta description
 ================================================== -->
 
 
-<title>Test | Det Fælles Designsystem</title>
-<meta property="og:title" content="Test | Det Fælles Designsystem">
+<title>Testfil | test-cards | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-cards | Det Fælles Designsystem">
 
 
 
@@ -47,24 +46,24 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
+<link rel="preload" href="/assets/style/test_borger.css" as="style">
+<link rel="preload" href="/assets/style/test_virk.css" as="style">
+<link rel="preload" href="/assets/style/test_neutral.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
-  body {
-    opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
+    body {
+      opacity: 0; /*hide page until theme is downloaded by js.*/
+    }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
-
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
 </noscript>
 
 </head>
-<body class="layout-mastertest">
+
+<body class="layout-test-example">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -250,722 +249,159 @@
     </div>
 </div>
     <main class="container page-container" id="main-content">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="h2 mt-0">Testside</h1>
-
-<h2 class="h3">HTML-elementer</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-html-elements/" class="test-link" target="_blank">HTML-elementer (test-html-elements)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-headings-no-sections/" class="test-link" target="_blank">Headings uden sektioner (test-headings-no-sections)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-headings-with-sections/" class="test-link" target="_blank">Headings med sektioner (test-headings-with-sections)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-headings-long-text/" class="test-link" target="_blank">Lange headings (test-headings-long-text)</a>
-</div>
-
-<h2 class="h3">Grid</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-container/" class="test-link" target="_blank">Container-test (test-container)</a>
-</div>
-
-<h2 class="h3">Ikoner</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-icons-svg-and-class/" class="test-link" target="_blank">Ikoner indsat som svg og klasse (test-icons-svg-and-class)</a>
-</div>
-
-<h2 class="h3">Accordions</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-headings/" class="test-link" target="_blank">Overskriftstyper i accordions (test-accordion-headings)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-variants/" class="test-link" target="_blank">Accordion-varianter (test-accordion-variants)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-classes/" class="test-link" target="_blank">Accordion-klasser (test-accordion-classes)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-open-close-button/" class="test-link" target="_blank">Åbn/luk-knapper (test-accordion-open-close-button)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-long-text/" class="test-link" target="_blank">Tekstombrydning i accordions (test-accordion-long-text)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-javascript/" class="test-link" target="_blank">JavaScript i accordions (test-accordion-javascript)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-accordion-language/" class="test-link" target="_blank">Skift sprog i accordions (test-accordion-language)</a>
-</div>
-
-<h2 class="h3">Beskeder (Alerts)</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-alerts-1/" class="test-link" target="_blank">Besked 1 (test-alerts-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-alerts-2/" class="test-link" target="_blank">Besked 2 (test-alerts-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-alerts-3/" class="test-link" target="_blank">Besked 3 (test-alerts-3)</a>
-</div>
-
-<h2 class="h3">Cards</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-cards/" class="test-link" target="_blank">Cards (test-cards)</a>
-</div>
-
-<h2 class="h3">Datofelter</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-date-input-1/" class="test-link" target="_blank">Datofelter 1 (test-date-input-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-date-input-2/" class="test-link" target="_blank">Datofelter 2 (test-date-input-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-date-input-3/" class="test-link" target="_blank">Datofelter 3 (test-date-input-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-date-input-4/" class="test-link" target="_blank">Datofelter 4 (test-date-input-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-date-input-5/" class="test-link" target="_blank">Datofelter 5 (test-date-input-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-date-input-6/" class="test-link" target="_blank">Datofelter 6 (test-date-input-6)</a>
-</div>
-
-<h2 class="h3">Datovælger</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-1/" class="test-link" target="_blank">Datovælger 1 (test-datepicker-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-2/" class="test-link" target="_blank">Datovælger 2 (test-datepicker-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-3/" class="test-link" target="_blank">Datovælger 3 (test-datepicker-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-4/" class="test-link" target="_blank">Datovælger 4 (test-datepicker-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-5/" class="test-link" target="_blank">Datovælger 5 (test-datepicker-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-6/" class="test-link" target="_blank">Datovælger 6 (test-datepicker-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-datepicker-7/" class="test-link" target="_blank">Datovælger 7 (test-datepicker-7)</a>
-</div>
-
-<h2 class="h3">Dropdown</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-1/" class="test-link" target="_blank">Dropdown 1 (test-dropdown-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-2/" class="test-link" target="_blank">Dropdown 2 (test-dropdown-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-3/" class="test-link" target="_blank">Dropdown 3 (test-dropdown-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-4/" class="test-link" target="_blank">Dropdown 4 (test-dropdown-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-5/" class="test-link" target="_blank">Dropdown 5 (test-dropdown-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-6/" class="test-link" target="_blank">Dropdown 6 (test-dropdown-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-7/" class="test-link" target="_blank">Dropdown 7 (test-dropdown-7)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-dropdown-long-text/" class="test-link" target="_blank">Dropdowns med lang tekst (test-dropdown-long-text)</a>
-</div>
-
-<h2 class="h3">Faneblade</h2>
-
-<p class="test-link">A: Test af “traditionelle” faneblade<br />
-B: Test af faneblade anvendt til sidenavigation</p>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons/" class="test-link" target="_blank">A: Faneblade (test-tabs-buttons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-icons/" class="test-link" target="_blank">A: Faneblade med ikoner (test-tabs-buttons-icons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-many-tabs/" class="test-link" target="_blank">A: Mange faneblade (test-tabs-buttons-many-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-no-tabs/" class="test-link" target="_blank">A: Ingen faneblade (test-tabs-buttons-no-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-only-one-tab/" class="test-link" target="_blank">A: Kun ét faneblad (test-tabs-buttons-only-one-tab)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-no-active-tabs/" class="test-link" target="_blank">A: Ingen valgte faneblade (test-tabs-buttons-no-active-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-several-active-tabs/" class="test-link" target="_blank">A: To valgte faneblade (test-tabs-buttons-several-active-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-javascript/" class="test-link" target="_blank">A: JavaScript i faneblade (test-tabs-buttons-javascript)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-long-sentences/" class="test-link" target="_blank">A: Faneblade med lange sætninger (test-tabs-buttons-long-sentences)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-long-strings/" class="test-link" target="_blank">A: Faneblade med lange sætninger uden mellemrum (test-tabs-buttons-long-strings)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-buttons-long-strings-with-icons/" class="test-link" target="_blank">A: Faneblade med lange sætninger uden mellemrum og med ikoner (test-tabs-buttons-long-strings-with-icons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation/" class="test-link" target="_blank">B: Faneblade til navigation (test-tabs-navigation)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-icons/" class="test-link" target="_blank">B: Faneblade til navigation med ikoner (test-tabs-navigation-icons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-many-tabs/" class="test-link" target="_blank">B: Mange faneblade til navigation (test-tabs-navigation-many-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-no-tabs/" class="test-link" target="_blank">B: Ingen faneblade til navigation (test-tabs-navigation-no-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-only-one-tab/" class="test-link" target="_blank">B: Kun ét faneblad til navigation (test-tabs-navigation-only-one-tab)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-no-active-tabs/" class="test-link" target="_blank">B: Ingen valgte faneblade til navigation (test-tabs-navigation-no-active-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-several-active-tabs/" class="test-link" target="_blank">B: To valgte faneblade til navigation (test-tabs-navigation-several-active-tabs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-long-sentences/" class="test-link" target="_blank">B: Faneblade til navigation med lange sætninger (test-tabs-navigation-long-sentences)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-long-strings/" class="test-link" target="_blank">B: Faneblade til navigation med lange sætninger uden mellemrum (test-tabs-navigation-long-strings)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tabs-navigation-long-strings-with-icons/" class="test-link" target="_blank">B: Faneblade til navigation med lange sætninger uden mellemrum og med ikoner (test-tabs-navigation-long-strings-with-icons)</a>
-</div>
-
-<h2 class="h3">Funktionslink</h2>
-<div class="mb-2">
-    <a href="/eksempel/test-function-link/" class="test-link" target="_blank">Funktionslinks (test-function-link)</a>
-</div>
-
-<h2 class="h3">Gå til sidens indhold (Skip-link)</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-skip-link-default/" class="test-link" target="_blank">Skip-link, default (test-skip-link-default)</a>
-</div>
-
-<h2 class="h3">Header</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-portal-only/" class="test-link" target="_blank">Portalrække (test-header-portal-only)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-solution-only/" class="test-link" target="_blank">Løsningsrække (test-header-solution-only)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-portal-and-solution/" class="test-link" target="_blank">Portalrække og løsningsrække (test-header-portal-and-solution)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-solution-and-navigation/" class="test-link" target="_blank">Løsningsrække og navigation (test-header-solution-and-navigation)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-three-simple-rows/" class="test-link" target="_blank">Portalrække, løsningsrække og simpel navigation (test-header-three-simple-rows)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-navigation-with-only-searchfield/" class="test-link" target="_blank">Ingen navigation, kun søgefelt (test-header-navigation-with-only-searchfield)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-navigation-with-searchfield/" class="test-link" target="_blank">Simpel navigation med søgefelt (test-header-navigation-with-searchfield)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-dropdown-navigation/" class="test-link" target="_blank">Navigation med flere dropdownmenuer (test-header-dropdown-navigation)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-navigation-many-items/" class="test-link" target="_blank">Navigation med mange elementer (test-header-navigation-many-items)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-language-switcher/" class="test-link" target="_blank">Sprogvælger (test-header-language-switcher)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-long-sentences/" class="test-link" target="_blank">Header med mange ord (test-header-long-sentences)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-long-strings/" class="test-link" target="_blank">Header med lange, ubrudte tekststrenge (test-header-long-strings)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-mobile-helptext/" class="test-link" target="_blank">Hjælpetekst i mobilmenuen (test-header-mobile-helptext)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-breadcrumb-function-links/" class="test-link" target="_blank">Brødkrumme og funktionslinks under headeren (test-header-breadcrumb-function-links)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-header-init/" class="test-link" target="_blank">Kun header er initialiseret (test-header-init)</a>
-</div>
-
-<h2 class="h3">Inputfelter</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-styling/" class="test-link" target="_blank">Styling af inputfelter (test-input-fields-styling)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-1/" class="test-link" target="_blank">Inputfelter 1 (test-input-fields-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-2/" class="test-link" target="_blank">Inputfelter 2 (test-input-fields-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-3/" class="test-link" target="_blank">Inputfelter 3 (test-input-fields-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-4/" class="test-link" target="_blank">Inputfelter 4 (test-input-fields-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-5/" class="test-link" target="_blank">Inputfelter 5 (test-input-fields-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-6/" class="test-link" target="_blank">Inputfelter 6 (test-input-fields-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-character-limit/" class="test-link" target="_blank">Inputfelter med karakterbegrænsning (test-input-fields-character-limit)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-8/" class="test-link" target="_blank">Inputfelter 8 (test-input-fields-8)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-input-fields-9/" class="test-link" target="_blank">Inputfelter 9 (test-input-fields-9)</a>
-</div>
-
-<h2 class="h3">Knapper</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons/" class="test-link" target="_blank">Knapper (test-buttons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-in-row/" class="test-link" target="_blank">Knapper på én række (test-buttons-in-row)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-in-divs/" class="test-link" target="_blank">Knapper i hver sin række (test-buttons-in-divs)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-buttons-next-to-text/" class="test-link" target="_blank">Knapper i tekstafsnit (test-buttons-next-to-text)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-button-long-text/" class="test-link" target="_blank">Knapper med lang tekst (test-button-long-text)</a>
-</div>
-
-<h2 class="h3">Modal</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-modal-types/" class="test-link" target="_blank">Modaltyper (test-modal-types)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-modal-javascript/" class="test-link" target="_blank">JavaScript for modaler (test-modal-javascript)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-modal-inert/" class="test-link" target="_blank">Test af inert med modaler (test-modal-inert)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-modal-long/" class="test-link" target="_blank">Lang modal (test-modal-long)</a>
-</div>
-
-<h2 class="h3">Overflow menu</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-overflow-menus-1/" class="test-link" target="_blank">Overflow-menu 1 (test-overflow-menus-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-overflow-menus-2/" class="test-link" target="_blank">Overflow-menu 2 (test-overflow-menus-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-overflow-menu-placement/" class="test-link" target="_blank">Placering af overflow-menu (test-overflow-menu-placement)</a>
-</div>
-
-<h2 class="h3">Paginering</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-pagination/" class="test-link" target="_blank">Paginering, basale funktioner (test-pagination)</a>
-</div>
-
-<h2 class="h3">Radioknap (Radio button)</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-radiobuttons-error/" class="test-link" target="_blank">Radioknap 1 (test-radiobuttons-error)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-radiobuttons-1/" class="test-link" target="_blank">Radioknap 1 (test-radiobuttons-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-radiobuttons-2/" class="test-link" target="_blank">Radioknap 2 (test-radiobuttons-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-radiobuttons-3/" class="test-link" target="_blank">Radioknap 3 (test-radiobuttons-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-radiobuttons-4/" class="test-link" target="_blank">Radioknap 4 (test-radiobuttons-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-radiobuttons-5/" class="test-link" target="_blank">Radioknap 5 (test-radiobuttons-5)</a>
-</div>
-
-<h2 class="h3">Strukturerede lister</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-structured-list-1/" class="test-link" target="_blank">Strukturerede lister 1 (test-structured-list-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-structured-list-2/" class="test-link" target="_blank">Strukturerede lister 2 (test-structured-list-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-structured-list-3/" class="test-link" target="_blank">Strukturerede lister 3 (test-structured-list-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-structured-list-4/" class="test-link" target="_blank">Strukturerede lister 4 (test-structured-list-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-structured-list-5/" class="test-link" target="_blank">Strukturerede lister 5 (test-structured-list-5)</a>
-</div>
-
-<h2 class="h3">Søgefelt</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-search/" class="test-link" target="_blank">Søgefelt med browsertilføjelser (test-search)</a>
-</div>
-
-<h2 class="h3">Tabeller</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-simple-table/" class="test-link" target="_blank">Simpel tabel (test-simple-table)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-responsive-table/" class="test-link" target="_blank">Responsiv tabel (test-responsive-table)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-sorting-table/" class="test-link" target="_blank">Sortering i tabel (test-sorting-table)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-selectable-table/" class="test-link" target="_blank">Tabel med valgbare rækker (test-selectable-table)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-selectable-table-with-buttons/" class="test-link" target="_blank">Valgbare rækker med funktionsknapper (test-selectable-table-with-buttons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-table-pagination/" class="test-link" target="_blank">Valgbare rækker med paginering (test-table-pagination)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-table-pagination-with-buttons/" class="test-link" target="_blank">Valgbare rækker med paginering og funktionsknapper (test-table-pagination-with-buttons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-table-many-columns/" class="test-link" target="_blank">Tabel med mange kolonner (test-table-many-columns)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-table-many-columns-with-buttons/" class="test-link" target="_blank">Tabel med mange kolonner og funktionsknapper (test-table-many-columns-with-buttons)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-1/" class="test-link" target="_blank">Tabeller 1 (test-tables-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-2/" class="test-link" target="_blank">Tabeller 2 (test-tables-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-3/" class="test-link" target="_blank">Tabeller 3 (test-tables-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-4/" class="test-link" target="_blank">Tabeller 4 (test-tables-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-5/" class="test-link" target="_blank">Tabeller 5 (test-tables-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-6/" class="test-link" target="_blank">Tabeller 6 (test-tables-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-7/" class="test-link" target="_blank">Tabeller 7 (test-tables-7)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-8/" class="test-link" target="_blank">Tabeller 8 (test-tables-8)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tables-responsive-sorting/" class="test-link" target="_blank">Tabel, der indeholder sortering og er responsiv (test-tables-responsive-sorting)</a>
-</div>
-
-<h2 class="h3">Tekstområde (Textarea)</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-1/" class="test-link" target="_blank">Tekstområde 1 (test-textarea-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-2/" class="test-link" target="_blank">Tekstområde 2 (test-textarea-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-3/" class="test-link" target="_blank">Tekstområde 3 (test-textarea-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-4/" class="test-link" target="_blank">Tekstområde 4 (test-textarea-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-5/" class="test-link" target="_blank">Tekstområde 5 (test-textarea-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-6/" class="test-link" target="_blank">Tekstområde 6 (test-textarea-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-textarea-7/" class="test-link" target="_blank">Tekstområde 7 (test-textarea-7)</a>
-</div>
-
-<h2 class="h3">Tilbage-link</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-back-link/" class="test-link" target="_blank">Tilbage-link (test-back-link)</a>
-</div>
-
-<h2 class="h3">Tilbage til toppen</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-back-to-top-long-page/" class="test-link" target="_blank">Tilbage til toppen-knap på en lang side (test-back-to-top-long-page)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-back-to-top-short-page/" class="test-link" target="_blank">Tilbage til toppen-knap på en kort side (test-back-to-top-short-page)</a>
-</div>
-
-<h2 class="h3">Tjekbokse</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkbox-simple/" class="test-link" target="_blank">TO DO: Simpel tjekboks (test-checkbox-simple)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-1/" class="test-link" target="_blank">Tjekbokse 1 (test-checkboxes-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-2/" class="test-link" target="_blank">Tjekbokse 2 (test-checkboxes-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-3/" class="test-link" target="_blank">Tjekbokse 3 (test-checkboxes-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-4/" class="test-link" target="_blank">Tjekbokse 4 (test-checkboxes-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-5/" class="test-link" target="_blank">Tjekbokse 5 (test-checkboxes-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-6/" class="test-link" target="_blank">Tjekbokse 6 (test-checkboxes-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-7/" class="test-link" target="_blank">Tjekbokse 7 (test-checkboxes-7)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-8/" class="test-link" target="_blank">Tjekbokse 8 (test-checkboxes-8)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-checkboxes-9/" class="test-link" target="_blank">Tjekbokse 9 (test-checkboxes-9)</a>
-</div>
-
-<h2 class="h3">Toggle switch</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-toggle/" class="test-link" target="_blank">Toggle switch (test-toggle)</a>
-</div>
-
-<h2 class="h3">Tooltips</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tooltips/" class="test-link" target="_blank">Tooltips (test-tooltips)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tooltip-force-visible/" class="test-link" target="_blank">Tooltips med attributten force-visible (test-tooltip-force-visible)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-tooltip-javascript/" class="test-link" target="_blank">JavaScript for tooltips (test-tooltip-javascript)</a>
-</div>
-
-<h2 class="h3">Trinindikator</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-1/" class="test-link" target="_blank">Trinindikator 1 (test-step-guide-1)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-2/" class="test-link" target="_blank">Trinindikator 2 (test-step-guide-2)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-3/" class="test-link" target="_blank">Trinindikator 3 (test-step-guide-3)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-4/" class="test-link" target="_blank">Trinindikator 4 (test-step-guide-4)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-5/" class="test-link" target="_blank">Trinindikator 5 (test-step-guide-5)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-6/" class="test-link" target="_blank">Trinindikator 6 (test-step-guide-6)</a>
-</div>
-
-<div class="mb-2">
-    <a href="/eksempel/test-step-guide-7/" class="test-link" target="_blank">Trinindikator 7 (test-step-guide-7)</a>
-</div>
-
-<h2 class="h3">Venstremenu</h2>
-
-<div class="mb-2">
-    <a href="/eksempel/test-venstremenu/" class="test-link" target="_blank">Venstremenu (test-venstremenu)</a>
-</div>
-
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Cards</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="new-card"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
-    </main>
-    <script src="/assets/js/theme.js?v=10.1.0"></script>
-<script src="/assets/js/styleguide.js?v=10.1.0"></script>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="new-card">
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-actions">
+                    <ul class="nobullet-list">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#" class="icon-link" target="_blank">Eksternt
+                                website<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="new-card"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-actions">
+                    <div class="button-group">
+                        <button class="button button-secondary">
+                            Åbn
+                        </button>
+                        <button class="button button-tertiary">
+                            Udskriv
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="new-card" href="#"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="new-card" href="#"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-actions">
+                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
 
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/styleguide.js"></script>
+    <footer class="test-footer d-flex align-items-center">
+    <div class="container">
+        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+            <div class="d-flex mr-8">
+                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                </button>
+                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
+                </button>
+                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
+                </button>
+                <button id="theme-virk" class="function-link"><span>Virk</span>
+                </button>
+            </div>
+            <div>
+                
+                <a class="function-link mr-4" href="/eksempel/test-alerts-3/">Forrige</a>
+                
+                
+                <a class="function-link" href="/eksempel/test-date-input-1/">Næste</a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let createLink = function(style) {
+            var lnk = document.createElement('link');
+            lnk.type='text/css';
+            lnk.rel='stylesheet';
+            switch (style) {
+                case "neutral":
+                    lnk.href= '/assets/style/test_neutral.css';
+                    break;
+                case "borger":
+                    lnk.href= '/assets/style/test_borger.css';
+                    break;
+                case "virk":
+                    lnk.href= '/assets/style/test_virk.css';
+                    break;
+                case 'normalization':
+                    lnk.href= '/assets/style/test_normalization.css';
+                    break;
+            }
+            document.getElementsByTagName('head')[0].appendChild(lnk);
+        }
+
+        let setNeutralStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        };
+
+        let setBorgerStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        };
+
+        let setVirkStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        };
+
+        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
+        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
+        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
+
+        let normalize = false;
+        if (document.querySelectorAll('main h1').length > 0) {
+            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
+                normalize = true;
+                createLink("normalization");
+            }
+        }
+        if (document.cookie.includes('theme=borger') && !normalize) {
+            createLink("borger");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
+        }
+        else if (document.cookie.includes('theme=virk') && !normalize) {
+            createLink("virk");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
+        }
+    });
+</script>
+    <script src="/assets/js/test.js"></script>
 </body>
+
 </html>

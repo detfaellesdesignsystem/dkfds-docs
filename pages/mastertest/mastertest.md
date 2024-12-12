@@ -44,6 +44,11 @@ title: Test
 {% include test/preview-test.html filename="test-alerts-3" description="Besked 3" %}
 
 {:.h3}
+## Cards
+
+{% include test/preview-test.html filename="test-cards" description="Cards" %}
+
+{:.h3}
 ## Datofelter
 
 {% include test/preview-test.html filename="test-date-input-1" description="Datofelter 1" %}

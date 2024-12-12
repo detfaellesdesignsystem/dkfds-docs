@@ -45,6 +45,7 @@ var testfiles = [
     "test-alerts-1",
     "test-alerts-2",
     "test-alerts-3",
+    "test-cards",
     "test-date-input-1",
     "test-date-input-2",
     "test-date-input-3",
