@@ -118,6 +118,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
 - Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
 - Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
+- Rettet fejl, hvor flere tooltips kunne åbnes på samme tid på touchskærme.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
