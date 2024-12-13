@@ -6,17 +6,21 @@
     </div>
     <div class="row mb-905">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="new-card"><span class="subheading">Subheading</span>
-                <h2>Titel</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="new-card">
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Simpelt card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="new-card">
-                <h2>Titel</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="new-card-content">
+                    <h2>Card med links</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
                 <div class="card-actions">
                     <ul class="nobullet-list">
                         <li><a href="#">Link</a></li>
@@ -28,10 +32,12 @@
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="new-card"><span class="subheading">Subheading</span>
-                <h2>Titel</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="new-card">
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card med knapper</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
                 <div class="card-actions">
                     <div class="button-group">
                         <button class="button button-secondary">
@@ -45,20 +51,106 @@
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="new-card" href="#"><span class="subheading">Subheading</span>
-                <h2>Titel</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="new-card" href="#">
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card til navigation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
                 <div class="card-actions">
                     <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
                 </div>
             </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="new-card" href="#"><span class="subheading">Subheading</span>
-                <h2>Titel</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="new-card" href="#">
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card til navigation (eksternt link)</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="new-card"><img src='{{ site.baseurl }}/assets/img/cards/card-placeholder.png' alt='Billedeksempel'>
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card med billede</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="new-card"><img src='{{ site.baseurl }}/assets/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg' alt='Billedeksempel'>
+                <div class="new-card-content">
+                    <h2>Card med billede</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-actions">
+                    <div class="button-group">
+                        <button class="button button-secondary">
+                            Åbn
+                        </button>
+                        <button class="button button-tertiary">
+                            Udskriv
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="new-card" href="#"><img src='{{ site.baseurl }}/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg' alt='Billedeksempel'>
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card til navigation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <div class="new-card long">
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Simpelt card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="new-card long"><img src='{{ site.baseurl }}/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg' alt='Billedeksempel'>
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Simpelt card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <a class="new-card long" href="#">
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card til navigation (eksternt link)</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a class="new-card long" href="#"><img src='{{ site.baseurl }}/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg' alt='Billedeksempel'>
+                <div class="new-card-content"><span class="subheading">Subheading</span>
+                    <h2>Card til navigation (eksternt link)</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
                 <div class="card-actions">
                     <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
                 </div>

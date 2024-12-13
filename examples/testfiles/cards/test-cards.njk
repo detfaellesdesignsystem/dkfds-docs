@@ -10,14 +10,18 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "subheading": "Subheading"
+                    "subheading": "Subheading",
+                    "heading": "Simpelt card",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
                 }) 
             }}
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "links": true
+                    "links": true,
+                    "heading": "Card med links",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
                 }) 
             }}
         </div>
@@ -25,7 +29,9 @@
             {{ 
                 card({
                     "buttons": true,
-                    "subheading": "Subheading"
+                    "subheading": "Subheading",
+                    "heading": "Card med knapper",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
                 }) 
             }}
         </div>
@@ -33,7 +39,9 @@
             {{ 
                 card({
                     "navigationCard": true,
-                    "subheading": "Subheading"
+                    "subheading": "Subheading",
+                    "heading": "Card til navigation",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
                 }) 
             }}
         </div>
@@ -42,7 +50,101 @@
                 card({
                     "navigationCard": true,
                     "external": true,
-                    "subheading": "Subheading"
+                    "subheading": "Subheading",
+                    "heading": "Card til navigation (eksternt link)",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "subheading": "Subheading",
+                    "heading": "Card med billede",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.png",
+                        "alt": "Billedeksempel"
+                    }
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Card med billede",
+                    "buttons": true,
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg",
+                        "alt": "Billedeksempel"
+                    }
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": true,
+                    "subheading": "Subheading",
+                    "heading": "Card til navigation",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg",
+                        "alt": "Billedeksempel"
+                    }
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "Subheading",
+                    "heading": "Simpelt card",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "classes": "long"
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "Subheading",
+                    "heading": "Simpelt card",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "classes": "long",
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg",
+                        "alt": "Billedeksempel"
+                    }
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "navigationCard": true,
+                    "external": true,
+                    "subheading": "Subheading",
+                    "heading": "Card til navigation (eksternt link)",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "classes": "long"
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "navigationCard": true,
+                    "external": true,
+                    "subheading": "Subheading",
+                    "heading": "Card til navigation (eksternt link)",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                    "classes": "long",
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg",
+                        "alt": "Billedeksempel"
+                    }
                 }) 
             }}
         </div>
