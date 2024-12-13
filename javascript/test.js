@@ -45,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function() {
                   }).init();
                 break;
 
+            case 'Cards':
+
+                DKFDS.init();
+                document.getElementById('replace-image-2').querySelector('.new-card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
+                setTimeout(() => {
+                    document.getElementById('replace-image-1').querySelector('.new-card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
+                }, 3000);
+                break;
+
             case 'JavaScript i faneblade':
 
                 initTest();
