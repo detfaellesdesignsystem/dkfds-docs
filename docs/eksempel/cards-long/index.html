@@ -2,6 +2,7 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
@@ -10,14 +11,15 @@
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
+
 <meta name="robots" content="noindex">
 
 <!-- Title and meta description
 ================================================== -->
 
 
-<title>Testfil | test-cards | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-cards | Det Fælles Designsystem">
+<title>Cards-long | Det Fælles Designsystem</title>
+<meta property="og:title" content="Cards-long | Det Fælles Designsystem">
 
 
 
@@ -46,24 +48,25 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/test_borger.css" as="style">
-<link rel="preload" href="/assets/style/test_virk.css" as="style">
-<link rel="preload" href="/assets/style/test_neutral.css" as="style">
-<link rel="preload" href="/assets/js/theme.js" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
 
 <style>
-    body {
-      opacity: 0; /*hide page until theme is downloaded by js.*/
-    }
+  body {
+    opacity: 0; /*hide page until theme is downloaded by js.*/
+  }
 </style>
 
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
+
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
 </noscript>
 
 </head>
 
-<body class="layout-test-example">
+<body class="page-cards-long layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></symbol>
@@ -222,407 +225,66 @@
         <symbol id="zoom-out" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"/></symbol>
     </svg>
 </div>
-    <div class="test-header d-flex align-items-center">
-    <div class="container">
-        <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>Denne side er kun til test</button>
-    </div>
-</div>
-<div class="fds-modal-container">
-    <div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="test-warning-heading">
-                    Denne side er kun til test
-                </h2>
-                <button class="modal-close function-link"
-                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
-            </div>
-            <div class="modal-body">
-                <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
-            </div>
-            <div class="modal-footer">
-                <button class="button button-secondary" data-modal-close>
-                    Luk
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+    <header>
+        <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    </header>
     <main class="container page-container" id="main-content">
-    <div class="row mb-905">
-        <div class="col-12">
-            <h1 class="h2 mt-0">Cards</h1>
-        </div>
-    </div>
-    <div class="row card-row mb-905">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card">
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Simpelt card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card">
-                <div class="new-card-content">
-                    <h2>Card med links</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+        
+        <h1 id="example-heading-cards-long" class="sr-only">Cards long</h1>
+        <ul class="row card-row">
+    <li class="col-12">
+        <a class="new-card long" href="#">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
+            </div>
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Langt navigationscard med billede</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-actions">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+            </div>
+        </a>
+    </li>
+    <li class="col-12">
+        <a class="new-card long" href="#">
+            <div class="new-card-content">
+                <h2>Langt navigationscard uden billede</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-actions">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+            </div>
+        </a>
+    </li>
+    <li class="col-12">
+        <div class="new-card long">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
+            </div>
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="card-actions">
                     <ul class="nobullet-list">
                         <li><a href="#">Link</a></li>
                         <li><a href="#" class="icon-link" target="_blank">Eksternt
-                                website<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                                link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
                         </li>
                     </ul>
                 </div>
-            </section>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card">
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card med knapper</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <div class="button-group"><button class="button button-secondary">
-                            Åbn
-                        </button><button class="button button-tertiary">
-                            Udskriv
-                        </button></div>
-                </div>
-            </section>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="new-card" href="#">
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card til navigation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="new-card" href="#" target="_blank">
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card til navigation (eksternt link)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card">
-                <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card med billede</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content">
-                    <h2>Card med billede</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <div class="button-group"><button class="button button-secondary">
-                            Åbn
-                        </button><button class="button button-tertiary">
-                            Udskriv
-                        </button></div>
-                </div>
-            </section>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="new-card" href="#">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card til navigation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12">
-            <section class="new-card long">
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Simpelt card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12">
-            <section class="new-card long">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Simpelt card</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12">
-            <a class="new-card long" href="#" target="_blank">
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card til navigation (eksternt link)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12">
-            <a class="new-card long" href="#" target="_blank">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card til navigation (eksternt link)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card" id="replace-image-1">
-                <div class="new-card-image" style="aspect-ratio: 400 / 200; background-color: #DCDCDC;">
-                    <div style="width: 100%; align-self: center;">
-                        <div class="spinner" style="margin: 24px auto; font-size: 4px;"></div>
-                        <div class="spinner-status">Billede indlæses...</div>
-                    </div>
-                </div>
-                <div class="new-card-content">
-                    <h2>Billede indlæses efter 3 sekunder</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="new-card" href="#" id="replace-image-link-1">
-                <div class="new-card-image" style="aspect-ratio: 400 / 200; background-color: #DCDCDC;">
-                    <div style="width: 100%; align-self: center;">
-                        <div class="spinner" style="margin: 24px auto; font-size: 4px;"></div>
-                        <div class="spinner-status">Billede indlæses...</div>
-                    </div>
-                </div>
-                <div class="new-card-content">
-                    <h2>Billede indlæses efter 3 sekunder</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <section class="new-card">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content">
-                    <h2>Card til sammenligning</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12">
-            <section class="new-card long" id="replace-image-2">
-                <div class="new-card-image" style="aspect-ratio: 400 / 200; background-color: #DCDCDC;">
-                    <div style="width: 100%; align-self: center;">
-                        <div class="spinner" style="margin: 24px auto; font-size: 4px;"></div>
-                        <div class="spinner-status">Billede indlæses...</div>
-                    </div>
-                </div>
-                <div class="new-card-content">
-                    <h2>Billede indlæses efter JavaScript</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-12">
-            <a class="new-card long" href="#" id="replace-image-link-2" target="_blank">
-                <div class="new-card-image" style="aspect-ratio: 400 / 200; background-color: #DCDCDC;">
-                    <div style="width: 100%; align-self: center;">
-                        <div class="spinner" style="margin: 24px auto; font-size: 4px;"></div>
-                        <div class="spinner-status">Billede indlæses...</div>
-                    </div>
-                </div>
-                <div class="new-card-content">
-                    <h2>Billede indlæses efter JavaScript</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-12">
-            <section class="new-card long">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content">
-                    <h2>Card til sammenligning</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </section>
-        </div>
-        <div class="col-6">
-            <a class="new-card long" href="#" target="_blank">
-                <div class="new-card-image"><img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel" />
-                </div>
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Card til navigation (eksternt link)</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="card-actions">
-                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
-                </div>
-            </a>
-        </div>
-        <div class="col-6">
-            <div class="new-card long">
-                <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
-                </div>
-                <div class="new-card-content"><span class="subheading">Subheading</span>
-                    <h2>Titel</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="card-actions">
-                        <ul class="nobullet-list">
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#" class="icon-link" target="_blank">Eksternt
-                                    link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-</main>
+    </li>
+</ul>
 
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/styleguide.js"></script>
-    <footer class="test-footer d-flex align-items-center">
-    <div class="container">
-        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-            <div class="d-flex mr-8">
-                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
-                </button>
-                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
-                </button>
-                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
-                </button>
-                <button id="theme-virk" class="function-link"><span>Virk</span>
-                </button>
-            </div>
-            <div>
-                
-                <a class="function-link mr-4" href="/eksempel/test-alerts-3/">Forrige</a>
-                
-                
-                <a class="function-link" href="/eksempel/test-date-input-1/">Næste</a>
-                
-            </div>
-        </div>
-    </div>
-</footer>
+        
+    </main>
+    <script src="/assets/js/theme.js?v=10.1.0"></script>
+<script src="/assets/js/styleguide.js?v=10.1.0"></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let createLink = function(style) {
-            var lnk = document.createElement('link');
-            lnk.type='text/css';
-            lnk.rel='stylesheet';
-            switch (style) {
-                case "neutral":
-                    lnk.href= '/assets/style/test_neutral.css';
-                    break;
-                case "borger":
-                    lnk.href= '/assets/style/test_borger.css';
-                    break;
-                case "virk":
-                    lnk.href= '/assets/style/test_virk.css';
-                    break;
-                case 'normalization':
-                    lnk.href= '/assets/style/test_normalization.css';
-                    break;
-            }
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        }
 
-        let setNeutralStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
-        };
-
-        let setBorgerStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
-        };
-
-        let setVirkStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
-        };
-
-        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
-        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
-        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
-
-        let normalize = false;
-        if (document.querySelectorAll('main h1').length > 0) {
-            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
-                normalize = true;
-                createLink("normalization");
-            }
-        }
-        if (document.cookie.includes('theme=borger') && !normalize) {
-            createLink("borger");
-            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
-        }
-        else if (document.cookie.includes('theme=virk') && !normalize) {
-            createLink("virk");
-            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
-        }
-    });
-</script>
-    <script src="/assets/js/test.js"></script>
 </body>
 
 </html>

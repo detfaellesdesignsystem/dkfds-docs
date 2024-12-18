@@ -6,15 +6,15 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Cards
-lead: Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne.
-description: "Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold"
+lead: Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne. De kan også anvendes til navigation.
+description: "Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne. De kan også anvendes til navigation."
 tags:
 tabs: "Retningslinjer, kode"
 ---
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="cards-full-width" title="Eksempel på card" classes="intro-example" %}
+{% include code/preview-box.html component="card-single" title="Eksempel på card" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Cards" code="Cards_Kode" %}
 
@@ -24,45 +24,68 @@ tabs: "Retningslinjer, kode"
 
 ### Anvendes til
 
-Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.
+Brug cards til at gruppere indhold og funktionalitet, der adskiller sig fra sidens øvrige indhold.
 
 ### Anvendes ikke til
 
 Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.
 
-Brug ikke cards udelukkende af visuelle hensyn, som placeholders for ornamental grafik eller indhold uden interaktion.
+Brug ikke cards udelukkende for at opnå et bestemt visuelt udtryk. Cards skal bruges, når de kommunikerer indholdet bedst muligt. 
 
-Cards er ikke en statusbesked.
+Brug ikke cards til at gruppere formularelementer. Brug i stedet blot {% include links/internal-link.html linktext="overskrifter" %} eller {% include links/component-guideline-link.html linktext="trinindikator" %}.
 
 ### Vejledning
 
-Cards skal tilbyde en enkel og fokuseret funktion. 
+Undgå lange tekster i cards - skriv kort og præcist.
 
-Cards er velegnede til interaktion med brugeren, men brug dem kun, når der tilbydes en ekstra funktionalitet af grupperet indhold.
+Sørg for, at cards fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden. Brug designsystemets grid til at bestemme bredden på cards. Cards, der står ved siden af hinanden, bør have samme højde. 
 
-Cards er velegnede til responsive løsninger.
+Brug ikke horisontalt sidestillede cards til lange lister af indhold, som brugeren skal lede efter noget bestemt i (Laubheimer, 2016). Anvend i stedet et layout, hvor indholdet står vertikalt, fx vha. lange cards.
 
-Du kan godt indsætte flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden.
+Undgå at blande navigationscards, hvor hele cardet er klikbart, med andre cards i samme liste. Brugeren kan blive forvirret over, hvad der kan klikkes på.
 
-Undgå lange tekster i cards.
+Cards skal altid have en titel og en brødtekst. De kan også indeholde andre komponenter, såsom:
 
-Skriv kort og præcist i hvert card.
+- Subheading
+- Links
+- Knapper
+- Illustration, fx infografik eller billede. Husk at tilføje en sigende alt-tekst til illustrationer, der har en betydning for sidens indhold. Rent dekorative billeder skal have et tomt alt tag, dvs. alt=””, da de således springes over af skærmlæsere.
 
 {% include dos-donts-box.html component="cards-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Card med tredjedel bredde {#{% include create-id.html heading="Card med tredjedel bredde" %}}
+### Cardbredder {#{% include create-id.html heading="Cardbredder" %}}
 
-{% include code/preview-box.html component="cards-third-width" title="Eksempel på cards i tre kolonner" code="/komponenter/cards/#card-med-tredjedel-bredde-kode" %}
+Cards kan have forskellige bredder afhængigt at indholdet og sidens generelle opbygning. 
 
-### Card med halv bredde {#{% include create-id.html heading="Card med halv bredde" %}}
+Anvend et responsivt grid til at definere bredden på cards. Således kan fx 2, 3 eller 4 cards stå ved siden af hinanden på større skærme, mens de skalerer og fx står under hinanden på mindre skærme. Brugen af grid er med til at skabe en visuel ro i, hvordan cards struktureres på siden.
 
-{% include code/preview-box.html component="cards-half-width" title="Eksempel på cards i to kolonner" code="/komponenter/cards/#card-med-halv-bredde-kode" %}
+### Card med billede {#{% include create-id.html heading="Card med billede" %}}
 
-### Cards med samme højde {#{% include create-id.html heading="Cards med samme højde" %}}
+{% include code/preview-box.html component="cards-with-images" title="Eksempel på cards med billeder" code="/komponenter/cards/#card-med-billede-kode" %}
 
-{% include code/preview-box.html component="cards-same-height" title="Eksempel på cards med samme højde" code="/komponenter/cards/#cards-med-samme-hoejde-kode" %}
+### Card uden billede {#{% include create-id.html heading="Card uden billede" %}}
+
+{% include code/preview-box.html component="cards-without-images" title="Eksempel på cards uden billeder" code="/komponenter/cards/#card-uden-billede-kode" %}
+
+### Navigationscard {#{% include create-id.html heading="Navigationscard" %}}
+
+Navigationscard leder brugeren videre til en anden side. Hele cardet er klikbart og markeres med understreget titel og pileikon i nederste højre hjørne. 
+
+Hvis navigationscardet linker til en ekstern side, der åbner i en ny fane, vises ekternt link-ikon nederst i højre hjørne i stedet for pilen.
+
+Navigationscards kan både være med og uden billede.
+
+{% include code/preview-box.html component="cards-navigation" title="Eksempel på cards til navigation" code="/komponenter/cards/#navigationscard-kode" %}
+
+### Langt card {#{% include create-id.html heading="Langt card" %}}
+
+I lange cards placeres evt. billede, tekst og pil-ikon i et horisontalt layout. Disse cards egner sig som hovedregel til cards med korte tekster og/eller cards, der på desktop har en bredde over seks kolonner (se grid) eller 500px.
+
+Både almindelige cards og navigationscards kan være lange cards.
+
+{% include code/preview-box.html component="cards-long" title="Eksempel på lange cards" code="/komponenter/cards/#langt-card-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
@@ -73,8 +96,8 @@ Skriv kort og præcist i hvert card.
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
-- {% include links/external-link.html linktext="Page Laubheimer: Cards: UI-Component Definition (2016)" %}
-- {% include links/external-link.html linktext="Muneo Kitajima, Marilyn H Blackmon & Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)" %}
+- {% include links/external-link.html linktext="Andrew Coyle (2020): 8 rules to help you design a better card user interface" %}
+- {% include links/external-link.html linktext="Page Laubheimer (2016): UI Component Definition" %}
 
 <!--split-->
 
@@ -82,54 +105,26 @@ Skriv kort og præcist i hvert card.
 
 ### HTML Struktur
 
-{% include code/syntax.html component="card" copybutton=true %}
+{% include code/syntax.html component="card-single" copybutton=true %}
 
-Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.
+TODO: Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.
 
-Sæt card til fuld højde ved at tilføje klassen `card-align-height` til elementet med klassen `card`.
+## Cardbredder {#{% include create-id.html heading="Cardbredder" append="-kode" %}}
 
-### Områder
+TODO: Brug grid og/eller sæt bredden på cards
 
-#### Header
+## Card med billede {#{% include create-id.html heading="Card med billede" append="-kode" %}}
 
-Headeren defineres med klassen `card-header`, og indeholder en titel og en understøttende tekst.
+{% include code/syntax.html component="cards-with-images" link=true copybutton=true guidelines="/komponenter/cards/#card-med-billede" %}
 
-Husk, at cards er en del af sidestrukturen, hvorfor overskrifter fortsat skal være semantisk korrekt. Hvis overskriften før cards er en h2, så bør `header-title` være h3.
+## Card uden billede {#{% include create-id.html heading="Card uden billede" append="-kode" %}}
 
-- `header-titel` defineres som en semantisk korrekt overskrift.
-- `subheader`
+{% include code/syntax.html component="cards-without-images" link=true copybutton=true guidelines="/komponenter/cards/#card-uden-billede" %}
 
-#### Tekstområde
+## Navigationscard {#{% include create-id.html heading="Navigationscard" append="-kode" %}}
 
-Tekstområdet defineres med klassen `card-text`, og indeholder brødtekst, som er defineret som et `<p>` element.
+{% include code/syntax.html component="cards-navigation" link=true copybutton=true guidelines="/komponenter/cards/#navigationscard" %}
 
-#### Indholdsområde
+## Langt card {#{% include create-id.html heading="Langt card" append="-kode" %}}
 
-Indholdsområdet er defineret med klassen `card-content`, og kan indeholde både brødtekst og illustrationer, som har hver deres `<div>` med hver deres class. 
-- `content-text` indeholder brødtekst.
-- `content` kan indeholde lige det du ønsker - fx illustrationer som billeder eller SVG.
-
-#### Aktionsområde
-
-Aktionsområdet er defineret med klassen `card-action` og kan indeholde knapper og links som har hver deres `<div>` med hver deres klasse.
-
-- `action-buttons` kan indeholde knapper, og vil vise knapperne sidestillet.
-- `action-links` kan indeholde en liste af links.
-
-#### Footer
-
-Footer bruges gerne i forbindelse med flere cards, som skal have samme højde, og hvor man har knapper eller links, der gerne skal flugte på tværs af cards.
-
-Footer defineres med klassen `card-footer`.
-
-## Card med tredjedel bredde {#{% include create-id.html heading="Card med tredjedel bredde" append="-kode" %}}
-
-{% include code/syntax.html component="cards-third-width" link=true copybutton=true guidelines="/komponenter/cards/#card-med-tredjedel-bredde" %}
-
-## Card med halv bredde {#{% include create-id.html heading="Card med halv bredde" append="-kode" %}}
-
-{% include code/syntax.html component="cards-half-width" link=true copybutton=true guidelines="/komponenter/cards/#card-med-halv-bredde" %}
-
-## Cards med samme højde {#{% include create-id.html heading="Cards med samme højde" append="-kode" %}}
-
-{% include code/syntax.html component="cards-same-height" link=true copybutton=true guidelines="/komponenter/cards/#cards-med-samme-hoejde" %}
+{% include code/syntax.html component="cards-long" link=true copybutton=true guidelines="/komponenter/cards/#langt-card" %}

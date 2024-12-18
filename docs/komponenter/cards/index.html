@@ -19,8 +19,8 @@
 <title>Cards | Det Fælles Designsystem</title>
 <meta property="og:title" content="Cards | Det Fælles Designsystem">
 
-<meta name="description" content="Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold">
-<meta property="og:description" content="Brug cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold">
+<meta name="description" content="Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne. De kan også anvendes til navigation.">
+<meta property="og:description" content="Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne. De kan også anvendes til navigation.">
 
 
 
@@ -1649,7 +1649,7 @@
                 
 
                 
-                <p class="font-lead">Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne.</p>
+                <p class="font-lead">Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne. De kan også anvendes til navigation.</p>
                 <nav class="tab-container mb-7" aria-label="Undersider">
     <ul class="tab-list"><li>
             <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
@@ -1659,11 +1659,11 @@
 </nav>
 <div id="retningslinjer" hidden=""></div>
 
-<div class="component-preview intro-example component-preview-cards-full-width">
+<div class="component-preview intro-example component-preview-card-single">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-full-width/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-full-width</span></a>
+        <a href="/eksempel/card-single/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: card-single</span></a>
         
     </div>
     
@@ -1672,45 +1672,25 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="card">
-    <div class="card-header">
-        <h2 class="header-title">Header</h2>
-        <p class="sub-header">Understøttende tekst</p>
-    </div>
-
-    <div class="card-text">
-        <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst til.</p>
-    </div>
-
-    <div class="card-content">
-        <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-        <div class="row background-data-green-blue-300 p-6">
-            <div class="col-12 col-md-6 col-lg-5 align-text-left mb-6 mb-md-0">
-                <h2>Aliquam aliquet niboh faucibus varius</h2>
-                <p>Aenean euismod vestibulum lacinia. Pellentesque nec nisi diam. Pellentesque
-                    nec urna vel ante ultrices facilisis sed in dolor. Curabitur eu leo
-                    semper, gravida justo at, euismod ex.</p>
+        <div class="row card-row">
+    <div class="col-12 col-sm-8 col-md-6">
+        <section class="new-card">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
             </div>
-            <div class="col-12 col-md-6 col-lg-7 align-text-right"><img src="/assets/img/cards/Card-illustration-graf.svg" alt="Billedeksempel med graf, der viser udviklingen fra 2015 til 2019" class="w-percent-100 mt-md-4" />
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-        </div>
-    </div>
-
-    <div class="card-footer card-action">
-
-        <div class="action-buttons">
-            <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
-        </div>
-        <div class="action-links">
-            <ul class="nobullet-list">
-                <li><a href="javascript:void(0);" class="default link state">Et link til et
-                        sted i løsningen</a></li>
-                <li><a href="javascript:void(0);" class="icon-link">Et link til et sted uden
-                        for
-                        løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#open-in-new"></use></svg></a>
-                </li>
-            </ul>
-        </div>
+            <div class="card-actions">
+                <ul class="nobullet-list">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#" class="icon-link" target="_blank">Eksternt
+                            link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 </div>
         
@@ -1743,29 +1723,34 @@
 
 <h3>Anvendes til</h3>
 
-<p>Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens øvrige indhold. Det kan fx være en afledt, men ikke direkte koblet ekstra funktion ift. sidens sammenhæng.</p>
+<p>Brug cards til at gruppere indhold og funktionalitet, der adskiller sig fra sidens øvrige indhold.</p>
 
 <h3>Anvendes ikke til</h3>
 
 <p>Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.</p>
 
-<p>Brug ikke cards udelukkende af visuelle hensyn, som placeholders for ornamental grafik eller indhold uden interaktion.</p>
+<p>Brug ikke cards udelukkende for at opnå et bestemt visuelt udtryk. Cards skal bruges, når de kommunikerer indholdet bedst muligt.</p>
 
-<p>Cards er ikke en statusbesked.</p>
+<p>Brug ikke cards til at gruppere formularelementer. Brug i stedet blot <a href="/styleguide/typografi/overskrifter/">overskrifter</a> eller <a href="/komponenter/trinindikator/">trinindikator</a>.</p>
 
 <h3>Vejledning</h3>
 
-<p>Cards skal tilbyde en enkel og fokuseret funktion.</p>
+<p>Undgå lange tekster i cards - skriv kort og præcist.</p>
 
-<p>Cards er velegnede til interaktion med brugeren, men brug dem kun, når der tilbydes en ekstra funktionalitet af grupperet indhold.</p>
+<p>Sørg for, at cards fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden. Brug designsystemets grid til at bestemme bredden på cards. Cards, der står ved siden af hinanden, bør have samme højde.</p>
 
-<p>Cards er velegnede til responsive løsninger.</p>
+<p>Brug ikke horisontalt sidestillede cards til lange lister af indhold, som brugeren skal lede efter noget bestemt i (Laubheimer, 2016). Anvend i stedet et layout, hvor indholdet står vertikalt, fx vha. lange cards.</p>
 
-<p>Du kan godt indsætte flere cards på en side, men sørg for at de fremtræder roligt i sidens layout og ikke bryder brugerens naturlige aflæsning af siden.</p>
+<p>Undgå at blande navigationscards, hvor hele cardet er klikbart, med andre cards i samme liste. Brugeren kan blive forvirret over, hvad der kan klikkes på.</p>
 
-<p>Undgå lange tekster i cards.</p>
+<p>Cards skal altid have en titel og en brødtekst. De kan også indeholde andre komponenter, såsom:</p>
 
-<p>Skriv kort og præcist i hvert card.</p>
+<ul>
+  <li>Subheading</li>
+  <li>Links</li>
+  <li>Knapper</li>
+  <li>Illustration, fx infografik eller billede. Husk at tilføje en sigende alt-tekst til illustrationer, der har en betydning for sidens indhold. Rent dekorative billeder skal have et tomt alt tag, dvs. alt=””, da de således springes over af skærmlæsere.</li>
+</ul>
 
 <div class=" component-preview-cards-dos-donts">
     <div class="component-example">
@@ -1789,340 +1774,276 @@
 
 <h2 id="varianter">Varianter</h2>
 
-<h3 id="card-med-tredjedel-bredde">Card med tredjedel bredde</h3>
+<h3 id="cardbredder">Cardbredder</h3>
 
-<div class="component-preview  component-preview-cards-third-width">
+<p>Cards kan have forskellige bredder afhængigt at indholdet og sidens generelle opbygning.</p>
+
+<p>Anvend et responsivt grid til at definere bredden på cards. Således kan fx 2, 3 eller 4 cards stå ved siden af hinanden på større skærme, mens de skalerer og fx står under hinanden på mindre skærme. Brugen af grid er med til at skabe en visuel ro i, hvordan cards struktureres på siden.</p>
+
+<h3 id="card-med-billede">Card med billede</h3>
+
+<div class="component-preview  component-preview-cards-with-images">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-third-width/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-third-width</span></a>
+        <a href="/eksempel/cards-with-images/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-with-images</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på cards i tre kolonner</div>
+    <div class="sr-only">Eksempel på cards med billeder</div>
     
     <div class="component-example px-4 py-4">
         
-        <div class="container pb-5">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="header-title">Header</h3>
-                    <p class="sub-header">Understøttende tekst</p>
-                </div>
-
-                <div class="card-text">
-                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst
-                        til.</p>
-                </div>
-
-                <div class="card-footer card-action">
-
-                    <div class="action-buttons">
-                        <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
-                    </div>
-                    <div class="action-links">
-                        <ul class="nobullet-list">
-                            <li><a href="javascript:void(0);" class="default link state">Et
-                                    link til et sted i løsningen</a></li>
-                            <li><a href="javascript:void(0);" class="icon-link">Et link til et
-                                    sted uden for
-                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#open-in-new"></use></svg></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="row card-row">
+    <div class="col-12 col-sm-6">
+        <section class="new-card">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
             </div>
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="header-title">Header</h3>
-                    <p class="sub-header">Understøttende tekst</p>
-                </div>
-
-                <div class="card-content">
-                    <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-                    <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h4 class="h5 mb-5">Lorem ipsum fordeling</h4>
-                        <div class="mt-3 row">
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
-                            </div>
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="header-title">Header</h3>
-                    <p class="sub-header">Understøttende tekst</p>
-                </div>
-
-                <div class="card-text">
-                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst
-                        til.</p>
-                </div>
-
+            <div class="card-actions">
+                <div class="button-group"><button class="button button-secondary">
+                        Sekundær knap
+                    </button><button class="button button-tertiary">
+                        Tertiær knap
+                    </button></div>
             </div>
-
-        </div>
+        </section>
+    </div>
+    <div class="col-12 col-sm-6">
+        <section class="new-card">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
+            </div>
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-actions">
+                <ul class="nobullet-list">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#" class="icon-link" target="_blank">Eksternt
+                            link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 </div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/cards/#card-med-tredjedel-bredde-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-third-width</span></a>
+        <a href="/komponenter/cards/#card-med-billede-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-with-images</span></a>
     </div>
     
 </div>
 
-<h3 id="card-med-halv-bredde">Card med halv bredde</h3>
+<h3 id="card-uden-billede">Card uden billede</h3>
 
-<div class="component-preview  component-preview-cards-half-width">
+<div class="component-preview  component-preview-cards-without-images">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-half-width/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-half-width</span></a>
+        <a href="/eksempel/cards-without-images/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-without-images</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på cards i to kolonner</div>
+    <div class="sr-only">Eksempel på cards uden billeder</div>
     
     <div class="component-example px-4 py-4">
         
-        <div class="container pb-5">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="header-title">Header</h3>
-                    <p class="sub-header">Understøttende tekst</p>
-                </div>
-                <div class="card-content">
-                    <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-                    <div class="align-text-center row background-data-pink-violet-300 p-6">
-                        <div class="col-12 col-sm-6 mb-6 mb-sm-0">
-                            <h4 class="h5">2018</h4><img src="/assets/img/cards/card-illustration-22procent.svg" alt="Billedeksempel, der viser at fordelingen var 22% i 2018" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
-                            <p class="mt-0">Lorem ipsum dolor sit amet</p>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <h4 class="h5">2019</h4><img src="/assets/img/cards/card-illustration-41procent.svg" alt="Billedeksempel, der viser at fordelingen var 41% i 2019" class="w-percent-60 w-percent-sm-40 w-percent-md-60" />
-                            <p class="mt-0">Etiam aliquet at felis vel</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-text">
-                    <p>Dette er et <em>tekstområde</em>, hvor du kan skrive hvad du har lyst
-                        til.</p>
-                </div>
-
+        <div class="row card-row">
+    <div class="col-12 col-sm-6">
+        <section class="new-card">
+            <div class="new-card-content">
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0">
-
-            <div class="card">
-
-                <div class="card-content">
-                    <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-                    <div class="row background-data-violet-300 p-6">
-                        <div class="col-12 align-text-left">
-                            <h3 class="h3 mb-0">3 ofte stillede spørgsmål</h3>
-                            <ul class="mt-0 noindent-list">
-                                <li>In viverra faucibus lorem?</li>
-                                <li>Phasellus posuere neque?</li>
-                                <li>Nullam quis nunc dui?</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-header">
-                    <h4 class="header-title">Header</h4>
-                    <p class="sub-header">Understøttende tekst</p>
-                </div>
-
-                <div class="card-footer card-action">
-
-                    <div class="action-buttons">
-                        <button class="button button-secondary">Sekundærknap</button><button class="button button-tertiary">Tertiærknap</button>
-                    </div>
-                    <div class="action-links">
-                        <ul class="nobullet-list">
-                            <li><a href="javascript:void(0);" class="default link state">Et
-                                    link til et sted i løsningen</a></li>
-                            <li><a href="javascript:void(0);" class="icon-link">Et link til et
-                                    sted uden for
-                                    løsningen<svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#open-in-new"></use></svg></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="card-actions">
+                <div class="button-group"><button class="button button-primary">
+                        Lorem ipsum
+                    </button><button class="button button-secondary">
+                        Dolor
+                    </button></div>
             </div>
-
-        </div>
+        </section>
+    </div>
+    <div class="col-12 col-sm-6">
+        <section class="new-card">
+            <div class="new-card-content">
+                <h2>En anden titel</h2>
+                <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-actions">
+                <ul class="nobullet-list">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#" class="icon-link" target="_blank">Eksternt
+                            link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 </div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/cards/#card-med-halv-bredde-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-half-width</span></a>
+        <a href="/komponenter/cards/#card-uden-billede-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-without-images</span></a>
     </div>
     
 </div>
 
-<h3 id="cards-med-samme-hoejde">Cards med samme højde</h3>
+<h3 id="navigationscard">Navigationscard</h3>
 
-<div class="component-preview  component-preview-cards-same-height">
+<p>Navigationscard leder brugeren videre til en anden side. Hele cardet er klikbart og markeres med understreget titel og pileikon i nederste højre hjørne.</p>
+
+<p>Hvis navigationscardet linker til en ekstern side, der åbner i en ny fane, vises ekternt link-ikon nederst i højre hjørne i stedet for pilen.</p>
+
+<p>Navigationscards kan både være med og uden billede.</p>
+
+<div class="component-preview  component-preview-cards-navigation">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-same-height/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-same-height</span></a>
+        <a href="/eksempel/cards-navigation/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-navigation</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på cards med samme højde</div>
+    <div class="sr-only">Eksempel på cards til navigation</div>
     
     <div class="component-example px-4 py-4">
         
-        <div class="container pb-5">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-
-            <div class="card card-align-height">
-
-                <div class="card-content">
-                    <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-                    <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h3 class="h5 mb-5">Lorem ipsum fordeling</h3>
-                        <div class="mt-3 row">
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
-                            </div>
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-header">
-                    <h4 class="header-title">Header</h4>
-                </div>
-
-                <div class="card-text">
-                    <p>In sollicitudin, nulla sit amet facilisis euismod, ex ex hendrerit
-                        eros, et egestas purus lectus vitae tortor.</p>
-                </div>
-
-                <div class="card-footer card-action">
-
-                    <div class="action-buttons">
-                        <button class="button button-secondary">Sekundærknap</button>
-                    </div>
-
-                </div>
+        <ul class="row card-row">
+    <li class="col-12 col-sm-6 col-md-4">
+        <a class="new-card" href="#">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
             </div>
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-
-            <div class="card card-align-height">
-
-                <div class="card-content">
-                    <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-                    <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h3 class="h5 mb-5">Lorem ipsum fordeling</h3>
-                        <div class="mt-3 row">
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
-                            </div>
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-header">
-                    <h4 class="header-title">Header</h4>
-                </div>
-
-                <div class="card-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-
-                <div class="card-footer card-action">
-
-                    <div class="action-buttons">
-                        <button class="button button-secondary">Sekundærknap</button>
-                    </div>
-
-                </div>
+            <div class="new-card-content">
+                <h2>Lorem</h2>
+                <p>Dette card linker til en anden side.</p>
             </div>
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0">
-
-            <div class="card card-align-height">
-
-                <div class="card-content">
-                    <!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. -->
-                    <div class="align-text-center background-data-green-blue-300 p-6">
-                        <h3 class="h5 mb-5">Lorem ipsum fordeling</h3>
-                        <div class="mt-3 row">
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i København er 80%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="20" width="50" height="80" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">København</span>
-                            </div>
-                            <div class="col-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Billedeksempel, der viser at fordelingen i hele landet er 36%" class="w-percent-30 w-percent-md-70" viewBox="0 0 50 100"><rect width="50" height="100" fill="#eefafa" /><rect y="64" width="50" height="36" fill="#0868AC" /></svg><span class="small-text mt-2 bold d-block">Hele landet</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-header">
-                    <h4 class="header-title">Header</h4>
-                </div>
-
-                <div class="card-text">
-                    <p>Sed tincidunt, risus vitae rutrum accumsan, urna leo fermentum dui, ac
-                        suscipit ante nulla sit amet magna.</p>
-                </div>
-
-                <div class="card-footer card-action">
-
-                    <div class="action-buttons">
-                        <button class="button button-secondary">Sekundærknap</button>
-                    </div>
-
-                </div>
+            <div class="card-actions">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
             </div>
-
-        </div>
-    </div>
-</div>
+        </a>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4">
+        <a class="new-card" href="#" target="_blank">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
+            </div>
+            <div class="new-card-content">
+                <h2>Sit amet</h2>
+                <p>Dette card linker til en side, der åbner i en ny fane.</p>
+            </div>
+            <div class="card-actions">
+                <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
+            </div>
+        </a>
+    </li>
+    <li class="col-12 col-sm-6 col-md-4">
+        <a class="new-card" href="#">
+            <div class="new-card-content">
+                <h2>Ipsum dolor</h2>
+                <p>Dette card linker til en anden side.</p>
+                <p>Der er ikke noget billede på dette eksempelcard. Normalt vil enten alle
+                    eller ingen cards i samme liste have billede.</p>
+            </div>
+            <div class="card-actions">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+            </div>
+        </a>
+    </li>
+</ul>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/cards/#cards-med-samme-hoejde-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-same-height</span></a>
+        <a href="/komponenter/cards/#navigationscard-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-navigation</span></a>
+    </div>
+    
+</div>
+
+<h3 id="langt-card">Langt card</h3>
+
+<p>I lange cards placeres evt. billede, tekst og pil-ikon i et horisontalt layout. Disse cards egner sig som hovedregel til cards med korte tekster og/eller cards, der på desktop har en bredde over seks kolonner (se grid) eller 500px.</p>
+
+<p>Både almindelige cards og navigationscards kan være lange cards.</p>
+
+<div class="component-preview  component-preview-cards-long">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/cards-long/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: cards-long</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på lange cards</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <ul class="row card-row">
+    <li class="col-12">
+        <a class="new-card long" href="#">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
+            </div>
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Langt navigationscard med billede</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-actions">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+            </div>
+        </a>
+    </li>
+    <li class="col-12">
+        <a class="new-card long" href="#">
+            <div class="new-card-content">
+                <h2>Langt navigationscard uden billede</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-actions">
+                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+            </div>
+        </a>
+    </li>
+    <li class="col-12">
+        <div class="new-card long">
+            <div class="new-card-image"><img src="/assets/img/cards/card-placeholder.png" alt="Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card." />
+            </div>
+            <div class="new-card-content"><span class="subheading">Subheading</span>
+                <h2>Titel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-actions">
+                    <ul class="nobullet-list">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#" class="icon-link" target="_blank">Eksternt
+                                link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/cards/#langt-card-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: cards-long</span></a>
     </div>
     
 </div>
@@ -2137,8 +2058,8 @@
 <h2 id="referencer">Referencer</h2>
 
 <ul class="nobullet-list">
-  <li><a href="https://www.nngroup.com/articles/cards-component/" class="icon-link" target="_blank">Page Laubheimer: Cards: UI-Component Definition (2016)<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
-  <li><a href="https://www.researchgate.net/publication/229035313_A_Comprehension-based_Model_of_Web_Navigation_and_Its_Application_to_Web_Usability_Analysis" class="icon-link" target="_blank">Muneo Kitajima, Marilyn H Blackmon &amp; Peter G Polson: A Comprehension-based Model of Web Navigation and Its Application to Web Usability Analysis (2000)<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://coyleandrew.medium.com/8-rules-to-help-you-design-a-better-card-user-interface-a239257d633d" class="icon-link" target="_blank">Andrew Coyle (2020): 8 rules to help you design a better card user interface<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="https://www.nngroup.com/articles/cards-component/" class="icon-link" target="_blank">Page Laubheimer (2016): UI Component Definition<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
 </ul>
 
 
@@ -2150,7 +2071,7 @@
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-card">
+<div class="component-preview component-preview-code  component-code-card-single">
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -2162,17 +2083,26 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;card-header&quot;&gt;
-        &lt;h2 class=&quot;header-title&quot;&gt;Eksempel på card-komponenten&lt;/h2&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;row card-row&quot;&gt;
+    &lt;div class=&quot;col-12 col-sm-8 col-md-6&quot;&gt;
+        &lt;section class=&quot;new-card&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;&lt;span class=&quot;subheading&quot;&gt;Subheading&lt;/span&gt;
+                &lt;h2&gt;Titel&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;ul class=&quot;nobullet-list&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon-link&quot; target=&quot;_blank&quot;&gt;Eksternt
+                            link&lt;svg class=&quot;icon-svg&quot; aria-label=&quot;(åbner i nyt vindue)&quot; focusable=&quot;false&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
     &lt;/div&gt;
-
-    &lt;div class=&quot;card-text&quot;&gt;
-        &lt;p&gt;Du kan bruge cards til at gruppere funktionalitet, der adskiller sig fra sidens
-            øvrige indhold. Cards kan placeres i et &lt;a href=&quot;/kode/grid/&quot;&gt;grid&lt;/a&gt;, således at
-            de står side om side.&lt;/p&gt;
-    &lt;/div&gt;
-
 &lt;/div&gt;</code></pre></figure>
 
 
@@ -2180,57 +2110,19 @@
     
 </div>
 
-<p>Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.</p>
+<p>TODO: Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.</p>
 
-<p>Sæt card til fuld højde ved at tilføje klassen <code>card-align-height</code> til elementet med klassen <code>card</code>.</p>
+<h2 id="cardbredder-kode">Cardbredder</h2>
 
-<h3>Områder</h3>
+<p>TODO: Brug grid og/eller sæt bredden på cards</p>
 
-<h4>Header</h4>
+<h2 id="card-med-billede-kode">Card med billede</h2>
 
-<p>Headeren defineres med klassen <code>card-header</code>, og indeholder en titel og en understøttende tekst.</p>
-
-<p>Husk, at cards er en del af sidestrukturen, hvorfor overskrifter fortsat skal være semantisk korrekt. Hvis overskriften før cards er en h2, så bør <code>header-title</code> være h3.</p>
-
-<ul>
-  <li><code>header-titel</code> defineres som en semantisk korrekt overskrift.</li>
-  <li><code>subheader</code></li>
-</ul>
-
-<h4>Tekstområde</h4>
-
-<p>Tekstområdet defineres med klassen <code>card-text</code>, og indeholder brødtekst, som er defineret som et <code>&lt;p&gt;</code> element.</p>
-
-<h4>Indholdsområde</h4>
-
-<p>Indholdsområdet er defineret med klassen <code>card-content</code>, og kan indeholde både brødtekst og illustrationer, som har hver deres <code>&lt;div&gt;</code> med hver deres class.</p>
-<ul>
-  <li><code>content-text</code> indeholder brødtekst.</li>
-  <li><code>content</code> kan indeholde lige det du ønsker - fx illustrationer som billeder eller SVG.</li>
-</ul>
-
-<h4>Aktionsområde</h4>
-
-<p>Aktionsområdet er defineret med klassen <code>card-action</code> og kan indeholde knapper og links som har hver deres <code>&lt;div&gt;</code> med hver deres klasse.</p>
-
-<ul>
-  <li><code>action-buttons</code> kan indeholde knapper, og vil vise knapperne sidestillet.</li>
-  <li><code>action-links</code> kan indeholde en liste af links.</li>
-</ul>
-
-<h4>Footer</h4>
-
-<p>Footer bruges gerne i forbindelse med flere cards, som skal have samme højde, og hvor man har knapper eller links, der gerne skal flugte på tværs af cards.</p>
-
-<p>Footer defineres med klassen <code>card-footer</code>.</p>
-
-<h2 id="card-med-tredjedel-bredde-kode">Card med tredjedel bredde</h2>
-
-<div class="component-preview component-preview-code  component-code-cards-third-width">
+<div class="component-preview component-preview-code  component-code-cards-with-images">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-third-width/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-third-width</span></a>
+        <a href="/eksempel/cards-with-images/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-with-images</span></a>
         
     </div>
     
@@ -2244,85 +2136,43 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container pb-5&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4&quot;&gt;
-
-            &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
-                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-text&quot;&gt;
-                    &lt;p&gt;Dette er et &lt;em&gt;tekstområde&lt;/em&gt;, hvor du kan skrive hvad du har lyst
-                        til.&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-footer card-action&quot;&gt;
-
-                    &lt;div class=&quot;action-buttons&quot;&gt;
-                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;&lt;button
-                            class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;action-links&quot;&gt;
-                        &lt;ul class=&quot;nobullet-list&quot;&gt;
-                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;default link state&quot;&gt;Et
-                                    link til et sted i løsningen&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;icon-link&quot;&gt;Et link til et
-                                    sted uden for
-                                    løsningen&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
-                            &lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;row card-row&quot;&gt;
+    &lt;div class=&quot;col-12 col-sm-6&quot;&gt;
+        &lt;section class=&quot;new-card&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
-
-            &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
-                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-content&quot;&gt;
-                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
-                    &lt;div class=&#39;align-text-center background-data-green-blue-300 p-6&#39;&gt;
-                        &lt;h4 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum fordeling&lt;/h4&gt;
-                        &lt;div class=&#39;mt-3 row&#39;&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i København er 80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;København&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i hele landet er 36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;Hele landet&lt;/span&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
+            &lt;div class=&quot;new-card-content&quot;&gt;&lt;span class=&quot;subheading&quot;&gt;Subheading&lt;/span&gt;
+                &lt;h2&gt;Titel&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
-
-            &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
-                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-text&quot;&gt;
-                    &lt;p&gt;Dette er et &lt;em&gt;tekstområde&lt;/em&gt;, hvor du kan skrive hvad du har lyst
-                        til.&lt;/p&gt;
-                &lt;/div&gt;
-
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;div class=&quot;button-group&quot;&gt;&lt;button class=&quot;button button-secondary&quot;&gt;
+                        Sekundær knap
+                    &lt;/button&gt;&lt;button class=&quot;button button-tertiary&quot;&gt;
+                        Tertiær knap
+                    &lt;/button&gt;&lt;/div&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12 col-sm-6&quot;&gt;
+        &lt;section class=&quot;new-card&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;&lt;span class=&quot;subheading&quot;&gt;Subheading&lt;/span&gt;
+                &lt;h2&gt;Titel&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;ul class=&quot;nobullet-list&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon-link&quot; target=&quot;_blank&quot;&gt;Eksternt
+                            link&lt;svg class=&quot;icon-svg&quot; aria-label=&quot;(åbner i nyt vindue)&quot; focusable=&quot;false&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -2330,18 +2180,18 @@
     </div>
     
     <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/cards/#card-med-tredjedel-bredde" class="small-text">Gå til eksemplets retningslinjer</a>
+        <a href="/komponenter/cards/#card-med-billede" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>
 
-<h2 id="card-med-halv-bredde-kode">Card med halv bredde</h2>
+<h2 id="card-uden-billede-kode">Card uden billede</h2>
 
-<div class="component-preview component-preview-code  component-code-cards-half-width">
+<div class="component-preview component-preview-code  component-code-cards-without-images">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-half-width/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-half-width</span></a>
+        <a href="/eksempel/cards-without-images/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-without-images</span></a>
         
     </div>
     
@@ -2355,79 +2205,39 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container pb-5&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6&quot;&gt;
-
-            &lt;div class=&quot;card&quot;&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h3 class=&quot;header-title&quot;&gt;Header&lt;/h3&gt;
-                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card-content&quot;&gt;
-                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
-                    &lt;div class=&quot;align-text-center row background-data-pink-violet-300 p-6&quot;&gt;
-                        &lt;div class=&quot;col-12 col-sm-6 mb-6 mb-sm-0&quot;&gt;
-                            &lt;h4 class=&quot;h5&quot;&gt;2018&lt;/h4&gt;&lt;img src=&quot;/assets/img/cards/card-illustration-22procent.svg&quot; alt=&quot;Billedeksempel, der viser at fordelingen var 22% i 2018&quot; class=&quot;w-percent-60 w-percent-sm-40 w-percent-md-60&quot; /&gt;
-                            &lt;p class=&quot;mt-0&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
-                        &lt;/div&gt;
-                        &lt;div class=&quot;col-12 col-sm-6&quot;&gt;
-                            &lt;h4 class=&quot;h5&quot;&gt;2019&lt;/h4&gt;&lt;img src=&quot;/assets/img/cards/card-illustration-41procent.svg&quot; alt=&quot;Billedeksempel, der viser at fordelingen var 41% i 2019&quot; class=&quot;w-percent-60 w-percent-sm-40 w-percent-md-60&quot; /&gt;
-                            &lt;p class=&quot;mt-0&quot;&gt;Etiam aliquet at felis vel&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-text&quot;&gt;
-                    &lt;p&gt;Dette er et &lt;em&gt;tekstområde&lt;/em&gt;, hvor du kan skrive hvad du har lyst
-                        til.&lt;/p&gt;
-                &lt;/div&gt;
-
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;row card-row&quot;&gt;
+    &lt;div class=&quot;col-12 col-sm-6&quot;&gt;
+        &lt;section class=&quot;new-card&quot;&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;
+                &lt;h2&gt;Titel&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-6 col-lg-6 mt-6 mt-md-0&quot;&gt;
-
-            &lt;div class=&quot;card&quot;&gt;
-
-                &lt;div class=&quot;card-content&quot;&gt;
-                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
-                    &lt;div class=&quot;row background-data-violet-300 p-6&quot;&gt;
-                        &lt;div class=&quot;col-12 align-text-left&quot;&gt;
-                            &lt;h3 class=&quot;h3 mb-0&quot;&gt;3 ofte stillede spørgsmål&lt;/h3&gt;
-                            &lt;ul class=&quot;mt-0 noindent-list&quot;&gt;
-                                &lt;li&gt;In viverra faucibus lorem?&lt;/li&gt;
-                                &lt;li&gt;Phasellus posuere neque?&lt;/li&gt;
-                                &lt;li&gt;Nullam quis nunc dui?&lt;/li&gt;
-                            &lt;/ul&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h4 class=&quot;header-title&quot;&gt;Header&lt;/h4&gt;
-                    &lt;p class=&quot;sub-header&quot;&gt;Understøttende tekst&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-footer card-action&quot;&gt;
-
-                    &lt;div class=&quot;action-buttons&quot;&gt;
-                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;&lt;button
-                            class=&quot;button button-tertiary&quot;&gt;Tertiærknap&lt;/button&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;action-links&quot;&gt;
-                        &lt;ul class=&quot;nobullet-list&quot;&gt;
-                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;default link state&quot;&gt;Et
-                                    link til et sted i løsningen&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;javascript:void(0);&quot; class=&quot;icon-link&quot;&gt;Et link til et
-                                    sted uden for
-                                    løsningen&lt;svg class=&quot;icon-svg&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
-                            &lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;div class=&quot;button-group&quot;&gt;&lt;button class=&quot;button button-primary&quot;&gt;
+                        Lorem ipsum
+                    &lt;/button&gt;&lt;button class=&quot;button button-secondary&quot;&gt;
+                        Dolor
+                    &lt;/button&gt;&lt;/div&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12 col-sm-6&quot;&gt;
+        &lt;section class=&quot;new-card&quot;&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;
+                &lt;h2&gt;En anden titel&lt;/h2&gt;
+                &lt;p&gt;Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;ul class=&quot;nobullet-list&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon-link&quot; target=&quot;_blank&quot;&gt;Eksternt
+                            link&lt;svg class=&quot;icon-svg&quot; aria-label=&quot;(åbner i nyt vindue)&quot; focusable=&quot;false&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre></figure>
 
@@ -2435,18 +2245,18 @@
     </div>
     
     <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/cards/#card-med-halv-bredde" class="small-text">Gå til eksemplets retningslinjer</a>
+        <a href="/komponenter/cards/#card-uden-billede" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>
 
-<h2 id="cards-med-samme-hoejde-kode">Cards med samme højde</h2>
+<h2 id="navigationscard-kode">Navigationscard</h2>
 
-<div class="component-preview component-preview-code  component-code-cards-same-height">
+<div class="component-preview component-preview-code  component-code-cards-navigation">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/cards-same-height/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-same-height</span></a>
+        <a href="/eksempel/cards-navigation/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-navigation</span></a>
         
     </div>
     
@@ -2460,132 +2270,130 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;container pb-5&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
-
-            &lt;div class=&quot;card card-align-height&quot;&gt;
-
-                &lt;div class=&quot;card-content&quot;&gt;
-                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
-                    &lt;div class=&#39;align-text-center background-data-green-blue-300 p-6&#39;&gt;
-                        &lt;h3 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum fordeling&lt;/h3&gt;
-                        &lt;div class=&#39;mt-3 row&#39;&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i København er 80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;København&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i hele landet er 36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;Hele landet&lt;/span&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h4 class=&quot;header-title&quot;&gt;Header&lt;/h4&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-text&quot;&gt;
-                    &lt;p&gt;In sollicitudin, nulla sit amet facilisis euismod, ex ex hendrerit
-                        eros, et egestas purus lectus vitae tortor.&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-footer card-action&quot;&gt;
-
-                    &lt;div class=&quot;action-buttons&quot;&gt;
-                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;
-                    &lt;/div&gt;
-
-                &lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;row card-row&quot;&gt;
+    &lt;li class=&quot;col-12 col-sm-6 col-md-4&quot;&gt;
+        &lt;a class=&quot;new-card&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
-
-            &lt;div class=&quot;card card-align-height&quot;&gt;
-
-                &lt;div class=&quot;card-content&quot;&gt;
-                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
-                    &lt;div class=&#39;align-text-center background-data-green-blue-300 p-6&#39;&gt;
-                        &lt;h3 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum fordeling&lt;/h3&gt;
-                        &lt;div class=&#39;mt-3 row&#39;&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i København er 80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;København&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i hele landet er 36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;Hele landet&lt;/span&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h4 class=&quot;header-title&quot;&gt;Header&lt;/h4&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-text&quot;&gt;
-                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-footer card-action&quot;&gt;
-
-                    &lt;div class=&quot;action-buttons&quot;&gt;
-                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;
-                    &lt;/div&gt;
-
-                &lt;/div&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;
+                &lt;h2&gt;Lorem&lt;/h2&gt;
+                &lt;p&gt;Dette card linker til en anden side.&lt;/p&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-sm-12 col-md-4 col-lg-4 mt-6 mt-md-0&quot;&gt;
-
-            &lt;div class=&quot;card card-align-height&quot;&gt;
-
-                &lt;div class=&quot;card-content&quot;&gt;
-                    &lt;!-- Alt i denne div er blot et eksempel. Visse klasser er ikke en del af FDS. --&gt;
-                    &lt;div class=&#39;align-text-center background-data-green-blue-300 p-6&#39;&gt;
-                        &lt;h3 class=&#39;h5 mb-5&#39;&gt;Lorem ipsum fordeling&lt;/h3&gt;
-                        &lt;div class=&#39;mt-3 row&#39;&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i København er 80%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;20&#39; width=&#39;50&#39; height=&#39;80&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;København&lt;/span&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&#39;col-6&#39;&gt;
-                                &lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; aria-label=&#39;Billedeksempel, der viser at fordelingen i hele landet er 36%&#39; class=&#39;w-percent-30 w-percent-md-70&#39; viewBox=&#39;0 0 50 100&#39;&gt;&lt;rect width=&#39;50&#39; height=&#39;100&#39; fill=&#39;#eefafa&#39;/&gt;&lt;rect y=&#39;64&#39; width=&#39;50&#39; height=&#39;36&#39; fill=&#39;#0868AC&#39;/&gt;&lt;/svg&gt;&lt;span
-                                    class=&#39;small-text mt-2 bold d-block&#39;&gt;Hele landet&lt;/span&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;card-header&quot;&gt;
-                    &lt;h4 class=&quot;header-title&quot;&gt;Header&lt;/h4&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-text&quot;&gt;
-                    &lt;p&gt;Sed tincidunt, risus vitae rutrum accumsan, urna leo fermentum dui, ac
-                        suscipit ante nulla sit amet magna.&lt;/p&gt;
-                &lt;/div&gt;
-
-                &lt;div class=&quot;card-footer card-action&quot;&gt;
-
-                    &lt;div class=&quot;action-buttons&quot;&gt;
-                        &lt;button class=&quot;button button-secondary&quot;&gt;Sekundærknap&lt;/button&gt;
-                    &lt;/div&gt;
-
-                &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#arrow-forward&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
             &lt;/div&gt;
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;col-12 col-sm-6 col-md-4&quot;&gt;
+        &lt;a class=&quot;new-card&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;
+                &lt;h2&gt;Sit amet&lt;/h2&gt;
+                &lt;p&gt;Dette card linker til en side, der åbner i en ny fane.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; aria-label=&quot;(åbner i nyt vindue)&quot; focusable=&quot;false&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;col-12 col-sm-6 col-md-4&quot;&gt;
+        &lt;a class=&quot;new-card&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;
+                &lt;h2&gt;Ipsum dolor&lt;/h2&gt;
+                &lt;p&gt;Dette card linker til en anden side.&lt;/p&gt;
+                &lt;p&gt;Der er ikke noget billede på dette eksempelcard. Normalt vil enten alle
+                    eller ingen cards i samme liste have billede.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#arrow-forward&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
 
 
     </div>
     
     <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/cards/#cards-med-samme-hoejde" class="small-text">Gå til eksemplets retningslinjer</a>
+        <a href="/komponenter/cards/#navigationscard" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<h2 id="langt-card-kode">Langt card</h2>
+
+<div class="component-preview component-preview-code  component-code-cards-long">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/cards-long/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: cards-long</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;ul class=&quot;row card-row&quot;&gt;
+    &lt;li class=&quot;col-12&quot;&gt;
+        &lt;a class=&quot;new-card long&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;&lt;span class=&quot;subheading&quot;&gt;Subheading&lt;/span&gt;
+                &lt;h2&gt;Langt navigationscard med billede&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#arrow-forward&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;col-12&quot;&gt;
+        &lt;a class=&quot;new-card long&quot; href=&quot;#&quot;&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;
+                &lt;h2&gt;Langt navigationscard uden billede&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-actions&quot;&gt;
+                &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#arrow-forward&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;new-card long&quot;&gt;
+            &lt;div class=&quot;new-card-image&quot;&gt;&lt;img src=&#39;/assets/img/cards/card-placeholder.png&#39; alt=&#39;Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card.&#39;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;new-card-content&quot;&gt;&lt;span class=&quot;subheading&quot;&gt;Subheading&lt;/span&gt;
+                &lt;h2&gt;Titel&lt;/h2&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+                &lt;div class=&quot;card-actions&quot;&gt;
+                    &lt;ul class=&quot;nobullet-list&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon-link&quot; target=&quot;_blank&quot;&gt;Eksternt
+                                link&lt;svg class=&quot;icon-svg&quot; aria-label=&quot;(åbner i nyt vindue)&quot; focusable=&quot;false&quot;&gt;&lt;use href=&quot;#open-in-new&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/cards/#langt-card" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>
