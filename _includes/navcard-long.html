@@ -1,0 +1,11 @@
+<a class="new-card long mb-4"{% if include.href %} href="{{ include.href }}"{% endif %} id="{{ include.id }}">
+    <div class="new-card-content">
+        <{{ include.headingLevel }}>{{ include.heading }}</{{ include.headingLevel }}>
+        <p>{{ include.content }}</p>
+    </div>
+    <div class="card-actions">
+        <svg class="icon-svg" focusable="false" aria-hidden="true">
+            <use href="#arrow-forward"></use>
+        </svg>
+    </div>
+</a>

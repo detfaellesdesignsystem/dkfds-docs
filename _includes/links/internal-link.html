@@ -12,6 +12,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 {% if classes != "" %}
     {%- assign classes = ' class="' | append: classes | append: '"' -%}
 {%- endif -%}
+{%- assign icon = '<svg class="icon-svg mr-0 ml-3" focusable="false" aria-hidden="true"><use href="#' | append: include.icon | append: '"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
@@ -27,7 +28,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "implementering og kode",
              "kom i gang som udvikler" -%}
-        <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}{% if include.icon %}{{ icon }}{% endif %}</a>
 
     {%- when "hent kodepakken",
              "kodepakke" -%}
@@ -63,7 +64,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "design og ressourcer",
              "kom i gang som designer" -%}
-        <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "designets grundprincipper" -%}
         <a href="/kom-i-gang/designressourcer/#grundprincipper"{{ classes }}>{{ include.linktext }}</a>

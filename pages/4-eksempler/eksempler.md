@@ -8,18 +8,32 @@ description: Eksempler på løsninger, der gør brug af Det Fælles Designsystem
 tags:
 ---
 
+Du bør bestræbe dig på at følge standarderne for opsummerings- og kvitteringssider, så disse bliver konsistente på tværs af selvbetjeningsløsninger.
+
+<ul class="row card-row">
+        <li class="col-12 col-sm-6 col-md-4">
+            {% include navcard-short.html headingLevel="h2" 
+            href="/eksempler/selvbetjeningsloesninger/" 
+            heading="Selvbetjenings&shy;løsninger" 
+            content="Eksempler på hele formular-flows/selvbetjeningsløsninger, som er bygget med Det Fælles Designsystem." 
+            %}
+        </li>
+        <li class="col-12 col-sm-6 col-md-4">
+            {% include navcard-short.html headingLevel="h2" 
+            href="/eksempler/patterns/" 
+            heading="Patterns" 
+            content="Patterns er designløsninger til specifikke brugerfokuserede opgaver, fx angivelse af telefonnummer og inputfelter med hentede data." 
+            %}
+        </li>
+        <li class="col-12 col-sm-6 col-md-4">
+            {% include navcard-short.html headingLevel="h2" 
+            href="/eksempler/templates/"
+            heading="Templates" 
+            content="Eksempler på specifikke sidetyper, som er bygget med Det Fælles Designsystem, fx dashboard, opsummering og kvittering." 
+            %}
+        </li>
+    </ul>
+
 ## Designsystemet er bygget med sig selv
 
-Udover eksemplerne ovenfor kan du også bruge designsystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Selvbetjeningsløsninger" %}</h2>
-
-<p class="mt-0">Se eksempler på, hvordan selvbetjeningsløsninger kan se ud og være bygget ved hjælp af Det Fælles Designsystem.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Patterns" %}</h2>
-
-<p class="mt-0">Se hvordan du bruger designsystemets komponenter til at løse nogle hyppigt forekomne designudfordringer: Angivelse af telefonnummer, formularer, inputfelter med hentet data og session udløber.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Templates" %}</h2>
-
-<p class="mt-0">Se eksempler på typiske sidetyper såsom opsummeringer, kvitteringer og dashboard.</p>
+Du kan bruge designsystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.
