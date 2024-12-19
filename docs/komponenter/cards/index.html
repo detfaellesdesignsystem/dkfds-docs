@@ -1708,9 +1708,11 @@
         <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
         
         <li class="anchorlink-code"><span id="kode" hidden=""></span><a href="#installation-kode">Installation</a></li>
-        <li class="anchorlink-code"><a href="#card-med-tredjedel-bredde-kode">Card med tredjedel bredde</a></li>
-        <li class="anchorlink-code"><a href="#card-med-halv-bredde-kode">Card med halv bredde</a></li>
-        <li class="anchorlink-code"><a href="#cards-med-samme-hoejde-kode">Cards med samme højde</a></li>
+        <li class="anchorlink-code"><a href="#cardbredder-kode">Cardbredder</a></li>
+        <li class="anchorlink-code"><a href="#card-med-billede-kode">Card med billede</a></li>
+        <li class="anchorlink-code"><a href="#card-uden-billede-kode">Card uden billede</a></li>
+        <li class="anchorlink-code"><a href="#navigationscard-kode">Navigationscard</a></li>
+        <li class="anchorlink-code"><a href="#langt-card-kode">Langt card</a></li>
         
     </ul>
 </nav>
@@ -2110,13 +2112,29 @@
     
 </div>
 
-<p>TODO: Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.</p>
+<p>Da cards kan bruges i flere kontekster, er der ikke en fast regel om, hvilket element der skal fungere som “wrapper” eller “parent” for et card for at sikre den bedste tilgængelighed. Fx kan både <code>&lt;li&gt;</code> og <code>&lt;section&gt;</code> være korrekte muligheder, men det er op til udvikleren i hvert tilfælde at vurdere, hvad der er semantisk korrekt.</p>
+
+<p>Indholdet i et card skal følge denne rækkefølge fra top til bund (og fra venstre mod højre):</p>
+
+<ol>
+  <li>Billede</li>
+  <li>Subheading</li>
+  <li>Titel</li>
+  <li>Tekst / paragraffer</li>
+  <li>Links / knapper / link-ikon</li>
+</ol>
+
+<p>Ikke alle elementer er nødvendige at inkludere i et card, men der kan ikke byttes rundt på rækkefølgen.</p>
 
 <h2 id="cardbredder-kode">Cardbredder</h2>
 
-<p>TODO: Brug grid og/eller sæt bredden på cards</p>
+<p>Hvis der anvendes mere end ét card, bør de placeres i et <a href="/styleguide/grid/">grid</a> for at sikre korrekt skalering af højde og bredde.</p>
+
+<p>Hvis et card placeres uden for et grid, kan det være nødvendigt at tilpasse dets udseende med <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/">hjælpeklasser (utilities)</a>.</p>
 
 <h2 id="card-med-billede-kode">Card med billede</h2>
+
+<p>Overvej grundigt dimensionerne på dit billede og hvordan det skalerer på forskellige skærmstørrelser. Høje billeder kan nemt komme til at fylde meget på især mindre skærme.</p>
 
 <div class="component-preview component-preview-code  component-code-cards-with-images">
     
@@ -2322,6 +2340,8 @@
 </div>
 
 <h2 id="langt-card-kode">Langt card</h2>
+
+<p>Ved brug af billeder i lange cards skal du være opmærksom på, hvordan billedet og teksten skalerer på forskellige skærmbredder. Sørg for at vælge et billede med passende højde til teksten, så der er færrest mulige tilfælde, hvor den grå baggrund bag billedet bliver synlig.</p>
 
 <div class="component-preview component-preview-code  component-code-cards-long">
     

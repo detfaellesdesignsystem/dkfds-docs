@@ -107,13 +107,27 @@ Både almindelige cards og navigationscards kan være lange cards.
 
 {% include code/syntax.html component="card-single" copybutton=true %}
 
-TODO: Cards kan bestå af en header, et tekstområde, et indholdsområde og et aktionsområde, som i øvrigt kan ligge i en footer. Du kan frit sammensætte cards efter dit eget behov, men der er regler for, hvad du kan placere i de forskellige områder.
+Da cards kan bruges i flere kontekster, er der ikke en fast regel om, hvilket element der skal fungere som "wrapper" eller "parent" for et card for at sikre den bedste tilgængelighed. Fx kan både `<li>` og `<section>` være korrekte muligheder, men det er op til udvikleren i hvert tilfælde at vurdere, hvad der er semantisk korrekt.
+
+Indholdet i et card skal følge denne rækkefølge fra top til bund (og fra venstre mod højre):
+
+1. Billede
+2. Subheading
+3. Titel
+4. Tekst / paragraffer
+5. Links / knapper / link-ikon
+
+Ikke alle elementer er nødvendige at inkludere i et card, men der kan ikke byttes rundt på rækkefølgen.
 
 ## Cardbredder {#{% include create-id.html heading="Cardbredder" append="-kode" %}}
 
-TODO: Brug grid og/eller sæt bredden på cards
+Hvis der anvendes mere end ét card, bør de placeres i et {% include links/internal-link.html linktext="grid" %} for at sikre korrekt skalering af højde og bredde.
+
+Hvis et card placeres uden for et grid, kan det være nødvendigt at tilpasse dets udseende med {% include links/internal-link.html linktext="hjælpeklasser (utilities)" %}.
 
 ## Card med billede {#{% include create-id.html heading="Card med billede" append="-kode" %}}
+
+Overvej grundigt dimensionerne på dit billede og hvordan det skalerer på forskellige skærmstørrelser. Høje billeder kan nemt komme til at fylde meget på især mindre skærme.
 
 {% include code/syntax.html component="cards-with-images" link=true copybutton=true guidelines="/komponenter/cards/#card-med-billede" %}
 
@@ -126,5 +140,7 @@ TODO: Brug grid og/eller sæt bredden på cards
 {% include code/syntax.html component="cards-navigation" link=true copybutton=true guidelines="/komponenter/cards/#navigationscard" %}
 
 ## Langt card {#{% include create-id.html heading="Langt card" append="-kode" %}}
+
+Ved brug af billeder i lange cards skal du være opmærksom på, hvordan billedet og teksten skalerer på forskellige skærmbredder. Sørg for at vælge et billede med passende højde til teksten, så der er færrest mulige tilfælde, hvor den grå baggrund bag billedet bliver synlig.
 
 {% include code/syntax.html component="cards-long" link=true copybutton=true guidelines="/komponenter/cards/#langt-card" %}

@@ -410,9 +410,11 @@ Broedkrumme_Kode:
 
 Cards_Kode:
 - h2: Installation
-- h2: Card med tredjedel bredde
-- h2: Card med halv bredde
-- h2: Cards med samme højde
+- h2: Cardbredder
+- h2: Card med billede
+- h2: Card uden billede
+- h2: Navigationscard
+- h2: Langt card
 
 Cookiemeddelelse_Kode:
 - h2: Installation
