@@ -161,6 +161,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Fjernet dedikeret fokusfarve fra {% include links/internal-link.html linktext="links" %}.
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 - Ny pil anvendt i detaljekomponenten.
+- Rettet fejl, hvor ikon og tekst i {% include links/component-guideline-link.html linktext="beskeder" %} kunne overlappe ved tekstforstørrelse.
 
 
 
