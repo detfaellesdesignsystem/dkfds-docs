@@ -144,6 +144,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for {% include links/component-guideline-link.html linktext="tilbage-link" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for {% include links/component-guideline-link.html linktext="cards" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for ikonerne i {% include links/component-guideline-link.html linktext="brødkrumme" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper, venstremenu og tags er enten slettet, tilføjet eller ændret.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Slettet forældet styling herunder al anvendelse af `::-ms-clear`, `-ms-high-contrast`, `-ms-box-orient`, `@-moz-document` og `:-moz-focusring`, samt klasserne `page-navigation` og `background-dark`.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. Variablene `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
@@ -158,6 +159,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Ændret tykkelse og farve på fokusstreger.
 - Fjernet dedikeret fokusfarve fra {% include links/internal-link.html linktext="links" %}.
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
+- Ny pil anvendt i detaljekomponenten.
 
 
 
