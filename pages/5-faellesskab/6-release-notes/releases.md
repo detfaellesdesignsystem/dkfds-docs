@@ -168,7 +168,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">12-12-2024</span></div>
+<div><span class="small-text mt-0 d-block">13-12-2024</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
@@ -180,6 +180,8 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
 - Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
 - Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
+- Rettet fejl, hvor flere tooltips kunne åbnes på samme tid på touchskærme.
+- Ændret aktivering af tooltip ved "long press", så tooltippet nu først vises, når fingeren løftes fra skærmen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>

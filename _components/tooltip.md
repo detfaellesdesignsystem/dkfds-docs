@@ -40,7 +40,7 @@ Gør det let at se, hvilket element tooltippet tilhører ved at placere hjælpei
 
 Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.
 
-Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten {% include links/component-guideline-link.html linktext="ikoner med hover-tooltip" %}.
+Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten <a href="#ikoner-med-hover-tooltip">ikoner med hover-tooltip</a>.
 
 Vær opmærksom på, at tooltipteksten ikke kan ses på print. Hvis indholdet er så essentielt, at det skal kunne udskrives, så anvend fx synlig hjælpetekst eller brødtekst frem for tooltip.
 
