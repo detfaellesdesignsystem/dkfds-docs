@@ -18,7 +18,7 @@ Samarbejdsforum består af FDS-teamet og myndigheder, der anvender designsysteme
 
 ## Næste samarbejdsforum {#{% include create-id.html heading="Næste samarbejdsforum" %}}
 
-Næste samarbejdsforum er planlagt til 15. januar 2025.
+Næste samarbejdsforum er planlagt til 29. januar 2025.
 
 Invitationer sendes ud via nyhedsbrevet, når præcist tidspunkt er fastsat.
 
