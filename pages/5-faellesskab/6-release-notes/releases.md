@@ -106,7 +106,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">13-12-2024</span></div>
+<div><span class="small-text mt-0 d-block">08-01-2025</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
@@ -119,14 +119,15 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 - Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
 - Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
 - Rettet fejl, hvor flere tooltips kunne åbnes på samme tid på touchskærme.
-- Ændret aktivering af tooltip ved "long press", så tooltippet nu først vises, når fingeren løftes fra skærmen.
+- Ændret aktivering af tooltip ved "long press", så tooltippet nu først vises, når fingeren løftes fra skærmen. For mere info, se {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.5.2: Pointer Cancellation (Level A)" classes="d-inline" %}.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
+- Fjernet `user-select: text` fra knapper og pagineringsknapper.
 - Rettet fejl, hvor indhold i {% include links/component-guideline-link.html linktext="modaler" %} ikke altid kunne ses ved print.
 - Tilføjet flere tekstmuligheder til {% include links/external-link.html linktext="macroerne" %} for anchorlinks og trinindikator.
-- Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="dropdowns" %} kunne gå under pilen, når stylingen for fejlmeddelelse blev anvendt.
+- Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="dropdowns" %} kunne gå bag pilen, når stylingen for fejlmeddelelse blev anvendt.
 {% include links/github-link.html number="255" afternumber=" på GitHub" %} 
 - Rettet fejl, hvor padding og margin kunne mangle for nogle elementer i {% include links/component-guideline-link.html linktext="faneblade" %}.
 {% include links/github-link.html number="259" afternumber=" på GitHub" %} 
