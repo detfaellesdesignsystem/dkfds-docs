@@ -120,7 +120,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 - Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
 - Rettet fejl, hvor flere tooltips kunne åbnes på samme tid på touchskærme.
 - Ændret aktivering af tooltip ved "long press", så tooltippet nu først vises, når fingeren løftes fra skærmen. For mere info, se {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.5.2: Pointer Cancellation (Level A)" classes="d-inline" %}.
-- "Long press" på mobil på knapper med tooltips viser ikke længere browserens tekstmenu, der kunne dække tooltippet.
+- Det er ikke længere muligt at markere tekst på knapper med hover tooltips, da mobilers "tekstmenu" kunne dække tooltippet.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
