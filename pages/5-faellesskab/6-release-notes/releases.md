@@ -106,7 +106,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">08-01-2025</span></div>
+<div><span class="small-text mt-0 d-block">10-01-2025</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
