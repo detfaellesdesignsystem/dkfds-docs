@@ -106,14 +106,14 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">10-01-2025</span></div>
+<div><span class="small-text mt-0 d-block">13-01-2025</span></div>
 
 Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
 </div>
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`. Attributten kan bruges, når tooltippet placeres i et afgrænset element (fx modal eller tabel), som ellers ville afskære tooltippen.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`. Attributten kan bruges, når tooltippet placeres i et afgrænset element (fx modal eller tabel), som ellers ville afskære tooltippet.
 {% include links/github-link.html number="225" afternumber=" på GitHub" %}
 - <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
 - Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
