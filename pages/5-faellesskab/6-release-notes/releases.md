@@ -124,6 +124,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret filen 'all-svg-icons.svg' så ikonerne matcher dem i filen 'base-svg.njk'.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet `xlink:href` med `href` på alle ikoner, da {% include links/external-link.html linktext="xlink:href er forældet" %}. Funktionaliteten er uændret.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet tilgængelighedsfejl, hvor ikonet i {% include links/internal-link.html linktext="eksterne links" %} ikke blev læst højt. Fjern `aria-hidden` fra ikonet og indsæt en passende `aria-label` i stedet. Makroen 'icon_svg' er i denne forbindelse opdateret, så et ikon ikke både kan have `aria-label` og `aria-hidden="true"`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret alle ikoner til at anvende Material Symbols. Følgende ikoner har fået nye navne i denne forbindelse: `trash-can` er blevet til `delete`. 
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Knapper" %}</h3>

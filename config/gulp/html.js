@@ -24,7 +24,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/components/cards/*.njk'];
+var buildFile = ['examples/components/icons/*.njk'];
 
 var activeBuild = buildAll;
 
