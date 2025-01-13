@@ -273,6 +273,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "tooltip komponenten",
              "tooltips" -%}
         <a href="/komponenter/tooltip/">{{ include.linktext }}</a>
+    {%- when "hover-tooltip" -%}
+        <a href="/komponenter/tooltip/#hover-tooltip">{{ include.linktext }}</a>
     {%- when "ikoner med hover-tooltip" -%}
         <a href="/komponenter/tooltip/#ikoner-med-hover-tooltip">{{ include.linktext }}</a>
 

@@ -74,7 +74,7 @@ Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Hover-tooltip
+### Hover-tooltip {#{% include create-id.html heading="Hover-tooltip" %}}
 
 Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom et ikon. Vær varsom med at anvende hover-tooltips. På mobil vises de kun ved “long press”, eftersom elementets funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
 
