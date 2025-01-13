@@ -40,7 +40,9 @@ Gør det let at se, hvilket element tooltippet tilhører ved at placere hjælpei
 
 Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.
 
-Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten {% include links/component-guideline-link.html linktext="ikoner med hover-tooltip" %}.
+Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten <a href="#ikoner-med-hover-tooltip">ikoner med hover-tooltip</a>.
+
+Vær opmærksom på, at tooltipteksten ikke kan ses på print. Hvis indholdet er så essentielt, at det skal kunne udskrives, så anvend fx synlig hjælpetekst eller brødtekst frem for tooltip.
 
 {% include dos-donts-box.html component="tooltip-dos-donts" %}
 
@@ -72,7 +74,7 @@ Tooltips kan anvendes til at forklare enkelte ord inde i en brødtekst. Fremhæv
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Hover-tooltip
+### Hover-tooltip {#{% include create-id.html heading="Hover-tooltip" %}}
 
 Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom et ikon. Vær varsom med at anvende hover-tooltips. På mobil vises de kun ved “long press”, eftersom elementets funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.
 
@@ -114,7 +116,9 @@ Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapp
 
 Bemærk at `tooltip-wrapper` kan kodes med enten `div` eller `span` afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen `tooltip-target`.
 
-### Javascript
+{:#javascript}
+### JavaScript
+
 Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}
@@ -124,12 +128,26 @@ new DKFDS.Tooltip(document.getElementById('Tooltip-wrapper-ID')).init();
 Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes på `tooltip-wrapper`.
 
 {:.table .table--responsive-headers}
-| Attribut        | Beskrivelse                                                                                                                       |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| data-tooltip    | Tooltipteksten                                                                                                                    |
-| data-tooltip-id | ID der knytter tooltippet til det element, der åbner tooltippet.                                                                  |
-| data-position   | Skal sættes til enten `above` eller `below`. Undlades attributten vælges `above` som standard.                                    |
-| data-trigger    | Skal sættes til enten `click` eller `hover`. Anvend kun `click`, hvis elementet ikke har andre funktioner end at åbne tooltippet. |
+| Attribut           | Beskrivelse                                                                                                                          |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| data-tooltip       | Tooltipteksten                                                                                                                       |
+| data-tooltip-id    | ID der knytter tooltippet til det element, der åbner tooltippet.                                                                     |
+| data-position      | Skal sættes til enten `above` eller `below`. Undlades attributten vælges `above` som standard.                                       |
+| data-trigger       | Skal sættes til enten `click` eller `hover`. Anvend kun `click`, hvis elementet ikke har andre funktioner end at åbne tooltippet.    |
+| data-force-visible | Skal sættes til `true` for at blive anvendt. Brug kun undtagelsesvist, når et andet element forhindrer fuld synlighed af tooltippet. |
+
+Bemærk, at attributten `data-force-visible="true"` kun skal anvendes, når det er nødvendigt. Dette kan fx ske, hvis man har tooltips inde i modaler eller tabeller, da CSS-egenskaben `overflow` forhindrer tooltippet i at blive vist korrekt. I visse tilfælde kan der dog komme en lille forsinkelse i tooltippets placering, når brugeren scroller mens tooltippet er åbent, hvorfor attributten skal undlades, når det er muligt.
+
+{:#funktioner}
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion                        | Beskrivelse                                                                                        |
+|---------------------------------|----------------------------------------------------------------------------------------------------|
+| tooltip.hideTooltip()           | Skjuler et tooltip                                                                                 |
+| tooltip.showTooltip()           | Viser et tooltip                                                                                   |
+| tooltip.isShowing()             | Returnerer `true`, hvis tooltippet er synligt                                                      |
+| tooltip.updateTooltipPosition() | Opdaterer tooltippets position, så det er placeret korrekt i forhold til elementet, der åbnede det |
 
 ## Radioknap med tooltip {#{% include create-id.html heading="Radioknap med tooltip" append="-kode" %}}
 

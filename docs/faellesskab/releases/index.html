@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.2.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.2.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.2.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.2.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.2.0">
 </noscript>
 
   </head>
@@ -1255,6 +1255,7 @@
     <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
     <ul class="anchorlist">
         <li><a href="#versionering-og-release-proces">Versionering og release-proces</a></li>
+        <li><a href="#version-10-to-0">Version 10.2.0</a></li>
         <li><a href="#version-10-1-0">Version 10.1.0</a></li>
         <li><a href="#version-10-0-to">Version 10.0.2</a></li>
         <li><a href="#version-10-0-1">Version 10.0.1</a></li>
@@ -1291,6 +1292,39 @@
 <h3>Tidligere versioner af dokumentationen</h3>
 
 <p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at <a href="/faellesskab/kontakt-support/">kontakte os</a>.</p>
+
+<h2 id="version-10-to-0" class="mb-0">Version 10.2.0</h2>
+
+<div><span class="small-text mt-0 d-block">13-01-2025</span></div>
+
+<p>Se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/261" class="icon-link" target="_blank">beslutningslog for version 10.2.0<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</p>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tooltip/">Tooltips</a></h3>
+</div>
+<ul>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet <a href="/komponenter/tooltip/#javascript">tooltip-attributten</a> <code>data-force-visible</code>. Attributten kan bruges, når tooltippet placeres i et afgrænset element (fx modal eller tabel), som ellers ville afskære tooltippet.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/225" class="icon-link" target="_blank">issue #225 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li><strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet <a href="/komponenter/tooltip/#funktioner">funktioner til tooltip</a>.</li>
+  <li>Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.</li>
+  <li>Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.</li>
+  <li>Rettet fejl, hvor flere tooltips kunne åbnes på samme tid på touchskærme.</li>
+  <li>Ændret aktivering af <a href="/komponenter/tooltip/#hover-tooltip">hover-tooltip</a> ved “long press”, så tooltippet nu først vises, når fingeren løftes fra skærmen. For mere info, se <a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation.html" class="icon-link d-inline" target="_blank">W3C (WCAG 2.1): Understanding SC 2.5.2: Pointer Cancellation (Level A)<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</li>
+  <li>Det er ikke længere muligt at markere tekst på knapper med hover-tooltips, når man trykker ned på knappen, da mobilers “tekstmenu” kunne dække tooltippet.</li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+<ul>
+  <li>Fjernet <code>user-select: text</code> fra knapper og pagineringsknapper.</li>
+  <li>Rettet fejl, hvor indhold i <a href="/komponenter/modal/">modaler</a> ikke altid kunne ses ved print.</li>
+  <li>Tilføjet flere tekstmuligheder til <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroerne<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a> for anchorlinks og trinindikator.</li>
+  <li>Rettet fejl, hvor teksten i <a href="/komponenter/dropdown/">dropdowns</a> kunne gå bag pilen, når stylingen for fejlmeddelelse blev anvendt.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/255" class="icon-link" target="_blank">issue #255 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet fejl, hvor padding og margin kunne mangle for nogle elementer i <a href="/komponenter/faneblade/">faneblade</a>.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/259" class="icon-link" target="_blank">issue #259 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg></a>.</span></li>
+</ul>
 
 <h2 id="version-10-1-0" class="mb-0">Version 10.1.0</h2>
 
@@ -2252,8 +2286,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=10.1.0"></script>
-<script src="/assets/js/styleguide.js?v=10.1.0"></script>
+    <script src="/assets/js/theme.js?v=10.2.0"></script>
+<script src="/assets/js/styleguide.js?v=10.2.0"></script>
 
 
   </body>

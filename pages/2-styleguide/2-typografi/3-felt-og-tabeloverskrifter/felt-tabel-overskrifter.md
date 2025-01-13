@@ -20,7 +20,7 @@ tags:
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -62,7 +62,7 @@ Se dokumentationen om {% include links/component-guideline-link.html linktext="i
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>

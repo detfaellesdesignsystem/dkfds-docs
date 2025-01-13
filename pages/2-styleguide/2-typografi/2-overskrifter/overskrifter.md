@@ -55,7 +55,7 @@ Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller æ
 
 Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærksom på, at det anbefales i ens stylesheet at bruge relative værdier til skriftstørrelse og en “unitless” talværdi for linjehøjden. I designsystemets stylesheet er overskrifternes skriftstørrelse defineret med “rem”.
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -156,7 +156,7 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
 
 ## Overskrift som link {#{% include create-id.html heading="Overskrift som link" %}}
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -203,7 +203,7 @@ Anvendes ikke andre steder end i headeren.
 
 ## Subheading {#{% include create-id.html heading="Subheading" %}}
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>

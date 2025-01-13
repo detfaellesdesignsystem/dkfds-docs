@@ -17,7 +17,7 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="anchorlinks" title="Eksempel på anchorlinks" classes="intro-example" %}
+{% include code/preview-image.html component="anchorlinks" title="Eksempel på anchorlinks" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Anchorlinks" code="Anchorlinks_Kode" classes="hide-code" %}
 

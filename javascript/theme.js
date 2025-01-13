@@ -5,7 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
-const VERSION = '10.1.0';
+const VERSION = '10.2.0';
 
 document.addEventListener("DOMContentLoaded", function(){
  
@@ -302,6 +302,7 @@ let setScreenshots = function(){
         || document.getElementsByTagName('body')[0].classList.contains('page-tilbage-til-toppen')
         || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')
         || document.getElementsByTagName('body')[0].classList.contains('page-fejlopsummering')
+        || document.getElementsByTagName('body')[0].classList.contains('page-anchorlinks')
         || document.getElementsByTagName('body')[0].classList.contains('page-faneblade-tabs')){
         let screenshots = document.querySelectorAll('.screenshot');
         for(let i = 0; i < screenshots.length; i++){

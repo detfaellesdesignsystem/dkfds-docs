@@ -39,7 +39,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "date-input-macroen" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/src/components/form/controls/date-input.njk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "macroer" -%}
+    {%- when "macroer",
+             "macroerne" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "issue #74 på github" -%}
@@ -53,6 +54,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "beslutningslog for version 10.1.0" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/251" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "beslutningslog for version 10.2.0" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/261" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
         
 
 
@@ -69,6 +73,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "w3c (wcag 2.1): understanding sc 1.4.11: non-text contrast (level aa)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c (wcag 2.1): understanding sc 2.5.2: pointer cancellation (level a)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "inkludér altid tekstalternativer" -%}
         <a href="https://www.w3.org/TR/WCAG21/#text-alternatives" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>

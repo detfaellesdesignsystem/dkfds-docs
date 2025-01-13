@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.1.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.1.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.2.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.2.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=10.2.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.1.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.2.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.1.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.2.0">
 </noscript>
 
   </head>
@@ -1723,7 +1723,9 @@
 
 <p>Tooltips skal aldrig gentage tekst, som allerede er at finde på siden.</p>
 
-<p>Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten <a href="/komponenter/tooltip/#ikoner-med-hover-tooltip">ikoner med hover-tooltip</a>.</p>
+<p>Brug kun hjælpeikonet til tooltips. Hvis der er behov for at knytte en beskrivende tekst til et andet ikon (fx gem, slet, plus), anvend da varianten <a href="#ikoner-med-hover-tooltip">ikoner med hover-tooltip</a>.</p>
+
+<p>Vær opmærksom på, at tooltipteksten ikke kan ses på print. Hvis indholdet er så essentielt, at det skal kunne udskrives, så anvend fx synlig hjælpetekst eller brødtekst frem for tooltip.</p>
 
 <div class=" component-preview-tooltip-dos-donts">
     <div class="component-example">
@@ -1936,7 +1938,7 @@
 
 <h2 id="varianter">Varianter</h2>
 
-<h3>Hover-tooltip</h3>
+<h3 id="hover-tooltip">Hover-tooltip</h3>
 
 <p>Hvor tooltip vises ved klik på et dedikeret hjælpeikon, vises hover-tooltips ved hover eller fokus direkte på det element, de beskriver, såsom et ikon. Vær varsom med at anvende hover-tooltips. På mobil vises de kun ved “long press”, eftersom elementets funktion udføres ved almindeligt tap. “Long press” er en mindre intuitiv interaktion end hover på desktop, hvormed nogle brugere ikke vil se tooltippet.</p>
 
@@ -2049,7 +2051,8 @@
 
 <p>Bemærk at <code>tooltip-wrapper</code> kan kodes med enten <code>div</code> eller <code>span</code> afhængigt af konteksten. Elementet, der åbner tooltippet, skal altid have klassen <code>tooltip-target</code>.</p>
 
-<h3>Javascript</h3>
+<h3 id="javascript">JavaScript</h3>
+
 <p>Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Tooltip(document.getElementById(&#39;Tooltip-wrapper-ID&#39;)).init();</code></pre></figure>
@@ -2079,6 +2082,41 @@
     <tr>
       <td>data-trigger</td>
       <td>Skal sættes til enten <code>click</code> eller <code>hover</code>. Anvend kun <code>click</code>, hvis elementet ikke har andre funktioner end at åbne tooltippet.</td>
+    </tr>
+    <tr>
+      <td>data-force-visible</td>
+      <td>Skal sættes til <code>true</code> for at blive anvendt. Brug kun undtagelsesvist, når et andet element forhindrer fuld synlighed af tooltippet.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bemærk, at attributten <code>data-force-visible="true"</code> kun skal anvendes, når det er nødvendigt. Dette kan fx ske, hvis man har tooltips inde i modaler eller tabeller, da CSS-egenskaben <code>overflow</code> forhindrer tooltippet i at blive vist korrekt. I visse tilfælde kan der dog komme en lille forsinkelse i tooltippets placering, når brugeren scroller mens tooltippet er åbent, hvorfor attributten skal undlades, når det er muligt.</p>
+
+<h4 id="funktioner">Funktioner</h4>
+
+<table class="table table--responsive-headers">
+  <thead>
+    <tr>
+      <th>Funktion</th>
+      <th>Beskrivelse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tooltip.hideTooltip()</td>
+      <td>Skjuler et tooltip</td>
+    </tr>
+    <tr>
+      <td>tooltip.showTooltip()</td>
+      <td>Viser et tooltip</td>
+    </tr>
+    <tr>
+      <td>tooltip.isShowing()</td>
+      <td>Returnerer <code>true</code>, hvis tooltippet er synligt</td>
+    </tr>
+    <tr>
+      <td>tooltip.updateTooltipPosition()</td>
+      <td>Opdaterer tooltippets position, så det er placeret korrekt i forhold til elementet, der åbnede det</td>
     </tr>
   </tbody>
 </table>
@@ -2394,8 +2432,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=10.1.0"></script>
-<script src="/assets/js/styleguide.js?v=10.1.0"></script>
+    <script src="/assets/js/theme.js?v=10.2.0"></script>
+<script src="/assets/js/styleguide.js?v=10.2.0"></script>
 
 
 <script src="/assets/js/docs-tabs.js"></script>

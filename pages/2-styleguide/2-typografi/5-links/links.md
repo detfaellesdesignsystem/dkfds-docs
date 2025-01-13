@@ -27,7 +27,7 @@ tabs: "Retningslinjer, kode"
 
 ## Designværdier {#{% include create-id.html heading="Designværdier" %}}
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>
@@ -98,7 +98,7 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 ### Designværdier
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
     <thead>
       <tr>

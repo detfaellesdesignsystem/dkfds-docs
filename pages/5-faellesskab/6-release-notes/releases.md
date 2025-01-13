@@ -76,6 +76,7 @@ tags:
 - 10.0.1
 - 10.0.2
 - 10.1.0
+- 10.2.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -99,6 +100,38 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 10.2.0 {#{% include create-id.html heading="Version 10.2.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">13-01-2025</span></div>
+
+Se {% include links/external-link.html linktext="beslutningslog for version 10.2.0" %}.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tooltips" %}</h3>
+</div>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="tooltip-attributten" %} `data-force-visible`. Attributten kan bruges, når tooltippet placeres i et afgrænset element (fx modal eller tabel), som ellers ville afskære tooltippet.
+{% include links/github-link.html number="225" afternumber=" på GitHub" %}
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/component-code-link.html linktext="funktioner til tooltip" %}.
+- Tooltips kan ikke længere ses ved print pga. problemer med korrekt positionering. Vejledningen er opdateret.
+- Rettet fejl, hvor brug af Escape-tasten til at lukke tooltips i modaler også lukkede modalen.
+- Rettet fejl, hvor flere tooltips kunne åbnes på samme tid på touchskærme.
+- Ændret aktivering af {% include links/component-guideline-link.html linktext="hover-tooltip" %} ved "long press", så tooltippet nu først vises, når fingeren løftes fra skærmen. For mere info, se {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 2.5.2: Pointer Cancellation (Level A)" classes="d-inline" %}.
+- Det er ikke længere muligt at markere tekst på knapper med hover-tooltips, når man trykker ned på knappen, da mobilers "tekstmenu" kunne dække tooltippet.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- Fjernet `user-select: text` fra knapper og pagineringsknapper.
+- Rettet fejl, hvor indhold i {% include links/component-guideline-link.html linktext="modaler" %} ikke altid kunne ses ved print.
+- Tilføjet flere tekstmuligheder til {% include links/external-link.html linktext="macroerne" %} for anchorlinks og trinindikator.
+- Rettet fejl, hvor teksten i {% include links/component-guideline-link.html linktext="dropdowns" %} kunne gå bag pilen, når stylingen for fejlmeddelelse blev anvendt.
+{% include links/github-link.html number="255" afternumber=" på GitHub" %} 
+- Rettet fejl, hvor padding og margin kunne mangle for nogle elementer i {% include links/component-guideline-link.html linktext="faneblade" %}.
+{% include links/github-link.html number="259" afternumber=" på GitHub" %} 
 
 
 
