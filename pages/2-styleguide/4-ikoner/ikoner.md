@@ -98,7 +98,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-navigation"> 
                 {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
-                {% include icon.html icon="arrow-right" keywords="right, højre, frem, pil, arrow" label="Frem (højre)" %}
                 {% include icon.html icon="menu" keywords="hamburger, menu, burger, burgermenu, burger menu" label="Menu" %}
                 {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflow menu (vertikalt)" %}
                 {% include icon.html icon="chevron-left" keywords="næste, next, side" label="Paginering forrige" %}
@@ -109,7 +108,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="arrow-downward" keywords="pil, ned, arrow" label="Pil ned" %}
                 {% include icon.html icon="arrow-upward" keywords="pil, op, arrow" label="Pil op" %}
                 {% include icon.html icon="arrow-back" keywords="pil, arrow, tilbage, back" label="Pil tilbage (venstre)" %}
-                {% include icon.html icon="arrow-left" keywords="pil, arrow, back, tilbage" label="Tilbage (venstre)" %}
                 {% include icon.html icon="subdirectory-arrow-right" keywords="højre, knækpil, pil, arrow" label="Undermenu højre" %}
                 {% include icon.html icon="subdirectory-arrow-left" keywords="venstre, knækpil, pil, arrow" label="Undermenu venstre" %}
                 {% include icon.html icon="chevron-double-right" keywords="højre, dobbeltpil, pil, arrow" label="Langt frem" %}
@@ -125,7 +123,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Accordion åbn (plus)" %}
                 {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Chevron indskrænk" %}
                 {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Chevron udvid" %}
-                {% include icon.html icon="arrow-right" keywords="pil, højre, lukket, luk, detalje" label="Detalje lukket" %}
                 {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold overflow ud" %}
                 {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold overflow ind" %}
                 {% include icon.html icon="zoom-out" keywords="lup, zoom, zoom ud, ud" label="Formindsk" %}
