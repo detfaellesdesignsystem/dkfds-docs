@@ -1,7 +1,7 @@
 {
   "icons_example": {
     "items": [
-      "add",
+      "plus",
       "done",
       "check-circle",
       "chevron-left",
@@ -16,7 +16,6 @@
       "info",
       "language",
       "search",
-      "arrow-drop-down",
       "open-in-new",
       "print",
       "refresh",

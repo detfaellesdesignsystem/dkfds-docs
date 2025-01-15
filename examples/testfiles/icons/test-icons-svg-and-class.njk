@@ -4,14 +4,11 @@
     "list": [
         { name: "accessibility-new" },
         { name: "account-circle" },
-        { name: "add" },
         { name: "add-a-photo" },
         { name: "agriculture" },
         { name: "apps" },
         { name: "arrow-back" },
         { name: "arrow-downward" },
-        { name: "arrow-drop-down" },
-        { name: "arrow-drop-up" },
         { name: "arrow-forward" },
         { name: "arrow-upward" },
         { name: "assessment" },
@@ -28,8 +25,11 @@
         { name: "check-circle-white" },
         { name: "chevron-double-left" },
         { name: "chevron-double-right" },
+        { name: "chevron-down" },
+        { name: "chevron-down-white" },
         { name: "chevron-left" },
         { name: "chevron-right" },
+        { name: "chevron-up" },
         { name: "close" },
         { name: "construction" },
         { name: "contact-support" },
@@ -47,9 +47,6 @@
         { name: "drive-eta" },
         { name: "email" },
         { name: "engineering" },
-        { name: "expand-less" },
-        { name: "expand-more" },
-        { name: "expand-more-white" },
         { name: "face" },
         { name: "feedback" },
         { name: "file-download" },
@@ -106,6 +103,8 @@
         { name: "lock" },
         { name: "map" },
         { name: "menu" },
+        { name: "minus" },
+        { name: "minus-white" },
         { name: "mode" },
         { name: "more-horiz" },
         { name: "more-vert" },
@@ -125,11 +124,10 @@
         { name: "photo-camera" },
         { name: "playlist-add" },
         { name: "playlist-add-check" },
+        { name: "plus" },
         { name: "print" },
         { name: "query-builder" },
         { name: "refresh" },
-        { name: "remove" },
-        { name: "remove-white" },
         { name: "reply" },
         { name: "report-problem" },
         { name: "save" },
@@ -165,10 +163,10 @@
 
 <main class="container page-container" id="main-content" style="background-color:#CFCFCF;">
     {% for icon in icons.list %}
-    <div class="row">
+    <div class="row mb-2">
         <div class="col-2">{{ icon.name }}</div>
         <div class="col-1">{{ icon_svg({"name": icon.name, "attributes": 'style="fill:#FF0000;"'}) }}</div>
-        <div class="col-1"><i class="icon icon-{{icon.name}}"></i></div>
+        <div class="col-1"><i class="icon icon-{{icon.name}}" style="vertical-align: middle;"></i></div>
     </div>
     {% endfor %}
 </main>

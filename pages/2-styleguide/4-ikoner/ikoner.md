@@ -72,8 +72,8 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Konventionelle ikoner</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-konventionelle">
-                {% include icon.html icon="open-in-new" keywords="open in new, new window, external, ekstern, eksternt link" label="Eksternt link (åbner ny side/fane)" %}
-                {% include icon.html icon="home" keywords="hus, hjem, home, forside, house, home" label="Forside (Hjem)" %}
+                {% include icon.html icon="open-in-new" keywords="open in new, new window, external, ekstern, eksternt link" label="Eksternt link (åbner i nyt vindue)" %}
+                {% include icon.html icon="home" keywords="hus, hjem, home, forside, house, home" label="Forside (hjem)" %}
                 {% include icon.html icon="save" keywords="save, gem, disc, diskette" label="Gem" %}
                 {% include icon.html icon="print" keywords="print, printer, udskriv" label="Print (udskriv)" %}
                 {% include icon.html icon="delete" keywords="skraldespand, bin, trash, trash can, can, delete, slet, fjern, rubbish" label="Slet" %}
@@ -99,10 +99,10 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
             <ul class="icon-list no-max-width row" id="icon-list-navigation"> 
                 {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
                 {% include icon.html icon="menu" keywords="hamburger, menu, burger, burgermenu, burger menu" label="Menu" %}
-                {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflow menu (vertikalt)" %}
-                {% include icon.html icon="chevron-left" keywords="næste, next, side" label="Paginering forrige" %}
+                {% include icon.html icon="more-vert" keywords="prikker, dots, bullets, menu, overflow, vertikal, vertical" label="Overflowmenu (vertikalt)" %}
+                {% include icon.html icon="chevron-left" keywords="næste, next, side" label="Paginering forrige (chevron venstre)" %}
                 {% include icon.html icon="first-page" keywords="start, første, side" label="Paginering første" %}
-                {% include icon.html icon="chevron-right" keywords="forrige, previous, prev, side" label="Paginering næste" %}
+                {% include icon.html icon="chevron-right" keywords="forrige, previous, prev, side" label="Paginering næste (chevron højre)" %}
                 {% include icon.html icon="last-page" keywords="sidste, slut, side" label="Paginering sidste" %}
                 {% include icon.html icon="arrow-forward" keywords="pil, højre, arrow, frem, forward" label="Pil frem (højre)" %}
                 {% include icon.html icon="arrow-downward" keywords="pil, ned, arrow" label="Pil ned" %}
@@ -119,12 +119,10 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Tilstande</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-tilstande">
-                {% include icon.html icon="remove" keywords="-, minus, luk, accordion, close, collapse" label="Accordion luk (minus)" %}
-                {% include icon.html icon="add" keywords="+, plus, åben, accordion, open, expand" label="Accordion åbn (plus)" %}
-                {% include icon.html icon="expand-less" keywords="collapse, pil, arrow" label="Chevron indskrænk" %}
-                {% include icon.html icon="expand-more" keywords="udvid, expand, pil, arrow" label="Chevron udvid" %}
-                {% include icon.html icon="arrow-drop-down" keywords="arrow, pil, ned, down, detalje, åben, åbn fold ud" label="Detalje åben / Fold overflow ud" %}
-                {% include icon.html icon="arrow-drop-up" keywords="pil, op, up, arrow, dropdown, fold ind, luk" label="Fold overflow ind" %}
+                {% include icon.html icon="minus" keywords="-, remove, minus, luk, accordion, close, collapse" label="Accordion luk / fjern (minus)" %}
+                {% include icon.html icon="plus" keywords="+, add, plus, åben, accordion, open, expand" label="Accordion åbn / tilføj (plus)" %}
+                {% include icon.html icon="chevron-up" keywords="collapse, pil, arrow" label="Chevron indskrænk (op)" %}
+                {% include icon.html icon="chevron-down" keywords="udvid, expand, pil, arrow" label="Chevron udvid (ned)" %}
                 {% include icon.html icon="zoom-out" keywords="lup, zoom, zoom ud, ud" label="Formindsk" %}
                 {% include icon.html icon="zoom-in" keywords="lup, zoom, zoom ind, ind" label="Forstør" %}
                 {% include icon.html icon="fullscreen" keywords="fullscreen, fuld skærm, stor skærm, fuldskærm" label="Fuld skærm" %}

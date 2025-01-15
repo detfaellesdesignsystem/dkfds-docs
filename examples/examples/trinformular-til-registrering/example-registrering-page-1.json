@@ -97,7 +97,7 @@
         "text": "Tilføj person",
         "variant": "secondary",
         "classes": { "button": "d-print-none mt-5" },
-        "icon": "add",
+        "icon": "plus",
         "attributes": "type='button'"
     },
     "button_next": {
