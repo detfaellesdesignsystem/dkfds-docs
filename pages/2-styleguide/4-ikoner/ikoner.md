@@ -85,11 +85,11 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Beskeder (feedback)</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-beskeder">
-                {% include icon.html icon="report-problem" keywords="besked, alert, message, warning, advarsel, report, problem, report problem" label="Advarsel" %}
-                {% include icon.html icon="highlight-off" keywords="besked, alert, message, error, fejl" label="Fejl" %}
-                {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Hjælp" %}
+                {% include icon.html icon="warning" keywords="besked, alert, message, warning, advarsel, report, problem, report problem" label="Advarsel" %}
+                {% include icon.html icon="error" keywords="besked, alert, message, error, fejl, highlight-off" label="Fejl" %}
                 {% include icon.html icon="info" keywords="besked, alert, message, information, info" label="Information" %}
-                {% include icon.html icon="check-circle" keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark" label="Succes" %}
+                {% include icon.html icon="help" keywords="besked, alert, message, help, hjælp" label="Hjælp" %}
+                {% include icon.html icon="success" keywords="besked, alert, message, flueben, check, success, succes, done, check, checkmark, check-circle" label="Succes" %}
             </ul>
         </div>
     </div>

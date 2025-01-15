@@ -8,7 +8,7 @@ print: true
 <div id="error-container" class="d-none">
 <h1>Fælles aftalte krav som din løsning skal efterleve</h1>
 <div class="alert alert-error">
-    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#highlight-off"></use></svg>
+    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
     <div class="alert-body">
         <p class="alert-heading">Hov, vi mangler nogle svar, før vi kan give dig et resultat</p>
         <p class="alert-text"><a id="continue-questionnaire-link">Gå til spørgeskemaet</a></p>

@@ -145,6 +145,6 @@ Nedenstående varianter implementeres i et grid på samme måde som {% include l
 
 ## Trinindikator med fejl {#{% include create-id.html heading="Trinindikator med fejl" append="-kode" %}}
 
-Tilføj klassen `sidenav-error` til de liste-elementer, der er fejl i og anvend ikonet `highlight-off` med en passende `aria-label`.
+Tilføj klassen `sidenav-error` til de liste-elementer, der er fejl i og anvend ikonet `error` med en passende `aria-label`.
 
 {% include code/syntax.html component="tringuide-error-responsive" link=true copybutton=true guidelines="/komponenter/trinindikator/#trinindikator-med-fejl" %}

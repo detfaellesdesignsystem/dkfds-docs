@@ -133,13 +133,13 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
     </div>
 </form>
 <div class="alert alert-success alert--paragraph d-none" role="alert" id="cookieNoAlert">
-    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#check-circle"></use></svg>
+    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#success"></use></svg>
     <div class="alert-body">
         <p class="alert-text">Ok, vi samler ikke længere anonymiseret statistik til forbedring af brugeroplevelsen</p>
     </div>
 </div>
 <div class="alert alert-success alert--paragraph d-none" role="alert" id="cookieYesAlert">
-    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#check-circle"></use></svg>
+    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#success"></use></svg>
     <div class="alert-body">
         <p class="alert-text">Tak, vi samler nu anonymiseret statistik til forbedring af brugeroplevelsen</p>
     </div>

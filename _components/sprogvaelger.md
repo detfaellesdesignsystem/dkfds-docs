@@ -82,7 +82,7 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 {% include code/syntax.html component="language-switcher" copybutton=true %}
 
 <div class="alert alert-warning" role="alert">
-    <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#report-problem"></use></svg>
+    <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#warning"></use></svg>
     <div class="alert-body">
         <p class="alert-text">Bemærk, at man i løsningen selv står for funktionaliteten i denne komponent.</p>
     </div>
