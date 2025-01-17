@@ -249,22 +249,22 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Tekstredigering</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-tekstredigering">
-                {% include icon.html icon="format-color-fill" keywords="" label="Baggrundsfarve" %}
-                {% include icon.html icon="format-color-text" keywords="" label="Farve" %}
+                {% include icon.html icon="format-size" keywords="" label="Tekststørrelse" %}
                 {% include icon.html icon="format-bold" keywords="" label="Fed" %}
-                {% include icon.html icon="text-format" keywords="" label="Formatér tekst" %}
+                {% include icon.html icon="format-italic" keywords="" label="Kursiv" %}
+                {% include icon.html icon="format-underlined" keywords="" label="Understregning" %}
+                {% include icon.html icon="format-color-text" keywords="" label="Farve" %}
+                {% include icon.html icon="format-color-fill" keywords="" label="Baggrundsfarve" %}
+                {% include icon.html icon="format-text" keywords="" label="Formatér tekst" %}
+                {% include icon.html icon="format-clear" keywords="ryd, clear, tekst, formatering, clean" label="Ryd tekstformatering" %}
+                {% include icon.html icon="format-list-bulleted" keywords="" label="Punktopstilling" %}
+                {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
                 {% include icon.html icon="format-indent-increase" keywords="" label="Indryk højre" %}
                 {% include icon.html icon="format-indent-decrease" keywords="" label="Indryk venstre" %}
-                {% include icon.html icon="format-italic" keywords="" label="Kursiv" %}
-                {% include icon.html icon="list-bulleted" keywords="" label="Punktopstilling" %}
-                {% include icon.html icon="format-list-numbered" keywords="" label="Punktopstilling numerisk" %}
-                {% include icon.html icon="format-clear" keywords="ryd, clear, tekst, formatering, clean" label="Ryd tekstformatering" %}
+                {% include icon.html icon="format-align-left" keywords="" label="Tekst venstrestillet" %}
                 {% include icon.html icon="format-align-center" keywords="" label="Tekst centreret" %}
                 {% include icon.html icon="format-align-right" keywords="" label="Tekst højrestillet" %}
                 {% include icon.html icon="format-align-justify" keywords="" label="Tekst lige marginer" %}
-                {% include icon.html icon="format-align-left" keywords="" label="Tekst venstrestillet" %}
-                {% include icon.html icon="format-size" keywords="" label="Tekststørrelse" %}
-                {% include icon.html icon="format-underlined" keywords="" label="Understregning" %}
             </ul>
         </div>
     </div>
