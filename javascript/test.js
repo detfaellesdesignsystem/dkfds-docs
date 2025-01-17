@@ -7,6 +7,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (heading) {
 
+            case 'Ikoner':
+                DKFDS.init();
+                console.log('JavaScript fetched icons from XML');
+
+                fetch('/assets/img/all-svg-icons.svg')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Response was not "ok"');
+                        }
+                        return response.text();
+                    })
+                    .then(str => {
+                        let parsedXML = new DOMParser().parseFromString(str, 'text/xml');
+                        let symbols = parsedXML.querySelectorAll('symbol');
+                        for (let i = 0; i < symbols.length; i++) {
+                            document.getElementById('xml-icon-' + symbols[i].id).innerHTML = 
+                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon-svg" focusable="false" aria-hidden="true" style="fill:#0000FF;">' + 
+                            parsedXML.getElementById(symbols[i].id).innerHTML + 
+                            '</svg>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Failed to fetch file:', error);
+                    });               
+
+                break;
+
             case 'JavaScript i accordions':
 
                 initTest();

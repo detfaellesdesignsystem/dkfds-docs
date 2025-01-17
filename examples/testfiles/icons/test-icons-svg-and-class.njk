@@ -164,11 +164,23 @@
 } %}
 
 <main class="container page-container" id="main-content" style="background-color:#CFCFCF;">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Ikoner</h1>
+        </div>
+    </div>
+    <div class="row mb-2" style="border-bottom: 1px solid #1A1A1A">
+        <div class="col-3">Icon ID</div>
+        <div class="col-1">href</div>
+        <div class="col-1">class</div>
+        <div class="col-1">xml</div>
+    </div>
     {% for icon in icons.list %}
     <div class="row mb-2">
         <div class="col-3">{{ icon.name }}</div>
         <div class="col-1">{{ icon_svg({"name": icon.name, "attributes": 'style="fill:#FF0000;"'}) }}</div>
         <div class="col-1"><i class="icon icon-{{icon.name}}" style="vertical-align: middle;"></i></div>
+        <div class="col-1" id="xml-icon-{{ icon.name }}"></div>
     </div>
     {% endfor %}
 </main>
