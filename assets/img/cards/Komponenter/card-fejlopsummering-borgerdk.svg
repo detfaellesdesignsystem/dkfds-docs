@@ -1,0 +1,34 @@
+<svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_10643_18227)">
+<mask id="path-1-inside-1_10643_18227" fill="white">
+<path d="M0 0H267V150H0V0Z"/>
+</mask>
+<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
+<g clip-path="url(#clip1_10643_18227)">
+<mask id="path-3-inside-2_10643_18227" fill="white">
+<path d="M16 24C16 19.5817 19.5817 16 24 16H243C247.418 16 251 19.5817 251 24V72C251 76.4183 247.418 80 243 80H24C19.5817 80 16 76.4183 16 72V24Z"/>
+</mask>
+<path d="M16 24C16 19.5817 19.5817 16 24 16H243C247.418 16 251 19.5817 251 24V72C251 76.4183 247.418 80 243 80H24C19.5817 80 16 76.4183 16 72V24Z" fill="white"/>
+<rect x="48" y="56" width="16" height="16" rx="8" transform="rotate(-180 48 56)" stroke="#44831E" stroke-width="2"/>
+<rect x="41" y="49.5" width="2" height="6" rx="1" transform="rotate(-180 41 49.5)" fill="#44831E"/>
+<rect x="41" y="52.5" width="2" height="2" rx="1" transform="rotate(-180 41 52.5)" fill="#44831E"/>
+<rect x="64" y="28" width="171" height="8" rx="4" fill="#44831E"/>
+<rect x="64" y="44" width="171" height="8" rx="4" fill="#44831E"/>
+<rect x="64" y="60" width="171" height="8" rx="4" fill="#44831E"/>
+<rect x="13" y="16" width="7" height="91" fill="#44831E"/>
+</g>
+<path d="M24 17H243V15H24V17ZM250 24V72H252V24H250ZM243 79H24V81H243V79ZM17 72V24H15V72H17ZM24 79C20.134 79 17 75.866 17 72H15C15 76.9706 19.0294 81 24 81V79ZM250 72C250 75.866 246.866 79 243 79V81C247.971 81 252 76.9706 252 72H250ZM243 17C246.866 17 250 20.134 250 24H252C252 19.0294 247.971 15 243 15V17ZM24 15C19.0294 15 15 19.0294 15 24H17C17 20.134 20.134 17 24 17V15Z" fill="#44831E" mask="url(#path-3-inside-2_10643_18227)"/>
+<rect x="16.5" y="128.5" width="145" height="31" rx="7.5" fill="white"/>
+<rect x="16.5" y="128.5" width="145" height="31" rx="7.5" stroke="#44831E"/>
+<rect x="16" y="112" width="55" height="8" rx="4" fill="#44831E" fill-opacity="0.4"/>
+</g>
+<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_10643_18227)"/>
+<defs>
+<clipPath id="clip0_10643_18227">
+<path d="M0 0H267V150H0V0Z" fill="white"/>
+</clipPath>
+<clipPath id="clip1_10643_18227">
+<path d="M16 24C16 19.5817 19.5817 16 24 16H243C247.418 16 251 19.5817 251 24V72C251 76.4183 247.418 80 243 80H24C19.5817 80 16 76.4183 16 72V24Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

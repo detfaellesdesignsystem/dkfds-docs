@@ -36,7 +36,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
     </li><li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
         href="/styleguide/borders/"
-        id="card-borders"
+        id="card-hjoerner-streger-skygger"
         heading="Hjørner, streger, skygger"
         %}
     </li><li class="col-12 col-sm-6 col-md-4">
@@ -54,7 +54,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
     </li><li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
         href="/styleguide/datavisualisering-infografik/"
-        id="card-datavisualisering-infografik"
+        id="card-datavisualisering-og-infografik"
         heading="Datavisualisering og infografik"
         %}
     </li><li class="col-12 col-sm-6 col-md-4">
@@ -66,7 +66,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
     </li><li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
         href="/styleguide/grid/"
-        id="card-grid"
+        id="card-grid-og-baseline-grid"
         heading="Grid og baseline grid"
         %}
     </li>

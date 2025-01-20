@@ -357,15 +357,24 @@ let setDoDontImages = function() {
     }
 };
 
+
 let setCardImages = function() {
     if(document.body.classList.contains('page-komponenter')) {
-        let IDs = ['card-accordions', 'card-anchorlinks', 'card-badges', 'card-beskeder', 'card-broedkrumme', 'card-cards', 'card-cookiemeddelelse', 'card-datofelter', 'card-datovælger', 'card-detaljer', 'card-dropdown', 'card-faneblade', 'card-fejlmeddelelser', 'card-fejlopsummering', 'card-footer', 'card-funktionslinks', 'card-skip-link', 'card-header', 'card-inputfelter', 'card-knapper', 'card-spinner', 'card-modal', 'card-overflow-menu', 'card-paginering', 'card-radioknap', 'card-sprogvaelger', 'card-soegefelt', 'card-tabeller', 'card-tags', 'card-tekstomraade', 'card-tilbage-link', 'card-tilbage-til-toppen', 'card-tjekboks', 'card-toastbesked', 'card-toggle-switch', 'card-tooltip', 'card-trinindikator', 'card-vedhaeft-fil', 'card-venstremenu'];
+        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        rebuildCardImages(cards, '/assets/img/cards/Komponenter');
+    }
+    else if (document.body.classList.contains('page-styleguide')) {
+        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        rebuildCardImages(cards, '/assets/img/cards/Styleguide');
+    }
+}
 
-        for (let i = 0; i < IDs.length; i++) {
-            if (document.getElementById(IDs[i]).querySelector('.new-card-image')) {
-                document.getElementById(IDs[i]).querySelector('.new-card-image').innerHTML = 
-                '<img src="/assets/img/cards/card-placeholder.png" alt="">';
-            }
+function rebuildCardImages(cards, imagepath) {
+    let cookie = getThemeCookie();
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i].hasAttribute('id')) {
+            let id = cards[i].id; // Important: Ensure the given card IDs match the card image filenames
+            document.getElementById(id).querySelector('.new-card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.svg" alt="">`;
         }
     }
 }

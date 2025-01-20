@@ -69,7 +69,7 @@ tags:
     </li>
     <li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 534 / 300; background-color: #DCDCDC;'" headingLevel="h2" hrefNumber=8
-        id="card-datovælger"  
+        id="card-datovaelger"  
         heading="Datovælger" 
         content="Ét felt med knap, hvor man kan vælge en dato." 
         %}
@@ -118,14 +118,14 @@ tags:
     </li>
     <li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 534 / 300; background-color: #DCDCDC;'" headingLevel="h2" hrefNumber=15
-        id="card-funktionslinks"  
-        heading="Funktionslinks" 
+        id="card-funktionslink"  
+        heading="Funktionslink" 
         content="Funktionslink lader brugeren udføre forskellige systemfunktionaliteter." 
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 534 / 300; background-color: #DCDCDC;'" headingLevel="h2" hrefNumber=16
-        id="card-skip-link"  
+        id="card-gaa-til-sidens-indhold"  
         heading="Gå til sidens indhold (skip-link)" 
         content="Et skjult link, der lader brugeren springe menuen over, når de navigerer med tastaturet." 
         %}
@@ -153,7 +153,7 @@ tags:
     </li>
     <li class="col-12 col-sm-6 col-md-4">
         {% include navcard-short.html img=true style="style='aspect-ratio: 534 / 300; background-color: #DCDCDC;'" headingLevel="h2" hrefNumber=20
-        id="card-spinner"  
+        id="card-loading-spinner"  
         heading="Loading spinner" 
         content="En spinner viser brugeren, at indlæsningen af en side eller delfunktion er forsinket." 
         %}
