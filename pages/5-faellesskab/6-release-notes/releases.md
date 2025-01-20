@@ -154,6 +154,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret skygger, hvor de tidligere skygger kaldet "Modalvindue", "Overflow menu" og "Cards" er fjernet til fordel for to nye skygger kaldet "Stor skygge" og "Lille skygge". Mulighed for at ændre skygge med variablene `$back-to-top-button-shadow`, `$cookie-message-shadow`, `$datepicker-shadow`, `$modal-shadow`, `$overflow-menu-content-shadow`, `$toast-shadow` og `$tooltip-shadow` er fjernet.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet funktionen `silentUpdateMessages()` til karakterbegrænsning.
 - Rettet fejl, hvor udfyldte inputfelter med karakterbegrænsning blev læst højt for skærmlæsere ved sidens indlæsning.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Nye favicons for begge temaer, såfremt man anvender disse.
 - Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="streger" %} (`border`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
@@ -163,6 +164,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 - Ny pil anvendt i detaljekomponenten.
 - Rettet fejl, hvor ikon og tekst i {% include links/component-guideline-link.html linktext="beskeder" %} kunne overlappe ved tekstforstørrelse.
+
 
 
 
