@@ -25,6 +25,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "kom i gang" -%}
         <a href="/kom-i-gang/"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "om det fælles designsystem" -%}
+        <a href="/kom-i-gang/om-designsystemet/"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "implementering og kode",
              "kom i gang som udvikler" -%}
         <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
@@ -84,6 +87,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "evalueringsværktøjer" -%}
         <a href="/kom-i-gang/tilgaengelighed/#eval"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "brugerinddragelse" -%}
+        <a href="/kom-i-gang/brugerinddragelse/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "ofte stillede spørgsmål" -%}
         <a href="/kom-i-gang/faq/"{{ classes }}>{{ include.linktext }}</a>
@@ -272,14 +278,17 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- comment -%} -------- Fællesskab -------- {%- endcomment -%}
 
     {%- when "kontakt os", 
-             "kontakte os" -%}
+             "kontakte os",
+             "kontakt og support" -%}
         <a href="/faellesskab/kontakt-support/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "deltag i samarbejdsforum" -%}
+    {%- when "deltag i samarbejdsforum",
+             "samarbejdsforum" -%}
         <a href="/faellesskab/samarbejdsforum/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "tilmeld nyhedsbrevet",
-             "tilmeldingssiden" -%}
+             "tilmeldingssiden",
+             "nyhedsbrev" -%}
         <a href="/faellesskab/nyhedsmail/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "tilmeld en e-mailadresse" -%}
@@ -294,6 +303,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "afmeld en e-mailadresse her" -%}
         <a href="/faellesskab/nyhedsmail/afmeld/"{{ classes }}>Afmeld en <span class="nowrap">e-mailadresse</span> her</a>
 
+    {%- when "roadmap" -%}
+        <a href="/faellesskab/roadmap/"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "gå til release notes",
              "release notes" -%}
         <a href="/faellesskab/releases/"{{ classes }}>{{ include.linktext }}</a>
@@ -301,7 +313,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "version 10.0.0" -%} 
         <a href="/faellesskab/releases/#version-10-0-0"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "læs om governance af fds" -%}
+    {%- when "læs om governance af fds",
+             "governance" -%}
         <a href="/faellesskab/governance/"{{ classes }}>{{ include.linktext }}</a>
 
 

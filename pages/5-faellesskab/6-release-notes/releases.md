@@ -77,6 +77,7 @@ tags:
 - 10.0.2
 - 10.1.0
 - 10.2.0
+- 10.2.1
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -100,6 +101,15 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 10.2.1 {#{% include create-id.html heading="Version 10.2.1" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">xx-01-2025</span></div>
+
+- Fjernet kravværktøjet fra dokumentationssiden og tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
 
 
 

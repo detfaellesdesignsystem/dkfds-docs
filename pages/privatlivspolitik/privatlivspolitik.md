@@ -83,7 +83,7 @@ En cookie er et lille stykke kode, der bliver gemt på din computer, telefon ell
 
 <h3>Formålet med cookies på FDS</h3>
 På FDS bruges cookies til to formål:
-- Teknisk nødvendige cookies sættes altid ved besøg på FDS. Teknisk nødvendige cookies bruges til at huske, hvilket tema der skal anvendes på FDS, samt hvorvidt du har accepteret eller afvist statistiske cookies. Derudover anvendes localStorage, som bruges til dataopbevaring, også til at gemme dine valg i kravværktøjet.
+- Teknisk nødvendige cookies sættes altid ved besøg på FDS. Teknisk nødvendige cookies bruges til at huske, hvilket tema der skal anvendes på FDS, samt hvorvidt du har accepteret eller afvist statistiske cookies.
 - Statistiske cookies bruges til at samle anonyme statistiske data om brugernes adfærd på FDS. Statistikken kan anvendes til at forbedre FDS, fordi vi kan finde uhensigtsmæssigheder og se, hvilke dele af FDS brugerne anvender. Vi kan desuden bruge data til at se, om FDS opfylder de mål, der er sat for sitet. Disse cookies sættes først efter du har fået information om formålet med dem og har accepteret dem.
 
 <h3>Cookies som er tekniske forudsætninger</h3>
