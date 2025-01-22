@@ -246,6 +246,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     new DKFDS.Dropdown(jsSelectorDropdown[c]).init();
                 }
                 break;
+
+            case 'Initialiseres ved klik':
+                new DKFDS.Modal(document.getElementById('test-warning')).init();
+                let initButton = document.getElementById('run-init');
+                initButton.addEventListener('click', () => {
+                    new DKFDS.Navigation().init();
+                    initButton.setAttribute('disabled', '');
+                });
+                break;
             
             default:
                 DKFDS.init();

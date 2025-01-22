@@ -103,6 +103,7 @@ var testfiles = [
     "test-header-mobile-helptext",
     "test-header-breadcrumb-function-links",
     "test-header-init",
+    "test-header-init-on-click",
     "test-input-fields-1",
     "test-input-fields-2",
     "test-input-fields-3",

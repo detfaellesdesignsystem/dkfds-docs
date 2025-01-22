@@ -111,6 +111,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Fjernet kravværktøjet fra dokumentationssiden og tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
 - Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke mobilmenuen.
+- Godkendt pull request, så `DKFDS.Navigation().init()` også opdaterer headernavigationen efter `load event`.
+{% include links/github-link.html number="260" afternumber=" på GitHub" %} 
 
 
 

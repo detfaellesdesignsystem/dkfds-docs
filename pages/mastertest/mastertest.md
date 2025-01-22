@@ -127,7 +127,8 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-header-long-strings" description="Header med lange, ubrudte tekststrenge" %}
 {% include test/preview-test.html filename="test-header-mobile-helptext" description="Hjælpetekst i mobilmenuen" %}
 {% include test/preview-test.html filename="test-header-breadcrumb-function-links" description="Brødkrumme og funktionslinks under headeren" %}
-{% include test/preview-test.html filename="test-header-init" description="Kun header er initialiseret" %}
+{% include test/preview-test.html filename="test-header-init" description="Manuelt initialiseret" %}
+{% include test/preview-test.html filename="test-header-init-on-click" description="Initialiseres ved klik" %}
 
 {:.h3}
 ## Inputfelter

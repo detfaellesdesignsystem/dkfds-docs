@@ -1,0 +1,75 @@
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import navigation_menu as navigation_menu %}
+{% from "components/header/header.njk" import mobile_navigation_menu as mobile_navigation_menu %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+
+{% set portal_info_data = {
+    "user": {
+        "name": "Anders Andersen",
+        "info": "Forsikringens Forsikringsfirma"
+    },
+    "logolink": {
+        "label": "Portalnavn",
+        "title": "Gå til Portalnavns forside",
+        "href": "#"
+    }
+} %}
+
+{% set solution_info_data = {
+    "hideOnPrint": false,
+    "title": {
+        "href": "#",
+        "text": "Løsningstitel"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": 'Support: 12 34 56 78'
+    }
+} %}
+
+{# <!-- When all menu items have equal width, the check for allWidthsEqual in navigation.js is ignored,
+    which is important in this test. --> #}
+{% set navigation_menu_data = {
+    "ariaLabelMobile": "Hovedmenu og undermenuer",
+    "links": [
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" },
+        { "text": "Menupunkt" }
+    ]
+} %}
+
+<header class="header">
+    {{ portal_info(portal_info_data) }}
+    {{ solution_info(solution_info_data) }}
+    {{ navigation_menu(navigation_menu_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_navigation_menu(navigation_menu_data) }}
+        {{ mobile_solution_info(solution_info_data) }}
+        {{ mobile_portal_info(portal_info_data) }}
+    </div>
+</header>
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="mt-0">Initialiseres ved klik</h1>
+        </div>
+    </div>
+    <button class="button button-primary" id="run-init">Kør init()</button>
+</main>
