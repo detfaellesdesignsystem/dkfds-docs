@@ -203,10 +203,11 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-sorting-table" description="Sortering i tabel" %}
 {% include test/preview-test.html filename="test-selectable-table" description="Tabel med valgbare rækker" %}
 {% include test/preview-test.html filename="test-selectable-table-with-buttons" description="Valgbare rækker med funktionsknapper" %}
-{% include test/preview-test.html filename="test-table-pagination" description="Valgbare rækker med paginering" %}
-{% include test/preview-test.html filename="test-table-pagination-with-buttons" description="Valgbare rækker med paginering og funktionsknapper" %}
 {% include test/preview-test.html filename="test-table-many-columns" description="Tabel med mange kolonner" %}
 {% include test/preview-test.html filename="test-table-many-columns-with-buttons" description="Tabel med mange kolonner og funktionsknapper" %}
+{% include test/preview-test.html filename="test-table-pagination" description="Valgbare rækker med paginering" %}
+{% include test/preview-test.html filename="test-table-pagination-with-buttons" description="Valgbare rækker med paginering og funktionsknapper" %}
+{% include test/preview-test.html filename="test-table-with-components" description="Tabel med komponenter" %}
 {% include test/preview-test.html filename="test-tables-1" description="Tabeller 1" %}
 {% include test/preview-test.html filename="test-tables-2" description="Tabeller 2" %}
 {% include test/preview-test.html filename="test-tables-3" description="Tabeller 3" %}

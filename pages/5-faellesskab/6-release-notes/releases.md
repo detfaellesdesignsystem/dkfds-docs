@@ -110,6 +110,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-01-2025</span></div>
 
 - Fjernet kravværktøjet fra dokumentationssiden og tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
+- Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke mobilmenuen.
 
 
 

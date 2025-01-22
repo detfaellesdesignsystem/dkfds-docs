@@ -146,6 +146,7 @@ var testfiles = [
     "test-table-many-columns-with-buttons",
     "test-table-pagination",
     "test-table-pagination-with-buttons",
+    "test-table-with-components",
     "test-tables-1",
     "test-tables-2",
     "test-tables-3",
