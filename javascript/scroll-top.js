@@ -42,8 +42,11 @@ $(document).on('click', "a[href='#top']", function (event) {
             var link    = $(event.target);
             var section = $('#' + hashLocation);
 
+            /* Add tabindex to make the top-id-element programmatically focusable. This moves the focus
+               to the correct place on the page, if the user tabs after clicking an anchorlink. */
             section.attr('tabindex', '-1');
             section.focus();
+            section.removeAttr('tabindex');
 
             if (link.data('keypress') === true) {
                 link.removeData('keypress');
