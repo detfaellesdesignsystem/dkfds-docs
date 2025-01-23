@@ -1,6 +1,7 @@
 ---
 permalink: "/faellesskab/"
 redirect_from:
+- "/faellesskab/roadmap/"
 layout: styleguide
 category: Faellesskab_category
 title: Fællesskab
@@ -24,10 +25,6 @@ tags:
 <h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Kontakt og support" %}</h2>
 
 <p class="mt-0">Kom i kontakt med teamet bag Det Fælles Designsystem.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Roadmap" %}</h2>
-
-<p class="mt-0">Se hvilke komponenter, mønstre og opdateringer, der aktuelt findes i teamets backlog.</p>
 
 <h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Release notes" %}</h2>
 

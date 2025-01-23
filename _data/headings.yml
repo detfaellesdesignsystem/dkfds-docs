@@ -644,12 +644,6 @@ Kontakt_og_support:
 - h2: GitHub
 - h2: E-mail
 
-Roadmap:
-- h2: Nye komponenter
-- h2: Eksempelløsninger
-- h2: Patterns
-- h2: Andet
-
 Releases:
 - h2: Versionering og release-proces
 - h2: Version 10.2.1

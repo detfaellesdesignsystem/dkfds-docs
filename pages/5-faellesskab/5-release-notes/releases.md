@@ -12,6 +12,7 @@ tags:
 - udgivelse
 - version
 - versioner
+- roadmap
 - 2.1.2
 - 3
 - 3.0.0
@@ -121,7 +122,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
 </div>
-- Fjernet kravværktøjet fra dokumentationssiden og tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
+- Fjernet kravværktøjet og i stedet tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
+- Fjernet roadmap. Anvend i stedet {% include links/external-link.html linktext="GitHub Discussions" %} for information om, hvilke opgaver FDS-teamet arbejder på til kommende releases.
 
 
 
