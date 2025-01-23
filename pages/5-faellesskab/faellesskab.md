@@ -4,7 +4,7 @@ redirect_from:
 layout: styleguide
 category: Faellesskab_category
 title: Fællesskab
-lead: Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
+lead: Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde om kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
 description: Designsystemet er open source og baseret på en filosofi om samarbejde. Læs her om, hvordan designsystemet udvikles.
 tags:
 ---

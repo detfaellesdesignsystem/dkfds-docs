@@ -109,10 +109,19 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">xx-01-2025</span></div>
 
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Fejlrettelser</h3>
+</div>
+- Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke {% include links/component-code-link.html linktext="mobilmenuen" %}.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="headernavigationen" %} ikke altid blev opdateret efter `DKFDS.Navigation().init()` (fejlrettelse accepteret fra pull request på GitHub).
+{% include links/github-link.html number="260" afternumber=" på GitHub" %}
+- Rettet fejl, hvor styling og JavaScript for tjekbokse i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} også påvirkede tjekbokse og radioknapper i andre kolonner. Bemærk dog, at det anbefales ikke at placere interaktive komponenter i tabeller, hvis det kan undgås.
+{% include links/github-link.html number="266" afternumber=" på GitHub" %}
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
+</div>
 - Fjernet kravværktøjet fra dokumentationssiden og tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
-- Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke mobilmenuen.
-- Godkendt pull request, så `DKFDS.Navigation().init()` også opdaterer headernavigationen efter `load event`.
-{% include links/github-link.html number="260" afternumber=" på GitHub" %} 
 
 
 

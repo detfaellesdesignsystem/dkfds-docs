@@ -83,6 +83,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "headermenuen" -%}
         <a href="/komponenter/header/#kode">{{ include.linktext }}</a>
 
+    {%- when "mobilmenuen" -%}
+        <a href="/komponenter/header/#overlay-og-mobilmenu">{{ include.linktext }}</a>
+
     {%- when "eksemplet med den overordnede struktur i headeren" -%}
         <a href="/komponenter/header/#html-struktur-kode">{{ include.linktext }}</a>
 

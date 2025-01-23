@@ -67,7 +67,7 @@ Navigation (topnavigation) i løsningen og søgefelt.
 
 {% include code/preview-image.html component="header-simple" %}
 
-### Header med navigation og søgefelt
+### Header med navigation og søgefelt {#{% include create-id.html heading="Header med navigation og søgefelt" %}}
 
 {% include code/preview-image.html component="header-with-navigation" %}
 
@@ -104,7 +104,7 @@ Nedenstående eksempel viser den overordnede struktur i `<header>`-elementet. De
 
 Placer `<header>`-elementet i din HTML-sides `<body>`-element.
 
-#### Overlay og mobilmenu
+#### Overlay og mobilmenu {#{% include create-id.html heading="Overlay og mobilmenu" %}}
 
 Som standard ændres headeren til udelukkende at vise løsningstitel, evt. søgefelt og en menuknap, når skærmen er mindre end 992px bred. Headeren skal derfor altid indeholde nedenstående kode, som bruges på mindre skærme, for eksempel mobiltelefoner. Når menuen er åben, vises et mørkt overlay oven på det øvrige sideindhold.
 

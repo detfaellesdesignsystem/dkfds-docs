@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let table = document.querySelector('.table');
                 let pagination = document.querySelector('.table-pagination-options');
                 let actions = document.querySelector('.table-actions');
-                let radios = document.querySelectorAll('input[type="radio"]');
+                let radios = document.querySelectorAll('fieldset[aria-labelledby="radio-line-height-legend"] input[type="radio"]');
 
                 borderless_toggle.addEventListener("click", function () {
                     if (this.getAttribute("aria-checked") === "true") {

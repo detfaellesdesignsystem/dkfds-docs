@@ -35,7 +35,7 @@ Alle er dog velkomne til at bruge designsystemet til at udvikle andre løsninger
 
 ## Fordele ved Det Fælles Designsystem
 
-Det Fælles Designsystem understøtter udviklingen af løsninger, der er simple, brugervenlige og tilgængelige. Ved at anvende designsystemet følger du internationalt anerkendte bedste praksisser, får en genvej til tilgængelige løsninger, og sparer tid og ressourcer.
+Det Fælles Designsystem understøtter udviklingen af løsninger, der er simple, brugervenlige og tilgængelige. Ved at anvende designsystemet følger du internationalt anerkendte bedste praksisser, får en genvej til tilgængelige løsninger og sparer tid og ressourcer.
 
 Designsystemet 
 - indeholder design, komponenter og retningslinger klar til brug,
