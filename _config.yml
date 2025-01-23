@@ -17,11 +17,6 @@ collections:
 defaults:
   - 
     scope:
-      path: "pages/kravvaerktoej/*.md"
-    values:
-      layout: "requirements-tool"
-  - 
-    scope:
       path: "_components/*.md"
     values:
       layout: "styleguide"

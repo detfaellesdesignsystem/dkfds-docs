@@ -326,6 +326,14 @@
 
         
         <li>
+            <a href="/kom-i-gang/om-designsystemet/" class="nav-link"><span>Om Det Fælles Designsystem</span></a>
+        </li>
+        
+
+ 
+
+        
+        <li>
             <div class="submenu">
                 <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
                     <span>Implementering og kode</span>
@@ -421,7 +429,7 @@
 
         
         <li>
-            <a href="/kom-i-gang/krav/" class="nav-link"><span>Krav</span></a>
+            <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
         </li>
         
 
@@ -429,7 +437,7 @@
 
         
         <li>
-            <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
+            <a href="/kom-i-gang/brugerinddragelse/" class="nav-link"><span>Brugerinddragelse</span></a>
         </li>
         
 
@@ -1122,14 +1130,6 @@
  
 
         
-        <li>
-            <a href="/faellesskab/roadmap/" class="nav-link"><span>Roadmap</span></a>
-        </li>
-        
-
- 
-
-        
         <li class="active current">
             <a href="/faellesskab/releases/" class="nav-link" aria-current="page"><span>Release notes</span></a>
         </li>
@@ -1206,18 +1206,6 @@
 
 
 
-<li>
-
-  <a href="/faellesskab/roadmap/" class="nav-link">
-    <span>Roadmap</span>
-  </a>
-
-</li>
-
-
-
-
-
 <li class="active current">
 
   <a href="/faellesskab/releases/" class="nav-link" aria-current="page">
@@ -1256,6 +1244,7 @@
     <ul class="anchorlist">
         <li><a href="#versionering-og-release-proces">Versionering og release-proces</a></li>
         <li><a href="#version-11-0-0">Version 11.0.0</a></li>
+        <li><a href="#version-10-to-1">Version 10.2.1</a></li>
         <li><a href="#version-10-to-0">Version 10.2.0</a></li>
         <li><a href="#version-10-1-0">Version 10.1.0</a></li>
         <li><a href="#version-10-0-to">Version 10.0.2</a></li>
@@ -1358,6 +1347,29 @@
   <li>Tilføjet ekstra padding til <a href="/komponenter/tags/">tags</a>.</li>
   <li>Ny pil anvendt i detaljekomponenten.</li>
   <li>Rettet fejl, hvor ikon og tekst i <a href="/komponenter/beskeder/">beskeder</a> kunne overlappe ved tekstforstørrelse.</li>
+</ul>
+
+<h2 id="version-10-to-1" class="mb-0">Version 10.2.1</h2>
+
+<div><span class="small-text mt-0 d-block">xx-01-2025</span></div>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Fejlrettelser</h3>
+</div>
+<ul>
+  <li>Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke <a href="/komponenter/header/#overlay-og-mobilmenu">mobilmenuen</a>.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/header/#header-med-navigation-og-soegefelt">headernavigationen</a> ikke altid blev opdateret efter <code>DKFDS.Navigation().init()</code> (fejlrettelse accepteret fra pull request på GitHub).
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/260" class="icon-link" target="_blank">issue #260 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet fejl, hvor styling og JavaScript for tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a> også påvirkede tjekbokse og radioknapper i andre kolonner. Bemærk dog, at det anbefales ikke at placere interaktive komponenter i tabeller, hvis det kan undgås.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/266" class="icon-link" target="_blank">issue #266 på GitHub<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use href="#open-in-new"></use></svg></a>.</span></li>
+</ul>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
+</div>
+<ul>
+  <li>Fjernet kravværktøjet og i stedet tilføjet siderne <a href="/kom-i-gang/om-designsystemet/">Om Det Fælles Designsystem</a> og <a href="/kom-i-gang/brugerinddragelse/">Brugerinddragelse</a>.</li>
+  <li>Fjernet roadmap. Anvend i stedet <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions" class="icon-link" target="_blank">GitHub Discussions<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a> for information om, hvilke opgaver FDS-teamet arbejder på til kommende releases.</li>
 </ul>
 
 <h2 id="version-10-to-0" class="mb-0">Version 10.2.0</h2>

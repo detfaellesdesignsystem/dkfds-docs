@@ -1,34 +1,31 @@
 ---
 permalink: "/faellesskab/"
 redirect_from:
-- "/omdesignsystemet/"
-- "/omdesignsystemet/gennemgang/"
+- "/faellesskab/roadmap/"
 layout: styleguide
 category: Faellesskab_category
 title: Fællesskab
-lead: Det Fælles Designsystem er udviklet for at sikre en ensartet funktionalitet
-  og design i selvbetjeningsløsninger på tværs af myndigheder. Det skaber genkendelse
-  for brugerne af løsningerne og gør det nemmere for dem at foretage selvbetjening.
-description: Det Fælles Designsystem er inspireret af og bygger på et fundament af
-  international best practices.
+lead: Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde om kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
+description: Designsystemet er open source og baseret på en filosofi om samarbejde. Læs her om, hvordan designsystemet udvikles.
 tags:
 ---
 
-Det Fælles Designsystem understøtter udvikling af selvbetjeningsløsninger, der er simple, brugervenlige og tilgængelige.
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Samarbejdsforum" %}</h2>
 
-Fordele ved at anvende designsystemet:
+<p class="mt-0">Til samarbejdsforum sparrer teamet og myndigheder om designsystemet.</p>
 
-* Du følger internationalt anerkendte bedste praksisser.
-* Du sparer tid og ressourcer, og leveringstiden for løsningen bliver hurtigere.
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Governance" %}</h2>
 
-<div class="mt-5 mb-5">
-    {% include links/external-link.html linktext='Se videoen "Introduktion til Det Fælles Designsystem" på YouTube' %}
-</div>
+<p class="mt-0">Læs om styringen af samarbejdet og arbejdsgangene omkring designsystemet.</p>
 
-Designsystemet er open source og baseret på en filosofi om samarbejde. Både i forhold til samarbejde omkring kode og kodekvalitet, deling af brugerindsigter, samt direkte indflydelse på indholdet via Samarbejdsforum.
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Nyhedsbrev" %}</h2>
 
-## Designsystemet er til selvbetjeningsløsninger {#{% include create-id.html heading="Designsystemet er til selvbetjeningsløsninger" %}}
+<p class="mt-0">Få nyhedsbreve fra Det Fælles Designsystem.</p>
 
-Du skal anvende Det Fælles Designsystem til at udvikle selvbetjeningsløsninger, hvis det er et lovkrav, at løsningen skal være obligatorisk digital eller den er rettet mod virksomheder.
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Kontakt og support" %}</h2>
 
-Læs om {% include links/internal-link.html linktext="kravene" %} og se om du skal anvende designsystemet.
+<p class="mt-0">Kom i kontakt med teamet bag Det Fælles Designsystem.</p>
+
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Release notes" %}</h2>
+
+<p class="mt-0">Opsummering af bug fixes, nye features og andre opdateringer ved de enkelte releases af designsystemet.</p>

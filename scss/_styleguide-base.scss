@@ -956,23 +956,6 @@ div.component-preview {
   }
 }
 
-
-body.layout-requirements-tool{
-  .header {
-    .portal-info{
-      background-color: transparent;
-    }
-  }
-  #resultat {
-    max-width: 100% !important;
-  }
-}
-
-#start-reqtool .icon-svg {
-  height: units(405);
-  width: units(405);
-}
-
 //----- grid example
 body[class*="page-grid"][class*="-html"]
 , body.layout-example-contained[class*="page-grid"]

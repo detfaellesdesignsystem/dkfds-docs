@@ -23,7 +23,6 @@ module.exports = function (outputPath, prod) {
             test_borger: ["./scss/test-borger.scss"],
             test_virk: ["./scss/test-virk.scss"],
             test_normalization: ["./scss/test-normalization.scss"],
-            "requirements-tool": ["./javascript/requirements-tool.js"],
             "search": ["./javascript/search.js"],
             "spinner": ["./javascript/components/spinner.js"],
             "table": ["./javascript/components/table.js"],

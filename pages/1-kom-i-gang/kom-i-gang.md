@@ -11,6 +11,13 @@ tags:
 <ul class="card-row">
     <li>
         {% include navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/om-designsystemet/"
+        heading="Om Det Fælles Designsystem" 
+        content="Læs om Det Fælles Designsystem og hvornår du skal bruge det." 
+        %}
+    </li>
+    <li>
+        {% include navcard-long.html headingLevel="h2"
         href="/kom-i-gang/implementering-kode/"
         heading="Implementering og kode" 
         content="Det grundlæggende, du skal vide, for at anvende designsystemets kode samt information om plugins og teknisk opsætning af sider til print." 
@@ -32,16 +39,16 @@ tags:
     </li>
     <li>
         {% include navcard-long.html headingLevel="h2"
-        href="/kom-i-gang/krav/"
-        heading="Krav" 
-        content="Krav og lovgivning for selvbetjeningsløsninger på borger.dk og Virk." 
+        href="/kom-i-gang/tilgaengelighed/"
+        heading="Tilgængelighed" 
+        content="Det grundlæggende, du skal gøre, for at lave en tilgængelig selvbetjeningsløsning." 
         %}
     </li>
     <li>
         {% include navcard-long.html headingLevel="h2"
-        href="/kom-i-gang/tilgaengelighed/"
-        heading="Tilgængelighed" 
-        content="Det grundlæggende, de skal gøre, for at lave en tilgængelig selvbetjeningsløsning." 
+        href="/kom-i-gang/brugerinddragelse/"
+        heading="Brugerinddragelse" 
+        content="Få viden om og værktøjer til at inddrage dine brugere i udviklingen." 
         %}
     </li>
     <li>

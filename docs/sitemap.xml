@@ -87,11 +87,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://designsystem.dk/kom-i-gang/krav/</loc>
-  <lastmod>2025-01-13T20:07:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://designsystem.dk/kom-i-gang/tilgaengelighed/</loc>
   <lastmod>2025-01-13T20:07:17+00:00</lastmod>
   <priority>0.80</priority>
@@ -433,11 +428,6 @@
 </url>
 <url>
   <loc>https://designsystem.dk/faellesskab/kontakt-support/</loc>
-  <lastmod>2025-01-13T20:07:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://designsystem.dk/faellesskab/roadmap/</loc>
   <lastmod>2025-01-13T20:07:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>

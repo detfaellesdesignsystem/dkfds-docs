@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
             case 'Tabel med mange kolonner og funktionsknapper':
             case 'Valgbare rækker med paginering':
             case 'Valgbare rækker med paginering og funktionsknapper':
+            case 'Tabel med komponenter':
 
                 DKFDS.init();
                 let borderless_toggle = document.querySelectorAll('.toggle-switch')[0];
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let table = document.querySelector('.table');
                 let pagination = document.querySelector('.table-pagination-options');
                 let actions = document.querySelector('.table-actions');
-                let radios = document.querySelectorAll('input[type="radio"]');
+                let radios = document.querySelectorAll('fieldset[aria-labelledby="radio-line-height-legend"] input[type="radio"]');
 
                 borderless_toggle.addEventListener("click", function () {
                     if (this.getAttribute("aria-checked") === "true") {
@@ -302,6 +303,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 for(let c = 0; c < jsSelectorDropdown.length; c++){
                     new DKFDS.Dropdown(jsSelectorDropdown[c]).init();
                 }
+                break;
+
+            case 'Initialiseres ved klik':
+                new DKFDS.Modal(document.getElementById('test-warning')).init();
+                let initButton = document.getElementById('run-init');
+                initButton.addEventListener('click', () => {
+                    new DKFDS.Navigation().init();
+                    initButton.setAttribute('disabled', '');
+                });
                 break;
             
             default:

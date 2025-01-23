@@ -40,10 +40,6 @@ Design_og_ressourcer:
 - h2: Dit ansvar som designer
 - h2: Designressourcer
 
-Krav:
-- h2: Kravet om anvendelse af Det Fælles Designsystem
-- h2: Fælles krav til gode brugeroplevelser
-
 Tilgaengelighed:
 - h2: Webtilgængelighedsloven
 - h2: Hvorfor tilgængelighed?
@@ -652,15 +648,10 @@ Kontakt_og_support:
 - h2: GitHub
 - h2: E-mail
 
-Roadmap:
-- h2: Nye komponenter
-- h2: Eksempelløsninger
-- h2: Patterns
-- h2: Andet
-
 Releases:
 - h2: Versionering og release-proces
 - h2: Version 11.0.0
+- h2: Version 10.2.1
 - h2: Version 10.2.0
 - h2: Version 10.1.0
 - h2: Version 10.0.2

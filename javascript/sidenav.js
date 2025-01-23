@@ -46,9 +46,11 @@ $('.anchorbox').on('click', 'a', function (e) {
             var link    = $(e.target);
             var section = $('#' + hashLocation);
 
+            /* Add tabindex to make the heading programmatically focusable. This moves the focus
+               to the correct place on the page, if the user tabs after clicking an anchorlink. */
             section.attr('tabindex', '-1');
             section.focus();
-
+            section.removeAttr('tabindex');
 
             if (link.data('keypress') === true) {
                 link.removeData('keypress');

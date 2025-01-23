@@ -6,6 +6,7 @@ var screenshotsDir = 'screenshots/';
 var pdfUrls = [
     '',
     'kom-i-gang/',
+    'kom-i-gang/om-designsystemet/',
     'kom-i-gang/implementering-kode/',
     'kom-i-gang/implementering-kode/hent-kodepakken/',
     'kom-i-gang/implementering-kode/justering/',
@@ -16,8 +17,8 @@ var pdfUrls = [
     'kom-i-gang/implementering-kode/frameworks/',
     'kom-i-gang/designressourcer/',
     'kom-i-gang/tjekliste/',
-    'kom-i-gang/krav/',
     'kom-i-gang/tilgaengelighed/',
+    'kom-i-gang/brugerinddragelse/',
     'kom-i-gang/faq/',
     'styleguide/',
     'styleguide/farver/',
@@ -131,14 +132,12 @@ var pdfUrls = [
     'eksempler/patterns/hentet-data/',
     'eksempler/patterns/session-udloeber/',
     'eksempler/templates/',
-    'krav-vaerktoej/anvendes-af-virksomheder/',
     'faellesskab/',
     'faellesskab/samarbejdsforum/',
     'faellesskab/governance/',
     'faellesskab/nyhedsmail/',
     'faellesskab/nyhedsmail/afmeld/',
     'faellesskab/kontakt-support/',
-    'faellesskab/roadmap/',
     'faellesskab/releases/',
     'privatlivspolitik-cookies/'
 ];

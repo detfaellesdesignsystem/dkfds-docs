@@ -12,6 +12,7 @@ tags:
 - udgivelse
 - version
 - versioner
+- roadmap
 - 2.1.2
 - 3
 - 3.0.0
@@ -77,6 +78,7 @@ tags:
 - 10.0.2
 - 10.1.0
 - 10.2.0
+- 10.2.1
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -165,6 +167,27 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Ny pil anvendt i detaljekomponenten.
 - Rettet fejl, hvor ikon og tekst i {% include links/component-guideline-link.html linktext="beskeder" %} kunne overlappe ved tekstforstørrelse.
 
+
+
+## Version 10.2.1 {#{% include create-id.html heading="Version 10.2.1" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">xx-01-2025</span></div>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Fejlrettelser</h3>
+</div>
+- Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke {% include links/component-code-link.html linktext="mobilmenuen" %}.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="headernavigationen" %} ikke altid blev opdateret efter `DKFDS.Navigation().init()` (fejlrettelse accepteret fra pull request på GitHub).
+{% include links/github-link.html number="260" afternumber=" på GitHub" %}
+- Rettet fejl, hvor styling og JavaScript for tjekbokse i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} også påvirkede tjekbokse og radioknapper i andre kolonner. Bemærk dog, at det anbefales ikke at placere interaktive komponenter i tabeller, hvis det kan undgås.
+{% include links/github-link.html number="266" afternumber=" på GitHub" %}
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
+</div>
+- Fjernet kravværktøjet og i stedet tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
+- Fjernet roadmap. Anvend i stedet {% include links/external-link.html linktext="GitHub Discussions" %} for information om, hvilke opgaver FDS-teamet arbejder på til kommende releases.
 
 
 

@@ -63,7 +63,7 @@ lead: Nogle gange er der spørgsmål til FDS-teamet, der går igen. Før du tage
             </button>
         </h2>
         <div id="a5" aria-hidden="true" class="accordion-content">
-            <p>Det Fælles Designsystem skal anvendes til obligatorisk digitale selvbetjeningsløsninger, der tilgås via borger.dk eller Virk. Læs mere på siden {% include links/internal-link.html linktext="Krav" %}.</p>
+            <p>Det Fælles Designsystem skal anvendes til selvbetjeningsløsninger, der tilgås via borger.dk eller Virk. Læs mere om {% include links/external-link.html linktext="krav til løsninger på Virk" %} eller {% include links/external-link.html linktext="tilslutning af selvbetjening til borger.dk" %}.</p>
         </div>
     </li>
 </ul>

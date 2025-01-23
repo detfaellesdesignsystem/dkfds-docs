@@ -76,7 +76,8 @@ layout: default
                     page.permalink != "/styleguide/" and
                     page.permalink != "/komponenter/" and
                     page.permalink != "/eksempler/" and 
-                    page.permalink != "/eksempler/patterns/" %}
+                    page.permalink != "/eksempler/patterns/" and
+                    page.permalink != "/faellesskab/" %}
                     {%- assign _links = site.data.nav[page.category] -%}
                     {%- assign subLinksFound = false -%}
                     {%- assign isTopLevel = true -%}

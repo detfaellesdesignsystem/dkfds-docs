@@ -1,0 +1,236 @@
+<main class="container page-container" id="main-content">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Tabel med komponenter</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-6">
+            <div role="group" aria-labelledby="toggle-switch-heading"
+                class="w-percent-100 w-percent-sm-80 w-percent-lg-50 pr-sm-905">
+                <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Tabeludseende</h2>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>Borderless</span></button>
+
+                <button class="toggle-switch w-percent-100" type="button" role="switch"
+                    aria-checked="false"><span>Zebra</span></button>
+
+            </div>
+        </div>
+        <div class="col-6">
+
+            <div class="form-group">
+                <fieldset aria-labelledby="radio-line-height-legend">
+
+                    <legend class="form-label" id="radio-line-height-legend">Linjehøjde
+                    </legend>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-option1" name="radio-line-height"
+                            class="form-radio" value="v1" checked>
+                        <label class="form-label" for="radiogroup-option1">Normal</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-option2" name="radio-line-height"
+                            class="form-radio" value="v2">
+                        <label class="form-label" for="radiogroup-option2">Kompakt</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup-option3" name="radio-line-height"
+                            class="form-radio" value="v3">
+                        <label class="form-label" for="radiogroup-option3">Ekstra
+                            kompakt</label>
+
+                    </div>
+
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="table--responsive-scroll" tabindex="0">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">First column</th>
+                            <th scope="col">Second column</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class='form-group'>
+                                    <fieldset>
+                                        <legend class='form-label'>Tjekbokse</legend>
+                                        <div class='form-group-checkbox'><input
+                                                type='checkbox' id='large-option1'
+                                                name='checkbox-large[]' class='form-checkbox'
+                                                value='1'><label class='form-label'
+                                                for='large-option1'>Tjekboks 1</label></div>
+                                        <div class='form-group-checkbox'><input
+                                                type='checkbox' id='large-option2'
+                                                name='checkbox-large[]' class='form-checkbox'
+                                                value='2'><label class='form-label'
+                                                for='large-option2'>Tjekboks 2</label></div>
+                                        <div class='form-group-checkbox'><input
+                                                type='checkbox' id='large-option3'
+                                                name='checkbox-large[]' class='form-checkbox'
+                                                value='3'><label class='form-label'
+                                                for='large-option3'>Tjekboks 3</label></div>
+                                    </fieldset>
+                                </div>
+                            </td>
+                            <td>Tjekbokse</td>
+                        </tr>
+                        <tr>
+                            <td>Radioknapper</td>
+                            <td>
+                                <div class='form-group'>
+                                    <fieldset aria-labelledby='radio-example-legend'>
+                                        <legend class='form-label' id='radio-example-legend'>
+                                            Radioknapper</legend>
+                                        <div class='form-group-radio'><input type='radio'
+                                                id='radiogroup-in-table-option1'
+                                                name='radio-table-example' class='form-radio'
+                                                value='v1'><label class='form-label'
+                                                for='radiogroup-in-table-option1'>Valg
+                                                1</label></div>
+                                        <div class='form-group-radio'><input type='radio'
+                                                id='radiogroup-in-table-option2'
+                                                name='radio-table-example' class='form-radio'
+                                                value='v2'><label class='form-label'
+                                                for='radiogroup-in-table-option2'>Valg
+                                                2</label></div>
+                                        <div class='form-group-radio'><input type='radio'
+                                                id='radiogroup-in-table-option3'
+                                                name='radio-table-example' class='form-radio'
+                                                value='v3'><label class='form-label'
+                                                for='radiogroup-in-table-option3'>Valg
+                                                3</label></div>
+                                    </fieldset>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="table--responsive-scroll" tabindex="0">
+                <table class="table table--selectable">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-group-checkbox">
+                                    <input id="-check-all" type="checkbox"
+                                        class="form-checkbox"
+                                        aria-controls=" undefined-check-1 undefined-check-2">
+                                    <label for="-check-all"><span class="sr-only">Vælg alle
+                                            rækker</span></label>
+                                </div>
+                            </th>
+                            <th scope="col">First column</th>
+                            <th scope="col">Second column</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group-checkbox">
+                                    <input id="-check-1" type="checkbox" name="-check[]"
+                                        class="form-checkbox" value="Tjekbokse">
+                                    <label for="-check-1"><span class="sr-only">Vælg
+                                            række</span></label>
+                                </div>
+                            </td>
+                            <td>Tjekbokse</td>
+                            <td>
+                                <div class='form-group'>
+                                    <fieldset>
+                                        <legend class='form-label'>Tjekbokse</legend>
+                                        <div class='form-group-checkbox'><input
+                                                type='checkbox' id='selectable-option1'
+                                                name='checkbox-large[]' class='form-checkbox'
+                                                value='1'><label class='form-label'
+                                                for='selectable-option1'>Tjekboks 1</label>
+                                        </div>
+                                        <div class='form-group-checkbox'><input
+                                                type='checkbox' id='selectable-option2'
+                                                name='checkbox-large[]' class='form-checkbox'
+                                                value='2'><label class='form-label'
+                                                for='selectable-option2'>Tjekboks 2</label>
+                                        </div>
+                                        <div class='form-group-checkbox'><input
+                                                type='checkbox' id='selectable-option3'
+                                                name='checkbox-large[]' class='form-checkbox'
+                                                value='3'><label class='form-label'
+                                                for='selectable-option3'>Tjekboks 3</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group-checkbox">
+                                    <input id="-check-2" type="checkbox" name="-check[]"
+                                        class="form-checkbox" value="Radioknapper">
+                                    <label for="-check-2"><span class="sr-only">Vælg
+                                            række</span></label>
+                                </div>
+                            </td>
+                            <td>Radioknapper</td>
+                            <td>
+                                <div class='form-group'>
+                                    <fieldset
+                                        aria-labelledby='radio-example-legend-selectable'>
+                                        <legend class='form-label'
+                                            id='radio-example-legend-selectable'>Radioknapper
+                                        </legend>
+                                        <div class='form-group-radio'><input type='radio'
+                                                id='radiogroup-in-selectable-table-option1'
+                                                name='radio-selectable-example'
+                                                class='form-radio' value='v1'><label
+                                                class='form-label'
+                                                for='radiogroup-in-selectable-table-option1'>Valg
+                                                1</label></div>
+                                        <div class='form-group-radio'><input type='radio'
+                                                id='radiogroup-in-selectable-table-option2'
+                                                name='radio-selectable-example'
+                                                class='form-radio' value='v2'><label
+                                                class='form-label'
+                                                for='radiogroup-in-selectable-table-option2'>Valg
+                                                2</label></div>
+                                        <div class='form-group-radio'><input type='radio'
+                                                id='radiogroup-in-selectable-table-option3'
+                                                name='radio-selectable-example'
+                                                class='form-radio' value='v3'><label
+                                                class='form-label'
+                                                for='radiogroup-in-selectable-table-option3'>Valg
+                                                3</label></div>
+                                    </fieldset>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-actions">
+                <p class="table-selected-number no-selected mb-0">Ingen rækker valgt</p>
+            </div>
+        </div>
+    </div>
+</main>
