@@ -22,15 +22,24 @@ document.addEventListener("DOMContentLoaded", function() {
                         let parsedXML = new DOMParser().parseFromString(str, 'text/xml');
                         let symbols = parsedXML.querySelectorAll('symbol');
                         for (let i = 0; i < symbols.length; i++) {
+                            let viewBox = symbols[i].getAttribute('viewBox');
+                            let innerHTML = parsedXML.getElementById(symbols[i].id).innerHTML;
+                            let color = viewBox === '0 -960 960 960' ? "0000FF" : "FF00FF";
+
                             document.getElementById('xml-icon-' + symbols[i].id).innerHTML = 
-                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon-svg" focusable="false" aria-hidden="true" style="fill:#0000FF;">' + 
-                            parsedXML.getElementById(symbols[i].id).innerHTML + 
-                            '</svg>';
+                            `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" class="icon-svg" focusable="false" aria-hidden="true" style="fill:#${color};">${innerHTML}</svg>`;
                         }
                     })
                     .catch(error => {
                         console.error('Failed to fetch file:', error);
-                    });               
+                    });
+                    
+                let dataIcons = document.querySelectorAll('div[data-icon]');
+                for (let i = 0; i < dataIcons.length; i++) {
+                    dataIcons[i].style.setProperty('background-image', `url(/assets/svg/${dataIcons[i].dataset.icon}.svg)`);
+                    dataIcons[i].style.setProperty('background-repeat', 'no-repeat');
+                    dataIcons[i].style.setProperty('max-height', '2.4rem');
+                }
 
                 break;
 
