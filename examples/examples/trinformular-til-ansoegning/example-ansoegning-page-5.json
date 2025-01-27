@@ -113,22 +113,22 @@
             {
                 "text": "Oplysninger om afsender",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Kontaktoplysninger",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Ansøgningens type",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Tilføj dokumentation",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Opsummering",

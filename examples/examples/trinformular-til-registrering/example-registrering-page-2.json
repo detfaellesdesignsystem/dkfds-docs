@@ -50,7 +50,7 @@
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }

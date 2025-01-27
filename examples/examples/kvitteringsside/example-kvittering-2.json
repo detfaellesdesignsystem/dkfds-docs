@@ -47,7 +47,7 @@
         "text": "Download kvittering som pdf",
         "variant": "secondary",
         "classes": { "button": "d-print-none" },
-        "icon": "file-download"
+        "icon": "download"
     },
     "list_betaling": {
         "classes": {

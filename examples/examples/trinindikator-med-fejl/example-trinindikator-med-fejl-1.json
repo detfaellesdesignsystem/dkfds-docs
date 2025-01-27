@@ -36,11 +36,11 @@
         "steps": [
             {
                 "text": "Vælg personer",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Vælg noget mere",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Vedhæft dokumenter",
@@ -49,11 +49,11 @@
             },
             {
                 "text": "Tidligere registrering",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Kontaktoplysninger",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Opsummering",
