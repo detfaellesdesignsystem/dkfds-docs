@@ -172,7 +172,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 ## Version 10.2.1 {#{% include create-id.html heading="Version 10.2.1" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-01-2025</span></div>
+<div><span class="small-text mt-0 d-block">xx-02-2025</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Fejlrettelser</h3>
