@@ -24,7 +24,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/components/icons/*.njk'];
+var buildFile = ['examples/testfiles/step-guide/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -191,6 +191,7 @@ var testfiles = [
     "test-step-guide-5",
     "test-step-guide-6",
     "test-step-guide-7",
+    "test-step-indicator-states",
     "test-venstremenu"
 ];
 

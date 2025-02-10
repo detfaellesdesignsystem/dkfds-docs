@@ -67,7 +67,7 @@
             {
                 "text": "Vedhæft dokumenter",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Tidligere registrering",

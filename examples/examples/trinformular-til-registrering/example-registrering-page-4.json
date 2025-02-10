@@ -76,7 +76,7 @@
             {
                 "text": "Tidligere registrering",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Kontaktoplysninger",

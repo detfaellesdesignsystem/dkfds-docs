@@ -13,6 +13,8 @@
 {% from "components/footers/footer.njk" import footer as footer %}
 
 {% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
@@ -47,6 +49,8 @@
     <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
     <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
 %}
+
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + stepIndicator(trinindikator_data) + "</nav>" %}
 
 {% set modal_actions = 
     button({
@@ -95,26 +99,34 @@
 {% block body %}
 <div class="container page-container pt-0">
     <div class="row">
-        <div class="col-12">
-            <div role="region" aria-label="Sidefunktioner">
-                <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-2">
+        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
+            {{
+                stepIndicatorButton({
+                    "breakpoint": "lg",
+                    "modal": "modal-step-indicator",
+                    "currentStep": "4",
+                    "totalSteps": "6"
+                })
+            }}
+            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+                {{ stepIndicator(trinindikator_data) }}
+            </nav>
+        </aside>
+        <div class="col-12 col-lg-9">
+            <aside class="w-percent-100" aria-label="Sidehandlinger">
+                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
                     <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
                 </ul>
-            </div>
+            </aside>
+            <main class="w-percent-100" id="main-content">
+                {{ back_link({ "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/" }) }}
+                <h1 class="mb-6">Tidligere registrering</h1>
+                <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
+                    {{ radiobuttons(radiobuttons_data) }}
+                    {{ button(button_next) }}
+                </form>
+            </main>
         </div>
-    </div>
-    <div class="row">
-        <aside class="col-12 col-lg-3 mt-2">
-            {{ overflow_stepguide(trinindikator_data) }}
-        </aside>
-        <main class="col-12 col-lg-9" id="main-content">
-            {{ back_link({ "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/" }) }}
-            <h1 class="mb-6">Tidligere registrering</h1>
-            <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                {{ radiobuttons(radiobuttons_data) }}
-                {{ button(button_next) }}
-            </form>
-        </main>
     </div>
 </div>
 {% endblock %}
@@ -131,6 +143,15 @@
             "content": modal_content,
             "forcedAction": false,
             "actions": modal_actions
+        })
+    }}
+    {{
+        modal({
+            "id": "modal-step-indicator",
+            "heading": "Trin 4 af 6",
+            "content": modal_content_step,
+            "forcedAction": false,
+            "stepIndicator": true
         })
     }}
 </div>

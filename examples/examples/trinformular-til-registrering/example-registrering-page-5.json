@@ -85,7 +85,7 @@
             {
                 "text": "Kontaktoplysninger",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Opsummering",

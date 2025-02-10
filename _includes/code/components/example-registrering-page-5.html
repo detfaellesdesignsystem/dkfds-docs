@@ -89,156 +89,125 @@
 
 <div class="container page-container pt-0">
     <div class="row">
-        <div class="col-12">
-            <div role="region" aria-label="Sidefunktioner">
-                <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-2">
+        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
+
+            <button class="step-indicator-button d-lg-none" aria-haspopup="dialog"
+                type="button" data-module="modal"
+                data-target="modal-step-indicator">Trin<strong> 5 </strong>af 6</button>
+
+            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step"
+                            href="/pages/eksempler/trinformular-til-registrering/registrering-1/">
+                            <span class="step-number">1</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Vælg
+                                        personer</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step"
+                            href="/pages/eksempler/trinformular-til-registrering/registrering-2/">
+                            <span class="step-number">2</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Vælg noget
+                                        mere</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step"
+                            href="/pages/eksempler/trinformular-til-registrering/registrering-3/">
+                            <span class="step-number">3</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Vedhæft
+                                        dokumenter</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step"
+                            href="/pages/eksempler/trinformular-til-registrering/registrering-4/">
+                            <span class="step-number">4</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Tidligere
+                                        registrering</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step"
+                            href="/pages/eksempler/trinformular-til-registrering/registrering-5/">
+                            <span class="step-number">5</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Kontaktoplysninger</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step"
+                            href="/pages/eksempler/trinformular-til-registrering/registrering-6/">
+                            <span class="step-number">6</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Opsummering</span></span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </aside>
+        <div class="col-12 col-lg-9">
+            <aside class="w-percent-100" aria-label="Sidehandlinger">
+                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
                     <li><button
                             class="function-link link-right"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#save"></use></svg>Gem
                             kladde</button></li>
                 </ul>
-            </div>
+            </aside>
+            <main class="w-percent-100" id="main-content">
+                <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/"
+                        class="back-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#chevron-left"></use></svg>Tilbage</a>
+                </div>
+                <h1 class="mb-6">Kontaktoplysninger</h1>
+                <form novalidate method="post"
+                    action="/pages/eksempler/trinformular-til-registrering/registrering-6/">
+
+                    <div class="form-group">
+                        <label class="form-label" for="input-email">E-mail</label>
+
+                        <input type="email" id="input-email" name="email"
+                            class="form-input input-width-l" required autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="input-telefonnummer">Telefonnummer<span
+                                class="weight-normal"> (frivilligt)</span></label>
+
+                        <span class="form-hint" id="input-telefonnummer-hint">Behandlingstiden
+                            kan forkortes, hvis vi kan kontakte dig på telefon i tilfælde af
+                            spørgsmål</span>
+
+                        <input type="tel" id="input-telefonnummer" name="telefonnummer"
+                            class="form-input input-width-s"
+                            aria-describedby="input-telefonnummer-hint " autocomplete="tel">
+                    </div>
+
+                    <button class="button button-primary d-print-none mt-8" type='submit'>
+                        Næste
+                    </button>
+                </form>
+            </main>
         </div>
-    </div>
-    <div class="row">
-        <aside class="col-12 col-lg-3 mt-2">
-
-            <div
-                class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-                <button class="button-overflow-menu js-dropdown" data-js-target="overflow-reg"
-                    aria-expanded="false" aria-controls="overflow-reg">
-                    Trin 5 af 6
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-                </button>
-                <div class="overflow-menu-inner collapsed" id="overflow-reg">
-                    <nav aria-label="Trinindikator">
-                        <ol class="sidemenu">
-                            <li>
-                                <a class="nav-step"
-                                    href="/pages/eksempler/trinformular-til-registrering/registrering-1/">
-                                    <div>
-                                        <span class="sidenav-number">1.</span>
-                                        <div>
-                                            <span class="sidenav-maininfo">
-                                                <span class="sidenav-title">Vælg
-                                                    personer</span><span
-                                                    class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-step"
-                                    href="/pages/eksempler/trinformular-til-registrering/registrering-2/">
-                                    <div>
-                                        <span class="sidenav-number">2.</span>
-                                        <div>
-                                            <span class="sidenav-maininfo">
-                                                <span class="sidenav-title">Vælg noget
-                                                    mere</span><span
-                                                    class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-step"
-                                    href="/pages/eksempler/trinformular-til-registrering/registrering-3/">
-                                    <div>
-                                        <span class="sidenav-number">3.</span>
-                                        <div>
-                                            <span class="sidenav-maininfo">
-                                                <span class="sidenav-title">Vedhæft
-                                                    dokumenter</span><span
-                                                    class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-step"
-                                    href="/pages/eksempler/trinformular-til-registrering/registrering-4/">
-                                    <div>
-                                        <span class="sidenav-number">4.</span>
-                                        <div>
-                                            <span class="sidenav-maininfo">
-                                                <span class="sidenav-title">Tidligere
-                                                    registrering</span><span
-                                                    class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="active current " aria-current="step">
-                                <a class="nav-step"
-                                    href="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                                    <div>
-                                        <span class="sidenav-number">5.</span>
-                                        <div>
-                                            <span class="sidenav-maininfo">
-                                                <span
-                                                    class="sidenav-title">Kontaktoplysninger</span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-step"
-                                    href="/pages/eksempler/trinformular-til-registrering/registrering-6/">
-                                    <div>
-                                        <span class="sidenav-number">6.</span>
-                                        <div>
-                                            <span class="sidenav-maininfo">
-                                                <span
-                                                    class="sidenav-title">Opsummering</span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-
-        </aside>
-        <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/"
-                    class="back-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#chevron-left"></use></svg>Tilbage</a>
-            </div>
-            <h1 class="mb-6">Kontaktoplysninger</h1>
-            <form novalidate method="post"
-                action="/pages/eksempler/trinformular-til-registrering/registrering-6/">
-
-                <div class="form-group">
-                    <label class="form-label" for="input-email">E-mail</label>
-
-                    <input type="email" id="input-email" name="email"
-                        class="form-input input-width-l" required autocomplete="email">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="input-telefonnummer">Telefonnummer<span
-                            class="weight-normal"> (frivilligt)</span></label>
-
-                    <span class="form-hint" id="input-telefonnummer-hint">Behandlingstiden kan
-                        forkortes, hvis vi kan kontakte dig på telefon i tilfælde af
-                        spørgsmål</span>
-
-                    <input type="tel" id="input-telefonnummer" name="telefonnummer"
-                        class="form-input input-width-s"
-                        aria-describedby="input-telefonnummer-hint " autocomplete="tel">
-                </div>
-
-                <button class="button button-primary d-print-none mt-8" type='submit'>
-                    Næste
-                </button>
-            </form>
-        </main>
     </div>
 </div>
 
@@ -316,6 +285,91 @@
                 <button class="button button-secondary" data-modal-close>
                     Luk
                 </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fds-modal modal-step-indicator" id="modal-step-indicator" aria-hidden="true"
+        role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-step-indicator-heading">
+                    Trin 5 af 6
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <nav aria-label='Trinindikator'>
+                    <ol class="step-indicator">
+                        <li>
+                            <a class="step"
+                                href="/pages/eksempler/trinformular-til-registrering/registrering-1/">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Vælg
+                                            personer</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="step"
+                                href="/pages/eksempler/trinformular-til-registrering/registrering-2/">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Vælg noget
+                                            mere</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="step"
+                                href="/pages/eksempler/trinformular-til-registrering/registrering-3/">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Vedhæft
+                                            dokumenter</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="step"
+                                href="/pages/eksempler/trinformular-til-registrering/registrering-4/">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Tidligere
+                                            registrering</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="current " aria-current="step">
+                            <a class="step"
+                                href="/pages/eksempler/trinformular-til-registrering/registrering-5/">
+                                <span class="step-number">5</span>
+                                <div>
+                                    <span>
+                                        <span
+                                            class="step-title">Kontaktoplysninger</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="step"
+                                href="/pages/eksempler/trinformular-til-registrering/registrering-6/">
+                                <span class="step-number">6</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Opsummering</span></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
             </div>
 
         </div>

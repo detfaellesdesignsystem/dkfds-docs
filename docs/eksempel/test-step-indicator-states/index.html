@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta name="robots" content="noindex" >
     <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
@@ -10,18 +10,15 @@
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-
 <meta name="robots" content="noindex">
 
 <!-- Title and meta description
 ================================================== -->
 
 
-<title>Trinformular til registrering: Vælg personer | Det Fælles Designsystem</title>
-<meta property="og:title" content="Trinformular til registrering: Vælg personer | Det Fælles Designsystem">
+<title>Testfil | test-step-indicator-states | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-step-indicator-states | Det Fælles Designsystem">
 
-<meta name="description" content="Side 3 af eksempel af selvbetjeningsløsning, der viser en trinformular til registrering.">
-<meta property="og:description" content="Side 3 af eksempel af selvbetjeningsløsning, der viser en trinformular til registrering.">
 
 
 
@@ -49,25 +46,25 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.2.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.2.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.2.0" as="script">
+<link rel="preload" href="/assets/style/test_borger.css" as="style">
+<link rel="preload" href="/assets/style/test_virk.css" as="style">
+<link rel="preload" href="/assets/style/test_neutral.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
-  body {
-    opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
+    body {
+      opacity: 0; /*hide page until theme is downloaded by js.*/
+    }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.2.0">
-
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.2.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
 </noscript>
 
 </head>
-<body class="page-trinformular-til-registrering-vælg-personer layout-demo">
-<div class="hide-base-svg">
+
+<body class="layout-test-example">
+    <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 -960 960 960"><path d="M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM360-80v-520q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-720l20 80q-56 15-118 25t-122 15v520h-80v-240h-80v240h-80Z"/></symbol>
         <symbol id="account" viewBox="0 -960 960 960"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></symbol>
@@ -223,385 +220,249 @@
         <symbol id="zoom-out" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400ZM280-540v-80h200v80H280Z"/></symbol>
     </svg>
 </div>
-<div id="top"></div>
-<header class="header">
-
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-
-    <div class="portal-info">
-        <div class="portal-info-inner container">
-            <a href="#" aria-label="Portalnavn" class="logo">
-                <span>Portalnavn</span>
-            </a>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none"
-                aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#menu"></use></svg>Menu</button>
-
-            <div class="portal-user">
-                <p class="user">
-                    Anders Andersen
-                </p>
-
-                <button
-                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#lock"></use></svg>Log
-                    af</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="solution-info">
-        <div class="solution-info-inner container">
-            <div class="solution-heading">
-                <strong>Registrer et eller andet</strong>
-            </div>
-
-            <div class="additional-info d-print-none">
-
-                <p><strong class="authority-name">Myndighedsnavn</strong></p>
-
-                <p><span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span
-                        class="d-none d-lg-inline-block d-print-none ml-2 mr-2"
-                        aria-hidden="true">·</span><button type="button" data-module="modal"
-                        data-target="modal-contact" aria-haspopup="dialog"
-                        class="d-print-none function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#contact-card"></use></svg>Kontakt</button>
-                </p>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="overlay"></div>
-    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
-
-        <div class="menu-top">
-            <h2 id="menu-heading" class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close"
-                aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
-        </div>
-
-        <div class="solution-info-mobile">
-            <h3 class="sr-only">Myndighed</h3>
-
-            <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
-
-            <p><span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span
-                    class="d-none d-lg-inline-block d-print-none ml-2 mr-2"
-                    aria-hidden="true">·</span><button type="button" data-module="modal"
-                    data-target="modal-contact" aria-haspopup="dialog"
-                    class="d-print-none function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#contact-card"></use></svg>Kontakt</button>
-            </p>
-
-        </div>
-
-        <div class="portal-info-mobile">
-            <h3 class="sr-only">Bruger</h3>
-
-            <p class="user">
-
-                Anders Andersen
-
-            </p>
-
-            <p>
-                <button
-                    class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#lock"></use></svg>Log
-                    af</button>
-            </p>
-        </div>
-
-    </div>
-</header>
-
-<div class="container page-container pt-0">
-    <div class="row">
-        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
-
-            <button class="step-indicator-button d-lg-none" aria-haspopup="dialog"
-                type="button" data-module="modal"
-                data-target="modal-step-indicator">Trin<strong> 3 </strong>af 6</button>
-
-            <nav aria-label="Trinindikator" class="d-none d-lg-block">
-
-                <ol class="step-indicator">
-                    <li>
-                        <a class="step"
-                            href="/pages/eksempler/trinformular-til-registrering/registrering-1/">
-                            <span class="step-number">1</span>
-                            <div>
-                                <span>
-                                    <span class="step-title">Vælg
-                                        personer</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="step"
-                            href="/pages/eksempler/trinformular-til-registrering/registrering-2/">
-                            <span class="step-number">2</span>
-                            <div>
-                                <span>
-                                    <span class="step-title">Vælg noget
-                                        mere</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="current " aria-current="step">
-                        <a class="step"
-                            href="/pages/eksempler/trinformular-til-registrering/registrering-3/">
-                            <span class="step-number">3</span>
-                            <div>
-                                <span>
-                                    <span class="step-title">Vedhæft dokumenter</span></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="step"
-                            href="/pages/eksempler/trinformular-til-registrering/registrering-4/">
-                            <span class="step-number">4</span>
-                            <div>
-                                <span>
-                                    <span class="step-title">Tidligere
-                                        registrering</span></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="step"
-                            href="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                            <span class="step-number">5</span>
-                            <div>
-                                <span>
-                                    <span class="step-title">Kontaktoplysninger</span></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="step"
-                            href="/pages/eksempler/trinformular-til-registrering/registrering-6/">
-                            <span class="step-number">6</span>
-                            <div>
-                                <span>
-                                    <span class="step-title">Opsummering</span></span>
-                            </div>
-                        </a>
-                    </li>
-                </ol>
-
-            </nav>
-        </aside>
-        <div class="col-12 col-lg-9">
-            <aside class="w-percent-100" aria-label="Sidehandlinger">
-                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
-                    <li><button
-                            class="function-link link-right"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#save"></use></svg>Gem
-                            kladde</button></li>
-                </ul>
-            </aside>
-            <main class="w-percent-100" id="main-content">
-                <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-2/"
-                        class="back-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#chevron-left"></use></svg>Tilbage</a>
-                </div>
-                <h1 class="mb-6">Vedhæft dokumenter</h1>
-                <form novalidate method="post"
-                    action="/pages/eksempler/trinformular-til-registrering/registrering-3/">
-                    <div class="form-group file-input mb-5">
-                        <label class="form-label" for="fileinput">Vedhæft fil</label>
-                        <input class="mt-3" type="file" id="fileinput" name="file"
-                            aria-describedby="help-text-hint " />
-                    </div>
-                    <button class="button button-secondary" type='submit'>
-                        Upload fil
-                    </button>
-                </form>
-
-                <h2 class="h5 mt-8">Vedhæftet</h2>
-                <form novalidate method="post"
-                    action="/pages/eksempler/trinformular-til-registrering/registrering-3/">
-                    <ul class="bordered-list w-percent-md-40 mt-3">
-                        <li>
-                            <div class="d-flex justify-content-between"><a href="#"
-                                    class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#file-pdf"></use></svg>Journal.pdf</a><button
-                                    class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#delete"></use></svg>Slet</button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between"><a href="#"
-                                    class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#file-pdf"></use></svg>Kopi-af-dokument-x.pdf</a><button
-                                    class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#delete"></use></svg>Slet</button>
-                            </div>
-                        </li>
-                    </ul>
-                </form>
-
-                <form novalidate method="post"
-                    action="/pages/eksempler/trinformular-til-registrering/registrering-4/">
-                    <input type="hidden" name="files-attached" value="true">
-                    <button class="button button-primary d-print-none mt-7" type='submit'>
-                        Næste
-                    </button>
-                </form>
-            </main>
-        </div>
+    <div class="test-header d-flex align-items-center">
+    <div class="container">
+        <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>Denne side er kun til test</button>
     </div>
 </div>
-
-<footer>
-
-    <a class="button back-to-top-button d-print-none" href="#top">
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-upward"></use></svg>
-        <span class="sr-only">Til toppen af siden</span>
-        <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
-    </a>
-
-    <div class="footer">
-        <div class="container">
-            <ul class="align-text-left unstyled-list inline-list">
-                <li class=""><strong class="weight-semibold">Myndighedsnavn</strong></li>
-                <li class=""><a class="function-link"
-                        href="mailto:support@myndighed.dk">support@myndighed.dk</a></li>
-                <li class=""><a class="function-link" href="tel:12345678">(+45) 12 34 56
-                        78</a></li>
-                <li class="d-print-none"><a href="#"
-                        class="function-link">Tilgængelighedserklæring</a></li>
-                <li class="d-print-none"><a href="#" class="function-link">Privatlivspolitik
-                        (cookies)</a></li>
-            </ul>
-        </div>
-    </div>
-
-</footer>
-
 <div class="fds-modal-container">
-
-    <div class="fds-modal" id="modal-contact" aria-hidden="true" role="dialog"
-        aria-modal="true" aria-labelledby="modal-contact-heading">
+    <div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title" id="modal-contact-heading">
-                    Kontakt
+                <h2 class="modal-title" id="test-warning-heading">
+                    Denne side er kun til test
                 </h2>
                 <button class="modal-close function-link"
                     data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
             </div>
             <div class="modal-body">
-
-                <div class="alert alert-warning" role="alert">
-                    <div class="alert-border"></div>
-                    <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#warning"></use></svg>
-                    <div class="alert-body">
-                        <h3 class="alert-heading">Vi har noget information af advarende
-                            karakter</h3>
-                        <p class="alert-text">Noget tekst, der forklarer det af advarende
-                            karakter, som brugeren bør vide inden denne ringer eller skriver.
-                        </p>
-                    </div>
-                </div>
-                <h3>En form for support</h3>
-                <p>Hvis du har spørgsmål om:</p>
-                <ul>
-                    <li>En ting som denne</li>
-                    <li>Et andet emne som dette</li>
-                </ul>
-                <p>Kan du ringe direkte til: <span class='d-inline-block'>12 34 56 78</span>
-                </p>
-                <p>Telefonen er åben:</p>
-                <p class='m-0'>
-                    Mandag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class='d-inline-block'>kl. 9-17</span></p>
-                <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class='d-inline-block'>kl. 9-17</span></p>
-                <p class='m-0'>
-                    Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class='d-inline-block'>kl. 9-14</span></p>
+                <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
             </div>
-
             <div class="modal-footer">
                 <button class="button button-secondary" data-modal-close>
                     Luk
                 </button>
             </div>
-
         </div>
     </div>
+</div>
+    <main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Trinindikator</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <aside class="col-12 col-lg-4" aria-label="Se og vælg trin">
 
-    <div class="fds-modal modal-step-indicator" id="modal-step-indicator" aria-hidden="true"
-        role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-heading">
+            <button class="step-indicator-button d-lg-none" aria-haspopup="dialog" type="button" data-module="modal" data-target="modal-step-indicator">Trin<strong> 7 </strong>af 9</button>
+
+            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="#">
+                            <span class="step-number">1</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Lorem ipsum dolor sit
+                                        amet</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step" href="#">
+                            <span class="step-number">2</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Consectetur adipiscing
+                                        elit</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                <span class="step-information">Informationstekst</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step" href="#">
+                            <span class="step-number">3</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Duis pellentesque mollis
+                                        nisl</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="step-error">
+                        <a class="step" href="#">
+                            <span class="step-number">4</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Sed mollis metus pellentesque
+                                        et</span><svg class="icon-svg" aria-label="Fejl" focusable="false"><use href="#error"></use></svg></span>
+                                <span class="step-information">Informationstekst</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="step-error">
+                        <a class="step" href="#">
+                            <span class="step-number">5</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Vestibulum convallis consectetur
+                                        metus</span><svg class="icon-svg" aria-label="Fejl" focusable="false"><use href="#error"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step" href="#">
+                            <span class="step-number">6</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Sit amet eleifend leo egestas
+                                        sed</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step" href="#">
+                            <span class="step-number">7</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Fusce efficitur nec quam et
+                                        consectetur</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <div class="step">
+                            <span class="step-number">8</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Vestibulum vel convallis
+                                        mauris</span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="disabled ">
+                        <div class="step">
+                            <span class="step-number">9</span>
+                            <div>
+                                <span>
+                                    <span class="step-title">Vitae aliquet orci</span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+            </nav>
+        </aside>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+
+    <div class="fds-modal modal-step-indicator" id="modal-step-indicator" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-heading">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title" id="modal-step-indicator-heading">
-                    Trin 3 af 6
+                    Trin 7 af 9
                 </h2>
-                <button class="modal-close function-link"
-                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
             </div>
             <div class="modal-body">
-                <nav aria-label='Trinindikator'>
+                <nav aria-label="Trinindikator">
                     <ol class="step-indicator">
                         <li>
-                            <a class="step"
-                                href="/pages/eksempler/trinformular-til-registrering/registrering-1/">
+                            <a class="step" href="#">
                                 <span class="step-number">1</span>
                                 <div>
                                     <span>
-                                        <span class="step-title">Vælg
-                                            personer</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                        <span class="step-title">Lorem ipsum dolor sit
+                                            amet</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a class="step"
-                                href="/pages/eksempler/trinformular-til-registrering/registrering-2/">
+                            <a class="step" href="#">
                                 <span class="step-number">2</span>
                                 <div>
                                     <span>
-                                        <span class="step-title">Vælg noget
-                                            mere</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                        <span class="step-title">Consectetur adipiscing
+                                            elit</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                    <span class="step-information">Informationstekst</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="step" href="#">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Duis pellentesque mollis
+                                            nisl</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="step-error">
+                            <a class="step" href="#">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Sed mollis metus pellentesque
+                                            et</span><svg class="icon-svg" aria-label="Fejl" focusable="false"><use href="#error"></use></svg></span>
+                                    <span class="step-information">Informationstekst</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="step-error">
+                            <a class="step" href="#">
+                                <span class="step-number">5</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Vestibulum convallis
+                                            consectetur
+                                            metus</span><svg class="icon-svg" aria-label="Fejl" focusable="false"><use href="#error"></use></svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="step" href="#">
+                                <span class="step-number">6</span>
+                                <div>
+                                    <span>
+                                        <span class="step-title">Sit amet eleifend leo egestas
+                                            sed</span><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span>
                                 </div>
                             </a>
                         </li>
                         <li class="current " aria-current="step">
-                            <a class="step"
-                                href="/pages/eksempler/trinformular-til-registrering/registrering-3/">
-                                <span class="step-number">3</span>
+                            <a class="step" href="#">
+                                <span class="step-number">7</span>
                                 <div>
                                     <span>
-                                        <span class="step-title">Vedhæft
-                                            dokumenter</span></span>
+                                        <span class="step-title">Fusce efficitur nec quam et
+                                            consectetur</span></span>
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a class="step"
-                                href="/pages/eksempler/trinformular-til-registrering/registrering-4/">
-                                <span class="step-number">4</span>
+                        <li class="disabled ">
+                            <div class="step">
+                                <span class="step-number">8</span>
                                 <div>
                                     <span>
-                                        <span class="step-title">Tidligere
-                                            registrering</span></span>
+                                        <span class="step-title">Vestibulum vel convallis
+                                            mauris</span></span>
                                 </div>
-                            </a>
+                            </div>
                         </li>
-                        <li>
-                            <a class="step"
-                                href="/pages/eksempler/trinformular-til-registrering/registrering-5/">
-                                <span class="step-number">5</span>
+                        <li class="disabled ">
+                            <div class="step">
+                                <span class="step-number">9</span>
                                 <div>
                                     <span>
-                                        <span
-                                            class="step-title">Kontaktoplysninger</span></span>
+                                        <span class="step-title">Vitae aliquet
+                                            orci</span></span>
                                 </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="step"
-                                href="/pages/eksempler/trinformular-til-registrering/registrering-6/">
-                                <span class="step-number">6</span>
-                                <div>
-                                    <span>
-                                        <span class="step-title">Opsummering</span></span>
-                                </div>
-                            </a>
+                            </div>
                         </li>
                     </ol>
                 </nav>
@@ -612,17 +473,91 @@
 
 </div>
 
-<footer class="demo-footer d-print-none" aria-label="Gå tilbage til oversigten eller skift tema">
-  <div class="demo-footer-content d-flex align-items-center">
-    <a class="button button-tertiary mr-5" id="btn-demo-return" href="/eksempler/"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#chevron-left"></use></svg>Tilbage<span class="sr-only"> til dokumentationssiden</span></a>
-    <button class="function-link" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#palette"></use></svg><span id="changeDemoThemeText">Skift tema</span></button>
-  </div>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/styleguide.js"></script>
+    <footer class="test-footer d-flex align-items-center">
+    <div class="container">
+        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+            <div class="d-flex mr-8">
+                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                </button>
+                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
+                </button>
+                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
+                </button>
+                <button id="theme-virk" class="function-link"><span>Virk</span>
+                </button>
+            </div>
+            <div>
+                
+                <a class="function-link mr-4" href="/eksempel/test-step-guide-7/">Forrige</a>
+                
+                
+                <a class="function-link" href="/eksempel/test-venstremenu/">Næste</a>
+                
+            </div>
+        </div>
+    </div>
 </footer>
-<script src="/assets/js/theme.js?v=10.2.0"></script>
-<script src="/assets/js/styleguide.js?v=10.2.0"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let createLink = function(style) {
+            var lnk = document.createElement('link');
+            lnk.type='text/css';
+            lnk.rel='stylesheet';
+            switch (style) {
+                case "neutral":
+                    lnk.href= '/assets/style/test_neutral.css';
+                    break;
+                case "borger":
+                    lnk.href= '/assets/style/test_borger.css';
+                    break;
+                case "virk":
+                    lnk.href= '/assets/style/test_virk.css';
+                    break;
+                case 'normalization':
+                    lnk.href= '/assets/style/test_normalization.css';
+                    break;
+            }
+            document.getElementsByTagName('head')[0].appendChild(lnk);
+        }
 
-<script src="/assets/js/demo-return-to-prev-page.js"></script>
+        let setNeutralStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        };
 
+        let setBorgerStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        };
+
+        let setVirkStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        };
+
+        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
+        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
+        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
+
+        let normalize = false;
+        if (document.querySelectorAll('main h1').length > 0) {
+            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
+                normalize = true;
+                createLink("normalization");
+            }
+        }
+        if (document.cookie.includes('theme=borger') && !normalize) {
+            createLink("borger");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
+        }
+        else if (document.cookie.includes('theme=virk') && !normalize) {
+            createLink("virk");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
+        }
+    });
+</script>
+    <script src="/assets/js/test.js"></script>
 </body>
+
 </html>

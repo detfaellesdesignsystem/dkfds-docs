@@ -288,6 +288,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-step-guide-5" description="Trinindikator 5" %}
 {% include test/preview-test.html filename="test-step-guide-6" description="Trinindikator 6" %}
 {% include test/preview-test.html filename="test-step-guide-7" description="Trinindikator 7" %}
+{% include test/preview-test.html filename="test-step-indicator-states" description="Trinindikator" %}
 
 {:.h3}
 ## Venstremenu

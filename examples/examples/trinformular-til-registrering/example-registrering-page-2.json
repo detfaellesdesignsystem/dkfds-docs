@@ -58,7 +58,7 @@
             {
                 "text": "Vælg noget mere",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Vedhæft dokumenter",
