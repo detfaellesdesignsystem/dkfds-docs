@@ -50,6 +50,7 @@
     "postcss-discard-comments": "~5.1.2",
     "postcss-loader": "~8.1.1",
     "puppeteer": "~23.11.1",
+    "rimraf": "~6.0.1",
     "sass": "~1.83.1",
     "sass-loader": "~16.0.4",
     "terser-webpack-plugin": "~5.3.11",
