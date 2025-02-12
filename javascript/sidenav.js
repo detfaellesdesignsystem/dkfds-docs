@@ -46,11 +46,11 @@ $('.anchorbox').on('click', 'a', function (e) {
             var link    = $(e.target);
             var section = $('#' + hashLocation);
 
-            /* Add tabindex to make the heading programmatically focusable. This moves the focus
-               to the correct place on the page, if the user tabs after clicking an anchorlink. */
+            /* Add tabindex to make the top-id-element programmatically focusable. This moves the focus
+               to the correct place on the page, if the user tabs after clicking an anchorlink.
+               The tabindex must not be removed until page reload to ensure correct screen reader behavior. */
             section.attr('tabindex', '-1');
             section.focus();
-            section.removeAttr('tabindex');
 
             if (link.data('keypress') === true) {
                 link.removeData('keypress');
