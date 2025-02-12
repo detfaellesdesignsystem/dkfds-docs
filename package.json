@@ -12,7 +12,8 @@
     "start": "bundle exec jekyll serve --incremental --trace --config _config.yml,_config.dev.yml",
     "publish": "npm run build && bundle exec jekyll build --config _config.yml && gulp publish",
     "publish-dev": "npm run build && bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish",
-    "deploy": "bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish"
+    "deploy": "bundle exec jekyll build --config _config.yml,_config.dev.yml && gulp publish",
+    "clean": "node config\\clean.js"
   },
   "dependencies": {
     "dkfds": "~10.2.0"
