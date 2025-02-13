@@ -16,7 +16,7 @@
     "clean": "node config\\clean.js"
   },
   "dependencies": {
-    "dkfds": "~10.2.0"
+    "dkfds": "~10.2.1"
   },
   "devDependencies": {
     "@babel/core": "~7.26.0",
