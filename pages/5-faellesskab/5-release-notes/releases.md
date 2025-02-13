@@ -12,6 +12,7 @@ tags:
 - udgivelse
 - version
 - versioner
+- roadmap
 - 2.1.2
 - 3
 - 3.0.0
@@ -77,6 +78,7 @@ tags:
 - 10.0.2
 - 10.1.0
 - 10.2.0
+- 10.2.1
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -100,6 +102,28 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 10.2.1 {#{% include create-id.html heading="Version 10.2.1" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">13-02-2025</span></div>
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Fejlrettelser</h3>
+</div>
+- Rettet fejl, hvor menuknappen ikke altid fik fokus, når man brugte Escape-tasten til at lukke {% include links/component-code-link.html linktext="mobilmenuen" %}.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="headernavigationen" %} ikke altid blev opdateret efter `DKFDS.Navigation().init()` (fejlrettelse accepteret fra pull request på GitHub).
+{% include links/github-link.html number="260" afternumber=" på GitHub" %}
+- Rettet fejl, hvor styling og JavaScript for tjekbokse i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %} også påvirkede tjekbokse og radioknapper i andre kolonner. Bemærk dog, at det anbefales ikke at placere interaktive komponenter i tabeller, hvis det kan undgås.
+{% include links/github-link.html number="266" afternumber=" på GitHub" %}
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
+</div>
+- Fjernet kravværktøjet og i stedet tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
+- Fjernet roadmap. Anvend i stedet {% include links/external-link.html linktext="GitHub Discussions" %} for information om, hvilke større opgaver FDS-teamet arbejder på til kommende releases.
 
 
 

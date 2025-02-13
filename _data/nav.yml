@@ -11,12 +11,13 @@ primary:
     categorynav: 'Faellesskab_category'
 
 Kom_i_gang_category:
+  - href: /kom-i-gang/om-designsystemet/
   - href: /kom-i-gang/implementering-kode/
     categorynav: 'Implementering_kode_category'
   - href: /kom-i-gang/designressourcer/
   - href: /kom-i-gang/tjekliste/
-  - href: /kom-i-gang/krav/
   - href: /kom-i-gang/tilgaengelighed/
+  - href: /kom-i-gang/brugerinddragelse/
   - href: /kom-i-gang/faq/
 
 Implementering_kode_category:
@@ -111,7 +112,6 @@ Faellesskab_category:
 - href: /faellesskab/governance/
 - href: /faellesskab/nyhedsmail/
 - href: /faellesskab/kontakt-support/
-- href: /faellesskab/roadmap/
 - href: /faellesskab/releases/
 
 Eksempelloesninger_category:

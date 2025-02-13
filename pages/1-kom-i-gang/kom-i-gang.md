@@ -8,6 +8,10 @@ description:
 tags:
 ---
 
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Om Det Fælles Designsystem" %}</h2>
+
+<p class="mt-0">Læs om Det Fælles Designsystem og hvornår du skal bruge det.</p>
+
 <h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Implementering og kode" %}</h2>
 
 <p class="mt-0">Det grundlæggende, du skal vide, for at anvende designsystemets kode samt information om plugins og teknisk opsætning af sider til print.</p>
@@ -20,13 +24,13 @@ tags:
 
 <p class="mt-0">Det skal du huske, når du bygger en løsning med Det Fælles Designssystem.</p>
 
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Krav" %}</h2>
-
-<p class="mt-0">Krav og lovgivning for selvbetjeningsløsninger på borger.dk og Virk.</p>
-
 <h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Tilgængelighed" %}</h2>
 
-<p class="mt-0">Det grundlæggende, de skal gøre, for at lave en tilgængelig selvbetjeningsløsning.</p>
+<p class="mt-0">Det grundlæggende, du skal gøre, for at lave en tilgængelig selvbetjeningsløsning.</p>
+
+<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Brugerinddragelse" %}</h2>
+
+<p class="mt-0">Få viden om og værktøjer til at inddrage dine brugere i udviklingen.</p>
 
 <h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Ofte stillede spørgsmål" %}</h2>
 

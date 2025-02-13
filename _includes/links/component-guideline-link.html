@@ -112,6 +112,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "header komponent" -%}
         <a href="/komponenter/header/">{{ include.linktext }}</a>
 
+    {%- when "headernavigationen" -%}
+        <a href="/komponenter/header/#header-med-navigation-og-soegefelt">{{ include.linktext }}</a>
+
     {%- when "inputfelter" -%}
         <a href="/komponenter/inputfelter/">{{ include.linktext }}</a>
 

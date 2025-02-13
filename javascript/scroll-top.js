@@ -42,6 +42,9 @@ $(document).on('click', "a[href='#top']", function (event) {
             var link    = $(event.target);
             var section = $('#' + hashLocation);
 
+            /* Add tabindex to make the top-id-element programmatically focusable. This moves the focus
+               to the correct place on the page, if the user tabs after clicking an anchorlink.
+               The tabindex must NOT be removed until page reload to ensure correct screen reader behavior. */
             section.attr('tabindex', '-1');
             section.focus();
 

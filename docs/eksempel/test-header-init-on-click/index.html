@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Testfil | test-dropdown-8 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-dropdown-8 | Det Fælles Designsystem">
+<title>Testfil | test-header-init-on-click | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-header-init-on-click | Det Fælles Designsystem">
 
 
 
@@ -248,45 +248,251 @@
         </div>
     </div>
 </div>
-    <main class="container page-container" id="main-content">
-    <div class="row">
-        <div class="col-12">
-            <p>Dropdown med lang tekst</p>
+    <header class="header">
 
-            <div class="form-group">
-                <label class="form-label" for="options-id">Dropdown menu med lange tekst valg
-                    muligheder</label>
+    <div class="portal-info">
+        <div class="portal-info-inner container">
+            <a href="#" title="Gå til Portalnavns forside" aria-label="Portalnavn" class="logo">
+                <span>Portalnavn</span>
+            </a>
+            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#menu"></use></svg>Menu</button>
 
-                <select class="form-select" name="options-name" id="options-id" required="">
-                    <option value="option1">Mulighed med en meget lang tekst næsten
-                        urealistisk lang</option>
-                    <option value="option2" selected="">Mulighed normal</option>
-                    <option value="option3">Mulighed med medium lang tekst</option>
-                </select>
+            <div class="portal-user">
+                <p class="user">
+                    Anders Andersen, Forsikringens Forsikringsfirma
+                </p>
+
+                <button class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="solution-info">
+        <div class="solution-info-inner container">
+            <div class="solution-heading">
+                <a href="#">Løsningstitel</a>
+            </div>
+
+            <div class="additional-info">
+
+                <p><strong class="authority-name">Myndighedsnavn</strong></p>
+
+                <p>Support: 12 34 56 78</p>
+
             </div>
 
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p>Dropdown med endnu længere tekst</p>
 
-            <div class="form-group">
-                <label class="form-label" for="options-id">Dropdown menu med endnu længeere
-                    tekst</label>
+    <div class="navigation-menu">
+        <div class="navigation-menu-inner container">
 
-                <select class="form-select" name="options-name" id="options-id" required="">
-                    <option value="option1">Mulighed med den længste tekst der længe er set,
-                        den er i hvert fald meget lang, næsten urealistisk lang, og ift. til
-                        den første dropdown er den her i hvert fald længere. Kan den komme på
-                        2 linjer?</option>
-                    <option value="option2" selected="">Mulighed normal</option>
-                    <option value="option3">Mulighed unormal</option>
-                </select>
-            </div>
+            <nav class="nav" aria-label="Hovedmenu">
+                <ul class="mainmenu">
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            <span>Menupunkt</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
     </div>
+
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+
+        <div class="menu-top">
+            <h2 id="menu-heading" class="menu-heading">Menu</h2>
+            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#close"></use></svg>Luk</button>
+        </div>
+
+        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
+            <ul class="mainmenu">
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span>Menupunkt</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="solution-info-mobile">
+            <h3 class="sr-only">Myndighed</h3>
+
+            <p class="mb-2"><strong class="authority-name">Myndighedsnavn</strong></p>
+
+            <p>Support: 12 34 56 78</p>
+
+        </div>
+
+        <div class="portal-info-mobile">
+            <h3 class="sr-only">Bruger</h3>
+
+            <p class="user">
+
+                <span class="mb-3">Anders Andersen</span>
+                <span>Forsikringens Forsikringsfirma</span>
+
+            </p>
+
+            <p>
+                <button class="function-link d-print-none log-off"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#lock"></use></svg>Log
+                    af</button>
+            </p>
+        </div>
+
+    </div>
+</header>
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="mt-0">Initialiseres ved klik</h1>
+        </div>
+    </div>
+    <button class="button button-primary" id="run-init">Kør init()</button>
 </main>
 
     <script src="/assets/js/theme.js"></script>
@@ -307,10 +513,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-dropdown-7/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-header-init/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-tabs-buttons/">Næste</a>
+                <a class="function-link" href="/eksempel/test-input-fields-1/">Næste</a>
                 
             </div>
         </div>
