@@ -108,7 +108,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 10.2.1 {#{% include create-id.html heading="Version 10.2.1" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-02-2025</span></div>
+<div><span class="small-text mt-0 d-block">13-02-2025</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">Fejlrettelser</h3>
@@ -123,7 +123,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   <h3 class="h4 mt-0 mb-0 mr-3">Ændringer på designsystem.dk</h3>
 </div>
 - Fjernet kravværktøjet og i stedet tilføjet siderne {% include links/internal-link.html linktext="Om Det Fælles Designsystem" %} og {% include links/internal-link.html linktext="Brugerinddragelse" %}.
-- Fjernet roadmap. Anvend i stedet {% include links/external-link.html linktext="GitHub Discussions" %} for information om, hvilke opgaver FDS-teamet arbejder på til kommende releases.
+- Fjernet roadmap. Anvend i stedet {% include links/external-link.html linktext="GitHub Discussions" %} for information om, hvilke større opgaver FDS-teamet arbejder på til kommende releases.
 
 
 
