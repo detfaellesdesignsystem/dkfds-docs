@@ -175,7 +175,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="send" keywords="send" label="Send" %}
                 {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
                 {% include icon.html icon="language" keywords="sprog, language, globe, earch, jorden, lande, countries" label="Sprog (globus)" %}
-                {% include icon.html icon="star-full" keywords="star, stjerne, bedømmelse, rating, grade" label="Stjerne fyldt / markeret" %}
+                {% include icon.html icon="star-fill" keywords="star, stjerne, bedømmelse, rating, grade" label="Stjerne fyldt / markeret" %}
                 {% include icon.html icon="star" keywords="star, stjerne, bedømmelse, rating, grade-outline" label="Stjerne tom / ikke markeret" %}
                 {% include icon.html icon="contact-support" keywords="support, kontakt, contact, kommunikation, communication, bubble, help, question" label="Support" %}
                 {% include icon.html icon="sync" keywords="synkroniser, refresh, genindlæs, update, opdater, cached" label="Synkronisér" %}
