@@ -20,7 +20,7 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/badge/badges.njk" import badge as badge %}
 {% from "components/details/details.njk" import details as details %}
-{% from "components/cards/cards.njk" import card as card %}
+{% from "components/cards/cards.njk" import newCard as card %}
 {% from "components/table/table.njk" import table as table %}
 
 {# <!-- Variables --> #}
@@ -170,7 +170,9 @@
 
     <h3>Anmodninger, der afventer svar</h3>
     <div class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
-        {{ card(card_anmodning) }}
+        {{ 
+            card(card_anmodning) 
+        }}
     </div>
 
 </main>

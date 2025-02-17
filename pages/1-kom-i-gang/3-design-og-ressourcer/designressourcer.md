@@ -46,14 +46,10 @@ Overvej følgende spørgsmål, før du designer nye funktioner til din løsning:
 
 ## Designressourcer {#{% include create-id.html heading="Designressourcer" %}}
 
-Vi stiller nedenstående fil til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Vær dog opmærksom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilen.
+Vi stiller designbiblioteket til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Filen vedligeholdes løbende og opdateres som udgangspunkt ved hver release. Vær dog opmærkesom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilen.
 
-<h3 class="h4">Figma</h3>
+{% include links/external-link.html linktext="Designbibliotek i Figma" classes="button button-secondary" %}
 
-Designbiblioteket i Figma vedligeholdes løbende.
-
-{% include links/external-link.html linktext="Se komponentbiblioteket i Figma" %}
-
-<h3 class="h4">Hjælp os med at blive bedre</h3>
+<h3>Hjælp os med at blive bedre</h3>
 
 Hvis du anvender vores designressourcer og finder fejl eller har idéer til forbedringer, så tøv ikke med at {% include links/internal-link.html linktext="kontakte os" %}.

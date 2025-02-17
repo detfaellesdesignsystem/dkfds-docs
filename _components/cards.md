@@ -141,6 +141,6 @@ Overvej grundigt dimensionerne på dit billede og hvordan det skalerer på forsk
 
 ## Langt card {#{% include create-id.html heading="Langt card" append="-kode" %}}
 
-Ved brug af billeder i lange cards skal du være opmærksom på, hvordan billedet og teksten skalerer på forskellige skærmbredder. Sørg for at vælge et billede med passende højde til teksten, så der er færrest mulige tilfælde, hvor den grå baggrund bag billedet bliver synlig.
+Ved brug af billeder i lange cards skal du være opmærksom på, hvordan billedet og teksten skalerer på forskellige skærmbredder. Sørg for at vælge et billede med passende højde til teksten, så der er færrest mulige tilfælde, hvor billedet bliver beskåret.
 
 {% include code/syntax.html component="cards-long" link=true copybutton=true guidelines="/komponenter/cards/#langt-card" %}

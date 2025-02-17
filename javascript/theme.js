@@ -361,20 +361,24 @@ let setDoDontImages = function() {
 let setCardImages = function() {
     if(document.body.classList.contains('page-komponenter')) {
         let cards = document.querySelector('main').querySelectorAll('.new-card');
-        rebuildCardImages(cards, '/assets/img/cards/Komponenter');
+        rebuildCardImages(cards, '/assets/img/cards/Komponenter', 'svg');
     }
     else if (document.body.classList.contains('page-styleguide')) {
         let cards = document.querySelector('main').querySelectorAll('.new-card');
-        rebuildCardImages(cards, '/assets/img/cards/Styleguide');
+        rebuildCardImages(cards, '/assets/img/cards/Styleguide', 'svg');
+    }
+    else if (document.body.classList.contains('page-selvbetjeningsløsninger')) {
+        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        rebuildCardImages(cards, '/assets/img/cards/Selvbetjeningsløsninger', 'png');
     }
 }
 
-function rebuildCardImages(cards, imagepath) {
+function rebuildCardImages(cards, imagepath, extension) {
     let cookie = getThemeCookie();
     for (let i = 0; i < cards.length; i++) {
         if (cards[i].hasAttribute('id')) {
             let id = cards[i].id; // Important: Ensure the given card IDs match the card image filenames
-            document.getElementById(id).querySelector('.new-card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.svg" alt="">`;
+            document.getElementById(id).querySelector('.new-card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="">`;
         }
     }
 }
