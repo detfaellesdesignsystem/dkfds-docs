@@ -52,7 +52,7 @@ tags:
 <ul class="row card-row">
     <li class="col-12 col-sm-6 col-md-4">
         <a class="new-card" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" id="formular-til-kontaktoplysninger-1" target="_blank">
-            <div class="new-card-image" style="aspect-ratio: 1125 / 961;"><img src="/assets/img/cards/Styleguide/card-farver-borgerdk.svg" alt=""></div>
+            <div class="new-card-image" style="aspect-ratio: 1125 / 961; background-color: #DCDCDC;"></div>
             <div class="new-card-content flex-row align-items-center justify-content-between" style="border-top: 1px solid #dcdcdc;">
                 <h2 class="hyphens-manual" style="font-size: 2rem;">Oplysninger om dig</h2>
                 <svg class="icon-svg ml-3" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
@@ -61,7 +61,7 @@ tags:
     </li>
     <li class="col-12 col-sm-6 col-md-4">
         <a class="new-card" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-2/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" id="formular-til-kontaktoplysninger-2" target="_blank">
-            <div class="new-card-image" style="aspect-ratio: 1125 / 961;"><img src="/assets/img/cards/Styleguide/card-farver-borgerdk.svg" alt=""></div>
+            <div class="new-card-image" style="aspect-ratio: 1125 / 961; background-color: #DCDCDC;"></div>
             <div class="new-card-content flex-row align-items-center justify-content-between" style="border-top: 1px solid #dcdcdc;">
                 <h2 class="hyphens-manual" style="font-size: 2rem;">Bekræft oplysninger</h2>
                 <svg class="icon-svg ml-3" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
@@ -70,7 +70,7 @@ tags:
     </li>
     <li class="col-12 col-sm-6 col-md-4">
         <a class="new-card" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-3/?r=/eksempler/selvbetjeningsloesninger/%23formular-til-kontaktoplysninger" id="formular-til-kontaktoplysninger-3" target="_blank">
-            <div class="new-card-image" style="aspect-ratio: 1125 / 961;"><img src="/assets/img/cards/Styleguide/card-farver-borgerdk.svg" alt=""></div>
+            <div class="new-card-image" style="aspect-ratio: 1125 / 961; background-color: #DCDCDC;"></div>
             <div class="new-card-content flex-row align-items-center justify-content-between" style="border-top: 1px solid #dcdcdc;">
                 <h2 class="hyphens-manual" style="font-size: 2rem;">Kvittering</h2>
                 <svg class="icon-svg ml-3" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
