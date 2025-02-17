@@ -1,0 +1,45 @@
+{% from "components/cards/cards.njk" import newCard as card %}
+
+<div class="row card-row">
+    <div class="col-12 col-sm-6">
+        {{ 
+            card({
+                "innerTag": "section",
+                "heading": "Titel",
+                "headingLevel": "h2",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                "buttons": [
+                    {
+                        "variant": "primary",
+                        "text": "Lorem ipsum"
+                    },
+                    {
+                        "variant": "secondary",
+                        "text": "Dolor"
+                    }
+                ]
+            }) 
+        }}
+    </div>
+    <div class="col-12 col-sm-6">
+        {{ 
+            card({
+                "innerTag": "section",
+                "heading": "En anden titel",
+                "headingLevel": "h2",
+                "content": "<p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                "links": [
+                    {
+                        "href": "#",
+                        "text": "Link"
+                    },
+                    {
+                        "href": "#",
+                        "text": "Eksternt link",
+                        "external": true
+                    }
+                ]
+            }) 
+        }}
+    </div>
+</div>

@@ -50,7 +50,7 @@
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -59,7 +59,7 @@
                 "text": "Vælg noget mere",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -68,7 +68,7 @@
                 "text": "Vedhæft dokumenter",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -77,7 +77,7 @@
                 "text": "Tidligere registrering",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -85,7 +85,7 @@
             {
                 "text": "Kontaktoplysninger",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Opsummering",

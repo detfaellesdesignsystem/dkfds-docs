@@ -112,19 +112,19 @@
         "steps": [
             {
                 "text": "Oplysninger om afsender",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Kontaktoplysninger",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Ansøgningens type",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Tilføj dokumentation",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Opsummering",

@@ -24,7 +24,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/components/table/*.njk'];
+var buildFile = ['examples/testfiles/step-guide/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -33,6 +33,7 @@ var testfiles = [
     "test-headings-no-sections",
     "test-headings-with-sections",
     "test-headings-long-text",
+    "test-container",
     "test-icons-svg-and-class",
     "test-accordion-headings",
     "test-accordion-variants",
@@ -44,6 +45,7 @@ var testfiles = [
     "test-alerts-1",
     "test-alerts-2",
     "test-alerts-3",
+    "test-cards",
     "test-date-input-1",
     "test-date-input-2",
     "test-date-input-3",
@@ -104,20 +106,21 @@ var testfiles = [
     "test-header-breadcrumb-function-links",
     "test-header-init",
     "test-header-init-on-click",
+    "test-input-fields-styling",
     "test-input-fields-1",
     "test-input-fields-2",
     "test-input-fields-3",
     "test-input-fields-4",
     "test-input-fields-5",
     "test-input-fields-6",
-    "test-input-fields-7",
+    "test-input-fields-character-limit",
     "test-input-fields-8",
     "test-input-fields-9",
+    "test-buttons",
     "test-buttons-in-row",
     "test-buttons-in-divs",
     "test-buttons-next-to-text",
     "test-button-long-text",
-    "test-buttons-1",
     "test-modal-types",
     "test-modal-javascript",
     "test-modal-inert",
@@ -164,6 +167,7 @@ var testfiles = [
     "test-textarea-5",
     "test-textarea-6",
     "test-textarea-7",
+    "test-back-link",
     "test-back-to-top-long-page",
     "test-back-to-top-short-page",
     "test-checkbox-simple",
@@ -187,6 +191,7 @@ var testfiles = [
     "test-step-guide-5",
     "test-step-guide-6",
     "test-step-guide-7",
+    "test-step-indicator-states",
     "test-venstremenu"
 ];
 

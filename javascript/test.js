@@ -7,6 +7,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (heading) {
 
+            case 'Ikoner':
+                DKFDS.init();
+                console.log('JavaScript fetched icons from XML');
+
+                fetch('/assets/img/all-svg-icons.svg')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Response was not "ok"');
+                        }
+                        return response.text();
+                    })
+                    .then(str => {
+                        let parsedXML = new DOMParser().parseFromString(str, 'text/xml');
+                        let symbols = parsedXML.querySelectorAll('symbol');
+                        for (let i = 0; i < symbols.length; i++) {
+                            let viewBox = symbols[i].getAttribute('viewBox');
+                            let innerHTML = parsedXML.getElementById(symbols[i].id).innerHTML;
+                            let color = viewBox === '0 -960 960 960' ? "0000FF" : "FF00FF";
+
+                            document.getElementById('xml-icon-' + symbols[i].id).innerHTML = 
+                            `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" class="icon-svg" focusable="false" aria-hidden="true" style="fill:#${color};">${innerHTML}</svg>`;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Failed to fetch file:', error);
+                    });
+                    
+                let dataIcons = document.querySelectorAll('div[data-icon]');
+                for (let i = 0; i < dataIcons.length; i++) {
+                    dataIcons[i].style.setProperty('background-image', `url(/assets/svg/${dataIcons[i].dataset.icon}.svg)`);
+                    dataIcons[i].style.setProperty('background-repeat', 'no-repeat');
+                    dataIcons[i].style.setProperty('max-height', '2.4rem');
+                }
+
+                break;
+
             case 'JavaScript i accordions':
 
                 initTest();
@@ -43,6 +79,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     "open_all": "Open all", 
                     "close_all": "Close all" 
                   }).init();
+                break;
+
+            case 'Cards':
+
+                DKFDS.init();
+                document.getElementById('replace-image-2').querySelector('.new-card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
+                setTimeout(() => {
+                    document.getElementById('replace-image-1').querySelector('.new-card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
+                    document.getElementById('replace-image-link-1').querySelector('.new-card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
+                }, 3000);
+                document.getElementById('replace-image-link-2').querySelector('.new-card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
                 break;
 
             case 'JavaScript i faneblade':
@@ -86,6 +133,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
                 tab3.addEventListener("fds.tab.hidden", function() {
                     console.log("Tab 3 hidden");
+                });
+
+                break;
+
+            case 'Inputfelter med karakterbegrænsning':
+                new DKFDS.CharacterLimit(document.querySelectorAll('.form-limit')[0]).init();
+
+                document.getElementById('input-added-after-init').innerHTML = '<div class="form-group form-limit" data-maxlength="20" id="javascript-init"><label class="form-label" for="input-text-2">Begrænsning på 20 tegn</label><input type="text" id="input-text-2" name="input-text" class="form-input" value="tekst" aria-describedby="input-text-2-limit-message" required=""><span id="input-text-2-limit-message" class="sr-only">Du kan indtaste op til 20 tegn</span><span class="form-hint character-limit" aria-hidden="true">Du har 20 tegn tilbage</span><span class="character-limit-sr-only sr-only" aria-live="polite">Du har 20 tegn tilbage</span></div>';
+                const form_limit = new DKFDS.CharacterLimit(document.getElementById('javascript-init'));
+                form_limit.init();
+
+                const message_form_limit = new DKFDS.CharacterLimit(document.querySelectorAll('.form-limit')[2]);
+                message_form_limit.init();
+                document.getElementById('new-text').addEventListener('click', () => {
+                    message_form_limit.container.querySelector('.form-input').value = "Clicked new-text";
+                    message_form_limit.updateMessages();
+                });
+                document.getElementById('new-text-silent').addEventListener('click', () => {
+                    message_form_limit.container.querySelector('.form-input').value = "Clicked new-text-silent";
+                    message_form_limit.silentUpdateMessages();
                 });
 
                 break;

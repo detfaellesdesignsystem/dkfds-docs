@@ -50,7 +50,7 @@
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -58,7 +58,7 @@
             {
                 "text": "Vælg noget mere",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Vedhæft dokumenter",

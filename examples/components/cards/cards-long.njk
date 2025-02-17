@@ -1,0 +1,61 @@
+{% from "components/cards/cards.njk" import newCard as card %}
+
+<ul class="row card-row">
+    <li class="col-12">
+        {{ 
+            card({
+                "long": true,
+                "navigationCard": { 
+                    "href": "#"
+                },
+                "image": { 
+                    "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.png",
+                    "alt": "Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card."
+                },
+                "subheading": "Subheading",
+                "heading": "Langt navigationscard med billede",
+                "headingLevel": "h2",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+            }) 
+        }}
+    </li>
+    <li class="col-12">
+        {{ 
+            card({
+                "long": true,
+                "navigationCard": { 
+                    "href": "#"
+                },
+                "heading": "Langt navigationscard uden billede",
+                "headingLevel": "h2",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+            }) 
+        }}
+    </li>
+    <li class="col-12">
+        {{ 
+            card({
+                "long": true,
+                "image": { 
+                    "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.png",
+                    "alt": "Neutralt billede af et ikon, der blot skal være et eksempel på grafik i et card."
+                },
+                "subheading": "Subheading",
+                "heading": "Titel",
+                "headingLevel": "h2",
+                "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+                "links": [
+                    {
+                        "href": "#",
+                        "text": "Link"
+                    },
+                    {
+                        "href": "#",
+                        "text": "Eksternt link",
+                        "external": true
+                    }
+                ]
+            }) 
+        }}
+    </li>
+</ul>

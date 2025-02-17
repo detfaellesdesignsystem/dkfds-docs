@@ -14,7 +14,7 @@
 {% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
 
 {% from "components/footers/footer.njk" import footer as footer %}
-{% from "components/cards/cards.njk" import card as card %}
+{% from "components/cards/cards.njk" import newCard as card %}
 
 {# <!-- Variables --> #}
 
@@ -27,7 +27,7 @@
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "contact-card"}) + 'Kontakt</button>'
     }
 } %}
 
@@ -76,13 +76,13 @@
 {% block body %}
 <main class="container page-container" id="main-content">
     <h1 class="mb-8">Oversigt</h1>
-    <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_beskeder) }}</div>
-        <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_udbetalinger) }}</div>
-        <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_sager) }}</div>
-        <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_ansoegninger) }}</div>
-        <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_aendringer) }}</div>
-        <div class="col-12 col-sm-6 col-md-4 mb-6">{{ card(card_dokumentation) }}</div>
+    <div class="row card-row">
+        <div class="col-12 col-sm-6 col-md-4">{{ card(card_beskeder) }}</div>
+        <div class="col-12 col-sm-6 col-md-4">{{ card(card_udbetalinger) }}</div>
+        <div class="col-12 col-sm-6 col-md-4">{{ card(card_sager) }}</div>
+        <div class="col-12 col-sm-6 col-md-4">{{ card(card_ansoegninger) }}</div>
+        <div class="col-12 col-sm-6 col-md-4">{{ card(card_aendringer) }}</div>
+        <div class="col-12 col-sm-6 col-md-4">{{ card(card_dokumentation) }}</div>
     </div>
 </main>
 {% endblock %}

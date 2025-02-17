@@ -1,0 +1,386 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+
+<main class="container page-container" id="main-content" style="background-color: #FDD0A2">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 mt-0 mb-9">Knapper</h1>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Primærknap i alle states</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Default"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Hover",
+                        "classes": { "button": "button-hover" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Focus",
+                        "classes": { "button": "focus" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Active",
+                        "classes": { "button": "button-active" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Disabled",
+                        "attributes": "disabled"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Icon",
+                        "icon": "refresh"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Sekundærknap i alle states</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "variant": "secondary",
+                        "text": "Default"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "secondary",
+                        "text": "Hover",
+                        "classes": { "button": "button-hover" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "secondary",
+                        "text": "Focus",
+                        "classes": { "button": "focus" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "secondary",
+                        "text": "Active",
+                        "classes": { "button": "button-active" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "secondary",
+                        "text": "Disabled",
+                        "attributes": "disabled"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "secondary",
+                        "text": "Icon",
+                        "icon": "refresh"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Tertiærknap i alle states</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Default"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Hover",
+                        "classes": { "button": "button-hover" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Focus",
+                        "classes": { "button": "focus" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Active",
+                        "classes": { "button": "button-active" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Disabled",
+                        "attributes": "disabled"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Icon",
+                        "icon": "refresh"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Advarselsknap i alle states</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "variant": "warning",
+                        "text": "Default"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "warning",
+                        "text": "Hover",
+                        "classes": { "button": "button-hover" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "warning",
+                        "text": "Focus",
+                        "classes": { "button": "focus" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "warning",
+                        "text": "Active",
+                        "classes": { "button": "button-active" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "warning",
+                        "text": "Disabled",
+                        "attributes": "disabled"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "warning",
+                        "text": "Icon",
+                        "icon": "refresh"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Ikonknap i alle states</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "variant": "icon-only",
+                        "icon": "refresh"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "icon-only",
+                        "icon": "refresh",
+                        "classes": { "button": "button-hover" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "icon-only",
+                        "icon": "refresh",
+                        "classes": { "button": "focus" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "icon-only",
+                        "icon": "refresh",
+                        "classes": { "button": "button-active" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "icon-only",
+                        "icon": "refresh",
+                        "attributes": "disabled"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Knap uden variant i alle states</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "text": "Default"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "text": "Hover",
+                        "classes": { "button": "button-hover" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "text": "Focus",
+                        "classes": { "button": "focus" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "text": "Active",
+                        "classes": { "button": "button-active" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "text": "Disabled",
+                        "attributes": "disabled"
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "text": "Icon",
+                        "icon": "refresh"
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Tester inherit-værdier for knapper uden variant</p>
+            <div class="button-group">
+                <div class="d-inline-block button-wrapper" style="font-weight: 400;">
+                    {{ 
+                        button({
+                            "text": "Font-weight 400"
+                        }) 
+                    }}
+                </div>
+                <div class="d-inline-block button-wrapper" style="font-weight: 700;">
+                    {{ 
+                        button({
+                            "text": "Font-weight 700"
+                        }) 
+                    }}
+                </div>
+                <div class="d-inline-block button-wrapper" style="font-size: 1.2rem;">
+                    {{ 
+                        button({
+                            "text": "Font-size 12px"
+                        }) 
+                    }}
+                </div>
+                <div class="d-inline-block button-wrapper" style="font-size: 1.8rem;">
+                    {{ 
+                        button({
+                            "text": "Font-size 18px"
+                        }) 
+                    }}
+                </div>
+                <div class="d-inline-block button-wrapper" style="color: red;">
+                    {{ 
+                        button({
+                            "text": "Color red"
+                        }) 
+                    }}
+                </div>
+                <div class="d-inline-block button-wrapper" style="color: blue;">
+                    {{ 
+                        button({
+                            "text": "Color blue",
+                            "icon": "refresh"
+                        }) 
+                    }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Links der ligner knapper</p>
+            <div class="button-group">
+                <a href="#" class="button button-primary">Primær</a>
+                <a href="#" class="button button-secondary">Sekundær</a>
+                <a href="#" class="button button-tertiary">Tertiær</a>
+                <a href="#" class="button button-warning">Advarsel</a>
+                <a href="#" class="button button-icon-only">{{ icon_svg({"name": "refresh"}) }}</a>
+                <a href="#" class="button button-primary">{{ icon_svg({"name": "refresh"}) }} Primær med ikon</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Knapper med fuld bredde på små skærme</p>
+            <div class="button-group">
+                {{ 
+                    button({
+                        "variant": "primary",
+                        "text": "Default",
+                        "classes": { "button": "xs-full-width" }
+                    }) 
+                }}
+                {{ 
+                    button({
+                        "variant": "tertiary",
+                        "text": "Default",
+                        "classes": { "button": "xs-full-width" }
+                    }) 
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p>Knapper lavet med input-tag</p>
+            <div class="button-group">
+                <input type="submit" value="Submit button" class="button button-primary">
+                <input type="button" value="Button button" class="button button-primary">
+                <input type="reset" value="Reset button" class="button button-primary">
+            </div>
+        </div>
+    </div>
+    <div class="row mb-9">
+        <div class="col-12">
+            <p class="button button-primary" tabindex="0">Dette er en paragraf stylet som knap</p>
+            <div class="button button-primary" tabindex="0">Dette er en div stylet som knap</div>
+            <span class="button button-primary" tabindex="0">Dette er et span stylet som knap</span>
+        </div>
+    </div>
+</main>

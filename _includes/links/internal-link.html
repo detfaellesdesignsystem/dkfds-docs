@@ -12,6 +12,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 {% if classes != "" %}
     {%- assign classes = ' class="' | append: classes | append: '"' -%}
 {%- endif -%}
+{%- assign icon = '<svg class="icon-svg mr-0 ml-3" focusable="false" aria-hidden="true"><use href="#' | append: include.icon | append: '"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
@@ -30,7 +31,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "implementering og kode",
              "kom i gang som udvikler" -%}
-        <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}{% if include.icon %}{{ icon }}{% endif %}</a>
 
     {%- when "hent kodepakken",
              "kodepakke" -%}
@@ -66,7 +67,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "design og ressourcer",
              "kom i gang som designer" -%}
-        <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}</a>
+        <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "designets grundprincipper" -%}
         <a href="/kom-i-gang/designressourcer/#grundprincipper"{{ classes }}>{{ include.linktext }}</a>
@@ -102,7 +103,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "styleguide" -%}
         <a href="/styleguide/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "farver" -%}
+    {%- when "farver",
+             "farven" -%}
         <a href="/styleguide/farver/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "portalfarve",
@@ -179,8 +181,14 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "hjørner, streger og skygger" -%}
         <a href="/styleguide/borders/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "facit streger" -%}
+    {%- when "hjørner" -%}
+        <a href="/styleguide/borders/#hjoerner"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "streger" -%}
         <a href="/styleguide/borders/#streger"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "skygger" -%}
+        <a href="/styleguide/borders/#skygger"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "ikonet", 
              "ikoner",
@@ -339,7 +347,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "erst@erst.dk" -%}
         <a href="mailto:erst@erst.dk"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "privatlivspolitik og cookies" -%}
+    {%- when "privatlivspolitik og cookies",
+             "privatlivs&shy;politik og cookies" -%}
         <a href="/privatlivspolitik-cookies/"{{ classes }}>{{ include.linktext }}</a>
 
 

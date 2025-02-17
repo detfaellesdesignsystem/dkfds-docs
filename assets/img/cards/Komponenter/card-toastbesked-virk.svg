@@ -1,0 +1,29 @@
+<svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_13144_11121" fill="white">
+<path d="M0 0H267V150H0V0Z"/>
+</mask>
+<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
+<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_13144_11121)"/>
+<rect x="16" y="59" width="173" height="4" rx="2" fill="#0059B3" fill-opacity="0.3"/>
+<rect x="16" y="75" width="173" height="4" rx="2" fill="#0059B3" fill-opacity="0.3"/>
+<rect x="16" y="91" width="173" height="4" rx="2" fill="#0059B3" fill-opacity="0.3"/>
+<rect x="16" y="107" width="74" height="4" rx="2" fill="#0059B3" fill-opacity="0.3"/>
+<g clip-path="url(#clip0_13144_11121)">
+<mask id="path-7-inside-2_13144_11121" fill="white">
+<path d="M85 24C85 19.5817 88.5817 16 93 16H243C247.418 16 251 19.5817 251 24V62C251 66.4183 247.418 70 243 70H93C88.5817 70 85 66.4183 85 62V24Z"/>
+</mask>
+<path d="M85 24C85 19.5817 88.5817 16 93 16H243C247.418 16 251 19.5817 251 24V62C251 66.4183 247.418 70 243 70H93C88.5817 70 85 66.4183 85 62V24Z" fill="white"/>
+<rect x="101" y="35" width="16" height="16" rx="8" fill="white"/>
+<rect x="101" y="35" width="16" height="16" rx="8" stroke="#0059B3" stroke-width="2"/>
+<rect x="112.889" y="39.5254" width="2" height="9" rx="1" transform="rotate(45 112.889 39.5254)" fill="#0059B3"/>
+<rect x="109.354" y="45.8906" width="2" height="6" rx="1" transform="rotate(135 109.354 45.8906)" fill="#0059B3"/>
+<rect x="133" y="39" width="102" height="8" rx="4" fill="#0059B3"/>
+<rect width="9" height="67" transform="matrix(-1 0 0 1 89 12)" fill="#0059B3"/>
+</g>
+<path d="M93 17H243V15H93V17ZM250 24V62H252V24H250ZM243 69H93V71H243V69ZM86 62V24H84V62H86ZM93 69C89.134 69 86 65.866 86 62H84C84 66.9706 88.0294 71 93 71V69ZM250 62C250 65.866 246.866 69 243 69V71C247.971 71 252 66.9706 252 62H250ZM243 17C246.866 17 250 20.134 250 24H252C252 19.0294 247.971 15 243 15V17ZM93 15C88.0294 15 84 19.0294 84 24H86C86 20.134 89.134 17 93 17V15Z" fill="#0059B3" mask="url(#path-7-inside-2_13144_11121)"/>
+<defs>
+<clipPath id="clip0_13144_11121">
+<path d="M85 24C85 19.5817 88.5817 16 93 16H243C247.418 16 251 19.5817 251 24V62C251 66.4183 247.418 70 243 70H93C88.5817 70 85 66.4183 85 62V24Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

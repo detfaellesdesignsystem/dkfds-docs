@@ -49,7 +49,7 @@
                 "text": "Oplysninger om afsender",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -58,7 +58,7 @@
                 "text": "Kontaktoplysninger",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -67,7 +67,7 @@
                 "text": "Ansøgningens type",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }
@@ -113,7 +113,7 @@
         "variant": "unstyled",
         "classes": { "icon": "mr-0 mt-0" },
         "attributes": "aria-labelledby=\"header4 file1\" type=\"button\"",
-        "icon": "trash-can"
+        "icon": "delete"
     },
     "button_next": {
         "text": "Næste",

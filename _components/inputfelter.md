@@ -250,6 +250,10 @@ Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug
         <td>updateMessages()</td>
         <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
       </tr>
+      <tr>
+        <td>silentUpdateMessages()</td>
+        <td>Fungerer på samme måde som <code>updateMessages()</code>, bortset fra at ændringen ikke læses højt i skærmlæsere. Anvend kun, når ændringer i feltet er meningsforstyrrende for skærmlæserbrugere.</td>
+      </tr>
     </tbody>
   </table>
 </div>

@@ -37,32 +37,32 @@
             {
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Vælg noget mere",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Vedhæft dokumenter",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Tidligere registrering",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Kontaktoplysninger",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
-                "icon": { "name": "done", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
             },
             {
                 "text": "Opsummering",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-6/",
-                "active": true
+                "current": true
             }
         ]
     },

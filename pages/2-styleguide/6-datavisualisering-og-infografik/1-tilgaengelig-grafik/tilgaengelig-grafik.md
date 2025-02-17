@@ -47,13 +47,13 @@ Datavisualiseringer og infografik bør kunne aflæses i sort/hvid for sikre at b
   <div class="col-12 col-md-6">
     <h3>Sådan (do)</h3>
     <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-do.svg" alt="Eksempel på korrekt visning af søjlediagram med farver og mønstre" /></div>
-    <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#check-circle"></use></svg><div></div></div>
+    <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#success"></use></svg><div></div></div>
     <p><strong>Sådan:</strong> Betydning bør ikke kommunikeres af farve alene. Brug også mønstre, teksturer, figurer, linjetyper og andet for fx at adskille de forskellige udsnit (søjler, linjer, dele, mv.).</p>
     </div>
     <div class="col-12 col-md-6">
     <h3>Ikke sådan (don't)</h3>
     <div><img  src="{{ site.baseurl }}/assets/img/design/datavisualisering/barchart-dont.svg" alt="Eksempel på ukorrekt visning af søjlediagram med manglende farver og mønstre" /></div>
-    <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#highlight-off"></use></svg><div></div></div>
+    <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#error"></use></svg><div></div></div>
     <p><strong>Ikke sådan:</strong> Undgå farvekombinationerne grøn-rød, grøn-blå, grøn-brun, grøn-sort, grøn-grå, blå-grå, lys grøn-gul og blå-lilla.</p>
   </div>
 </section>

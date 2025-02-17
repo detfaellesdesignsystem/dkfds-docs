@@ -1,4 +1,5 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/back-link/back-link.njk" import back_link as back_link %}
 {% from "components/header/header.njk" import portal_info as portal_info %}
 {% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
 {% from "components/header/header.njk" import solution_info as solution_info %}
@@ -11,7 +12,9 @@
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
@@ -26,7 +29,7 @@
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "contact-card"}) + 'Kontakt</button>'
     }
 } %}
 
@@ -44,6 +47,8 @@
     <p class='m-0'>Tirsdag-torsdag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-17</span></p>
     <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
 %}
+
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + stepIndicator(trinindikator_data) + "</nav>" %}
 
 {% set modal_actions = 
     button({
@@ -73,28 +78,35 @@
 {% block body %}
 <div class="container page-container pt-0">
     <div class="row">
-        <div class="col-12">
-            <div role="region" aria-label="Sidefunktioner">
-                <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-2">
+        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
+            {{
+                stepIndicatorButton({
+                    "breakpoint": "lg",
+                    "modal": "modal-step-indicator",
+                    "currentStep": "5",
+                    "totalSteps": "6"
+                })
+            }}
+            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+                {{ stepIndicator(trinindikator_data) }}
+            </nav>
+        </aside>
+        <div class="col-12 col-lg-9">
+            <aside class="w-percent-100" aria-label="Sidehandlinger">
+                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
                     <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
                 </ul>
-            </div>
+            </aside>
+            <main class="w-percent-100" id="main-content">
+                {{ back_link({ "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/" }) }}
+                <h1 class="mb-6">Kontaktoplysninger</h1>
+                <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-6/">
+                    {{ textinput(input_email) }}
+                    {{ textinput(input_telefonnummer) }}
+                    {{ button(button_next) }}
+                </form>
+            </main>
         </div>
-    </div>
-    <div class="row">
-        <aside class="col-12 col-lg-3 mt-2">
-            {{ overflow_stepguide(trinindikator_data) }}
-        </aside>
-        <main class="col-12 col-lg-9" id="main-content">
-            <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-4/" class="back-link">Tilbage</a>
-            </div>
-            <h1 class="mb-6">Kontaktoplysninger</h1>
-            <form novalidate method="post" action="/pages/eksempler/trinformular-til-registrering/registrering-6/">
-                {{ textinput(input_email) }}
-                {{ textinput(input_telefonnummer) }}
-                {{ button(button_next) }}
-            </form>
-        </main>
     </div>
 </div>
 {% endblock %}
@@ -111,6 +123,15 @@
             "content": modal_content,
             "forcedAction": false,
             "actions": modal_actions
+        })
+    }}
+    {{
+        modal({
+            "id": "modal-step-indicator",
+            "heading": "Trin 5 af 6",
+            "content": modal_content_step,
+            "forcedAction": false,
+            "stepIndicator": true
         })
     }}
 </div>

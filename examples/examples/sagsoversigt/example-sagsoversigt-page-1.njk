@@ -20,7 +20,7 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/badge/badges.njk" import badge as badge %}
 {% from "components/details/details.njk" import details as details %}
-{% from "components/cards/cards.njk" import card as card %}
+{% from "components/cards/cards.njk" import newCard as card %}
 {% from "components/table/table.njk" import table as table %}
 
 {# <!-- Variables --> #}
@@ -47,7 +47,7 @@
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "contact-card"}) + 'Kontakt</button>'
     }
 } %}
 
@@ -170,7 +170,9 @@
 
     <h3>Anmodninger, der afventer svar</h3>
     <div class="w-percent-xs-100 w-percent-sm-60 w-percent-md-50 w-percent-xl-30">
-        {{ card(card_anmodning) }}
+        {{ 
+            card(card_anmodning) 
+        }}
     </div>
 
 </main>

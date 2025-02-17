@@ -16,6 +16,11 @@ title: Test
 {% include test/preview-test.html filename="test-headings-long-text" description="Lange headings" %}
 
 {:.h3}
+## Grid
+
+{% include test/preview-test.html filename="test-container" description="Container-test" %}
+
+{:.h3}
 ## Ikoner
 
 {% include test/preview-test.html filename="test-icons-svg-and-class" description="Ikoner indsat som svg og klasse" %}
@@ -37,6 +42,11 @@ title: Test
 {% include test/preview-test.html filename="test-alerts-1" description="Besked 1" %}
 {% include test/preview-test.html filename="test-alerts-2" description="Besked 2" %}
 {% include test/preview-test.html filename="test-alerts-3" description="Besked 3" %}
+
+{:.h3}
+## Cards
+
+{% include test/preview-test.html filename="test-cards" description="Cards" %}
 
 {:.h3}
 ## Datofelter
@@ -133,24 +143,25 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Inputfelter
 
+{% include test/preview-test.html filename="test-input-fields-styling" description="Styling af inputfelter" %}
 {% include test/preview-test.html filename="test-input-fields-1" description="Inputfelter 1" %}
 {% include test/preview-test.html filename="test-input-fields-2" description="Inputfelter 2" %}
 {% include test/preview-test.html filename="test-input-fields-3" description="Inputfelter 3" %}
 {% include test/preview-test.html filename="test-input-fields-4" description="Inputfelter 4" %}
 {% include test/preview-test.html filename="test-input-fields-5" description="Inputfelter 5" %}
 {% include test/preview-test.html filename="test-input-fields-6" description="Inputfelter 6" %}
-{% include test/preview-test.html filename="test-input-fields-7" description="Inputfelter 7" %}
+{% include test/preview-test.html filename="test-input-fields-character-limit" description="Inputfelter med karakterbegrænsning" %}
 {% include test/preview-test.html filename="test-input-fields-8" description="Inputfelter 8" %}
 {% include test/preview-test.html filename="test-input-fields-9" description="Inputfelter 9" %}
 
 {:.h3}
 ## Knapper
 
+{% include test/preview-test.html filename="test-buttons" description="Knapper" %}
 {% include test/preview-test.html filename="test-buttons-in-row" description="Knapper på én række" %}
 {% include test/preview-test.html filename="test-buttons-in-divs" description="Knapper i hver sin række" %}
 {% include test/preview-test.html filename="test-buttons-next-to-text" description="Knapper i tekstafsnit" %}
 {% include test/preview-test.html filename="test-button-long-text" description="Knapper med lang tekst" %}
-{% include test/preview-test.html filename="test-buttons-1" description="Knap 1" %}
 
 {:.h3}
 ## Modal
@@ -231,6 +242,11 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-textarea-7" description="Tekstområde 7" %}
 
 {:.h3}
+## Tilbage-link
+
+{% include test/preview-test.html filename="test-back-link" description="Tilbage-link" %}
+
+{:.h3}
 ## Tilbage til toppen
 
 {% include test/preview-test.html filename="test-back-to-top-long-page" description="Tilbage til toppen-knap på en lang side" %}
@@ -272,6 +288,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-step-guide-5" description="Trinindikator 5" %}
 {% include test/preview-test.html filename="test-step-guide-6" description="Trinindikator 6" %}
 {% include test/preview-test.html filename="test-step-guide-7" description="Trinindikator 7" %}
+{% include test/preview-test.html filename="test-step-indicator-states" description="Trinindikator" %}
 
 {:.h3}
 ## Venstremenu

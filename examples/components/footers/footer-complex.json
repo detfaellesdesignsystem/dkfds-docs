@@ -106,7 +106,7 @@
                     "content": "<a href=\"tel:+4512345678\" class=\"function-link\" title=\"Ring til Digitaliseringsstyrelsen\">(+45) 12 34 56 78</a>"
                 },
                 {
-                    "content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use xlink:href=\"#open-in-new\"></use></svg></a>",
+                    "content": "<a href=\"#\" class=\"function-link icon-link\">Tilgængelighedserklæring<svg class=\"icon-svg\" focusable=\"false\" aria-hidden=\"true\"><use href=\"#open-in-new\"></use></svg></a>",
                     "hideOnPrint": true
                 },
                 {

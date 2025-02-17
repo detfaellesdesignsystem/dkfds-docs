@@ -49,7 +49,7 @@
             {
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
-                "active": true
+                "current": true
             },
             {
                 "text": "Vælg noget mere",
@@ -95,9 +95,9 @@
     },
     "button_add": {
         "text": "Tilføj person",
-        "variant": "tertiary",
+        "variant": "secondary",
         "classes": { "button": "d-print-none mt-5" },
-        "icon": "add",
+        "icon": "plus",
         "attributes": "type='button'"
     },
     "button_next": {

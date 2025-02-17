@@ -19,7 +19,7 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="button-primary" title="Eksempel på primærknap" classes="intro-example" %}
+{% include code/preview-box.html component="buttons" title="Eksempel på knapper" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Knapper" code="Knapper_Kode" %}
 
@@ -29,69 +29,67 @@ tabs: "Retningslinjer, kode"
 
 ### Anvendes til
 
-Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom "næste" trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ind”, ”Log af” m.fl.
+Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom “Næste” trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ud” m.fl.
 
 ### Anvendes ikke til
 
-Brug ikke knapper til at navigere mellem sidevisninger. Der skal du i stedet anvende link.
+Brug ikke knapper til at navigere til andre sider. Der skal du i stedet anvende {% include links/internal-link.html linktext="links" %}.
 
 ### Vejledning
 
-Der er kun én primærknap pr. side.
+Hierarkisk er der tre typer af knapper, Primær, Sekundær og Tertiær, der bruges til at fremhæve udvalgte handlinger.
 
-Generelt skal du anvende primære knapper til handlinger, der bringer brugeren videre i sin udfyldelse/indberetning i selvbetjeningsløsningen. Sekundære og tertiære knapper bruges til handlinger, der foregår på det aktuelle trin.
+#### Primærknap
 
-Brug også sekundære og tertiære knapper til at vægte vigtigheden af andre tilbudte funktioner.
+Primærknapper anvendes til den centrale handling i brugergrænsefladen. Det kan eksempelvis være “Tilmeld” eller “Indsend”. Der må kun anvendes én primærknap pr. side.
 
-Undgå for mange knapbaserede funktioner på samme side.
+#### Sekundærknap
 
-Funktioner af mindre vigtighed bør du style som et {% include links/component-guideline-link.html linktext="funktionslink" %}.
+Sekundærknapper anvendes til handlinger der ikke er centrale i brugergrænsefladen. Der kan være flere sekundærknapper på en side.
 
-Brug stort forbogstav og små bogstaver for resten af teksten på knappen.
+#### Tertiærknap
 
-Skriv kort og præcist.
-
-Skriv i aktiv form: I stedet for at skrive ”Fejlindmelding” bør du skrive ”Indmeld en fejl”.
-
-I nogle tilfælde kan det være meningsunderstøttende at indlejre et svg-ikon i knappen for at signalere bestemte handlinger.
+Tertiærknapper anvendes til nedtonede handlinger, der ikke er centrale i brugergrænsefladen.
 
 #### Disabled tilstand
 
-Brug helst ikke "disabled" state på knapper eller i det hele taget, da ikke alle brugere forstår, at det som er "disabled" ikke kan anvendes.
-
-Brug ikke "disabled" tilstand på "næste" knapper (knapper der bringer brugeren videre i løsningen), da brugeren ved tryk på sådanne knapper skal have at vide, hvor i formularen, der mangler udfyldelse og dermed hjælpes til gennemførelse af selvbetjeningsløsningen.
-
-Der kan være tilfælde, hvor det giver mening for brugeren at du anvender "disabled" tilstanden, men så skal det være en aktiv del af en umiddelbar og kontekstuel kommunikation på siden; fx ved at en knap først bliver aktiv, når brugeren har godkendt nogle betingelser ved fx at sætte et flueben. I sådanne tilfælde er det vigtigt at knap og betingelse, står i umiddelbar nærhed, så brugerne bliver opmærksomme på forskellen, og så brugere der anvender zoom også kan se ændringen ske inden for deres zoom.
+Alle knapper har en “disabled” tilstand, men vi anbefaler ikke at benytte denne, da ikke alle brugere forstår, at det som er “disabled” ikke kan anvendes. Derudover er disabled knapper svære at se og læse grundet lav farvekontrast. Disabled knapper får ikke fokus, hvormed brugere, der navigerer med tastatur og bruger skærmlæser, ikke vil opdage knappen.
 
 {% include dos-donts-box.html component="buttons-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Primærknap {#{% include create-id.html heading="Primærknap" %}}
+### Primærknap i fuld bredde på små skærme {#{% include create-id.html heading="fuld bredde" %}}
 
-{% include code/preview-box.html component="buttons-primary" title="Eksempel på primærknap" code="/komponenter/knapper/#primaer-kode" %}
+På små skærme med kun én central handling kan primærknapper indsættes på siden med fuld bredde. Benyt kun denne variant til primærknapper og kun til små skærmstørrelser (breakpoint mobil).
 
-### Sekundærknapper {#{% include create-id.html heading="Sekundærknapper" %}}
-
-{% include code/preview-box.html component="buttons-secondary" title="Eksempel på sekundærknap" code="/komponenter/knapper/#sekundaer-kode" %}
-
-### Tertiærknapper {#{% include create-id.html heading="Tertiærknapper" %}}
-
-{% include code/preview-box.html component="buttons-tertiary" title="Eksempel på tertiær knap" code="/komponenter/knapper/#tertiaer-kode" %}
-
-### Tilbage-knap {#{% include create-id.html heading="Tilbage-knap" %}}
-
-{% include code/preview-box.html component="buttons-back" title="Eksempel på tilbageknap" code="/komponenter/knapper/#tilbage-knap-kode" %}
+{% include code/preview-box.html component="buttons-full-width" title="Eksempel på knap med fuld bredde på små skærme" code="/komponenter/knapper/#fuld-bredde-kode" %}
 
 ### Knap med ikon {#{% include create-id.html heading="Knap med ikon" %}}
 
+Du kan supplere knappens tekst med et ikon, hvis dette klart og tydeligt angiver knappens funktion.
+
 {% include code/preview-box.html component="buttons-with-icon" title="Eksempel på knap med ikon" code="/komponenter/knapper/#knap-med-ikon-kode" %}
+
+### Knapgruppe {#{% include create-id.html heading="Knapgruppe" %}}
+
+For funktioner, der er sammenhængende, kan knapper grupperes og placeres ved siden af hinanden.
+
+{% include code/preview-box.html component="buttons-group" title="Eksempel på knapgruppe" code="/komponenter/knapper/#knapgruppe-kode" %}
+
+### Advarselsknapper {#{% include create-id.html heading="Advarselsknapper" %}}
+
+Bør kun anvendes til funktioner hvor brugeren skal forstå, at de er ved at foretage en handling, der ikke efterfølgende kan omgøres, og som kan have store konsekvenser. Eksempelvis “Er du sikker på, du ønsker at slette det indtastede?” 
+
+Vær opmærksom på, at den røde farve ikke må være det eneste, der kommunikerer handlingens alvor. Konteksten og knapteksten skal også kommunikere dette, da ikke alle brugere kan se og forstå farven og dens betydning (GOV.UK, WCAG).
+
+{% include code/preview-box.html component="buttons-warning" title="Eksempel på advarselsknap" code="/komponenter/knapper/#advarselsknapper-kode" %}
 
 ### Klikbart ikon {#{% include create-id.html heading="Klikbart ikon" %}}
 
-Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med sorteringsikoner i {% include links/component-guideline-link.html linktext="tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
- 
-Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-guideline-link.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
+Klikbare ikoner bør kun anvendes i tilfælde, hvor ikonet er bredt kendt, og hvor der ikke er plads til supplerende tekstlabel i brugergrænsefladen. Det kan f.eks. være tilfældet med sorteringsikoner i {% include links/component-guideline-link.html linktext="tabeller" %} eller skraldespandsikoner på mobil, hvor pladsen er begrænset.
+
+Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% include links/component-guideline-link.html linktext="funktionslink" %} i stedet for klikbare ikoner, når det er muligt.
 
 {% include code/preview-box.html component="buttons-only-icon" title="Eksempel på knap som ikon" code="/komponenter/knapper/#klikbart-ikon-kode" %}
 
@@ -108,9 +106,11 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
-- Luke Wroblewski: Web Form Design: Filling in the Blanks (2008)
-- Jeff Johnson: Designing with the Mind in Mind, Second Edition (2014)
-- {% include links/external-link.html linktext="Hvornår skal du bruge en knap eller et link" %}
+- {% include links/external-link.html linktext="The Problem with Disabled Buttons and What To Do Instead" %}
+- {% include links/external-link.html linktext="When to Use a Button or Link" %}
+- {% include links/external-link.html linktext="Usability Pitfalls of Disabled Buttons, and How To Avoid Them" %}
+- {% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.4.1: Use of Color (Level A)" %}
+- {% include links/external-link.html linktext="GOV.UK Design System - Button" %}
 
 <!--split-->
 
@@ -118,34 +118,46 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% incl
 
 ### HTML Struktur
 
-{% include code/syntax.html component="button-primary" copybutton=true %}
+{% include code/syntax.html component="buttons" copybutton=true %}
 
 Undgå at anvende `div` eller `img` tags til at konstruere en knap, da skærmlæsere i givet fald ikke automatisk kan afkode knappens funktionalitet.
 
+Alle knapper skal altid have klassen `button`, der sætter en grundlæggende styling.
+
+Hvis man har knapper med lang tekst, kan der i enkelte tilfælde være ombrydningsproblemer på mindre skærme. Hvis det ikke er muligt at give knappen et kortere navn, kan man placere knappens tekst i et `<span>`-element for at ombryde teksten over flere linjer.
+
+{% include code/syntax.html component="buttons-long-text" link=false copybutton=true %}
+
 ## Primær {#{% include create-id.html heading="Primær" append="-kode" %}}
 
-Defineres med klassen `button-primary`.
+Tilføj klassen `button-primary` til knappen.
 
 Bemærk særlige {% include links/component-guideline-link.html linktext="retningslinjer for primærknap" %}.
 
 ## Sekundær {#{% include create-id.html heading="Sekundær" append="-kode" %}}
 
-Defineres med klassen `button-secondary`.
+Tilføj klassen `button-secondary` til knappen.
 
 ## Tertiær {#{% include create-id.html heading="Tertiær" append="-kode" %}}
 
-Defineres med klassen `button-tertiary`.
+Tilføj klassen `button-tertiary` til knappen.
 
-## Tilbage-knap {#{% include create-id.html heading="Tilbage-knap" append="-kode" %}}
+## Primærknap i fuld bredde på små skærme {#{% include create-id.html heading="fuld bredde" append="-kode" %}}
 
-Defineres med klassen `button-quaternary`.
+{% include code/syntax.html component="buttons-full-width" link=true copybutton=true guidelines="/komponenter/knapper/#fuld-bredde" %}
 
 ## Knap med ikon {#{% include create-id.html heading="Knap med ikon" append="-kode" %}}
 
 {% include code/syntax.html component="buttons-with-icon" link=true copybutton=true guidelines="/komponenter/knapper/#knap-med-ikon" %}
 
+## Knapgruppe {#{% include create-id.html heading="Knapgruppe" append="-kode" %}}
+
+{% include code/syntax.html component="buttons-group" link=true copybutton=true guidelines="/komponenter/knapper/#knapgruppe" %}
+
+## Advarselsknapper {#{% include create-id.html heading="Advarselsknapper" append="-kode" %}}
+
+{% include code/syntax.html component="buttons-warning" link=true copybutton=true guidelines="/komponenter/knapper/#advarselsknapper" %}
+
 ## Klikbart ikon {#{% include create-id.html heading="Klikbart ikon" append="-kode" %}}
 
 {% include code/syntax.html component="buttons-only-icon" link=true copybutton=true guidelines="/komponenter/knapper/#klikbart-ikon" %}
-
-`button-unstyled` bruges i de tilfælde, hvor knappen kun indeholder et ikon. For at gøre knappen tilgængelig husk da at tilføje tekst til skærmlæsere. Fx `<span class="sr-only">Slet</span>`.

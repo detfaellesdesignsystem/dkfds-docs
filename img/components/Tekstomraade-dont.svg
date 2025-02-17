@@ -6,8 +6,8 @@
     <g id="Tekstområde-don't" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g>
             <rect id="Rectangle" fill="#F5F5F5" x="0" y="0" width="360" height="361"></rect>
-            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="9.5" y="73.5" width="172" height="19"></rect>
-            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="9.5" y="48.5" width="301" height="21"></rect>
+            <rect id="Rectangle" stroke="#707070" fill="#BFBFBF" x="9.5" y="73.5" width="172" height="19"></rect>
+            <rect id="Rectangle" stroke="#707070" fill="#BFBFBF" x="9.5" y="48.5" width="301" height="21"></rect>
             <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="10.5" y="102.5" width="219" height="199"></rect>
             <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="229.5" y="102.5" width="15" height="199"></rect>
             <rect id="Rectangle-Copy-13" fill="#9195BF" x="17" y="103" width="205" height="9"></rect>
@@ -25,7 +25,7 @@
             <rect id="Rectangle-Copy-27" fill="#9195BF" x="17" y="267" width="205" height="10"></rect>
             <rect id="Rectangle-Copy-20" fill="#9195BF" x="17" y="207" width="205" height="10"></rect>
             <rect id="Rectangle" fill="#474E95" x="232" y="172" width="10" height="100" rx="5"></rect>
-            <rect id="Rectangle" fill="#747474" x="10" y="307" width="86" height="25"></rect>
+            <rect id="Rectangle" fill="#707070" x="10" y="307" width="86" height="25"></rect>
             <text id="Send-Copy" font-family="IBMPlexSans-Medium, IBM Plex Sans, Helvetica" font-size="16" font-weight="400" fill="#FFFFFF">
                 <tspan x="32" y="326">Send</tspan>
             </text>

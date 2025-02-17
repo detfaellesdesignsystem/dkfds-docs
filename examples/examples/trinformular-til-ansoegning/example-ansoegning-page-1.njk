@@ -11,7 +11,7 @@
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/side-navigation/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 {% from "components/buttons/buttons.njk" import button as button %}
@@ -27,7 +27,7 @@
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "contact-card"}) + 'Kontakt</button>'
     }
 } %}
 

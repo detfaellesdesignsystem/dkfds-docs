@@ -144,7 +144,8 @@ module.exports = function (outputPath, prod) {
                         { from: "./node_modules/dkfds/dist/img/logo_virk.svg", to: "img" },
                         { from: "./node_modules/dkfds/dist/img/logo-borgerdk.svg", to: "img" },
                         { from: "./node_modules/dkfds/dist/img/logo-header-placeholder.png", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-placeholder.png", to: "img" }
+                        { from: "./node_modules/dkfds/dist/img/logo-placeholder.png", to: "img" },
+                        { from: "./node_modules/dkfds/dist/img/all-svg-icons.svg", to: "img" }
                     ]
                 }
             ),

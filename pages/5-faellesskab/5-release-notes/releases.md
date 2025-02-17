@@ -105,6 +105,72 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 
 
+## Version 11.0.0 {#{% include create-id.html heading="Version 11.0.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">??-??-2025</span></div>
+
+Se {% include links/external-link.html linktext="beslutningslog for version 11.0.0" %}
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Farver" %}</h3>
+</div>
+- Ændret `success-light` fra `#EEFFE2` til `#DDF7CE`.
+- Ændret `gray-400` fra `#999999` til `#8E8E8E`.
+- Ændret `gray-500` fra `#747474` til `#707070`.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Ikoner" %}</h3>
+</div>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `icon-svg--inherit-color` og i stedet tilføjet `fill: currentColor` til ikonklassen `icon-svg`. Hvor ikoner tidligere som standard var sorte, arver de nu farven fra det element, de optræder i.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret filen 'all-svg-icons.svg' så ikonerne matcher dem i filen 'base-svg.njk'.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret de fleste af ikonerne til at anvende Material Symbols.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret navnet på adskillige ikoner så det er mere sigende.
+{% include links/github-link.html number="241" afternumber=" på GitHub" %}
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet `xlink:href` med `href` på alle ikoner, da {% include links/external-link.html linktext="xlink:href er forældet" %}. Funktionaliteten er uændret.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet tilgængelighedsfejl, hvor ikonet i {% include links/internal-link.html linktext="eksterne links" %} ikke blev læst højt. Fjern `aria-hidden` fra ikonet og indsæt en passende `aria-label` i stedet. Makroen 'icon_svg' er i denne forbindelse opdateret, så et ikon ikke både kan have `aria-label` og `aria-hidden="true"`.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Knapper" %}</h3>
+</div>
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet knapvariant til brug ved advarsler.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Visuelt løft af alle knapper inkl. {% include links/component-guideline-link.html linktext="Tilbage til toppen" %} og knappen i {% include links/component-guideline-link.html linktext="søgefeltet" %}. Læs de opdaterede {% include links/component-guideline-link.html linktext="retningslinjer for knapper" %} for korrekt anvendelse af knapperne.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Klassen `button-unstyled` udgår og erstattes af `button`, der allerede eksisterer, men som tidligere ikke har kunnet anvendes for sig selv. Variant-klasserne som fx `button-secondary` skal fortsat anvendes sammen med `button`, hvis knappen skal styles som en af varianterne.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilbage-knapperne (sat med klassen `button-quaternary`) udgår.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Har man flere knapper ved siden af hinanden, skal man enten anvende en wrapper med klassen `button-group` for at sikre korrekt margin mellem knapperne eller selv justere afstanden med {% include links/internal-link.html linktext="hjælpeklasser" %}. Klassen `button-column` udgår.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Knapper er som standard ikke længere fuld bredde på små skærme. Ønsker man fortsat denne funktionalitet, skal man tilføje klassen `xs-full-width` til sin knap.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Klassen `button-tertiary` skal ikke længere anvendes på {% include links/component-guideline-link.html linktext="Tilbage til toppen" %}.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Knapper med lange ord bliver nu ombrudt korrekt ved pladsmangel, hvis man placerer teksten i et `<span>`-element.
+
+<div class="d-flex align-items-center mt-5 mb-4">
+  <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
+</div>
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
+{% include links/github-link.html number="239" afternumber=" på GitHub" %}
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for {% include links/component-guideline-link.html linktext="tilbage-link" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for {% include links/component-guideline-link.html linktext="cards" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for ikonerne i {% include links/component-guideline-link.html linktext="brødkrumme" %}.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny styling for {% include links/component-guideline-link.html linktext="accordions" %}. HTML for accordions med fejl er ændret.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Adskillige Sass-variable relateret til knapper, venstremenu og tags er enten slettet, tilføjet eller ændret.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Slettet forældet styling herunder al anvendelse af `::-ms-clear`, `-ms-high-contrast`, `-ms-box-orient`, `@-moz-document` og `:-moz-focusring`, samt klasserne `page-navigation` og `background-dark`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. Variablene `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret værdier og navne for de mulige stregtyper. I stedet for `10`, `20` og `30` skal man anvende `'high-contrast'`, `'low-contrast'` og `'very-low-contrast'` til `border`-funktionen. Variablene `$header-border-color`, `$header-last-border-color`, `$header-portal-mobile-border-color`, `$toggle-off-dot-border-color` og `$toggle-off-border-color` er fjernet.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret skygger, hvor de tidligere skygger kaldet "Modalvindue", "Overflow menu" og "Cards" er fjernet til fordel for to nye skygger kaldet "Stor skygge" og "Lille skygge". Mulighed for at ændre skygge med variablene `$back-to-top-button-shadow`, `$cookie-message-shadow`, `$datepicker-shadow`, `$modal-shadow`, `$overflow-menu-content-shadow`, `$toast-shadow` og `$tooltip-shadow` er fjernet.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet funktionen `silentUpdateMessages()` til karakterbegrænsning.
+- Rettet fejl, hvor udfyldte inputfelter med karakterbegrænsning blev læst højt for skærmlæsere ved sidens indlæsning.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Nye favicons for begge temaer, såfremt man anvender disse.
+- Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
+- Ændret {% include links/internal-link.html linktext="streger" %} (`border`) for flere komponenter.
+- Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
+- Nyt design for {% include links/component-guideline-link.html linktext="venstremenuen" %} og mobilmenuen i {% include links/component-guideline-link.html linktext="headeren" %}.
+- Ændret tykkelse og farve på fokusstreger.
+- Fjernet dedikeret fokusfarve fra {% include links/internal-link.html linktext="links" %}.
+- Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
+- Ny pil anvendt i detaljekomponenten.
+- Rettet fejl, hvor ikon og tekst i {% include links/component-guideline-link.html linktext="beskeder" %} kunne overlappe ved tekstforstørrelse.
+
+
+
 ## Version 10.2.1 {#{% include create-id.html heading="Version 10.2.1" %}}
 {:.mb-0}
 
@@ -166,7 +232,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 10.2
 
 Som noget nyt introducerer vi en beslutningslog, der fremover skal supplere den aktuelle release. Her vil der være detaljer og baggrund om de valg, der er truffet.
 
-Se {% include links/external-link.html linktext="beslutningslog for version 10.1.0" %}.
+Se {% include links/external-link.html linktext="beslutningslog for version 10.1.0" %}
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Paginering" %}</h3>

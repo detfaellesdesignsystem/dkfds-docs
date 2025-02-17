@@ -146,7 +146,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "knapper" -%}
         <a href="/komponenter/knapper/">{{ include.linktext }}</a>
 
-    {%- when "retningslinjer for primærknap" -%}
+    {%- when "retningslinjer for primærknap",
+             "retningslinjer for knapper" -%}
         <a href="/komponenter/knapper/#saadan-bruges-komponenten">{{ include.linktext }}</a>
 
     {%- when "klikbare ikoner" -%}

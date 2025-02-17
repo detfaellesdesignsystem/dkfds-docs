@@ -221,7 +221,7 @@ Anvendes ikke andre steder end i headeren.
         <td>14px</td>
         <td>16px</td>
         <td>Regular (400)</td>
-        <td>#747474</td>
+        <td>#707070</td>
         <td>1px</td>
       </tr>
     </tbody>

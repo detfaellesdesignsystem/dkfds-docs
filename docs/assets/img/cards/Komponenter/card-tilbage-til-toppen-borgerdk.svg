@@ -1,0 +1,17 @@
+<svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_10643_18246" fill="white">
+<path d="M0 0H267V150H0V0Z"/>
+</mask>
+<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
+<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_10643_18246)"/>
+<rect x="16" y="24" width="96" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="16" y="81" width="96" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="16" y="40" width="179" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="16" y="113" width="179" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="16" y="97" width="179" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="16" y="129" width="74" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="140.5" y="106.5" width="110" height="27" rx="7.5" fill="white"/>
+<rect x="140.5" y="106.5" width="110" height="27" rx="7.5" stroke="#44831E"/>
+<path d="M156 128C155.448 128 155 127.552 155 127L155 115.83L150.12 120.71C149.728 121.102 149.093 121.1 148.703 120.707C148.314 120.317 148.315 119.685 148.705 119.295L155.293 112.707C155.683 112.317 156.317 112.317 156.707 112.707L163.295 119.295C163.684 119.684 163.684 120.316 163.295 120.705C162.905 121.095 162.274 121.095 161.885 120.706L157 115.83L157 127C157 127.552 156.552 128 156 128Z" fill="#44831E"/>
+<rect x="172" y="116" width="67" height="8" rx="4" fill="#44831E"/>
+</svg>

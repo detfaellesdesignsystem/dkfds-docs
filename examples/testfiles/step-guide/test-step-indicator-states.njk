@@ -1,0 +1,96 @@
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% set step_indicator = stepIndicator({
+    "id": "step-indicator-id",
+    "steps": [
+        {
+            "text": "Lorem ipsum dolor sit amet",
+            "href": "#",
+            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+        },
+        {
+            "text": "Consectetur adipiscing elit",
+            "href": "#",
+            "helptext": "Informationstekst",
+            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+        },
+        {
+            "text": "Duis pellentesque mollis nisl",
+            "href": "#",
+            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+        },
+        {
+            "text": "Sed mollis metus pellentesque et",
+            "href": "#",
+            "helptext": "Informationstekst",
+            "icon": {"name": "error", "ariaLabel": "Fejl", "ariaHidden": false},
+            "error": true
+        },
+        {
+            "text": "Vestibulum convallis consectetur metus",
+            "href": "#",
+            "icon": {"name": "error", "ariaLabel": "Fejl", "ariaHidden": false},
+            "error": true
+        },
+        {
+            "text": "Sit amet eleifend leo egestas sed",
+            "href": "#",
+            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+        },
+        {
+            "text": "Fusce efficitur nec quam et consectetur",
+            "href": "#",
+            "current": true
+        },
+        {
+            "text": "Vestibulum vel convallis mauris",
+            "href": "#",
+            "disabled": true
+        },
+        {
+            "text": "Vitae aliquet orci",
+            "href": "#",
+            "disabled": true,
+            "helptext": "Informationstekst"
+        }
+    ]
+}) %}
+
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + step_indicator + "</nav>" %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Trinindikator</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <aside class="col-12 col-lg-4" aria-label="Se og vælg trin">
+            {{
+                stepIndicatorButton({
+                    "breakpoint": "lg",
+                    "modal": "modal-step-indicator",
+                    "currentStep": "7",
+                    "totalSteps": "9"
+                })
+            }}
+            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+                {{ step_indicator }}
+            </nav>
+        </aside>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-step-indicator",
+            "heading": "Trin 7 af 9",
+            "content": modal_content_step,
+            "forcedAction": false,
+            "stepIndicator": true
+        })
+    }}
+</div>

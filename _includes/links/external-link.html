@@ -11,7 +11,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 {%- endif -%}
 {%- assign classes = 'class="' | append: classes | append: '"' -%}
 {%- assign attributes = '' | append: classes | append: ' target="_blank"' -%}
-{%- assign icon = '<svg class="icon-svg" focusable="false" aria-hidden="true" tabindex="-1"><use xlink:href="#open-in-new"></use></svg>' -%}
+{%- assign icon = '<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
@@ -70,6 +70,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "w3c (wcag 2.1): understanding sc 2.2.1: timing adjustable (level a)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "w3c (wcag 2.1): understanding sc 1.4.1: use of color (level a)" -%}
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "w3c (wcag 2.1): understanding sc 1.4.3: contrast (minimum) (level aa)" -%}
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -206,7 +209,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "breadcrumbs: 11 design guidelines for desktop and mobile" -%}
         <a href="https://www.nngroup.com/articles/breadcrumbs/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "page laubheimer: cards: ui-component definition (2016)" -%}
+    {%- when "page laubheimer (2016): ui component definition" -%}
         <a href="https://www.nngroup.com/articles/cards-component/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "therese fessenden: modal & nonmodal dialogs: when (& when not) to use them (2017)" -%}
@@ -276,7 +279,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "when you should use a breadcrumb navigation" -%}
         <a href="https://uxmovement.com/navigation/when-you-should-use-a-breadcrumb-navigation/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "hvornår skal du bruge en knap eller et link" -%}
+    {%- when "when to use a button or link" -%}
         <a href="https://uxmovement.com/buttons/when-to-use-a-button-or-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
@@ -305,7 +308,10 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "gov.uk design system - skip link" -%}
-        <a href="https://design-system.service.gov.uk/components/error-message/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+        <a href="https://design-system.service.gov.uk/components/skip-link/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "gov.uk design system - button" -%}
+        <a href="https://design-system.service.gov.uk/components/button/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 
@@ -325,6 +331,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "the ideal search box is 27 characters wide" -%}
         <a href="https://www.smashingmagazine.com/2009/09/10-useful-usability-findings-and-guidelines/#6-the-ideal-search-box-is-27-characters-wide" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "usability pitfalls of disabled buttons, and how to avoid them" -%}
+        <a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 
@@ -373,8 +382,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "whatwg" -%}
         <a href="https://whatwg.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "se komponentbiblioteket i figma" -%}
-        <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+    {%- when "designbibliotek i figma" -%}
+        <a href="https://www.figma.com/community/file/1284147195952477019" {{ attributes }}>{{ include.linktext }}<svg class="icon-svg mr-0 ml-3" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>
 
     {%- when "inputfelter - uber’s base designsystem" -%}
         <a href="https://baseweb.design/components/input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -393,6 +402,12 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "8-point grid: vertical rhythm" -%}
         <a href="https://medium.com/built-to-adapt/8-point-grid-vertical-rhythm-90d05ad95032" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "the problem with disabled buttons and what to do instead" -%}
+        <a href="https://medium.com/@adamsilverhq/the-problem-with-disabled-buttons-and-what-to-do-instead-e88df7f36253" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "andrew coyle (2020): 8 rules to help you design a better card user interface" -%}
+        <a href="https://coyleandrew.medium.com/8-rules-to-help-you-design-a-better-card-user-interface-a239257d633d" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "spacing methods - baseline" -%}
         <a href="https://material.io/design/layout/spacing-methods.html#baseline" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -491,7 +506,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "richard rutter: web typography: designing tables to be read, not looked at (2017)" -%}
         <a href="https://alistapart.com/article/web-typography-tables/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
-    {%- when "tilgængelighedserklæring" -%}
+    {%- when "tilgængelighedserklæring",
+             "tilgængeligheds&shy;erklæring" -%}
         <a href="https://www.was.digst.dk/designsystem-dk" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "aria-errormessage attribute (aria) - accessibility support" -%}
@@ -511,6 +527,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "node.js" -%}
         <a href="https://nodejs.org/en" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "xlink:href er forældet" -%}
+        <a href="https://svgwg.org/svg2-draft/linking.html#XLinkRefAttrs" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 

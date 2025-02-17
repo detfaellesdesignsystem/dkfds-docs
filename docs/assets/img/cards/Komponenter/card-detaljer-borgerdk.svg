@@ -1,0 +1,15 @@
+<svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_10643_18212" fill="white">
+<path d="M0 0H267V150H0V0Z"/>
+</mask>
+<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
+<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_10643_18212)"/>
+<rect x="79" y="64" width="142" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="63" y="56" width="4" height="56" rx="2" fill="#44831E"/>
+<rect x="79" y="39" width="60" height="8" rx="4" fill="#44831E"/>
+<rect x="79" y="76" width="142" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="79" y="88" width="142" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<rect x="79" y="100" width="85" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
+<path d="M61.1154 40.704C60.7257 40.3152 60.0947 40.3155 59.7054 40.7048C59.3158 41.0943 59.3158 41.726 59.7054 42.1155L64.2929 46.703C64.6834 47.0936 65.3166 47.0936 65.7071 46.703L70.2946 42.1155C70.6842 41.726 70.6842 41.0943 70.2946 40.7048C69.9053 40.3155 69.2743 40.3152 68.8846 40.704L65 44.5802L61.1154 40.704Z" fill="#44831E"/>
+<rect x="79" y="49" width="60" height="1" fill="#44831E"/>
+</svg>

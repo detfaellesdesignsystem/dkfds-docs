@@ -406,9 +406,11 @@ Broedkrumme_Kode:
 
 Cards_Kode:
 - h2: Installation
-- h2: Card med tredjedel bredde
-- h2: Card med halv bredde
-- h2: Cards med samme højde
+- h2: Cardbredder
+- h2: Card med billede
+- h2: Card uden billede
+- h2: Navigationscard
+- h2: Langt card
 
 Cookiemeddelelse_Kode:
 - h2: Installation
@@ -488,8 +490,10 @@ Knapper_Kode:
 - h2: Primær
 - h2: Sekundær
 - h2: Tertiær
-- h2: Tilbage-knap
+- h2: Primærknap i fuld bredde på små skærme
 - h2: Knap med ikon
+- h2: Knapgruppe
+- h2: Advarselsknapper
 - h2: Klikbart ikon
 
 LoadingSpinner_Kode:
@@ -646,6 +650,7 @@ Kontakt_og_support:
 
 Releases:
 - h2: Versionering og release-proces
+- h2: Version 11.0.0
 - h2: Version 10.2.1
 - h2: Version 10.2.0
 - h2: Version 10.1.0
@@ -653,9 +658,6 @@ Releases:
 - h2: Version 10.0.1
 - h2: Version 10.0.0
 - h2: Version 9.1.0
-- h2: Version 9.0.2
-- h2: Version 9.0.1
-- h2: Version 9.0.0
 - h2: Tidligere versioner
 
 # Øvrige

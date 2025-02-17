@@ -28,7 +28,7 @@
             </text>
             <polyline id="Path" stroke="#474E95" stroke-width="3" points="23 72.0821961 26.0877193 77 34 64"></polyline>
             <polyline id="Path" stroke="#474E95" stroke-width="3" points="23 162.082196 26.0877193 167 34 154"></polyline>
-            <rect id="Rectangle-Copy-6" stroke="#747474" fill="#BFBFBF" x="18.5" y="23.5" width="321" height="26"></rect>
+            <rect id="Rectangle-Copy-6" stroke="#707070" fill="#BFBFBF" x="18.5" y="23.5" width="321" height="26"></rect>
         </g>
     </g>
 </svg>

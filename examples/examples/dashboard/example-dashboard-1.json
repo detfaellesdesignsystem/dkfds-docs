@@ -68,51 +68,51 @@
         ]
     },
     "card_beskeder": {
+        "navigationCard": {
+            "href": "#"
+        },
         "heading": "Beskeder",
         "headingLevel": "h2",
-        "subheading": "Evt. uddybende titel på siden",
-        "text": "Beskrivelse af hvad man kan på netop denne del af sitet.",
-        "actionLinks": "<a href='#'>Link til sted på siden</a>",
-        "order": [ "header", "text", "content", "action" ]
+        "content": "<p>Beskrivelse af hvad man kan på netop denne del af sitet.</p>"
     },
     "card_udbetalinger": {
+        "navigationCard": {
+            "href": "#"
+        },
         "heading": "Udbetalinger",
         "headingLevel": "h2",
-        "subheading": "Evt. uddybende titel på siden",
-        "text": "Beskrivelse af hvad man kan på netop denne del af sitet.",
-        "actionLinks": "<a href='#'>Link til sted på siden</a>",
-        "order": [ "header", "text", "content", "action" ]
+        "content": "<p>Beskrivelse af hvad man kan på netop denne del af sitet.</p>"
     },
     "card_sager": {
+        "navigationCard": {
+            "href": "#"
+        },
         "heading": "Sager",
         "headingLevel": "h2",
-        "subheading": "Evt. uddybende titel på siden",
-        "text": "Beskrivelse af hvad man kan på netop denne del af sitet.",
-        "actionLinks": "<a href='#'>Link til sted på siden</a>",
-        "order": [ "header", "text", "content", "action" ]
+        "content": "<p>Beskrivelse af hvad man kan på netop denne del af sitet.</p>"
     },
     "card_ansoegninger": {
+        "navigationCard": {
+            "href": "#"
+        },
         "heading": "Ansøgninger",
         "headingLevel": "h2",
-        "subheading": "Evt. uddybende titel på siden",
-        "text": "Beskrivelse af hvad man kan på netop denne del af sitet.",
-        "actionLinks": "<a href='#'>Link til sted på siden</a>",
-        "order": [ "header", "text", "content", "action" ]
+        "content": "<p>Beskrivelse af hvad man kan på netop denne del af sitet.</p>"
     },
     "card_aendringer": {
+        "navigationCard": {
+            "href": "#"
+        },
         "heading": "Ændringer",
         "headingLevel": "h2",
-        "subheading": "Evt. uddybende titel på siden",
-        "text": "Beskrivelse af hvad man kan på netop denne del af sitet.",
-        "actionLinks": "<a href='#'>Link til sted på siden</a>",
-        "order": [ "header", "text", "content", "action" ]
+        "content": "<p>Beskrivelse af hvad man kan på netop denne del af sitet.</p>"
     },
     "card_dokumentation": {
+        "navigationCard": {
+            "href": "#"
+        },
         "heading": "Dokumentation",
         "headingLevel": "h2",
-        "subheading": "Evt. uddybende titel på siden",
-        "text": "Beskrivelse af hvad man kan på netop denne del af sitet.",
-        "actionLinks": "<a href='#'>Link til sted på siden</a>",
-        "order": [ "header", "text", "content", "action" ]
+        "content": "<p>Beskrivelse af hvad man kan på netop denne del af sitet.</p>"
     }
 }
