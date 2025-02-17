@@ -369,7 +369,7 @@ let setCardImages = function() {
     }
     else if (document.body.classList.contains('page-selvbetjeningsløsninger')) {
         let cards = document.querySelector('main').querySelectorAll('.new-card');
-        rebuildCardImages(cards, '/assets/img/cards/Selvbetjeningsløsninger', 'png');
+        rebuildCardImages(cards, '/assets/img/cards/Selvbetjeningsloesninger', 'png');
     }
 }
 
