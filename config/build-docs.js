@@ -31,8 +31,8 @@ if (filesCopied) {
             log(colors.red('ERROR: File used for "http://localhost:4000" check contains unexpected content.'));
         }
         if (data.includes('http://localhost:4000')) {
-            log(colors.yellow('Copied files from _site to docs'));
-            log(colors.yellow('WARNING: "http://localhost:4000" detected in redirect files. Try rebuilding _site again.'));
+            log(colors.yellow('Copied files from _site to docs.'));
+            log(colors.yellow('WARNING: "http://localhost:4000" detected in redirect files. Try to build _site again.'));
         }
         else {
             log(colors.green('Success: Copied files from _site to docs.'));
