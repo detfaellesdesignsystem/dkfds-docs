@@ -2,6 +2,8 @@ const fs = require('fs');
 const fse = require('fs-extra');
 const log = require("fancy-log");
 const colors = require("ansi-colors");
+const util = require('util');
+util.inspect.styles.date = 'grey';
 
 log(colors.white('Started copying files from _site to docs...'));
 

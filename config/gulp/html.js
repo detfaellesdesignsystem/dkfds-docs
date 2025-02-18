@@ -1,15 +1,12 @@
 var gulp = require('gulp');
 var dutil = require('./doc-util');
 var runSequence = require('gulp4-run-sequence').use(gulp);
-var runCmd = require('gulp-run-command').default;
 var task = 'html';
 
-var remoteSrc = require('gulp-remote-src');
 var rename = require("gulp-rename");
 var gulpif = require("gulp-if");
 var modifyFile = require('gulp-modify-file');
 var prettify = require('gulp-jsbeautifier');
-var plumber = require('gulp-plumber');
 var nunjucksRender = require('gulp-nunjucks-render');
 var data = require('gulp-data');
 var fs = require('fs');
