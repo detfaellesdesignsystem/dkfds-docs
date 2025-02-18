@@ -168,6 +168,8 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Tilføjet ekstra padding til {% include links/component-guideline-link.html linktext="tags" %}.
 - Ny pil anvendt i detaljekomponenten.
 - Rettet fejl, hvor ikon og tekst i {% include links/component-guideline-link.html linktext="beskeder" %} kunne overlappe ved tekstforstørrelse.
+- Opdateret animationer for modaler.
+- Tilføjet mulighed for at lukke modaler, der ikke kræver handling, ved at trykke på den farvede baggrund under modalen.
 
 
 
