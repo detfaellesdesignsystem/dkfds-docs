@@ -308,10 +308,10 @@ Placér ikonsamlingen i toppen af `<body>` i et område, der er skjult:
 </body>
 {% endhighlight %}
 
-Ikonerne i ikonsamlingen er defineret ved hjælp af `<symbol>`, der hver har et unikt `id`. Eksempelvis er ikonet for "sortér tabel (faldende)" defineret ved:
+Ikonerne i ikonsamlingen er defineret ved hjælp af `<symbol>`, der hver har et unikt `id`. Eksempelvis er ikonet for "minus" defineret ved:
 
 {% highlight html %}
-<symbol id="sort-table-descending" viewBox="0 0 24 24"><path d="M6.1,13.5l5.9,5.9l5.9-5.9H6.1z"/></symbol>
+<symbol id="minus" viewBox="0 -960 960 960"><path d="M200-440v-80h560v80H200Z"/></symbol>
 {% endhighlight %}
 
 Det anbefales at indsætte alle ikoner i samlingen på hver side, men du kan også vælge kun at medtage de ikoner, der er relevante for den enkelte side. Du kan se den fulde ikonsamling ved at åbne nedenstående eksempel i et nyt vindue.

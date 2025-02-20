@@ -1879,21 +1879,21 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu overflow-menu--open-right&quot;&gt;
-    &lt;button class=&quot;button-overflow-menu js-dropdown&quot; data-js-target=&quot;overflow1&quot;
-        aria-expanded=&quot;false&quot; aria-controls=&quot;overflow1&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu overflow-menu--open-right&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button-overflow-menu js-dropdown&quot;</span> <span class="hljs-attr">data-js-target</span>=<span class="hljs-string">&quot;overflow1&quot;</span>
+        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;overflow1&quot;</span>&gt;</span>
         Overflow menu
-        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#more-vert&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-    &lt;/button&gt;
-    &lt;div class=&quot;overflow-menu-inner collapsed&quot; id=&quot;overflow1&quot;&gt;
-        &lt;ul class=&#39;overflow-list&#39;&gt;
-            &lt;li&gt;&lt;button&gt;Mulighed 1&lt;/button&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;button&gt;Mulighed 2&lt;/button&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Mulighed 3 er et link&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;button&gt;Mulighed 4 er en længere tekst&lt;/button&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#more-vert&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu-inner collapsed&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;overflow1&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;overflow-list&#x27;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Mulighed 1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Mulighed 2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&#x27;#&#x27;</span>&gt;</span>Mulighed 3 er et link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Mulighed 4 er en længere tekst<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -1928,7 +1928,7 @@
 
 <p>Collapse komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Dropdown(document.getElementById(&#39;OVERFLOW-BUTTON-ID&#39;)).init();</code></pre></figure>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Dropdown(document.getElementById(&#x27;OVERFLOW-BUTTON-ID&#x27;)).init();</code></pre></figure>
 
 <h4>Events</h4>
 
@@ -1980,30 +1980,30 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;overflow-menu overflow-menu--sort overflow-menu--open-right&quot;
-    id=&quot;overflow-sort-example&quot;&gt;
-    &lt;button class=&quot;button-overflow-menu&quot; data-js-target=&quot;overflow-sort-example-panel&quot;
-        aria-expanded=&quot;false&quot; aria-controls=&quot;overflow-sort-example-panel&quot;&gt;
-        &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#sort-default&quot;&gt;&lt;/use&gt;&lt;/svg&gt;Sortér:&lt;span
-            class=&quot;selected-value&quot;&gt;&lt;/span&gt;
-    &lt;/button&gt;
-    &lt;div class=&quot;overflow-menu-inner collapsed&quot; id=&quot;overflow-sort-example-panel&quot;&gt;
-        &lt;ul class=&#39;overflow-list&#39;&gt;
-            &lt;li&gt;
-                &lt;button id=&quot;newfirst&quot; aria-current=&quot;true&quot;&gt;Nyeste først&lt;/button&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;button id=&quot;oldfirst&quot;&gt;Ældste først&lt;/button&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;button id=&quot;affaldstype-asc&quot;&gt;Affaldstype (A-Å)&lt;/button&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;button id=&quot;affaldstype-desc&quot;&gt;Affaldstype (Å-A)&lt;/button&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu overflow-menu--sort overflow-menu--open-right&quot;</span>
+    <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;overflow-sort-example&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button-overflow-menu&quot;</span> <span class="hljs-attr">data-js-target</span>=<span class="hljs-string">&quot;overflow-sort-example-panel&quot;</span>
+        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;overflow-sort-example-panel&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#sort-default&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>Sortér:<span class="hljs-tag">&lt;<span class="hljs-name">span</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;selected-value&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu-inner collapsed&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;overflow-sort-example-panel&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;overflow-list&#x27;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;newfirst&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Nyeste først<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;oldfirst&quot;</span>&gt;</span>Ældste først<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;affaldstype-asc&quot;</span>&gt;</span>Affaldstype (A-Å)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;affaldstype-desc&quot;</span>&gt;</span>Affaldstype (Å-A)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2018,7 +2018,7 @@
 
 <p>Overflow menu med sorteringsfunktion kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.DropdownSort(document.getElementById(&#39;OVERFLOW-MENU-CONTAINER&#39;)).init();</code></pre></figure>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.DropdownSort(document.getElementById(&#x27;OVERFLOW-MENU-CONTAINER&#x27;)).init();</code></pre></figure>
 
 <h4>Events</h4>
 

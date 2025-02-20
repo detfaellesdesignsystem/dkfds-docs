@@ -1767,11 +1767,11 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;a class=&quot;button back-to-top-button d-print-none&quot; href=&quot;#top&quot;&gt;
-    &lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#arrow-upward&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
-    &lt;span class=&quot;sr-only&quot;&gt;Til toppen af siden&lt;/span&gt;
-    &lt;span class=&quot;d-none d-md-inline-block&quot; aria-hidden=&quot;true&quot;&gt;Til toppen&lt;/span&gt;
-&lt;/a&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button back-to-top-button d-print-none&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#top&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#arrow-upward&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Til toppen af siden<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-inline-block&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>Til toppen<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -1786,7 +1786,7 @@
 
 <p>Tilbage til toppen-knappen kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.BackToTop(document.getElementById(&#39;BACK-TO-TOP-ID&#39;)).init();</code></pre></figure>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.BackToTop(document.getElementById(&#x27;BACK-TO-TOP-ID&#x27;)).init();</code></pre></figure>
 
 <p>Bemærk, at JavaScripten udelukkende kontrollerer, hvornår knappen skal vises eller skjules. Hvis tryk på knappen skal lave en scroll-animation til toppen, skal man selv stå for implementeringen af denne animation.</p>
 

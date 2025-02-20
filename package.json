@@ -10,11 +10,12 @@
     "build-html": "gulp html",
     "postinstall": "bundle",
     "start": "bundle exec jekyll serve --incremental --trace --config _config.yml,_config.dev.yml",
-    "publish": "npm run build && bundle exec jekyll build --config _config.yml && npm run build-docs",
-    "publish-dev": "npm run build && bundle exec jekyll build --config _config.yml,_config.dev.yml && npm run build-docs",
-    "deploy": "bundle exec jekyll build --config _config.yml,_config.dev.yml && npm run build-docs",
+    "publish": "npm run build && bundle exec jekyll build --config _config.yml && npm run highlight-code && npm run build-docs",
+    "publish-dev": "npm run build && bundle exec jekyll build --config _config.yml,_config.dev.yml && npm run highlight-code && npm run build-docs",
     "clean": "node config\\clean.js",
-    "build-docs": "node config\\build-docs.js"
+    "build-docs": "node config\\build-docs.js",
+    "build-site-dev": "bundle exec jekyll build --config _config.yml,_config.dev.yml",
+    "highlight-code": "node config\\highlight-code.js"
   },
   "dependencies": {
     "dkfds": "~10.2.1"
@@ -40,6 +41,7 @@
     "gulp-nunjucks-render": "~2.2.3",
     "gulp-rename": "~2.0.0",
     "gulp4-run-sequence": "~1.0.1",
+    "highlight.js": "~11.11.1",
     "jquery": "~3.7.1",
     "jshint": "~2.13.6",
     "mini-css-extract-plugin": "~2.9.2",

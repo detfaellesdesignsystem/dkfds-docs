@@ -2663,18 +2663,18 @@
 
 <p>Placér ikonsamlingen i toppen af <code>&lt;body&gt;</code> i et område, der er skjult:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;body&gt;
-    &lt;div class=&quot;hide-base-svg&quot;&gt;
-        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-            &lt;!-- Ikonsamling --&gt;
-        &lt;/svg&gt;
-    &lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide-base-svg&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- Ikonsamling --&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     ...
-&lt;/body&gt;</code></pre></figure>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre></figure>
 
-<p>Ikonerne i ikonsamlingen er defineret ved hjælp af <code>&lt;symbol&gt;</code>, der hver har et unikt <code>id</code>. Eksempelvis er ikonet for “sortér tabel (faldende)” defineret ved:</p>
+<p>Ikonerne i ikonsamlingen er defineret ved hjælp af <code>&lt;symbol&gt;</code>, der hver har et unikt <code>id</code>. Eksempelvis er ikonet for “minus” defineret ved:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;symbol id=&quot;sort-table-descending&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6.1,13.5l5.9,5.9l5.9-5.9H6.1z&quot;/&gt;&lt;/symbol&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">symbol</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;minus&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 -960 960 960&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M200-440v-80h560v80H200Z&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">symbol</span>&gt;</span></code></pre></figure>
 
 <p>Det anbefales at indsætte alle ikoner i samlingen på hver side, men du kan også vælge kun at medtage de ikoner, der er relevante for den enkelte side. Du kan se den fulde ikonsamling ved at åbne nedenstående eksempel i et nyt vindue.</p>
 
@@ -2692,13 +2692,13 @@
     <div class="component-code">
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;hide-base-svg&quot;&gt;
-    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-        &lt;symbol id=&quot;accessibility-new&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M0 0h24v24H0V0z&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z&quot;/&gt;&lt;/symbol&gt;
-        &lt;symbol id=&quot;account&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M0 0h24v24H0V0z&quot; fill=&quot;none&quot;/&gt;&lt;path d=&quot;M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z&quot;/&gt;&lt;/symbol&gt;
-        &lt;!-- and more --&gt;
-    &lt;/svg&gt;
-&lt;/div&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hide-base-svg&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">symbol</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;accessibility-new&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 24 24&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M0 0h24v24H0V0z&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">symbol</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">symbol</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;account&quot;</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">&quot;0 0 24 24&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M0 0h24v24H0V0z&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">&quot;M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z&quot;</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">symbol</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- and more --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2723,7 +2723,7 @@
     <div class="component-code">
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#print&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#print&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2754,7 +2754,7 @@
     <div class="component-code">
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;i class=&quot;icon icon-print&quot;&gt;&lt;/i&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-print&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></code></pre></figure>
 
 
     </div>

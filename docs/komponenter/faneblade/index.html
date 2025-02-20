@@ -1914,35 +1914,35 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot;&gt;
-    &lt;div class=&quot;tab-list&quot; role=&quot;tablist&quot;&gt;&lt;button class=&quot;tab-button&quot; role=&quot;tab&quot;
-            aria-controls=&quot;tabpanel1&quot; aria-selected=&quot;true&quot; id=&quot;tab1&quot;&gt;&lt;span&gt;Faneblad 1&lt;/span&gt;
-        &lt;/button&gt;&lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel2&quot;
-            aria-selected=&quot;false&quot; id=&quot;tab2&quot;&gt;&lt;span&gt;Faneblad 2&lt;/span&gt;
-        &lt;/button&gt;&lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel3&quot;
-            aria-selected=&quot;false&quot; id=&quot;tab3&quot;&gt;&lt;span&gt;Faneblad 3&lt;/span&gt;
-        &lt;/button&gt;&lt;/div&gt;
-    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel1&quot; aria-labelledby=&quot;tab1&quot;&gt;
-        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper,
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-list&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+            <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;tabpanel1&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tab1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Faneblad 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;tabpanel2&quot;</span>
+            <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tab2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Faneblad 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;tabpanel3&quot;</span>
+            <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tab3&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Faneblad 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-panel&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tabpanel1&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;tab1&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper,
             enim eu fringilla varius, massa lectus molestie lacus, sed malesuada justo magna
             sit amet eros. Nam accumsan dignissim dignissim. In hac habitasse platea dictumst.
-            Cras feugiat maximus turpis, id ullamcorper purus congue ut.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel2&quot; aria-labelledby=&quot;tab2&quot;
-        hidden&gt;
-        &lt;p&gt;Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit
+            Cras feugiat maximus turpis, id ullamcorper purus congue ut.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-panel&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tabpanel2&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;tab2&quot;</span>
+        <span class="hljs-attr">hidden</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit
             varius. Sed commodo at augue sit amet auctor. Maecenas ligula massa, rutrum quis
             porttitor id, semper ut libero. Nam quis felis porta lorem consequat eleifend a
-            rutrum ante.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel3&quot; aria-labelledby=&quot;tab3&quot;
-        hidden&gt;
-        &lt;p&gt;Phasellus sodales lectus mi, vel pellentesque massa semper non. Sed iaculis sed
+            rutrum ante.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-panel&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tabpanel3&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;tab3&quot;</span>
+        <span class="hljs-attr">hidden</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Phasellus sodales lectus mi, vel pellentesque massa semper non. Sed iaculis sed
             nisl id dapibus. Aenean vitae tristique purus. Sed faucibus sit amet eros vitae
             commodo. Integer bibendum, justo nec scelerisque malesuada, nunc risus ultricies
-            diam, euismod dignissim orci eros eget neque.&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+            diam, euismod dignissim orci eros eget neque.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -1957,7 +1957,7 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
 
 <p>Fanebladskomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller manuelt initialisere komponenten således:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#39;TAB-ID&#39;)).init();</code></pre></figure>
+<figure class="highlight"><pre><code class="language-js" data-lang="js">new DKFDS.Tabs(document.getElementById(&#x27;TAB-ID&#x27;)).init();</code></pre></figure>
 
 <h4>Events</h4>
 
@@ -1987,20 +1987,20 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;nav class=&quot;tab-container&quot; aria-label=&quot;Eksemplets undersider&quot;&gt;
-    &lt;ul class=&quot;tab-list&quot;&gt;
-        &lt;li&gt;
-            &lt;a href=&quot;#indhold1&quot; class=&quot;tab-button&quot; aria-current=&quot;true&quot;&gt;&lt;span&gt;Faneblad
-                    1&lt;/span&gt;&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href=&quot;#indhold2&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Faneblad 2&lt;/span&gt;&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href=&quot;#indhold3&quot; class=&quot;tab-button&quot;&gt;&lt;span&gt;Faneblad 3&lt;/span&gt;&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-container&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Eksemplets undersider&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-list&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#indhold1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Faneblad
+                    1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#indhold2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Faneblad 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#indhold3&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Faneblad 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2035,29 +2035,29 @@ Ikoner skal altid understøttes af en label med fanebladets navn.</p>
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tab-container&quot;&gt;
-    &lt;div class=&quot;tab-list&quot; role=&quot;tablist&quot;&gt;&lt;button class=&quot;tab-button&quot; role=&quot;tab&quot;
-            aria-controls=&quot;tabpanel-icon-1&quot; aria-selected=&quot;true&quot;
-            id=&quot;tab-icon1&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#file-image&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Billede&lt;/span&gt;
-        &lt;/button&gt;&lt;button class=&quot;tab-button&quot; role=&quot;tab&quot; aria-controls=&quot;tabpanel-icon-2&quot;
-            aria-selected=&quot;false&quot;
-            id=&quot;tab-icon2&quot;&gt;&lt;svg class=&quot;icon-svg&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#document&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;span&gt;Dokument&lt;/span&gt;
-        &lt;/button&gt;&lt;/div&gt;
-    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-icon-1&quot;
-        aria-labelledby=&quot;tab-icon1&quot;&gt;
-        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper,
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-list&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span>
+            <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;tabpanel-icon-1&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tab-icon1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#file-image&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Billede<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;tabpanel-icon-2&quot;</span>
+            <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span>
+            <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tab-icon2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#document&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Dokument<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-panel&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tabpanel-icon-1&quot;</span>
+        <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;tab-icon1&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper,
             enim eu fringilla varius, massa lectus molestie lacus, sed malesuada justo magna
             sit amet eros. Nam accumsan dignissim dignissim. In hac habitasse platea dictumst.
-            Cras feugiat maximus turpis, id ullamcorper purus congue ut.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;tab-panel&quot; role=&quot;tabpanel&quot; tabindex=&quot;0&quot; id=&quot;tabpanel-icon-2&quot;
-        aria-labelledby=&quot;tab-icon2&quot; hidden&gt;
-        &lt;p&gt;Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit
+            Cras feugiat maximus turpis, id ullamcorper purus congue ut.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-panel&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;tabpanel-icon-2&quot;</span>
+        <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;tab-icon2&quot;</span> <span class="hljs-attr">hidden</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Praesent consequat erat nec felis semper dignissim. Duis mattis massa in hendrerit
             varius. Sed commodo at augue sit amet auctor. Maecenas ligula massa, rutrum quis
             porttitor id, semper ut libero. Nam quis felis porta lorem consequat eleifend a
-            rutrum ante.&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+            rutrum ante.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>

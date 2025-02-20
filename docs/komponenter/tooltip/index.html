@@ -2037,11 +2037,11 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-    data-tooltip-id=&quot;helpicon-example&quot; data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;&lt;button
-        class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-        &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
-&lt;/div&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper&quot;</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Dette er et tooltip&quot;</span>
+    <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;helpicon-example&quot;</span> <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span> <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;click&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-unstyled tooltip-target&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Læs mere&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg mr-0 mt-0&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#help&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2054,7 +2054,7 @@
 
 <p>Tooltipkomponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Tooltip(document.getElementById(&#39;Tooltip-wrapper-ID&#39;)).init();</code></pre></figure>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">new DKFDS.Tooltip(document.getElementById(&#x27;Tooltip-wrapper-ID&#x27;)).init();</code></pre></figure>
 
 <p>Placering og funktion af tooltippet afgøres ud fra de attributter, der sættes på <code>tooltip-wrapper</code>.</p>
 
@@ -2140,34 +2140,34 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;fieldset aria-labelledby=&quot;radio-tooltip-legend&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;radio-tooltip-legend&quot;</span>&gt;</span>
 
-        &lt;legend class=&quot;form-label&quot;&gt;&lt;span id=&quot;radio-tooltip-legend&quot;&gt;Radioknapper&lt;/span&gt;
-            &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-                data-tooltip-id=&quot;radiogroup-tooltip&quot; data-position=&quot;above&quot;
-                data-trigger=&quot;click&quot;&gt;&lt;button class=&quot;button button-unstyled tooltip-target&quot;
-                    type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-                    &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
-        &lt;/legend&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">legend</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radio-tooltip-legend&quot;</span>&gt;</span>Radioknapper<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper&quot;</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Dette er et tooltip&quot;</span>
+                <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;radiogroup-tooltip&quot;</span> <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span>
+                <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;click&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-unstyled tooltip-target&quot;</span>
+                    <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Læs mere&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg mr-0 mt-0&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#help&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
 
-        &lt;div class=&quot;form-group-radio&quot;&gt;
-            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-option1&quot; name=&quot;radio-tooltip&quot;
-                class=&quot;form-radio&quot; value=&quot;v1&quot;&gt;
-            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-option1&quot;&gt;Valg 1&lt;/label&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-radio&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-option1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;radio-tooltip&quot;</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-radio&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;v1&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radiogroup-option1&quot;</span>&gt;</span>Valg 1<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 
-        &lt;/div&gt;
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        &lt;div class=&quot;form-group-radio&quot;&gt;
-            &lt;input type=&quot;radio&quot; id=&quot;radiogroup-option2&quot; name=&quot;radio-tooltip&quot;
-                class=&quot;form-radio&quot; value=&quot;v2&quot; aria-describedby=&quot;radiogroup-option2-hint&quot;&gt;
-            &lt;label class=&quot;form-label&quot; for=&quot;radiogroup-option2&quot;&gt;Valg 2&lt;/label&gt;
-            &lt;span class=&quot;form-hint&quot; id=&quot;radiogroup-option2-hint&quot;&gt;Hjælpetekst kan stå
-                her&lt;/span&gt;
-        &lt;/div&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-radio&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-option2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;radio-tooltip&quot;</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-radio&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;v2&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;radiogroup-option2-hint&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radiogroup-option2&quot;</span>&gt;</span>Valg 2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-hint&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-option2-hint&quot;</span>&gt;</span>Hjælpetekst kan stå
+                her<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-    &lt;/fieldset&gt;
-&lt;/div&gt;</code></pre></figure>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2198,21 +2198,21 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
 
-    &lt;div class=&quot;form-group-checkbox&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox1&quot; name=&quot;checkbox1&quot; class=&quot;form-checkbox&quot; value=&quot;1&quot;
-            checked&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;checkbox1&quot;&gt;Udfyldt tjekboks&lt;/label&gt;
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-checkbox&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;checkbox1&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>
+            <span class="hljs-attr">checked</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox1&quot;</span>&gt;</span>Udfyldt tjekboks<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 
-        &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-            data-tooltip-id=&quot;checkbox-tooltip&quot; data-position=&quot;above&quot;
-            data-trigger=&quot;click&quot;&gt;&lt;button class=&quot;button button-unstyled tooltip-target&quot;
-                type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-                &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
-    &lt;/div&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper&quot;</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Dette er et tooltip&quot;</span>
+            <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;checkbox-tooltip&quot;</span> <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span>
+            <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;click&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-unstyled tooltip-target&quot;</span>
+                <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Læs mere&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg mr-0 mt-0&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#help&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-&lt;/div&gt;</code></pre></figure>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2243,16 +2243,16 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;input-text&quot;&gt;Inputfelt&lt;/label&gt;
-    &lt;span class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot;
-        data-tooltip-id=&quot;input-text-tooltipbutton&quot; data-position=&quot;above&quot;
-        data-trigger=&quot;click&quot;&gt;&lt;button class=&quot;button button-unstyled tooltip-target&quot;
-            type=&quot;button&quot; aria-label=&quot;Læs mere&quot;&gt;
-            &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input-text&quot;</span>&gt;</span>Inputfelt<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper&quot;</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Dette er et tooltip&quot;</span>
+        <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;input-text-tooltipbutton&quot;</span> <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span>
+        <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;click&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-unstyled tooltip-target&quot;</span>
+            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Læs mere&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg mr-0 mt-0&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#help&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 
-    &lt;input type=&quot;text&quot; id=&quot;input-text&quot; name=&quot;input-text&quot; class=&quot;form-input&quot; required&gt;
-&lt;/div&gt;</code></pre></figure>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input-text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;input-text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-input&quot;</span> <span class="hljs-attr">required</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2283,15 +2283,15 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    ut labore et &lt;strong&gt;dolore magna&lt;/strong&gt;&lt;span class=&quot;tooltip-wrapper in-text&quot;
-        data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-id=&quot;tooltip-text-example&quot;
-        data-position=&quot;above&quot; data-trigger=&quot;click&quot;&gt;&lt;button
-            class=&quot;button button-unstyled tooltip-target&quot; type=&quot;button&quot;
-            aria-label=&quot;Hvad betyder dolore magna&quot;&gt;
-            &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#help&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/span&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>dolore magna<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper in-text&quot;</span>
+        <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Dette er et tooltip&quot;</span> <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;tooltip-text-example&quot;</span>
+        <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span> <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;click&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-unstyled tooltip-target&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+            <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Hvad betyder dolore magna&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg mr-0 mt-0&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#help&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat.&lt;/p&gt;</code></pre></figure>
+    ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2324,11 +2324,11 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Slet&quot; data-tooltip-id=&quot;tooltip-ikonknap&quot;
-    data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;&lt;button
-        class=&quot;button button-unstyled tooltip-target tooltip-is-label&quot;&gt;
-        &lt;svg class=&quot;icon-svg mr-0 mt-0&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#delete&quot;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/button&gt;
-&lt;/div&gt;</code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper&quot;</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Slet&quot;</span> <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;tooltip-ikonknap&quot;</span>
+    <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span> <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;hover&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-unstyled tooltip-target tooltip-is-label&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg mr-0 mt-0&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#delete&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2359,11 +2359,11 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;tooltip-wrapper&quot; data-tooltip=&quot;Dette er et tooltip&quot; data-tooltip-id=&quot;tooltip-knap&quot;
-    data-position=&quot;above&quot; data-trigger=&quot;hover&quot;&gt;&lt;button
-        class=&quot;button button-primary tooltip-target&quot;&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tooltip-wrapper&quot;</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">&quot;Dette er et tooltip&quot;</span> <span class="hljs-attr">data-tooltip-id</span>=<span class="hljs-string">&quot;tooltip-knap&quot;</span>
+    <span class="hljs-attr">data-position</span>=<span class="hljs-string">&quot;above&quot;</span> <span class="hljs-attr">data-trigger</span>=<span class="hljs-string">&quot;hover&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-primary tooltip-target&quot;</span>&gt;</span>
         Knap med tooltip
-    &lt;/button&gt;&lt;/div&gt;</code></pre></figure>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>

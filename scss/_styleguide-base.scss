@@ -1238,3 +1238,32 @@ Design
 body.page-tjekliste svg {
   flex-shrink: 0;
 }
+
+/*
+----------------------
+Syntax highlight
+----------------------
+*/
+.hljs-tag {
+  color: color('gray-500');
+}
+
+.hljs-name {
+  color: color('data-blue-700');
+}
+
+.hljs-string {
+  color: color('data-blue-700');
+}
+
+.hljs-attr {
+  color: color('data-orange-800');
+}
+
+.hljs-comment {
+  color: color('data-green-800');
+}
+
+.hljs-symbol {
+  color: color('gray-500');
+}
