@@ -118,6 +118,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Ændret `success-light` fra `#EEFFE2` til `#DDF7CE`.
 - Ændret `gray-400` fra `#999999` til `#8E8E8E`.
 - Ændret `gray-500` fra `#747474` til `#707070`.
+- Ændret `link-hover` fra `#000040` til `#1A1A1A`.
 
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Ikoner" %}</h3>

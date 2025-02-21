@@ -182,7 +182,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link-hover"></div>
-    {% include color.html hex="#000040" name="link-hover" %}
+    {% include color.html hex="#1A1A1A" name="link-hover" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-link-visited"></div>

@@ -23,6 +23,7 @@ log(colors.white('Started syntax highlighting...'));
 const DIRECTORIES = [
     '_site/komponenter/',
     '_site/styleguide/',
+    '_site/styleguide/typografi/',
     '_site/eksempel/ikon-samling/',
     '_site/eksempler/patterns/'
 ];
