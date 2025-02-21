@@ -1,7 +1,5 @@
 var gulp = require('gulp');
 var dutil = require('./doc-util');
-var runSequence = require('gulp4-run-sequence').use(gulp);
-var task = 'html';
 
 var rename = require("gulp-rename");
 var gulpif = require("gulp-if");
@@ -315,12 +313,4 @@ gulp.task('nunjucks', done => {
         .pipe(gulpif(isThisAComponentExample, gulp.dest(distJekyllComponentPreview)));
 });
 
-
-gulp.task(task, done => {
-
-    runSequence(
-        'nunjucks',
-        done
-  );
-});
-
+gulp.task('html', gulp.series('nunjucks'));

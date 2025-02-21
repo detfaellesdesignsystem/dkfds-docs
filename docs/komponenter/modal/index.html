@@ -1901,7 +1901,7 @@
 
 <p>Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af <code>DKFDS.init()</code> eller initiere komponenten manuelt med nedenstående:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let modal = new DKFDS.Modal(document.getElementById(&#x27;MODAL-ID&#x27;));
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">let modal = new DKFDS.Modal(document.getElementById(&#39;MODAL-ID&#39;));
 modal.init();</code></pre></figure>
 
 <p>Når en modal aktiveres, vil JavaScripten sætte <code>inert</code>-attributten på alle elementer under <code>body</code> bortset fra modalens container-element. Dette sikrer, at fokus bliver inde i modalen, når brugeren navigerer med et keyboard. Når modalen lukkes, fjernes attributten igen.</p>

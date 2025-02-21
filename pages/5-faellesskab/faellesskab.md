@@ -10,7 +10,7 @@ description: Designsystemet er open source og baseret på en filosofi om samarbe
 tags:
 ---
 
-<ul class="card-row">
+<ul class="card-row mt-8">
     <li>
         {% include navcard-long.html headingLevel="h2"
         href="/faellesskab/samarbejdsforum/"

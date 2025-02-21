@@ -59,6 +59,7 @@ for (let d = 0; d < DIRECTORIES.length; d++) {
     
                         /* Use highlight.js to add syntax highlighting. */
                         let highlightedCode = hljs.highlight(modifiedCode, { language: 'xml' }).value;
+                        highlightedCode = highlightedCode.replaceAll('&#x27;', '&#39;');
     
                         /* Verify that the code wasn't modified in unexpected ways. */
                         let restoredCode = removeHighlight(highlightedCode);

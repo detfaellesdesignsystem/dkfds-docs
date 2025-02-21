@@ -8,7 +8,7 @@ description:
 tags:
 ---
 
-<ul class="card-row">
+<ul class="card-row mt-8">
     <li>
         {% include navcard-long.html headingLevel="h2"
         href="/kom-i-gang/om-designsystemet/"
