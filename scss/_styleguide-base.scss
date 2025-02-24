@@ -1210,25 +1210,28 @@ Color scale
         @include small-text();
     }
 
-    &.color-scale-spacing .color {
+    &.color-scale-spacing .color,
+    &.no-gutters .color {
         border-radius: border-radius('medium');
-    }
-
-    &.no-gutters {
-        div:first-child .color {
-            border-top-left-radius: border-radius('medium');
-            border-bottom-left-radius: border-radius('medium');
-        }
-        div:last-child .color {
-            border-top-right-radius: border-radius('medium');
-            border-bottom-right-radius: border-radius('medium');
-        }
     }
 
     @include media-breakpoint-up(md) {
         &.no-gutters .col+.col {
             .color {
                 border-left: 0;
+            }
+        }
+        &.no-gutters {
+            .color {
+                border-radius: border-radius('none');
+            }
+            div:first-child .color {
+                border-top-left-radius: border-radius('medium');
+                border-bottom-left-radius: border-radius('medium');
+            }
+            div:last-child .color {
+                border-top-right-radius: border-radius('medium');
+                border-bottom-right-radius: border-radius('medium');
             }
         }
     }
