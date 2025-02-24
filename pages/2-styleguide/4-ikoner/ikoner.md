@@ -173,7 +173,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="plus" keywords="+, add, plus, åben, accordion, open, expand" label="Plus / åbn / tilføj" %}
                 {% include icon.html icon="edit" keywords="redigér, edit, rediger, ændre, change, pen, blyant, mode" label="Redigér" %}
                 {% include icon.html icon="send" keywords="send" label="Send" %}
-                {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Skjul" %}
                 {% include icon.html icon="language" keywords="sprog, language, globe, earch, jorden, lande, countries" label="Sprog (globus)" %}
                 {% include icon.html icon="star-fill" keywords="star, stjerne, bedømmelse, rating, grade" label="Stjerne fyldt / markeret" %}
                 {% include icon.html icon="star" keywords="star, stjerne, bedømmelse, rating, grade-outline" label="Stjerne tom / ikke markeret" %}
@@ -185,10 +184,11 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="upload" keywords="Upload, eksporter, export, file-upload" label="Upload / eksportér" %}
                 {% include icon.html icon="attach-file" keywords="Vedhæft, attachment, bilag" label="Vedhæft / bilag" %}
                 {% include icon.html icon="forward" keywords="videresend" label="Videresend" %}
-                {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Vis" %}
                 {% include icon.html icon="view-in-list" keywords="Liste, justify, view-headline" label="Vis i listeform" %}
                 {% include icon.html icon="view-split" keywords="liste, kasse, billede, layout, vindue, vertical-split" label="Vis i listeform og vindue" %}
                 {% include icon.html icon="palette" keywords="tema, theme, palette, color, colours, painting, paint" label="Vælg tema (palette)" %}
+                {% include icon.html icon="visibility-off" keywords="øje, eye, se, see, skjul, blind" label="Øje - skjul" %}
+                {% include icon.html icon="visibility" keywords="øje, eye, se, see, vis, blind" label="Øje - vis" %}
             </ul>
         </div>
     </div>
