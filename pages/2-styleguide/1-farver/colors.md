@@ -142,7 +142,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
     {% include color.html hex="#FFEECC" name="warning-light" %}
   </div>
   <div class="col col-12 col-md-3">
-    <div class="color color-scale-spacing background-warning"></div>
+    <div class="color background-warning"></div>
     {% include color.html hex="#FEBB30" name="warning" %}
   </div>
 </div>
@@ -175,7 +175,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Link-farver {#{% include create-id.html heading="Link-farver" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link"></div>
     {% include color.html hex="#004D99" name="link" %}
@@ -192,7 +192,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Fokusfarve {#{% include create-id.html heading="Fokusfarve" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
     {% include color.html hex="#707070" name="focus" %}
@@ -201,7 +201,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Baggrundsfarver {#{% include create-id.html heading="Baggrundsfarver" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color bg-normal"></div>
     {% include color.html hex="#FFFFFF" name="white" %}
@@ -218,7 +218,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Positiv og negativ farver {#{% include create-id.html heading="Positiv og negativ farver" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
     {% include color.html hex="#358000" name="text-positive" %}

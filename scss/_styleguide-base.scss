@@ -1180,39 +1180,58 @@ Color scale
 */
 
 .color-scale {
-  .color-text-label > span{
-    display: inline-block;
-  }
-  .color-hex{
-    display: block;
-    width: 100%;
-    margin-bottom: units(2);
-    @include media-breakpoint-up(md) { 
-      margin-bottom: units(2);
+    .color-text-label>span {
+        display: inline-block;
     }
-  }
 
-  .color{
-    display: block;
-    width: 100%;
-    border: border('high-contrast');
-    height: 64px;
-    margin-bottom: units(3);
-    
-    @include media-breakpoint-up(md) { 
-      height: 80px;
+    .color-hex {
+        display: block;
+        width: 100%;
+        margin-bottom: units(2);
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: units(2);
+        }
     }
-  }
-  .color-text-label{
-    @include small-text();
-  }
-  @include media-breakpoint-up(md) { 
-    &.no-gutters .col + .col{
-      .color{
-        border-left: 0;
-      }
+
+    .color {
+        display: block;
+        width: 100%;
+        border: border('high-contrast');
+        height: 64px;
+        margin-bottom: units(3);
+
+        @include media-breakpoint-up(md) {
+            height: 80px;
+        }
     }
-  }
+
+    .color-text-label {
+        @include small-text();
+    }
+
+    &.color-scale-spacing .color {
+        border-radius: border-radius('medium');
+    }
+
+    &.no-gutters {
+        div:first-child .color {
+            border-top-left-radius: border-radius('medium');
+            border-bottom-left-radius: border-radius('medium');
+        }
+        div:last-child .color {
+            border-top-right-radius: border-radius('medium');
+            border-bottom-right-radius: border-radius('medium');
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &.no-gutters .col+.col {
+            .color {
+                border-left: 0;
+            }
+        }
+    }
 }
 
 /*
@@ -1220,23 +1239,24 @@ Color scale
 Design
 ----------------------
 */
-.example-table-th{
-  font-weight: font-weight($table-head-font-weight);
-  font-size: font-size($table-font-size);
+
+.example-table-th {
+    font-weight: font-weight($table-head-font-weight);
+    font-size: font-size($table-font-size);
 }
 
 .nowrap {
-  white-space: nowrap !important;
+    white-space: nowrap !important;
 }
 
 .checklist-heading {
-  margin-top: 0;
-  font-weight: font-weight('bold');
-  font-size: font-size('sm');
+    margin-top: 0;
+    font-weight: font-weight('bold');
+    font-size: font-size('sm');
 }
 
 body.page-tjekliste svg {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 /*
@@ -1244,26 +1264,27 @@ body.page-tjekliste svg {
 Syntax highlight
 ----------------------
 */
+
 .hljs-tag {
-  color: color('gray-500');
+    color: color('gray-500');
 }
 
 .hljs-name {
-  color: color('data-blue-700');
+    color: color('data-blue-700');
 }
 
 .hljs-string {
-  color: color('data-blue-700');
+    color: color('data-blue-700');
 }
 
 .hljs-attr {
-  color: color('data-orange-800');
+    color: color('data-orange-800');
 }
 
 .hljs-comment {
-  color: color('data-green-800');
+    color: color('data-green-800');
 }
 
 .hljs-symbol {
-  color: color('gray-500');
+    color: color('gray-500');
 }
