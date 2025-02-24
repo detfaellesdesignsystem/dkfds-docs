@@ -80,3 +80,7 @@ Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: 
 - Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.
 - Myndighedens logo er kun at finde i footeren og der er kun et logo
 - Venstrestil altid logoet i footeren
+
+## Retningslinjer for favikon {#{% include create-id.html heading="Retningslinjer for favikon" %}}
+
+Det Fælles Designsystem kommer med to forskellige favikoner: ét til Virk og ét til borger.dk. Anvend Virk-favikon, hvis løsningen tilgås via Virk, og anvend borger.dk-favikon, hvis løsningen tilgås via borger.dk. Således passer favikonet sammen med det logo, der er i headeren.
