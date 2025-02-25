@@ -37,7 +37,10 @@ var exampleUrls = [
     { "url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "folder": "formular-med-fejl", "filename": "formular-med-fejl-1" },
     { "url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "folder": "trinindikator-med-fejl", "filename": "trinindikator-med-fejl-1" },
     { "url": "pages/eksempler/siden-kunne-ikke-findes-1/", "folder": "siden-kunne-ikke-findes", "filename": "siden-kunne-ikke-findes-1" },
-    { "url": "pages/eksempler/siden-kunne-ikke-findes-2/", "folder": "siden-kunne-ikke-findes", "filename": "siden-kunne-ikke-findes-2" }
+    { "url": "pages/eksempler/siden-kunne-ikke-findes-2/", "folder": "siden-kunne-ikke-findes", "filename": "siden-kunne-ikke-findes-2" },
+    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-1/", "folder": "Selvbetjeningsloesninger", "filename": "formular-til-kontaktoplysninger-1" },
+    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-2/", "folder": "Selvbetjeningsloesninger", "filename": "formular-til-kontaktoplysninger-2" },
+    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-3/", "folder": "Selvbetjeningsloesninger", "filename": "formular-til-kontaktoplysninger-3" }
 ];
 
 
@@ -71,7 +74,10 @@ var exampleUrls = [
             });
 
             var pngFileName = targetRootDir + exampleUrls[i].folder + '/' + themes[t] + '-' + exampleUrls[i].filename + '.PNG';
-
+            if (exampleUrls[i].folder === 'Selvbetjeningsloesninger') {
+                pngFileName = `img/cards/Selvbetjeningsloesninger/${exampleUrls[i].filename}-${themes[t]}.PNG`;
+            }
+            
             await page.screenshot({ path: pngFileName });
         }
     }

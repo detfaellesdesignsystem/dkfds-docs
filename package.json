@@ -15,7 +15,10 @@
     "clean": "node config\\clean.js",
     "build-docs": "node config\\build-docs.js",
     "build-site-dev": "bundle exec jekyll build --config _config.yml,_config.dev.yml",
-    "highlight-code": "node config\\highlight-code.js"
+    "highlight-code": "node config\\highlight-code.js",
+    "gen-images": "node config\\puppeteer\\gen-images.js",
+    "gen-thumbnails": "node config\\puppeteer\\gen-thumbnails.js",
+    "gen-pdf-screenshots": "node config\\puppeteer\\gen-pdf-screenshots.js"
   },
   "dependencies": {
     "dkfds": "~10.2.1"
