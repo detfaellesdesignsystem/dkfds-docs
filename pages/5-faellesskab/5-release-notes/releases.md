@@ -161,6 +161,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet funktionen `silentUpdateMessages()` til karakterbegrænsning.
 - Rettet fejl, hvor udfyldte inputfelter med karakterbegrænsning blev læst højt for skærmlæsere ved sidens indlæsning.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Nye favicons for begge temaer, såfremt man anvender disse.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex=0` til strukturerede lister.
 - Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="streger" %} (`border`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
@@ -172,6 +173,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Rettet fejl, hvor ikon og tekst i {% include links/component-guideline-link.html linktext="beskeder" %} kunne overlappe ved tekstforstørrelse.
 - Opdateret animationer for modaler.
 - Tilføjet mulighed for at lukke modaler, der ikke kræver handling, ved at trykke på den farvede baggrund under modalen.
+- Fjernet animation fra tag-komponenten.
 
 
 
