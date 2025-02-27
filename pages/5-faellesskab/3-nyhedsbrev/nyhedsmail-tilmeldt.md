@@ -8,6 +8,7 @@ title: Tilmelding til nyhedsbrev
 ---
 
 <div class="alert alert-success mt-5" id="newsletter-alert">
+    <div class="alert-border"></div>
     <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#success"></use></svg>
     <div class="alert-body">
         <h2 class="alert-heading">Bekræft tilmelding</h2>

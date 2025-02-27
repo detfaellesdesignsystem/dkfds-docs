@@ -1,0 +1,83 @@
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tjekbokse med hjælpetekster</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                checkboxes({
+                    "id": "checkboxgroup-1",
+                    "checkboxLegend": "Tjekbokse med hjælpetekster",
+                    "groupname": "checkbox-example-1",
+                    "helptext": "Dette er en hjælpetekst for hele tjekboksgruppen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis.",
+                    "items": [
+                        { "value": "v1", "label": "Kun hjælpetekst",
+                          "helptext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis. Donec mollis sapien ut nibh ultricies interdum." },
+                        { "value": "v2", "label": "Hjælpetekst og skjult inputfelt", 
+                          "helptext": "Dette er hjælpetekst for en enkelt tjekboks. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis.", 
+                          "srOnly": "Udfyld informationer herunder", 
+                          "hiddenContent": textinput({ "id": "checkbox-example-1-text-1", "label": "Inputfelt", "name": "mytext" }) },
+                        { "value": "v3", "label": "Lang hjælpetekst uden mellemrum",
+                          "helptext": "DetteerhjælpetekstforenenkelttjekboksLoremipsumdolorsitametconsecteturadipiscingelitIntegerfringillainquamsitametcursusPellentesqueegetloremvenenatisdignissimjustoluctusrutrumtortorPraesentsem risuslobortisatorciegetsollicitudinplaceraterosProinattempusfelisDonecmllissapienutnibhultriciesinterdum", 
+                          "srOnly": "Udfyld informationer herunder"},
+                        { "value": "v4", "label": "Hjælpetekst og skjult inputfelt med hjælpetekst", 
+                          "helptext": "Dette er hjælpetekst for en enkelt tjekboks. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis.", 
+                          "srOnly": "Udfyld informationer herunder", 
+                          "hiddenContent": textinput({ "id": "checkbox-example-1-text-2", "label": "Inputfelt", "name": "mytext", "helptext": "Hjælpetekst til inputfeltet" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                checkboxes({
+                    "id": "checkboxgroup-2",
+                    "checkboxLegend": "Tjekboksgruppe med lang hjælpetekst uden mellemrum",
+                    "groupname": "checkbox-example-2",
+                    "helptext": "DetteerenhjælpetekstforheletjekboksgruppenLoremipsumdolorsitametconsecteturadipiscingelitIntegerfringillainquamsitametcursusPellentesqueegetloremvenenatisdignissimjustoluctusrutrumtortorPraesentsem risuslobortisatorciegetsollicitudinplaceraterosProinattempusfelisDonecmllissapienutnibhultriciesinterdum",
+                    "items": [
+                        { "value": "v1", "label": "Valg 1" },
+                        { "value": "v2", "label": "Valg 2" },
+                        { "value": "v3", "label": "Valg 3" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                checkbox({
+                    "id": "checkbox-3",
+                    "name": "checkbox-3",
+                    "value": "v1",
+                    "label": "Enkelt tjekboks med hjælpetekst",
+                    "helptext": "Dette er hjælpetekst for en enkelt tjekboks. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis. Donec mollis sapien ut nibh ultricies interdum."
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                checkbox({
+                    "id": "checkbox-4",
+                    "name": "checkbox-4",
+                    "value": "v1",
+                    "label": "Enkelt tjekboks med hjælpetekst og skjult inputfelt",
+                    "helptext": "Dette er hjælpetekst for en enkelt tjekboks. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis. Donec mollis sapien ut nibh ultricies interdum.",
+                    "srOnly": "Udfyld informationer herunder",
+                    "hiddenContent": textinput({ "id": "checkbox-4-text-1", "label": "Inputfelt", "name": "mytext" })
+                }) 
+            }}
+        </div>
+    </div>
+</main>

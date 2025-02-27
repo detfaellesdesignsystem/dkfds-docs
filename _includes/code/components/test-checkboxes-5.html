@@ -3,22 +3,25 @@
         <div class="col-12">
             <p>Tjekboks skjult indhold</p>
 
-            <div class="form-group-checkbox">
-                <input type="checkbox" id="checkbox" name="checkbox"
-                    class="form-checkbox js-checkbox-toggle-content" value="1"
-                    data-aria-controls="checkbox-collapse" data-aria-expanded="false">
-                <label class="form-label" for="checkbox">Label til tjekboks<span
-                        class="sr-only"> Udfyld informationer herunder</span></label>
+            <div class="hidden-content-wrapper">
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox"
+                        class="form-checkbox js-checkbox-toggle-content" value="1"
+                        data-aria-controls="checkbox-collapse" data-aria-expanded="false">
+                    <label class="form-label" for="checkbox">Label til tjekboks<span
+                            class="sr-only"> Udfyld informationer herunder</span></label>
 
-            </div>
-            <div id="checkbox-collapse" aria-hidden="true" class="checkbox-content">
-
-                <div class="form-group">
-                    <label class="form-label" for="mytext">Inputfelt</label>
-
-                    <input type="text" id="mytext" name="mytext" class="form-input" required>
                 </div>
+                <div id="checkbox-collapse" aria-hidden="true" class="checkbox-content">
 
+                    <div class="form-group">
+                        <label class="form-label" for="mytext">Inputfelt</label>
+
+                        <input type="text" id="mytext" name="mytext" class="form-input"
+                            required>
+                    </div>
+
+                </div>
             </div>
 
         </div>

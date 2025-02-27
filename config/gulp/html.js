@@ -19,7 +19,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/step-guide/*.njk'];
+var buildFile = ['examples/testfiles/radiobuttons/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -125,6 +125,7 @@ var testfiles = [
     "test-overflow-menu-placement",
     "test-pagination",
     "test-radiobuttons-error",
+    "test-radiobuttons-helptext",
     "test-radiobuttons-1",
     "test-radiobuttons-2",
     "test-radiobuttons-3",
@@ -165,6 +166,7 @@ var testfiles = [
     "test-back-link",
     "test-back-to-top-long-page",
     "test-back-to-top-short-page",
+    "test-checkboxes-helptext",
     "test-checkbox-simple",
     "test-checkboxes-1",
     "test-checkboxes-2",

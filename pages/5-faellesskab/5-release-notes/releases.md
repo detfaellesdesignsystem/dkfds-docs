@@ -147,6 +147,8 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
   <h3 class="h4 mt-0 mb-0 mr-3">Øvrige</h3>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet migreringsfilerne introduceret i version 10.0.0.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret HTML for {% include links/component-guideline-link.html linktext="beskeder" %}, der nu skal indeholde et border-element.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor den grå streg ved valgte radioknapper og tjekbokse med skjult indhold var forskudt, hvis der var en hjælpetekst.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `aria-hidden` fra {% include links/component-guideline-link.html linktext="overflowmenuen" %}, {% include links/component-guideline-link.html linktext="sortering" %}, {% include links/component-guideline-link.html linktext="trinindikator" %} og række 3 i {% include links/component-guideline-link.html linktext="headeren" %}. Stylingen er opdateret, så det nu er klassen `collapsed`, der afgør, om menuen er synlig. De steder, hvor man tidligere har sat `aria-hidden="true"` på `overflow-menu-inner`, skal man sikre sig, at man i stedet tilføjer klassen `collapsed`. Denne ændring har rettet en fejl, hvor den responsive trinindikator kortvarigt kunne være åben, når man zoomede ind.
 {% include links/github-link.html number="239" afternumber=" på GitHub" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ny HTML og styling for {% include links/component-guideline-link.html linktext="tilbage-link" %}.
@@ -174,6 +176,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Opdateret animationer for modaler.
 - Tilføjet mulighed for at lukke modaler, der ikke kræver handling, ved at trykke på den farvede baggrund under modalen.
 - Fjernet animation fra tag-komponenten.
+- Tilføjet minimumsbredde til `fieldset`-elementer, for at forhindre tilfælde, hvor brugeren måtte scrolle horisontalt på små skærme.
 
 
 
@@ -955,6 +958,8 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Fikset fokus border på faneblade
 
 <div class="alert alert-info" role="alert">
+    <div class="alert-border"></div>
+    <svg class="icon-svg alert-icon" aria-label="Information" focusable="false"><use href="#info"></use></svg>
     <div class="alert-body">
         <strong class="alert-heading">Semantisk versionering</strong>
         <p class="alert-text">Fra denne release 4.0.0 og fremover vil FDS gøre brug af semantisk versionering.</p>

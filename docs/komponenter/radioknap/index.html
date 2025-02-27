@@ -1626,6 +1626,7 @@
         </aside>
 
         <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+        <div class="alert-border"></div>
         <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#warning"></use></svg>
         <div class="alert-body">
             <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#close"></use></svg>Luk</button>
@@ -1957,36 +1958,42 @@
 
         <legend class="form-label" id="radio-collapse-legend">Vælg en radioknap</legend>
 
-        <div class="form-group-radio">
-            <input type="radio" id="radiogroup-collapse-option1" name="radio-collapse" class="form-radio" value="1" checked="" data-controls="#radiogroup-collapse-option1-collapse" data-expanded="true" />
-            <label class="form-label" for="radiogroup-collapse-option1">Radioknap viser
-                indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
+        <div class="hidden-content-wrapper">
+            <div class="form-group-radio">
+                <input type="radio" id="radiogroup-collapse-option1" name="radio-collapse" class="form-radio" value="1" checked="" data-controls="#radiogroup-collapse-option1-collapse" data-expanded="true" />
+                <label class="form-label" for="radiogroup-collapse-option1">Radioknap viser
+                    indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
 
-        </div>
-        <div id="radiogroup-collapse-option1-collapse" aria-hidden="false" class="radio-content">
-
-            <div class="form-group">
-                <label class="form-label" for="textinput1">Inputfelt med label</label>
-
-                <input type="text" id="textinput1" name="text1" class="form-input input-width-m" required="" />
             </div>
+            <div id="radiogroup-collapse-option1-collapse" aria-hidden="false" class="radio-content">
 
-        </div>
+                <div class="form-group">
+                    <label class="form-label" for="textinput1">Inputfelt med label</label>
 
-        <div class="form-group-radio">
-            <input type="radio" id="radiogroup-collapse-option2" name="radio-collapse" class="form-radio" value="2" data-controls="#radiogroup-collapse-option2-collapse" data-expanded="false" />
-            <label class="form-label" for="radiogroup-collapse-option2">Radioknap viser andet
-                indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
+                    <input type="text" id="textinput1" name="text1" class="form-input input-width-m" required="" />
+                </div>
 
-        </div>
-        <div id="radiogroup-collapse-option2-collapse" aria-hidden="true" class="radio-content">
-
-            <div class="form-group">
-                <label class="form-label" for="textinput2">Inputfelt med anden label</label>
-
-                <input type="text" id="textinput2" name="text2" class="form-input input-width-m" required="" />
             </div>
+        </div>
 
+        <div class="hidden-content-wrapper">
+            <div class="form-group-radio">
+                <input type="radio" id="radiogroup-collapse-option2" name="radio-collapse" class="form-radio" value="2" data-controls="#radiogroup-collapse-option2-collapse" data-expanded="false" />
+                <label class="form-label" for="radiogroup-collapse-option2">Radioknap viser
+                    andet indhold<span class="sr-only"> Udfyld informationer
+                        herunder</span></label>
+
+            </div>
+            <div id="radiogroup-collapse-option2-collapse" aria-hidden="true" class="radio-content">
+
+                <div class="form-group">
+                    <label class="form-label" for="textinput2">Inputfelt med anden
+                        label</label>
+
+                    <input type="text" id="textinput2" name="text2" class="form-input input-width-m" required="" />
+                </div>
+
+            </div>
         </div>
     </fieldset>
 </div>
@@ -2299,44 +2306,52 @@
 
         <span class="hljs-tag">&lt;<span class="hljs-name">legend</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radio-collapse-legend&quot;</span>&gt;</span>Vælg en radioknap<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-radio&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;radio-collapse&quot;</span>
-                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-radio&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">checked</span>
-                <span class="hljs-attr">data-controls</span>=<span class="hljs-string">&quot;#radiogroup-collapse-option1-collapse&quot;</span> <span class="hljs-attr">data-expanded</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radiogroup-collapse-option1&quot;</span>&gt;</span>Radioknap viser
-                indhold<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> Udfyld informationer herunder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hidden-content-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-radio&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;radio-collapse&quot;</span>
+                    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-radio&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">checked</span>
+                    <span class="hljs-attr">data-controls</span>=<span class="hljs-string">&quot;#radiogroup-collapse-option1-collapse&quot;</span>
+                    <span class="hljs-attr">data-expanded</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radiogroup-collapse-option1&quot;</span>&gt;</span>Radioknap viser
+                    indhold<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> Udfyld informationer herunder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option1-collapse&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;false&quot;</span>
-            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio-content&quot;</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;textinput1&quot;</span>&gt;</span>Inputfelt med label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textinput1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text1&quot;</span>
-                    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-input input-width-m&quot;</span> <span class="hljs-attr">required</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option1-collapse&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;false&quot;</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio-content&quot;</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;textinput1&quot;</span>&gt;</span>Inputfelt med label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-radio&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;radio-collapse&quot;</span>
-                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-radio&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>
-                <span class="hljs-attr">data-controls</span>=<span class="hljs-string">&quot;#radiogroup-collapse-option2-collapse&quot;</span> <span class="hljs-attr">data-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radiogroup-collapse-option2&quot;</span>&gt;</span>Radioknap viser andet
-                indhold<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> Udfyld informationer herunder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textinput1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text1&quot;</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-input input-width-m&quot;</span> <span class="hljs-attr">required</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option2-collapse&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>
-            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio-content&quot;</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;textinput2&quot;</span>&gt;</span>Inputfelt med anden label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textinput2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text2&quot;</span>
-                    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-input input-width-m&quot;</span> <span class="hljs-attr">required</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hidden-content-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group-radio&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;radio-collapse&quot;</span>
+                    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-radio&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>
+                    <span class="hljs-attr">data-controls</span>=<span class="hljs-string">&quot;#radiogroup-collapse-option2-collapse&quot;</span>
+                    <span class="hljs-attr">data-expanded</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radiogroup-collapse-option2&quot;</span>&gt;</span>Radioknap viser
+                    andet indhold<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span> Udfyld informationer
+                        herunder<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radiogroup-collapse-option2-collapse&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>
+                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio-content&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;textinput2&quot;</span>&gt;</span>Inputfelt med anden
+                        label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textinput2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;text2&quot;</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-input input-width-m&quot;</span> <span class="hljs-attr">required</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>

@@ -15,6 +15,7 @@ tags:
 ---
 
 <div class="alert mt-5 mb-9" id="newsletter-alert" role="alert" hidden>
+    <div class="alert-border"></div>
     <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
     <div class="alert-body">
         <h2 class="alert-heading">Fejl opstået</h2>
@@ -23,6 +24,7 @@ tags:
 </div>
 <nav aria-labelledby="newsletter-alert-heading" hidden>
     <div class="alert mt-5 mb-9" id="newsletter-alert-nav" role="alert" data-module="error-summary">
+        <div class="alert-border"></div>
         <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
         <div class="alert-body">
             <h2 class="alert-heading" id="newsletter-alert-heading">Der er problemer</h2>

@@ -187,6 +187,7 @@ B: Test af faneblade anvendt til sidenavigation
 ## Radioknap (Radio button)
 
 {% include test/preview-test.html filename="test-radiobuttons-error" description="Radioknap 1" %}
+{% include test/preview-test.html filename="test-radiobuttons-helptext" description="Radioknapper med hjælpetekster" %}
 {% include test/preview-test.html filename="test-radiobuttons-1" description="Radioknap 1" %}
 {% include test/preview-test.html filename="test-radiobuttons-2" description="Radioknap 2" %}
 {% include test/preview-test.html filename="test-radiobuttons-3" description="Radioknap 3" %}
@@ -255,6 +256,7 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Tjekbokse
 
+{% include test/preview-test.html filename="test-checkboxes-helptext" description="Tjekbokse med hjælpetekster" %}
 {% include test/preview-test.html filename="test-checkbox-simple" description="TO DO: Simpel tjekboks" %}
 {% include test/preview-test.html filename="test-checkboxes-1" description="Tjekbokse 1" %}
 {% include test/preview-test.html filename="test-checkboxes-2" description="Tjekbokse 2" %}

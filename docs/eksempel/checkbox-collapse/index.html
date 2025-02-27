@@ -230,20 +230,21 @@
         <h1 id="example-heading-checkbox-collapse" class="sr-only">Eksempel på tjekboks med skjult indhold</h1>
         <div class="form-group">
 
-    <div class="form-group-checkbox">
-        <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox js-checkbox-toggle-content" value="1" data-aria-controls="checkbox1-collapse" data-aria-expanded="false" />
-        <label class="form-label" for="checkbox1">Tjekboks viser indhold<span class="sr-only">
-                Udfyld informationer herunder</span></label>
+    <div class="hidden-content-wrapper">
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="checkbox1" name="checkbox1" class="form-checkbox js-checkbox-toggle-content" value="1" data-aria-controls="checkbox1-collapse" data-aria-expanded="false" />
+            <label class="form-label" for="checkbox1">Tjekboks viser indhold<span class="sr-only"> Udfyld informationer herunder</span></label>
 
-    </div>
-    <div id="checkbox1-collapse" aria-hidden="true" class="checkbox-content">
-
-        <div class="form-group">
-            <label class="form-label" for="textinput1">Inputfelt med label</label>
-
-            <input type="text" id="textinput1" name="text1" class="form-input input-width-m" required="" />
         </div>
+        <div id="checkbox1-collapse" aria-hidden="true" class="checkbox-content">
 
+            <div class="form-group">
+                <label class="form-label" for="textinput1">Inputfelt med label</label>
+
+                <input type="text" id="textinput1" name="text1" class="form-input input-width-m" required="" />
+            </div>
+
+        </div>
     </div>
 
 </div>
