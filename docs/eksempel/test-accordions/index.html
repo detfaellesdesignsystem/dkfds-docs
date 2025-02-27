@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Testfil | test-accordion-classes | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-accordion-classes | Det Fælles Designsystem">
+<title>Testfil | test-accordions | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-accordions | Det Fælles Designsystem">
 
 
 
@@ -246,28 +246,39 @@
     </div>
 </div>
     <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Accordion-klasser</h1>
-            <p>Klasser: accordion-group-class, button-class, title-class, icon-class</p>
+            <h1 class="h2 mt-0">Accordions</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
 
-            <ul class="accordion accordion-group-class">
+            <ul class="accordion test-accordion-group-class">
                 <li>
-                    <h3>
-                        <button class="accordion-button button-class" aria-expanded="false" aria-controls="accordionID1">
-                            <span class="accordion-title title-class">Accordion</span>
-                            <span class="accordion-icon icon-class">
+                    <h2>
+                        <button class="accordion-button test-button-class" aria-expanded="false" aria-controls="accordionID1">
+                            <span class="accordion-title test-title-class">Accordion med
+                                klasser</span>
+                            <span class="accordion-icon test-icon-class">
                                 <span class="icon_text">Information</span>
                                 <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>
                             </span>
                         </button>
-                    </h3>
+                    </h2>
                     <div id="accordionID1" aria-hidden="true" class="accordion-content">
-                        <p>This is some accordion content.</p>
+                        <p>Det er vigtigt, at denne accordion har en variant for at kunne
+                            teste klasser på ikonet.</p>
+                    </div>
+                </li>
+                <li>
+                    <h2>
+                        <button class="accordion-button" aria-expanded="true" aria-controls="accordionID2">
+                            <span class="accordion-title">Accordion, der er foldet ud</span>
+                        </button>
+                    </h2>
+                    <div id="accordionID2" aria-hidden="false" class="accordion-content">
+                        <p>Dette indhold kan ses fra starten, når siden indlæses.</p>
                     </div>
                 </li>
             </ul>
@@ -294,10 +305,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-accordion-variants/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-icons-svg-and-class/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-accordion-open-close-button/">Næste</a>
+                <a class="function-link" href="/eksempel/test-accordion-headings/">Næste</a>
                 
             </div>
         </div>

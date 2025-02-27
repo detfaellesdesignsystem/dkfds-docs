@@ -28,9 +28,9 @@ title: Test
 {:.h3}
 ## Accordions
 
+{% include test/preview-test.html filename="test-accordions" description="Accordions" %}
 {% include test/preview-test.html filename="test-accordion-headings" description="Overskriftstyper i accordions" %}
 {% include test/preview-test.html filename="test-accordion-variants" description="Accordion-varianter" %}
-{% include test/preview-test.html filename="test-accordion-classes" description="Accordion-klasser" %}
 {% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
 {% include test/preview-test.html filename="test-accordion-javascript" description="JavaScript i accordions" %}

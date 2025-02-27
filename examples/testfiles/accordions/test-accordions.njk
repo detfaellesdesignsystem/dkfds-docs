@@ -1,0 +1,37 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Accordions</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionID",
+                    "classes": "test-accordion-group-class",
+                    "headingLevel": "h2",
+                    "items": [
+                        {
+                            "title": "Accordion med klasser",
+                            "variant": "info",
+                            "content": "<p>Det er vigtigt, at denne accordion har en variant for at kunne teste klasser på ikonet.</p>",
+                            "classes": {
+                                "button": "test-button-class",
+                                "title": "test-title-class",
+                                "icon": "test-icon-class"
+                            }
+                        },
+                        {
+                            "title": "Accordion, der er foldet ud",
+                            "content": "<p>Dette indhold kan ses fra starten, når siden indlæses.</p>",
+                            "expanded": true
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>
