@@ -1,40 +1,56 @@
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-step-guide-7</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
         <div class="col-12">
             <p>Alle trin låst</p>
-            <div>
-                <nav>
-                    <ul class="sidenav-list" role="menu">
-                        <li class="disabled " role="none">
-                            <a role="menuitem">
+
+            <nav aria-label="Trinindikator">
+                <ol class="sidemenu">
+                    <li class="disabled sidenav-error">
+                        <a class="nav-step">
+                            <div>
                                 <span class="sidenav-number">1.</span>
                                 <div>
-                                    <span>Trin 1</span>
+                                    <span class="sidenav-maininfo">
+                                        <span class="sidenav-title">Første trin</span><span
+                                            class="sidenav-icon"><svg class="icon-svg" aria-label="Fejl" focusable="false"><use href="#error"></use></svg></span></span>
+                                    <span></span>
                                 </div>
-                                <span class="sidenav-icon">
-                                    <svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="disabled active current " role="none">
-                            <a role="menuitem" aria-current="page">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <a class="nav-step">
+                            <div>
                                 <span class="sidenav-number">2.</span>
                                 <div>
-                                    <span>Trin 2</span>
+                                    <span class="sidenav-maininfo">
+                                        <span class="sidenav-title">Andet trin</span></span>
+                                    <span></span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="disabled " role="none">
-                            <a role="menuitem">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <a class="nav-step">
+                            <div>
                                 <span class="sidenav-number">3.</span>
                                 <div>
-                                    <span>Trin 3</span>
+                                    <span class="sidenav-maininfo">
+                                        <span class="sidenav-title">Tredje trin</span></span>
+                                    <span><span class="sidenav-information">Informationstekst
+                                            for sidste trin</span></span>
                                 </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
+
         </div>
     </div>
 </main>

@@ -1,13 +1,17 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
 
-<header>
-    {{ skiplink() }}
-</header>
-
-<main class="container page-container" id="main-content">
-    <div class="row">
+<main class="container page-container">
+    <div class="row mb-905">
         <div class="col-12">
-            <p>Skip link ('tab' for at vise)</p>
+            <h1 class="h2 mt-0">Skip-link</h1>
+            <p>Nedenstående streg symboliserer browservinduets øverste kant - af testhensyn er skiplinket flyttet længere ned på denne side, så det hele tiden er synligt. For at undgå at scrollbaren får siden til at "hoppe", er id'et fjernet fra main.</p>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <div class="position-relative" style="border-bottom: 1px solid black;">
+                {{ skiplink() }}
+            </div>
         </div>
     </div>
 </main>

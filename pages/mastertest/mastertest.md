@@ -16,11 +16,6 @@ title: Test
 {% include test/preview-test.html filename="test-headings-long-text" description="Lange headings" %}
 
 {:.h3}
-## Grid
-
-{% include test/preview-test.html filename="test-container" description="Container-test" %}
-
-{:.h3}
 ## Ikoner
 
 {% include test/preview-test.html filename="test-icons-svg-and-class" description="Ikoner indsat som svg og klasse" %}
@@ -39,9 +34,7 @@ title: Test
 {:.h3}
 ## Beskeder (Alerts)
 
-{% include test/preview-test.html filename="test-alerts-1" description="Besked 1" %}
-{% include test/preview-test.html filename="test-alerts-2" description="Besked 2" %}
-{% include test/preview-test.html filename="test-alerts-3" description="Besked 3" %}
+{% include test/preview-test.html filename="test-alerts" description="Beskeder" %}
 
 {:.h3}
 ## Cards
@@ -143,7 +136,6 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Inputfelter
 
-{% include test/preview-test.html filename="test-input-fields-styling" description="Styling af inputfelter" %}
 {% include test/preview-test.html filename="test-input-fields-1" description="Inputfelter 1" %}
 {% include test/preview-test.html filename="test-input-fields-2" description="Inputfelter 2" %}
 {% include test/preview-test.html filename="test-input-fields-3" description="Inputfelter 3" %}
