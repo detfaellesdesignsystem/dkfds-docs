@@ -51,6 +51,7 @@ var testfiles = [
     "test-datepicker-5",
     "test-datepicker-6",
     "test-datepicker-7",
+    "test-details",
     "test-dropdown-1",
     "test-dropdown-2",
     "test-dropdown-3",

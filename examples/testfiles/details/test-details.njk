@@ -1,0 +1,49 @@
+{% from "components/details/details.njk" import details as details %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Detaljer</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                details({
+                    "summary": "Detaljer med en enkelt paragraf",
+                    "content": "<p>Dette er indholdet i detaljekomponenten, som kun kan ses, når komponenten er foldet ud.</p>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                details({
+                    "summary": "Detaljer med meget summary tekst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor.",
+                    "content": "<p>Dette er indholdet i detaljekomponenten, som kun kan ses, når komponenten er foldet ud.</p>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                details({
+                    "summary": "DetaljermedmegetsummarytekstudenmellemrumLoremipsumdolorsitametconsecteturadipiscingelitIntegerfringillainquamsitametcursusPellentesqueegetloremvenenatisdignissimjustoluctusrutrumtortorPraesentsem risuslobortisatorciegetsollicitudinplaceraterosProinattempusfelisDonecmllissapienutnibhultriciesinterdum",
+                    "content": "<p>Dette er indholdet i detaljekomponenten, som kun kan ses, når komponenten er foldet ud.</p>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                details({
+                    "summary": "Detaljer med en enkelt paragraf, hvor der ikke er mellemrum i paragraffen",
+                    "content": "<p>LoremipsumdolorsitametconsecteturadipiscingelitIntegerfringillainquamsitametcursusPellentesqueegetloremvenenatisdignissimjustoluctusrutrumtortorPraesentsem risuslobortisatorciegetsollicitudinplaceraterosProinattempusfelisDonecmllissapienutnibhultriciesinterdum</p>"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

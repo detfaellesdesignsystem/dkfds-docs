@@ -63,6 +63,11 @@ title: Test
 {% include test/preview-test.html filename="test-datepicker-7" description="Datovælger 7" %}
 
 {:.h3}
+## Detaljer
+
+{% include test/preview-test.html filename="test-details" description="Detaljer" %}
+
+{:.h3}
 ## Dropdown
 
 {% include test/preview-test.html filename="test-dropdown-1" description="Dropdown 1" %}
