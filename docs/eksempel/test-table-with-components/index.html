@@ -353,14 +353,13 @@
         <div class="col-12">
 
             <div class="table--responsive-scroll" tabindex="0">
-                <table class="table table--selectable">
+                <table class="table table--selectable" id="selectable-table1">
                     <thead>
                         <tr>
                             <th>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-all" type="checkbox" class="form-checkbox" aria-controls=" undefined-check-1 undefined-check-2 undefined-check-3" />
-                                    <label for="-check-all"><span class="sr-only">Vælg alle
-                                            rækker</span></label>
+                                    <input id="selectable-table1-check-all" type="checkbox" class="form-checkbox" aria-controls=" selectable-table1-check-1 selectable-table1-check-2 selectable-table1-check-3" />
+                                    <label for="selectable-table1-check-all"><span class="sr-only">Vælg alle rækker</span></label>
                                 </div>
                             </th>
                             <th scope="col">First column</th>
@@ -371,9 +370,8 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-1" type="checkbox" name="-check[]" class="form-checkbox" value="Tjekbokse" />
-                                    <label for="-check-1"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-1" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Tjekbokse" />
+                                    <label for="selectable-table1-check-1"><span class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>Tjekbokse</td>
@@ -391,9 +389,8 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-2" type="checkbox" name="-check[]" class="form-checkbox" value="Radioknapper" />
-                                    <label for="-check-2"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-2" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Radioknapper" />
+                                    <label for="selectable-table1-check-2"><span class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>Radioknapper</td>
@@ -412,9 +409,8 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-3" type="checkbox" name="-check[]" class="form-checkbox" value="Inputfelt" />
-                                    <label for="-check-3"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-3" type="checkbox" name="selectable-table1-check[]" class="form-checkbox" value="Inputfelt" />
+                                    <label for="selectable-table1-check-3"><span class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>Inputfelt</td>
@@ -436,7 +432,7 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
-    <footer class="test-footer d-flex align-items-center">
+    <aside class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
             <div class="d-flex mr-8">
@@ -460,7 +456,7 @@
             </div>
         </div>
     </div>
-</footer>
+</aside>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

@@ -167,7 +167,6 @@ B: Test af faneblade anvendt til sidenavigation
 ## Overflow menu
 
 {% include test/preview-test.html filename="test-overflow-menus-1" description="Overflow-menu 1" %}
-{% include test/preview-test.html filename="test-overflow-menus-2" description="Overflow-menu 2" %}
 {% include test/preview-test.html filename="test-overflow-menu-placement" description="Placering af overflow-menu" %}
 
 {:.h3}

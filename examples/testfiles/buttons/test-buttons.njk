@@ -206,13 +206,15 @@
                 {{ 
                     button({
                         "variant": "icon-only",
-                        "icon": "refresh"
+                        "icon": "refresh",
+                        "srOnly": "Opdatér"
                     }) 
                 }}
                 {{ 
                     button({
                         "variant": "icon-only",
                         "icon": "refresh",
+                        "srOnly": "Opdatér",
                         "classes": { "button": "button-hover" }
                     }) 
                 }}
@@ -220,6 +222,7 @@
                     button({
                         "variant": "icon-only",
                         "icon": "refresh",
+                        "srOnly": "Opdatér",
                         "classes": { "button": "focus" }
                     }) 
                 }}
@@ -227,6 +230,7 @@
                     button({
                         "variant": "icon-only",
                         "icon": "refresh",
+                        "srOnly": "Opdatér",
                         "classes": { "button": "button-active" }
                     }) 
                 }}
@@ -234,6 +238,7 @@
                     button({
                         "variant": "icon-only",
                         "icon": "refresh",
+                        "srOnly": "Opdatér",
                         "attributes": "disabled"
                     }) 
                 }}
@@ -314,10 +319,10 @@
                         }) 
                     }}
                 </div>
-                <div class="d-inline-block button-wrapper" style="color: red;">
+                <div class="d-inline-block button-wrapper" style="color: brown;">
                     {{ 
                         button({
-                            "text": "Color red"
+                            "text": "Color brown"
                         }) 
                     }}
                 </div>
@@ -340,7 +345,7 @@
                 <a href="#" class="button button-secondary">Sekundær</a>
                 <a href="#" class="button button-tertiary">Tertiær</a>
                 <a href="#" class="button button-warning">Advarsel</a>
-                <a href="#" class="button button-icon-only">{{ icon_svg({"name": "refresh"}) }}</a>
+                <a href="#" class="button button-icon-only">{{ icon_svg({"name": "refresh"}) }}<span class="sr-only">Opdatér</span></a>
                 <a href="#" class="button button-primary">{{ icon_svg({"name": "refresh"}) }} Primær med ikon</a>
             </div>
         </div>

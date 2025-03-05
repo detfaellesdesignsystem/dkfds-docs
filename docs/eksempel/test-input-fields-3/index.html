@@ -256,14 +256,14 @@
             <p>Tooltip, hjælpetekst og prefix</p>
 
             <div class="form-group">
-                <label class="form-label" for="input-text">E-mail</label>
-                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text-tooltipbutton" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                <label class="form-label" for="input-text1">E-mail</label>
+                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="input-text1-tooltipbutton" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
                         <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use href="#help"></use></svg></button></span>
-                <span class="form-hint" id="input-text-hint">Her er en hjælpetekst</span>
+                <span class="form-hint" id="input-text1-hint">Her er en hjælpetekst</span>
 
                 <div class="form-input-wrapper form-input-wrapper--prefix">
                     <div class="form-input-prefix" aria-hidden="true">Pre</div>
-                    <input type="text" id="input-text" name="input-text" class="form-input" aria-describedby="input-text-hint " required="" />
+                    <input type="text" id="input-text1" name="input-text" class="form-input" aria-describedby="input-text1-hint " required="" />
                 </div>
             </div>
 
@@ -274,14 +274,14 @@
             <p>Prefix, suffix og fejlbesked</p>
 
             <div class="form-group form-error">
-                <label class="form-label" for="input-text">Udvalgt vare</label>
+                <label class="form-label" for="input-text2">Udvalgt vare</label>
 
-                <span class="form-error-message" id="input-text-error">
+                <span class="form-error-message" id="input-text2-error">
                     <span class="sr-only">Fejl: </span>Dette er en fejlbesked
                 </span>
                 <div class="form-input-wrapper form-input-wrapper--prefix form-input-wrapper--suffix">
                     <div class="form-input-prefix" aria-hidden="true">Pris</div>
-                    <input type="text" id="input-text" name="input-text" class="form-input" aria-invalid="true" aria-describedby="input-text-error " required="" />
+                    <input type="text" id="input-text2" name="input-text" class="form-input" aria-invalid="true" aria-describedby="input-text2-error " required="" />
                     <div class="form-input-suffix" aria-hidden="true">kr.</div>
                 </div>
             </div>
@@ -293,11 +293,11 @@
             <p>Prefix, suffix og readonly</p>
 
             <div class="form-group">
-                <label class="form-label" for="input-text">Udvalgt vare</label>
+                <label class="form-label" for="input-text3">Udvalgt vare</label>
 
                 <div class="form-input-wrapper form-input-wrapper--prefix form-input-wrapper--suffix readonly">
                     <div class="form-input-prefix" aria-hidden="true">Pris</div>
-                    <input type="text" id="input-text" name="input-text" class="form-input" readonly="" required="" />
+                    <input type="text" id="input-text3" name="input-text" class="form-input" readonly="" required="" />
                     <div class="form-input-suffix" aria-hidden="true">kr.</div>
                 </div>
             </div>
@@ -309,11 +309,11 @@
             <p>Prefix, suffix og disabled</p>
 
             <div class="form-group">
-                <label class="form-label  disabled" for="input-text">Udvalgt vare<span class="weight-normal"> (frivilligt)</span></label>
+                <label class="form-label  disabled" for="input-text4">Udvalgt vare<span class="weight-normal"> (frivilligt)</span></label>
 
                 <div class="form-input-wrapper form-input-wrapper--prefix form-input-wrapper--suffix disabled">
                     <div class="form-input-prefix" aria-hidden="true">Pris</div>
-                    <input type="text" id="input-text" name="input-text" class="form-input" disabled="disabled" />
+                    <input type="text" id="input-text4" name="input-text" class="form-input" disabled="disabled" />
                     <div class="form-input-suffix" aria-hidden="true">kr.</div>
                 </div>
             </div>
@@ -324,7 +324,7 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
-    <footer class="test-footer d-flex align-items-center">
+    <aside class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
             <div class="d-flex mr-8">
@@ -348,7 +348,7 @@
             </div>
         </div>
     </div>
-</footer>
+</aside>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

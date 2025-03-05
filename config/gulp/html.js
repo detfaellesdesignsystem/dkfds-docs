@@ -117,7 +117,6 @@ var testfiles = [
     "test-modal-inert",
     "test-modal-long",
     "test-overflow-menus-1",
-    "test-overflow-menus-2",
     "test-overflow-menu-placement",
     "test-pagination",
     "test-radiobuttons-error",

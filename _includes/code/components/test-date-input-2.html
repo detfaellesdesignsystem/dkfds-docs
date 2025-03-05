@@ -12,10 +12,12 @@
                 <fieldset aria-describedby="date-example-hint ">
                     <legend class="form-label">
                         Indtast en dato
-                        <button class="button button-unstyled" type="button">
-                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#help"></use></svg>
-                            <span class="sr-only">Hvad betyder det?</span>
-                        </button>
+                        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                            data-tooltip-id="date-tooltip" data-position="above"
+                            data-trigger="click"><button
+                                class="button button-unstyled tooltip-target" type="button"
+                                aria-label="Læs mere">
+                                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use href="#help"></use></svg></button></span>
                     </legend>
                     <span class="form-hint" id="date-example-hint">For eksempel 23 11
                         2008</span>

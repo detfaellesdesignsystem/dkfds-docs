@@ -360,15 +360,25 @@
             <p>Ikonknap i alle states</p>
             <div class="button-group">
                 <button class="button button-icon-only">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg></button>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
+                    <span class="sr-only">Opdatér</span>
+                </button>
                 <button class="button button-icon-only button-hover">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg></button>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
+                    <span class="sr-only">Opdatér</span>
+                </button>
                 <button class="button button-icon-only focus">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg></button>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
+                    <span class="sr-only">Opdatér</span>
+                </button>
                 <button class="button button-icon-only button-active">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg></button>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
+                    <span class="sr-only">Opdatér</span>
+                </button>
                 <button class="button button-icon-only" disabled="">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg></button>
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
+                    <span class="sr-only">Opdatér</span>
+                </button>
             </div>
         </div>
     </div>
@@ -422,9 +432,9 @@
                         Font-size 18px
                     </button>
                 </div>
-                <div class="d-inline-block button-wrapper" style="color: red;">
+                <div class="d-inline-block button-wrapper" style="color: brown;">
                     <button class="button">
-                        Color red
+                        Color brown
                     </button>
                 </div>
                 <div class="d-inline-block button-wrapper" style="color: blue;">
@@ -444,7 +454,7 @@
                 <a href="#" class="button button-secondary">Sekundær</a>
                 <a href="#" class="button button-tertiary">Tertiær</a>
                 <a href="#" class="button button-warning">Advarsel</a>
-                <a href="#" class="button button-icon-only"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg></a>
+                <a href="#" class="button button-icon-only"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg><span class="sr-only">Opdatér</span></a>
                 <a href="#" class="button button-primary"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#refresh"></use></svg>
                     Primær med ikon</a>
             </div>
@@ -487,7 +497,7 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
-    <footer class="test-footer d-flex align-items-center">
+    <aside class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
             <div class="d-flex mr-8">
@@ -511,7 +521,7 @@
             </div>
         </div>
     </div>
-</footer>
+</aside>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

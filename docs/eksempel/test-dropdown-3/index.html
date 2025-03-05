@@ -257,7 +257,8 @@
 
             <div class="form-group">
                 <label class="form-label" for="options-id">Dropdown label</label>
-
+                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip" data-tooltip-id="options-id-tooltipbutton" data-position="above" data-trigger="click"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use href="#help"></use></svg></button></span>
                 <span class="form-hint" id="options-id-hint">Husk at læse tooltippet</span>
 
                 <select class="form-select" name="options-name" id="options-id" aria-describedby="options-id-hint " required="">
@@ -273,7 +274,7 @@
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
-    <footer class="test-footer d-flex align-items-center">
+    <aside class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
             <div class="d-flex mr-8">
@@ -297,7 +298,7 @@
             </div>
         </div>
     </div>
-</footer>
+</aside>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
