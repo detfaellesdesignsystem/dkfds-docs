@@ -144,8 +144,8 @@
     },
     "badge_under_behandling": {
         "text": "Under behandling",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "warning"
         }
     },

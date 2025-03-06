@@ -118,14 +118,12 @@
     "badge_under_behandling": {
         "text": "Under behandling",
         "variant": {
-            "size": "small",
             "status": "warning"
         }
     },
     "badge_afsluttet": {
         "text": "Afsluttet",
         "variant": {
-            "size": "small",
             "status": "success"
         }
     },

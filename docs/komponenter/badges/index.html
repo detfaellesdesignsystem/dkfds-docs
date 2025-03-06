@@ -227,7 +227,7 @@
     <div class="solution-info">
         <div class="solution-info-inner container">
             <div class="solution-heading d-flex flex-wrap align-items-center">
-                <a href="/" class="mr-4">Det Fælles Designsystem</a><strong class="badge badge-large badge-error">Develop</strong>
+                <a href="/" class="mr-4">Det Fælles Designsystem</a><strong class="badge badge-error">Develop</strong>
             </div>
             <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#menu"></use></svg>Menu</button>
         </div>
@@ -1670,12 +1670,7 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="mb-3">
-    <span class="badge badge-large">Stort badge</span>
-</div>
-<div class="mb-3">
-    <span class="badge badge-small">Lille badge</span>
-</div>
+        <strong class="badge">Badge</strong>
         
     </div>
     
@@ -1742,16 +1737,16 @@
     <div class="component-example px-4 py-4">
         
         <div class="mb-4">
-    <span class="badge badge-small badge-success">Positiv status</span>
+    <span class="badge badge-success">Positiv status</span>
 </div>
 <div class="mb-4">
-    <span class="badge badge-small badge-info">Neutral status</span>
+    <span class="badge badge-info">Neutral status</span>
 </div>
 <div class="mb-4">
-    <span class="badge badge-small badge-warning">Advarende status</span>
+    <span class="badge badge-warning">Advarende status</span>
 </div>
 <div class="mb-4">
-    <span class="badge badge-small badge-error">Negativ status</span>
+    <span class="badge badge-error">Negativ status</span>
 </div>
         
     </div>
@@ -1796,35 +1791,14 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-large&quot;</span>&gt;</span>Stort badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mb-3&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge badge-small&quot;</span>&gt;</span>Lille badge<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge&quot;</span>&gt;</span>Badge<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></code></pre></figure>
 
 
     </div>
     
 </div>
 
-<p>Alle badges skal have en <code>badge</code> klasse på <code>&lt;span&gt;</code>-elementet.</p>
-
-<p>Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, for eksempel når nyt indhold markeres på en side, anvend da et <code>&lt;strong&gt;</code>-element i stedet for <code>&lt;span&gt;</code>.</p>
-
-<h3>Tilgængelighed</h3>
-
-<p>Interaktive badges bliver automatisk markeret, når brugere ved hjælp af tastaturet navigerer sig frem til dem.</p>
-
-<p>Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.</p>
-
-<h2 id="stort-badge-kode">Stort badge</h2>
-
-<p>For et stort badge skal der tilføjes en <code>badge-large</code> class.</p>
-
-<h2 id="lille-badge-kode">Lille badge</h2>
-
-<p>For et lille badge skal der tilføjes en <code>badge-small</code> class.</p>
+<p>Både <code>&lt;span&gt;</code> og <code>&lt;strong&gt;</code> kan anvendes til badges. Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, brug da <code>&lt;strong&gt;</code>.</p>
 
 <h2 id="statusbadges-kode">Statusbadges</h2>
 

@@ -241,8 +241,8 @@
     },
     "badge_afsluttet": {
         "text": "Afsluttet",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "info"
         }
     },
@@ -252,22 +252,23 @@
     },
     "badge_myndighed": {
         "text": "Sendt til <Myndighed>",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "info"
         }
     },
     "badge_selskab": {
         "text": "Påklaget af forsikringsselskab ABC",
+        "classes": "mb-3",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "info"
         }
     },
     "badge_navn": {
         "text": "Påklaget af Kim Nielsen",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "info"
         }
     },
@@ -281,8 +282,8 @@
     },
     "badge_ikke_afgjort": {
         "text": "Ikke afgjort",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "info"
         }
     },
