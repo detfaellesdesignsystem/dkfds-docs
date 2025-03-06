@@ -63,6 +63,10 @@ Anvend et responsivt grid til at definere bredden på cards. Således kan fx 2, 
 
 ### Card med billede {#{% include create-id.html heading="Card med billede" %}}
 
+Husk at angive en alt-tekst til billeder, der <strong>ikke</strong> er rent dekorative - dvs. når billedernes indhold har en betydning for, hvordan brugerne forstår siden.
+
+For rent dekorative billeder indsættes en tom alt-tekst.
+
 {% include code/preview-box.html component="cards-with-images" title="Eksempel på cards med billeder" code="/komponenter/cards/#card-med-billede-kode" %}
 
 ### Card uden billede {#{% include create-id.html heading="Card uden billede" %}}
@@ -81,7 +85,7 @@ Navigationscards kan både være med og uden billede.
 
 ### Langt card {#{% include create-id.html heading="Langt card" %}}
 
-I lange cards placeres evt. billede, tekst og pil-ikon i et horisontalt layout. Disse cards egner sig som hovedregel til cards med korte tekster og/eller cards, der på desktop har en bredde over seks kolonner (se grid) eller 500px.
+I lange cards placeres evt. billede, tekst og pil-ikon i et horisontalt layout. Disse cards egner sig som hovedregel til cards med korte tekster og/eller cards, der på desktop har en bredde over seks kolonner (se {% include links/internal-link.html linktext="grid" %}) eller 500px. På mobil har lange cards samme vertikale layout som almindelige cards.
 
 Både almindelige cards og navigationscards kan være lange cards.
 
