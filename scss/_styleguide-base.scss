@@ -1317,3 +1317,14 @@ a.demo-button span + .icon-svg {
         }
     }
 }
+
+/*
+-----------------------------------------------------
+Styling for cards on styleguide and components pages
+-----------------------------------------------------
+*/
+
+.page-styleguide .new-card-content,
+.page-komponenter .new-card-content {
+    border-top: 1px solid color('gray-200');
+}

@@ -1,9 +1,5 @@
 <svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_13144_11103" fill="white">
-<path d="M0 0H267V150H0V0Z"/>
-</mask>
-<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
-<path d="M267 149H0V151H267V149Z" fill="#DCDCDC" mask="url(#path-1-inside-1_13144_11103)"/>
+<rect width="267" height="150" fill="#F5F5F5"/>
 <line x1="55" y1="54.5" x2="211" y2="54.5" stroke="#0059B3"/>
 <line x1="55" y1="71" x2="211" y2="71" stroke="#0059B3" stroke-width="4"/>
 <line x1="55" y1="91" x2="211" y2="91" stroke="#0059B3" stroke-width="8"/>
