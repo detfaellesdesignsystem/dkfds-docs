@@ -36,11 +36,7 @@ Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyh
 
 ### Vejledning
 
-Brug ord og begreber, som brugeren kan genkendes fra løsningen.
-
-Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).
-
-Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel af komponenterne inden for løsningen.
+Brug ord og begreber, som brugeren kan genkende fra løsningen.
 
 Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.
 
