@@ -2,51 +2,47 @@ const puppeteer = require('puppeteer');
 
 //var root = "http://127.0.0.1:4000/";
 var root = "https://develop.designsystem.dk/";
-var targetRootDir = "img/examples_pages/";
 var themes = ["virk", "borgerdk"];
 
 var exampleUrls = [
-    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-1/", "folder": "formular-til-kontaktoplysninger", "filename": "formular-1" },
-    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-2/", "folder": "formular-til-kontaktoplysninger", "filename": "formular-2" },
-    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-3/", "folder": "formular-til-kontaktoplysninger", "filename": "formular-3" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-1/", "folder": "trinformular-til-registrering", "filename": "registrering-1" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-2/", "folder": "trinformular-til-registrering", "filename": "registrering-2" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-3/", "folder": "trinformular-til-registrering", "filename": "registrering-3" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-4/", "folder": "trinformular-til-registrering", "filename": "registrering-4" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-5/", "folder": "trinformular-til-registrering", "filename": "registrering-5" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-6/", "folder": "trinformular-til-registrering", "filename": "registrering-6" },
-    { "url": "pages/eksempler/trinformular-til-registrering/registrering-7/", "folder": "trinformular-til-registrering", "filename": "registrering-7" },
-    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-1/", "folder": "trinformular-til-ansoegning", "filename": "ansoegning-1" },
-    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-2/", "folder": "trinformular-til-ansoegning", "filename": "ansoegning-2" },
-    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-3/", "folder": "trinformular-til-ansoegning", "filename": "ansoegning-3" },
-    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-4/", "folder": "trinformular-til-ansoegning", "filename": "ansoegning-4" },
-    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-5/", "folder": "trinformular-til-ansoegning", "filename": "ansoegning-5" },
-    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-6/", "folder": "trinformular-til-ansoegning", "filename": "ansoegning-6" },
-    { "url": "pages/eksempler/sagsoversigt/find-sag/", "folder": "sagsoversigt", "filename": "find-sag" },
-    { "url": "pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/", "folder": "sagsoversigt", "filename": "sagsnr-123456789" },
-    { "url": "pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/", "folder": "sagsoversigt", "filename": "afgoerelser" },
-    { "url": "pages/eksempler/dashboard/dashboard-1/", "folder": "dashboard", "filename": "dashboard-1" },
-    { "url": "pages/eksempler/opgaveliste/", "folder": "opgaveliste", "filename": "opgaveliste" },
-    { "url": "pages/eksempler/vedhaeft-fil/fil-1/", "folder": "vedhaeft-fil", "filename": "fil-1" },
-    { "url": "pages/eksempler/vedhaeft-fil/fil-2/", "folder": "vedhaeft-fil", "filename": "fil-2" },
-    { "url": "pages/eksempler/vedhaeft-fil/fil-3/", "folder": "vedhaeft-fil", "filename": "fil-3" },
-    { "url": "pages/eksempler/opsummering/opsummering-1/", "folder": "opsummering", "filename": "opsummering-1" },
-    { "url": "pages/eksempler/opsummering/opsummering-2/", "folder": "opsummering", "filename": "opsummering-2" },
-    { "url": "pages/eksempler/kvittering/kvittering-1/", "folder": "kvittering", "filename": "kvittering-1" },
-    { "url": "pages/eksempler/kvittering/kvittering-2/", "folder": "kvittering", "filename": "kvittering-2" },
-    { "url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "folder": "formular-med-fejl", "filename": "formular-med-fejl-1" },
-    { "url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "folder": "trinindikator-med-fejl", "filename": "trinindikator-med-fejl-1" },
-    { "url": "pages/eksempler/siden-kunne-ikke-findes-1/", "folder": "siden-kunne-ikke-findes", "filename": "siden-kunne-ikke-findes-1" },
-    { "url": "pages/eksempler/siden-kunne-ikke-findes-2/", "folder": "siden-kunne-ikke-findes", "filename": "siden-kunne-ikke-findes-2" },
-    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-1/", "folder": "Selvbetjeningsloesninger", "filename": "formular-til-kontaktoplysninger-1" },
-    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-2/", "folder": "Selvbetjeningsloesninger", "filename": "formular-til-kontaktoplysninger-2" },
-    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-3/", "folder": "Selvbetjeningsloesninger", "filename": "formular-til-kontaktoplysninger-3" }
+    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-1/", "folder": "Selvbetjeningsloesninger", "filename": "formular-1" },
+    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-2/", "folder": "Selvbetjeningsloesninger", "filename": "formular-2" },
+    { "url": "pages/eksempler/formular-til-kontaktoplysninger/formular-3/", "folder": "Selvbetjeningsloesninger", "filename": "formular-3" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-1/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-1" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-2/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-2" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-3/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-3" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-4/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-4" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-5/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-5" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-6/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-6" },
+    { "url": "pages/eksempler/trinformular-til-registrering/registrering-7/", "folder": "Selvbetjeningsloesninger", "filename": "registrering-7" },
+    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-1/", "folder": "Selvbetjeningsloesninger", "filename": "ansoegning-1" },
+    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-2/", "folder": "Selvbetjeningsloesninger", "filename": "ansoegning-2" },
+    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-3/", "folder": "Selvbetjeningsloesninger", "filename": "ansoegning-3" },
+    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-4/", "folder": "Selvbetjeningsloesninger", "filename": "ansoegning-4" },
+    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-5/", "folder": "Selvbetjeningsloesninger", "filename": "ansoegning-5" },
+    { "url": "pages/eksempler/trinformular-til-ansoegning/ansoegning-6/", "folder": "Selvbetjeningsloesninger", "filename": "ansoegning-6" },
+    { "url": "pages/eksempler/sagsoversigt/find-sag/", "folder": "Selvbetjeningsloesninger", "filename": "find-sag" },
+    { "url": "pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/", "folder": "Selvbetjeningsloesninger", "filename": "sagsnr-123456789" },
+    { "url": "pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/", "folder": "Selvbetjeningsloesninger", "filename": "afgoerelser" },
+    { "url": "pages/eksempler/dashboard/dashboard-1/", "folder": "Templates", "filename": "dashboard-1" },
+    { "url": "pages/eksempler/opgaveliste/", "folder": "Templates", "filename": "opgaveliste" },
+    { "url": "pages/eksempler/vedhaeft-fil/fil-1/", "folder": "Templates", "filename": "fil-1" },
+    { "url": "pages/eksempler/vedhaeft-fil/fil-2/", "folder": "Templates", "filename": "fil-2" },
+    { "url": "pages/eksempler/vedhaeft-fil/fil-3/", "folder": "Templates", "filename": "fil-3" },
+    { "url": "pages/eksempler/opsummering/opsummering-1/", "folder": "Templates", "filename": "opsummering-1" },
+    { "url": "pages/eksempler/opsummering/opsummering-2/", "folder": "Templates", "filename": "opsummering-2" },
+    { "url": "pages/eksempler/kvittering/kvittering-1/", "folder": "Templates", "filename": "kvittering-1" },
+    { "url": "pages/eksempler/kvittering/kvittering-2/", "folder": "Templates", "filename": "kvittering-2" },
+    { "url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "folder": "Templates", "filename": "formular-med-fejl-1" },
+    { "url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "folder": "Templates", "filename": "trinindikator-med-fejl-1" },
+    { "url": "pages/eksempler/siden-kunne-ikke-findes-1/", "folder": "Templates", "filename": "siden-kunne-ikke-findes-1" },
+    { "url": "pages/eksempler/siden-kunne-ikke-findes-2/", "folder": "Templates", "filename": "siden-kunne-ikke-findes-2" }
 ];
 
 
 (async () => {
     var resWidth = 1125; // width of screenshot
-    var resHeight = 961;
+    var resHeight = 745;
 
     const browser = await puppeteer.launch({headless: true});
     const page = await browser.newPage();
@@ -73,10 +69,7 @@ var exampleUrls = [
                 window.scrollTo(0, 0);
             });
 
-            var pngFileName = targetRootDir + exampleUrls[i].folder + '/' + themes[t] + '-' + exampleUrls[i].filename + '.PNG';
-            if (exampleUrls[i].folder === 'Selvbetjeningsloesninger') {
-                pngFileName = `img/cards/Selvbetjeningsloesninger/${exampleUrls[i].filename}-${themes[t]}.PNG`;
-            }
+            var pngFileName = `img/cards/${exampleUrls[i].folder}/card-${exampleUrls[i].filename}-${themes[t]}.PNG`;
             
             await page.screenshot({ path: pngFileName });
         }

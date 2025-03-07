@@ -16,85 +16,100 @@ tags:
 
 ## Dashboard {#{% include create-id.html heading="Dashboard" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="/pages/eksempler/dashboard/dashboard-1/?r=/eksempler/templates/%23dashboard" title="Eksempelside: Dashboard" class="screenshot d-block" data-folder="dashboard" data-image="dashboard-1"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/dashboard/dashboard-1/"
+        id="card-dashboard-1"
+        heading="Dashboard"
+    %}
+</ul>
 
 ## Opgaveliste {#{% include create-id.html heading="Opgaveliste" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <a href="/pages/eksempler/opgaveliste/?r=/eksempler/templates/%23opgaveliste" title="Eksempelside: Opgaveliste" class="screenshot d-block" data-folder="opgaveliste" data-image="opgaveliste"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/opgaveliste/"
+        id="card-opgaveliste"
+        heading="Opgaveliste"
+    %}
+</ul>
 
 ## Vedhæft filer {#{% include create-id.html heading="Vedhæft filer" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-  <h3 class="h4">Vedhæft fil</h3>
-    <a href="/pages/eksempler/vedhaeft-fil/fil-1/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Vedhæft fil" class="screenshot d-block" data-folder="vedhaeft-fil" data-image="fil-1"></a>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Liste af vedhæftede filer</h3>
-    <a href="/pages/eksempler/vedhaeft-fil/fil-2/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Liste af vedhæftede filer" class="screenshot d-block" data-folder="vedhaeft-fil" data-image="fil-2"></a>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Fejl i vedhæftede filer</h3>
-    <a href="/pages/eksempler/vedhaeft-fil/fil-3/?r=/eksempler/templates/%23vedhaeft-filer" title="Eksempelside: Fejl i vedhæftede filer" class="screenshot d-block" data-folder="vedhaeft-fil" data-image="fil-3"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/vedhaeft-fil/fil-1/"
+        id="card-fil-1"
+        heading="Vedhæft fil"
+    %}
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/vedhaeft-fil/fil-2/"
+        id="card-fil-2"
+        heading="Liste af vedhæftede filer"
+    %}
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/vedhaeft-fil/fil-3/"
+        id="card-fil-3"
+        heading="Fejl i vedhæftede filer"
+    %}
+</ul>
 
 ## Opsummering {#{% include create-id.html heading="Opsummering" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Opsummering med venstrestillet trinindikator</h3>
-    <a href="/pages/eksempler/opsummering/opsummering-1/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering med venstrestillet trinindikator" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-1"></a>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Opsummering med trinindikator i overflowmenu</h3>
-    <a href="/pages/eksempler/opsummering/opsummering-2/?r=/eksempler/templates/%23opsummering" title="Eksempelside: Opsummering med trinindikator i overflowmenu" class="screenshot d-block" data-folder="opsummering" data-image="opsummering-2"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/opsummering/opsummering-1/"
+        id="card-opsummering-1"
+        heading="Opsummering med venstrestillet trinindikator"
+    %}
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/opsummering/opsummering-2/"
+        id="card-opsummering-2"
+        heading="Opsummering med trinindikator i overflowmenu"
+    %}
+</ul>
 
 ## Kvittering {#{% include create-id.html heading="Kvittering" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Kvittering med opsummering</h3>
-    <a href="/pages/eksempler/kvittering/kvittering-1/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering med opsummering" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-1"></a>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Kvittering med betalingsoplysninger</h3>
-    <a href="/pages/eksempler/kvittering/kvittering-2/?r=/eksempler/templates/%23kvittering" title="Eksempelside: Kvittering med betalingsoplysninger" class="screenshot d-block" data-folder="kvittering" data-image="kvittering-2"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/kvittering/kvittering-1/"
+        id="card-kvittering-1"
+        heading="Kvittering med opsummering"
+    %}
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/kvittering/kvittering-2/"
+        id="card-kvittering-2"
+        heading="Kvittering med betalingsoplysninger"
+    %}
+</ul>
 
 ## Fejl {#{% include create-id.html heading="Fejl" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Formular med fejl</h3>
-    <a href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Formular med fejl" class="screenshot d-block" data-folder="formular-med-fejl" data-image="formular-med-fejl-1"></a>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">Fejl i tidligere trin</h3>
-    <a href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/?r=/eksempler/templates/%23fejl" title="Eksempelside: Fejl i tidligere trin" class="screenshot d-block" data-folder="trinindikator-med-fejl" data-image="trinindikator-med-fejl-1"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/formular-med-fejl/formular-med-fejl-1/"
+        id="card-formular-med-fejl-1"
+        heading="Formular med fejl"
+    %}
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/"
+        id="card-trinindikator-med-fejl-1"
+        heading="Fejl i tidligere trin"
+    %}
+</ul>
 
 ## Siden kunne ikke findes (404-side) {#{% include create-id.html heading="Siden kunne ikke findes (404-side)" %}}
 
-<div class="row screenshot-gallery d-none">
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">404-side</h3>
-    <a href="/pages/eksempler/siden-kunne-ikke-findes-1/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: 404-side" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-1"></a>
-  </div>
-  <div class="col-12 col-sm-6 col-md-4 mb-6">
-    <h3 class="h4">404-side med søgefelt</h3>
-    <a href="/pages/eksempler/siden-kunne-ikke-findes-2/?r=/eksempler/templates/%23siden-kunne-ikke-findes" title="Eksempelside: 404-side med søgefelt" class="screenshot d-block" data-folder="siden-kunne-ikke-findes" data-image="siden-kunne-ikke-findes-2"></a>
-  </div>
-</div>
+<ul class="row card-row">
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/siden-kunne-ikke-findes-1/"
+        id="card-siden-kunne-ikke-findes-1"
+        heading="404-side"
+    %}
+    {% include navcard-thumbnails.html 
+        href="/pages/eksempler/siden-kunne-ikke-findes-2/"
+        id="card-siden-kunne-ikke-findes-2"
+        heading="404-side med søgefelt"
+    %}
+</ul>

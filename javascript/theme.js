@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         setScreenshots();
 
-        setThumbnails();
-
         setDoDontImages();
 
         setHomepageIllustration();
@@ -275,26 +273,6 @@ let debug = function(title, value){
     }
 };
 
-let setThumbnails = function() {
-    if (document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || 
-        document.getElementsByTagName('body')[0].classList.contains('page-templates')) {
-        let thumbnails = document.querySelectorAll('[data-image]');
-        for (let t = 0; t < thumbnails.length; t++) {
-            let thumbnail = thumbnails[t];
-            let imageSrc = '/assets/img/examples_pages/' + thumbnail.dataset.folder + '/' + getThemeCookie() + '-' + thumbnail.dataset.image + '.PNG';
-            let imageAlt = 'Skærmbillede af ' + thumbnail.getAttribute('title');
-            let image = `<img src="${imageSrc}" alt="${imageAlt}" class="w-percent-100 d-block" />`;
-            thumbnail.innerHTML = image;
-        }
-        let galleries = document.getElementsByClassName('screenshot-gallery');
-        if (galleries.length !== 0 ) {
-            for (let g = 0; g < galleries.length; g++) {
-                galleries[g].classList.remove('d-none');
-            }
-        }
-    }
-}
-
 let setScreenshots = function(){
     if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
         || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
@@ -370,6 +348,10 @@ let setCardImages = function() {
     else if (document.body.classList.contains('page-selvbetjeningsløsninger')) {
         let cards = document.querySelector('main').querySelectorAll('.new-card');
         rebuildCardImages(cards, '/assets/img/cards/Selvbetjeningsloesninger', 'PNG');
+    }
+    else if (document.body.classList.contains('page-templates')) {
+        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        rebuildCardImages(cards, '/assets/img/cards/Templates', 'PNG');
     }
 }
 

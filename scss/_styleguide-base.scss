@@ -1291,3 +1291,29 @@ Syntax highlight
 .hljs-symbol {
     color: color('gray-500');
 }
+
+/*
+-----------------------------------------------------
+Styling for cards with thumbnails on example pages
+-----------------------------------------------------
+*/
+
+a.demo-button span + .icon-svg {
+    min-width: 2.0rem;
+    max-width: 2.0rem;
+}
+
+.thumbnail-example {
+    .new-card-image {
+        aspect-ratio: 1125 / 745;
+        background-color: color('gray-200');
+    }
+
+    .new-card-content {
+        border-top: 1px solid color('gray-200');
+
+        .heading {
+            font-size: font-size('lg');
+        }
+    }
+}
