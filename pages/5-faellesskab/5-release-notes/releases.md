@@ -178,6 +178,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Tilføjet mulighed for at lukke modaler, der ikke kræver handling, ved at trykke på den farvede baggrund under modalen.
 - Fjernet animation fra tag-komponenten.
 - Tilføjet minimumsbredde til `fieldset`-elementer, for at forhindre tilfælde, hvor brugeren måtte scrolle horisontalt på små skærme.
+- Mindre ændring til modalers JavaScript, hvor backdrop-elementet forbliver i HTML'en efter oprettelse.
 
 
 
