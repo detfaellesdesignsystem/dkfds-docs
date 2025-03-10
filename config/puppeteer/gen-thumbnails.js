@@ -65,7 +65,6 @@ var exampleUrls = [
                 if (cookieMessage !== null) {
                     cookieMessage.style.display = 'none';
                 }
-                document.getElementsByClassName('demo-footer')[0].style.display = 'none';
                 window.scrollTo(0, 0);
             });
 
