@@ -236,7 +236,6 @@ var PiwikProTracker = (function () {
     };
 
     var callSetupCode = function (accountPath, accountId) {
-        /* jshint ignore:start */
         (function (window, document, dataLayerName, id) {
             window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({
                 start: (new Date).getTime(),
@@ -272,8 +271,6 @@ var PiwikProTracker = (function () {
                 }(i[c])
             }(window, "ppms", ["tm", "cm"]);
         })(window, document, 'dataLayer', accountId);
-
-        /* jshint ignore:end */
     };
 
     var injectCode = function (injectCfg) {
