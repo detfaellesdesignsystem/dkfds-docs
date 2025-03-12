@@ -3,7 +3,7 @@ var dutil = require('./doc-util');
 
 var rename = require("gulp-rename");
 var gulpif = require("gulp-if");
-var modifyFile = require('gulp-modify-file');
+var through2 = require('through2');
 var prettify = require('gulp-jsbeautifier');
 var nunjucksRender = require('gulp-nunjucks-render');
 var data = require('gulp-data');
@@ -306,7 +306,14 @@ gulp.task('nunjucks', done => {
         }))
         .pipe(flatten())
         .pipe(gulp.dest(distComponentCode))
-        .pipe(modifyFile(createMarkdown))
+        .pipe(through2.obj(function(file, enc, cb) {
+            if (file.isBuffer()) {
+                const content = file.contents.toString();
+                const modifiedContent = createMarkdown(content, file.path, file);
+                file.contents = Buffer.from(modifiedContent);
+            }
+            cb(null, file);
+        }))
         .pipe(rename(function(path){
             path.extname = ".md";
         }))

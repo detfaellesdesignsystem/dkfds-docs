@@ -40,7 +40,6 @@
     "gulp-flatten": "~0.4.0",
     "gulp-if": "~3.0.0",
     "gulp-jsbeautifier": "~3.0.1",
-    "gulp-modify-file": "~1.0.1",
     "gulp-nunjucks-render": "~2.2.3",
     "gulp-rename": "~2.0.0",
     "highlight.js": "~11.11.1",
@@ -53,6 +52,7 @@
     "sass": "~1.83.1",
     "sass-loader": "~16.0.4",
     "terser-webpack-plugin": "~5.3.11",
+    "through2": "~4.0.2",
     "webpack": "~5.97.1",
     "webpack-cli": "~6.0.1",
     "webpack-remove-empty-scripts": "~1.0.4"

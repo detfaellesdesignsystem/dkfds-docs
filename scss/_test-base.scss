@@ -43,10 +43,6 @@ body.layout-mastertest {
   height: auto;
   z-index: 10000;
 
-  @include media-breakpoint-up(sm) {
-    //height: units(6, 'rem');
-  }
-
   .test-footer-content {
     color: color('white');
     padding: units(2);
