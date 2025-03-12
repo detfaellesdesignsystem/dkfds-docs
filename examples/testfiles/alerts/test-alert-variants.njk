@@ -1,0 +1,37 @@
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Beskedvarianter</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                alert({
+                    "variant": "info",
+                    "content": "Variant: info"
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "success",
+                    "content": "Variant: success"
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "warning",
+                    "content": "Variant: warning"
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "error",
+                    "content": "Variant: error"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

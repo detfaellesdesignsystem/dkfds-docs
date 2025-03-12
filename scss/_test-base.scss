@@ -40,11 +40,11 @@ body.layout-mastertest {
   position: fixed;
   width: 100%;
   background-color: color('black');
-  height: units(9, 'rem');
+  height: auto;
   z-index: 10000;
 
   @include media-breakpoint-up(sm) {
-    height: units(6, 'rem');
+    //height: units(6, 'rem');
   }
 
   .test-footer-content {

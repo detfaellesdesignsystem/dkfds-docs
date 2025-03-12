@@ -274,7 +274,7 @@
     <aside class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-            <div class="d-flex mr-8">
+            <div class="d-flex flex-wrap mr-8">
                 <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
                     <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
                 </button>
@@ -282,8 +282,9 @@
                 </button>
                 <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
                 </button>
-                <button id="theme-virk" class="function-link"><span>Virk</span>
+                <button id="theme-virk" class="function-link mr-8"><span>Virk</span>
                 </button>
+                <button id="font-size-200" class="function-link">200% tekststørrelse</button>
             </div>
             <div>
                 
@@ -351,6 +352,10 @@
             createLink("virk");
             document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
         }
+
+        document.getElementById('font-size-200').addEventListener('click', function () {
+            document.querySelector('html').style.fontSize = 'calc(62.5% * 2)';
+        });
     });
 </script>
     <script src="/assets/js/test.js"></script>

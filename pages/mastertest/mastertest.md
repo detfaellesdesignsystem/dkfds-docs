@@ -27,6 +27,7 @@ title: Test
 {% include test/preview-test.html filename="test-accordion-headings" description="Overskriftstyper i accordions" %}
 {% include test/preview-test.html filename="test-accordion-variants" description="Accordion-varianter" %}
 {% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
+{% include test/preview-test.html filename="test-accordion-content" description="Accordionindhold" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
 {% include test/preview-test.html filename="test-accordion-javascript" description="JavaScript i accordions" %}
 {% include test/preview-test.html filename="test-accordion-language" description="Skift sprog i accordions" %}
@@ -35,6 +36,7 @@ title: Test
 ## Beskeder (Alerts)
 
 {% include test/preview-test.html filename="test-alerts" description="Beskeder" %}
+{% include test/preview-test.html filename="test-alert-variants" description="Beskedvarianter" %}
 
 {:.h3}
 ## Cards

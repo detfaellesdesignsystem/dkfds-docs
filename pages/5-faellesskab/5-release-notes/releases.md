@@ -960,7 +960,6 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - Fikset fokus border på faneblade
 
 <div class="alert alert-info" role="alert">
-    <div class="alert-border"></div>
     <svg class="icon-svg alert-icon" aria-label="Information" focusable="false"><use href="#info"></use></svg>
     <div class="alert-body">
         <strong class="alert-heading">Semantisk versionering</strong>
