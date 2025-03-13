@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
             case 'JavaScript i accordions':
 
                 initTest();
-                try {
+                /* try {
                     new DKFDS.Accordion();
                 } catch (err) {
                     console.error(err.message);
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 accordion1.addEventListener("fds.accordion.close", function() {
                     console.log("Accordion 1 was closed");
                 });
-                console.log('Eventlistener set up for accordion 1');
+                console.log('Eventlistener set up for accordion 1'); */
                 break;
 
             case 'Skift sprog i accordions':

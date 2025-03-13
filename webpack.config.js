@@ -31,7 +31,6 @@ module.exports = function (outputPath, prod) {
             "toggleswitch": ["./javascript/components/toggleswitch.js"],
             "languageswitcher": ["./javascript/components/languageswitcher.js"],
             "table-pagination": ["./javascript/components/table-pagination.js"],
-            "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
             "newsletter": ["./javascript/newsletter.js"],
             "pagination": ["./javascript/components/pagination.js"],
             "session-timeout": ["./javascript/components/session-timeout.js"],
@@ -136,7 +135,7 @@ module.exports = function (outputPath, prod) {
         stats: 'minimal',
         plugins: [
             new CopyWebpackPlugin(
-                {//copies content from /img and dkfds-components/dist to /assets/img
+                {//copies content from /img and dkfds-components/dist to /assets/
                     patterns: [
                         { from: "./img/**/*", to: "" },
                         { from: "./node_modules/dkfds/dist/img/svg-icons", to: "svg" },
