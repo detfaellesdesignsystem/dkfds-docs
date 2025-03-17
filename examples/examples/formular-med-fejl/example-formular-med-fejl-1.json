@@ -95,6 +95,9 @@
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
         },
+        "attributes": {
+            "input": "inputmode=\"numeric\""
+        },
         "value": "2300",
         "autocomplete": "postal-code"
     },
@@ -107,9 +110,6 @@
             "input": "input-width-xl"
         },
         "value": "København S",
-        "attributes": {
-            "input": "inputmode=\"numeric\""
-        },
         "autocomplete": "address-line2"
     },
     "input_telefonnummer": {
