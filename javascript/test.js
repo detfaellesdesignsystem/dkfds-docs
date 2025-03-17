@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (heading) {
 
+            /* Only init test elements for these pages */
+            case 'Accordions, der ikke er initialiseret':
+            case 'Ingen faneblade':
+            case 'Kun ét faneblad':
+            case 'Ingen valgte faneblade':
+            case 'To valgte faneblade':
+                initTest();
+                break;
+
             case 'Ikoner':
                 DKFDS.init();
                 console.log('JavaScript fetched icons from XML');
@@ -41,10 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     dataIcons[i].style.setProperty('max-height', '2.4rem');
                 }
 
-                break;
-
-            case 'Accordions, der ikke er initialiseret':
-                initTest();
                 break;
 
             case 'Skift sprog i accordions':
@@ -310,5 +315,4 @@ document.addEventListener("DOMContentLoaded", function() {
 function initTest () {
     new DKFDS.Modal(document.getElementById('test-warning')).init();
     new DKFDS.Navigation().init();
-    console.log('Page JavaScript detected');
 }
