@@ -165,6 +165,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Rettet fejl, hvor udfyldte inputfelter med karakterbegrænsning blev læst højt for skærmlæsere ved sidens indlæsning.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Nye favicons for begge temaer, såfremt man anvender disse.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex=0` til strukturerede lister.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret selvbetjeningsløsnnger med postnummer til at anvende attributten `inputmode`.
 - Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="streger" %} (`border`) for flere komponenter.
 - Ændret {% include links/internal-link.html linktext="skygger" %} (`box-shadow`) for flere komponenter.
@@ -179,6 +180,8 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Fjernet animation fra tag-komponenten.
 - Tilføjet minimumsbredde til `fieldset`-elementer, for at forhindre tilfælde, hvor brugeren måtte scrolle horisontalt på små skærme.
 - Mindre ændring til modalers JavaScript, hvor backdrop-elementet forbliver i HTML'en efter oprettelse.
+- Rettet fejl, hvor overskrifter i headerens mere-menu kunne få forkert `font-weight`.
+- Rettet fejl, hvor overskrifter i headerens mere-menu havde ugyldig HTML.
 
 
 
