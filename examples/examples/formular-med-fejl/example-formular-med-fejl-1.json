@@ -91,7 +91,6 @@
         "id": "input-postnummer",
         "name": "postnummer",
         "label": "Postnummer",
-        "type": "number",
         "classes": {
             "formgroup": "mr-sm-4 mt-5 mt-sm-0",
             "input": "input-width-xs"
@@ -108,6 +107,9 @@
             "input": "input-width-xl"
         },
         "value": "København S",
+        "attributes": {
+            "input": "inputmode=\"numeric\""
+        },
         "autocomplete": "address-line2"
     },
     "input_telefonnummer": {
