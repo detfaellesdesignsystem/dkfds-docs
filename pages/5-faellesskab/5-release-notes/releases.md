@@ -182,6 +182,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Mindre ændring til modalers JavaScript, hvor backdrop-elementet forbliver i HTML'en efter oprettelse.
 - Rettet fejl, hvor overskrifter i headerens mere-menu kunne få forkert `font-weight`.
 - Rettet fejl, hvor overskrifter i headerens mere-menu havde ugyldig HTML.
+- Fokus i modaler er flyttet fra modalen til luk-knappen, da der kunne være tilfælde, hvor modalen ikke blev annonceret i skærmlæsere.
 
 
 

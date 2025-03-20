@@ -71,3 +71,37 @@ body.layout-mastertest {
     display: unset !important; 
   }
 }
+
+dialog {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 24px auto;
+  align-self: center;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: shadow('heavy');
+
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 8px;
+    
+    .modal-close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+    }
+  }
+
+  .dialog-body {
+    padding: 0px 40px;
+  }
+
+  &::backdrop {
+    background-color: color($modal-overlay-background-color);
+  }
+}
+

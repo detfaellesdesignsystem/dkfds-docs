@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Testfil | test-overflow-menus-1 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-overflow-menus-1 | Det Fælles Designsystem">
+<title>Testfil | test-modal-dialog | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-modal-dialog | Det Fælles Designsystem">
 
 
 
@@ -248,76 +248,170 @@
     <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">test-overflow-menus-1</h1>
+            <h1 class="h2 mt-0">Modal med dialog tag</h1>
         </div>
     </div>
     <div class="row mb-905">
         <div class="col-12">
-            <p><strong>Simpel overflow menu 1</strong></p>
-
-            <div class="overflow-menu overflow-menu--open-right">
-                <button class="button-overflow-menu js-dropdown" data-js-target="overflow1" aria-expanded="false" aria-controls="overflow1">
-                    Overflow menu
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-                </button>
-                <div class="overflow-menu-inner collapsed" id="overflow1">
-                    <ul class="overflow-list">
-                        <li><button>Mulighed 1</button></li>
-                        <li><button>Mulighed 2</button></li>
-                        <li><a href="#">Mulighed 3 er et link</a></li>
-                        <li><button>Mulighed 4 er en længere tekst</button></li>
-                    </ul>
+            <button class="button button-tertiary" id="showButton" aria-haspopup="dialog">
+                Åbn dialog
+            </button>
+            <button class="button button-tertiary" data-module="modal" data-target="modal-example-2" aria-haspopup="dialog">
+                Åbn modal
+            </button>
+            <dialog id="dialogTest" aria-labelledby="dialog-heading">
+                <div class="dialog-header">
+                    <h2 id="dialog-heading" class="mt-0 mb-3">Modal med formular</h2>
+                    <button class="modal-close function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="row mb-905">
-        <div class="col-12">
-            <p><strong>Simpel overflow menu 2</strong></p>
-
-            <div class="overflow-menu overflow-menu--open-right">
-                <button class="button-overflow-menu js-dropdown" data-js-target="overflow2" aria-expanded="false" aria-controls="overflow2">
-                    Overflow menu med en meget lang titel ift de andre
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-                </button>
-                <div class="overflow-menu-inner collapsed" id="overflow2">
-                    <ul class="overflow-list">
-                        <li><button>Mulighed 1</button></li>
-                        <li><button>Mulighed 2</button></li>
-                        <li><a href="#">Mulighed 3 er et link</a></li>
-                        <li><button>Mulighed 4 har en meget lang længere tekst
-                                beskrivelse</button></li>
+                <div class="dialog-body">
+                    <p class="mt-0">Nedenunder er en formular, som skal testes med en
+                        skærmlæser. Her er et <a href="#main-content">link til
+                            main-elementet</a>, men modalen skal forblive åben, når det
+                        klikkes.</p>
+                    <p>Ny paragraf med mere tekst.</p>
+                    <ul class="mb-7">
+                        <li>Første listeelement</li>
+                        <li>Andet listeelement</li>
+                        <li>Tredje listeelement</li>
                     </ul>
+
+                    <form novalidate="">
+
+                        <div class="form-group">
+                            <label class="form-label" for="input-text-dialog">Tekst</label>
+                            <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip, som vises for inputfeltet i modalen." data-tooltip-id="input-text-dialog-tooltipbutton" data-position="above" data-trigger="click" data-force-visible="true"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use href="#help"></use></svg></button></span>
+
+                            <input type="text" id="input-text-dialog" name="input-text" class="form-input" required="" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="options-dialog">Region</label>
+
+                            <select class="form-select" name="options" id="options-dialog" required="">
+                                <option value="">Vælg region</option>
+                                <option value="option1">Hovedstaden</option>
+                                <option value="option2">Midtjylland</option>
+                                <option value="option3">Nordjylland</option>
+                                <option value="option4">Sjælland</option>
+                                <option value="option5">Syddanmark</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="telefon-dialog">Telefonnummer</label>
+
+                            <input type="tel" id="telefon-dialog" name="telefon" class="form-input input-width-s" required="" autocomplete="tel" />
+                        </div>
+
+                        <div class="form-group">
+                            <fieldset aria-labelledby="radiobuttons-dialog-group-legend">
+
+                                <legend class="form-label" id="radiobuttons-dialog-group-legend">Radioknapper
+                                </legend>
+
+                                <div class="form-group-radio">
+                                    <input type="radio" id="radiobuttons-dialog-option1" name="radiobuttons-dialog-group" class="form-radio" value="1" />
+                                    <label class="form-label" for="radiobuttons-dialog-option1">Mulighed 1</label>
+
+                                </div>
+
+                                <div class="form-group-radio">
+                                    <input type="radio" id="radiobuttons-dialog-option2" name="radiobuttons-dialog-group" class="form-radio" value="2" />
+                                    <label class="form-label" for="radiobuttons-dialog-option2">Mulighed 2</label>
+
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                        <div class="button-group mt-8 mb-6">
+                            <input type="submit" value="Gem oplysninger" class="button button-primary" id="dialogSubmitButton" formmethod="dialog" />
+                            <input type="button" value="Annuller" class="button button-secondary" id="dialogCancelButton" />
+                        </div>
+                    </form>
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="row mb-905">
-        <div class="col-12">
-            <p><strong>Simpel overflow menu 3</strong></p>
-
-            <div class="overflow-menu overflow-menu--open-left">
-                <button class="button-overflow-menu js-dropdown" data-js-target="overflow3" aria-expanded="false" aria-controls="overflow3">
-                    Overflow menu venstre
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-                </button>
-                <div class="overflow-menu-inner collapsed" id="overflow3">
-                    <ul class="overflow-list">
-                        <li><button>Mulighed 1 har en meget lang længere tekst
-                                beskrivelse</button></li>
-                        <li><button>Mulighed 2 har også en meget lang længere tekst
-                                beskrivelse</button></li>
-                        <li><a href="#">Mulighed 4 har en meget kort tekst</a></li>
-                        <li><button>Fire</button></li>
-                    </ul>
-                </div>
-            </div>
-
+            </dialog>
         </div>
     </div>
 </main>
+<div class="fds-modal-container">
+    <div class="fds-modal" id="modal-example-2" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-2-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-2-heading">Modal med formular</h2>
+                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Nedenunder er en formular, som skal testes med en skærmlæser. Her er et <a href="#main-content">link til main-elementet</a>, men modalen skal
+                    forblive åben, når det klikkes.</p>
+                <p>Ny paragraf med mere tekst.</p>
+                <ul class="mb-7">
+                    <li>Første listeelement</li>
+                    <li>Andet listeelement</li>
+                    <li>Tredje listeelement</li>
+                </ul>
+
+                <form novalidate="">
+
+                    <div class="form-group">
+                        <label class="form-label" for="input-text-modal">Tekst</label>
+                        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip, som vises for inputfeltet i modalen." data-tooltip-id="input-text-modal-tooltipbutton" data-position="above" data-trigger="click" data-force-visible="true"><button class="button button-unstyled tooltip-target" type="button" aria-label="Læs mere">
+                                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true"><use href="#help"></use></svg></button></span>
+
+                        <input type="text" id="input-text-modal" name="input-text" class="form-input" required="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="options-modal">Region</label>
+
+                        <select class="form-select" name="options" id="options-modal" required="">
+                            <option value="">Vælg region</option>
+                            <option value="option1">Hovedstaden</option>
+                            <option value="option2">Midtjylland</option>
+                            <option value="option3">Nordjylland</option>
+                            <option value="option4">Sjælland</option>
+                            <option value="option5">Syddanmark</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="telefon-modal">Telefonnummer</label>
+
+                        <input type="tel" id="telefon-modal" name="telefon" class="form-input input-width-s" required="" autocomplete="tel" />
+                    </div>
+
+                    <div class="form-group">
+                        <fieldset aria-labelledby="radiobuttons-modal-group-legend">
+
+                            <legend class="form-label" id="radiobuttons-modal-group-legend">
+                                Radioknapper</legend>
+
+                            <div class="form-group-radio">
+                                <input type="radio" id="radiobuttons-modal-option1" name="radiobuttons-modal-group" class="form-radio" value="1" />
+                                <label class="form-label" for="radiobuttons-modal-option1">Mulighed 1</label>
+
+                            </div>
+
+                            <div class="form-group-radio">
+                                <input type="radio" id="radiobuttons-modal-option2" name="radiobuttons-modal-group" class="form-radio" value="2" />
+                                <label class="form-label" for="radiobuttons-modal-option2">Mulighed 2</label>
+
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <div class="button-group mt-8 mb-5">
+                        <input type="submit" value="Gem oplysninger" class="button button-primary" id="modalSubmitButton" data-modal-close="" />
+                        <input type="button" value="Annuller" class="button button-secondary" id="modalCancelButton" data-modal-close="" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
@@ -338,10 +432,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-modal-dialog/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-modal-long/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-overflow-menu-placement/">Næste</a>
+                <a class="function-link" href="/eksempel/test-overflow-menus-1/">Næste</a>
                 
             </div>
         </div>

@@ -1,0 +1,189 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/form/controls/select.njk" import select as select %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Modal med dialog tag</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                button({
+                    "text": "Åbn dialog",
+                    "variant": "tertiary",
+                    "attributes": "aria-haspopup=\"dialog\"",
+                    "id": "showButton"
+                }) 
+            }}
+            {{ 
+                button({
+                    "text": "Åbn modal",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-2\" aria-haspopup=\"dialog\""
+                }) 
+            }}
+            <dialog id="dialogTest" aria-labelledby="dialog-heading">
+                <div class="dialog-header">
+                    <h2 id="dialog-heading" class="mt-0 mb-3">Modal med formular</h2>
+                    <button class="modal-close function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+                </div>
+                <div class="dialog-body">
+                    <p class="mt-0">Nedenunder er en formular, som skal testes med en skærmlæser. Her er et <a href="#main-content">link til main-elementet</a>, men modalen skal forblive åben, når det klikkes.</p>
+                    <p>Ny paragraf med mere tekst.</p>
+                    <ul class="mb-7">
+                        <li>Første listeelement</li>
+                        <li>Andet listeelement</li>
+                        <li>Tredje listeelement</li>
+                    </ul>
+
+                    <form novalidate>
+                        {{
+                            textinput({
+                                "id": "input-text-dialog",
+                                "name": "input-text",
+                                "label": "Tekst",
+                                "tooltip": "Dette er et tooltip, som vises for inputfeltet i modalen.",
+                                "forceVisible": "true"
+                            })
+                        }}
+
+                        {{ 
+                            select({
+                                "name": "options",
+                                "id": "options-dialog",
+                                "label": "Region",
+                                "options": [
+                                    { "value": "", "text": "Vælg region" },
+                                    { "value": "option1", "text": "Hovedstaden" },
+                                    { "value": "option2", "text": "Midtjylland" },
+                                    { "value": "option3", "text": "Nordjylland" },
+                                    { "value": "option4", "text": "Sjælland" },
+                                    { "value": "option5", "text": "Syddanmark" }
+                                ]
+                            }) 
+                        }}
+                    
+                        {{
+                            textinput({
+                                "id": "telefon-dialog",
+                                "label": "Telefonnummer",
+                                "classes": { "input": "input-width-s" },
+                                "name": "telefon",
+                                "type": "tel",
+                                "autocomplete": "tel"
+                            })
+                        }}
+
+                        {{ 
+                            radiobuttons({
+                                "id": "radiobuttons-dialog",
+                                "radiogroupLegend": "Radioknapper",
+                                "groupname": "radiobuttons-dialog-group",
+                                "items": [
+                                    {
+                                        "value": "1",
+                                        "label": "Mulighed 1"
+                                    },
+                                    {
+                                        "value": "2",
+                                        "label": "Mulighed 2"
+                                    }
+                                ]
+                            })
+                        }}
+
+                        <div class="button-group mt-8 mb-6">
+                            <input type="submit" value="Gem oplysninger" class="button button-primary" id="dialogSubmitButton" formmethod="dialog">
+                            <input type="button" value="Annuller" class="button button-secondary" id="dialogCancelButton">
+                        </div>
+                    </form>
+                </div>
+            </dialog>
+        </div>
+    </div>
+</main>
+<div class="fds-modal-container">
+    <div class="fds-modal" id="modal-example-2" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-2-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-2-heading">Modal med formular</h2>
+                <button class="modal-close function-link" data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Nedenunder er en formular, som skal testes med en skærmlæser. Her er et <a href="#main-content">link til main-elementet</a>, men modalen skal forblive åben, når det klikkes.</p>
+                <p>Ny paragraf med mere tekst.</p>
+                <ul class="mb-7">
+                    <li>Første listeelement</li>
+                    <li>Andet listeelement</li>
+                    <li>Tredje listeelement</li>
+                </ul>
+
+                <form novalidate>
+                    {{
+                        textinput({
+                            "id": "input-text-modal",
+                            "name": "input-text",
+                            "label": "Tekst",
+                            "tooltip": "Dette er et tooltip, som vises for inputfeltet i modalen.",
+                            "forceVisible": "true"
+                        })
+                    }}
+
+                    {{ 
+                        select({
+                            "name": "options",
+                            "id": "options-modal",
+                            "label": "Region",
+                            "options": [
+                                { "value": "", "text": "Vælg region" },
+                                { "value": "option1", "text": "Hovedstaden" },
+                                { "value": "option2", "text": "Midtjylland" },
+                                { "value": "option3", "text": "Nordjylland" },
+                                { "value": "option4", "text": "Sjælland" },
+                                { "value": "option5", "text": "Syddanmark" }
+                            ]
+                        }) 
+                    }}
+
+                    {{
+                        textinput({
+                            "id": "telefon-modal",
+                            "label": "Telefonnummer",
+                            "classes": { "input": "input-width-s" },
+                            "name": "telefon",
+                            "type": "tel",
+                            "autocomplete": "tel"
+                        })
+                    }}
+
+                    {{ 
+                        radiobuttons({
+                            "id": "radiobuttons-modal",
+                            "radiogroupLegend": "Radioknapper",
+                            "groupname": "radiobuttons-modal-group",
+                            "items": [
+                                {
+                                    "value": "1",
+                                    "label": "Mulighed 1"
+                                },
+                                {
+                                    "value": "2",
+                                    "label": "Mulighed 2"
+                                }
+                            ]
+                        })
+                    }}
+
+                    <div class="button-group mt-8 mb-5">
+                        <input type="submit" value="Gem oplysninger" class="button button-primary" id="modalSubmitButton" data-modal-close>
+                        <input type="button" value="Annuller" class="button button-secondary" id="modalCancelButton" data-modal-close>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

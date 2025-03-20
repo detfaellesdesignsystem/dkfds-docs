@@ -169,6 +169,7 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-modal-javascript" description="JavaScript for modaler" %}
 {% include test/preview-test.html filename="test-modal-inert" description="Test af inert med modaler" %}
 {% include test/preview-test.html filename="test-modal-long" description="Lang modal" %}
+{% include test/preview-test.html filename="test-modal-dialog" description="Modal med dialog tag" %}
 
 {:.h3}
 ## Overflow menu

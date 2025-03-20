@@ -19,7 +19,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/radiobuttons/*.njk'];
+var buildFile = ['examples/testfiles/modals/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -119,6 +119,7 @@ var testfiles = [
     "test-modal-javascript",
     "test-modal-inert",
     "test-modal-long",
+    "test-modal-dialog",
     "test-overflow-menus-1",
     "test-overflow-menu-placement",
     "test-pagination",

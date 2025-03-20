@@ -16,6 +16,44 @@ document.addEventListener("DOMContentLoaded", function() {
                 initTest();
                 break;
 
+            case 'Modal med dialog tag':
+                DKFDS.init();
+
+                const dialog = document.getElementById('dialogTest');
+                const showButton = document.getElementById('showButton');
+                const cancelButton = document.getElementById('dialogCancelButton');
+                const closeButton = document.querySelector('dialog .dialog-header .modal-close');
+
+                showButton.addEventListener('click', () => {
+                    dialog.showModal();
+                    document.body.classList.add('modal-open');
+                });
+
+                cancelButton.addEventListener('click', () => {
+                    dialog.close();
+                    document.body.classList.remove('modal-open');
+                });
+
+                closeButton.addEventListener('click', () => {
+                    dialog.close();
+                    document.body.classList.remove('modal-open');
+                });
+
+                dialog.addEventListener('click', (event) => {
+                    if (event.target === dialog) {
+                        dialog.close();
+                    }
+                });
+
+                // TODO: Prevent closing the dialog on Escape when a tooltip/overflow is visible
+                /* dialog.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        event.preventDefault();
+                    }
+                }); */
+
+                break;
+
             case 'Ikoner':
                 DKFDS.init();
                 console.log('JavaScript fetched icons from XML');
