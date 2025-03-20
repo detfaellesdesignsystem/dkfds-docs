@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             case 'Kun ét faneblad':
             case 'Ingen valgte faneblade':
             case 'To valgte faneblade':
+            case 'Tilbage til toppen':
                 initTest();
                 break;
 

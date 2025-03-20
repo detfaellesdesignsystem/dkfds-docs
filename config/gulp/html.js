@@ -163,6 +163,7 @@ var testfiles = [
     "test-textarea-6",
     "test-textarea-7",
     "test-back-link",
+    "test-back-to-top",
     "test-back-to-top-long-page",
     "test-back-to-top-short-page",
     "test-checkboxes-helptext",

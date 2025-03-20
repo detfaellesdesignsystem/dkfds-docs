@@ -249,6 +249,7 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Tilbage til toppen
 
+{% include test/preview-test.html filename="test-back-to-top" description="Tilbage til toppen" %}
 {% include test/preview-test.html filename="test-back-to-top-long-page" description="Tilbage til toppen-knap på en lang side" %}
 {% include test/preview-test.html filename="test-back-to-top-short-page" description="Tilbage til toppen-knap på en kort side" %}
 
