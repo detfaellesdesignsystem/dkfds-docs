@@ -161,6 +161,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Tilføjet nye variable og funktion til at sætte `border-radius`. Variablene `$static-element-border-radius`, `$interactive-element-border-radius`, `$input-border-radius` og `$select-border-radius` er fjernet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret værdier og navne for de mulige stregtyper. I stedet for `10`, `20` og `30` skal man anvende `'high-contrast'`, `'low-contrast'` og `'very-low-contrast'` til `border`-funktionen. Variablene `$header-border-color`, `$header-last-border-color`, `$header-portal-mobile-border-color`, `$toggle-off-dot-border-color` og `$toggle-off-border-color` er fjernet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret skygger, hvor de tidligere skygger kaldet "Modalvindue", "Overflow menu" og "Cards" er fjernet til fordel for to nye skygger kaldet "Stor skygge" og "Lille skygge". Mulighed for at ændre skygge med variablene `$back-to-top-button-shadow`, `$cookie-message-shadow`, `$datepicker-shadow`, `$modal-shadow`, `$overflow-menu-content-shadow`, `$toast-shadow` og `$tooltip-shadow` er fjernet.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet mixin `not-sr-only()`.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet funktionen `silentUpdateMessages()` til karakterbegrænsning.
 - Rettet fejl, hvor udfyldte inputfelter med karakterbegrænsning blev læst højt for skærmlæsere ved sidens indlæsning.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Nye favicons for begge temaer, såfremt man anvender disse.
@@ -183,6 +184,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Rettet fejl, hvor overskrifter i headerens mere-menu kunne få forkert `font-weight`.
 - Rettet fejl, hvor overskrifter i headerens mere-menu havde ugyldig HTML.
 - Fokus i modaler er flyttet fra modalen til luk-knappen, da der kunne være tilfælde, hvor modalen ikke blev annonceret i skærmlæsere.
+- Opdateret koden til klassen `sr-only`, der tidligere gav problemer med placeringen af visse skærmlæseres virtuelle markør.
 
 
 
