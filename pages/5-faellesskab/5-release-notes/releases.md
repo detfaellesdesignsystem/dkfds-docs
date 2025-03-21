@@ -184,7 +184,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - Rettet fejl, hvor overskrifter i headerens mere-menu kunne få forkert `font-weight`.
 - Rettet fejl, hvor overskrifter i headerens mere-menu havde ugyldig HTML.
 - Fokus i modaler er flyttet fra modalen til luk-knappen, da der kunne være tilfælde, hvor modalen ikke blev annonceret i skærmlæsere.
-- Opdateret koden til klassen `sr-only`, der tidligere gav problemer med placeringen af visse skærmlæseres virtuelle markør.
+- Opdateret koden til klassen `sr-only`, der tidligere gav problemer med nogle skærmlæsere og deres visuelle ramme omkring det element, hvor den virtuelle markør var.
 
 
 
