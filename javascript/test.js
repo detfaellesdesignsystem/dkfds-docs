@@ -91,15 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 break;
 
-            case 'Skift sprog i accordions':
-
-                initTest();
-                new DKFDS.Accordion(document.querySelector('ul.accordion'), {
-                    "open_all": "Open all", 
-                    "close_all": "Close all" 
-                  }).init();
-                break;
-
             case 'Cards':
 
                 DKFDS.init();

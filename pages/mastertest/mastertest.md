@@ -30,7 +30,6 @@ title: Test
 {% include test/preview-test.html filename="test-accordion-content" description="Accordionindhold" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
 {% include test/preview-test.html filename="test-accordion-javascript" description="Accordions, der ikke er initialiseret" %}
-{% include test/preview-test.html filename="test-accordion-language" description="Skift sprog i accordions" %}
 
 {:.h3}
 ## Beskeder (Alerts)
