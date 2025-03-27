@@ -1,0 +1,75 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Radioknapper med skjult indhold</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                radiobuttons({
+                    "id": "radiogroup1",
+                    "radiogroupLegend": "Tredje radioknap har skjult indhold",
+                    "groupname": "radio-example1",
+                    "collapsedItems": true,
+                    "items": [
+                        { "value": "v1", "label": "Første radioknap" },
+                        { "value": "v2", "label": "Anden radioknap" },
+                        { "value": "v3", "label": "Tredje radioknap", 
+                        "srOnly": "Udfyld informationer herunder", 
+                        "hiddenContent": textinput({ "id": "radiogroup1-v3-input", "label": "Inputfelt", "name": "radiogroup1-v3-input" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                radiobuttons({
+                    "id": "radiogroup2",
+                    "radiogroupLegend": "Anden og tredje radioknap har skjult indhold",
+                    "groupname": "radio-example2",
+                    "collapsedItems": true,
+                    "items": [
+                        { "value": "v1", "label": "Første radioknap" },
+                        { "value": "v2", "label": "Anden radioknap", "srOnly": "Udfyld informationer herunder", "hiddenContent": 
+                            "<p class=\"mt-0 mb-0\">Tekst er ikke tilladt som skjult indhold i radioknapper, da skærmlæsere ikke altid læser teksten højt. Dette eksempel er derfor ugyldigt.</p>" },
+                        { "value": "v3", "label": "Tredje radioknap", "srOnly": "Udfyld informationer herunder", "hiddenContent": 
+                            textinput({ "id": "radiogroup2-v2-input", "label": "Inputfelt", "name": "radiogroup2-v2-input" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                radiobuttons({
+                    "id": "radiogroup3",
+                    "radiogroupLegend": "Første radioknap indeholder skjulte radioknapper",
+                    "groupname": "radio-example3",
+                    "collapsedItems": true,
+                    "items": [
+                        { "value": "v1", "label": "Første radioknap", "srOnly": "Udfyld informationer herunder", "hiddenContent": 
+                        radiobuttons({
+                            "id": "radiogroup3-inner",
+                            "radiogroupLegend": "Inderste sæt radioknapper",
+                            "groupname": "radio-example3-inner",
+                            "items": [
+                                { "value": "v1", "label": "Første radioknap" },
+                                { "value": "v2", "label": "Anden radioknap" },
+                                { "value": "v3", "label": "Tredje radioknap" }
+                            ]
+                        })},
+                        { "value": "v2", "label": "Anden radioknap" },
+                        { "value": "v3", "label": "Tredje radioknap" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

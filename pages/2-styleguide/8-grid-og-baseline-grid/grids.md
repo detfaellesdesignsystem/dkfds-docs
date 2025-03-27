@@ -4,6 +4,7 @@ redirect_from:
 - "/grid/"
 - "/design/grid/"
 - "/design/layout/grid/"
+- "/design/grid/guidelines/"
 - "/kode/grid/"
 layout: styleguide
 category: Styleguide_category

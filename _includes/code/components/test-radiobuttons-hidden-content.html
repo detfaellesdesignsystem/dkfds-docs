@@ -1,0 +1,213 @@
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Radioknapper med skjult indhold</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="form-group js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-example1-legend">
+
+                    <legend class="form-label" id="radio-example1-legend">Tredje radioknap har
+                        skjult indhold</legend>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup1-option1" name="radio-example1"
+                            class="form-radio" value="v1">
+                        <label class="form-label" for="radiogroup1-option1">Første
+                            radioknap</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup1-option2" name="radio-example1"
+                            class="form-radio" value="v2">
+                        <label class="form-label" for="radiogroup1-option2">Anden
+                            radioknap</label>
+
+                    </div>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-radio">
+                            <input type="radio" id="radiogroup1-option3" name="radio-example1"
+                                class="form-radio" value="v3"
+                                data-controls="#radiogroup1-option3-collapse"
+                                data-expanded="false">
+                            <label class="form-label" for="radiogroup1-option3">Tredje
+                                radioknap<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="radiogroup1-option3-collapse" aria-hidden="true"
+                            class="radio-content">
+
+                            <div class="form-group">
+                                <label class="form-label"
+                                    for="radiogroup1-v3-input">Inputfelt</label>
+
+                                <input type="text" id="radiogroup1-v3-input"
+                                    name="radiogroup1-v3-input" class="form-input" required>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="form-group js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-example2-legend">
+
+                    <legend class="form-label" id="radio-example2-legend">Anden og tredje
+                        radioknap har skjult indhold</legend>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup2-option1" name="radio-example2"
+                            class="form-radio" value="v1">
+                        <label class="form-label" for="radiogroup2-option1">Første
+                            radioknap</label>
+
+                    </div>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-radio">
+                            <input type="radio" id="radiogroup2-option2" name="radio-example2"
+                                class="form-radio" value="v2"
+                                data-controls="#radiogroup2-option2-collapse"
+                                data-expanded="false">
+                            <label class="form-label" for="radiogroup2-option2">Anden
+                                radioknap<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="radiogroup2-option2-collapse" aria-hidden="true"
+                            class="radio-content">
+                            <p class="mt-0 mb-0">Tekst er ikke tilladt som skjult indhold i
+                                radioknapper, da skærmlæsere ikke altid læser teksten højt.
+                                Dette eksempel er derfor ugyldigt.</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-radio">
+                            <input type="radio" id="radiogroup2-option3" name="radio-example2"
+                                class="form-radio" value="v3"
+                                data-controls="#radiogroup2-option3-collapse"
+                                data-expanded="false">
+                            <label class="form-label" for="radiogroup2-option3">Tredje
+                                radioknap<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="radiogroup2-option3-collapse" aria-hidden="true"
+                            class="radio-content">
+
+                            <div class="form-group">
+                                <label class="form-label"
+                                    for="radiogroup2-v2-input">Inputfelt</label>
+
+                                <input type="text" id="radiogroup2-v2-input"
+                                    name="radiogroup2-v2-input" class="form-input" required>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="form-group js-radio-toggle-group">
+                <fieldset aria-labelledby="radio-example3-legend">
+
+                    <legend class="form-label" id="radio-example3-legend">Første radioknap
+                        indeholder skjulte radioknapper</legend>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-radio">
+                            <input type="radio" id="radiogroup3-option1" name="radio-example3"
+                                class="form-radio" value="v1"
+                                data-controls="#radiogroup3-option1-collapse"
+                                data-expanded="false">
+                            <label class="form-label" for="radiogroup3-option1">Første
+                                radioknap<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="radiogroup3-option1-collapse" aria-hidden="true"
+                            class="radio-content">
+
+                            <div class="form-group">
+                                <fieldset aria-labelledby="radio-example3-inner-legend">
+
+                                    <legend class="form-label"
+                                        id="radio-example3-inner-legend">Inderste sæt
+                                        radioknapper</legend>
+
+                                    <div class="form-group-radio">
+                                        <input type="radio" id="radiogroup3-inner-option1"
+                                            name="radio-example3-inner" class="form-radio"
+                                            value="v1">
+                                        <label class="form-label"
+                                            for="radiogroup3-inner-option1">Første
+                                            radioknap</label>
+
+                                    </div>
+
+                                    <div class="form-group-radio">
+                                        <input type="radio" id="radiogroup3-inner-option2"
+                                            name="radio-example3-inner" class="form-radio"
+                                            value="v2">
+                                        <label class="form-label"
+                                            for="radiogroup3-inner-option2">Anden
+                                            radioknap</label>
+
+                                    </div>
+
+                                    <div class="form-group-radio">
+                                        <input type="radio" id="radiogroup3-inner-option3"
+                                            name="radio-example3-inner" class="form-radio"
+                                            value="v3">
+                                        <label class="form-label"
+                                            for="radiogroup3-inner-option3">Tredje
+                                            radioknap</label>
+
+                                    </div>
+
+                                </fieldset>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup3-option2" name="radio-example3"
+                            class="form-radio" value="v2">
+                        <label class="form-label" for="radiogroup3-option2">Anden
+                            radioknap</label>
+
+                    </div>
+
+                    <div class="form-group-radio">
+                        <input type="radio" id="radiogroup3-option3" name="radio-example3"
+                            class="form-radio" value="v3">
+                        <label class="form-label" for="radiogroup3-option3">Tredje
+                            radioknap</label>
+
+                    </div>
+
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+</main>

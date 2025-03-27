@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Testfil | test-radiobuttons-5 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-radiobuttons-5 | Det Fælles Designsystem">
+<title>Testfil | test-checkboxes-hidden-content | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-checkboxes-hidden-content | Det Fælles Designsystem">
 
 
 
@@ -248,149 +248,152 @@
     <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">test-radiobuttons-5</h1>
+            <h1 class="h2 mt-0">Tjekbokse med skjult indhold</h1>
         </div>
     </div>
     <div class="row mb-905">
         <div class="col-12">
 
-            <div class="form-group js-radio-toggle-group">
-                <fieldset aria-labelledby="radio-example-legend">
-
-                    <legend class="form-label" id="radio-example-legend">Liste med
-                        radioknapper</legend>
-
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup-option1" name="radio-example" class="form-radio" value="v1" />
-                        <label class="form-label" for="radiogroup-option1">Valg 1</label>
-
-                    </div>
-
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup-option2" name="radio-example" class="form-radio" value="v2" />
-                        <label class="form-label" for="radiogroup-option2">Valg 2</label>
-
-                    </div>
-
-                    <div class="hidden-content-wrapper">
-                        <div class="form-group-radio">
-                            <input type="radio" id="radiogroup-option3" name="radio-example" class="form-radio" value="v3" data-controls="#radiogroup-option3-collapse" data-expanded="false" />
-                            <label class="form-label" for="radiogroup-option3">Valg 3<span class="sr-only"> Udfyld informationer
-                                    herunder</span></label>
-
-                        </div>
-                        <div id="radiogroup-option3-collapse" aria-hidden="true" class="radio-content">
-
-                            <div class="form-group">
-                                <label class="form-label" for="mytext">Inputfelt</label>
-
-                                <input type="text" id="mytext" name="mytext" class="form-input" required="" />
-                            </div>
-
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-
-        </div>
-    </div>
-    <div class="row mb-905">
-        <div class="col-12">
-
-            <div class="form-group js-radio-toggle-group">
-                <fieldset aria-labelledby="radio-example2-legend">
-
-                    <legend class="form-label" id="radio-example2-legend">Liste med
-                        radioknapper</legend>
-
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup2-option1" name="radio-example2" class="form-radio" value="v1" />
-                        <label class="form-label" for="radiogroup2-option1">Valg 1</label>
-
-                    </div>
-
-                    <div class="hidden-content-wrapper">
-                        <div class="form-group-radio">
-                            <input type="radio" id="radiogroup2-option2" name="radio-example2" class="form-radio" value="v2" data-controls="#radiogroup2-option2-collapse" data-expanded="false" />
-                            <label class="form-label" for="radiogroup2-option2">Valg 2<span class="sr-only"> Udfyld informationer
-                                    herunder</span></label>
-
-                        </div>
-                        <div id="radiogroup2-option2-collapse" aria-hidden="true" class="radio-content">
-                            Dette er noget tekst, som man aldrig må have som skjult indhold i
-                            radioknapper
-                        </div>
-                    </div>
-
-                    <div class="hidden-content-wrapper">
-                        <div class="form-group-radio">
-                            <input type="radio" id="radiogroup2-option3" name="radio-example2" class="form-radio" value="v3" data-controls="#radiogroup2-option3-collapse" data-expanded="false" />
-                            <label class="form-label" for="radiogroup2-option3">Valg 3<span class="sr-only"> Udfyld informationer
-                                    herunder</span></label>
-
-                        </div>
-                        <div id="radiogroup2-option3-collapse" aria-hidden="true" class="radio-content">
-
-                            <div class="form-group">
-                                <label class="form-label" for="text3">Inputfelt</label>
-
-                                <input type="text" id="text3" name="text3" class="form-input" required="" />
-                            </div>
-
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-
-        </div>
-    </div>
-    <div class="row mb-905">
-        <div class="col-12">
-
-            <div class="form-group js-radio-toggle-group">
-                <fieldset aria-labelledby="radio-example3-legend">
-
-                    <legend class="form-label" id="radio-example3-legend">Do you accept?
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">
+                        Tredje tjekboks har skjult indhold
                     </legend>
 
-                    <div class="form-group-radio">
-                        <input type="radio" id="radiogroup3-option1" name="radio-example3" class="form-radio" value="v1" />
-                        <label class="form-label" for="radiogroup3-option1">Yes</label>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="checkboxgroup1-option1" name="checkbox-example1" class="form-checkbox" value="v1" />
+                        <label class="form-label" for="checkboxgroup1-option1">Første
+                            tjekboks</label>
+
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="checkboxgroup1-option2" name="checkbox-example1" class="form-checkbox" value="v2" />
+                        <label class="form-label" for="checkboxgroup1-option2">Anden
+                            tjekboks</label>
 
                     </div>
 
                     <div class="hidden-content-wrapper">
-                        <div class="form-group-radio">
-                            <input type="radio" id="radiogroup3-option2" name="radio-example3" class="form-radio" value="v3" data-controls="#radiogroup3-option2-collapse" data-expanded="false" />
-                            <label class="form-label" for="radiogroup3-option2">No<span class="sr-only"> Udfyld informationer
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="checkboxgroup1-option3" name="checkbox-example1" class="form-checkbox js-checkbox-toggle-content" value="v3" data-aria-controls="checkboxgroup1-option3-collapse" data-aria-expanded="false" />
+                            <label class="form-label" for="checkboxgroup1-option3">Tredje
+                                tjekboks<span class="sr-only"> Udfyld informationer
                                     herunder</span></label>
 
                         </div>
-                        <div id="radiogroup3-option2-collapse" aria-hidden="true" class="radio-content">
+                        <div id="checkboxgroup1-option3-collapse" aria-hidden="true" class="checkbox-content">
+
+                            <div class="form-group">
+                                <label class="form-label" for="checkboxgroup1-v3-input">Inputfelt</label>
+
+                                <input type="text" id="checkboxgroup1-v3-input" name="checkboxgroup1-v3-input" class="form-input" required="" />
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">
+                        Anden og tredje tjekboks har skjult indhold
+                    </legend>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="checkboxgroup2-option1" name="checkbox-example2" class="form-checkbox" value="v1" />
+                        <label class="form-label" for="checkboxgroup2-option1">Første
+                            tjekboks</label>
+
+                    </div>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="checkboxgroup2-option2" name="checkbox-example2" class="form-checkbox js-checkbox-toggle-content" value="v2" data-aria-controls="checkboxgroup2-option2-collapse" data-aria-expanded="false" />
+                            <label class="form-label" for="checkboxgroup2-option2">Anden
+                                tjekboks<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="checkboxgroup2-option2-collapse" aria-hidden="true" class="checkbox-content">
+                            <p class="mt-0 mb-0">Tekst er teknisk set tilladt som skjult
+                                indhold i tjekbokse, da skærmlæsere godt kan læse teksten
+                                højt, men det går imod retningslinjerne i FDS.</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="checkboxgroup2-option3" name="checkbox-example2" class="form-checkbox js-checkbox-toggle-content" value="v3" data-aria-controls="checkboxgroup2-option3-collapse" data-aria-expanded="false" />
+                            <label class="form-label" for="checkboxgroup2-option3">Tredje
+                                tjekboks<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="checkboxgroup2-option3-collapse" aria-hidden="true" class="checkbox-content">
+
+                            <div class="form-group">
+                                <label class="form-label" for="checkboxgroup2-v2-input">Inputfelt</label>
+
+                                <input type="text" id="checkboxgroup2-v2-input" name="checkboxgroup2-v2-input" class="form-input" required="" />
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <div class="form-group">
+                <fieldset>
+                    <legend class="form-label">
+                        Første tjekboks indeholder skjulte tjekbokse
+                    </legend>
+
+                    <div class="hidden-content-wrapper">
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="checkboxgroup3-option1" name="checkbox-example3" class="form-checkbox js-checkbox-toggle-content" value="v1" data-aria-controls="checkboxgroup3-option1-collapse" data-aria-expanded="false" />
+                            <label class="form-label" for="checkboxgroup3-option1">Første
+                                tjekboks<span class="sr-only"> Udfyld informationer
+                                    herunder</span></label>
+
+                        </div>
+                        <div id="checkboxgroup3-option1-collapse" aria-hidden="true" class="checkbox-content">
 
                             <div class="form-group">
                                 <fieldset>
                                     <legend class="form-label">
-                                        Why not?
+                                        Inderste sæt tjekbokse
                                     </legend>
 
                                     <div class="form-group-checkbox">
-                                        <input type="checkbox" id="checkboxgroup-option1" name="checkbox-example" class="form-checkbox" value="v1" />
-                                        <label class="form-label" for="checkboxgroup-option1">I have my
-                                            reasons</label>
+                                        <input type="checkbox" id="checkboxgroup3-inner-option1" name="checkbox-example3-inner" class="form-checkbox" value="v1" />
+                                        <label class="form-label" for="checkboxgroup3-inner-option1">Første
+                                            tjekboks</label>
 
                                     </div>
 
                                     <div class="form-group-checkbox">
-                                        <input type="checkbox" id="checkboxgroup-option2" name="checkbox-example" class="form-checkbox" value="v2" />
-                                        <label class="form-label" for="checkboxgroup-option2">It doesn't look
-                                            nice</label>
+                                        <input type="checkbox" id="checkboxgroup3-inner-option2" name="checkbox-example3-inner" class="form-checkbox" value="v2" />
+                                        <label class="form-label" for="checkboxgroup3-inner-option2">Anden
+                                            tjekboks</label>
 
                                     </div>
 
                                     <div class="form-group-checkbox">
-                                        <input type="checkbox" id="checkboxgroup-option3" name="checkbox-example" class="form-checkbox" value="v3" />
-                                        <label class="form-label" for="checkboxgroup-option3">Don't know</label>
+                                        <input type="checkbox" id="checkboxgroup3-inner-option3" name="checkbox-example3-inner" class="form-checkbox" value="v3" />
+                                        <label class="form-label" for="checkboxgroup3-inner-option3">Tredje
+                                            tjekboks</label>
 
                                     </div>
 
@@ -399,7 +402,92 @@
 
                         </div>
                     </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="checkboxgroup3-option2" name="checkbox-example3" class="form-checkbox" value="v2" />
+                        <label class="form-label" for="checkboxgroup3-option2">Anden
+                            tjekboks</label>
+
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="checkboxgroup3-option3" name="checkbox-example3" class="form-checkbox" value="v3" />
+                        <label class="form-label" for="checkboxgroup3-option3">Tredje
+                            tjekboks</label>
+
+                    </div>
+
                 </fieldset>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <p>Nedenunder er fire tjekbokse, der ikke har en fælles tjekboksgruppe.</p>
+
+            <div class="hidden-content-wrapper">
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="single-checkbox1" name="single-checkbox1" class="form-checkbox js-checkbox-toggle-content" value="v1" data-aria-controls="single-checkbox1-collapse" data-aria-expanded="false" />
+                    <label class="form-label" for="single-checkbox1">Første tjekboks med
+                        skjult indhold uden tjekboksgruppe<span class="sr-only"> Udfyld
+                            informationer herunder</span></label>
+
+                </div>
+                <div id="single-checkbox1-collapse" aria-hidden="true" class="checkbox-content">
+
+                    <div class="form-group">
+                        <label class="form-label" for="single-checkbox1-input">Inputfelt</label>
+
+                        <input type="text" id="single-checkbox1-input" name="single-checkbox1-input" class="form-input" required="" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hidden-content-wrapper">
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="single-checkbox2" name="single-checkbox2" class="form-checkbox js-checkbox-toggle-content" value="v2" data-aria-controls="single-checkbox2-collapse" data-aria-expanded="false" />
+                    <label class="form-label" for="single-checkbox2">Anden tjekboks med skjult
+                        indhold uden tjekboksgruppe<span class="sr-only"> Udfyld informationer
+                            herunder</span></label>
+
+                </div>
+                <div id="single-checkbox2-collapse" aria-hidden="true" class="checkbox-content">
+
+                    <div class="form-group">
+                        <label class="form-label" for="single-checkbox2-input">Inputfelt</label>
+
+                        <input type="text" id="single-checkbox2-input" name="single-checkbox2-input" class="form-input" required="" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="single-checkbox3" name="single-checkbox3" class="form-checkbox" value="v3" />
+                <label class="form-label" for="single-checkbox3">Tredje tjekboks uden
+                    tjekboksgruppe</label>
+
+            </div>
+
+            <div class="hidden-content-wrapper">
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="single-checkbox4" name="single-checkbox4" class="form-checkbox js-checkbox-toggle-content" value="v4" data-aria-controls="single-checkbox4-collapse" data-aria-expanded="false" />
+                    <label class="form-label" for="single-checkbox4">Fjerde tjekboks med
+                        skjult indhold uden tjekboksgruppe<span class="sr-only"> Udfyld
+                            informationer herunder</span></label>
+
+                </div>
+                <div id="single-checkbox4-collapse" aria-hidden="true" class="checkbox-content">
+
+                    <div class="form-group">
+                        <label class="form-label" for="single-checkbox4-input">Inputfelt</label>
+
+                        <input type="text" id="single-checkbox4-input" name="single-checkbox4-input" class="form-input" required="" />
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -425,10 +513,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-radiobuttons-4/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-checkbox-simple/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-search/">Næste</a>
+                <a class="function-link" href="/eksempel/test-checkboxes-1/">Næste</a>
                 
             </div>
         </div>
