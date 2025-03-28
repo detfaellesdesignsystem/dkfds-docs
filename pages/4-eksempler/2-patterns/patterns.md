@@ -15,28 +15,28 @@ Alle patterns i dette afsnit er understøttet af skriftlig vejledning og indehol
 
 <ul class="card-row">
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/patterns/angivelse-af-telefonnummer/"
         heading="Angivelse af telefonnummer" 
         content="Se, hvordan du beder brugere om at angive telefonnumre - danske såvel som udenlandske." 
         %}
     </li>
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/patterns/formular/"
         heading="Formular" 
         content="Se best practice for komponenter mht. fx opbygning og kommunikation." 
         %}
     </li>
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/patterns/hentet-data/"
         heading="Inputfelter med hentet data" 
         content="Se, hvordan en formular kan indeholde inputfelter, der er udfyldt på forhånd med automatisk hentet data, som brugere kan redigere." 
         %}
     </li>
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/patterns/session-udloeber/"
         heading="Session udløber" 
         content="Dialogen varsler brugeren om, at de er ved at blive logget ud og giver dem  mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen." 

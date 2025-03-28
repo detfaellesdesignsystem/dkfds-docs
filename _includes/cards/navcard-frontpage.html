@@ -1,0 +1,13 @@
+<a class="new-card" href="{{ include.href }}" id="{{ include.id }}">
+    <div class="new-card-image desktop d-none d-lg-flex" style='aspect-ratio: 736 / 320; background-color: #FFFFFF;'></div>
+    <div class="new-card-image tablet d-flex d-lg-none" style='aspect-ratio: 500 / 320; background-color: #FFFFFF;'></div>
+    <div class="new-card-content">
+        <h3 class="hyphens-manual">{{ include.heading }}</h3>
+        <p>{{ include.content }}</p>
+    </div>
+    <div class="card-actions">
+        <svg class="icon-svg" focusable="false" aria-hidden="true">
+            <use href="#arrow-forward"></use>
+        </svg>
+    </div>
+</a>

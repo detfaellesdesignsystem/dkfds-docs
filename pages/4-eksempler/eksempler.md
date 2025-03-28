@@ -12,21 +12,21 @@ Du bør bestræbe dig på at følge standarderne for opsummerings- og kvittering
 
 <ul class="card-row mt-5">
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/selvbetjeningsloesninger/"
         heading="Selvbetjenings&shy;løsninger" 
         content="Eksempler på hele formular-flows/selvbetjeningsløsninger, som er bygget med Det Fælles Designsystem." 
         %}
     </li>
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/patterns/"
         heading="Patterns" 
         content="Patterns er designløsninger til specifikke brugerfokuserede opgaver, fx angivelse af telefonnummer og inputfelter med hentede data." 
         %}
     </li>
     <li>
-        {% include navcard-long.html headingLevel="h2"
+        {% include cards/navcard-long.html headingLevel="h2"
         href="/eksempler/templates/"
         heading="Templates" 
         content="Eksempler på specifikke sidetyper, som er bygget med Det Fælles Designsystem, fx dashboard, opsummering og kvittering." 

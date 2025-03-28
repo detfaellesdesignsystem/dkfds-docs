@@ -49,6 +49,38 @@
 }
 
 // ------------------------------------
+// Front page
+// ------------------------------------
+.frontpage-banner {
+    background-color: color('white');
+    overflow: visible;
+
+    @include media-breakpoint-up(lg) {
+        background-color: color('gray-100');
+        overflow: hidden;
+    }
+
+    .tablet-row {
+        max-height: 270px;
+        overflow: hidden;
+        aspect-ratio: 5 / 2;
+
+        .designsystem-illustration {
+            object-fit: cover;
+            height: 145%;
+        }
+    }
+
+    .desktop-row {
+        aspect-ratio: 5 / 2;
+
+        .designsystem-illustration {
+            object-fit: cover;
+        }
+    }
+}
+
+// ------------------------------------
 // Do's and Don'ts
 // ------------------------------------
 

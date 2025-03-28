@@ -41,14 +41,11 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 let setHomepageIllustration = function(){
-    let illustration = document.getElementById('designsystem-illustration');
-    if(illustration !== null){
-        if(getThemeCookie() === "virk"){
-            illustration.setAttribute('src', "/assets/img/descriptionimages/Forside_illu_virk.svg");
-        } else if(getThemeCookie() === "borgerdk"){
-            illustration.setAttribute('src', "/assets/img/descriptionimages/Forside_illu_borger.svg");
-        }else{
-            illustration.parentNode.removeChild(illustration);
+    if(document.body.classList.contains('page-forside')) {
+        let images = document.querySelectorAll('img.designsystem-illustration');
+        let cookie = getThemeCookie();
+        for (let i = 0; i < images.length; i++) {
+            images[i].setAttribute('src', `/assets/img/descriptionimages/hero-${cookie}.png`);
         }
     }
 };
@@ -353,6 +350,10 @@ let setCardImages = function() {
         let cards = document.querySelector('main').querySelectorAll('.new-card');
         rebuildCardImages(cards, '/assets/img/cards/Templates', 'PNG');
     }
+    else if (document.body.classList.contains('page-forside')) {
+        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        rebuildCardImages(cards, '/assets/img/cards/Forside', 'png');
+    }
 }
 
 function rebuildCardImages(cards, imagepath, extension) {
@@ -360,7 +361,14 @@ function rebuildCardImages(cards, imagepath, extension) {
     for (let i = 0; i < cards.length; i++) {
         if (cards[i].hasAttribute('id')) {
             let id = cards[i].id; // Important: Ensure the given card IDs match the card image filenames
-            document.getElementById(id).querySelector('.new-card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="">`;
+            /* Cards on the frontpage have different images for desktop and tablet */
+            if (document.body.classList.contains('page-forside')) {
+                document.getElementById(id).querySelector('.new-card-image.tablet').innerHTML = `<img src="${imagepath}/${id}-tablet-${cookie}.${extension}" alt="">`;
+                document.getElementById(id).querySelector('.new-card-image.desktop').innerHTML = `<img src="${imagepath}/${id}-desktop-${cookie}.${extension}" alt="">`;
+            }
+            else {
+                document.getElementById(id).querySelector('.new-card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="">`;
+            }
         }
     }
 }

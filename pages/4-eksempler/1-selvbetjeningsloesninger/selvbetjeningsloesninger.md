@@ -49,17 +49,17 @@ tags:
 <p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" target="_blank"><span>Demo: Formular til kontaktoplysninger</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
 
 <ul class="row card-row">
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
         id="card-formular-1"
         heading="Oplysninger om dig"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/formular-til-kontaktoplysninger/formular-2/"
         id="card-formular-2"
         heading="Bekræft oplysninger"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/formular-til-kontaktoplysninger/formular-3/"
         id="card-formular-3"
         heading="Kvittering"
@@ -71,37 +71,37 @@ tags:
 <p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/" target="_blank"><span>Demo: Trinformular til registrering</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
 
 <ul class="row card-row">
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-1/"
         id="card-registrering-1"
         heading="Vælg personer"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-2/"
         id="card-registrering-2"
         heading="Vælg noget mere"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-3/"
         id="card-registrering-3"
         heading="Vedhæft dokumenter"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-4/"
         id="card-registrering-4"
         heading="Tidligere registrering"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-5/"
         id="card-registrering-5"
         heading="Kontaktoplysninger"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-6/"
         id="card-registrering-6"
         heading="Opsummering"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-registrering/registrering-7/"
         id="card-registrering-7"
         heading="Kvittering"
@@ -113,32 +113,32 @@ tags:
 <p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/" target="_blank"><span>Demo: Trinformular til ansøgning</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
 
 <ul class="row card-row">
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/"
         id="card-ansoegning-1"
         heading="Oplysninger om ansøger"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-2/"
         id="card-ansoegning-2"
         heading="Kontaktoplysninger"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/"
         id="card-ansoegning-3"
         heading="Ansøgningens type"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/"
         id="card-ansoegning-4"
         heading="Tilføj dokumentation"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-5/"
         id="card-ansoegning-5"
         heading="Opsummering"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-6/"
         id="card-ansoegning-6"
         heading="Kvittering"
@@ -150,17 +150,17 @@ tags:
 <p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/" target="_blank"><span>Demo: Sagsoversigt</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
 
 <ul class="row card-row">
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/sagsoversigt/find-sag/"
         id="card-find-sag"
         heading="Find sag"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/"
         id="card-sagsnr-123456789"
         heading="Sagsnr. 123456789"
     %}
-    {% include navcard-thumbnails.html 
+    {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/sagsoversigt/find-sag/sagsnr-123456789/afgoerelser/"
         id="card-afgoerelser"
         heading="Afgørelser"
