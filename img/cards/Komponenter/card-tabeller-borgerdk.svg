@@ -1,9 +1,5 @@
 <svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_10643_18242" fill="white">
-<path d="M0 0H267V150H0V0Z"/>
-</mask>
-<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
-<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_10643_18242)"/>
+<rect width="267" height="150" fill="#F5F5F5"/>
 <rect x="16" y="30" width="68" height="8" rx="4" fill="#44831E"/>
 <rect x="16" y="62" width="68" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
 <rect x="16" y="90" width="68" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
@@ -16,8 +12,8 @@
 <rect x="184" y="62" width="67" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
 <rect x="184" y="90" width="67" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
 <rect x="184" y="118" width="67" height="4" rx="2" fill="#44831E" fill-opacity="0.4"/>
-<line x1="16" y1="49.5" x2="251" y2="49.5" stroke="#44831E"/>
-<line x1="16" y1="77.5" x2="251" y2="77.5" stroke="#44831E"/>
-<line x1="16" y1="105.5" x2="251" y2="105.5" stroke="#44831E"/>
-<line x1="16" y1="133.5" x2="251" y2="133.5" stroke="#44831E"/>
+<line x1="16.5" y1="49.5" x2="250.5" y2="49.5" stroke="#44831E" stroke-linecap="round"/>
+<line x1="16.5" y1="77.5" x2="250.5" y2="77.5" stroke="#44831E" stroke-linecap="round"/>
+<line x1="16.5" y1="105.5" x2="250.5" y2="105.5" stroke="#44831E" stroke-linecap="round"/>
+<line x1="16.5" y1="133.5" x2="250.5" y2="133.5" stroke="#44831E" stroke-linecap="round"/>
 </svg>

@@ -1,13 +1,9 @@
 <svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_13144_11136" fill="white">
-<path d="M0 0H267V150H0V0Z"/>
-</mask>
-<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
-<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_13144_11136)"/>
+<rect width="267" height="150" fill="#F5F5F5"/>
 <rect x="30" y="69" width="64" height="8" rx="4" fill="#0059B3"/>
 <rect x="102" y="69" width="64" height="8" rx="4" fill="#0059B3" fill-opacity="0.3"/>
 <rect x="174" y="69" width="64" height="8" rx="4" fill="#0059B3" fill-opacity="0.3"/>
-<rect x="30" y="79" width="64" height="1" fill="#0059B3"/>
-<rect x="102" y="79" width="64" height="1" fill="#0059B3"/>
-<rect x="174" y="79" width="64" height="1" fill="#0059B3"/>
+<rect x="30" y="79" width="64" height="1" rx="0.5" fill="#0059B3"/>
+<rect x="102" y="79" width="64" height="1" rx="0.5" fill="#0059B3"/>
+<rect x="174" y="79" width="64" height="1" rx="0.5" fill="#0059B3"/>
 </svg>

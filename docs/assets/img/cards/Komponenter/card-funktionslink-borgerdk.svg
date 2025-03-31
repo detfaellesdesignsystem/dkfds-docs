@@ -1,14 +1,10 @@
 <svg width="267" height="150" viewBox="0 0 267 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_10643_18229" fill="white">
-<path d="M0 0H267V150H0V0Z"/>
-</mask>
-<path d="M0 0H267V150H0V0Z" fill="#F5F5F5"/>
-<path d="M267 149H0V151H267V149Z" fill="#F5F5F5" mask="url(#path-1-inside-1_10643_18229)"/>
+<rect width="267" height="150" fill="#F5F5F5"/>
 <rect x="129" y="18" width="2" height="12" rx="1" fill="#44831E"/>
 <rect x="136" y="23" width="2" height="12" rx="1" transform="rotate(90 136 23)" fill="#44831E"/>
 <rect x="146" y="20" width="105" height="8" rx="4" fill="#44831E"/>
-<rect x="146" y="30" width="105" height="1" fill="#44831E"/>
-<path d="M133.45 49.7218L136.278 52.5503L127.907 60.9212L124.607 61.3926L125.079 58.0927L133.45 49.7218Z" stroke="#44831E" stroke-width="2"/>
+<rect x="146" y="30" width="105" height="1" rx="0.5" fill="#44831E"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M133.214 51.3714L125.786 58.7995L125.55 60.4494L127.2 60.2137L134.628 52.7856L133.214 51.3714ZM133.921 49.2501C133.531 48.8596 132.898 48.8596 132.507 49.2501L124.136 57.621C123.983 57.774 123.884 57.9725 123.853 58.1867L123.382 61.4865C123.288 62.1465 123.853 62.7121 124.513 62.6179L127.813 62.1465C128.027 62.1159 128.226 62.0166 128.379 61.8636L136.75 53.4927C137.14 53.1022 137.14 52.469 136.75 52.0785L133.921 49.2501Z" fill="#44831E"/>
 <rect x="146" y="52" width="105" height="8" rx="4" fill="#44831E"/>
-<rect x="146" y="62" width="105" height="1" fill="#44831E"/>
+<rect x="146" y="62" width="105" height="1" rx="0.5" fill="#44831E"/>
 </svg>
