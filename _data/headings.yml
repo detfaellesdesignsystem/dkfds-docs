@@ -286,6 +286,8 @@ Knapper:
 
 LoadingSpinner:
 - h2: Sådan bruges komponenten
+- h2: Varianter
+- h2: Referencer
 
 Modal:
 - h2: Sådan bruges komponenten
@@ -497,6 +499,8 @@ Knapper_Kode:
 
 LoadingSpinner_Kode:
 - h2: Installation
+- h2: Lille spinner
+- h2: Spinner med tekst
 
 Modal_Kode:
 - h2: Installation
