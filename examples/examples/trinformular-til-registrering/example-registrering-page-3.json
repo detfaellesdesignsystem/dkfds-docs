@@ -49,37 +49,36 @@
             {
                 "text": "Vælg personer",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-1/",
-                "icon": {
-                    "name": "check",
-                    "ariaLabel": "Gennemført",
-                    "ariaHidden": false
-                }
+                "state": "success"
             },
             {
                 "text": "Vælg noget mere",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-2/",
-                "icon": {
-                    "name": "check",
-                    "ariaLabel": "Gennemført",
-                    "ariaHidden": false
-                }
+                "state": "success"
             },
             {
                 "text": "Vedhæft dokumenter",
                 "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/",
+                "state": "number",
                 "current": true
             },
             {
                 "text": "Tidligere registrering",
-                "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/"
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-4/",
+                "state": "number",
+                "disabled": true
             },
             {
                 "text": "Kontaktoplysninger",
-                "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/"
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-5/",
+                "state": "number",
+                "disabled": true
             },
             {
                 "text": "Opsummering",
-                "href": "/pages/eksempler/trinformular-til-registrering/registrering-6/"
+                "href": "/pages/eksempler/trinformular-til-registrering/registrering-6/",
+                "state": "number",
+                "disabled": true
             }
         ]
     },

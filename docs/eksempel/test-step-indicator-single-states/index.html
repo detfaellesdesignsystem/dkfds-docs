@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Testfil | test-step-indicator-states | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-step-indicator-states | Det Fælles Designsystem">
+<title>Testfil | test-step-indicator-single-states | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-step-indicator-single-states | Det Fælles Designsystem">
 
 
 
@@ -248,15 +248,152 @@
     <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">Trinindikator</h1>
+            <h1 class="h2 mt-0">Trinindikator, statuskombinationer</h1>
+            <p>Alle nedenstående eksempler er uden bottom sheets</p>
         </div>
     </div>
     <div class="row mb-905">
-        <aside class="col-12 col-lg-4" aria-label="Se og vælg trin">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin">
 
-            <button class="step-indicator-button d-lg-none" aria-haspopup="dialog" type="button" data-module="modal" data-target="modal-step-indicator">Trin<strong> 7 </strong>af 9</button>
+                <ol class="step-indicator">
+                    <li class="current " aria-current="step">
+                        <a class="step" href="#">
+                            <span class="step-number">
 
-            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+                                <span>1</span>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Valgt trin</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin med hjælpetekst">
+
+                <ol class="step-indicator">
+                    <li class="current " aria-current="step">
+                        <a class="step" href="#">
+                            <span class="step-number">
+
+                                <span>1</span>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Valgt trin med hjælpetekst</span>
+                                <span class="step-information">Hjælpetekst under
+                                    trintitlen</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin med fejl">
+
+                <ol class="step-indicator">
+                    <li class="current error" aria-current="step">
+                        <a class="step" href="#">
+                            <span class="step-icon">
+
+                                <svg class="icon-svg" aria-label="Fejl i trin 1" focusable="false"><use href="#error"></use></svg>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Valgt trin med fejl</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin med fejl og hjælpetekst">
+
+                <ol class="step-indicator">
+                    <li class="current error" aria-current="step">
+                        <a class="step" href="#">
+                            <span class="step-icon">
+
+                                <svg class="icon-svg" aria-label="Fejl i trin 1" focusable="false"><use href="#error"></use></svg>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Valgt trin med fejl og
+                                    hjælpetekst</span>
+                                <span class="step-information">Hjælpetekst under
+                                    trintitlen</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart trin">
+
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="#">
+                            <span class="step-number">
+
+                                <span>1</span>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Klikbart trin</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart trin med hjælpetekst">
+
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="#">
+                            <span class="step-number">
+
+                                <span>1</span>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Klikbart trin med hjælpetekst</span>
+                                <span class="step-information">Hjælpetekst under
+                                    trintitlen</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart, gennemført trin">
 
                 <ol class="step-indicator">
                     <li>
@@ -267,93 +404,50 @@
 
                             </span>
                             <div>
-                                <span class="step-title">Dette er et overstået, klikbart
-                                    trin</span>
+                                <span class="step-title">Klikbart, gennemført trin</span>
                             </div>
                         </a>
                     </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart, gennemført trin med hjælpetekst">
+
+                <ol class="step-indicator">
                     <li>
                         <a class="step" href="#">
                             <span class="step-icon">
 
-                                <svg class="icon-svg" aria-label="Trin 2 gennemført" focusable="false"><use href="#check"></use></svg>
+                                <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg>
 
                             </span>
                             <div>
-                                <span class="step-title">Dette er et overstået, klikbart trin
-                                    med hjælpetekst</span>
-                                <span class="step-information">Informationstekst</span>
+                                <span class="step-title">Klikbart, gennemført trin med
+                                    hjælpetekst</span>
+                                <span class="step-information">Hjælpetekst under
+                                    trintitlen</span>
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a class="step" href="#">
-                            <span class="step-icon">
+                </ol>
 
-                                <svg class="icon-svg" aria-label="Trin 3 gennemført" focusable="false"><use href="#check"></use></svg>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 ikke-klikbart trin">
 
-                            </span>
-                            <div>
-                                <span class="step-title">Endnu et overstået, klikbart
-                                    trin</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="error">
-                        <a class="step" href="#">
-                            <span class="step-icon">
-
-                                <svg class="icon-svg" aria-label="Fejl i trin 4" focusable="false"><use href="#error"></use></svg>
-
-                            </span>
-                            <div>
-                                <span class="step-title">Fejlet trin med hjælpetekst</span>
-                                <span class="step-information">Informationstekst</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="error">
-                        <a class="step" href="#">
-                            <span class="step-icon">
-
-                                <svg class="icon-svg" aria-label="Fejl i trin 5" focusable="false"><use href="#error"></use></svg>
-
-                            </span>
-                            <div>
-                                <span class="step-title">Fejlet trin</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="step" href="#">
-                            <span class="step-icon">
-
-                                <svg class="icon-svg" aria-label="Trin 6 gennemført" focusable="false"><use href="#check"></use></svg>
-
-                            </span>
-                            <div>
-                                <span class="step-title">Endnu et overstået, klikbart
-                                    trin</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="current " aria-current="step">
-                        <a class="step" href="#">
-                            <span class="step-number">
-
-                                <span>7</span>
-
-                            </span>
-                            <div>
-                                <span class="step-title">Det nuværende trin</span>
-                            </div>
-                        </a>
-                    </li>
+                <ol class="step-indicator">
                     <li class="disabled ">
                         <div class="step">
                             <span class="step-number">
 
-                                <span>8</span>
+                                <span>1</span>
 
                             </span>
                             <div>
@@ -361,189 +455,83 @@
                             </div>
                         </div>
                     </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 ikke-klikbart trin med hjælpetekst">
+
+                <ol class="step-indicator">
                     <li class="disabled ">
                         <div class="step">
                             <span class="step-number">
 
-                                <span>9</span>
+                                <span>1</span>
 
                             </span>
                             <div>
                                 <span class="step-title">Ikke-klikbart trin med
                                     hjælpetekst</span>
-                                <span class="step-information">Informationstekst</span>
+                                <span class="step-information">Hjælpetekst under
+                                    trintitlen</span>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a class="step" href="#">
-                            <span class="step-number">
+                </ol>
 
-                                <span>10</span>
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 trin med fejl">
+
+                <ol class="step-indicator">
+                    <li class="error">
+                        <a class="step" href="#">
+                            <span class="step-icon">
+
+                                <svg class="icon-svg" aria-label="Fejl i trin 1" focusable="false"><use href="#error"></use></svg>
 
                             </span>
                             <div>
-                                <span class="step-title">Klikbart, kommende trin</span>
+                                <span class="step-title">Trin med fejl</span>
                             </div>
                         </a>
                     </li>
                 </ol>
 
             </nav>
-        </aside>
-    </div>
-</main>
-
-<div class="fds-modal-container">
-
-    <div class="fds-modal modal-step-indicator" id="modal-step-indicator" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-heading">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modal-step-indicator-heading">
-                    Trin 7 af 9
-                </h2>
-                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
-            </div>
-            <div class="modal-body">
-                <nav aria-label="Trinindikator">
-                    <ol class="step-indicator">
-                        <li>
-                            <a class="step" href="#">
-                                <span class="step-icon">
-
-                                    <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Dette er et overstået, klikbart
-                                        trin</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="step" href="#">
-                                <span class="step-icon">
-
-                                    <svg class="icon-svg" aria-label="Trin 2 gennemført" focusable="false"><use href="#check"></use></svg>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Dette er et overstået, klikbart
-                                        trin med hjælpetekst</span>
-                                    <span class="step-information">Informationstekst</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="step" href="#">
-                                <span class="step-icon">
-
-                                    <svg class="icon-svg" aria-label="Trin 3 gennemført" focusable="false"><use href="#check"></use></svg>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Endnu et overstået, klikbart
-                                        trin</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="error">
-                            <a class="step" href="#">
-                                <span class="step-icon">
-
-                                    <svg class="icon-svg" aria-label="Fejl i trin 4" focusable="false"><use href="#error"></use></svg>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Fejlet trin med
-                                        hjælpetekst</span>
-                                    <span class="step-information">Informationstekst</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="error">
-                            <a class="step" href="#">
-                                <span class="step-icon">
-
-                                    <svg class="icon-svg" aria-label="Fejl i trin 5" focusable="false"><use href="#error"></use></svg>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Fejlet trin</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="step" href="#">
-                                <span class="step-icon">
-
-                                    <svg class="icon-svg" aria-label="Trin 6 gennemført" focusable="false"><use href="#check"></use></svg>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Endnu et overstået, klikbart
-                                        trin</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="current " aria-current="step">
-                            <a class="step" href="#">
-                                <span class="step-number">
-
-                                    <span>7</span>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Det nuværende trin</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="disabled ">
-                            <div class="step">
-                                <span class="step-number">
-
-                                    <span>8</span>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Ikke-klikbart trin</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="disabled ">
-                            <div class="step">
-                                <span class="step-number">
-
-                                    <span>9</span>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Ikke-klikbart trin med
-                                        hjælpetekst</span>
-                                    <span class="step-information">Informationstekst</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="step" href="#">
-                                <span class="step-number">
-
-                                    <span>10</span>
-
-                                </span>
-                                <div>
-                                    <span class="step-title">Klikbart, kommende trin</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-
         </div>
     </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 trin med fejl og hjælpetekst">
 
-</div>
+                <ol class="step-indicator">
+                    <li class="error">
+                        <a class="step" href="#">
+                            <span class="step-icon">
+
+                                <svg class="icon-svg" aria-label="Fejl i trin 1" focusable="false"><use href="#error"></use></svg>
+
+                            </span>
+                            <div>
+                                <span class="step-title">Trin med fejl og hjælpetekst</span>
+                                <span class="step-information">Hjælpetekst under
+                                    trintitlen</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
+            </nav>
+        </div>
+    </div>
+</main>
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
@@ -564,10 +552,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-step-guide-7/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-step-indicator-states/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-step-indicator-single-states/">Næste</a>
+                <a class="function-link" href="/eksempel/test-venstremenu/">Næste</a>
                 
             </div>
         </div>

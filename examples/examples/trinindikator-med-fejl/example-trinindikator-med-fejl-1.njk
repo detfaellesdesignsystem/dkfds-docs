@@ -12,7 +12,8 @@
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/table/table.njk" import table as table %}
 {% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
@@ -47,6 +48,8 @@
     <p class='m-0'>Fredag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='d-inline-block'>kl. 9-14</span></p>" 
 %}
 
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + stepIndicator(trinindikator_data) + "</nav>" %}
+
 {% set modal_actions = 
     button({
         "variant": "secondary",
@@ -75,110 +78,118 @@
 {% block body %}
 <div class="container page-container pt-0">
     <div class="row">
-        <div class="col-12">
-            <div role="region" aria-label="Sidefunktioner">
-                <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-2">
+        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
+            {{
+                stepIndicatorButton({
+                    "breakpoint": "lg",
+                    "modal": "modal-step-indicator",
+                    "currentStep": "6",
+                    "totalSteps": "6"
+                })
+            }}
+            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+                {{ stepIndicator(trinindikator_data) }}
+            </nav>
+        </aside>
+        <div class="col-12 col-lg-9">
+            <aside class="w-percent-100" aria-label="Sidehandlinger">
+                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
                     <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <aside class="col-12 col-lg-3 mt-2">
-            {{ overflow_stepguide(trinindikator_data) }}
-        </aside>
-        <main class="col-12 col-lg-9" id="main-content">
-            {{ back_link({ "href": "#" }) }}
-            <nav aria-labelledby="trinindikator-error-summary">
-                {{ 
-                    alert({
-                        "variant": "error",
-                        "classes": "mt-0 mb-8",
-                        "headingLevel": "h2",
-                        "headingID": "trinindikator-error-summary",
-                        "heading": "Der er problemer på et eller flere af trinene i formularen",
-                        "contentContainer": false,
-                        "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
-                        "attributes": "data-module=\"error-summary\""
-                    }) 
+            </aside>
+            <main class="w-percent-100" id="main-content">
+                {{ back_link({ "href": "#" }) }}
+                <nav aria-labelledby="trinindikator-error-summary">
+                    {{ 
+                        alert({
+                            "variant": "error",
+                            "classes": "mt-0 mb-8",
+                            "headingLevel": "h2",
+                            "headingID": "trinindikator-error-summary",
+                            "heading": "Der er problemer på et eller flere af trinene i formularen",
+                            "contentContainer": false,
+                            "content": "<ul class=\"alert-text nobullet-list\"><li><a class=\"function-link\" href=\"#\">Gå til trin 3: Vedhæft dokumenter</a></li></ul>",
+                            "attributes": "data-module=\"error-summary\""
+                        }) 
+                    }}
+                </nav>
+                <h1 class="mb-6">Opsummering</h1>
+                <h2>Vælg personer</h2>
+                {{
+                    table({
+                        "borderless": true,
+                        "responsive": true,
+                        "classes": {
+                            "inner": "w-percent-md-70 d-print-table"
+                        },
+                        "thead": [
+                            { "headerContent": "Person" },
+                            { "headerContent": "CPR-nummer" },
+                            { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
+                        ],
+                        "tbody": [
+                            [
+                                { "content": "Jens Jensen" },
+                                { "content": "123456-7890" },
+                                { "classes": "align-text-md-right d-print-none" }
+                            ],
+                            [
+                                { "content": "Keld Hedagaardsen" },
+                                { "content": "230495-1111" },
+                                { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                            ],
+                            [
+                                { "content": "Anni Hedagaardsen" },
+                                { "content": "120394-2222" },
+                                { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                            ]
+                        ]
+                    })
                 }}
-            </nav>
-            <h1 class="mb-6">Opsummering</h1>
-            <h2>Vælg personer</h2>
-            {{
-                table({
-                    "borderless": true,
-                    "responsive": true,
-                    "classes": {
-                        "inner": "w-percent-md-70 d-print-table"
-                    },
-                    "thead": [
-                        { "headerContent": "Person" },
-                        { "headerContent": "CPR-nummer" },
-                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
-                    ],
-                    "tbody": [
-                        [
-                            { "content": "Jens Jensen" },
-                            { "content": "123456-7890" },
-                            { "classes": "align-text-md-right d-print-none" }
+                
+                <h2>Vælg noget mere</h2>
+                {{
+                    table({
+                        "borderless": true,
+                        "responsive": true,
+                        "classes": {
+                            "inner": "w-percent-md-70 d-print-table"
+                        },
+                        "thead": [
+                            { "headerContent": "Nummer" },
+                            { "headerContent": "Dato" },
+                            { "headerContent": "Information" },
+                            { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
                         ],
-                        [
-                            { "content": "Keld Hedagaardsen" },
-                            { "content": "230495-1111" },
-                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
-                        ],
-                        [
-                            { "content": "Anni Hedagaardsen" },
-                            { "content": "120394-2222" },
-                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                        "tbody": [
+                            [
+                                { "content": "123456789" },
+                                { "content": "01.01.2021" },
+                                { "content": "Lorem ipsum dolor sit" },
+                                { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                            ],
+                            [
+                                { "content": "123456789" },
+                                { "content": "01.01.2021" },
+                                { "content": "Lorem ipsum dolor sit" },
+                                { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
+                            ]
                         ]
-                    ]
-                })
-            }}
-            
-            <h2>Vælg noget mere</h2>
-            {{
-                table({
-                    "borderless": true,
-                    "responsive": true,
-                    "classes": {
-                        "inner": "w-percent-md-70 d-print-table"
-                    },
-                    "thead": [
-                        { "headerContent": "Nummer" },
-                        { "headerContent": "Dato" },
-                        { "headerContent": "Information" },
-                        { "headerContent": "<span class=\"sr-only\">Handlinger</span>", "classes": "d-print-none sr-header" }
-                    ],
-                    "tbody": [
-                        [
-                            { "content": "123456789" },
-                            { "content": "01.01.2021" },
-                            { "content": "Lorem ipsum dolor sit" },
-                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
-                        ],
-                        [
-                            { "content": "123456789" },
-                            { "content": "01.01.2021" },
-                            { "content": "Lorem ipsum dolor sit" },
-                            { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
-                        ]
-                    ]
-                })
-            }}
+                    })
+                }}
 
-            <h2>Tidligere registrering</h2>
-            {{ structured_list(list_tidligere_registrering) }}
+                <h2>Tidligere registrering</h2>
+                {{ structured_list(list_tidligere_registrering) }}
 
-            <h2>Kontaktoplysninger</h2>
-            {{ structured_list(list_kontaktoplysninger) }}
-            
-            <form novalidate method="post">
-                <input type="hidden" name="entries-confirmed" value="true">
-                {{ button(button_next) }}
-            </form>
-        </main>
+                <h2>Kontaktoplysninger</h2>
+                {{ structured_list(list_kontaktoplysninger) }}
+                
+                <form novalidate method="post">
+                    <input type="hidden" name="entries-confirmed" value="true">
+                    {{ button(button_next) }}
+                </form>
+            </main>
+        </div>
     </div>
 </div>
 {% endblock %}
@@ -195,6 +206,15 @@
             "content": modal_content,
             "forcedAction": false,
             "actions": modal_actions
+        })
+    }}
+    {{
+        modal({
+            "id": "modal-step-indicator",
+            "heading": "Trin 6 af 6",
+            "content": modal_content_step,
+            "forcedAction": false,
+            "stepIndicator": true
         })
     }}
 </div>

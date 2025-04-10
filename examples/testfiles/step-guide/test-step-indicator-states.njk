@@ -3,57 +3,62 @@
 {% from "components/modal/modal.njk" import modal as modal %}
 
 {% set step_indicator = stepIndicator({
-    "id": "step-indicator-id",
     "steps": [
         {
-            "text": "Lorem ipsum dolor sit amet",
+            "text": "Dette er et overstået, klikbart trin",
             "href": "#",
-            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+            "state": "success"
         },
         {
-            "text": "Consectetur adipiscing elit",
+            "text": "Dette er et overstået, klikbart trin med hjælpetekst",
             "href": "#",
-            "helptext": "Informationstekst",
-            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+            "state": "success",
+            "helptext": "Informationstekst"
         },
         {
-            "text": "Duis pellentesque mollis nisl",
+            "text": "Endnu et overstået, klikbart trin",
             "href": "#",
-            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+            "state": "success"
         },
         {
-            "text": "Sed mollis metus pellentesque et",
+            "text": "Fejlet trin med hjælpetekst",
             "href": "#",
-            "helptext": "Informationstekst",
-            "icon": {"name": "error", "ariaLabel": "Fejl", "ariaHidden": false},
-            "error": true
+            "state": "error",
+            "helptext": "Informationstekst"
         },
         {
-            "text": "Vestibulum convallis consectetur metus",
+            "text": "Fejlet trin",
             "href": "#",
-            "icon": {"name": "error", "ariaLabel": "Fejl", "ariaHidden": false},
-            "error": true
+            "state": "error"
         },
         {
-            "text": "Sit amet eleifend leo egestas sed",
+            "text": "Endnu et overstået, klikbart trin",
             "href": "#",
-            "icon": {"name": "check", "ariaLabel": "Gennemført", "ariaHidden": false}
+            "state": "success"
         },
         {
-            "text": "Fusce efficitur nec quam et consectetur",
+            "text": "Det nuværende trin",
             "href": "#",
+            "state": "number",
             "current": true
         },
         {
-            "text": "Vestibulum vel convallis mauris",
+            "text": "Ikke-klikbart trin",
             "href": "#",
+            "state": "number",
             "disabled": true
         },
         {
-            "text": "Vitae aliquet orci",
+            "text": "Ikke-klikbart trin med hjælpetekst",
             "href": "#",
+            "state": "number",
             "disabled": true,
             "helptext": "Informationstekst"
+        },
+        {
+            "text": "Klikbart, kommende trin",
+            "href": "#",
+            "state": "number"
         }
     ]
 }) %}

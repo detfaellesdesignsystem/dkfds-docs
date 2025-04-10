@@ -189,6 +189,7 @@ var testfiles = [
     "test-step-guide-6",
     "test-step-guide-7",
     "test-step-indicator-states",
+    "test-step-indicator-single-states",
     "test-venstremenu"
 ];
 

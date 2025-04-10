@@ -1,0 +1,226 @@
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Trinindikator, statuskombinationer</h1>
+            <p>Alle nedenstående eksempler er uden bottom sheets</p>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Valgt trin",
+                                "href": "#",
+                                "state": "number",
+                                "current": true
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin med hjælpetekst">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Valgt trin med hjælpetekst",
+                                "href": "#",
+                                "state": "number",
+                                "current": true,
+                                "helptext": "Hjælpetekst under trintitlen"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin med fejl">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Valgt trin med fejl",
+                                "href": "#",
+                                "state": "error",
+                                "current": true
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 valgt trin med fejl og hjælpetekst">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Valgt trin med fejl og hjælpetekst",
+                                "href": "#",
+                                "state": "error",
+                                "current": true,
+                                "helptext": "Hjælpetekst under trintitlen"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart trin">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Klikbart trin",
+                                "href": "#",
+                                "state": "number"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart trin med hjælpetekst">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Klikbart trin med hjælpetekst",
+                                "href": "#",
+                                "state": "number",
+                                "helptext": "Hjælpetekst under trintitlen"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart, gennemført trin">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Klikbart, gennemført trin",
+                                "href": "#",
+                                "state": "success"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 klikbart, gennemført trin med hjælpetekst">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Klikbart, gennemført trin med hjælpetekst",
+                                "href": "#",
+                                "state": "success",
+                                "helptext": "Hjælpetekst under trintitlen"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 ikke-klikbart trin">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Ikke-klikbart trin",
+                                "href": "#",
+                                "state": "number",
+                                "disabled": true
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 ikke-klikbart trin med hjælpetekst">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Ikke-klikbart trin med hjælpetekst",
+                                "href": "#",
+                                "state": "number",
+                                "disabled": true,
+                                "helptext": "Hjælpetekst under trintitlen"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 trin med fejl">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Trin med fejl",
+                                "href": "#",
+                                "state": "error"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-lg-4">
+            <nav aria-label="Trinindikator med 1 trin med fejl og hjælpetekst">
+                {{ 
+                    stepIndicator({
+                        "steps": [
+                            {
+                                "text": "Trin med fejl og hjælpetekst",
+                                "href": "#",
+                                "state": "error",
+                                "helptext": "Hjælpetekst under trintitlen"
+                            }
+                        ]
+                    }) 
+                }}
+            </nav>
+        </div>
+    </div>
+</main>

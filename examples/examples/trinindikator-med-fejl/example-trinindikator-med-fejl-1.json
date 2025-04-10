@@ -36,28 +36,34 @@
         "steps": [
             {
                 "text": "Vælg personer",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "href": "#",
+                "state": "success"
             },
             {
                 "text": "Vælg noget mere",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "href": "#",
+                "state": "success"
             },
             {
                 "text": "Vedhæft dokumenter",
-                "icon": { "name": "error", "ariaLabel": "Fejl", "ariaHidden": false },
-                "error": true
+                "href": "#",
+                "state": "error"
             },
             {
                 "text": "Tidligere registrering",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "href": "#",
+                "state": "success"
             },
             {
                 "text": "Kontaktoplysninger",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "href": "#",
+                "state": "success"
             },
             {
                 "text": "Opsummering",
-                "active": true
+                "href": "#",
+                "state": "number",
+                "current": true
             }
         ]
     },
