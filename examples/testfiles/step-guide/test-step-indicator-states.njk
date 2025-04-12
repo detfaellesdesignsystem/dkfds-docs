@@ -65,6 +65,8 @@
 
 {% set modal_content_step = "<nav aria-label='Trinindikator'>" + step_indicator + "</nav>" %}
 
+{% set mobile_breakpoint = "md" %}
+
 <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
@@ -72,16 +74,16 @@
         </div>
     </div>
     <div class="row mb-905">
-        <aside class="col-12 col-lg-4" aria-label="Se og vælg trin">
+        <aside class="col-12 col-{{mobile_breakpoint}}-4" aria-label="Se og vælg trin">
             {{
                 stepIndicatorButton({
-                    "breakpoint": "lg",
+                    "breakpoint": mobile_breakpoint,
                     "modal": "modal-step-indicator",
                     "currentStep": "7",
-                    "totalSteps": "9"
+                    "totalSteps": "10"
                 })
             }}
-            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+            <nav aria-label="Trinindikator" class="d-none d-{{mobile_breakpoint}}-block">
                 {{ step_indicator }}
             </nav>
         </aside>
@@ -92,7 +94,7 @@
     {{
         modal({
             "id": "modal-step-indicator",
-            "heading": "Trin 7 af 9",
+            "heading": "Trin 7 af 10",
             "content": modal_content_step,
             "forcedAction": false,
             "stepIndicator": true

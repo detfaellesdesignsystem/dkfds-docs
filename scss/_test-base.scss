@@ -28,7 +28,7 @@ body.layout-mastertest {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 9990;
 
   .function-link {
     color: color('white');
@@ -41,7 +41,7 @@ body.layout-mastertest {
   width: 100%;
   background-color: color('black');
   height: auto;
-  z-index: 10000;
+  z-index: 9990;
 
   .test-footer-content {
     color: color('white');
