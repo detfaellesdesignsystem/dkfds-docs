@@ -18,7 +18,7 @@ var exampleUrls = [
     { "url": "eksempel/footer-logo/", "filename": "footer-logo.png", "width": 1017, "height": 352 },
     { "url": "eksempel/language-switcher/", "filename": "language-switcher.png", "width": 1017, "height": 80 },
     { "url": "eksempel/language-switcher-tooltip/", "filename": "language-switcher-tooltip.png", "width": 1017, "height": 95 },
-    { "url": "eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 280 },
+    { "url": "eksempel/cookie-message/", "filename": "cookie-message.png", "width": 771, "height": 290 },
     { "url": "eksempel/headings/", "filename": "headings.png", "width": 771, "height": 388 },
     { "url": "eksempel/skiplink/", "filename": "skiplink.png", "width": 771, "height": 70 },
     { "url": "eksempel/back-to-top/", "filename": "back-to-top.png", "width": 300, "height": 60 },
@@ -85,7 +85,7 @@ var exampleUrls = [
                 });
             } else {
                 await page.evaluate(() => {
-                    document.getElementsByClassName('cookie-container')[0].classList.add('m-5');
+                    document.getElementsByClassName('cookie-container')[0].classList.add('my-7');
                 });
             }
 

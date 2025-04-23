@@ -83,4 +83,4 @@ Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: 
 
 ## Retningslinjer for favikon {#{% include create-id.html heading="Retningslinjer for favikon" %}}
 
-Det Fælles Designsystem kommer med to forskellige favikoner: ét til Virk og ét til borger.dk. Anvend Virk-favikon, hvis løsningen tilgås via Virk, og anvend borger.dk-favikon, hvis løsningen tilgås via borger.dk. Således passer favikonet sammen med det logo, der er i headeren.
+Det Fælles Designsystem har ikke favikoner inkluderet. Løsningens favikon skal afspejle den myndighed, der er afsender på indberetningen, og ikke borger.dk eller Virk. Anvend derfor din myndigheds eget favikon.

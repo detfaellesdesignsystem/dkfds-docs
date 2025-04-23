@@ -164,7 +164,7 @@ Se {% include links/external-link.html linktext="beslutningslog for version 11.0
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet mixin `not-sr-only()`.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet funktionen `silentUpdateMessages()` til karakterbegrænsning.
 - Rettet fejl, hvor udfyldte inputfelter med karakterbegrænsning blev læst højt for skærmlæsere ved sidens indlæsning.
-- <strong class="badge badge-info badge-small mr-2">Change</strong> Nye favicons for begge temaer, såfremt man anvender disse.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet favikoner. Se eventuelt {% include links/internal-link.html linktext="retningslinjer for favikon" %}.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `tabindex=0` til strukturerede lister.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret selvbetjeningsløsnnger med postnummer til at anvende attributten `inputmode`.
 - Ændret {% include links/internal-link.html linktext="hjørner" %} (`border-radius`) for flere komponenter.
