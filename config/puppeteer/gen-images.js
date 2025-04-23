@@ -85,7 +85,7 @@ var exampleUrls = [
                 });
             } else {
                 await page.evaluate(() => {
-                    document.getElementsByClassName('cookie-container')[0].classList.add('my-7');
+                    document.getElementsByClassName('cookie-container')[0].classList.add('my-7', 'mx-5');
                 });
             }
 
