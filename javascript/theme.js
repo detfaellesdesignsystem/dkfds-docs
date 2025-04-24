@@ -335,23 +335,23 @@ let setDoDontImages = function() {
 
 let setCardImages = function() {
     if(document.body.classList.contains('page-komponenter')) {
-        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Komponenter', 'svg');
     }
     else if (document.body.classList.contains('page-styleguide')) {
-        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Styleguide', 'svg');
     }
     else if (document.body.classList.contains('page-selvbetjeningsløsninger')) {
-        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Selvbetjeningsloesninger', 'PNG');
     }
     else if (document.body.classList.contains('page-templates')) {
-        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Templates', 'PNG');
     }
     else if (document.body.classList.contains('page-forside')) {
-        let cards = document.querySelector('main').querySelectorAll('.new-card');
+        let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Forside', 'png');
     }
 }
@@ -363,11 +363,11 @@ function rebuildCardImages(cards, imagepath, extension) {
             let id = cards[i].id; // Important: Ensure the given card IDs match the card image filenames
             /* Cards on the frontpage have different images for desktop and tablet */
             if (document.body.classList.contains('page-forside')) {
-                document.getElementById(id).querySelector('.new-card-image.tablet').innerHTML = `<img src="${imagepath}/${id}-tablet-${cookie}.${extension}" alt="">`;
-                document.getElementById(id).querySelector('.new-card-image.desktop').innerHTML = `<img src="${imagepath}/${id}-desktop-${cookie}.${extension}" alt="">`;
+                document.getElementById(id).querySelector('.card-image.tablet').innerHTML = `<img src="${imagepath}/${id}-tablet-${cookie}.${extension}" alt="">`;
+                document.getElementById(id).querySelector('.card-image.desktop').innerHTML = `<img src="${imagepath}/${id}-desktop-${cookie}.${extension}" alt="">`;
             }
             else {
-                document.getElementById(id).querySelector('.new-card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="">`;
+                document.getElementById(id).querySelector('.card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="">`;
             }
         }
     }

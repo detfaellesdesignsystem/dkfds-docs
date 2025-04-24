@@ -41,6 +41,7 @@ title: Test
 ## Cards
 
 {% include test/preview-test.html filename="test-cards" description="Cards" %}
+{% include test/preview-test.html filename="test-default-cards" description="Almindelige cards" %}
 
 {:.h3}
 ## Datofelter

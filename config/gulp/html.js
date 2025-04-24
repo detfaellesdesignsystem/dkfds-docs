@@ -39,6 +39,7 @@ var testfiles = [
     "test-alerts",
     "test-alert-variants",
     "test-cards",
+    "test-default-cards",
     "test-date-input-1",
     "test-date-input-2",
     "test-date-input-3",

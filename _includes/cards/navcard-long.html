@@ -1,5 +1,5 @@
-<a class="new-card long mb-4"{% if include.href %} href="{{ include.href }}"{% endif %} id="{{ include.id }}">
-    <div class="new-card-content">
+<a class="card long mb-4"{% if include.href %} href="{{ include.href }}"{% endif %} id="{{ include.id }}">
+    <div class="card-content">
         <{{ include.headingLevel }}>{{ include.heading }}</{{ include.headingLevel }}>
         <p>{{ include.content }}</p>
     </div>

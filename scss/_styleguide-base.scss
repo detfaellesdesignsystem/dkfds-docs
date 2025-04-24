@@ -1291,12 +1291,12 @@ a.demo-button span + .icon-svg {
 }
 
 .thumbnail-example {
-    .new-card-image {
+    .card-image {
         aspect-ratio: 1125 / 745;
         background-color: color('gray-200');
     }
 
-    .new-card-content {
+    .card-content {
         border-top: 1px solid color('gray-200');
 
         .heading {
@@ -1311,7 +1311,8 @@ Styling for cards on styleguide and components pages
 -----------------------------------------------------
 */
 
-.page-styleguide .new-card-content,
-.page-komponenter .new-card-content {
+.page-forside .card-content,
+.page-styleguide .card-content,
+.page-komponenter .card-content {
     border-top: 1px solid color('gray-200');
 }
