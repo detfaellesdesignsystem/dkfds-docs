@@ -1,0 +1,213 @@
+{% from "components/cards/cards.njk" import card as card %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Navigationscards</h1>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med intet indhold eller én type af indhold pr. card</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" }
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "content": "<p class=\"mt-0\">Card, der kun indeholder tekst.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#", "external": true },
+                    "content": "<p class=\"mt-0\">Card, der kun indeholder tekst.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Card, der kun indeholder titel",
+                    "headingLevel": "strong"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "subheading": "Subheading"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
+                        "alt": ""
+                    }
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med to typer af indhold pr. card</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
+                        "alt": ""
+                    },
+                    "subheading": "Subheading"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "subheading": "Subheading",
+                    "heading": "Titel",
+                    "headingLevel": "h3"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Noget tekst, der står under titlen.</p>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards som listeelementer</h2>
+        </div>
+        <div class="col-12">
+            <ul class="row card-row">
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "navigationCard": { "href": "#" },
+                            "content": "<p class=\"mt-0\">Første card i listen</p>"
+                        }) 
+                    }}
+                </li>
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "navigationCard": { "href": "#" },
+                            "content": "<p class=\"mt-0\">Andet card i listen</p>"
+                        }) 
+                    }}
+                </li>
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "navigationCard": { "href": "#" },
+                            "content": "<p class=\"mt-0\">Tredje card i listen</p>"
+                        }) 
+                    }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards uden grid</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "classes": "collapsed-height w-percent-sm-50 w-percent-md-30",
+                    "content": "<p class=\"mt-0\">Dette cards bredde er justeret med hjælpeklasser. På større skærme er bredden 30%. På mindre skærme er den 50%. På helt små skærme er kortet fuld bredde.</p>"
+                }) 
+            }}
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "classes": "collapsed-height w-percent-70",
+                    "content": "<p class=\"mt-0\">Dette cards bredde er justeret med hjælpeklasser. Bredden er altid 70%.</p>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskellig mængde tekst</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "subheading": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendr",
+                    "heading": "Umdolorsitametconsecteturadipisci",
+                    "headingLevel": "h3",
+                    "content": "<p>UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu</p>"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

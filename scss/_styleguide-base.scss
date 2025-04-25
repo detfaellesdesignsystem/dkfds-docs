@@ -1281,38 +1281,31 @@ Syntax highlight
 
 /*
 -----------------------------------------------------
-Styling for cards with thumbnails on example pages
------------------------------------------------------
-*/
-
-a.demo-button span + .icon-svg {
-    min-width: 2.0rem;
-    max-width: 2.0rem;
-}
-
-.thumbnail-example {
-    .card-image {
-        aspect-ratio: 1125 / 745;
-        background-color: color('gray-200');
-    }
-
-    .card-content {
-        border-top: 1px solid color('gray-200');
-
-        .heading {
-            font-size: font-size('lg');
-        }
-    }
-}
-
-/*
------------------------------------------------------
-Styling for cards on styleguide and components pages
+Styling for cards
 -----------------------------------------------------
 */
 
 .page-forside .card-content,
 .page-styleguide .card-content,
-.page-komponenter .card-content {
+.page-komponenter .card-content,
+.page-selvbetjeningsløsninger .card-content,
+.page-templates .card-content {
     border-top: 1px solid color('gray-200');
+}
+
+.page-selvbetjeningsløsninger,
+.page-templates {
+    .card-image {
+        aspect-ratio: 1125 / 745;
+        background-color: color('gray-200');
+    }
+
+    .card-content .heading {
+        font-size: font-size('lg');
+    }
+}
+
+a.demo-button span + .icon-svg {
+  min-width: 2.0rem;
+  max-width: 2.0rem;
 }

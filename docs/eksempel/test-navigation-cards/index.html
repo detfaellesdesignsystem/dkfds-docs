@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
+
+<head>
     <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
@@ -9,15 +10,14 @@
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
-
 <meta name="robots" content="noindex">
 
 <!-- Title and meta description
 ================================================== -->
 
 
-<title>Fonte | Det Fælles Designsystem</title>
-<meta property="og:title" content="Fonte | Det Fælles Designsystem">
+<title>Testfil | test-navigation-cards | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-navigation-cards | Det Fælles Designsystem">
 
 
 
@@ -46,24 +46,24 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=10.2.1" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=10.2.1" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=10.2.1" as="script">
+<link rel="preload" href="/assets/style/test_borger.css" as="style">
+<link rel="preload" href="/assets/style/test_virk.css" as="style">
+<link rel="preload" href="/assets/style/test_neutral.css" as="style">
+<link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
-  body {
-    opacity: 0; /*hide page until theme is downloaded by js.*/
-  }
+    body {
+      opacity: 0; /*hide page until theme is downloaded by js.*/
+    }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=10.2.1">
-
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=10.2.1">
+  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
 </noscript>
 
-  </head>
-  <body class="page-fonte layout-styleguide">
+</head>
+
+<body class="layout-test-example">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 -960 960 960"><path d="M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM360-80v-520q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-720l20 80q-56 15-118 25t-122 15v520h-80v-240h-80v240h-80Z"/></symbol>
@@ -219,1254 +219,352 @@
         <symbol id="zoom-out" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400ZM280-540v-80h200v80H280Z"/></symbol>
     </svg>
 </div>
-    <div id="top"></div>
-    <header class="header">
-    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-    <div class="solution-info">
-        <div class="solution-info-inner container">
-            <div class="solution-heading d-flex flex-wrap align-items-center">
-                <a href="/" class="mr-4">Det Fælles Designsystem</a><strong class="badge badge-error">Develop</strong>
+    <div class="test-header d-flex align-items-center">
+    <div class="container">
+        <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>Denne side er kun til test</button>
+    </div>
+</div>
+<div class="fds-modal-container">
+    <div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="test-warning-heading">
+                    Denne side er kun til test
+                </h2>
+                <button class="modal-close function-link"
+                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
             </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#menu"></use></svg>Menu</button>
+            <div class="modal-body">
+                <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close>
+                    Luk
+                </button>
+            </div>
         </div>
     </div>
-
-    <!-- Desktop main menu-->
-    <div class="navigation-menu contains-search">
-        <div class="navigation-menu-inner container">
-            <nav class="nav" aria-label="Hovedmenu">
-                <ul class="mainmenu">
-                    <li>
-            <a href="/kom-i-gang/" class="nav-link">
-                <span>Kom i gang</span>
-            </a>
-        </li>
-
-    
-  
-<li class="active">
-            <a href="/styleguide/" class="nav-link">
-                <span>Styleguide</span>
-            </a>
-        </li>
-
-    
-  
-<li>
-            <a href="/komponenter/" class="nav-link">
-                <span>Komponenter</span>
-            </a>
-        </li>
-
-    
-  
-<li>
-            <a href="/eksempler/" class="nav-link">
-                <span>Eksempler</span>
-            </a>
-        </li>
-
-    
-  
-<li>
-            <a href="/faellesskab/" class="nav-link">
-                <span>Fællesskab</span>
-            </a>
-        </li>
-
-    
-  
-
-                </ul>
-            </nav>
-            
-            <div class="search-form">
-                <form method="get" action="/search/" id="menuSearchForm" role="search">
-                    <div class="form-group search">
-                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required
-                            aria-label="Søg">
-                        <button class="button button-search" type="submit" id="searchbtn">Søg</button>
-                    </div>
-                </form>
-            </div>
-            
+</div>
+    <main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Navigationscards</h1>
         </div>
     </div>
-
-    <div class="overlay"></div>
-
-    <!-- Mobile main menu-->
-    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
-        <div class="menu-top">
-            <h2 id="menu-heading" class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#close"></use></svg>Luk</button>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med intet indhold eller én type af indhold pr. card</h2>
         </div>
-        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
-            <ul class="mainmenu">
-                 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="false">
-                    <span>Kom i gang</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="kom_i_gang_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/" class="nav-link">
-                                <span>Kom i gang <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/kom-i-gang/om-designsystemet/" class="nav-link"><span>Om Det Fælles Designsystem</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
-                    <span>Implementering og kode</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="implementering_kode_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/kom-i-gang/implementering-kode/" class="nav-link">
-                                <span>Implementering og kode <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/hent-kodepakken/" class="nav-link"><span>Hent kodepakken</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/justering/" class="nav-link"><span>Justering af tema og stylesheets</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/" class="nav-link"><span>Hjælpeklasser</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/" class="nav-link"><span>Browserunderstøttelse</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/plugins/" class="nav-link"><span>Plugins</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/print/" class="nav-link"><span>Print</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link"><span>Frameworks</span></a>
-        </li>
-        
-
-
-                    </ul>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Design og ressourcer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/brugerinddragelse/" class="nav-link"><span>Brugerinddragelse</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/kom-i-gang/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
-        </li>
-        
-
-
-                    </ul>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content">
+                    <p class="mt-0">Card, der kun indeholder tekst.</p>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li class="active">
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-expanded="true">
-                    <span>Styleguide</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="styleguide_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/styleguide/" class="nav-link">
-                                <span>Styleguide <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/styleguide/farver/" class="nav-link"><span>Farver</span></a>
-        </li>
-        
-
- 
-
-        
-        <li class="active">
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-expanded="true">
-                    <span>Typografi</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="typografi_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/styleguide/typografi/" class="nav-link">
-                                <span>Typografi <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li class="active current">
-            <a href="/styleguide/typografi/fonte/" class="nav-link" aria-current="page"><span>Fonte</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/overskrifter/" class="nav-link"><span>Overskrifter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/felt-tabel-overskrifter/" class="nav-link"><span>Felt- og tabeloverskrifter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/tekst/" class="nav-link"><span>Tekst</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/links/" class="nav-link"><span>Links</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/typografi/lister/" class="nav-link"><span>Lister</span></a>
-        </li>
-        
-
-
-                    </ul>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/borders/" class="nav-link"><span>Hjørner, streger, skygger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/ikoner/" class="nav-link"><span>Ikoner</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/logoer/" class="nav-link"><span>Logoer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-expanded="false">
-                    <span>Datavisualisering og infografik</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="datavisualisering_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/styleguide/datavisualisering-infografik/" class="nav-link">
-                                <span>Datavisualisering og infografik <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/styleguide/datavisualisering-infografik/tilgaengelig-grafik/" class="nav-link"><span>Tilgængelig grafik</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/datavisualisering-infografik/datavisualisering/" class="nav-link"><span>Datavisualisering</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/datavisualisering-infografik/infografik/" class="nav-link"><span>Infografik</span></a>
-        </li>
-        
-
-
-                    </ul>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#" target="_blank">
+                <div class="card-content">
+                    <p class="mt-0">Card, der kun indeholder tekst.</p>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/layout/" class="nav-link"><span>Layout</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/styleguide/grid/" class="nav-link"><span>Grid og baseline grid</span></a>
-        </li>
-        
-
-
-                    </ul>
+                <div class="card-actions">
+                    <svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="false">
-                    <span>Komponenter</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="komponenter_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/komponenter/" class="nav-link">
-                                <span>Komponenter <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/komponenter/accordions/" class="nav-link"><span>Accordions</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/anchorlinks/" class="nav-link"><span>Anchorlinks</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/badges/" class="nav-link"><span>Badges</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/beskeder/" class="nav-link"><span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/broedkrumme/" class="nav-link"><span>Brødkrumme</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/cards/" class="nav-link"><span>Cards</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/cookiemeddelelse/" class="nav-link"><span>Cookiemeddelelse</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/datofelter/" class="nav-link"><span>Datofelter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/datovaelger/" class="nav-link"><span>Datovælger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/detaljer/" class="nav-link"><span>Detaljer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/dropdown/" class="nav-link"><span>Dropdown</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/faneblade/" class="nav-link">
-                <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/fejlmeddelelser/" class="nav-link"><span>Fejlmeddelelser</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/fejlopsummering/" class="nav-link"><span>Fejlopsummering</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/footer/" class="nav-link"><span>Footer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/funktionslink/" class="nav-link"><span>Funktionslink</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/skip-link/" class="nav-link"><span>Gå til sidens indhold (Skip-link)</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/header/" class="nav-link"><span>Header</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/inputfelter/" class="nav-link"><span>Inputfelter</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/knapper/" class="nav-link">
-                <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/spinner/" class="nav-link"><span>Loading spinner</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/modal/" class="nav-link"><span>Modal</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/overflowmenu/" class="nav-link"><span>Overflow menu</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/paginering/" class="nav-link"><span>Paginering</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/radioknap/" class="nav-link">
-                <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/sprogvaelger/" class="nav-link"><span>Sprogvælger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/search/" class="nav-link"><span>Søgefelt</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tables/" class="nav-link"><span>Tabeller</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tags/" class="nav-link"><span>Tags</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tekstomraade/" class="nav-link">
-                <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tilbage-link/" class="nav-link"><span>Tilbage-link</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tilbage-til-top/" class="nav-link"><span>Tilbage til toppen</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tjekboks/" class="nav-link">
-                <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/toastbesked/" class="nav-link"><span>Toastbesked</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/toggle/" class="nav-link"><span>Toggle switch</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/tooltip/" class="nav-link"><span>Tooltip</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/trinindikator/" class="nav-link"><span>Trinindikator</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/fil-upload/" class="nav-link"><span>Vedhæft fil</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/venstremenu/" class="nav-link"><span>Venstremenu</span></a>
-        </li>
-        
-
-
-                    </ul>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content">
+                    <strong class="heading">Card, der kun indeholder titel</strong></div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-expanded="false">
-                    <span>Eksempler</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="eksempler_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/eksempler/" class="nav-link">
-                                <span>Eksempler <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/eksempler/selvbetjeningsloesninger/" class="nav-link"><span>Selvbetjeningsløsninger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-expanded="false">
-                    <span>Patterns</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="patterns_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/eksempler/patterns/" class="nav-link">
-                                <span>Patterns <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/eksempler/patterns/angivelse-af-telefonnummer/" class="nav-link"><span>Angivelse af telefonnummer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/patterns/formular/" class="nav-link"><span>Formular</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/patterns/session-udloeber/" class="nav-link"><span>Session udløber</span></a>
-        </li>
-        
-
-
-                    </ul>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content"><span class="subheading">Subheading</span></div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/eksempler/templates/" class="nav-link"><span>Templates</span></a>
-        </li>
-        
-
-
-                    </ul>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-image"><img src="/assets/img/cards/card-placeholder.svg" alt="" />
                 </div>
-            </div>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-expanded="false">
-                    <span>Fællesskab</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="faellesskab_category">
-                    <ul class="overflow-list">
-                        <li>
-                            <a href="/faellesskab/" class="nav-link">
-                                <span>Fællesskab <span class="helptext d-inline">(overblik)</span></span>
-                            </a>
-                        </li>
-                         
-
-        
-        <li>
-            <a href="/faellesskab/samarbejdsforum/" class="nav-link"><span>Samarbejdsforum</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/governance/" class="nav-link"><span>Governance</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/nyhedsmail/" class="nav-link"><span>Nyhedsbrev</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/kontakt-support/" class="nav-link"><span>Kontakt og support</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
-        </li>
-        
-
-
-                    </ul>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
                 </div>
-            </div>
-        </li>
-        
-
-
+            </a>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med to typer af indhold pr. card</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-image"><img src="/assets/img/cards/card-placeholder.svg" alt="" />
+                </div>
+                <div class="card-content"><span class="subheading">Subheading</span></div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content"><span class="subheading">Subheading</span>
+                    <h3 class="heading">Titel</h3>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content">
+                    <h3 class="heading">Titel</h3>
+                    <p>Noget tekst, der står under titlen.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards som listeelementer</h2>
+        </div>
+        <div class="col-12">
+            <ul class="row card-row">
+                <li class="col-12 col-md-4">
+                    <a class="card" href="#">
+                        <div class="card-content">
+                            <p class="mt-0">Første card i listen</p>
+                        </div>
+                        <div class="card-actions">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-12 col-md-4">
+                    <a class="card" href="#">
+                        <div class="card-content">
+                            <p class="mt-0">Andet card i listen</p>
+                        </div>
+                        <div class="card-actions">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-12 col-md-4">
+                    <a class="card" href="#">
+                        <div class="card-content">
+                            <p class="mt-0">Tredje card i listen</p>
+                        </div>
+                        <div class="card-actions">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                        </div>
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </div>
-</header>
-
-<div class="container page-container">
-    <div class="row">
-
-        <aside class="col-12 col-lg-3">
-            <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
-                <ul class="sidemenu">
-
-
-
-
-<li>
-
-  <a href="/styleguide/farver/" class="nav-link">
-    <span>Farver</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li class="active">
-
-  <a href="/styleguide/typografi/" class="nav-link">
-    <span>Typografi</span>
-  </a><ul>
-
-
-
-
-<li class="active current">
-
-  <a href="/styleguide/typografi/fonte/" class="nav-link" aria-current="page">
-    <span>Fonte</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/typografi/overskrifter/" class="nav-link">
-    <span>Overskrifter</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/typografi/felt-tabel-overskrifter/" class="nav-link">
-    <span>Felt- og tabeloverskrifter</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/typografi/tekst/" class="nav-link">
-    <span>Tekst</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/typografi/links/" class="nav-link">
-    <span>Links</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/typografi/lister/" class="nav-link">
-    <span>Lister</span>
-  </a>
-
-</li>
-
-
-      </ul>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/borders/" class="nav-link">
-    <span>Hjørner, streger, skygger</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/ikoner/" class="nav-link">
-    <span>Ikoner</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/logoer/" class="nav-link">
-    <span>Logoer</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/datavisualisering-infografik/" class="nav-link">
-    <span>Datavisualisering og infografik</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/layout/" class="nav-link">
-    <span>Layout</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/styleguide/grid/" class="nav-link">
-    <span>Grid og baseline grid</span>
-  </a>
-
-</li>
-
-</ul></nav>
-        </aside>
-
-        <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
-        <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#warning"></use></svg>
-        <div class="alert-body">
-            <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#close"></use></svg>Luk</button>
-            <p class="alert-text">Vælger du ikke et tema, vælger vi et for dig. Du kan efterfølgende skifte tema i footeren.</p><br>
-            <button class="button button-primary" id="borgerdkThemeBtn">Borger.dk tema</button>
-            <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
         </div>
     </div>
-<section id="section-/styleguide/typografi/fonte/">
-
-                <div class="subheading">
-                    Styleguide
-                </div>
-
-                
-                
-                <h1 id="fonte">Fonte</h1>
-                
-
-                <nav class="tab-container mb-7" aria-label="Undersider">
-    <ul class="tab-list"><li>
-            <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
-        </li><li>
-            <a href="#kode" id="code-tab" class="tab-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg><span>Kode</span></a>
-        </li></ul>
-</nav>
-<div id="retningslinjer" hidden=""></div>
-
-<div id="kode" hidden=""></div>
-
-
-                        <div id="guidelines-section">
-                            
-
-<p>Hvis din selvbetjeningsløsning skal integreres på borger.dk og Virk, skal du benytte fonten “IBM Plex Sans”. Fonten er valgt, fordi alle browsere præsenterer den flot og den er nem at arbejde med. Samtidig bygger den visuelt bro mellem de fonte, der for tiden bliver anvendt på borger.dk og Virk.</p>
-
-<h2 id="ibm-plex-sans">IBM Plex Sans</h2>
-
-<p>Det Fælles Designsystem benytter fonten “IBM Plex Sans” til al tekst. Fonten er “open source” og kan derfor frit benyttes af alle løsninger under <a href="https://openfontlicense.org/open-font-license-official-text/" class="icon-link" target="_blank">“Open Font License” betingelser<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</p>
-
-<p>IBM Plex Sans er valgt som font, da det er en æstetisk og læsbar open source font, der kan anvendes gratis under SIL Open Font License. Det er en alsidig sans serif font, der egner sig godt til brugergrænseflader. Fonten har de karakteristika, som designsystemet promoverer. Den er simpel og neutral i sit udtryk og yderst skalerbar grundet de mange variationer (typer, vægte, sprog, m.m.), som fonten understøtter.</p>
-
-<h2 id="fallback-font-system">Fallback font “system”</h2>
-
-<p>En fallback font, er den font som vises, når browseren ikke kan indlæse den angivne font.</p>
-
-<p>Det Fælles Designsystem gør brug af “system”, hvilket vil sige at fallback fonten er op til styresystemet på den enhed der benyttes. Dette gør ydeevnen (performance) bedre, da browseren ikke skal hente andre fonte, men i stedet bruger en den har i forvejen.</p>
-
-
-                        </div>
-                        <div id="code-section">
-                            
-
-<p>Som beskrevet under <a href="/styleguide/typografi/fonte/">retningslinjer for fonte</a> gør vi brug af fonten IBM Plex Sans i Det Fælles Designsystem. Da det er en ekstern font, skal den loades i hver løsning. Fonten leveres samlet med DKFDS pakken.</p>
-
-<h2 id="preload-kode">Preload</h2>
-
-<p>Man kan vælge at gøre brug af preload, således at fonten loades tidligere og giver derfor en bedre oplevelse af løsningen.</p>
-
-<p>Nedenstående kode opdateres, så stien matcher løsningen, og koden indsættes i <code>&lt;head&gt;</code>-sektionen.</p>
-
-<div class="component-preview component-preview-code  component-code-font-preload">
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards uden grid</h2>
         </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-comment">&lt;!-- Preload fonts --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Bold.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-BoldItalic.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Italic.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-Medium.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-MediumItalic.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff/IBMPlexSans-Regular.woff&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;preload&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/dkfds/dist/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2&quot;</span> <span class="hljs-attr">as</span>=<span class="hljs-string">&quot;font&quot;</span> <span class="hljs-attr">crossorigin</span>&gt;</span></code></pre></figure>
-
-
+        <div class="col-12">
+            <a class="card collapsed-height w-percent-sm-50 w-percent-md-30" href="#">
+                <div class="card-content">
+                    <p class="mt-0">Dette cards bredde er justeret med hjælpeklasser. På
+                        større skærme er bredden 30%. På mindre skærme er den 50%. På helt små
+                        skærme er kortet fuld bredde.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+            <a class="card collapsed-height w-percent-70" href="#">
+                <div class="card-content">
+                    <p class="mt-0">Dette cards bredde er justeret med hjælpeklasser. Bredden
+                        er altid 70%.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
     </div>
-    
-</div>
-
-
-                        </div>
-            </section>
-        </main>
-
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskellig mængde tekst</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content">
+                    <h3 class="heading">Titel</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content">
+                    <h3 class="heading">Titel</h3>
+                    <p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut
+                        volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in
+                        lorem. Nullam eget sem quam.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content">
+                    <h3 class="heading">Titel</h3>
+                    <p>Cras in mi ac diam dapibus viverra a id tellus.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card collapsed-height" href="#">
+                <div class="card-content">
+                    <h3 class="heading">Titel</h3>
+                    <p>Dette kort har fået justeret højden med en klasse.</p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <a class="card" href="#">
+                <div class="card-content"><span class="subheading">UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendr</span>
+                    <h3 class="heading">Umdolorsitametconsecteturadipisci</h3>
+                    <p>UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu
+                    </p>
+                </div>
+                <div class="card-actions">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-forward"></use></svg>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
+</main>
 
-<footer>
-    <a class="button back-to-top-button d-print-none" href="#top">
-    <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#arrow-upward"></use></svg>
-    <span class="sr-only">Til toppen af siden</span>
-    <span class="d-none d-md-inline-block" aria-hidden="true">Til toppen</span>
-</a>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-3 footer-col ">
-                    <section class="word-wrap hyphens-manual">
-                        <h2 class="h5 mb-4">Ansvarlige myndigheder</h2>
-                        <p>Det Fælles Design&shy;system udvikles i fællesskab af<br>Digitaliserings&shy;styrelsen & Erhvervs&shy;styrelsen</p>
-                    </section>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 footer-col ">
-                    <section class="word-wrap hyphens-manual">
-                        <h2 class="h5 mb-4">Webtilgængelig&shy;hed og cookies</h2>
-                        <ul class="nobullet-list mb-0">
-                            <li><a href="/privatlivspolitik-cookies/" class="function-link">Privatlivs&shy;politik og cookies</a></li>
-                            <li><a href="https://www.was.digst.dk/designsystem-dk" class="icon-link function-link" target="_blank">Tilgængeligheds&shy;erklæring<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
-                            <li class="mt-4"><button class="button button-tertiary" id="changeTheme"><span id="changeThemeText">Skift tema</span></button></li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 footer-col ">
-                    <section class="word-wrap hyphens-manual">
-                        <h2 class="h5 mb-4">Mangler vi noget?</h2>
-                        <p>Hjælp os med at gøre Det Fælles Designsystem endnu bedre ved at gøre os opmærksom på dine udfordringer og ønsker.</p>
-                        <ul class="mt-4 nobullet-list mb-0">
-                            <li><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" class="icon-link function-link" target="_blank">Opret et issue på GitHub<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
-                            <li><a href="mailto:FDS@erst.dk" class="function-link"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#email"></use></svg>Send en mail til FDS-teamet</a></li>
-                        </ul>
-                    </section>
-                </div>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/styleguide.js"></script>
+    <aside class="test-footer d-flex align-items-center">
+    <div class="container">
+        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+            <div class="d-flex flex-wrap mr-8">
+                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                </button>
+                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
+                </button>
+                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
+                </button>
+                <button id="theme-virk" class="function-link mr-8"><span>Virk</span>
+                </button>
+                <button id="font-size-200" class="function-link">200% tekststørrelse</button>
+            </div>
+            <div>
+                
+                <a class="function-link mr-4" href="/eksempel/test-default-cards/">Forrige</a>
+                
+                
+                <a class="function-link" href="/eksempel/test-date-input-1/">Næste</a>
+                
             </div>
         </div>
     </div>
-</footer>
+</aside>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let createLink = function(style) {
+            var lnk = document.createElement('link');
+            lnk.type='text/css';
+            lnk.rel='stylesheet';
+            switch (style) {
+                case "neutral":
+                    lnk.href= '/assets/style/test_neutral.css';
+                    break;
+                case "borger":
+                    lnk.href= '/assets/style/test_borger.css';
+                    break;
+                case "virk":
+                    lnk.href= '/assets/style/test_virk.css';
+                    break;
+                case 'normalization':
+                    lnk.href= '/assets/style/test_normalization.css';
+                    break;
+            }
+            document.getElementsByTagName('head')[0].appendChild(lnk);
+        }
 
-    <script src="/assets/js/theme.js?v=10.2.1"></script>
-<script src="/assets/js/styleguide.js?v=10.2.1"></script>
+        let setNeutralStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        };
 
+        let setBorgerStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        };
 
-<script src="/assets/js/docs-tabs.js"></script>
+        let setVirkStylesheet = function() {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        };
 
-  </body>
+        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
+        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
+        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
+
+        let normalize = false;
+        if (document.querySelectorAll('main h1').length > 0) {
+            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
+                normalize = true;
+                createLink("normalization");
+            }
+        }
+        if (document.cookie.includes('theme=borger') && !normalize) {
+            createLink("borger");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
+        }
+        else if (document.cookie.includes('theme=virk') && !normalize) {
+            createLink("virk");
+            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
+        }
+
+        document.getElementById('font-size-200').addEventListener('click', function () {
+            document.querySelector('html').style.fontSize = 'calc(62.5% * 2)';
+        });
+    });
+</script>
+    <script src="/assets/js/test.js"></script>
+</body>
+
 </html>

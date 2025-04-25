@@ -7,43 +7,344 @@
         </div>
     </div>
     <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med intet indhold eller én type af indhold pr. card</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card() 
+            }}
+        </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
-                    "subheading": "Subheading",
-                    "heading": "Simpelt card",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                    "content": "<p class=\"mt-0\">Card, der kun indeholder tekst.</p>"
                 }) 
             }}
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
-                    "subheading": "Subheading",
-                    "heading": "Simpelt card",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                    "heading": "Card, der kun indeholder titel",
+                    "headingLevel": "strong"
                 }) 
             }}
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
-                    "subheading": "Subheading",
-                    "heading": "Simpelt card",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                    "subheading": "Subheading"
                 }) 
             }}
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "buttons": [
+                        {
+                            "variant": "secondary",
+                            "text": "Sekundærknap"
+                        },
+                        {
+                            "variant": "tertiary",
+                            "text": "Tertiærknap"
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
+                        "alt": ""
+                    }
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "links": [
+                        {
+                            "href": "#",
+                            "text": "Link"
+                        },
+                        {
+                            "href": "#",
+                            "text": "Eksternt link",
+                            "external": true
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med to typer af indhold pr. card</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
+                        "alt": ""
+                    },
+                    "subheading": "Subheading"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
                     "subheading": "Subheading",
-                    "heading": "Simpelt card",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                    "heading": "Titel",
+                    "headingLevel": "h3"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Noget tekst, der står under titlen.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "content": "<p class=\"mt-0\">Under denne tekst er to knapper.</p>",
+                    "buttons": [
+                        {
+                            "variant": "secondary",
+                            "text": "Sekundærknap"
+                        },
+                        {
+                            "variant": "tertiary",
+                            "text": "Tertiærknap"
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "content": "<p class=\"mt-0\">Under denne tekst er to links.</p>",
+                    "links": [
+                        {
+                            "href": "#",
+                            "text": "Link"
+                        },
+                        {
+                            "href": "#",
+                            "text": "Eksternt link",
+                            "external": true
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Card med tre links",
+                    "headingLevel": "h3",
+                    "links": [
+                        {
+                            "href": "#",
+                            "text": "Link 1"
+                        },
+                        {
+                            "href": "#",
+                            "text": "Link 2"
+                        },
+                        {
+                            "href": "#",
+                            "text": "Eksternt link",
+                            "external": true
+                        }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards som listeelementer</h2>
+        </div>
+        <div class="col-12">
+            <ul class="row card-row">
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "content": "<p class=\"mt-0\">Første card i listen</p>"
+                        }) 
+                    }}
+                </li>
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "content": "<p class=\"mt-0\">Andet card i listen</p>"
+                        }) 
+                    }}
+                </li>
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "content": "<p class=\"mt-0\">Tredje card i listen</p>"
+                        }) 
+                    }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards uden grid</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "classes": "collapsed-height w-percent-sm-50 w-percent-md-30",
+                    "content": "<p class=\"mt-0\">Dette cards bredde er justeret med hjælpeklasser. På større skærme er bredden 30%. På mindre skærme er den 50%. På helt små skærme er kortet fuld bredde.</p>"
+                }) 
+            }}
+            {{ 
+                card({
+                    "classes": "collapsed-height w-percent-70",
+                    "content": "<p class=\"mt-0\">Dette cards bredde er justeret med hjælpeklasser. Bredden er altid 70%.</p>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskellig mængde tekst og knapper</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+                    "buttons": [
+                        { "variant": "secondary", "text": "Knap" },
+                        { "variant": "tertiary", "text": "Knap" }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p>",
+                    "buttons": [
+                        { "variant": "secondary", "text": "Knap" },
+                        { "variant": "tertiary", "text": "Knap" },
+                        { "variant": "tertiary", "text": "Knap" }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p>",
+                    "buttons": [
+                        { "variant": "primary", "text": "Knap" }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p>",
+                    "buttons": [
+                        { "variant": "tertiary", "text": "Knap" }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "subheading": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendr",
+                    "heading": "Umdolorsitametconsecteturadipisci",
+                    "headingLevel": "h3",
+                    "content": "<p>UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu</p>",
+                    "buttons": [
+                        { "variant": "tertiary", "text": "RsitametconsecteturadipiscingelitNullamutaugueeuis", "span": true }
+                    ]
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskellig mængde tekst og links</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+                    "links": [
+                        { "href": "#", "text": "Link" },
+                        { "href": "#", "text": "Eksternt link", "external": true }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p>",
+                    "links": [
+                        { "href": "#", "text": "Link" },
+                        { "href": "#", "text": "Link" },
+                        { "href": "#", "text": "Eksternt link", "external": true }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p>",
+                    "links": [
+                        { "href": "#", "text": "Link" }
+                    ]
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p>",
+                    "links": [
+                        { "href": "#", "text": "Eksternt link", "external": true }
+                    ]
                 }) 
             }}
         </div>

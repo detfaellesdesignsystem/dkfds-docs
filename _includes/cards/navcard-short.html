@@ -1,7 +1,7 @@
 <a class="card"{% if include.hrefNumber %} href="{{ site.data.nav['Komponenter_category'][include.hrefNumber].href }}"{% endif %}{% if include.href %} href="{{ include.href }}"{% endif %} id="{{ include.id }}">
     {% if include.img %}<div class="card-image" {{ include.style }}></div>{% endif %}
     <div class="card-content">
-        <{{ include.headingLevel }} class="hyphens-manual">{{ include.heading }}</{{ include.headingLevel }}>
+        <{{ include.headingLevel }} class="heading hyphens-manual">{{ include.heading }}</{{ include.headingLevel }}>
         {% if include.content %}<p>{{ include.content }}</p>{% endif %}
     </div>
     <div class="card-actions">

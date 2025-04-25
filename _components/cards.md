@@ -111,7 +111,7 @@ Både almindelige cards og navigationscards kan være lange cards.
 
 {% include code/syntax.html component="card-single" copybutton=true %}
 
-Da cards kan bruges i flere kontekster, er der ikke en fast regel om, hvilket element der skal fungere som "wrapper" eller "parent" for et card for at sikre den bedste tilgængelighed. Fx kan både `<li>` og `<section>` være korrekte muligheder, men det er op til udvikleren i hvert tilfælde at vurdere, hvad der er semantisk korrekt.
+Da cards kan bruges i flere kontekster, er der ikke en fast regel om, hvilket HTML-element der skal bruges til et card for at sikre den bedste tilgængelighed. Fx kan både `<a>` og `<section>` være korrekte muligheder, men det er op til udvikleren i hvert tilfælde at vurdere, hvad der er semantisk korrekt.
 
 Indholdet i et card skal følge denne rækkefølge fra top til bund (og fra venstre mod højre):
 

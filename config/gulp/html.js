@@ -19,7 +19,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/modals/*.njk'];
+var buildFile = ['examples/testfiles/cards/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -40,6 +40,7 @@ var testfiles = [
     "test-alert-variants",
     "test-cards",
     "test-default-cards",
+    "test-navigation-cards",
     "test-date-input-1",
     "test-date-input-2",
     "test-date-input-3",

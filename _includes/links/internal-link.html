@@ -210,13 +210,16 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "retningslinjer for favikon" -%}
         <a href="/styleguide/logoer/#retningslinjer-for-favikon"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "tilgængelighed i forbindelse med grafik og visualisering" -%}
+    {%- when "tilgængelighed i forbindelse med grafik og visualisering",
+             "tilgængelig grafik" -%}
         <a href="/styleguide/datavisualisering-infografik/tilgaengelig-grafik/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "læs mere om datavisualisering" -%}
+    {%- when "læs mere om datavisualisering",
+             "datavisualisering" -%}
         <a href="/styleguide/datavisualisering-infografik/datavisualisering/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "læs mere om infografik" -%}
+    {%- when "læs mere om infografik",
+             "infografik" -%}
         <a href="/styleguide/datavisualisering-infografik/infografik/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "layout" -%}
