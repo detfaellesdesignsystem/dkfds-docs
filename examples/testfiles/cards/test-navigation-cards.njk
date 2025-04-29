@@ -210,4 +210,31 @@
             }}
         </div>
     </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskelligt indhold</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel 1",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><h3 class=\"card-heading\">Titel 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "navigationCard": { "href": "#" },
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                }) 
+            }}
+        </div>
+    </div>
 </main>

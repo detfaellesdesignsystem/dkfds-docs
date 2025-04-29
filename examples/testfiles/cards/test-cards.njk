@@ -10,7 +10,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "subheading": "Subheading",
                     "heading": "Simpelt card",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
@@ -20,19 +20,19 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "heading": "Card med links",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt website<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt website<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "subheading": "Subheading",
                     "heading": "Card med knapper",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><div class=\"button-group actions\"><button class=\"button button-secondary\">Åbn</button><button class=\"button button-tertiary\">Udskriv</button></div>"
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Åbn</button><button class=\"button button-tertiary\">Udskriv</button></div>"
                 }) 
             }}
         </div>
@@ -64,7 +64,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "subheading": "Subheading",
                     "heading": "Card med billede",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
@@ -78,9 +78,9 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "heading": "Card med billede",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><div class=\"button-group actions\"><button class=\"button button-secondary\">Åbn</button><button class=\"button button-tertiary\">Udskriv</button></div>",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Åbn</button><button class=\"button button-tertiary\">Udskriv</button></div>",
                     "image": { 
                         "src": "{{ site.baseurl }}/assets/img/cards/Card_med_fuld_bredde_2_EKSEMPEL.svg",
                         "alt": "Billedeksempel"
@@ -107,7 +107,7 @@
         <div class="col-12">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "subheading": "Subheading",
                     "heading": "Simpelt card",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
@@ -118,7 +118,7 @@
         <div class="col-12">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "subheading": "Subheading",
                     "heading": "Simpelt card",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
@@ -165,7 +165,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "id": "replace-image-1",
                     "heading": "Billede indlæses efter 3 sekunder",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
@@ -193,7 +193,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "heading": "Card til sammenligning",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
                     "image": { 
@@ -206,7 +206,7 @@
         <div class="col-12">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "id": "replace-image-2",
                     "heading": "Billede indlæses efter JavaScript",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
@@ -237,7 +237,7 @@
         <div class="col-12">
             {{ 
                 card({
-                    "innerTag": "section",
+                    "tag": "section",
                     "heading": "Card til sammenligning",
                     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
                     "long": true,
@@ -277,7 +277,7 @@
                     "subheading": "Subheading",
                     "heading": "Titel",
                     "headingLevel": "h2",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>

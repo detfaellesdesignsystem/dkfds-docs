@@ -123,7 +123,7 @@ Indholdet i et card skal følge denne rækkefølge fra top til bund (og fra vens
 
 Ikke alle elementer er nødvendige at inkludere i et card, men der kan ikke byttes rundt på rækkefølgen. 
 
-Brug klassen `actions` på linklisten eller knapgruppen i bunden af et card for korrekt margin til det øvrige indhold. For link-ikoner på navigationscards skal klassen `card-icon` tilføjes til ikonet.
+Brug klassen `card-actions` på linklisten eller knapgruppen i bunden af et card for korrekt margin til det øvrige indhold. For link-ikoner på navigationscards skal klassen `card-icon` tilføjes til ikonet.
 
 ## Cardbredder {#{% include create-id.html heading="Cardbredder" append="-kode" %}}
 
