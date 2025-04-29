@@ -121,13 +121,15 @@ Indholdet i et card skal følge denne rækkefølge fra top til bund (og fra vens
 4. Tekst / paragraffer
 5. Links / knapper / link-ikon
 
-Ikke alle elementer er nødvendige at inkludere i et card, men der kan ikke byttes rundt på rækkefølgen.
+Ikke alle elementer er nødvendige at inkludere i et card, men der kan ikke byttes rundt på rækkefølgen. 
+
+Brug klassen `actions` på linklisten eller knapgruppen i bunden af et card for korrekt margin til det øvrige indhold. For link-ikoner på navigationscards skal klassen `card-icon` tilføjes til ikonet.
 
 ## Cardbredder {#{% include create-id.html heading="Cardbredder" append="-kode" %}}
 
 Hvis der anvendes mere end ét card, bør de placeres i et {% include links/internal-link.html linktext="grid" %} for at sikre korrekt skalering af højde og bredde.
 
-Hvis et card placeres uden for et grid, kan det være nødvendigt at tilpasse dets udseende med {% include links/internal-link.html linktext="hjælpeklasser (utilities)" %}.
+Hvis et card placeres uden for et grid, kan det være nødvendigt at tilpasse dets udseende med {% include links/internal-link.html linktext="hjælpeklasser (utilities)" %}. I nogle tilfælde kan det være nødvendigt at anvende klassen `collapsed-height` sammen med klassen `card`, hvis højden er blevet strukket.
 
 ## Card med billede {#{% include create-id.html heading="Card med billede" append="-kode" %}}
 

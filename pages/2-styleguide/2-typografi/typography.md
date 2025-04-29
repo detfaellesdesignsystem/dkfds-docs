@@ -20,7 +20,7 @@ tags:
     <li>
         {% include cards/navcard-long.html headingLevel="h2"
         href="/styleguide/typografi/fonte/"
-        contentClasses="mb-5"
+        iconClasses="mt-sm-5"
         headingLevel="span"
         heading="Fonte"
         %}
@@ -28,7 +28,7 @@ tags:
     <li>
         {% include cards/navcard-long.html headingLevel="h2"
         href="/styleguide/typografi/overskrifter/"
-        contentClasses="mb-5"
+        iconClasses="mt-sm-5"
         headingLevel="span"
         heading="Overskrifter"
         %}
@@ -36,7 +36,7 @@ tags:
     <li>
         {% include cards/navcard-long.html headingLevel="h2"
         href="/styleguide/typografi/felt-tabel-overskrifter/"
-        contentClasses="mb-5"
+        iconClasses="mt-sm-5"
         headingLevel="span"
         heading="Felt- og tabeloverskrifter"
         %}
@@ -44,7 +44,7 @@ tags:
     <li>
         {% include cards/navcard-long.html headingLevel="h2"
         href="/styleguide/typografi/tekst/"
-        contentClasses="mb-5"
+        iconClasses="mt-sm-5"
         headingLevel="span"
         heading="Tekst"
         %}
@@ -52,7 +52,7 @@ tags:
     <li>
         {% include cards/navcard-long.html headingLevel="h2"
         href="/styleguide/typografi/links/"
-        contentClasses="mb-5"
+        iconClasses="mt-sm-5"
         headingLevel="span"
         heading="Links"
         %}
@@ -60,7 +60,7 @@ tags:
     <li>
         {% include cards/navcard-long.html headingLevel="h2"
         href="/styleguide/typografi/lister/"
-        contentClasses="mb-5"
+        iconClasses="mt-sm-5"
         headingLevel="span"
         heading="Lister"
         %}

@@ -40,16 +40,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "buttons": [
-                        {
-                            "variant": "secondary",
-                            "text": "Sekundærknap"
-                        },
-                        {
-                            "variant": "tertiary",
-                            "text": "Tertiærknap"
-                        }
-                    ]
+                    "content": "<div class=\"button-group actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
                 }) 
             }}
         </div>
@@ -66,17 +57,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "links": [
-                        {
-                            "href": "#",
-                            "text": "Link"
-                        },
-                        {
-                            "href": "#",
-                            "text": "Eksternt link",
-                            "external": true
-                        }
-                    ]
+                    "content": "<ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
@@ -117,35 +98,15 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "content": "<p class=\"mt-0\">Under denne tekst er to knapper.</p>",
-                    "buttons": [
-                        {
-                            "variant": "secondary",
-                            "text": "Sekundærknap"
-                        },
-                        {
-                            "variant": "tertiary",
-                            "text": "Tertiærknap"
-                        }
-                    ]
+                    "content": "<p class=\"mt-0\">Under denne tekst er to knapper.</p><div class=\"button-group actions\"><button class=\"button button-secondary\">Sekundærknap
+                    </button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
                 }) 
             }}
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "content": "<p class=\"mt-0\">Under denne tekst er to links.</p>",
-                    "links": [
-                        {
-                            "href": "#",
-                            "text": "Link"
-                        },
-                        {
-                            "href": "#",
-                            "text": "Eksternt link",
-                            "external": true
-                        }
-                    ]
+                    "content": "<p class=\"mt-0\">Under denne tekst er to links.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
@@ -154,21 +115,7 @@
                 card({
                     "heading": "Card med tre links",
                     "headingLevel": "h3",
-                    "links": [
-                        {
-                            "href": "#",
-                            "text": "Link 1"
-                        },
-                        {
-                            "href": "#",
-                            "text": "Link 2"
-                        },
-                        {
-                            "href": "#",
-                            "text": "Eksternt link",
-                            "external": true
-                        }
-                    ]
+                    "content": "<ul class=\"nobullet-list actions\"><li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
@@ -231,11 +178,7 @@
                 card({
                     "heading": "Titel",
                     "headingLevel": "h3",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-                    "buttons": [
-                        { "variant": "secondary", "text": "Knap" },
-                        { "variant": "tertiary", "text": "Knap" }
-                    ]
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><div class=\"button-group actions\"><button class=\"button button-secondary\">Knap</button><button class=\"button button-tertiary\">Knap</button></div>"
                 }) 
             }}
         </div>
@@ -244,12 +187,7 @@
                 card({
                     "heading": "Titel",
                     "headingLevel": "h3",
-                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p>",
-                    "buttons": [
-                        { "variant": "secondary", "text": "Knap" },
-                        { "variant": "tertiary", "text": "Knap" },
-                        { "variant": "tertiary", "text": "Knap" }
-                    ]
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p><div class=\"button-group actions\"><button class=\"button button-secondary\">Knap</button><button class=\"button button-tertiary\">Knap</button><button class=\"button button-tertiary\">Knap</button></div>"
                 }) 
             }}
         </div>
@@ -258,10 +196,7 @@
                 card({
                     "heading": "Titel",
                     "headingLevel": "h3",
-                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p>",
-                    "buttons": [
-                        { "variant": "primary", "text": "Knap" }
-                    ]
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p><div class=\"button-group actions\"><button class=\"button button-primary\">Knap</button></div>"
                 }) 
             }}
         </div>
@@ -271,10 +206,7 @@
                     "heading": "Titel",
                     "headingLevel": "h3",
                     "classes": "collapsed-height",
-                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p>",
-                    "buttons": [
-                        { "variant": "tertiary", "text": "Knap" }
-                    ]
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p><div class=\"button-group actions\"><button class=\"button button-tertiary\">Knap</button></div>"
                 }) 
             }}
         </div>
@@ -284,10 +216,7 @@
                     "subheading": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendr",
                     "heading": "Umdolorsitametconsecteturadipisci",
                     "headingLevel": "h3",
-                    "content": "<p>UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu</p>",
-                    "buttons": [
-                        { "variant": "tertiary", "text": "RsitametconsecteturadipiscingelitNullamutaugueeuis", "span": true }
-                    ]
+                    "content": "<p>UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu</p><div class=\"button-group actions\"><button class=\"button button-tertiary\"><span>RsitametconsecteturadipiscingelitNullamutaugueeuis</span></button></div>"
                 }) 
             }}
         </div>
@@ -301,11 +230,7 @@
                 card({
                     "heading": "Titel",
                     "headingLevel": "h3",
-                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-                    "links": [
-                        { "href": "#", "text": "Link" },
-                        { "href": "#", "text": "Eksternt link", "external": true }
-                    ]
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
@@ -314,12 +239,7 @@
                 card({
                     "heading": "Titel",
                     "headingLevel": "h3",
-                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p>",
-                    "links": [
-                        { "href": "#", "text": "Link" },
-                        { "href": "#", "text": "Link" },
-                        { "href": "#", "text": "Eksternt link", "external": true }
-                    ]
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
@@ -328,10 +248,7 @@
                 card({
                     "heading": "Titel",
                     "headingLevel": "h3",
-                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p>",
-                    "links": [
-                        { "href": "#", "text": "Link" }
-                    ]
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\">Link</a></li></ul>"
                 }) 
             }}
         </div>
@@ -341,10 +258,7 @@
                     "heading": "Titel",
                     "headingLevel": "h3",
                     "classes": "collapsed-height",
-                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p>",
-                    "links": [
-                        { "href": "#", "text": "Eksternt link", "external": true }
-                    ]
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p><ul class=\"nobullet-list actions\"><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>

@@ -138,13 +138,7 @@
     },
     "card_anmodning": {
         "innerTag": "section",
-        "buttons": [
-            {
-                "variant": "tertiary",
-                "text": "Annullér anmodning"
-            }
-        ],
         "heading": "Jørgen Hansen",
-        "content": "<p>Ansøgning om adgang til sagsnr. 20200000012.</p><strong class='badge badge-small badge-info mt-3'>Afventer godkendelse</strong>"
+        "content": "<p>Ansøgning om adgang til sagsnr. 20200000012.</p><strong class='badge badge-small badge-info mt-3'>Afventer godkendelse</strong><div class=\"button-group actions\"><button class=\"button button-tertiary\">Annullér anmodning</button></div>"
     }
 }
