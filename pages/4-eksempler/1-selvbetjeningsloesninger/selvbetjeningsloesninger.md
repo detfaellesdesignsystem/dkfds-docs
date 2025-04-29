@@ -46,8 +46,6 @@ tags:
 
 ## Formular til kontaktoplysninger {#{% include create-id.html heading="Formular til kontaktoplysninger" %}}
 
-<p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" target="_blank"><span>Demo: Formular til kontaktoplysninger</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
-
 <ul class="row card-row">
     {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/"
@@ -67,8 +65,6 @@ tags:
 </ul>
 
 ## Trinformular til registrering {#{% include create-id.html heading="Trinformular til registrering" %}}
-
-<p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-registrering/registrering-1/" target="_blank"><span>Demo: Trinformular til registrering</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
 
 <ul class="row card-row">
     {% include cards/navcard-thumbnails.html 
@@ -110,8 +106,6 @@ tags:
 
 ## Trinformular til ansøgning {#{% include create-id.html heading="Trinformular til ansøgning" %}}
 
-<p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/" target="_blank"><span>Demo: Trinformular til ansøgning</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
-
 <ul class="row card-row">
     {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/"
@@ -146,8 +140,6 @@ tags:
 </ul>
 
 ## Sagsoversigt {#{% include create-id.html heading="Sagsoversigt" %}}
-
-<p><a class="button button-secondary demo-button" href="{{ site.baseurl }}/pages/eksempler/sagsoversigt/find-sag/" target="_blank"><span>Demo: Sagsoversigt</span><svg class="icon-svg ml-2 mr-0" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a></p>
 
 <ul class="row card-row">
     {% include cards/navcard-thumbnails.html 
