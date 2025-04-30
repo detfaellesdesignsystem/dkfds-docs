@@ -1304,3 +1304,7 @@ Styling for cards
         font-size: font-size('lg');
     }
 }
+
+.page-design-og-ressourcer .card {
+    max-width: $typography-text-max-width;
+}

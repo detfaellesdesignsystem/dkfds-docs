@@ -63,7 +63,6 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 - {% include links/external-link.html linktext="Angie Li: Date-Input Form Fields: UX Design Guidelines (2017)" %}
 - {% include links/external-link.html linktext="GovUKs anbefalinger til datovælgeren, samt for fejlmeddelelser til datoer" %}
 - {% include links/external-link.html linktext="GovUK om at spørge brugeren om datoer" %}
-- {% include links/external-link.html linktext="USWDS om datovælgeren" %}
 - {% include links/external-link.html linktext="GovUK om fejlmeddelelser generelt" %}
 
 <!--split-->

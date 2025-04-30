@@ -46,9 +46,21 @@ Overvej følgende spørgsmål, før du designer nye funktioner til din løsning:
 
 ## Designressourcer {#{% include create-id.html heading="Designressourcer" %}}
 
-Vi stiller designbiblioteket til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Filen vedligeholdes løbende og opdateres som udgangspunkt ved hver release. Vær dog opmærkesom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilen.
+Vi stiller designbiblioteket til rådighed for, at I kan komme hurtigt i gang med at designe jeres selvbetjeningsløsninger og lave interaktive prototyper til brugertest. Filen vedligeholdes løbende og opdateres som udgangspunkt ved hver release. Vær dog opmærksom på, at “source of truth” er dokumentationssiden www.designsystem.dk og ikke designfilen.
 
-{% include links/external-link.html linktext="Designbibliotek i Figma" classes="button button-secondary" %}
+<div class="row">
+    <div class="col-12">
+        <a class="card long" href="https://www.figma.com/community/file/1284147195952477019/det-flles-designsystem" target="_blank">
+            <div class="card-image" style="aspect-ratio: 422 / 266; background-color: #DCDCDC;">
+                <img src="/assets/img/cards/designbibliotek.png" alt="">
+            </div>
+            <div class="card-content pb-sm-5">
+                <span class="card-heading">Designbibliotek i Figma</span>
+            </div>
+            <svg class="icon-svg card-icon" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
+        </a>
+    </div>
+</div>
 
 <h3>Hjælp os med at blive bedre</h3>
 

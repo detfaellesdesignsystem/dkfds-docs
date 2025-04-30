@@ -40,7 +40,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "content": "<div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
+                    "content": "<div class=\"button-group\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
                 }) 
             }}
         </div>
@@ -57,7 +57,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "content": "<ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
+                    "content": "<ul class=\"nobullet-list\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
                 }) 
             }}
         </div>
@@ -98,8 +98,7 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "content": "<p class=\"mt-0\">Under denne tekst er to knapper.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap
-                    </button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
+                    "content": "<p class=\"mt-0\">Under denne tekst er to knapper.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
                 }) 
             }}
         </div>
@@ -116,6 +115,31 @@
                     "heading": "Card med tre links",
                     "headingLevel": "h3",
                     "content": "<ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "heading": "Card med to knapper",
+                    "headingLevel": "h3",
+                    "content": "<div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "subheading": "Card med tre links",
+                    "content": "<ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>"
+                }) 
+            }}
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "subheading": "Card med to knapper",
+                    "content": "<div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
                 }) 
             }}
         </div>
