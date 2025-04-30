@@ -57,6 +57,8 @@
     })
 %}
 
+{% set mobile_breakpoint = "lg" %}
+
 {# <!-- Page content starts here --> #}
 
 {% block header %}
@@ -77,22 +79,22 @@
 {% block body %}
 <div class="container page-container pt-0">
     <div class="row">
-        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
+        <aside class="col-12 col-{{mobile_breakpoint}}-3 mt-0 mt-{{mobile_breakpoint}}-8" aria-label="Se og vælg trin">
             {{
                 stepIndicatorButton({
-                    "breakpoint": "lg",
+                    "breakpoint": mobile_breakpoint,
                     "modal": "modal-step-indicator",
                     "currentStep": "2",
                     "totalSteps": "6"
                 })
             }}
-            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+            <nav aria-label="Trinindikator" class="d-none d-{{mobile_breakpoint}}-block">
                 {{ stepIndicator(trinindikator_data) }}
             </nav>
         </aside>
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-{{mobile_breakpoint}}-9">
             <aside class="w-percent-100" aria-label="Sidehandlinger">
-                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
+                <ul class="function-link-wrapper mt-0 mt-{{mobile_breakpoint}}-4 mb-4 mb-{{mobile_breakpoint}}-2">
                     <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
                 </ul>
             </aside>
