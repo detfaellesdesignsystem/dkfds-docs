@@ -87,6 +87,7 @@ Tekst:
 - h2: Fejlmeddelelser
 - h2: Billedtekst
 - h2: Stor tekst
+- h2: Facit
 - h2: Linjelængde
 - h2: Linjeafstand
 
@@ -97,6 +98,7 @@ Tekst_Kode:
 - h2: Fejlmeddelelser
 - h2: Billedtekst
 - h2: Stor tekst
+- h2: Facit
 
 Links:
 - h2: Designværdier

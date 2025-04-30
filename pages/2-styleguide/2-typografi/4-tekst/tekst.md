@@ -23,6 +23,9 @@ tags:
 - Linjeafstand
 - afstand
 - linjehøjde
+- facit
+- result
+- resultat
 tabs: "Retningslinjer, kode"
 ---
 
@@ -297,6 +300,35 @@ Overskrifter.
 
 Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikative formål.
 
+## Facit {#{% include create-id.html heading="Facit" %}}
+
+Tal, der er facit efter en udregning, markeres med dobbelt understregning. 
+
+### Designværdier
+
+<div class="table--responsive-scroll" tabindex="0">
+  <table class="table table--borderless">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Eksempel</th>
+        <th scope="col">Stregfarve</th>
+        <th scope="col">Stregtykkelse</th>
+        <th scope="col">Stregtype</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Facitstreg</th>
+        <td><span class="facit">12.345 kr.</span></td>
+        <td>#8E8E8E</td>
+        <td>4px</td>
+        <td>Double</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 ## Linjelængde {#{% include create-id.html heading="Linjelængde" %}}
 
 For at sikre optimal læsbarhed er der indsat en maksimal bredde på linjelængden for brød- og manchet i koden til designsystemet.
@@ -366,3 +398,13 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 ### HTML Struktur
 
 {% include code/syntax.html component="displaytext" copybutton=true %}
+
+## Facit {#{% include create-id.html heading="Facit" append="-kode" %}}
+
+{% include code/preview-box.html component="facit" link=false title="Eksempel på facit" %}
+
+{% include links/internal-link.html linktext="Læs retningslinjer for facit" %}
+
+### HTML Struktur
+
+{% include code/syntax.html component="facit" copybutton=true %}
