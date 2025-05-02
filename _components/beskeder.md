@@ -65,8 +65,6 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include dos-donts-box.html component="alerts-dos-donts" %}
 
-{% include dos-donts-box.html component="alerts-success-dos-donts" %}
-
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 ### Teksteksempler {#{% include create-id.html heading="Teksteksempler" %}}

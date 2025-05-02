@@ -41,8 +41,6 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 
 {% include dos-donts-box.html component="formular-dos-donts" %}
 
-{% include dos-donts-box.html component="overskrifter-dos-donts" %}
-
 ## Kompleks formular {#{% include create-id.html heading="Kompleks formular" %}}
 
 {% include code/preview-box-details.html component="fieldset-complex" title="Eksempel på kompleks formularstruktur" link=false detaillabel="for eksempel på kompleks formularstruktur" %}
