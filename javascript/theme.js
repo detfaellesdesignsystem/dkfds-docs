@@ -316,17 +316,11 @@ let setDoDontImages = function() {
         let images = dodonts[i].getElementsByTagName('IMG');
         for (let j = 0; j < images.length; j++) {
             let src = images[j].src;
-            let url_parts = src.split('/');
-            let filename = url_parts[url_parts.length-1];
-            if (filename.includes("-borgerdk") || filename.includes("-virk")) {
-                if (filename.includes("-borgerdk") && cookie === "virk") {
-                    let new_filename = filename.replace("-borgerdk", "-virk");
-                    images[j].src = "/assets/img/do-dont/" + new_filename;
-                }
-                else if (filename.includes("-virk") && cookie === "borgerdk") {
-                    let new_filename = filename.replace("-virk", "-borgerdk");
-                    images[j].src = "/assets/img/do-dont/" + new_filename;
-                }
+            if (src.includes("-borgerdk.") && cookie === "virk") {
+                images[j].src = src.replace("-borgerdk", "-virk");
+            }
+            else if (src.includes("-virk.") && cookie === "borgerdk") {
+                images[j].src = src.replace("-virk", "-borgerdk");
             }
         }
     }
