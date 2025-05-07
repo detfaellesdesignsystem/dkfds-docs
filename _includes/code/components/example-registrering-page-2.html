@@ -89,14 +89,9 @@
 
 <div class="container page-container pt-0">
     <div class="row">
-        <aside class="col-12 col-lg-3 mt-0 mt-lg-8" aria-label="Se og vælg trin">
-
-            <button class="step-indicator-button d-lg-none" aria-haspopup="dialog"
-                type="button" data-module="modal"
-                data-target="modal-step-indicator"><span>Trin<strong> 2 </strong>af
-                    6</span></button>
-
-            <nav aria-label="Trinindikator" class="d-none d-lg-block">
+        <aside class="col-12 col-md-3 mt-0 mt-md-8 d-none d-md-block"
+            aria-label="Se og vælg trin">
+            <nav aria-label="Trinindikator" class="d-none d-md-block">
 
                 <ol class="step-indicator">
                     <li>
@@ -177,13 +172,21 @@
 
             </nav>
         </aside>
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-md-9">
             <aside class="w-percent-100" aria-label="Sidehandlinger">
-                <ul class="function-link-wrapper mt-0 mt-lg-4 mb-4 mb-lg-2">
+                <ul class="function-link-wrapper mt-4 mb-0 mb-md-2">
                     <li><button
                             class="function-link link-right"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#save"></use></svg>Gem
                             kladde</button></li>
                 </ul>
+            </aside>
+            <aside class="d-block d-md-none" aria-label="Se og vælg trin">
+
+                <button class="step-indicator-button d-md-none" aria-haspopup="dialog"
+                    type="button" data-module="modal"
+                    data-target="modal-step-indicator"><span>Trin<strong> 2 </strong>af
+                        6</span></button>
+
             </aside>
             <main class="w-percent-100" id="main-content">
                 <div><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/"

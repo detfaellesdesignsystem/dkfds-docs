@@ -78,7 +78,7 @@
     ]
 } %}
 
-{% set mobile_breakpoint = "lg" %}
+{% set mobile_breakpoint = "md" %}
 
 {# <!-- Page content starts here --> #}
 
@@ -100,24 +100,26 @@
 {% block body %}
 <div class="container page-container pt-0">
     <div class="row">
-        <aside class="col-12 col-{{mobile_breakpoint}}-3 mt-0 mt-{{mobile_breakpoint}}-8" aria-label="Se og vælg trin">
-            {{
-                stepIndicatorButton({
-                    "breakpoint": mobile_breakpoint,
-                    "modal": "modal-step-indicator",
-                    "currentStep": "4",
-                    "totalSteps": "6"
-                })
-            }}
+        <aside class="col-12 col-{{mobile_breakpoint}}-3 mt-0 mt-{{mobile_breakpoint}}-8 d-none d-{{mobile_breakpoint}}-block" aria-label="Se og vælg trin">
             <nav aria-label="Trinindikator" class="d-none d-{{mobile_breakpoint}}-block">
                 {{ stepIndicator(trinindikator_data) }}
             </nav>
         </aside>
         <div class="col-12 col-{{mobile_breakpoint}}-9">
             <aside class="w-percent-100" aria-label="Sidehandlinger">
-                <ul class="function-link-wrapper mt-0 mt-{{mobile_breakpoint}}-4 mb-4 mb-{{mobile_breakpoint}}-2">
+                <ul class="function-link-wrapper mt-4 mb-0 mb-{{mobile_breakpoint}}-2">
                     <li><button class="function-link link-right">{{icon_svg({"name": "save"})}}Gem kladde</button></li>
                 </ul>
+            </aside>
+            <aside class="d-block d-{{mobile_breakpoint}}-none" aria-label="Se og vælg trin">
+                {{
+                    stepIndicatorButton({
+                        "breakpoint": mobile_breakpoint,
+                        "modal": "modal-step-indicator",
+                        "currentStep": "4",
+                        "totalSteps": "6"
+                    })
+                }}
             </aside>
             <main class="w-percent-100" id="main-content">
                 {{ back_link({ "href": "/pages/eksempler/trinformular-til-registrering/registrering-3/" }) }}
