@@ -63,19 +63,23 @@
     .tablet-row {
         max-height: 270px;
         overflow: hidden;
-        aspect-ratio: 5 / 2;
 
         .designsystem-illustration {
             object-fit: cover;
+            /* The three values below controls the look of the front page image on small screens.
+               The margin controls when the image should start scaling down and is used instead of
+               aspect-ratio due to Safari problems. The height controls the cropping of the image. */
+            margin-top: -31%;
+            margin-bottom: -31%;
             height: 145%;
         }
     }
 
     .desktop-row {
-        aspect-ratio: 5 / 2;
-
         .designsystem-illustration {
             object-fit: cover;
+            margin-top: -10%;
+            margin-bottom: -10%;
         }
     }
 }

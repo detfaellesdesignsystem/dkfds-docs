@@ -24,6 +24,7 @@ tags:
 - afstand
 - linjehøjde
 - facit
+- facitstreg
 - result
 - resultat
 tabs: "Retningslinjer, kode"

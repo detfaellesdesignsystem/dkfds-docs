@@ -1,0 +1,88 @@
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% set step_indicator = stepIndicator({
+    "steps": [
+        {
+            "text": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuisfgrhghdgfsersumsapienCrasegetlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "success"
+        },
+        {
+            "text": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCjgjdtlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "success",
+            "helptext": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbiadsfavasegetlaciniatortorVivamusaliqu"
+        },
+        {
+            "text": "UmdolorsitametconsectetugdfsgdfxvggdffgsffdvsdferitarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "error"
+        },
+        {
+            "text": "UmdolorsitametconsectetugdfsgdfxvgelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "error",
+            "helptext": "UmdolorsitametconsecteturadipiscingelitNullamufdvzdismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu"
+        },
+        {
+            "text": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusefbvxbendumsapienCrasegetlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "number",
+            "current": true
+        },
+        {
+            "text": "UmdolorsitametconsectedzdpiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "number",
+            "disabled": true
+        },
+        {
+            "text": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendjhgffucusedbibendumsapienCrasegetlaciniatortorVivamusaliqu",
+            "href": "#",
+            "state": "number",
+            "disabled": true,
+            "helptext": "UmdolorsitametfzvbfadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu"
+        }
+    ]
+}) %}
+
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + step_indicator + "</nav>" %}
+
+{% set mobile_breakpoint = "md" %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Trinindikator med lange tekster</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <aside class="col-12 col-{{mobile_breakpoint}}-4" aria-label="Se og vælg trin">
+            {{
+                stepIndicatorButton({
+                    "breakpoint": mobile_breakpoint,
+                    "modal": "modal-step-indicator",
+                    "currentStep": "5",
+                    "totalSteps": "7"
+                })
+            }}
+            <nav aria-label="Trinindikator" class="d-none d-{{mobile_breakpoint}}-block">
+                {{ step_indicator }}
+            </nav>
+        </aside>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-step-indicator",
+            "heading": "Trin 5 af 7",
+            "content": modal_content_step,
+            "forcedAction": false,
+            "stepIndicator": true
+        })
+    }}
+</div>

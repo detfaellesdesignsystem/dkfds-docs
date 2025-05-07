@@ -192,6 +192,7 @@ var testfiles = [
     "test-step-guide-7",
     "test-step-indicator-states",
     "test-step-indicator-single-states",
+    "test-step-indicator-long-text",
     "test-venstremenu"
 ];
 
