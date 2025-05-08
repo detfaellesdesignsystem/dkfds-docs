@@ -43,6 +43,8 @@ title: Test
 {% include test/preview-test.html filename="test-cards" description="Cards" %}
 {% include test/preview-test.html filename="test-default-cards" description="Almindelige cards" %}
 {% include test/preview-test.html filename="test-navigation-cards" description="Navigationscards" %}
+{% include test/preview-test.html filename="test-long-cards" description="Lange cards" %}
+{% include test/preview-test.html filename="test-long-navigation-cards" description="Lange navigationscards" %}
 
 {:.h3}
 ## Datofelter

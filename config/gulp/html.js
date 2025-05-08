@@ -41,6 +41,8 @@ var testfiles = [
     "test-cards",
     "test-default-cards",
     "test-navigation-cards",
+    "test-long-cards",
+    "test-long-navigation-cards",
     "test-date-input-1",
     "test-date-input-2",
     "test-date-input-3",

@@ -1,0 +1,348 @@
+{% from "components/cards/cards.njk" import card as card %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Lange cards</h1>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med intet indhold eller én type af indhold pr. card</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card( {
+                    "long": true
+                } ) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "content": "<p class=\"mt-0\">Card, der kun indeholder tekst.</p>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Card, der kun indeholder titel",
+                    "headingLevel": "strong",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "Subheading",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "content": "<div class=\"button-group\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
+                        "alt": ""
+                    },
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "content": "<ul class=\"nobullet-list\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med to typer af indhold pr. card</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "image": { 
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
+                        "alt": ""
+                    },
+                    "subheading": "Subheading",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "Subheading",
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Noget tekst, der står under titlen.</p>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "content": "<p class=\"mt-0\">Under denne tekst er to knapper.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "content": "<p class=\"mt-0\">Under denne tekst er to links.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Card med tre links",
+                    "headingLevel": "h3",
+                    "content": "<ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Card med to knapper",
+                    "headingLevel": "h3",
+                    "content": "<div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "Card med tre links",
+                    "content": "<ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "Card med to knapper",
+                    "content": "<div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards som listeelementer</h2>
+        </div>
+        <div class="col-12">
+            <ul class="row card-row">
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "content": "<p class=\"mt-0\">Første card i listen</p>",
+                            "long": true
+                        }) 
+                    }}
+                </li>
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "content": "<p class=\"mt-0\">Andet card i listen</p>",
+                            "long": true
+                        }) 
+                    }}
+                </li>
+                <li class="col-12 col-md-4">
+                    {{ 
+                        card({
+                            "content": "<p class=\"mt-0\">Tredje card i listen</p>",
+                            "long": true
+                        }) 
+                    }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards uden grid</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "classes": "collapsed-height w-percent-sm-50 w-percent-md-30",
+                    "content": "<p class=\"mt-0\">Dette cards bredde er justeret med hjælpeklasser. På større skærme er bredden 30%. På mindre skærme er den 50%. På helt små skærme er kortet fuld bredde.</p>",
+                    "long": true
+                }) 
+            }}
+            {{ 
+                card({
+                    "classes": "collapsed-height w-percent-70",
+                    "content": "<p class=\"mt-0\">Dette cards bredde er justeret med hjælpeklasser. Bredden er altid 70%.</p>",
+                    "long": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskellig mængde tekst og knapper</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Knap</button><button class=\"button button-tertiary\">Knap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Knap</button><button class=\"button button-tertiary\">Knap</button><button class=\"button button-tertiary\">Knap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p><div class=\"button-group card-actions\"><button class=\"button button-primary\">Knap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p><div class=\"button-group card-actions\"><button class=\"button button-tertiary\">Knap</button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "subheading": "UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendr",
+                    "heading": "Umdolorsitametconsecteturadipisci",
+                    "headingLevel": "h3",
+                    "content": "<p>UmdolorsitametconsecteturadipiscingelitNullamutaugueeuismodhendreritarcusedbibendumsapienCrasegetlaciniatortorVivamusaliqu</p><div class=\"button-group card-actions\"><button class=\"button button-tertiary\"><span>RsitametconsecteturadipiscingelitNullamutaugueeuis</span></button></div>",
+                    "long": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskellig mængde tekst og links</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Aenean rutrum dolor in hendrerit ultrices. Aliquam dignissim, nulla ut volutpat vestibulum, leo ligula rutrum est, ut tempus sapien felis in lorem. Nullam eget sem quam.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li><li><a href=\"#\">Link</a></li><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "content": "<p>Cras in mi ac diam dapibus viverra a id tellus.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\">Link</a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Dette kort har fået justeret højden med en klasse.</p><ul class=\"nobullet-list card-actions\"><li><a href=\"#\" class=\"icon-link\" target=\"_blank\">Eksternt link<svg class=\"icon-svg\" aria-label=\"(åbner i nyt vindue)\" focusable=\"false\"><use href=\"#open-in-new\"></use></svg></a></li></ul>",
+                    "long": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med forskelligt indhold</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel 1",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><h3 class=\"card-heading\">Titel 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+                    "long": true
+                }) 
+            }}
+        </div>
+        <div class="col-12">
+            {{ 
+                card({
+                    "heading": "Titel",
+                    "headingLevel": "h3",
+                    "classes": "collapsed-height",
+                    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+                    "long": true
+                }) 
+            }}
+        </div>
+    </div>
+</main>

@@ -119,11 +119,11 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         <h3>Filtyper</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-filtyper">
+                {% include icon.html icon="file" keywords="fil, document" label="Fil (generisk)" %}
                 {% include icon.html icon="file-image" keywords="billede, picture, fotografi, fil, file" label="Billede" %}
                 {% include icon.html icon="file-excel" keywords="excel, ark, regneark, fil" label="Excel" %}
                 {% include icon.html icon="file-pdf" keywords="PDF, dokument, document, fil" label="PDF" %}
                 {% include icon.html icon="file-word" keywords="word, dokument, fil, document" label="Word" %}
-                {% include icon.html icon="file" keywords="fil, document" label="Fil" %}
             </ul>
         </div>
     </div>
