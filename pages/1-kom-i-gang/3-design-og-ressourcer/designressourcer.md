@@ -51,11 +51,12 @@ Vi stiller designbiblioteket til rådighed for, at I kan komme hurtigt i gang me
 <div class="row">
     <div class="col-12">
         <a class="card long" href="https://www.figma.com/community/file/1284147195952477019/det-flles-designsystem" target="_blank">
-            <div class="card-image" style="aspect-ratio: 422 / 266; background-color: #DCDCDC;">
+            <div class="card-image">
                 <img src="/assets/img/cards/designbibliotek.png" alt="">
             </div>
             <div class="card-content pb-sm-5">
-                <span class="card-heading">Designbibliotek i Figma</span>
+                <h3 class="card-heading">Designbibliotek i Figma</h3>
+                <p>Det Fælles Designsystems fil i Figma Community indeholder styleguide og komponenter, som du kan hente ned og bruge i dit eget projekt.</p>
             </div>
             <svg class="icon-svg card-icon" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg>
         </a>
