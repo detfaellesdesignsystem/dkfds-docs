@@ -44,6 +44,11 @@
 <script src="{{ site.baseurl }}/assets/js/tabs-navigation.js"></script>
 {% endif %}
 
+{%- if page.url contains "trinindikator" or
+       page.url contains "step-indicator" %}
+<script src="{{ site.baseurl }}/assets/js/step-indicator.js"></script>
+{% endif %}
+
 {%- if page.url contains "session-udloeber" %}
 <script src="{{ site.baseurl }}/assets/js/modal.js"></script>
 <script src="{{ site.baseurl }}/assets/js/session-timeout.js"></script>

@@ -1656,74 +1656,100 @@
 </nav>
 <div id="retningslinjer" hidden=""></div>
 
-<div class="component-preview intro-example component-preview-tringuide-overflowmenu">
+<div class="component-preview intro-example component-preview-step-indicator">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-overflowmenu/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-overflowmenu</span></a>
+        <a href="/eksempel/step-indicator/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: step-indicator</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på trinindikator i overflow menu</div>
+    <div class="sr-only">Eksempel på trinindikator</div>
     
     <div class="component-example px-4 py-4">
         
-        <div class="row">
-        <div class="col-12 col-sm-7 col-md-5">
-        
-        <div class="overflow-menu overflow-menu--open-right">
-    <button class="button-overflow-menu js-dropdown" data-js-target="trinindikator-overflow" aria-expanded="false" aria-controls="trinindikator-overflow">
-        Trin 2 af 3
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-    </button>
-    <div class="overflow-menu-inner collapsed" id="trinindikator-overflow">
-        <nav aria-label="Trinindikator som overflow menu">
-            <ol class="sidemenu">
-                <li>
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">1.</span>
+        <nav aria-label="Trinindikator" class="d-none d-md-block">
+
+    <ol class="step-indicator">
+        <li>
+            <a class="step" href="javascript:void(0);">
+                <span class="step-icon">
+                    <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
+                <div>
+                    <span class="step-title">Trin 1</span>
+                </div>
+            </a>
+        </li>
+        <li class="current " aria-current="step">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-number"><span>2</span></span>
+                <div>
+                    <span class="step-title">Trin 2</span>
+                </div>
+            </a>
+        </li>
+        <li class="disabled ">
+            <div class="step">
+                <span class="step-number"><span>3</span></span>
+                <div>
+                    <span class="step-title">Trin 3</span>
+                </div>
+            </div>
+        </li>
+    </ol>
+
+</nav>
+
+<div>
+    <button class="step-indicator-button d-md-none" aria-haspopup="dialog" type="button" data-module="modal" data-target="modal-step-indicator-default"><span>Trin<strong> 2 </strong>af
+            3</span></button>
+</div>
+
+<!-- Modal til trinindikatoren skal placeres i en "fds-modal-container" ligesom almindelige modaler. -->
+
+<div class="fds-modal modal-step-indicator" id="modal-step-indicator-default" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-default-heading">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-step-indicator-default-heading">
+                Trin 2 af 3
+            </h2>
+            <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+        </div>
+        <div class="modal-body">
+            <nav aria-label="Trinindikator">
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-icon">
+                                <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
                             <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Lorem ipsum</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                <span></span>
+                                <span class="step-title">Trin 1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-number"><span>2</span></span>
+                            <div>
+                                <span class="step-title">Trin 2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <div class="step">
+                            <span class="step-number"><span>3</span></span>
+                            <div>
+                                <span class="step-title">Trin 3</span>
                             </div>
                         </div>
-                    </a>
-                </li>
-                <li class="active current " aria-current="step">
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">2.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Dolor sit amet</span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">3.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Consectetur adipiscing
-                                        elit</span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ol>
-        </nav>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
     </div>
 </div>
-        
-        </div>
-        </div>
         
     </div>
     
@@ -1739,11 +1765,10 @@
         <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
         
         <li class="anchorlink-code"><span id="kode" hidden=""></span><a href="#installation-kode">Installation</a></li>
-        <li class="anchorlink-code"><a href="#alle-trin-synlige-kode">Alle trin synlige</a></li>
-        <li class="anchorlink-code"><a href="#responsiv-kode">Responsiv</a></li>
-        <li class="anchorlink-code"><a href="#laast-kode">Låst</a></li>
+        <li class="anchorlink-code"><a href="#alle-trin-klikbare-kode">Alle trin klikbare</a></li>
         <li class="anchorlink-code"><a href="#ekstra-information-kode">Ekstra information</a></li>
         <li class="anchorlink-code"><a href="#trinindikator-med-fejl-kode">Trinindikator med fejl</a></li>
+        <li class="anchorlink-code"><a href="#simpel-trinindikator-kode">Simpel trinindikator</a></li>
         
     </ul>
 </nav>
@@ -1764,21 +1789,16 @@
 
 <h3>Vejledning</h3>
 
-<p>Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en trinindikator til din løsning.</p>
+<p>I denne sektion finder du anbefalinger, der hjælper dig med at vælge og udforme en trinindikator. Trinindikatoren skal tydeligt afspejle brugerens aktuelle position og bidrage til en naturlig og overskuelig brugeroplevelse. Følg nedenstående vejledninger for at sikre, at dit indhold, struktur og antal trin passer til din løsning.</p>
 
-<p>Vælg den trinindikator variant, der passer til dine brugeres behov.</p>
-
-<p>Undgå at lave en horisontal trinindikator.</p>
-
-<p>Anvend trin der virker naturlige og logiske for brugerne.</p>
-
-<p>Gør det synligt hvilket trin brugeren er kommet til.</p>
-
-<p>Det sidste trin skal være “Opsummering” eller “Tjek dine svar”.</p>
-
-<p>Tilstræb så få trin som muligt.</p>
-
-<p>Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.</p>
+<ul>
+  <li>Vælg den type trinindikator, der passer bedst til dine brugeres behov.
+Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en decideret trinindikator, se fx eksempelløsningen <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" class="icon-link" target="_blank">Formular til kontaktoplysninger<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>, eller med en <a href="#simpel-trinindikator">simpel trinindikator</a>.</li>
+  <li>Opdel løsningens trin, så de virker naturlige og logiske for brugerne.</li>
+  <li>Det sidste trin skal være “Opsummering” eller “Tjek dine svar”.</li>
+  <li>Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.</li>
+  <li>Ved mindre skærme (768px eller lavere) ændres trinindikatoren til et panel (bottom sheet), der glider op fra bunden af skærmen, når brugeren trykker på en trinindikator-knap øverst på deres skærm. Panelet viser et overblik over trinene.</li>
+</ul>
 
 <div class=" component-preview-tringuide-dos-donts">
     <div class="component-example">
@@ -1802,233 +1822,120 @@
 
 <h2 id="varianter">Varianter</h2>
 
-<h3 id="alle-trin-synlige">Alle trin synlige</h3>
+<h3 id="alle-trin-klikbare">Alle trin klikbare</h3>
 
-<div class="component-preview  component-preview-tringuide-clickable">
+<p>Du kan benytte denne variant af trinindikatoren, hvor alle trin er klikbare for brugeren. Som udgangspunkt er kun gennemførte trin klikbare, men denne variant giver brugerne mulighed for frit at navigere mellem alle trin.</p>
+
+<div class="component-preview  component-preview-step-indicator-clickable">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-clickable/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-clickable</span></a>
+        <a href="/eksempel/step-indicator-clickable/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-clickable</span></a>
         
     </div>
     
     
-    <div class="sr-only">Eksempel på synlig trinindikator</div>
+    <div class="sr-only">Eksempel på trinindikator hvor alle trin er klikbare</div>
     
     <div class="component-example px-4 py-4">
         
-        <div class="row">
-        <div class="col-12 col-sm-7 col-md-5">
-        
-        <nav aria-label="Trinindikator med synlige trin">
-    <ol class="sidemenu">
+        <nav aria-label="Trinindikator" class="d-none d-md-block">
+
+    <ol class="step-indicator">
         <li>
-            <a class="nav-step" href="javascript:void(0);">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-icon">
+                    <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
                 <div>
-                    <span class="sidenav-number">1.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 1</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                        <span></span>
-                    </div>
+                    <span class="step-title">Trin 1</span>
                 </div>
             </a>
         </li>
-        <li class="active current " aria-current="step">
-            <a class="nav-step" href="javascript:void(0);">
+        <li class="current " aria-current="step">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-number"><span>2</span></span>
                 <div>
-                    <span class="sidenav-number">2.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 2</span></span>
-                        <span></span>
-                    </div>
+                    <span class="step-title">Trin 2</span>
                 </div>
             </a>
         </li>
         <li>
-            <a class="nav-step" href="javascript:void(0);">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-number"><span>3</span></span>
                 <div>
-                    <span class="sidenav-number">3.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 3</span></span>
-                        <span></span>
-                    </div>
+                    <span class="step-title">Trin 3</span>
                 </div>
             </a>
         </li>
     </ol>
+
 </nav>
-        
+
+<div>
+    <button class="step-indicator-button d-md-none" aria-haspopup="dialog" type="button" data-module="modal" data-target="modal-step-indicator-clickable"><span>Trin<strong> 2 </strong>af
+            3</span></button>
+</div>
+
+<!-- Modal til trinindikatoren skal placeres i en "fds-modal-container" ligesom almindelige modaler. -->
+
+<div class="fds-modal modal-step-indicator" id="modal-step-indicator-clickable" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-clickable-heading">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-step-indicator-clickable-heading">
+                Trin 2 af 3
+            </h2>
+            <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
         </div>
+        <div class="modal-body">
+            <nav aria-label="Trinindikator">
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-icon">
+                                <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            <div>
+                                <span class="step-title">Trin 1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-number"><span>2</span></span>
+                            <div>
+                                <span class="step-title">Trin 2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-number"><span>3</span></span>
+                            <div>
+                                <span class="step-title">Trin 3</span>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+            </nav>
         </div>
+
+    </div>
+</div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#alle-trin-synlige-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: tringuide-clickable</span></a>
-    </div>
-    
-</div>
-
-<h3 id="responsiv">Responsiv</h3>
-
-<p>Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.</p>
-
-<div class="component-preview  component-preview-tringuide-responsive-overflowmenu">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tringuide-responsive-overflowmenu/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-responsive-overflowmenu</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på responsiv trinindikator</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="row">
-        <div class="col-12 col-sm-7 col-md-5">
-        
-        <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-    <button class="button-overflow-menu js-dropdown" data-js-target="trinindikator-responsiv" aria-expanded="false" aria-controls="trinindikator-responsiv">
-        Trin 2 af 3
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-    </button>
-    <div class="overflow-menu-inner collapsed" id="trinindikator-responsiv">
-        <nav aria-label="Responsiv trinindikator">
-            <ol class="sidemenu">
-                <li>
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">1.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 1</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="active current " aria-current="step">
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">2.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 2</span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">3.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 3</span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ol>
-        </nav>
-    </div>
-</div>
-        
-        </div>
-        </div>
-        
-    </div>
-    
-    <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#responsiv-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: tringuide-responsive-overflowmenu</span></a>
-    </div>
-    
-</div>
-
-<h3 id="laast">Låst</h3>
-
-<div class="component-preview  component-preview-tringuide-locked">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tringuide-locked/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-locked</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Eksempel på trinindikator med låste trin</div>
-    
-    <div class="component-example px-4 py-4">
-        
-        <div class="row">
-        <div class="col-12 col-sm-7 col-md-5">
-        
-        <nav aria-label="Trinindikator med låste trin">
-    <ol class="sidemenu">
-        <li class="disabled ">
-            <a class="nav-step">
-                <div>
-                    <span class="sidenav-number">1.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 1</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="disabled active current " aria-current="step">
-            <a class="nav-step">
-                <div>
-                    <span class="sidenav-number">2.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 2</span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="disabled ">
-            <a class="nav-step">
-                <div>
-                    <span class="sidenav-number">3.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 3</span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </a>
-        </li>
-    </ol>
-</nav>
-        
-        </div>
-        </div>
-        
-    </div>
-    
-    <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#laast-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: tringuide-locked</span></a>
+        <a href="/komponenter/trinindikator/#alle-trin-klikbare-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: step-indicator-clickable</span></a>
     </div>
     
 </div>
 
 <h3 id="ekstra-information">Ekstra information</h3>
 
-<div class="component-preview  component-preview-tringuide-information">
+<div class="component-preview  component-preview-step-indicator-helptext">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-information/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-information</span></a>
+        <a href="/eksempel/step-indicator-helptext/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-helptext</span></a>
         
     </div>
     
@@ -2037,60 +1944,98 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="row">
-        <div class="col-12 col-sm-7 col-md-5">
-        
-        <nav aria-label="Trinindikator med ekstra information">
-    <ol class="sidemenu">
+        <nav aria-label="Trinindikator" class="d-none d-md-block">
+
+    <ol class="step-indicator">
         <li>
-            <a class="nav-step" href="javascript:void(0);">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-icon">
+                    <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
                 <div>
-                    <span class="sidenav-number">1.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 1</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                        <span><span class="sidenav-information">Informationstekst for trin
-                                1</span></span>
-                    </div>
+                    <span class="step-title">Trin 1</span>
+                    <span class="step-information">Informationstekst</span>
                 </div>
             </a>
         </li>
-        <li class="active current " aria-current="step">
-            <a class="nav-step" href="javascript:void(0);">
+        <li class="current " aria-current="step">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-number"><span>2</span></span>
                 <div>
-                    <span class="sidenav-number">2.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 2</span></span>
-                        <span><span class="sidenav-information">Informationstekst for trin
-                                2</span></span>
-                    </div>
+                    <span class="step-title">Trin 2</span>
+                    <span class="step-information">Informationstekst</span>
                 </div>
             </a>
         </li>
-        <li>
-            <a class="nav-step" href="javascript:void(0);">
+        <li class="disabled ">
+            <div class="step">
+                <span class="step-number"><span>3</span></span>
                 <div>
-                    <span class="sidenav-number">3.</span>
-                    <div>
-                        <span class="sidenav-maininfo">
-                            <span class="sidenav-title">Trin 3</span></span>
-                        <span><span class="sidenav-information">Informationstekst for trin
-                                3</span></span>
-                    </div>
+                    <span class="step-title">Trin 3</span>
+                    <span class="step-information">Informationstekst</span>
                 </div>
-            </a>
+            </div>
         </li>
     </ol>
+
 </nav>
-        
+
+<div>
+    <button class="step-indicator-button d-md-none" aria-haspopup="dialog" type="button" data-module="modal" data-target="modal-step-indicator-helptext"><span>Trin<strong> 2 </strong>af
+            3</span></button>
+</div>
+
+<!-- Modal til trinindikatoren skal placeres i en "fds-modal-container" ligesom almindelige modaler. -->
+
+<div class="fds-modal modal-step-indicator" id="modal-step-indicator-helptext" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-helptext-heading">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-step-indicator-helptext-heading">
+                Trin 2 af 3
+            </h2>
+            <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
         </div>
+        <div class="modal-body">
+            <nav aria-label="Trinindikator">
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-icon">
+                                <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            <div>
+                                <span class="step-title">Trin 1</span>
+                                <span class="step-information">Informationstekst</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-number"><span>2</span></span>
+                            <div>
+                                <span class="step-title">Trin 2</span>
+                                <span class="step-information">Informationstekst</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <div class="step">
+                            <span class="step-number"><span>3</span></span>
+                            <div>
+                                <span class="step-title">Trin 3</span>
+                                <span class="step-information">Informationstekst</span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
         </div>
+
+    </div>
+</div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#ekstra-information-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: tringuide-information</span></a>
+        <a href="/komponenter/trinindikator/#ekstra-information-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: step-indicator-helptext</span></a>
     </div>
     
 </div>
@@ -2099,11 +2044,11 @@
 
 <p>Ved brug af trinindikator kan der i nogle tilfælde være behov for at indikere overfor brugeren, at et eller flere trin mangler information og/eller har fejl, efter brugeren er gået videre til næste trin.</p>
 
-<div class="component-preview  component-preview-tringuide-error-responsive">
+<div class="component-preview  component-preview-step-indicator-error">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-error-responsive/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: tringuide-error-responsive</span></a>
+        <a href="/eksempel/step-indicator-error/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-error</span></a>
         
     </div>
     
@@ -2112,77 +2057,92 @@
     
     <div class="component-example px-4 py-4">
         
-        <div class="row">
-        <div class="col-12 col-sm-7 col-md-5">
-        
-        <div class="overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive ">
-    <button class="button-overflow-menu js-dropdown" data-js-target="trinindikator-error" aria-expanded="false" aria-controls="trinindikator-error">
-        Trin 3 af 4
-        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#more-vert"></use></svg>
-    </button>
-    <div class="overflow-menu-inner collapsed" id="trinindikator-error">
-        <nav aria-label="Trinindikator med fejl">
-            <ol class="sidemenu">
-                <li class="sidenav-error">
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">1.</span>
+        <nav aria-label="Trinindikator" class="d-none d-md-block">
+
+    <ol class="step-indicator">
+        <li class="error">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-icon">
+                    <svg class="icon-svg" aria-label="Fejl i trin 1" focusable="false"><use href="#error"></use></svg></span>
+                <div>
+                    <span class="step-title">Trin 1</span>
+                </div>
+            </a>
+        </li>
+        <li class="current " aria-current="step">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-number"><span>2</span></span>
+                <div>
+                    <span class="step-title">Trin 2</span>
+                </div>
+            </a>
+        </li>
+        <li class="disabled ">
+            <div class="step">
+                <span class="step-number"><span>3</span></span>
+                <div>
+                    <span class="step-title">Trin 3</span>
+                </div>
+            </div>
+        </li>
+    </ol>
+
+</nav>
+
+<div>
+    <button class="step-indicator-button d-md-none" aria-haspopup="dialog" type="button" data-module="modal" data-target="modal-step-indicator-error"><span>Trin<strong> 2 </strong>af
+            3</span></button>
+</div>
+
+<!-- Modal til trinindikatoren skal placeres i en "fds-modal-container" ligesom almindelige modaler. -->
+
+<div class="fds-modal modal-step-indicator" id="modal-step-indicator-error" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-step-indicator-error-heading">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-step-indicator-error-heading">
+                Trin 2 af 3
+            </h2>
+            <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+        </div>
+        <div class="modal-body">
+            <nav aria-label="Trinindikator">
+                <ol class="step-indicator">
+                    <li class="error">
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-icon">
+                                <svg class="icon-svg" aria-label="Fejl i trin 1" focusable="false"><use href="#error"></use></svg></span>
                             <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 1</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Fejl" focusable="false"><use href="#error"></use></svg></span></span>
-                                <span></span>
+                                <span class="step-title">Trin 1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-number"><span>2</span></span>
+                            <div>
+                                <span class="step-title">Trin 2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <div class="step">
+                            <span class="step-number"><span>3</span></span>
+                            <div>
+                                <span class="step-title">Trin 3</span>
                             </div>
                         </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">2.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 2</span><span class="sidenav-icon"><svg class="icon-svg" aria-label="Gennemført" focusable="false"><use href="#check"></use></svg></span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="active current " aria-current="step">
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">3.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 3</span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-step" href="javascript:void(0);">
-                        <div>
-                            <span class="sidenav-number">4.</span>
-                            <div>
-                                <span class="sidenav-maininfo">
-                                    <span class="sidenav-title">Trin 4</span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ol>
-        </nav>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
     </div>
 </div>
-        
-        </div>
-        </div>
         
     </div>
     
     <div class="component-code-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#trinindikator-med-fejl-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: tringuide-error-responsive</span></a>
+        <a href="/komponenter/trinindikator/#trinindikator-med-fejl-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: step-indicator-error</span></a>
     </div>
     
 </div>
@@ -2199,17 +2159,46 @@
 
 <p>Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte til næste trin på trods af fejl.</p>
 
+<p>Hvis det ikke er muligt at fortsætte til næste trin grundet fejl, skal brugeren tydeligt informeres på selve trinnet om, hvilke fejl der skal rettes, før man kan komme videre, ved hjælp af en <a href="/komponenter/fejlopsummering/">Fejlopsummering</a> og <a href="/komponenter/fejlmeddelelser/">Fejlmeddelelser</a>.</p>
+
 <h4>Opsummeringsside</h4>
 
-<p>Eventuelle fejl vises på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med henvisning til de specifikke trin som link i fejlopsummeringen.</p>
+<p>Eventuelle fejl vises på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med henvisning til de specifikke trin som link i fejlopsummeringen.</p>
 
 <p><a href="/eksempler/templates/#fejl">Se et eksempel på opsummeringssiden med fejl i trinindikatoren.</a></p>
+
+<h3 id="simpel-trinindikator">Simpel trinindikator</h3>
+
+<p>En simpel trinindikator viser blot brugerens aktuelle position i formularen som en subheading lige over trinindikatorens H1, eksempelvis “Trin 2 af 3”. Denne variant anvendes typisk i korte eller enkle formularer, hvor det ikke er nødvendigt eller ønskeligt at lade brugeren navigere frit mellem trinene. Den simple variant er velegnet til korte flows, hvor fokus er på hurtig og enkel gennemførelse. Link til eksempelløsning.</p>
+
+<div class="component-preview  component-preview-step-indicator-simple">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/step-indicator-simple/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-simple</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på simpel trinindikator</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <p class="step-subheading">Trin 2 af 3</p>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/trinindikator/#simpel-trinindikator-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: step-indicator-simple</span></a>
+    </div>
+    
+</div>
 
 <h2 id="se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</h2>
 
 <ul class="nobullet-list">
-  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/?r=/komponenter/trinindikator/%23eksempelloesninger">Trinformular til registrering: Vælg personer</a></li>
-  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/?r=/komponenter/trinindikator/%23eksempelloesninger">Trinformular til ansøgning: Oplysninger om ansøger</a></li>
+  <li><a href="/pages/eksempler/trinformular-til-registrering/registrering-1/" class="icon-link" target="_blank">Trinformular til registrering: Vælg personer<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+  <li><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/" class="icon-link" target="_blank">Trinformular til ansøgning: Oplysninger om ansøger<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
 </ul>
 
 <h2 id="referencer">Referencer</h2>
@@ -2217,6 +2206,7 @@
 <ul class="nobullet-list">
   <li>Caroline Jarrett &amp; Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)</li>
   <li>Adam Silver: Form Design Patterns (2018)</li>
+  <li><a href="https://design-system.service.gov.uk/patterns/question-pages/#using-progress-indicators" class="icon-link" target="_blank">GOV.UK: Question Pages - Using Progress Indicators<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
   <li>Jessica Enders: Designing UX: Forms (2016)</li>
   <li><a href="https://www.effortmark.co.uk/design-patterns-government-2016/" class="icon-link" target="_blank">Caroline Jarrett: Design patterns in government (2016)<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
 </ul>
@@ -2230,7 +2220,7 @@
 
 <h3>HTML Struktur</h3>
 
-<div class="component-preview component-preview-code  component-code-tringuide-overflowmenu">
+<div class="component-preview component-preview-code  component-code-step-indicator">
     
     
     <div class="sr-only">Kodeeksempel</div>
@@ -2242,55 +2232,90 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu overflow-menu--open-right&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button-overflow-menu js-dropdown&quot;</span> <span class="hljs-attr">data-js-target</span>=<span class="hljs-string">&quot;trinindikator-overflow&quot;</span>
-        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;trinindikator-overflow&quot;</span>&gt;</span>
-        Trin 2 af 3
-        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#more-vert&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu-inner collapsed&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;trinindikator-overflow&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator som overflow menu&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidemenu&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-block&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trin 1 gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator-button d-md-none&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-module</span>=<span class="hljs-string">&quot;modal&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;modal-step-indicator-default&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Trin<span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span> 2 <span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>af
+            3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Modal til trinindikatoren skal placeres i en &quot;fds-modal-container&quot; ligesom almindelige modaler. --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fds-modal modal-step-indicator&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-default&quot;</span>
+    <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">aria-modal</span>=<span class="hljs-string">&quot;true&quot;</span>
+    <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;modal-step-indicator-default-heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-default-heading&quot;</span>&gt;</span>
+                Trin 2 af 3
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-close function-link&quot;</span>
+                <span class="hljs-attr">data-modal-close</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#close&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>Luk<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&#39;Trinindikator&#39;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trin 1 gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Lorem ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Consectetur adipiscing
-                                        elit<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
@@ -2299,24 +2324,17 @@
     
 </div>
 
-<p>Hvis man gør brug af en trinindikator i forbindelse med en <a href="/komponenter/overflowmenu/">overflow menu</a>, så se dokumentationen for <a href="/komponenter/overflowmenu/#kode">implementering for overflow menu</a>.</p>
+<p>Anvend klassen <code>modal-step-indicator</code> til den modal, der indeholder trinindikatoren.</p>
 
-<h4>Aktivt og overstået trin i trinindikator</h4>
+<p>Parent-element til <code>step-indicator-button</code> kan afhænge af konteksten på siden og vil derfor ikke altid være <code>&lt;div&gt;</code>.</p>
 
-<ul>
-  <li>Det aktive menupunkt skal have klasserne <code>active</code> og <code>current</code> (der skal anvendes to forskellige klasser grundet overlap med stylingen i <a href="/komponenter/venstremenu/">venstremenuen</a>).</li>
-  <li>For at indikere et overstået trin, kan der indsættes et ikon med klassen <code>sidenav-icon</code>. Dette ikon er sat til højre i trinet.</li>
-</ul>
+<h2 id="alle-trin-klikbare-kode">Alle trin klikbare</h2>
 
-<p>Nedenstående varianter implementeres i et grid på samme måde som <a href="/komponenter/venstremenu/">venstremenu</a>, således at komponenten vises i en kolonne til venstre for indholdet.</p>
-
-<h2 id="alle-trin-synlige-kode">Alle trin synlige</h2>
-
-<div class="component-preview component-preview-code  component-code-tringuide-clickable">
+<div class="component-preview component-preview-code  component-code-step-indicator-clickable">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-clickable/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-clickable</span></a>
+        <a href="/eksempel/step-indicator-clickable/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-clickable</span></a>
         
     </div>
     
@@ -2330,125 +2348,90 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator med synlige trin&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidemenu&quot;</span>&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-block&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trin 1 gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre></figure>
 
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
 
-    </div>
-    
-    <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#alle-trin-synlige" class="small-text">Gå til eksemplets retningslinjer</a>
-    </div>
-    
-</div>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator-button d-md-none&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-module</span>=<span class="hljs-string">&quot;modal&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;modal-step-indicator-clickable&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Trin<span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span> 2 <span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>af
+            3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<h2 id="responsiv-kode">Responsiv</h2>
+<span class="hljs-comment">&lt;!-- Modal til trinindikatoren skal placeres i en &quot;fds-modal-container&quot; ligesom almindelige modaler. --&gt;</span>
 
-<div class="component-preview component-preview-code  component-code-tringuide-responsive-overflowmenu">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tringuide-responsive-overflowmenu/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-responsive-overflowmenu</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive &quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button-overflow-menu js-dropdown&quot;</span> <span class="hljs-attr">data-js-target</span>=<span class="hljs-string">&quot;trinindikator-responsiv&quot;</span>
-        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;trinindikator-responsiv&quot;</span>&gt;</span>
-        Trin 2 af 3
-        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#more-vert&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu-inner collapsed&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;trinindikator-responsiv&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Responsiv trinindikator&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidemenu&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fds-modal modal-step-indicator&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-clickable&quot;</span>
+    <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">aria-modal</span>=<span class="hljs-string">&quot;true&quot;</span>
+    <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;modal-step-indicator-clickable-heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-clickable-heading&quot;</span>&gt;</span>
+                Trin 2 af 3
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-close function-link&quot;</span>
+                <span class="hljs-attr">data-modal-close</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#close&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>Luk<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&#39;Trinindikator&#39;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trin 1 gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
@@ -2456,89 +2439,18 @@
     </div>
     
     <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#responsiv" class="small-text">Gå til eksemplets retningslinjer</a>
-    </div>
-    
-</div>
-
-<h2 id="laast-kode">Låst</h2>
-
-<div class="component-preview component-preview-code  component-code-tringuide-locked">
-    
-    <div class="component-link px-4 py-4">
-        
-        <a href="/eksempel/tringuide-locked/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-locked</span></a>
-        
-    </div>
-    
-    
-    <div class="sr-only">Kodeeksempel</div>
-    
-    <div class="component-code">
-        
-        <div class="button-copy-container">
-            <button class="button button-secondary button-copy">Kopiér kode</button>
-        </div>
-        
-        
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator med låste trin&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidemenu&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled active current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre></figure>
-
-
-    </div>
-    
-    <div class="component-guidelines-link px-4 py-4">
-        <a href="/komponenter/trinindikator/#laast" class="small-text">Gå til eksemplets retningslinjer</a>
+        <a href="/komponenter/trinindikator/#alle-trin-klikbare" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>
 
 <h2 id="ekstra-information-kode">Ekstra information</h2>
 
-<div class="component-preview component-preview-code  component-code-tringuide-information">
+<div class="component-preview component-preview-code  component-code-step-indicator-helptext">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-information/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-information</span></a>
+        <a href="/eksempel/step-indicator-helptext/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-helptext</span></a>
         
     </div>
     
@@ -2552,50 +2464,98 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator med ekstra information&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidemenu&quot;</span>&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-block&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trin 1 gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-information&quot;</span>&gt;</span>Informationstekst for trin
-                                1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-information&quot;</span>&gt;</span>Informationstekst<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-information&quot;</span>&gt;</span>Informationstekst for trin
-                                2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-information&quot;</span>&gt;</span>Informationstekst<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-information&quot;</span>&gt;</span>Informationstekst for trin
-                                3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-information&quot;</span>&gt;</span>Informationstekst<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre></figure>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator-button d-md-none&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-module</span>=<span class="hljs-string">&quot;modal&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;modal-step-indicator-helptext&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Trin<span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span> 2 <span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>af
+            3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Modal til trinindikatoren skal placeres i en &quot;fds-modal-container&quot; ligesom almindelige modaler. --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fds-modal modal-step-indicator&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-helptext&quot;</span>
+    <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">aria-modal</span>=<span class="hljs-string">&quot;true&quot;</span>
+    <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;modal-step-indicator-helptext-heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-helptext-heading&quot;</span>&gt;</span>
+                Trin 2 af 3
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-close function-link&quot;</span>
+                <span class="hljs-attr">data-modal-close</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#close&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>Luk<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&#39;Trinindikator&#39;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trin 1 gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-information&quot;</span>&gt;</span>Informationstekst<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-information&quot;</span>&gt;</span>Informationstekst<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-information&quot;</span>&gt;</span>Informationstekst<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 
     </div>
@@ -2610,11 +2570,11 @@
 
 <p>Tilføj klassen <code>sidenav-error</code> til de liste-elementer, der er fejl i og anvend ikonet <code>error</code> med en passende <code>aria-label</code>.</p>
 
-<div class="component-preview component-preview-code  component-code-tringuide-error-responsive">
+<div class="component-preview component-preview-code  component-code-step-indicator-error">
     
     <div class="component-link px-4 py-4">
         
-        <a href="/eksempel/tringuide-error-responsive/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: tringuide-error-responsive</span></a>
+        <a href="/eksempel/step-indicator-error/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-error</span></a>
         
     </div>
     
@@ -2628,67 +2588,89 @@
         </div>
         
         
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu overflow-menu--open-right overflow-menu--lg-no-responsive &quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button-overflow-menu js-dropdown&quot;</span> <span class="hljs-attr">data-js-target</span>=<span class="hljs-string">&quot;trinindikator-error&quot;</span>
-        <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;trinindikator-error&quot;</span>&gt;</span>
-        Trin 3 af 4
-        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#more-vert&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;overflow-menu-inner collapsed&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;trinindikator-error&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator med fejl&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidemenu&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-error&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>1.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trinindikator&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-none d-md-block&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;error&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Fejl i trin 1&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#error&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator-button d-md-none&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+        <span class="hljs-attr">data-module</span>=<span class="hljs-string">&quot;modal&quot;</span>
+        <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;modal-step-indicator-error&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Trin<span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span> 2 <span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>af
+            3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Modal til trinindikatoren skal placeres i en &quot;fds-modal-container&quot; ligesom almindelige modaler. --&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fds-modal modal-step-indicator&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-error&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>
+    <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">aria-modal</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;modal-step-indicator-error-heading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-title&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;modal-step-indicator-error-heading&quot;</span>&gt;</span>
+                Trin 2 af 3
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-close function-link&quot;</span>
+                <span class="hljs-attr">data-modal-close</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#close&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>Luk<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;modal-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&#39;Trinindikator&#39;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-indicator&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;error&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-icon&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Fejl i trin 1&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#error&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Fejl&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#error&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 1<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;disabled &quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-number&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>2.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>
-                                        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Gennemført&quot;</span> <span class="hljs-attr">focusable</span>=<span class="hljs-string">&quot;false&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#check&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active current &quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;step&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>3.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 3<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-step&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-number&quot;</span>&gt;</span>4.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-maininfo&quot;</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidenav-title&quot;</span>&gt;</span>Trin 4<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
@@ -2697,6 +2679,37 @@
     
     <div class="component-guidelines-link px-4 py-4">
         <a href="/komponenter/trinindikator/#trinindikator-med-fejl" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+<h2 id="simpel-trinindikator-kode">Simpel trinindikator</h2>
+
+<div class="component-preview component-preview-code  component-code-step-indicator-simple">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/step-indicator-simple/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: step-indicator-simple</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;step-subheading&quot;</span>&gt;</span>Trin 2 af 3<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/trinindikator/#simpel-trinindikator" class="small-text">Gå til eksemplets retningslinjer</a>
     </div>
     
 </div>
@@ -2752,6 +2765,8 @@
 
     <script src="/assets/js/theme.js?v=10.2.1"></script>
 <script src="/assets/js/styleguide.js?v=10.2.1"></script>
+<script src="/assets/js/step-indicator.js"></script>
+
 
 
 <script src="/assets/js/docs-tabs.js"></script>

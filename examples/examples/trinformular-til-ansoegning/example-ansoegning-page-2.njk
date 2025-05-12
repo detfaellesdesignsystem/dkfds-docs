@@ -12,7 +12,7 @@
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import simpleStepIndicator as simpleStepIndicator %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
 
@@ -76,7 +76,12 @@
 {% block body %}
 <main class="container page-container" id="main-content">
     {{ back_link({ "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/" }) }}
-    {{ overflow_stepguide(trinindikator_data) }}
+    {{ 
+        simpleStepIndicator({
+            "currentStep": "2",
+            "totalSteps": "5"
+        }) 
+    }}
     <h1>Kontaktoplysninger</h1>
     <p class="font-lead mb-6">Hvis vi har spørgsmål til ansøgningen, har vi brug for at kunne kontakte dig telefonisk.
     </p>

@@ -16,7 +16,7 @@ tabs: "Retningslinjer, kode"
 
 {% include tabs.html guidelines=true code=true %}
 
-{% include code/preview-box.html component="tringuide-overflowmenu" title="Eksempel på trinindikator i overflow menu" classes="intro-example" %}
+{% include code/preview-box.html component="step-indicator" title="Eksempel på trinindikator" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="Trinindikator" code="Trinindikator_Kode" %}
 
@@ -34,49 +34,34 @@ Trinindikator skal ikke anvendes som primær eller sekundær navigationselement.
 
 ### Vejledning
 
-Forsøg med ændret opsætning af dit indhold, type og antallet af spørgsmål før du vælger en trinindikator til din løsning.
+I denne sektion finder du anbefalinger, der hjælper dig med at vælge og udforme en trinindikator. Trinindikatoren skal tydeligt afspejle brugerens aktuelle position og bidrage til en naturlig og overskuelig brugeroplevelse. Følg nedenstående vejledninger for at sikre, at dit indhold, struktur og antal trin passer til din løsning.
 
-Vælg den trinindikator variant, der passer til dine brugeres behov.
-
-Undgå at lave en horisontal trinindikator.
-
-Anvend trin der virker naturlige og logiske for brugerne.
-
-Gør det synligt hvilket trin brugeren er kommet til.
-
-Det sidste trin skal være "Opsummering" eller "Tjek dine svar".
-
-Tilstræb så få trin som muligt.
-
-Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.
+- Vælg den type trinindikator, der passer bedst til dine brugeres behov.
+Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en decideret trinindikator, se fx eksempelløsningen {% include links/demo-link.html linktext="Formular til kontaktoplysninger" %}, eller med en <a href="#simpel-trinindikator">simpel trinindikator</a>.
+- Opdel løsningens trin, så de virker naturlige og logiske for brugerne.
+- Det sidste trin skal være “Opsummering” eller “Tjek dine svar”.
+- Når indberetningen er foretaget skal brugeren have en kvittering, denne skal ikke vises i trinindikatoren.
+- Ved mindre skærme (768px eller lavere) ændres trinindikatoren til et panel (bottom sheet), der glider op fra bunden af skærmen, når brugeren trykker på en trinindikator-knap øverst på deres skærm. Panelet viser et overblik over trinene.
 
 {% include dos-donts-box.html component="tringuide-dos-donts" %}
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Alle trin synlige {#{% include create-id.html heading="Alle trin synlige" %}}
+### Alle trin klikbare {#{% include create-id.html heading="Alle trin klikbare" %}}
 
-{% include code/preview-box.html component="tringuide-clickable" title="Eksempel på synlig trinindikator" code="/komponenter/trinindikator/#alle-trin-synlige-kode" %}
+Du kan benytte denne variant af trinindikatoren, hvor alle trin er klikbare for brugeren. Som udgangspunkt er kun gennemførte trin klikbare, men denne variant giver brugerne mulighed for frit at navigere mellem alle trin.
 
-### Responsiv {#{% include create-id.html heading="Responsiv" %}}
-
-Denne komponent er responsiv, og vil derfor ændre udseende, når man ændrer skærmstørrelse.
-
-{% include code/preview-box.html component="tringuide-responsive-overflowmenu" title="Eksempel på responsiv trinindikator" code="/komponenter/trinindikator/#responsiv-kode" %}
-
-### Låst {#{% include create-id.html heading="Låst" %}}
-
-{% include code/preview-box.html component="tringuide-locked" title="Eksempel på trinindikator med låste trin" code="/komponenter/trinindikator/#laast-kode" %}
+{% include code/preview-box.html component="step-indicator-clickable" title="Eksempel på trinindikator hvor alle trin er klikbare" code="/komponenter/trinindikator/#alle-trin-klikbare-kode" %}
 
 ### Ekstra information {#{% include create-id.html heading="Ekstra information" %}}
 
-{% include code/preview-box.html component="tringuide-information" title="Eksempel på trinindikator med information" code="/komponenter/trinindikator/#ekstra-information-kode" %}
+{% include code/preview-box.html component="step-indicator-helptext" title="Eksempel på trinindikator med information" code="/komponenter/trinindikator/#ekstra-information-kode" %}
 
 ### Trinindikator med fejl {#{% include create-id.html heading="Trinindikator med fejl" %}}
 
 Ved brug af trinindikator kan der i nogle tilfælde være behov for at indikere overfor brugeren, at et eller flere trin mangler information og/eller har fejl, efter brugeren er gået videre til næste trin.
 
-{% include code/preview-box.html component="tringuide-error-responsive" title="Eksempel på trinindikator med fejl" code="/komponenter/trinindikator/#trinindikator-med-fejl-kode" %}
+{% include code/preview-box.html component="step-indicator-error" title="Eksempel på trinindikator med fejl" code="/komponenter/trinindikator/#trinindikator-med-fejl-kode" %}
 
 #### Anvendes til
 
@@ -84,29 +69,38 @@ Trinindikator med fejl anvendes til at gøre brugeren opmærksom på eventuelle 
 
 #### Vejledning
 
-Fejl vises, hvis der er fejl i det indtastede data eller obligatoriske felter ikke er udfyldt. 
+Fejl vises, hvis der er fejl i det indtastede data eller obligatoriske felter ikke er udfyldt.
 
 Fejl angives med et fejl-ikon ud for trinnet med fejl samt med en baggrundsfarve. Ikonet kan fjernes igen ved indtastning af korrekt data i det pågældende trin.
 
 Vis kun fejl i trinindikatoren, når det er muligt for brugeren at fortsætte til næste trin på trods af fejl.
 
+Hvis det ikke er muligt at fortsætte til næste trin grundet fejl, skal brugeren tydeligt informeres på selve trinnet om, hvilke fejl der skal rettes, før man kan komme videre, ved hjælp af en {% include links/component-guideline-link.html linktext="Fejlopsummering" %} og {% include links/component-guideline-link.html linktext="Fejlmeddelelser" %}.
+
 #### Opsummeringsside 
 
-Eventuelle fejl vises på opsummeringssiden i form af {% include links/component-guideline-link.html linktext="fejlopsummering" %} med henvisning til de specifikke trin som link i fejlopsummeringen. 
+Eventuelle fejl vises på opsummeringssiden i form af {% include links/component-guideline-link.html linktext="fejlopsummering" %} med henvisning til de specifikke trin som link i fejlopsummeringen.
 
 {% include links/internal-link.html linktext="Se et eksempel på opsummeringssiden med fejl i trinindikatoren." %}
+
+### Simpel trinindikator {#{% include create-id.html heading="Simpel trinindikator" %}}
+
+En simpel trinindikator viser blot brugerens aktuelle position i formularen som en subheading lige over trinindikatorens H1, eksempelvis "Trin 2 af 3". Denne variant anvendes typisk i korte eller enkle formularer, hvor det ikke er nødvendigt eller ønskeligt at lade brugeren navigere frit mellem trinene. Den simple variant er velegnet til korte flows, hvor fokus er på hurtig og enkel gennemførelse. Link til eksempelløsning.
+
+{% include code/preview-box.html component="step-indicator-simple" title="Eksempel på simpel trinindikator" code="/komponenter/trinindikator/#simpel-trinindikator-kode" %}
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 {:.nobullet-list}
 - Caroline Jarrett & Gerry Gaffney: Forms that Work: Designing Web Forms for Usability (2009)
 - Adam Silver: Form Design Patterns (2018)
+- {% include links/external-link.html linktext="GOV.UK: Question Pages - Using Progress Indicators" %}
 - Jessica Enders: Designing UX: Forms (2016)
 - {% include links/external-link.html linktext="Caroline Jarrett: Design patterns in government (2016)" %}
 
@@ -116,35 +110,26 @@ Eventuelle fejl vises på opsummeringssiden i form af {% include links/component
 
 ### HTML Struktur
 
-{% include code/syntax.html component="tringuide-overflowmenu" copybutton=true %}
+{% include code/syntax.html component="step-indicator" copybutton=true %}
 
-Hvis man gør brug af en trinindikator i forbindelse med en {% include links/component-guideline-link.html linktext="overflow menu" %}, så se dokumentationen for {% include links/component-code-link.html linktext="implementering for overflow menu" %}.
+Anvend klassen `modal-step-indicator` til den modal, der indeholder trinindikatoren.
 
-#### Aktivt og overstået trin i trinindikator
+Parent-element til `step-indicator-button` kan afhænge af konteksten på siden og vil derfor ikke altid være `<div>`.
 
-- Det aktive menupunkt skal have klasserne `active` og `current` (der skal anvendes to forskellige klasser grundet overlap med stylingen i {% include links/component-guideline-link.html linktext="venstremenuen" %}).
-- For at indikere et overstået trin, kan der indsættes et ikon med klassen `sidenav-icon`. Dette ikon er sat til højre i trinet.
+## Alle trin klikbare {#{% include create-id.html heading="Alle trin klikbare" append="-kode" %}}
 
-Nedenstående varianter implementeres i et grid på samme måde som {% include links/component-guideline-link.html linktext="venstremenu" %}, således at komponenten vises i en kolonne til venstre for indholdet.
-
-## Alle trin synlige {#{% include create-id.html heading="Alle trin synlige" append="-kode" %}}
-
-{% include code/syntax.html component="tringuide-clickable" link=true copybutton=true guidelines="/komponenter/trinindikator/#alle-trin-synlige" %}
-
-## Responsiv {#{% include create-id.html heading="Responsiv" append="-kode" %}}
-
-{% include code/syntax.html component="tringuide-responsive-overflowmenu" link=true copybutton=true guidelines="/komponenter/trinindikator/#responsiv" %}
-
-## Låst {#{% include create-id.html heading="Låst" append="-kode" %}}
-
-{% include code/syntax.html component="tringuide-locked" link=true copybutton=true guidelines="/komponenter/trinindikator/#laast" %}
+{% include code/syntax.html component="step-indicator-clickable" link=true copybutton=true guidelines="/komponenter/trinindikator/#alle-trin-klikbare" %}
 
 ## Ekstra information {#{% include create-id.html heading="Ekstra information" append="-kode" %}}
 
-{% include code/syntax.html component="tringuide-information" link=true copybutton=true guidelines="/komponenter/trinindikator/#ekstra-information" %}
+{% include code/syntax.html component="step-indicator-helptext" link=true copybutton=true guidelines="/komponenter/trinindikator/#ekstra-information" %}
 
 ## Trinindikator med fejl {#{% include create-id.html heading="Trinindikator med fejl" append="-kode" %}}
 
 Tilføj klassen `sidenav-error` til de liste-elementer, der er fejl i og anvend ikonet `error` med en passende `aria-label`.
 
-{% include code/syntax.html component="tringuide-error-responsive" link=true copybutton=true guidelines="/komponenter/trinindikator/#trinindikator-med-fejl" %}
+{% include code/syntax.html component="step-indicator-error" link=true copybutton=true guidelines="/komponenter/trinindikator/#trinindikator-med-fejl" %}
+
+## Simpel trinindikator {#{% include create-id.html heading="Simpel trinindikator" append="-kode" %}}
+
+{% include code/syntax.html component="step-indicator-simple" link=true copybutton=true guidelines="/komponenter/trinindikator/#simpel-trinindikator" %}

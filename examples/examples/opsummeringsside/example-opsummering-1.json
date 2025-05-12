@@ -32,31 +32,31 @@
     },
     "trinindikator_data": {
         "id": "overflow-reg",
-        "breakpoint": "lg",
         "steps": [
             {
                 "text": "Vælg personer",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "state": "success"
             },
             {
                 "text": "Vælg noget mere",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "state": "success"
             },
             {
                 "text": "Vedhæft dokumenter",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "state": "success"
             },
             {
                 "text": "Tidligere registrering",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "state": "success"
             },
             {
                 "text": "Kontaktoplysninger",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
+                "state": "success"
             },
             {
                 "text": "Opsummering",
-                "active": true
+                "state": "number",
+                "current": true
             }
         ]
     },

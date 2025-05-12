@@ -287,13 +287,6 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Trinindikator
 
-{% include test/preview-test.html filename="test-step-guide-1" description="Trinindikator 1" %}
-{% include test/preview-test.html filename="test-step-guide-2" description="Trinindikator 2" %}
-{% include test/preview-test.html filename="test-step-guide-3" description="Trinindikator 3" %}
-{% include test/preview-test.html filename="test-step-guide-4" description="Trinindikator 4" %}
-{% include test/preview-test.html filename="test-step-guide-5" description="Trinindikator 5" %}
-{% include test/preview-test.html filename="test-step-guide-6" description="Trinindikator 6" %}
-{% include test/preview-test.html filename="test-step-guide-7" description="Trinindikator 7" %}
 {% include test/preview-test.html filename="test-step-indicator-states" description="Trinindikator" %}
 {% include test/preview-test.html filename="test-step-indicator-single-states" description="Trinindikator, statuskombinationer" %}
 {% include test/preview-test.html filename="test-step-indicator-long-text" description="Trinindikator med lange tekster" %}

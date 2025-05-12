@@ -107,31 +107,6 @@
             }
         ]
     },
-    "trinindikator_data": {
-        "id": "overflow-ansoeg",
-        "steps": [
-            {
-                "text": "Oplysninger om afsender",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
-            },
-            {
-                "text": "Kontaktoplysninger",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
-            },
-            {
-                "text": "Ansøgningens type",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
-            },
-            {
-                "text": "Tilføj dokumentation",
-                "icon": { "name": "check", "ariaLabel": "Gennemført", "ariaHidden": false }
-            },
-            {
-                "text": "Opsummering",
-                "active": true
-            }
-        ]
-    },
     "button_send": {
         "text": "Send ansøgning",
         "variant": "primary",
@@ -155,7 +130,7 @@
                 { "content": "Journal.pdf" },
                 { "content": "Type 1" },
                 { "content": "14" },
-                { "content": "<a href=\"#\">Redigér</a>", "classes": "align-text-md-right d-print-none" }
+                { "content": "<a href=\"#\">Redigér<span class=\"sr-only\"> rækkens indhold</span></a>", "classes": "align-text-md-right d-print-none" }
             ]
         ]
     }

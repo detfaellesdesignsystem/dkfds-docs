@@ -700,11 +700,10 @@ code {
 //----------------  Page styles
 
 
-.page-selvbetjeningsløsninger .page-container{overflow:hidden;}
-.page-tringuide-overflowmenu-html .container,
-.page-tringuide-responsive-overflowmenu-html .container{
-  min-height: 400px;
+.page-selvbetjeningsløsninger .page-container {
+  overflow:hidden;
 }
+
 .component-preview-labels-table .table.table--borderless thead th, .component-preview-labels-table .table.table--borderless tr:last-child{
   border-bottom: 0px;
 }

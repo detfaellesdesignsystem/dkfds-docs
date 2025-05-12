@@ -581,11 +581,10 @@ Tooltip_Kode:
 
 Trinindikator_Kode:
 - h2: Installation
-- h2: Alle trin synlige
-- h2: Responsiv
-- h2: Låst
+- h2: Alle trin klikbare
 - h2: Ekstra information
 - h2: Trinindikator med fejl
+- h2: Simpel trinindikator
 
 VedhaeftFil_Kode:
 - h2: Installation

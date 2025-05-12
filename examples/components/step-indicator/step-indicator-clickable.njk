@@ -1,0 +1,54 @@
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% set trinindikator_data = 
+    {
+        "steps": [
+            {
+                "text": "Trin 1",
+                "href": "javascript:void(0);",
+                "state": "success"
+            },
+            {
+                "text": "Trin 2",
+                "href": "javascript:void(0);",
+                "state": "number",
+                "current": true
+            },
+            {
+                "text": "Trin 3",
+                "href": "javascript:void(0);",
+                "state": "number"
+            }
+        ]
+    } 
+%}
+
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + stepIndicator(trinindikator_data) + "</nav>" %}
+
+<nav aria-label="Trinindikator" class="d-none d-md-block">
+    {{ stepIndicator(trinindikator_data) }}
+</nav>
+
+<div>
+    {{-
+        stepIndicatorButton({
+            "breakpoint": "md",
+            "modal": "modal-step-indicator-clickable",
+            "currentStep": "2",
+            "totalSteps": "3"
+        })
+    -}}
+</div>
+
+<!-- Modal til trinindikatoren skal placeres i en "fds-modal-container" ligesom almindelige modaler. -->
+ {{-
+    modal({
+        "id": "modal-step-indicator-clickable",
+        "heading": "Trin 2 af 3",
+        "content": modal_content_step,
+        "forcedAction": false,
+        "stepIndicator": true
+    })
+}}

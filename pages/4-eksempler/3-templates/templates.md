@@ -65,7 +65,7 @@ tags:
     {% include cards/navcard-thumbnails.html 
         href="/pages/eksempler/opsummering/opsummering-2/"
         id="card-opsummering-2"
-        heading="Opsummering med trinindikator i overflowmenu"
+        heading="Opsummering med simpel trinindikator"
     %}
 </ul>
 

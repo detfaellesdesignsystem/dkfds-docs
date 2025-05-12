@@ -12,7 +12,7 @@
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import simpleStepIndicator as simpleStepIndicator %}
 {% from "components/form/controls/select.njk" import select as select %}
 {% from "components/form/controls/text-input.njk" import textinput as textinput %}
 {% from "components/buttons/buttons.njk" import button as button %}
@@ -77,7 +77,12 @@
 {% block body %}
 <main class="container page-container" id="main-content">
     {{ back_link({ "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-3/" }) }}
-    {{ overflow_stepguide(trinindikator_data) }}
+    {{ 
+        simpleStepIndicator({
+            "currentStep": "4",
+            "totalSteps": "5"
+        }) 
+    }}
     <h1>Tilføj dokumentation</h1>
     <form class="mb-6" novalidate method="post" action="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/">
         <div class="form-group file-input mb-5">

@@ -1,0 +1,86 @@
+<nav aria-label="Trinindikator" class="d-none d-md-block">
+
+    <ol class="step-indicator">
+        <li>
+            <a class="step" href="javascript:void(0);">
+                <span class="step-icon">
+                    <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
+                <div>
+                    <span class="step-title">Trin 1</span>
+                </div>
+            </a>
+        </li>
+        <li class="current " aria-current="step">
+            <a class="step" href="javascript:void(0);">
+                <span class="step-number"><span>2</span></span>
+                <div>
+                    <span class="step-title">Trin 2</span>
+                </div>
+            </a>
+        </li>
+        <li class="disabled ">
+            <div class="step">
+                <span class="step-number"><span>3</span></span>
+                <div>
+                    <span class="step-title">Trin 3</span>
+                </div>
+            </div>
+        </li>
+    </ol>
+
+</nav>
+
+<div>
+    <button class="step-indicator-button d-md-none" aria-haspopup="dialog" type="button"
+        data-module="modal"
+        data-target="modal-step-indicator-default"><span>Trin<strong> 2 </strong>af
+            3</span></button>
+</div>
+
+<!-- Modal til trinindikatoren skal placeres i en "fds-modal-container" ligesom almindelige modaler. -->
+
+<div class="fds-modal modal-step-indicator" id="modal-step-indicator-default"
+    aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="modal-step-indicator-default-heading">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modal-step-indicator-default-heading">
+                Trin 2 af 3
+            </h2>
+            <button class="modal-close function-link"
+                data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+        </div>
+        <div class="modal-body">
+            <nav aria-label='Trinindikator'>
+                <ol class="step-indicator">
+                    <li>
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-icon">
+                                <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false"><use href="#check"></use></svg></span>
+                            <div>
+                                <span class="step-title">Trin 1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="current " aria-current="step">
+                        <a class="step" href="javascript:void(0);">
+                            <span class="step-number"><span>2</span></span>
+                            <div>
+                                <span class="step-title">Trin 2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="disabled ">
+                        <div class="step">
+                            <span class="step-number"><span>3</span></span>
+                            <div>
+                                <span class="step-title">Trin 3</span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+    </div>
+</div>

@@ -27,6 +27,7 @@ module.exports = function (outputPath, prod) {
             "table": ["./javascript/components/table.js"],
             "toast": ["./javascript/components/toast.js"],
             "modal": ["./javascript/components/modal.js"],
+            "step-indicator": ["./javascript/components/step-indicator.js"],
             "toggleswitch": ["./javascript/components/toggleswitch.js"],
             "languageswitcher": ["./javascript/components/languageswitcher.js"],
             "table-pagination": ["./javascript/components/table-pagination.js"],

@@ -12,7 +12,7 @@
 
 {% from "components/footers/footer.njk" import footer as footer %}
 
-{% from "components/stepguide/stepguide.njk" import overflow_stepguide as overflow_stepguide %}
+{% from "components/stepguide/stepguide.njk" import simpleStepIndicator as simpleStepIndicator %}
 {% from "components/buttons/buttons.njk" import button as button %}
 {% from "components/table/table.njk" import table as table %}
 {% from "components/structured-list/structured-list.njk" import structured_list as structured_list %}
@@ -77,7 +77,12 @@
 {% block body %}
 <main class="container page-container" id="main-content">
     {{ back_link({ "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/" }) }}
-    {{ overflow_stepguide(trinindikator_data) }}
+    {{ 
+        simpleStepIndicator({
+            "currentStep": "5",
+            "totalSteps": "5"
+        }) 
+    }}
     <h1>Opsummering</h1>
     <h2>Oplysninger om ansøger</h2>
     {{ structured_list(list_oplysninger_om_ansoeger) }}
