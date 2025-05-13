@@ -9,7 +9,7 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
     <div class="container">
         <div class="row">
             <div class="col-12 align-text-center d-flex align-items-center d-lg-none bg-alternative justify-content-center tablet-row">
-                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="" width="1236" height="1312">
+                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="">
             </div>
             <div class="col-12 col-lg-6 mt-8 mt-lg-0 py-lg-9">
                 <h1 class="hyphens-manual">Lav brugervenlige og tilgængelige selvbetjenings&shy;løsninger</h1>
@@ -22,7 +22,7 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
                 </ul>
             </div>
             <div class="col-6 justify-content-center align-items-center d-none d-lg-flex desktop-row">
-                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="" width="1236" height="1312">
+                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="">
             </div>
         </div>
     </div>
@@ -63,8 +63,8 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
     <div class="row">
         <div class="col-12 col-sm-6">
             <h3>Seneste release</h3>
-            <p>Version 11.0.0</p>
-            <p class="mt-0">??-??-2025</p>
+            <p class="mb-0">Version 11.0.0</p>
+            <p class="small-text mt-0">??-??-2025</p>
             <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. Læs release notes for at følge med i udviklingen, og tilmeld nyhedsbrevet for at få besked, når der kommer nye versioner af designsystemet.</p>
             <ul class="nobullet-list">
                 <li>{% include links/internal-link.html linktext="Release notes" %}</li>
