@@ -1296,11 +1296,18 @@ Styling for cards
     border-top: 1px solid color('gray-200');
 }
 
+.page-styleguide .card-image {
+    aspect-ratio: 267 / 150;
+}
+
+.page-komponenter .card-image {
+    aspect-ratio: 534 / 300;
+}
+
 .page-selvbetjeningsløsninger,
 .page-templates {
     .card-image {
         aspect-ratio: 1125 / 745;
-        background-color: color('gray-200');
     }
 
     .card-content .card-heading {

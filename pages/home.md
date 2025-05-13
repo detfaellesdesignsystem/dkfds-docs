@@ -9,7 +9,7 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
     <div class="container">
         <div class="row">
             <div class="col-12 align-text-center d-flex align-items-center d-lg-none bg-alternative justify-content-center tablet-row">
-                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="">
+                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="" width="1236" height="1312">
             </div>
             <div class="col-12 col-lg-6 mt-8 mt-lg-0 py-lg-9">
                 <h1 class="hyphens-manual">Lav brugervenlige og tilgængelige selvbetjenings&shy;løsninger</h1>
@@ -22,7 +22,7 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
                 </ul>
             </div>
             <div class="col-6 justify-content-center align-items-center d-none d-lg-flex desktop-row">
-                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="">
+                <img class="designsystem-illustration" src="{{ site.baseurl }}/assets/img/descriptionimages/hero-virk.png" alt="" width="1236" height="1312">
             </div>
         </div>
     </div>

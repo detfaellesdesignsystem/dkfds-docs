@@ -91,17 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 break;
 
-            case 'Cards':
-
-                DKFDS.init();
-                document.getElementById('replace-image-2').querySelector('.card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
-                setTimeout(() => {
-                    document.getElementById('replace-image-1').querySelector('.card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
-                    document.getElementById('replace-image-link-1').querySelector('.card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
-                }, 3000);
-                document.getElementById('replace-image-link-2').querySelector('.card-image').innerHTML = '<img src="/assets/img/cards/Card_med_halv_bredde_2_EKSEMPEL.svg" alt="Billedeksempel">';
-                break;
-
             case 'JavaScript i faneblade':
 
                 initTest();

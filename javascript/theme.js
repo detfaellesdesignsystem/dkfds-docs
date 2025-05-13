@@ -357,11 +357,21 @@ function rebuildCardImages(cards, imagepath, extension) {
             let id = cards[i].id; // Important: Ensure the given card IDs match the card image filenames
             /* Cards on the frontpage have different images for desktop and tablet */
             if (document.body.classList.contains('page-forside')) {
-                document.getElementById(id).querySelector('.card-image.tablet').innerHTML = `<img src="${imagepath}/${id}-tablet-${cookie}.${extension}" alt="">`;
-                document.getElementById(id).querySelector('.card-image.desktop').innerHTML = `<img src="${imagepath}/${id}-desktop-${cookie}.${extension}" alt="">`;
+                document.getElementById(id).querySelector('.card-image.tablet').innerHTML = `<img src="${imagepath}/${id}-tablet-${cookie}.${extension}" alt="" width="500" height="320">`;
+                document.getElementById(id).querySelector('.card-image.desktop').innerHTML = `<img src="${imagepath}/${id}-desktop-${cookie}.${extension}" alt="" width="736" height="320">`;
             }
             else {
-                document.getElementById(id).querySelector('.card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="">`;
+                let width = 0;
+                let height = 0;
+                if (document.body.classList.contains('page-komponenter') || document.body.classList.contains('page-styleguide')) {
+                    width = 267;
+                    height = 150;
+                }
+                else if (document.body.classList.contains('page-selvbetjeningsløsninger') || document.body.classList.contains('page-templates')) {
+                    width = 1125;
+                    height = 745;
+                }
+                document.getElementById(id).querySelector('.card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="" width="${width}" height="${height}">`;
             }
         }
     }

@@ -21,7 +21,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
 
 <ul class="row card-row">
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/farver/"
         id="card-farver"
         headingLevel="span"
@@ -29,7 +29,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/typografi/"
         id="card-typografi"
         headingLevel="span"
@@ -37,7 +37,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/borders/"
         id="card-hjoerner-streger-skygger"
         headingLevel="span"
@@ -45,7 +45,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/ikoner/"
         id="card-ikoner"
         headingLevel="span"
@@ -53,7 +53,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/logoer/"
         id="card-logoer"
         headingLevel="span"
@@ -61,7 +61,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/datavisualisering-infografik/"
         id="card-datavisualisering-og-infografik"
         headingLevel="span"
@@ -69,7 +69,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/layout/"
         id="card-layout"
         headingLevel="span"
@@ -77,7 +77,7 @@ Hvis du ikke anvender designsystemets kode skal du selv sørge for at din selvbe
         %}
     </li>
     <li class="col-12 col-sm-6 col-md-4">
-        {% include cards/navcard-short.html img=true style="style='aspect-ratio: 267 / 150;'" headingLevel="h2"
+        {% include cards/navcard-short.html headingLevel="h2"
         href="/styleguide/grid/"
         id="card-grid-og-baseline-grid"
         headingLevel="span"

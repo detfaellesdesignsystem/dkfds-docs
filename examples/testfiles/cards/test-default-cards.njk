@@ -48,8 +48,7 @@
             {{ 
                 card({
                     "image": { 
-                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
-                        "alt": ""
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg"
                     }
                 }) 
             }}
@@ -70,8 +69,7 @@
             {{ 
                 card({
                     "image": { 
-                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg",
-                        "alt": ""
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg"
                     },
                     "subheading": "Subheading"
                 }) 
@@ -140,6 +138,26 @@
                 card({
                     "subheading": "Card med to knapper",
                     "content": "<div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Cards med alt indhold</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            {{ 
+                card({
+                    "image": { 
+                        "height": 300,
+                        "width": 534,
+                        "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.png"
+                    },
+                    "subheading": "Subheading",
+                    "headingLevel": "h3",
+                    "heading": "Card med alle visuelle elementer",
+                    "content": "<p>Under denne tekst er to knapper.</p><div class=\"button-group card-actions\"><button class=\"button button-secondary\">Sekundærknap</button><button class=\"button button-tertiary\">Tertiærknap</button></div>"
                 }) 
             }}
         </div>

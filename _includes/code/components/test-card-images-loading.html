@@ -1,0 +1,116 @@
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Cards, indlæsning af billeder</h1>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Almindelige cards</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <div class="card-image"><img alt="" src="{{ site.baseurl }}/assets/img/cards/card-placeholder.png" width="534" height="300">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses hurtigst muligt</h2>
+                    <p>Width, height og src er sat fra starten.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card" id="replace-image-1">
+                <div class="card-image" style='aspect-ratio: 534 / 300;'></div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses efter 2 sekunder</h2>
+                    <p>Width og height er ikke sat på dette billede.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card" id="replace-image-2">
+                <div class="card-image"><img alt="" width="534" height="300"></div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses efter 4 sekunder</h2>
+                    <p>Kortvarig, ugyldig HTML indtil billedet er loadet for at se effekten af
+                        manglende src-attribut.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card" id="replace-image-3">
+                <div class="card-image" style='aspect-ratio: 534 / 300;'></div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses efter 6 sekunder</h2>
+                    <p>Width og height sættes gennem JavaScript samtidigt med src.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Lange cards</h2>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="card long">
+                <div class="card-image"><img alt="" src="{{ site.baseurl }}/assets/img/cards/card-placeholder.png" width="534" height="300">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses hurtigst muligt</h2>
+                    <p>Width, height og src er sat fra starten.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="card long" id="replace-image-4">
+                <div class="card-image" style='aspect-ratio: 534 / 300; height: 100%;'></div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses efter 2 sekunder</h2>
+                    <p>Width og height er ikke sat på dette billede.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="card long" id="replace-image-5">
+                <div class="card-image"><img alt="" width="534" height="300"></div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses efter 4 sekunder</h2>
+                    <p>Kortvarig, ugyldig HTML indtil billedet er loadet for at se effekten af
+                        manglende src-attribut.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="card long" id="replace-image-6">
+                <div class="card-image" style='aspect-ratio: 534 / 300; height: 100%;'></div>
+                <div class="card-content">
+                    <h2 class="card-heading">Billede indlæses efter 6 sekunder</h2>
+                    <p>Width og height sættes gennem JavaScript samtidigt med src.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    setTimeout(() => {
+        document.getElementById('replace-image-1').querySelector('.card-image')
+            .innerHTML = '<img src="/assets/img/cards/card-placeholder.png" alt="">';
+        document.getElementById('replace-image-4').querySelector('.card-image')
+            .innerHTML = '<img src="/assets/img/cards/card-placeholder.png" alt="">';
+    }, 2000);
+    setTimeout(() => {
+        document.getElementById('replace-image-2').querySelector('.card-image')
+            .innerHTML = '<img src="/assets/img/cards/card-placeholder.png" alt="">';
+        document.getElementById('replace-image-5').querySelector('.card-image')
+            .innerHTML = '<img src="/assets/img/cards/card-placeholder.png" alt="">';
+    }, 4000);
+    setTimeout(() => {
+        document.getElementById('replace-image-3').querySelector('.card-image')
+            .innerHTML =
+            '<img width="534" height="300" src="/assets/img/cards/card-placeholder.png" alt="">';
+        document.getElementById('replace-image-6').querySelector('.card-image')
+            .innerHTML =
+            '<img width="534" height="300" src="/assets/img/cards/card-placeholder.png" alt="">';
+    }, 6000);
+</script>
