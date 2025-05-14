@@ -19,7 +19,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/cards/*.njk'];
+var buildFile = ['examples/testfiles/loading-spinner/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -118,6 +118,7 @@ var testfiles = [
     "test-buttons-in-divs",
     "test-buttons-next-to-text",
     "test-button-long-text",
+    "test-loading-button",
     "test-modal-types",
     "test-modal-javascript",
     "test-modal-inert",

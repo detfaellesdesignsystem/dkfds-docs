@@ -166,6 +166,11 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-button-long-text" description="Knapper med lang tekst" %}
 
 {:.h3}
+## Loading spinner
+
+{% include test/preview-test.html filename="test-loading-button" description="Loading spinner på knapper" %} 
+
+{:.h3}
 ## Modal
 
 {% include test/preview-test.html filename="test-modal-types" description="Modaltyper" %}

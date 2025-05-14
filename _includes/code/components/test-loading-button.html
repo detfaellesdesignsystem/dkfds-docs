@@ -1,0 +1,82 @@
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Loading spinner på knapper</h1>
+        </div>
+    </div>
+    <div class="row card-row mb-905">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Titel</h2>
+                    <p>Tre knapper, der viser en loading spinner ved klik. Knap nr. 1 anvender
+                        aria-label. Knap nr. 2 anvender aria-live.</p>
+                    <div class="button-group card-actions">
+                        <button id="button-1" class="button button-primary"><span>Knap
+                                1</span></button>
+                        <button id="button-2" class="button button-secondary"><span
+                                aria-live="polite">Knap 2</span></button>
+                        <button id="button-3" class="button button-tertiary"
+                            aria-live="polite" aria-relevant="text"><span>Knap
+                                3</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('button-1').addEventListener('click', function(e) {
+            if (this.classList.contains('spinner-active')) {
+                e.preventDefault();
+            } else {
+                this.classList.add('spinner-active');
+                this.setAttribute('aria-disabled', 'true');
+                this.setAttribute('aria-label', 'Vent venligst');
+                this.innerHTML =
+                    '<span class="spinner spinner-small spinner-light mr-3"></span>Vent venligst...';
+                setTimeout(() => {
+                    this.classList.remove('spinner-active');
+                    this.removeAttribute('aria-disabled');
+                    this.setAttribute('aria-label', 'Knap 1');
+                    this.innerHTML = '<span>Knap 1</span>';
+                }, 4000);
+            }
+        });
+        document.getElementById('button-2').addEventListener('click', function(e) {
+            if (this.classList.contains('spinner-active')) {
+                e.preventDefault();
+            } else {
+                this.classList.add('spinner-active');
+                this.setAttribute('aria-disabled', 'true');
+                this.querySelector('span').innerHTML = 'Vent venligst...';
+                let spinner = document.createElement('span');
+                spinner.classList.add('spinner', 'spinner-small', 'mr-3');
+                this.prepend(spinner);
+                setTimeout(() => {
+                    this.classList.remove('spinner-active');
+                    this.removeAttribute('aria-disabled');
+                    this.querySelector('.spinner').remove();
+                    this.querySelector('span').innerHTML = 'Knap 2';
+                }, 4000);
+            }
+        });
+        document.getElementById('button-3').addEventListener('click', function(e) {
+            if (this.classList.contains('spinner-active')) {
+                e.preventDefault();
+            } else {
+                this.classList.add('spinner-active');
+                this.innerHTML =
+                    '<span class="spinner spinner-small mr-3"></span>Vent venligst...';
+                this.setAttribute('aria-disabled', 'true');
+                setTimeout(() => {
+                    this.classList.remove('spinner-active');
+                    this.innerHTML = '<span>Knap 3</span>';
+                    this.removeAttribute('aria-disabled');
+                }, 4000);
+            }
+        });
+    });
+</script>

@@ -16,8 +16,8 @@
 ================================================== -->
 
 
-<title>Testfil | test-modal-types | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-modal-types | Det Fælles Designsystem">
+<title>Testfil | test-loading-button | Det Fælles Designsystem</title>
+<meta property="og:title" content="Testfil | test-loading-button | Det Fælles Designsystem">
 
 
 
@@ -248,83 +248,84 @@
     <main class="container page-container" id="main-content">
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">Modaltyper</h1>
+            <h1 class="h2 mt-0">Loading spinner på knapper</h1>
         </div>
     </div>
-    <div class="row mb-905">
-        <div class="col-12">
-            <button class="button button-tertiary" data-module="modal" data-target="modal-example-1" aria-haspopup="dialog">
-                Åbn simpel modal
-            </button>
-            <button class="button button-tertiary" data-module="modal" data-target="modal-example-2" aria-haspopup="dialog">
-                Åbn modal med handlinger
-            </button>
-            <button class="button button-tertiary" data-module="modal" data-target="modal-example-3" aria-haspopup="dialog">
-                Åbn modal som kræver handling
-            </button>
+    <div class="row card-row mb-905">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Titel</h2>
+                    <p>Tre knapper, der viser en loading spinner ved klik. Knap nr. 1 anvender
+                        aria-label. Knap nr. 2 anvender aria-live.</p>
+                    <div class="button-group card-actions">
+                        <button id="button-1" class="button button-primary"><span>Knap
+                                1</span></button>
+                        <button id="button-2" class="button button-secondary"><span aria-live="polite">Knap 2</span></button>
+                        <button id="button-3" class="button button-tertiary" aria-live="polite" aria-relevant="text"><span>Knap
+                                3</span></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
-<div class="fds-modal-container">
 
-    <div class="fds-modal" id="modal-example-1" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-1-heading">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modal-example-1-heading">
-                    Simpel modal
-                </h2>
-                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
-            </div>
-            <div class="modal-body">
-                <p>Dette er modalens indhold.</p>
-            </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('button-1').addEventListener('click', function(e) {
+            if (this.classList.contains('spinner-active')) {
+                e.preventDefault();
+            } else {
+                this.classList.add('spinner-active');
+                this.setAttribute('aria-disabled', 'true');
+                this.setAttribute('aria-label', 'Vent venligst');
+                this.innerHTML =
+                    '<span class="spinner spinner-small spinner-light mr-3"></span>Vent venligst...';
+                setTimeout(() => {
+                    this.classList.remove('spinner-active');
+                    this.removeAttribute('aria-disabled');
+                    this.setAttribute('aria-label', 'Knap 1');
+                    this.innerHTML = '<span>Knap 1</span>';
+                }, 4000);
+            }
+        });
+        document.getElementById('button-2').addEventListener('click', function(e) {
+            if (this.classList.contains('spinner-active')) {
+                e.preventDefault();
+            } else {
+                this.classList.add('spinner-active');
+                this.setAttribute('aria-disabled', 'true');
+                this.querySelector('span').innerHTML = 'Vent venligst...';
+                let spinner = document.createElement('span');
+                spinner.classList.add('spinner', 'spinner-small', 'mr-3');
+                this.prepend(spinner);
+                setTimeout(() => {
+                    this.classList.remove('spinner-active');
+                    this.removeAttribute('aria-disabled');
+                    this.querySelector('.spinner').remove();
+                    this.querySelector('span').innerHTML = 'Knap 2';
+                }, 4000);
+            }
+        });
+        document.getElementById('button-3').addEventListener('click', function(e) {
+            if (this.classList.contains('spinner-active')) {
+                e.preventDefault();
+            } else {
+                this.classList.add('spinner-active');
+                this.innerHTML =
+                    '<span class="spinner spinner-small mr-3"></span>Vent venligst...';
+                this.setAttribute('aria-disabled', 'true');
+                setTimeout(() => {
+                    this.classList.remove('spinner-active');
+                    this.innerHTML = '<span>Knap 3</span>';
+                    this.removeAttribute('aria-disabled');
+                }, 4000);
+            }
+        });
+    });
+</script>
 
-        </div>
-    </div>
-
-    <div class="fds-modal" id="modal-example-2" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-2-heading">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modal-example-2-heading">
-                    Modal med handlinger
-                </h2>
-                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
-            </div>
-            <div class="modal-body">
-                <p>Dette er modalens indhold.</p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="button button-secondary" data-modal-close="">
-                    Luk
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="fds-modal" id="modal-example-3" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-3-heading" data-modal-forced-action="">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="modal-example-3-heading">
-                    Modal som kræver handling
-                </h2>
-
-            </div>
-            <div class="modal-body">
-                <p>Dette er modalens indhold.</p>
-            </div>
-
-            <div class="modal-footer">
-                <button class="button button-secondary" data-modal-close="">
-                    Luk
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-</div>
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
@@ -345,10 +346,10 @@
             </div>
             <div>
                 
-                <a class="function-link mr-4" href="/eksempel/test-loading-button/">Forrige</a>
+                <a class="function-link mr-4" href="/eksempel/test-button-long-text/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-modal-javascript/">Næste</a>
+                <a class="function-link" href="/eksempel/test-modal-types/">Næste</a>
                 
             </div>
         </div>
