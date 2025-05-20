@@ -12,7 +12,7 @@ tags:
 
 ## GitHub {#{% include create-id.html heading="GitHub" %}}
 
-GitHub er verdens største frontend-udvikler fællesskab, og et værktøj til versionsstyring, deling af kode og facilitering af open source samarbejde.
+FDS-teamet bruger GitHub som værktøj til versionsstyring, deling af kode og facilitering af open source-samarbejde.
 
 Brug GitHub til:
 
