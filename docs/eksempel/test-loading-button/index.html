@@ -253,8 +253,7 @@
     </div>
     <div class="row mb-905">
         <div class="col-12 mb-4">
-            <h2 class="h3 mt-0">Ikke-synlig skærmlæserbesked, aria-busy, tekst fjernes fra
-                knappen</h2>
+            <h2 class="h3 mt-0">Ikke-synlig skærmlæserbesked, tekst fjernes fra knappen</h2>
         </div>
         <div class="col-12 mb-4">
             <button id="test-1" class="button button-primary">
@@ -272,7 +271,7 @@
     </div>
     <div class="row mb-905">
         <div class="col-12 mb-4">
-            <h2 class="h3 mt-0">Synlig besked, aria-busy, tekst fjernes fra knappen</h2>
+            <h2 class="h3 mt-0">Synlig besked, tekst fjernes fra knappen</h2>
         </div>
         <div class="col-12 mb-4 d-flex align-items-center">
             <button id="test-3" class="button button-primary">
@@ -290,30 +289,10 @@
     </div>
     <div class="row mb-905">
         <div class="col-12 mb-4">
-            <h2 class="h3 mt-0">Ikke-synlig skærmlæserbesked, aria-disabled, tekst fjernes fra
-                knappen</h2>
+            <h2 class="h3 mt-0">Ikke-synlig skærmlæserbesked, tekst bliver på knappen</h2>
         </div>
         <div class="col-12 mb-4">
-            <button id="test-5" class="button button-primary">
-                <span>Gem</span>
-            </button>
-            <span id="test-5-message" aria-live="polite" class="sr-only"></span>
-        </div>
-        <div class="col-12 mb-4">
-            <button id="test-6" class="button button-icon-only">
-                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#save"></use></svg>
-                <span class="sr-only">Gem</span>
-            </button>
-            <span id="test-6-message" aria-live="polite" class="sr-only"></span>
-        </div>
-    </div>
-    <div class="row mb-905">
-        <div class="col-12 mb-4">
-            <h2 class="h3 mt-0">Ikke-synlig skærmlæserbesked, aria-busy, tekst bliver på
-                knappen</h2>
-        </div>
-        <div class="col-12 mb-4">
-            <button id="test-7" class="button button-primary" style="padding-left: calc(14px + 1.2rem);padding-right: calc(14px + 1.2rem);">
+            <button id="test-7" class="button button-primary" style="padding-left: calc(16px + 1.2rem);padding-right: calc(16px + 1.2rem);">
                 <span>Gem</span>
             </button>
             <span id="test-7-message" aria-live="polite" class="sr-only"></span>
@@ -324,6 +303,53 @@
                 <span>Gem</span>
             </button>
             <span id="test-8-message" aria-live="polite" class="sr-only"></span>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 mb-4">
+            <h2 class="h3 mt-0">Loading button forsvinder efter indlæsning</h2>
+        </div>
+        <div class="col-12 mb-4">
+            <button id="load-more-button" class="button button-primary">
+                <span>Se flere cards</span>
+            </button>
+            <span id="load-more-message" aria-live="polite" class="sr-only"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-none">
+            <div class="card">
+                <div class="card-content">
+                    <ul class="nobullet-list">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#" class="icon-link" target="_blank">Eksternt
+                                link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-none">
+            <div class="card">
+                <div class="card-content">
+                    <ul class="nobullet-list">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#" class="icon-link" target="_blank">Eksternt
+                                link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-none">
+            <div class="card">
+                <div class="card-content">
+                    <ul class="nobullet-list">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#" class="icon-link" target="_blank">Eksternt
+                                link<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -344,7 +370,7 @@
             } else {
                 this.classList.add('spinner-active');
                 this.querySelector('span').classList.add('text-hidden');
-                this.setAttribute('aria-busy', true);
+                this.setAttribute('aria-disabled', true);
                 document.getElementById('test-1-message').textContent =
                     'Gemmer';
                 let srOnly = document.createElement('span');
@@ -361,7 +387,7 @@
                     this.querySelector('.sr-only').remove();
                     this.querySelector('span').classList.remove(
                         'text-hidden');
-                    this.removeAttribute('aria-busy');
+                    this.removeAttribute('aria-disabled');
                     document.getElementById('test-1-message')
                         .textContent = 'Gemt ' + getCurrentTime();
                 }, 4000);
@@ -374,7 +400,7 @@
             } else {
                 this.classList.add('spinner-active');
                 this.querySelector('.icon-svg').classList.add('text-hidden');
-                this.setAttribute('aria-busy', true);
+                this.setAttribute('aria-disabled', true);
                 document.getElementById('test-2-message').textContent =
                     'Gemmer';
                 let spinner = document.createElement('span');
@@ -385,7 +411,7 @@
                     this.querySelector('.spinner').remove();
                     this.querySelector('.icon-svg').classList.remove(
                         'text-hidden');
-                    this.removeAttribute('aria-busy');
+                    this.removeAttribute('aria-disabled');
                     document.getElementById('test-2-message')
                         .textContent = 'Gemt ' + getCurrentTime();
                 }, 4000);
@@ -398,7 +424,7 @@
             } else {
                 this.classList.add('spinner-active');
                 this.querySelector('span').classList.add('text-hidden');
-                this.setAttribute('aria-busy', true);
+                this.setAttribute('aria-disabled', true);
                 document.getElementById('test-3-message').textContent =
                     'Gemmer...';
                 let srOnly = document.createElement('span');
@@ -415,7 +441,7 @@
                     this.querySelector('.sr-only').remove();
                     this.querySelector('span').classList.remove(
                         'text-hidden');
-                    this.removeAttribute('aria-busy');
+                    this.removeAttribute('aria-disabled');
                     document.getElementById('test-3-message')
                         .textContent = 'Gemt ' + getCurrentTime();
                 }, 4000);
@@ -428,7 +454,7 @@
             } else {
                 this.classList.add('spinner-active');
                 this.querySelector('.icon-svg').classList.add('text-hidden');
-                this.setAttribute('aria-busy', true);
+                this.setAttribute('aria-disabled', true);
                 document.getElementById('test-4-message').textContent =
                     'Gemmer...';
                 let spinner = document.createElement('span');
@@ -439,64 +465,10 @@
                     this.querySelector('.spinner').remove();
                     this.querySelector('.icon-svg').classList.remove(
                         'text-hidden');
-                    this.removeAttribute('aria-busy');
+                    this.removeAttribute('aria-disabled');
                     document.getElementById('test-4-message')
-                        .textContent = 'Gemt ' + getCurrentTime();
-                }, 4000);
-            }
-        });
-        document.getElementById('test-5').addEventListener('click', function(e) {
-            if (this.classList.contains('spinner-active')) {
-                e.preventDefault();
-                console.log('Prevented click');
-            } else {
-                this.classList.add('spinner-active');
-                this.querySelector('span').classList.add('text-hidden');
-                this.setAttribute('aria-disabled', true);
-                document.getElementById('test-5-message').textContent =
-                    'Gemmer';
-                let srOnly = document.createElement('span');
-                srOnly.classList.add('sr-only');
-                srOnly.textContent = 'Gem';
-                this.prepend(srOnly);
-                let spinner = document.createElement('span');
-                spinner.classList.add('spinner', 'spinner-small',
-                    'spinner-light');
-                this.prepend(spinner);
-                setTimeout(() => {
-                    this.classList.remove('spinner-active');
-                    this.querySelector('.spinner').remove();
-                    this.querySelector('.sr-only').remove();
-                    this.querySelector('span').classList.remove(
-                        'text-hidden');
-                    this.removeAttribute('aria-disabled');
-                    document.getElementById('test-5-message')
-                        .textContent = 'Gemt ' + getCurrentTime();
-                }, 4000);
-            }
-        });
-        document.getElementById('test-6').addEventListener('click', function(e) {
-            if (this.classList.contains('spinner-active')) {
-                e.preventDefault();
-                console.log('Prevented click');
-            } else {
-                this.classList.add('spinner-active');
-                this.querySelector('.icon-svg').classList.add('text-hidden');
-                this.setAttribute('aria-disabled', true);
-                document.getElementById('test-6-message').textContent =
-                    'Gemmer';
-                let spinner = document.createElement('span');
-                spinner.classList.add('spinner', 'spinner-small');
-                this.prepend(spinner);
-                setTimeout(() => {
-                    this.classList.remove('spinner-active');
-                    this.querySelector('.spinner').remove();
-                    this.querySelector('.icon-svg').classList.remove(
-                        'text-hidden');
-                    this.removeAttribute('aria-disabled');
-                    document.getElementById('test-6-message')
-                        .textContent = 'Gemt ' + getCurrentTime();
-                }, 4000);
+                        .textContent = 'Gemt';
+                }, 10);
             }
         });
         document.getElementById('test-7').addEventListener('click', function(e) {
@@ -505,20 +477,20 @@
                 console.log('Prevented click');
             } else {
                 this.classList.add('spinner-started');
-                this.setAttribute('aria-busy', true);
+                this.setAttribute('aria-disabled', true);
                 this.removeAttribute('style');
                 document.getElementById('test-7-message').textContent =
                     'Gemmer';
                 let spinner = document.createElement('span');
                 spinner.classList.add('spinner', 'spinner-small',
-                    'spinner-light', 'mr-3');
+                    'spinner-light', 'mr-305');
                 this.prepend(spinner);
                 setTimeout(() => {
                     this.classList.remove('spinner-started');
                     this.querySelector('.spinner').remove();
-                    this.removeAttribute('aria-busy');
+                    this.removeAttribute('aria-disabled');
                     this.setAttribute('style',
-                        'padding-left: calc(14px + 1.2rem);padding-right: calc(14px + 1.2rem);'
+                        'padding-left: calc(16px + 1.2rem);padding-right: calc(16px + 1.2rem);'
                         );
                     document.getElementById('test-7-message')
                         .textContent = 'Gemt ' + getCurrentTime();
@@ -532,16 +504,17 @@
             } else {
                 this.classList.add('spinner-started');
                 this.querySelector('.icon-svg').remove();
-                this.setAttribute('aria-busy', true);
+                this.setAttribute('aria-disabled', true);
                 document.getElementById('test-8-message').textContent =
                     'Gemmer';
                 let spinner = document.createElement('span');
-                spinner.classList.add('spinner', 'spinner-small', 'mr-4');
+                spinner.classList.add('spinner', 'spinner-small', 'mr-305',
+                    'ml-2');
                 this.prepend(spinner);
                 setTimeout(() => {
                     this.classList.remove('spinner-started');
                     this.querySelector('.spinner').remove();
-                    this.removeAttribute('aria-busy');
+                    this.removeAttribute('aria-disabled');
                     this.innerHTML =
                         '<svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#save"></use></svg><span>Gem</span>';
                     document.getElementById('test-8-message')
@@ -549,6 +522,45 @@
                 }, 4000);
             }
         });
+        document.getElementById('load-more-button').addEventListener('click',
+            function(e) {
+                if (this.classList.contains('spinner-active')) {
+                    e.preventDefault();
+                    console.log('Prevented click');
+                } else {
+                    this.classList.add('spinner-active');
+                    this.querySelector('span').classList.add('text-hidden');
+                    this.setAttribute('aria-disabled', true);
+                    document.getElementById('load-more-message').textContent =
+                        'Indlæser cards';
+                    let srOnly = document.createElement('span');
+                    srOnly.classList.add('sr-only');
+                    srOnly.textContent = 'Se flere cards';
+                    this.prepend(srOnly);
+                    let spinner = document.createElement('span');
+                    spinner.classList.add('spinner', 'spinner-small',
+                        'spinner-light');
+                    this.prepend(spinner);
+                    setTimeout(() => {
+                        let hiddenElements = document.querySelectorAll(
+                            '.col-12.d-none');
+                        for (let i = 0; i < hiddenElements.length; i++) {
+                            hiddenElements[i].classList.remove('d-none');
+                        }
+                        document.getElementById('load-more-message')
+                            .textContent = 'Card 1-3 indlæst';
+                        if (document.activeElement === this) {
+                            document.getElementById('load-more-message')
+                                .setAttribute('tabindex', -1);
+                            document.getElementById('load-more-message')
+                                .removeAttribute('aria-live');
+                            document.getElementById('load-more-message')
+                                .focus();
+                        }
+                        this.remove();
+                    }, 4000);
+                }
+            });
     });
 </script>
 
