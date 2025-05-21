@@ -6,6 +6,7 @@ layout: styleguide
 category: Faellesskab_category
 subcategory: Fællesskab
 title: Nyhedsbrev
+lead: Tilmeld dig nyhedsbrevet og følg med i arbejdet med Det Fælles Designsystem.
 description: Tilmeld dig nyheder fra Det Fælles Designsystem
 tags:
 - nyhedsbrev
@@ -13,6 +14,8 @@ tags:
 - tilmeld
 - afmeld
 ---
+
+Nyhedsbrevene indeholder information om {% include links/internal-link.html linktext="releases" %} og invitationer til {% include links/internal-link.html linktext="samarbejdsforum" %}. Vi udsender nyhedsbreve ca. 4-6 gange om året.
 
 <div class="alert mt-5 mb-9" id="newsletter-alert" role="alert" hidden>
     <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
