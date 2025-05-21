@@ -34,9 +34,11 @@ Benyt ikke loading spinner til live-opdateringer eller automatisk genindlæsning
 
 ### Vejledning
 
-Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).
+Anvend kun loading spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).
 
 Anvend kun loading spinner når indhold indlæses for første gang eller som respons på en brugerhandling. 
+
+Loading spinneren findes i en lys og mørk variant, der skal anvendes afhængigt af baggrundsfarven på det element, den vises på.
 
 En loading spinner skal ikke anvendes som kompensation for en permanent langsom performance. 
 

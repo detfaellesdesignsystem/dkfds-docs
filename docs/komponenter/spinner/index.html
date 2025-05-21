@@ -1721,9 +1721,11 @@
 
 <h3>Vejledning</h3>
 
-<p>Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).</p>
+<p>Anvend kun loading spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).</p>
 
 <p>Anvend kun loading spinner når indhold indlæses for første gang eller som respons på en brugerhandling.</p>
+
+<p>Loading spinneren findes i en lys og mørk variant, der skal anvendes afhængigt af baggrundsfarven på det element, den vises på.</p>
 
 <p>En loading spinner skal ikke anvendes som kompensation for en permanent langsom performance.</p>
 
@@ -1782,7 +1784,10 @@
     <div class="sr-only">Eksempel</div>
     
     <div class="d-flex justify-content-center">
-    <button id="button-spinner-interactive" class="button button-primary">Gem</button>
+    <button id="button-spinner-interactive" class="button button-primary">
+        <span>Gem</span>
+    </button>
+    <span id="button-spinner-interactive-message" aria-live="polite" class="sr-only"></span>
 </div>
 </div>
 

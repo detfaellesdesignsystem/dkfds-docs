@@ -168,7 +168,7 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Loading spinner
 
-{% include test/preview-test.html filename="test-loading-button" description="Loading spinner på knapper" %} 
+{% include test/preview-test.html filename="test-loading-button" description="Loading spinner" %} 
 
 {:.h3}
 ## Modal

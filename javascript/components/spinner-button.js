@@ -5,10 +5,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         else {
             this.classList.add('spinner-active');
-            this.innerHTML = '<span class="spinner spinner-small spinner-light mr-3"></span>Gemmer...';
+            this.querySelector('span').classList.add('text-hidden');
+            this.setAttribute('aria-disabled', true);
+
+            document.getElementById('button-spinner-interactive-message').textContent = 'Gemmer';
+
+            let spinner = document.createElement('span');
+            spinner.classList.add('spinner', 'spinner-small', 'spinner-light');
+            this.prepend(spinner);
+
             setTimeout(() => {
                 this.classList.remove('spinner-active');
-                this.innerHTML = 'Gem';
+                this.querySelector('.spinner').remove();
+                this.querySelector('span').classList.remove('text-hidden');
+                this.removeAttribute('aria-disabled');
+                document.getElementById('button-spinner-interactive-message').textContent = 'Gemt';
             }, 3000);
         }
     });
