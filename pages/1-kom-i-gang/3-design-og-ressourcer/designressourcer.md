@@ -52,7 +52,7 @@ Vi stiller designbiblioteket til rådighed for, at I kan komme hurtigt i gang me
     <div class="col-12">
         <a class="card long" href="https://www.figma.com/community/file/1284147195952477019/det-flles-designsystem" target="_blank">
             <div class="card-image">
-                <img src="/assets/img/cards/designbibliotek.png" alt="">
+                <img src="/assets/img/cards/designbibliotek.svg" alt="">
             </div>
             <div class="card-content pb-sm-5">
                 <h3 class="card-heading">Designbibliotek i Figma</h3>
