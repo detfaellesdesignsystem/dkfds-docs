@@ -1,14 +1,14 @@
+{% from "components/spinner/spinner.njk" import spinner as spinner %}
+
 <div class="row">
     <div class="col-6">
         <div class="d-flex justify-content-center">
-            <div class="spinner spinner-small"></div>
-
+            {{ spinner({ "small": true }) }}
         </div>
     </div>
     <div class="col-6" id="dark-spinner-background">
         <div class="d-flex justify-content-center align-items-center">
-            <div class="spinner spinner-small spinner-light"></div>
-
+            {{ spinner({ "small": true, "light": true }) }}
         </div>
     </div>
 </div>

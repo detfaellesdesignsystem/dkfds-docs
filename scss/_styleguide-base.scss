@@ -1326,3 +1326,20 @@ Styling for cards
 .page-design-og-ressourcer .card {
     max-width: $typography-text-max-width;
 }
+
+
+/*
+-----------------------------------------------------
+Styling for loading spinner examples
+-----------------------------------------------------
+*/
+
+#dark-spinner-background {
+    background-color: color('gray-600');
+    margin-top: -16px;
+    margin-bottom: -16px;
+
+    .d-flex.justify-content-center {
+        height: 100%;
+    }
+}

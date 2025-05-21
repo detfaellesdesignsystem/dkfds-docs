@@ -50,7 +50,7 @@ Den store spinner anvendes til større sektioner på en side. Den placeres i mid
 
 Den lille spinner anvendes hvor pladsen er trang, eksempelvis på knapper eller i enkelte celler i tabeller.
 
-{% include code/preview-box.html component="spinner-button" title="Eksempel på knap med spinner" code="/komponenter/spinner/#lille-spinner-kode" %}
+{% include code/preview-box.html component="spinner-small" title="Eksempel på knap med spinner" code="/komponenter/spinner/#lille-spinner-kode" %}
 
 #### Interaktivt eksempel
 
@@ -84,7 +84,7 @@ Der medfølger ikke funktionalitet med denne komponent. Man skal derfor selv i l
 
 ## Lille spinner {#{% include create-id.html heading="Lille spinner" append="-kode" %}}
 
-{% include code/syntax.html component="spinner-button" link=true copybutton=true guidelines="/komponenter/spinner/#lille-spinner" %}
+{% include code/syntax.html component="spinner-small" link=true copybutton=true guidelines="/komponenter/spinner/#lille-spinner" %}
 
 ## Spinner med tekst {#{% include create-id.html heading="Spinner med tekst" append="-kode" %}}
 
