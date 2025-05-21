@@ -123,6 +123,14 @@
             background-color: color('text-negative');
         }
     }
+    > div .separator.incorrect {
+        svg {
+            fill: color('text-negative'); 
+        }
+        div {
+            background-color: color('text-negative');
+        }
+    }
 }
 
 // ------------------------------------
