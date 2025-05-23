@@ -321,7 +321,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/faellesskab/nyhedsmail/afmeld/"{{ classes }}>Afmeld en <span class="nowrap">e-mailadresse</span> her</a>
         
     {%- when "gå til release notes",
-             "release notes" -%}
+             "release notes",
+             "releases" -%}
         <a href="/faellesskab/releases/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "version 10.0.0" -%} 

@@ -1304,6 +1304,15 @@ Styling for cards
     border-top: 1px solid color('gray-200');
 }
 
+.page-design-og-ressourcer .card-content {
+    border-top: 1px solid color('gray-200');
+
+    @include media-breakpoint-up(sm) {
+        border-top: 0;
+        border-left: 1px solid color('gray-200');
+    }
+}
+
 .page-forside .card-image.desktop {
     aspect-ratio: 736 / 320;
 }
