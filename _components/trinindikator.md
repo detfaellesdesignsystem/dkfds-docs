@@ -8,8 +8,8 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Trinindikator
-lead: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
-description: "Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
+lead: "En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
+description: "En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
 tags:
 tabs: "Retningslinjer, kode"
 ---
@@ -26,15 +26,15 @@ tabs: "Retningslinjer, kode"
 
 ### Anvendes til
 
-Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
+Trinindikatoren anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
 
 ### Anvendes ikke til
 
-Trinindikator skal ikke anvendes som erstatning for en venstremenu.
+Trinindikatoren skal ikke anvendes som erstatning for en venstremenu.
 
 ### Vejledning
 
-Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en decideret trinindikator, se fx eksempelløsningen {% include links/demo-link.html linktext="Formular til kontaktoplysninger" %}, eller <a href="#simpel-trinindikator">simpel trinindikator</a>.
+Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en trinindikator, se fx eksempelløsningen {% include links/demo-link.html linktext="Formular til kontaktoplysninger" %}, eller blot med en <a href="#simpel-trinindikator">simpel trinindikator</a>.
 
 Opdel løsningens trin, så de virker naturlige og logiske for brugerne.
 
@@ -42,11 +42,11 @@ En bruger kan altid klikke sig tilbage til tidligere trin i en selvbetjening. Al
 
 Det sidste trin skal være “Opsummering” eller “Tjek dine svar”.
 
-Hvis det ikke er muligt at fortsætte til næste trin grundet fejl, skal brugeren tydeligt informeres på selve trinnet om, hvilke fejl der skal rettes, før man kan komme videre, ved hjælp af en {% include links/component-guideline-link.html linktext="Fejlopsummering" %} og {% include links/component-guideline-link.html linktext="Fejlmeddelelser" %}.
+Hvis det ikke er muligt at fortsætte til næste trin grundet fejl, skal brugeren tydeligt informeres på selve trinnet om, hvilke fejl der skal rettes, før man kan komme videre, ved hjælp af en {% include links/component-guideline-link.html linktext="fejlopsummering" %} og {% include links/component-guideline-link.html linktext="fejlmeddelelser" %}.
 
 Når indberetningen er foretaget, skal brugeren have en kvittering. Denne skal ikke vises i trinindikatoren.
 
-På mobil (breakpoint 768px eller lavere) ændres trinindikatoren til et panel, der glider op fra bunden af skærmen (bottom sheet), når brugeren trykker på en trinindikator-knap øverst på deres skærm. Panelet viser et overblik over trinene.
+På mobil (breakpoint lavere end 768px) ændres trinindikatoren til et panel, der glider op fra bunden af skærmen (bottom sheet), når brugeren trykker på en trinindikator-knap øverst på deres skærm. Panelet viser et overblik over trinene.
 
 {% include dos-donts-box.html component="tringuide-dos-donts" %}
 
@@ -70,9 +70,7 @@ Fejl vises med et fejl-ikon ud for trinnet samt med en baggrundsfarve. Fejl-ikon
 
 Fejl skal ikke udelukkende markeres i trinindikatoren. Siden, hvor fejlen findes, skal også indeholde en {% include links/component-guideline-link.html linktext="fejlopsummering" %} samt en eller flere {% include links/component-guideline-link.html linktext="Fejlmeddelelser" %}. 
 
-Eventuelle fejl vises også på opsummeringssiden i form af fejlopsummering med links til de specifikke trin.
-
-{% include links/internal-link.html linktext="Se et eksempel på opsummeringssiden med fejl i trinindikatoren." %}
+Eventuelle fejl vises også på opsummeringssiden i form af {% include links/component-guideline-link.html linktext="fejlopsummering" %} med links til de specifikke trin. Se et eksempel på opsummeringssiden med {% include links/internal-link.html linktext="fejl i tidligere trin" %}.
 
 {% include code/preview-box.html component="step-indicator-error" title="Eksempel på trinindikator med fejl" code="/komponenter/trinindikator/#trinindikator-med-fejl-kode" %}
 

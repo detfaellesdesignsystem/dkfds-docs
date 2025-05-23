@@ -19,8 +19,8 @@
 <title>Trinindikator | Det Fælles Designsystem</title>
 <meta property="og:title" content="Trinindikator | Det Fælles Designsystem">
 
-<meta name="description" content="Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning.">
-<meta property="og:description" content="Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning.">
+<meta name="description" content="En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning.">
+<meta property="og:description" content="En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning.">
 
 
 
@@ -1646,7 +1646,7 @@
                 
 
                 
-                <p class="font-lead">Trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning.</p>
+                <p class="font-lead">En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning.</p>
                 <nav class="tab-container mb-7" aria-label="Undersider">
     <ul class="tab-list"><li>
             <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
@@ -1781,15 +1781,15 @@
 
 <h3>Anvendes til</h3>
 
-<p>Trinindikator anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.</p>
+<p>Trinindikatoren anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.</p>
 
 <h3>Anvendes ikke til</h3>
 
-<p>Trinindikator skal ikke anvendes som erstatning for en venstremenu.</p>
+<p>Trinindikatoren skal ikke anvendes som erstatning for en venstremenu.</p>
 
 <h3>Vejledning</h3>
 
-<p>Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en decideret trinindikator, se fx eksempelløsningen <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" class="icon-link" target="_blank">Formular til kontaktoplysninger<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>, eller <a href="#simpel-trinindikator">simpel trinindikator</a>.</p>
+<p>Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en trinindikator, se fx eksempelløsningen <a href="/pages/eksempler/formular-til-kontaktoplysninger/formular-1/" class="icon-link" target="_blank">Formular til kontaktoplysninger<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>, eller blot med en <a href="#simpel-trinindikator">simpel trinindikator</a>.</p>
 
 <p>Opdel løsningens trin, så de virker naturlige og logiske for brugerne.</p>
 
@@ -1797,11 +1797,11 @@
 
 <p>Det sidste trin skal være “Opsummering” eller “Tjek dine svar”.</p>
 
-<p>Hvis det ikke er muligt at fortsætte til næste trin grundet fejl, skal brugeren tydeligt informeres på selve trinnet om, hvilke fejl der skal rettes, før man kan komme videre, ved hjælp af en <a href="/komponenter/fejlopsummering/">Fejlopsummering</a> og <a href="/komponenter/fejlmeddelelser/">Fejlmeddelelser</a>.</p>
+<p>Hvis det ikke er muligt at fortsætte til næste trin grundet fejl, skal brugeren tydeligt informeres på selve trinnet om, hvilke fejl der skal rettes, før man kan komme videre, ved hjælp af en <a href="/komponenter/fejlopsummering/">fejlopsummering</a> og <a href="/komponenter/fejlmeddelelser/">fejlmeddelelser</a>.</p>
 
 <p>Når indberetningen er foretaget, skal brugeren have en kvittering. Denne skal ikke vises i trinindikatoren.</p>
 
-<p>På mobil (breakpoint 768px eller lavere) ændres trinindikatoren til et panel, der glider op fra bunden af skærmen (bottom sheet), når brugeren trykker på en trinindikator-knap øverst på deres skærm. Panelet viser et overblik over trinene.</p>
+<p>På mobil (breakpoint lavere end 768px) ændres trinindikatoren til et panel, der glider op fra bunden af skærmen (bottom sheet), når brugeren trykker på en trinindikator-knap øverst på deres skærm. Panelet viser et overblik over trinene.</p>
 
 <div class=" component-preview-tringuide-dos-donts">
     <div class="component-example">
@@ -2054,9 +2054,7 @@
 
 <p>Fejl skal ikke udelukkende markeres i trinindikatoren. Siden, hvor fejlen findes, skal også indeholde en <a href="/komponenter/fejlopsummering/">fejlopsummering</a> samt en eller flere <a href="/komponenter/fejlmeddelelser/">Fejlmeddelelser</a>.</p>
 
-<p>Eventuelle fejl vises også på opsummeringssiden i form af fejlopsummering med links til de specifikke trin.</p>
-
-<p><a href="/eksempler/templates/#fejl">Se et eksempel på opsummeringssiden med fejl i trinindikatoren.</a></p>
+<p>Eventuelle fejl vises også på opsummeringssiden i form af <a href="/komponenter/fejlopsummering/">fejlopsummering</a> med links til de specifikke trin. Se et eksempel på opsummeringssiden med <a href="/eksempler/templates/#fejl">fejl i tidligere trin</a>.</p>
 
 <div class="component-preview  component-preview-step-indicator-error">
     
