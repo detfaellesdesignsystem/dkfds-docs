@@ -1,0 +1,101 @@
+{% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/back-link/back-link.njk" import back_link as back_link %}
+{% from "components/header/header.njk" import portal_info as portal_info %}
+{% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
+{% from "components/header/header.njk" import solution_info as solution_info %}
+{% from "components/header/header.njk" import mobile_solution_info as mobile_solution_info %}
+{% from "components/header/header.njk" import menu_top as menu_top %}
+{% from "components/table/table.njk" import table as table %}
+
+{% from "components/icons/icons--svg.njk" import icon_svg as icon_svg %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% from "components/footers/footer.njk" import footer as footer %}
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+{% from "components/overflow-menu/overflow-menu.njk" import overflowmenu as overflowmenu %}
+
+{# <!-- Variables --> #}
+
+{% set solution_header_data = {
+    "lastHeader": true,
+    "hideOnPrint": true,
+    "title": {
+        "text": "Løsningstitel",
+        "tag": "strong"
+    },
+    "authority": {
+        "name": "Myndighedsnavn",
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span>'
+    }
+} %}
+
+{# <!-- Page content starts here --> #}
+
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    {{ skiplink() }}
+    {{ portal_info(portal_header_data) }}
+    {{ solution_info(solution_header_data) }}
+    <div class="overlay"></div>
+    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
+        {{ menu_top() }}
+        {{ mobile_solution_info(solution_header_data) }}
+        {{ mobile_portal_info(portal_header_data) }}
+    </div>
+</header>
+{% endblock %}
+
+{% block body %}
+<main class="container page-container pt-4 pt-lg-6" id="main-content">
+    <h1>Information om noget</h1>
+    <p class="font-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div id="table-loading-message" class="sr-only" role="status">Henter tabel. Vent venligst.</div>
+    <div id="loading-area" class="position-relative d-flex justify-content-center mt-7 mb-7" style="max-width: 800px; border: 1px solid #8E8E8E;">
+        {{ table(table_data) }}
+        <div class="spinner-box mt-7">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+{% endblock %}
+
+{% block footer -%}
+{{ footer(footer_data) }}
+{% endblock %}
+
+<script>
+    window.onload = () => {
+        function getCurrentTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            return `${hours}:${minutes}`;
+        }
+        setTimeout(() => {
+            document.getElementById('loading-area').innerHTML = 
+                '<div class="table--responsive-scroll mt-7 mb-7" tabindex="0" style="max-width: 800px;"><table class="table" id="loading-table">' + 
+                '<thead><tr><th scope="col">Data A</th><th scope="col">Data B</th><th scope="col">Data C</th><th scope="col">Data D</th></tr></thead>' + 
+                '<tbody>' + 
+                '<tr><td>Lorem ipsum</td><td>Et dolore</td><td>XX</td><td>123</td></tr>' + 
+                '<tr><td>Dolor sit amet</td><td>Magna</td><td>XX</td><td>234</td></tr>' + 
+                '<tr><td>Consectetur</td><td>Aliqua</td><td>XY</td><td>345</td></tr>' + 
+                '<tr><td>Adipiscing elit</td><td>Ut enim ad minim</td><td>ZX</td><td>456</td></tr>' + 
+                '<tr><td>Sed do eiusmod</td><td>Veniam</td><td>ZX</td><td>567</td></tr>' + 
+                '<tr><td>Tempor</td><td>Quis nostrud</td><td>XX</td><td>678</td></tr>' +
+                '<tr><td>Incididunt ut labore</td><td>Exercitation</td><td>XY</td><td>789</td></tr>' +
+                '</tbody>' + 
+                '</table></div>';
+            document.getElementById('loading-area').removeAttribute('class');
+            document.getElementById('loading-area').removeAttribute('style');
+            document.getElementById('table-loading-message').textContent = 'Sidens tabel blev hentet kl. ' + getCurrentTime();
+        }, 5000);
+    };
+</script>

@@ -1665,7 +1665,7 @@
     </div>
     
     
-    <div class="sr-only">Eksempel på spinner komponent</div>
+    <div class="sr-only">Eksempel på loading spinner</div>
     
     <div class="component-example px-4 py-4">
         
@@ -1697,6 +1697,7 @@
         <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
         
         <li class="anchorlink-code"><span id="kode" hidden=""></span><a href="#installation-kode">Installation</a></li>
+        <li class="anchorlink-code"><a href="#stor-spinner-kode">Stor spinner</a></li>
         <li class="anchorlink-code"><a href="#lille-spinner-kode">Lille spinner</a></li>
         <li class="anchorlink-code"><a href="#spinner-med-tekst-kode">Spinner med tekst</a></li>
         
@@ -1715,25 +1716,47 @@
 
 <h3>Anvendes ikke til</h3>
 
-<p>Loading spinner skal ikke anvendes som en standardkomponent på alle løsninger, da det må forventes, at langt størstedelen vil kunne indlæses inden for 2 sekunder.</p>
+<p>Spinner skal ikke anvendes som en standardkomponent på alle løsninger, da det må forventes, at langt størstedelen vil kunne indlæses inden for 2 sekunder.</p>
 
 <p>Benyt ikke loading spinner til live-opdateringer eller automatisk genindlæsning af indhold.</p>
 
 <h3>Vejledning</h3>
 
-<p>Anvend kun loading spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).</p>
+<p>Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).</p>
 
 <p>Anvend kun loading spinner når indhold indlæses for første gang eller som respons på en brugerhandling.</p>
 
 <p>Loading spinneren findes i en lys og mørk variant, der skal anvendes afhængigt af baggrundsfarven på det element, den vises på.</p>
 
-<p>En loading spinner skal ikke anvendes som kompensation for en permanent langsom performance.</p>
+<p>En spinner skal ikke anvendes som kompensation for en permanent langsom performance.</p>
 
 <h2 id="varianter">Varianter</h2>
 
 <h3>Stor spinner</h3>
 
-<p>Den store spinner anvendes til større sektioner på en side. Den placeres i midten af elementet og hvis der er indhold bag spinneren sættes opacity på indholdet til 25%.</p>
+<p>Den store spinner anvendes til større sektioner på en side. Hvis der er indhold bag spinneren, sættes opacity på indholdet til 25%, og spinneren placeres i dette tilfælde med en ramme omkring for at sikre tilgængelighed.</p>
+
+<p>Placér spinneren horisontalt centreret i toppen af sektionen, der hentes, så den er synlig også på små skærme, uden at brugeren er nødt til at scrolle først. Se eksemplet <a href="/pages/eksempler/data-hentes/" class="icon-link" target="_blank">Side med data, der hentes<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</p>
+
+<div class=" component-preview-loading-spinner-dos-donts">
+    <div class="component-example">
+        <div class="row do-dont-container">
+    <div class="col-12 col-md-6">
+        <h4>Sådan (<span lang="en">do</span>)</h4>
+        <div><img src="/assets/img/do-dont/loading-spinner/Loading-spinner-do-borgerdk.svg" alt="Eksempel på loading spinner som erstatning for en enkelt sektion." /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#success"></use></svg><div></div></div>
+        <p><strong>Sådan:</strong> Placer spinneren centreret på enkelte sektioner hvor indhold hentes.</p>
+    </div>
+    <div class="col-12 col-md-6">
+        <h4>Ikke sådan (<span lang="en">don't</span>)</h4>
+        <div><img src="/assets/img/do-dont/loading-spinner/Loading-spinner-dont-borgerdk.svg" alt="Eksempel på en loading spinner placeret i midten af en tom side." /></div>
+        <div class="separator"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#error"></use></svg><div></div></div>
+        <p><strong>Ikke sådan:</strong> Anvend ikke spinneren på hele sider.</p>
+    </div>
+</div>
+
+    </div>
+</div>
 
 <h3 id="lille-spinner">Lille spinner</h3>
 
@@ -1748,7 +1771,7 @@
     </div>
     
     
-    <div class="sr-only">Eksempel på knap med spinner</div>
+    <div class="sr-only">Eksempel på lille spinner</div>
     
     <div class="component-example px-4 py-4">
         
@@ -1775,27 +1798,43 @@
     
 </div>
 
-<h4>Interaktivt eksempel</h4>
+<h4 id="eksempel-knap-med-spinner">Eksempel: Knap med spinner</h4>
 
 <p>Tryk på knappen i eksemplet nedenunder for at se, hvordan en knap med lille spinner skifter status. I eksemplet vil knappen vise loading spinneren i 3 sekunder, hvorefter der kan trykkes på knappen igen.</p>
 
-<div class="component-preview  component-preview-spinner-button-interactive p-4">
+<div class="component-preview  component-preview-spinner-button-interactive">
     
-    <div class="sr-only">Eksempel</div>
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/spinner-button-interactive/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: spinner-button-interactive</span></a>
+        
+    </div>
     
-    <div class="d-flex justify-content-center">
+    
+    <div class="sr-only">Eksempel på knap med spinner</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="d-flex justify-content-center">
     <button id="button-spinner-interactive" class="button button-primary">
         <span>Gem</span>
     </button>
     <span id="button-spinner-interactive-message" aria-live="polite" class="sr-only"></span>
 </div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/spinner/#eksempel-knap-med-spinner-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: spinner-button-interactive</span></a>
+    </div>
+    
 </div>
 
 <h3 id="spinner-med-tekst">Spinner med tekst</h3>
 
-<p>I løsninger med meget lange svartider bør loading spinneren suppleres med en besked på siden, så brugeren ved, hvad der venter dem. Efter et passende tidsinterval bør der integreres en fejlbesked eller en fejlside i løsningen, så brugeren ikke bliver fanget med en loading spinner, der ikke forsvinder.</p>
+<p>I løsninger med meget lange svartider bør spinneren suppleres med en besked på siden, så brugeren ved, hvad der venter dem. Efter et passende tidsinterval bør der integreres en fejlbesked eller en fejlside i løsningen, så brugeren ikke bliver fanget med en spinner, der ikke forsvinder.</p>
 
-<p>Gør teksten så specifik som muligt, så brugeren forstår hvad der sker.</p>
+<p>Gør teksten så specifik som muligt, så brugeren forstår, hvad der sker.</p>
 
 <div class="component-preview  component-preview-spinner-with-text">
     
@@ -1868,11 +1907,54 @@
     
 </div>
 
+<p>Loading spinneren er skrevet i ren CSS og anvendes ved at sætte klassen <code>spinner</code> på et <code>span</code>- eller <code>div</code>-element. Korrekt placering af spinner-elementet skal man selv sørge for.</p>
+
+<p>Anvend klassen <code>spinner-light</code> sammen med <code>spinner</code>-klassen for den lyse variant af spinneren. Anvend altid den spinner-variant, som giver den største kontrast med baggrundsfarven.</p>
+
+<p>Sørg altid for at oplysninger relateret til spinneren også gives til skærmlæsere. Hvordan dette gøres bedst afhænger af konteksten, som spinneren bruges i og man er derfor nødt til at implementere og teste dette selv. Se eventuelt eksemplet <a href="/pages/eksempler/data-hentes/" class="icon-link" target="_blank">Side med data, der hentes<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a> eller eksemplet <a href="#eksempel-knap-med-spinner-kode">Knap med spinner</a> for inspiration.</p>
+
 <h3>Javascript</h3>
 
-<p>Der medfølger ikke funktionalitet med denne komponent. Man skal derfor selv i løsningen implementere opdateringen af statusmeddelelsen som ventetiden forlænges.</p>
+<p>Der medfølger ikke funktionalitet med denne komponent. Man skal derfor selv i løsningen implementere, hvordan spinneren og dens informationer opdateres.</p>
+
+<h2 id="stor-spinner-kode">Stor spinner</h2>
+
+<p><code>spinner</code>-klassen giver altid den store variant af spinneren.</p>
+
+<p>Brug klassen <code>loading-dimmed</code> på indhold, der skal have opacity på 25% under indlæsning.</p>
+
+<p>Brug klassen <code>spinner-box</code> på et parent-element til spinneren for at sætte spinneren i en kasse, når den skal placeres oven på indhold. Igen skal man selv sørge for korrekt placering af spinneren.</p>
+
+<div class="component-preview component-preview-code  component-code-spinner-box">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/spinner-box/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: spinner-box</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner-box&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
+
+
+    </div>
+    
+</div>
 
 <h2 id="lille-spinner-kode">Lille spinner</h2>
+
+<p>Brug klassen <code>spinner-small</code> sammen med <code>spinner</code> for en lille version af spinneren.</p>
 
 <div class="component-preview component-preview-code  component-code-spinner-small">
     
@@ -1915,6 +1997,35 @@
     </div>
     
 </div>
+
+<h3 id="eksempel-knap-med-spinner-kode">Eksempel: Knap med spinner</h3>
+
+<p>Hvis spinneren anvendes på en knap, skal knappens tekst ikke være synlig, mens spinneren er aktiv. Sørg for at give information til skærmlæsere både når spinneren sættes på knappen og når den er færdig.</p>
+
+<p>Ikke alle skærmlæsere kan registrere ændringer i en knaps label eller tekst automatisk. Ligeledes er det ikke alle skærmlæsere, som kan registrere ændringer i et element med <code>aria-live</code>, hvis elementet ligger inde i en knap eller indeholder knapper. Hav derfor altid et dedikeret element til udelukkende skærmlæserbeskeder og placér det i HTML’en, hvor beskeden giver mest mening i konteksten.</p>
+
+<p>Brug <code>aria-disabled</code> på knapper med loading spinner, da denne attribut ved afprøvning viser sig at være bedre understøttet end <code>aria-busy</code>.</p>
+
+<p>Hvis knappen efter endt ventetid fjernes eller flyttes som følge af indlæsning af nyt indhold, skal der i JavaScript’en laves et tjek på, om brugerens fokus er på knappen. Flyt da fokus til et passende element, fx knappens skjulte skærmlæserbesked eller første element i det indlæste indhold.</p>
+
+<p>Eksempel på en loading-knaps kode, før der klikkes:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-flex justify-content-center&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;button-spinner-interactive&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-primary&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Gem<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;button-spinner-interactive-message&quot;</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">&quot;polite&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
+
+<p>Eksempel på en loading-knaps kode, mens loading spinneren er vist:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-flex justify-content-center&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;button-spinner-interactive&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button-primary spinner-active&quot;</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner spinner-small spinner-light&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-hidden&quot;</span>&gt;</span>Gem<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;button-spinner-interactive-message&quot;</span> <span class="hljs-attr">aria-live</span>=<span class="hljs-string">&quot;polite&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Gemmer<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
 
 <h2 id="spinner-med-tekst-kode">Spinner med tekst</h2>
 

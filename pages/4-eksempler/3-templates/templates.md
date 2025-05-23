@@ -113,3 +113,13 @@ tags:
         heading="404-side med søgefelt"
     %}
 </ul>
+
+## Side med data, der hentes {#{% include create-id.html heading="Side med data der hentes" %}}
+
+<ul class="row card-row">
+    {% include cards/navcard-thumbnails.html 
+        href="/pages/eksempler/data-hentes/"
+        id="card-data-hentes"
+        heading="Side med data, der hentes"
+    %}
+</ul>

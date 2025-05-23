@@ -36,7 +36,8 @@ var exampleUrls = [
     { "url": "pages/eksempler/formular-med-fejl/formular-med-fejl-1/", "folder": "Templates", "filename": "formular-med-fejl-1" },
     { "url": "pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/", "folder": "Templates", "filename": "trinindikator-med-fejl-1" },
     { "url": "pages/eksempler/siden-kunne-ikke-findes-1/", "folder": "Templates", "filename": "siden-kunne-ikke-findes-1" },
-    { "url": "pages/eksempler/siden-kunne-ikke-findes-2/", "folder": "Templates", "filename": "siden-kunne-ikke-findes-2" }
+    { "url": "pages/eksempler/siden-kunne-ikke-findes-2/", "folder": "Templates", "filename": "siden-kunne-ikke-findes-2" },
+    { "url": "pages/eksempler/data-hentes/", "folder": "Templates", "filename": "data-hentes" }
 ];
 
 
