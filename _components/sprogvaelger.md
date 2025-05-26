@@ -64,7 +64,7 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

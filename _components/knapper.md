@@ -96,12 +96,12 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% inc
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Oplysninger om ansøger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

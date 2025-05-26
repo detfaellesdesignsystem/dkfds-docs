@@ -160,10 +160,10 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

@@ -49,10 +49,10 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Opgaveliste" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" %}
+- {% include links/demo-link.html linktext="Opgaveliste" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

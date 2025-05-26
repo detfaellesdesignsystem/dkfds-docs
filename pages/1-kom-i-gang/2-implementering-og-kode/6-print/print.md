@@ -86,9 +86,9 @@ Knapper har ingen funktion på print, hvorfor vi anbefaler at man skjuler knappe
 #### Eksempler
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="knapper-eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="knapper-eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="knapper-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" %}
 
 ### Header
 
@@ -101,8 +101,8 @@ Hvis du har kontaktinformationer stående både i headeren og footeren bør én 
 
 {:.nobullet-list}
 - {% include links/example-link.html linktext="Header med navigation og søgefelt" %}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="header-eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="header-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" %}
 
 ### Footer
 
@@ -117,7 +117,7 @@ Nogle elementer i footeren kan være relevante ved print, så som kontaktoplysni
 - {% include links/example-link.html linktext="Footer med fire kolonner" %}
 - {% include links/example-link.html linktext="Kompleks footer" %}
 - {% include links/example-link.html linktext="Footer med logo" %}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="footer-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" %}
 
 ### Responsiv tabel
 
@@ -129,6 +129,6 @@ Hvis man ønsker at tabellen skal forblive normal ved print, kan man tilføje kl
 #### Eksempler
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="tabel-eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="tabel-eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="tabel-eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}

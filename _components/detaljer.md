@@ -50,8 +50,8 @@ Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre b
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" %}
 
 <!--split-->
 

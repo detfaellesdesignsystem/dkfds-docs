@@ -78,7 +78,7 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
-{% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
+{% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

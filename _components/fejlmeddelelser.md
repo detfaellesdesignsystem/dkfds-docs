@@ -202,8 +202,8 @@ Skriv "Den valgte fil skal gøre brug af skabelonen".
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Fejl i vedhæftede filer" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Formular med fejl" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Fejl i vedhæftede filer" %}
+- {% include links/demo-link.html linktext="Formular med fejl" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

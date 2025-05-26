@@ -52,7 +52,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
-{% include links/demo-link.html linktext="Trinformular til registrering: Tidligere registrering (vælg 'Ja')" returnID="eksempelloesninger" %}
+{% include links/demo-link.html linktext="Trinformular til registrering: Tidligere registrering (vælg 'Ja')" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

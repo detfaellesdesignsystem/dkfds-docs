@@ -47,9 +47,9 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vedhæft dokumenter" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Vedhæft fil" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vedhæft dokumenter" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}
+- {% include links/demo-link.html linktext="Vedhæft fil" %}
 
 <!--split-->
 

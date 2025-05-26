@@ -52,7 +52,7 @@ Søgeknappen skal være en submit-knap.
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
-{% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
+{% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

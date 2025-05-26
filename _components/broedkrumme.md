@@ -55,8 +55,8 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

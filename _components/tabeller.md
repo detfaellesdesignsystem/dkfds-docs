@@ -144,13 +144,13 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

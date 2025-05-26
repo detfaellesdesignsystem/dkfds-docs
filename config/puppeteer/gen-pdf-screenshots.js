@@ -143,7 +143,7 @@ var pdfUrls = [
 ];
 
 var exampleUrls = [
-    { 'url': 'pages/eksempler/formular-til-kontaktoplysninger/formular-1/', 'filename': 'formular-1' },
+    {'url': 'pages/eksempler/formular-til-kontaktoplysninger/formular-1/', 'filename': 'formular-1'},
     {'url': 'pages/eksempler/formular-til-kontaktoplysninger/formular-2/', 'filename': 'formular-2'},
     {'url': 'pages/eksempler/formular-til-kontaktoplysninger/formular-3/', 'filename': 'formular-3'},
     {'url': 'pages/eksempler/trinformular-til-registrering/registrering-1/', 'filename': 'registrering-1'},
@@ -174,7 +174,8 @@ var exampleUrls = [
     {'url': 'pages/eksempler/formular-med-fejl/formular-med-fejl-1/', 'filename': 'formular-med-fejl-1'},
     {'url': 'pages/eksempler/trinindikator-med-fejl/trinindikator-med-fejl-1/', 'filename': 'trinindikator-med-fejl-1'},
     {'url': 'pages/eksempler/siden-kunne-ikke-findes-1/', 'filename': 'siden-kunne-ikke-findes-1'},
-    {'url': 'pages/eksempler/siden-kunne-ikke-findes-2/', 'filename': 'siden-kunne-ikke-findes-2'}
+    {'url': 'pages/eksempler/siden-kunne-ikke-findes-2/', 'filename': 'siden-kunne-ikke-findes-2'},
+    {'url': 'pages/eksempler/data-hentes/', 'filename': 'data-hentes'}
 ];
 
 (async () => {

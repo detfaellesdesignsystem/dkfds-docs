@@ -95,8 +95,8 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

@@ -94,8 +94,8 @@ Både almindelige cards og navigationscards kan være lange cards.
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Dashboard" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
+- {% include links/demo-link.html linktext="Dashboard" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
