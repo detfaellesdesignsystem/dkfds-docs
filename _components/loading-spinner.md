@@ -6,8 +6,8 @@ layout: styleguide
 category: Komponenter_category
 subcategory: Komponenter
 title: Loading spinner
-lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er undervejs."
-description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er undervejs."
+lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af et element er undervejs."
+description: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af et element er undervejs."
 tags:
 tabs: "Retningslinjer, kode"
 ---
@@ -24,7 +24,7 @@ tabs: "Retningslinjer, kode"
 
 ### Anvendes til
 
-En loading spinner anvendes til at signalere en igangværende indlæsning af en side eller delfunktion ved at give brugeren en synlig respons. Loading spinneren placeres i direkte forbindelse med det element, der hentes eller interageres med. 
+En loading spinner anvendes til at signalere en igangværende indlæsning af et element ved at give brugeren en synlig respons. Loading spinneren placeres i direkte forbindelse med det element, der hentes eller interageres med. 
 
 ### Anvendes ikke til
 

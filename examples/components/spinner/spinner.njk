@@ -4,11 +4,13 @@
     <div class="col-6">
         <div class="d-flex justify-content-center">
             {{ spinner() }}
+            <span class="sr-only">Loading spinner på lys baggrund</span>
         </div>
     </div>
     <div class="col-6" id="dark-spinner-background">
         <div class="d-flex justify-content-center align-items-center">
             {{ spinner({ "light": true }) }}
+            <span class="sr-only">Loading spinner på mørk baggrund</span>
         </div>
     </div>
 </div>

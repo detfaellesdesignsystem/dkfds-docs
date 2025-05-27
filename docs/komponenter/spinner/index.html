@@ -19,8 +19,8 @@
 <title>Loading spinner | Det Fælles Designsystem</title>
 <meta property="og:title" content="Loading spinner | Det Fælles Designsystem">
 
-<meta name="description" content="En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er undervejs.">
-<meta property="og:description" content="En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er undervejs.">
+<meta name="description" content="En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af et element er undervejs.">
+<meta property="og:description" content="En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af et element er undervejs.">
 
 
 
@@ -1646,7 +1646,7 @@
                 
 
                 
-                <p class="font-lead">En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af en side eller delfunktion er undervejs.</p>
+                <p class="font-lead">En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af et element er undervejs.</p>
                 <nav class="tab-container mb-7" aria-label="Undersider">
     <ul class="tab-list"><li>
             <a href="#retningslinjer" id="guidelines-tab" class="tab-button" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="M480-80q-26 0-47-12.5T400-126q-33 0-56.5-23.5T320-206v-142q-59-39-94.5-103T190-590q0-121 84.5-205.5T480-880q121 0 205.5 84.5T770-590q0 77-35.5 140T640-348v142q0 33-23.5 56.5T560-126q-12 21-33 33.5T480-80Zm-80-126h160v-36H400v36Zm0-76h160v-38H400v38Zm-8-118h58v-108l-88-88 42-42 76 76 76-76 42 42-88 88v108h58q54-26 88-76.5T690-590q0-88-61-149t-149-61q-88 0-149 61t-61 149q0 63 34 113.5t88 76.5Zm88-162Zm0-38Z"></path></svg><span>Retningslinjer</span></a>
@@ -1674,12 +1674,14 @@
         <div class="d-flex justify-content-center">
             <div class="spinner"></div>
 
+            <span class="sr-only">Loading spinner på lys baggrund</span>
         </div>
     </div>
     <div class="col-6" id="dark-spinner-background">
         <div class="d-flex justify-content-center align-items-center">
             <div class="spinner spinner-light"></div>
 
+            <span class="sr-only">Loading spinner på mørk baggrund</span>
         </div>
     </div>
 </div>
@@ -1712,7 +1714,7 @@
 
 <h3>Anvendes til</h3>
 
-<p>En loading spinner anvendes til at signalere en igangværende indlæsning af en side eller delfunktion ved at give brugeren en synlig respons. Loading spinneren placeres i direkte forbindelse med det element, der hentes eller interageres med.</p>
+<p>En loading spinner anvendes til at signalere en igangværende indlæsning af et element ved at give brugeren en synlig respons. Loading spinneren placeres i direkte forbindelse med det element, der hentes eller interageres med.</p>
 
 <h3>Anvendes ikke til</h3>
 
@@ -1780,12 +1782,14 @@
         <div class="d-flex justify-content-center">
             <div class="spinner spinner-small"></div>
 
+            <span class="sr-only">Lille loading spinner på lys baggrund</span>
         </div>
     </div>
     <div class="col-6" id="dark-spinner-background-small">
         <div class="d-flex justify-content-center align-items-center">
             <div class="spinner spinner-small spinner-light"></div>
 
+            <span class="sr-only">Lille loading spinner på mørk baggrund</span>
         </div>
     </div>
 </div>
@@ -1892,12 +1896,14 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-flex justify-content-center&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Loading spinner på lys baggrund<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-6&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dark-spinner-background&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-flex justify-content-center align-items-center&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner spinner-light&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Loading spinner på mørk baggrund<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
@@ -1979,12 +1985,14 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-flex justify-content-center&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner spinner-small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Lille loading spinner på lys baggrund<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-6&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;dark-spinner-background-small&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;d-flex justify-content-center align-items-center&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;spinner spinner-small spinner-light&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only&quot;</span>&gt;</span>Lille loading spinner på mørk baggrund<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
