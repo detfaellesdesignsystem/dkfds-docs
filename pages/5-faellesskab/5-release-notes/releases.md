@@ -160,7 +160,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/internal-link.html linktext="Hjørner, streger og skygger" %}</h3>
 </div>
 Retningslinjer for hjørner, streger og skygger er blevet ændret og alle komponenter er blevet tilpasset. De overordnede ændringer gennemgås nedenunder.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret værdier for hjørner og tilføjet nye Sass-variable og -funktion til at sætte `border-radius`.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret værdier for hjørner og tilføjet nye Sass-variable og -funktion til at sætte `border-radius`. De nye muligheder for hjørner er "Ingen runding", "Lille runding", "Mellem runding" og "Fuld runding".
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret værdier og navne for de mulige stregtyper. I stedet for `10`, `20` og `30` skal man anvende `'high-contrast'`, `'low-contrast'` og `'very-low-contrast'` til `border`-funktionen.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Ændret skygger, hvor de tidligere skygger kaldet "Modalvindue", "Overflow menu" og "Cards" er fjernet til fordel for to nye skygger kaldet "Stor skygge" og "Lille skygge".
 - Ændret tykkelse og farve på fokusstreger.
@@ -176,8 +176,8 @@ Retningslinjer for hjørner, streger og skygger er blevet ændret og alle kompon
 <div class="d-flex align-items-center mt-5 mb-4">
   <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Modaler" %}</h3>
 </div>
-- Fjernet animationer for modaler (bortset fra den nye trinindikator).
-- Tilføjet mulighed for at lukke modaler, der ikke kræver handling, ved at trykke på den farvede baggrund under modalen.
+- Fjernet animationer for modaler.
+- Tilføjet mulighed for at lukke modaler, der ikke kræver handling, ved at trykke på den farvede baggrund bag modalen.
 - Mindre ændring i modalers JavaScript, hvor backdrop-elementet nu forbliver i HTML'en efter oprettelse.
 - Fokus ved visning af modaler er flyttet fra modalen til luk-knappen, da der var tilfælde, hvor modalen ikke blev annonceret i skærmlæsere.
 
