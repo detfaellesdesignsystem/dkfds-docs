@@ -13,7 +13,8 @@
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             {{ 
                 card({
-                    "navigationCard": { "href": "#" }
+                    "navigationCard": { "href": "#" },
+                    "attributes": "aria-label=\"Card uden indhold\""
                 }) 
             }}
         </div>
@@ -56,7 +57,8 @@
                     "navigationCard": { "href": "#" },
                     "image": { 
                         "src": "{{ site.baseurl }}/assets/img/cards/card-placeholder.svg"
-                    }
+                    },
+                    "attributes": "aria-label=\"Card, der kun indeholder et billede\""
                 }) 
             }}
         </div>

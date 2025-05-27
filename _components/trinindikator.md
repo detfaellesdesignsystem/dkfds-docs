@@ -34,7 +34,7 @@ Trinindikatoren skal ikke anvendes som erstatning for en venstremenu.
 
 ### Vejledning
 
-Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en trinindikator, se fx eksempelløsningen {% include links/demo-link.html linktext="Formular til kontaktoplysninger" %}, eller blot med en <a href="#simpel-trinindikator">simpel trinindikator</a>.
+Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en trinindikator, se fx eksempelløsningen {% include links/demo-link.html linktext="Formular til kontaktoplysninger" %}, eller med en <a href="#simpel-trinindikator">simpel trinindikator</a>.
 
 Opdel løsningens trin, så de virker naturlige og logiske for brugerne.
 
