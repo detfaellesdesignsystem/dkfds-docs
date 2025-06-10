@@ -24,6 +24,8 @@ tags:
 
 Designsystemets hjørner er med til at skabe visuel genkendelse samt til at lede brugerens opmærksomhed.
 
+Lille og mellem runding anvendes afhængigt af komponentens størrelse. Som en tommelfingerregel anvendes 8px på komponenter, der er 40px og større. Fuld runding anvendes kun på elementer, brugeren kan interagere med, f.eks. trinindikator, faneblade og paginering.
+
 {% include code/preview-box.html component="border-radius" link=false %}
 
 ## Streger {#{% include create-id.html heading="Streger" %}}
