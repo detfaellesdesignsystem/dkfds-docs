@@ -1,7 +1,12 @@
 {% from "components/form/controls/select.njk" import select as select %}
 
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-dropdown-3</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
         <div class="col-12">
             <p>Tooltip og hjælpetekst</p>
             {{ 
@@ -9,7 +14,7 @@
                     "name": "options-name",
                     "id": "options-id",
                     "label": "Dropdown label",
-                    "tooltip": "Tooltipbesked",
+                    "tooltip": "Dette er et tooltip",
                     "helptext": "Husk at læse tooltippet",
                     "options": [
                         { "value": "option1", "text": "Mulighed 1" },

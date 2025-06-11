@@ -3,9 +3,9 @@
 {% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
 
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Valgbare rækker med paginering og funktionsknapper</h1>
+            <h1 class="h2 mt-0">Valgbare rækker med paginering og funktionsknapper</h1>
         </div>
     </div>
     <div class="row mb-905">
@@ -46,6 +46,7 @@
             {{ 
                 table({
                     "selectable": true,
+                    "id": "selectable-table1",
                     "pagination": {
                         "displayedRows": "1-4",
                         "totalRows": 92,
@@ -122,17 +123,17 @@
                         {
                             "text": "Knap 1",
                             "variant": "primary",
-                            "icon": "file-download"
+                            "icon": "download"
                         },
                         {
                             "text": "Knap 2",
                             "variant": "secondary",
-                            "icon": "content-copy"
+                            "icon": "copy"
                         },
                         {
                             "text": "Knap 3",
                             "variant": "secondary",
-                            "icon": "trash-can"
+                            "icon": "delete"
                         }
                     ]
                 })

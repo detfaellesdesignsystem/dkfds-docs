@@ -41,8 +41,6 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 
 {% include dos-donts-box.html component="formular-dos-donts" %}
 
-{% include dos-donts-box.html component="overskrifter-dos-donts" %}
-
 ## Kompleks formular {#{% include create-id.html heading="Kompleks formular" %}}
 
 {% include code/preview-box-details.html component="fieldset-complex" title="Eksempel på kompleks formularstruktur" link=false detaillabel="for eksempel på kompleks formularstruktur" %}
@@ -50,9 +48,9 @@ Sørg for at alle elementer står i register, dvs. at de står på linje og i et
 ## Se eksempelløsninger {#{% include create-id.html heading="Se eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

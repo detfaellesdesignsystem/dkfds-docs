@@ -15,32 +15,56 @@ tags:
 - implementering
 ---
 
-{% include links/external-link.html linktext='Se videoen "Det Fælles Designsystem til udviklere" på YouTube' %} 
+{% include links/external-link.html linktext='Se videoen "Det Fælles Designsystem til udviklere" på YouTube' %}
 
-<h2 class="body-text mb-0 mt-8">{% include links/internal-link.html linktext="Hent kodepakken" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Hent den kode, som Det Fælles Designsystem stiller til rådighed.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Justering af tema og stylesheets" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Læs om, hvordan designsystemets stylesheets kan tilpasses.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Hjælpeklasser (Utilities)" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Lav hurtige justeringer direkte i HTML’en med disse hjælpeklasser.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Browserunderstøttelse" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Læs om understøttelse af forskellige browsere og styresystemer.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Plugins" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Læs om brugen af plugins fra tredjepart.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Print" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Læs om, hvordan løsninger kan optimeres til print.</p>
-
-<h2 class="body-text mb-0 mt-5">{% include links/internal-link.html linktext="Frameworks" classes="pt-1 pb-1" %}</h2>
-
-<p class="mt-0">Du kan frit vælge, hvilket framework du vil bruge, når du anvender Det Fælles Designsystem.</p>
+<ul class="card-row mt-8">
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/hent-kodepakken/"
+        heading="Hent kodepakken" 
+        content="Hent den kode, som Det Fælles Designsystem stiller til rådighed." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/justering/"
+        heading="Justering af tema og stylesheets" 
+        content="Læs om, hvordan designsystemets stylesheets kan tilpasses." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/hjaelpeklasser/"
+        heading="Hjælpeklasser (Utilities)" 
+        content="Lav hurtige justeringer direkte i HTML’en med disse hjælpeklasser." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/browserunderstoettelse/"
+        heading="Browserunderstøttelse" 
+        content="Læs om understøttelse af forskellige browsere og styresystemer." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/plugins/"
+        heading="Plugins" 
+        content="Læs om brugen af plugins fra tredjepart." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/print/"
+        heading="Print" 
+        content="Læs om, hvordan løsninger kan optimeres til print." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/implementering-kode/frameworks/"
+        heading="Frameworks" 
+        content="Du kan frit vælge, hvilket framework du vil bruge, når du anvender Det Fælles Designsystem." 
+        %}
+    </li>
+</ul>

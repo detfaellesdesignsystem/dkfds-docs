@@ -7,42 +7,88 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch (heading) {
 
-            case 'JavaScript i accordions':
-
+            /* Only init test elements for these pages */
+            case 'Accordions, der ikke er initialiseret':
+            case 'Ingen faneblade':
+            case 'Kun ét faneblad':
+            case 'Ingen valgte faneblade':
+            case 'To valgte faneblade':
+            case 'Tilbage til toppen':
                 initTest();
-                try {
-                    new DKFDS.Accordion();
-                } catch (err) {
-                    console.error(err.message);
-                }
-                try {
-                    let accordion = new DKFDS.Accordion(document.querySelector('h1'));
-                    accordion.init();
-                } catch (err) {
-                    console.error(err.message);
-                }
-                let accordiongroup = new DKFDS.Accordion(document.querySelector('ul.accordion'));
-                accordiongroup.init();
-                accordiongroup.toggleButton(document.getElementsByClassName('accordion-button')[1], true);
-                console.log('Accordion 2 was opened by JavaScript');
-
-                let accordion1 = document.querySelector(".accordion-button");
-                accordion1.addEventListener("fds.accordion.open", function() {
-                    console.log("Accordion 1 was opened");
-                });
-                accordion1.addEventListener("fds.accordion.close", function() {
-                    console.log("Accordion 1 was closed");
-                });
-                console.log('Eventlistener set up for accordion 1');
                 break;
 
-            case 'Skift sprog i accordions':
+            case 'Modal med dialog tag':
+                DKFDS.init();
 
-                initTest();
-                new DKFDS.Accordion(document.querySelector('ul.accordion'), {
-                    "open_all": "Open all", 
-                    "close_all": "Close all" 
-                  }).init();
+                const dialog = document.getElementById('dialogTest');
+                const showButton = document.getElementById('showButton');
+                const cancelButton = document.getElementById('dialogCancelButton');
+                const closeButton = document.querySelector('dialog .dialog-header .modal-close');
+
+                showButton.addEventListener('click', () => {
+                    dialog.showModal();
+                    document.body.classList.add('modal-open');
+                });
+
+                cancelButton.addEventListener('click', () => {
+                    dialog.close();
+                    document.body.classList.remove('modal-open');
+                });
+
+                closeButton.addEventListener('click', () => {
+                    dialog.close();
+                    document.body.classList.remove('modal-open');
+                });
+
+                dialog.addEventListener('click', (event) => {
+                    if (event.target === dialog) {
+                        dialog.close();
+                    }
+                });
+
+                // TODO: Prevent closing the dialog on Escape when a tooltip/overflow is visible
+                /* dialog.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        event.preventDefault();
+                    }
+                }); */
+
+                break;
+
+            case 'Ikoner':
+                DKFDS.init();
+                console.log('JavaScript fetched icons from XML');
+
+                fetch('/assets/img/all-svg-icons.svg')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Response was not "ok"');
+                        }
+                        return response.text();
+                    })
+                    .then(str => {
+                        let parsedXML = new DOMParser().parseFromString(str, 'text/xml');
+                        let symbols = parsedXML.querySelectorAll('symbol');
+                        for (let i = 0; i < symbols.length; i++) {
+                            let viewBox = symbols[i].getAttribute('viewBox');
+                            let innerHTML = parsedXML.getElementById(symbols[i].id).innerHTML;
+                            let color = viewBox === '0 -960 960 960' ? "0000FF" : "FF00FF";
+
+                            document.getElementById('xml-icon-' + symbols[i].id).innerHTML = 
+                            `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" class="icon-svg" focusable="false" aria-hidden="true" style="fill:#${color};">${innerHTML}</svg>`;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Failed to fetch file:', error);
+                    });
+                    
+                let dataIcons = document.querySelectorAll('div[data-icon]');
+                for (let i = 0; i < dataIcons.length; i++) {
+                    dataIcons[i].style.setProperty('background-image', `url(/assets/svg/${dataIcons[i].dataset.icon}.svg)`);
+                    dataIcons[i].style.setProperty('background-repeat', 'no-repeat');
+                    dataIcons[i].style.setProperty('max-height', '2.4rem');
+                }
+
                 break;
 
             case 'JavaScript i faneblade':
@@ -86,6 +132,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
                 tab3.addEventListener("fds.tab.hidden", function() {
                     console.log("Tab 3 hidden");
+                });
+
+                break;
+
+            case 'Inputfelter med karakterbegrænsning':
+                new DKFDS.CharacterLimit(document.querySelectorAll('.form-limit')[0]).init();
+
+                document.getElementById('input-added-after-init').innerHTML = '<div class="form-group form-limit" data-maxlength="20" id="javascript-init"><label class="form-label" for="input-text-2">Begrænsning på 20 tegn</label><input type="text" id="input-text-2" name="input-text" class="form-input" value="tekst" aria-describedby="input-text-2-limit-message" required=""><span id="input-text-2-limit-message" class="sr-only">Du kan indtaste op til 20 tegn</span><span class="form-hint character-limit" aria-hidden="true">Du har 20 tegn tilbage</span><span class="character-limit-sr-only sr-only" aria-live="polite">Du har 20 tegn tilbage</span></div>';
+                const form_limit = new DKFDS.CharacterLimit(document.getElementById('javascript-init'));
+                form_limit.init();
+
+                const message_form_limit = new DKFDS.CharacterLimit(document.querySelectorAll('.form-limit')[2]);
+                message_form_limit.init();
+                document.getElementById('new-text').addEventListener('click', () => {
+                    message_form_limit.container.querySelector('.form-input').value = "Clicked new-text";
+                    message_form_limit.updateMessages();
+                });
+                document.getElementById('new-text-silent').addEventListener('click', () => {
+                    message_form_limit.container.querySelector('.form-input').value = "Clicked new-text-silent";
+                    message_form_limit.silentUpdateMessages();
                 });
 
                 break;
@@ -268,5 +334,4 @@ document.addEventListener("DOMContentLoaded", function() {
 function initTest () {
     new DKFDS.Modal(document.getElementById('test-warning')).init();
     new DKFDS.Navigation().init();
-    console.log('Page JavaScript detected');
 }

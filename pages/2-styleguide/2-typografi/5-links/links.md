@@ -47,7 +47,7 @@ tabs: "Retningslinjer, kode"
         <td>
           <ul class="nobullet-list mt-0 mb-0">
             <li class="mt-0 mb-0">#004D99</li>
-            <li>#000040 (hover)</li>
+            <li>#1A1A1A (hover)</li>
             <li>#800080 (besøgt)</li>
           </ul>
         </td>

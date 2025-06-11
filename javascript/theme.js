@@ -5,7 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
-const VERSION = '10.2.1';
+const VERSION = '11.0.0';
 
 document.addEventListener("DOMContentLoaded", function(){
  
@@ -33,22 +33,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
         setScreenshots();
 
-        setThumbnails();
-
         setDoDontImages();
 
         setHomepageIllustration();
+
+        setCardImages();
 });
 
 let setHomepageIllustration = function(){
-    let illustration = document.getElementById('designsystem-illustration');
-    if(illustration !== null){
-        if(getThemeCookie() === "virk"){
-            illustration.setAttribute('src', "/assets/img/descriptionimages/Forside_illu_virk.svg");
-        } else if(getThemeCookie() === "borgerdk"){
-            illustration.setAttribute('src', "/assets/img/descriptionimages/Forside_illu_borger.svg");
-        }else{
-            illustration.parentNode.removeChild(illustration);
+    if(document.body.classList.contains('page-forside')) {
+        let images = document.querySelectorAll('img.designsystem-illustration');
+        let cookie = getThemeCookie();
+        for (let i = 0; i < images.length; i++) {
+            images[i].setAttribute('src', `/assets/img/descriptionimages/hero-${cookie}.png`);
         }
     }
 };
@@ -273,26 +270,6 @@ let debug = function(title, value){
     }
 };
 
-let setThumbnails = function() {
-    if (document.getElementsByTagName('body')[0].classList.contains('page-selvbetjeningsløsninger') || 
-        document.getElementsByTagName('body')[0].classList.contains('page-templates')) {
-        let thumbnails = document.querySelectorAll('[data-image]');
-        for (let t = 0; t < thumbnails.length; t++) {
-            let thumbnail = thumbnails[t];
-            let imageSrc = '/assets/img/examples_pages/' + thumbnail.dataset.folder + '/' + getThemeCookie() + '-' + thumbnail.dataset.image + '.PNG';
-            let imageAlt = 'Skærmbillede af ' + thumbnail.getAttribute('title');
-            let image = `<img src="${imageSrc}" alt="${imageAlt}" class="w-percent-100 d-block" />`;
-            thumbnail.innerHTML = image;
-        }
-        let galleries = document.getElementsByClassName('screenshot-gallery');
-        if (galleries.length !== 0 ) {
-            for (let g = 0; g < galleries.length; g++) {
-                galleries[g].classList.remove('d-none');
-            }
-        }
-    }
-}
-
 let setScreenshots = function(){
     if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
         || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
@@ -339,18 +316,63 @@ let setDoDontImages = function() {
         let images = dodonts[i].getElementsByTagName('IMG');
         for (let j = 0; j < images.length; j++) {
             let src = images[j].src;
-            let url_parts = src.split('/');
-            let filename = url_parts[url_parts.length-1];
-            if (filename.includes("-borgerdk") || filename.includes("-virk")) {
-                if (filename.includes("-borgerdk") && cookie === "virk") {
-                    let new_filename = filename.replace("-borgerdk", "-virk");
-                    images[j].src = "/assets/img/do-dont/" + new_filename;
-                }
-                else if (filename.includes("-virk") && cookie === "borgerdk") {
-                    let new_filename = filename.replace("-virk", "-borgerdk");
-                    images[j].src = "/assets/img/do-dont/" + new_filename;
-                }
+            if (src.includes("-borgerdk.") && cookie === "virk") {
+                images[j].src = src.replace("-borgerdk", "-virk");
+            }
+            else if (src.includes("-virk.") && cookie === "borgerdk") {
+                images[j].src = src.replace("-virk", "-borgerdk");
             }
         }
     }
 };
+
+
+let setCardImages = function() {
+    if(document.body.classList.contains('page-komponenter')) {
+        let cards = document.querySelector('main').querySelectorAll('.card');
+        rebuildCardImages(cards, '/assets/img/cards/Komponenter', 'svg');
+    }
+    else if (document.body.classList.contains('page-styleguide')) {
+        let cards = document.querySelector('main').querySelectorAll('.card');
+        rebuildCardImages(cards, '/assets/img/cards/Styleguide', 'svg');
+    }
+    else if (document.body.classList.contains('page-selvbetjeningsløsninger')) {
+        let cards = document.querySelector('main').querySelectorAll('.card');
+        rebuildCardImages(cards, '/assets/img/cards/Selvbetjeningsloesninger', 'PNG');
+    }
+    else if (document.body.classList.contains('page-templates')) {
+        let cards = document.querySelector('main').querySelectorAll('.card');
+        rebuildCardImages(cards, '/assets/img/cards/Templates', 'PNG');
+    }
+    else if (document.body.classList.contains('page-forside')) {
+        let cards = document.querySelector('main').querySelectorAll('.card');
+        rebuildCardImages(cards, '/assets/img/cards/Forside', 'png');
+    }
+}
+
+function rebuildCardImages(cards, imagepath, extension) {
+    let cookie = getThemeCookie();
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i].hasAttribute('id')) {
+            let id = cards[i].id; // Important: Ensure the given card IDs match the card image filenames
+            /* Cards on the frontpage have different images for desktop and tablet */
+            if (document.body.classList.contains('page-forside')) {
+                document.getElementById(id).querySelector('.card-image.tablet').innerHTML = `<img src="${imagepath}/${id}-tablet-${cookie}.${extension}" alt="" width="500" height="320">`;
+                document.getElementById(id).querySelector('.card-image.desktop').innerHTML = `<img src="${imagepath}/${id}-desktop-${cookie}.${extension}" alt="" width="736" height="320">`;
+            }
+            else {
+                let width = 0;
+                let height = 0;
+                if (document.body.classList.contains('page-komponenter') || document.body.classList.contains('page-styleguide')) {
+                    width = 267;
+                    height = 150;
+                }
+                else if (document.body.classList.contains('page-selvbetjeningsløsninger') || document.body.classList.contains('page-templates')) {
+                    width = 1125;
+                    height = 745;
+                }
+                document.getElementById(id).querySelector('.card-image').innerHTML = `<img src="${imagepath}/${id}-${cookie}.${extension}" alt="" width="${width}" height="${height}">`;
+            }
+        }
+    }
+}

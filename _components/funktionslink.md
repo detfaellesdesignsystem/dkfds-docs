@@ -55,7 +55,7 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
-{% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" returnID="eksempelloesninger" %}
+{% include links/demo-link.html linktext="Trinformular til registrering: Vælg personer" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

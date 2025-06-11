@@ -1,0 +1,57 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Inputfelter med karakterbegrænsning</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                textinput({
+                    "id": "input-text-1",
+                    "name": "input-text",
+                    "label": "Begrænsning på 40 tegn",
+                    "value": "tekst",
+                    "characterLimit": 40
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12" id="input-added-after-init">
+
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12 col-md-4">
+            {{
+                textinput({
+                    "id": "input-text-3",
+                    "name": "input-text",
+                    "label": "Begrænsning på 70 tegn",
+                    "value": "tekst",
+                    "characterLimit": 70
+                })
+            }}
+        </div>
+        <div class="col-12 col-md-8 mt-4 mt-md-6">
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Sæt ny tekst",
+                    "id": "new-text"
+                }) 
+            }}
+            {{ 
+                button({
+                    "variant": "secondary",
+                    "text": "Sæt ny tekst (sr lydløs)",
+                    "id": "new-text-silent"
+                }) 
+            }}
+        </div>
+    </div>
+</main>

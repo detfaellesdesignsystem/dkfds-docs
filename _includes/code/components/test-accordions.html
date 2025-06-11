@@ -1,0 +1,43 @@
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Accordions</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+
+            <ul class="accordion test-accordion-group-class">
+                <li>
+                    <h2>
+                        <button class="accordion-button test-button-class"
+                            aria-expanded="false" aria-controls="accordionID1">
+                            <span class="accordion-title test-title-class">Accordion med
+                                klasser</span>
+                            <span class="accordion-icon test-icon-class">
+                                <span class="icon_text">Information</span>
+                                <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="accordionID1" aria-hidden="true" class="accordion-content">
+                        <p>Det er vigtigt, at denne accordion har en variant for at kunne
+                            teste klasser på ikonet.</p>
+                    </div>
+                </li>
+                <li>
+                    <h2>
+                        <button class="accordion-button" aria-expanded="true"
+                            aria-controls="accordionID2">
+                            <span class="accordion-title">Accordion, der er foldet ud</span>
+                        </button>
+                    </h2>
+                    <div id="accordionID2" aria-hidden="false" class="accordion-content">
+                        <p>Dette indhold kan ses fra starten, når siden indlæses.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</main>

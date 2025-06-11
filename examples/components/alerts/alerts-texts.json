@@ -4,8 +4,7 @@
             {
                 "variant": "info",
                 "headingLevel": "strong",
-                "heading": "Informativ besked - kun overskrift",
-                "icon": true
+                "heading": "Informativ besked - kun overskrift"
             },
             {
                 "variant": "info",

@@ -56,8 +56,8 @@ På mobil anvendes knappen uden tekst for at spare plads på skærmen.
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Opsummering" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

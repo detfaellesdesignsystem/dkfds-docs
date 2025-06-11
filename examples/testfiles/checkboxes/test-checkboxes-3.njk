@@ -2,13 +2,17 @@
 {% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
 
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-checkboxes-3</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
         <div class="col-12">
             <p>Hjælpetekst, lille tjekboks og påkrævet-label</p>
             {{ 
                 checkbox({
                     "id": "checkbox",
-                    "isStandalone": true,
                     "name": "checkbox",
                     "value": "1",
                     "label": "Label til tjekboks",

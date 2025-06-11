@@ -65,8 +65,6 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 
 {% include dos-donts-box.html component="alerts-dos-donts" %}
 
-{% include dos-donts-box.html component="alerts-success-dos-donts" %}
-
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
 ### Teksteksempler {#{% include create-id.html heading="Teksteksempler" %}}
@@ -80,10 +78,10 @@ Brug kun fejlbeskeder til deciderede fejl. Det kan både være som opsummering a
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Kvittering" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kvittering" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kvittering" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 

@@ -1,8 +1,6 @@
 // Bring in individual Gulp configurations
 //
 require( './config/gulp/html' );
-require( './config/gulp/publish' );
-
 
 var gulp  = require( 'gulp' );
 var dutil = require( './config/gulp/doc-util' );

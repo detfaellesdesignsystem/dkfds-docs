@@ -15,3 +15,54 @@ tags:
 - font
 - fonte
 ---
+
+<ul class="card-row mt-8">
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/styleguide/typografi/fonte/"
+        iconClasses="mt-sm-5"
+        headingLevel="span"
+        heading="Fonte"
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/styleguide/typografi/overskrifter/"
+        iconClasses="mt-sm-5"
+        headingLevel="span"
+        heading="Overskrifter"
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/styleguide/typografi/felt-tabel-overskrifter/"
+        iconClasses="mt-sm-5"
+        headingLevel="span"
+        heading="Felt- og tabeloverskrifter"
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/styleguide/typografi/tekst/"
+        iconClasses="mt-sm-5"
+        headingLevel="span"
+        heading="Tekst"
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/styleguide/typografi/links/"
+        iconClasses="mt-sm-5"
+        headingLevel="span"
+        heading="Links"
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/styleguide/typografi/lister/"
+        iconClasses="mt-sm-5"
+        headingLevel="span"
+        heading="Lister"
+        %}
+    </li>
+</ul> 

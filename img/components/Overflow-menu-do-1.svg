@@ -3,7 +3,7 @@
     <title>Overflow-menu-do-01</title>
     <g id="Overflow-menu-do-01">
         <g>
-            <rect id="Rectangle-Copy-4" x="172.5" y="0.5" width="123" height="51" fill="#dcdcdc" stroke="#747474"/>
+            <rect id="Rectangle-Copy-4" x="172.5" y="0.5" width="123" height="51" fill="#dcdcdc" stroke="#707070"/>
             <rect id="Rectangle" x="294.5" y="0.5" width="26" height="51" fill="#c8cadf" stroke="#474e95"/>
             <path id="Combined-Shape" d="M298.68,84.5,307,65.77l8.32,18.73H360.5v145h-251V84.5Z" transform="translate(1 -22)" fill="#c8cadf" stroke="#474e95" fill-rule="evenodd"/>
             <g id="Valgmulighed-1-Valgm" style="isolation: isolate">
@@ -20,8 +20,8 @@
                 <path id="Rectangle-Copy" d="M306.5,46h0a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h0a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,306.5,46Z" transform="translate(1 -22)" fill="#474e95" fill-rule="evenodd"/>
                 <path id="Rectangle-Copy-2" d="M306.5,53h0a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h0a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,306.5,53Z" transform="translate(1 -22)" fill="#474e95" fill-rule="evenodd"/>
             </g>
-            <rect id="Rectangle-Copy-5" x="49.5" y="0.5" width="123" height="51" fill="#dcdcdc" stroke="#747474"/>
-            <rect id="Rectangle-Copy-6" x="0.5" y="0.5" width="49" height="51" fill="#dcdcdc" stroke="#747474"/>
+            <rect id="Rectangle-Copy-5" x="49.5" y="0.5" width="123" height="51" fill="#dcdcdc" stroke="#707070"/>
+            <rect id="Rectangle-Copy-6" x="0.5" y="0.5" width="49" height="51" fill="#dcdcdc" stroke="#707070"/>
             <g id="Menupunkt" style="isolation: isolate">
                 <text transform="translate(187 33)" font-size="18" fill="#1a1a1a" font-family="ArialMT, Arial" style="isolation: isolate">Menupunkt</text>
             </g>

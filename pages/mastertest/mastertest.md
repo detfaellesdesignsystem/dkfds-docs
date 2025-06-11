@@ -23,20 +23,28 @@ title: Test
 {:.h3}
 ## Accordions
 
+{% include test/preview-test.html filename="test-accordions" description="Accordions" %}
 {% include test/preview-test.html filename="test-accordion-headings" description="Overskriftstyper i accordions" %}
 {% include test/preview-test.html filename="test-accordion-variants" description="Accordion-varianter" %}
-{% include test/preview-test.html filename="test-accordion-classes" description="Accordion-klasser" %}
 {% include test/preview-test.html filename="test-accordion-open-close-button" description="Åbn/luk-knapper" %}
+{% include test/preview-test.html filename="test-accordion-content" description="Accordionindhold" %}
 {% include test/preview-test.html filename="test-accordion-long-text" description="Tekstombrydning i accordions" %}
-{% include test/preview-test.html filename="test-accordion-javascript" description="JavaScript i accordions" %}
-{% include test/preview-test.html filename="test-accordion-language" description="Skift sprog i accordions" %}
+{% include test/preview-test.html filename="test-accordion-javascript" description="Accordions, der ikke er initialiseret" %}
 
 {:.h3}
 ## Beskeder (Alerts)
 
-{% include test/preview-test.html filename="test-alerts-1" description="Besked 1" %}
-{% include test/preview-test.html filename="test-alerts-2" description="Besked 2" %}
-{% include test/preview-test.html filename="test-alerts-3" description="Besked 3" %}
+{% include test/preview-test.html filename="test-alerts" description="Beskeder" %}
+{% include test/preview-test.html filename="test-alert-variants" description="Beskedvarianter" %}
+
+{:.h3}
+## Cards
+
+{% include test/preview-test.html filename="test-default-cards" description="Almindelige cards" %}
+{% include test/preview-test.html filename="test-navigation-cards" description="Navigationscards" %}
+{% include test/preview-test.html filename="test-long-cards" description="Lange cards" %}
+{% include test/preview-test.html filename="test-long-navigation-cards" description="Lange navigationscards" %}
+{% include test/preview-test.html filename="test-card-images-loading" description="Cards, indlæsning af billeder" %}
 
 {:.h3}
 ## Datofelter
@@ -58,6 +66,11 @@ title: Test
 {% include test/preview-test.html filename="test-datepicker-5" description="Datovælger 5" %}
 {% include test/preview-test.html filename="test-datepicker-6" description="Datovælger 6" %}
 {% include test/preview-test.html filename="test-datepicker-7" description="Datovælger 7" %}
+
+{:.h3}
+## Detaljer
+
+{% include test/preview-test.html filename="test-details" description="Detaljer" %}
 
 {:.h3}
 ## Dropdown
@@ -139,18 +152,23 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-input-fields-4" description="Inputfelter 4" %}
 {% include test/preview-test.html filename="test-input-fields-5" description="Inputfelter 5" %}
 {% include test/preview-test.html filename="test-input-fields-6" description="Inputfelter 6" %}
-{% include test/preview-test.html filename="test-input-fields-7" description="Inputfelter 7" %}
+{% include test/preview-test.html filename="test-input-fields-character-limit" description="Inputfelter med karakterbegrænsning" %}
 {% include test/preview-test.html filename="test-input-fields-8" description="Inputfelter 8" %}
 {% include test/preview-test.html filename="test-input-fields-9" description="Inputfelter 9" %}
 
 {:.h3}
 ## Knapper
 
+{% include test/preview-test.html filename="test-buttons" description="Knapper" %}
 {% include test/preview-test.html filename="test-buttons-in-row" description="Knapper på én række" %}
 {% include test/preview-test.html filename="test-buttons-in-divs" description="Knapper i hver sin række" %}
 {% include test/preview-test.html filename="test-buttons-next-to-text" description="Knapper i tekstafsnit" %}
 {% include test/preview-test.html filename="test-button-long-text" description="Knapper med lang tekst" %}
-{% include test/preview-test.html filename="test-buttons-1" description="Knap 1" %}
+
+{:.h3}
+## Loading spinner
+
+{% include test/preview-test.html filename="test-loading-button" description="Loading spinner" %} 
 
 {:.h3}
 ## Modal
@@ -159,12 +177,12 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-modal-javascript" description="JavaScript for modaler" %}
 {% include test/preview-test.html filename="test-modal-inert" description="Test af inert med modaler" %}
 {% include test/preview-test.html filename="test-modal-long" description="Lang modal" %}
+{% include test/preview-test.html filename="test-modal-dialog" description="Modal med dialog tag" %}
 
 {:.h3}
 ## Overflow menu
 
 {% include test/preview-test.html filename="test-overflow-menus-1" description="Overflow-menu 1" %}
-{% include test/preview-test.html filename="test-overflow-menus-2" description="Overflow-menu 2" %}
 {% include test/preview-test.html filename="test-overflow-menu-placement" description="Placering af overflow-menu" %}
 
 {:.h3}
@@ -176,11 +194,12 @@ B: Test af faneblade anvendt til sidenavigation
 ## Radioknap (Radio button)
 
 {% include test/preview-test.html filename="test-radiobuttons-error" description="Radioknap 1" %}
+{% include test/preview-test.html filename="test-radiobuttons-helptext" description="Radioknapper med hjælpetekster" %}
+{% include test/preview-test.html filename="test-radiobuttons-hidden-content" description="Radioknapper med skjult indhold" %}
 {% include test/preview-test.html filename="test-radiobuttons-1" description="Radioknap 1" %}
 {% include test/preview-test.html filename="test-radiobuttons-2" description="Radioknap 2" %}
 {% include test/preview-test.html filename="test-radiobuttons-3" description="Radioknap 3" %}
 {% include test/preview-test.html filename="test-radiobuttons-4" description="Radioknap 4" %}
-{% include test/preview-test.html filename="test-radiobuttons-5" description="Radioknap 5" %}
 
 {:.h3}
 ## Strukturerede lister
@@ -231,15 +250,23 @@ B: Test af faneblade anvendt til sidenavigation
 {% include test/preview-test.html filename="test-textarea-7" description="Tekstområde 7" %}
 
 {:.h3}
+## Tilbage-link
+
+{% include test/preview-test.html filename="test-back-link" description="Tilbage-link" %}
+
+{:.h3}
 ## Tilbage til toppen
 
+{% include test/preview-test.html filename="test-back-to-top" description="Tilbage til toppen" %}
 {% include test/preview-test.html filename="test-back-to-top-long-page" description="Tilbage til toppen-knap på en lang side" %}
 {% include test/preview-test.html filename="test-back-to-top-short-page" description="Tilbage til toppen-knap på en kort side" %}
 
 {:.h3}
 ## Tjekbokse
 
+{% include test/preview-test.html filename="test-checkboxes-helptext" description="Tjekbokse med hjælpetekster" %}
 {% include test/preview-test.html filename="test-checkbox-simple" description="TO DO: Simpel tjekboks" %}
+{% include test/preview-test.html filename="test-checkboxes-hidden-content" description="Tjekbokse med skjult indhold" %}
 {% include test/preview-test.html filename="test-checkboxes-1" description="Tjekbokse 1" %}
 {% include test/preview-test.html filename="test-checkboxes-2" description="Tjekbokse 2" %}
 {% include test/preview-test.html filename="test-checkboxes-3" description="Tjekbokse 3" %}
@@ -265,13 +292,9 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Trinindikator
 
-{% include test/preview-test.html filename="test-step-guide-1" description="Trinindikator 1" %}
-{% include test/preview-test.html filename="test-step-guide-2" description="Trinindikator 2" %}
-{% include test/preview-test.html filename="test-step-guide-3" description="Trinindikator 3" %}
-{% include test/preview-test.html filename="test-step-guide-4" description="Trinindikator 4" %}
-{% include test/preview-test.html filename="test-step-guide-5" description="Trinindikator 5" %}
-{% include test/preview-test.html filename="test-step-guide-6" description="Trinindikator 6" %}
-{% include test/preview-test.html filename="test-step-guide-7" description="Trinindikator 7" %}
+{% include test/preview-test.html filename="test-step-indicator-states" description="Trinindikator" %}
+{% include test/preview-test.html filename="test-step-indicator-single-states" description="Trinindikator, statuskombinationer" %}
+{% include test/preview-test.html filename="test-step-indicator-long-text" description="Trinindikator med lange tekster" %}
 
 {:.h3}
 ## Venstremenu

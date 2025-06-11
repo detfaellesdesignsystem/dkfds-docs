@@ -1,15 +1,10 @@
 var gulp = require('gulp');
 var dutil = require('./doc-util');
-var runSequence = require('gulp4-run-sequence').use(gulp);
-var runCmd = require('gulp-run-command').default;
-var task = 'html';
 
-var remoteSrc = require('gulp-remote-src');
 var rename = require("gulp-rename");
 var gulpif = require("gulp-if");
-var modifyFile = require('gulp-modify-file');
+var through2 = require('through2');
 var prettify = require('gulp-jsbeautifier');
-var plumber = require('gulp-plumber');
 var nunjucksRender = require('gulp-nunjucks-render');
 var data = require('gulp-data');
 var fs = require('fs');
@@ -24,7 +19,7 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/components/table/*.njk'];
+var buildFile = ['examples/testfiles/loading-spinner/*.njk'];
 
 var activeBuild = buildAll;
 
@@ -34,16 +29,20 @@ var testfiles = [
     "test-headings-with-sections",
     "test-headings-long-text",
     "test-icons-svg-and-class",
+    "test-accordions",
     "test-accordion-headings",
     "test-accordion-variants",
-    "test-accordion-classes",
     "test-accordion-open-close-button",
+    "test-accordion-content",
     "test-accordion-long-text",
     "test-accordion-javascript",
-    "test-accordion-language",
-    "test-alerts-1",
-    "test-alerts-2",
-    "test-alerts-3",
+    "test-alerts",
+    "test-alert-variants",
+    "test-default-cards",
+    "test-navigation-cards",
+    "test-long-cards",
+    "test-long-navigation-cards",
+    "test-card-images-loading",
     "test-date-input-1",
     "test-date-input-2",
     "test-date-input-3",
@@ -57,6 +56,7 @@ var testfiles = [
     "test-datepicker-5",
     "test-datepicker-6",
     "test-datepicker-7",
+    "test-details",
     "test-dropdown-1",
     "test-dropdown-2",
     "test-dropdown-3",
@@ -110,28 +110,30 @@ var testfiles = [
     "test-input-fields-4",
     "test-input-fields-5",
     "test-input-fields-6",
-    "test-input-fields-7",
+    "test-input-fields-character-limit",
     "test-input-fields-8",
     "test-input-fields-9",
+    "test-buttons",
     "test-buttons-in-row",
     "test-buttons-in-divs",
     "test-buttons-next-to-text",
     "test-button-long-text",
-    "test-buttons-1",
+    "test-loading-button",
     "test-modal-types",
     "test-modal-javascript",
     "test-modal-inert",
     "test-modal-long",
+    "test-modal-dialog",
     "test-overflow-menus-1",
-    "test-overflow-menus-2",
     "test-overflow-menu-placement",
     "test-pagination",
     "test-radiobuttons-error",
+    "test-radiobuttons-helptext",
+    "test-radiobuttons-hidden-content",
     "test-radiobuttons-1",
     "test-radiobuttons-2",
     "test-radiobuttons-3",
     "test-radiobuttons-4",
-    "test-radiobuttons-5",
     "test-search",
     "test-structured-list-1",
     "test-structured-list-2",
@@ -164,9 +166,13 @@ var testfiles = [
     "test-textarea-5",
     "test-textarea-6",
     "test-textarea-7",
+    "test-back-link",
+    "test-back-to-top",
     "test-back-to-top-long-page",
     "test-back-to-top-short-page",
+    "test-checkboxes-helptext",
     "test-checkbox-simple",
+    "test-checkboxes-hidden-content",
     "test-checkboxes-1",
     "test-checkboxes-2",
     "test-checkboxes-3",
@@ -180,13 +186,9 @@ var testfiles = [
     "test-tooltips",
     "test-tooltip-force-visible",
     "test-tooltip-javascript",
-    "test-step-guide-1",
-    "test-step-guide-2",
-    "test-step-guide-3",
-    "test-step-guide-4",
-    "test-step-guide-5",
-    "test-step-guide-6",
-    "test-step-guide-7",
+    "test-step-indicator-states",
+    "test-step-indicator-single-states",
+    "test-step-indicator-long-text",
     "test-venstremenu"
 ];
 
@@ -306,19 +308,18 @@ gulp.task('nunjucks', done => {
         }))
         .pipe(flatten())
         .pipe(gulp.dest(distComponentCode))
-        .pipe(modifyFile(createMarkdown))
+        .pipe(through2.obj(function(file, enc, cb) {
+            if (file.isBuffer()) {
+                const content = file.contents.toString();
+                const modifiedContent = createMarkdown(content, file.path, file);
+                file.contents = Buffer.from(modifiedContent);
+            }
+            cb(null, file);
+        }))
         .pipe(rename(function(path){
             path.extname = ".md";
         }))
         .pipe(gulpif(isThisAComponentExample, gulp.dest(distJekyllComponentPreview)));
 });
 
-
-gulp.task(task, done => {
-
-    runSequence(
-        'nunjucks',
-        done
-  );
-});
-
+gulp.task('html', gulp.series('nunjucks'));

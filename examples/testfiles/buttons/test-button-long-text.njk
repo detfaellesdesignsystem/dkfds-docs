@@ -1,17 +1,18 @@
 {% from "components/buttons/buttons.njk" import button as button %}
 
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Knapper med lang tekst</h1>
+            <h1 class="h2 mt-0">Knapper med lang tekst</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             <div>
                 {{ 
                     button({
                         "variant": "primary",
+                        "span": true,
                         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis."
                     }) 
                 }}
@@ -20,19 +21,21 @@
                 {{ 
                     button({
                         "variant": "primary",
+                        "span": true,
                         "text": "LoremipsumdolorsitametconsecteturadipiscingelitIntegervenenatisvitaefelisinmollisLoremipsumdolorsitametconsecteturadipiscingelitIntegervenenatisvitaefelisinmollis"
                     }) 
                 }}
             </div>
         </div>
     </div>
-    <div class="row mt-9">
+    <div class="row mb-905">
         <div class="col-2">
             <p>Dette er tekst, som ligger i en col-2. Derfor ombrydes den tidligere, end man ellers ville forvente. Knapperne nedenunder ligger i samme col-2.</p>
             <div>
                 {{ 
                     button({
                         "variant": "secondary",
+                        "span": true,
                         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis."
                     }) 
                 }}
@@ -41,19 +44,21 @@
                 {{ 
                     button({
                         "variant": "secondary",
+                        "span": true,
                         "text": "Loremipsumdolorsitametconsecteturadipiscingelitintegervenenatisvitaefelisinmollis"
                     }) 
                 }}
             </div>
         </div>
     </div>
-    <div class="row mt-9">
+    <div class="row mb-905">
         <div class="col-12">
             <p>Denne række har fuld bredde. Knapperne er dog begrænset til 20%.</p>
             <div>
                 {{ 
                     button({
                         "variant": "primary",
+                        "span": true,
                         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis.",
                         "classes": { "button": "w-percent-20" }
                     }) 
@@ -63,6 +68,7 @@
                 {{ 
                     button({
                         "variant": "primary",
+                        "span": true,
                         "text": "Loremipsumdolorsitametconsecteturadipiscingelitintegervenenatisvitaefelisinmollis",
                         "classes": { "button": "w-percent-20" }
                     }) 
@@ -70,12 +76,13 @@
             </div>
         </div>
     </div>
-    <div class="row mt-9 mb-9">
+    <div class="row mb-905">
         <div class="col-12">
             <div>
                 {{ 
                     button({
                         "variant": "secondary",
+                        "span": true,
                         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis vitae felis in mollis.",
                         "icon": "refresh"
                     }) 
@@ -85,6 +92,7 @@
                 {{ 
                     button({
                         "variant": "secondary",
+                        "span": true,
                         "text": "LoremipsumdolorsitametconsecteturadipiscingelitIntegervenenatisvitaefelisinmollisLoremipsumdolorsitametconsecteturadipiscingelitIntegervenenatisvitaefelisinmollis",
                         "icon": "refresh"
                     }) 

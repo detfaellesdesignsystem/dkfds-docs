@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 function languageSwitcher(){
 
-    // if (document.getElementsByTagName('body')[0].classList.contains('page-language-switcher') || document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
     if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher')) {
         let queryString = window.location.search;
         if(queryString !== "" && queryString.indexOf("lang=") !== -1){
@@ -22,7 +21,7 @@ function languageSwitcher(){
                 svg.setAttribute('focusable', 'false');
                 svg.setAttribute('aria-hidden', 'true');
                 let use = document.createElementNS(svgns, "use");
-                use.setAttributeNS(xlinkns, "href", "#done");
+                use.setAttributeNS(xlinkns, "href", "#check");
                 svg.appendChild(use);
                 chosenLang.prepend(svg);
                 ul.prepend(chosenLang.parentNode);
@@ -87,8 +86,8 @@ function languageSwitcher(){
             let english = languages[1];
             let german = languages[2];
             let polish = languages[3];
-            let globe_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#language"></use></svg>';
-            let done_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#done"></use></svg>';
+            let globe_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#language"></use></svg>';
+            let done_icon = '<svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#check"></use></svg>';
 
             switch (lang) {
                 case "en-GB":

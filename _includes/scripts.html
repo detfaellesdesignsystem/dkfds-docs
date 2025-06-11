@@ -4,7 +4,7 @@
 {%- if page.url -%}
 
 {%- if page.url contains "spinner" %}
-<script src="{{ site.baseurl }}/assets/js/spinner.js"></script>
+<script src="{{ site.baseurl }}/assets/js/spinner-button.js"></script>
 {% endif %}
 
 {%- if page.url contains "table" %}
@@ -44,6 +44,11 @@
 <script src="{{ site.baseurl }}/assets/js/tabs-navigation.js"></script>
 {% endif %}
 
+{%- if page.url contains "trinindikator" or
+       page.url contains "step-indicator" %}
+<script src="{{ site.baseurl }}/assets/js/step-indicator.js"></script>
+{% endif %}
+
 {%- if page.url contains "session-udloeber" %}
 <script src="{{ site.baseurl }}/assets/js/modal.js"></script>
 <script src="{{ site.baseurl }}/assets/js/session-timeout.js"></script>
@@ -53,10 +58,6 @@
 <script src="{{ site.baseurl }}/assets/js/icon-search.js"></script>
 {% endif %}
 
-{% endif %}
-
-{%- if page.layout == "demo" %}
-<script src="{{ site.baseurl }}/assets/js/demo-return-to-prev-page.js"></script>
 {% endif %}
 
 {%- if page.tabs %}

@@ -28,7 +28,7 @@ body.layout-mastertest {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 9990;
 
   .function-link {
     color: color('white');
@@ -40,12 +40,8 @@ body.layout-mastertest {
   position: fixed;
   width: 100%;
   background-color: color('black');
-  height: units(9, 'rem');
-  z-index: 10000;
-
-  @include media-breakpoint-up(sm) {
-    height: units(6, 'rem');
-  }
+  height: auto;
+  z-index: 9990;
 
   .test-footer-content {
     color: color('white');
@@ -75,3 +71,37 @@ body.layout-mastertest {
     display: unset !important; 
   }
 }
+
+dialog {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 24px auto;
+  align-self: center;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: shadow('heavy');
+
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 8px;
+    
+    .modal-close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+    }
+  }
+
+  .dialog-body {
+    padding: 0px 40px;
+  }
+
+  &::backdrop {
+    background-color: color($modal-overlay-background-color);
+  }
+}
+

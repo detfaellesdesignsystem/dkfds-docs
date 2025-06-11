@@ -1,0 +1,27 @@
+{% from "components/accordion/accordion.njk" import accordion as accordion %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Accordionindhold</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                accordion({
+                    "id": "accordionID",
+                    "classes": "test-accordion-group-class",
+                    "headingLevel": "h2",
+                    "items": [
+                        {
+                            "title": "Accordion med bredt indhold",
+                            "content": "<div style='height: 200px; width: 1600px; background-image: linear-gradient(to right, #807DBA, #DD3497);'></div>",
+                            "expanded": true
+                        }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

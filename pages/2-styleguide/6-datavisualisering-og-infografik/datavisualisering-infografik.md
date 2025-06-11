@@ -68,3 +68,12 @@ Overvej grundigt, hvordan infografikken og datavisualiseringen bygges, da der sk
 {% include links/external-link.html linktext="Inkludér altid tekstalternativer" %} fx en beskrivende tekst, som placeres under infografik/datavisualisering. I nogle tilfælde kan en numerisk tabel sammen med grafikken, der også gengiver dataene, give yderligere tilgængelighed. Dette er især godt, når forskellen er marginal og præcise tal ikke kan passe ind i mindre dele af datavisualiseringen – når “kagestykkerne” fx bliver for små i et “kagediagram”.
 
 Vær opmærksom på {% include links/internal-link.html linktext="tilgængelighed i forbindelse med grafik og visualisering" %} og anvend designsystemets datavisualiseringsfarver.
+
+<nav aria-labelledby="mobile-subpages-section" class="mt-9">
+    <h2 class="sr-only d-lg-none" id="mobile-subpages-section">Undersider</h2>
+    <ul class="d-lg-none nobullet-list">
+        <li>{% include links/internal-link.html linktext="Tilgængelig grafik" %}</li>
+        <li>{% include links/internal-link.html linktext="Datavisualisering" %}</li>
+        <li>{% include links/internal-link.html linktext="Infografik" %}</li>
+    </ul>
+</nav>

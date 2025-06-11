@@ -103,11 +103,11 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-400"></div>
-    {% include color.html hex="#999999" name="gray-400" %}
+    {% include color.html hex="#8E8E8E" name="gray-400" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-500"></div>
-    {% include color.html hex="#747474" name="gray-500" %}
+    {% include color.html hex="#707070" name="gray-500" %}
   </div>
   <div class="col col-12 col-md mb-4 md-md-0">
     <div class="color background-gray-600"></div>
@@ -126,7 +126,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-success-light"></div>
-    {% include color.html hex="#EEFFE2" name="success-light" %}
+    {% include color.html hex="#DDF7CE" name="success-light" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-success"></div>
@@ -142,7 +142,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
     {% include color.html hex="#FFEECC" name="warning-light" %}
   </div>
   <div class="col col-12 col-md-3">
-    <div class="color color-scale-spacing background-warning"></div>
+    <div class="color background-warning"></div>
     {% include color.html hex="#FEBB30" name="warning" %}
   </div>
 </div>
@@ -175,14 +175,14 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Link-farver {#{% include create-id.html heading="Link-farver" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link"></div>
     {% include color.html hex="#004D99" name="link" %}
   </div>
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-link-hover"></div>
-    {% include color.html hex="#000040" name="link-hover" %}
+    {% include color.html hex="#1A1A1A" name="link-hover" %}
   </div>
   <div class="col col-12 col-md-3">
     <div class="color background-link-visited"></div>
@@ -192,16 +192,16 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Fokusfarve {#{% include create-id.html heading="Fokusfarve" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3">
     <div class="color background-focus"></div>
-    {% include color.html hex="#747474" name="focus" %}
+    {% include color.html hex="#454545" name="focus" %}
   </div>
 </div>
 
 ## Baggrundsfarver {#{% include create-id.html heading="Baggrundsfarver" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color bg-normal"></div>
     {% include color.html hex="#FFFFFF" name="white" %}
@@ -218,7 +218,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Positiv og negativ farver {#{% include create-id.html heading="Positiv og negativ farver" %}}
 
-<div class="row color-scale">
+<div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
     <div class="color background-positive"></div>
     {% include color.html hex="#358000" name="text-positive" %}

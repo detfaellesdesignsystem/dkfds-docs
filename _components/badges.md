@@ -36,11 +36,7 @@ Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyh
 
 ### Vejledning
 
-Brug ord og begreber, som brugeren kan genkendes fra løsningen.
-
-Brug ikke hover, focus eller active styling til et badge, som ikke er interaktivt (fx link).
-
-Bland aldrig interaktive og statiske badges i samme løsning. Brugerne forventer ensartet opførsel af komponenterne inden for løsningen.
+Brug ord og begreber, som brugeren kan genkende fra løsningen.
 
 Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor det virkelig er meningsfuldt.
 
@@ -53,10 +49,10 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Opgaveliste" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Find sag" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Sagsnr. 123456789" %}
+- {% include links/demo-link.html linktext="Sagsoversigt: Afgørelser" %}
+- {% include links/demo-link.html linktext="Opgaveliste" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
@@ -70,23 +66,7 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 {% include code/syntax.html component="badges" copybutton=true %}
 
-Alle badges skal have en `badge` klasse på `<span>`-elementet. 
-
-Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, for eksempel når nyt indhold markeres på en side, anvend da et `<strong>`-element i stedet for `<span>`.
-
-### Tilgængelighed
-
-Interaktive badges bliver automatisk markeret, når brugere ved hjælp af tastaturet navigerer sig frem til dem.
-
-Du skal anvende ARIA live regions til at gøre skærmlæsere opmærksomme på ændringerne, hvis du anvender badges dynamisk i løsningen til at gøre opmærksom på nyt indlæst indhold eller ændringer på siden.
-
-## Stort badge {#{% include create-id.html heading="Stort badge" append="-kode" %}}
-
-For et stort badge skal der tilføjes en `badge-large` class.
-
-## Lille badge {#{% include create-id.html heading="Lille badge" append="-kode" %}}
-
-For et lille badge skal der tilføjes en `badge-small` class.
+Både `<span>` og `<strong>` kan anvendes til badges. Hvis et badge anvendes til særlig fræmhævning af et ord i en kontekst, brug da `<strong>`.
 
 ## Statusbadges {#{% include create-id.html heading="Statusbadges" append="-kode" %}}
 

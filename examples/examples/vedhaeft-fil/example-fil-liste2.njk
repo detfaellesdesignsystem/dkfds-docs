@@ -1,4 +1,5 @@
 {% from "components/skip-link/skip-link.njk" import skiplink as skiplink %}
+{% from "components/back-link/back-link.njk" import back_link as back_link %}
 {% from "components/header/header.njk" import portal_info as portal_info %}
 {% from "components/header/header.njk" import mobile_portal_info as mobile_portal_info %}
 {% from "components/header/header.njk" import solution_info as solution_info %}
@@ -28,7 +29,7 @@
     },
     "authority": {
         "name": "Myndighedsnavn",
-        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "card-text"}) + 'Kontakt</button>'
+        "text": '<span class="d-block d-lg-inline-block">Support: 12 34 56 78</span><span class="d-none d-lg-inline-block d-print-none ml-2 mr-2" aria-hidden="true">·</span><button type="button" data-module="modal" data-target="modal-contact" aria-haspopup=\"dialog\" class="d-print-none function-link">' + icon_svg({"name": "contact-card"}) + 'Kontakt</button>'
     }
 } %}
 
@@ -75,7 +76,7 @@
 
 {% block body %}
 <main class="container page-container pt-4 pt-lg-6" id="main-content">
-    <a href="#" class="back-link">Tilbage</a>
+    {{ back_link({ "href": "#" }) }}
 
     <h1>Dokumentation</h1>
 
@@ -90,12 +91,12 @@
         <li>
             <div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name":
                     'file-pdf'})}}Lægeerklæring.pdf</a><button class="function-link">{{ icon_svg({"name":
-                    'trash-can'})}}Slet</button></div>
+                    'delete'})}}Slet</button></div>
         </li>
         <li>
             <div class="d-flex justify-content-between"><a href="#" class="function-link">{{ icon_svg({"name":
                     'file-pdf'})}}Fuldmagt_88.pdf</a><button class="function-link">{{ icon_svg({"name":
-                    'trash-can'})}}Slet</button></div>
+                    'delete'})}}Slet</button></div>
         </li>
     </ul>
 

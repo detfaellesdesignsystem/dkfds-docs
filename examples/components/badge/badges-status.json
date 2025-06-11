@@ -4,28 +4,24 @@
             {
                 "text": "Positiv status",
                 "variant": {
-                    "size": "small",
                     "status": "success"
                 }
             },
             {
                 "text": "Neutral status",
                 "variant": {
-                    "size": "small",
                     "status": "info"
                 }
             },
             {
                 "text": "Advarende status",
                 "variant": {
-                    "size": "small",
                     "status": "warning"
                 }
             },
             {
                 "text": "Negativ status",
                 "variant": {
-                    "size": "small",
                     "status": "error"
                 }
             }

@@ -12,6 +12,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 {% if classes != "" %}
     {%- assign classes = ' class="' | append: classes | append: '"' -%}
 {%- endif -%}
+{%- assign icon = '<svg class="icon-svg mr-0 ml-3" focusable="false" aria-hidden="true"><use href="#' | append: include.icon | append: '"></use></svg>' -%}
 {%- assign link = include.linktext | downcase -%}
 
 {%- case link -%}
@@ -29,8 +30,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/kom-i-gang/om-designsystemet/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "implementering og kode",
-             "kom i gang som udvikler" -%}
-        <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}</a>
+             "kom i gang: udvikling" -%}
+        <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}{% if include.icon %}{{ icon }}{% endif %}</a>
 
     {%- when "hent kodepakken",
              "kodepakke" -%}
@@ -65,8 +66,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/kom-i-gang/implementering-kode/frameworks/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "design og ressourcer",
-             "kom i gang som designer" -%}
-        <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}</a>
+             "kom i gang: design" -%}
+        <a href="/kom-i-gang/designressourcer/"{{ classes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "designets grundprincipper" -%}
         <a href="/kom-i-gang/designressourcer/#grundprincipper"{{ classes }}>{{ include.linktext }}</a>
@@ -102,7 +103,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "styleguide" -%}
         <a href="/styleguide/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "farver" -%}
+    {%- when "farver",
+             "farven" -%}
         <a href="/styleguide/farver/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "portalfarve",
@@ -159,6 +161,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "læs retningslinjerne for stor tekst" -%}
         <a href="/styleguide/typografi/tekst/#display-retningslinjer"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "læs retningslinjer for facit" -%}
+        <a href="/styleguide/typografi/tekst/#facit"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "links", 
              "standard links" -%}
         <a href="/styleguide/typografi/links/"{{ classes }}>{{ include.linktext }}</a>
@@ -179,8 +184,14 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "hjørner, streger og skygger" -%}
         <a href="/styleguide/borders/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "facit streger" -%}
+    {%- when "hjørner" -%}
+        <a href="/styleguide/borders/#hjoerner"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "streger" -%}
         <a href="/styleguide/borders/#streger"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "skygger" -%}
+        <a href="/styleguide/borders/#skygger"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "ikonet", 
              "ikoner",
@@ -199,13 +210,19 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "ikoner til sortering i tabel" -%}
         <a href="/styleguide/ikoner/?s=sorter"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "tilgængelighed i forbindelse med grafik og visualisering" -%}
+    {%- when "retningslinjer for favikon" -%}
+        <a href="/styleguide/logoer/#retningslinjer-for-favikon"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "tilgængelighed i forbindelse med grafik og visualisering",
+             "tilgængelig grafik" -%}
         <a href="/styleguide/datavisualisering-infografik/tilgaengelig-grafik/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "læs mere om datavisualisering" -%}
+    {%- when "læs mere om datavisualisering",
+             "datavisualisering" -%}
         <a href="/styleguide/datavisualisering-infografik/datavisualisering/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "læs mere om infografik" -%}
+    {%- when "læs mere om infografik",
+             "infografik" -%}
         <a href="/styleguide/datavisualisering-infografik/infografik/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "layout" -%}
@@ -267,7 +284,7 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "formularer" -%}
         <a href="/eksempler/patterns/formular/"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "se et eksempel på opsummeringssiden med fejl i trinindikatoren." -%} 
+    {%- when "fejl i tidligere trin" -%} 
         <a href="/eksempler/templates/#fejl"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "siden kunne ikke findes" -%} 
@@ -304,7 +321,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/faellesskab/nyhedsmail/afmeld/"{{ classes }}>Afmeld en <span class="nowrap">e-mailadresse</span> her</a>
         
     {%- when "gå til release notes",
-             "release notes" -%}
+             "release notes",
+             "releases" -%}
         <a href="/faellesskab/releases/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "version 10.0.0" -%} 
@@ -339,7 +357,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "erst@erst.dk" -%}
         <a href="mailto:erst@erst.dk"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "privatlivspolitik og cookies" -%}
+    {%- when "privatlivspolitik og cookies",
+             "privatlivs&shy;politik og cookies" -%}
         <a href="/privatlivspolitik-cookies/"{{ classes }}>{{ include.linktext }}</a>
 
 

@@ -1,0 +1,52 @@
+{% from "components/alerts/alerts.njk" import alert as alert %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Beskeder</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                alert({
+                    "variant": "info",
+                    "headingLevel": "h2",
+                    "heading": "Besked med standardopsætning",
+                    "content": "Indholdet i beskeden."
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "info",
+                    "headingLevel": "h2",
+                    "heading": "Besked med luk-knap",
+                    "content": "Indholdet i beskeden.",
+                    "closeButton": true
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "info",
+                    "headingLevel": "h2",
+                    "heading": "Besked med maxbredde svarende til en paragrafs maxbredde",
+                    "content": "Indholdet i beskeden.",
+                    "paragraph": true
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "info",
+                    "headingLevel": "strong",
+                    "heading": "Besked uden indhold. &lt;strong&gt; er anvendt i stedet for &lt;h2&gt;"
+                }) 
+            }}
+            {{ 
+                alert({
+                    "variant": "info",
+                    "content": "Besked uden overskrift."
+                }) 
+            }}
+        </div>
+    </div>
+</main>

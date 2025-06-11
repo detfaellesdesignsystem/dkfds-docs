@@ -1,0 +1,26 @@
+{% from "components/buttons/buttons.njk" import button as button %}
+
+<div class="mb-7">
+    {{ 
+        button({
+            "variant": "primary",
+            "text": "Primærknap"
+        }) 
+    }}
+</div>
+<div class="mb-7">
+    {{ 
+        button({
+            "variant": "secondary",
+            "text": "Sekundærknap"
+        }) 
+    }}
+</div>
+<div>
+    {{ 
+        button({
+            "variant": "tertiary",
+            "text": "Tertiærknap"
+        }) 
+    }}
+</div>

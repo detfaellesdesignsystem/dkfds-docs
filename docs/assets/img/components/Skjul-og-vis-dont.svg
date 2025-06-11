@@ -31,10 +31,10 @@
             <text id="Hjælp" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" fill="#53599B">
                 <tspan x="53" y="245">Hjælp</tspan>
             </text>
-            <rect id="Rectangle" stroke="#747474" fill="#BFBFBF" x="24.5" y="20.5" width="281" height="26"></rect>
-            <rect id="Rectangle-Copy-2" stroke="#747474" fill="#BFBFBF" x="52.5" y="263.5" width="301" height="11"></rect>
-            <rect id="Rectangle-Copy-3" stroke="#747474" fill="#BFBFBF" x="52.5" y="278.5" width="301" height="11"></rect>
-            <rect id="Rectangle-Copy-4" stroke="#747474" fill="#BFBFBF" x="52.5" y="293.5" width="206" height="11"></rect>
+            <rect id="Rectangle" stroke="#707070" fill="#BFBFBF" x="24.5" y="20.5" width="281" height="26"></rect>
+            <rect id="Rectangle-Copy-2" stroke="#707070" fill="#BFBFBF" x="52.5" y="263.5" width="301" height="11"></rect>
+            <rect id="Rectangle-Copy-3" stroke="#707070" fill="#BFBFBF" x="52.5" y="278.5" width="301" height="11"></rect>
+            <rect id="Rectangle-Copy-4" stroke="#707070" fill="#BFBFBF" x="52.5" y="293.5" width="206" height="11"></rect>
         </g>
         <path d="M24,337 L24,249" id="Line" stroke="#979797" stroke-width="2" stroke-linecap="square"></path>
     </g>

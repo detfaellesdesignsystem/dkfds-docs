@@ -1,0 +1,116 @@
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+{% from "components/checkboxes/checkboxes.njk" import checkboxes as checkboxes %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tjekbokse med skjult indhold</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                checkboxes({
+                    "id": "checkboxgroup1",
+                    "checkboxLegend": "Tredje tjekboks har skjult indhold",
+                    "groupname": "checkbox-example1",
+                    "items": [
+                        { "value": "v1", "label": "Første tjekboks" },
+                        { "value": "v2", "label": "Anden tjekboks" },
+                        { "value": "v3", "label": "Tredje tjekboks", 
+                        "srOnly": "Udfyld informationer herunder", 
+                        "hiddenContent": textinput({ "id": "checkboxgroup1-v3-input", "label": "Inputfelt", "name": "checkboxgroup1-v3-input" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                checkboxes({
+                    "id": "checkboxgroup2",
+                    "checkboxLegend": "Anden og tredje tjekboks har skjult indhold",
+                    "groupname": "checkbox-example2",
+                    "items": [
+                        { "value": "v1", "label": "Første tjekboks" },
+                        { "value": "v2", "label": "Anden tjekboks", "srOnly": "Udfyld informationer herunder", "hiddenContent": 
+                            "<p class=\"mt-0 mb-0\">Tekst er teknisk set tilladt som skjult indhold i tjekbokse, da skærmlæsere godt kan læse teksten højt, men det går imod retningslinjerne i FDS.</p>" },
+                        { "value": "v3", "label": "Tredje tjekboks", "srOnly": "Udfyld informationer herunder", "hiddenContent": 
+                            textinput({ "id": "checkboxgroup2-v2-input", "label": "Inputfelt", "name": "checkboxgroup2-v2-input" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                checkboxes({
+                    "id": "checkboxgroup3",
+                    "checkboxLegend": "Første tjekboks indeholder skjulte tjekbokse",
+                    "groupname": "checkbox-example3",
+                    "items": [
+                        { "value": "v1", "label": "Første tjekboks", "srOnly": "Udfyld informationer herunder", "hiddenContent": 
+                        checkboxes({
+                            "id": "checkboxgroup3-inner",
+                            "checkboxLegend": "Inderste sæt tjekbokse",
+                            "groupname": "checkbox-example3-inner",
+                            "items": [
+                                { "value": "v1", "label": "Første tjekboks" },
+                                { "value": "v2", "label": "Anden tjekboks" },
+                                { "value": "v3", "label": "Tredje tjekboks" }
+                            ]
+                        })},
+                        { "value": "v2", "label": "Anden tjekboks" },
+                        { "value": "v3", "label": "Tredje tjekboks" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <p>Nedenunder er fire tjekbokse, der ikke har en fælles tjekboksgruppe.</p>
+            {{ 
+                checkbox({
+                    "id": "single-checkbox1",
+                    "name": "single-checkbox1",
+                    "value": "v1",
+                    "label": "Første tjekboks med skjult indhold uden tjekboksgruppe",
+                    "srOnly": "Udfyld informationer herunder",
+                    "hiddenContent": textinput({ "id": "single-checkbox1-input", "label": "Inputfelt", "name": "single-checkbox1-input" })
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "single-checkbox2",
+                    "name": "single-checkbox2",
+                    "value": "v2",
+                    "label": "Anden tjekboks med skjult indhold uden tjekboksgruppe",
+                    "srOnly": "Udfyld informationer herunder",
+                    "hiddenContent": textinput({ "id": "single-checkbox2-input", "label": "Inputfelt", "name": "single-checkbox2-input" })
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "single-checkbox3",
+                    "name": "single-checkbox3",
+                    "value": "v3",
+                    "label": "Tredje tjekboks uden tjekboksgruppe"
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "single-checkbox4",
+                    "name": "single-checkbox4",
+                    "value": "v4",
+                    "label": "Fjerde tjekboks med skjult indhold uden tjekboksgruppe",
+                    "srOnly": "Udfyld informationer herunder",
+                    "hiddenContent": textinput({ "id": "single-checkbox4-input", "label": "Inputfelt", "name": "single-checkbox4-input" })
+                }) 
+            }}
+        </div>
+    </div>
+</main>

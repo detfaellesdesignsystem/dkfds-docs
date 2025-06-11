@@ -75,7 +75,7 @@
         "variant": "secondary",
         "text": "Gem som pdf",
         "classes": { "button": "mt-6 d-print-none" },
-        "icon": "file-download"
+        "icon": "download"
     },
     "button_print": {
         "variant": "secondary",

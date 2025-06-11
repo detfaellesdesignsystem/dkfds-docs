@@ -18,15 +18,15 @@
             <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="96" y="49" width="55" height="35"></rect>
             <rect id="Rectangle-Copy" stroke="#474E95" fill="#C8CADF" x="21" y="49" width="55" height="35"></rect>
             <rect id="Rectangle" stroke="#474E95" fill="#C8CADF" x="170" y="49" width="85" height="35"></rect>
-            <rect id="Rectangle-Copy" stroke="#747474" fill="#D8D8D8" x="20.5" y="125.5" width="161" height="41"></rect>
+            <rect id="Rectangle-Copy" stroke="#707070" fill="#D8D8D8" x="20.5" y="125.5" width="161" height="41"></rect>
             <text id="Mobil" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" fill="#1A1A1A">
                 <tspan x="21" y="116">Mobil</tspan>
             </text>
             <text id="E-mailadresse" font-family="IBMPlexSans, IBM Plex Sans, Helvetica" font-size="18" font-weight="normal" fill="#1A1A1A">
                 <tspan x="21" y="199">E-mailadresse</tspan>
             </text>
-            <rect id="Rectangle-Copy" stroke="#747474" fill="#D8D8D8" x="20.5" y="208.5" width="261" height="41"></rect>
-            <rect id="Rectangle" fill="#747474" x="21" y="259" width="86" height="35"></rect>
+            <rect id="Rectangle-Copy" stroke="#707070" fill="#D8D8D8" x="20.5" y="208.5" width="261" height="41"></rect>
+            <rect id="Rectangle" fill="#707070" x="21" y="259" width="86" height="35"></rect>
             <text id="Send" font-family="IBMPlexSans-SemiBold, IBM Plex Sans, Helvetica" font-size="16" font-weight="500" fill="#FFFFFF">
                 <tspan x="45" y="283">Send</tspan>
             </text>

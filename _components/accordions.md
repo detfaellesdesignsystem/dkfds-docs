@@ -41,6 +41,8 @@ Brug ikke accordions til at kollapse indhold i fx søgeresultater eller andre l�
 
 Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger. Der bør du eventuelt i stedet anvende en trinindikator.
 
+Brug ikke accordions inde i andre accordions. Hvis du har brug for at gruppere accordions, anvend da almindelige overskrifter.
+
 ### Vejledning  
 
 Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.

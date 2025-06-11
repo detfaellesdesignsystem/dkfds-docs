@@ -1,12 +1,17 @@
 {% from "components/form/controls/text-area.njk" import textarea as textarea %}
 
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-textarea-6</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
         <div class="col-12">
             <p>Påkrævet-label og fejlbesked</p>
             {{
                 textarea({
-                    "id": "input-textarea",
+                    "id": "input-textarea1",
                     "name": "input-textarea",
                     "label": "Tekstområde med label",
                     "requiredLabel": true,
@@ -15,12 +20,12 @@
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             <p>Ikke påkrævet-label og lang fejlbesked</p>
             {{
                 textarea({
-                    "id": "input-textarea",
+                    "id": "input-textarea2",
                     "name": "input-textarea",
                     "label": "Tekstområde med label",
                     "requiredLabel": false,

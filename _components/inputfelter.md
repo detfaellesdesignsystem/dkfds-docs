@@ -160,10 +160,10 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Oplysninger om dig" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Kontaktoplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
@@ -249,6 +249,10 @@ Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug
       <tr>
         <td>updateMessages()</td>
         <td>Fremtvinger en opdatering af beskederne med antal tegn tilbage. Dette kan være nyttigt, hvis eksempelvis værdien i inputfeltet ændres programmatisk.</td>
+      </tr>
+      <tr>
+        <td>silentUpdateMessages()</td>
+        <td>Fungerer på samme måde som <code>updateMessages()</code>, bortset fra at ændringen ikke læses højt i skærmlæsere. Anvend kun, når ændringer i feltet er meningsforstyrrende for skærmlæserbrugere.</td>
       </tr>
     </tbody>
   </table>

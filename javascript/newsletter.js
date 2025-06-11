@@ -59,15 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
         /* If the url contains an error message, display it to the user in an alert 
         Error message references: https://kb.ubivox.com/api/latest/html/post_handler.html#error-handling */
         if (window.location.search !== '') {
-            let errorCodes = [];
-            let urlparams = window.location.search.substring(1).split('&');
-            for (let p = (urlparams.length - 1); p > -1; p--) {
-                let paramstrings = urlparams[p].split('=');
-                if (paramstrings[0] === 'error_codes') {
-                    errorCodes = paramstrings[1].split('%3B');
-                    break;
-                }
-            }
+            const urlParams = new URLSearchParams(window.location.search);
+            const errorCodes = urlParams.get('error_codes')?.split(';') || [];
+
             alert.classList.add('alert-error');
 
             if (subscriptionPage) {

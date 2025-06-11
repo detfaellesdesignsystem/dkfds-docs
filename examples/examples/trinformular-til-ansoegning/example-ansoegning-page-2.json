@@ -49,7 +49,7 @@
                 "text": "Oplysninger om afsender",
                 "href": "/pages/eksempler/trinformular-til-ansoegning/ansoegning-1/",
                 "icon": {
-                    "name": "done",
+                    "name": "check",
                     "ariaLabel": "Gennemført",
                     "ariaHidden": false
                 }

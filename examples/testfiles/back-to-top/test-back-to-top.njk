@@ -1,0 +1,48 @@
+{% from "components/back-to-top/back-to-top.njk" import back_to_top as back_to_top %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tilbage til toppen</h1>
+            <p>JavaScript ikke initialiseret for at undgå, at knapperne ikke kan ses på siden.</p>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3">Default udseende</h2>
+            {{ 
+                back_to_top({
+                    "href": "#top",
+                    "attributes": "style=\"position: static;\""
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3">Med knapvarianter</h2>
+            <p>Tilbage til toppen-knappen har tidligere anvendt tertiær-varianten fra normale knapper. Der bør fra version 11.0.0 ikke længere være nogen effekt af at sætte en knapvariant på tilbage til toppen-knappen. Nedenstående knappers udseende skal derfor alle matche default udseende.</p>
+            {{ 
+                back_to_top({
+                    "href": "#top",
+                    "classes": "button-primary mr-4",
+                    "attributes": "style=\"position: static;\""
+                }) 
+            }}
+            {{ 
+                back_to_top({
+                    "href": "#top",
+                    "classes": "button-secondary mr-4",
+                    "attributes": "style=\"position: static;\""
+                }) 
+            }}
+            {{ 
+                back_to_top({
+                    "href": "#top",
+                    "classes": "button-tertiary mr-4",
+                    "attributes": "style=\"position: static;\""
+                }) 
+            }}
+        </div>
+    </div>
+</main>

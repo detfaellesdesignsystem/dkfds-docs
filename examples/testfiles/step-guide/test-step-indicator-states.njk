@@ -1,0 +1,103 @@
+{% from "components/stepguide/stepguide.njk" import stepIndicatorButton as stepIndicatorButton %}
+{% from "components/stepguide/stepguide.njk" import stepIndicator as stepIndicator %}
+{% from "components/modal/modal.njk" import modal as modal %}
+
+{% set step_indicator = stepIndicator({
+    "steps": [
+        {
+            "text": "Dette er et overstået, klikbart trin",
+            "href": "#",
+            "state": "success"
+        },
+        {
+            "text": "Dette er et overstået, klikbart trin med hjælpetekst",
+            "href": "#",
+            "state": "success",
+            "helptext": "Informationstekst"
+        },
+        {
+            "text": "Endnu et overstået, klikbart trin",
+            "href": "#",
+            "state": "success"
+        },
+        {
+            "text": "Fejlet trin med hjælpetekst",
+            "href": "#",
+            "state": "error",
+            "helptext": "Informationstekst"
+        },
+        {
+            "text": "Fejlet trin",
+            "href": "#",
+            "state": "error"
+        },
+        {
+            "text": "Endnu et overstået, klikbart trin",
+            "href": "#",
+            "state": "success"
+        },
+        {
+            "text": "Det nuværende trin",
+            "href": "#",
+            "state": "number",
+            "current": true
+        },
+        {
+            "text": "Ikke-klikbart trin",
+            "href": "#",
+            "state": "number",
+            "disabled": true
+        },
+        {
+            "text": "Ikke-klikbart trin med hjælpetekst",
+            "href": "#",
+            "state": "number",
+            "disabled": true,
+            "helptext": "Informationstekst"
+        },
+        {
+            "text": "Klikbart, kommende trin",
+            "href": "#",
+            "state": "number"
+        }
+    ]
+}) %}
+
+{% set modal_content_step = "<nav aria-label='Trinindikator'>" + step_indicator + "</nav>" %}
+
+{% set mobile_breakpoint = "md" %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Trinindikator</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <aside class="col-12 col-{{mobile_breakpoint}}-4" aria-label="Se og vælg trin">
+            {{
+                stepIndicatorButton({
+                    "breakpoint": mobile_breakpoint,
+                    "modal": "modal-step-indicator",
+                    "currentStep": "7",
+                    "totalSteps": "10"
+                })
+            }}
+            <nav aria-label="Trinindikator" class="d-none d-{{mobile_breakpoint}}-block">
+                {{ step_indicator }}
+            </nav>
+        </aside>
+    </div>
+</main>
+
+<div class="fds-modal-container">
+    {{
+        modal({
+            "id": "modal-step-indicator",
+            "heading": "Trin 7 af 10",
+            "content": modal_content_step,
+            "forcedAction": false,
+            "stepIndicator": true
+        })
+    }}
+</div>

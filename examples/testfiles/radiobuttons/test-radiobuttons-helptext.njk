@@ -1,0 +1,55 @@
+{% from "components/radiobuttons/radiobuttons.njk" import radiobuttons as radiobuttons %}
+{% from "components/form/controls/text-input.njk" import textinput as textinput %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Radioknapper med hjælpetekster</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                radiobuttons({
+                    "id": "radiogroup-1",
+                    "radiogroupLegend": "Radioknapper med hjælpetekster",
+                    "groupname": "radio-example-1",
+                    "collapsedItems": true,
+                    "helptext": "Dette er en hjælpetekst for hele radioknapgruppen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis.",
+                    "items": [
+                        { "value": "v1", "label": "Kun hjælpetekst",
+                          "helptext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis. Donec mollis sapien ut nibh ultricies interdum." },
+                        { "value": "v2", "label": "Hjælpetekst og skjult inputfelt", 
+                          "helptext": "Dette er hjælpetekst for en enkelt radioknap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis.", 
+                          "srOnly": "Udfyld informationer herunder", 
+                          "hiddenContent": textinput({ "id": "radio-example-1-text-1", "label": "Inputfelt", "name": "mytext" }) },
+                        { "value": "v3", "label": "Lang hjælpetekst uden mellemrum",
+                          "helptext": "DetteerhjælpetekstforenenkeltradioknapLoremipsumdolorsitametconsecteturadipiscingelitIntegerfringillainquamsitametcursusPellentesqueegetloremvenenatisdignissimjustoluctusrutrumtortorPraesentsem risuslobortisatorciegetsollicitudinplaceraterosProinattempusfelisDonecmllissapienutnibhultriciesinterdum", 
+                          "srOnly": "Udfyld informationer herunder"},
+                        { "value": "v4", "label": "Hjælpetekst og skjult inputfelt med hjælpetekst", 
+                          "helptext": "Dette er hjælpetekst for en enkelt radioknap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla in quam sit amet cursus. Pellentesque eget lorem venenatis, dignissim justo luctus, rutrum tortor. Praesent sem risus, lobortis at orci eget, sollicitudin placerat eros. Proin at tempus felis.", 
+                          "srOnly": "Udfyld informationer herunder", 
+                          "hiddenContent": textinput({ "id": "radio-example-1-text-2", "label": "Inputfelt", "name": "mytext", "helptext": "Hjælpetekst til inputfeltet" }) }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            {{
+                radiobuttons({
+                    "id": "radiogroup-2",
+                    "radiogroupLegend": "Radioknapgruppe med lang hjælpetekst uden mellemrum",
+                    "groupname": "radio-example-2",
+                    "helptext": "DetteerenhjælpetekstforheleradioknapgruppenLoremipsumdolorsitametconsecteturadipiscingelitIntegerfringillainquamsitametcursusPellentesqueegetloremvenenatisdignissimjustoluctusrutrumtortorPraesentsem risuslobortisatorciegetsollicitudinplaceraterosProinattempusfelisDonecmllissapienutnibhultriciesinterdum",
+                    "items": [
+                        { "value": "v1", "label": "Valg 1" },
+                        { "value": "v2", "label": "Valg 2" },
+                        { "value": "v3", "label": "Valg 3" }
+                    ]
+                })
+            }}
+        </div>
+    </div>
+</main>

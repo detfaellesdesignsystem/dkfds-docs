@@ -1,145 +1,158 @@
 {% from "components/pagination/pagination.njk" import pagination as pagination %}
 
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Paginering</h1>
+            <h1 class="h2 mt-0">Paginering</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            {{ 
-                pagination({
-                    "totalPages": 8,
-                    "currentPage": 1
-                }) 
-            }}
-        </div>
-    </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 8,
-                    "currentPage": 4
+                    "currentPage": 1,
+                    "ariaLabel": "Eksempel 1"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 8,
-                    "currentPage": 5
+                    "currentPage": 4,
+                    "ariaLabel": "Eksempel 2"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 8,
-                    "currentPage": 8
+                    "currentPage": 5,
+                    "ariaLabel": "Eksempel 3"
                 }) 
             }}
         </div>
     </div>
-    <div class="row mt-905">
+    <div class="row mb-905">
+        <div class="col-12">
+            {{ 
+                pagination({
+                    "totalPages": 8,
+                    "currentPage": 8,
+                    "ariaLabel": "Eksempel 4"
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 7,
-                    "currentPage": 1
+                    "currentPage": 1,
+                    "ariaLabel": "Eksempel 5"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 7,
-                    "currentPage": 4
+                    "currentPage": 4,
+                    "ariaLabel": "Eksempel 6"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 7,
-                    "currentPage": 7
+                    "currentPage": 7,
+                    "ariaLabel": "Eksempel 7"
                 }) 
             }}
         </div>
     </div>
-    <div class="row mt-905">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 9999,
-                    "currentPage": 1200
+                    "currentPage": 1200,
+                    "ariaLabel": "Eksempel 8"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 9,
-                    "currentPage": 5
+                    "currentPage": 5,
+                    "ariaLabel": "Eksempel 9"
                 }) 
             }}
         </div>
     </div>
-    <div class="row mt-905">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 4,
                     "currentPage": 2,
-                    "pageElement": "button"
+                    "pageElement": "button",
+                    "ariaLabel": "Eksempel 10"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 4,
                     "currentPage": 2,
-                    "pageElement": "a"
+                    "pageElement": "a",
+                    "ariaLabel": "Eksempel 11"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 10,
                     "currentPage": 5,
-                    "pageElement": "button"
+                    "pageElement": "button",
+                    "ariaLabel": "Eksempel 12"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
                     "totalPages": 10,
-                    "currentPage": 5
+                    "currentPage": 5,
+                    "ariaLabel": "Eksempel 13"
                 }) 
             }}
         </div>
     </div>
-    <div class="row mt-905">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
@@ -147,12 +160,12 @@
                     "currentPage": 1,
                     "pageElement": "button",
                     "paginationType": "table-pagination",
-                    "ariaLabel": "Skift side i tabellen"
+                    "ariaLabel": "Skift side i tabellen, eksempel 1"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
@@ -160,12 +173,12 @@
                     "currentPage": 7,
                     "pageElement": "button",
                     "paginationType": "table-pagination",
-                    "ariaLabel": "Skift side i tabellen"
+                    "ariaLabel": "Skift side i tabellen, eksempel 2"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
@@ -173,12 +186,12 @@
                     "currentPage": 15,
                     "pageElement": "button",
                     "paginationType": "table-pagination",
-                    "ariaLabel": "Skift side i tabellen"
+                    "ariaLabel": "Skift side i tabellen, eksempel 3"
                 }) 
             }}
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
             {{ 
                 pagination({
@@ -186,7 +199,7 @@
                     "currentPage": 2,
                     "pageElement": "button",
                     "paginationType": "table-pagination",
-                    "ariaLabel": "Skift side i tabellen"
+                    "ariaLabel": "Skift side i tabellen, eksempel 4"
                 }) 
             }}
         </div>

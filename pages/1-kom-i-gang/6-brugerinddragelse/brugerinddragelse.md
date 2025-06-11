@@ -11,7 +11,7 @@ tags:
 
 Det Fælles Designsystems komponenter og retningslinjer er udarbejdet på baggrund af etablerede designkonventioner. Komponenter og patterns, der ikke kan baseres på etablerede praksisser, brugertestes.
 
-Selvom de enkelte komponenter i designsystemet er validerede, vil det være nødvendigt at inddrage brugerne i udviklingen af den enkelte løsning. Således sikres det bl.a., at de rigtige komponenter anvendes, at indholdet er forståeligt, samt at brugerne kan navigere i løsningens samlede flow.
+Selvom alle komponenter i designsystemet er validerede, vil det være nødvendigt at inddrage brugerne i udviklingen af den enkelte løsning. 
 
 ## Guide til gode brugeroplevelser
 

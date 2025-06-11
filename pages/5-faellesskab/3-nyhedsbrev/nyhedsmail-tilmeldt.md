@@ -8,7 +8,7 @@ title: Tilmelding til nyhedsbrev
 ---
 
 <div class="alert alert-success mt-5" id="newsletter-alert">
-    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use xlink:href="#check-circle"></use></svg>
+    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#success"></use></svg>
     <div class="alert-body">
         <h2 class="alert-heading">Bekræft tilmelding</h2>
         <p class="alert-text">Tak for din interesse for nyheder fra Det Fælles Designsystem. Vi har sendt dig en e-mail med link til bekræftelse af din tilmelding.</p>

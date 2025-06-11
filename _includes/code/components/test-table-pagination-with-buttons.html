@@ -1,7 +1,7 @@
 <main class="container page-container" id="main-content">
-    <div class="row">
+    <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0 mb-9">Valgbare rækker med paginering og funktionsknapper</h1>
+            <h1 class="h2 mt-0">Valgbare rækker med paginering og funktionsknapper</h1>
         </div>
     </div>
     <div class="row mb-905">
@@ -56,20 +56,21 @@
     <div class="row mb-905">
         <div class="col-12">
 
-            <p aria-live="polite" aria-atomic="true" class="rows-message">Viser
+            <p aria-live="polite" aria-atomic="true" class="rows-message"
+                id="selectable-table1-message">Viser
                 <strong class="displayed-rows">1-4</strong> af
                 <strong class="total-rows">92</strong> rækker</p>
             <div class="table--responsive-scroll" tabindex="0">
-                <table class="table table--selectable">
+                <table class="table table--selectable" id="selectable-table1">
                     <thead>
                         <tr>
                             <th>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-all" type="checkbox"
+                                    <input id="selectable-table1-check-all" type="checkbox"
                                         class="form-checkbox"
-                                        aria-controls=" undefined-check-1 undefined-check-2 undefined-check-3 undefined-check-4">
-                                    <label for="-check-all"><span class="sr-only">Vælg alle
-                                            rækker</span></label>
+                                        aria-controls=" selectable-table1-check-1 selectable-table1-check-2 selectable-table1-check-3 selectable-table1-check-4">
+                                    <label for="selectable-table1-check-all"><span
+                                            class="sr-only">Vælg alle rækker</span></label>
                                 </div>
                             </th>
                             <th scope="col" class="table-header-no-wrap">First column</th>
@@ -88,10 +89,11 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-1" type="checkbox" name="-check[]"
-                                        class="form-checkbox" value="First row, first cell">
-                                    <label for="-check-1"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-1" type="checkbox"
+                                        name="selectable-table1-check[]" class="form-checkbox"
+                                        value="First row, first cell">
+                                    <label for="selectable-table1-check-1"><span
+                                            class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>First row, first cell</td>
@@ -108,10 +110,11 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-2" type="checkbox" name="-check[]"
-                                        class="form-checkbox" value="Second row, first cell">
-                                    <label for="-check-2"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-2" type="checkbox"
+                                        name="selectable-table1-check[]" class="form-checkbox"
+                                        value="Second row, first cell">
+                                    <label for="selectable-table1-check-2"><span
+                                            class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>Second row, first cell</td>
@@ -128,10 +131,11 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-3" type="checkbox" name="-check[]"
-                                        class="form-checkbox" value="Third row, first cell">
-                                    <label for="-check-3"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-3" type="checkbox"
+                                        name="selectable-table1-check[]" class="form-checkbox"
+                                        value="Third row, first cell">
+                                    <label for="selectable-table1-check-3"><span
+                                            class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>Third row, first cell</td>
@@ -148,10 +152,11 @@
                         <tr>
                             <td>
                                 <div class="form-group-checkbox">
-                                    <input id="-check-4" type="checkbox" name="-check[]"
-                                        class="form-checkbox" value="Fourth row, first cell">
-                                    <label for="-check-4"><span class="sr-only">Vælg
-                                            række</span></label>
+                                    <input id="selectable-table1-check-4" type="checkbox"
+                                        name="selectable-table1-check[]" class="form-checkbox"
+                                        value="Fourth row, first cell">
+                                    <label for="selectable-table1-check-4"><span
+                                            class="sr-only">Vælg række</span></label>
                                 </div>
                             </td>
                             <td>Fourth row, first cell</td>
@@ -184,11 +189,11 @@
 
                 <div role="group" class="table-pagination" aria-label="Skift side i tabellen">
                     <button
-                        class="button button-arrow button-first hidden"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#first-page"></use></svg><span
+                        class="button button-arrow button-first hidden"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#first-page"></use></svg><span
                             class="sr-only">Første side</span></button>
                     <button class="button button-arrow button-previous hidden"
                         aria-label="Forrige side">
-                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-left"></use></svg><span
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#chevron-left"></use></svg><span
                             class="pagination-nav-link">Forrige</span>
                     </button>
                     <span class="pagination-mobile">Side 1 af 23</span>
@@ -230,26 +235,26 @@
                     </ul>
                     <button class="button button-arrow button-next" aria-label="Næste side">
                         <span
-                            class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg>
+                            class="pagination-nav-link">Næste</span><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#chevron-right"></use></svg>
                     </button>
                     <button
-                        class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#last-page"></use></svg><span
+                        class="button button-arrow button-last"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#last-page"></use></svg><span
                             class="sr-only">Sidste side</span></button>
                 </div>
 
             </div>
             <div class="table-actions">
                 <p class="table-selected-number no-selected">Ingen rækker valgt</p>
-                <button class="button button-primary">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#file-download"></use></svg>
-                    Knap 1
-                </button><button class="button button-secondary">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#content-copy"></use></svg>
-                    Knap 2
-                </button><button class="button button-secondary">
-                    <svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#trash-can"></use></svg>
-                    Knap 3
-                </button>
+                <div class="button-group"><button class="button button-primary">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#download"></use></svg>
+                        Knap 1
+                    </button><button class="button button-secondary">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#copy"></use></svg>
+                        Knap 2
+                    </button><button class="button button-secondary">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#delete"></use></svg>
+                        Knap 3
+                    </button></div>
             </div>
         </div>
     </div>

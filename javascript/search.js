@@ -82,7 +82,7 @@ function populateSearch (results, query, start){
         }
         document.getElementById('results').innerHTML = html;
     } else{
-        document.getElementById('results').innerHTML = '<p>Vi fandt ingen sider, der matchede din søgning.</p><p class="mt-9"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/99" target="_blank" class="icon-link">Fortæl os, hvad du søgte efter og hjælp os med at forbedre søgningen (via GitHub)<svg class="icon-svg" focusable="false" aria-hidden="true"><use xlink:href="#open-in-new"></use></svg></a></p>';
+        document.getElementById('results').innerHTML = '<p>Vi fandt ingen sider, der matchede din søgning.</p><p class="mt-9"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/99" target="_blank" class="icon-link">Fortæl os, hvad du søgte efter og hjælp os med at forbedre søgningen (via GitHub)<svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#open-in-new"></use></svg></a></p>';
     }
 
     document.getElementById('results-container').classList.remove('d-none');

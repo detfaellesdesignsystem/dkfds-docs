@@ -45,9 +45,9 @@ Hvor det er muligt, skal du sikre dig, at tilbage-linket fungerer, selvom JavaSc
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {:.nobullet-list}
-- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" returnID="eksempelloesninger" %}
-- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" returnID="eksempelloesninger" %}
+- {% include links/demo-link.html linktext="Formular til kontaktoplysninger: Bekræft oplysninger" %}
+- {% include links/demo-link.html linktext="Trinformular til registrering: Vælg noget mere" %}
+- {% include links/demo-link.html linktext="Trinformular til ansøgning: Kontaktoplysninger" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
@@ -62,7 +62,7 @@ Adam Silver: Form Design Patterns (2018)
 
 {% include code/syntax.html component="back-link" copybutton=true %}
 
-Linket placeres så vidt muligt under headeren, se eksempel på implementering i vores eksempelløsning: {% include links/demo-link.html linktext="Vedhæft fil" returnID="html-struktur" %}
+Linket placeres så vidt muligt under headeren, se eksempel på implementering i vores eksempelløsning: {% include links/demo-link.html linktext="Vedhæft fil" %}
 
 Bemærk, at tilbage-linket stadig skal være synligt ved mobilvisning.
 

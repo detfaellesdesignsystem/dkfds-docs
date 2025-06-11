@@ -24,14 +24,14 @@ module.exports = function (outputPath, prod) {
             test_virk: ["./scss/test-virk.scss"],
             test_normalization: ["./scss/test-normalization.scss"],
             "search": ["./javascript/search.js"],
-            "spinner": ["./javascript/components/spinner.js"],
             "table": ["./javascript/components/table.js"],
             "toast": ["./javascript/components/toast.js"],
             "modal": ["./javascript/components/modal.js"],
+            "step-indicator": ["./javascript/components/step-indicator.js"],
             "toggleswitch": ["./javascript/components/toggleswitch.js"],
             "languageswitcher": ["./javascript/components/languageswitcher.js"],
             "table-pagination": ["./javascript/components/table-pagination.js"],
-            "demo-return-to-prev-page": ["./javascript/demo-return-to-prev-page.js"],
+            "spinner-button": ['./javascript/components/spinner-button.js'],
             "newsletter": ["./javascript/newsletter.js"],
             "pagination": ["./javascript/components/pagination.js"],
             "session-timeout": ["./javascript/components/session-timeout.js"],
@@ -136,7 +136,7 @@ module.exports = function (outputPath, prod) {
         stats: 'minimal',
         plugins: [
             new CopyWebpackPlugin(
-                {//copies content from /img and dkfds-components/dist to /assets/img
+                {//copies content from /img and dkfds-components/dist to /assets/
                     patterns: [
                         { from: "./img/**/*", to: "" },
                         { from: "./node_modules/dkfds/dist/img/svg-icons", to: "svg" },
@@ -144,7 +144,8 @@ module.exports = function (outputPath, prod) {
                         { from: "./node_modules/dkfds/dist/img/logo_virk.svg", to: "img" },
                         { from: "./node_modules/dkfds/dist/img/logo-borgerdk.svg", to: "img" },
                         { from: "./node_modules/dkfds/dist/img/logo-header-placeholder.png", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-placeholder.png", to: "img" }
+                        { from: "./node_modules/dkfds/dist/img/logo-placeholder.png", to: "img" },
+                        { from: "./node_modules/dkfds/dist/img/all-svg-icons.svg", to: "img" }
                     ]
                 }
             ),

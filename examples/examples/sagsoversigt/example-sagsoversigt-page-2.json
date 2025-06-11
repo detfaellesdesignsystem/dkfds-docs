@@ -144,24 +144,24 @@
     },
     "badge_under_behandling": {
         "text": "Under behandling",
+        "strong": true,
         "variant": {
-            "size": "small",
             "status": "warning"
         }
     },
     "button_myndigheden": {
         "text": "Skriv til <Myndigheden>",
-        "variant": "tertiary",
+        "variant": "secondary",
         "classes": { "button": "d-print-none" }
     },
     "button_adgang": {
         "text": "Giv adgang",
-        "variant": "tertiary",
+        "variant": "secondary",
         "classes": { "button": "d-print-none" }
     },
     "button_fuldmagt": {
         "text": "Giv fuldmagt",
-        "variant": "tertiary",
+        "variant": "secondary",
         "classes": { "button": "d-print-none" }
     },
     "breadcrumbs_data_desktop": {
