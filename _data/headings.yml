@@ -655,6 +655,7 @@ Kontakt_og_support:
 
 Releases:
 - h2: Versionering og release-proces
+- h2: Version 11.0.1
 - h2: Version 11.0.0
 - h2: Version 10.2.1
 - h2: Version 10.2.0
@@ -662,7 +663,6 @@ Releases:
 - h2: Version 10.0.2
 - h2: Version 10.0.1
 - h2: Version 10.0.0
-- h2: Version 9.1.0
 - h2: Tidligere versioner
 
 # Øvrige

@@ -79,6 +79,8 @@ tags:
 - 10.1.0
 - 10.2.0
 - 10.2.1
+- 11.0.0
+- 11.0.1
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -102,6 +104,16 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+
+## Version 11.0.1 {#{% include create-id.html heading="Version 11.0.1" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">??-06-2025</span></div>
+
+- Fjernet `aria-checked="mixed"` på tjekbokse i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %}, som blev sat gennem JavaScript. I stedet anvendes klassen `mixed` til at sætte stylingen. Attributten `aria-checked="mixed"` kan fortsat anvendes et stykke tid endnu, men vil blive fjernet i en senere major release.
+{% include links/github-link.html number="277" afternumber=" på GitHub" %}
 
 
 
@@ -454,7 +466,10 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 
 
-## Version 9.1.0 {#{% include create-id.html heading="Version 9.1.0" %}}
+## Tidligere versioner {#{% include create-id.html heading="Tidligere versioner" %}}
+{:.mb-0}
+
+### Version 9.1.0 {#{% include create-id.html heading="Version 9.1.0" %}}
 {:.mb-0}
 
 <div><span class="small-text mt-0 d-block">24-11-2023</span></div>
@@ -471,7 +486,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 
 
-## Version 9.0.2 {#{% include create-id.html heading="Version 9.0.2" %}}
+### Version 9.0.2 {#{% include create-id.html heading="Version 9.0.2" %}}
 {:.mb-0}
 
 <div><span class="small-text mt-0 d-block">30-08-2023</span></div>
@@ -482,7 +497,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 
 
-## Version 9.0.1 {#{% include create-id.html heading="Version 9.0.1" %}}
+### Version 9.0.1 {#{% include create-id.html heading="Version 9.0.1" %}}
 {:.mb-0}
 
 <div><span class="small-text mt-0 d-block">20-06-2023</span></div>
@@ -495,13 +510,13 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 
 
 
-## Version 9.0.0 {#{% include create-id.html heading="Version 9.0.0" %}}
+### Version 9.0.0 {#{% include create-id.html heading="Version 9.0.0" %}}
 {:.mb-0}
 
 <div><span class="small-text mt-0 d-block">14-04-2023</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Datovælger" %}</h3>
+  <h4 class="mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Datovælger" %}</h4>
 </div>
 - Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
 {% include links/github-link.html number="201" afternumber=" på Github" %}
@@ -513,7 +528,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret inputfeltet, så datovælgeren accepterer flere måder at indtaste en dato på (uafhængigt af det valgte datoformat).
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Venstremenu" %} og {% include links/component-guideline-link.html linktext="trinindikator" %}</h3>
+  <h4 class="mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Venstremenu" %} og {% include links/component-guideline-link.html linktext="trinindikator" %}</h4>
 </div>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Rettet fejl, hvor lange tekster blev ombrudt forkert (ændringen påvirker både venstremenu og trinindikator).
@@ -522,7 +537,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 {% include links/github-link.html number="142" afternumber=" på Github" %}
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tabeller" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}</h3>
+  <h4 class="mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Tabeller" %} og {% include links/component-guideline-link.html linktext="strukturerede lister" %}</h4>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen `table--lines`, der var en forældet variant.
 - Rettet fejl relateret til margin og padding for tabeller.
@@ -534,7 +549,7 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> <strong>{% include links/component-guideline-link.html linktext="Strukturerede lister" %} er flyttet ind under tabeller</strong> og er ændret til en tabelstruktur.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Header" %}</h3>
+  <h4 class="mt-0 mb-0 mr-3">{% include links/component-guideline-link.html linktext="Header" %}</h4>
 </div>
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret myndighedsnavnet i række 2, så det er kodet med `<strong>`.
 - Rettet fejl, hvor portalnavnet ikke blev vist korrekt ved print.
@@ -543,13 +558,13 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl, hvor den aktive side i række 3 ikke blev fremhævet for skærmlæsere eller fremgik af mobilmenuen.
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3">{% include links/external-link.html linktext="package.json" %}</h3>
+  <h4 class="mt-0 mb-0 mr-3">{% include links/external-link.html linktext="package.json" %}</h4>
 </div>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen `"jsnext:main": "src/js/start.js"`.<br>{% include links/github-link.html number="194" afternumber=" på Github" %}
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `release` fra `scripts`.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet `app-root-path`, `array-filter`, `gulp4-run-sequence` og `zip-folder` fra `devDependencies`.
 
-<h3 class="h4">Øvrige</h3>
+<h4>Øvrige</h4>
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere {% include links/external-link.html linktext="macroer" %}. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.
 - Fjernet flere billeder fra dokumentationen, der viste eksempler på avancerede komponenter uden tilhørende kode.
@@ -573,9 +588,6 @@ Nedenstående ændringer har primært betydning, hvis man selv bygger kodefiler 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet `aria-haspopup` til knapper, der åbner modaler. {% include links/component-code-link.html linktext="Modalkomponenten" %}, selvbetjeningseksemplerne og pattern for {% include links/internal-link.html linktext="session udløber" %} er opdateret.
 
 
-
-## Tidligere versioner {#{% include create-id.html heading="Tidligere versioner" %}}
-{:.mb-0}
 
 {:#version-8-2-1 .mb-0}
 ### Version 8.2.1
