@@ -114,6 +114,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 - Fjernet `aria-checked="mixed"` på tjekbokse i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %}, som blev sat gennem JavaScript. I stedet anvendes klassen `mixed` til at sætte stylingen. Attributten `aria-checked="mixed"` kan fortsat anvendes et stykke tid endnu, men vil blive fjernet i en senere major release.
 {% include links/github-link.html number="277" afternumber=" på GitHub" %}
+- Fjernet brugen af "+" til sammensætning af strings og i stedet anvendt interpolation i Sass-filerne for footer og header.
+{% include links/github-link.html number="278" afternumber=" på GitHub" %}
+- Rettet fejl, hvor eksternt link-ikonet ikke blev farvet korrekt for besøgte links i Safari-browseren.
 
 
 

@@ -28,6 +28,7 @@ var testfiles = [
     "test-headings-no-sections",
     "test-headings-with-sections",
     "test-headings-long-text",
+    "test-links",
     "test-icons-svg-and-class",
     "test-accordions",
     "test-accordion-headings",
