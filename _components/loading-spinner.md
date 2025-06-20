@@ -70,7 +70,7 @@ I løsninger med meget lange svartider bør spinneren suppleres med en besked p�
 
 Gør teksten så specifik som muligt, så brugeren forstår, hvad der sker. 
 
-{% include code/preview-box.html component="spinner-with-text" title="Eksempel på knap med spinner og tekst" code="/komponenter/spinner/#spinner-med-tekst-kode" %}
+{% include code/preview-box.html component="spinner-with-text" title="Eksempel på spinner med tekst" code="/komponenter/spinner/#spinner-med-tekst-kode" %}
 
 ## Referencer {#{% include create-id.html heading="Referencer" %}}
 
