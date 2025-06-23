@@ -175,7 +175,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "eksterne links" -%}
         <a href="/styleguide/typografi/links/#eksternt-link"{{ classes }}>{{ include.linktext }}</a>
 
-    {%- when "lister" -%}
+    {%- when "lister",
+             "punktopstillinger" -%}
         <a href="/styleguide/typografi/lister/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "læs retningslinjerne for lister" -%}
