@@ -5,7 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
-const VERSION = '11.0.0';
+const VERSION = '11.0.1';
 
 document.addEventListener("DOMContentLoaded", function(){
  

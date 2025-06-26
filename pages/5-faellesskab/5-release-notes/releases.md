@@ -110,7 +110,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 11.0.1 {#{% include create-id.html heading="Version 11.0.1" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">??-06-2025</span></div>
+<div><span class="small-text mt-0 d-block">26-06-2025</span></div>
 
 - Fjernet `aria-checked="mixed"` på tjekbokse i {% include links/component-guideline-link.html linktext="tabeller med valgbare rækker" %}, som blev sat gennem JavaScript. I stedet anvendes klassen `mixed` til at sætte stylingen. Attributten `aria-checked="mixed"` kan fortsat anvendes et stykke tid endnu, men vil blive fjernet i en senere major release.
 {% include links/github-link.html number="277" afternumber=" på GitHub" %}
