@@ -1,0 +1,115 @@
+{% from "components/checkboxes/checkbox.njk" import checkbox as checkbox %}
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tjekbokse i forskellige tilstande</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Ikke valgt</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                checkbox({
+                    "id": "not-selected",
+                    "name": "not-selected",
+                    "value": "v1",
+                    "label": "Ikke valgt"
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "not-selected-disabled",
+                    "name": "not-selected-disabled",
+                    "value": "v2",
+                    "label": "Ikke valgt, disabled",
+                    "disabled": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Mixed</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                checkbox({
+                    "id": "mixed-class",
+                    "name": "mixed-class",
+                    "value": "v3",
+                    "label": "Mixed tilstand sat med klasse",
+                    "classes": { "input": "mixed" }
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "mixed-attribute",
+                    "name": "mixed-attribute",
+                    "value": "v4",
+                    "label": "Mixed tilstand sat med attribut",
+                    "helptext": "Denne metode bør fjernes i en major release",
+                    "attributes": { "input": "aria-checked='mixed'" }
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "mixed-class-disabled",
+                    "name": "mixed-class-disabled",
+                    "value": "v5",
+                    "label": "Mixed tilstand sat med klasse, disabled",
+                    "classes": { "input": "mixed" },
+                    "disabled": true
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "mixed-attribute-disabled",
+                    "name": "mixed-attribute-disabled",
+                    "value": "v6",
+                    "label": "Mixed tilstand sat med attribut, disabled",
+                    "helptext": "Denne metode bør fjernes i en major release",
+                    "attributes": { "input": "aria-checked='mixed'" },
+                    "disabled": true
+                }) 
+            }}
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Valgt</h2>
+        </div>
+        <div class="col-12">
+            {{ 
+                checkbox({
+                    "id": "selected",
+                    "name": "selected",
+                    "value": "v7",
+                    "label": "Valgt",
+                    "checked": true
+                }) 
+            }}
+            {{ 
+                checkbox({
+                    "id": "selected-disabled",
+                    "name": "selected-disabled",
+                    "value": "v8",
+                    "label": "Valgt, disabled",
+                    "checked": true,
+                    "disabled": true
+                }) 
+            }}
+        </div>
+    </div>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('mixed-class').indeterminate = true;
+        document.getElementById('mixed-attribute').indeterminate = true;
+        document.getElementById('mixed-class-disabled').indeterminate = true;
+        document.getElementById('mixed-attribute-disabled').indeterminate = true;
+    });
+</script>

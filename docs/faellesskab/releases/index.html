@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.0.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.0.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=11.0.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.0.1" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.0.1" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=11.0.1" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.0.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.0.1">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.0.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.0.1">
 </noscript>
 
   </head>
@@ -1240,6 +1240,7 @@
     <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
     <ul class="anchorlist">
         <li><a href="#versionering-og-release-proces">Versionering og release-proces</a></li>
+        <li><a href="#version-11-0-1">Version 11.0.1</a></li>
         <li><a href="#version-11-0-0">Version 11.0.0</a></li>
         <li><a href="#version-10-to-1">Version 10.2.1</a></li>
         <li><a href="#version-10-to-0">Version 10.2.0</a></li>
@@ -1247,7 +1248,6 @@
         <li><a href="#version-10-0-to">Version 10.0.2</a></li>
         <li><a href="#version-10-0-1">Version 10.0.1</a></li>
         <li><a href="#version-10-0-0">Version 10.0.0</a></li>
-        <li><a href="#version-9-1-0">Version 9.1.0</a></li>
         <li><a href="#tidligere-versioner">Tidligere versioner</a></li>
         
         
@@ -1276,6 +1276,20 @@
 <h3>Tidligere versioner af dokumentationen</h3>
 
 <p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at <a href="/faellesskab/kontakt-support/">kontakte os</a>.</p>
+
+<h2 id="version-11-0-1" class="mb-0">Version 11.0.1</h2>
+
+<div><span class="small-text mt-0 d-block">26-06-2025</span></div>
+
+<ul>
+  <li>Fjernet <code>aria-checked="mixed"</code> på tjekbokse i <a href="/komponenter/tables/#valgbare-raekker">tabeller med valgbare rækker</a>, som blev sat gennem JavaScript. I stedet anvendes klassen <code>mixed</code> til at sætte stylingen. Attributten <code>aria-checked="mixed"</code> kan fortsat anvendes et stykke tid endnu, men vil blive fjernet i en senere major release.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/277" class="icon-link" target="_blank">issue #277 på GitHub<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Fjernet brugen af “+” til sammensætning af strings og i stedet anvendt interpolation i Sass-filerne for <a href="/komponenter/footer/">footer</a> og <a href="/komponenter/header/">header</a>.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/278" class="icon-link" target="_blank">issue #278 på GitHub<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Rettet fejl, hvor <a href="/styleguide/typografi/links/#eksternt-link">eksternt link</a>-ikonet ikke blev farvet korrekt for besøgte links i Safari-browseren.</li>
+  <li>Rettet fejl, hvor bullets i <a href="/styleguide/typografi/lister/">punktopstillinger</a> ikke blev vist i cards.</li>
+  <li>Rettet fejl, hvor <a href="/komponenter/cards/">cards</a> kunne få overflødig padding.</li>
+</ul>
 
 <h2 id="version-11-0-0" class="mb-0">Version 11.0.0</h2>
 
@@ -1661,7 +1675,9 @@
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Justeret ikonets placering i <a href="/komponenter/funktionslink/">funktionslink</a> og <a href="/styleguide/typografi/links/#eksternt-link">eksterne links</a> samt <code>line-height</code> på knapper for bedre centrering.</li>
 </ul>
 
-<h2 id="version-9-1-0" class="mb-0">Version 9.1.0</h2>
+<h2 id="tidligere-versioner" class="mb-0">Tidligere versioner</h2>
+
+<h3 id="version-9-1-0" class="mb-0">Version 9.1.0</h3>
 
 <div><span class="small-text mt-0 d-block">24-11-2023</span></div>
 
@@ -1677,7 +1693,7 @@
   <li>Tilføjet ny side til dokumentationen kaldet <a href="/kom-i-gang/faq/">Ofte stillede spørgsmål</a>, samt opdateret siderne <a href="/kom-i-gang/designressourcer/#designressourcer">Designressourcer</a>, <a href="/kom-i-gang/tjekliste/">Tjekliste</a> og <a href="/komponenter/">Komponenter</a>.</li>
 </ul>
 
-<h2 id="version-9-0-to" class="mb-0">Version 9.0.2</h2>
+<h3 id="version-9-0-to" class="mb-0">Version 9.0.2</h3>
 
 <div><span class="small-text mt-0 d-block">30-08-2023</span></div>
 
@@ -1687,7 +1703,7 @@
 <span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/215" class="icon-link" target="_blank">issue #215 på Github<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</span></li>
 </ul>
 
-<h2 id="version-9-0-1" class="mb-0">Version 9.0.1</h2>
+<h3 id="version-9-0-1" class="mb-0">Version 9.0.1</h3>
 
 <div><span class="small-text mt-0 d-block">20-06-2023</span></div>
 
@@ -1699,12 +1715,12 @@
   <li>Rettet fejl i dokumentationen, hvor nogle <a href="/styleguide/farver/">farver</a> stod angivet forkert.</li>
 </ul>
 
-<h2 id="version-9-0-0" class="mb-0">Version 9.0.0</h2>
+<h3 id="version-9-0-0" class="mb-0">Version 9.0.0</h3>
 
 <div><span class="small-text mt-0 d-block">14-04-2023</span></div>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h3>
+  <h4 class="mt-0 mb-0 mr-3"><a href="/komponenter/datovaelger/">Datovælger</a></h4>
 </div>
 <ul>
   <li>Rettet fejl, hvor datoer fik en forkert dag læst højt af skærmlæsere.
@@ -1718,7 +1734,7 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h3>
+  <h4 class="mt-0 mb-0 mr-3"><a href="/komponenter/venstremenu/">Venstremenu</a> og <a href="/komponenter/trinindikator/">trinindikator</a></h4>
 </div>
 <ul>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Rettet fejl vedrørende trinindikatorens gennemført-ikon, hvor skærmlæsere ikke annoncerede, når et trin var markeret som gennemført.</li>
@@ -1729,7 +1745,7 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a> og <a href="/komponenter/tables/#strukturerede-lister">strukturerede lister</a></h3>
+  <h4 class="mt-0 mb-0 mr-3"><a href="/komponenter/tables/">Tabeller</a> og <a href="/komponenter/tables/#strukturerede-lister">strukturerede lister</a></h4>
 </div>
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet klassen <code>table--lines</code>, der var en forældet variant.</li>
@@ -1743,7 +1759,7 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h3>
+  <h4 class="mt-0 mb-0 mr-3"><a href="/komponenter/header/">Header</a></h4>
 </div>
 <ul>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret myndighedsnavnet i række 2, så det er kodet med <code>&lt;strong&gt;</code>.</li>
@@ -1754,7 +1770,7 @@
 </ul>
 
 <div class="d-flex align-items-center mt-5 mb-4">
-  <h3 class="h4 mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></h3>
+  <h4 class="mt-0 mb-0 mr-3"><a href="https://github.com/detfaellesdesignsystem/dkfds-components/blob/master/package.json" class="icon-link" target="_blank">package.json<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></h4>
 </div>
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet linjen <code>"jsnext:main": "src/js/start.js"</code>.<br /><span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/194" class="icon-link" target="_blank">issue #194 på Github<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</span></li>
@@ -1762,7 +1778,7 @@
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Fjernet <code>app-root-path</code>, <code>array-filter</code>, <code>gulp4-run-sequence</code> og <code>zip-folder</code> fra <code>devDependencies</code>.</li>
 </ul>
 
-<h3 class="h4">Øvrige</h3>
+<h4>Øvrige</h4>
 <ul>
   <li><strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Større opdatering og omskrivning af flere <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>. Se macroernes tilhørende YAML-filer for den komplette dokumentation. Såfremt man <em>ikke</em> anvender macroer, men blot har anvendt HTML-koden vist i dokumentationssidens eksempler, kan man se bort fra dette punkt i release notes.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Flere afvigelser i dokumentationens kodeeksempler og beskrivelser er rettet. Nogle eksempler kan derfor se anderledes ud end tidligere.</li>
@@ -1786,8 +1802,6 @@
   <li>Rettet fejl i <a href="/komponenter/overflowmenu/">overflow menuer</a>, hvor indholdet kunne ryge ud over skærmkanten på små skærme.</li>
   <li><strong class="badge badge-info badge-small mr-2">Change</strong> Tilføjet <code>aria-haspopup</code> til knapper, der åbner modaler. <a href="/komponenter/modal/#kode">Modalkomponenten</a>, selvbetjeningseksemplerne og pattern for <a href="/eksempler/patterns/session-udloeber/">session udløber</a> er opdateret.</li>
 </ul>
-
-<h2 id="tidligere-versioner" class="mb-0">Tidligere versioner</h2>
 
 <h3 id="version-8-2-1" class="mb-0">Version 8.2.1</h3>
 
@@ -2412,8 +2426,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=11.0.0"></script>
-<script src="/assets/js/styleguide.js?v=11.0.0"></script>
+    <script src="/assets/js/theme.js?v=11.0.1"></script>
+<script src="/assets/js/styleguide.js?v=11.0.1"></script>
 
 
   </body>

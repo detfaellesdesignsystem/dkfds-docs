@@ -16,6 +16,11 @@ title: Test
 {% include test/preview-test.html filename="test-headings-long-text" description="Lange headings" %}
 
 {:.h3}
+## Links
+
+{% include test/preview-test.html filename="test-links" description="Links" %}
+
+{:.h3}
 ## Ikoner
 
 {% include test/preview-test.html filename="test-icons-svg-and-class" description="Ikoner indsat som svg og klasse" %}
@@ -264,10 +269,9 @@ B: Test af faneblade anvendt til sidenavigation
 {:.h3}
 ## Tjekbokse
 
+{% include test/preview-test.html filename="test-checkbox-states" description="Tjekbokse i forskellige tilstande" %}
 {% include test/preview-test.html filename="test-checkboxes-helptext" description="Tjekbokse med hjælpetekster" %}
-{% include test/preview-test.html filename="test-checkbox-simple" description="TO DO: Simpel tjekboks" %}
 {% include test/preview-test.html filename="test-checkboxes-hidden-content" description="Tjekbokse med skjult indhold" %}
-{% include test/preview-test.html filename="test-checkboxes-1" description="Tjekbokse 1" %}
 {% include test/preview-test.html filename="test-checkboxes-2" description="Tjekbokse 2" %}
 {% include test/preview-test.html filename="test-checkboxes-3" description="Tjekbokse 3" %}
 {% include test/preview-test.html filename="test-checkboxes-4" description="Tjekbokse 4" %}

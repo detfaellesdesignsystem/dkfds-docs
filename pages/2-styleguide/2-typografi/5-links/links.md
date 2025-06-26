@@ -90,6 +90,8 @@ Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugere
 
 ## Eksternt link {#{% include create-id.html heading="Eksternt link" %}}
 
+Eksterne links skal altid åbne i en ny fane og markeres med et eksternt link-ikon.
+
 {% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/styleguide/typografi/links/#eksternt-link-kode" %}
 
 ## Sekundære links {#{% include create-id.html heading="Sekundære links" %}}
