@@ -123,6 +123,7 @@ Hjoerner_streger_skygger:
 - h2: Hjørner
 - h2: Streger
 - h2: Skygger
+- h2: Referencer
 
 Ikoner:
 - h2: Sådan bruges ikoner
@@ -634,6 +635,7 @@ Templates:
 - h2: Kvittering
 - h2: Fejl
 - h2: Siden kunne ikke findes (404-side)
+- h2: Side med data, der hentes
 
 # Fællesskab
 
