@@ -8,7 +8,7 @@ layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
 title: Fonte
-description:
+description: Læs om Det Fælles Designsystem brug af fonten IBM Plex Sans.
 tags:
 - IBM Plex Sans
 - IBM

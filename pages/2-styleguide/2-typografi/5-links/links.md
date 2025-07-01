@@ -8,7 +8,7 @@ layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
 title: Links
-description:
+description: Se hvordan du skal anvende links i Det Fælles Designsystem
 tags:
 - "ekstern"
 - "ekstern link"
