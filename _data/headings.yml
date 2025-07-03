@@ -106,6 +106,7 @@ Links:
 - h2: Eksternt link
 - h2: Sekundære links
 - h2: Billeder som links
+- h2: Referencer
 
 Links_Kode:
 - h2: Eksternt link
@@ -657,6 +658,7 @@ Kontakt_og_support:
 
 Releases:
 - h2: Versionering og release-proces
+- h2: Version 11.1.0
 - h2: Version 11.0.1
 - h2: Version 11.0.0
 - h2: Version 10.2.1

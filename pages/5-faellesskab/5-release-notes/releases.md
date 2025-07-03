@@ -107,6 +107,15 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 
 
+## Version 11.1.0 {#{% include create-id.html heading="Version 11.1.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">xx-xx-2025</span></div>
+
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret retningslinjer for {% include links/internal-link.html linktext="eksternt link" %}, når der linkes til filer.
+
+
+
 ## Version 11.0.1 {#{% include create-id.html heading="Version 11.0.1" %}}
 {:.mb-0}
 
