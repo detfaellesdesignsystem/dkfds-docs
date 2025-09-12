@@ -255,7 +255,7 @@
     
   
 <li class="active">
-            <a href="/komponenter/" class="nav-link">
+            <a href="/komponenter/" class="nav-link" aria-current="true">
                 <span>Komponenter</span>
             </a>
         </li>
@@ -2177,9 +2177,11 @@
 
 <p>Se eventuelt <a href="/komponenter/header/#html-struktur-kode">eksemplet med den overordnede struktur i headeren</a> for nærmere detaljer om placering.</p>
 
-<h4>Topnavigation og venstremenu</h4>
+<h4 id="topnavigation-og-venstremenu">Topnavigation og venstremenu</h4>
 
 <p>Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/#display">hjælpeklasser for display</a>, samt at mobilmenuen indeholder de korrekte links.</p>
+
+<p>Sørg for at anvende <code>aria-current="page"</code> på det link i headeren, som viser den aktuelle side. Hvis du er på en underside (fx på en side vist i <a href="/komponenter/venstremenu/">venstremenuen</a>), men stadig har et link fremhævet i headeren, skal du bruge <code>aria-current="true"</code> i stedet.</p>
 
 <h4>Sprogvælger</h4>
 

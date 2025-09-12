@@ -162,9 +162,11 @@ Anden del skal indsættes i mobilmenuen <em>før</em> række 2 og indeholder kod
 
 Se eventuelt {% include links/component-code-link.html linktext="eksemplet med den overordnede struktur i headeren" %} for nærmere detaljer om placering.
 
-#### Topnavigation og venstremenu
+#### Topnavigation og venstremenu {#{% include create-id.html heading="Topnavigation og venstremenu" %}}
 
 Hvis løsningen anvender både en topnavigation og en venstremenu til at vise links til undersider, så skal venstremenuen skjules på mindre skærme og mobilmenuen skal indeholde alle links fra begge menuer. Her er man selv ansvarlig for at sikre, at venstremenuen vises og skjules på de rette tidspunkter, for eksempel ved at anvende {% include links/internal-link.html linktext="hjælpeklasser for display" %}, samt at mobilmenuen indeholder de korrekte links.
+
+Sørg for at anvende `aria-current="page"` på det link i headeren, som viser den aktuelle side. Hvis du er på en underside (fx på en side vist i {% include links/component-guideline-link.html linktext="venstremenuen" %}), men stadig har et link fremhævet i headeren, skal du bruge `aria-current="true"` i stedet.
 
 #### Sprogvælger
 
