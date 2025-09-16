@@ -43,6 +43,7 @@ let titles = {
     'date-picker-format': 'Eksempel på datovælger med andet datoformat',
     'date-picker-interval': 'Eksempel på datovælger med begrænsede datoer',
     'date-picker': 'Eksempel på datovælger',
+    'date-picker-disabled': 'Eksempel på deaktiveret datovælger',
     'details': 'Eksempel på detaljer',
     'displaytext': 'Eksempel på stor tekst',
     'error-message-accordion': 'Eksempel på accordion med fejl',
