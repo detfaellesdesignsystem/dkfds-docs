@@ -184,6 +184,7 @@ let titles = {
     'text-area-character-limit-error': 'Eksempel på inputfelt med karakterbegrænsning og fejlmeddelelse',
     'text-area-character-limit': 'Eksempel på tekstområde med karakterbegrænsning',
     'text-area-error': 'Eksempel på tekstområde med fejlmeddelelse',
+    'text-area-disabled': 'Eksempel på deaktiveret tekstområde',
     'text-area': 'Eksempel på tekstområde',
     'text-input-autocomplete': 'Eksempel på brug af autocomplete-attributten',
     'text-input-character-limit-error': 'Eksempel på inputfelt med karakterbegrænsning og fejlmeddelelse',

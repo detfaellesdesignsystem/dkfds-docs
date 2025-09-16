@@ -1,0 +1,12 @@
+{% from "components/form/controls/text-area.njk" import textarea as textarea %}
+
+{{
+    textarea({
+        "id": "textarea-disabled",
+        "name": "textarea-disabled",
+        "label": "Deaktiveret tekstområde",
+        "value": "Låst indhold",
+        "disabled": true,
+        "rows": 5
+    })
+}}
