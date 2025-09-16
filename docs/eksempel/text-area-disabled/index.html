@@ -2,6 +2,7 @@
 <html lang="da">
 
 <head>
+    <meta name="robots" content="noindex">
     <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
@@ -10,14 +11,15 @@
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
+
 <meta name="robots" content="noindex">
 
 <!-- Title and meta description
 ================================================== -->
 
 
-<title>Testfil | test-dropdown-4 | Det Fælles Designsystem</title>
-<meta property="og:title" content="Testfil | test-dropdown-4 | Det Fælles Designsystem">
+<title>Eksempel på deaktiveret tekstområde | Det Fælles Designsystem</title>
+<meta property="og:title" content="Eksempel på deaktiveret tekstområde | Det Fælles Designsystem">
 
 
 
@@ -46,24 +48,25 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/test_borger.css" as="style">
-<link rel="preload" href="/assets/style/test_virk.css" as="style">
-<link rel="preload" href="/assets/style/test_neutral.css" as="style">
-<link rel="preload" href="/assets/js/theme.js" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.0.1" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.0.1" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=11.0.1" as="script">
 
 <style>
-    body {
-      opacity: 0; /*hide page until theme is downloaded by js.*/
-    }
+  body {
+    opacity: 0; /*hide page until theme is downloaded by js.*/
+  }
 </style>
 
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.0.1">
+
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.0.1">
 </noscript>
 
 </head>
 
-<body class="layout-test-example">
+<body class="page-text-area-disabled layout-example-contained">
     <div class="hide-base-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
         <symbol id="accessibility-new" viewBox="0 -960 960 960"><path d="M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM360-80v-520q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-720l20 80q-56 15-118 25t-122 15v520h-80v-240h-80v240h-80Z"/></symbol>
@@ -219,147 +222,26 @@
         <symbol id="zoom-out" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400ZM280-540v-80h200v80H280Z"/></symbol>
     </svg>
 </div>
-    <div class="test-header d-flex align-items-center">
-    <div class="container">
-        <button type="button" class="function-link" data-module="modal" data-target="test-warning" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#info"></use></svg>Denne side er kun til test</button>
-    </div>
-</div>
-<div class="fds-modal-container">
-    <div class="fds-modal" id="test-warning" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="test-warning-heading">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="test-warning-heading">
-                    Denne side er kun til test
-                </h2>
-                <button class="modal-close function-link"
-                    data-modal-close><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
-            </div>
-            <div class="modal-body">
-                <p>Denne side er opsat til teknisk test. Vær opmærksom på, at siden ikke skal ses som eksempel på "best practice", og den bør derfor ikke anvendes som inspiration eller skabelon til andre løsninger. Vi henviser i stedet til <a href="/eksempler/">eksempelsiderne</a> og <a href="/komponenter/">komponenterne</a>.</p>
-            </div>
-            <div class="modal-footer">
-                <button class="button button-secondary" data-modal-close>
-                    Luk
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+    <header>
+        <a href="#main-content" class="skipnav">Gå til sidens indhold</a>
+    </header>
     <main class="container page-container" id="main-content">
-    <div class="row mb-905">
-        <div class="col-12">
-            <h1 class="h2 mt-0">test-dropdown-4</h1>
-        </div>
-    </div>
-    <div class="row mb-905">
-        <div class="col-12">
-            <p>Disabled og frivillig-label (Bemærk: Tjek at resultatet ikke har en
-                required-attribut.)</p>
+        
+        <h1 id="example-heading-text-area-disabled" class="sr-only">Eksempel på deaktiveret tekstområde</h1>
+        <div class="form-group">
+    <label class="form-label  disabled" for="textarea-disabled">Deaktiveret
+        tekstområde</label>
 
-            <div class="form-group">
-                <label class="form-label  disabled" for="options-id">Dropdown label<span class="weight-normal"> (frivilligt)</span></label>
+    <textarea class="form-input" id="textarea-disabled" name="textarea-disabled" rows="5" disabled="">Låst indhold</textarea>
 
-                <select class="form-select" name="options-name" id="options-id" disabled="disabled">
-                    <option value="option1">Mulighed 1</option>
-                    <option value="option2">Mulighed 2</option>
-                    <option value="option3">Mulighed 3</option>
-                </select>
-            </div>
+</div>
 
-        </div>
-    </div>
-</main>
+        
+    </main>
+    <script src="/assets/js/theme.js?v=11.0.1"></script>
+<script src="/assets/js/styleguide.js?v=11.0.1"></script>
 
-    <script src="/assets/js/theme.js"></script>
-    <script src="/assets/js/styleguide.js"></script>
-    <aside class="test-footer d-flex align-items-center">
-    <div class="container">
-        <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
-            <div class="d-flex flex-wrap mr-8">
-                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
-                </button>
-                <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
-                </button>
-                <button id="theme-borger" class="function-link mr-4"><span>Borger</span>
-                </button>
-                <button id="theme-virk" class="function-link mr-8"><span>Virk</span>
-                </button>
-                <button id="font-size-200" class="function-link">200% tekststørrelse</button>
-            </div>
-            <div>
-                
-                <a class="function-link mr-4" href="/eksempel/test-dropdown-3/">Forrige</a>
-                
-                
-                <a class="function-link" href="/eksempel/test-dropdown-5/">Næste</a>
-                
-            </div>
-        </div>
-    </div>
-</aside>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let createLink = function(style) {
-            var lnk = document.createElement('link');
-            lnk.type='text/css';
-            lnk.rel='stylesheet';
-            switch (style) {
-                case "neutral":
-                    lnk.href= '/assets/style/test_neutral.css';
-                    break;
-                case "borger":
-                    lnk.href= '/assets/style/test_borger.css';
-                    break;
-                case "virk":
-                    lnk.href= '/assets/style/test_virk.css';
-                    break;
-                case 'normalization':
-                    lnk.href= '/assets/style/test_normalization.css';
-                    break;
-            }
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        }
-
-        let setNeutralStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
-        };
-
-        let setBorgerStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
-        };
-
-        let setVirkStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
-        };
-
-        document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
-        document.getElementById('theme-borger').addEventListener('click', setBorgerStylesheet);
-        document.getElementById('theme-virk').addEventListener('click', setVirkStylesheet);
-
-        let normalize = false;
-        if (document.querySelectorAll('main h1').length > 0) {
-            if (document.querySelector('main h1').textContent == 'HTML-elementer') {
-                normalize = true;
-                createLink("normalization");
-            }
-        }
-        if (document.cookie.includes('theme=borger') && !normalize) {
-            createLink("borger");
-            document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
-        }
-        else if (document.cookie.includes('theme=virk') && !normalize) {
-            createLink("virk");
-            document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
-        }
-
-        document.getElementById('font-size-200').addEventListener('click', function () {
-            document.querySelector('html').style.fontSize = 'calc(62.5% * 2)';
-        });
-    });
-</script>
-    <script src="/assets/js/test.js"></script>
 </body>
 
 </html>
