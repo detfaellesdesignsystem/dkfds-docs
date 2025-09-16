@@ -57,6 +57,14 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="select-error" title="Eksempel på dropdown med fejlmeddelelse" %}
 
+## Varianter {#{% include create-id.html heading="Varianter" %}}
+
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" %}}
+
+{% include code/preview-box.html component="select-disabled" title="Eksempel på deaktiveret dropdown" code="/komponenter/dropdown/#deaktiveret-kode" %}
+
+Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af {% include links/component-guideline-link.html linktext="read-only" %}.
+
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {% include links/demo-link.html linktext="Trinformular til ansøgning: Tilføj dokumentation" %}
@@ -80,3 +88,7 @@ Dropdown skal have et label tilknyttet.
 Anvend ikke JavaScript til automatisk at udføre en handling, når brugeren vælger en værdi i dropdownen. Tilføj i stedet en knap ved dropdownen.
 
 Brug dropdown i begrænset omfang. Værdierne i en dropdown er ikke umiddelbart synlige for brugerne, og det øger sidens kompleksitet for dem.
+
+## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
+
+{% include code/syntax.html component="select-disabled" copybutton=true %}

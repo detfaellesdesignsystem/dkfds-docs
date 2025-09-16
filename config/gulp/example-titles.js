@@ -132,6 +132,7 @@ let titles = {
     'secondary-links': 'Eksempel på sekundært link',
     'select-error': 'Eksempel på dropdown med fejlmeddelelse',
     'select': 'Eksempel på dropdown',
+    'select-disabled': 'Eksempel på deaktiveret dropdown',
     'session-udloeber-aendringer-gemt': 'Eksempel på session udløb med gemte ændringer',
     'session-udloeber-aendringer-ikke-gemt': 'Eksempel på session udløb med ændringer der ikke er gemt',
     'session-udloeber': 'Eksempel på sessionudløb',
