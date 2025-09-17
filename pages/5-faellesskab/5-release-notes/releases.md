@@ -113,6 +113,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 <div><span class="small-text mt-0 d-block">xx-09-2025</span></div>
 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret retningslinjer for {% include links/internal-link.html linktext="eksternt link" %}, når der linkes til filer.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret brugen af aria-attributter i headeren for {% include links/component-code-link.html linktext="topnavigation og venstremenu" %}.
 - Tilføjet system-ui som fallback font.
 {% include links/github-link.html number="270" afternumber=" på GitHub" %}
 - Tilføjet eksempler på deaktiveret {% include links/component-guideline-link.html linktext="dropdown" %}, {% include links/component-guideline-link.html linktext="tekstområde" %} og {% include links/component-guideline-link.html linktext="datovælger" %} samt opdateret deres macro.
