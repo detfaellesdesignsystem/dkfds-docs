@@ -62,7 +62,7 @@ Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt 
 
 {% include code/preview-box.html component="date-picker-disabled" title="Eksempel på deaktiveret datovælger" code="/komponenter/datovaelger/#deaktiveret-kode" %}
 
-Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet eller gør brug af {% include links/component-guideline-link.html linktext="read-only" %}.
+Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet.
 
 <!--split-->
 
