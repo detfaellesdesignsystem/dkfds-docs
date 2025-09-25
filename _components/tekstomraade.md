@@ -76,6 +76,12 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 {% include code/preview-box.html component="text-area-character-limit" title="Eksempel på tekstområde med karakterbegrænsning" code="/komponenter/tekstomraade/#karakterbegraensning-kode" %}
 
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" %}}
+
+{% include code/preview-box.html component="text-area-disabled" title="Eksempel på deaktiveret tekstområde" code="/komponenter/tekstomraade/#deaktiveret-kode" %}
+
+Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader feltet.
+
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
 {% include links/demo-link.html linktext="Trinformular til ansøgning: Ansøgningens type" %}
@@ -110,6 +116,10 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-code-l
 ## Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" append="-kode" %}}
 
 {% include code/syntax.html component="text-area-character-limit" link=true copybutton=true guidelines="/komponenter/tekstomraade/#karakterbegraensning" %}
+
+## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
+
+{% include code/syntax.html component="text-area-disabled" copybutton=true %}
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 

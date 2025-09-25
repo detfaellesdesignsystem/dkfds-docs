@@ -116,6 +116,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret brugen af aria-attributter i headeren for {% include links/component-code-link.html linktext="topnavigation og venstremenu" %}.
 - Tilføjet system-ui som fallback font.
 {% include links/github-link.html number="270" afternumber=" på GitHub" %}
+- Tilføjet eksempler på deaktiveret {% include links/component-guideline-link.html linktext="dropdown" %}, {% include links/component-guideline-link.html linktext="tekstområde" %} og {% include links/component-guideline-link.html linktext="datovælger" %} samt opdateret deres macro.
+- Tilføjet styling for deaktiveret datovælgerknap.
 
 
 
