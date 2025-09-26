@@ -118,6 +118,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="270" afternumber=" på GitHub" %}
 - Opdateret {% include links/external-link.html linktext="macroer" %} for {% include links/component-guideline-link.html linktext="dropdown" %}, {% include links/component-guideline-link.html linktext="tekstområde" %} og {% include links/component-guideline-link.html linktext="datovælger" %}, så de korrekt sætter disabled-klasse på komponenternes label ved deaktivering.
 - Opdateret udseendet for en deaktiveret knap i {% include links/component-guideline-link.html linktext="datovælgeren" %}. To nye Sass-variable, `$button-disabled-opacity` og `$button-disabled-cursor`, er blevet tilføjet med denne ændring.
+- Opdateret udseendet for en deaktiveret {% include links/component-guideline-link.html linktext="dropdown" %}.
 
 
 
