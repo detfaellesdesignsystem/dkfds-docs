@@ -63,7 +63,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 {% include code/preview-box.html component="select-disabled" title="Eksempel på deaktiveret dropdown" code="/komponenter/dropdown/#deaktiveret-kode" %}
 
-Bemærk, at deaktiverede elementer er usynlige for hjælpeteknologier som fx skærmlæsere, og derved vil brugere af disse værktøjer ikke få oplyst om elementernes tilstedeværelse. Det anbefales derfor, at man i stedet undlader dropdownen.
+Bemærk, at deaktiverede dropdowns hverken har kontrastkrav eller kan få fokus og dermed kan være svære at opdage, fx når man anvender en skærmlæser. Det anbefales derfor, at man helt undlader dropdownen i stedet for at deaktivere den.
 
 ## Se komponenten i eksempelløsninger {#{% include create-id.html heading="Se komponenten i eksempelløsninger" %}}
 
