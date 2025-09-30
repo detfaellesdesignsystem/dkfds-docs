@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.0.1" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.0.1" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=11.0.1" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=11.1.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.0.1">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.1.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.0.1">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.1.0">
 </noscript>
 
   </head>
@@ -269,7 +269,7 @@
     
   
 <li class="active">
-            <a href="/faellesskab/" class="nav-link">
+            <a href="/faellesskab/" class="nav-link" aria-current="true">
                 <span>Fællesskab</span>
             </a>
         </li>
@@ -1240,6 +1240,7 @@
     <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
     <ul class="anchorlist">
         <li><a href="#versionering-og-release-proces">Versionering og release-proces</a></li>
+        <li><a href="#version-11-1-0">Version 11.1.0</a></li>
         <li><a href="#version-11-0-1">Version 11.0.1</a></li>
         <li><a href="#version-11-0-0">Version 11.0.0</a></li>
         <li><a href="#version-10-to-1">Version 10.2.1</a></li>
@@ -1276,6 +1277,20 @@
 <h3>Tidligere versioner af dokumentationen</h3>
 
 <p>Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at <a href="/faellesskab/kontakt-support/">kontakte os</a>.</p>
+
+<h2 id="version-11-1-0" class="mb-0">Version 11.1.0</h2>
+
+<div><span class="small-text mt-0 d-block">30-09-2025</span></div>
+
+<ul>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret retningslinjer for <a href="/styleguide/typografi/links/#eksternt-link">eksternt link</a>, når der linkes til filer.</li>
+  <li><strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret brugen af aria-attributter i headeren for <a href="/komponenter/header/#topnavigation-og-venstremenu">topnavigation og venstremenu</a> samt opdateret headerens <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macro<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</li>
+  <li>Tilføjet system-ui som fallback font.
+<span class="form-hint mt-0">For mere info, se <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues/270" class="icon-link" target="_blank">issue #270 på GitHub<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a>.</span></li>
+  <li>Opdateret <a href="https://github.com/detfaellesdesignsystem/dkfds-components/tree/master/src/components" class="icon-link" target="_blank">macroer<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a> for <a href="/komponenter/dropdown/">dropdown</a>, <a href="/komponenter/tekstomraade/">tekstområde</a> og <a href="/komponenter/datovaelger/">datovælger</a>, så de korrekt sætter disabled-klasse på komponenternes label ved deaktivering.</li>
+  <li>Opdateret udseendet for en deaktiveret knap i <a href="/komponenter/datovaelger/">datovælgeren</a>. To nye Sass-variable, <code>$button-disabled-opacity</code> og <code>$button-disabled-cursor</code>, er blevet tilføjet med denne ændring.</li>
+  <li>Opdateret udseendet for en deaktiveret <a href="/komponenter/dropdown/">dropdown</a>.</li>
+</ul>
 
 <h2 id="version-11-0-1" class="mb-0">Version 11.0.1</h2>
 
@@ -2426,8 +2441,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=11.0.1"></script>
-<script src="/assets/js/styleguide.js?v=11.0.1"></script>
+    <script src="/assets/js/theme.js?v=11.1.0"></script>
+<script src="/assets/js/styleguide.js?v=11.1.0"></script>
 
 
   </body>

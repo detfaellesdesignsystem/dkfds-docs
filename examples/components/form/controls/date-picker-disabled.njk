@@ -1,0 +1,10 @@
+{% from "components/form/controls/date-picker.njk" import datepicker as datepicker %}
+
+{{ 
+    datepicker({
+        "id": "datepicker-example1-disabled",
+        "name": "datepicker-example1-disabled",
+        "label": "Dato for aftale",
+        "disabled": true
+    }) 
+}}

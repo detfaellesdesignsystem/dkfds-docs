@@ -58,6 +58,12 @@ Som standard vises en dato i formatet DD/MM/ÅÅÅÅ, efter en bruger har valgt 
 
 {% include code/preview-box.html component="date-picker-format" title="Eksempel på datovælger med andet datoformat" code="/komponenter/datovaelger/#datoformat-kode" %}
 
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" %}}
+
+{% include code/preview-box.html component="date-picker-disabled" title="Eksempel på deaktiveret datovælger" code="/komponenter/datovaelger/#deaktiveret-kode" %}
+
+Bemærk, at deaktiverede datovælgere hverken har kontrastkrav eller kan få fokus og dermed kan være svære at opdage, fx når man anvender en skærmlæser. Det anbefales derfor, at man helt undlader datovælgeren i stedet for at deaktivere den.
+
 <!--split-->
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
@@ -187,3 +193,7 @@ Bemærk at valg af datoformat udelukkende påvirker, hvordan datoer vises i inpu
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med datovælgeren." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.
+
+## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
+
+{% include code/syntax.html component="date-picker-disabled" link=true copybutton=true guidelines="/komponenter/datovaelger/#deaktiveret" %}

@@ -7,7 +7,7 @@ layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
 title: Felt- og tabeloverskrifter
-description:
+description: Læs om retningslinjerne for felt- og tabeloverskrifter
 tags:
 ---
 

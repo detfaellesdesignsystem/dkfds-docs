@@ -96,7 +96,7 @@ Vær opmærksom på, at skyggen er relativ til konteksten. Fx vil en tooltip, de
   </table>
 </div>
 
-## Referencer
+## Referencer {#{% include create-id.html heading="Referencer" %}}
 
 <ul class="nobullet-list">
   <li>{% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.4.11: Non-text Contrast (Level AA)" %}</li>

@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.0.1" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.0.1" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=11.0.1" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.1.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.1.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=11.1.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.0.1">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.1.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.0.1">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.1.0">
 </noscript>
 
   </head>
@@ -253,7 +253,7 @@
     
   
 <li class="active">
-            <a href="/komponenter/" class="nav-link">
+            <a href="/komponenter/" class="nav-link" aria-current="true">
                 <span>Komponenter</span>
             </a>
         </li>
@@ -1684,15 +1684,17 @@
     
 </div>
 
-<nav class="anchorbox hide-code" aria-labelledby="anchorlinks">
+<nav class="anchorbox" aria-labelledby="anchorlinks">
     <h2 class="anchortitle" id="anchorlinks">Indhold på siden</h2>
     <ul class="anchorlist">
         
         <li class="anchorlink-guidelines"><a href="#saadan-bruges-komponenten">Sådan bruges komponenten</a></li>
+        <li class="anchorlink-guidelines"><a href="#varianter">Varianter</a></li>
         <li class="anchorlink-guidelines"><a href="#se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</a></li>
         <li class="anchorlink-guidelines"><a href="#referencer">Referencer</a></li>
         
         <li class="anchorlink-code"><span id="kode" hidden=""></span><a href="#installation-kode">Installation</a></li>
+        <li class="anchorlink-code"><a href="#deaktiveret-kode">Deaktiveret</a></li>
         
     </ul>
 </nav>
@@ -1785,6 +1787,46 @@
     
 </div>
 
+<h2 id="varianter">Varianter</h2>
+
+<h3 id="deaktiveret">Deaktiveret</h3>
+
+<div class="component-preview  component-preview-select-disabled">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/select-disabled/" class="small-text" target="_blank">Åbn dette eksempel i et nyt vindue<span class="sr-only">: select-disabled</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Eksempel på deaktiveret dropdown</div>
+    
+    <div class="component-example px-4 py-4">
+        
+        <div class="form-group">
+    <label class="form-label  disabled" for="options-disabled">Region</label>
+
+    <select class="form-select" name="options-disabled" id="options-disabled" disabled="disabled">
+        <option value="">Vælg region</option>
+        <option value="option1">Hovedstaden</option>
+        <option value="option2">Midtjylland</option>
+        <option value="option3">Nordjylland</option>
+        <option value="option4">Sjælland</option>
+        <option value="option5">Syddanmark</option>
+    </select>
+</div>
+        
+    </div>
+    
+    <div class="component-code-link px-4 py-4">
+        <a href="/komponenter/dropdown/#deaktiveret-kode" class="small-text">Gå til eksemplets kode<span class="sr-only">: select-disabled</span></a>
+    </div>
+    
+</div>
+
+<p>Bemærk, at deaktiverede dropdowns hverken har kontrastkrav eller kan få fokus og dermed kan være svære at opdage, fx når man anvender en skærmlæser. Det anbefales derfor, at man helt undlader dropdownen i stedet for at deaktivere den.</p>
+
 <h2 id="se-komponenten-i-eksempelloesninger">Se komponenten i eksempelløsninger</h2>
 
 <p><a href="/pages/eksempler/trinformular-til-ansoegning/ansoegning-4/" class="icon-link" target="_blank">Trinformular til ansøgning: Tilføj dokumentation<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></p>
@@ -1841,6 +1883,50 @@
 
 <p>Brug dropdown i begrænset omfang. Værdierne i en dropdown er ikke umiddelbart synlige for brugerne, og det øger sidens kompleksitet for dem.</p>
 
+<h2 id="deaktiveret-kode">Deaktiveret</h2>
+
+<div class="component-preview component-preview-code  component-code-select-disabled">
+    
+    <div class="component-link px-4 py-4">
+        
+        <a href="/eksempel/select-disabled/" class="small-text" target="_blank">Vis dette eksempel i et nyt vindue<span class="sr-only">: select-disabled</span></a>
+        
+    </div>
+    
+    
+    <div class="sr-only">Kodeeksempel</div>
+    
+    <div class="component-code">
+        
+        <div class="button-copy-container">
+            <button class="button button-secondary button-copy">Kopiér kode</button>
+        </div>
+        
+        
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-label  disabled&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;options-disabled&quot;</span>&gt;</span>Region<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-select&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;options-disabled&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;options-disabled&quot;</span>
+        <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;disabled&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Vælg region<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option1&quot;</span>&gt;</span>Hovedstaden<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option2&quot;</span>&gt;</span>Midtjylland<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option3&quot;</span>&gt;</span>Nordjylland<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option4&quot;</span>&gt;</span>Sjælland<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;option5&quot;</span>&gt;</span>Syddanmark<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></figure>
+
+
+    </div>
+    
+    <div class="component-guidelines-link px-4 py-4">
+        <a href="/komponenter/dropdown/#deaktiveret" class="small-text">Gå til eksemplets retningslinjer</a>
+    </div>
+    
+</div>
+
+
                         </div>
             </section>
         </main>
@@ -1889,8 +1975,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=11.0.1"></script>
-<script src="/assets/js/styleguide.js?v=11.0.1"></script>
+    <script src="/assets/js/theme.js?v=11.1.0"></script>
+<script src="/assets/js/styleguide.js?v=11.1.0"></script>
 
 
 <script src="/assets/js/docs-tabs.js"></script>

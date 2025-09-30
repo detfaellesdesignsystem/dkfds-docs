@@ -107,6 +107,21 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 
 
+## Version 11.1.0 {#{% include create-id.html heading="Version 11.1.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">30-09-2025</span></div>
+
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret retningslinjer for {% include links/internal-link.html linktext="eksternt link" %}, når der linkes til filer.
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Opdateret brugen af aria-attributter i headeren for {% include links/component-code-link.html linktext="topnavigation og venstremenu" %} samt opdateret headerens {% include links/external-link.html linktext="macro" %}.
+- Tilføjet system-ui som fallback font.
+{% include links/github-link.html number="270" afternumber=" på GitHub" %}
+- Opdateret {% include links/external-link.html linktext="macroer" %} for {% include links/component-guideline-link.html linktext="dropdown" %}, {% include links/component-guideline-link.html linktext="tekstområde" %} og {% include links/component-guideline-link.html linktext="datovælger" %}, så de korrekt sætter disabled-klasse på komponenternes label ved deaktivering.
+- Opdateret udseendet for en deaktiveret knap i {% include links/component-guideline-link.html linktext="datovælgeren" %}. To nye Sass-variable, `$button-disabled-opacity` og `$button-disabled-cursor`, er blevet tilføjet med denne ændring.
+- Opdateret udseendet for en deaktiveret {% include links/component-guideline-link.html linktext="dropdown" %}.
+
+
+
 ## Version 11.0.1 {#{% include create-id.html heading="Version 11.0.1" %}}
 {:.mb-0}
 

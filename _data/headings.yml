@@ -106,6 +106,7 @@ Links:
 - h2: Eksternt link
 - h2: Sekundære links
 - h2: Billeder som links
+- h2: Referencer
 
 Links_Kode:
 - h2: Eksternt link
@@ -123,6 +124,7 @@ Hjoerner_streger_skygger:
 - h2: Hjørner
 - h2: Streger
 - h2: Skygger
+- h2: Referencer
 
 Ikoner:
 - h2: Sådan bruges ikoner
@@ -236,6 +238,7 @@ Detaljer:
 
 Dropdown:
 - h2: Sådan bruges komponenten
+- h2: Varianter
 - h2: Se komponenten i eksempelløsninger
 - h2: Referencer
 
@@ -428,12 +431,14 @@ Datovaelger_Kode:
 - h2: Fast værdi
 - h2: Datoformat
 - h2: Fejlmeddelelse
+- h2: Deaktiveret
 
 Detaljer_Kode:
 - h2: Installation
 
 Dropdown_Kode:
 - h2: Installation
+- h2: Deaktiveret
 
 Faneblade_Kode:
 - h2: Installation
@@ -548,6 +553,7 @@ Tekstomraade_Kode:
 - h2: Installation
 - h2: Fejlmeddelelse
 - h2: Karakterbegrænsning
+- h2: Deaktiveret
 
 TilbageLink_Kode:
 - h2: Installation
@@ -634,6 +640,7 @@ Templates:
 - h2: Kvittering
 - h2: Fejl
 - h2: Siden kunne ikke findes (404-side)
+- h2: Side med data, der hentes
 
 # Fællesskab
 
@@ -655,6 +662,7 @@ Kontakt_og_support:
 
 Releases:
 - h2: Versionering og release-proces
+- h2: Version 11.1.0
 - h2: Version 11.0.1
 - h2: Version 11.0.0
 - h2: Version 10.2.1

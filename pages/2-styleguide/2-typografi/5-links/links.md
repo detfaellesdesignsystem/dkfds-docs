@@ -8,7 +8,7 @@ layout: styleguide
 category: Styleguide_category
 subcategory: Styleguide
 title: Links
-description:
+description: Se hvordan du skal anvende links i Det Fælles Designsystem
 tags:
 - "ekstern"
 - "ekstern link"
@@ -84,13 +84,11 @@ Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller 
 
 Brug links med omtanke i en selvbetjeningsløsning. Linker du for meget ud til eksterne websites, kan det virke forstyrrende for flowet og få brugeren ud af kontekst. Omvendt kan det give stor værdi for brugeren, hvis du linker ud til relevante informationer. Fx informationer, som understøtter brugerens vej gennem selvbetjeningsløsningen og/eller giver væsentlige input til, hvad brugeren skal indtaste i løsningen.
 
-Gør gerne brugeren opmærksom på, hvor det eksterne link fører hen, fx i en parentes som en del af linket, hvis det ikke fremgår af linkteksten.
-
-Vær dog opmærksom på, at det kan virke forstyrrende for flowet og få brugeren ud af kontekst, hvis du linker for meget ud til eksterne websites.
-
 ## Eksternt link {#{% include create-id.html heading="Eksternt link" %}}
 
-Eksterne links skal altid åbne i en ny fane og markeres med et eksternt link-ikon.
+Eksterne links skal altid åbne i en ny fane og markeres med et eksternt link-ikon. Links til filer, fx pdf-filer, skal altid bruge eksternt link-ikonet. Hvis formålet med linket er at downloade en fil, skal det markeres med et download-ikon.
+
+Hvis et link fører til en fil, så gør brugeren opmærksom på dette ved at skrive det i en parentes, hvis det ikke allerede fremgår af linkteksten (McCloskey, 2014). Linker du fx til en pdf-fil, skal du skrive (pdf) efter linkteksten.
 
 {% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" link=false code="/styleguide/typografi/links/#eksternt-link-kode" %}
 
@@ -142,6 +140,12 @@ Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end s
 Links har som standard stylingen `display: inline`. Hvis du vil anvende et billede som link, er du nødt til at vælge en anden display-værdi ved at tilføje en hjælpeklasse, fx `d-inline-block` eller `d-block`, ellers vises der ikke nogen fokusramme omkring billedet, når linket har fokus. Se alle muligheder under {% include links/internal-link.html linktext="hjælpeklasser for display" %}.
 
 Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begrænset. Du kan forhindre dette ved også at tilføje klassen `full-width-image` til linket udover hjælpeklassen.
+
+## Referencer {#{% include create-id.html heading="Referencer" %}}
+
+<ul class="nobullet-list">
+  <li>{% include links/external-link.html linktext="Marieke McCloskey: Writing Hyperlinks: Salient, Descriptive, Start with Keyword (2014)" %}</li>
+</ul>
 
 <!--split-->
 
