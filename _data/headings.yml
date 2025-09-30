@@ -238,6 +238,7 @@ Detaljer:
 
 Dropdown:
 - h2: Sådan bruges komponenten
+- h2: Varianter
 - h2: Se komponenten i eksempelløsninger
 - h2: Referencer
 
@@ -430,12 +431,14 @@ Datovaelger_Kode:
 - h2: Fast værdi
 - h2: Datoformat
 - h2: Fejlmeddelelse
+- h2: Deaktiveret
 
 Detaljer_Kode:
 - h2: Installation
 
 Dropdown_Kode:
 - h2: Installation
+- h2: Deaktiveret
 
 Faneblade_Kode:
 - h2: Installation
@@ -550,6 +553,7 @@ Tekstomraade_Kode:
 - h2: Installation
 - h2: Fejlmeddelelse
 - h2: Karakterbegrænsning
+- h2: Deaktiveret
 
 TilbageLink_Kode:
 - h2: Installation

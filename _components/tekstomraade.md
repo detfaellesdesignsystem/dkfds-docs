@@ -117,12 +117,6 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-code-l
 
 {% include code/syntax.html component="text-area-character-limit" link=true copybutton=true guidelines="/komponenter/tekstomraade/#karakterbegraensning" %}
 
-## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
-
-{% include code/syntax.html component="text-area-disabled" copybutton=true %}
-
-Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
-
 ### Javascript
 
 Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
@@ -178,3 +172,9 @@ new DKFDS.CharacterLimit(document.getElementById('FORM-LIMIT-ID'), {
   "characters_too_many": "Du har {value} tegn for meget"
 }).init();
 {% endhighlight %}
+
+## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
+
+{% include code/syntax.html component="text-area-disabled" link=true copybutton=true guidelines="/komponenter/tekstomraade/#deaktiveret" %}
+
+Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.

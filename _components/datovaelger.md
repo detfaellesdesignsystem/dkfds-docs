@@ -196,4 +196,4 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-code-l
 
 ## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
 
-{% include code/syntax.html component="date-picker-disabled" copybutton=true %}
+{% include code/syntax.html component="date-picker-disabled" link=true copybutton=true guidelines="/komponenter/datovaelger/#deaktiveret" %}

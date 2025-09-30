@@ -18,7 +18,7 @@ tabs: "Retningslinjer, kode"
 
 {% include code/preview-box.html component="select" title="Eksempel på dropdown" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Dropdown" code="Dropdown_Kode" classes="hide-code" %}
+{% include anchorlinks.html guidelines="Dropdown" code="Dropdown_Kode" %}
 
 <!--split-->
 
@@ -91,4 +91,4 @@ Brug dropdown i begrænset omfang. Værdierne i en dropdown er ikke umiddelbart 
 
 ## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
 
-{% include code/syntax.html component="select-disabled" copybutton=true %}
+{% include code/syntax.html component="select-disabled" link=true copybutton=true guidelines="/komponenter/dropdown/#deaktiveret" %}
