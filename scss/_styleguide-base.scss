@@ -817,17 +817,6 @@ code {
   overflow-wrap: break-word;
 }
 
-.layout-demo {
-  margin-bottom: 8.6rem;
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: 5.9rem;
-  }
-  @media print{
-    margin-bottom: 0px !important;
-  }
-}
-
 .screenshot-gallery .screenshot img {
   border: border('high-contrast');
 }
