@@ -81,6 +81,8 @@ tags:
 - 10.2.1
 - 11.0.0
 - 11.0.1
+- 11.1.0
+- 11.2.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -104,6 +106,14 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+## Version 11.2.0 {#{% include create-id.html heading="Version 11.2.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">xx-01-2026</span></div>
+
+- Opdateret retningslinjer for brug af {% include links/internal-link.html linktext="hjælpeklasser for position" %}.
 
 
 
