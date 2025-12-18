@@ -116,6 +116,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet `aria-label` med `aria-current` i {% include links/component-guideline-link.html linktext="sprogvælgeren" %}.
 {% include links/github-link.html number="284" afternumber=" på GitHub" %}
 - Opdateret retningslinjer for brug af {% include links/internal-link.html linktext="hjælpeklasser for position" %}.
+- Opdateret løsningstitel i {% include links/component-guideline-link.html linktext="headeren" %} til at anvende `<h2>` i stedet for `<strong>` de steder, hvor løsningstitlen ikke er et link.
 
 
 
