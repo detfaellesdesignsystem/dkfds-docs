@@ -38,6 +38,13 @@
                     "attributes": "data-module=\"modal\" data-target=\"modal-example-3\" aria-haspopup=\"dialog\""
                 }) 
             }}
+            {{ 
+                button({
+                    "text": "Åbn modal med transition-element",
+                    "variant": "tertiary",
+                    "attributes": "data-module=\"modal\" data-target=\"modal-example-4\" aria-haspopup=\"dialog\""
+                }) 
+            }}
         </div>
     </div>
 </main>
@@ -66,4 +73,19 @@
             "forcedAction": true
         })
     }}
+    {{
+        modal({
+            "id": "modal-example-4",
+            "heading": "Modal med transition-element",
+            "content": "<p>Åbn og luk modalen mindst en gang før test.</p><button class='button button-primary transition-button' style='transition: background-color 1s ease;'>Hover og tjek konsol</button>",
+            "actions": modal_actions
+        })
+    }}
 </div>
+
+<script>
+    const btn = document.querySelector('.transition-button');
+    btn.addEventListener('transitionend', (event) => {
+        console.log('Transition ended - button', event.target);
+    }, false);
+</script>

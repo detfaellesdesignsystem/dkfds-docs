@@ -262,6 +262,9 @@
             <button class="button button-tertiary" data-module="modal" data-target="modal-example-3" aria-haspopup="dialog">
                 Åbn modal som kræver handling
             </button>
+            <button class="button button-tertiary" data-module="modal" data-target="modal-example-4" aria-haspopup="dialog">
+                Åbn modal med transition-element
+            </button>
         </div>
     </div>
 </main>
@@ -324,7 +327,37 @@
         </div>
     </div>
 
+    <div class="fds-modal" id="modal-example-4" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-example-4-heading">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-4-heading">
+                    Modal med transition-element
+                </h2>
+                <button class="modal-close function-link" data-modal-close=""><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#close"></use></svg>Luk</button>
+            </div>
+            <div class="modal-body">
+                <p>Åbn og luk modalen mindst en gang før test.</p><button class="button button-primary transition-button" style="transition: background-color 1s ease;">Hover og tjek
+                    konsol</button>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close="">
+                    Luk
+                </button>
+            </div>
+
+        </div>
+    </div>
+
 </div>
+
+<script>
+    const btn = document.querySelector('.transition-button');
+    btn.addEventListener('transitionend', (event) => {
+        console.log('Transition ended - button', event.target);
+    }, false);
+</script>
+
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
