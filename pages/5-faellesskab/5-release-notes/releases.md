@@ -117,7 +117,8 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="284" afternumber=" på GitHub" %}
 - Opdateret retningslinjer for brug af {% include links/internal-link.html linktext="hjælpeklasser for position" %}.
 - Opdateret løsningstitel i {% include links/component-guideline-link.html linktext="headeren" %} til at anvende `<h2>` i stedet for `<strong>` de steder, hvor løsningstitlen ikke er et link.
-- Rettet fejl, hvor fokus blev flyttet til luk-knappen i genåbnede modaler, hvis modalens indhold anvendte `transitionend` events.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="trinindikatoren" %} ikke åbnede korrekt på små skærme, hvis man trykkede direkte på teksten i trinknappen. 
+- Rettet fejl, hvor fokus blev flyttet til luk-knappen i genåbnede {% include links/component-guideline-link.html linktext="modaler" %}, hvis modalens indhold anvendte `transitionend` events.
 {% include links/github-link.html number="291" afternumber=" på GitHub" %}
 
 

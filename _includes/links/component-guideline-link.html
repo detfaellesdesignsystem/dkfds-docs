@@ -282,7 +282,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "ikoner med hover-tooltip" -%}
         <a href="/komponenter/tooltip/#ikoner-med-hover-tooltip">{{ include.linktext }}</a>
 
-    {%- when "trinindikator" -%}
+    {%- when "trinindikator",
+             "trinindikatoren" -%}
         <a href="/komponenter/trinindikator/">{{ include.linktext }}</a>
 
     {%- when "responsive trinindikatorers", 
