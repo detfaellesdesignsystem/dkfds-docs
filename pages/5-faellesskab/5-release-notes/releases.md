@@ -111,7 +111,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 11.2.0 {#{% include create-id.html heading="Version 11.2.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-01-2026</span></div>
+<div><span class="small-text mt-0 d-block">28-01-2026</span></div>
 
 - <strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet `aria-label` med `aria-current` i {% include links/component-guideline-link.html linktext="sprogvælgeren" %}.
 {% include links/github-link.html number="284" afternumber=" på GitHub" %}
