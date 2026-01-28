@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.1.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.1.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=11.1.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.2.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.2.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=11.2.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.1.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.2.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.1.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.2.0">
 </noscript>
 
   </head>
@@ -1355,6 +1355,7 @@
         <li><a href="#bredde-i-procent">Bredde i procent</a></li>
         <li><a href="#baggrundsfarver">Baggrundsfarver</a></li>
         <li><a href="#position">Position</a></li>
+        <li><a href="#referencer">Referencer</a></li>
         
         
         
@@ -1686,6 +1687,18 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html">&lt;div class=&quot;position-absolute&quot;&gt; Dette element har egenskaben &#39;position: absolute&#39; &lt;/div&gt;
 &lt;div class=&quot;fixed-top&quot;&gt; Dette element sidder i toppen af siden &lt;/div&gt;</code></pre></figure>
 
+<h3 class="h5">Undgå at skjule elementer med fokus</h3>
+
+<p>Når en brugergrænsefladekomponent får fokus, skal noget af komponenten kunne ses, så brugeren kan se, hvad på skærmen der har fokus (WCAG 2.2, SC 2.4.11). Når du bruger position-værdierne <code>absolute</code>, <code>fixed</code> eller <code>sticky</code>, kan dit element lægge sig oven på andre elementer i brugergrænsefladen og dermed bryde WCAG-kriteriet.</p>
+
+<p>Du skal som designer eller udvikler selv tage de nødvendige forholdsregler, så brugeren ikke risikerer, at et element med fokus kan blive helt skjult, fx når brugeren navigerer med tastaturet.</p>
+
+<h2 id="referencer">Referencer</h2>
+
+<ul class="nobullet-list">
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html" class="icon-link" target="_blank">Understanding SC 2.4.11: Focus Not Obscured (Minimum) (Level AA)<svg class="icon-svg" focusable="false" tabindex="-1" aria-label="(åbner i nyt vindue)"><use href="#open-in-new"></use></svg></a></li>
+</ul>
+
             </section>
         </main>
 
@@ -1733,8 +1746,8 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=11.1.0"></script>
-<script src="/assets/js/styleguide.js?v=11.1.0"></script>
+    <script src="/assets/js/theme.js?v=11.2.0"></script>
+<script src="/assets/js/styleguide.js?v=11.2.0"></script>
 
 
   </body>

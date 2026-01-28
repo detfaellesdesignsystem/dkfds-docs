@@ -19,6 +19,7 @@ Hjaelpeklasser:
 - h2: Bredde i procent
 - h2: Baggrundsfarver
 - h2: Position
+- h2: Referencer
 
 Browserunderstoettelse:
 - h2: Windows
@@ -662,6 +663,7 @@ Kontakt_og_support:
 
 Releases:
 - h2: Versionering og release-proces
+- h2: Version 11.2.0
 - h2: Version 11.1.0
 - h2: Version 11.0.1
 - h2: Version 11.0.0

@@ -14,7 +14,7 @@
         "hideOnPrint": false,
         "title": {
             "text": "Løsningstitel står her",
-            "tag": "strong"
+            "tag": "h2"
         },
         "authority": {
             "name": "Myndighedsnavn",

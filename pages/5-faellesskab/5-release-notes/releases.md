@@ -81,6 +81,8 @@ tags:
 - 10.2.1
 - 11.0.0
 - 11.0.1
+- 11.1.0
+- 11.2.0
 ---
 
 {% include anchorlinks.html headings="Releases" %}
@@ -104,6 +106,20 @@ Har du et nyt forslag til en feature eller et bug fix? Så må du meget gerne {%
 ### Tidligere versioner af dokumentationen
 
 Har du brug for at se en version af dokumentationen på designsystem.dk, som stemmer overens med en tidligere release, så er du velkommen til at {% include links/internal-link.html linktext="kontakte os" %}.
+
+
+## Version 11.2.0 {#{% include create-id.html heading="Version 11.2.0" %}}
+{:.mb-0}
+
+<div><span class="small-text mt-0 d-block">28-01-2026</span></div>
+
+- <strong class="badge badge-info badge-small mr-2">Change</strong> Erstattet `aria-label` med `aria-current` i {% include links/component-guideline-link.html linktext="sprogvælgeren" %}.
+{% include links/github-link.html number="284" afternumber=" på GitHub" %}
+- Opdateret retningslinjer for brug af {% include links/internal-link.html linktext="hjælpeklasser for position" %}.
+- Opdateret løsningstitel i {% include links/component-guideline-link.html linktext="headeren" %} til at anvende `<h2>` i stedet for `<strong>` de steder, hvor løsningstitlen ikke er et link.
+- Rettet fejl, hvor {% include links/component-guideline-link.html linktext="trinindikatoren" %} ikke åbnede korrekt på små skærme, hvis man trykkede direkte på teksten i trinknappen. 
+- Rettet fejl, hvor fokus blev flyttet til luk-knappen i genåbnede {% include links/component-guideline-link.html linktext="modaler" %}, hvis modalens indhold anvendte `transitionend` events.
+{% include links/github-link.html number="291" afternumber=" på GitHub" %}
 
 
 

@@ -335,3 +335,14 @@ Derudover findes der følgende hjælpeklasser til specifikt at placere et elemen
 <div class="position-absolute"> Dette element har egenskaben 'position: absolute' </div>
 <div class="fixed-top"> Dette element sidder i toppen af siden </div>
 {% endhighlight %}
+
+<h3 class="h5">Undgå at skjule elementer med fokus</h3>
+
+Når en brugergrænsefladekomponent får fokus, skal noget af komponenten kunne ses, så brugeren kan se, hvad på skærmen der har fokus (WCAG 2.2, SC 2.4.11). Når du bruger position-værdierne `absolute`, `fixed` eller `sticky`, kan dit element lægge sig oven på andre elementer i brugergrænsefladen og dermed bryde WCAG-kriteriet. 
+
+Du skal som designer eller udvikler selv tage de nødvendige forholdsregler, så brugeren ikke risikerer, at et element med fokus kan blive helt skjult, fx når brugeren navigerer med tastaturet.
+
+## Referencer {#{% include create-id.html heading="Referencer" %}}
+
+{:.nobullet-list}
+- {% include links/external-link.html linktext="Understanding SC 2.4.11: Focus Not Obscured (Minimum) (Level AA)" %}
