@@ -280,6 +280,10 @@ Bemærk: `<div class="header">` i eksemplerne ovenover bør erstattes med et æg
 
 `fds-main-menu` anvender light DOM. Brug `<div class="main-menu-inner">` inde i `fds-main-menu` til desktopmenuen. Udelad denne wrapper, når menuen placeres i mobilmenuens `fds-modal`.
 
+Hvis du i mobilmenuen har brug for en knap, der både går til en ny side og samtidigt kan klikkes på for at vise flere undersider, så lav en separat overbliksside under knappen.
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-box.html example="fds-header-overview-page" only_code=true %}
+
 #### Attributter
 
 {:.table .table--responsive-headers}

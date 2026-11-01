@@ -98,7 +98,7 @@
                                                     <button><span>Undermenu 5.2 med flere undermenuer kun synlige på mobil</span></button>
                                                     <div>
                                                         <ul>
-                                                            <li><a href="#" aria-current="page"><span>Undermenu 5.2 med flere undermenuer kun synlige
+                                                            <li><a href="#" aria-current="page"><span class="d-inline-block">Undermenu 5.2 med flere undermenuer kun synlige
                                                                         på mobil <span class="helptext d-inline">(overblik)</span></span></a></li>
                                                             <li><a href="#"><span>Undermenu 5.2.1</span></a></li>
                                                             <li><a href="#"><span>Undermenu 5.2.2</span></a></li>
@@ -193,6 +193,58 @@
         </div>
         <div class="col-12">
             <fds-modal-opener modal-id="fdsdrawerce"><button class="button button-secondary">Mobilmenu</button></fds-modal-opener>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Overflowmenu inde i modal</h2>
+        </div>
+        <div class="col-12">
+            <fds-modal-opener modal-id="modal-example">
+                <button class="button button-secondary">Overflowmenu inde i modal</button>
+            </fds-modal-opener>
+            <fds-modal id="modal-example" heading="Modal med overflowmenu">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+
+                        <div class="overflow-menu overflow-menu--open-right mr-9">
+                            <button class="button-overflow-menu js-dropdown" data-js-target="overflow1" aria-expanded="false"
+                                aria-controls="overflow1">Gammel overflowmenu<svg class="icon-svg" focusable="false" aria-hidden="true">
+                                    <use href="#more-vert"></use>
+                                </svg>
+                            </button>
+                            <div class="overflow-menu-inner collapsed" id="overflow1">
+                                <ul class='overflow-list'>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><button>Mulighed 2</button></li>
+                                    <li><button>Mulighed 3</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <fds-dropdown-menu expanded="false">
+                            <button>
+                                <span>Ny overflowmenu <svg class="icon-svg" focusable="false" aria-hidden="true">
+                                        <use href="#more-vert"></use>
+                                    </svg></span>
+                            </button>
+                            <div>
+                                <ul>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><button>Mulighed 2</button></li>
+                                    <li><button>Mulighed 3</button></li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
         </div>
     </div>
 

@@ -100,11 +100,12 @@ Tilbyd funktionen “vælg alle”, når det er sandsynligt, at mange brugere vi
 | disabled             | Deaktiverer multiselect-komponenten.                                                                                                                     |
 
 #### Slots
-
+  
 {:.table .table--responsive-headers}
-| Slot       | Beskrivelse                                                                                                                   |
-|------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Unavngivet | `label`-element samt `fds-multiselect-opener`-, `fds-multiselect-dialog`-, `fds-help-text`- og `fds-error-message`-elementer. |
+| Slot       | Beskrivelse                                                                                                                           |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| label      | Brug et `span`-element med `slot="label"`, som indeholder multiselect-komponentens label. Elementet får et `id` hvis det ikke har et. |
+| Unavngivet | `fds-multiselect-opener`-, `fds-multiselect-dialog`-, `fds-help-text`- og `fds-error-message`-elementer.                              |
 
 ### fds-multiselect-opener {#{% include create-id.html heading="fds-multiselect-opener" append="-webcomponent" %}}
 

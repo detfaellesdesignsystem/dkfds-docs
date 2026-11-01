@@ -113,15 +113,19 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 ## Version 12.0.0 {#{% include create-id.html heading="Version 12.0.0" %}}
 {:.mb-0}
 
-<div><span class="small-text mt-0 d-block">xx-xx-2026</span></div>
+<div><span class="small-text mt-0 d-block">05-11-2026</span></div>
 
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet web components.
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet ikonet `plus-circle`.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/internal-link.html linktext="Web Components i beta-version" %} med ny kode for 21 komponenter.
+{% include links/github-link.html number="183" afternumber=" på GitHub" %}
+- <strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent {% include links/component-guideline-link.html linktext="Multiselect" %} i beta.
+{% include links/github-link.html number="214" afternumber=" på GitHub" %}
+- <strong class="badge badge-success badge-small mr-2">New</strong> Nyt design og funktionalitet til {% include links/component-web-component-link.html linktext="Cookiemeddelelse" %}, {% include links/component-web-component-link.html linktext="Datovælger" %}, {% include links/component-web-component-link.html linktext="Fejlmeddelelser" %} og {% include links/component-web-component-link.html linktext="Vedhæft fil" %} i beta.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet ikonet `plus-circle`, som bruges i den nye beta-udgave af {% include links/component-web-component-link.html linktext="Vedhæft fil" %}.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Hjælpefunktioner til at generere unikke ID'er er omskrevet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten `hidden="false"` på et element vil ikke længere skjule elementet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Stylingen, der satte max-bredde for lister, er ændret. For nogle lister kan der være opstået behov for manuelt at tilføje klassen `paragraph` for at sætte en max-bredde på 66 tegn.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret stylingen for knapper i en {% include links/component-guideline-link.html linktext="knapgruppe" %}, så kun direkte børn af `button-group` styles.
-- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret sass-pakken til version 1.105.2, hvilket har medført ændringer i flere scss-filer.
+- <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Opdateret sass-pakken til version 1.105.2, hvilket har medført ændringer i flere `.scss`-filer.
 {% include links/github-link.html number="292" afternumber=" på GitHub" %}
 - Modalevents `fds.modal.hidden` og `fds.modal.shown` er blevet ændret til at boble op i DOM'en (`bubbles: true`), så det ikke længere er nødvendigt at sætte event listeners direkte på en modal.
 - Modaler lukkes nu ved `keydown` i stedet for `keyup`.

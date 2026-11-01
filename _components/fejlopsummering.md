@@ -121,7 +121,6 @@ Med `auto`-attributten opdateres fejloversigten automatisk baseret på synlige `
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | heading       | Sæt en anden overskrift end standardoverskriften `"Der er problemer"`.                                                                                                                             |
 | heading-level | Angiver hvilket overskriftsniveau der anvendes til overskriften. Gyldige værdier er `h1` til `h6`. Default er `h2`.                                                                              |
-| heading-id    | ID for overskriftselementet. Hvis denne er udeladt, genereres et tilfældigt ID.                                                                                                                   |
 | auto          | Hold fejloversigten automatisk synkroniseret med `fds-error-message` i understøttede wrappers. Komponenten vises eller skjules automatisk afhængigt af, om der er fejl.                      |
 | hidden        | Skjuler fejloversigten. Sættes automatisk baseret på, om der er fejl. Skal sættes til `true` eller være tom for at tage effekt.                                                                  |
 

@@ -49,7 +49,7 @@
                     <ul>
                         <li>
                             <a href="{{ _page.url | relative_url }}"{% if _current %} aria-current="page"{% endif %}>
-                                <span>{{ _page.title | smartify }} <span class="helptext d-inline">(overblik)</span></span>
+                                <span class="d-inline-block">{{ _page.title | smartify }} <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
                         {% assign _sublinks = site.data.nav[link.submenu] %}

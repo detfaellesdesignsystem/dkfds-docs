@@ -160,7 +160,7 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {
 
 #### Attributter
 
-<div class="table--responsive-scroll">
+<div class="table--responsive-scroll" tabindex="0">
   <table class="table">
     <thead>
       <tr>
