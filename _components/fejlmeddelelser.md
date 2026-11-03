@@ -336,9 +336,3 @@ Fejlmeddelelse er en "mikrokomponent", der udelukkende anvendes sammen med andre
 ### Tjekboks {#{% include create-id.html heading="Tjekboks" append="-webcomponent" %}}
 
 {% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-error" heading_tag="h4" subheading_tag="h5" %}
-
-### Vedhæft fil {#{% include create-id.html heading="Vedhæft fil" append="-webcomponent" %}}
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-error" heading_tag="h4" subheading_tag="h5" %}
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-file-error" heading_tag="h4" subheading_tag="h5" %}

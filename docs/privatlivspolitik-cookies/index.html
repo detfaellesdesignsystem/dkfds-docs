@@ -1451,7 +1451,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 <h3 id="formaal">Formålet med cookies på FDS</h3>
 <p>På FDS bruges cookies til to formål:</p>
 <ul>
-  <li>Teknisk nødvendige cookies sættes altid ved besøg på FDS. Teknisk nødvendige cookies bruges til at huske, hvilket tema der skal anvendes på FDS, samt hvorvidt du har accepteret eller afvist statistiske cookies.</li>
+  <li>Teknisk nødvendige cookies sættes altid ved besøg på FDS. Teknisk nødvendige cookies bruges til at huske, hvilket tema der skal anvendes på FDS, om beskedbanneret skal vises eller skjules, samt hvorvidt du har accepteret eller afvist statistiske cookies.</li>
   <li>Statistiske cookies bruges til at samle anonyme statistiske data om brugernes adfærd på FDS. Statistikken kan anvendes til at forbedre FDS, fordi vi kan finde uhensigtsmæssigheder og se, hvilke dele af FDS brugerne anvender. Vi kan desuden bruge data til at se, om FDS opfylder de mål, der er sat for sitet. Disse cookies sættes først efter du har fået information om formålet med dem og har accepteret dem.</li>
 </ul>
 
@@ -1460,6 +1460,8 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
 <p>Teknisk nødvendige cookies sikrer, at FDS fungerer korrekt.</p>
 
 <p>Ved besøg på FDS sættes der en cookie, som husker det anvendte tema (enten “Borger.dk” eller “Virk”). Dette tema sættes tilfældigt ved første besøg og kan efterfølgende ændres nederst på siden i footeren.</p>
+
+<p>Der sættes en cookie hvis beskedbanneret lukkes, så det ikke vises ved besøg fremadrettet.</p>
 
 <p>Der sættes endnu en cookie, hvis du i cookiemeddelelsen enten vælger “Accepter cookies” eller “Nej tak til cookies”.</p>
 
@@ -1498,6 +1500,12 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
                     </tr>
                     <tr>
                         <td>cookieOptOut</td>
+                        <td>Førstepartscookie</td>
+                        <td>Teknisk nødvendig</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>beta_message_closed</td>
                         <td>Førstepartscookie</td>
                         <td>Teknisk nødvendig</td>
                         <td>12 måneder</td>
@@ -1653,7 +1661,7 @@ Mail: <a href="mailto:erst@erst.dk">erst@erst.dk</a></p>
                 <div class="modal-top"></div>
                 <p>Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen.</p>
                 <p>Alle indsamlede data anonymiseres.</p>
-                <p class="mb-0"><a href="/privatlivspolitik-cookies/">Læs mere om vores brug af cookies</a></p>
+                <p class="mb-2"><a href="/privatlivspolitik-cookies/">Læs mere om vores brug af cookies</a></p>
             </div>
             <div class="fixed-area">
                 <div class="button-group">

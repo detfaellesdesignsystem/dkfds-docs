@@ -22,11 +22,12 @@ const document = window.document;
 const body = document.body;
 
 const SKIP_FILES = [
-    'fds-tabs-default',
-    'fds-tabs-icons',
-    'fds-alert-variants',
-    'fds-alert-text-variants',
-    'fds-alert-close',
+    'fds-tabs-default.html',
+    'fds-tabs-icons.html',
+    'fds-alert-variants.html',
+    'fds-alert-text-variants.html',
+    'fds-alert-close.html',
+    'fds-header-overview-page.html'
 ];
 
 global.HTMLElement = window.HTMLElement;

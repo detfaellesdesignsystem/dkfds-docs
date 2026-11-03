@@ -35,7 +35,6 @@ var testfiles = [
     "test-fds-checkbox",
     "test-fds-radio-button",
     "test-fds-date-input",
-    "test-fds-upload-file",
     "test-fds-date-picker",
     "test-fds-textarea",
     "test-fds-error-summary-manual",

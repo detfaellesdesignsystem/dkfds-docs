@@ -102,6 +102,8 @@ new DKFDS.ErrorSummary(document.getElementById('ALERT-ID')).init();
 
 Man er som udvikler selv ansvarlig for at give komponenten en liste med links til de elementer, der er fejlet. Komponentens JavaScript sørger for, at det fejlede elements label kan ses, efter en bruger har trykket på et link.
 
+Attributten `role="alert"` sættes altid på komponenten, hvis denne er udeladt. Det er muligt at overskrive attributten, hvis der i HTML'en sættes en anden værdi end `alert`, men vær varsom med dette, da det skal være muligt for skærmlæserbrugere at opdage fejlopsummeringen samt eventuelle ændringer.
+
 #### Attributter
 
 {:.table .table--responsive-headers}

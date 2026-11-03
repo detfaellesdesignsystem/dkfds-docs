@@ -115,7 +115,9 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 
 <div><span class="small-text mt-0 d-block">05-11-2026</span></div>
 
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/internal-link.html linktext="Web Components i beta-version" %} med ny kode for 21 komponenter.
+Se {% include links/external-link.html linktext="beslutningslog for version 11.0.0" %}.
+
+- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet {% include links/internal-link.html linktext="Web Components i beta-version" %} med ny kode for 20 komponenter.
 {% include links/github-link.html number="183" afternumber=" på GitHub" %}
 - <strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent {% include links/component-guideline-link.html linktext="Multiselect" %} i beta.
 {% include links/github-link.html number="214" afternumber=" på GitHub" %}

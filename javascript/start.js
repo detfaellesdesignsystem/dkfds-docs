@@ -102,6 +102,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
             wrapper.className = 'heading-wrapper ' + headingLevelClass;
 
+            // Move margin-top/bottom utility classes from heading to wrapper
+            const marginClasses = Array.from(heading.classList).filter(
+                cls => cls.startsWith('mt-') || cls.startsWith('mb-')
+            );
+
+            marginClasses.forEach(marginClass => {
+                wrapper.classList.add(marginClass);
+            });
+
             heading.parentNode.insertBefore(wrapper, heading);
             wrapper.appendChild(heading);
 

@@ -228,6 +228,8 @@ Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvæl
 
 ### Header med sprogvælger {#{% include create-id.html heading="Header med sprogvælger" append="-webcomponent" %}}
 
+Åbn eksemplet i et nyt vindue for at se, hvordan sprogvælgeren bør opdateres ved valg af et sprog. Opførsel ved sprogskifte følger ikke med som en del af koden.
+
 {% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-header-language" heading_tag="h4" subheading_tag="h5" %}
 
 ## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
