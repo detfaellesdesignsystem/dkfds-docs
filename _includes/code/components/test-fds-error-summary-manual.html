@@ -2,18 +2,119 @@
 
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">Fejlopsummering - manual indsættelse fejl</h1>
+            <h1 class="h2 mt-0">Fejlopsummering (manuel)</h1>
         </div>
     </div>
 
     <div class="row mb-905">
         <div class="col-12">
-            <h2 class="h3 mt-0">Ny overskrift</h2>
+            <h2 class="h3 mt-0">Test af forskellige elementer</h2>
+            <p>Klik på et link i fejlopsummeringen får siden til at scrolle. Tjek at der
+                scrolles, så label eller legend tilhørende det fokuserede
+                element er synligt. Der er indsat ekstra margin til elementerne længere nede
+                på siden for at sikre scroll.</p>
+            <p>Klik på et link, mens Ctrl-tasten holdes nede, for at teste, at linket åbner i
+                en ny fane.</p>
         </div>
-        <div class="col-12">
-            <fds-error-summary
-                heading="En ny overskrift til fejlopsummering"></fds-error-summary>
+        <div class="col-12" style="margin-bottom: 200px;">
+            <fds-error-summary>
+                <div>
+                    <svg aria-label="Fejl" focusable="false">
+                        <use href="#error"></use>
+                    </svg>
+                    <h2>Der er problemer</h2>
+                    <ul>
+                        <li><a href="#inputfelt">Inputfelt</a></li>
+                        <li><a href="#radioknap1">Radioknap 1</a></li>
+                        <li><a href="#radioknap2">Radioknap 2</a></li>
+                        <li><a href="#single-checkbox">Tjekboks uden gruppe</a></li>
+                        <li><a href="#tjekboks2">Tjekboks i en gruppe</a></li>
+                        <li><a href="#æøå">Inputfelt med id med danske bogstaver</a></li>
+                        <li><a href="#multiselect">Multiselect</a></li>
+                        <li><a href="#id-do-not-exist">Dette link skal ikke føre nogen vegne
+                                på siden</a></li>
+                        <li><a href="#inputfelt" target="_blank">Dette link skal åbne en ny
+                                fane med fokus på første inputfelt</a></li>
+                        <li><a href="#langlabel">Lang label på inputfelt</a></li>
+                        <li><a href="#form-fileinput">Vedhæft fil</a></li>
+                    </ul>
+                </div>
+            </fds-error-summary>
+        </div>
+        <div class="col-12" style="margin-bottom: 1400px;">
+            <fds-input>
+                <label>Inputfelt</label>
+                <input type="text" name="input-text" id="inputfelt">
+            </fds-input>
+            <fds-radio-button-group>
+                <fieldset>
+                    <legend>Radioknapper</legend>
+                    <fds-radio-button>
+                        <input type="radio" name="25f96931" value="v1" id="radioknap1">
+                        <label>Radioknap 1</label>
+                    </fds-radio-button>
+                    <fds-radio-button>
+                        <input type="radio" name="25f96931" value="v2" id="radioknap2">
+                        <label>Radioknap 2</label>
+                    </fds-radio-button>
+                    <fds-radio-button>
+                        <input type="radio" name="25f96931" value="v3">
+                        <label>Radioknap 3</label>
+                    </fds-radio-button>
+                </fieldset>
+            </fds-radio-button-group>
+            <fds-checkbox>
+                <input type="checkbox" name="checkbox-example" id="single-checkbox">
+                <label>Tjekboks uden gruppe</label>
+            </fds-checkbox>
+            <fds-checkbox-group>
+                <fieldset>
+                    <legend>Tjekbokse i en gruppe</legend>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example" value="v1">
+                        <label>Tjekboks 1</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example" value="v2"
+                            id="tjekboks2">
+                        <label>Tjekboks 2</label>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+            <fds-input>
+                <label>Inputfelt med id med danske bogstaver</label>
+                <input type="text" name="input-text" id="æøå">
+            </fds-input>
+            <fds-multiselect>
+                <span slot="label">Multiselect</span>
+                <fds-multiselect-opener id="multiselect"></fds-multiselect-opener>
+
+                <fds-multiselect-dialog>
+                    <fds-multiselect-options>
+                        <fds-multiselect-option>Banan</fds-multiselect-option>
+                        <fds-multiselect-option>Æble</fds-multiselect-option>
+                        <fds-multiselect-option>Appelsin</fds-multiselect-option>
+                    </fds-multiselect-options>
+                </fds-multiselect-dialog>
+            </fds-multiselect>
+            <fds-input>
+                <label>Dette er et inputfelt med en lang label Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nullam ut augue euismod,
+                    hendrerit arcu sed, bibendum sapien. Cras eget lacinia tortor. Vivamus
+                    aliquet, turpis a sollicitudin porttitor, lacus nulla
+                    tristique turpis, sed vehicula nibh erat quis augue.</label>
+                <input type="text" name="input-text" id="langlabel">
+            </fds-input>
+            <div class="form-group file-input">
+                <label class="form-label" for="form-fileinput">Vedhæft fil</label>
+                <input type="file" id="form-fileinput" name="file">
+            </div>
         </div>
     </div>
 
 </main>
+
+<script>
+    document.body.setAttribute('style', 'margin-top: 0;');
+    document.querySelector('.test-header').setAttribute('style', 'position: static;');
+</script>

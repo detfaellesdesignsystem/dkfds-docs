@@ -64,8 +64,6 @@ DKFDS.registerSelect();
 DKFDS.registerDatePicker();
 DKFDS.registerDatePickerGrid();
 DKFDS.registerTextarea();
-DKFDS.registerUploadFile();
-DKFDS.registerFileItem();
 DKFDS.registerErrorSummary();
 DKFDS.registerInputAffix();
 DKFDS.registerPortalInfo();

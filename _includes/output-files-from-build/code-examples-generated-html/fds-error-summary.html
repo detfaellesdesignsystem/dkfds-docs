@@ -1,7 +1,76 @@
-<fds-error-summary heading-id="error-summary-id">
+<fds-error-summary role="alert">
     <div>
-        <svg aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+        <svg aria-label="Fejl" focusable="false">
+            <use href="#error"></use>
+        </svg>
         <h2>Der er problemer</h2>
-        <ul></ul>
+        <ul>
+            <li>
+                <a href="#sel7fb9c025">Inputfelt</a>
+            </li>
+            <li>
+                <a href="#radio-button-fejl1">Vælg hvad sagen handler om</a>
+            </li>
+            <li>
+                <a href="#multiselect-fejl">Vælg mindst én frugt</a>
+            </li>
+        </ul>
     </div>
 </fds-error-summary>
+<fds-select>
+    <label for="sel7fb9c025">Label</label>
+    <select name="select2" id="sel7fb9c025" aria-describedby="error13365e97" aria-invalid="true">
+        <option value="">Region</option>
+        <option value="option1">Hovedstaden</option>
+        <option value="option2">Midtjylland</option>
+        <option value="option3">Nordjylland</option>
+        <option value="option4">Sjælland</option>
+        <option value="option5">Syddanmark</option>
+    </select>
+    <fds-error-message id="error13365e97">
+        <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+        <span class="visible-message">Vælg region</span>
+    </fds-error-message>
+</fds-select>
+<fds-radio-button-group>
+    <fieldset aria-describedby="errora9bcb9f4">
+        <legend>Sagen handler om</legend>
+        <fds-radio-button>
+            <input type="radio" name="fds-radio-error-example" value="v1" id="radio-button-fejl1" class="form-radio">
+            <label class="form-label" for="radio-button-fejl1">Ulykkesforsikring</label>
+        </fds-radio-button>
+        <fds-radio-button>
+            <input type="radio" name="fds-radio-error-example" value="v2" id="radio-button-fejl2" class="form-radio">
+            <label class="form-label" for="radio-button-fejl2">Erstatningsansvar</label>
+        </fds-radio-button>
+        <fds-radio-button>
+            <input type="radio" name="fds-radio-error-example" value="v3" id="radio-button-fejl3" class="form-radio">
+            <label class="form-label" for="radio-button-fejl3">Forsikringsselskab</label>
+        </fds-radio-button>
+        <fds-error-message id="errora9bcb9f4">
+            <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+            <span class="visible-message">Vælg hvad sagen handler om</span>
+        </fds-error-message>
+    </fieldset>
+</fds-radio-button-group>
+<fds-multiselect>
+    <span slot="label">Frugter</span>
+    <fds-multiselect-opener id="multiselect-fejl"></fds-multiselect-opener>
+    <fds-multiselect-dialog>
+        <fds-multiselect-options>
+            <fds-multiselect-option>Æble</fds-multiselect-option>
+            <fds-multiselect-option>Pære</fds-multiselect-option>
+            <fds-multiselect-option>Banan</fds-multiselect-option>
+            <fds-multiselect-option>Mango</fds-multiselect-option>
+            <fds-multiselect-option>Appelsin</fds-multiselect-option>
+            <fds-multiselect-option>Vandmelon</fds-multiselect-option>
+            <fds-multiselect-option>Blåbær</fds-multiselect-option>
+            <fds-multiselect-option>Jordbær</fds-multiselect-option>
+            <fds-multiselect-option>Kirsebær</fds-multiselect-option>
+        </fds-multiselect-options>
+    </fds-multiselect-dialog>
+    <fds-error-message id="error4b0a4ff3">
+        <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+        <span class="visible-message">Vælg mindst én frugt</span>
+    </fds-error-message>
+</fds-multiselect>

@@ -29,8 +29,7 @@ title: Test
 {% include test/preview-test.html filename="test-fds-upload-file" description="Vedhæft fil" %}
 {% include test/preview-test.html filename="test-fds-date-picker" description="Datovælger" %}
 {% include test/preview-test.html filename="test-fds-textarea" description="Tekstområde" %}
-{% include test/preview-test.html filename="test-fds-error-summary-manual" description="Fejlopsummering - manual indsættelse fejl" %}
-{% include test/preview-test.html filename="test-fds-error-summary-auto" description="Fejlopsummering - automatisk opsamling af fejl" %}
+{% include test/preview-test.html filename="test-fds-error-summary-manual" description="Fejlopsummering (manuel)" %}
 {% include test/preview-test.html filename="test-fds-dropdown-menu" description="Overflowmenu (inkl. varianter)" %}
 {% include test/preview-test.html filename="test-fds-dropdown-menu-placement" description="Placering af overflowmenu" %}
 {% include test/preview-test.html filename="test-fds-tooltip-icon" description="Tooltip-ikon" %}

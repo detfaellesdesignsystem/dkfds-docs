@@ -39,7 +39,6 @@ var testfiles = [
     "test-fds-date-picker",
     "test-fds-textarea",
     "test-fds-error-summary-manual",
-    "test-fds-error-summary-auto",
     "test-fds-dropdown-menu",
     "test-fds-dropdown-menu-placement",
     "test-fds-tooltip-icon",

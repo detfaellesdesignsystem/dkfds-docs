@@ -1,13 +1,6 @@
 <fds-upload-file id="upload-file-always-error">
-    <label class="fds-upload-label" for="upload-file-always-error-input">Alle filer vedhæftet vil få en fejl</label>
-    <div class="fds-upload-dropzone">
-        <input type="file" name="documentation" id="upload-file-always-error-input" multiple="" class="fds-upload-input" aria-describedby="dropzone-upload-file-always-error-input">
-        <div class="fds-upload-dropzone-content" id="dropzone-upload-file-always-error-input">
-            <svg class="icon-svg" aria-hidden="true"><use href="#plus-circle"></use></svg>
-            <p>Træk dine filer herhen eller <span class="fds-upload-choose">vælg filer</span>
-            </p>
-        </div>
-    </div>
+    <label>Alle filer vedhæftet vil få en fejl</label>
+    <input type="file" name="documentation" id="upload-file-always-error-input" multiple="">
 </fds-upload-file>
 <script>
     const uploadElement = document.getElementById('upload-file-always-error');

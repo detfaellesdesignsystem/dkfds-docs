@@ -9,15 +9,14 @@ title: Vedhæft fil
 lead: Komponenten lader brugeren tilføje og indsende en fil.
 description: "Brug fil upload til at lade brugeren vælge en fil fra sin egen computer, tablet eller mobil."
 tags:
-tabs: "Retningslinjer, kode, web component"
-difference_warning: true
+tabs: "Retningslinjer, kode"
 ---
 
-{% include tabs.html guidelines=true code=true web_component=true %}
+{% include tabs.html guidelines=true code=true %}
 
 {% include code/preview-box.html component="file-input" title="Eksempel på vedhæft fil" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="VedhaeftFil" code="VedhaeftFil_Kode" webcomponent="VedhaeftFil_Web_Component" classes="hide-code" %}
+{% include anchorlinks.html guidelines="VedhaeftFil" code="VedhaeftFil_Kode" classes="hide-code" %}
 
 <!--split-->
 
@@ -70,85 +69,3 @@ Vi anbefaler at bruge det indbyggede input felt til filer `type="file"` frem for
 - at feltet fungerer, selv når JavaScript er utilgængeligt.
 
 Du bør anvende ovenstående kriterier til en skræddersyet løsning for denne type felt.
-
-<!--split-->
-
-{% include web-component-shared-text/web-components-beta.html %}
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-example" subheading_tag="h2" collapsable=false %}
-
-## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
-
-{% include web-component-shared-text/intro-light-dom.html %}
-
-## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
-
-### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-webcomponent" %}}
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-helptext" heading_tag="h4" subheading_tag="h5" %}
-
-### Fejl {#{% include create-id.html heading="Fejl" append="-webcomponent" %}}
-
-For at tilknytte en fejlbesked til en specifik fil skal du angive filens ID som anden parameter i `addError()`. Når en fejl knyttes til en fil, vises fejlbeskeden direkte under den pågældende fil i fillisten, og filen markeres visuelt som ugyldig. Hvis fil-ID'et ikke angives, vises fejlen som en generel fejl for hele komponenten.
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-error" heading_tag="h4" subheading_tag="h5" %}
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-file-error" heading_tag="h4" subheading_tag="h5" %}
-
-### Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-webcomponent" %}}
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-upload-file-disabled" heading_tag="h4" subheading_tag="h5" %}
-
-## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
-
-### fds-upload-file {#{% include create-id.html heading="fds-upload-file" append="-webcomponent" %}}
-
-#### Attributter
-
-{:.table .table--responsive-headers}
-| Attribut             | Beskrivelse                                                                                                                                                                   |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dropzone-prefix       | Definerer den indledende tekst i dropzone-området før linkteksten. Default er `Træk dine filer herhen eller`.                                                              |
-| dropzone-link         | Definerer teksten for det klikbare link i dropzone-området. Default er `vælg filer`.                                                                                       |
-| dropzone-suffix       | Definerer teksten der vises efter linkteksten i dropzone-området. Attributten er tom som standard, men kan bruges til at tilføje yderligere instruktioner eller information. |
-| file-list-header      | Definerer overskriften der vises over listen af valgte filer. Default er `Valgte filer`.                                                                                    |
-| file-list-more        | Definerer teksten på knappen til at vælge flere filer. Denne knap vises kun, når det native `multiple`-attribut er sat på `input`-elementet. Default er `Vælg flere filer`. |
-| remove-text           | Definerer teksten på fjern-knappen for hver fil i listen. Default er `Fjern`.                                                                                                |
-| heading-level         | Angiv overskriftsniveauet for filliste-overskriften. Gyldige værdier er `h1`, `h2`, `h3`, `h4`, `h5` og `h6`. Default er `h5`.                                              |
-| show-required-status  | Viser om feltet er obligatorisk eller frivilligt baseret på `required`-attributten. Indsæt en tekst i attributten for at overskrive default-teksten.                       |
-
-#### Funktioner
-
-{:.table .table--responsive-headers}
-| Funktion                   | Beskrivelse                                                                                                                           |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| getFiles()                 | Returnerer et array med alle valgte filer og deres tilknyttede ID'er. Hver fil returneres som et objekt med egenskaberne `id` og `file`. |
-| addError(message, fileId)  | Tilføjer en fejlbesked til komponenten. `fileId` er valgfri. Angives den, knyttes fejlen til den specifikke fil. Returnerer fejlelementet. |
-| removeError(errorElement)  | Fjerner det angivne fejlelement fra komponenten.                                                                                     |
-
-#### Events
-
-{:.table .table--responsive-headers}
-| Event        | Beskrivelse                                                                                   |
-|---------------|---------------------------------------------------------------------------------------------------|
-| files-added   | Udløses når en eller flere filer tilføjes. `event.detail` indeholder et array af de tilføjede filer. |
-| files-removed | Udløses når en fil fjernes. `event.detail` indeholder den fjernede fil.                          |
-
-### fds-file-item {#{% include create-id.html heading="fds-file-item" append="-webcomponent" %}}
-
-`fds-file-item` oprettes automatisk af `fds-upload-file` for hver valgt fil og er ikke tiltænkt at blive oprettet manuelt.
-
-#### Attributter
-
-{:.table .table--responsive-headers}
-| Attribut    | Beskrivelse                                                                                                                                 |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| remove-text | Definerer teksten på fjern-knappen for den enkelte fil. Sættes automatisk af `fds-upload-file`, når dennes `remove-text`-attribut ændres.  |
-
-### fds-help-text {#{% include create-id.html heading="fds-help-text" append="-webcomponent" %}}
-
-{% include web-component-shared-text/fds-help-text.html %}
-
-### fds-error-message {#{% include create-id.html heading="fds-error-message" append="-webcomponent" %}}
-
-{% include web-component-shared-text/fds-error.html %}

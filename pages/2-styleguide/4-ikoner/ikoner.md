@@ -180,7 +180,6 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
                 {% include icon.html icon="sync" keywords="synkroniser, refresh, genindlæs, update, opdater, cached" label="Synkronisér" %}
                 {% include icon.html icon="time" keywords="ur, tid, time, clock, klokke, query-builder" label="Tid / tidsinterval" %}
                 {% include icon.html icon="add-document" keywords="add, document, dokument, tilføj, new, nyt, ny, opret, create, note-add" label="Tilføj dokument" %}
-                {% include icon.html icon="plus-circle" keywords="add, upload, circle, plus, document, dokument, tilføj, new, nyt, ny" label="Tilføj / vedhæft" %}
                 {% include icon.html icon="check" keywords="done, check, udført, checkmark, flueben, gennemført, completed, correkt, korrekt, rigtig, rigtigt" label="Udført / korrekt / gennemført (flueben)" %}
                 {% include icon.html icon="upload" keywords="Upload, eksporter, export, file-upload" label="Upload / eksportér" %}
                 {% include icon.html icon="attach-file" keywords="Vedhæft, attachment, bilag" label="Vedhæft / bilag" %}

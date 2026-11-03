@@ -119,8 +119,7 @@ Har du brug for at se en version af dokumentationen på designsystem.dk, som ste
 {% include links/github-link.html number="183" afternumber=" på GitHub" %}
 - <strong class="badge badge-success badge-small mr-2">New</strong> Ny komponent {% include links/component-guideline-link.html linktext="Multiselect" %} i beta.
 {% include links/github-link.html number="214" afternumber=" på GitHub" %}
-- <strong class="badge badge-success badge-small mr-2">New</strong> Nyt design og funktionalitet til {% include links/component-web-component-link.html linktext="Cookiemeddelelse" %}, {% include links/component-web-component-link.html linktext="Datovælger" %}, {% include links/component-web-component-link.html linktext="Fejlmeddelelser" %} og {% include links/component-web-component-link.html linktext="Vedhæft fil" %} i beta.
-- <strong class="badge badge-success badge-small mr-2">New</strong> Tilføjet ikonet `plus-circle`, som bruges i den nye beta-udgave af {% include links/component-web-component-link.html linktext="Vedhæft fil" %}.
+- <strong class="badge badge-success badge-small mr-2">New</strong> Nyt design og funktionalitet til {% include links/component-web-component-link.html linktext="Cookiemeddelelse" %}, {% include links/component-web-component-link.html linktext="Datovælger" %} og {% include links/component-web-component-link.html linktext="Fejlmeddelelser" %} i beta.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Hjælpefunktioner til at generere unikke ID'er er omskrevet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Attributten `hidden="false"` på et element vil ikke længere skjule elementet.
 - <strong class="badge badge-warning badge-small mr-2">Breaking change</strong> Stylingen, der satte max-bredde for lister, er ændret. For nogle lister kan der være opstået behov for manuelt at tilføje klassen `paragraph` for at sætte en max-bredde på 66 tegn.

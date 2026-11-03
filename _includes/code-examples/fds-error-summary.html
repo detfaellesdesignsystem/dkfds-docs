@@ -1,1 +1,66 @@
-<fds-error-summary heading-id="error-summary-id"></fds-error-summary>
+<fds-error-summary>
+    <div>
+        <svg aria-label="Fejl" focusable="false">
+            <use href="#error"></use>
+        </svg>
+        <h2>Der er problemer</h2>
+        <ul>
+            <li><a href="#sel7fb9c025">Inputfelt</a></li>
+            <li><a href="#radio-button-fejl1">Vælg hvad sagen handler om</a></li>
+            <li><a href="#multiselect-fejl">Vælg mindst én frugt</a></li>
+        </ul>
+    </div>
+</fds-error-summary>
+
+<fds-select>
+    <label>Label</label>
+    <select name="select2" id="sel7fb9c025">
+        <option value="">Region</option>
+        <option value="option1">Hovedstaden</option>
+        <option value="option2">Midtjylland</option>
+        <option value="option3">Nordjylland</option>
+        <option value="option4">Sjælland</option>
+        <option value="option5">Syddanmark</option>
+    </select>
+    <fds-error-message id="error13365e97">Vælg region</fds-error-message>
+</fds-select>
+
+<fds-radio-button-group>
+    <fieldset>
+        <legend>Sagen handler om</legend>
+        <fds-radio-button>
+            <input type="radio" name="fds-radio-error-example" value="v1" id="radio-button-fejl1">
+            <label>Ulykkesforsikring</label>
+        </fds-radio-button>
+        <fds-radio-button>
+            <input type="radio" name="fds-radio-error-example" value="v2" id="radio-button-fejl2">
+            <label>Erstatningsansvar</label>
+        </fds-radio-button>
+        <fds-radio-button>
+            <input type="radio" name="fds-radio-error-example" value="v3" id="radio-button-fejl3">
+            <label>Forsikringsselskab</label>
+        </fds-radio-button>
+        <fds-error-message id="errora9bcb9f4">Vælg hvad sagen handler om</fds-error-message>
+    </fieldset>
+</fds-radio-button-group>
+
+<fds-multiselect>
+    <span slot="label">Frugter</span>
+    <fds-multiselect-opener id="multiselect-fejl"></fds-multiselect-opener>
+
+    <fds-multiselect-dialog>
+        <fds-multiselect-options>
+            <fds-multiselect-option>Æble</fds-multiselect-option>
+            <fds-multiselect-option>Pære</fds-multiselect-option>
+            <fds-multiselect-option>Banan</fds-multiselect-option>
+            <fds-multiselect-option>Mango</fds-multiselect-option>
+            <fds-multiselect-option>Appelsin</fds-multiselect-option>
+            <fds-multiselect-option>Vandmelon</fds-multiselect-option>
+            <fds-multiselect-option>Blåbær</fds-multiselect-option>
+            <fds-multiselect-option>Jordbær</fds-multiselect-option>
+            <fds-multiselect-option>Kirsebær</fds-multiselect-option>
+        </fds-multiselect-options>
+    </fds-multiselect-dialog>
+
+    <fds-error-message id="error4b0a4ff3">Vælg mindst én frugt</fds-error-message>
+</fds-multiselect>

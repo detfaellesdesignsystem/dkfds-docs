@@ -57,7 +57,6 @@ Vær også opmærksom på, om dit framework kræver særlig konfiguration eller 
             <li>{% include links/component-web-component-link.html linktext="Toggle switch" %}</li>
             <li>{% include links/component-web-component-link.html linktext="Tooltip" %}</li>
             <li>{% include links/component-web-component-link.html linktext="Trinindikator" %}</li>
-            <li>{% include links/component-web-component-link.html linktext="Vedhæft fil" %}</li>
         </ul>
     </div>
 </details>

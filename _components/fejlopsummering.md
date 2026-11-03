@@ -96,51 +96,15 @@ new DKFDS.ErrorSummary(document.getElementById('ALERT-ID')).init();
 
 {% include web-component-shared-text/intro-light-dom.html %}
 
-## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
-
-### Manuel tilføjelse af fejl {#{% include create-id.html heading="Manuel tilføjelse af fejl" append="-webcomponent" %}}
-
-Når du ikke bruger `auto`-attributten, er du selv ansvarlig for at administrere fejlene og skal manuelt oprette strukturen med fejlene.
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-error-summary-manual" heading_tag="h4" subheading_tag="h5" %}
-
-### Automatisk synkronisering {#{% include create-id.html heading="Automatisk synkronisering" append="-webcomponent" %}}
-
-Med `auto`-attributten opdateres fejloversigten automatisk baseret på synlige `fds-error-message` elementer i understøttede wrappers.
-
-{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-error-summary-auto" heading_tag="h4" subheading_tag="h5" %}
-
 ## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
 
 ### fds-error-summary {#{% include create-id.html heading="fds-error-summary" append="-webcomponent" %}}
+
+Man er som udvikler selv ansvarlig for at give komponenten en liste med links til de elementer, der er fejlet. Komponentens JavaScript sørger for, at det fejlede elements label kan ses, efter en bruger har trykket på et link.
 
 #### Attributter
 
 {:.table .table--responsive-headers}
 | Attribut      | Beskrivelse                                                                                                                                                                                       |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| heading       | Sæt en anden overskrift end standardoverskriften `"Der er problemer"`.                                                                                                                             |
-| heading-level | Angiver hvilket overskriftsniveau der anvendes til overskriften. Gyldige værdier er `h1` til `h6`. Default er `h2`.                                                                              |
-| auto          | Hold fejloversigten automatisk synkroniseret med `fds-error-message` i understøttede wrappers. Komponenten vises eller skjules automatisk afhængigt af, om der er fejl.                      |
-| hidden        | Skjuler fejloversigten. Sættes automatisk baseret på, om der er fejl. Skal sættes til `true` eller være tom for at tage effekt.                                                                  |
-
-### Understøttede wrappers {#{% include create-id.html heading="Understøttede wrappers" append="-webcomponent" %}}
-
-`fds-error-summary` samler fejlmeddelelser fra følgende komponenter:
-
-{:.nobullet-list}
-- `fds-input`
-- `fds-checkbox`
-- `fds-checkbox-group`
-- `fds-radio-button-group`
-- `fds-date-input`
-- `fds-textarea`
-- `fds-select`
-- `fds-upload-file`
-- `fds-date-picker`
-
-Fejlmeddelelsen skal være angivet som et `fds-error-message` element.
-
-Når der klikkes på et link i fejloversigten, flyttes fokus til det første fokusbare element i den wrapper, som fejlmeddelelsen tilhører (f.eks. `input`, `select`, `textarea` eller `button`).
-
-Komponenten viser kun fejl fra wrappers, som ikke er skjulte, og hvor den tilhørende fejlmeddelelse heller ikke er skjult.
+| ready      | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |

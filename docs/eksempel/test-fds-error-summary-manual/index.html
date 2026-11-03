@@ -173,7 +173,6 @@
         <symbol id="persons" viewBox="0 -960 960 960"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></symbol>
         <symbol id="photo-camera" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></symbol>
         <symbol id="plus" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></symbol>
-        <symbol id="plus-circle" viewBox="0 -960 960 960"><path d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></symbol>
         <symbol id="print" viewBox="0 -960 960 960"><path d="M640-640v-120H320v120h-80v-200h480v200h-80Zm-480 80h640-640Zm560 100q17 0 28.5-11.5T760-500q0-17-11.5-28.5T720-540q-17 0-28.5 11.5T680-500q0 17 11.5 28.5T720-460Zm-80 260v-160H320v160h320Zm80 80H240v-160H80v-240q0-51 35-85.5t85-34.5h560q51 0 85.5 34.5T880-520v240H720v160Zm80-240v-160q0-17-11.5-28.5T760-560H200q-17 0-28.5 11.5T160-520v160h80v-80h480v80h80Z"/></symbol>
         <symbol id="refresh" viewBox="0 -960 960 960"><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/></symbol>
         <symbol id="reply" viewBox="0 -960 960 960"><path d="M760-200v-160q0-50-35-85t-85-35H273l144 144-57 56-240-240 240-240 57 56-144 144h367q83 0 141.5 58.5T840-360v160h-80Z"/></symbol>
@@ -247,20 +246,122 @@
 
     <div class="row mb-905">
         <div class="col-12">
-            <h1 class="h2 mt-0">Fejlopsummering - manual indsættelse fejl</h1>
+            <h1 class="h2 mt-0">Fejlopsummering (manuel)</h1>
         </div>
     </div>
 
     <div class="row mb-905">
         <div class="col-12">
-            <h2 class="h3 mt-0">Ny overskrift</h2>
+            <h2 class="h3 mt-0">Test af forskellige elementer</h2>
+            <p>Klik på et link i fejlopsummeringen får siden til at scrolle. Tjek at der
+                scrolles, så label eller legend tilhørende det fokuserede
+                element er synligt. Der er indsat ekstra margin til elementerne længere nede
+                på siden for at sikre scroll.</p>
+            <p>Klik på et link, mens Ctrl-tasten holdes nede, for at teste, at linket åbner i
+                en ny fane.</p>
         </div>
-        <div class="col-12">
-            <fds-error-summary heading="En ny overskrift til fejlopsummering"></fds-error-summary>
+        <div class="col-12" style="margin-bottom: 200px;">
+            <fds-error-summary>
+                <div>
+                    <svg aria-label="Fejl" focusable="false">
+                        <use href="#error"></use>
+                    </svg>
+                    <h2>Der er problemer</h2>
+                    <ul>
+                        <li><a href="#inputfelt">Inputfelt</a></li>
+                        <li><a href="#radioknap1">Radioknap 1</a></li>
+                        <li><a href="#radioknap2">Radioknap 2</a></li>
+                        <li><a href="#single-checkbox">Tjekboks uden gruppe</a></li>
+                        <li><a href="#tjekboks2">Tjekboks i en gruppe</a></li>
+                        <li><a href="#æøå">Inputfelt med id med danske bogstaver</a></li>
+                        <li><a href="#multiselect">Multiselect</a></li>
+                        <li><a href="#id-do-not-exist">Dette link skal ikke føre nogen vegne
+                                på siden</a></li>
+                        <li><a href="#inputfelt" target="_blank">Dette link skal åbne en ny
+                                fane med fokus på første inputfelt</a></li>
+                        <li><a href="#langlabel">Lang label på inputfelt</a></li>
+                        <li><a href="#form-fileinput">Vedhæft fil</a></li>
+                    </ul>
+                </div>
+            </fds-error-summary>
+        </div>
+        <div class="col-12" style="margin-bottom: 1400px;">
+            <fds-input>
+                <label>Inputfelt</label>
+                <input type="text" name="input-text" id="inputfelt" />
+            </fds-input>
+            <fds-radio-button-group>
+                <fieldset>
+                    <legend>Radioknapper</legend>
+                    <fds-radio-button>
+                        <input type="radio" name="25f96931" value="v1" id="radioknap1" />
+                        <label>Radioknap 1</label>
+                    </fds-radio-button>
+                    <fds-radio-button>
+                        <input type="radio" name="25f96931" value="v2" id="radioknap2" />
+                        <label>Radioknap 2</label>
+                    </fds-radio-button>
+                    <fds-radio-button>
+                        <input type="radio" name="25f96931" value="v3" />
+                        <label>Radioknap 3</label>
+                    </fds-radio-button>
+                </fieldset>
+            </fds-radio-button-group>
+            <fds-checkbox>
+                <input type="checkbox" name="checkbox-example" id="single-checkbox" />
+                <label>Tjekboks uden gruppe</label>
+            </fds-checkbox>
+            <fds-checkbox-group>
+                <fieldset>
+                    <legend>Tjekbokse i en gruppe</legend>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example" value="v1" />
+                        <label>Tjekboks 1</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example" value="v2" id="tjekboks2" />
+                        <label>Tjekboks 2</label>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+            <fds-input>
+                <label>Inputfelt med id med danske bogstaver</label>
+                <input type="text" name="input-text" id="æøå" />
+            </fds-input>
+            <fds-multiselect>
+                <span slot="label">Multiselect</span>
+                <fds-multiselect-opener id="multiselect"></fds-multiselect-opener>
+
+                <fds-multiselect-dialog>
+                    <fds-multiselect-options>
+                        <fds-multiselect-option>Banan</fds-multiselect-option>
+                        <fds-multiselect-option>Æble</fds-multiselect-option>
+                        <fds-multiselect-option>Appelsin</fds-multiselect-option>
+                    </fds-multiselect-options>
+                </fds-multiselect-dialog>
+            </fds-multiselect>
+            <fds-input>
+                <label>Dette er et inputfelt med en lang label Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nullam ut augue euismod,
+                    hendrerit arcu sed, bibendum sapien. Cras eget lacinia tortor. Vivamus
+                    aliquet, turpis a sollicitudin porttitor, lacus nulla
+                    tristique turpis, sed vehicula nibh erat quis augue.</label>
+                <input type="text" name="input-text" id="langlabel" />
+            </fds-input>
+            <div class="form-group file-input">
+                <label class="form-label" for="form-fileinput">Vedhæft fil</label>
+                <input type="file" id="form-fileinput" name="file" />
+            </div>
         </div>
     </div>
 
 </main>
+
+<script>
+    document.body.setAttribute('style', 'margin-top: 0;');
+    document.querySelector('.test-header').setAttribute('style', 'position: static;');
+</script>
+
 
     <fds-modal id="fds-cookie-message" heading="Det Fælles Designsystem bruger cookies" heading-id="fds-cookie-message-heading" dismissible="false">
     <dialog>
@@ -307,7 +408,7 @@
                 <a class="function-link mr-4" href="/eksempel/test-fds-textarea/">Forrige</a>
                 
                 
-                <a class="function-link" href="/eksempel/test-fds-error-summary-auto/">Næste</a>
+                <a class="function-link" href="/eksempel/test-fds-dropdown-menu/">Næste</a>
                 
             </div>
             <div class="ml-auto"><a class="function-link" href="/mastertest">Testoverblik</a></div>
