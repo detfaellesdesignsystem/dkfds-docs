@@ -46,14 +46,14 @@ layout: default
                 {%- if page.difference_warning != null and page.difference_warning != "" %}
                     <fds-alert variant="warning" class="mt-6">
                         <h2 slot="heading">Denne komponent er opdateret i Web Component-versionen</h2>
-                        <p slot="content">Komponenten har fået nyt udseende og funktionalitet samt forbedret tilgængelighed. De nye retningslinjer kan ses i <span class="nowrap">{% include links/external-link.html linktext="beslutningsloggen på GitHub" %}.</span></p>
+                        <p slot="content">Komponenten har fået nyt udseende og funktionalitet samt forbedret tilgængelighed. De nye retningslinjer kan ses i <span class="nowrap">{% include links/external-link.html linktext="beslutningslog for version 12.0.0" %}.</span></p>
                     </fds-alert>
                 {% endif %}
 
                 {%- if page.web_compponent_warning != null and page.web_compponent_warning != "" %}
                     <fds-alert variant="warning" class="mt-6">
                         <h2 slot="heading">Denne komponent findes udelukkende som Web Component</h2>
-                        <p slot="content">Læs om baggrunden for komponenten i <span class="nowrap">{% include links/external-link.html linktext="beslutningsloggen på GitHub" %}.</span></p>
+                        <p slot="content">Læs om baggrunden for komponenten i <span class="nowrap">{% include links/external-link.html linktext="beslutningslog for version 12.0.0" %}.</span></p>
                     </fds-alert>
                 {% endif %}
 

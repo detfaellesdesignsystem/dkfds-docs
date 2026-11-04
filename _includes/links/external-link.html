@@ -63,6 +63,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "beslutningslog for version 11.0.0" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/279" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "beslutningslog for version 12.0.0" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/301" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "beslutningsloggen på github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions?discussions_q=label:Beslutningslog" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -386,6 +389,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "dkfds",
              "'dkfds'" -%}
         <a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "@dkfds/components" -%}
+        <a href="https://www.npmjs.com/package/@dkfds/components" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "material symbols" -%}
         <a href="https://fonts.google.com/icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>

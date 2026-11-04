@@ -20,7 +20,7 @@
     "gen-pdf-screenshots": "node config\\puppeteer\\gen-pdf-screenshots.js"
   },
   "dependencies": {
-    "dkfds": "11.3.0"
+    "@dkfds/components": "11.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.29.7",

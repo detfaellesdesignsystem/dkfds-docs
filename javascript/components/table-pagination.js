@@ -1,4 +1,4 @@
-import * as DKFDS from "dkfds";
+import * as DKFDS from "@dkfds/components";
 
 document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById('table-pagination') !== null) {

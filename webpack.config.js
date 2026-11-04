@@ -139,14 +139,14 @@ module.exports = function (outputPath, prod) {
                 {//copies content from /img and dkfds-components/dist to /assets/
                     patterns: [
                         { from: "./img/**/*", to: "" },
-                        { from: "./node_modules/dkfds/dist/web-components/dkfds.js", to: "js", info: { minimized: true } },
-                        { from: "./node_modules/dkfds/dist/img/svg-icons", to: "svg" },
-                        { from: "./node_modules/dkfds/dist/fonts", to: "fonts" },
-                        { from: "./node_modules/dkfds/dist/img/logo_virk.svg", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-borgerdk.svg", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-header-placeholder.png", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-placeholder.png", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/all-svg-icons.svg", to: "img" }
+                        { from: "./node_modules/@dkfds/components/dist/web-components/dkfds.js", to: "js", info: { minimized: true } },
+                        { from: "./node_modules/@dkfds/components/dist/img/svg-icons", to: "svg" },
+                        { from: "./node_modules/@dkfds/components/dist/fonts", to: "fonts" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo_virk.svg", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo-borgerdk.svg", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo-header-placeholder.png", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo-placeholder.png", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/all-svg-icons.svg", to: "img" }
                     ]
                 }
             ),

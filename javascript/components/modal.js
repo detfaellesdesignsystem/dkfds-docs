@@ -1,4 +1,4 @@
-import * as DKFDS from "dkfds";
+import * as DKFDS from "@dkfds/components";
 document.addEventListener("DOMContentLoaded", function() {
     if(document.getElementById('modal-example-locked') !== null){
         let yesButton = document.getElementById('button-modal-example-yes');

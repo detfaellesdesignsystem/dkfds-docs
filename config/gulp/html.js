@@ -329,7 +329,7 @@ gulp.task('nunjucks', done => {
             }
         }))
         .pipe(nunjucksRender({
-            path: 'node_modules/dkfds/src/'
+            path: 'node_modules/@dkfds/components/src/'
         }))
         .pipe(prettify({
             wrap_line_length: 94,

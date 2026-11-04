@@ -2,7 +2,7 @@
 import $ from "jquery";
 var Cookies = require('./vendor/js-cookie'); // Node.js: Load js-cookie.js
 import { CookiePrompter, PiwikProTracker, CookieMgr } from "./vendor/CookiePrompter";
-import * as DKFDS from "dkfds";
+import * as DKFDS from "@dkfds/components";
 
 require('./sidenav'); // Node.js: Load sidenav.js
 require('./scroll-top');

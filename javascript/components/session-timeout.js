@@ -1,4 +1,4 @@
-import * as DKFDS from "dkfds";
+import * as DKFDS from "@dkfds/components";
 document.addEventListener("DOMContentLoaded", function() {
     let interval = "";
     let modal = document.getElementsByClassName('fds-modal');

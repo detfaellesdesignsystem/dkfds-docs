@@ -1,4 +1,4 @@
-import * as DKFDS from "dkfds";
+import * as DKFDS from "@dkfds/components";
 const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];

@@ -1,4 +1,4 @@
-import {Toast} from "dkfds";
+import {Toast} from "@dkfds/components";
 
 document.addEventListener("DOMContentLoaded", function() {
     toastExample();

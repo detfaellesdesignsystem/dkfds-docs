@@ -22,7 +22,7 @@ tags:
 
 ### Hent kodepakken fra npm {#{% include create-id.html heading="Hent kodepakken fra npm" %}}
 
-Koden til Web Components ligger i samme dkfds-pakke som de tidligere komponenter og kan derfor hentes på lignende vis:
+Koden til Web Components ligger i samme `@dkfds/components`-pakke som de tidligere komponenter og kan derfor hentes på lignende vis:
 
 {% include containers-for-code-and-examples/top-example-and-show-code-in-box.html example="web-component-installation" only_code=true %}
 
