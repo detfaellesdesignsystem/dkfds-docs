@@ -1,0 +1,12 @@
+...
+<link type="text/css" rel="stylesheet" href="dist/css/dkfds.css">
+<link type="text/css" rel="stylesheet" href="dist/web-components/dkfds.css">
+<script src="dist/web-components/dkfds.js"></script> ... <fds-toggle-switch label="Vis sager ældre end et år">
+    <button type="button" role="switch" aria-checked="false">
+        <span>Vis sager ældre end et år</span>
+    </button>
+</fds-toggle-switch> ... <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('fds-toggle-switch').toggle();
+    });
+</script>

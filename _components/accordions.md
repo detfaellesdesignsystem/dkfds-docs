@@ -3,7 +3,7 @@ permalink: "/komponenter/accordions/"
 redirect_from:
 - "/kode/komponenter/accordions/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Accordions
 lead: En accordion er et grafisk element, som du kan bruge til at skjule og vise indhold
@@ -14,24 +14,24 @@ description: Accordions er interaktive overskrifter, der anvendes til at skjule 
 tags:
 - accordion
 - accordions
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="accordion" title="Eksempel på accordion" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Accordions" code="Accordions_Kode" %}
+{% include anchorlinks.html guidelines="Accordions" code="Accordions_Kode" webcomponent="Accordions_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Accordions er interaktive overskrifter, der anvendes til at skjule og vise det relaterede indhold.
 
-### Anvendes ikke til  
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Accordions erstatter ikke individuelle trin i en selvbetjeningsløsning eller sider på en hjemmeside.
 
@@ -43,7 +43,7 @@ Brug ikke accordions til at opdele et logisk flow eller en sekvens af handlinger
 
 Brug ikke accordions inde i andre accordions. Hvis du har brug for at gruppere accordions, anvend da almindelige overskrifter.
 
-### Vejledning  
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Accordions bliver fremvist i lodret rækkefølge med synlig overskrift. Ved at klikke på accordion folder beskrivelsen af indholdet sig ud. Klikker du igen, folder beskrivelsen sammen igen.
 
@@ -79,7 +79,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="accordion" copybutton=true %}
 
@@ -89,7 +89,7 @@ Husk at tilpasse koden, således at ikke kun indholdet passer, men også attribu
 
 Overskriften på en accordion skal angives som en heading. Sørg for at anvende det korrekte heading-niveau, som passer semantisk ind i konteksten på siden.
 
-### Javascript
+### Javascript {#{% include create-id.html heading="Javascript" append="-kode" %}}
 
 Accordion komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -129,3 +129,118 @@ new DKFDS.Accordion(document.getElementById('ACCORDION-UL-GROUP-ID'), {
 ## Med succesbeskeder {#{% include create-id.html heading="Med succesbeskeder" append="-kode" %}}
 
 {% include code/syntax.html component="accordion-success" link=true copybutton=true guidelines="/komponenter/accordions/#med-succesbeskeder" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-accordion-default" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Åbn/luk alle {#{% include create-id.html heading="Åbn/luk alle" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-accordion-group-example" heading_tag="h4" subheading_tag="h5" %}
+
+### Med succesbeskeder {#{% include create-id.html heading="Med succesbeskeder" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-accordion-success" heading_tag="h4" subheading_tag="h5" %}
+
+### Med fejl {#{% include create-id.html heading="Med fejl" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-accordion-error" heading_tag="h4" subheading_tag="h5" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+### fds-accordion {#{% include create-id.html heading="fds-accordion" append="-webcomponent" %}}
+
+#### Attributter
+
+<div class="table--responsive-scroll" tabindex="0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Attribut</th>
+        <th scope="col">Beskrivelse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>heading</td>
+        <td>Overskriften i accordionen.</td>
+      </tr>
+      <tr>
+        <td>heading-level</td>
+        <td>Overskriftsniveauet i accordionen (overskrives, når heading-level i <code>fds-accordion-group</code> er sat). Standardværdi er <code>"h3"</code>.</td>
+      </tr>
+      <tr>
+        <td>expanded</td>
+        <td>Sæt til <code>"true"</code>, hvis accordionen skal være åben, når siden indlæses. Standardværdi er <code>"false"</code>.</td>
+      </tr>
+      <tr>
+        <td>content-id</td>
+        <td>Sæt ID for content-elementet i accordionen. Standardværdien er tilfældigt genereret.</td>
+      </tr>
+      <tr>
+        <td>has-error</td>
+        <td>Sæt til <code>"true"</code> for at give accordionen en rød kant. Sørg for altid at give en passende fejlbesked, når denne attribut bruges.</td>
+      </tr>
+      <tr>
+        <td>variant-text<br>variant-icon</td>
+        <td>Sæt en tilhørende besked og ikon på accordionen. Sørg altid for at anvende begge attributter samtidigt. Anbefalinger til kombinationer:<br>
+        <ul>
+          <li><code>variant-text="Information"</code> og <code>variant-icon="info"</code></li>
+          <li><code>variant-text="Succes"</code> og <code>variant-icon="success"</code></li>
+          <li><code>variant-text="Advarsel"</code> og <code>variant-icon="warning"</code></li>
+          <li><code>variant-text="Fejl"</code> og <code>variant-icon="error"</code> og <code>has-error="true"</code></li>
+        </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>ready</td>
+        <td>Sæt til <code>"false"</code> for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end <code>"false"</code>, for at initialisere komponenten med det samme.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion            | Beskrivelse                                                                                |
+|---------------------|--------------------------------------------------------------------------------------------|
+| expandAccordion()   | Fold en accordion ud.                                                                      |
+| collapseAccordion() | Fold en accordion sammen.                                                                  |
+| toggleAccordion()   | Hvis en accordion er foldet ud, så foldes den sammen. Er den foldet sammen, foldes den ud. |
+| isExpanded()        | Returnerer `true`, hvis accordionen er foldet ud, og `false`, hvis den er foldet sammen.   |
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event                   | Beskrivelse                            |
+|-------------------------|----------------------------------------|
+| fds-accordion-expanded  | Udløses når accordionen foldes ud.     |
+| fds-accordion-collapsed | Udløses når accordionen foldes sammen. |
+
+### fds-accordion-group {#{% include create-id.html heading="fds-accordion-group" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut        | Beskrivelse                                                                                               |
+|-----------------|-------------------------------------------------------------------------------------------------------------|
+| heading-level   | Sæt overskriftsniveau for alle accordions i gruppen.                                                       |
+| has-bulk-button | Sæt til `true` for at tilføje en knap til gruppen, der åbner/lukker alle accordions.                       |
+| open-all-text   | Erstat teksten på åbn/luk-knappen, når ikke alle accordions er foldet ud. Standardværdi er `"Åbn alle"`.   |
+| close-all-text  | Erstat teksten på åbn/luk-knappen, når alle accordions er foldet ud. Standardværdi er `"Luk alle"`.        |
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion              | Beskrivelse                                                                                                     |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------|
+| toggleAllAccordions() | Hvis alle accordions er foldet ud, foldes de sammen. Hvis mindst én accordion er foldet sammen, foldes alle ud. |

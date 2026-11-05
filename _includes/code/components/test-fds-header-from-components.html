@@ -1,0 +1,98 @@
+<header class="header">
+
+    <fds-portal-info>
+        <a slot="logo" href="#"
+            target="_blank"><img id="example-header-logo" src="/assets/img/logo_virk.svg" alt="Portalnavn"></a>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener"
+            modal-id="menu1">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+        <button slot="log-off-button"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#lock"></use>
+            </svg>Log af</button>
+        <p slot="user">Anders Andersen, Forsikringens Forsikringsfirma</p>
+    </fds-portal-info>
+
+    <fds-solution-info>
+        <a slot="solution-heading" href="#">Løsningstitel</a>
+        <p slot="additional-info" class="d-none d-lg-block">
+            <strong class="authority-name">Myndighedsnavn</strong>
+            <span>Support: 12 34 56 78</span>
+        </p>
+    </fds-solution-info>
+
+    <fds-main-menu>
+        <div class="main-menu-inner">
+            <nav aria-label="Hovedmenu">
+                <ul>
+                    <li><a href="#"><span>Første menupunkt</span></a></li>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Andet menupunkt</span></button>
+                            <div>
+                                <ul>
+                                    <li><a href="#"><span>Undermenu 2.1</span></a></li>
+                                    <li><a href="#"><span>Undermenu 2.2</span></a></li>
+                                    <li><a href="#"><span>Undermenu 2.3</span></a></li>
+                                    <li><a href="#"><span>Undermenu 2.4</span></a></li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                    <li><a href="#"><span>Tredje menupunkt</span></a></li>
+                    <li><a href="#"><span>Fjerde menupunkt</span></a></li>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Femte menupunkt</span></button>
+                            <div>
+                                <ul>
+                                    <li><a href="#"><span>Undermenu 5.1</span></a></li>
+                                    <li><a href="#" aria-current="page"><span>Undermenu 5.2
+                                                med flere undermenuer kun synlige på
+                                                mobil</span></a></li>
+                                    <li><a href="#"><span>Undermenu 5.3</span></a></li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </fds-main-menu>
+
+    <fds-modal variant="drawer" id="menu1" class="d-block d-lg-none" heading="Menu">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+
+                <fds-solution-info>
+                    <p slot="additional-info">
+                        <strong class="authority-name">Myndighedsnavn</strong>
+                        <span>Support: 12 34 56 78</span>
+                    </p>
+                </fds-solution-info>
+
+                <fds-portal-info>
+                    <button slot="log-off-button"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#lock"></use>
+                        </svg>Log af</button>
+                    <p slot="user"><span class="mb-3">Anders
+                            Andersen</span><span>Forsikringens Forsikringsfirma</span></p>
+                </fds-portal-info>
+            </div>
+        </dialog>
+    </fds-modal>
+
+</header>
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Header lavet med web components og custom elements</h1>
+        </div>
+    </div>
+</main>

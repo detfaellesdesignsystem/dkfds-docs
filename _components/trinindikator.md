@@ -5,34 +5,34 @@ redirect_from:
 - "/kode/komponenter/trinindikatorer/"
 - "/kode/komponenter/trinindikator/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Trinindikator
 lead: "En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
 description: "En trinindikator fører brugeren igennem en kendt sekvens af trin i en løsning."
 tags:
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="step-indicator" title="Eksempel på trinindikator" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Trinindikator" code="Trinindikator_Kode" %}
+{% include anchorlinks.html guidelines="Trinindikator" code="Trinindikator_Kode" webcomponent="Trinindikator_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Trinindikatoren anvendes til struktureret at føre brugeren igennem en kendt sekvens af spørgsmål.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Trinindikatoren skal ikke anvendes som erstatning for en venstremenu.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Vælg den type trinindikator, der passer bedst til dine brugeres behov. Vær opmærksom på, at trinindikatorer tit er unødvendige, bl.a. fordi de kan blive overset og tager meget plads på skærmen (GOV.UK). Overvej derfor, om din løsning fungerer bedre uden en trinindikator, se fx eksempelløsningen {% include links/demo-link.html linktext="Formular til kontaktoplysninger" %}, eller med en <a href="#simpel-trinindikator">simpel trinindikator</a>.
 
@@ -99,7 +99,7 @@ En simpel trinindikator viser blot brugerens aktuelle position i formularen som 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="step-indicator" copybutton=true %}
 
@@ -124,3 +124,17 @@ Tilføj klassen `sidenav-error` til de liste-elementer, der er fejl i og anvend 
 ## Simpel trinindikator {#{% include create-id.html heading="Simpel trinindikator" append="-kode" %}}
 
 {% include code/syntax.html component="step-indicator-simple" link=true copybutton=true guidelines="/komponenter/trinindikator/#simpel-trinindikator" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="step-indicator-default" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+Trinindikatoren anvender `fds-modal` med `variant="bottom-sheet"` på mindre skærme, men er ikke selv en Web Component. 
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+Se dokumentationen for {% include links/component-guideline-link.html linktext="modaler" %} for konfiguration af bottom-sheet-varianten. Bemærk, at trinindikatorer bruger `<div class="fixed-area">` og `<div class="scrollable-area">` i komponentens `<dialog>`.

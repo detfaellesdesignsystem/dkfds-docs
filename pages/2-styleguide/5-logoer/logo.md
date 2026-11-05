@@ -3,7 +3,7 @@ permalink: "/styleguide/logoer/"
 redirect_from:
 - "/design/logoer/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Logoer
 lead: Din selvbetjeningsløsning er del af en større helhed på borger.dk og Virk, dette
@@ -33,24 +33,24 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
 
 ## Retningslinjer for portallogo i headeren {#{% include create-id.html heading="Retningslinjer for portallogo i headeren" %}}
 
-### Begrænsninger
+### Begrænsninger {#{% include create-id.html heading="Begrænsninger" %}}
 
 - Format: SVG
 - Højde: max 4.8rem (48px)
 - Bredde: max 4 kolonner
 
-### Tilgængelighed
+### Tilgængelighed {#{% include create-id.html heading="Tilgængelighed portallogo" %}}
 
 - Giv logoet en alt-tekst, der beskriver at brugeren går til forsiden af borger.dk eller Virk: “[Indsæt portal] forside”.
 
-### Brugervenlighed
+### Brugervenlighed {#{% include create-id.html heading="Brugervenlighed portallogo" %}}
 
 - Portal-logoet går til portalens forside
 - Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.
 - Portalens logo er kun at finde i headeren
 - Venstrestil altid logoet i headeren
 
-### Links
+### Links {#{% include create-id.html heading="Links" %}}
 
 <ul class="nobullet-list">
     <li>{% include links/external-link.html linktext="Why You Should Never Center or Right Align Your Logo" %}</li>
@@ -64,17 +64,17 @@ Skal din løsning på Virk skal der være et Virk logo i headeren.
 
 Gør kun brug af muligheden for at placere et myndighedslogo i footeren, hvis det understøtter brugerens gennemførelse af selvbetjeningsløsningen
 
-### Størrelse
+### Størrelse {#{% include create-id.html heading="Størrelse" %}}
 
 - Format: SVG
 - Højde: max 3.2rem (32px)
 - Bredde: max 4 kolonner
 
-### Tilgængelighed
+### Tilgængelighed {#{% include create-id.html heading="Tilgængelighed myndighedslogo" %}}
 
 Giv logoet en alt-tekst, der beskriver at brugeren åbner myndighedens forside: “[Indsæt myndighed] forside”.
 
-### Brugervenlighed
+### Brugervenlighed {#{% include create-id.html heading="Brugervenlighed myndighedslogo" %}}
 
 - Logoet i {% include links/component-guideline-link.html linktext="footeren" %} går til myndighedens forside
 - Sørg for at advare brugeren om at denne forlader selvbetjeningsløsningen, hvis der klikkes på logoet, og få brugeren til at bekræfte, at det er den handling, der ønskes.

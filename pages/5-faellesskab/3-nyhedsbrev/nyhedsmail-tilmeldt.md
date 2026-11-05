@@ -2,7 +2,7 @@
 permalink: "/faellesskab/nyhedsmail/tilmeldt/"
 parentlink: "/faellesskab/nyhedsmail/"
 layout: styleguide
-category: Faellesskab_category
+category: faellesskab_menu
 subcategory: Fællesskab
 title: Tilmelding til nyhedsbrev
 ---

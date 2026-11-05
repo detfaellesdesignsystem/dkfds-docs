@@ -4,7 +4,7 @@ redirect_from:
 - /eksempler/kvittering/
 - /eksempler/opsummeringsside/
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 title: Templates
 lead: Templates er best practice designløsninger til specifikke sidetyper.

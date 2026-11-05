@@ -4,7 +4,7 @@ parentlink: "/styleguide/typografi/"
 redirect_from:
 - "/design/typografi/felt-tabel-overskrifter/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Felt- og tabeloverskrifter
 description: Læs om retningslinjerne for felt- og tabeloverskrifter
@@ -18,7 +18,7 @@ tags:
 {:.nobullet-list}
 - Se dokumentationen om {% include links/component-code-link.html linktext="implementeringen af inputfelter" %}.
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Designværdier" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -60,7 +60,7 @@ Se dokumentationen om {% include links/component-guideline-link.html linktext="i
 {:.nobullet-list}
 - Se dokumentationen om {% include links/component-code-link.html linktext="implementeringen af tabeller" %}.
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Tabeloverskrifter Designværdier" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">

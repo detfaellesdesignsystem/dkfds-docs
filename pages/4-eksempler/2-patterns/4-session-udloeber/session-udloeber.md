@@ -2,7 +2,7 @@
 permalink: /eksempler/patterns/session-udloeber/
 parentlink: "/eksempler/patterns/"
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 title: Session udløber
 lead: Session udløber vises, inden brugeren automatisk logges af en løsning. Dialogen giver brugeren mulighed for at tage stilling til, om de vil logge af eller forblive i løsningen. 
@@ -16,15 +16,15 @@ tags:
 
 ## Sådan bruges Session udløber {#{% include create-id.html heading="Sådan bruges Session udløber" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Dialogen anvendes, når en bruger er ved at blive logget af en løsning automatisk, dvs. når deres session udløber.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Dialogen anvendes ikke, når en bruger selv har trykket på en log af-knap. Hvis brugeren er ved at logge af en løsning, hvor der er foretaget ændringer, som ikke er gemt, så anvend i stedet dialogen Er du sikker på, du vil forlade siden?
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Til dette mønster anvendes komponenten {% include links/component-guideline-link.html linktext="Modalvindue, som kræver handling" %}.
 
@@ -42,11 +42,11 @@ Tiden der går, før brugeren logges af en løsning automatisk, defineres i forh
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Når ændringerne ikke er gemt
+### Når ændringerne ikke er gemt {#{% include create-id.html heading="Når ændringerne ikke er gemt" %}}
 
 {% include code/preview-box-details.html component="session-udloeber-aendringer-ikke-gemt" title="Eksempel på session udløb med ændringer der ikke er gemt" link=false detaillabel="for eksempel på udløb af session med ændringer, der ikke er gemt" %}
 
-### Når ændringerne er gemt
+### Når ændringerne er gemt {#{% include create-id.html heading="Når ændringerne er gemt" %}}
 
 {% include code/preview-box-details.html component="session-udloeber-aendringer-gemt" title="Eksempel på session udløb med gemte ændringer" link=false detaillabel="for eksempel på udløb af session med gemte ændringer" %}
 

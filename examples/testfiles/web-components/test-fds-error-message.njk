@@ -1,0 +1,61 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Fejlmeddelelser</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Fejl uden input</h2>
+        </div>
+        <div class="col-12">
+            <fds-error-message>Dette er en fejl</fds-error-message>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Fejl i input</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text">
+                <fds-error-message>Dette er en fejl</fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Skærmlæsertekst sat som attribut</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text">
+                <fds-error-message icon-text="Error">Dette er en fejl</fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">HTML genereret på forhånd</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label class="form-label" for="html-generated-example-id">Inputfelt med label</label>
+                <input type="text" name="input-text" class="form-input" id="html-generated-example-id"
+                    aria-describedby="html-generated-example-error-id" aria-invalid="true">
+                <fds-error-message id="html-generated-example-error-id">
+                    <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+                    <span class="visible-message">Dette er en fejl</span>
+                </fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+</main>

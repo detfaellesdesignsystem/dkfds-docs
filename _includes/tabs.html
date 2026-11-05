@@ -10,6 +10,12 @@
             <a href="#kode" id="code-tab" class="tab-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg><span>Kode</span></a>
         </li>
         {%- endif -%}
+        {%- if include.web_component -%}
+        <li>
+            <a href="#web-component" id="web-component-tab" class="tab-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="icon-svg" focusable="false" aria-hidden="true"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"></path></svg><span class="mr-3">Web Component</span><strong class="badge web-component-tab-badge">Beta</strong></a>
+            <span id="web-component" hidden></span>
+        </li>
+        {%- endif -%}
     </ul>
 </nav>
 <div id="retningslinjer" hidden></div>

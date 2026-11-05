@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/komponenter/collapse/"
 - "/kode/komponenter/detaljer/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Detaljer
 lead:  Detaljekomponenten holder indhold skjult, indtil brugeren selv vælger at folde den ud.
@@ -25,11 +25,11 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule information, som de fleste brugere ikke vil have brug for, og som derfor ikke bør dominere brugergrænsefladen.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anvendes ikke som erstatning for accordions.
 
@@ -39,7 +39,7 @@ Anvendes ikke til at skjule navigationselementer såsom accordions, faneblade el
 
 Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet {% include links/component-guideline-link.html linktext="radioknap med skjult indhold" %} og {% include links/component-guideline-link.html linktext="tjekbokse med skjult indhold" %}.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje at fordele det ud over flere sider i stedet.
 
@@ -57,6 +57,6 @@ Placér aldrig detaljer inden i et andet detaljeelement, da dette kan forvirre b
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="details" copybutton=true %}

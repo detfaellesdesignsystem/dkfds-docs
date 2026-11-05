@@ -1,0 +1,53 @@
+<header class="header">
+    <fds-solution-info>
+        <a slot="solution-heading" href="#">Løsningstitel</a>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener" modal-id="menu1">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+    </fds-solution-info>
+
+    <fds-main-menu>
+        <div class="main-menu-inner d-block d-lg-flex">
+            <nav aria-label="Eksemplets hovedmenu" class="d-none d-lg-block">
+                <ul>
+                    <li><a href="javascript:void(0);"><span>Første menupunkt</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Andet menupunkt</span></a></li>
+                    <li><a href="javascript:void(0);" aria-current="page"><span>Tredje menupunkt</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Fjerde menupunkt</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </fds-main-menu>
+
+    <fds-modal variant="drawer" id="menu1" class="d-block d-lg-none" heading="Menu">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+
+                <fds-main-menu>
+                    <nav aria-label="Eksemplets mobilmenu">
+                        <ul>
+                            <li><a href="javascript:void(0);"><span>Første menupunkt</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Andet menupunkt</span></a></li>
+                            <li><a href="javascript:void(0);" aria-current="page"><span>Tredje menupunkt</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Fjerde menupunkt</span></a></li>
+                        </ul>
+                    </nav>
+                </fds-main-menu>
+            </div>
+        </dialog>
+    </fds-modal>
+</header>
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-fds-header-solution-and-navigation</h1>
+        </div>
+    </div>
+</main>

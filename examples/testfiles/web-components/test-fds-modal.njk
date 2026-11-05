@@ -1,0 +1,437 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Modal</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="simple-modal-example">
+                <button class="button button-secondary">Simpel modal</button>
+            </fds-modal-opener>
+            <fds-modal id="simple-modal-example" heading="Simpel modal">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Indhold i modalen.</p>
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="simple-modal-no-buttons-example">
+                <button class="button button-secondary">Simpel modal uden knapper i bunden</button>
+            </fds-modal-opener>
+            <fds-modal id="simple-modal-no-buttons-example" heading="Simpel modal uden knapper">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Indhold i modalen.</p>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="escape-example">
+                <button class="button button-secondary">Modal med elementer, der kan lukkes med Escape</button>
+            </fds-modal-opener>
+            <fds-modal id="escape-example" heading="Modal med elementer, der kan lukkes med Escape">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <fds-tooltip-icon
+                            tooltip-text="Dette er en alt for lang tekst til et tooltip, men den er god at teste med. Tooltips bliver for lange, når de fylder mere end 4 linjer. fgdgdgfdsgfsdgfsdgsfdgerstsgfsgsgfgsfdgsdtertsgfgfdgsfgsgsdfgrtgrfgsfgsfdgsdfgsdrterargfsgsdfgsertg"
+                            sr-label="Læs mere"></fds-tooltip-icon>
+                        <fds-date-picker>
+                            <label>Datovælger</label>
+                            <div>
+                                <input type="text" name="input-text">
+                                <div><fds-date-picker-grid></fds-date-picker-grid></div>
+                            </div>
+                        </fds-date-picker>
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="dismissible-example">
+                <button class="button button-secondary">Modal som kræver handling</button>
+            </fds-modal-opener>
+            <fds-modal id="dismissible-example" dismissible="false" heading="Modal som kræver handling">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Indhold i modalen.</p>
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="modal-1-example">
+                <button class="button button-secondary">Modal åbner modal</button>
+            </fds-modal-opener>
+            <fds-modal id="modal-1-example" dismissible="false" heading="Modal åbner modal">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Dette er modal nr. 1</p>
+                        <fds-modal-opener modal-id="modal-2-example">
+                            <button class="button button-primary">Næste modal</button>
+                        </fds-modal-opener>
+                    </div>
+                </dialog>
+            </fds-modal>
+            <fds-modal id="modal-2-example" dismissible="false" heading="Modal åbner modal">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Dette er modal nr. 2</p>
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">Luk</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="long-modal-example">
+                <button class="button button-secondary">Lang modal</button>
+            </fds-modal-opener>
+            <fds-modal id="long-modal-example" heading="Lang modal">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut lectus sollicitudin, ullamcorper purus eget, ultricies
+                            dui. Fusce finibus laoreet mi, sed semper ante convallis tincidunt. Donec at nisl ultricies, consectetur turpis ac,
+                            vehicula lorem. Phasellus ullamcorper magna tincidunt dapibus posuere. Maecenas aliquet eros eros. Duis posuere diam et
+                            tortor pulvinar ornare. Nullam maximus, arcu quis fermentum dapibus, arcu arcu posuere ipsum, nec volutpat nunc risus ac
+                            justo. Fusce malesuada ipsum vitae nulla rutrum, in pulvinar turpis commodo. Curabitur sed eros orci. Donec risus orci,
+                            maximus ac malesuada consectetur, vulputate at est. Aenean tortor neque, sagittis nec facilisis eu, venenatis sit amet
+                            justo. Ut id sem sem. Vestibulum blandit libero velit, ac accumsan mauris gravida a. Phasellus aliquet quis ante at
+                            imperdiet. Etiam ante nibh, congue accumsan sapien vitae, fermentum luctus nulla. Suspendisse scelerisque leo erat,
+                            pulvinar eleifend tortor posuere eget. Donec feugiat, purus at vehicula convallis, lorem mi venenatis libero, eget mollis
+                            dolor sapien sed justo. Integer blandit congue tellus, quis auctor lacus feugiat a. Vivamus vulputate erat dignissim
+                            tempor efficitur. Aenean at consectetur augue, ac finibus ex. Nam tincidunt malesuada mi, ut varius urna facilisis a.
+                            Integer congue mauris quis velit fermentum cursus. Quisque pretium, ex a sodales commodo, mi lorem finibus justo, ornare
+                            volutpat massa tortor eu tortor. Nullam sit amet urna id magna molestie tincidunt sit amet et orci. Maecenas tincidunt,
+                            dui non facilisis sagittis, erat arcu commodo velit, eget suscipit justo ante quis velit. Mauris a ante metus. Sed
+                            eleifend mollis elementum. Morbi volutpat, nibh ut eleifend gravida, velit augue laoreet ipsum, id tristique neque sapien
+                            a orci. Duis mollis erat vel lectus sagittis, ac lobortis dui elementum. Mauris venenatis augue turpis, at feugiat mi
+                            sollicitudin in. Sed hendrerit, nisi sit amet elementum posuere, nibh leo tempor odio, non sollicitudin nibh lacus quis
+                            enim. Etiam consequat turpis vitae velit ultrices, in hendrerit nisl accumsan. Quisque in sollicitudin enim, eget ultrices
+                            lorem. Nunc id eleifend sem. Fusce aliquet ipsum neque, sit amet pellentesque urna gravida nec. Sed placerat fringilla sem
+                            vel facilisis. Mauris at metus id risus feugiat congue. Maecenas consequat molestie libero, vitae aliquam ex pretium
+                            vulputate. Aliquam aliquet at odio sed pellentesque. Vivamus magna tellus, suscipit id nibh at, cursus pulvinar dolor.
+                            Vivamus in blandit lectus, ac mattis tortor. Nullam interdum leo sit amet ligula volutpat, ut ultricies augue eleifend.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam et risus luctus,
+                            sollicitudin purus non, rutrum purus. Suspendisse non diam pretium, malesuada ipsum eu, fermentum tortor. Aliquam ac metus
+                            mi. Praesent auctor ultricies turpis et gravida. Phasellus turpis leo, hendrerit in dui porta, tincidunt gravida erat.
+                            Suspendisse quis leo egestas, dapibus quam sit amet, volutpat metus. Sed non urna metus. Fusce id turpis pharetra, rutrum
+                            magna suscipit, vulputate lorem. Fusce vitae odio placerat, gravida diam eu, luctus sem. Quisque iaculis ut nulla eget
+                            egestas. Ut lectus arcu, dignissim eu ex sit amet, mollis ullamcorper sem. Aenean vitae sapien quis diam vestibulum
+                            condimentum quis ut risus. Donec tincidunt dui risus, auctor congue sapien tempus nec. Nunc et lorem facilisis nisi
+                            condimentum scelerisque sed at massa. Aenean ultrices nisi ut libero aliquam, vel aliquam est scelerisque. Ut posuere diam
+                            et arcu gravida eleifend. Etiam vestibulum maximus ligula tempor pretium. Duis orci ex, dictum quis magna ac, consequat
+                            viverra metus. Vivamus malesuada nunc eget consequat blandit. Sed vitae sapien lacinia, laoreet nisi sed, gravida diam.
+                            Morbi condimentum vel ex sed sodales. Nullam molestie, turpis sed tincidunt iaculis, magna diam tincidunt ante, ornare
+                            varius leo neque sit amet nibh. Ut efficitur leo at purus molestie porttitor. Etiam sed metus mauris. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus. Curabitur scelerisque rhoncus euismod. Aenean ullamcorper sit amet massa
+                            quis maximus. Maecenas eu turpis ornare, congue nunc non, auctor elit. Pellentesque est quam, ullamcorper non tellus in,
+                            euismod sagittis elit. Morbi luctus sed turpis at pharetra. Mauris nec velit porttitor elit laoreet laoreet. Curabitur
+                            tellus felis, convallis sit amet pulvinar et, ultrices a dolor. Fusce luctus, metus eget eleifend placerat, nulla nibh
+                            bibendum ante, eget congue ex ante non mauris. Sed feugiat laoreet diam, sit amet efficitur nibh consequat et. Quisque
+                            ultricies eget odio ut posuere. Curabitur volutpat id neque eget consequat. Vestibulum odio leo, scelerisque ut ex vitae,
+                            laoreet aliquet sapien. Proin at lacus ligula. Sed pretium massa sit amet neque interdum fringilla. Nullam diam lectus,
+                            interdum eu finibus nec, tristique non nulla. Fusce suscipit convallis orci id euismod. Pellentesque ut pellentesque
+                            velit. Maecenas tincidunt maximus metus, imperdiet auctor lacus vulputate sed. Praesent eu sem nisi. </p>
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="bottom-sheet-example">
+                <button class="button button-secondary">Modal som bottom sheet (trin 7 af 10)</button>
+            </fds-modal-opener>
+            <fds-modal id="bottom-sheet-example" variant="bottom-sheet" heading="Trin 7 af 10">
+                <dialog>
+                    <div class="fixed-area">
+                        <div class="modal-top"></div>
+                    </div>
+                    <div class="scrollable-area">
+                        <nav aria-label="Trinindikator">
+                            <ol class="step-indicator">
+                                <li>
+                                    <a class="step" href="#">
+                                        <span class="step-icon">
+                                            <svg class="icon-svg" aria-label="Trin 1 gennemført" focusable="false">
+                                                <use href="#check"></use>
+                                            </svg></span>
+                                        <div>
+                                            <span class="step-title">Dette er et overstået, klikbart trin</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="step" href="#">
+                                        <span class="step-icon">
+                                            <svg class="icon-svg" aria-label="Trin 2 gennemført" focusable="false">
+                                                <use href="#check"></use>
+                                            </svg></span>
+                                        <div>
+                                            <span class="step-title">Dette er et overstået, klikbart
+                                                trin med hjælpetekst</span>
+                                            <span class="step-information">Informationstekst</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="step" href="#">
+                                        <span class="step-icon">
+                                            <svg class="icon-svg" aria-label="Trin 3 gennemført" focusable="false">
+                                                <use href="#check"></use>
+                                            </svg></span>
+                                        <div>
+                                            <span class="step-title">Endnu et overstået, klikbart
+                                                trin</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="error">
+                                    <a class="step" href="#">
+                                        <span class="step-icon">
+                                            <svg class="icon-svg" aria-label="Fejl i trin 4" focusable="false">
+                                                <use href="#error"></use>
+                                            </svg></span>
+                                        <div>
+                                            <span class="step-title">Fejlet trin med
+                                                hjælpetekst</span>
+                                            <span class="step-information">Informationstekst</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="error">
+                                    <a class="step" href="#">
+                                        <span class="step-icon">
+                                            <svg class="icon-svg" aria-label="Fejl i trin 5" focusable="false">
+                                                <use href="#error"></use>
+                                            </svg></span>
+                                        <div>
+                                            <span class="step-title">Fejlet trin</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="step" href="#">
+                                        <span class="step-icon">
+                                            <svg class="icon-svg" aria-label="Trin 6 gennemført" focusable="false">
+                                                <use href="#check"></use>
+                                            </svg></span>
+                                        <div>
+                                            <span class="step-title">Endnu et overstået, klikbart
+                                                trin</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="current ">
+                                    <a class="step" href="#" aria-current="step">
+                                        <span class="step-number"><span>7</span></span>
+                                        <div>
+                                            <span class="step-title">Det nuværende trin</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="disabled ">
+                                    <div class="step">
+                                        <span class="step-number"><span>8</span></span>
+                                        <div>
+                                            <span class="step-title">Ikke-klikbart trin</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="disabled ">
+                                    <div class="step">
+                                        <span class="step-number"><span>9</span></span>
+                                        <div>
+                                            <span class="step-title">Ikke-klikbart trin med
+                                                hjælpetekst</span>
+                                            <span class="step-information">Informationstekst</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="step" href="#">
+                                        <span class="step-number"><span>10</span></span>
+                                        <div>
+                                            <span class="step-title">Klikbart, kommende trin</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="long-bottom-sheet-example">
+                <button class="button button-secondary">Bottom sheet med lang tekst</button>
+            </fds-modal-opener>
+            <fds-modal id="long-bottom-sheet-example" variant="bottom-sheet"
+                heading="LoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamvive">
+                <dialog>
+                    <div class="fixed-area">
+                        <div class="modal-top"></div>
+                    </div>
+                    <div class="scrollable-area">
+                        LoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacusLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacusLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacusLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacusLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmaurisNamvenenatisidmiutgravidaPellentesquenonligulaaliquamviverramagnasedpellentesquelacusLoremipsumdolorsitametconsecteturadipiscingelitVestibulumnecliberoquissapienvehiculaconsequatlaciniaetmau
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="transitions-example">
+                <button class="button button-secondary">Test af transition events</button>
+            </fds-modal-opener>
+            <fds-modal id="transitions-example" heading="Test af transition events">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Fokus skal lande på luk-knappen, når denne modal åbnes.</p>
+                        <p>Åbn konsollen og tab til knappen, så den får fokus.</p>
+                        <p>Hover over knappen, så den skifter farve og skriver en besked i konsollen.</p>
+                        <p>Luk modalen og gentag testen. Efter knappen har fået fokus, må fokus ikke ryge tilbage på luk-knappen.</p>
+                        <p>
+                            <button class='button button-secondary transition-button' style='transition: background-color 1s ease;'>Hover på denne
+                                knap</button>
+                        </p>
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="return-value-example">
+                <button class="button button-secondary">Returværdi</button>
+            </fds-modal-opener>
+            <fds-modal id="return-value-example" heading="Modal med returværdi">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p>Tjek returværdi i konsollen med <br><code>document.getElementById('return-value-example').dialog.returnValue</code></p>
+                        <div class="button-group">
+                            <fds-modal-closer class="button-wrapper" return-value="Primær">
+                                <button class="button button-primary" type="button">Primær</button>
+                            </fds-modal-closer>
+                            <fds-modal-closer class="button-wrapper" return-value="Sekundær">
+                                <button class="button button-secondary" type="button">Sekundær</button>
+                            </fds-modal-closer>
+                        </div>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="drawer-example">
+                <button class="button button-secondary">Drawer-eksempel</button>
+            </fds-modal-opener>
+            <fds-modal id="drawer-example" variant="drawer" heading="Menu">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p class="drawer-content">Indhold i drawer.</p>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="display-none-example">
+                <button class="button button-secondary">Luk drawer ved md-breakpoint</button>
+            </fds-modal-opener>
+            <fds-modal id="display-none-example" variant="drawer" heading="Menu" class="d-md-none">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p class="drawer-content">Indhold i drawer.</p>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <fds-modal-opener modal-id="ready-example">
+                <button class="button button-secondary">Drawer med ready-attribut</button>
+            </fds-modal-opener>
+            <fds-modal id="ready-example" variant="drawer" heading="Menu" ready="false">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+                        <p class="drawer-content">Indhold i drawer.</p>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+</main>
+
+<script>
+    const btn = document.querySelector('.transition-button');
+    btn.addEventListener('transitionend', (event) => {
+        console.log('Transition ended - button', event.target);
+    }, false);
+
+    document.getElementById('return-value-example').addEventListener("close", () => {
+        console.log(`Dialog closed. Return value: "${document.getElementById('return-value-example').returnValue}"`);
+    });
+</script>

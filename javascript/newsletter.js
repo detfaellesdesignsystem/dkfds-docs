@@ -17,7 +17,6 @@ function clearAlertMessage(alertMessage) {
     alertMessage.classList.remove('alert-error');
     alertMessage.querySelector('.alert-heading').textContent = '';
     alertMessage.querySelector('.alert-text').textContent = '';
-    document.getElementById('newsletter-emailaddress').querySelector('.form-input').removeAttribute('aria-describedby');
     if (document.querySelector('body').classList.contains('page-nyhedsbrev')) {
         document.getElementById('samtykke-check').removeAttribute('aria-describedby');
     }
@@ -156,8 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let errors = [];
             let emailSection = document.getElementById('newsletter-emailaddress');
-            let emailAddress = document.getElementById('i_newsform_email').value;
-            let emailError = emailSection.querySelector('.form-error-message');
+            let emailAddress = emailSection.querySelector('input').value;
 
             /* Hide and clear any previous alert message */
             clearAlertMessage(alert);
@@ -167,68 +165,41 @@ document.addEventListener("DOMContentLoaded", function () {
                 let errormessage = "E-mailadressen er ikke gyldig";
 
                 /* Show error message for email field */
-                emailSection.classList.add('form-error');
-
-                const srOnly = document.createElement('span');
-                srOnly.classList.add('sr-only');
-                srOnly.textContent = 'Fejl: ';
-
-                const message = document.createElement('span');
-                message.textContent = errormessage;
-
-                emailError.textContent = '';
-                emailError.appendChild(srOnly);
-                emailError.appendChild(message);
-
-                emailSection.querySelector('.form-input').setAttribute('aria-describedby', 'i_newsform_email-error');
-                emailError.classList.remove('d-none');
+                if (emailSection.querySelector('fds-error-message')) {
+                    emailSection.querySelector('fds-error-message .visible-message').textContent = errormessage;
+                }
+                else {
+                    const errorElement = document.createElement('fds-error-message');
+                    errorElement.textContent = errormessage;
+                    emailSection.querySelector('input').after(errorElement);
+                }
 
                 /* Add error message to error summary */
                 errors.push({ href: '#i_newsform_email', text: errormessage });
             }
             else {
                 /* If email is valid, ensure no error message is displayed next to the field */
-                emailSection.classList.remove('form-error');
-                emailError.textContent = '';
-                emailError.classList.add('d-none');
+                emailSection.querySelector('fds-error-message')?.remove();
             }
 
             /* Only the subscription page contains a confirmation checkbox */
             if (subscriptionPage) {
 
-                let confirmSection = document.getElementById('samtykke-group');
                 let confirmCheckbox = document.getElementById('samtykke-check');
+                let checkboxError = document.getElementById('samtykke-check-error');
 
                 if (!confirmCheckbox.checked) {
                     let errormessage = "Giv os venligst dit samtykke, så vi må opbevare din e-mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsbrevet.";
 
                     /* Show error message for checkbox */
-                    confirmSection.classList.add('form-error');
-
-                    const srOnly = document.createElement('span');
-                    srOnly.classList.add('sr-only');
-                    srOnly.textContent = 'Fejl: ';
-
-                    const message = document.createElement('span');
-                    message.textContent = errormessage;
-
-                    const formErrorMessage = confirmSection.querySelector('.form-error-message');
-                    formErrorMessage.textContent = '';
-                    formErrorMessage.appendChild(srOnly);
-                    formErrorMessage.appendChild(message);
-
-                    document.getElementById('samtykke-check').setAttribute('aria-describedby', 'samtykke-check-error');
-
-                    confirmSection.querySelector('.form-error-message').classList.remove('d-none');
+                    checkboxError.removeAttribute('hidden');
 
                     /* Add error message to error summary */
                     errors.push({ href: '#samtykke-check', text: errormessage });
                 }
                 else {
                     /* If checkbox is checked, ensure no error message is displayed */
-                    confirmSection.classList.remove('form-error');
-                    confirmSection.querySelector('.form-error-message').textContent = '';
-                    confirmSection.querySelector('.form-error-message').classList.add('d-none');
+                    checkboxError.setAttribute('hidden', '');
                 }
             }
 
@@ -276,15 +247,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 clearAlertMessage(alertSummary);
 
                 /* Clear previous email error, if any */
-                emailSection.classList.remove('form-error');
-                emailError.textContent = '';
-                emailError.classList.add('d-none');
+                emailSection.querySelector('fds-error-message')?.remove();
 
                 /* Clear previous checkbox error, if any */
                 if (subscriptionPage) {
-                    document.getElementById('samtykke-group').classList.remove('form-error');
-                    document.getElementById('samtykke-group').querySelector('.form-error-message').textContent = '';
-                    document.getElementById('samtykke-group').querySelector('.form-error-message').classList.add('d-none');
+                    document.getElementById('samtykke-group').querySelector('fds-error-message').setAttribute('hidden', '');
                 }
 
                 document.getElementById("newsform").submit();

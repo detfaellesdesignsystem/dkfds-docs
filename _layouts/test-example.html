@@ -9,8 +9,10 @@
     {% include code/components/fds-base-svg.html %}
     {% include test/test-header.html %}
     {{ content }}
+    {% include cookie-message.html %}
     <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
     <script src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/dkfds.js"></script> <!-- Web Component script -->
     {% include test/test-footer.html previoustest=page.previoustest nexttest=page.nexttest %}
     <script src="{{ site.baseurl }}/assets/js/test.js"></script>
 </body>

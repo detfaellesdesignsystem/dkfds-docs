@@ -1,0 +1,102 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tekstområde</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tekstområde med label</h2>
+        </div>
+        <div class="col-12">
+            <fds-textarea>
+                <label class="form-label" for="input-textarea">Tekstområde med label</label>
+                <textarea class="form-input" id="input-textarea-simple" name="input-textarea" rows="5"></textarea>
+            </fds-textarea>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tekstområde med hjælpetekst</h2>
+        </div>
+        <div class="col-12">
+            <fds-textarea>
+                <label class="form-label" for="input-textarea">Tekstområde med hjælpetekst</label>
+                <fds-help-text id="helpTextId">Fx 12345678</fds-help-text>
+                <textarea class="form-input" id="input-textarea-helptext" name="input-textarea" rows="5"></textarea>
+            </fds-textarea>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tekstområde med fejl</h2>
+        </div>
+        <div class="col-12">
+            <fds-textarea>
+                <label class="form-label" for="input-textarea">Tekstområde med fejl</label>
+                <textarea class="form-input" id="input-textarea-error" name="input-textarea" rows="5"></textarea>
+                <fds-error-message id="error77d50f36">Fejl tekst</fds-error-message>
+            </fds-textarea>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tekstområde med karakterbegrænsning</h2>
+        </div>
+        <div class="col-12">
+            <fds-textarea>
+                <label class="form-label" for="input-textarea">Tekstområde med karakterbegrænsning</label>
+                <textarea class="form-input" id="input-textarea-char" name="input-textarea" rows="5"></textarea>
+                <fds-character-limit limit="40" limit-id="lim9ef8bf53"></fds-character-limit>
+            </fds-textarea>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Obligatorisk og frivilligt tekstområde</h2>
+        </div>
+        <div class="col-12">
+            <fds-textarea show-required-status>
+                <label class="form-label" for="input-textarea">Obligatorisk tekstområde</label>
+                <textarea class="form-input" id="input-textarea-reqdef" name="input-textarea" rows="5" required></textarea>
+            </fds-textarea>
+        </div>
+        <div class="col-12 mt-4">
+            <fds-textarea show-required-status>
+                <label class="form-label" for="input-textarea">Frivilligt tekstområde</label>
+                <textarea class="form-input" id="input-textarea-optdef" name="input-textarea" rows="5"></textarea>
+            </fds-textarea>
+        </div>
+        <div class="col-12 mt-4">
+            <fds-textarea show-required-status="Custom required label">
+                <label class="form-label" for="input-textarea">Obligatorisk tekstområde</label>
+                <textarea class="form-input" id="input-textarea-reqcus" name="input-textarea" rows="5" required></textarea>
+            </fds-textarea>
+        </div>
+        <div class="col-12 mt-4">
+            <fds-textarea show-required-status="Custom optional label">
+                <label class="form-label" for="input-textarea">Frivilligt tekstområde</label>
+                <textarea class="form-input" id="input-textarea-optcus" name="input-textarea" rows="5"></textarea>
+            </fds-textarea>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Deaktiveret tekstområde</h2>
+        </div>
+        <div class="col-12">
+            <fds-textarea>
+                <label class="form-label" for="input-textarea">Tekstområde med fejl</label>
+                <textarea class="form-input" id="input-textarea-dis" name="input-textarea" rows="5" disabled></textarea>
+            </fds-textarea>
+        </div>
+    </div>
+
+</main>

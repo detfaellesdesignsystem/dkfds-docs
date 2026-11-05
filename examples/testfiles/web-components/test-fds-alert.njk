@@ -1,0 +1,102 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Beskeder</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Default</h2>
+        </div>
+        <div class="col-12">
+            <fds-alert>
+                <h3 slot="heading">Standardbesked</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Varianter</h2>
+        </div>
+        <div class="col-12">
+            <fds-alert variant="info">
+                <h3 slot="heading">Info-variant</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+            <fds-alert variant="success">
+                <h3 slot="heading">Succes-variant</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+            <fds-alert variant="warning">
+                <h3 slot="heading">Advarsel-variant</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+            <fds-alert variant="error">
+                <h3 slot="heading">Fejl-variant</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+            <fds-alert variant="custom">
+                <svg slot="icon" role="img" class="icon-svg alert-icon" aria-label="Tilgængelighedsikon" focusable="false"><use href="#accessibility-new"></use></svg>
+                <h3 slot="heading">Custom variant</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Kun overskrift</h2>
+        </div>
+        <div class="col-12">
+            <fds-alert>
+                <strong slot="heading">Denne besked har udelukkende en overskrift</strong>
+            </fds-alert>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Kun indhold</h2>
+        </div>
+        <div class="col-12">
+            <fds-alert>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Begrænset længde</h2>
+        </div>
+        <div class="col-12">
+            <fds-alert class="paragraph">
+                <h3 slot="heading">Besked</h3>
+                <p slot="content">Indholdet i beskeden</p>
+            </fds-alert>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Med luk-knap</h2>
+        </div>
+        <div class="col-12">
+            <fds-alert closable>
+                <h3 slot="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis. Eget est lorem ipsum dolor sit amet consectetur. Justo laoreet sit amet cursus sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget.</p>
+            </fds-alert>
+            <fds-alert closable>
+                <strong slot="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong>
+            </fds-alert>
+            <fds-alert closable>
+                <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis. Eget est lorem ipsum dolor sit amet consectetur. Justo laoreet sit amet cursus sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget.</p>
+            </fds-alert>
+        </div>
+    </div>
+
+</main>

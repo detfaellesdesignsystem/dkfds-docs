@@ -10,7 +10,7 @@ redirect_from:
 - "/eksempel/notification-info/"
 - "/kode/komponenter/toastbesked/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Toastbesked
 lead: Toastbeskeder viser aktuel information og dukker op på skærmen i det øjeblik, de bliver relevante. Toastbeskeder vises typisk som reaktion på brugerinteraktion.
@@ -33,11 +33,11 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 At gøre brugeren opmærksom på vigtige oplysninger, ofte relateret til brugerens aktuelle aktivitet.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug {% include links/component-guideline-link.html linktext="Beskeder (alerts)" %}, hvis en besked skal placeres som en del af indholdet på siden.
 
@@ -47,7 +47,7 @@ Brug modal dialog – ikke toastbeskeder – til at give brugerne information om
 
 Kritiske beskeder eller lange beskeder, hvis toastbeskeden er tidsindstillet og forsvinder automatisk. Det gør det vanskeligt for brugere, som fx gør brug af hjælpeteknologier, at læse meddelelsen før den forsvinder.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Til forskel fra {% include links/component-guideline-link.html linktext="Beskeder (alerts)" %} som er placeret som en del af sideindholdet, placeres toastbeskeder ovenpå selve siden.
 
@@ -98,7 +98,7 @@ Vis den nyeste toastbesked øverst. Hvis der kan være flere toastbeskeder vist 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="toastbesked-info" copybutton=true %}
 
@@ -125,7 +125,7 @@ Toastbeskeder placeres i en div med class `toast-container` og attributter `aria
 
 {% include links/example-link.html linktext="Se fungerende eksempel på implementering af toastbesked" %}
 
-### Javascript
+### Javascript {#{% include create-id.html heading="Javascript" append="-kode" %}}
 Der medfølger Javascript til komponenten, som man kan vælge at bruge. 
 
 #### Vis

@@ -7,7 +7,7 @@ redirect_from:
 - "/design/grid/guidelines/"
 - "/kode/grid/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Grid og baseline grid
 lead: Brug et grid til at placere komponenterne i dit layout horisontalt, og brug baseline grid til at skabe en vertikal rytme på siden.
@@ -69,14 +69,14 @@ Du kan kombinere de 12 kolonner og flette dem sammen, så du ender med layout va
 
 ## Baseline grid (8px vertikalt) {#{% include create-id.html heading="Baseline grid (8px vertikalt)" %}}
 
-### 8 point
+### 8 point {#{% include create-id.html heading="otte point" %}}
 I Det Fælles Designsystem går alle lodrette dimensioner, højder på komponenter og afstande i højderetningen op med en faktor 8. Dvs. 8px, 16px, 24px, 32px, 40px, 48px, 56px, etc.  Det er designsystemets baseline grid.
 
 Gentagelsen af værdier skaber ro og balance på tværs af det visuelle layout og mellem sidens lodrette elementer. For tekst er det ikke tekstens størrelse, men linjehøjden, der skal gå op i en faktor 8.
 
 Du kan læse mere om baseline grid i artiklen {% include links/external-link.html linktext="8-Point Grid: Vertical Rhythm" %}.
 
-### 4 point
+### 4 point {#{% include create-id.html heading="fire point" %}}
 Ikoner, typografi og nogle elementer i komponenter kan justeres til et 4px grid.
 
 Se Material Designs forklaring af baseline grid i artiklen {% include links/external-link.html linktext="Spacing Methods - Baseline" %}.
@@ -91,7 +91,7 @@ Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 {% include code/preview-box-details.html component="grid-simple" title="Eksempel af grid" link=false detaillabel="for eksempel af grid " %}
 
 ## Indstillinger {#{% include create-id.html heading="Indstillinger" append="-kode" %}}
@@ -148,31 +148,31 @@ Grid-systemet bruger containere, rækker og kolonner til at opbygge sider. Grid-
 
 Som udgangspunkt findes der 5 breakpoints: extra small, small, medium, large, or extra large.
 
-### Klasser som rammer alle breakpoints
+### Klasser som rammer alle breakpoints {#{% include create-id.html heading="Klasser som rammer alle breakpoints" append="-kode" %}}
 
 Brug klassen `col` eller `col-*` uden responsivt prefix (fx md).
 
 {% include code/preview-box-details.html component="grid--all-breakpoints" title="Eksempel af grid med alle breakpoints" link=false detaillabel="for eksempel af grid med alle breakpoints" %}
 
-### Fra stablede kolonner til kolonner på række
+### Fra stablede kolonner til kolonner på række {#{% include create-id.html heading="Fra stablede kolonner til kolonner på række" append="-kode" %}}
 
 Ved at bruge fx `col-md-*` klassen vil kolonnerne til at begynde med være placeret lodret over hinanden på mobile enheder. Fra medium-skærme vil de være vist vandret på en række.
 
 {% include code/preview-box-details.html component="grid--stacked-horizontal" title="Eksempel af grid med stablede kolonner til kolonner på række" link=false detaillabel="for eksempel af grid med stablede kolonner til kolonner på række" %}
 
-### Brug af forskellige kolonne-klasser
+### Brug af forskellige kolonne-klasser {#{% include create-id.html heading="Brug af forskellige kolonne-klasser" append="-kode" %}}
 
 Du kan mikse forskellige kolonne-klasser.
 
 {% include code/preview-box-details.html component="grid--mix-match" title="Eksempel af grid med forskellige kolonne-klasser" link=false detaillabel="for eksempel af grid med forskellige kolonne-klasser" %}
 
-### Kolonneombrydning
+### Kolonneombrydning {#{% include create-id.html heading="Kolonneombrydning" append="-kode" %}}
 
 Hvis der er mere end 12 kolonner på en række, vil ekstra kolonner blive vist på en ny linje under de første 12.
 
 {% include code/preview-box-details.html component="grid--column-wrapping" title="Eksempel af grid med kolonneombrydning" link=false detaillabel="for eksempel af grid med kolonneombrydning" %}
 
-### Indlejre
+### Indlejre {#{% include create-id.html heading="Indlejre" append="-kode" %}}
 
 Du kan indlejre flere rækker med tilhørende kolonner i hinanden.
 
@@ -182,13 +182,13 @@ Du kan indlejre flere rækker med tilhørende kolonner i hinanden.
 
 Du kan specificere bredden på en kolonne uden at angive en eksplicit nummer-klasse som fx `col-sm-6`.
 
-### Specifik bredde på kun én kolonne
+### Specifik bredde på kun én kolonne {#{% include create-id.html heading="Specifik bredde på kun én kolonne" append="-kode" %}}
 
 Du kan tildele alle kolonner samme bredde ved kun at give én kolonne en eksplicit bredde (col-6). De øvrige kolonner tilpasser sig automatisk samme bredde.
 
 {% include code/preview-box-details.html component="grid--one-column-width" title="Eksempel af grid med fast bredde på én kolonne" link=false detaillabel="for eksempel af grid med fast bredde på én kolonne" %}
 
-### Individuel kolonnebredde efter indhold
+### Individuel kolonnebredde efter indhold {#{% include create-id.html heading="Individuel kolonnebredde efter indhold" append="-kode" %}}
 
 Ved at brug `col-{breakpoint}-auto` kan du skabe individuel kolonnebredde: Kolonnerne tilpasser sig til deres indhold.
 
@@ -196,13 +196,13 @@ Ved at brug `col-{breakpoint}-auto` kan du skabe individuel kolonnebredde: Kolon
 
 ## Rækkefølge {#{% include create-id.html heading="Rækkefølge" append="-kode" %}}
 
-### Klasser (classes)
+### Klasser (classes) {#{% include create-id.html heading="Klasser (classes)" append="-kode" %}}
 
 Brug klasserne `.order-` til at bestemme den visuelle rækkefølge af kolonnerne. Disse klasser findes også i responsive udgaver fx `.order-1.order-md-2`).
 
 {% include code/preview-box-details.html component="grid--ordering-visual" title="Eksempel af grid med ændring af rækkefølgen på kolonner" link=false detaillabel="for eksempel af grid med ændring af rækkefølgen på kolonner" %}
 
-### Forskyd kolonner
+### Forskyd kolonner {#{% include create-id.html heading="Forskyd kolonner" append="-kode" %}}
 
 Brug klasserne `.offset-` til at forskyde kolonner, fx forskyder `.offset-md-4` 4 kolonner til højre.
 
@@ -222,7 +222,7 @@ Du kan fjerne mellemrum mellem kolonnerne ved at tilføje klassen `no-gutters` t
 
 Designsystemet kommer med forskellige hjælpeklasser, fx flex, margin og bredde. Du kan kombinere disse hjælpeklasser med grid-systemet.
 
-### Hjælpeklasser: Flexbox
+### Hjælpeklasser: Flexbox {#{% include create-id.html heading="Hjælpeklasser: Flexbox" append="-kode" %}}
 
 Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kolonnerne og placeringen af indholdet i kolonnerne.
 
@@ -236,13 +236,13 @@ Brug designsystemets flexbox hjælpeklasser til at ændre på placeringen af kol
 
 {% include code/preview-box-details.html component="grid--util-flex-horizontal-align" title="Eksempel af grid med horisontal alignment af kolonner" link=false detaillabel="for eksempel af grid med horisontal alignment af kolonner" %}
 
-### Hjælpeklasser: Margin
+### Hjælpeklasser: Margin {#{% include create-id.html heading="Hjælpeklasser: Margin" append="-kode" %}}
 
 Du kan bruge margin-hjælpeklasserne til at skabe indryk. Fx `mr-auto`.
 
 {% include code/preview-box-details.html component="grid--util-margin" title="Eksempel af grid med indryk af kolonner" link=false detaillabel="for eksempel af grid med indryk af kolonner" %}
 
-### Hjælpeklasser: Bredde
+### Hjælpeklasser: Bredde {#{% include create-id.html heading="Hjælpeklasser: Bredde" append="-kode" %}}
 
 Vil du have rækker og kolonner som går fra kant til kant, skal du undlade `container` eller tilføje klassen `w-percent-100`.
 

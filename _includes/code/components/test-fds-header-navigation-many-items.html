@@ -1,0 +1,192 @@
+<header class="header">
+
+    <fds-portal-info>
+        <a slot="logo" href="#"
+            target="_blank"><img id="example-header-logo" src="/assets/img/logo_virk.svg" alt="Portalnavn"></a>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener"
+            modal-id="menu1">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+        <button slot="log-off-button"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#lock"></use>
+            </svg>Log af</button>
+        <p slot="user">Anders Andersen</p>
+    </fds-portal-info>
+
+    <fds-solution-info>
+        <a slot="solution-heading" href="#">Løsningstitel</a>
+        <p slot="additional-info" class="d-none d-lg-block">
+            <strong class="authority-name">Myndighedsnavn</strong>
+            <span>Support: 12 34 56 78</span>
+        </p>
+    </fds-solution-info>
+
+    <fds-main-menu>
+        <div class="main-menu-inner d-block d-lg-flex">
+            <nav aria-label="Hovedmenu" class="d-none d-lg-block">
+                <ul>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Første menupunkt der har en længere tekst end de
+                                    andre punkter</span></button>
+                            <div>
+                                <ul>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                    <li><a href="javascript:void(0);"><span>Andet</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Tredje</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Fjerde</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Femte</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Sjette</span></a></li>
+                    <li><a href="javascript:void(0);"><span>Syvende</span></a></li>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Ottende</span></button>
+                            <div>
+                                <ul>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                    <li><a href="javascript:void(0);"><span>Niende</span></a></li>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Tiende</span></button>
+                            <div>
+                                <ul>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);"
+                                            aria-current="page"><span>Undermenu</span></a>
+                                    </li>
+                                    <li><a
+                                            href="javascript:void(0);"><span>Undermenu</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </fds-main-menu>
+
+    <fds-modal variant="drawer" id="menu1" class="d-block d-lg-none" heading="Menu">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+
+                <fds-main-menu>
+                    <nav aria-label="Eksemplets mobilmenu">
+                        <ul>
+                            <li>
+                                <fds-dropdown-menu expanded="false">
+                                    <button><span>Første menupunkt der har en længere tekst
+                                            end de andre punkter</span></button>
+                                    <div>
+                                        <ul>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </fds-dropdown-menu>
+                            </li>
+                            <li><a href="javascript:void(0);"><span>Andet</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Tredje</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Fjerde</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Femte</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Sjette</span></a></li>
+                            <li><a href="javascript:void(0);"><span>Syvende</span></a></li>
+                            <li>
+                                <fds-dropdown-menu expanded="false">
+                                    <button><span>Ottende</span></button>
+                                    <div>
+                                        <ul>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </fds-dropdown-menu>
+                            </li>
+                            <li><a href="javascript:void(0);"><span>Niende</span></a></li>
+                            <li>
+                                <fds-dropdown-menu expanded="true">
+                                    <button><span>Tiende</span></button>
+                                    <div>
+                                        <ul>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                            <li><a href="javascript:void(0);"
+                                                    aria-current="page"><span>Undermenu</span></a>
+                                            </li>
+                                            <li><a
+                                                    href="javascript:void(0);"><span>Undermenu</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </fds-dropdown-menu>
+                            </li>
+                        </ul>
+                    </nav>
+                </fds-main-menu>
+
+                <fds-solution-info>
+                    <p slot="additional-info">
+                        <strong class="authority-name">Myndighedsnavn</strong>
+                        <span>Support: 12 34 56 78</span>
+                    </p>
+                </fds-solution-info>
+
+                <fds-portal-info>
+                    <button slot="log-off-button"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#lock"></use>
+                        </svg>Log af</button>
+                    <p slot="user"><span class="mb-3">Anders Andersen</span></p>
+                </fds-portal-info>
+            </div>
+        </dialog>
+    </fds-modal>
+
+</header>
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-fds-header-navigation-many-items</h1>
+        </div>
+    </div>
+</main>

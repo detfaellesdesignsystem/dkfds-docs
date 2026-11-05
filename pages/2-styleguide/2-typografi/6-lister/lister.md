@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/typografi/lister/"
 - "/design/typografi/lister/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Lister
 lead: Lister bruges til at organisere information, så det giver brugeren overblik.
@@ -24,17 +24,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges lister {#{% include create-id.html heading="Sådan bruges lister" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug lister, når du skal liste ord eller sætninger op.
 
 Brug lister til at give brugeren et hurtigt overblik.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Lister af lange afsnit med forklarende tekst. Brug mellemrum i stedet.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Hold listerne så korte og faktuelle som muligt.
 
@@ -48,12 +48,12 @@ Brug punkter, når der ikke er et hierarki i informationerne.
 
 ## Punktopstilling {#{% include create-id.html heading="Punktopstilling" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="lists-unordered" copybutton=true %}
 
 ## Tegnopstilling {#{% include create-id.html heading="Tegnopstilling" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur tegn" append="-kode" %}}
 
 {% include code/syntax.html component="lists-ordered" copybutton=true %}

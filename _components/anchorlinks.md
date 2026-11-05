@@ -1,7 +1,7 @@
 ---
 permalink: "/komponenter/anchorlinks/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Anchorlinks
 lead: Anchorlinks linker til bestemte steder på samme side. De vises på den enkelte side under overskrift og eventuel manchet.
@@ -25,15 +25,15 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Anchorlinks kan anvendes på lange sider, hvor de understøtter brugeroplevelsen ved at vise en form for indholdsfortegnelse og give direkte adgang til specifikke relevante områder på siden, som brugeren ellers skulle have scrollet langt for at nå (Schade, 2017).
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anchorlinks anvendes ikke til kortere sider, som brugeren problemløst kan overskue indholdet af uden brug af anchorlinks. 
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Anchorlinks placeres altid i toppen af en side under overskrift og evt. manchet. I visse tilfælde kan de også placeres inde i Faneblade. I så fald placeres anchorlinks som det første element i det enkelte faneblad. 
 
@@ -61,10 +61,10 @@ Det anbefales at lave en scroll-animation ned til det valgte afsnit, når der kl
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="anchorlinks" copybutton=true %}
 
-### Javascript
+### Javascript {#{% include create-id.html heading="Javascript" append="-kode" %}}
 
 Der medfølger ikke funktionalitet med denne komponent. Hvis tryk på et link skal lave en scroll-animation ned til afsnittet, skal man selv stå for implementeringen af denne animation.

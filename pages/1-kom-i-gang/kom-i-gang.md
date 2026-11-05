@@ -1,7 +1,7 @@
 ---
 permalink: "/kom-i-gang/"
 layout: styleguide
-category: Kom_i_gang_category
+category: kom_i_gang_menu
 title: Kom i gang
 lead: Find alt, du skal bruge, for at komme godt i gang med at bruge Det Fælles Designsystem til din myndigheds selvbetjeningsløsninger.
 description:
@@ -14,6 +14,13 @@ tags:
         href="/kom-i-gang/om-designsystemet/"
         heading="Om Det Fælles Designsystem" 
         content="Læs om Det Fælles Designsystem og hvornår du skal bruge det." 
+        %}
+    </li>
+    <li>
+        {% include cards/navcard-long.html headingLevel="h2"
+        href="/kom-i-gang/web-components-i-beta-version/"
+        heading="Web Components i beta-version" 
+        content="Vi omskriver designsystemets kode til Web Components. Det gør komponenterne mere robuste, lettere at vedligeholde og nemmere at bruge på tværs af forskellige frameworks." 
         %}
     </li>
     <li>

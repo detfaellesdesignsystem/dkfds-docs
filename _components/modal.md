@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/plugins/micromodal/"
 - "/kode/komponenter/modal/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Modal
 lead: Modaler tvinger brugeren til at fokusere på og tage stilling til afgørende indhold, mens den øvrige side er deaktiveret.
@@ -20,26 +20,26 @@ tags:
 - popup
 - pop up
 - vindue
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="modal" title="Eksempel på modal" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Modal" code="Modal_Kode" %}
+{% include anchorlinks.html guidelines="Modal" code="Modal_Kode" webcomponent="Modal_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Modaler anvendes til at tvinge brugerens fokus på et specifikt, afgrænset indhold, hvor den interaktive respons og forståelse er centralt for brugerens videre anvendelse af løsningen. Det kunne fx være en godkendelse af en handling, behov for bekræftelse eller overførsel af rettigheder, som løsningen skal kunne udføre for at kunne fuldføre sin dialog med brugeren.
 
 Brug en modal, når du vil være sikker på, at brugeren ser en bestemt dialog og forholder sig til dens indhold.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 En modal kan ikke erstatte individuelle sider i en selvbetjeningsløsning eller hjemmeside.
 
@@ -51,7 +51,7 @@ Undgå modaler på mobile løsninger og visninger, da de ikke fungerer godt for 
 
 Undgå at have formularer inde i en modal. Særligt hvis det er en formular med mere end ét felt. I sådan et tilfælde bør man overveje at dele siden op, så indholdet strækker sig over flere sider.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Undgå at have flere åbne modaler på siden - det giver en dårligere brugeroplevelse og kan resultere i at brugeren mister fornemmelsen af, hvor de er på siden.
 
@@ -81,7 +81,7 @@ Se hvordan komponenten bruges i de forskellige {% include links/internal-link.ht
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="modal" copybutton=true %}
 
@@ -97,7 +97,7 @@ Modalen skal altid ligge i en `div` med klassen `fds-modal-container`, som skal 
 </body>
 {% endhighlight %}
 
-### JavaScript
+### JavaScript {#{% include create-id.html heading="JavaScript" append="-kode" %}}
 
 Modal komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -129,3 +129,99 @@ Når en modal aktiveres, vil JavaScripten sætte `inert`-attributten på alle el
 {% include code/syntax.html component="modal-forced-action" link=true copybutton=true guidelines="/komponenter/modal/#modal-som-kraever-handling" %}
 
 Tilføj attributten `data-modal-forced-action` for at deaktivere luk funktioner som escape. Bemærk, at eksemplet også undlader luk knappen øverst i modalen. Man skal huske at tilføre luk funktionalitet i knapperne tilføjet i modalen.
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-modal-default" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Modal som kræver handling {#{% include create-id.html heading="Modal som kræver handling" append="-webcomponent" %}}
+
+Modaler, som kræver handling, kan ikke lukkes med Escape-tasten eller ved klik på baggrunden. Undlad at sætte en luk-knap i øverste højre hjørne og brug kun `fds-modal-closer` på de knapper, som kan bruges til at foretage et valg.
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-modal-forced-action" heading_tag="h4" subheading_tag="h5" %}
+
+Bemærk: Attributten `dismissible` sætter både attributten `closedby` og en event listener for `cancel` grundet forskellig browsersupport og -opførsel (HTML Living Standard).
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+Bemærk, at modalkomponenten som standard altid kræver et `<dialog>`-element direkte efterfulgt af `<div class="scrollable-area">`, der indeholder en tom `<div class="modal-top"></div>` samt modalens øvrige indhold. Komponenten genererer ikke denne struktur selv, da strukturen afviger afhængigt af variant-attributten.
+
+### fds-modal {#{% include create-id.html heading="fds-modal" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut    | Beskrivelse                                                                                                                                                               |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ready       | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |
+| heading     | Sæt modalens overskrift. Hvis overskriften ikke allerede findes i markup'en, genereres den automatisk.                                                                    |
+| heading-id  | Sæt ID for overskriftselementet. Bruges til at knytte overskriften til dialogen via `aria-labelledby`. Standardværdien er tilfældigt genereret.                           |
+| dismissible | Sæt til `false` for at forhindre, at modalen lukkes ved klik på baggrunden, med tilbage-knappen på mobiler eller med Escape. Default er `true`.                           |
+| variant     | Sæt modalens visningstype. Gyldige værdier er `default`, `bottom-sheet` og `drawer`. Default er `default`.                                                                |
+| close-text  | Sæt teksten på luk-knappen, når den genereres automatisk. Default er `Luk`.                                                                                               |
+
+`bottom-sheet` er dokumenteret under {% include links/component-guideline-link.html linktext="trinindikator" %}, og `drawer` er dokumenteret under {% include links/component-guideline-link.html linktext="header" %}.
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion           | Beskrivelse                                                                                      |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| open()             | Åbn modalen.                                                                                      |
+| close(returnValue) | Luk modalen. `returnValue` er valgfri og sættes som dialogens `returnValue`.                    |
+
+Bemærk, at der altid kun bør være én åben modal ad gangen. Har man brug for at åbne to modaler efter hinanden, skal forrige modal lukkes, før den nye åbnes.
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event           | Beskrivelse                                                                             |
+|-----------------|-----------------------------------------------------------------------------------------|
+| fds-modal-open  | Udløses når modalen åbnes.                                                              |
+| fds-modal-close | Udløses når modalen lukkes. `event.detail.returnValue` indeholder dialogens returværdi. |
+
+### fds-modal-opener {#{% include create-id.html heading="fds-modal-opener" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut | Beskrivelse                                                                                                                                                               |
+|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| modal-id | Sæt ID'et på den `fds-modal`, der skal åbnes.                                                                                                                             |
+| ready    | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event                  | Beskrivelse                                                                                                                 |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| fds-modal-opener-click | Udløses når der klikkes på elementet i `fds-modal-opener`. `event.detail.modalId` indeholder ID'et på den modal, der åbnes. |
+
+### fds-modal-closer {#{% include create-id.html heading="fds-modal-closer" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut     | Beskrivelse                                                                                                                                                                 |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| return-value | Sæt den returværdi, dialogen skal have, når den lukkes via dette element.                                                                                                  |
+| ready        | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event                  | Beskrivelse                                                                                                              |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| fds-modal-closer-click | Udløses når der klikkes på elementet i `fds-modal-closer`. `event.detail.returnValue` indeholder den angivne returværdi. |
+
+## Referencer {#{% include create-id.html heading="Referencer" append="-webcomponent" %}}
+
+{% include links/external-link.html linktext="HTML Living Standard, 6.10.3 The CloseWatcher interface, cancel-eksempel" %}

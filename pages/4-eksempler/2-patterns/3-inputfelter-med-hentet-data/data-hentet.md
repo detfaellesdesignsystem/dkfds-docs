@@ -4,7 +4,7 @@ parentlink: "/eksempler/patterns/"
 layout: styleguide
 title: Inputfelter med hentet data
 lead: En formular kan i visse situationer indeholde felter, der er udfyldt på forhånd med automatisk hentet data. Denne data skal nogen gange kunne ændres.
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 description: En formular med automatisk hentet data.
 ---
@@ -15,15 +15,15 @@ description: En formular med automatisk hentet data.
 
 ## Sådan bruges inputfelter med hentet data {#{% include create-id.html heading="Sådan bruges inputfelter med hentet data" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Dette pattern anvendes til visning af data, som er hentet automatisk ind i en formular. Det kan fx være data fra CVR- eller CPR-registret, som derved er forudfyldt. Dette letter udfyldelsen for brugeren, samtidig med at det giver brugeren mulighed for at redigere den hentede data, hvis dette er nødvendigt.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anvendes ikke til visning af data, som brugeren selv har tastet ind. Anvend da i stedet almindelige inputfelter eller strukturerede lister, hvis der er tale om en opsummeringsside. 
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Den hentede data vises i et read-only felt med en hjælpetekst, som gør opmærksom på, at der er tale om automatisk indhentet data. 
 
@@ -47,12 +47,14 @@ Det har ingen indflydelse på en formulars flow, om brugeren vælger at redigere
 let editButton = document.getElementById("hentetdata-rediger");
 
 editButton.addEventListener('click', function (e) {
-    let textfield = document.getElementById("hentetdata-redigerbar");
-    let hinttext = document.getElementById("hentetdata-redigerbar-hint");
+    const hentetDataEksempel = document.getElementById('hentetnavn-eksempel');
+    const textfield = hentetDataEksempel.querySelector('input');
+
     this.setAttribute('hidden', '');
-    hinttext.setAttribute('hidden', '');
+
+    hentetDataEksempel.querySelector('fds-help-text').remove();
     textfield.removeAttribute('readonly');
-    textfield.removeAttribute("aria-describedby");
+
     textfield.setAttribute('required', '');
     textfield.setAttribute('autocomplete', 'name');
     textfield.classList.remove('mr-3');

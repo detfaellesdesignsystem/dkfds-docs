@@ -2,8 +2,12 @@
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
             <div class="d-flex flex-wrap mr-8">
-                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                <button class="function-link mr-4" id="changeDemoTheme">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true">
+                        <use href="#palette"></use>
+                    </svg>
+                    <span id="changeDemoThemeText" class="sr-only"></span>
+                    <span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
                 </button>
                 <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
                 </button>
@@ -21,43 +25,33 @@
                 <a class="function-link" href="{{ include.nexttest }}">Næste</a>
                 {% endif %}
             </div>
+            <div class="ml-auto"><a class="function-link" href="/mastertest">Testoverblik</a></div>
         </div>
     </div>
 </aside>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let createLink = function(style) {
-            var lnk = document.createElement('link');
-            lnk.type='text/css';
-            lnk.rel='stylesheet';
-            switch (style) {
-                case "neutral":
-                    lnk.href= '/assets/style/test_neutral.css';
-                    break;
-                case "borger":
-                    lnk.href= '/assets/style/test_borger.css';
-                    break;
-                case "virk":
-                    lnk.href= '/assets/style/test_virk.css';
-                    break;
-                case 'normalization':
-                    lnk.href= '/assets/style/test_normalization.css';
-                    break;
-            }
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        const logo = document.getElementById('example-header-logo');
 
-        let setNeutralStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        // The two stylesheets in <head> are created by theme.js
+
+        let setNeutralStylesheet = function () {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/styleguide.css';
+            document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/styleguide_web_components.css';
+            if (logo) { logo.setAttribute('src', '/assets/img/logo-header-placeholder.png'); }
         };
 
-        let setBorgerStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        let setBorgerStylesheet = function () {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/styleguide_borgerdk.css';
+            document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/styleguide_borgerdk_web_components.css';
+            if (logo) { logo.setAttribute('src', '/assets/img/logo-borgerdk.svg'); }
         };
 
-        let setVirkStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        let setVirkStylesheet = function () {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/styleguide_virkdk.css';
+            document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/styleguide_virkdk_web_components.css';
+            if (logo) { logo.setAttribute('src', '/assets/img/logo_virk.svg'); }
         };
 
         document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
@@ -68,15 +62,14 @@
         if (document.querySelectorAll('main h1').length > 0) {
             if (document.querySelector('main h1').textContent == 'HTML-elementer') {
                 normalize = true;
-                createLink("normalization");
+                document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_normalization.css';
+                document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/test_normalization.css';
             }
         }
         if (document.cookie.includes('theme=borger') && !normalize) {
-            createLink("borger");
             document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
         }
         else if (document.cookie.includes('theme=virk') && !normalize) {
-            createLink("virk");
             document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
         }
 

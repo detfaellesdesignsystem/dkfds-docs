@@ -14,12 +14,20 @@ collections:
   preview-components:
     output: true
     permalink: /:path/
+  example-pages:
+    output: true
+    permalink: /:path/
 defaults:
   - 
     scope:
       path: "_components/*.md"
     values:
       layout: "styleguide"
+  - 
+    scope:
+      path: "_example-pages/*.md"
+    values:
+      layout: "show-example-new-page"
 
 # Build settings
 highlighter: none

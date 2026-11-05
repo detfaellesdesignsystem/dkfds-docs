@@ -5,30 +5,30 @@ redirect_from:
 - "/kode/komponenter/drop-down/"
 - "/kode/komponenter/dropdown/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Dropdown
 lead: Dropdown lader brugeren vælge én blandt flere muligheder i en udfoldet liste.
 description: Dropdown kan bruges i tilfælde, hvor brugeren skal vælge mellem 5 og 15 værdier på en begrænset plads.
 tags:
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="select" title="Eksempel på dropdown" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Dropdown" code="Dropdown_Kode" %}
+{% include anchorlinks.html guidelines="Dropdown" code="Dropdown_Kode" webcomponent="Dropdown_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Anvend kun dropdown, når det er absolut nødvendigt og kun i tilfælde, hvor brugeren skal vælge mellem 5 til 15 værdier på en begrænset plads.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Lister med færre værdier end 5.
 
@@ -38,7 +38,7 @@ Brug tjekbokse fremfor dropdown, hvis brugeren skal vælge mere end 1 værdi.
 
 Brug ikke dropdown til navigering mellem sider, som den ikke er velegnet til.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Dropdown kræver ekstra aftestning på målgruppen pga. de kognitive udfordringer, de kan afføde.
 
@@ -79,7 +79,7 @@ Bemærk, at deaktiverede dropdowns hverken har kontrastkrav eller kan få fokus 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="select" copybutton=true %}
 
@@ -92,3 +92,50 @@ Brug dropdown i begrænset omfang. Værdierne i en dropdown er ikke umiddelbart 
 ## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
 
 {% include code/syntax.html component="select-disabled" link=true copybutton=true guidelines="/komponenter/dropdown/#deaktiveret" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-select" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Fejl {#{% include create-id.html heading="Fejl" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-select-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-select-help" heading_tag="h4" subheading_tag="h5" %}
+
+### Obligatoriske og frivillige dropdown {#{% include create-id.html heading="Obligatoriske og frivillige dropdown" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-select-required" heading_tag="h4" subheading_tag="h5" %}
+
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-select-disabled" heading_tag="h4" subheading_tag="h5" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+### fds-select {#{% include create-id.html heading="fds-select" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut             | Beskrivelse                                                                                                                                               |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| show-required-status | Viser om dropdown er obligatorisk eller frivillig baseret på `required`-attributten. Indsæt en tekst i attributten for at overskrive default-teksten. |
+
+### fds-help-text {#{% include create-id.html heading="fds-help-text" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-help-text.html %}
+
+### fds-error-message {#{% include create-id.html heading="fds-error-message" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-error.html %}

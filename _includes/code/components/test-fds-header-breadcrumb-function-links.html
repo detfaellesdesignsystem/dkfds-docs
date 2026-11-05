@@ -1,0 +1,102 @@
+<header class="header">
+    <fds-portal-info>
+        <a slot="logo" href="#"
+            target="_blank"><img id="example-header-logo" src="/assets/img/logo_virk.svg" alt="Portalnavn"></a>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener"
+            modal-id="menu1">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+        <button slot="log-off-button"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#lock"></use>
+            </svg>Log af</button>
+        <p slot="user">Anders Andersen, Forsikringens Forsikringsfirma</p>
+    </fds-portal-info>
+
+    <fds-solution-info>
+        <a slot="solution-heading" href="#">Løsningstitel</a>
+        <div slot="additional-info" class="d-none d-lg-block">
+            <p><strong class="authority-name">Myndighedsnavn</strong></p>
+            <p>Support: 12 34 56 78</p>
+        </div>
+    </fds-solution-info>
+
+    <fds-modal variant="drawer" id="menu1" class="d-block d-lg-none" heading="Menu"
+        heading-id="top-heading-9fd04505">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+
+                <fds-solution-info>
+                    <div slot="additional-info">
+                        <p><strong class="authority-name">Myndighedsnavn</strong></p>
+                        <p>Support: 12 34 56 78</p>
+                    </div>
+                </fds-solution-info>
+
+                <fds-portal-info>
+                    <button slot="log-off-button"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#lock"></use>
+                        </svg>Log af</button>
+                    <p slot="user"><span class="mb-3">Anders
+                            Andersen</span><span>Forsikringens Forsikringsfirma</span></p>
+                </fds-portal-info>
+            </div>
+        </dialog>
+    </fds-modal>
+</header>
+
+<div class="container pt-0">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <nav class="breadcrumbs mt-4" aria-label="Brødkrumme">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__link" href="#">Element 1</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#chevron-right"></use>
+                        </svg>
+                        <a class="breadcrumbs__link" href="#">Element 2</a>
+                    </li>
+                    <li class="breadcrumbs__list-item" aria-current="page">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#chevron-right"></use>
+                        </svg>
+                        Element 3
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div role="region" aria-label="Sidefunktioner">
+                <ul class="function-link-wrapper mt-3 mt-lg-4 mb-2 mb-lg-0">
+                    <li>
+                        <button class="function-link link-right">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true">
+                                <use href="#save"></use>
+                            </svg>Gem kladde</button>
+                    </li>
+                    <li>
+                        <button class="function-link link-right">
+                            <svg class="icon-svg" focusable="false" aria-hidden="true">
+                                <use href="#print"></use>
+                            </svg>Udskriv side</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-fds-header-breadcrumb-function-links</h1>
+        </div>
+    </div>
+</main>

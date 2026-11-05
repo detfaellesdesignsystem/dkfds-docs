@@ -7,7 +7,7 @@ redirect_from:
 - "/kode/komponenter/tekstfelter/"
 - "/kode/komponenter/inputfelter/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Inputfelter
 lead: Inputfelter lader brugeren indtaste kort information.
@@ -41,20 +41,20 @@ tags:
 - suffiks
 - sufix
 - sufiks
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="text-input" title="Eksempel på inputfelt" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Inputfelter" code="Inputfelter_Kode" %}
+{% include anchorlinks.html guidelines="Inputfelter" code="Inputfelter_Kode" webcomponent="Inputfelter_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug til input af information i form af bogstaver og tal eller en kombination af begge.
 
@@ -62,11 +62,11 @@ Brug inputfelter når det er nemmere for brugeren at skrive information end at v
 
 Brug når brugeren skal kunne copy paste information ind i en formular.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Når brugeren skal vælge ud fra et prædefineret sæt af værdier (fx nogle få bestemte datoer) eller hvis der er strenge krav til datakonsistens, oftest i en løsning uden klientside validering (hvis brugerens input-format kan skabe fejl på serversiden).
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Brug primært formularelementer, når der er behov for, at brugeren kan tilføje information, som ikke kan vælges ud fra prædefinerede værdier, eller som løsningen ikke automatisk kan forudse ud fra brugerens andre indtastninger.
 
@@ -183,11 +183,11 @@ Stop ikke indtastningen, når brugeren overskrider antallet af tegn. Vis i stede
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="text-input" copybutton=true %}
 
-### Brug attributten “autocomplete”
+### Brug attributten “autocomplete” {#{% include create-id.html heading="Brug attributten autocomplete" append="-kode" %}}
 
 Brug `autocomplete` på inputfelter for at gøre det hurtigere for brugeren at udfylde formularen samt for at overholde reglerne for tilgængelighed ({% include links/external-link.html linktext="W3C (WCAG 2.1): Understanding SC 1.3.5: Identify Input Purpose (Level AA)" %}).
 
@@ -223,7 +223,7 @@ Hvis de fleste felter i en selvbetjeningsløsning er påkrævede, noterer man "(
 
 Husk at medtage de to beskeder skjult med klassen `sr-only`. Disse anvendes af skærmlæsere til at give info og status på indtastningen til brugeren.
 
-### JavaScript
+### JavaScript {#{% include create-id.html heading="JavaScript" append="-kode" %}}
 
 Karakterbegrænsning kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med `init()`.
 
@@ -290,7 +290,7 @@ Inputfelter har en standard bredde på 32rem. For at ændre bredden bruges neden
 - `input-width-l` har en bredde på 40rem
 - `input-width-xl` har en bredde på 48rem
 
-### Bredde med tegn
+### Bredde med tegn {#{% include create-id.html heading="Bredde med tegn" append="-kode" %}}
 
 For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedenstående klasser:
 
@@ -300,3 +300,99 @@ For at styre bredden på inputfelter efter tegn, skal der i stedet bruges nedens
 - `input-char-27` har en bredde der passer til 27 tegn
 
 For at tilføje flere inputbredder, der er styret af tegn, skal der tilføjes klassen `input-char-X`, hvor det nye tal skal erstattes med X.
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-example" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Fejl {#{% include create-id.html heading="Fejl" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-help-text" heading_tag="h4" subheading_tag="h5" %}
+
+### Obligatoriske og frivillige inputfelter {#{% include create-id.html heading="Obligatoriske og frivillige inputfelter" append="-webcomponent" %}}
+
+#### Felt markeret obligatorisk
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-required" heading_tag="h5" subheading_tag="h6" %}
+
+#### Felt markeret frivilligt
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-optional" heading_tag="h5" subheading_tag="h6" %}
+
+#### Ændret tekst
+
+Det er muligt at ændre teksten, der markerer feltet enten obligatorisk eller frivilligt. Dette kan fx være nødvendigt i løsninger på andre sprog end dansk.
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-required-changed" heading_tag="h5" subheading_tag="h6" %}
+
+### Read-only {#{% include create-id.html heading="Read-only" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-readonly" heading_tag="h4" subheading_tag="h5" %}
+
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-disabled" heading_tag="h4" subheading_tag="h5" %}
+
+### Præfiks og suffiks {#{% include create-id.html heading="Præfiks og suffiks" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-prefix" heading_tag="h4" subheading_tag="h5" %}
+
+### Karakterbegrænsning {#{% include create-id.html heading="Karakterbegrænsning" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-character-limit" heading_tag="h4" subheading_tag="h5" %}
+
+### Feltbredde {#{% include create-id.html heading="Feltbredde" append="-webcomponent" %}}
+
+#### Input bredde med rem
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-remwidth" heading_tag="h5" subheading_tag="h6" %}
+
+#### Input bredde med tegn
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-tegnwidth" heading_tag="h5" subheading_tag="h6" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+### fds-input {#{% include create-id.html heading="fds-input" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut             | Beskrivelse                                                                                                                                               |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| show-required-status | Viser om inputfeltet er obligatorisk eller frivilligt baseret på `required`-attributten. Indsæt en tekst i attributten for at overskrive default-teksten. |
+| input-maxwidth       | Angiver inputfeltets maksimale bredde. Angives som et tal (4, 8, 11, 27) eller en størrelsesværdi (xxs, xs, s, m, l, xl).                                 |
+
+### fds-help-text {#{% include create-id.html heading="fds-help-text" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-help-text.html %}
+
+### fds-error-message {#{% include create-id.html heading="fds-error-message" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-error.html %}
+
+### fds-input-affix {#{% include create-id.html heading="fds-input-affix" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut     | Beskrivelse                                        |
+|--------------|------------------------------------------------------|
+| input-prefix | Indsæt et præfiks-element (tekst før inputfeltet).  |
+| input-suffix | Indsæt et suffiks-element (tekst efter inputfeltet). |
+
+### fds-character-limit {#{% include create-id.html heading="fds-character-limit" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-character-limit.html %}

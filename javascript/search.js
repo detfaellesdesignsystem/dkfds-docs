@@ -286,7 +286,7 @@ function sort(result, query){
 
             // priority category
             switch (page.category) {
-                case "Komponenter_category":
+                case "komponenter_menu":
                     matched.category = 1;
                     break;
                 case "Kode_category":
@@ -295,7 +295,7 @@ function sort(result, query){
                 case "Design_category":
                     matched.category = 3;
                     break;
-                case "Kom_i_gang_category":
+                case "kom_i_gang_menu":
                     matched.category = 4;
                     break;
                 case "Om_designsystemet_category":

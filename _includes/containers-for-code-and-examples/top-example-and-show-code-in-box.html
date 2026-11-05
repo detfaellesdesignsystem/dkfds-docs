@@ -1,0 +1,33 @@
+{% if include.example and include.example != '' %}
+<div class="show-code-in-box{% if include.classes %} {{ include.classes }}{% endif %}">
+    {% if include.only_code != true %}
+    <div class="open-in-new-window">
+        <a href="/eksempel/{{ include.example }}/" class="function-link" target="_blank">
+            <svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#open-in-new"></use>
+            </svg>Åbn eksempel i nyt vindue
+        </a>
+    </div>
+    <div class="top-example">
+        {% include code-examples/{{ include.example }}.html %}
+    </div>
+    {% endif %}
+    <div class="code-in-box">
+        {% if include.collapsable != false and include.only_code != true %}<fds-accordion heading="Vis kode" heading-level="{{ include.heading_tag | default: 'h2' }}" content-id="example-box-{{ include.example }}">{% endif %}
+            <div class="code-content{% if include.only_code == true %} only-code{% endif %}">
+                {% if include.only_code != true %}<{{ include.subheading_tag | default: "h2" }} class="h4 mt-0">Web Component</{{ include.subheading_tag | default: "h2" }}>{% endif %}
+                <div class="code-container" tabindex="0">
+                    <div class="scroll-container">
+                        <figure aria-label="{% if include.only_code != true %}Web Component, {% endif %}kode">
+                            <pre><code class="language-html" data-lang="html">{% include output-files-from-build/highlighted-examples/{{ include.example }}.html %}</code></pre>
+                        </figure>
+                    </div>
+                </div>
+                <div class="copy-code-wrapper">
+                    <button class="function-link copy-code" aria-label="Kopiér kode"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#copy"></use></svg>Kopiér</button>
+                </div>
+            </div>
+        {% if include.collapsable != false and include.only_code != true %}</fds-accordion>{% endif %}
+    </div>
+</div>
+{% endif %}

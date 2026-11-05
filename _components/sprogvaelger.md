@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/komponenter/sprogvaegler/"
 - "/kode/komponenter/sprogvaelger/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Sprogvælger
 lead: En sprogvælger bruges hvis løsningen udbydes på mere end et sprog. Den giver
@@ -25,17 +25,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug en sprogvælger når du gerne vil vise en løsning i flere sprog.
 
 Placeres nederst i footeren.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke sprogvælger, hvis løsningen kun findes i ét sprog.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Sprogvælgeren placeres altid nederst i footeren. Denne placering giver fleksibilitet og understøtter brugen af alle headertyper.
 
@@ -77,7 +77,7 @@ Bemærk, at der er ekstra tekst gemt i koden som skal oversættes for hvert spro
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="language-switcher" copybutton=true %}
 

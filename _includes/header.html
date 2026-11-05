@@ -1,0 +1,56 @@
+<header class="header">
+    <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
+
+    <fds-solution-info>
+        <div slot="solution-heading" class="d-flex flex-wrap align-items-center">
+            <a href="/" {% if site.environment=="development" %} class="mr-4" {% endif %}>Det Fælles Designsystem</a>{% if site.environment ==
+            "development" %}<strong class="badge badge-error">Develop</strong>{% endif %}
+        </div>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener" modal-id="mobile-menu">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+    </fds-solution-info>
+
+    <!-- Desktop main menu-->
+    <fds-main-menu>
+        <div class="main-menu-inner d-block d-lg-flex">
+            <nav aria-label="Hovedmenu" class="d-none d-lg-block">
+                <ul>
+                    {%
+                    include nav/nav-desktop.html
+                    links=site.data.nav.main_menu
+                    %}
+                </ul>
+            </nav>
+            {% unless page.search %}
+            <div class="search-form">
+                <form method="get" action="/search/" id="menuSearchForm" role="search">
+                    <div class="form-group search">
+                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
+                        <button class="button button-search" type="submit" id="searchbtn">Søg</button>
+                    </div>
+                </form>
+            </div>
+            {% endunless %}
+        </div>
+    </fds-main-menu>
+
+    <fds-modal id="mobile-menu" variant="drawer" heading="Menu" class="d-block d-lg-none">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+                <fds-main-menu>
+                    <nav aria-label="Hovedmenu og undermenuer">
+                        <ul>
+                            {% include nav/nav-mobile.html links=site.data.nav.main_menu %}
+                        </ul>
+                    </nav>
+                </fds-main-menu>
+            </div>
+        </dialog>
+    </fds-modal>
+</header>

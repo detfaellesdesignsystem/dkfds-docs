@@ -1,0 +1,71 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Toggle Switch</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Simpel toggle switch</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <fds-toggle-switch label="Dette er en toggle switch"></fds-toggle-switch>
+            <fds-toggle-switch label="Dette er en aktiveret toggle switch"
+                state="on"></fds-toggle-switch>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Toggle switch i gruppe</h2>
+        </div>
+        <div class="col-12">
+            <div role="group" aria-labelledby="toggle-switch-heading"
+                class="w-percent-100 w-percent-sm-60 w-percent-md-40">
+                <h2 class="h5 mb-4 mt-0" id="toggle-switch-heading">Indstillinger</h2>
+                <fds-toggle-switch label="Toggle switch nummer 1"
+                    state="on"></fds-toggle-switch>
+                <fds-toggle-switch label="Anden toggle switch i gruppen"
+                    state="off"></fds-toggle-switch>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Reagér på events</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <fds-toggle-switch label="Aktiver for at se endnu en toggle switch"
+                id="listen-for-events"></fds-toggle-switch>
+            <fds-toggle-switch label="Dette er en toggle switch" id="react-to-events"
+                hidden></fds-toggle-switch>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Disabled toggle switch</h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <fds-toggle-switch label="Dette er en disabled, slukket toggle switch"
+                disabled-switch="true"></fds-toggle-switch>
+            <fds-toggle-switch label="Dette er en disabled, tændt toggle switch"
+                disabled-switch="true" state="on"></fds-toggle-switch>
+        </div>
+    </div>
+
+</main>
+
+<script>
+    document.getElementById('listen-for-events').addEventListener('fds-toggle-on', function(
+        event) {
+        document.getElementById('react-to-events').removeAttribute('hidden');
+    });
+    document.getElementById('listen-for-events').addEventListener('fds-toggle-off', function(
+        event) {
+        document.getElementById('react-to-events').setAttribute('hidden', '');
+    });
+</script>

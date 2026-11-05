@@ -3,7 +3,9 @@
   {% if page.url contains "/kode/komponenter/" or page.url contains "/kode/grid/" or page.url contains "/kode/typografi/" or page.url contains "/kode/ikoner/" or page.url contains "/kode/ikoner/" %}
   {% assign title = page.title | append: ' (Kode)' | append: ' | ' | append: title %}
   {% else %}
-  {% assign title = page.title | append: ' | ' | append: title %}
+  {% assign display_title = page.title %}
+  {% if page.title_en %}{% assign display_title = display_title | append: ' (' | append: page.title_en | append: ')' %}{% endif %}
+  {% assign title = display_title | append: ' | ' | append: title %}
   {% endif %}
 {% endif %}
 <title>{{ title }}</title>

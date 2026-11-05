@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/komponenter/footers/"
 - "/kode/komponenter/footer/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Footer
 lead: Footeren markerer enden på siden og indeholder informationer, som guider brugeren videre.
@@ -24,7 +24,7 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Footeren fungerer som sidens afslutning og indeholder altid ansvarlig myndighed, herunder support- og kontaktinformationer, samt tilgængelighedserklæring og cookieoplysninger. Footeren kan også anvendes til at sende brugere videre ved at linke ud af selvbetjeningsløsningen.
 
@@ -62,13 +62,13 @@ Se hvordan komponenten bruges i de forskellige {% include links/internal-link.ht
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="footer-simple" copybutton=true %}
 
 Ovenstående indsættes i bunden af siden, under `<main>`.
 
-### Opsætning
+### Opsætning {#{% include create-id.html heading="Opsætning" append="-kode" %}}
 
 #### Én række
 
@@ -80,7 +80,7 @@ Man kan indsætte et {% include links/internal-link.html linktext="grid" %} med 
 
 {% include links/component-guideline-link.html linktext="Se eksempler på forskellige sammensætninger" %}.
 
-### Links
+### Links {#{% include create-id.html heading="Links" append="-kode" %}}
 
 Links i footer defineres med klassen `function-link` på `<a>`.
 

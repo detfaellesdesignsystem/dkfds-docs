@@ -1,0 +1,42 @@
+<h4>Attributter</h4>
+
+<table class="table table--responsive-headers">
+    <thead>
+        <tr>
+            <th>Attribut</th>
+            <th>Beskrivelse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>ID for hjælpeteksten. Hvis denne er udeladt, genereres et tilfældigt ID.</td>
+        </tr>
+        <tr>
+            <td>hidden</td>
+            <td>Skjuler hjælpeteksten. Skal sættes til <code>true</code> eller være tom for at tage effekt.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Events</h4>
+
+<table class="table table--responsive-headers">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Beskrivelse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>help-text-callback</td>
+            <td>Udløses på det omsluttende element, når hjælpeteksten tilføjes, fjernes, eller dens <code>hidden</code>-attribut ændres.</td>
+        </tr>
+        <tr>
+            <td>help-text-visibility-changed</td>
+            <td>Udløses på det omsluttende element, når <code>hidden</code>-attributten ændres. <code>event.detail.helptextId</code> indeholder
+                hjælpetekstens ID, og <code>event.detail.isHidden</code> angiver, om den er skjult.</td>
+        </tr>
+    </tbody>
+</table>

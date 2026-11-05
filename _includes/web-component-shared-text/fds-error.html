@@ -1,0 +1,53 @@
+<h4>Attributter</h4>
+
+<table class="table table--responsive-headers">
+    <thead>
+        <tr>
+            <th>Attribut</th>
+            <th>Beskrivelse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>id</td>
+            <td>ID for fejlbeskeden. Hvis denne er udeladt, genereres et tilfældigt ID.</td>
+        </tr>
+        <tr>
+            <td>icon-text</td>
+            <td>Skærmlæsertekst for ikonet. Default er <code>Fejl</code>.</td>
+        </tr>
+        <tr>
+            <td>hidden</td>
+            <td>Skjuler fejlbeskeden. Skal sættes til <code>true</code> eller være tom for at tage effekt.</td>
+        </tr>
+        <tr>
+            <td>targets</td>
+            <td>Bruges kun af <code>fds-date-input</code>. Angiv ID'er eller navne på de inputfelter, fejlbeskeden er relateret til, separeret med komma.</td>
+        </tr>
+        <tr>
+            <td>message</td>
+            <td>Teksten der skal vises i fejlbeskeden. Kan også angives som indhold i elementet.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Events</h4>
+
+<table class="table table--responsive-headers">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Beskrivelse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>error-message-callback</td>
+            <td>Udløses på det omsluttende element, når fejlbeskeden tilføjes, fjernes, eller en af dens attributter ændres.</td>
+        </tr>
+        <tr>
+            <td>error-message-visibility-changed</td>
+            <td>Udløses på det omsluttende element, når <code>hidden</code>-attributten ændres. <code>event.detail.errorId</code> indeholder fejlbeskedens ID, og <code>event.detail.isHidden</code> angiver, om den er skjult.</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,7 +1,7 @@
 ---
 permalink: "/eksempler/"
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 title: Eksempler
 lead: Eksemplerne viser, hvordan forskellige typer af selvbetjeningsløsninger kan sættes op i layout og flow.
 description: Eksempler på løsninger, der gør brug af Det Fælles Designsystem
@@ -34,6 +34,6 @@ Du bør bestræbe dig på at følge standarderne for opsummerings- og kvittering
     </li>
 </ul>
 
-## Designsystemet er bygget med sig selv
+## Designsystemet er bygget med sig selv {#{% include create-id.html heading="Designsystemet er bygget med sig selv" %}}
 
 Du kan bruge designsystem.dk som eksempel, da det er bygget med sig selv og overholder sine egne regler.

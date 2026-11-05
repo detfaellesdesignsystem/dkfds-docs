@@ -4,7 +4,7 @@ redirect_from:
 - "/farver/"
 - "/design/farver/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Farver
 lead: Da designsystemet er fælles for både borger.dk og Virk er der farver til hver
@@ -42,7 +42,7 @@ tags:
 
 Din selvbetjeningsløsning skal, alt efter hvilken portal løsningen skal på, gøre brug af den givne portals primærfarve.
 
-<h3>Primærfarver for borger.dk</h3>
+<h3 id="primaerfarver-for-borger">Primærfarver for borger.dk</h3>
 
 Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til borger.dk
 
@@ -61,7 +61,7 @@ Du kan bruge borger.dk primærfarven på få centrale elementer, såsom på prim
   </div>
 </div>
 
-<h3>Primærfarver for Virk</h3>
+<h3 id="primaerfarver-for-virk">Primærfarver for Virk</h3>
 
 Du kan bruge Virk primærfarven på få centrale elementer, såsom på primærknappen og i menuer i designsystemet for at skabe sammenhæng til Virk.
 
@@ -121,7 +121,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 ## Besked-farver (alerts) {#{% include create-id.html heading="Besked-farver (alerts)" %}}
 
-### Succes
+### Succes {#{% include create-id.html heading="Succes" %}}
 
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
@@ -134,7 +134,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-### Advarsel
+### Advarsel {#{% include create-id.html heading="Advarsel" %}}
 
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
@@ -147,7 +147,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-### Fejl
+### Fejl {#{% include create-id.html heading="Fejl" %}}
 
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
@@ -160,7 +160,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
   </div>
 </div>
 
-### Info
+### Info {#{% include create-id.html heading="Info" %}}
 
 <div class="row color-scale color-scale-spacing">
   <div class="col col-12 col-md-3 mb-4 md-md-0">
@@ -233,7 +233,7 @@ Designsystemets generelle palette består mest af gråtoner og nogle få dediker
 
 Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former for visuelle fremstillinger til kommunikative formål.
 
-### Violet data palette
+### Violet data palette {#{% include create-id.html heading="Violet data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -274,7 +274,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-### Pink Violet data palette
+### Pink Violet data palette {#{% include create-id.html heading="Pink Violet data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -315,7 +315,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-### Orange data palette
+### Orange data palette {#{% include create-id.html heading="Orange data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -356,7 +356,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-### Gul Rød data palette
+### Gul Rød data palette {#{% include create-id.html heading="Gul Rød data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -397,7 +397,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-### Blå data palette
+### Blå data palette {#{% include create-id.html heading="Blå data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -438,7 +438,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-### Grøn Blå data palette
+### Grøn Blå data palette {#{% include create-id.html heading="Grøn Blå data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">
@@ -479,7 +479,7 @@ Du kan bruge datavisualiseringsfarver til grafer, diagrammer eller andre former 
   </div>
 </div>
 
-### Grøn data palette
+### Grøn data palette {#{% include create-id.html heading="Grøn data palette" %}}
 
 <div class="row color-scale no-gutters">
   <div class="col col-12 col-md mb-4 md-md-0">

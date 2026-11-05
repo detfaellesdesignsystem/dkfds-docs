@@ -3,7 +3,7 @@ permalink: "/komponenter/badges/"
 redirect_from:
 - "/kode/komponenter/badges/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Badges
 lead: Badges er grafiske markører, som du kan bruge til at gøre opmærksom på nyt eller
@@ -24,17 +24,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug badges til at gøre opmærksom på ændringer, nyt eller vigtigt indhold.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke badge, hvis placeringen af det får brugeren til at tro, det er en knap. Test altid for dette, når du vil anvende badges.
 
 Brug ikke badges på sider, hvor indholdet bliver udskiftet dynamisk. Fx på nyhedssider, hvor brugeren nemt kan se, hvad der er det nyeste indhold, når det blot står øverst.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Brug ord og begreber, som brugeren kan genkende fra løsningen.
 
@@ -62,7 +62,7 @@ Vær varsom med at markere for meget indhold med badges – brug dem kun, hvor d
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="badges" copybutton=true %}
 

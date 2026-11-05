@@ -34,14 +34,21 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/kom-i-gang/implementering-kode/"{{ classes }}>{{ include.linktext }}{% if include.icon %}{{ icon }}{% endif %}</a>
 
     {%- when "hent kodepakken",
+             "hente kodepakken",
              "kodepakke" -%}
         <a href="/kom-i-gang/implementering-kode/hent-kodepakken/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "hentet via npm" -%}
         <a href="/kom-i-gang/implementering-kode/hent-kodepakken/#hent-via-npm"{{ classes }}>{{ include.linktext }}</a>
 
+    {%- when "web components i beta-version" -%}
+        <a href="/kom-i-gang/web-components-i-beta-version/"{{ classes }}>{{ include.linktext }}</a>
+
     {%- when "justering af tema og stylesheets" -%}
         <a href="/kom-i-gang/implementering-kode/justering/"{{ classes }}>{{ include.linktext }}</a>
+
+    {%- when "kom i gang med web components" -%}
+        <a href="/kom-i-gang/implementering-kode/kom-i-gang-med-web-components/"{{ classes }}>{{ include.linktext }}</a>
 
     {%- when "hjælpeklasser (utilities)" -%}
         <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/"{{ classes }}>{{ include.linktext }}</a>

@@ -35,7 +35,7 @@ redirect_from:
 - /pages/eksempler/boernetilskud/boernetilskud-oversigt/
 - /pages/eksempler/boernetilskud/boernetilskud-oversigt-2/
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 title: Selvbetjeningsløsninger
 description: Eksempler på selvbetjeningsløsninger, der gør brug af Det Fælles Designsystem

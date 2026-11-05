@@ -146,6 +146,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "knapper" -%}
         <a href="/komponenter/knapper/">{{ include.linktext }}</a>
 
+    {%- when "knapgruppe" -%}
+        <a href="/komponenter/knapper/#knapgruppe">{{ include.linktext }}</a>
+
     {%- when "retningslinjer for primærknap",
              "retningslinjer for knapper" -%}
         <a href="/komponenter/knapper/#saadan-bruges-komponenten">{{ include.linktext }}</a>
@@ -174,6 +177,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "modalvindue, som kræver handling" -%}
         <a href="/komponenter/modal/#modal-som-kraever-handling">{{ include.linktext }}</a>
+
+    {%- when "multiselect" -%}
+        <a href="/komponenter/multiselect/">{{ include.linktext }}</a>
 
     {%- when "overflow menu", 
              "overflowmenu",
@@ -285,7 +291,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="/komponenter/tooltip/#radioknap-med-tooltip">{{ include.linktext }}</a>
 
     {%- when "trinindikator",
-             "trinindikatoren" -%}
+             "trinindikatoren",
+             "trinindikatorens" -%}
         <a href="/komponenter/trinindikator/">{{ include.linktext }}</a>
 
     {%- when "responsive trinindikatorers", 

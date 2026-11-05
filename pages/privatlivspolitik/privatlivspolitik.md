@@ -9,6 +9,30 @@ description: Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi in
 tags:
 ---
 
+<div class="row card-row">
+    <div class="col-12 mt-805">
+        <section class="card">
+            <div class="card-content">
+                <h2 class="card-heading">Det Fælles Designsystem bruger cookies</h2>
+                <p>Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen. Alle indsamlede data anonymiseres.</p>
+                <div id="cookieCardStatus">
+                    <div class="accepted mt-4 d-none">
+                        <p><strong>Du har accepteret cookies.</strong> Hvis du fortryder din accept af, at designsystem.dk anvender cookies, skal du klikke på knappen "Nej til cookies".</p>
+                    </div>
+                    <div class="rejected mt-4 d-none">
+                        <p><strong>Du har sagt nej til cookies.</strong> Hvis du fortryder og vil acceptere, at designsystem.dk anvender cookies, skal du klikke på knappen "Acceptér cookies".</p>
+                    </div>
+                </div>
+                <div class="sr-only" aria-live="polite" id="aria-live-area"></div>
+                <div class="button-group card-actions">
+                    <button type="button" class="button button-secondary" id="cookieCardAccept">Acceptér cookies</button>
+                    <button type="button" class="button button-secondary" id="cookieCardReject">Nej til cookies</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
 {% include anchorlinks.html headings="Privatlivspolitik_og_cookies" %}
 
 ## Privatlivspolitik {#{% include create-id.html heading="Privatlivspolitik" %}}
@@ -17,7 +41,7 @@ På denne side kan du læse om vores behandling af dine personoplysninger og din
 
 Erhvervsstyrelsen behandler de oplysninger, du giver os eller vi indsamler om dig, i overensstemmelse med gældende regler. Vi er bevidste om, at dine oplysninger skal behandles med respekt for oplysningernes fortrolighed og for dit privatliv.
 
-### Vi er den dataansvarlige - hvordan kontakter du os?
+### Vi er den dataansvarlige - hvordan kontakter du os? {#{% include create-id.html heading="Vi er den dataansvarlige - hvordan kontakter du os" %}}
 
 Erhvervsstyrelsen er dataansvarlig for behandling af de oplysninger, som vi har modtaget om dig. Du kan kontakte os her:
 
@@ -28,11 +52,11 @@ CVR-nr. 10150817<br />
 Telefon: 35 29 10 00<br />
 Mail: {% include links/internal-link.html linktext="erst@erst.dk" %}
 
-### Formålene med og retsgrundlaget for behandlingen af dine personoplysninger
+### Formålene med og retsgrundlaget for behandlingen af dine personoplysninger {#{% include create-id.html heading="Formålene med og retsgrundlaget for behandlingen af dine personoplysninger" %}}
 
 Hvis du siger ja til cookies, anvender vi data til at forbedre Det Fælles Designsystem (FDS) og give dig/myndigheden et bedre produkt. Vi indsamler desuden oplysninger til en anonymiseret statistik over, hvor mange brugere der åbner deres mails blandt de, som er tilmeldt vores nyhedsbrev. Databehandleren opbevarer nyhedsbrevsabonnenternes e-mailadresser, indtil abonnenten selv afmelder sig nyhedsbrevet.
 
-### Hvem har adgang til dine oplysninger?
+### Hvem har adgang til dine oplysninger? {#{% include create-id.html heading="Hvem har adgang til dine oplysninger" %}}
 
 Dine personoplysninger bliver videregivet til følgende modtagere:
 
@@ -40,7 +64,7 @@ Medarbejderne i Erhvervsstyrelsen har adgang til dine personoplysninger i det om
 
 Erhvervsstyrelsen benytter en databehandler, der efter instruks fra Erhvervsstyrelsen har adgang til dine personoplysninger i det omfang, det er nødvendigt for at levere deres tjenester til os. Vi videregiver ikke dine personoplysninger til andre end vores databehandler. 
 
-### Opbevaring af dine personoplysninger
+### Opbevaring af dine personoplysninger {#{% include create-id.html heading="Opbevaring af dine personoplysninger" %}}
 
 Dine personoplysninger opbevares sikkert og fortroligt i IT-systemer med kontrolleret og begrænset adgang og på servere placeret i særligt sikrede lokaler. 
 
@@ -50,14 +74,14 @@ Oplysninger om dig gemmes så længe, det er nødvendigt for at kunne opfylde vo
 
 Ved bekræftet afmelding, eller hvis du ikke har bekræftet din tilmelding til et abonnement, gemmer vi dine personoplysninger i op til syv dage. 
 
-### Retten til at trække samtykke tilbage
+### Retten til at trække samtykke tilbage {#{% include create-id.html heading="Retten til at trække samtykke tilbage" %}}
 Du har til enhver tid ret til at trække dit samtykke tilbage, konsekvensen heraf vil være at du ikke længere kan modtage nyhedsbrev fra Det Fælles Designsystem.
 
 Ønsker du således at afmelde et eller flere af dine nyhedsabonnementer, kan du framelde dig/opdatere dine abonnementer via linket nederst på {% include links/internal-link.html linktext="tilmeldingssiden" %}. Du vil derefter ikke modtage nyheder fra det pågældende abonnement.
 
 Hvis du vælger at trække dit samtykke tilbage, påvirker det ikke lovligheden af vores behandling af dine personoplysninger på baggrund af dit tidligere meddelte samtykke og op til tidspunktet for tilbagetrækningen. Hvis du tilbagetrækker dit samtykke, har det derfor først virkning fra dette tidspunkt.
 
-### Dine rettigheder
+### Dine rettigheder {#{% include create-id.html heading="Dine rettigheder" %}}
 
 Du har efter databeskyttelsesforordningen en række rettigheder i forhold til vores behandling af oplysninger om dig. Rettighederne fremgår særligt af artikel 13-18 og artikel 20-22 i forordningen.
 
@@ -69,7 +93,7 @@ Herudover har du i visse tilfælde ret til at få behandlingen af dine personopl
 
 Endelig har du ret til at anmode Erhvervsstyrelsen om at modtage dine oplysninger i et almindeligt anvendt og maskinlæsbart format. Sådanne anmodninger skal fremsendes til Erhvervsstyrelsens databeskyttelsesrådgiver.
 
-### Klage til Datatilsynet
+### Klage til Datatilsynet {#{% include create-id.html heading="Klage til Datatilsynet" %}}
 
 Du har ret til at indgive en klage til Datatilsynet over FDS-behandling af dine oplysninger, hvis du mener, at behandlingen er i strid med databeskyttelsesforordningen.
 
@@ -77,24 +101,26 @@ Datatilsynet er den uafhængige statslige myndighed, som fører tilsyn med, at r
 
 ## Brug af cookies på Det Fælles Designsystem (FDS) {#{% include create-id.html heading="Brug af cookies på Det Fælles Designsystem (FDS)" %}}
 
-<h3>Hvad er en cookie?</h3>
+<h3 id="hvad-er-en-cookie">Hvad er en cookie?</h3>
 
 En cookie er et lille stykke kode, der bliver gemt på din computer, telefon eller hvad du bruger til at surfe på internettet med. Cookies har mange anvendelsesmuligheder. 
 
-<h3>Formålet med cookies på FDS</h3>
+<h3 id="formaal">Formålet med cookies på FDS</h3>
 På FDS bruges cookies til to formål:
-- Teknisk nødvendige cookies sættes altid ved besøg på FDS. Teknisk nødvendige cookies bruges til at huske, hvilket tema der skal anvendes på FDS, samt hvorvidt du har accepteret eller afvist statistiske cookies.
+- Teknisk nødvendige cookies sættes altid ved besøg på FDS. Teknisk nødvendige cookies bruges til at huske, hvilket tema der skal anvendes på FDS, om beskedbanneret skal vises eller skjules, samt hvorvidt du har accepteret eller afvist statistiske cookies.
 - Statistiske cookies bruges til at samle anonyme statistiske data om brugernes adfærd på FDS. Statistikken kan anvendes til at forbedre FDS, fordi vi kan finde uhensigtsmæssigheder og se, hvilke dele af FDS brugerne anvender. Vi kan desuden bruge data til at se, om FDS opfylder de mål, der er sat for sitet. Disse cookies sættes først efter du har fået information om formålet med dem og har accepteret dem.
 
-<h3>Cookies som er tekniske forudsætninger</h3>
+<h3 id="tekniske-forudsaetninger">Cookies som er tekniske forudsætninger</h3>
 
 Teknisk nødvendige cookies sikrer, at FDS fungerer korrekt. 
 
 Ved besøg på FDS sættes der en cookie, som husker det anvendte tema (enten "Borger.dk" eller "Virk"). Dette tema sættes tilfældigt ved første besøg og kan efterfølgende ændres nederst på siden i footeren.
 
+Der sættes en cookie hvis beskedbanneret lukkes, så det ikke vises ved besøg fremadrettet.
+
 Der sættes endnu en cookie, hvis du i cookiemeddelelsen enten vælger "Accepter cookies" eller "Nej tak til cookies".
 
-<h3>Cookies til statistik</h3>
+<h3 id="cookies-statistik">Cookies til statistik</h3>
 
 Vi samler anonymiseret statistik ved hjælp af statistikprogrammet Piwik PRO. Vi bruger statistikkerne til at finde uhensigtsmæssigheder på websitet, så vi kan forbedre din oplevelse af FDS.
 
@@ -102,50 +128,11 @@ Første gang du lander på FDS, ser du en meddelelse med information om cookies 
 
 Hvis du klikker på "Accepter cookies", sættes der cookies til at samle statistik og meddelelsen forsvinder. Oplysningerne er anonyme og bliver ikke koblet til dig som bruger.
 
-<h3>Cookies ved brugerundersøgelser</h3>
+<h3 id="cookies-brugerundersoegelser">Cookies ved brugerundersøgelser</h3>
 
 Når vi gennemfører brugerundersøgelser på FDS, anvender vi cookies, dels til at styre, hvor mange gange du som bruger ser invitationen til undersøgelsen, dels til at registrere, om du har svaret på undersøgelsen. På den måde sikrer vi, at du som bruger ikke ser invitationen til undersøgelsen igen, efter du har svaret.
 
-<h3>Stop med at samle statistik</h3>
-
-Ønsker du at vi stopper med at samle statistik om din brug af FDS, så kan du nedenfor ændre dit valg, hvormed dine besøg på FDS ikke længere vil blive registreret til forbedring af brugeroplevelsen. Vi bruger dog stadig en cookie for at huske dit valg.
-
-For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenunder vælge "nej" og efterfølgende trykke på knappen "gem".
-
-<form id="cookieForm" method="post" action="/">
-    <div class="form-group">
-        <fieldset>
-            <legend class="form-label">Må vi indsamle statistik om din brug af Det Fælles Designsystem (FDS)?</legend>
-            <div class="form-group-radio">
-                <input id="statCookiesYes" type="radio" name="statCookies" value="1" class="form-radio radio-large">
-                <label class="form-label" for="statCookiesYes">Ja, accepter cookies</label>
-            </div>
-            <div class="form-group-radio">
-                <input id="statCookiesNo" type="radio" name="statCookies" value="0" class="form-radio radio-large"/>
-                <label class="form-label" for="statCookiesNo">Nej</label>
-            </div>
-        </fieldset>
-    </div>
-    <div id="cookieButtons" class="mt-6 d-none">
-        <input type="hidden" id="originalValue" value="" />
-        <button type="submit" class="button button-primary" id="cookieSave">Gem</button>
-        <button type="button" class="button button-secondary" id="cookieCancel">Annuller</button>
-    </div>
-</form>
-<div class="alert alert-success alert--paragraph d-none" role="alert" id="cookieNoAlert">
-    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#success"></use></svg>
-    <div class="alert-body">
-        <p class="alert-text">Ok, vi samler ikke længere anonymiseret statistik til forbedring af brugeroplevelsen</p>
-    </div>
-</div>
-<div class="alert alert-success alert--paragraph d-none" role="alert" id="cookieYesAlert">
-    <svg class="icon-svg alert-icon" aria-label="Succes" focusable="false"><use href="#success"></use></svg>
-    <div class="alert-body">
-        <p class="alert-text">Tak, vi samler nu anonymiseret statistik til forbedring af brugeroplevelsen</p>
-    </div>
-</div>
-
-<h3>Varighed af cookies</h3>
+<h3 id="varighed">Varighed af cookies</h3>
 
 <div class="row">
     <div class="col-12 col-md-10 col-lg-8">
@@ -168,6 +155,12 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
                     </tr>
                     <tr>
                         <td>cookieOptOut</td>
+                        <td>Førstepartscookie</td>
+                        <td>Teknisk nødvendig</td>
+                        <td>12 måneder</td>
+                    </tr>
+                    <tr>
+                        <td>beta_message_closed</td>
                         <td>Førstepartscookie</td>
                         <td>Teknisk nødvendig</td>
                         <td>12 måneder</td>
@@ -256,11 +249,11 @@ For at undgå at der bliver sat statistikcookies fra Piwik PRO, skal du nedenund
     </div>
 </div>
 
-<h3>Sådan undgår eller sletter du cookies</h3>
+<h3 id="sletter">Sådan undgår eller sletter du cookies</h3>
 
 Ønsker du ikke, at FDS sætter cookies, kan du bruge funktionen her på siden til at slå cookies fra. Ønsker du ikke, at der bliver sat cookies generelt, kan du tilføje FDS til listen over websites, du gerne vil blokere cookies fra, i internetindstillingerne i din browser.
 
-<h3>Flere oplysninger om cookies</h3>
+<h3 id="flere-oplysninger">Flere oplysninger om cookies</h3>
 
 Her kan du læse om, hvad cookies kan bruges til:
 

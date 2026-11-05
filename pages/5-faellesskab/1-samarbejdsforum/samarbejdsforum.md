@@ -3,7 +3,7 @@ permalink: "/faellesskab/samarbejdsforum/"
 redirect_from:
 - "/omdesignsystemet/samarbejdsforum/"
 layout: styleguide
-category: Faellesskab_category
+category: faellesskab_menu
 subcategory: Fællesskab
 title: Samarbejdsforum
 lead: I forummet sparrer vi om Det Fælles Designsystem (FDS) og udviklingen fremadrettet.

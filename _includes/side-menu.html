@@ -1,0 +1,81 @@
+{%- assign pageCategory = site.data.nav[page.category] -%}
+
+{%- comment -%}
+----------------------------------------------------------------------------------------------------
+| page  | The page you visited and for which the aside is built                                    |
+| _page | The page currently handled in the for loop                                               |
+----------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<aside class="col-12 col-lg-3">
+    <nav class="fds-side-menu d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
+        {% if pageCategory %}
+        <ul>
+            {%- for link in pageCategory -%}
+
+            {%- assign _page = nil -%}
+
+            {%- if link.href -%}
+            {%- assign _page = link.href | resolve_permalink -%}
+            {%- endif %}
+
+            {%- if _page -%}
+            {% assign _current = false %}
+
+            {%- if _page.url == page.url %}
+            {%- assign _current = true %}
+            {%- endif %}
+            <li>
+                <a href="{{ _page.url | relative_url }}" {% if _current %} aria-current="page" {% endif %}>
+                    <span>{{ _page.title | smartify }}
+                        {% if _page.title_en %} <span class="d-inline" lang="en">({{ _page.title_en | smartify }})</span>{% endif %}
+                    </span>
+                </a>
+
+                {%- if link.submenu -%}
+
+                {%- assign _sublinks = site.data.nav[link.submenu] %}
+
+                {%- comment %}
+                ---------------------------------------------------------------
+                | Show submenu if current page is the parent or a child of it |
+                ---------------------------------------------------------------
+                {%- endcomment %}
+
+                {% if (_current or page.parentlink == _page.url) and _sublinks %}
+                <ul>
+                    {%- for sublink in _sublinks -%}
+
+                    {%- assign _subpage = nil -%}
+
+                    {%- if sublink.href -%}
+                    {%- assign _subpage = sublink.href | resolve_permalink %}
+                    {%- endif %}
+
+                    {%- if _subpage -%}
+                    {% assign _current = false %}
+                    {%- if _subpage.url == page.url %}
+                    {%- assign _current = true %}
+                    {%- endif %}
+                    <li>
+                        <a href="{{ _subpage.url | relative_url }}" {% if _current %} aria-current="page" {% endif %}>
+                            <span>{{ _subpage.title | smartify }}
+                                {%- if _subpage.title_en -%} <span class="d-inline" lang="en">({{ _subpage.title_en | smartify }})</span>{%- endif -%}
+                            </span>
+                        </a>
+                    </li>
+                    {%- endif %}
+                    {%- endfor %}
+                </ul>
+                {%- endif %}
+
+                {%- endif %}
+
+            </li>
+            {%- endif %}
+
+            {%- endfor %}
+        </ul>
+        {%- endif -%}
+    </nav>
+</aside>

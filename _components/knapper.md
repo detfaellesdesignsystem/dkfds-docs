@@ -4,9 +4,10 @@ redirect_from:
 - "/komponenter/buttons/"
 - "/kode/komponenter/knapper/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
-title: Knapper (Buttons)
+title: Knapper
+title_en: Buttons
 lead: Knapper lader brugeren udføre centrale funktioner.
 description: Knapper er grafiske elementer, som brugerne kan trykke eller klikke på
   og dermed udløse en funktion eller handling.
@@ -27,15 +28,15 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Du kan bruge de forskellige typer af knapper til at kommunikere centrale og vigtige funktioner til brugerne, såsom “Næste” trin i en selvbetjeningsløsning, eller ”Gem”, ”Rediger”, ”Log ud” m.fl.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke knapper til at navigere til andre sider. Der skal du i stedet anvende {% include links/internal-link.html linktext="links" %}.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Hierarkisk er der tre typer af knapper, Primær, Sekundær og Tertiær, der bruges til at fremhæve udvalgte handlinger.
 
@@ -59,7 +60,7 @@ Alle knapper har en “disabled” tilstand, men vi anbefaler ikke at benytte de
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Primærknap i fuld bredde på små skærme {#{% include create-id.html heading="fuld bredde" %}}
+### Primærknap i fuld bredde på små skærme {#{% include create-id.html heading="Primærknap i fuld bredde på små skærme" %}}
 
 På små skærme med kun én central handling kan primærknapper indsættes på siden med fuld bredde. Benyt kun denne variant til primærknapper og kun til små skærmstørrelser (breakpoint mobil).
 
@@ -116,7 +117,7 @@ Ikoner fungerer altid bedst i kombination med tekst. Anvend derfor altid {% inc
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="buttons" copybutton=true %}
 
@@ -142,7 +143,7 @@ Tilføj klassen `button-secondary` til knappen.
 
 Tilføj klassen `button-tertiary` til knappen.
 
-## Primærknap i fuld bredde på små skærme {#{% include create-id.html heading="fuld bredde" append="-kode" %}}
+## Primærknap i fuld bredde på små skærme {#{% include create-id.html heading="Primærknap i fuld bredde på små skærme" append="-kode" %}}
 
 {% include code/syntax.html component="buttons-full-width" link=true copybutton=true guidelines="/komponenter/knapper/#fuld-bredde" %}
 

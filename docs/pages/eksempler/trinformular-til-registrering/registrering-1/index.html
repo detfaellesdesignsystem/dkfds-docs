@@ -47,9 +47,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.3.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.3.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=11.3.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=12.0.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=12.0.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=12.0.0" as="script">
 
 <style>
   body {
@@ -57,10 +57,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.3.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=12.0.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.3.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=12.0.0">
 </noscript>
 
 </head>
@@ -591,8 +591,27 @@
 
 </div>
 
-<script src="/assets/js/theme.js?v=11.3.0"></script>
-<script src="/assets/js/styleguide.js?v=11.3.0"></script>
+<fds-modal id="fds-cookie-message" heading="Det Fælles Designsystem bruger cookies" heading-id="fds-cookie-message-heading" dismissible="false">
+    <dialog>
+        <form method="dialog">
+            <div class="scrollable-area has-fade pb-0">
+                <div class="modal-top"></div>
+                <p>Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen.</p>
+                <p>Alle indsamlede data anonymiseres.</p>
+                <p class="mb-2"><a href="/privatlivspolitik-cookies/">Læs mere om vores brug af cookies</a></p>
+            </div>
+            <div class="fixed-area">
+                <div class="button-group">
+                    <button class="button button-secondary cpAcceptBtn" type="submit" value="accept">Accepter cookies</button>
+                    <button class="button button-secondary cpDontAcceptBtn" type="submit" value="reject">Nej til cookies</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+</fds-modal>
+<script src="/assets/js/theme.js?v=12.0.0"></script>
+<script src="/assets/js/styleguide.js?v=12.0.0"></script>
+<script src="/assets/js/dkfds.js?v=12.0.0"></script> <!-- Web component script -->
 
 
 </body>

@@ -6,18 +6,17 @@ var calculateAnchorPosition = require('./calculate-anchor-position');
 /* Firefox needs html, others need body */
 var root = $('body, html');
 
-// capture that the enter key was used to "click"
-$('.anchorbox').on('keydown', 'a', function (e) {
+function handleAnchorKeydown(e) {
     var ENTER = 13;
     if (e.which === ENTER) {
         $(this).data('keypress', true);
     }
-});
+}
 
-$('.anchorbox').on('click', 'a', function (e) {
+function handleAnchorClick(e) {
     // long url splitting
-    var hashLocation  = $(this).attr('href').split('#')[ 1 ];
-    var scrollTopPos  = calculateAnchorPosition(hashLocation);
+    var hashLocation = $(this).attr('href').split('#')[1];
+    var scrollTopPos = calculateAnchorPosition(hashLocation);
 
     //if anchor doesn't exist on the page, or calc fails
     //then exit gracefully
@@ -27,6 +26,8 @@ $('.anchorbox').on('click', 'a', function (e) {
 
     e.preventDefault();
 
+    var clickedLink = $(this);
+
     root.animate({
         scrollTop: scrollTopPos,
     }, {
@@ -34,7 +35,7 @@ $('.anchorbox').on('click', 'a', function (e) {
         start: function () {
             var newHash = '#' + hashLocation;
 
-            if(history.pushState) {
+            if (history.pushState) {
                 history.pushState(null, null, newHash);
             }
             else {
@@ -43,7 +44,6 @@ $('.anchorbox').on('click', 'a', function (e) {
         },
         done: function () {
             // if keyboard was used, update keyboard focus to section
-            var link    = $(e.target);
             var section = $('#' + hashLocation);
 
             /* Add tabindex to make the top-id-element programmatically focusable. This moves the focus
@@ -52,10 +52,15 @@ $('.anchorbox').on('click', 'a', function (e) {
             section.attr('tabindex', '-1');
             section.focus();
 
-            if (link.data('keypress') === true) {
-                link.removeData('keypress');
+            if (clickedLink.data('keypress') === true) {
+                clickedLink.removeData('keypress');
             }
         },
     });
-});
+}
 
+$('.anchorbox').on('keydown', 'a', handleAnchorKeydown);
+$('.anchorbox').on('click', 'a', handleAnchorClick);
+
+$(document).on('keydown', '.heading-link', handleAnchorKeydown);
+$(document).on('click', '.heading-link', handleAnchorClick);

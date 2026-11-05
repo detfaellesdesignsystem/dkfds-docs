@@ -1,0 +1,254 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tjekbokse</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Simpel tjekboks</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox>
+                <input type="checkbox" name="checkbox-example">
+                <label>Tjekbox med label</label>
+            </fds-checkbox>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Hjælpetekst</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox-group>
+                <fieldset>
+                    <legend>Group med hjælptekst</legend>
+                    <fds-help-text>Dette er en hjælpetekst for gruppen</fds-help-text>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-examplef35abe49" value="v1">
+                        <label>Første tjekboks</label>
+                        <fds-help-text>Dette er en hjælpetekst første tjekboks</fds-help-text>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-examplef35abe49" value="v2" />
+                        <label>Anden tjekboks</label>
+                        <fds-help-text>Dette er en hjælpetekst anden tjekboks</fds-help-text>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Deaktiveret tjekboks</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox>
+                <input type="checkbox" name="checkbox-example" disabled>
+                <label>Deaktiveret tjekbox med label</label>
+            </fds-checkbox>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Deaktiveret tjekboksgruppe</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox-group>
+                <fieldset disabled>
+                    <legend>Group med hjælptekst</legend>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-exampleff788168" value="v1">
+                        <label>Første tjekboks</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-exampleff788168" value="v2" />
+                        <label>Anden tjekboks</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-exampleff788168" value="v3" />
+                        <label>Tredje tjekboks</label>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Fejl på gruppen</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox-group>
+                <fieldset>
+                    <legend>Group med fejl</legend>
+                    <fds-error-message>Dette er en fejl</fds-error-message>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example3d589b5" value="v1">
+                        <label>Første tjekboks</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example3d589b5" value="v2" />
+                        <label>Anden tjekboks</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example3d589b5" value="v3" />
+                        <label>Tredje tjekboks</label>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Fejl på en tjekboks</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox>
+                <input type="checkbox" name="checkbox-example">
+                <label>Tjekbox med label</label>
+                <fds-error-message>Dette er en fejl</fds-error-message>
+            </fds-checkbox>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tjekbox med skjult indhold</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox>
+                <input type="checkbox" />
+                <label>Vis skjult indhold</label>
+                <div class="checkbox-content">
+                    <p>This section is shown when checked.</p>
+                </div>
+            </fds-checkbox>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tjekboksgruppe med skjult indhold</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox-group>
+                <fieldset>
+                    <legend>Group label</legend>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-examplef60af5f0" value="v3">
+                        <label>Tjekboks med skjult indhold</label>
+                        <div class="checkbox-content">
+                            <fds-checkbox>
+                                <input type="checkbox" name="checkbox-example" value="v1">
+                                <label>Checkbox 1</label>
+                            </fds-checkbox>
+                        </div>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-examplef60af5f0">
+                        <label>Vis indhold</label>
+                        <div class="checkbox-content">
+                            <fds-input>
+                                <label class="form-label">Inputfield med error</label>
+                                <input type="text" name="input-wrapper-help-text"
+                                    class="form-input">
+                                <fds-error-message>Error message</fds-error-message>
+                            </fds-input>
+                        </div>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tjekbokse med tooltip</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox>
+                <input type="checkbox" name="checkbox-example" value="1">
+                <label>Indhold</label>
+                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                    data-tooltip-id="checkbox-tooltip" data-position="above"
+                    data-trigger="click"><button class="button button-unstyled tooltip-target"
+                        type="button" aria-label="Læs mere">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true">
+                            <use href="#help"></use>
+                        </svg></button>
+                </span>
+            </fds-checkbox>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tjekboksgruppe med tooltip</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox-group>
+                <fieldset>
+                    <legend>
+                        Tjekboksgruppe med tooltip
+                        <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                            data-tooltip-id="checkboxgroup-tooltip" data-position="above"
+                            data-trigger="click"><button
+                                class="button button-unstyled tooltip-target" type="button"
+                                aria-label="Læs mere">
+                                <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true">
+                                <use href="#help"></use>
+                            </svg></button>
+                        </span>
+                    </legend>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example2e6f1f7b" value="1">
+                        <label>Something</label>
+                    </fds-checkbox>
+                    <fds-checkbox>
+                        <input type="checkbox" name="checkbox-example2e6f1f7b" value="2">
+                        <label>Something else</label>
+                    </fds-checkbox>
+                </fieldset>
+            </fds-checkbox-group>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tjekboks inde i tjekboks inde i tjekboks</h2>
+        </div>
+        <div class="col-12">
+            <fds-checkbox>
+                <input type="checkbox" />
+                <label>Vis indhold</label>
+                <div class="checkbox-content">
+                    <fds-checkbox>
+                        <input type="checkbox" />
+                        <label>indhold 1</label>
+                        <div class="checkbox-content">
+                            <fds-checkbox>
+                                <input type="checkbox" />
+                                <label>indhold 2</label>
+                                <div class="checkbox-content">
+                                    <fds-checkbox>
+                                        <input type="checkbox" />
+                                        <label>indhold 3</label>
+                                        <fds-error-message>Error message</fds-error-message>
+                                    </fds-checkbox>
+                                </div>
+                            </fds-checkbox>
+                        </div>
+                    </fds-checkbox>
+                </div>
+            </fds-checkbox>
+        </div>
+    </div>
+
+</main>

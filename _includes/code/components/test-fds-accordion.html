@@ -1,0 +1,127 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Accordions</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordion med indhold og alle attributter</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion heading="Accordiontitel" heading-level="h3" expanded="true"
+                content-id="gcghdrzdhgthj" variant-text="Tilgængelighed"
+                variant-icon="accessibility-new">
+                <div>
+                    <p>Dette er indhold i accordionen</p>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordion hvor HTML'en er genereret på forhånd</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion>
+                <h3>
+                    <button class="accordion-button" aria-expanded="false" type="button"
+                        aria-controls="abcd">
+                        <span class="accordion-title">Dette er en accordion</span>
+                    </button>
+                </h3>
+                <div class="accordion-content" id="abcd" aria-hidden="true">
+                    <p>Her er en paragraf inde i accordionen.</p>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordion hvor aria-controls og id ikke passer sammen</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion>
+                <h3>
+                    <button class="accordion-button" aria-expanded="false" type="button"
+                        aria-controls="1234">
+                        <span class="accordion-title">Dette er en accordion</span>
+                    </button>
+                </h3>
+                <div class="accordion-content" id="efgh" aria-hidden="true">
+                    <p>Her er en paragraf inde i accordionen.</p>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordion hvor aria-controls er en tom streng</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion>
+                <h3>
+                    <button class="accordion-button" aria-expanded="false" type="button"
+                        aria-controls="">
+                        <span class="accordion-title">Dette er en accordion</span>
+                    </button>
+                </h3>
+                <div class="accordion-content" id="ijkl" aria-hidden="true">
+                    <p>Her er en paragraf inde i accordionen.</p>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordion med meget indhold</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion heading="Flere paragraffer">
+                <div>
+                    <p>Dette er den første paragraf</p>
+                    <p>Dette er den anden paragraf</p>
+                    <p>Dette er den tredje paragraf</p>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordion i accordion</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion heading="Accordion yderst">
+                <div>
+                    <p>Dette er indhold i yderste accordion</p>
+                    <fds-accordion heading="Accordion inderst">
+                        <div>
+                            <p>Dette er indhold i inderste accordion</p>
+                        </div>
+                    </fds-accordion>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Ikke initialiseret</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion heading="Accordiontitel" ready="false">
+                <div>
+                    <p>Dette er indhold i accordionen</p>
+                </div>
+            </fds-accordion>
+        </div>
+    </div>
+
+</main>

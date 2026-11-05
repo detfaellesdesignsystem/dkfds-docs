@@ -3,7 +3,7 @@ permalink: "/komponenter/spinner/"
 redirect_from:
 - "/kode/komponenter/spinner/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Loading spinner
 lead: "En spinner er et visuelt aktivt og synligt signal til brugeren om, at indlæsningen af et element er undervejs."
@@ -22,17 +22,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 En loading spinner anvendes til at signalere en igangværende indlæsning af et element ved at give brugeren en synlig respons. Loading spinneren placeres i direkte forbindelse med det element, der hentes eller interageres med. 
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Spinner skal ikke anvendes som en standardkomponent på alle løsninger, da det må forventes, at langt størstedelen vil kunne indlæses inden for 2 sekunder.
 
 Benyt ikke loading spinner til live-opdateringer eller automatisk genindlæsning af indhold.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Anvend kun spinners i særdeles begrænset omfang og kun på løsninger, hvor der kan forventes ventetid på over 2 sekunder (Sherwin, 2014).
 
@@ -44,7 +44,7 @@ En spinner skal ikke anvendes som kompensation for en permanent langsom performa
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Stor spinner
+### Stor spinner {#{% include create-id.html heading="Stor spinner" %}}
 
 Den store spinner anvendes til større sektioner på en side. Hvis der er indhold bag spinneren, sættes opacity på indholdet til 25%, og spinneren placeres i dette tilfælde med en ramme omkring for at sikre tilgængelighed.
 
@@ -80,7 +80,7 @@ Gør teksten så specifik som muligt, så brugeren forstår, hvad der sker.
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="spinner" copybutton=true %}
 
@@ -90,7 +90,7 @@ Anvend klassen `spinner-light` sammen med `spinner`-klassen for den lyse variant
 
 Sørg altid for at oplysninger relateret til spinneren også gives til skærmlæsere. Hvordan dette gøres bedst afhænger af konteksten, som spinneren bruges i og man er derfor nødt til at implementere og teste dette selv. Se eventuelt eksemplet {% include links/demo-link.html linktext="Side med data, der hentes" %} eller eksemplet <a href="#eksempel-knap-med-spinner-kode">Knap med spinner</a> for inspiration.
 
-### Javascript
+### Javascript {#{% include create-id.html heading="Javascript" append="-kode" %}}
 
 Der medfølger ikke funktionalitet med denne komponent. Man skal derfor selv i løsningen implementere, hvordan spinneren og dens informationer opdateres.
 

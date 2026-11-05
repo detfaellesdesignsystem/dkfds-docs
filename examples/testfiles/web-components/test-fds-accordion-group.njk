@@ -1,0 +1,118 @@
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Accordiongruppe</h1>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordiongruppe uden indhold eller attributter</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion-group></fds-accordion-group>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordiongruppe med accordions</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion-group>
+                <fds-accordion heading="Accordion 1" content-id="acc1">
+                    <p>Dette er indhold i accordion 1</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 2" content-id="acc2">
+                    <p>Dette er indhold i accordion 2</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 3" content-id="acc3">
+                    <p>Dette er indhold i accordion 3</p>
+                </fds-accordion>
+            </fds-accordion-group>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordiongruppe med attributter og accordions</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion-group heading-level="h2" has-bulk-button="true">
+                <fds-accordion heading="Accordion 1" content-id="acc1-2">
+                    <p>Dette er indhold i accordion 1</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 2" content-id="acc2-2">
+                    <p>Dette er indhold i accordion 2</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 3" content-id="acc3-2">
+                    <p>Dette er indhold i accordion 3</p>
+                </fds-accordion>
+            </fds-accordion-group>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordiongruppe hvor bulk-knap er lavet på forhånd</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion-group>
+                <button class="bulk-button">Åbn alle</button>
+                <fds-accordion heading="Accordion 1" content-id="acc1-3">
+                    <p>Dette er indhold i accordion 1</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 2" content-id="acc2-3">
+                    <p>Dette er indhold i accordion 2</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 3" content-id="acc3-3">
+                    <p>Dette er indhold i accordion 3</p>
+                </fds-accordion>
+            </fds-accordion-group>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordiongruppe med attributter, accordions og en paragraf</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion-group heading-level="h2" has-bulk-button="true" open-all-text="Open all" close-all-text="Close all">
+                <fds-accordion heading="Accordion 1" content-id="acc1-4">
+                    <p>Dette er indhold i accordion 1</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 2" content-id="acc2-4">
+                    <p>Dette er indhold i accordion 2</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 3" content-id="acc3-4">
+                    <p>Dette er indhold i accordion 3</p>
+                </fds-accordion>
+                <p>Dette er en paragraf, som ligger i gruppen.</p>
+            </fds-accordion-group>
+        </div>
+    </div>
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Accordiongruppe i accordiongruppe</h2>
+        </div>
+        <div class="col-12">
+            <fds-accordion-group heading-level="h2" has-bulk-button="true">
+                <fds-accordion heading="Accordion 1" content-id="acc1-outer">
+                    <p>Dette er indhold i accordion 1</p>
+                    <fds-accordion-group heading-level="h3" has-bulk-button="true">
+                        <fds-accordion heading="Accordion 1" content-id="acc1-inner">
+                            <p>Dette er indhold i accordion 1</p>
+                        </fds-accordion>
+                        <fds-accordion heading="Accordion 2" content-id="acc2-inner">
+                            <p>Dette er indhold i accordion 2</p>
+                        </fds-accordion>
+                        <fds-accordion heading="Accordion 3" content-id="acc3-inner">
+                            <p>Dette er indhold i accordion 3</p>
+                        </fds-accordion>
+                    </fds-accordion-group>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 2" content-id="acc2-outer">
+                    <p>Dette er indhold i accordion 2</p>
+                </fds-accordion>
+                <fds-accordion heading="Accordion 3" content-id="acc3-outer">
+                    <p>Dette er indhold i accordion 3</p>
+                </fds-accordion>
+            </fds-accordion-group>
+        </div>
+    </div>
+</main>

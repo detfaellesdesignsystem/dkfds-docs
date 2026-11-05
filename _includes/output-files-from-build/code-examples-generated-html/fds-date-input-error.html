@@ -1,0 +1,46 @@
+<fds-date-input>
+    <fieldset aria-describedby="errore8d9ef0e">
+        <legend>Indtast dato</legend>
+        <div>
+            <div data-attribute="day">
+                <label for="dat-day-450e93ab">Dag</label>
+                <input name="day" id="dat-day-450e93ab" type="number">
+            </div>
+            <div data-attribute="month">
+                <label for="dat-month-bc1fc9e8">Måned</label>
+                <input name="month" id="dat-month-bc1fc9e8" type="number">
+            </div>
+            <div data-attribute="year">
+                <label for="dat-year-4783fc19">År</label>
+                <input name="year" id="dat-year-4783fc19" type="number">
+            </div>
+        </div>
+        <fds-error-message id="errore8d9ef0e">
+            <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+            <span class="visible-message">Der er sket en fejl</span>
+        </fds-error-message>
+    </fieldset>
+</fds-date-input>
+<fds-date-input>
+    <fieldset aria-describedby="errorcafee2aa">
+        <legend>Indtast dato</legend>
+        <div>
+            <div data-attribute="day">
+                <label for="dat-day-1ab610af">Dag</label>
+                <input name="day" id="dat-day-1ab610af" type="number" aria-invalid="true">
+            </div>
+            <div data-attribute="month">
+                <label for="dat-month-2b9149d1">Måned</label>
+                <input name="month" id="dat-month-2b9149d1" type="number">
+            </div>
+            <div data-attribute="year">
+                <label for="dat-year-5572ff30">År</label>
+                <input name="year" id="dat-year-5572ff30" type="number" aria-invalid="true">
+            </div>
+        </div>
+        <fds-error-message targets="day, year" id="errorcafee2aa">
+            <svg class="icon-svg alert-icon" aria-label="Fejl" focusable="false"><use href="#error"></use></svg>
+            <span class="visible-message">Fejl i indtastet dag og år</span>
+        </fds-error-message>
+    </fieldset>
+</fds-date-input>

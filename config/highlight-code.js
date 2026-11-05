@@ -14,6 +14,13 @@ function removeHighlight(str) {
               .replaceAll('<span class="hljs-tag">', '')
               .replaceAll('<span class="hljs-comment">', '')
               .replaceAll('<span class="hljs-symbol">', '')
+              .replaceAll('<span class="hljs-keyword">', '')
+              .replaceAll('<span class="language-javascript">', '')
+              .replaceAll('<span class="hljs-title function_">', '')
+              .replaceAll('<span class="hljs-variable language_">', '')
+              .replaceAll('<span class="hljs-function">', '')
+              .replaceAll('<span class="hljs-number">', '')
+              .replaceAll('<span class="hljs-property">', '')
               .replaceAll('</span>', '')
               .replaceAll('&#x27;', '&#39;');
 }

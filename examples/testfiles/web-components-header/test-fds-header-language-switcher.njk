@@ -1,0 +1,90 @@
+<header class="header">
+    <div class="language-switcher-header">
+        <div class="container">
+            <fds-dropdown-menu expanded="false">
+                <button>
+                    <span><svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#language"></use>
+                        </svg>Dansk</span>
+                </button>
+                <div>
+                    <ul>
+                        <li><a href="?lang=da" lang="da" aria-current="true">Dansk</a></li>
+                        <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                        <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                        <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                    </ul>
+                </div>
+            </fds-dropdown-menu>
+        </div>
+    </div>
+
+    <fds-portal-info>
+        <a slot="logo" href="#" target="_blank"><img id="language-example-header-logo" src="/assets/img/logo_virk.svg" alt="Portalnavn"></a>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener" modal-id="drawer-example-language">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+        <button slot="log-off-button">
+            <svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#lock"></use>
+            </svg>Log af
+        </button>
+        <p slot="user">Anders Andersen, Forsikringens Forsikringsfirma</p>
+    </fds-portal-info>
+
+    <fds-solution-info>
+        <a slot="solution-heading" href="javascript:void(0);">Løsningstitel</a>
+        <p slot="additional-info" class="d-none d-lg-block">
+            <strong class="authority-name">Myndighedsnavn</strong>
+            <span>Support: 12 34 56 78</span>
+        </p>
+    </fds-solution-info>
+
+    <fds-modal variant="drawer" id="drawer-example-language" class="d-block d-lg-none" heading="Menu">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+
+                <fds-solution-info>
+                    <p slot="additional-info">
+                        <strong class="authority-name">Myndighedsnavn</strong>
+                        <span>Support: 12 34 56 78</span>
+                    </p>
+                </fds-solution-info>
+
+                <div class="language-switcher-mobile">
+                    <h3>Vælg sprog</h3>
+                    <ul>
+                        <li><a href="?lang=da" lang="da" aria-current="true"><svg class="icon-svg" focusable="false" aria-hidden="true">
+                                    <use href="#check"></use>
+                                </svg>Dansk</a></li>
+                        <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                        <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                        <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                    </ul>
+                </div>
+
+                <fds-portal-info>
+                    <button slot="log-off-button">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#lock"></use>
+                        </svg>Log af
+                    </button>
+                    <p slot="user"><span class="mb-3">Anders Andersen</span><span>Forsikringens Forsikringsfirma</span></p>
+                </fds-portal-info>
+            </div>
+        </dialog>
+    </fds-modal>
+</header>
+
+<main class="container page-container" id="main-content">
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">test-fds-header-language-switcher</h1>
+        </div>
+    </div>
+</main>

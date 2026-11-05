@@ -1,0 +1,118 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Tooltip</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tooltip på knap</h2>
+        </div>
+        <div class="col-12">
+            <fds-tooltip tooltip-text="Dette er et tooltip på en knap">
+                <button class="button button-tertiary" type="button">Default</button>
+            </fds-tooltip>
+            <fds-tooltip tooltip-text="Dette er et tooltip på en knap" placement="above">
+                <button class="button button-tertiary" type="button">Vises over
+                    knappen</button>
+            </fds-tooltip>
+            <fds-tooltip tooltip-text="Dette er et tooltip på en knap" placement="below">
+                <button class="button button-tertiary" type="button">Vises under
+                    knappen</button>
+            </fds-tooltip>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tooltip på et element med tekst</h2>
+        </div>
+        <div class="col-12">
+            <fds-tooltip tooltip-text="Dette er et tooltip på et element med tekst">
+                <div style="border: 1px solid black; padding: 16px;">
+                    <p class="mt-0">Dette er en linje med tekst.</p>
+                    <p class="mb-0" style="position: relative; left: 160px;">Denne linje
+                        krydser firkantens højre kant.</p>
+                </div>
+            </fds-tooltip>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Inde i scrollbare containers</h2>
+        </div>
+        <div class="col-12">
+            <div style="height: 400px; width: 100%; background-color: lightgray; overflow: scroll; padding: 50px;"
+                id="outer-container">
+                <div style="height: 120px; width: 150%; background-color: palegreen; overflow: scroll; margin-bottom: 600px;"
+                    id="middle-container">
+                    <div style="height: 200px; width: 150%; background-color: lavender; padding: 20px; margin: 10px;"
+                        id="inner-container">
+                        <fds-tooltip tooltip-text="Dette er et langt tooltip på en knap">
+                            <button class="button button-tertiary" type="button">Knap</button>
+                        </fds-tooltip>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tooltip i modal</h2>
+        </div>
+        <div class="col-12">
+            <button class="button button-tertiary" data-module="modal"
+                data-target="modal-example" aria-haspopup="dialog"
+                aria-describedby="tooltip-modal" id="modal-opener-1615">Åbn modal</button>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Tooltip som label</h2>
+        </div>
+        <div class="col-12">
+            <fds-tooltip tooltip-text="Slet" purpose="label">
+                <button class="button button-unstyled">
+                    <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true">
+                        <use href="#delete"></use>
+                    </svg></button>
+            </fds-tooltip>
+        </div>
+    </div>
+
+</main>
+
+<div class="fds-modal-container">
+    <div class="fds-modal" id="modal-example" aria-hidden="true" role="dialog"
+        aria-modal="true" aria-labelledby="modal-example-heading"
+        data-modal-opener="modal-opener-1615">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-example-heading">Modal med handlinger</h2>
+                <button class="modal-close function-link" data-modal-close="">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true">
+                        <use href="#close"></use>
+                    </svg>Luk
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-between">
+                    <fds-tooltip tooltip-text="Dette er et tooltip på en knap">
+                        <button class="button button-tertiary" type="button">Knap</button>
+                    </fds-tooltip>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="button button-secondary" data-modal-close="">
+                    Luk
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

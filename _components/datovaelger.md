@@ -3,34 +3,35 @@ permalink: "/komponenter/datovaelger/"
 redirect_from:
 - "/kode/komponenter/datovaelger/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Datovælger
 lead: Ét felt med knap, hvor man kan vælge en dato.
 description: Brug datovælger til at vælge en bestemt dato i nærmeste fortid eller fremtid
 tags:
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
+difference_warning: true
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="date-picker" title="Eksempel på datovælger" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Datovaelger" code="Datovaelger_Kode" %}
+{% include anchorlinks.html guidelines="Datovaelger" code="Datovaelger_Kode" webcomponent="Datovaelger_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og planlægning med åbne og lukkede datoer, og hvor det gavner brugeren at se hvilke ugedage forskellige datoer rammer.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Datoangivelser som er givet for brugeren, som fx en fødselsdato. Brug da komponenten {% include links/component-guideline-link.html linktext="datofelter" %}.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 {% include dos-donts-box.html component="datepicker-dos-donts" %}
 
@@ -68,11 +69,11 @@ Bemærk, at deaktiverede datovælgere hverken har kontrastkrav eller kan få fok
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="date-picker" copybutton=true %}
 
-### Javascript
+### Javascript {#{% include create-id.html heading="Javascript" append="-kode" %}}
 
 Datovælger-komponenten kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -197,3 +198,104 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-code-l
 ## Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-kode" %}}
 
 {% include code/syntax.html component="date-picker-disabled" link=true copybutton=true guidelines="/komponenter/datovaelger/#deaktiveret" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-mixed-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Fejl {#{% include create-id.html heading="Fejl" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-helptext" heading_tag="h4" subheading_tag="h5" %}
+
+### Begræns mulige datoer {#{% include create-id.html heading="Begræns mulige datoer" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-minmax" heading_tag="h4" subheading_tag="h5" %}
+
+### Fast værdi {#{% include create-id.html heading="Fast værdi" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-default" heading_tag="h4" subheading_tag="h5" %}
+
+### Datoformat {#{% include create-id.html heading="Datoformat" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-format" heading_tag="h4" subheading_tag="h5" %}
+
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-disabled" heading_tag="h4" subheading_tag="h5" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+`fds-date-picker` kræver følgende struktur: Et `label`-element, en `div` indeholdende et `input`-element, samt en indre `div` med et `fds-date-picker-grid`-element.
+
+### fds-date-picker {#{% include create-id.html heading="fds-date-picker" append="-webcomponent" %}}
+
+`fds-date-picker` anvender light DOM.
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut             | Beskrivelse                                                                                                                                                                 |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| show-required-status | Viser om inputfeltet er obligatorisk eller frivilligt baseret på `required`-attributten. Indsæt en tekst i attributten for at overskrive default-teksten.               |
+| format                | Angiv det datoformat, der vises i inputfeltet. Gyldige værdier er `DD/MM/YYYY`, `DD-MM-YYYY`, `DD.MM.YYYY`, `DD MM YYYY` og `DD/MM-YYYY`. Default er `DD/MM/YYYY`.      |
+| text-open             | Skærmlæsertekst for knappen, der åbner datovælgeren. Default er `Åbn datovælger`.                                                                                         |
+| text-selecteddate     | Skærmlæsertekst for den valgte dato, tilføjet til knappens skærmlæsertekst. Skal indeholde `DAY`, `MONTH` og `YEAR`. Default er `valgt dato er DAY. MONTH YEAR`.         |
+| text-months           | Overskriv navnene på årets 12 måneder. Angives som 12 ord separeret med mellemrum. Default er `januar februar marts april maj juni juli august september oktober november december`. |
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion | Beskrivelse                                 |
+|----------|------------------------------------------------|
+| open()   | Åbn datovælgeren.                           |
+| close()  | Luk datovælgeren.                           |
+| toggle() | Skift mellem at åbne og lukke datovælgeren. |
+
+### fds-date-picker-grid {#{% include create-id.html heading="fds-date-picker-grid" append="-webcomponent" %}}
+
+`fds-date-picker-grid` anvender shadow DOM. Bemærk, at `fds-date-picker-grid` som udgangspunkt bruges inden i `fds-date-picker` og ikke er tiltænkt at blive brugt alene.
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut               | Beskrivelse                                                                                                                                                        |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| min-date                | Angiv den tidligste valgbare dato. Angives i formatet `YYYY-MM-DD`. Default er dags dato.                                                                        |
+| max-date                | Angiv den seneste valgbare dato. Angives i formatet `YYYY-MM-DD`. Default er 10 år fra dags dato.                                                                |
+| selected-date           | Angiv den valgte dato. Angives i formatet `YYYY-MM-DD`.                                                                                                           |
+| default-date            | Angiv den dato, kalenderen skal vise ved initialisering, hvis ingen dato er valgt. Angives i formatet `YYYY-MM-DD`. Ændringer efter initialisering har ingen effekt. |
+| text-months             | Overskriv navnene på årets 12 måneder. Angives som 12 ord separeret med mellemrum. Default er `januar februar marts april maj juni juli august september oktober november december`. |
+| text-days               | Overskriv navnene på ugens 7 dage. Angives som 7 ord separeret med mellemrum. Default er `mandag tirsdag onsdag torsdag fredag lørdag søndag`.                   |
+| text-prevbutton         | Skærmlæsertekst for knappen, der viser den foregående måned.                                                                                                     |
+| text-nextbutton         | Skærmlæsertekst for knappen, der viser den næste måned.                                                                                                           |
+| text-date-announcement  | Skærmlæsertekst for hver dato i kalenderen. Skal indeholde `DAY`, `MONTH` og `YEAR`. Default er `DAY. MONTH YEAR`.                                               |
+| text-mindate            | Tilføjes til skærmlæserteksten for den tidligste valgbare dato. Default er `tidligste valgbare dato`.                                                           |
+| text-maxdate            | Tilføjes til skærmlæserteksten for den seneste valgbare dato. Default er `seneste valgbare dato`.                                                                |
+
+#### Events
+
+{:.table .table--responsive-headers}
+| Event        | Beskrivelse                                                        |
+|---------------|------------------------------------------------------------------------|
+| date-clicked  | Udløses når en dato i kalenderen klikkes eller vælges med tastaturet. |
+| date-selected | Udløses når den valgte dato ændres.                                 |
+
+### fds-help-text {#{% include create-id.html heading="fds-help-text" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-help-text.html %}
+
+### fds-error-message {#{% include create-id.html heading="fds-error-message" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-error.html %}

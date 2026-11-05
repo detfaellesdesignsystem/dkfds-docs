@@ -5,26 +5,26 @@ redirect_from:
 - "/kode/komponenter/headers/"
 - "/kode/komponenter/header/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Header
 lead: Headeren identificerer portalen, den ansvarlige myndighed og brugeren, der er logget ind med NemLog-in. Den fungerer også til navigation og overordnet styring af selvbetjeningsløsningen.
 description: "Tydelige headers er med til at skabe en let navigation for brugeren og hjælper dermed brugeren med at finde vej."
 tags: 
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-image.html component="header-with-navigation" title="Eksempel på header" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Header" code="Header_Kode" %}
+{% include anchorlinks.html guidelines="Header" code="Header_Kode" webcomponent="Header_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug headeren til at give brugeren et “ankerpunkt”, der er ens på tværs af trin og undersider i selvbetjeningsløsningen.
 
@@ -32,13 +32,13 @@ Brug headeren til at kommunikere portal, NemLog-in-oplysninger, ansvarlig myndig
 
 En eventuel overordnet navigation (topnavigation) skal også placeres i headeren, så brugeren altid kan navigere rundt i selvbetjeningsløsningen.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anvend ikke headeren andre steder i løsningen end i toppen af siden.
 
 Brug ikke topnavigationen som faneblade, anvend da {% include links/component-guideline-link.html linktext="faneblade" %}. 
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Tag et kig på {% include links/internal-link.html linktext="eksemplerne på selvbetjeningsløsninger" %} for at se, hvordan komponenten passer ind i en komplet løsning.
 
@@ -63,7 +63,7 @@ Navigation (topnavigation) i løsningen og søgefelt.
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### Simpel header
+### Simpel header {#{% include create-id.html heading="Simpel header" %}}
 
 {% include code/preview-image.html component="header-simple" %}
 
@@ -81,7 +81,7 @@ På små skærme foldes indhold vedr. log ind-information, ansvarlig myndighed o
 
 Menupunkter der ikke er plads til i sidens bredde samles i en “Mere”-menu, der vises som overflow-menu.
 
-### Header med sprogvælger
+### Header med sprogvælger {#{% include create-id.html heading="Header med sprogvælger" %}}
 
 Hvis din selvbetjeningsløsning skal være tilgængelig på flere sprog, placeres sprogvælgeren både som overflow-menu øverst i række 1 og i sidens footer (se {% include links/component-guideline-link.html linktext="sprogvælger" %}). Nedenstående eksempel viser udelukkende sprogvælgerens header-variant.
 
@@ -180,7 +180,7 @@ Anden del skal indsættes i mobilmenuen, igen <em>før</em> række 1 (portalinfo
 
 {% include code/syntax.html component="switch-language-mobile" copybutton=true %}
 
-### JavaScript
+### JavaScript {#{% include create-id.html heading="JavaScript" %}}
 
 Headeren kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt.
 
@@ -205,3 +205,97 @@ Bemærk, at man selv er ansvarlig for JavaScript og funktionalitet til sprogvæl
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="ARIA Authoring Practices Guide (APG): Disclosure (Show/Hide) Pattern" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-header-default" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-mixed-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Simpel header {#{% include create-id.html heading="Simpel header" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-header-simple" heading_tag="h4" subheading_tag="h5" %}
+
+### Header med navigation og søgefelt {#{% include create-id.html heading="Header med navigation og søgefelt" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-header-navigation" heading_tag="h4" subheading_tag="h5" %}
+
+### Header med sprogvælger {#{% include create-id.html heading="Header med sprogvælger" append="-webcomponent" %}}
+
+Åbn eksemplet i et nyt vindue for at se, hvordan sprogvælgeren bør opdateres ved valg af et sprog. Opførsel ved sprogskifte følger ikke med som en del af koden.
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-header-language" heading_tag="h4" subheading_tag="h5" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+Bemærk: `<div class="header">` i eksemplerne ovenover bør erstattes med et ægte `<header>`-element i produktionsløsninger.
+
+### fds-portal-info {#{% include create-id.html heading="fds-portal-info" append="-webcomponent" %}}
+
+`fds-portal-info` anvender shadow DOM.
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut   | Beskrivelse                                                                                                                                                               |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| breakpoint | Sæt den skærmbredde, hvor brugeroplysningerne vises i portallinjen. Angives som en CSS-værdi, f.eks. `992px`. Default er `992px`.                                         |
+| ready      | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |
+
+#### Slots
+
+{:.table .table--responsive-headers}
+| Slot           | Beskrivelse                                                                                         |
+|----------------|-----------------------------------------------------------------------------------------------------|
+| user           | Brugeroplysninger.                                                                                  |
+| log-off-button | Log af-knap.                                                                                        |
+| logo           | Portalens logo. Anvendes ikke i mobilmenuen, hvor webkomponenten ligger i `fds-modal`.              |
+| drawer-opener  | Knap, der åbner mobilmenuen. Anvendes ikke i mobilmenuen, hvor webkomponenten ligger i `fds-modal`. |
+
+### fds-solution-info {#{% include create-id.html heading="fds-solution-info" append="-webcomponent" %}}
+
+`fds-solution-info` anvender shadow DOM.
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut | Beskrivelse                                                                                                                                                                 |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ready    | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |
+
+#### Slots
+
+{:.table .table--responsive-headers}
+| Slot             | Beskrivelse                                                                                                                                               |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| solution-heading | Løsningens navn. Anvendes ikke i mobilmenuen, hvor webkomponenten ligger i `fds-modal`.                                                                   |
+| additional-info  | Yderligere oplysninger om løsningen.                                                                                                                      |
+| drawer-opener    | Knap, der åbner mobilmenuen. Kan bruges her, hvis `fds-portal-info` ikke anvendes. Anvendes ikke i mobilmenuen, hvor webkomponenten ligger i `fds-modal`. |
+
+### fds-main-menu {#{% include create-id.html heading="fds-main-menu" append="-webcomponent" %}}
+
+`fds-main-menu` anvender light DOM. Brug `<div class="main-menu-inner">` inde i `fds-main-menu` til desktopmenuen. Udelad denne wrapper, når menuen placeres i mobilmenuens `fds-modal`.
+
+Hvis du i mobilmenuen har brug for en knap, der både går til en ny side og samtidigt kan klikkes på for at vise flere undersider, så lav en separat overbliksside under knappen.
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-box.html example="fds-header-overview-page" only_code=true %}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut | Beskrivelse |
+|--------------|-------------|
+| more-menu-id | Angiver ID'et for hovedmenuens “Mere”-menu. ID'et skal være unikt på siden. Kan udelades, hvis man ønsker at ID'et skal genereres automatisk. |
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion          | Beskrivelse                                                                  |
+|-------------------|------------------------------------------------------------------------------|
+| rebuildMoreMenu() | Gør det muligt at genbygge mere-menuen i desktopmenuen, hvis behovet opstår. |

@@ -1,24 +1,24 @@
-@use '../node_modules/dkfds/src/stylesheets/variables/paths' with (
+@use '../node_modules/@dkfds/components/src/stylesheets/variables/paths' with (
     $font-path:         '/assets/fonts/IBMPlexSans/',
     $image-path:        '/assets/img/',
     $icons-folder-path: '/assets/svg/'
 );
 
 // Normalization file
-@use '../node_modules/dkfds/src/stylesheets/core/base';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/base';
 
 // Stylesheets needed for basic styling on test page
-@use '../node_modules/dkfds/src/stylesheets/core/grid';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/background';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/width';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/textalign';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/flex';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/spacing';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/position';
-@use '../node_modules/dkfds/src/stylesheets/core/utilities/display';
-@use '../node_modules/dkfds/src/stylesheets/elements/icons';
-@use '../node_modules/dkfds/src/stylesheets/components/function-link';
-@use '../node_modules/dkfds/src/stylesheets/components/modal';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/grid';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/background';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/width';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/textalign';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/flex';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/spacing';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/position';
+@use '../node_modules/@dkfds/components/src/stylesheets/core/utilities/display';
+@use '../node_modules/@dkfds/components/src/stylesheets/elements/icons';
+@use '../node_modules/@dkfds/components/src/stylesheets/components/function-link';
+@use '../node_modules/@dkfds/components/src/stylesheets/components/modal';
 @use 'test-base';
 
 body {

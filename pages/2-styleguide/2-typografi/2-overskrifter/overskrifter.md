@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/typografi/overskrifter/"
 - "/design/typografi/overskrifter/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Overskrifter
 lead: Overskrifter strukturerer siden, giver overblik og hjælper brugeren og skærmlæseren
@@ -37,15 +37,15 @@ Overskriftstyperne har to formål:
 
 En god struktur i sidens overskrifter er altafgørende for, at brugere af skærmlæser kan forstå og navigere i indholdet på siden. Det er muligt at følge en stringent struktur i overskrifter for skærmlæsere og samtidig tilpasse overskrifternes visuelle udtryk til brugere, der orienterer sig visuelt.
 
-### Hvornår skal du bruge overskrifter?
+### Hvornår skal du bruge overskrifter? {#{% include create-id.html heading="Hvornår skal du bruge overskrifter?" %}}
 
 Du skal bruge overskrifter til at skabe struktur på din side og gruppere dit indhold i logiske og overskuelige bidder, både for skærmlæsere og visuelt orienterede brugere.
 
-### Hvornår skal du overveje anden formatering end overskrifter?
+### Hvornår skal du overveje anden formatering end overskrifter? {#{% include create-id.html heading="Hvornår skal du overveje anden formatering end overskrifter?" %}}
 
 Du skal bruge anden formatering end overskrifter, hvis du vil fremhæve eller ændre styling af tekst, som ikke har betydning for strukturen på siden. Brug fx {% include links/component-guideline-link.html linktext="beskeder" %} til information, brug {% include links/internal-link.html linktext="lister" %} til at fremhæve særlige punkter med punktopstilling eller anvend {% include links/internal-link.html linktext="stor tekst" %} til at markere udvalgte dele af teksten.
 
-### Hvis du vil vide mere
+### Hvis du vil vide mere {#{% include create-id.html heading="Hvis du vil vide mere" %}}
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="H42: Using h1-h6 to identify headings" %}
@@ -181,11 +181,11 @@ Designværdierne nedenfor er angivet i px for læsbarhedens skyld. Vær opmærks
   </table>
 </div>
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Overskrift som links kan anvendes på sider, hvor brugeren kan navigere til andre sider i samme selvbetjeningsløsning. Overskrift som links anvendes også til overskrifter på søgeresultatsider.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Må ikke bruges til at fremhæve links eller som erstatning for {% include links/internal-link.html linktext="standard links" %} i selvbetjeningsløsninger.
 
@@ -193,11 +193,11 @@ Må ikke bruges til at fremhæve links eller som erstatning for {% include links
 
 {% include code/preview.html component="solutionheading" %}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Løsningstitel i header Anvendes til" %}}
 
 Anvendes i header som titel på hele løsningen. Titlen bør derved være den samme på hver side.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Løsningstitel i header Anvendes ikke til" %}}
 
 Anvendes ikke andre steder end i headeren.
 
@@ -228,11 +228,11 @@ Anvendes ikke andre steder end i headeren.
   </table>
 </div>
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Subheading Anvendes til" %}}
 
 Anvendes til at tilføje sekundær tekst til en overskrift.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Subheading Anvendes ikke til" %}}
 
 Må ikke anvendes som en enkeltstående overskrift.
 
@@ -246,7 +246,7 @@ Hold en stram overskriftsstruktur i koden. En `<h3>` altid er under en `<h2>`, e
 
 Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet udtryk, så brug en klasse til at style overskriften.
 
-### Eksempel på en overskrift, der ligner et andet niveau
+### Eksempel på en overskrift, der ligner et andet niveau {#{% include create-id.html heading="Eksempel på en overskrift, der ligner et andet niveau" append="-kode" %}}
 
 {% include code/syntax.html component="heading" link=true copybutton=true %}
 
@@ -256,6 +256,6 @@ Lad være med at springe overskriftsled over. Hvis du visuelt vil have et andet 
 
 Læs retningslinjer for {% include links/internal-link.html linktext="subheadings" %}.
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Subheading HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="subheading" copybutton=true %}

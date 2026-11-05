@@ -4,7 +4,7 @@ parentlink: "/faellesskab/nyhedsmail/"
 redirect_from:
 - "/omdesignsystemet/nyhedsmail/afmeld/"
 layout: styleguide
-category: Faellesskab_category
+category: faellesskab_menu
 subcategory: Fællesskab
 title: Afmeld nyhedsbrev
 description: Afmeld nyhedsbrev fra Det Fælles Designsystem
@@ -34,11 +34,10 @@ tags:
         <input type="hidden" value="" id="newsletter_language">
         <input type="hidden" name="failure_url" value="" id="failure_url">
         <input type="hidden" name="success_url" value="" id="success_url">
-        <div class="form-group" id="newsletter-emailaddress">
-            <label class="form-label" for="i_newsform_email">Afmeld e-mailadresse</label>
-            <span class="form-error-message d-none" id="i_newsform_email-error"></span>
-            <input type="email" class="form-input" id="i_newsform_email" autocomplete="email" required>
-        </div>
+        <fds-input id="newsletter-emailaddress">
+            <label>Afmeld e-mailadresse</label>
+            <input type="email" id="i_newsform_email" autocomplete="email" required>
+        </fds-input>
         <input type="submit" class="button button-primary mt-5" value="Afmeld" id="newsletter-submit">
     </form>
     <p class="mt-9 pt-0 mb-9">

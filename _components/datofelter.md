@@ -5,34 +5,34 @@ redirect_from:
 - "/kode/komponenter/dato-felt/"
 - "/kode/komponenter/datofelter/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Datofelter
 lead: Tre separate felter for dato, måned og år er den nemmeste måde for brugeren at indskrive en dato.
 description: Brug datofelter for datoer, der er velkendte for brugeren (fx fødselsdato).
 tags: 
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="date-input" title="Eksempel på datofelter" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Datofelter" code="Datofelter_Kode" %}
+{% include anchorlinks.html guidelines="Datofelter" code="Datofelter_Kode" webcomponent="Datofelter_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Sætter brugeren i stand til at tilføje struktureret datoinformation.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Når der er specifikt udvalgte datoer at vælge imellem som fx ved bookninger og planlægning med specifikke åbne og lukkede datoer.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Placér felterne i den rækkefølge for datoform, der anvendes i Danmark, det vil sige dag, måned og år.
 
@@ -69,7 +69,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="date-input" copybutton=true %}
 
@@ -81,3 +81,54 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 Læs mere om korrekt brug af {% include links/component-guideline-link.html linktext="fejlmeddelelser" %} og {% include links/component-code-link.html linktext="fejlmeddelelser's implementering med datofelter." %}
 
 Når der vises en fejlmeddelelse, vis da også {% include links/component-code-link.html linktext="en fejlopsummering" %}.
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-input" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Fejl {#{% include create-id.html heading="Fejl" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-input-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-input-help" heading_tag="h4" subheading_tag="h5" %}
+
+### Obligatoriske og frivillige inputfelter {#{% include create-id.html heading="Obligatoriske og frivillige inputfelter" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-input-required" heading_tag="h4" subheading_tag="h5" %}
+
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-input-disabled" heading_tag="h4" subheading_tag="h5" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+### fds-date-input {#{% include create-id.html heading="fds-date-input" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut             | Beskrivelse                                                                                                                |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------|
+| show-required-status | Viser om datofelterne er obligatoriske eller frivillige baseret på `required`-attributten. Indsæt en tekst i attributten for at overskrive default-teksten. |
+| legend               | Overskriv teksten i `fieldset`-elementets `legend`. Default er `Indtast dato`.                                            |
+| input-id             | Tilføj et fælles ID-suffiks til datofelterne. Hvert felt får ID'et `dag-/måned-/år-` efterfulgt af den angivne værdi.      |
+| input-readonly       | Sæt til `true` for at gøre alle datofelter read-only.                                                                     |
+| input-required       | Sæt til `true` for at gøre alle datofelter obligatoriske.                                                                 |
+
+### fds-help-text {#{% include create-id.html heading="fds-help-text" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-help-text.html %}
+
+### fds-error-message {#{% include create-id.html heading="fds-error-message" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-error.html %}

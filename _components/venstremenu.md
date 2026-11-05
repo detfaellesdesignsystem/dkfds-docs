@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/komponenter/sidenav/"
 - "/kode/komponenter/venstremenu/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Venstremenu
 lead: Venstremenuen strukturerer et navigationshierarki med op til tre niveauer i en vertikal liste.
@@ -25,19 +25,19 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Venstremenu anvendes til at afspejle et navigationshierarki i op til tre niveauer.
 
 Venstremenu anvendes til den sekundære navigation/undermenu på en side i en større løsning.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Venstremenu bør ikke anvendes på mindre løsninger (mindre end 5 sider).
 
 Hvis din løsning allerede har topmenu og evt. tilknyttet dropdown, bør du overveje at forenkle din navigation før du vælger en venstremenu.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Markér det aktive punkt (”der hvor brugeren er”) i venstremenuen.
 
@@ -76,7 +76,7 @@ Fra {% include links/internal-link.html linktext="version 10.0.0" %} vises ancho
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="sidenav-normal-level1" copybutton=true %}
 

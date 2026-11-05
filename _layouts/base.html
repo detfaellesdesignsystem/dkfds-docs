@@ -3,10 +3,11 @@
   <head>
     {% include head.html %}
   </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+  <body class="page-{{ page.title | slugify }}{% if page.title_en %}-{{ page.title_en | slugify }}{% endif %} layout-{{ page.layout }}">
     {% include code/components/fds-base-svg.html %}
     <div id="top"></div>
     {{ content }}
+    {% include cookie-message.html %}
     {% include scripts.html %}
   </body>
 </html>

@@ -4,7 +4,7 @@ parentlink: "/styleguide/datavisualisering-infografik/"
 redirect_from:
 - "/design/datavisualisering-infografik/datavisualisering/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Datavisualisering
 lead: Datavisualisering er en grafisk repræsentation af et datasæt som fx et diagram, en graf eller et kort. 
@@ -30,7 +30,7 @@ Det anbefales at benytte en kvalitativ farvepalette, hvor der ikke er en farver�
 For at gøre datavisualiseringen endnu mere tilgængelig, kan en tabel med data fra cirkeldiagrammet placeres under eller i forbindelse med diagrammet. 
 
 {:.mb-6}
-### Eksempel: Andelen af ture på cykel i Danmark
+### Eksempel: Andelen af ture på cykel i Danmark {#{% include create-id.html heading="Eksempel: Andelen af ture på cykel i Danmark" %}}
 <figure class="w-percent-md-50 mb-6">
     <img src="/assets/img/design/datavisualisering/piechart-transport.svg" class="w-percent-100" alt="Eksempel på kagediagram, der viser procentfordeling af folks vurdering af oplevelsen" />
     <figcaption>
@@ -76,7 +76,7 @@ Ved brug af mønstre sammen med farver, kan brugere med synshandikap som farvebl
 
 For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en opsummering eller konklusion placeres under eller i forbindelse med diagrammet. 
 
-### Eksempel: Cyklede kilometer fordelt på alder
+### Eksempel: Cyklede kilometer fordelt på alder {#{% include create-id.html heading="Eksempel: Cyklede kilometer fordelt på alder" %}}
 <figure>
     <img src="/assets/img/design/datavisualisering/bar-chart.svg" alt="Eksempel på søjlediagram, der viser cyklede kilometer pr. person pr. dag fordelt på alder" class="w-percent-md-70">
 <figcaption><p>Unge mennesker fra 18-34 år cykler mest. Ældre mennesker fra 67-84 år og børn fra 6-9 cykler mindst.</p><p>Kilde: Transportvaneundersøgelsen 2016-2019</p></figcaption>
@@ -94,7 +94,7 @@ Etiketter gør det også hurtigere at aflæse data i diagrammet. Det kan være s
 
 For at gøre datavisualiseringen mere tilgængelig, kan beskrivende tekst med en opsummering eller konklusion placeres under eller i forbindelse med diagrammet. 
 
-### Eksempel: Mest cykling på ture under 5km (2014-17)
+### Eksempel: Mest cykling på ture under 5km (2014-17) {#{% include create-id.html heading="Eksempel: Mest cykling på ture under 5km (2014-17)" %}}
 <figure class="mb-6">
     <img src="/assets/img/design/datavisualisering/graph-biking.svg" class="w-percent-md-70" alt="Eksempel på graf der viser fordelingen af cykelture og cykelkm efter turens længde." />
     <figcaption>

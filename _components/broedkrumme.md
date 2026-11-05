@@ -3,7 +3,7 @@ permalink: "/komponenter/broedkrumme/"
 redirect_from:
 - "/kode/komponenter/broedkrumme/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Brødkrumme
 lead: "En brødkrumme bruges til at vise brugerne, hvor i løsningen de befinder sig, samtidig med at den gør det muligt for brugerne at navigere tilbage igennem løsningens niveauer."
@@ -22,11 +22,11 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug en brødkrumme, når du har brug for at hjælpe brugerne med at forstå, hvor de er i en dybere hierarkisk struktur (IA) med flere sektioner og underafsnit (niveauer) og til at give brugeren mulighed for at navigere logisk tilbage igennem niveauerne.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke brødkrummen til at vise trin i en selvbetjeningsløsning, brug da en trin-indikator (trinindikator).
 
@@ -34,7 +34,7 @@ Brug ikke brødkrummen sammen med en {% include links/component-guideline-link.h
 
 Brug ikke brødkrummen sammen med et {% include links/component-guideline-link.html linktext="tilbage-link" %}. Vælg tilbage-linket i trinbaserede løsninger og i løsninger med en flad struktur.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Overvej nøje om du har brug for at anvende en brødkrumme, hvis du allerede bruger andre navigationskomponenter, der også indikerer, hvor i strukturen brugeren er, som fx venstremenu.
 
@@ -70,7 +70,7 @@ På små skærme bør brødkrummen ikke ombrydes til flere linjer eller presses 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="breadcrumbs" copybutton=true %}
 

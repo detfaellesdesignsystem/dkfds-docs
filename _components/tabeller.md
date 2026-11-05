@@ -6,7 +6,7 @@ redirect_from:
 - "/kode/komponenter/strukturerede-lister/"
 - "/kode/komponenter/tables/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Tabeller
 lead: Tabeller er en systematisk opstilling af data i kolonner og rækker.
@@ -25,17 +25,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Tabeller anvendes til at præsentere brugeren for data som fx statistik opstillet i rækker og kolonner.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anvend ikke tabeller til at opsætte en sides eller en komponents indhold udover data.
 
 Anvend ikke tabeller til visning af simple informationer uden kolonneoverskrifter, da tabeller ifølge WCAG altid bør have kolonneoverskrifter (W3C, WCAG 2.1, SC 1.3.1).
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Tabeller er en kompleks størrelse og når du bruger tabeller, skal du sikre dig, at din opmærkning overholder tilgængelighedskravene.  
 
@@ -165,7 +165,7 @@ Anvend ikke strukturerede lister til komplekse og sammenlignelige datasæt, der 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="table" copybutton=true %}
 
@@ -224,10 +224,10 @@ new DKFDS.ResponsiveTable(document.getElementById('TABLE-ID'));
 
 ## Linjehøjde {#{% include create-id.html heading="Linjehøjde" append="-kode" %}}
 
-### Kompakt
+### Kompakt {#{% include create-id.html heading="Kompakt" append="-kode" %}}
 Tilføj klassen `table--compact` på `<table>`.
 
-### Ekstra kompakt
+### Ekstra kompakt {#{% include create-id.html heading="Ekstra kompakt" append="-kode" %}}
 Tilføj klassen `table--extracompact` på `<table>`.
 
 ## Sortering i tabeller {#{% include create-id.html heading="Sortering i tabeller" append="-kode" %}}
@@ -254,7 +254,7 @@ Der følger ikke JavaScript med til søgning i tabeller og man skal derfor selv 
 
 {% include code/syntax.html component="table-selectable-functions" link=true copybutton=true guidelines="/komponenter/tables/#valgbare-raekker-med-funktionsknapper" %}
 
-### JavaScript for tabeller med valgbare rækker
+### JavaScript for tabeller med valgbare rækker {#{% include create-id.html heading="JavaScript for tabeller med valgbare rækker" append="-kode" %}}
 Tabel med valgbare rækker kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
 {% highlight javascript %}

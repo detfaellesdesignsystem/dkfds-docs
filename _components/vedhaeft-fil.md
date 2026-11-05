@@ -3,7 +3,7 @@ permalink: "/komponenter/fil-upload/"
 redirect_from:
 - "/kode/komponenter/fil-upload/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Vedhæft fil
 lead: Komponenten lader brugeren tilføje og indsende en fil.
@@ -22,13 +22,13 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug komponenten til at lade brugeren vælge og overføre en fil fra sin egen computer, tablet eller mobil.
 
 Du bør kun bruge vedhæftet fil, hvis det er strengt nødvendigt for din løsning.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Sørg for at brugeren får en positiv respons, når filen er overført.
 
@@ -55,7 +55,7 @@ Når der vises en fejlmeddelelse, vis da også {% include links/component-guidel
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="file-input" copybutton=true %}
 

@@ -1,27 +1,29 @@
-primary:
+main_menu:
   - href: /kom-i-gang/
-    categorynav: 'Kom_i_gang_category'
+    submenu: 'kom_i_gang_menu'
   - href: /styleguide/
-    categorynav: 'Styleguide_category'
+    submenu: 'styleguide_menu'
   - href: /komponenter/
-    categorynav: 'Komponenter_category'
+    submenu: 'komponenter_menu'
   - href: /eksempler/
-    categorynav: 'Eksempler_category'
+    submenu: 'eksempler_menu'
   - href: /faellesskab/
-    categorynav: 'Faellesskab_category'
+    submenu: 'faellesskab_menu'
 
-Kom_i_gang_category:
+kom_i_gang_menu:
   - href: /kom-i-gang/om-designsystemet/
+  - href: /kom-i-gang/web-components-i-beta-version/
   - href: /kom-i-gang/implementering-kode/
-    categorynav: 'Implementering_kode_category'
+    submenu: 'implementering_kode_submenu'
   - href: /kom-i-gang/designressourcer/
   - href: /kom-i-gang/tjekliste/
   - href: /kom-i-gang/tilgaengelighed/
   - href: /kom-i-gang/brugerinddragelse/
   - href: /kom-i-gang/faq/
 
-Implementering_kode_category:
+implementering_kode_submenu:
   - href: /kom-i-gang/implementering-kode/hent-kodepakken/
+  - href: /kom-i-gang/implementering-kode/kom-i-gang-med-web-components/
   - href: /kom-i-gang/implementering-kode/justering/
   - href: /kom-i-gang/implementering-kode/hjaelpeklasser/
   - href: /kom-i-gang/implementering-kode/browserunderstoettelse/
@@ -29,19 +31,19 @@ Implementering_kode_category:
   - href: /kom-i-gang/implementering-kode/print/
   - href: /kom-i-gang/implementering-kode/frameworks/
 
-Styleguide_category:
+styleguide_menu:
   - href: /styleguide/farver/
   - href: /styleguide/typografi/
-    categorynav: 'Typografi_category'
+    submenu: 'typografi_submenu'
   - href: /styleguide/borders/
   - href: /styleguide/ikoner/
   - href: /styleguide/logoer/
   - href: /styleguide/datavisualisering-infografik/
-    categorynav: 'Datavisualisering_category'
+    submenu: 'datavisualisering_submenu'
   - href: /styleguide/layout/
   - href: /styleguide/grid/
 
-Typografi_category:
+typografi_submenu:
   - href: /styleguide/typografi/fonte/
   - href: /styleguide/typografi/overskrifter/
   - href: /styleguide/typografi/felt-tabel-overskrifter/
@@ -49,12 +51,12 @@ Typografi_category:
   - href: /styleguide/typografi/links/
   - href: /styleguide/typografi/lister/
 
-Datavisualisering_category:
+datavisualisering_submenu:
   - href: /styleguide/datavisualisering-infografik/tilgaengelig-grafik/
   - href: /styleguide/datavisualisering-infografik/datavisualisering/
   - href: /styleguide/datavisualisering-infografik/infografik/  
 
-Komponenter_category:
+komponenter_menu:
   - href: /komponenter/accordions/
   - href: /komponenter/anchorlinks/
   - href: /komponenter/badges/
@@ -77,6 +79,7 @@ Komponenter_category:
   - href: /komponenter/knapper/
   - href: /komponenter/spinner/
   - href: /komponenter/modal/
+  - href: /komponenter/multiselect/
   - href: /komponenter/overflowmenu/
   - href: /komponenter/paginering/
   - href: /komponenter/radioknap/
@@ -95,19 +98,19 @@ Komponenter_category:
   - href: /komponenter/fil-upload/
   - href: /komponenter/venstremenu/
 
-Eksempler_category:
+eksempler_menu:
   - href: /eksempler/selvbetjeningsloesninger/
   - href: /eksempler/patterns/
-    categorynav: 'Patterns_category'
+    submenu: 'patterns_submenu'
   - href: /eksempler/templates/
 
-Patterns_category:
+patterns_submenu:
   - href: /eksempler/patterns/angivelse-af-telefonnummer/
   - href: /eksempler/patterns/formular/
   - href: /eksempler/patterns/hentet-data/
   - href: /eksempler/patterns/session-udloeber/
 
-Faellesskab_category:
+faellesskab_menu:
 - href: /faellesskab/samarbejdsforum/
 - href: /faellesskab/governance/
 - href: /faellesskab/nyhedsmail/

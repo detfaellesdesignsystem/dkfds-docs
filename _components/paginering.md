@@ -3,7 +3,7 @@ permalink: "/komponenter/paginering/"
 redirect_from:
 - "/kode/komponenter/paginering/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Paginering
 lead: Paginering bruges til at lade brugeren navigere mellem indhold, der er opdelt på flere sider. Brugeren navigerer ved at gå fra side til side, eller til første eller sidste side på listen.
@@ -25,16 +25,16 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Paginering kan anvendes ved søgeresultater og lignende lister, hvor brugerens overblik lettes
 ved at opdele indholdet over flere sider.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anvendes ikke til at føre brugeren igennem flere dele af en formular. Anvend da i stedet {% include links/component-guideline-link.html linktext="trinindikator" %}.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Vis altid både den første og den sidste side i det paginerede indhold, så brugeren kan få et overblik over
 den samlede mængde.
@@ -65,15 +65,15 @@ På små skærme benyttes Forrige-, Næste-, Første- og Sidste-links. Den aktue
 
 ## Varianter {#{% include create-id.html heading="Varianter" %}}
 
-### 7 eller færre sider
+### 7 eller færre sider {#{% include create-id.html heading="færre sider" %}}
 
 {% include code/preview-box.html component="pagination-short" title="Eksempel på paginering med 7 sider" link=true %}
 
-### 8 eller flere sider
+### 8 eller flere sider {#{% include create-id.html heading="flere sider" %}}
 
 {% include code/preview-box.html component="pagination-long" title="Eksempel på paginering med 12 sider" link=true %}
 
-### Paginering af tabeller
+### Paginering af tabeller {#{% include create-id.html heading="Paginering af tabeller" %}}
 
 Se på siden {% include links/component-guideline-link.html linktext="Tabeller" %}, hvordan paginering anvendes i forbindelse med tabeller.
 
@@ -85,18 +85,18 @@ Se på siden {% include links/component-guideline-link.html linktext="Tabeller" 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="pagination" copybutton=true %}
 
 Brug `class="hidden"` på Forrige-, Næste-, Første- og Sidste-knapperne, når de ikke skal vises.
 
-### Tilgængelighed
+### Tilgængelighed {#{% include create-id.html heading="Tilgængelighed" append="-kode" %}}
 
 Lad knappen med tallet til sidste side indeholde en aria-label, der oplyser dette. Husk at lade den aktuelle side være markeret med `aria-current="page"`.
 
 Sørg for at alle Forrige-, Næste-, Første- og Sidste-knapper på mindre skærme har en skjult, tilknyttet tekst, så ikonerne kan læses højt af en skærmlæser.
 
-### JavaScript
+### JavaScript {#{% include create-id.html heading="JavaScript" append="-kode" %}}
 
 Bemærk at DKFDS på nuværende tidspunkt kun leverer HTML og CSS til denne komponent. Funktionaliteten skal man derfor selv håndtere.

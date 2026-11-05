@@ -12,13 +12,13 @@ var calculateAnchorPosition = function (hash) {
     }
 
     var navPadding = 0;
-    if (document.querySelectorAll('.sidemenu').length > 0) {
-        navPadding = parseInt($('.sidemenu').css('padding-top'), 10);
+    if (document.querySelectorAll('.fds-side-menu').length > 0) {
+        navPadding = parseInt($('.fds-side-menu').css('padding-top'), 10);
     }
     var anchorPadding = parseInt(anchor.css('padding-top'), 10);
 
     //start with the height of the header
-    topOffset = $('.solution-info-inner').first().outerHeight();
+    topOffset = $('fds-solution-info').first().outerHeight();
     //subtract the diffence in padding between nav top and anchor
     topOffset = topOffset - (anchorPadding - navPadding);
 

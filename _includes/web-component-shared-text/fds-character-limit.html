@@ -1,0 +1,57 @@
+<h4>Attributter</h4>
+
+<table class="table table--responsive-headers">
+    <thead>
+        <tr>
+            <th>Attribut</th>
+            <th>Beskrivelse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>limit</td>
+            <td>Angiv det maksimale antal tegn, der kan indtastes.</td>
+        </tr>
+        <tr>
+            <td>limit-id</td>
+            <td>ID for elementet, der viser den maksimale grænse til skærmlæserbrugere. Hvis denne er udeladt, genereres et tilfældigt ID.</td>
+        </tr>
+        <tr>
+            <td>one-character-remaining-text</td>
+            <td>Overskriv teksten, der vises, når der er ét tegn tilbage. Default er <code>Du har {value} tegn tilbage</code>.</td>
+        </tr>
+        <tr>
+            <td>several-characters-remaining-text</td>
+            <td>Overskriv teksten, der vises, når der er flere tegn tilbage. Default er <code>Du har {value} tegn tilbage</code>.</td>
+        </tr>
+        <tr>
+            <td>one-character-too-many-text</td>
+            <td>Overskriv teksten, der vises, når grænsen er overskredet med ét tegn. Default er <code>Du har {value} tegn for meget</code>.</td>
+        </tr>
+        <tr>
+            <td>several-characters-too-many-text</td>
+            <td>Overskriv teksten, der vises, når grænsen er overskredet med flere tegn. Default er <code>Du har {value} tegn for meget</code>.</td>
+        </tr>
+        <tr>
+            <td>max-limit-text</td>
+            <td>Overskriv teksten, der annonceres til skærmlæserbrugere om den maksimale grænse. Default er <code>Du kan indtaste op til {value} tegn</code>.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Events</h4>
+
+<table class="table table--responsive-headers">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Beskrivelse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>character-limit-callback</td>
+            <td>Udløses på det omsluttende element, når en af komponentens attributter ændres.</td>
+        </tr>
+    </tbody>
+</table>

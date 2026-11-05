@@ -3,7 +3,7 @@ permalink: "/komponenter/tilbage-til-top/"
 redirect_from:
 - "/kode/komponenter/tilbage-til-top/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Tilbage til toppen
 lead: Tilbage til toppen-knappen hjælper brugeren med at navigere til toppen af en lang side på en let måde uden at miste overblikket. 
@@ -27,15 +27,15 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Bruges i forbindelse med lange sider, hvor brugeren kan befinde sig langt fra de øvrige knapper og interaktioner på siden.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Anvendes ikke som navigationsknap eller på anden vis til andet end at sende brugeren til toppen af siden. 
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Tilbage til toppen-knappen placeres nederst til højre på siden. Knappen er "sticky", således at den altid er placeret det samme sted.
 
@@ -67,7 +67,7 @@ På mobil anvendes knappen uden tekst for at spare plads på skærmen.
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="back-to-top" copybutton=true %}
 
@@ -75,7 +75,7 @@ Husk at have et id i toppen af siden, f.eks. `id="top"`, som tilbage til toppen-
 
 Tilbage til toppen-knappen bør altid være det første element i en sides footer.
 
-### Javascript
+### Javascript {#{% include create-id.html heading="Javascript" append="-kode" %}}
 
 Tilbage til toppen-knappen kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 

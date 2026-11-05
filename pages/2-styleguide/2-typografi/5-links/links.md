@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/typografi/links/"
 - "/design/typografi/links/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Links
 description: Se hvordan du skal anvende links i Det Fælles Designsystem
@@ -58,7 +58,7 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges links {#{% include create-id.html heading="Sådan bruges links" %}}
 
-### Tilgængelighed
+### Tilgængelighed {#{% include create-id.html heading="Tilgængelighed" %}}
 
 Linkteksten skal give mening for brugeren og angive, hvad linket fører hen til.
 
@@ -70,7 +70,7 @@ Links skal have en defineret `href` attribut i koden.
 
 Har linket en “hover” skal denne kunne aktiveres både med tastatur og mus.
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug links til at lade brugeren navigere til andre sider i din løsning.
 
@@ -78,7 +78,7 @@ Brug links til at linke til sider uden for din løsning. Husk at markere dette m
 
 Se også {% include links/component-guideline-link.html linktext="Gå til sidens indhold" %}, {% include links/component-guideline-link.html linktext="Funktionslink" %} og {% include links/component-guideline-link.html linktext="Tilbage link" %}.
 
-### Brugervenlighed
+### Brugervenlighed {#{% include create-id.html heading="Brugervenlighed" %}}
 
 Hvis et link fører væk fra den aktuelle side og brugeren kan miste data eller risikere at skulle udfylde samme del igen ved at følge linket, så advisér brugeren om dette i en browseradvarsel. Bed også brugeren om at be- eller afkræfte ønsket om at forlade siden.
 
@@ -96,7 +96,7 @@ Hvis et link fører til en fil, så gør brugeren opmærksom på dette ved at sk
 
 <p class="font-lead">Sekundære links bruges til at skabe en visuel forskel på links til funktioner og særlige typer af navigation.</p>
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Sekundære links Designværdier" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -121,17 +121,17 @@ Hvis et link fører til en fil, så gør brugeren opmærksom på dette ved at sk
   </table>
 </div>
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Sekundære links Anvendes til" %}}
 
 - {% include links/component-guideline-link.html linktext="Funktionslink" %}
 - {% include links/component-guideline-link.html linktext="Brødkrumme" %}
 - {% include links/component-guideline-link.html linktext="Footer" %} links
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Sekundære links Anvendes ikke til" %}}
 
 Brug ikke sekundære links i eller imellem afsnit af tekst eller til generel navigation mellem sider, brug da et standard link.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Sekundære links Vejledning" %}}
 
 Vær ikke kreativ med brugen af sekundære links, da de giver mindre fært end standard-links. Alternativ anvendelse af sekundære links kan tillige skabe tvivl og forvirring hos brugerne omkring, hvad der er klikbart. 
 
@@ -153,7 +153,7 @@ Bemærk, at når du ændrer `display`, vil bredden på dit billede blive begræn
 
 {% include code/preview-box.html component="external-link" title="Eksempel på eksternt link" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Eksternt link HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="external-link" copybutton=true guidelines="/styleguide/typografi/links/#eksternt-link" %}
 
@@ -165,7 +165,7 @@ Bemærk at eksterne links er stylet med `display: inline-block`, hvilket betyder
 
 {% include code/preview-box.html component="secondary-links" title="Eksempel på sekundære links" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Sekundære links HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="secondary-links" copybutton=true guidelines="/styleguide/typografi/links/#sekundaere-links" %}
 

@@ -3,7 +3,7 @@ permalink: "/styleguide/datavisualisering-infografik/"
 redirect_from:
 - "/design/datavisualisering-infografik/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Datavisualisering og infografik
 lead: Datavisualiseringer og infografikker kan formidle data eller informationer på en hurtig, klar og virkningsfuld måde og ofte vise hvordan data eller informationer fordeler sig.
@@ -49,17 +49,17 @@ Infografik kan indeholde datavisualiseringer, men er ofte illustrationer af pers
 
 ## Sådan bruges datavisualisering og infografik {#{% include create-id.html heading="Sådan bruges datavisualisering og infografik" %}}
 
-### Anvendes til  
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Datavisualisering og infografik anvendes til at sammenfatte og formidle data og information grafisk på en måde, der øger brugerens forståelse af indholdet.
 
-### Anvendes ikke til  
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke infografik og datavisualiseringer som dekoration eller for at pifte løsningen op.
 
 Brug ikke infografik og datavisualisering, hvis det bliver uoverskueligt eller på anden vis hæmmer brugernes forståelse af indholdet.
 
-### Vejledning  
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Overvej hvorvidt data eller information er for kompleks til en visuel præsentation. Det er vigtigt at datavisualiseringer og infografikker forbedrer formidlingen og ikke skaber mere forvirring.
 

@@ -1,0 +1,61 @@
+<div class="header">
+    <fds-portal-info>
+        <a slot="logo" href="#" target="_blank">
+            <img id="simple-example-header-logo" src="/assets/img/logo_virk.svg" alt="Portalnavn">
+        </a>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener" modal-id="drawer-example-simple">
+            <button aria-haspopup="dialog">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg>
+                <span>Menu</span>
+            </button>
+        </fds-modal-opener>
+        <button slot="log-off-button">
+            <svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#lock"></use>
+            </svg>Log af
+        </button>
+        <p slot="user">Anders Andersen</p>
+    </fds-portal-info>
+    <fds-solution-info>
+        <a slot="solution-heading" href="javascript:void(0);">Løsningstitel</a>
+        <p slot="additional-info" class="d-none d-lg-block">
+            <strong class="authority-name">Myndighedsnavn</strong>
+            <span>Support: 12 34 56 78</span>
+        </p>
+    </fds-solution-info>
+    <fds-modal variant="drawer" id="drawer-example-simple" class="d-block d-lg-none" heading="Menu" heading-id="top-heading-simple-9fd04505">
+        <dialog aria-labelledby="top-heading-simple-9fd04505">
+            <div class="scrollable-area">
+                <div class="modal-top">
+                    <h2 class="top-heading" tabindex="-1" id="top-heading-simple-9fd04505">Menu</h2>
+                    <fds-modal-closer class="modal-close">
+                        <button class="function-link" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path>
+                            </svg>
+                            <span>Luk</span>
+                        </button>
+                    </fds-modal-closer>
+                </div>
+                <fds-solution-info>
+                    <p slot="additional-info">
+                        <strong class="authority-name">Myndighedsnavn</strong>
+                        <span>Support: 12 34 56 78</span>
+                    </p>
+                </fds-solution-info>
+                <fds-portal-info>
+                    <button slot="log-off-button">
+                        <svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#lock"></use>
+                        </svg>Log af
+                    </button>
+                    <p slot="user">
+                        <span class="mb-3">Anders Andersen</span>
+                    </p>
+                </fds-portal-info>
+            </div>
+        </dialog>
+    </fds-modal>
+</div>

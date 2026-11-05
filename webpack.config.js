@@ -19,10 +19,10 @@ module.exports = function (outputPath, prod) {
             styleguide_display: ["./scss/styleguide-display.scss"],
             styleguide_borgerdk: ["./scss/styleguide-borgerdk.scss"],
             styleguide_virkdk: ["./scss/styleguide-virkdk.scss"],
-            test_neutral: ["./scss/test-neutral.scss"],
-            test_borger: ["./scss/test-borger.scss"],
-            test_virk: ["./scss/test-virk.scss"],
             test_normalization: ["./scss/test-normalization.scss"],
+            styleguide_web_components: ["./scss/styleguide-web-components.scss"],
+            styleguide_borgerdk_web_components: ["./scss/styleguide-borgerdk-web-components.scss"],
+            styleguide_virkdk_web_components: ["./scss/styleguide-virkdk-web-components.scss"],
             "search": ["./javascript/search.js"],
             "table": ["./javascript/components/table.js"],
             "toast": ["./javascript/components/toast.js"],
@@ -139,13 +139,14 @@ module.exports = function (outputPath, prod) {
                 {//copies content from /img and dkfds-components/dist to /assets/
                     patterns: [
                         { from: "./img/**/*", to: "" },
-                        { from: "./node_modules/dkfds/dist/img/svg-icons", to: "svg" },
-                        { from: "./node_modules/dkfds/dist/fonts", to: "fonts" },
-                        { from: "./node_modules/dkfds/dist/img/logo_virk.svg", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-borgerdk.svg", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-header-placeholder.png", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/logo-placeholder.png", to: "img" },
-                        { from: "./node_modules/dkfds/dist/img/all-svg-icons.svg", to: "img" }
+                        { from: "./node_modules/@dkfds/components/dist/web-components/dkfds.js", to: "js", info: { minimized: true } },
+                        { from: "./node_modules/@dkfds/components/dist/img/svg-icons", to: "svg" },
+                        { from: "./node_modules/@dkfds/components/dist/fonts", to: "fonts" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo_virk.svg", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo-borgerdk.svg", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo-header-placeholder.png", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/logo-placeholder.png", to: "img" },
+                        { from: "./node_modules/@dkfds/components/dist/img/all-svg-icons.svg", to: "img" }
                     ]
                 }
             ),

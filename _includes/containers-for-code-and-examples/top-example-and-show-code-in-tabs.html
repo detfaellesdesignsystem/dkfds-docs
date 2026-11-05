@@ -1,0 +1,39 @@
+{% if include.example and include.example != '' %}
+<div class="show-code-in-tabs">
+    <div class="open-in-new-window">
+        <a href="/eksempel/{{ include.example }}/" class="function-link" target="_blank">
+            <svg class="icon-svg" focusable="false" aria-hidden="true">
+                <use href="#open-in-new"></use>
+            </svg>Åbn eksempel i nyt vindue
+        </a>
+    </div>
+    <div class="top-example">
+        {% include code-examples/{{ include.example }}.html %}
+    </div>
+    <div class="code-in-tabs">
+        {% if include.collapsable != false %}<fds-accordion heading="Vis kode" heading-level="{{ include.heading_tag | default: 'h2' }}" content-id="example-box-{{ include.example }}">{% endif %}
+            <div class="code-content">
+                <fds-tabs>
+                    <fds-tab tab-key="web-component">Web Component</fds-tab>
+                    <fds-tab tab-key="generated-html">Genereret HTML</fds-tab>
+
+                    <fds-tab-panel tab-key="web-component">
+                        <figure aria-label="Kode">
+                            <pre><code class="language-html" data-lang="html">{% include output-files-from-build/highlighted-examples/{{ include.example }}.html %}</code></pre>
+                        </figure>
+                    </fds-tab-panel>
+                    <fds-tab-panel tab-key="generated-html">
+                        <figure aria-label="Kode">
+                            <pre><code class="language-html" data-lang="html">{% include output-files-from-build/highlighted-examples-generated-html/{{ include.example }}.html %}</code></pre>
+                        </figure>
+                    </fds-tab-panel>
+                </fds-tabs>
+                
+                <div class="copy-code-wrapper">
+                    <button class="function-link copy-code" aria-label="Kopiér kode"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#copy"></use></svg>Kopiér</button>
+                </div>
+            </div>
+        {% if include.collapsable != false %}</fds-accordion>{% endif %}
+    </div>
+</div>
+{% endif %}

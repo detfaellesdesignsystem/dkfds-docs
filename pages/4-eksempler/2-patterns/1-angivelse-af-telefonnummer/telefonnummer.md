@@ -2,7 +2,7 @@
 permalink: /eksempler/patterns/angivelse-af-telefonnummer/
 parentlink: "/eksempler/patterns/"
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 title: Angivelse af telefonnummer
 lead: Måden at håndtere angivelsen af telefonnummer på bør afhænge af selvbetjeningsløsningens målgruppe.

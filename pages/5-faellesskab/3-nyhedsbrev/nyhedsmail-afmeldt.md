@@ -2,7 +2,7 @@
 permalink: "/faellesskab/nyhedsmail/afmeldt/"
 parentlink: "/faellesskab/nyhedsmail/"
 layout: styleguide
-category: Faellesskab_category
+category: faellesskab_menu
 subcategory: Fællesskab
 title: Nyhedsbrev afmeldt
 ---

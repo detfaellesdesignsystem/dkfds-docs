@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/ikoner/"
 - "/design/ikoner/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Ikoner
 lead: Ikoner benyttes til visuelt at understrege en handling eller en information. Ikoner kan underbygge et budskab og gøre det lettere at afkode en side. Ikoner kan dog sjældent erstatte tekst.
@@ -28,15 +28,15 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges ikoner {#{% include create-id.html heading="Sådan bruges ikoner" %}}
 
-### Anvendes til  
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug ikoner som supplement til tekst for visuelt at understøtte brugerens forståelse af sidens indhold.
 
-### Anvendes ikke til  
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke dekorative ikoner til at “pynte” med, da de let udgør en visuel støj. Dette øger den kognitive belastning og mindsker dermed brugervenligheden og brugerens effektivitet.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Følg gængse konventioner for brug af ikoner, når de findes, og brug kun designsystemets ikoner til den betydning, der er angivet i {% include links/internal-link.html linktext="ikonoversigten" %}. Fx anvendes Hus-ikonet altid til “hjem”, som går til en forside. Lup-ikonet bruges til at indikere en søgemulighed, osv.
 
@@ -69,7 +69,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
 </div>
 <div>
     <div class="icon-section" id="icon-section-konventionelle">
-        <h3>Konventionelle ikoner</h3>
+        <h3 id="konventionelle-ikoner">Konventionelle ikoner</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-konventionelle">
                 {% include icon.html icon="open-in-new" keywords="open in new, new window, external, ekstern, eksternt link" label="Eksternt link / åbner i nyt vindue" %}
@@ -82,7 +82,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-beskeder">
-        <h3>Beskeder (feedback)</h3>
+        <h3 id="beskeder">Beskeder (feedback)</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-beskeder">
                 {% include icon.html icon="warning" keywords="besked, alert, message, warning, advarsel, report, problem, report problem, report-problem" label="Advarsel" %}
@@ -94,7 +94,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-navigation">
-        <h3>Navigation</h3>
+        <h3 id="navigation">Navigation</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-navigation"> 
                 {% include icon.html icon="more-horiz" keywords="more, vertical, mere" label="Flere menupunkter (horisontalt)" %}
@@ -116,7 +116,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-filtyper">
-        <h3>Filtyper</h3>
+        <h3 id="filtyper">Filtyper</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-filtyper">
                 {% include icon.html icon="file" keywords="fil, document" label="Fil (generisk)" %}
@@ -128,7 +128,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-funktionalitet">
-        <h3>Funktionalitet</h3>
+        <h3 id="funktionalitet">Funktionalitet</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-funktionalitet">
                 {% include icon.html icon="hourglass" keywords="waiting, hourglass, timeglas, vente, ventetid, tid, hourglass-empty" label="Afventer" %}
@@ -193,7 +193,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-illustrative">
-        <h3>Illustrative</h3>
+        <h3 id="illustrative">Illustrative</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-illustrative">
                 {% include icon.html icon="analytics" keywords="assessment, graf, diagram" label="Analyse" %}
@@ -239,7 +239,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-tekstredigering">
-        <h3>Tekstredigering</h3>
+        <h3 id="tekstredigering">Tekstredigering</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-tekstredigering">
                 {% include icon.html icon="format-text" keywords="text-format" label="Formatér tekst" %}
@@ -262,7 +262,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
         </div>
     </div>
     <div class="icon-section" id="icon-section-sortering">
-        <h3>Sortering</h3>
+        <h3 id="sortering">Sortering</h3>
         <div class="container">
             <ul class="icon-list no-max-width row" id="icon-list-sortering">
                 {% include icon.html icon="sort-default" keywords="sorter, sort, sortering, overflow, overflowmenu, overflow menu" label="Sortering default" %}
@@ -293,7 +293,7 @@ Følgende ikoner er en del af Det Fælles Designsystem. Brug kun ikonerne til at
 
 Ikonsamlingen gør, at du kan indsætte ikoner med `<svg>`. Før dette virker, er du nødt til at implementere ikonsamlingen, der skal indsættes på hver side i løsningen.
 
-### Implementering
+### Implementering {#{% include create-id.html heading="Implementering" append="-kode" %}}
 
 Placér ikonsamlingen i toppen af `<body>` i et område, der er skjult:
 
@@ -318,7 +318,7 @@ Det anbefales at indsætte alle ikoner i samlingen på hver side, men du kan ogs
 
 {% include code/syntax.html component="simple-base-svg" link=true url="ikon-samling" %}
 
-### Anvendelse
+### Anvendelse {#{% include create-id.html heading="Anvendelse" append="-kode" %}}
 
 For at anvende et ikon skal du indsætte det ved hjælp af `<svg>` og referere til det korrekte `id` i ikonsamlingen. For eksempel skal ikonet for "print (udskriv)" indsættes med:
 

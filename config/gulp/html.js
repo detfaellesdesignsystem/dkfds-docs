@@ -19,11 +19,51 @@ var titles = require('./example-titles').default;
 var buildAll = ['examples/**/**/*.njk', 'examples/**/**/**/*.njk'];
 var buildTestOnly = ['examples/testfiles/**/*.njk'];
 var buildExamples = ['examples/examples/**/*.njk'];
-var buildFile = ['examples/testfiles/loading-spinner/*.njk'];
+var buildFile = ['examples/testfiles/web-components/*.njk', 'examples/testfiles/web-components-header/*.njk'];
 
 var activeBuild = buildAll;
 
 var testfiles = [
+    "test-empty-page",
+    "test-fds-accordion",
+    "test-fds-accordion-group",
+    "test-fds-help-text",
+    "test-fds-input",
+    "test-fds-select",
+    "test-fds-error-message",
+    "test-fds-character-limit",
+    "test-fds-checkbox",
+    "test-fds-radio-button",
+    "test-fds-date-input",
+    "test-fds-date-picker",
+    "test-fds-textarea",
+    "test-fds-error-summary-manual",
+    "test-fds-dropdown-menu",
+    "test-fds-dropdown-menu-placement",
+    "test-fds-tooltip-icon",
+    "test-fds-tooltip",
+    "test-fds-side-menu",
+    "test-fds-toggle-switch",
+    "test-fds-modal",
+    "test-fds-step-indicator",
+    "test-fds-tabs",
+    "test-fds-alert",
+    "test-fds-multiselect",
+    "test-fds-cookie-message",
+    "test-fds-header-portal-only",
+    "test-fds-header-solution-only",
+    "test-fds-header-portal-and-solution",
+    "test-fds-header-solution-and-navigation",
+    "test-fds-header-three-simple-rows",
+    "test-fds-header-navigation-with-only-searchfield",
+    "test-fds-header-navigation-with-searchfield",
+    "test-fds-header-dropdown-navigation",
+    "test-fds-header-navigation-many-items",
+    "test-fds-header-language-switcher",
+    "test-fds-header-long-sentences",
+    "test-fds-header-long-strings",
+    "test-fds-header-mobile-helptext",
+    "test-fds-header-breadcrumb-function-links",
     "test-html-elements",
     "test-headings-no-sections",
     "test-headings-with-sections",
@@ -135,12 +175,12 @@ var testfiles = [
     "test-radiobuttons-2",
     "test-radiobuttons-3",
     "test-radiobuttons-4",
-    "test-search",
     "test-structured-list-1",
     "test-structured-list-2",
     "test-structured-list-3",
     "test-structured-list-4",
     "test-structured-list-5",
+    "test-search",
     "test-simple-table",
     "test-responsive-table",
     "test-sorting-table",
@@ -289,7 +329,7 @@ gulp.task('nunjucks', done => {
             }
         }))
         .pipe(nunjucksRender({
-            path: 'node_modules/dkfds/src/'
+            path: 'node_modules/@dkfds/components/src/'
         }))
         .pipe(prettify({
             wrap_line_length: 94,

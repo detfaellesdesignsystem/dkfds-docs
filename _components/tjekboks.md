@@ -3,26 +3,27 @@ permalink: "/komponenter/tjekboks/"
 redirect_from:
 - "/kode/komponenter/tjekboks/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
-title: Tjekboks (Checkbox)
+title: Tjekboks
+title_en: Checkbox
 lead: Tjekbokse lader brugeren vælge en eller flere muligheder.
 description: "Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste."
 tags:
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="checkbox-large" title="Eksempel på tjekbokse" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Tjekboks" code="Tjekboks_Kode" %}
+{% include anchorlinks.html guidelines="Tjekboks" code="Tjekboks_Kode" webcomponent="Tjekboks_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Tjekbokse giver brugeren mulighed for at vælge en eller flere værdier ud fra en synlig liste.
 
@@ -32,13 +33,13 @@ Når brugeren skal be- eller afkræfte et valg, fx ”Ja/Nej” (i det tilfælde
 
 Når listen over mulige valg kan være på en mobilvisning.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Når der er for mange valg til at give mening på en mobilvisning.
 
 Når brugeren kun kan vælge én værdi. Her skal du i stedet anvende radioknapper.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Brugeren skal kunne tappe eller klikke på tjekboksen eller dens label for at vælge eller fravælge dens værdi.
 
@@ -108,7 +109,7 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="checkbox-large" copybutton=true %}
 
@@ -117,7 +118,7 @@ Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra f
 - Tjekboksenes design er ændret ift. standardvisningen for at gøre dem tydeligere og øge deres visuelle respons til brugerens interaktion.
 - Tjekboksene er gjort tilgængelige for skærmlæsere på trods af deres visuelle design, ved at selve tagget for tjekboksen er placeret uden for det synlige skærmområde.
 
-### JavaScript
+### JavaScript {#{% include create-id.html heading="JavaScript" append="-kode" %}}
 
 Tjekboks med skjult indhold kræver JavaScript for at fungere. Man kan enten gøre brug af `DKFDS.init()` eller initiere komponenten manuelt med nedenstående:
 
@@ -177,3 +178,68 @@ Det element som skal collapses/expandes skal have følgende:
 - `id="id-of-target-to-collapse"`
 - `aria-hidden="true/false"`
 
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-example" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Fejl {#{% include create-id.html heading="Fejl" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Hjælpetekst {#{% include create-id.html heading="Hjælpetekst" append="-webcomponent" %}}
+
+#### Hjælpetekst til enkelte tjekbokse
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-help-text" heading_tag="h5" subheading_tag="h6" %}
+
+#### Tjekboksgruppe med hjælpetekst
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-group-help-text" heading_tag="h5" subheading_tag="h6" %}
+
+### Obligatoriske og frivillige tjekbokse {#{% include create-id.html heading="Obligatoriske og frivillige tjekbokse" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-required" heading_tag="h4" subheading_tag="h5" %}
+
+### Skjult indhold (Collapse) {#{% include create-id.html heading="Skjult indhold (Collapse)" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-collapse" heading_tag="h4" subheading_tag="h5" %}
+
+### Deaktiveret {#{% include create-id.html heading="Deaktiveret" append="-webcomponent" %}}
+
+#### Deaktiveret enkelte tjekbokse
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-disabled" heading_tag="h5" subheading_tag="h6" %}
+
+#### Deaktiveret tjekboksgruppe
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-group-disabled" heading_tag="h5" subheading_tag="h6" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+`fds-checkbox` kræver et `input`- og et `label`-element. `fds-checkbox-group` kræver et `fieldset`-element, der omslutter gruppens `legend` og de enkelte tjekbokse.
+
+### fds-checkbox {#{% include create-id.html heading="fds-checkbox" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut             | Beskrivelse                                                                                                                                                                 |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| show-required-status | Viser om tjekboksen er obligatorisk eller frivillig baseret på `required`-attributten. Indsæt en tekst i attributten for at overskrive default-teksten.                 |
+| ready                 | Sæt til `"false"` for at udskyde initialisering af komponenten. Udelad attributten, eller sæt den til andet end `"false"`, for at initialisere komponenten med det samme. |
+
+### fds-help-text {#{% include create-id.html heading="fds-help-text" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-help-text.html %}
+
+### fds-error-message {#{% include create-id.html heading="fds-error-message" append="-webcomponent" %}}
+
+{% include web-component-shared-text/fds-error.html %}

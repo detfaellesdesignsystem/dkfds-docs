@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     languageSwitcher();
 });
-function languageSwitcher(){
+function languageSwitcher() {
 
-    if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher')) {
+    if (document.getElementsByTagName('body')[0].classList.contains('page-language-switcher')) {
         let queryString = window.location.search;
-        if(queryString !== "" && queryString.indexOf("lang=") !== -1){
+        if (queryString !== "" && queryString.indexOf("lang=") !== -1) {
             let lang = queryString.replace('?lang=', '');
-            if(lang !== "da") {
+            if (lang !== "da") {
                 let element = document.getElementsByClassName('language-switcher')[0];
                 let ul = element.getElementsByTagName('ul')[0];
                 let first = ul.querySelector('li:first-of-type a');
@@ -31,7 +31,7 @@ function languageSwitcher(){
                         ul.setAttribute('aria-label', "Choose language");
                         chosenLang.setAttribute('aria-label', "Current language: English");
 
-                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
+                        if (document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
                             ul.querySelector('a[lang="en-GB"]').removeAttribute('data-tooltip');
                             ul.querySelector('a[lang="en-GB"]').classList.remove('js-tooltip');
                             ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
@@ -46,7 +46,7 @@ function languageSwitcher(){
                         ul.setAttribute('aria-label', "Sprache wählen");
                         chosenLang.setAttribute('aria-label', "Aktuelle Sprache: Deutsch");
 
-                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
+                        if (document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
                             ul.querySelector('a[lang="de"]').removeAttribute('data-tooltip');
                             ul.querySelector('a[lang="de"]').classList.remove('js-tooltip');
                             ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
@@ -59,7 +59,7 @@ function languageSwitcher(){
                     case "pl":
                         ul.setAttribute('aria-label', "Wybierz język");
                         chosenLang.setAttribute('aria-label', "Aktualny język: polski");
-                        if(document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')){
+                        if (document.getElementsByTagName('body')[0].classList.contains('page-language-switcher-tooltip')) {
                             ul.querySelector('a[lang="pl"]').removeAttribute('data-tooltip');
                             ul.querySelector('a[lang="pl"]').classList.remove('js-tooltip');
                             ul.querySelector('a[lang="da"]').classList.add('js-tooltip');
@@ -76,7 +76,7 @@ function languageSwitcher(){
     }
     else if (document.getElementsByTagName('body')[0].classList.contains('page-header-switch-language')) {
         let queryString = window.location.search;
-        if(queryString !== "" && queryString.indexOf("lang=") !== -1) {
+        if (queryString !== "" && queryString.indexOf("lang=") !== -1) {
             let lang = queryString.replace('?lang=', '');
             let select_language_button = document.getElementsByClassName('select-language-button')[0];
             let select_language_list_overflow = document.getElementsByClassName('select-language-list')[0].getElementsByClassName('overflow-list')[0];
@@ -106,24 +106,66 @@ function languageSwitcher(){
                     select_language_button.innerHTML = globe_icon + 'Deutsch';
                     danish.getElementsByTagName("A")[0].removeAttribute('aria-label');
                     german.getElementsByTagName("A")[0].setAttribute('aria-label', 'Aktuelle Sprache: Deutsch');
-                    select_language_list_overflow.innerHTML = german.outerHTML +  danish.outerHTML + english.outerHTML + polish.outerHTML;
+                    select_language_list_overflow.innerHTML = german.outerHTML + danish.outerHTML + english.outerHTML + polish.outerHTML;
                     /* Mobile menu */
                     let german_icon = german;
                     german_icon.getElementsByTagName('A')[0].innerHTML = done_icon + 'Deutsch';
-                    language_switcher_mobile_ul.innerHTML = german_icon.outerHTML +  danish.outerHTML + english.outerHTML + polish.outerHTML;
+                    language_switcher_mobile_ul.innerHTML = german_icon.outerHTML + danish.outerHTML + english.outerHTML + polish.outerHTML;
                     break;
                 case "pl":
                     /* Header */
                     select_language_button.innerHTML = globe_icon + 'Polski';
                     danish.getElementsByTagName("A")[0].removeAttribute('aria-label');
                     polish.getElementsByTagName("A")[0].setAttribute('aria-label', 'Aktualny język: polski');
-                    select_language_list_overflow.innerHTML = polish.outerHTML +  danish.outerHTML + english.outerHTML + german.outerHTML;
+                    select_language_list_overflow.innerHTML = polish.outerHTML + danish.outerHTML + english.outerHTML + german.outerHTML;
                     /* Mobile menu */
                     let polish_icon = polish;
                     polish_icon.getElementsByTagName('A')[0].innerHTML = done_icon + 'Polski';
-                    language_switcher_mobile_ul.innerHTML = polish_icon.outerHTML +  danish.outerHTML + english.outerHTML + german.outerHTML;
+                    language_switcher_mobile_ul.innerHTML = polish_icon.outerHTML + danish.outerHTML + english.outerHTML + german.outerHTML;
                     break;
             }
+        }
+    }
+    else if (document.getElementsByTagName('body')[0].classList.contains('page-header') || document.getElementsByTagName('body')[0].classList.contains('layout-show-example-new-page-header-variant')) {
+        // On the header page, the links should do nothing when clicked
+        if (document.getElementsByTagName('body')[0].classList.contains('page-header')) {
+            const links = document.querySelectorAll('.language-switcher-header a, .language-switcher-mobile a');
+            for (const link of links) {
+                link.setAttribute('href', 'javascript:void(0);');
+            }
+        }
+
+        const lang = window.location.search.replace('?lang=', '');
+        const headerUl = document.querySelector('.language-switcher-header ul');
+        const mobileUl = document.querySelector('.language-switcher-mobile ul');
+
+        if (headerUl.querySelector(`a[lang="${lang}"]`)) {
+            mobileUl.querySelector('svg').remove();
+
+            [headerUl, mobileUl].forEach(ul => {
+                const a = ul.querySelector(`a[lang="${lang}"]`);
+                ul.querySelector('[aria-current]').removeAttribute('aria-current');
+                a.setAttribute('aria-current', 'true');
+                ul.prepend(a.parentElement);
+            });
+
+            // Add the check icon to the chosen language on mobile (desktop sets the icon through styling)
+            const svgns = 'http://www.w3.org/2000/svg';
+            const checkIcon = document.createElementNS(svgns, 'svg');
+            checkIcon.classList.add('icon-svg');
+            checkIcon.setAttribute('focusable', 'false');
+            checkIcon.setAttribute('aria-hidden', 'true');
+
+            const use = document.createElementNS(svgns, 'use');
+            use.setAttribute('href', '#check');
+            checkIcon.appendChild(use);
+
+            mobileUl.querySelector('a').prepend(checkIcon);
+
+            // Update the header button on desktop
+            const buttonText = document.querySelector('.language-switcher-header button span').lastChild;
+            const chosenLanguage = headerUl.querySelector('a').textContent;
+            buttonText.textContent = chosenLanguage;
         }
     }
 }

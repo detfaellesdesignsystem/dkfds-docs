@@ -3,7 +3,7 @@ permalink: "/faellesskab/kontakt-support/"
 redirect_from:
 - "/omdesignsystemet/kontakt-support/"
 layout: styleguide
-category: Faellesskab_category
+category: faellesskab_menu
 subcategory: Fællesskab
 title: Kontakt og support
 description: Kontakt os via GitHub eller på e-mail.

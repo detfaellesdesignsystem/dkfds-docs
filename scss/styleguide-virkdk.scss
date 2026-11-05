@@ -2,7 +2,7 @@
 //---
 //Above dashes are used by Jekyll in main scss files (not needed in partials). DO NOT DELETE.
 
-@use '../node_modules/dkfds/src/stylesheets/dkfds-virkdk' with (
+@use '../node_modules/@dkfds/components/src/stylesheets/dkfds-virkdk' with (
     $font-path:         '/assets/fonts/IBMPlexSans/',
     $image-path:        '/assets/img/',
     $icons-folder-path: '/assets/svg/'

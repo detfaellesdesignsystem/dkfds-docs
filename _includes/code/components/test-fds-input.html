@@ -1,0 +1,248 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Inputfelter</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Label og input</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Input med aria-label</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <input type="text" name="input-text" aria-label="Inputfelt uden synlig label">
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Input med fejl</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <input type="text" name="input-text">
+                <fds-error-message>Dette er en fejl</fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Input med fejl og hjælpetekst</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <fds-help-text>Dette er en hjælpetekst</fds-help-text>
+                <input type="text" name="input-text">
+                <fds-error-message>Dette er en fejl</fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Input med fejl, der sidder over feltet</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <fds-error-message>Dette er en fejl</fds-error-message>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Påkrævet inputfelt</h2>
+        </div>
+        <div class="col-12">
+            <fds-input show-required-status>
+                <label>Label</label>
+                <input type="text" name="input-text" required>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Frivilligt inputfelt</h2>
+        </div>
+        <div class="col-12">
+            <fds-input show-required-status>
+                <label>Label</label>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Readonly</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <input type="text" name="input-text" readonly>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Disabled inputfelt</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <input type="text" name="input-text" disabled>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Prefix og suffix</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <fds-input-affix input-prefix="Beløb" input-suffix="kr.">
+                    <input type="number" name="input-text">
+                </fds-input-affix>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Prefix og suffix med disabled input</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <fds-input-affix input-prefix="Beløb" input-suffix="kr.">
+                    <input type="number" name="input-text" disabled>
+                </fds-input-affix>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Prefix og suffix med readonly input</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <fds-input-affix input-prefix="Beløb" input-suffix="kr.">
+                    <input type="number" name="input-text" readonly>
+                </fds-input-affix>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Prefix og suffix med fejl</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <fds-input-affix input-prefix="Beløb" input-suffix="kr.">
+                    <input type="number" name="input-text">
+                </fds-input-affix>
+                <fds-error-message>Dette er en fejl</fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">input-maxwidth</h2>
+        </div>
+        <div class="col-12">
+            <fds-input input-maxwidth="4">
+                <label>Label</label>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Label, input og tooltip</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Label</label>
+                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                    data-tooltip-id="input-text-tooltipbutton1" data-position="above"
+                    data-trigger="click">
+                    <button class="button button-unstyled tooltip-target" type="button"
+                        aria-label="Læs mere">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true">
+                            <use href="#help"></use>
+                        </svg>
+                    </button>
+                </span>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+
+        <div class="col-12 mt-5">
+            <fds-input>
+                <label>Label</label>
+                <div class="d-flex align-items-center">
+                    <input type="text" name="input-text">
+                    <span class="tooltip-wrapper ml-3 mt-3" data-tooltip="Dette er et tooltip"
+                        data-tooltip-id="input-text-tooltipbutton2" data-position="above"
+                        data-trigger="click">
+                        <button class="button button-unstyled tooltip-target" type="button"
+                            aria-label="Læs mere">
+                            <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true">
+                                <use href="#help"></use>
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </fds-input>
+        </div>
+
+        <div class="col-12 mt-5">
+            <fds-input>
+                <label>Label</label>
+                <span class="tooltip-wrapper" data-tooltip="Dette er et tooltip"
+                    data-tooltip-id="input-text-tooltipbutton3" data-position="above"
+                    data-trigger="click">
+                    <button class="button button-unstyled tooltip-target" type="button"
+                        aria-label="Læs mere">
+                        <svg class="icon-svg mr-0 mt-0" focusable="false" aria-hidden="true">
+                            <use href="#help"></use>
+                        </svg>
+                    </button>
+                </span>
+                <fds-help-text>Dette er en hjælpetekst</fds-help-text>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+    </div>
+
+</main>

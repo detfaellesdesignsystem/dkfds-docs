@@ -41,43 +41,27 @@
             {%- assign _active = true %}
         {%- endif %}
 
-        {% if link.categorynav %}
-        <li{% if _active %} class="active"{% endif %}>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="{{link.categorynav | downcase }}" aria-expanded="{% if _active %}true{% else %}false{% endif %}">
-                    <span>{{ _page.title | smartify }}</span>
-                </button>
-                {% assign _sublinks = site.data.nav[link.categorynav] %}
-                <div class="overflow-menu-inner{% unless _active %} collapsed{% endunless %}" id="{{link.categorynav | downcase }}">
-                    <ul class="overflow-list">
-                        <li{% if _current %} class="active current"{% endif %}>
-                            <a href="{{ _page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{% endif %}>
-                                <span>{{ _page.title | smartify }} <span class="helptext d-inline">(overblik)</span></span>
+        {% if link.submenu %}
+        <li>
+            <fds-dropdown-menu expanded="{% if _active %}true{% else %}false{% endif %}">
+                <button><span>{{ _page.title | smartify }}</span></button>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="{{ _page.url | relative_url }}"{% if _current %} aria-current="page"{% endif %}>
+                                <span class="d-inline-block">{{ _page.title | smartify }} <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        {% assign _sublinks = site.data.nav[link.submenu] %}
                         {% include nav/nav-mobile.html links=_sublinks %}
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         {% else %}
-        <li{% if _active or _current %} class="{% if _active %}active{% endif %}{% if _current %} current{% endif %}"{% endif %}>
-            <a href="{{ _page.url | relative_url }}" class="nav-link"{% if _current %} aria-current="page"{%- elsif _active %} aria-current="true"{% endif %}>
-                {%- if _page.title == 'Beskeder (Alerts)' -%}
-                <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
-                {%- elsif _page.title == 'Faneblade (Tabs)' %}
-                <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
-                {%- elsif _page.title == 'Knapper (Buttons)' %}
-                <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
-                {%- elsif _page.title == 'Radioknap (Radio button)' %}
-                <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
-                {%- elsif _page.title == 'Tekstområde (Textarea)' %}
-                <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
-                {%- elsif _page.title == 'Tjekboks (Checkbox)' %}
-                <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
-                {%- else -%}
-                <span>{{ _page.title | smartify }}</span>
-                {%- endif -%}
+        <li>
+            <a href="{{ _page.url | relative_url }}"{% if _current %} aria-current="page"{%- elsif _active %} aria-current="true"{% endif %}>
+                <span>{{ _page.title | smartify }}{% if _page.title_en %} <span class="d-inline" lang="en">({{ _page.title_en | smartify }})</span>{% endif %}</span>
             </a>
         </li>
         {% endif %}

@@ -3,7 +3,7 @@ permalink: "/komponenter/tags/"
 redirect_from:
 - "/kode/komponenter/tags/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Tags
 lead: Et tag er en mindre knap, som du kan bruge til at angive metainformation om
@@ -25,17 +25,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Et tag er en sekundær funktionalitet, der typisk anvendes til meta-information om indhold, der kan kategoriseres, filtreres eller på anden vis beskrives med nøgleord.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Primær funktionalitet som fx ”Gem”, hvor der i stedet bør anvendes en knap.
 
 Hvis tags anvendes i tæt forbindelse med knapper, kan det forvirre brugeren. Overvej nøje placering og anvendelse og udfør brugertest.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Generelt skal du bruge tags til at give brugeren yderligere, sekundær information og nøgleord i relation til  indholdet. 
 
@@ -61,7 +61,7 @@ Undgå at blande funktioner og husk at tags er noget, der må kunne overses uden
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="tags" copybutton=true %}
 

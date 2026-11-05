@@ -58,12 +58,12 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
 </div>
 
 <div class="container mt-6">
-    <h2 class="mb-0">Følg med</h2>
+    <h2 class="mb-0" id="foelg-med">Følg med</h2>
     <div class="row">
         <div class="col-12 col-sm-6">
-            <h3>Seneste release</h3>
-            <p class="mb-0">Version 11.3.0</p>
-            <p class="small-text mt-0">31-08-2026</p>
+            <h3 id="seneste-release">Seneste release</h3>
+            <p class="mb-0">Version 12.0.0</p>
+            <p class="small-text mt-0">05-11-2026</p>
             <p>Det Fælles Designsystem bliver løbende opdateret og vedligeholdt. Læs release notes for at følge med i udviklingen, og tilmeld nyhedsbrevet for at få besked, når der kommer nye versioner af designsystemet.</p>
             <ul class="nobullet-list">
                 <li>{% include links/internal-link.html linktext="Release notes" %}</li>
@@ -71,7 +71,7 @@ description: Brug Det Fælles Designsystem til at lave simple og effektive selvb
             </ul>
         </div>
         <div class="col-12 col-sm-6">
-            <h3>Samarbejde og hjælp</h3>
+            <h3 id="samarbejde-og-hjaelp">Samarbejde og hjælp</h3>
             <p>For at sikre transparens er systemet åbent for alle. Alle myndigheder med en interesse i at præge udviklingen og få indflydelse på designsystemets indhold er velkomne til at dele deres erfaringer med teamet bag designsystemet.</p>
             <ul class="nobullet-list">
                 <li>{% include links/internal-link.html linktext="Deltag i samarbejdsforum" %}</li>

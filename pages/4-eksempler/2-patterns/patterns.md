@@ -3,7 +3,7 @@ permalink: /eksempler/patterns/
 redirect_from:
 - /eksempler/patterns/forlad-siden/
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 title: Patterns
 lead: Patterns er best practice designløsninger til specifikke brugerfokuserede opgaver. De bruger ofte en eller flere komponenter og forklarer, hvordan man tilpasser dem til konteksten.
@@ -44,6 +44,6 @@ Alle patterns i dette afsnit er understøttet af skriftlig vejledning og indehol
     </li>
 </ul>
 
-## Har du en idé til et pattern?
+## Har du en idé til et pattern? {#{% include create-id.html heading="Har du en idé til et pattern" %}}
 
 Hvis du mangler et specifikt pattern eller har udviklet et i din egen løsning, som andre myndigheder kunne have brug for, så kan du kontakte os ved at {% include links/internal-link.html linktext="sende en e-mail" %} eller {% include links/external-link.html linktext='oprette et issue på GitHub' %}.

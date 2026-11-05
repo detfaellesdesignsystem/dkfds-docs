@@ -3,7 +3,7 @@ permalink: "/komponenter/cards/"
 redirect_from:
 - "/kode/komponenter/cards/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Cards
 lead: Cards anvendes som en visuel afgrænsning af indhold eller interaktionselementer, der omhandler samme emne. De kan også anvendes til navigation.
@@ -22,11 +22,11 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug cards til at gruppere indhold og funktionalitet, der adskiller sig fra sidens øvrige indhold.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke cards til det primære indhold på en løsning, men derimod til indhold, der kan stå og forstås alene og fortsat være del af den samlede løsning.
 
@@ -34,7 +34,7 @@ Brug ikke cards udelukkende for at opnå et bestemt visuelt udtryk. Cards skal b
 
 Brug ikke cards til at gruppere formularelementer. Brug i stedet blot {% include links/internal-link.html linktext="overskrifter" %} eller {% include links/component-guideline-link.html linktext="trinindikator" %}.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Undgå lange tekster i cards - skriv kort og præcist.
 
@@ -107,7 +107,7 @@ Både almindelige cards og navigationscards kan være lange cards.
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="card-single" copybutton=true %}
 

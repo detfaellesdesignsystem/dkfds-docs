@@ -4,7 +4,7 @@ parentlink: "/styleguide/datavisualisering-infografik/"
 redirect_from:
 - "/design/datavisualisering-infografik/tilgaengelig-grafik/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Tilgængelig grafik
 lead: Grafik kommunikerer data visuelt frem for udelukkende med tekst og tal. Det

@@ -36,26 +36,26 @@ var CookieMgr = (function () {
     };
 
     var createCookie = function (name, value, days) {
-            var expires = '';
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toGMTString();
-            }
+        var expires = '';
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toGMTString();
+        }
 
-            if (value === '') {
-                // deleting cookies from www-domain, if set
-                document.cookie = name + "=" + value + expires + "; path=/";
-            }
+        if (value === '') {
+            // deleting cookies from www-domain, if set
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
 
-            var domain = getCookieDomain(window.location.hostname);
-            log('setting cookie on ' + domain);
-            if (domain === 'localhost') {
-                document.cookie = name + "=" + value + expires + "; path=/"+ ";SameSite=Strict";
-            } else {
-                document.cookie = name + "=" + value + expires + ";domain=" + domain + "; path=/"+ ";SameSite=Strict";
-            }
-        },
+        var domain = getCookieDomain(window.location.hostname);
+        log('setting cookie on ' + domain);
+        if (domain === 'localhost') {
+            document.cookie = name + "=" + value + expires + "; path=/" + ";SameSite=Strict;Secure";
+        } else {
+            document.cookie = name + "=" + value + expires + ";domain=" + domain + "; path=/" + ";SameSite=Strict;Secure";
+        }
+    },
         readCookie = function (name) {
             var nameEq = name + "=";
             var ca = document.cookie.split(';');
@@ -84,108 +84,7 @@ var CookieMgr = (function () {
         getCookieDomain: getCookieDomain
     };
 })();
-var TestTracker = (function () {
-    "use strict";
-    var enableLog = false;
-    var log = function (msg) {
-        if (enableLog && window.console) {
-            console.log(msg);
-        }
-    };
-    var init = function (cfg) {
-            log('initializing TestTracker');
-            log(cfg);
-            if (cfg.ready && typeof cfg.ready === 'function') {
-                cfg.ready();
-            }
-        },
-        injectCode = function () {
-            var testTag = document.createElement('h1');
-            testTag.className = 'testheader';
-            testTag.innerText = 'Overskrift';
-            testTag.id = 'h1header';
-            var body = document.getElementsByTagName('body')[0];
-            body.insertBefore(testTag, body.firstChild);
-        },
-        eraseCookie = function () {
-            var el = document.getElementById("h1header");
-            if (el) {
-                el.parentNode.removeChild(el);
-            }
-        };
-    return {
-        init: init,
-        injectCode: injectCode,
-        eraseCookie: eraseCookie
-    };
-})();
-var GemiusTracker = (function () {
-    "use strict";
 
-    var scriptLocation, gemiusAccount, loadAsync = false,
-        enableLog = false;
-
-    var log = function (msg) {
-        if (window.console && enableLog) {
-            console.log(msg);
-        }
-    };
-    var injectCode = function (injectCfg) {
-        if (gemiusAccount && scriptLocation !== '') {
-            log('inserting Geminus tracking code');
-            window.pp_gemius_identifier = new String(gemiusAccount);
-            var script = document.createElement('script');
-            script.src = scriptLocation;
-            setAsyncOnScript(script, injectCfg);
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(script, s);
-        }
-    };
-
-    var eraseCookie = function () {
-        // user should be redirected to http://optout.hit.gemius.pl/removeDK.php
-    };
-
-    var init = function (cfg) {
-        scriptLocation = cfg.scriptLocation;
-        gemiusAccount = cfg.gemiusAccount;
-        loadAsync = cfg.async || true;
-        if (cfg.ready && typeof cfg.ready === 'function') {
-            cfg.ready({
-                scriptLocation: scriptLocation,
-                gemiusAccount: gemiusAccount
-            });
-        }
-    };
-
-
-    var setAsyncOnScript = function (ga, injectCfg) {
-        // if injectCode is called with a cfg object where async is set, use that. Otherwise fallback
-        if (injectCfg && typeof (injectCfg.async) !== 'undefined') {
-            log('setting async attribute from injectCfg');
-            if (injectCfg.async === true) {
-                log('it was true');
-                ga.async = injectCfg.async;
-            } else {
-                ga.async = undefined;
-            }
-        } else {
-            log('setting default async attribute');
-            if (loadAsync === true) {
-                ga.async = loadAsync;
-            } else {
-                ga.async = undefined;
-            }
-        }
-    };
-
-
-    return {
-        init: init,
-        injectCode: injectCode,
-        eraseCookie: eraseCookie
-    };
-})();
 var PiwikProTracker = (function () {
     "use strict";
     var cookieMgr = CookieMgr,
@@ -250,14 +149,14 @@ var PiwikProTracker = (function () {
                     var e = new Date;
                     e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString()
                 }
-                document.cookie = a + "=" + b + d + "; path=/"
+                document.cookie = a + "=" + b + d + "; path=/;Secure"
             }
             var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug");
             stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
             var qP = [];
             dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug");
             var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
-            tags.async = !0, tags.src = "//"+accountPath+"/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+            tags.async = !0, tags.src = "//" + accountPath + "/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
             ! function (a, n, i) {
                 a[n] = a[n] || {};
                 for (var c = 0; c < i.length; c++) ! function (i) {
@@ -275,12 +174,10 @@ var PiwikProTracker = (function () {
 
     var injectCode = function (injectCfg) {
         if (account) {
-            log('inserting Piwik Pro tracking code',piwikProPath,account);
+            log('inserting Piwik Pro tracking code', piwikProPath, account);
             callSetupCode(piwikProPath, account);
         }
     };
-
-    var setAsyncOnScript = function (ga, injectCfg) {};
 
     var init = function (cfg) {
         loadAsync = cfg.async || true;
@@ -304,215 +201,7 @@ var PiwikProTracker = (function () {
         injectCode: injectCode
     };
 })();
-var NetMinersTracker = (function () {
-    "use strict";
-    var netminersAccount, scriptLocation, enableLog = false;
-    var log = function (msg) {
-        if (enableLog && window.console) {
-            console.log(msg);
-        }
-    };
-    var injectCode = function () {
-        log('scriptlocation:' + scriptLocation);
-        if (typeof scriptLocation == 'string') {
-            var script = document.createElement('script');
-            script.src = scriptLocation;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(script, s);
-        }
-    };
-    var eraseCookie = function () {
-        log('erasing netminers cookie for account ' + netminersAccount);
-        var script = document.createElement('script');
-        script.src = document.location.protocol + '//' + netminersAccount + '.netminers.dk/tracker/removecookies.ashx?n=' + Math.random();
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(script, s);
-    };
 
-    var init = function (cfg) {
-        netminersAccount = cfg.netminersAccount;
-        scriptLocation = cfg.scriptLocation;
-
-        if (cfg.ready && typeof cfg.ready === 'function') {
-            cfg.ready({
-                scriptLocation: scriptLocation,
-                netminersAccount: netminersAccount
-            });
-        }
-
-    };
-
-    return {
-        init: init,
-        injectCode: injectCode,
-        eraseCookie: eraseCookie
-    };
-})();
-var GoogleAnalyticsTracker = (function () {
-    "use strict";
-    var cookieMgr = CookieMgr,
-        loadAsync = true,
-        account,
-        params = [],
-        fakeAnalytics,
-        enableLog = false;
-
-    var log = function (msg) {
-        if (window.console && enableLog) {
-            console.log(msg);
-        }
-    };
-
-    var eraseCookie = function () {
-        // known google analytics cookies
-        cookieMgr.eraseCookie('__utma');
-        cookieMgr.eraseCookie('__utmb');
-        cookieMgr.eraseCookie('__utmc');
-        cookieMgr.eraseCookie('__utmz');
-    };
-
-    var injectCode = function (injectCfg) {
-        log('injectCfg:');
-        log(injectCfg);
-        if (account) {
-            log('inserting Google Analytics tracking code');
-            window._gaq = window._gaq || [];
-            window._gaq.push(['_setAccount', account]);
-            window._gaq.push(['_trackPageview']);
-            for (var i = 0; i < params.length; i++) {
-                window._gaq.push(params[i]);
-            }
-
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                setAsyncOnScript(ga, injectCfg);
-                if (fakeAnalytics === true) {
-                    ga.src = '/scripts/FakeAnalytics.js';
-                } else {
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
-                        'http://www') + '.google-analytics.com/ga.js';
-                }
-                log('async property on script: ' + ga.async);
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-        }
-    };
-
-    var setAsyncOnScript = function (ga, injectCfg) {
-        // if injectCode is called with a cfg object where async is set, use that. Otherwise fallback
-        if (injectCfg && typeof (injectCfg.async) !== 'undefined') {
-            log('setting async attribute from injectCfg');
-            if (injectCfg.async === true) {
-                log('it was true');
-                ga.async = injectCfg.async;
-            } else {
-                ga.async = undefined;
-            }
-        } else {
-            log('setting default async attribute');
-            if (loadAsync === true) {
-                ga.async = loadAsync;
-            } else {
-                ga.async = undefined;
-            }
-        }
-    };
-
-    var init = function (cfg) {
-        loadAsync = cfg.async || true;
-        params = cfg.params || [];
-        account = cfg.account;
-        fakeAnalytics = cfg.fakeAnalytics;
-        // if there is a ready() function on the configuration, this will be called.
-        if (cfg.ready && typeof cfg.ready === 'function') {
-            cfg.ready({
-                loadAsync: loadAsync,
-                params: params,
-                account: account,
-                fakeAnalytics: fakeAnalytics
-            });
-        }
-    };
-
-    return {
-        init: init,
-        eraseCookie: eraseCookie,
-        injectCode: injectCode
-    };
-})();
-var SiteImproveTracker = (function () {
-    "use strict";
-    var scriptLocation,
-        enableLog = false,
-        cookieMgr = CookieMgr;
-
-    var log = function (msg) {
-        if (enableLog && window.console) {
-            console.log(msg);
-        }
-    };
-
-    var injectCode = function () {
-        if (typeof scriptLocation == 'string') {
-            log('inserting SiteImprove tracking code');
-            var script = document.createElement('script');
-            script.src = scriptLocation;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(script, s);
-        }
-    };
-
-    var eraseCookie = function () {
-        log('deleting SiteImprove cookie');
-        cookieMgr.eraseCookie('nmstat');
-    };
-
-    var init = function (cfg) {
-        scriptLocation = cfg.scriptLocation;
-        if (cfg.ready && typeof cfg.ready === 'function') {
-            cfg.ready({
-                scriptLocation: scriptLocation
-            });
-        }
-    };
-
-    return {
-        init: init,
-        injectCode: injectCode,
-        eraseCookie: eraseCookie
-    };
-})();
-// Add a getElementsByClassName function if the browser doesn't have one
-// Limitation: only works with one class name
-// Copyright: Eike Send http://eike.se/nd
-// License: MIT License
-if (!document.getElementsByClassName) {
-    document.getElementsByClassName = function (search) {
-        var d = document,
-            elements, pattern, i, results = [];
-        if (d.querySelectorAll) { // IE8
-            return d.querySelectorAll("." + search);
-        }
-        if (d.evaluate) { // IE6, IE7
-            pattern = ".//*[contains(concat(' ', @class, ' '), ' " + search + " ')]";
-            elements = d.evaluate(pattern, d, null, 0, null);
-            while ((i = elements.iterateNext())) {
-                results.push(i);
-            }
-        } else {
-            elements = d.getElementsByTagName("*");
-            pattern = new RegExp("(^|\\s)" + search + "(\\s|$)");
-            for (i = 0; i < elements.length; i++) {
-                if (pattern.test(elements[i].className)) {
-                    results.push(elements[i]);
-                }
-            }
-        }
-        return results;
-    };
-}
 var CookiePrompter = (function () {
     "use strict";
     var NO_TRACK_VAL = 'n',
@@ -520,22 +209,11 @@ var CookiePrompter = (function () {
         TRACKING_COOKIE = 'cookieOptOut',
         trackers = [],
         config = {}, // will get keys from defaults on init
-        defaults = { // will be copied into config on init
+        defaults = {
             setCookieOnTopLevelDomain: false,
             expiryDays: 365,
-            readMoreUrl: '/',
-            textHeader: 'Vi samler statistik ved hjælp af cookies',
-            textblock1: 'Ved at klikke OK accepterer du vores cookies til statistik. Du kan sige ',
-            textblock2: '. Vi bruger en cookie, for at huske dit nej.',
-            textNoThanks: 'nej tak til statistikcookies ved at klikke her',
-            textReadMore: 'Læs mere om cookies her',
-            textAccept: 'OK',
-            textDontAccept: '',
-            styling: {
-                'inlinestyle': 'border-bottom:2px solid #000;padding: 12px 20px 0 20px;margin-bottom:12px;',
-                'inlinestyleInner': 'max-width:960px;margin-left:auto;margin-right:auto;'
-            },
             enableLog: false,
+            suppressPrompt: false,
             onOptOut: function (pageHref) {
                 log('opting out from page: ' + pageHref);
             },
@@ -552,9 +230,9 @@ var CookiePrompter = (function () {
     };
 
     var removePrompt = function () {
-        var el = document.getElementById("cookiePrompt");
-        if (el) {
-            el.parentNode.remove();
+        var modal = document.querySelector('#fds-cookie-message');
+        if (modal) {
+            modal.close();
         }
     };
 
@@ -610,38 +288,10 @@ var CookiePrompter = (function () {
         log('  removing prompt');
         removePrompt();
 
-        log('  creating and inserting html');
-        var html = [];
-        html.push('<div class="cookie-message" id="cookiePrompt" role="complementary" aria-labelledby="cookie-message-title1" aria-describedby="cookie-message-content1">');
-        html.push('<div class="cookie-text">');
-        html.push('<h2 class="h3 mt-0 mb-3" id="cookie-message-title1">' + config.textHeader + '</h2>');
-        html.push('<p class="mt-0" id="cookie-message-content1">' + config.textblock1);
-        html.push(config.textblock2);
-
-        if (config.readMoreUrl && document.location.pathname !== config.readMoreUrl) {
-            html.push(' <a href="' + config.readMoreUrl + '">' + config.textReadMore + '</a>');
-        }
-        html.push('</p>');
-        html.push('</div>');
-
-        html.push('<div class="cookie-actions">');
-        html.push('<ul class="inline-list">');
-        html.push('<li><a href="#" class="cpAcceptBtn button button-secondary">' + config.textAccept + '</a></li>');
-        if (config.textDontAccept !== '') {
-            html.push('<li><a href="#" class="cpDontAcceptBtn ml-md-4 button button-secondary">' + config.textDontAccept + '</a></li>');
-        }
-        html.push('</ul>');
-        html.push('</div>');
-
-        html.push('</div>');
-        var body = document.getElementsByTagName('body')[0];
-        var block = document.createElement('div');
-        block.className = 'cookie-container';
-        block.innerHTML = html.join('');
-        body.insertBefore(block, body.firstChild);
-        var link = document.getElementById('eksCookieNo');
-        if (link) {
-            link.onclick = eraseCookiesAndRemovePrompt;
+        log('  opening modal');
+        var modal = document.querySelector('#fds-cookie-message');
+        if (modal) {
+            modal.open();
         }
 
         hookupExplicitBtns();
@@ -696,10 +346,13 @@ var CookiePrompter = (function () {
             if (cookie === OK_TRACK_VAL) {
                 log('  b) ok cookie found, tracking accepted, we are tracking');
                 insertTrackingCode();
-            } else {
+            }
+            else {
                 log('  rendering prompt because explicit (no cookie)');
-                eraseCookies(); // Ensure that there are no cookies when the user hasn't selected an option
-                renderCookieprompt();
+                eraseCookies();
+                if (!config.suppressPrompt) {
+                    renderCookieprompt();
+                }
             }
         }
 
@@ -735,4 +388,4 @@ var CookiePrompter = (function () {
     };
 })();
 
-module.exports = { CookiePrompter: CookiePrompter, PiwikProTracker: PiwikProTracker, CookieMgr: CookieMgr, TestTracker: TestTracker, TestTracker: TestTracker, SiteImproveTracker: SiteImproveTracker};
+module.exports = { CookiePrompter: CookiePrompter, PiwikProTracker: PiwikProTracker, CookieMgr: CookieMgr };

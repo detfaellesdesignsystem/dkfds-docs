@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/typografi/"
 - "/design/typografi/fonte/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Fonte
 description: Læs om Det Fælles Designsystem brug af fonten IBM Plex Sans.

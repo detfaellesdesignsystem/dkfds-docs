@@ -1,0 +1,122 @@
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Karakterbegrænsning</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Begrænsning på 20 tegn</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text">
+                <fds-character-limit limit="20"></fds-character-limit>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Indtastning af tegn på forhånd</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text" value="Tekst indtastet">
+                <fds-character-limit limit="20"></fds-character-limit>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Placeret over input</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <fds-character-limit limit="30"></fds-character-limit>
+                <input type="text" name="input-text">
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Med hjælpetekst</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <fds-help-text>Dette er en hjælpetekst</fds-help-text>
+                <input type="text" name="input-text">
+                <fds-character-limit limit="25"></fds-character-limit>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Med fejl og hjælpetekst</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <fds-help-text>Dette er en hjælpetekst</fds-help-text>
+                <input type="text" name="input-text">
+                <fds-character-limit limit="25"></fds-character-limit>
+                <fds-error-message>Dette er en fejl</fds-error-message>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Andre tekster</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text">
+                <fds-character-limit limit="5"
+                    one-character-remaining-text="Kun {value} tegn tilbage"
+                    several-characters-remaining-text="{value} tegn tilbage"
+                    one-character-too-many-text="Fjern lige {value} tegn"
+                    several-characters-too-many-text="{value} tegn mere end du må indtaste"
+                    max-limit-text="Max {value} tegn"></fds-character-limit>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">To begrænsninger (kun den første skal virke)</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text">
+                <fds-character-limit limit="10"></fds-character-limit>
+                <fds-character-limit limit="20"></fds-character-limit>
+            </fds-input>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Med id sat på forhånd</h2>
+        </div>
+        <div class="col-12">
+            <fds-input>
+                <label>Inputfelt med label</label>
+                <input type="text" name="input-text">
+                <fds-character-limit limit="20" limit-id="defined-id"></fds-character-limit>
+            </fds-input>
+        </div>
+    </div>
+
+</main>

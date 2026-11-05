@@ -3,36 +3,36 @@ permalink: "/komponenter/tooltip/"
 redirect_from:
 - "/kode/komponenter/tooltip/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: "Tooltip"
 lead: Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon.
 description: "Tooltips giver brugeren kort, forklarende information om specifikke elementer på siden. Tooltip vises ved klik på et hjælpeikon."
 tags: 
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="tooltip-helpicon" title="Eksempel på ikon med tooltip" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Tooltip" code="Tooltip_Kode" %}
+{% include anchorlinks.html guidelines="Tooltip" code="Tooltip_Kode" webcomponent="Tooltip_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug tooltips til præcisering af specifikke elementer i brugergrænsefladen. 
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Tooltips anvendes ikke til informationer, der er essentielle for at brugeren kan gennemføre løsningen. Hvis indholdet er vigtigt for brugerens succes, så placer indholdet på siden som brød- eller hjælpetekst i stedet for.
 
 Placér ikke interaktive elementer såsom knapper og links inde i tooltips.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Gør indholdet i tooltips så kort og koncist som muligt, da længere tekster er sværere at skimme og blokerer andet indhold på skærmen i højere grad. 
 
@@ -46,7 +46,7 @@ Vær opmærksom på, at tooltipteksten ikke kan ses på print. Hvis indholdet er
 
 {% include dos-donts-box.html component="tooltip-dos-donts" %}
 
-### Placering af tooltips
+### Placering af tooltips {#{% include create-id.html heading="Placering af tooltips" %}}
 
 Placering af tooltips er vigtigt, så de ikke skygger for det indhold på siden som de relaterer til. Placeres de forkert, kan brugeren blive nødt til at lukke og åbne tooltippet igen for at forstå sammenhængen.
 
@@ -110,7 +110,7 @@ Vær varsom med at anvende hover-tooltips på interaktive elementer såsom knapp
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="tooltip-helpicon" copybutton=true %}
 
@@ -179,3 +179,89 @@ Brug klassen `tooltip-is-label` på `tooltip-target` ved klikbare ikoner uden te
 
 {:.nobullet-list}
 - {% include links/external-link.html linktext="Heydon Pickering: Tooltips & Toggletips - Inclusive Components (2017)" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-icon-default" subheading_tag="h2" collapsable=false %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+{% include web-component-shared-text/intro-light-dom.html %}
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Placering {#{% include create-id.html heading="Placering" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-icon-placement" heading_tag="h4" subheading_tag="h5" %}
+
+### Radioknap med tooltip {#{% include create-id.html heading="Radioknap med tooltip" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-icon-radio-buttons" heading_tag="h4" subheading_tag="h5" %}
+
+### Tjekboks med tooltip {#{% include create-id.html heading="Tjekboks med tooltip" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-icon-checkbox" heading_tag="h4" subheading_tag="h5" %}
+
+### Inputfelt med tooltip {#{% include create-id.html heading="Inputfelt med tooltip" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-icon-input-field" heading_tag="h4" subheading_tag="h5" %}
+
+### Brødtekst med tooltip {#{% include create-id.html heading="Brødtekst med tooltip" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-icon-text" heading_tag="h4" subheading_tag="h5" %}
+
+### Ikoner med hover-tooltip {#{% include create-id.html heading="Ikoner med hover-tooltip" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-hover" heading_tag="h4" subheading_tag="h5" %}
+
+### Knap med hover-tooltip {#{% include create-id.html heading="Knap med hover-tooltip" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-tooltip-hover-button" heading_tag="h4" subheading_tag="h5" %}
+
+## Konfiguration {#{% include create-id.html heading="Konfiguration" append="-webcomponent" %}}
+
+### fds-tooltip-icon {#{% include create-id.html heading="fds-tooltip-icon" append="-webcomponent" %}}
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut     | Beskrivelse                                                                           |
+|--------------|---------------------------------------------------------------------------------------|
+| tooltip-text | Teksten der skal vises i tooltippet.                                                  |
+| sr-label     | Skærmlæsertekst til ikonet.                                                           |
+| placement    | Accepterer værdierne `below` og `above`. Default er `above`.                          |
+| tooltip-id   | ID der skal bruges til tooltippet. Hvis denne er udeladt, genereres et tilfældigt ID. |
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion | Beskrivelse                                   |
+|----------|-----------------------------------------------|
+| open()   | Åbn tooltippet.                               |
+| close()  | Luk tooltippet.                               |
+| toggle() | Skift mellem at åbne og lukke tooltippet.     |
+
+### fds-tooltip {#{% include create-id.html heading="fds-tooltip" append="-webcomponent" %}}
+
+`fds-tooltip` skal indeholde præcis ét element, som fungerer som trigger for tooltippet.
+
+#### Attributter
+
+{:.table .table--responsive-headers}
+| Attribut     | Beskrivelse                                                                                                                                  |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| tooltip-text | Teksten der skal vises i tooltippet.                                                                                                         |
+| placement    | Accepterer værdierne `below` og `above`. Default er `above`.                                                                                 |
+| purpose      | Accepterer værdierne `hint` og `label`. Default er `hint`. `label` gør tooltippet til et tilgængeligt navn for trigger-elementet.            |
+| tooltip-id   | ID der skal bruges til tooltippet. Hvis denne er udeladt, genereres et tilfældigt ID.                                                        |
+
+#### Funktioner
+
+{:.table .table--responsive-headers}
+| Funktion | Beskrivelse                                   |
+|----------|-----------------------------------------------|
+| open()   | Åbn tooltippet.                               |
+| close()  | Luk tooltippet.                               |
+| toggle() | Skift mellem at åbne og lukke tooltippet.     |

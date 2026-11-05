@@ -4,7 +4,7 @@ redirect_from:
 - "/design/kanter/"
 - "/design/borders/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Hjørner, streger, skygger
 description: Hjørner, streger og skygger hjælper med at danne ramme om indhold på siden.
@@ -30,7 +30,7 @@ Lille og mellem runding anvendes afhængigt af komponentens størrelse. Som en t
 
 ## Streger {#{% include create-id.html heading="Streger" %}}
 
-<h3 class="h5 bold">Fokusstreg</h3>
+<h3 class="h5 bold" id="fokusstreg">Fokusstreg</h3>
 
 <div class="focus-border-example"></div>
 
@@ -40,7 +40,7 @@ Lille og mellem runding anvendes afhængigt af komponentens størrelse. Som en t
 
 Denne streg gør det tydeligt, hvilket interaktivt element, der har fokus. En tydelig fokusstreg med tilstrækkelig farvekontrast er afgørende for brugere, der navigerer med tastatur.
 
-<h3 class="h5 bold">Meningsbærende streger (kontrast over 1:3)</h3>
+<h3 class="h5 bold" id="meningsbaerende-streger">Meningsbærende streger (kontrast over 1:3)</h3>
 
 <div class="high-contrast-border-example"></div>
 
@@ -50,7 +50,7 @@ Brug denne streg, når stregens visuelle afgrænsning er afgørende for, at brug
 
 Horizontal ruler `<hr>` anvender denne stregfarve.
 
-<h3 class="h5 bold">Dekorative streger (kontrast under 1:3)</h3>
+<h3 class="h5 bold" id="dekorative-streger">Dekorative streger (kontrast under 1:3)</h3>
 
 <div class="low-contrast-border-example"><span class="sr-only">Dekorativ streg mulighed 1</span></div>
 

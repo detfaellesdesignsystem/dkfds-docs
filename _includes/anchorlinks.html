@@ -1,6 +1,7 @@
 {%- assign headings = site.data.headings[include.headings] -%}
 {%- assign guidelines = site.data.headings[include.guidelines] -%}
 {%- assign code = site.data.headings[include.code] -%}
+{%- assign webcomponent = site.data.headings[include.webcomponent] -%}
 {%- assign id = "anchorlinks" | append: include.append -%}
 {%- assign setCodeAnchor = true -%}
 <nav class="anchorbox{% if include.classes %} {{ include.classes }}{% endif %}" aria-labelledby="{{id}}">
@@ -14,6 +15,9 @@
         {% endfor %}
         {% for heading in code -%}
         <li class="anchorlink-code">{%- if setCodeAnchor -%}<span id="kode" hidden></span>{%- assign setCodeAnchor = false -%}{%- endif -%}<a href="#{% include create-id.html heading=heading.h2 append='-kode' %}">{{heading.h2}}</a></li>
+        {% endfor %}
+        {%- for heading in webcomponent -%}
+        <li class="anchorlink-web-component"><a href="#{% include create-id.html heading=heading.h2 append='-webcomponent' %}">{{heading.h2}}</a></li>
         {% endfor %}
     </ul>
 </nav>

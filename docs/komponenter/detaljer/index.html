@@ -46,9 +46,9 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=11.3.0" as="style">
-<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=11.3.0" as="style">
-<link rel="preload" href="/assets/js/theme.js?v=11.3.0" as="script">
+<link rel="preload" href="/assets/style/styleguide_borgerdk.css?v=12.0.0" as="style">
+<link rel="preload" href="/assets/style/styleguide_virkdk.css?v=12.0.0" as="style">
+<link rel="preload" href="/assets/js/theme.js?v=12.0.0" as="script">
 
 <style>
   body {
@@ -56,10 +56,10 @@
   }
 </style>
 
-<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=11.3.0">
+<link type="text/css" rel="stylesheet" href="/assets/style/styleguide_display.css?v=12.0.0">
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=11.3.0">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=12.0.0">
 </noscript>
 
   </head>
@@ -222,22 +222,27 @@
     <div id="top"></div>
     <header class="header">
     <a class="skipnav" href="#main-content">Gå til sidens indhold</a>
-    <div class="solution-info">
-        <div class="solution-info-inner container">
-            <div class="solution-heading d-flex flex-wrap align-items-center">
-                <a href="/">Det Fælles Designsystem</a>
-            </div>
-            <button class="function-link button-menu-open js-menu-open ml-auto d-print-none" aria-haspopup="dialog"><svg class="icon-svg" focusable="false" aria-hidden="true"><use href="#menu"></use></svg>Menu</button>
+
+    <fds-solution-info>
+        <div slot="solution-heading" class="d-flex flex-wrap align-items-center">
+            <a href="/" >Det Fælles Designsystem</a>
         </div>
-    </div>
+        <fds-modal-opener slot="drawer-opener" class="d-block d-lg-none mobile-menu-opener" modal-id="mobile-menu">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                </svg><span>Menu</span>
+            </button>
+        </fds-modal-opener>
+    </fds-solution-info>
 
     <!-- Desktop main menu-->
-    <div class="navigation-menu contains-search">
-        <div class="navigation-menu-inner container">
-            <nav class="nav" aria-label="Hovedmenu">
-                <ul class="mainmenu">
+    <fds-main-menu>
+        <div class="main-menu-inner d-block d-lg-flex">
+            <nav aria-label="Hovedmenu" class="d-none d-lg-block">
+                <ul>
                     <li>
-            <a href="/kom-i-gang/" class="nav-link">
+            <a href="/kom-i-gang/">
                 <span>Kom i gang</span>
             </a>
         </li>
@@ -245,15 +250,15 @@
     
   
 <li>
-            <a href="/styleguide/" class="nav-link">
+            <a href="/styleguide/">
                 <span>Styleguide</span>
             </a>
         </li>
 
     
   
-<li class="active">
-            <a href="/komponenter/" class="nav-link" aria-current="true">
+<li>
+            <a href="/komponenter/" aria-current="true">
                 <span>Komponenter</span>
             </a>
         </li>
@@ -261,7 +266,7 @@
     
   
 <li>
-            <a href="/eksempler/" class="nav-link">
+            <a href="/eksempler/">
                 <span>Eksempler</span>
             </a>
         </li>
@@ -269,7 +274,7 @@
     
   
 <li>
-            <a href="/faellesskab/" class="nav-link">
+            <a href="/faellesskab/">
                 <span>Fællesskab</span>
             </a>
         </li>
@@ -283,47 +288,43 @@
             <div class="search-form">
                 <form method="get" action="/search/" id="menuSearchForm" role="search">
                     <div class="form-group search">
-                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required
-                            aria-label="Søg">
+                        <input class="form-input input-char-27" id="search-input" name="q" type="search" required aria-label="Søg">
                         <button class="button button-search" type="submit" id="searchbtn">Søg</button>
                     </div>
                 </form>
             </div>
             
         </div>
-    </div>
+    </fds-main-menu>
 
-    <div class="overlay"></div>
-
-    <!-- Mobile main menu-->
-    <div class="mobile-drawer" role="dialog" aria-modal="true" aria-labelledby="menu-heading">
-        <div class="menu-top">
-            <h2 id="menu-heading" class="menu-heading">Menu</h2>
-            <button class="function-link button-menu-close js-menu-close" aria-label="Luk menu"><svg class="icon-svg" aria-hidden="true" focusable="false" tabindex="-1"><use href="#close"></use></svg>Luk</button>
-        </div>
-        <nav class="navigation-menu-mobile" aria-label="Hovedmenu og undermenuer">
-            <ul class="mainmenu">
-                 
+    <fds-modal id="mobile-menu" variant="drawer" heading="Menu" class="d-block d-lg-none">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+                <fds-main-menu>
+                    <nav aria-label="Hovedmenu og undermenuer">
+                        <ul>
+                             
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="kom_i_gang_category" aria-expanded="false">
-                    <span>Kom i gang</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="kom_i_gang_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Kom i gang</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/kom-i-gang/" class="nav-link">
-                                <span>Kom i gang <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/kom-i-gang/">
+                                <span class="d-inline-block">Kom i gang <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/kom-i-gang/om-designsystemet/" class="nav-link"><span>Om Det Fælles Designsystem</span></a>
+            <a href="/kom-i-gang/om-designsystemet/">
+                <span>Om Det Fælles Designsystem</span>
+            </a>
         </li>
         
 
@@ -331,23 +332,33 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="implementering_kode_category" aria-expanded="false">
-                    <span>Implementering og kode</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="implementering_kode_category">
-                    <ul class="overflow-list">
+            <a href="/kom-i-gang/web-components-i-beta-version/">
+                <span>Web Components i beta-version</span>
+            </a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <fds-dropdown-menu expanded="false">
+                <button><span>Implementering og kode</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/kom-i-gang/implementering-kode/" class="nav-link">
-                                <span>Implementering og kode <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/kom-i-gang/implementering-kode/">
+                                <span class="d-inline-block">Implementering og kode <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/hent-kodepakken/" class="nav-link"><span>Hent kodepakken</span></a>
+            <a href="/kom-i-gang/implementering-kode/hent-kodepakken/">
+                <span>Hent kodepakken</span>
+            </a>
         </li>
         
 
@@ -355,7 +366,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/justering/" class="nav-link"><span>Justering af tema og stylesheets</span></a>
+            <a href="/kom-i-gang/implementering-kode/kom-i-gang-med-web-components/">
+                <span>Kom i gang med Web Components</span>
+            </a>
         </li>
         
 
@@ -363,7 +376,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/" class="nav-link"><span>Hjælpeklasser</span></a>
+            <a href="/kom-i-gang/implementering-kode/justering/">
+                <span>Justering af tema og stylesheets</span>
+            </a>
         </li>
         
 
@@ -371,7 +386,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/" class="nav-link"><span>Browserunderstøttelse</span></a>
+            <a href="/kom-i-gang/implementering-kode/hjaelpeklasser/">
+                <span>Hjælpeklasser</span>
+            </a>
         </li>
         
 
@@ -379,7 +396,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/plugins/" class="nav-link"><span>Plugins</span></a>
+            <a href="/kom-i-gang/implementering-kode/browserunderstoettelse/">
+                <span>Browserunderstøttelse</span>
+            </a>
         </li>
         
 
@@ -387,7 +406,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/print/" class="nav-link"><span>Print</span></a>
+            <a href="/kom-i-gang/implementering-kode/plugins/">
+                <span>Plugins</span>
+            </a>
         </li>
         
 
@@ -395,14 +416,26 @@
 
         
         <li>
-            <a href="/kom-i-gang/implementering-kode/frameworks/" class="nav-link"><span>Frameworks</span></a>
+            <a href="/kom-i-gang/implementering-kode/print/">
+                <span>Print</span>
+            </a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/kom-i-gang/implementering-kode/frameworks/">
+                <span>Frameworks</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -410,7 +443,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/designressourcer/" class="nav-link"><span>Design og ressourcer</span></a>
+            <a href="/kom-i-gang/designressourcer/">
+                <span>Design og ressourcer</span>
+            </a>
         </li>
         
 
@@ -418,7 +453,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/tjekliste/" class="nav-link"><span>Tjekliste</span></a>
+            <a href="/kom-i-gang/tjekliste/">
+                <span>Tjekliste</span>
+            </a>
         </li>
         
 
@@ -426,7 +463,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/tilgaengelighed/" class="nav-link"><span>Tilgængelighed</span></a>
+            <a href="/kom-i-gang/tilgaengelighed/">
+                <span>Tilgængelighed</span>
+            </a>
         </li>
         
 
@@ -434,7 +473,9 @@
 
         
         <li>
-            <a href="/kom-i-gang/brugerinddragelse/" class="nav-link"><span>Brugerinddragelse</span></a>
+            <a href="/kom-i-gang/brugerinddragelse/">
+                <span>Brugerinddragelse</span>
+            </a>
         </li>
         
 
@@ -442,14 +483,16 @@
 
         
         <li>
-            <a href="/kom-i-gang/faq/" class="nav-link"><span>Ofte stillede spørgsmål</span></a>
+            <a href="/kom-i-gang/faq/">
+                <span>Ofte stillede spørgsmål</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -457,23 +500,23 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="styleguide_category" aria-expanded="false">
-                    <span>Styleguide</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="styleguide_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Styleguide</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/styleguide/" class="nav-link">
-                                <span>Styleguide <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/styleguide/">
+                                <span class="d-inline-block">Styleguide <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/styleguide/farver/" class="nav-link"><span>Farver</span></a>
+            <a href="/styleguide/farver/">
+                <span>Farver</span>
+            </a>
         </li>
         
 
@@ -481,23 +524,23 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="typografi_category" aria-expanded="false">
-                    <span>Typografi</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="typografi_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Typografi</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/styleguide/typografi/" class="nav-link">
-                                <span>Typografi <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/styleguide/typografi/">
+                                <span class="d-inline-block">Typografi <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/styleguide/typografi/fonte/" class="nav-link"><span>Fonte</span></a>
+            <a href="/styleguide/typografi/fonte/">
+                <span>Fonte</span>
+            </a>
         </li>
         
 
@@ -505,7 +548,9 @@
 
         
         <li>
-            <a href="/styleguide/typografi/overskrifter/" class="nav-link"><span>Overskrifter</span></a>
+            <a href="/styleguide/typografi/overskrifter/">
+                <span>Overskrifter</span>
+            </a>
         </li>
         
 
@@ -513,7 +558,9 @@
 
         
         <li>
-            <a href="/styleguide/typografi/felt-tabel-overskrifter/" class="nav-link"><span>Felt- og tabeloverskrifter</span></a>
+            <a href="/styleguide/typografi/felt-tabel-overskrifter/">
+                <span>Felt- og tabeloverskrifter</span>
+            </a>
         </li>
         
 
@@ -521,7 +568,9 @@
 
         
         <li>
-            <a href="/styleguide/typografi/tekst/" class="nav-link"><span>Tekst</span></a>
+            <a href="/styleguide/typografi/tekst/">
+                <span>Tekst</span>
+            </a>
         </li>
         
 
@@ -529,7 +578,9 @@
 
         
         <li>
-            <a href="/styleguide/typografi/links/" class="nav-link"><span>Links</span></a>
+            <a href="/styleguide/typografi/links/">
+                <span>Links</span>
+            </a>
         </li>
         
 
@@ -537,14 +588,16 @@
 
         
         <li>
-            <a href="/styleguide/typografi/lister/" class="nav-link"><span>Lister</span></a>
+            <a href="/styleguide/typografi/lister/">
+                <span>Lister</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -552,7 +605,9 @@
 
         
         <li>
-            <a href="/styleguide/borders/" class="nav-link"><span>Hjørner, streger, skygger</span></a>
+            <a href="/styleguide/borders/">
+                <span>Hjørner, streger, skygger</span>
+            </a>
         </li>
         
 
@@ -560,7 +615,9 @@
 
         
         <li>
-            <a href="/styleguide/ikoner/" class="nav-link"><span>Ikoner</span></a>
+            <a href="/styleguide/ikoner/">
+                <span>Ikoner</span>
+            </a>
         </li>
         
 
@@ -568,7 +625,9 @@
 
         
         <li>
-            <a href="/styleguide/logoer/" class="nav-link"><span>Logoer</span></a>
+            <a href="/styleguide/logoer/">
+                <span>Logoer</span>
+            </a>
         </li>
         
 
@@ -576,23 +635,23 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="datavisualisering_category" aria-expanded="false">
-                    <span>Datavisualisering og infografik</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="datavisualisering_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Datavisualisering og infografik</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/styleguide/datavisualisering-infografik/" class="nav-link">
-                                <span>Datavisualisering og infografik <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/styleguide/datavisualisering-infografik/">
+                                <span class="d-inline-block">Datavisualisering og infografik <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/styleguide/datavisualisering-infografik/tilgaengelig-grafik/" class="nav-link"><span>Tilgængelig grafik</span></a>
+            <a href="/styleguide/datavisualisering-infografik/tilgaengelig-grafik/">
+                <span>Tilgængelig grafik</span>
+            </a>
         </li>
         
 
@@ -600,7 +659,9 @@
 
         
         <li>
-            <a href="/styleguide/datavisualisering-infografik/datavisualisering/" class="nav-link"><span>Datavisualisering</span></a>
+            <a href="/styleguide/datavisualisering-infografik/datavisualisering/">
+                <span>Datavisualisering</span>
+            </a>
         </li>
         
 
@@ -608,14 +669,16 @@
 
         
         <li>
-            <a href="/styleguide/datavisualisering-infografik/infografik/" class="nav-link"><span>Infografik</span></a>
+            <a href="/styleguide/datavisualisering-infografik/infografik/">
+                <span>Infografik</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -623,7 +686,9 @@
 
         
         <li>
-            <a href="/styleguide/layout/" class="nav-link"><span>Layout</span></a>
+            <a href="/styleguide/layout/">
+                <span>Layout</span>
+            </a>
         </li>
         
 
@@ -631,38 +696,40 @@
 
         
         <li>
-            <a href="/styleguide/grid/" class="nav-link"><span>Grid og baseline grid</span></a>
+            <a href="/styleguide/grid/">
+                <span>Grid og baseline grid</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
  
 
         
-        <li class="active">
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="komponenter_category" aria-expanded="true">
-                    <span>Komponenter</span>
-                </button>
-                
-                <div class="overflow-menu-inner" id="komponenter_category">
-                    <ul class="overflow-list">
+        <li>
+            <fds-dropdown-menu expanded="true">
+                <button><span>Komponenter</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/komponenter/" class="nav-link">
-                                <span>Komponenter <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/komponenter/">
+                                <span class="d-inline-block">Komponenter <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/komponenter/accordions/" class="nav-link"><span>Accordions</span></a>
+            <a href="/komponenter/accordions/">
+                <span>Accordions</span>
+            </a>
         </li>
         
 
@@ -670,7 +737,9 @@
 
         
         <li>
-            <a href="/komponenter/anchorlinks/" class="nav-link"><span>Anchorlinks</span></a>
+            <a href="/komponenter/anchorlinks/">
+                <span>Anchorlinks</span>
+            </a>
         </li>
         
 
@@ -678,7 +747,9 @@
 
         
         <li>
-            <a href="/komponenter/badges/" class="nav-link"><span>Badges</span></a>
+            <a href="/komponenter/badges/">
+                <span>Badges</span>
+            </a>
         </li>
         
 
@@ -686,7 +757,9 @@
 
         
         <li>
-            <a href="/komponenter/beskeder/" class="nav-link"><span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span></a>
+            <a href="/komponenter/beskeder/">
+                <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
+            </a>
         </li>
         
 
@@ -694,7 +767,9 @@
 
         
         <li>
-            <a href="/komponenter/broedkrumme/" class="nav-link"><span>Brødkrumme</span></a>
+            <a href="/komponenter/broedkrumme/">
+                <span>Brødkrumme</span>
+            </a>
         </li>
         
 
@@ -702,7 +777,9 @@
 
         
         <li>
-            <a href="/komponenter/cards/" class="nav-link"><span>Cards</span></a>
+            <a href="/komponenter/cards/">
+                <span>Cards</span>
+            </a>
         </li>
         
 
@@ -710,7 +787,9 @@
 
         
         <li>
-            <a href="/komponenter/cookiemeddelelse/" class="nav-link"><span>Cookiemeddelelse</span></a>
+            <a href="/komponenter/cookiemeddelelse/">
+                <span>Cookiemeddelelse</span>
+            </a>
         </li>
         
 
@@ -718,7 +797,9 @@
 
         
         <li>
-            <a href="/komponenter/datofelter/" class="nav-link"><span>Datofelter</span></a>
+            <a href="/komponenter/datofelter/">
+                <span>Datofelter</span>
+            </a>
         </li>
         
 
@@ -726,23 +807,9 @@
 
         
         <li>
-            <a href="/komponenter/datovaelger/" class="nav-link"><span>Datovælger</span></a>
-        </li>
-        
-
- 
-
-        
-        <li class="active current">
-            <a href="/komponenter/detaljer/" class="nav-link" aria-current="page"><span>Detaljer</span></a>
-        </li>
-        
-
- 
-
-        
-        <li>
-            <a href="/komponenter/dropdown/" class="nav-link"><span>Dropdown</span></a>
+            <a href="/komponenter/datovaelger/">
+                <span>Datovælger</span>
+            </a>
         </li>
         
 
@@ -750,8 +817,9 @@
 
         
         <li>
-            <a href="/komponenter/faneblade/" class="nav-link">
-                <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span></a>
+            <a href="/komponenter/detaljer/" aria-current="page">
+                <span>Detaljer</span>
+            </a>
         </li>
         
 
@@ -759,7 +827,9 @@
 
         
         <li>
-            <a href="/komponenter/fejlmeddelelser/" class="nav-link"><span>Fejlmeddelelser</span></a>
+            <a href="/komponenter/dropdown/">
+                <span>Dropdown</span>
+            </a>
         </li>
         
 
@@ -767,7 +837,9 @@
 
         
         <li>
-            <a href="/komponenter/fejlopsummering/" class="nav-link"><span>Fejlopsummering</span></a>
+            <a href="/komponenter/faneblade/">
+                <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
+            </a>
         </li>
         
 
@@ -775,7 +847,9 @@
 
         
         <li>
-            <a href="/komponenter/footer/" class="nav-link"><span>Footer</span></a>
+            <a href="/komponenter/fejlmeddelelser/">
+                <span>Fejlmeddelelser</span>
+            </a>
         </li>
         
 
@@ -783,7 +857,9 @@
 
         
         <li>
-            <a href="/komponenter/funktionslink/" class="nav-link"><span>Funktionslink</span></a>
+            <a href="/komponenter/fejlopsummering/">
+                <span>Fejlopsummering</span>
+            </a>
         </li>
         
 
@@ -791,7 +867,9 @@
 
         
         <li>
-            <a href="/komponenter/skip-link/" class="nav-link"><span>Gå til sidens indhold (Skip-link)</span></a>
+            <a href="/komponenter/footer/">
+                <span>Footer</span>
+            </a>
         </li>
         
 
@@ -799,7 +877,9 @@
 
         
         <li>
-            <a href="/komponenter/header/" class="nav-link"><span>Header</span></a>
+            <a href="/komponenter/funktionslink/">
+                <span>Funktionslink</span>
+            </a>
         </li>
         
 
@@ -807,7 +887,9 @@
 
         
         <li>
-            <a href="/komponenter/inputfelter/" class="nav-link"><span>Inputfelter</span></a>
+            <a href="/komponenter/skip-link/">
+                <span>Gå til sidens indhold (Skip-link)</span>
+            </a>
         </li>
         
 
@@ -815,8 +897,9 @@
 
         
         <li>
-            <a href="/komponenter/knapper/" class="nav-link">
-                <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span></a>
+            <a href="/komponenter/header/">
+                <span>Header</span>
+            </a>
         </li>
         
 
@@ -824,7 +907,9 @@
 
         
         <li>
-            <a href="/komponenter/spinner/" class="nav-link"><span>Loading spinner</span></a>
+            <a href="/komponenter/inputfelter/">
+                <span>Inputfelter</span>
+            </a>
         </li>
         
 
@@ -832,7 +917,9 @@
 
         
         <li>
-            <a href="/komponenter/modal/" class="nav-link"><span>Modal</span></a>
+            <a href="/komponenter/knapper/">
+                <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
+            </a>
         </li>
         
 
@@ -840,7 +927,9 @@
 
         
         <li>
-            <a href="/komponenter/overflowmenu/" class="nav-link"><span>Overflow menu</span></a>
+            <a href="/komponenter/spinner/">
+                <span>Loading spinner</span>
+            </a>
         </li>
         
 
@@ -848,7 +937,9 @@
 
         
         <li>
-            <a href="/komponenter/paginering/" class="nav-link"><span>Paginering</span></a>
+            <a href="/komponenter/modal/">
+                <span>Modal</span>
+            </a>
         </li>
         
 
@@ -856,8 +947,9 @@
 
         
         <li>
-            <a href="/komponenter/radioknap/" class="nav-link">
-                <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span></a>
+            <a href="/komponenter/multiselect/">
+                <span>Multiselect</span>
+            </a>
         </li>
         
 
@@ -865,7 +957,9 @@
 
         
         <li>
-            <a href="/komponenter/sprogvaelger/" class="nav-link"><span>Sprogvælger</span></a>
+            <a href="/komponenter/overflowmenu/">
+                <span>Overflow menu</span>
+            </a>
         </li>
         
 
@@ -873,7 +967,9 @@
 
         
         <li>
-            <a href="/komponenter/search/" class="nav-link"><span>Søgefelt</span></a>
+            <a href="/komponenter/paginering/">
+                <span>Paginering</span>
+            </a>
         </li>
         
 
@@ -881,7 +977,9 @@
 
         
         <li>
-            <a href="/komponenter/tables/" class="nav-link"><span>Tabeller</span></a>
+            <a href="/komponenter/radioknap/">
+                <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
+            </a>
         </li>
         
 
@@ -889,7 +987,9 @@
 
         
         <li>
-            <a href="/komponenter/tags/" class="nav-link"><span>Tags</span></a>
+            <a href="/komponenter/sprogvaelger/">
+                <span>Sprogvælger</span>
+            </a>
         </li>
         
 
@@ -897,8 +997,9 @@
 
         
         <li>
-            <a href="/komponenter/tekstomraade/" class="nav-link">
-                <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span></a>
+            <a href="/komponenter/search/">
+                <span>Søgefelt</span>
+            </a>
         </li>
         
 
@@ -906,7 +1007,9 @@
 
         
         <li>
-            <a href="/komponenter/tilbage-link/" class="nav-link"><span>Tilbage-link</span></a>
+            <a href="/komponenter/tables/">
+                <span>Tabeller</span>
+            </a>
         </li>
         
 
@@ -914,7 +1017,9 @@
 
         
         <li>
-            <a href="/komponenter/tilbage-til-top/" class="nav-link"><span>Tilbage til toppen</span></a>
+            <a href="/komponenter/tags/">
+                <span>Tags</span>
+            </a>
         </li>
         
 
@@ -922,8 +1027,9 @@
 
         
         <li>
-            <a href="/komponenter/tjekboks/" class="nav-link">
-                <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span></a>
+            <a href="/komponenter/tekstomraade/">
+                <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
+            </a>
         </li>
         
 
@@ -931,7 +1037,9 @@
 
         
         <li>
-            <a href="/komponenter/toastbesked/" class="nav-link"><span>Toastbesked</span></a>
+            <a href="/komponenter/tilbage-link/">
+                <span>Tilbage-link</span>
+            </a>
         </li>
         
 
@@ -939,7 +1047,9 @@
 
         
         <li>
-            <a href="/komponenter/toggle/" class="nav-link"><span>Toggle switch</span></a>
+            <a href="/komponenter/tilbage-til-top/">
+                <span>Tilbage til toppen</span>
+            </a>
         </li>
         
 
@@ -947,7 +1057,9 @@
 
         
         <li>
-            <a href="/komponenter/tooltip/" class="nav-link"><span>Tooltip</span></a>
+            <a href="/komponenter/tjekboks/">
+                <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
+            </a>
         </li>
         
 
@@ -955,7 +1067,9 @@
 
         
         <li>
-            <a href="/komponenter/trinindikator/" class="nav-link"><span>Trinindikator</span></a>
+            <a href="/komponenter/toastbesked/">
+                <span>Toastbesked</span>
+            </a>
         </li>
         
 
@@ -963,7 +1077,9 @@
 
         
         <li>
-            <a href="/komponenter/fil-upload/" class="nav-link"><span>Vedhæft fil</span></a>
+            <a href="/komponenter/toggle/">
+                <span>Toggle switch</span>
+            </a>
         </li>
         
 
@@ -971,14 +1087,46 @@
 
         
         <li>
-            <a href="/komponenter/venstremenu/" class="nav-link"><span>Venstremenu</span></a>
+            <a href="/komponenter/tooltip/">
+                <span>Tooltip</span>
+            </a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/trinindikator/">
+                <span>Trinindikator</span>
+            </a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/fil-upload/">
+                <span>Vedhæft fil</span>
+            </a>
+        </li>
+        
+
+ 
+
+        
+        <li>
+            <a href="/komponenter/venstremenu/">
+                <span>Venstremenu</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -986,23 +1134,23 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="eksempler_category" aria-expanded="false">
-                    <span>Eksempler</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="eksempler_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Eksempler</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/eksempler/" class="nav-link">
-                                <span>Eksempler <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/eksempler/">
+                                <span class="d-inline-block">Eksempler <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/eksempler/selvbetjeningsloesninger/" class="nav-link"><span>Selvbetjeningsløsninger</span></a>
+            <a href="/eksempler/selvbetjeningsloesninger/">
+                <span>Selvbetjeningsløsninger</span>
+            </a>
         </li>
         
 
@@ -1010,23 +1158,23 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="patterns_category" aria-expanded="false">
-                    <span>Patterns</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="patterns_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Patterns</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/eksempler/patterns/" class="nav-link">
-                                <span>Patterns <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/eksempler/patterns/">
+                                <span class="d-inline-block">Patterns <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/eksempler/patterns/angivelse-af-telefonnummer/" class="nav-link"><span>Angivelse af telefonnummer</span></a>
+            <a href="/eksempler/patterns/angivelse-af-telefonnummer/">
+                <span>Angivelse af telefonnummer</span>
+            </a>
         </li>
         
 
@@ -1034,7 +1182,9 @@
 
         
         <li>
-            <a href="/eksempler/patterns/formular/" class="nav-link"><span>Formular</span></a>
+            <a href="/eksempler/patterns/formular/">
+                <span>Formular</span>
+            </a>
         </li>
         
 
@@ -1042,7 +1192,9 @@
 
         
         <li>
-            <a href="/eksempler/patterns/hentet-data/" class="nav-link"><span>Inputfelter med hentet data</span></a>
+            <a href="/eksempler/patterns/hentet-data/">
+                <span>Inputfelter med hentet data</span>
+            </a>
         </li>
         
 
@@ -1050,14 +1202,16 @@
 
         
         <li>
-            <a href="/eksempler/patterns/session-udloeber/" class="nav-link"><span>Session udløber</span></a>
+            <a href="/eksempler/patterns/session-udloeber/">
+                <span>Session udløber</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -1065,14 +1219,16 @@
 
         
         <li>
-            <a href="/eksempler/templates/" class="nav-link"><span>Templates</span></a>
+            <a href="/eksempler/templates/">
+                <span>Templates</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
@@ -1080,23 +1236,23 @@
 
         
         <li>
-            <div class="submenu">
-                <button class="button-mobile-menu js-menudropdown" data-js-target="faellesskab_category" aria-expanded="false">
-                    <span>Fællesskab</span>
-                </button>
-                
-                <div class="overflow-menu-inner collapsed" id="faellesskab_category">
-                    <ul class="overflow-list">
+            <fds-dropdown-menu expanded="false">
+                <button><span>Fællesskab</span></button>
+                <div>
+                    <ul>
                         <li>
-                            <a href="/faellesskab/" class="nav-link">
-                                <span>Fællesskab <span class="helptext d-inline">(overblik)</span></span>
+                            <a href="/faellesskab/">
+                                <span class="d-inline-block">Fællesskab <span class="helptext d-inline">(overblik)</span></span>
                             </a>
                         </li>
+                        
                          
 
         
         <li>
-            <a href="/faellesskab/samarbejdsforum/" class="nav-link"><span>Samarbejdsforum</span></a>
+            <a href="/faellesskab/samarbejdsforum/">
+                <span>Samarbejdsforum</span>
+            </a>
         </li>
         
 
@@ -1104,7 +1260,9 @@
 
         
         <li>
-            <a href="/faellesskab/governance/" class="nav-link"><span>Governance</span></a>
+            <a href="/faellesskab/governance/">
+                <span>Governance</span>
+            </a>
         </li>
         
 
@@ -1112,7 +1270,9 @@
 
         
         <li>
-            <a href="/faellesskab/nyhedsmail/" class="nav-link"><span>Nyhedsbrev</span></a>
+            <a href="/faellesskab/nyhedsmail/">
+                <span>Nyhedsbrev</span>
+            </a>
         </li>
         
 
@@ -1120,7 +1280,9 @@
 
         
         <li>
-            <a href="/faellesskab/kontakt-support/" class="nav-link"><span>Kontakt og support</span></a>
+            <a href="/faellesskab/kontakt-support/">
+                <span>Kontakt og support</span>
+            </a>
         </li>
         
 
@@ -1128,502 +1290,368 @@
 
         
         <li>
-            <a href="/faellesskab/releases/" class="nav-link"><span>Release notes</span></a>
+            <a href="/faellesskab/releases/">
+                <span>Release notes</span>
+            </a>
         </li>
         
 
 
                     </ul>
                 </div>
-            </div>
+            </fds-dropdown-menu>
         </li>
         
 
 
-            </ul>
-        </nav>
-    </div>
+                        </ul>
+                    </nav>
+                </fds-main-menu>
+            </div>
+        </dialog>
+    </fds-modal>
 </header>
+
+<fds-alert role="region" aria-labelledby="beta-alert-heading" id="web-components-beta-alert" class="container mb-0" closable hidden>
+    <h2 slot="heading" id="beta-alert-heading">Web Components i beta-version</h2>
+    <div slot="content">
+        <p>Udvalgte komponenter i designsystemet er nu også tilgængelige som Web Components. Beta-versionen er klar til afprøvning og vi vil meget gerne høre din feedback og erfaringer.</p>
+        <p class="mb-0">Læs mere om <a href="/kom-i-gang/web-components-i-beta-version/">Web Components i beta-version</a></p>
+    </div>
+</fds-alert>
 
 <div class="container page-container">
     <div class="row">
 
         <aside class="col-12 col-lg-3">
-            <nav class="sidenav d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
-                <ul class="sidemenu">
-
-
-
-
-<li>
-
-  <a href="/komponenter/accordions/" class="nav-link">
-    <span>Accordions</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/anchorlinks/" class="nav-link">
-    <span>Anchorlinks</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/badges/" class="nav-link">
-    <span>Badges</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/beskeder/" class="nav-link">
-      <span>Beskeder <span class="d-inline" lang="en">(Alerts)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/broedkrumme/" class="nav-link">
-    <span>Brødkrumme</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/cards/" class="nav-link">
-    <span>Cards</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/cookiemeddelelse/" class="nav-link">
-    <span>Cookiemeddelelse</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/datofelter/" class="nav-link">
-    <span>Datofelter</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/datovaelger/" class="nav-link">
-    <span>Datovælger</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li class="active current">
-
-  <a href="/komponenter/detaljer/" class="nav-link" aria-current="page">
-    <span>Detaljer</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/dropdown/" class="nav-link">
-    <span>Dropdown</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/faneblade/" class="nav-link">
-      <span>Faneblade <span class="d-inline" lang="en">(Tabs)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fejlmeddelelser/" class="nav-link">
-    <span>Fejlmeddelelser</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fejlopsummering/" class="nav-link">
-    <span>Fejlopsummering</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/footer/" class="nav-link">
-    <span>Footer</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/funktionslink/" class="nav-link">
-    <span>Funktionslink</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/skip-link/" class="nav-link">
-    <span>Gå til sidens indhold (Skip-link)</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/header/" class="nav-link">
-    <span>Header</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/inputfelter/" class="nav-link">
-    <span>Inputfelter</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/knapper/" class="nav-link">
-      <span>Knapper <span class="d-inline" lang="en">(Buttons)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/spinner/" class="nav-link">
-    <span>Loading spinner</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/modal/" class="nav-link">
-    <span>Modal</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/overflowmenu/" class="nav-link">
-    <span>Overflow menu</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/paginering/" class="nav-link">
-    <span>Paginering</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/radioknap/" class="nav-link">
-      <span>Radioknap <span class="d-inline" lang="en">(Radio button)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/sprogvaelger/" class="nav-link">
-    <span>Sprogvælger</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/search/" class="nav-link">
-    <span>Søgefelt</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tables/" class="nav-link">
-    <span>Tabeller</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tags/" class="nav-link">
-    <span>Tags</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tekstomraade/" class="nav-link">
-      <span>Tekstområde <span class="d-inline" lang="en">(Textarea)</span></span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tilbage-link/" class="nav-link">
-    <span>Tilbage-link</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tilbage-til-top/" class="nav-link">
-    <span>Tilbage til toppen</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tjekboks/" class="nav-link">
-      <span>Tjekboks <span class="d-inline" lang="en">(Checkbox)</span></span>
-    
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/toastbesked/" class="nav-link">
-    <span>Toastbesked</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/toggle/" class="nav-link">
-    <span>Toggle switch</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/tooltip/" class="nav-link">
-    <span>Tooltip</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/trinindikator/" class="nav-link">
-    <span>Trinindikator</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/fil-upload/" class="nav-link">
-    <span>Vedhæft fil</span>
-  </a>
-
-</li>
-
-
-
-
-
-<li>
-
-  <a href="/komponenter/venstremenu/" class="nav-link">
-    <span>Venstremenu</span>
-  </a>
-
-</li>
-
-</ul></nav>
-        </aside>
-
-        <main class="col-12 col-lg-9" id="main-content">    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
+    <nav class="fds-side-menu d-none d-lg-block mb-4 mb-md-0" id="docs-sidenav" aria-label="Sidemenu">
+        
+        <ul>
+            <li>
+                <a href="/komponenter/accordions/" >
+                    <span>Accordions
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/anchorlinks/" >
+                    <span>Anchorlinks
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/badges/" >
+                    <span>Badges
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/beskeder/" >
+                    <span>Beskeder
+                         <span class="d-inline" lang="en">(Alerts)</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/broedkrumme/" >
+                    <span>Brødkrumme
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/cards/" >
+                    <span>Cards
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/cookiemeddelelse/" >
+                    <span>Cookiemeddelelse
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/datofelter/" >
+                    <span>Datofelter
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/datovaelger/" >
+                    <span>Datovælger
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/detaljer/"  aria-current="page" >
+                    <span>Detaljer
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/dropdown/" >
+                    <span>Dropdown
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/faneblade/" >
+                    <span>Faneblade
+                         <span class="d-inline" lang="en">(Tabs)</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/fejlmeddelelser/" >
+                    <span>Fejlmeddelelser
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/fejlopsummering/" >
+                    <span>Fejlopsummering
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/footer/" >
+                    <span>Footer
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/funktionslink/" >
+                    <span>Funktionslink
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/skip-link/" >
+                    <span>Gå til sidens indhold (Skip-link)
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/header/" >
+                    <span>Header
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/inputfelter/" >
+                    <span>Inputfelter
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/knapper/" >
+                    <span>Knapper
+                         <span class="d-inline" lang="en">(Buttons)</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/spinner/" >
+                    <span>Loading spinner
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/modal/" >
+                    <span>Modal
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/multiselect/" >
+                    <span>Multiselect
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/overflowmenu/" >
+                    <span>Overflow menu
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/paginering/" >
+                    <span>Paginering
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/radioknap/" >
+                    <span>Radioknap
+                         <span class="d-inline" lang="en">(Radio button)</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/sprogvaelger/" >
+                    <span>Sprogvælger
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/search/" >
+                    <span>Søgefelt
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tables/" >
+                    <span>Tabeller
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tags/" >
+                    <span>Tags
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tekstomraade/" >
+                    <span>Tekstområde
+                         <span class="d-inline" lang="en">(Textarea)</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tilbage-link/" >
+                    <span>Tilbage-link
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tilbage-til-top/" >
+                    <span>Tilbage til toppen
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tjekboks/" >
+                    <span>Tjekboks
+                         <span class="d-inline" lang="en">(Checkbox)</span>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/toastbesked/" >
+                    <span>Toastbesked
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/toggle/" >
+                    <span>Toggle switch
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/tooltip/" >
+                    <span>Tooltip
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/trinindikator/" >
+                    <span>Trinindikator
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/fil-upload/" >
+                    <span>Vedhæft fil
+                        
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="/komponenter/venstremenu/" >
+                    <span>Venstremenu
+                        
+                    </span>
+                </a>
+
+            </li>
+        </ul></nav>
+</aside>
+
+        <main class="col-12 col-lg-9" id="main-content">
+            <!--    <div class="alert alert-warning has-close d-none mt-4" id="themeAlert">
         <svg class="icon-svg alert-icon" aria-label="Advarsel" focusable="false"><use href="#warning"></use></svg>
         <div class="alert-body">
             <h2 class="alert-heading pr-7">Vælg et tema</h2><button class="alert-close"><svg class="icon-svg" aria-hidden="true" focusable="false"><use href="#close"></use></svg>Luk</button>
@@ -1632,7 +1660,8 @@
             <button class="button button-primary" id="virkThemeBtn">Virk tema</button>
         </div>
     </div>
-<section id="section-/komponenter/detaljer/">
+-->
+            <section id="section-/komponenter/detaljer/">
 
                 <div class="subheading">
                     Komponenter
@@ -1701,11 +1730,11 @@
 
 <h2 id="saadan-bruges-komponenten">Sådan bruges komponenten</h2>
 
-<h3>Anvendes til</h3>
+<h3 id="anvendes-til">Anvendes til</h3>
 
 <p>Anvendes til at gøre siden lettere for brugeren at skimme ved at skjule information, som de fleste brugere ikke vil have brug for, og som derfor ikke bør dominere brugergrænsefladen.</p>
 
-<h3>Anvendes ikke til</h3>
+<h3 id="anvendes-ikke-til">Anvendes ikke til</h3>
 
 <p>Anvendes ikke som erstatning for accordions.</p>
 
@@ -1715,7 +1744,7 @@
 
 <p>Anvendes ikke til at vise indhold, som er afhængigt af brugerinput. Se i stedet <a href="/komponenter/radioknap/#skjult-indhold-collapse">radioknap med skjult indhold</a> og <a href="/komponenter/tjekboks/#skjult-indhold-collapse">tjekbokse med skjult indhold</a>.</p>
 
-<h3>Vejledning</h3>
+<h3 id="vejledning">Vejledning</h3>
 
 <p>Hold det enkelt. Hvis du har behov for at eksponere større mængder af ekstra funktionalitet eller indhold, bør du overveje at fordele det ud over flere sider i stedet.</p>
 
@@ -1737,7 +1766,7 @@
 
 <h2 id="installation-kode">Installation</h2>
 
-<h3>HTML Struktur</h3>
+<h3 id="html-struktur-kode">HTML Struktur</h3>
 
 <div class="component-preview component-preview-code  component-code-details">
     
@@ -1817,8 +1846,27 @@
 </footer>
 
 
-    <script src="/assets/js/theme.js?v=11.3.0"></script>
-<script src="/assets/js/styleguide.js?v=11.3.0"></script>
+    <fds-modal id="fds-cookie-message" heading="Det Fælles Designsystem bruger cookies" heading-id="fds-cookie-message-heading" dismissible="false">
+    <dialog>
+        <form method="dialog">
+            <div class="scrollable-area has-fade pb-0">
+                <div class="modal-top"></div>
+                <p>Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen.</p>
+                <p>Alle indsamlede data anonymiseres.</p>
+                <p class="mb-2"><a href="/privatlivspolitik-cookies/">Læs mere om vores brug af cookies</a></p>
+            </div>
+            <div class="fixed-area">
+                <div class="button-group">
+                    <button class="button button-secondary cpAcceptBtn" type="submit" value="accept">Accepter cookies</button>
+                    <button class="button button-secondary cpDontAcceptBtn" type="submit" value="reject">Nej til cookies</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+</fds-modal>
+    <script src="/assets/js/theme.js?v=12.0.0"></script>
+<script src="/assets/js/styleguide.js?v=12.0.0"></script>
+<script src="/assets/js/dkfds.js?v=12.0.0"></script> <!-- Web component script -->
 
 
 <script src="/assets/js/docs-tabs.js"></script>

@@ -3,7 +3,7 @@ permalink: "/komponenter/skip-link/"
 redirect_from:
 - "/kode/komponenter/skip-link/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Gå til sidens indhold (Skip-link)
 lead: "Skip-links anvendes til at give brugere, der navigerer med tastatur, en bedre oplevelse. Brugerens første tryk på tab-tasten vil få et skjult link til at komme frem, der lader brugeren skippe menuen og gå direkte til sidens indhold."
@@ -22,17 +22,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Skip-link skal anvendes på alle sider.
 
 Skip-linket gør det muligt for brugere, der anvender tasturet til navigation, at navigere direkte til sidens indhold.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Andre former for navigation.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Et skip-link er et skjult link, der kun vises, når en bruger navigerer på siden ved at bruge tastaturet.
 
@@ -44,7 +44,7 @@ Det vil sige at brugere, der anvender tastaturet til at navigere siden med, kan 
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="skiplink" copybutton=true %}
 

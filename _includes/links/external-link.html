@@ -23,7 +23,8 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "opret et issue på github",
-             "oprette et issue på github" -%}
+             "oprette et issue på github",
+             "dele din feedback via github" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/issues" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "zipfil på github", 
@@ -61,6 +62,12 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "beslutningslog for version 11.0.0" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/279" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "beslutningslog for version 12.0.0" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions/301" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "beslutningsloggen på github" -%}
+        <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions?discussions_q=label:Beslutningslog" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "github discussions" -%}
         <a href="https://github.com/detfaellesdesignsystem/dkfds-components/discussions" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -345,6 +352,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "usability pitfalls of disabled buttons, and how to avoid them" -%}
         <a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "vitaly friedman: combobox vs. multiselect vs. listbox: how to choose the right one (2026)" -%}
+        <a href="https://www.smashingmagazine.com/2026/02/combobox-vs-multiselect-vs-listbox/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
 
 
     {%- comment -%} -------- Other -------- {%- endcomment -%}
@@ -380,6 +390,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
              "'dkfds'" -%}
         <a href="https://www.npmjs.com/package/dkfds" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "@dkfds/components" -%}
+        <a href="https://www.npmjs.com/package/@dkfds/components" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "material symbols" -%}
         <a href="https://fonts.google.com/icons" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -391,6 +404,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "whatwg" -%}
         <a href="https://whatwg.org/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "html living standard, 6.10.3 the closewatcher interface, cancel-eksempel" -%}
+        <a href="https://html.spec.whatwg.org/#example-CloseWatcher-cancel" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
     {%- when "inputfelter - uber’s base designsystem" -%}
         <a href="https://baseweb.design/components/input/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
@@ -468,6 +484,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
     {%- when "uswds om paginering" -%}
         <a href="https://designsystem.digital.gov/components/pagination/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
+    {%- when "us web design system (uswds): dropdown" -%}
+        <a href="https://designsystem.digital.gov/components/select/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
     {%- when "caroline jarrett: design patterns in government (2016)" -%}
         <a href="https://www.effortmark.co.uk/design-patterns-government-2016/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
@@ -534,6 +553,9 @@ EXAMPLE: HOW TO USE IN MARKDOWN FILES
 
     {%- when "xlink:href er forældet" -%}
         <a href="https://svgwg.org/svg2-draft/linking.html#XLinkRefAttrs" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
+
+    {%- when "shadow dom og tilgængelighed" -%}
+        <a href="https://nolanlawson.com/2022/11/28/shadow-dom-and-accessibility-the-trouble-with-aria/" {{ attributes }}>{{ include.linktext }}{{ icon }}</a>
 
 
 

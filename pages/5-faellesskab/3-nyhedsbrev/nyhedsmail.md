@@ -3,7 +3,7 @@ permalink: "/faellesskab/nyhedsmail/"
 redirect_from:
 - "/omdesignsystemet/nyhedsmail/"
 layout: styleguide
-category: Faellesskab_category
+category: faellesskab_menu
 subcategory: Fællesskab
 title: Nyhedsbrev
 lead: Tilmeld dig nyhedsbrevet og følg med i arbejdet med Det Fælles Designsystem.
@@ -40,18 +40,15 @@ Nyhedsbrevene indeholder information om {% include links/internal-link.html link
         <input type="hidden" value="" id="newsletter_language">
         <input type="hidden" name="failure_url" value="" id="failure_url">
         <input type="hidden" name="success_url" value="" id="success_url">
-        <div class="form-group" id="newsletter-emailaddress">
-            <label class="form-label" for="i_newsform_email">Tilmeld e-mailadresse</label>
-            <span class="form-error-message d-none" id="i_newsform_email-error"></span>
-            <input type="email" class="form-input" id="i_newsform_email" autocomplete="email" required>
-        </div>
-        <div class="form-group" id="samtykke-group">
-            <span class="form-error-message d-none" id="samtykke-check-error"></span>
-            <div class="form-group-checkbox mt-3">
-                <input id="samtykke-check" type="checkbox" value="" class="form-checkbox checkbox-large" required />
-                <label for="samtykke-check">Jeg giver hermed samtykke til, at Erhvervsstyrelsen må opbevare min <span class='nowrap'>e-mailadresse</span>, indtil jeg selv afmelder mig nyhedsbrevet</label>
-            </div>
-        </div>
+        <fds-input id="newsletter-emailaddress">
+            <label>Tilmeld e-mailadresse</label>
+            <input type="email" id="i_newsform_email" autocomplete="email" required>
+        </fds-input>
+        <fds-checkbox id="samtykke-group" class="mt-5">
+            <input type="checkbox" id="samtykke-check" value="" required>
+            <label>Jeg giver hermed samtykke til, at Erhvervsstyrelsen må opbevare min <span class='nowrap'>e-mailadresse</span>, indtil jeg selv afmelder mig nyhedsbrevet</label>
+            <fds-error-message hidden id="samtykke-check-error" class="mb-3">Giv os venligst dit samtykke, så vi må opbevare din e-mailadresse. Uden dit samtykke kan vi ikke sende dig nyhedsbrevet.</fds-error-message>
+        </fds-checkbox>
         <p>Læs om vores behandling af dine personoplysninger og dine rettigheder under {% include links/internal-link.html linktext="Privatlivspolitik og cookies" %}.</p>
         <input type="submit" class="button button-primary mt-5" value="Tilmeld" id="newsletter-submit">
     </form>

@@ -3,7 +3,7 @@ permalink: "/komponenter/funktionslink/"
 redirect_from:
 - "/kode/komponenter/funktionslink/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Funktionslink
 lead: Funktionslink lader brugeren udføre forskellige systemfunktionaliteter.
@@ -23,17 +23,17 @@ tabs: "Retningslinjer, kode"
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug funktionsikoner til at tilbyde brugeren systemfunktionalitet, som fx: print, pdf, indstillinger, etc. Funktionalitet, der ikke er essentiel for brugerens umiddelbare gennemførsel af løsningen.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke funktionsikoner til generel navigation mellem sider eller til næste trin. Brug da standard links og primærknap i stedet. Anvend ikke funktionslinks til navigation til forrige side, anvend da tilbage-linket.
 
 Brug {% include links/component-guideline-link.html linktext="sprogvælgeren" %} til valg af sprog.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Systemfunktionalitet er fx:
 
@@ -67,7 +67,7 @@ Har man brug for at fremhæve en funktionalitet, fordi brugeren ikke bør gennem
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="function-link-print" copybutton=true %}
 

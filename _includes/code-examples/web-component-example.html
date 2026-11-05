@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    ...
+    <link type="text/css" rel="stylesheet" href="dist/css/dkfds.css">
+    <link type="text/css" rel="stylesheet" href="dist/web-components/dkfds.css">
+    <script src="dist/web-components/dkfds.js"></script>
+</head>
+
+<body>
+    ...
+    <fds-toggle-switch label="Vis sager ældre end et år"></fds-toggle-switch>
+    ...
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('fds-toggle-switch').toggle();
+        });
+    </script>
+</body>
+
+</html>

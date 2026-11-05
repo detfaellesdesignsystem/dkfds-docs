@@ -46,9 +46,6 @@
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBold.woff2" as="font" crossorigin>
 <link rel="preload" href="/assets/fonts/IBMPlexSans/complete/woff2/IBMPlexSans-SemiBoldItalic.woff2" as="font" crossorigin>
 
-<link rel="preload" href="/assets/style/test_borger.css" as="style">
-<link rel="preload" href="/assets/style/test_virk.css" as="style">
-<link rel="preload" href="/assets/style/test_neutral.css" as="style">
 <link rel="preload" href="/assets/js/theme.js" as="script">
 
 <style>
@@ -58,7 +55,7 @@
 </style>
 
 <noscript>
-  <link type="text/css" rel="stylesheet" href="/assets/style/test_virk.css">
+  <link type="text/css" rel="stylesheet" href="/assets/style/styleguide_virkdk.css?v=12.0.0">
 </noscript>
 
 </head>
@@ -288,14 +285,37 @@
     </div>
 </main>
 
+    <fds-modal id="fds-cookie-message" heading="Det Fælles Designsystem bruger cookies" heading-id="fds-cookie-message-heading" dismissible="false">
+    <dialog>
+        <form method="dialog">
+            <div class="scrollable-area has-fade pb-0">
+                <div class="modal-top"></div>
+                <p>Vi indsamler statistik ved hjælp af tredjepartscookies til at forbedre brugeroplevelsen.</p>
+                <p>Alle indsamlede data anonymiseres.</p>
+                <p class="mb-2"><a href="/privatlivspolitik-cookies/">Læs mere om vores brug af cookies</a></p>
+            </div>
+            <div class="fixed-area">
+                <div class="button-group">
+                    <button class="button button-secondary cpAcceptBtn" type="submit" value="accept">Accepter cookies</button>
+                    <button class="button button-secondary cpDontAcceptBtn" type="submit" value="reject">Nej til cookies</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+</fds-modal>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/styleguide.js"></script>
+    <script src="/assets/js/dkfds.js"></script> <!-- Web Component script -->
     <aside class="test-footer d-flex align-items-center">
     <div class="container">
         <div class="test-footer-content d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
             <div class="d-flex flex-wrap mr-8">
-                <button class="function-link mr-4" id="changeDemoTheme"><svg class="icon-svg" focusable="false" aria-hidden="true">
-                    <use href="#palette"></use></svg><span id="changeDemoThemeText" class="sr-only"></span><span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
+                <button class="function-link mr-4" id="changeDemoTheme">
+                    <svg class="icon-svg" focusable="false" aria-hidden="true">
+                        <use href="#palette"></use>
+                    </svg>
+                    <span id="changeDemoThemeText" class="sr-only"></span>
+                    <span id="themeTextTestVersion" class="d-none d-sm-inline"></span>
                 </button>
                 <button id="theme-neutral" class="function-link mr-4"><span>Neutral</span>
                 </button>
@@ -313,43 +333,33 @@
                 <a class="function-link" href="/eksempel/test-tables-2/">Næste</a>
                 
             </div>
+            <div class="ml-auto"><a class="function-link" href="/mastertest">Testoverblik</a></div>
         </div>
     </div>
 </aside>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let createLink = function(style) {
-            var lnk = document.createElement('link');
-            lnk.type='text/css';
-            lnk.rel='stylesheet';
-            switch (style) {
-                case "neutral":
-                    lnk.href= '/assets/style/test_neutral.css';
-                    break;
-                case "borger":
-                    lnk.href= '/assets/style/test_borger.css';
-                    break;
-                case "virk":
-                    lnk.href= '/assets/style/test_virk.css';
-                    break;
-                case 'normalization':
-                    lnk.href= '/assets/style/test_normalization.css';
-                    break;
-            }
-            document.getElementsByTagName('head')[0].appendChild(lnk);
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        const logo = document.getElementById('example-header-logo');
 
-        let setNeutralStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_neutral.css';
+        // The two stylesheets in <head> are created by theme.js
+
+        let setNeutralStylesheet = function () {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/styleguide.css';
+            document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/styleguide_web_components.css';
+            if (logo) { logo.setAttribute('src', '/assets/img/logo-header-placeholder.png'); }
         };
 
-        let setBorgerStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_borger.css';
+        let setBorgerStylesheet = function () {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/styleguide_borgerdk.css';
+            document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/styleguide_borgerdk_web_components.css';
+            if (logo) { logo.setAttribute('src', '/assets/img/logo-borgerdk.svg'); }
         };
 
-        let setVirkStylesheet = function() {
-            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_virk.css';
+        let setVirkStylesheet = function () {
+            document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/styleguide_virkdk.css';
+            document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/styleguide_virkdk_web_components.css';
+            if (logo) { logo.setAttribute('src', '/assets/img/logo_virk.svg'); }
         };
 
         document.getElementById('theme-neutral').addEventListener('click', setNeutralStylesheet);
@@ -360,15 +370,14 @@
         if (document.querySelectorAll('main h1').length > 0) {
             if (document.querySelector('main h1').textContent == 'HTML-elementer') {
                 normalize = true;
-                createLink("normalization");
+                document.querySelectorAll('head link[rel="stylesheet"]')[0].href = '/assets/style/test_normalization.css';
+                document.querySelectorAll('head link[rel="stylesheet"]')[1].href = '/assets/style/test_normalization.css';
             }
         }
         if (document.cookie.includes('theme=borger') && !normalize) {
-            createLink("borger");
             document.getElementById('themeTextTestVersion').textContent = "Cookie: Borger";
         }
         else if (document.cookie.includes('theme=virk') && !normalize) {
-            createLink("virk");
             document.getElementById('themeTextTestVersion').textContent = "Cookie: Virk";
         }
 

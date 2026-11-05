@@ -3,7 +3,7 @@ permalink: "/komponenter/fejlmeddelelser/"
 redirect_from:
 - "/kode/komponenter/fejlmeddelelser/"
 layout: styleguide
-category: Komponenter_category
+category: komponenter_menu
 subcategory: Komponenter
 title: Fejlmeddelelser
 lead: Fejlmeddelelser hjælper brugeren til at udfylde enkelte formularelementer korrekt.
@@ -22,32 +22,33 @@ tags:
 - fejlmedelelser
 - fejlmeddellelser
 - fejlmedellelser
-tabs: "Retningslinjer, kode"
+tabs: "Retningslinjer, kode, web component"
+difference_warning: true
 ---
 
-{% include tabs.html guidelines=true code=true %}
+{% include tabs.html guidelines=true code=true web_component=true %}
 
 {% include code/preview-box.html component="error-message" title="Eksempel på fejlmeddelelse" classes="intro-example" %}
 
-{% include anchorlinks.html guidelines="Fejlmeddelelser" code="Fejlmeddelelser_Kode" %}
+{% include anchorlinks.html guidelines="Fejlmeddelelser" code="Fejlmeddelelser_Kode" webcomponent="Fejlmeddelelser_Web_Component" %}
 
 <!--split-->
 
 ## Sådan bruges komponenten {#{% include create-id.html heading="Sådan bruges komponenten" %}}
 
-### Anvendes til
+### Anvendes til {#{% include create-id.html heading="Anvendes til" %}}
 
 Brug fejlmeddelelser til at hjælpe brugeren korrekt igennem selvbetjeningsløsningen. Fortæl brugeren, hvad der skal til for at rette problemet og komme videre i et simpelt og venligt sprog.
 
 Brug også fejlmeddelelser til at vise, hvor fejlen eller manglen er, så brugeren ikke skal lede, ved at sætte fejlmeddelelsen umiddelbart over det, der skal rettes eller mangler.
 
-### Anvendes ikke til
+### Anvendes ikke til {#{% include create-id.html heading="Anvendes ikke til" %}}
 
 Brug ikke fejlmeddelelser til at fortælle brugerne, at de ikke er berettigede eller ikke har tilladelse til at gøre noget. I stedet for vis dem en side, der fortæller dem, at de ikke er berettigede, og giver dem nyttige oplysninger om, hvad de skal gøre som det næste.
 
 Brug ikke fejlmeddelelser til at give brugeren beskeder om fejl, der ikke har med brugerens indtastninger og input at gøre, som fx systemfejl. Brug da en {% include links/component-guideline-link.html linktext="besked" %}.
 
-### Vejledning
+### Vejledning {#{% include create-id.html heading="Vejledning" %}}
 
 Fejlmeddelelsen skal også vises som et link til fejlen i {% include links/component-guideline-link.html linktext="fejlopsummeringen" %}. Derfor skal fejlmeddelelsen give mening for brugeren, når den læses for sig selv i fejlopsummeringen.
 
@@ -139,6 +140,10 @@ Brug både instrukser og beskrivelser, men brug dem konsekvent. Fx brug en instr
 
 {% include code/preview-box.html component="text-input-character-limit-error" title="Eksempel på inputfelt med karakterbegrænsning med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#inputfelt-med-karakterbegraensning-kode" %}
 
+### Multiselect {#{% include create-id.html heading="Multiselect" %}}
+
+{% include code/preview-box.html component="multiselect-error" title="Eksempel på Multiselect med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#multiselect-kode" %}
+
 ### Radioknapper {#{% include create-id.html heading="Radioknapper" %}}
 
 {% include code/preview-box.html component="error-message-radio" title="Eksempel på radioknapper med fejlmeddelelse" code="/komponenter/fejlmeddelelser/#radioknapper-kode" %}
@@ -217,7 +222,7 @@ Skriv "Den valgte fil skal gøre brug af skabelonen".
 
 ## Installation {#{% include create-id.html heading="Installation" append="-kode" %}}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="error-message" copybutton=true %}
 
@@ -253,6 +258,10 @@ Fejlmeddelelsen vises også i {% include links/component-code-link.html linktext
 
 {% include code/syntax.html component="text-input-character-limit-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#inputfelt-med-karakterbegraensning" %}
 
+## Multiselect {#{% include create-id.html heading="Multiselect" append="-kode" %}}
+
+{% include code/syntax.html component="multiselect-error" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#multiselect" %}
+
 ## Radioknapper {#{% include create-id.html heading="Radioknapper" append="-kode" %}}
 
 {% include code/syntax.html component="error-message-radio" link=true copybutton=true guidelines="/komponenter/fejlmeddelelser/#radioknapper" %}
@@ -285,3 +294,45 @@ Sørg for at rette værdierne i følgende attributter, så de svarer til din lø
 {:.nobullet-list}
 - {% include links/external-link.html linktext="aria-errormessage attribute (aria) - Accessibility Support" %}
 - {% include links/external-link.html linktext="aria-describedby attribute (aria) - Accessibility Support" %}
+
+<!--split-->
+
+{% include web-component-shared-text/web-components-beta.html %}
+
+## Om denne komponent {#{% include create-id.html heading="Om denne komponent" append="-webcomponent" %}}
+
+Fejlmeddelelse er en "mikrokomponent", der udelukkende anvendes sammen med andre udvalgte webkomponenter. De kompatible komponenter er listet nedenunder.
+
+## Varianter {#{% include create-id.html heading="Varianter" append="-webcomponent" %}}
+
+### Accordions {#{% include create-id.html heading="Accordions" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-accordion-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Datofelter {#{% include create-id.html heading="Datofelter" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-input-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Datovælger {#{% include create-id.html heading="Datovælger" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-date-picker-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Dropdown {#{% include create-id.html heading="Dropdown" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-select-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Inputfelt {#{% include create-id.html heading="Inputfelt" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-input-wrapper-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Radioknapper {#{% include create-id.html heading="Radioknapper" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-radio-button-group-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Tekstområde {#{% include create-id.html heading="Tekstområde" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-textarea-error" heading_tag="h4" subheading_tag="h5" %}
+
+### Tjekboks {#{% include create-id.html heading="Tjekboks" append="-webcomponent" %}}
+
+{% include containers-for-code-and-examples/top-example-and-show-code-in-tabs.html example="fds-checkbox-error" heading_tag="h4" subheading_tag="h5" %}

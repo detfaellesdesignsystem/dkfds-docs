@@ -1,47 +1,69 @@
-import * as DKFDS from "dkfds";
+import * as DKFDS from "@dkfds/components";
 const themeAlertId = 'themeAlert';
 const cookieName = 'theme';
 const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
-const VERSION = '11.3.0';
+const VERSION = '12.0.0';
 
-document.addEventListener("DOMContentLoaded", function(){
- 
-        debug('cookie', getThemeCookie());
+const betaAlertId = 'web-components-beta-alert';
+const betaAlertCookieName = 'beta_message_closed';
 
-        // verify cookie contains correct value
-        verifyCookieOrDelete();
+document.addEventListener("DOMContentLoaded", function () {
 
-        // show theme alert on pages
-        themeAlertMessage();
+    debug('cookie', getThemeCookie());
 
-        // set theme if ?theme=virk|borgerdk
-        isThemeSetInUrl();
+    // verify cookie contains correct value
+    verifyCookieOrDelete();
 
-        // set cookie if missing
-        setCookieIfMissing();
+    // show theme alert on pages
+    themeAlertMessage();
 
-        // load stylesheet
-        setStylesheet();
+    // set theme if ?theme=virk|borgerdk
+    isThemeSetInUrl();
 
-        setFooterSwitcher();
+    // set cookie if missing
+    setCookieIfMissing();
 
-        // handle theme selector on demo pages
-        setDemoSwitcher();
+    // load stylesheet
+    setStylesheet();
 
-        setScreenshots();
+    setFooterSwitcher();
 
-        setDoDontImages();
+    // handle theme selector on demo pages
+    setDemoSwitcher();
 
-        setHomepageIllustration();
+    setScreenshots();
 
-        setCardImages();
+    setExampleLogo();
+
+    setDoDontImages();
+
+    setHomepageIllustration();
+
+    setCardImages();
+
+    initBetaAlert();
 });
 
-let setHomepageIllustration = function(){
-    if(document.body.classList.contains('page-forside')) {
+let initBetaAlert = function () {
+    let alertEl = document.getElementById(betaAlertId);
+    if (!alertEl) {
+        return;
+    }
+
+    if (getCookie(betaAlertCookieName) !== 'true') {
+        alertEl.removeAttribute('hidden');
+
+        alertEl.addEventListener('fds-alert-hidden', function () {
+            setCookie(betaAlertCookieName, 'true', 365);
+        });
+    }
+};
+
+let setHomepageIllustration = function () {
+    if (document.body.classList.contains('page-forside')) {
         let images = document.querySelectorAll('img.designsystem-illustration');
         let cookie = getThemeCookie();
         for (let i = 0; i < images.length; i++) {
@@ -50,95 +72,100 @@ let setHomepageIllustration = function(){
     }
 };
 
-let isThemeSetInUrl = function(){
+let isThemeSetInUrl = function () {
     let parameters = window.location.search.substr(1);
-    if(parameters === ""){
+    if (parameters === "") {
         return;
     }
     parameters = parameters.split('&');
-    for (let i = 0; i < parameters.length; i++){
+    for (let i = 0; i < parameters.length; i++) {
         let split = parameters[i].split('=');
         let key = split[0];
         let value = split[1];
-        if(key === "theme" && themes.indexOf(value) >= 0){
+        if (key === "theme" && themes.indexOf(value) >= 0) {
             setThemeCookie(value);
             return;
         }
     }
-}
+};
 
-let setCookieIfMissing = function (){
-    if(!isCookieSet()){
+let setCookieIfMissing = function () {
+    if (!isCookieSet()) {
         debug('Cookie was not set', getThemeCookie());
         setRandomThemeCookie();
     }
 };
 
-let verifyCookieOrDelete = function(){
-    if(isCookieSet()) {
+let verifyCookieOrDelete = function () {
+    if (isCookieSet()) {
         let themeChosen = getThemeCookie();
-        if(themes.indexOf(themeChosen) < 0){
+        if (themes.indexOf(themeChosen) < 0) {
             deleteCookie(cookieName);
             debug('cookie was deleted:', themeChosen);
         }
     }
 };
 
-let themeAlertMessage = function(){
+let themeAlertMessage = function () {
     let alert = document.getElementById(themeAlertId);
-    if(!isCookieSet() && alert !== null) {
+    if (!isCookieSet() && alert !== null) {
         showThemeAlert();
         document.getElementById('borgerdkThemeBtn').addEventListener('click', onBorgerdkThemeSelected);
         document.getElementById('virkThemeBtn').addEventListener('click', onVirkThemeSelected);
     }
 };
 
-let onVirkThemeSelected = function(){
+let onVirkThemeSelected = function () {
     setThemeCookie(themes[0]);
-    if(document.getElementById(themeAlertId) !== null){
+    if (document.getElementById(themeAlertId) !== null) {
         new DKFDS.Alert(document.getElementById(themeAlertId)).hide();
     }
     location.reload();
 };
-let onBorgerdkThemeSelected = function(){
+let onBorgerdkThemeSelected = function () {
     setThemeCookie(themes[1]);
-    if(document.getElementById(themeAlertId) !== null){
+    if (document.getElementById(themeAlertId) !== null) {
         new DKFDS.Alert(document.getElementById(themeAlertId)).hide();
     }
     location.reload();
 };
 
-let setStylesheet = function(){
-    if (!document.body.classList.contains('layout-test-example')) {
-        let themeChosen = getThemeCookie();
-        debug('stylesheet:', themeChosen);
-        if(themeChosen === null){
-            themeChosen = "virk";
-        }
-        const indexOfTheme = themes.indexOf(themeChosen);
-    
-        var lnk = document.createElement('link');
-        lnk.type='text/css';
-        lnk.rel='stylesheet';
-        lnk.href= '/assets/style/' + themeStylesheets[indexOfTheme] + '.css' + '?v=' + VERSION;
-    
-        document.getElementsByTagName('head')[0].appendChild(lnk);
+let setStylesheet = function () {
+    let themeChosen = getThemeCookie();
+    debug('stylesheet:', themeChosen);
+    if (themeChosen === null) {
+        themeChosen = "virk";
     }
+    const indexOfTheme = themes.indexOf(themeChosen);
+
+    var lnk = document.createElement('link');
+    lnk.type = 'text/css';
+    lnk.rel = 'stylesheet';
+    lnk.href = '/assets/style/' + themeStylesheets[indexOfTheme] + '.css' + '?v=' + VERSION;
+
+    document.getElementsByTagName('head')[0].appendChild(lnk);
+
+    var newLink = document.createElement('link');
+    newLink.type = 'text/css';
+    newLink.rel = 'stylesheet';
+    newLink.href = '/assets/style/' + themeStylesheets[indexOfTheme] + '_web_components.css' + '?v=' + VERSION;
+
+    document.getElementsByTagName('head')[0].appendChild(newLink);
 };
 
-
-let showThemeAlert = function(){
-    if(document.getElementById(themeAlertId) !== null) {
+let showThemeAlert = function () {
+    if (document.getElementById(themeAlertId) !== null) {
         new DKFDS.Alert(document.getElementById(themeAlertId)).show();
     }
 };
 
-let setRandomThemeCookie = function(){
+let setRandomThemeCookie = function () {
     let randomTheme = themes[Math.floor(Math.random() * themes.length)];
     setThemeCookie(randomTheme);
 };
-let setThemeCookie = function(theme){
-    if(themes.indexOf(theme) >= 0) {
+
+let setThemeCookie = function (theme) {
+    if (themes.indexOf(theme) >= 0) {
         debug('setting cookie', theme);
         setCookie(cookieName, theme, 365);
         return true;
@@ -147,49 +174,49 @@ let setThemeCookie = function(theme){
 
 };
 
-let isCookieSet = function(){
+let isCookieSet = function () {
     let cookie = getCookie(cookieName);
-    if(cookie === null){
+    if (cookie === null) {
         return false;
     }
     return true;
 };
 
-let getThemeCookie = function(){
- return getCookie(cookieName);
+let getThemeCookie = function () {
+    return getCookie(cookieName);
 };
 
 let setCookie = function (name, value, daysToLive) {
     // Encode value in order to escape semicolons, commas, and whitespace
     let cookie = name + "=" + encodeURIComponent(value);
 
-    if(typeof daysToLive === "number") {
+    if (typeof daysToLive === "number") {
 
         let d = new Date();
-        d.setTime(d.getTime() + (daysToLive*24*60*60*1000));
-        cookie += ";expires="+ d.toUTCString();
+        d.setTime(d.getTime() + (daysToLive * 24 * 60 * 60 * 1000));
+        cookie += ";expires=" + d.toUTCString();
 
-        cookie += ';path=/';
+        cookie += ";path=/;SameSite=Strict;Secure";
         debug('Setting cookie', cookie);
         document.cookie = cookie;
     }
 };
 
-let deleteCookie = function ( name ) {
+let deleteCookie = function (name) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
 };
 
-let getCookie = function(name) {
+let getCookie = function (name) {
     // Split cookie string and get all individual name=value pairs in an array
     let cookieArr = document.cookie.split(";");
 
     // Loop through the array elements
-    for(let i = 0; i < cookieArr.length; i++) {
+    for (let i = 0; i < cookieArr.length; i++) {
         let cookiePair = cookieArr[i].split("=");
 
         /* Removing whitespace at the beginning of the cookie name
         and compare it with the given string */
-        if(name === cookiePair[0].trim()) {
+        if (name === cookiePair[0].trim()) {
             // Decode the cookie value and return
             return decodeURIComponent(cookiePair[1]);
         }
@@ -199,8 +226,8 @@ let getCookie = function(name) {
     return null;
 };
 
-let setFooterSwitcher = function(){
-    if(document.getElementById('changeTheme') !== null) {
+let setFooterSwitcher = function () {
+    if (document.getElementById('changeTheme') !== null) {
         let cookie = getThemeCookie();
         let theme = "";
         switch (cookie) {
@@ -238,7 +265,7 @@ let setDemoSwitcher = function () {
         document.getElementById('changeDemoThemeText').innerText = text;
 
         /* Add event listener */
-        document.getElementById('changeDemoTheme').addEventListener('click', function() {
+        document.getElementById('changeDemoTheme').addEventListener('click', function () {
             let newTheme = "";
             switch (cookie) {
                 case themes[0]:
@@ -264,39 +291,39 @@ let toggleTheme = function () {
     }
 };
 
-let debug = function(title, value){
-    if(isDebugging){
+let debug = function (title, value) {
+    if (isDebugging) {
         console.log(title, value);
     }
 };
 
-let setScreenshots = function(){
-    if(document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
-        || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter') 
-        || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger') 
-        || document.getElementsByTagName('body')[0].classList.contains('page-footer') 
-        || document.getElementsByTagName('body')[0].classList.contains('page-header') 
+let setScreenshots = function () {
+    if (document.getElementsByTagName('body')[0].classList.contains('page-gå-til-sidens-indhold-skip-link')
+        || document.getElementsByTagName('body')[0].classList.contains('page-overskrifter')
+        || document.getElementsByTagName('body')[0].classList.contains('page-sprogvælger')
+        || document.getElementsByTagName('body')[0].classList.contains('page-footer')
+        || document.getElementsByTagName('body')[0].classList.contains('page-header')
         || document.getElementsByTagName('body')[0].classList.contains('page-tilbage-til-toppen')
         || document.getElementsByTagName('body')[0].classList.contains('page-cookiemeddelelse')
         || document.getElementsByTagName('body')[0].classList.contains('page-fejlopsummering')
         || document.getElementsByTagName('body')[0].classList.contains('page-anchorlinks')
-        || document.getElementsByTagName('body')[0].classList.contains('page-faneblade-tabs')){
+        || document.getElementsByTagName('body')[0].classList.contains('page-faneblade-tabs')) {
         let screenshots = document.querySelectorAll('.screenshot');
-        for(let i = 0; i < screenshots.length; i++){
+        for (let i = 0; i < screenshots.length; i++) {
             let url = screenshots[i].getAttribute('href').split('?')[0].split('/');
-            let componentName = url[url.length-2];
-            if(screenshots[i].getAttribute('data-image') !== null){
+            let componentName = url[url.length - 2];
+            if (screenshots[i].getAttribute('data-image') !== null) {
                 componentName = screenshots[i].getAttribute('data-image');
             }
-            let filename = getThemeCookie()+'-'+componentName+'.png';
-            let image = '<img src="/assets/img/examples/'+filename+'" alt="Skærmbillede af '+screenshots[i].getAttribute('title')+'" class="d-block" />';
+            let filename = getThemeCookie() + '-' + componentName + '.png';
+            let image = '<img src="/assets/img/examples/' + filename + '" alt="Skærmbillede af ' + screenshots[i].getAttribute('title') + '" class="d-block" />';
             screenshots[i].innerHTML = image;
         }
     }
 
     if (document.getElementsByTagName('body')[0].classList.contains('page-layout')) {
         let screenshots = document.querySelectorAll('.screenshot');
-        for(let i = 0; i < screenshots.length; i++) {
+        for (let i = 0; i < screenshots.length; i++) {
             let src = screenshots[i].getAttribute('src').split('/');
             let lastElement = src.pop();
             let filename = lastElement.split('-');
@@ -308,7 +335,52 @@ let setScreenshots = function(){
     }
 };
 
-let setDoDontImages = function() {
+const setExampleLogo = function () {
+    const cookie = getThemeCookie();
+
+    let src = '/assets/img/logo-header-placeholder.png';
+    let cookieMaxWidth = '110px';
+
+    if (cookie === 'borgerdk') {
+        src = '/assets/img/logo-borgerdk.svg';
+        cookieMaxWidth = '120px';
+    } 
+    else if (cookie === 'virk') {
+        src = '/assets/img/logo_virk.svg';
+        cookieMaxWidth = '80px';
+    }
+
+    const headerLogos = [
+        'example-header-logo',
+        'simple-example-header-logo',
+        'navigation-example-header-logo',
+        'language-example-header-logo'
+    ];
+
+    const cookieLogos = [
+        'simple-cookie-example-logo',
+        'choices-cookie-example-logo'
+    ];
+
+    for (const id of headerLogos) {
+        const logo = document.getElementById(id);
+
+        if (logo) {
+            logo.src = src;
+        }
+    }
+
+    for (const id of cookieLogos) {
+        const logo = document.getElementById(id);
+
+        if (logo) {
+            logo.src = src;
+            logo.style.maxWidth = cookieMaxWidth;
+        }
+    }
+};
+
+let setDoDontImages = function () {
     let dodonts = document.querySelectorAll('.do-dont-container');
     let cookie = getThemeCookie();
 
@@ -326,9 +398,8 @@ let setDoDontImages = function() {
     }
 };
 
-
-let setCardImages = function() {
-    if(document.body.classList.contains('page-komponenter')) {
+let setCardImages = function () {
+    if (document.body.classList.contains('page-komponenter')) {
         let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Komponenter', 'svg');
     }
@@ -348,7 +419,7 @@ let setCardImages = function() {
         let cards = document.querySelector('main').querySelectorAll('.card');
         rebuildCardImages(cards, '/assets/img/cards/Forside', 'png');
     }
-}
+};
 
 function rebuildCardImages(cards, imagepath, extension) {
     let cookie = getThemeCookie();
@@ -375,4 +446,4 @@ function rebuildCardImages(cards, imagepath, extension) {
             }
         }
     }
-}
+};

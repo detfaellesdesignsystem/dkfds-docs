@@ -1,0 +1,84 @@
+{%- comment -%}
+--------
+EXAMPLE: HOW TO USE IN MARKDOWN FILES
+{% include links/component-web-component-link.html linktext="Tekst der skal blive til link" %}
+--------
+{%- endcomment -%}
+
+{%- assign link = include.linktext | downcase -%}
+
+{%- case link -%}
+
+    {%- when "accordions" -%}
+        <a href="/komponenter/accordions/#web-component">{{ include.linktext }}</a>
+
+    {%- when "beskeder" -%}
+        <a href="/komponenter/beskeder/#web-component">{{ include.linktext }}</a>
+
+    {%- when "cookiemeddelelse" -%}
+        <a href="/komponenter/cookiemeddelelse/#web-component">{{ include.linktext }}</a>
+
+    {%- when "datofelter" -%}
+        <a href="/komponenter/datofelter/#web-component">{{ include.linktext }}</a>
+
+    {%- when "datovælger" -%}
+        <a href="/komponenter/datovaelger/#web-component">{{ include.linktext }}</a>
+
+    {%- when "dropdown" -%}
+        <a href="/komponenter/dropdown/#web-component">{{ include.linktext }}</a>
+
+    {%- when "faneblade" -%}
+        <a href="/komponenter/faneblade/#web-component">{{ include.linktext }}</a>
+
+    {%- when "fejlmeddelelser" -%}
+        <a href="/komponenter/fejlmeddelelser/#web-component">{{ include.linktext }}</a>
+
+    {%- when "fejlopsummering" -%}
+        <a href="/komponenter/fejlopsummering/#web-component">{{ include.linktext }}</a>
+
+    {%- when "header" -%}
+        <a href="/komponenter/header/#web-component">{{ include.linktext }}</a>
+
+    {%- when "inputfelter" -%}
+        <a href="/komponenter/inputfelter/#web-component">{{ include.linktext }}</a>
+
+    {%- when "modal" -%}
+        <a href="/komponenter/modal/#web-component">{{ include.linktext }}</a>
+
+    {%- when "multiselect" -%}
+        <a href="/komponenter/modal/#web-component">{{ include.linktext }}</a>
+
+    {%- when "overflow menu" -%}
+        <a href="/komponenter/overflowmenu/#web-component">{{ include.linktext }}</a>
+
+    {%- when "radioknap" -%}
+        <a href="/komponenter/radioknap/#web-component">{{ include.linktext }}</a>
+
+    {%- when "tekstområde" -%}
+        <a href="/komponenter/tekstomraade/#web-component">{{ include.linktext }}</a>
+
+    {%- when "tilbage til toppen" -%}
+        <a href="/komponenter/tilbage-til-top/#web-component">{{ include.linktext }}</a>
+
+    {%- when "tjekboks" -%}
+        <a href="/komponenter/tjekboks/#web-component">{{ include.linktext }}</a>
+
+    {%- when "toastbeskeder" -%}
+        <a href="/komponenter/toastbesked/#web-component">{{ include.linktext }}</a>
+
+    {%- when "toggle switch" -%}
+        <a href="/komponenter/toggle/#web-component">{{ include.linktext }}</a>
+
+    {%- when "tooltip" -%}
+        <a href="/komponenter/tooltip/#web-component">{{ include.linktext }}</a>
+
+    {%- when "trinindikator" -%}
+        <a href="/komponenter/trinindikator/#web-component">{{ include.linktext }}</a>
+
+    {%- when "vedhæft fil" -%}
+        <a href="/komponenter/fil-upload/#web-component">{{ include.linktext }}</a>
+
+    {%- else -%}
+        {{ include.linktext }}
+
+{%- endcase -%}

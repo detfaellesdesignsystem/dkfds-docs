@@ -1,0 +1,30 @@
+<fds-modal-opener modal-id="simple-modal-example">
+    <button class="button button-secondary" aria-haspopup="dialog">Åbn modal</button>
+</fds-modal-opener>
+<fds-modal id="simple-modal-example" heading="Lorem ipsum" heading-id="simple-modal-example-heading">
+    <dialog aria-labelledby="simple-modal-example-heading">
+        <div class="scrollable-area">
+            <div class="modal-top">
+                <h2 class="top-heading" tabindex="-1" id="simple-modal-example-heading">Lorem ipsum</h2>
+                <fds-modal-closer class="modal-close">
+                    <button class="function-link" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" focusable="false" aria-hidden="true" class="icon-svg">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path>
+                        </svg>
+                        <span>Luk</span>
+                    </button>
+                </fds-modal-closer>
+            </div>
+            <p class="mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales turpis nec tincidunt dictum. Aliquam hendrerit nunc nec arcu lobortis fringilla. Sed nulla lectus, mollis eget rhoncus sed, porta eu ipsum.</p>
+            <p>Cras eleifend elementum finibus. Mauris ac magna quis orci dapibus suscipit. Vestibulum accumsan turpis diam, ut pretium quam sollicitudin sed. Pellentesque posuere eget tortor quis imperdiet. Pellentesque gravida, enim vel porttitor sagittis, libero neque efficitur justo, nec gravida orci risus consequat lacus.</p>
+            <div class="button-group">
+                <fds-modal-closer class="button-wrapper">
+                    <button class="button button-primary" type="button">Primær knap</button>
+                </fds-modal-closer>
+                <fds-modal-closer class="button-wrapper">
+                    <button class="button button-secondary" type="button">Sekundær knap</button>
+                </fds-modal-closer>
+            </div>
+        </div>
+    </dialog>
+</fds-modal>

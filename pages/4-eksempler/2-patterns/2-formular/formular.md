@@ -6,7 +6,7 @@ redirect_from:
 - /komponenter/formular/
 - /kode/komponenter/formular/
 layout: styleguide
-category: Eksempler_category
+category: eksempler_menu
 subcategory: Eksempler
 title: Formular
 description: "Se eksempler på opsætning af en formular med forskellige felttyper."

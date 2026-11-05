@@ -35,6 +35,7 @@
       <h1 id="example-heading-{{ page.filename | slugify }}" class="sr-only">{% assign title = page.title | downcase %}{% if title == page.filename %}{{ page.filename | replace: "-", " " | capitalize }}{% else %}{{ page.title }}{% endif %}</h1>
     </main>
     {% endunless %}
+    {% include cookie-message.html %}
     {% include scripts.html %}
   </body>
 </html>

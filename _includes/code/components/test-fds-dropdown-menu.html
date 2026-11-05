@@ -1,0 +1,278 @@
+<header class="header">
+
+    <!-- Language switcher -->
+    <div class="language-switcher-header">
+        <div class="container">
+            <fds-dropdown-menu expanded="false">
+                <button>
+                    <span><svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#language"></use>
+                        </svg>Dansk</span>
+                </button>
+                <div>
+                    <ul>
+                        <li><a href="?lang=da" lang="da" aria-current="true">Dansk</a></li>
+                        <li><a href="?lang=en-GB" lang="en-GB">English</a></li>
+                        <li><a href="?lang=de" lang="de">Deutsch</a></li>
+                        <li><a href="?lang=pl" lang="pl">Polski</a></li>
+                    </ul>
+                </div>
+            </fds-dropdown-menu>
+        </div>
+    </div>
+
+    <!-- Web components navigation menu -->
+    <fds-main-menu>
+        <div class="main-menu-inner">
+            <nav aria-label="Hovedmenu">
+                <ul>
+                    <li><a href="#"><span>Første menupunkt</span></a></li>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Andet menupunkt</span></button>
+                            <div>
+                                <ul>
+                                    <li><a href="#"><span>Undermenu 2.1</span></a></li>
+                                    <li><a href="#"><span>Undermenu 2.2</span></a></li>
+                                    <li><a href="#"><span>Undermenu 2.3</span></a></li>
+                                    <li><a href="#"><span>Undermenu 2.4</span></a></li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                    <li><a href="#"><span>Tredje menupunkt</span></a></li>
+                    <li><a href="#"><span>Fjerde menupunkt</span></a></li>
+                    <li>
+                        <fds-dropdown-menu expanded="false">
+                            <button><span>Femte menupunkt</span></button>
+                            <div>
+                                <ul>
+                                    <li><a href="#"><span>Undermenu 5.1</span></a></li>
+                                    <li><a href="#" aria-current="page"><span>Undermenu 5.2
+                                                med flere undermenuer kun synlige på
+                                                mobil</span></a></li>
+                                    <li><a href="#"><span>Undermenu 5.3</span></a></li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+                    </li>
+                </ul>
+            </nav>
+            <div class="form-group search mt-0 pt-0 pb-0">
+                <label for="header-search" class="sr-only">Søg efter indhold</label>
+                <input class="form-input" id="header-search" name="header-search"
+                    type="search">
+                <button class="button button-search">Søg</button>
+            </div>
+        </div>
+    </fds-main-menu>
+    <!-- Custom elements mobile navigation menu -->
+    <fds-modal variant="drawer" id="fdsdrawerce" heading="Menu">
+        <dialog>
+            <div class="scrollable-area">
+                <div class="modal-top"></div>
+                <fds-main-menu>
+                    <nav aria-label="Hovedmenu og undermenuer">
+                        <ul>
+                            <li><a href="#"><span>Første menupunkt</span></a></li>
+                            <li>
+                                <fds-dropdown-menu expanded="false">
+                                    <button><span>Andet menupunkt</span></button>
+                                    <div>
+                                        <ul>
+                                            <li><a href="#"><span>Undermenu 2.1</span></a>
+                                            </li>
+                                            <li><a href="#"><span>Undermenu 2.2</span></a>
+                                            </li>
+                                            <li><a href="#"><span>Undermenu 2.3</span></a>
+                                            </li>
+                                            <li><a href="#"><span>Undermenu 2.4</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </fds-dropdown-menu>
+                            </li>
+                            <li><a href="#"><span>Tredje menupunkt</span></a></li>
+                            <li><a href="#"><span>Fjerde menupunkt</span></a></li>
+                            <li>
+                                <fds-dropdown-menu expanded="true">
+                                    <button><span>Femte menupunkt</span></button>
+                                    <div>
+                                        <ul>
+                                            <li><a href="#"><span>Undermenu 5.1</span></a>
+                                            </li>
+                                            <li>
+                                                <fds-dropdown-menu expanded="false">
+                                                    <button><span>Undermenu 5.2 med flere
+                                                            undermenuer kun synlige på
+                                                            mobil</span></button>
+                                                    <div>
+                                                        <ul>
+                                                            <li><a href="#"
+                                                                    aria-current="page"><span
+                                                                        class="d-inline-block">Undermenu
+                                                                        5.2 med flere
+                                                                        undermenuer kun
+                                                                        synlige
+                                                                        på mobil <span
+                                                                            class="helptext d-inline">(overblik)</span></span></a>
+                                                            </li>
+                                                            <li><a href="#"><span>Undermenu
+                                                                        5.2.1</span></a></li>
+                                                            <li><a href="#"><span>Undermenu
+                                                                        5.2.2</span></a></li>
+                                                            <li><a href="#"><span>Undermenu
+                                                                        5.2.3</span></a></li>
+                                                            <li><a href="#"><span>Undermenu
+                                                                        5.2.4</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </fds-dropdown-menu>
+                                            </li>
+                                            <li><a href="#"><span>Undermenu 5.3</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </fds-dropdown-menu>
+                            </li>
+                        </ul>
+                    </nav>
+                </fds-main-menu>
+            </div>
+        </dialog>
+    </fds-modal>
+</header>
+
+<main class="container page-container" id="main-content">
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h1 class="h2 mt-0">Overflowmenu (inkl. varianter)</h1>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Standard overflowmenu</h2>
+        </div>
+        <div class="col-12">
+            <fds-dropdown-menu expanded="false">
+                <button>
+                    <span>Overflow menu <svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#more-vert"></use>
+                        </svg></span>
+                </button>
+                <div>
+                    <ul>
+                        <li><button>Mulighed 1</button></li>
+                        <li><button>Mulighed 2</button></li>
+                        <li><a href='#'>Mulighed 3 er et link</a></li>
+                        <li><button>Mulighed 4 er en længere tekst</button></li>
+                    </ul>
+                </div>
+            </fds-dropdown-menu>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Sortering</h2>
+        </div>
+        <div class="col-12">
+            <fds-dropdown-menu variant="sort" default-value="newfirst" expanded="false">
+                <button>
+                    <span>
+                        <svg class="icon-svg" focusable="false" aria-hidden="true">
+                            <use href="#sort-default"></use>
+                        </svg><span>Sortér:</span><span class="selected-value"></span>
+                    </span>
+                </button>
+                <div>
+                    <ul>
+                        <li><button data-value="newfirst">Nyeste først</button></li>
+                        <li><button data-value="oldfirst">Ældste først</button></li>
+                        <li><button data-value="affaldstype-asc">Affaldstype (A-Å)</button>
+                        </li>
+                        <li><button data-value="affaldstype-desc">Affaldstype (Å-A)</button>
+                        </li>
+                    </ul>
+                </div>
+            </fds-dropdown-menu>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Undermenu og mere-menu i header</h2>
+        </div>
+        <div class="col-12">
+            <p>Overflowmenu bruges til både undermenuer og mere-menuen i headeren. Gør sidens
+                bredde mindre (eller zoom ind), indtil mere-menuen
+                kommer frem.</p>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Undermenu i mobilmenu</h2>
+        </div>
+        <div class="col-12">
+            <fds-modal-opener modal-id="fdsdrawerce"><button
+                    class="button button-secondary">Mobilmenu</button></fds-modal-opener>
+        </div>
+    </div>
+
+    <div class="row mb-905">
+        <div class="col-12">
+            <h2 class="h3 mt-0">Overflowmenu inde i modal</h2>
+        </div>
+        <div class="col-12">
+            <fds-modal-opener modal-id="modal-example">
+                <button class="button button-secondary">Overflowmenu inde i modal</button>
+            </fds-modal-opener>
+            <fds-modal id="modal-example" heading="Modal med overflowmenu">
+                <dialog>
+                    <div class="scrollable-area">
+                        <div class="modal-top"></div>
+
+                        <div class="overflow-menu overflow-menu--open-right mr-9">
+                            <button class="button-overflow-menu js-dropdown"
+                                data-js-target="overflow1" aria-expanded="false"
+                                aria-controls="overflow1">Gammel overflowmenu<svg class="icon-svg" focusable="false" aria-hidden="true">
+                                    <use href="#more-vert"></use>
+                                </svg>
+                            </button>
+                            <div class="overflow-menu-inner collapsed" id="overflow1">
+                                <ul class='overflow-list'>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><button>Mulighed 2</button></li>
+                                    <li><button>Mulighed 3</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <fds-dropdown-menu expanded="false">
+                            <button>
+                                <span>Ny overflowmenu <svg class="icon-svg" focusable="false" aria-hidden="true">
+                                        <use href="#more-vert"></use>
+                                    </svg></span>
+                            </button>
+                            <div>
+                                <ul>
+                                    <li><button>Mulighed 1</button></li>
+                                    <li><button>Mulighed 2</button></li>
+                                    <li><button>Mulighed 3</button></li>
+                                </ul>
+                            </div>
+                        </fds-dropdown-menu>
+
+                        <fds-modal-closer>
+                            <button class="button button-primary" type="button">OK</button>
+                        </fds-modal-closer>
+                    </div>
+                </dialog>
+            </fds-modal>
+        </div>
+    </div>
+
+</main>

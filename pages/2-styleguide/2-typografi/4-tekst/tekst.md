@@ -5,7 +5,7 @@ redirect_from:
 - "/kode/typografi/tekst/"
 - "/design/typografi/tekst/"
 layout: styleguide
-category: Styleguide_category
+category: styleguide_menu
 subcategory: Styleguide
 title: Tekst
 description: Se hvordan tekster anvendes i designsystemet.
@@ -40,7 +40,7 @@ tabs: "Retningslinjer, kode"
 
 Du kan bruge en manchet til at introducere et trin eller en sides indhold. Typisk kan du bruge den når og hvor, det giver mening i kontekst for brugerne.
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Designværdier Manchet" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -76,7 +76,7 @@ Typisk starter indtastningsflowet eller en sektion lige under manchet. Hvis det 
 
 ## Brødtekst {#{% include create-id.html heading="Brødtekst" %}}
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Designværdier Brødtekst" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -202,7 +202,7 @@ Det er vigtigt for brugerne, at de får feedback på deres handling. Det gælder
 
 Forklarende eller beskrivende tekst tilhørende et billede.
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Billedtekst Designværdier" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -236,7 +236,7 @@ Billedtekst vises under et billede, således at det synligt bemærkes at teksten
 
 Stor tekst kan fx bruges til at fremhæve positive eller negative resultater og dermed fremhæve særlige tal eller ord.
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Stor tekst Designværdier" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -305,7 +305,7 @@ Brug kun stor tekst i meget begrænset omfang og til nøje udvalgte kommunikativ
 
 Tal, der er facit efter en udregning, markeres med dobbelt understregning. 
 
-### Designværdier
+### Designværdier {#{% include create-id.html heading="Facit Designværdier" %}}
 
 <div class="table--responsive-scroll" tabindex="0">
   <table class="table table--borderless">
@@ -350,7 +350,7 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include links/internal-link.html linktext="Læs retningslinjerne for manchet" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Manchet HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="lead_paragraph" copybutton=true %}
 
@@ -360,7 +360,7 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include links/internal-link.html linktext="Læs retningslinjerne for brødtekst" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Brødtekst HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="inlinetext" copybutton=true %}
 
@@ -376,7 +376,7 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include links/internal-link.html linktext="Læs retningslinjer for fejlmeddelelser" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Fejlmeddelelser HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="helptext" copybutton=true %}
 
@@ -386,7 +386,7 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include links/internal-link.html linktext="Læs retningslinjer for billedtekst" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Billedtekst HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="caption" copybutton=true %}
 
@@ -396,7 +396,7 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include links/internal-link.html linktext="Læs retningslinjerne for stor tekst" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Stor tekst HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="displaytext" copybutton=true %}
 
@@ -406,6 +406,6 @@ Linjeafstanden er baseret på teksttypernes linjehøjde.
 
 {% include links/internal-link.html linktext="Læs retningslinjer for facit" %}
 
-### HTML Struktur
+### HTML Struktur {#{% include create-id.html heading="Facit HTML Struktur" append="-kode" %}}
 
 {% include code/syntax.html component="facit" copybutton=true %}
