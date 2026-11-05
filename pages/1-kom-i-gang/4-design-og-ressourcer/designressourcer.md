@@ -62,7 +62,7 @@ Vi stiller designbiblioteket til rådighed for, at I kan komme hurtigt i gang me
                         <a href="https://www.figma.com/community/file/1284147195952477019/det-flles-designsystem" class="icon-link" target="_blank">Designbibliotek version 11.0.0<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
                     </li>
                     <li class="mt-3">
-                        <a href="https://www.figma.com/community/file/1699800266476902634/det-flles-designsystem-v-12-0-0-beta" class="icon-link" target="_blank">Designbibliotek version 12.0.0<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
+                        <a href="https://www.figma.com/community/file/1699800266476902634/det-flles-designsystem-v-12-0-0-beta" class="icon-link" target="_blank">Designbibliotek version 12.0.0 (beta)<svg class="icon-svg" aria-label="(åbner i nyt vindue)" focusable="false"><use href="#open-in-new"></use></svg></a>
                     </li>
                 </ul>
             </div>

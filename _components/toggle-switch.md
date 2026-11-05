@@ -15,8 +15,6 @@ tabs: "Retningslinjer, kode, web component"
 
 {% include tabs.html guidelines=true code=true web_component=true %}
 
-<div id="kode" hidden></div>
-
 {% include code/preview-box.html component="toggle" title="Eksempel på toggle" classes="intro-example" %}
 
 {% include anchorlinks.html guidelines="ToggleSwitch" code="ToggleSwitch_Kode" webcomponent="ToggleSwitch_Web_Component" classes="hide-guidelines hide-code" %}
