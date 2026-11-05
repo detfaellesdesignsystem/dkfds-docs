@@ -5,7 +5,7 @@ const themes = ['virk', 'borgerdk'];
 const themeStylesheets = ['styleguide_virkdk', 'styleguide_borgerdk'];
 const isDebugging = false;
 const demoSelectorId = 'themeselector';
-const VERSION = '11.3.0';
+const VERSION = '12.0.0';
 
 const betaAlertId = 'web-components-beta-alert';
 const betaAlertCookieName = 'beta_message_closed';
